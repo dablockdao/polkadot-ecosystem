@@ -132,6 +132,7 @@ export default defineConfig({
 			},
 			components: {
 				Head: './src/components/CustomHead.astro',
+				Footer:'./src/components/CustomFooter.astro',
 				SocialIcons: './src/components/CustomSocial.astro',
 				Hero: './src/components/CustomHero.astro',
 				PageTitle: './src/components/CustomPageTitle.astro',
