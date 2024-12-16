@@ -1,0 +1,54 @@
+---
+title: Polkadot Interviews
+description: All the interviews related to the Polkadot ecoystem founders and builders.
+sidebar:
+    label: Interviews
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseImage, ShowcaseYouTube, ShowcaseProfile } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Discover Polkadot’s vibrant ecosystem through community content creators, offering educational resources, updates, and engaging media.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Space Monkeys',
+      picture: import('/src/assets/kusamarian.webp'),
+      href: '/interviews/space-monkeys/',
+      description: 'All the interviews by The Kusamarian to the Polkadot builders.',
+    },
+    {
+      name: 'Behind the Code',
+      picture: import('/src/assets/web3thinkers.webp'),
+      href: '/interviews/behind-the-code/',
+      description: 'All the latest interviews from Key Pictures with the Polkadot ecosystem founders and builders.',
+    },
+  ]}
+/>
+
+
+## Space Monkeys podcast Episodes
+----------------
+
+ <DirectoryLinks directory="interviews/space-monkeys" limit={10} />
+
+## Behind the Code Interviews
+----------------
+ <DirectoryLinks directory="interviews/behind-the-code" limit={10} />
+
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=UxcmPC-yY0A',
+      title: 'Sub0 Reset - Gavin Wood',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=MrWioikibEI',
+      title: 'Web3 Summit - Gavin Wood',
+    },
+  ]}
+/>
+

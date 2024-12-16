@@ -1,0 +1,51 @@
+---
+title: 'Unifying Polkadot Address Formats (Fragmentation Solution)'
+description: 'Unifying Polkadot address formats to reduce fragmentation and enhance user experience across all the Polkadot ecosystem.'
+date: 2024-02-17
+cover:
+  alt: ---
+  image: ../../../assets/news/Polkadot-address-format.webp
+tags: 
+    - tech
+authors:
+  - LV
+---
+JUsing the **same prefix across all Substrate-based chains** would extend the original proposal’s scope from unifying addresses within the Polkadot ecosystem to standardizing them across the entire Substrate ecosystem. This approach can be seen as a new option rather than just a variation of the original proposal.
+
+**Impact on Original Proposal Options:**
+----------------------------------------
+
+1. **Expansion of Scope:**
+  - **Original Proposal:** Focuses on unifying address formats for compatible Polkadot parachains by using prefix `0` (usually starting with ‘1’) and suggests using prefix `42` (usually starting with ‘5’) for standalone Substrate chains.
+  - **Extended Proposal:** Advocates for all Substrate-based chains, including independent ones like Aleph Zero and The Root Network, to adopt the same SS58 prefix (e.g., prefix `0`).
+2. **Standardization Across Chains:**
+  - By using the same prefix, all Substrate-based chains would display addresses in an identical format. This eliminates the need for different prefixes and reduces fragmentation not just within Polkadot but across all Substrate networks.
+3. **User Experience Enhancement:**
+  - A single address format simplifies the user experience significantly. Users would no longer need to manage different address formats when interacting with different Substrate-based chains, reducing confusion and the risk of errors.
+
+### **Is It a New Option or a Variation?**
+
+- **New Option:** This approach represents a new option because it proposes a broader standardization beyond the original proposal’s intent. While the original proposal aims to unify addresses within the Polkadot ecosystem, **this new option seeks to apply that unification to all Substrate-based chains, regardless of their connection to Polkadot or Kusama**.
+
+---------------------------------------------
+
+1. **Chains Sharing the Same Prefix:**
+  - Networks like Aleph Zero and The Root Network would indeed use the same SS58 prefix as Polkadot if they choose to adopt this standard. This means their addresses would look similar in format, starting with the same characters.
+2. **Chain Identity:**
+  - While unifying the address format enhances user experience, it may dilute the distinct identity of individual chains. Each chain currently uses a unique prefix partly to establish its own identity within the ecosystem.
+3. **Technical Considerations:**
+  - **Runtime Updates:** Chains would need to update the `System.SS58Prefix` constant in their runtimes to match the unified prefix. This change affects how addresses are encoded and displayed.
+  - **Client Libraries and APIs:** Tools like the Polkadot API (PAPI) and wallets would need adjustments to handle the new standard without causing issues like mismatched root hashes in Merkleized metadata (RFC-0078).
+  - **Extrinsic Validity:** Care must be taken to ensure that changes do not lead to invalid transactions due to discrepancies in expected address formats.
+4. **Coordination Among Chains:**
+  - Achieving this level of standardization would require consensus and collaboration across all Substrate-based chains. Each chain would need to agree to adopt the unified prefix and coordinate the transition to prevent user disruption.
+
+- - - - - -
+
+### **Conclusion**
+
+Adopting the **same prefix across all Substrate-based chains** is a more ambitious proposal that builds upon the original idea of unifying Polkadot’s address format. **It aims to simplify the ecosystem further by eliminating address format fragmentation entirely**. However, it introduces new challenges in terms of chain identity, technical implementation, and the need for widespread coordination. This makes it a new option that extends the original proposal’s goals to a larger context.
+
+- You can continue reading this topic started by Jakub Panik on the [Polkadot forum](https://forum.polkadot.network/t/unifying-polkadot-ecosystem-address-format/10042).
+
+- - - - - -

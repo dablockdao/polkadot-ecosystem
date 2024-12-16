@@ -1,0 +1,123 @@
+---
+title: You too can migrate your Dapp to PAPI, the next generation front-end library for Polkadot
+description: Migrate your DApp to PAPI, the next-generation Polkadot library, for improved performance, type safety, and future-proof development.
+sidebar:   
+    label: Thibaut Sardan (Chainsafe)
+---
+
+import { Image } from 'astro:assets';
+import coverImage from '/src/assets/sub0-reset/thibaut-sardan-chainsafe.webp';
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseImage, ShowcaseCTA } from 'starlight-showcases';
+
+<Image src={coverImage} alt="thibaut-sardan-chainsafe" />
+
+
+As blockchain technology evolves, so do the tools available to developers. Polkadot, a prominent player in the blockchain space, consistently pushes the boundaries of innovation. One such advancement is **PAPI** (**Polkadot API**), the next-generation front-end library designed to revolutionize how developers interact with the Polkadot ecosystem. PAPI is a replacement for the legacy Polkadot JS API, offering significant improvements in efficiency, maintainability, and ease of use.
+
+This article will guide you through the essential reasons to migrate your DApp to [PAPI](https://papi.how/), its benefits, and practical steps for a smooth transition.
+
+---
+
+## **What is PAPI?**
+
+PAPI is a lightweight, fully typed, and modern front-end library for Polkadot and its parachains. It serves as the successor to the Polkadot JS API, addressing limitations and technical debt accumulated over years of development. The key features of PAPI include:
+
+- **Full TypeScript Support**: PAPI ensures a type-safe environment, reducing runtime errors and streamlining development workflows.
+- **Lightweight Design**: Unlike its predecessor, PAPI minimizes dependencies, resulting in faster builds and leaner applications.
+- **Client-First Approach**: Built with decentralization in mind, PAPI optimizes interactions with Polkadot and parachain nodes.
+- **Future-Proof**: It is designed to adapt to the evolving Polkadot ecosystem, ensuring long-term compatibility and support.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUqsyZhdlWf1zmD6861yA1vDPY3qCNi5h5GtvL3GjeQSD2zdpIs_f1HVrT2MeFiG4FgkcDVQa67Wvx/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## **Why Migrate to PAPI?**
+
+### **1. Streamlined Development Workflow**
+PAPI’s full typing capabilities significantly enhance the developer experience. Autocompletion and in-editor type hints make it easier to write and debug code, improving overall productivity.
+
+### **2. Lightweight and Efficient**
+Legacy Polkadot JS API has millions of dependencies, which can bloat your project and introduce unnecessary complexity. PAPI reduces this overhead, resulting in faster application performance and easier maintenance.
+
+### **3. Future-Proof Your DApp**
+As Polkadot JS API transitions out of active development, using PAPI ensures compatibility with the latest Polkadot updates and innovations.
+
+### **4. Strong Community Support**
+The PAPI team is known for their responsiveness and expertise. Whether you encounter issues or need guidance, the community and core developers are readily available to assist.
+
+---
+
+## **Key Features of PAPI**
+
+### **1. Full Typing**
+PAPI leverages TypeScript’s capabilities to deliver a fully typed API. This ensures that:
+
+- Developers receive real-time feedback on potential errors.
+- Autocompletion simplifies complex function calls.
+- Runtime errors are minimized, making applications more robust.
+
+For example, PAPI provides detailed type definitions for functions like balances.transferKeepAlive, specifying required parameters and their expected types.
+
+### **2. Decentralized and Client-First**
+By emphasizing decentralization, PAPI prioritizes client-side operations, reducing reliance on centralized infrastructure.
+
+### **3. Built-in Compatibility Handling**
+PAPI includes features to ensure seamless interaction with various Polkadot parachains, even those lagging behind in runtime updates. The withPolkadotSDKCompact option allows developers to account for discrepancies across chains.
+
+---
+
+## **How to Migrate Your DApp to PAPI**
+
+### **1. Install PAPI**
+The official documentation at [papi.how](https://papi.how/) provides comprehensive instructions on installation and setup. Begin by installing PAPI via npm or yarn.
+
+### **2. Generate Types for Your Chain**
+PAPI requires type definitions tailored to your chain. Use the provided tools to generate these types and ensure compatibility with your specific runtime.
+
+### **3. Update Signers**
+Legacy signers from Polkadot JS API are incompatible with PAPI. Replace them with PAPI-compatible signers. For example, use the Dot-Connect library to handle wallet integrations seamlessly.
+
+### **4. Handle New Query Options**
+PAPI defaults to finalized blocks for queries. If your application requires the latest block data, explicitly specify the atBest option when making queries.
+
+### **5. Test Your DApp**
+Before deploying your migrated application, thoroughly test it in different environments to identify and resolve potential issues.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fRI96YD105E?si=0lXwh2BggC6BuA4X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## **Challenges and Solutions**
+
+### **1. Learning Curve**
+Transitioning to PAPI requires familiarizing yourself with new patterns and conventions. The robust documentation and active community can help ease this process.
+
+### **2. Runtime Upgrades**
+PAPI introduces the concept of compatibility tokens to manage runtime upgrades. Generate these tokens at application launch to ensure compatibility.
+
+---
+
+## **Tools to Simplify Migration**
+
+### **1. Dot-Connect**
+[Dot-Connect](https://github.com/tien/dot-connect) is a library designed for seamless integration with wallet extensions and wallet connect protocols. It simplifies authentication and account management for DApps.
+
+### **2. Chopsticks**
+[Chopsticks](https://github.com/AcalaNetwork/chopsticks), a popular Polkadot tool, is fully compatible with PAPI, enabling efficient testing and development workflows.
+
+### **3. Developer Tools**
+The [PAPI](https://papi.how/) team offers an array of developer tools to enhance productivity, including live code examples and debugging utilities.
+
+---
+
+## **Real-World Use Cases**
+
+Several projects have successfully migrated to PAPI, showcasing its potential:
+
+- **Multix**: A multi-signature wallet application that leverages PAPI for enhanced performance and reliability ([Multix](https://multix.chainsafe.io/?network=polkadot)).
+- **Polkadot Delegation Dashboard**: A tool for delegation management, using PAPI for real-time updates and seamless integration with multiple parachains.
+
+---
+
+## **Conclusion**
+
+Migrating your DApp to PAPI is not just a technical upgrade—it’s a strategic move to future-proof your application in the ever-evolving Polkadot ecosystem. With its robust features, strong community support, and streamlined workflow, PAPI empowers developers to build better, faster, and more resilient applications.
+
+Whether you’re maintaining an existing DApp or starting a new project, embracing PAPI will position your application at the forefront of blockchain innovation. Don’t wait—take the leap into the future of decentralized development with PAPI.

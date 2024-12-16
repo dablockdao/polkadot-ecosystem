@@ -1,0 +1,58 @@
+---
+title: All the Polkadot Ecosystem
+description: Get started and join the biggest DAO in the world.
+template: splash
+banner:
+  content: 
+    Unlock All the Highlights from the <strong>Sub0 Reset</strong>.
+    <a target="_blank" rel="noopener noreferrer" href="//media.polkadotecosystem.com/events/sub0/ ">Check it out!</a>
+hero:
+  tagline: Discover all the projects and initiatives of the Polkadot ecosystem in an organized and intuitive way. (🚧 Under Construction)
+  image:
+    file: ../../assets/polkadothub1.png
+  actions:
+    - text: Tools
+      link: /tools/
+      icon: right-arrow
+    - text: Dapps
+      link: /dapps/
+      icon: external
+      variant: minimal
+---
+import { ImageCard, LinkButton2 } from '../../components/ImageCard.astro';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+import { Card, CardGrid, LinkCard, LinkButton, FileTree } from '@astrojs/starlight/components';
+
+&nbsp;
+
+## Discover all the Polkadot Ecosystem in One Place
+----------------
+<CardGrid>
+	<Card title="Tools" icon="laptop">
+		Wallets, Explorers, DAO tools, Development...  <strong><a href="/tools/">Polkadot Tools</a> </strong>
+	</Card>
+	<Card title="Dapps" icon="rocket">
+		DeFi, Gaming, Social, Marketplaces... <strong><a href="/tools/">Polkadot Dapps</a> </strong>
+	</Card>
+	<Card title="Resources" icon="open-book">
+		Events, Interviews, Podcasts, Newsletters...  <strong><a href="/tools/">Resources</a> </strong>
+	</Card>
+	<Card title="Ecosystem Hub" icon="heart">
+		DAOs, Validators, Media, People...  <strong><a href="/tools/">Ecosystem Hub</a> </strong>
+	</Card>
+</CardGrid>
+&nbsp;
+## Tools
+----------------
+ <DirectoryLinks directory="tools" limit={10} />
+&nbsp;
+## Dapps
+----------------
+ <DirectoryLinks directory="dapps" limit={10} />
+&nbsp;
+## Ecosystem Hub 
+----------------
+<DirectoryLinks directory="dapps" limit={10} />
+

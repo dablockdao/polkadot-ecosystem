@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Unbounded Bold';
+    src: url('./Unbounded-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }

@@ -1,0 +1,103 @@
+---
+title: Demystifying JAM - Understanding the Evolution of Polkadot towards JAM 
+description: Explore Polkadot's evolution to JAM, a revolutionary framework enabling scalable, programmable execution cores with unmatched flexibility and security.
+sidebar:
+    label: Kian Paimani (JAM)
+    order: 4
+---
+
+import { Image } from 'astro:assets';
+import coverImage from '/src/assets/sub0-reset/kian-pamani-parity.webp';
+import { ShowcaseImage, ShowcaseCTA, ShowcaseTwitter, ShowcaseYouTube } from 'starlight-showcases';
+
+<Image src={coverImage} alt="kian-pamani-parity" />
+
+The Sub0 Reset 2024 event was a pivotal moment in the Polkadot ecosystem, particularly with the talk *“Demystifying JAM: Understanding the Evolution of Polkadot towards JAM”* 
+delivered by [Kian Paimani](https://x.com/kianenigma), an Engineering Lead at Parity Technologies. 
+This session provided an in-depth exploration of Polkadot’s technical journey from its inception to the revolutionary JAM (Join-Accumulate Machine) architecture, targeting a technically inclined audience with foundational blockchain knowledge.
+
+## **Speaker Introduction: Kian Paimani**
+Kian Paimani’s journey into blockchain exemplifies a story of serendipity. 
+Originally aspiring to be a civil engineer, Kian pivoted to software engineering and later earned a Master’s in Parallel and Distributed Computer Systems in Amsterdam. 
+This academic background led him to blockchain as a unique form of distributed systems, ultimately landing him at Parity Technologies, 
+where he contributed to Substrate, Polkadot, and now JAM as part of the GrayMatter team. 
+His experience made him the ideal candidate to break down the JAM Graypaper into an accessible and comprehensive narrative.
+
+## **Polkadot: A Legacy of Innovation**
+Kian began by reflecting on Polkadot’s technological achievements, emphasizing its introduction of **heterogeneous execution sharding with shared security**. This innovation set Polkadot apart from other blockchains that fragmented their security when attempting to scale through execution sharding. Polkadot’s core technology achieves scalability without compromising security, a feat unrivaled in the blockchain space.
+
+[Kian original article](https://blog.kianenigma.com/posts/tech/demystifying-jam/)
+### **Breaking Down Polkadot’s Key Innovations**
+1. **Execution Sharding with Shared Security**: Unlike systems that fragment validator security, Polkadot ensures that its shards (parachains) are secured by the entirety of its validator set.
+2. **Heterogeneous Sharding**: Polkadot enables diverse blockchains (parachains) to operate under one unified security umbrella.
+3. **Core Flexibility**: The ecosystem evolved to enhance usability and scalability through mechanisms such as **asynchronous backing**, **elastic scaling**, **coretime**, and **on-demand coretime**.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQwm6kQp4N7t4s3GXqlz4-r1BBgaIO7cNlax5cR5x67XcUEj7_Bx3UlOMZ30PU7gCgSnRtNTGNrKqqk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## **From Polkadot 1.0 to 2.0: A Path Towards JAM**
+Polkadot 1.0 introduced parachains, fulfilling the promise of heterogeneous sharded execution. The subsequent evolution into Polkadot 2.0 focused on flexibility, making execution cores more accessible and adaptable. These innovations paved the way for JAM, which leverages Polkadot’s architecture while introducing unprecedented programmability.
+
+### **What is JAM?**
+At its core, JAM represents an evolution of Polkadot’s relay chain, specifically its parachain protocol. It introduces the ability to program execution cores (now termed “services”) with customizable operations for:
+- **In-core computation**: Operations performed within validator subsets (cores) with high computational bandwidth.
+- **On-chain processing**: State updates executed by all validators with maximum security.
+- **Data Availability**: Management of information for re-execution or validation.
+
+Kian highlighted JAM as a **“gutting” of Polkadot**, exposing its internal layers to developers for broader programmability beyond traditional blockchain use cases.
+
+<ShowcaseTwitter
+  entries={[
+    'https://x.com/kianenigma/status/1812789950741381567',
+  ]}
+/>
+
+## **JAM’s Key Features**
+1. **Services**: JAM replaces traditional parachains with programmable entities called services, defined by three key operations:
+   - **Refine** is the function that does the mostly stateless computation. It defines the transformation for the rollup for a specific service.
+   - **Accumulate** is the function that takes the output of that and folds it into the overall state of the service
+   - **OnTransfer** handles information coming from other services.
+
+2. **Programmability**: Developers gain full control over:
+   - Execution within cores.
+   - On-chain operations.
+   - Data availability and retrieval processes.
+
+3. **Efficiency through Parallelism**: JAM leverages 300+ cores for parallel execution, enabling scalable and efficient processing.
+
+4. **Reduced Blockchain-Centricity**: By minimizing the blockchain’s predefined roles, JAM broadens its applicability to computational tasks beyond decentralized ledgers.
+
+## **The JAM Graypaper: Architectural Insights**
+The JAM Graypaper introduces the concept of **semi-coherence**, blending synchronous and asynchronous components:
+- **In-core operations**: Asynchronous, high-performance computations within individual cores.
+- **On-chain processes**: Synchronous updates visible across the entire system.
+
+This duality mirrors Polkadot’s architecture but introduces programmability and flexibility, enabling developers to configure these components based on their specific needs.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eGLCedIT94U?si=S40ETWeiDXft5I29" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+### **Comparison to Existing Systems**
+JAM transcends traditional blockchain designs:
+- **Ethereum 2.0**: Focuses on homogeneous sharding without JAM’s heterogeneity.
+- **Cosmos**: Fragments security across independent chains.
+- **Solana**: Optimizes synchronous execution at the expense of scalability.
+
+## **Real-World Implications**
+JAM redefines infrastructure by removing direct user interaction with its protocol. Instead, it focuses on serving developers and applications as a backend computation framework. This separation ensures robust, scalable systems without exposing core functionalities to end-users.
+
+
+<ShowcaseTwitter
+  entries={[
+    'https://x.com/paritytech/status/1840762973914009765',
+  ]}
+/>
+
+ <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+ 
+## **Conclusion: Polkadot’s Evolutionary Leap**
+Kian concluded by emphasizing JAM’s transformative potential. As a logical progression of Polkadot’s architecture, JAM introduces unparalleled flexibility and programmability, positioning Polkadot as a leader in blockchain innovation. By enabling configurable execution cores and introducing semi-coherence, JAM represents a new chapter in decentralized systems.
+
+For those intrigued by the technical nuances of JAM, the Graypaper provides an exhaustive resource: [JAM Graypaper](https://graypaper.com/).
+
+The talk set the stage for the broader Sub0 Reset 2024 discussions, solidifying Polkadot’s role in shaping the future of blockchain technology.
+
+- Learn more about JAM Chain at the [Polkadot Wiki](https://wiki.polkadot.network/docs/learn-jam-chain)

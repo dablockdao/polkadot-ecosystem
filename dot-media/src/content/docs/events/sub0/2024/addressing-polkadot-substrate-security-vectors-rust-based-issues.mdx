@@ -1,0 +1,71 @@
+---
+title: 'Mohammadreza Ashouri - Polkadot and Substrate Security Vectors'
+description: 'Mohammadreza Ashouri delved into the intricacies of enhancing security within Polkadot and Substrate ecosystems'
+sidebar:
+    label: Mohammadreza Ashouri (Polkadot Security)
+---
+
+import { Image } from 'astro:assets';
+import coverImage from '/src/assets/sub0-2024/mohammadreza-sub0.webp';
+
+<Image src={coverImage} alt="Mohammadreza Ashouri - Polkadot Security Vectors" />
+
+
+In a recent tech talk, Mohammadreza Ashouri delved into the intricacies of enhancing security within Polkadot and Substrate ecosystems. The focus was on addressing common security vectors, Rust-based issues, and leveraging terminal tools to fortify the security posture of blockchain applications.
+
+Understanding Rust for Blockchain Development
+---------------------------------------------
+
+Rust has become a popular language for blockchain development due to its emphasis on memory safety and performance. Unlike languages like C and C++, Rust ensures memory safety through its unique ownership model enforced by the borrow checker, which operates at compile time. This significantly reduces the risk of common vulnerabilities such as dangling pointers and memory leaks, which can cause unpredictable behavior and security breaches.
+
+However, it’s important to note that Rust is not inherently foolproof. The use of “unsafe” blocks, which allow developers to bypass some of Rust’s safety checks for performance or compatibility reasons, can introduce risks. A significant portion of open-source Rust libraries contains unsafe code blocks, potentially leading to security vulnerabilities.
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vSBI0-7I9g8hhrPimkc9G0xwsvO_UqpeHnwpShyYuZY6ScEMZhxZX6rGN2QqiTmI3cTroi8gV3sFwr_/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
+
+Key Security Concerns in Rust
+-----------------------------
+
+1. **Memory Leaks**: Although Rust aims to eliminate undefined behavior, memory leaks can still occur. These can degrade performance and expose sensitive data.
+2. **Complexity**: Rust’s borrow checker, while robust, can sometimes reject safe code due to its strict rules, complicating development and potentially leading to less optimal code structures.
+3. **Logical Issues**: Even with memory safety, logical flaws in the code can result in security vulnerabilities. Proper testing and code reviews are crucial.
+
+Best Practices for Secure Rust Development
+------------------------------------------
+
+1. **Unit Testing**: Essential for verifying that individual functions handle both expected and unexpected inputs correctly.
+2. **Fuzz Testing**: An enhanced form of testing that subjects the code to a wide range of unexpected inputs to uncover vulnerabilities.
+3. **Manual Code Reviews**: Necessary to identify logical and complex issues that automated tools might miss.
+
+CLI Tools for Rust Security
+---------------------------
+
+Several command-line interface (CLI) tools can aid in enhancing the security of Rust code:
+
+- **Cargo Audit**: Scans dependencies for known vulnerabilities.
+- **Clippy**: A linter that improves code quality and can detect security issues.
+- **Cargo Geiger**: Identifies unsafe code blocks in the dependencies.
+
+Addressing Security in Substrate
+--------------------------------
+
+Substrate, an open-source framework by Parity, enables developers to create custom blockchains efficiently. Despite its robustness, common vulnerabilities such as insecure randomness, storage exhaustion, unsafe arithmetic, and outdated dependencies can still affect Substrate-based blockchains.
+
+Common Vulnerabilities in Substrate
+-----------------------------------
+
+1. **Insecure Randomness**: Predictable randomness sources can be exploited, particularly in functions like lotteries or voting systems.
+2. **Storage Exhaustion**: Improper storage cost mechanisms can allow malicious actors to bloat the storage, leading to Denial of Service (DoS) attacks.
+3. **Unsafe Arithmetic and Conversions**: Overflow and underflow issues, if not properly handled, can lead to incorrect calculations and potential exploits.
+4. **Replay Issues**: Improper nonce handling can enable attackers to repeat transactions, causing disruptions.
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/8w9s2Qnj9hI?si=xsNFNlHPPuQsthqw" title="YouTube video player" width="560"></iframe>
+
+### Mitigation Strategies
+
+- **Secure Randomness**: Use verifiable random functions (VRF) instead of predictable algorithms.
+- **Proper Storage Management**: Implement dynamic and fair storage cost algorithms.
+- **Safe Arithmetic and Conversions**: Use checked arithmetic functions and avoid downcasting without proper checks.
+- **Nonce Management**: Ensure unique and correctly managed nonces to prevent replay attacks.
+- **Up-to-date Dependencies**: Regularly update and verify all dependencies to mitigate vulnerabilities from outdated libraries.
+
+By implementing these practices and utilizing available tools, developers can significantly enhance the security of their Rust and Substrate-based blockchain applications, ensuring a more secure and reliable ecosystem.

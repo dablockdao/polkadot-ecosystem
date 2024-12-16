@@ -1,0 +1,131 @@
+---
+title: How JAM Changes the Future of Web3 
+description: Discover how JAM transforms Polkadot into a scalable Web3 cloud, enabling decentralized applications with unmatched flexibility and resilience.
+sidebar:   
+    label: Shawn Tabrizi (JAM)
+    order: 3
+---
+
+import { Image } from 'astro:assets';
+import coverImage from '/src/assets/sub0-reset/shawn-tabrizi-polkadot.webp';
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseImage, ShowcaseCTA } from 'starlight-showcases';
+
+<Image src={coverImage} alt="shawn-tabrizi-polkadot" />
+
+
+At Sub0 Reset 2024, Shawn Tabrizi delivered a transformative session titled *"How JAM Changes the Future of Web3."* This discussion outlined how JAM, an innovative paradigm for Web3 application development, is reshaping the way developers interact with the Polkadot ecosystem. Moving beyond blockchain-specific solutions, JAM positions Polkadot as a comprehensive Web3 cloud platform, capable of hosting diverse applications and services with unparalleled scalability, flexibility, and resilience.
+
+### Speaker Spotlight: Shawn Tabrizi
+[Shawn Tabrizi](https://x.com/shawntabrizi), a prominent figure in the blockchain community, brings a wealth of experience from his time at Microsoft Azure and his pivotal role in launching Polkadot at Parity Technologies. Now contributing independently as a Polkadot Fellow, Tabrizi focuses on open-source software development for the decentralized web.
+
+---
+
+## The Vision: From Blockchain Hosting to Web3 Cloud
+
+### Redefining Polkadot’s Role
+Tabrizi began by redefining Polkadot’s identity. While traditionally seen as a blockchain network, Polkadot is, at its core, a platform with a broader mission: enabling a world with less trust and more truth. JAM extends this vision by evolving Polkadot from a blockchain-specific infrastructure to a versatile cloud platform for Web3 applications and services.
+
+ <ShowcaseCTA title="Key takeaway:"> **Polkadot is not just a blockchain—its a Web3 cloud enabling decentralized applications and services.** </ ShowcaseCTA> 
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSeSLwTwu6Rm0C-R-LbTl4drC91Ms2HD2gf5Lpeoe10xJmLvPI1dU9pULwOTu9VsMCiBsQ24Q9E6c-E/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<LinkButton href="https://hackmd.io/@shawntabrizi/BJCa_haWJx#/" target="_blank" rel="noopener noreferrer" icon="external" iconPlacement="start" >Original Presentation</ LinkButton>
+
+### The JAM Paradigm
+JAM introduces a groundbreaking approach to application development on Polkadot, leveraging a new execution environment called the Polkadot Virtual Machine (PVM). JAM eliminates the need for developers to grapple with blockchain-specific constraints, enabling seamless deployment of Web3 applications with features akin to Web2 cloud environments.
+
+## Understanding JAM: Core Innovations
+
+### The Polkadot Virtual Machine (PVM)
+The PVM is the heart of JAM, offering an actor-based execution model optimized for high performance and scalability. Built on RISC-V architecture, the PVM ensures near-native speeds, robust tooling, and compatibility with traditional programming environments. Developers can now run standard applications, even those outside blockchain contexts, on Polkadot's decentralized infrastructure.
+
+**Key features of the PVM:**
+- High-speed execution.
+- Cost-efficient gas metering.
+- Compatibility with legacy architectures like x86.
+
+### Continuations: Overcoming Blockchain Limitations
+One of JAM’s standout innovations is its use of *continuations,* a method to save and restore program states across blockchain blocks. This allows complex applications to run uninterrupted, breaking free from the traditional limitations of block size and execution time.
+
+**How it works:**
+1. **Save state:** Application data and memory are saved to a data availability layer.
+2. **Resume execution:** The program continues seamlessly in the next block.
+3. **Completion:** Applications run as though uninterrupted, simplifying developer workflows.
+
+---
+
+## The Polkadot Cloud: A Web3 Revolution
+
+### Cloud-Like Services for Web3
+JAM transforms Polkadot into a fully-fledged Web3 cloud, offering decentralized alternatives to traditional cloud services:
+- **Decentralized Execution Service:** Comparable to AWS EC2, providing scalable compute resources.
+- **Object Storage:** Decentralized storage akin to Amazon S3.
+- **Serverless Smart Contracts:** Functionality similar to AWS Lambda for seamless execution of smart contracts.
+
+### Specifications of the Polkadot Cloud
+The JAM-powered Polkadot Cloud boasts an impressive architecture:
+- Over **1,000 validators.**
+- **341 cores** for decentralized execution.
+- **2 petabytes** of data availability.
+- More than **1 million transactions per second (TPS).**
+
+These specifications position Polkadot as the premier platform for scalable, resilient Web3 applications.
+
+---
+
+## Why Choose JAM for Web3 Development?
+
+### Advantages Over Traditional Blockchain Development
+Historically, blockchain-based application development has been a specialized, cumbersome process. JAM eliminates these barriers by abstracting blockchain complexities, allowing developers to focus on creating applications, not wrestling with infrastructure.
+
+**Old Paradigm:**
+- Specialized blockchain programming.
+- Applications constrained by block size and gas limits.
+
+**JAM Paradigm:**
+- Build applications like in Web2.
+- JAM handles execution continuity and scalability.
+
+### JAM vs. Web2 Cloud Services
+While JAM's decentralized nature may introduce slightly higher costs compared to Web2 clouds, it offers unparalleled benefits:
+- **Resilience:** Applications are censorship-resistant and globally accessible.
+- **Direct Access to Ecosystem:** Developers retain control over transactions and user interactions, bypassing centralized intermediaries.
+
+---
+
+## A Modular Future: Decoupled Services
+JAM supports a modular architecture, allowing developers to use individual services as needed. For example:
+- A project can leverage only the **data availability layer** for specific applications.
+- Another might deploy complete **blockchain hosting services.**
+
+This flexibility mirrors Web2 cloud service models, providing developers with tailored solutions without compromising the cohesive Polkadot experience.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G9CNCNiXuJI?si=NnKVIo90_rQkdN3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Real-World Applications and Use Cases
+
+### Gaming and Beyond
+One of the most striking demonstrations of JAM’s capabilities is its ability to run standard applications, such as the classic game *Doom.* This example underscores JAM’s potential to host a wide range of Web3 applications, from gaming to enterprise-grade solutions.
+
+### Stateless Applications
+JAM supports stateless applications that rely solely on data availability layers, enabling lightweight, ephemeral services that reduce blockchain footprint.
+
+---
+
+## Challenges and the Path Ahead
+
+### Addressing Supply-Demand Imbalance
+Tabrizi acknowledged that JAM’s infrastructure is far ahead of current demand in the Web3 space. However, this overcapacity positions Polkadot to support exponential growth as the ecosystem matures.
+
+### Educating Developers
+Transitioning to JAM requires a mindset shift for developers accustomed to traditional blockchain or Web2 paradigms. The Polkadot ecosystem must invest in education and tooling to drive adoption.
+
+---
+
+## Conclusion: JAM as the Future of Polkadot and Web3
+
+JAM represents a paradigm shift for Polkadot and the broader Web3 landscape. By reimagining Polkadot as a Web3 cloud, JAM empowers developers to build decentralized applications with the simplicity and scalability of traditional cloud platforms.
+
+ <ShowcaseCTA title="In one sentence:"> **JAM is the beginning of the Polkadot Cloud, a scalable, secure, and resilient platform for the next generation of Web3 applications.** </ ShowcaseCTA> 
+
+For developers, JAM offers an unprecedented opportunity to redefine what’s possible in Web3. As Tabrizi aptly concluded, the future of decentralized applications lies not in blockchains but in the cloud.

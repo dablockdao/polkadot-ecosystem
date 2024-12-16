@@ -1,0 +1,45 @@
+---
+export interface Props {
+  showOnlyTwoCards?: boolean;
+  variant?: "grey" | "white";
+}
+
+const { showOnlyTwoCards, variant = "grey" } = Astro.props;
+
+let data = [
+  {
+    icon: "team-four",
+    title: "Join the Polkadot Ecosystem",
+    description: "Join one of the different communities in the Polkadot ecosystem and start your journey",
+    ctaText: `Join via <a target='_blank' rel='noopener noreferrer' href='https://polkadotecosystem.com/hub'>Polkadot Communities</a>`
+  },
+  {
+    icon: "help-circle",
+    title: "Help build this Portal",
+    description: "Help us build this portal by contributing to the codebase or by suggesting improvements",
+    ctaText: `<a href='https://github.com/dablockdao/dot-media' target='_blank' rel='noopener noreferrer'>Github</a>`
+  },
+];
+
+if (showOnlyTwoCards) {
+  data = data.slice(0, 2); // Usa slice en lugar de splice para evitar modificar el array original
+}
+
+const colorOptions = {
+  grey: "card-grey",
+  white: "card-white"
+};
+---
+
+<section class="c-footer-cards">
+  <h2 class="sr-only">Useful links</h2>
+  <ul class="card-list">
+    {data?.map((item) => (
+      <li class={`card ${colorOptions[variant]}`}>
+        <h3 class="card-title">{item.title}</h3>
+        <p class="card-description">{item.description}</p>
+        <p class="card-cta" set:html={item.ctaText} />
+      </li>
+    ))}
+  </ul>
+</section>

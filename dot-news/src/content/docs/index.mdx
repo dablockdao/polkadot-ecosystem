@@ -1,0 +1,52 @@
+---
+title: Polkadot News
+description: The latest Polkadot ecosystem news, guides, and lists.
+template: splash
+banner:
+  content: 
+    Unlock All the Highlights from the <strong>Sub0 Reset</strong>.
+    <a target="_blank" rel="noopener noreferrer" href="//media.polkadotecosystem.com/events/sub0/ ">Check it out!</a>
+sidebar:
+  label: Home
+hero:
+  tagline: Stay informed with the latest updates, projects, and innovations in the Polkadot ecosystem—your go-to source for all things Polkadot.
+  image:
+    file: ../../assets/polkadotnews1.png
+  actions:
+    - text: Guides
+      link: /guides/
+      icon: right-arrow
+    - text: Lists
+      link: /lists/
+      icon: right-arrow
+      variant: minimal
+---
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+import { Card, CardGrid, LinkCard, LinkButton, FileTree } from '@astrojs/starlight/components';
+
+Stay updated with the latest news and developments in the Polkadot ecosystem, covering updates, announcements, and breakthroughs.
+
+<CardGrid>
+	<Card title="Guides" icon="laptop">
+		Guides for beginners and advanced users...  <strong><a href="/guides/">Polkadot Guides</a> </strong>
+	</Card>
+	<Card title="Rankings" icon="rocket">
+		Lists with all the dapps, tools, daos... <strong><a href="/lists/">Polkadot Rankings</a> </strong>
+	</Card>
+</CardGrid>
+
+![Polkadot News](../../assets/polkadot-news.png)
+
+### Latest Guides
+--------------
+ <DirectoryLinks directory="guides" limit={10} />
+
+ ### Latest Lists
+--------------
+  <DirectoryLinks directory="lists" limit={10} />
+
+### Latest Polkadot News
+--------------
+ <DirectoryLinks directory="news" limit={10} />

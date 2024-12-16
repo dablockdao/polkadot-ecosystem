@@ -1,0 +1,26 @@
+---
+import type { InferGetStaticPropsType } from 'astro'
+
+import Page from '../components/Page.astro'
+import PostCount from '../components/PostCount.astro'
+import Posts from '../components/Posts.astro'
+import { getPageProps } from '../libs/page'
+import { getTagsStaticPaths } from '../libs/tags'
+
+export const prerender = true
+
+export function getStaticPaths() {
+  return getTagsStaticPaths()
+}
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
+
+const { entries, label, locale } = Astro.props
+
+const pageProps = getPageProps(label)
+---
+
+<Page {...pageProps}>
+  <PostCount>{Astro.locals.t('starlightBlog.tags.count', { count: entries.length, tag: label })}</PostCount>
+  <Posts {entries} {locale} />
+</Page>

@@ -1,0 +1,86 @@
+---
+title: Polkadot Events
+description: Discover the top Polkadot events like Polkadot Decoded, Web3 Summit, Sub0, Protocol Berg, and Token2049.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseImage, ShowcaseProfile, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+import { Image } from 'astro:assets';
+import sub0 from '/src/assets/sub0-reset/sub0-reset.webp'; 
+import decoded from '/src/assets/decoded-2024/polkadot-decoded-2024.webp'; 
+import web3summit from '/src/assets/web3-summit/web3-summit-2024.webp'; 
+
+Polkadot events are pivotal gatherings within the blockchain and Web3 community, designed to foster innovation, collaboration, and education. These events range from large-scale conferences to specialized developer meetups, each playing a unique role in the ecosystem’s growth. Attendees include developers, investors, innovators, and enthusiasts who come together to discuss the latest advancements, explore new technologies, and shape the future of decentralized networks. By participating in these events, individuals can gain insights, network with key stakeholders, and contribute to the vibrant Polkadot ecosystem.
+
+| **Events Features**            | **Details**                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| **Key Participants**     | • Developers. &nbsp; • Investors. &nbsp; • Innovators. &nbsp; • Enthusiasts.     |
+| **Core Objectives**      | • Discuss advancements in Polkadot and Web3. &nbsp; • Explore new technologies. &nbsp; • Collaborate to solve challenges. |
+| **Benefits of Participation** | • **Insights** (Understand trends) &nbsp; • **Networking** (Connect with key players) &nbsp; • **Contribution** (Shape the ecosystem) |
+
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Sub0',
+      picture: import('/src/assets/sub0logo.webp'),
+      href: '/events/sub0/',
+      description: 'Go see all the Polkadot Sub0 Content, the developer conference.',
+    },
+    {
+      name: 'Decoded',
+      picture: import('/src/assets/decodedlogo.webp'),
+      href: '/events/decoded/',
+      description: 'Go see all the Polkadot Decoded Content, the flagship event.',
+    },
+  ]}
+/>
+
+<CardGrid>
+<LinkCard title="Web3 Summit" href="/events/web3-summit/" />
+<LinkCard title="Miscellaneous Events" href="/events/miscellaneous/" />
+</CardGrid>
+
+
+## Polkadot Decoded
+----------------
+Polkadot Decoded is a flagship event held annually, bringing together developers, investors, and blockchain enthusiasts. This conference offers in-depth discussions on Polkadot’s latest innovations, network upgrades, and ecosystem growth. It features keynote speeches, panel discussions, and hands-on workshops aimed at fostering collaboration and knowledge sharing within the Polkadot community.
+[<Image src={decoded} alt="Polkadot Decoded" />](/events/decoded/)
+<DirectoryLinks directory="events/decoded" limit={10} />
+
+## Sub0
+----------------
+Sub0 is Polkadot’s dedicated developer conference, designed to connect blockchain developers and enthusiasts. It provides a space for sharing technical knowledge, exploring new tools and technologies, and collaborating on innovative projects. The conference features technical sessions, coding workshops, and networking opportunities, making it an essential event for anyone involved in Web3 development.
+[<Image src={sub0} alt="Sub0" />](/events/sub0/)
+<DirectoryLinks directory="events/sub0" limit={10} />
+
+<ShowcaseCTA title="Do you want to add or modify any content?">
+If you want to link resources, add new talks or modify content, you can do it directly!
+  [Send a PR](https://github.com/dablockdao/dot-media).
+</ShowcaseCTA>
+
+## Web3 Summit
+----------------
+The Web3 Summit is another major event in the Polkadot ecosystem, focused on advancing the decentralized web. This summit attracts top speakers and innovators who discuss the future of Web3, offering a platform for networking and collaborative innovation. The event includes workshops, hackathons, and exhibitions showcasing cutting-edge Web3 technologies.
+[<Image src={web3summit} alt="Web3 Summit" />](/events/web3-summit/)
+
+<DirectoryLinks directory="events/web3-summit" limit={10} />
+
+## Keynote Lecture Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=UxcmPC-yY0A',
+      title: 'Sub0 Reset - Gavin Wood',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=MrWioikibEI',
+      title: 'Web3 Summit - Gavin Wood',
+    },
+  ]}
+/>
+

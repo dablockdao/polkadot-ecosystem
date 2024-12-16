@@ -1,0 +1,111 @@
+---
+title: Building on Polkadot (Workshop)
+description: Discover how to build on Polkadot using powerful tools, libraries, and strategies for web, mobile, and blockchain development.
+sidebar:   
+    label: Shawn Tabrizi (Polkadot)
+    order: 3
+---
+
+import { Image } from 'astro:assets';
+import coverImage from '/src/assets/sub0-reset/shawn-tabrizi-polkadot.webp';
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseImage, ShowcaseCTA } from 'starlight-showcases';
+
+<Image src={coverImage} alt="shawn-tabrizi-polkadot" />
+
+# Workshop: Building on Polkadot
+
+The Polkadot ecosystem offers unmatched scalability, interoperability, and developer flexibility. Whether you're a novice developer just getting started or an experienced coder venturing into the blockchain space, Polkadot presents a vibrant landscape to innovate, build, and contribute. This article explores insights shared by [Shawn Tabrizi](https://x.com/shawntabrizi) during a recent workshop at the Sub0 Reset, breaking down the essential tools, strategies, and opportunities for building applications on Polkadot.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSfA1FxlfCySvvWC2RdZYLVyyueoan0rbg8wGTNtf_2IPxgHnxtkk5POap7jlkry1ckCT3PQKxAVHvI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+ 
+## Understanding the Polkadot Ecosystem
+
+Polkadot is a **multi-chain blockchain platform** that connects various specialized blockchains, called parachains, into a unified network. This design enables parachains to leverage Polkadot’s shared security and interoperability while maintaining their unique functionalities. As a developer, Polkadot offers numerous opportunities to create applications on several levels:
+
+- **Runtime and Core Development**: Building custom blockchains and smart contracts.
+- **Application Layer Development**: Creating web, mobile, and desktop apps that leverage Polkadot's existing infrastructure.
+
+The workshop primarily targeted introductory-level developers, aiming to simplify and encourage the first steps toward building on Polkadot. However, the advanced possibilities for those with experience were also emphasized, showcasing the ecosystem's versatility.
+
+---
+
+## Getting Started with Development
+
+One of the key challenges for developers is overcoming the intimidation of building something entirely new, particularly in a specialized ecosystem like Polkadot. The workshop highlighted essential tools and strategies to lower this barrier.
+
+### **1. Libraries and Tools for Development**
+
+Polkadot provides a robust suite of libraries to support diverse development needs:
+
+#### **For Web Developers**
+- **Polkadot.js API**: A comprehensive library for interacting with Polkadot nodes.
+- **Polkadot.js Apps**: A browser-based interface for managing accounts, submitting transactions, and exploring the chain.
+- **PAPI**: A newer, light-client-first library that simplifies cross-chain interaction. [PAPI](https://papi.how/).
+- **SubXT**: A Rust-based library that supports compiling web apps into WebAssembly, ideal for high-performance use cases.
+
+#### **For Mobile Developers**
+- **Nova SDK**: Separate Android and iOS libraries allow seamless integration of Polkadot features like transaction signing and account management into mobile apps.
+
+#### **For Desktop Developers**
+- **Unity SDK**: Designed for game development, this SDK facilitates blockchain integration directly into Unity-based applications.
+- **Python and .NET Libraries**: Powerful options for developers building analytics tools or other heavy-lifting applications on desktop platforms.
+
+### **2. Building the First Application**
+
+The workshop emphasized the importance of writing the first line of code to "unlock" the development mindset. Developers were encouraged to start small, such as building a UI to query account balances or track token transactions.
+
+A practical example shared was a simple HTML-based app using the PAPI library. With minimal code, the app connected to a Polkadot node to fetch basic account details, demonstrating the simplicity and power of the Polkadot ecosystem.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AOungsvyRag?si=HedDJ9jQKfYfCT-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Expanding to Specialized Applications
+
+Once developers are comfortable with basic integrations, Polkadot allows scaling efforts to more sophisticated applications:
+
+### **Stateless Verifiable Applications**
+
+A notable concept discussed was the creation of **stateless verifiable applications**. These apps leverage blockchain data without requiring on-chain storage, focusing on:
+
+- **Stateless operations** that rely on existing blockchain history.
+- **Verifiable rules** and protocols that anyone can execute and audit independently.
+
+An example shared was **1 Million Remarks**, an early Polkadot project that allowed users to submit pixel data via the blockchain, creating a collaborative digital canvas. This project utilized Polkadot's "remark" extrinsics, showcasing how lightweight apps can thrive in this ecosystem.
+
+### **Smart Contracts and Runtime Development**
+
+For developers looking to dive deeper:
+- **Ink!**: Polkadot’s smart contract language, based on Rust, provides a robust and efficient alternative to Solidity.
+- **Substrate Framework**: The foundation for building custom blockchains on Polkadot, allowing developers to customize every aspect of their chain.
+
+The workshop also introduced the **Polkadot Open Runtime Environment (PORE)**, emphasizing compatibility with Ethereum Virtual Machine (EVM) tools. This enables developers to port Solidity-based applications seamlessly into the Polkadot ecosystem.
+
+---
+
+## Building Games on Polkadot
+
+Blockchain gaming is another emerging use case in Polkadot. The workshop provided critical insights for developers considering game development:
+
+- Avoid transferring complex game logic onto the blockchain. Instead, leverage Polkadot for asset ownership, verifiable outcomes, and decentralized marketplaces.
+- Tools like Unity SDK enable integrating blockchain features into games while keeping core gameplay off-chain.
+- Examples included turn-based games and collectible card games, which align well with Polkadot’s transaction-based architecture.
+
+---
+
+## Monetization and Funding Opportunities
+
+One recurring challenge for developers is monetizing their projects. Polkadot offers multiple avenues for earning rewards while contributing to the ecosystem:
+
+1. **Hackathons and Developer Challenges**: Regular events like SubZero provide cash prizes and recognition for innovative applications.
+2. **Bounties**: Platforms like [Build on Dot](https://buildondot.com/) and the **Polkadot Bounties Repo** list project ideas and open issues funded by the Polkadot Treasury.
+3. **Tips and Grants**: Developers can propose projects to the Polkadot Treasury for retroactive funding based on their contributions.
+
+---
+
+## The Road Ahead
+
+Building on Polkadot requires a mix of creativity, technical skill, and resourcefulness. Developers are encouraged to leverage existing tools and documentation to create meaningful applications. While blockchain technology can be complex, Polkadot's ecosystem aims to simplify the process, providing unparalleled opportunities to innovate.
+
+Whether starting with a simple UI to display blockchain data, building a decentralized game, or exploring runtime development, Polkadot offers a flexible foundation to support diverse developer goals.
+
+As highlighted in the workshop, the key to success is **starting small, iterating, and collaborating with the broader community**. By focusing on practical applications, developers can unlock the vast potential of Polkadot, driving innovation and adoption in the blockchain space.
