@@ -19,7 +19,7 @@ export default defineConfig({
 	}),
 	integrations: [
 		icon(),
-		sitemap({ xslURL: '/sitemap.xsl' }),
+		sitemap(),
 		starlight({
 			plugins: [
 				starlightImageZoom(),
