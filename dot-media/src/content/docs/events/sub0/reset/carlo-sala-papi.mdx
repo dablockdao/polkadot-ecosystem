@@ -1,0 +1,99 @@
+---
+title: Next-Generation Developer Tools for Polkadot
+description: Discover Polkadot's next-gen devtools from Sub0 Reset 2024, featuring the groundbreaking Polkadot-API Developer Console for enhanced developer experiences.
+sidebar:
+    label: Carlo Sala (PAPI)
+    oder: 15
+---
+
+import { Image } from 'astro:assets';
+import coverImage from '/src/assets/sub0-reset/carlo-sala-papi.webp';
+
+<Image src={coverImage} alt="Carlo Sala - PAPI" />
+
+At Sub0 Reset 2024, Carlo Sala, a software engineer at StreamSphere Labs and a key contributor to the Polkadot API (PAPI), delivered a compelling presentation titled **"Next Gen Devtools for Polkadot"**. Joined by Victor, his colleague and co-developer, the talk showcased the unveiling of the Polkadot-API Developer Console (PAPI Console). This new tool aims to set a higher standard for development within the Polkadot ecosystem, emphasizing modularity, open access, and a developer-first approach.
+
+The presentation highlighted not only the innovative capabilities of the PAPI Console but also the vision of creating a comprehensive suite of tools to empower developers at all levels. Here’s an in-depth look at what was discussed.
+
+---
+
+## Empowering Polkadot Development: The Rationale Behind Devtools
+
+### Why Focus on Developer Tools Now?
+
+Carlo explained that while Polkadot has been celebrated for its technological depth, its development tools have lagged behind other Web3 ecosystems in terms of usability and functionality. Previously, the PAPI team concentrated on enhancing dApp development, providing tools for high-level developers to improve their performance and user experience. However, the need for robust lower-level tools became evident through community feedback.
+
+Key motivations for focusing on devtools include:
+
+1. **Community Demand**: Developers expressed hesitation to migrate to PAPI due to perceived gaps in the ecosystem's tooling.
+2. **Closing the Experience Gap**: Competing ecosystems have set benchmarks for developer experience, which Polkadot must match to remain competitive.
+3. **Empowering Innovation**: By offering modular libraries, the team aims to enable developers to create their own tools, avoiding the pitfalls of vendor lock-in.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSzUvckUwiKJhsaF_1JSovgFG9g23pVMRApRvwdCs4b3AhPq83nr3nwTqCkDDitWw1oJ_Z9VeZAppgK/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## The Polkadot-API Developer Console: Features and Innovations
+
+Victor introduced the PAPI Console through a live demo, showcasing its features and the principles guiding its development. Built using PAPI's modular, low-level libraries, the console is designed to streamline development workflows while ensuring flexibility and ease of use.
+
+### Key Features
+
+1. **Enhanced Block Explorer**:
+   - Displays finalized and pending blocks with visual indicators, including fork visualization.
+   - Offers detailed block insights, such as transactions, events, and block status updates in real-time.
+
+2. **Advanced Transaction Decoding**:
+   - Provides a comprehensive extrinsics editor.
+   - Visualizes SCALE-encoded data in a tree structure, allowing users to inspect and modify individual fields.
+   - Supports submitting transactions directly to the chain and viewing results without losing context, addressing a common frustration with existing tools.
+
+3. **Storage and Runtime Calls**:
+   - Allows for querying and decoding on-chain storage with support for multi-key queries.
+   - Includes runtime call exploration with detailed input visualization for complex structures.
+
+4. **Metadata Explorer**:
+   - A fully interactive interface for navigating and inspecting chain metadata.
+   - Links metadata entries to their binary representations, enabling precise exploration.
+
+5. **Subscription Control**:
+   - Lets developers pause and resume subscriptions to dynamic data like events or block updates, improving workflow management.
+
+6. **Chain Agnostic and Light-Client Ready**:
+   - By default, the console connects using a light client, ensuring decentralized operation without reliance on centralized RPC nodes.
+
+---
+
+## Building with PAPI: A Developer-Centric Approach
+
+### Modularity as a Core Principle
+
+One of the standout aspects of PAPI is its modular architecture. Each library in the PAPI suite is designed to be composable, ensuring that developers can leverage only the components they need. This approach prevents dependency lock-in and fosters innovation by allowing the community to build custom tools and solutions.
+
+### Time-to-Build: A Testament to PAPI’s Power
+
+Victor revealed that the console was built in just 2-3 weeks of spare time, a testament to the efficiency and flexibility provided by PAPI’s libraries. The rapid development cycle underscores the potential for ecosystem contributors to create impactful tools with minimal overhead.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aOyLhABWGOA?si=Tu3eff9g6o5R1Skz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Future Directions and Community Involvement
+
+### Open-Source Commitment
+
+The source code for the PAPI Console will be made publicly available, reinforcing the team's commitment to transparency and open collaboration. By providing developers with the ability to fork and customize the console, the team aims to accelerate tool development across Polkadot.
+
+### Ecosystem Integration
+
+The PAPI Console is not limited to Polkadot. Developers can integrate their own parachains or appchains by configuring the console to connect to custom RPC endpoints. This flexibility ensures that the tool can serve the diverse needs of the Polkadot ecosystem.
+
+---
+
+## Closing the Gap: Enhancing the Polkadot Developer Experience
+
+The Polkadot-API Developer Console represents a significant leap forward in Polkadot’s developer tooling. By addressing long-standing gaps and prioritizing modularity, the PAPI team is setting a new standard for developer experience within the ecosystem. As Polkadot continues to grow, tools like the PAPI Console will play a crucial role in attracting and retaining top-tier developer talent.
+
+The presentation concluded with an open Q&A session, where attendees expressed excitement about the console's capabilities and its potential for widespread adoption. Questions ranged from multi-chain support to custom integrations, highlighting the broad interest in improving Polkadot’s developer tooling.
+
+With the PAPI Console now in beta and its source code soon to be released, the Polkadot ecosystem is poised to enter a new era of innovation and accessibility.
+
+---
+
+This milestone is just the beginning. The Polkadot ecosystem, driven by its vibrant community and innovative contributors like Carlo Sala and the StreamSphere Labs team, is taking a bold step toward realizing its full potential as the foundation for Web3 development.

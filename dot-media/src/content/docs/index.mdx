@@ -1,0 +1,133 @@
+---
+title: All the Polkadot Media
+description: Discover Polkadot event talks and interviews showcasing blockchain innovations and insights.
+template: splash
+banner:
+  content: |
+    Be ready for all the content from the Sub0 Reset!
+    <a href="/events/sub0/">Check it out</a>
+hero:
+  tagline: Explore Polkadot’s top event talks and interviews, featuring insights from blockchain leaders on tech innovation and community.
+  image:
+    file: ../../assets/polkadotmedia11.png
+  actions:
+    - text: Events
+      link: /events/
+      icon: right-arrow
+    - text: Interviews
+      link: /interviews/
+      icon: external
+      variant: minimal
+---
+import { ImageCard, LinkButton2 } from '../../components/ImageCard.astro';
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseImage, ShowcaseYouTube, ShowcaseTwitter, ShowcaseProfile, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+import { Image } from 'astro:assets';
+import media from '/src/assets/polkadotmedia55.png'; 
+import sub0 from '/src/assets/sub0-reset/sub0-reset.webp'; 
+import decoded from '/src/assets/decoded-2024/polkadot-decoded-2024.webp'; 
+import web3summit from '/src/assets/web3-summit/web3-summit-2024.webp'; 
+
+&nbsp;
+
+----------
+
+&nbsp;
+
+
+<div class="container">
+  <div class="left-section">
+    <a href="/interviews/">
+      <Image src={media} alt="Polkadot Media" style="width: 100%; height: auto; object-fit: cover;" />
+    </a>
+  </div>
+  <div class="right-section">
+### Events & Interviews
+
+| Event | Description |
+|-------|-------------|
+| [Sub0](/events/sub0/) | Polkadot's flagship event for developers |
+| [Decoded](/events/decoded/) | Polkadot's main event |
+| [Web3 Summit](/events/web3-summit/) | Web3 Summit |
+
+| Interview Series | Description |
+|------------------|------|
+| [Behind the Code](/interviews/behind-the-code/) | Giving voice to Polkadot key figures |
+| [Space Monkeys](/interviews/space-monkeys/) | More than 150 interviews to Polkadot buildes |
+| [Dotcast](/interviews/dotcast/) | Polkadot interviews in spanish |
+
+  </div>
+</div>
+
+
+&nbsp;
+
+
+## Polkadot Sub0
+----------------
+[<Image src={sub0} alt="Sub0 Reset" />](/events/sub0/)
+
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/sub0-reset/gavin-wood-jam.webp'),
+      href: '/events/sub0/reset/gavin-wood-jam',
+      title: 'Gavin Wood (JAM)',
+      description: 'Discover JAM with Gavin Wood, a innovative protocol revolutionizing Web3 scalability with a trustless supercomputer model.'
+    },
+                     {
+      thumbnail: import('/src/assets/sub0-reset/shawn-tabrizi-polkadot.webp'),
+      href: '/events/sub0/reset/shawn-tabrizi-polkadot/',
+      title: 'Shwan Tabrizi (Polkadot)',
+      description: 'Discover how JAM transforms Polkadot into a scalable Web3 cloud, enabling decentralized applications with unmatched flexibility and resilience.'
+      },  
+    {
+      thumbnail: import('/src/assets/sub0-reset/bryan-chen-acala.webp'),
+      href: '/events/sub0/reset/bryan-chen-acala/',
+      title: 'Bryan Chen (Acala)',
+      description: 'Explore Acala vision for frictionless UX and unified liquidity with JAM, reshaping DeFi through cross-chain innovation and tools.'
+      },
+  ]}
+/>
+
+<DirectoryLinks directory="events/sub0/reset" limit={6} />
+
+&nbsp;
+
+## Polkadot Decoded
+------
+[<Image src={decoded} alt="Sub0 Reset" />](/events/decoded/)
+
+<DirectoryLinks directory="events/decoded" limit={10} />
+
+&nbsp;
+
+<ShowcaseCTA title="Do you want to add or modify any content?">
+If you want to link resources, add new talks or modify content, you can do it directly!
+  [Send a PR](https://github.com/dablockdao/dot-media).
+</ShowcaseCTA>
+
+## Web3 Summit
+------
+[<Image src={web3summit} alt="Sub0 Reset" />](/events/web3-summit/)
+
+<DirectoryLinks directory="events/web3-summit" limit={4} />
+
+## Keynote Lecture Videos
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=UxcmPC-yY0A',
+      title: 'Sub0 Reset - Gavin Wood',
+      description: 'Discover JAM with Gavin Wood, a innovative protocol revolutionizing Web3 scalability with a trustless supercomputer model.',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=MrWioikibEI',
+      title: 'Web3 Summit - Gavin Wood',
+      description: 'Gavin Wood vision on Web3 citizenship: introducing digital individuality mechanisms and blockchain-based identity solutions',
+    },
+  ]}
+/>
+

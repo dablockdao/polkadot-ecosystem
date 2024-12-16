@@ -1,0 +1,21 @@
+---
+title: '10 Key Aspects of the Polkadot Fellowship'
+description: '10 key aspects to understand how the Polkadot fellowship works and how to be able to join this polkadot collective of core developers.'
+---
+The [**Polkadot Fellowship**](https://dablock.com/ecosystem/polkadot-fellowship/) is a membership organization integral to the Polkadot ecosystem, designed to be a rules-based, rank-order society whose administration is deeply rooted in blockchain protocols. Dr. Gavin Wood, a key figure in the creation of Polkadot, has detailed the structure and objectives of the Fellowship in the [**Polkadot Fellowship Manifesto**](https://github.com/polkadot-fellows/manifesto/blob/main/manifesto.pdf). The Fellowship’s formation was propelled by the need for a more structured and systematic approach to managing the decentralization of technical decision-making and governance within the Polkadot network.
+
+Key Aspects of the Polkadot Fellowship:
+---------------------------------------
+
+1. **Membership and Rank**: The Fellowship is structured with a hierarchical ranking system, where members ascend through demonstrating expertise and contribution to the network. Entry into the Fellowship begins with candidacy and progresses through various ranks, each associated with increasing responsibilities and recognition.
+2. **Technical Expertise**: The Fellowship primarily values technical expertise relevant to the Polkadot protocol. Members are expected to contribute to the development, formalization, and improvement of core protocol components. As they advance in rank, their contributions and leadership roles expand.
+3. **Governance Role**: The Fellowship members hold an influential voice within the Polkadot governance model, known as **Polkadot OpenGov**. While they do not unilaterally control the protocol’s direction, their collective expertise is recognized and can guide technical decision-making through the governance apparatus, including on-chain voting mechanisms.
+4. **Promotion and Continuity**: The advancement of members within the Fellowship is based on peer evaluation and contributions to the network. Members are encouraged to maintain their rank through active participation and can be promoted based on the merit of their work.
+5. **Fostering Expertise**: The Fellowship is aimed not only at recognizing existing talent but also at nurturing new expertise. It provides a structure for mentoring and development, ensuring that there is a consistent pipeline of skilled individuals supporting the network.
+6. **Operational Decentralization**: The Fellowship addresses the need for operational decentralization by distributing the power of decision-making among a group of knowledgeable individuals. This helps to avoid centralization risks that can come from a concentrated group of node operators or developers controlling the network.
+7. **Economic and Political Considerations**: The manifesto acknowledges the influence of economic disparity and organizational privilege in the decentralization of commercial networks. The Fellowship aims to mitigate such issues by providing a balanced and **meritocratic platform for governance**.
+8. **Decentralization Philosophy**: The Fellowship embraces the broader philosophy of Polkadot, which champions political decentralization and the empowerment of individual actors within the network to influence outcomes and ensure that the system functions as intended.
+9. **Inclusivity and Education**: The Fellowship, while exclusive in its membership, also focuses on spreading knowledge and educating the wider community about the technicalities and philosophies underpinning the Polkadot network.
+10. **Rewards and Recognition**: The Fellowship system includes allowances and prizes to financially support members’ contributions and incentivize ongoing participation and excellence within the network.
+
+In essence, the **[Polkadot Fellowship](https://dablock.com/ecosystem/polkadot-fellowship/)** plays a pivotal role in shaping the future of the Polkadot ecosystem by cultivating and **leveraging technical expertise within a decentralized governance framework**. It ensures that the growth and development of the network are driven by those who have demonstrated their capabilities and commitment to its success.

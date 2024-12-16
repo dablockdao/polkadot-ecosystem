@@ -1,0 +1,108 @@
+---
+title: Latest Features for FRAME Developers
+description: Discover the latest Polkadot SDK features for FRAME developers, including stable releases, enhanced templates, and streamlined runtime development.
+sidebar:
+    label: Kian Paimani (FRAME)
+    order: 5
+---
+
+import { Image } from 'astro:assets';
+import coverImage from '/src/assets/sub0-reset/kian-pamani-parity.webp';
+import { ShowcaseImage, ShowcaseCTA, ShowcaseTwitter, ShowcaseYouTube } from 'starlight-showcases';
+
+<Image src={coverImage} alt="kian-paimani-parity" />
+
+The Polkadot ecosystem is advancing rapidly, with FRAME (Framework for Runtime Aggregation of Modular Extensions) at the heart of its development. FRAME is a powerful toolkit for building blockchains on Substrate, Polkadot’s foundational blockchain framework. With continuous innovation, the Polkadot SDK has undergone significant improvements, making it more efficient and user-friendly for developers. Here's an in-depth look at the latest features and updates for FRAME developers as of 2024.
+
+
+Go read the [original blog post by Kian Paimani](https://blog.kianenigma.com/talks/frame-2024/)
+
+---
+
+## The Evolution of Polkadot SDK
+
+### Stable and Predictable Releases
+Historically, Polkadot SDK updates were challenging due to an inconsistent release cycle. Developers relied on Git-based dependencies, which led to complexities like version mismatches and cumbersome updates. This issue was exacerbated by "YOLO bumping," where version updates were indiscriminately applied without careful tracking of semantic changes.
+
+Now, Polkadot SDK adheres to a structured release cycle, offering quarterly stable releases. Each release follows semantic versioning (major, minor, and patch updates), ensuring that only breaking changes trigger major version bumps. For example, stable releases are labeled as `24.12` (December 2024), providing a clear timeline and maintenance window. This structured approach reduces friction for developers, who can now rely on consistent updates and security patches for at least a year.
+
+### Centralized Release Registry
+The introduction of a centralized release registry simplifies tracking updates. Developers can access detailed information about release schedules, patch dates, and version history, fostering better project planning and implementation.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRztiaCt6ZHe_iY-V0DLzwxGUsZsv33kTIBTlS8yZZO0mSchnCHsJFH1G0CP6g6Mduq60TF4M5LzHKD/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Enhanced Templates for Blockchain Development
+
+Templates are essential for kickstarting blockchain development. Polkadot SDK now offers three streamlined templates, replacing the older Substrate Node Template:
+
+1. **Polkadot SDK Parachain Template:** Designed for creating parachains, this is the flagship template maintained with the highest priority.
+2. **Polkadot SDK Solo Chain Template:** Aimed at solo chain development, this template simplifies standalone blockchain creation.
+3. **Minimal Template:** A lightweight version focused on education and testing, offering an entry point for beginners.
+
+These templates are automatically updated with each stable release, ensuring compatibility and reliability. Unlike their predecessors, they are unopinionated, allowing developers to customize features without constraints.
+
+---
+
+## Simplifying Runtime Development
+
+### Polkadot SDK Umbrella Crate
+The new `polkadot-sdk` crate consolidates numerous dependencies under a single umbrella. Previously, developers had to manage dozens of individual crates, increasing the risk of configuration errors. With this unified crate, developers now benefit from:
+
+- **Simpler Versioning:** Managing a single version for all dependencies.
+- **Streamlined Feature Management:** Features like `runtime`, `benchmarks`, and `std` are now easily toggled, reducing the likelihood of compiler errors.
+- **Faster Onboarding:** Developers can adopt the new system by cleaning up their `Cargo.toml` files, significantly reducing boilerplate code.
+
+### Polkadot SDK FRAME Crate
+The `polkadot-sdk-frame` crate complements the umbrella crate by simplifying runtime definitions. Importing FRAME components has become more intuitive with the use of standardized preludes (`frame::prelude` and `frame::runtime_prelude`). This reduces the need for repetitive imports, allowing developers to focus on writing core logic.
+
+### Construct Runtime Improvements
+The `construct_runtime!` macro, central to defining runtime configurations, has been revamped. The new version aligns more closely with Rust syntax, improving readability and reducing the learning curve for new developers.
+
+---
+
+## Advanced Features for FRAME Developers
+
+### Dev Mode
+A new "Dev Mode" in FRAME eliminates the need to define weights, indices, and other runtime constraints during development. This accelerates prototyping and testing while maintaining flexibility for fine-tuning later.
+
+### Defaults for Associated Types
+Associated types in configuration traits now support defaults. For example, the `balances` pallet can specify a default balance type (`u64` or `u128`), simplifying setup and reducing boilerplate.
+
+### View Functions
+One of the most promising updates, view functions, introduces an abstraction layer over storage APIs. These functions allow developers to define stable APIs for querying runtime state, decoupling storage layout from external interfaces. Future updates aim to make these functions subscribable, enabling real-time updates for applications. This feature is particularly beneficial for dApp developers, who can rely on consistent APIs even as underlying storage structures evolve.
+
+---
+
+## Omni Node: The Future of Polkadot Nodes
+
+The "Omni Node" initiative aims to streamline node operations by providing a universal node binary. This new approach reduces the need for developers to maintain customized node templates. Key features include:
+
+- **Parachain Compatibility:** The Omni Node is optimized for parachain collators, supporting most parachain configurations.
+- **Standalone and Test Network Support:** Developers can run solo chains or local test environments with minimal setup.
+- **Efficient Resource Usage:** By focusing on core functionality, the Omni Node simplifies deployment without sacrificing performance.
+
+The first stable version of the Omni Node is slated for release in December 2024, marking a significant milestone in Polkadot's infrastructure evolution.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dEFaEgg8Em4?si=Jd5HAfPzieB7cdb7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Enhanced Documentation and Developer Resources
+
+Comprehensive documentation is a cornerstone of any developer ecosystem. Polkadot SDK now offers:
+
+- **Improved API Docs:** Detailed documentation with examples is available on platforms like [docs.rs](https://docs.rs). These resources cover common types, traits, and macros, enabling developers to find solutions quickly.
+- **Searchable Traits and Types:** A powerful search bar on `docs.rs` allows users to explore the implementation details of traits and types effortlessly.
+- **Consistency Across Releases:** API documentation is updated automatically with every stable release, ensuring reliability and accuracy.
+
+---
+
+## Reflections on Polkadot SDK’s Maturity
+
+The Polkadot SDK has transitioned from a cutting-edge, experimental framework to a mature, stable platform. This evolution supports developers in building reliable and future-proof blockchain solutions. However, it’s essential for developers to evaluate whether their projects truly require the power and complexity of a parachain or if a simpler smart contract model suffices.
+
+---
+
+## Conclusion
+
+Polkadot SDK’s latest features for FRAME developers are a testament to the ecosystem’s commitment to usability and stability. With structured releases, enhanced templates, streamlined development workflows, and robust documentation, Polkadot is paving the way for a developer-friendly future. Whether building parachains or standalone blockchains, these updates empower developers to innovate with confidence.
+
+As the Polkadot ecosystem continues to evolve, the focus on reliability and simplicity ensures that it remains a compelling choice for blockchain developers worldwide.

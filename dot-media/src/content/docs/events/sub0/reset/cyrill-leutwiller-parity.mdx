@@ -1,0 +1,126 @@
+---
+title:  Contracts on Polkadot - Introducing Project Revive
+description: Discover Project Revive - Polkadot's innovative solution for EVM-compatible contracts, enabling Solidity, multi-language support, and groundbreaking dApp possibilities.
+sidebar:
+    label: Cyrill Leutwiller (Parity)
+    order: 5
+---
+
+import { Image } from 'astro:assets';
+import coverImage from '/src/assets/sub0-reset/cyrill-leutwiller-parity.webp';
+import { ShowcaseImage, ShowcaseProfile, ShowcaseTwitter, ShowcaseYouTube } from 'starlight-showcases';
+
+<Image src={coverImage} alt="cyrill-leutwiller-parity" />
+
+
+The Sub0 Reset 2024 event featured an exciting development in the Polkadot ecosystem: **Project Revive**, an ambitious initiative poised to revolutionize how contracts operate within the network. Presented by Cyrill Leutwiler, a core developer at Parity Technologies specializing in compilers and virtual machines, this talk delved into the technical foundations and strategic vision behind enabling **EVM-compatible contracts on Polkadot's Asset Hub**.
+
+This article explores the significance of **Referendum #885**, the core components of Project Revive, and the potential it unlocks for decentralized applications (dApps) on Polkadot.
+
+---
+
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Project Revive (Github)',
+      picture: import('/src/assets/polkadot.webp'),
+      href: 'https://github.com/paritytech/revive',
+      description: 'YUL and EVM assembly recompiler to LLVM, targetting RISC-V on PolkaVM',
+    },
+  ]}
+/>
+ ## The Referendum That Set It All in Motion
+
+[Referendum #885](https://polkadot.subsquare.io/referenda/885), titled *“Should we allow EVM-compatible contracts on Asset Hub?”*, garnered overwhelming support from the Polkadot community. This near-unanimous approval signaled strong demand for contracts functionality on the network. In response, the contracts team at Parity Technologies embarked on **Project Revive**, creating a cutting-edge technology stack tailored to meet and exceed community expectations.
+
+---
+
+## What is Project Revive?
+
+At the heart of Project Revive lies a suite of technologies designed to make Polkadot the premier platform for contract deployment and execution. These components aim to address performance, compatibility, and flexibility challenges in the broader blockchain ecosystem. The initiative includes:
+
+- **PolkaVM**: A novel, high-performance virtual machine based on RISC-V architecture.
+- **The Revive Pallet**: A runtime environment tailored for smart contract execution.
+- **LLVM-Based Solidity Compiler ("Revive")**: A custom compiler enabling Solidity compatibility.
+- **Expanded Language Support**: Compatibility with multiple programming languages for smart contracts.
+
+Together, these innovations ensure smooth integration for existing Ethereum dApps while enabling new use cases previously infeasible on other blockchains.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRWIPse3wz9FffQgctc2rhz0OqsqX7FsDbx34gO3cFcKzCCTlFf77BzyN0lkprzN2i8M1mwbOZ-vSx4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## A Closer Look at the Components
+
+### 1. **PolkaVM**
+PolkaVM is a RISC-V-based virtual machine optimized for blockchain use cases. Unlike traditional EVMs or WebAssembly runtimes, PolkaVM provides unparalleled execution efficiency through its lightweight and deterministic architecture.
+
+Key features of PolkaVM include:
+- **High Performance**: Leveraging the RISC-V embedded instruction set, PolkaVM offers faster compilation and execution times compared to alternatives like WebAssembly or Solana’s VM.
+- **Two Execution Modes**: PolkaVM supports both interpreted and just-in-time (JIT) compilation, catering to different contract workloads.
+- **Seamless Interoperability**: Compatibility with Solidity and other languages makes PolkaVM versatile for developers.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'PolkaVM (Github)',
+      picture: import('/src/assets/polkadot.webp'),
+      href: 'https://github.com/paritytech/polkavm',
+      description: 'PolkaVM is a general purpose user-level RISC-V based virtual machine.',
+    },
+  ]}
+/>
+
+### 2. **The Revive Pallet**
+The Revive Pallet is a fork of Polkadot’s existing contracts pallet, enhanced to support EVM-like functionality. It acts as the execution environment for contracts and provides:
+- **Ethereum Compatibility**: Includes an Ethereum transaction layer for seamless integration with Ethereum tooling, such as MetaMask.
+- **Optimized Gas Costs**: Enables developers to pay gas fees using DOT, USDC, or other sufficient assets.
+- **Synchronous Composability**: Facilitates efficient cross-contract calls and state updates within the same block, simplifying dApp development.
+
+### 3. **LLVM-Based Solidity Compiler**
+To achieve high Solidity compatibility, the Revive compiler translates Solidity intermediate representations (IR) into RISC-V binaries. This approach minimizes the complexity of modifying the Solidity frontend while leveraging LLVM’s robust optimization capabilities.
+
+The compilation process involves:
+1. Translating Solidity IR to LLVM bytecode.
+2. Optimizing the code using LLVM.
+3. Producing a deployable PolkaVM binary.
+
+This streamlined workflow ensures compatibility with existing Solidity-based dApps while delivering superior performance.
+
+---
+
+## Unlocking New Use Cases
+
+Project Revive isn’t just about replicating Ethereum’s functionality—it aims to **unlock unprecedented possibilities** for smart contracts. Some of the innovative use cases include:
+
+- **Multi-Language Support**: Developers can write contracts in Python, JavaScript, Rust, or any language that compiles to RISC-V.
+- **Complex Workloads**: PolkaVM’s efficiency enables advanced on-chain computations, such as cryptographic algorithms, without precompiles.
+- **Dynamic Execution**: Interpreted contracts can delegate execution to interpreter contracts, supporting dynamic languages like Move or Solana’s eBPF.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GPuTt10dxKI?si=J_kVQMbFc8s5Cfek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Why Contracts on Polkadot?
+
+Deploying contracts on Polkadot’s Asset Hub offers several strategic advantages:
+1. **Permissionless Deployment**: Developers can deploy contracts without needing to build a parachain.
+2. **Interoperability**: Asset Hub serves as a central chain for seamless interaction with staking, governance, and other pallets.
+3. **Reduced Complexity**: Developers avoid the overhead of parachain development, enabling faster time-to-market for dApps.
+4. **Scalability Potential**: Polkadot’s modular architecture supports both vertical and horizontal scaling strategies, including parallel contract execution.
+
+---
+
+## The Road Ahead
+
+Project Revive is live on Polkadot’s Westend testnet, with mainnet deployment on the roadmap for 2024. Developers are encouraged to experiment with the technology stack using Remix, an online Solidity IDE integrated with PolkaVM.
+
+Future enhancements include:
+- **Optimized Storage Access**: Addressing storage bottlenecks for faster contract execution.
+- **Parallel Execution**: Exploring optimistic approaches for simultaneous contract processing.
+- **Enhanced Ethereum Tooling**: Expanding compatibility with Ethereum’s vast ecosystem of dApp development tools.
+
+---
+
+## Conclusion
+
+With Project Revive, Polkadot is set to redefine the boundaries of smart contract functionality. By combining **Solidity compatibility**, **blazing-fast performance**, and **multi-language support**, the initiative positions Polkadot as a leader in the blockchain space.
+
+Whether you’re an Ethereum developer seeking to migrate existing dApps or a Web3 innovator exploring uncharted territory, contracts on Polkadot offer a compelling platform for your projects. Stay tuned as Project Revive continues to shape the future of decentralized applications. 

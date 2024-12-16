@@ -1,0 +1,39 @@
+
+> dot@0.0.1 build
+> astro build --silent
+
+src/content/docs/index.mdx (43:8): "ImageCard" is not exported by "src/components/ImageCard.astro", imported by "src/content/docs/index.mdx".
+src/content/docs/index.mdx (43:19): "LinkButton2" is not exported by "src/components/ImageCard.astro", imported by "src/content/docs/index.mdx".
+Generated an empty chunk: "ShowcaseImage_astro_astro_type_style_index_0_lang.8a1d1a17".
+Generated an empty chunk: "ShowcaseMediaCard_astro_astro_type_style_index_0_lang.adb91c8d".
+Generated an empty chunk: "ShowcaseProfileCard_astro_astro_type_style_index_0_lang.c30c226b".
+Generated an empty chunk: "ShowcaseProfile_astro_astro_type_style_index_0_lang.03953a75".
+Generated an empty chunk: "ShowcaseQuoteCard_astro_astro_type_style_index_0_lang.9ea10713".
+Generated an empty chunk: "ShowcaseQuote_astro_astro_type_style_index_0_lang.59db3097".
+Generated an empty chunk: "YouTube_astro_astro_type_style_index_0_lang.22163b34".
+Generated an empty chunk: "lite-yt-embed.e900ba28".
+
+Running Pagefind v1.1.1 (Extended)
+Running from: "/Users/lv/05/dot5/dot-news/node_modules/@astrojs/starlight"
+Source:       "../../../.vercel/output/static"
+Output:       "../../../.vercel/output/static/pagefind"
+
+[Walking source directory]
+Found 479 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 4 languages: en, pt, es, fr
+
+[Building search indexes]
+Total: 
+  Indexed 4 languages
+  Indexed 413 pages
+  Indexed 23630 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 1.816 seconds

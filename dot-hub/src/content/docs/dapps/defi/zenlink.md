@@ -1,0 +1,21 @@
+---
+title: Zenlink
+---
+DeFi  
+ DEX  
+
+ The 1st native cross-chain DEX protocol based on Polkadot.
+
+What is Zenlink?
+----------------
+
+**Zenlink is a decentralized cross-chain liquidity protocol aimed at enhancing interoperability across various blockchains within and outside the Polkadot ecosystem**. It facilitates the connection between different DeFi ecosystems, enabling seamless asset swaps, liquidity provision, and yield farming activities across multiple chains.
+
+### **Key Features of Zenlink:**
+
+- **Cross-Chain Liquidity Sharing**: Zenlink addresses the issue of isolated liquidity pools by facilitating the movement of assets and liquidity between diverse blockchains. This improves swap rates and reduces slippage for users.
+- **DEX Aggregator**: The protocol aggregates liquidity from various decentralized exchanges (DEXs) across Polkadot parachains, ensuring that users receive the best trading rates without the need to manually compare different platforms.
+- **Seamless Integration**: Built on the Substrate framework, Zenlink can be easily integrated with any Substrate-based blockchain and can extend to external blockchains through bridges, promoting a more interconnected DeFi environment.
+- **ZLK Token**: Zenlink’s native utility token, ZLK, is used for governance, allowing token holders to influence the protocol’s development and operation. The ZLK token also incentivizes user participation in the ecosystem.
+
+Zenlink aims to provide a unified and efficient DeFi experience by linking disparate blockchain platforms and enhancing the flow of assets and liquidity across the ecosystem.

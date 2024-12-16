@@ -1,0 +1,52 @@
+---
+title: 'Elastic Scaling for Polkadot Parachains and Cumulus Node MVP'
+description: 'Cumulus node MVP release introduces elastic scaling, enhancing throughput and performance for Polkadot parachains.'
+date: 2024-02-17
+cover:
+  alt: Elastic Scaling MVP
+  image: ../../../assets/news/polkadot-elastic-scaling-mvp.webp
+authors:
+  - LV
+tags: 
+    - tech
+---
+**The Cumulus node has recently launched its MVP release for elastic scaling**, marking a pivotal moment for parachain teams. Announced on July 31, 2024, this update introduces groundbreaking features aimed at enhancing throughput and performance across the network.
+
+Key Features of the Elastic Scaling MVP
+---------------------------------------
+
+The latest release, identified as stable2407 1, **integrates support for elastic scaling into the Cumulus node**. This new functionality allows parachains to leverage up to three cores per relay chain block. As a result, parachains can now experience up to three times the throughput compared to previous capabilities, with block times reduced to just two seconds.
+
+Polkadot Relay Chain Enhancements
+---------------------------------
+
+From a relay chain perspective, the elastic scaling functionality is fully implemented and currently **active on the Westend and Rococo testnets**. This feature represents a major step forward in Polkadot’s scalability efforts. However, due to security considerations, **all nodes (collators) of an elastic parachain are required to be trusted**. Collators must now announce or gossip blocks only to trusted nodes, necessitating a temporary private network setup until further RFC updates are completed.
+
+### Collator Adjustments
+
+Elastic scaling support for collators is accessible via a new, experimental slot-based collator mode. This functionality can be enabled using the node CLI switch: `--experimental-use-slot-based`. Despite these advancements, it is important to note that the cumulus block authorship and import pipelines are not yet optimized for elastic scaling. Consequently, the maximum achievable throughput is influenced by the number of collators and their networking latency.
+
+Currently, the maximum throughput achievable with elastic scaling is observed when using a single collator. In such cases, the system can achieve 1.3 seconds of execution and 5MB Proof of Validity (PoV) per parachain block, translating to a total execution time of 2.6 seconds for each relay chain block. Adding multiple collators to the set reduces the maximum execution time per block, though testing indicates that the optimal throughput with multiple collators is achievable with two cores.
+
+### Future Developments
+
+The Polkadot development team is committed to further optimizing the cumulus block authorship process to improve throughput limitations. The ongoing work, detailed in the GitHub issue [Elastic Scaling: Streamlined Block Production](https://github.com/paritytech/polkadot-sdk/issues/5190), aims to address current inefficiencies and enhance overall performance.
+
+Getting Started with Elastic Scaling
+------------------------------------
+
+For developers looking to experiment with the new elastic scaling features, the following prerequisites are necessary:
+
+- Polkadot binary stable2407 1
+- Polkadot-parachain binary stable2407 1
+- Latest Zombienet release
+
+A sample test for elastic scaling is available in the [Zombienet tests](https://github.com/paritytech/polkadot-sdk/pull/0000-cumulus-3cores.zndsl). This test spins up a Rococo development relay chain with three validators and one parachain, utilizing updated runtime support as per the documentation. Developers can run the test using the provided JavaScript script to assign cores to the parachain.
+
+For those using the Polkadot parachain node template, additional instructions for incorporating elastic scaling node support can be found [here](https://forum.polkadot.network/t/elastic-scaling-mvp-launched/9392).
+
+### Conclusion
+
+The launch of the elastic scaling MVP is a significant milestone for the Polkadot ecosystem, offering enhanced performance and scalability for parachains. As development continues, further optimizations are expected to refine and expand these capabilities, reinforcing Polkadot’s commitment to advancing blockchain technology.
+
+- For more information you can consult the [original post in the Polkadot forum](https://forum.polkadot.network/t/elastic-scaling-mvp-launched/9392) where you can continue the discussion about this news.

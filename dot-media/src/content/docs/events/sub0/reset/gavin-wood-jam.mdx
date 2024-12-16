@@ -1,0 +1,125 @@
+---
+title:  JAM with Gavin Wood 
+description: Discover JAM, Gavin Wood's innovative protocol unveiled at Sub0 Reset 2024, revolutionizing Web3 scalability with a trustless supercomputer model.
+sidebar:
+    label: Gavin Wood (JAM)
+    order: 2
+---
+
+import { Image } from 'astro:assets';
+import coverImage from '/src/assets/sub0-reset/gavin-wood-jam.webp';
+import { ShowcaseImage, ShowcaseCTA, ShowcaseTwitter, ShowcaseYouTube } from 'starlight-showcases';
+
+<Image src={coverImage} alt="gavin-wood-jam" />
+
+At Sub0 Reset 2024, [Gavin Wood](https://x.com/gavofyork), co-founder of Ethereum, creator of Polkadot, and a pioneer in blockchain technology, introduced more details about **JAM**, a groundbreaking protocol designed to enhance Web3 scalability and coherence. Positioned as a potential successor to the Polkadot Relay Chain, JAM integrates the strengths of Polkadot and Ethereum, offering an innovative, trustless supercomputer model. This article delves into the core principles of JAM, its architectural advancements, and its potential to revolutionize decentralized systems.
+
+---
+
+## The Vision: A Trustless Web3 Supercomputer
+
+JAM (Join-Accumulate Machine) represents a paradigm shift in blockchain design, combining high-performance computation with decentralized, trustless infrastructure. At its heart, JAM is described as a **trustless supercomputer**, capable of executing massive parallel computations while maintaining decentralization and resilience.  
+
+### Key Features of JAM:
+- **Decentralization:** Eliminates reliance on centralized servers.
+- **Multi-Core Architecture:** Comprises 341 computational cores designed for scalable operations.
+- **Shared State Coherence:** Strives for a "mostly coherent" shared memory model.
+- **Data and Compute Synergy:** Offers 1.6 petabytes of storage with high data throughput.
+- **Asynchronous Design:** Introduces flexibility in execution without persistent state partitioning.
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRMnPBHLVjT0DAPFzJtdYGrxvtMuQvaViBAspQ8pKCY0cD3dBWVQwd8jVTlPACcOA7oEeD1advDpTMM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Core Principles: Web3 Maxims and JAM
+
+Gavin Wood contextualized JAM within the broader Web3 framework, emphasizing five key principles:
+
+1. **Resilience:** Ensuring systems remain operational under adverse conditions.
+2. **Generality:** Providing versatile solutions applicable across diverse use cases.
+3. **Performance:** Achieving scalability without compromising throughput.
+4. **Coherence:** Balancing distributed systems' need for synchronization.
+5. **Accessibility:** Reducing barriers for developers and end-users.
+
+JAM's unique contribution lies in its ability to enhance **performance** and **coherence**, traditionally antagonistic goals in decentralized systems.
+
+---
+
+## JAM vs. Legacy Models: A Comparative Analysis
+
+### 1. **Ethereum Layer 1 and Layer 2**
+   - **Challenges:** High costs, low throughput, and fragmented Layer 2 solutions.
+   - **JAM’s Solution:** Unified state management, eliminating persistent partitioning and ensuring seamless integration.
+
+### 2. **Polkadot 1.0**
+   - **Limitations:** Persistent state partitioning among parachains and high barriers to entry.
+   - **JAM’s Improvement:** A multi-core compute model with dynamic state coherence, reducing dependency on rigid parachain structures.
+
+### 3. **Alternative Scaling Models**
+   - **Bridging Chains:** Prone to security risks like causal poisoning.
+   - **Validator Supercharging:** Centralizing tendencies and hardware constraints.
+   - **JAM’s Approach:** Agile affinity management and asynchronous scalability while maintaining decentralization.
+
+---
+
+## JAM’s Architecture: A Deep Dive
+
+JAM emulates modern CPU architecture to address the complexities of decentralized scaling. Key architectural highlights include:
+
+### Multi-Core Design
+- Each core operates independently but can share data through a "mostly coherent" storage model.
+- **Performance Metrics:**
+  - Compute throughput: Equivalent to 341 AMD Threadripper CPUs.
+  - Data bandwidth: ~682 MB/s aggregate memory bandwidth.
+  - Storage capacity: 1.6 petabytes with rapid access.
+
+### Shared State Coherence
+JAM introduces a nuanced approach to shared state:
+- **Affinity Management:** Data is cached closer to relevant cores for efficient computation.
+- **Resolution Mechanisms:** Ensures eventual consistency across distributed systems.
+
+### Persistent Object Model
+- JAM introduces a **persistent object model environment**, akin to object-oriented programming, enabling trustless, asynchronous interactions.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UxcmPC-yY0A?si=-fQVvTrRGWcCCpfg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Service Pipeline: How JAM Operates
+
+The JAM service pipeline encompasses four computational stages:
+
+1. **Authorization:** Validates workloads and their associated resource allocations.
+2. **Refine:** Executes core computations, leveraging JAM’s high-performance cores.
+3. **Accumulate:** Processes outputs into a coherent database for inter-service interactions.
+4. **Transfer:** Handles cross-service messaging and state transitions.
+
+This structure ensures efficient resource utilization while maintaining trustless operations.
+
+---
+
+## Real-World Applications and Future Roadmap
+
+### Key Use Cases:
+- **Blockchain Hosting:** JAM provides scalable security and finality for L1 blockchains.
+- **Smart Contracts:** Supports advanced asynchronous and synchronous execution.
+- **General Compute:** Enables complex workloads, from decentralized applications to high-performance simulations.
+
+### Development Milestones:
+- **Gray Paper Evolution:** The JAM specification has undergone multiple iterations, integrating feedback from real-world tests.
+- **Core Services:** Initial services like Core VM and Core Chains aim to demonstrate JAM’s potential, including ambitious projects like running the classic game Doom on-chain.
+- **Future Enhancements:** The roadmap includes protocol optimizations, SDK development, and real-world deployment in testnets and production environments.
+
+---
+<ShowcaseTwitter
+  entries={[
+    'https://x.com/gavofyork/status/1860633087136178639',
+  ]}
+/>
+
+ <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+## Conclusion
+
+JAM represents a transformative step in blockchain technology, addressing scalability and coherence challenges while staying true to Web3 principles. With its trustless supercomputer design, JAM not only redefines Polkadot’s architecture but also sets a new benchmark for decentralized systems worldwide.  
+
+Gavin Wood’s vision for JAM underscores its potential as a foundation for the next generation of Web3 applications, blending performance, accessibility, and resilience into a unified protocol.
+
+- Learn more about JAM at the [Polkadot Wiki](https://wiki.polkadot.network/docs/learn-jam-chain)

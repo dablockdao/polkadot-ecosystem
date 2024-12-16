@@ -1,0 +1,79 @@
+---
+title: Midnight - Enabling Data Protection dApps Using Substrate  
+description: Discover how Midnight leverages Substrate and ZK proofs to enable secure, privacy-focused dApps with compliance and selective disclosure.
+sidebar:
+    label: Justin Frevert (Midnight)
+    
+---
+
+import { Image } from 'astro:assets';
+import coverImage from '/src/assets/sub0-reset/justin-frievert-midnight.webp';
+
+<Image src={coverImage} alt="Midnight Sub0" />
+
+
+The Sub0 Reset 2024 event showcased cutting-edge advancements in blockchain technology, with a key highlight being the presentation on Midnight by Justin Frevert. Midnight is a data protection-oriented blockchain built on Substrate, designed to empower developers to create privacy-preserving decentralized applications (dApps) with compliance features. This article delves into the core aspects of Midnight, its integration with the Substrate framework, and the innovative use of zero-knowledge (ZK) proofs to protect data integrity and privacy.  
+
+## What is Midnight?  
+Midnight is a partner chain to Cardano, leveraging Substrate to provide data protection features. Unlike conventional privacy-preserving blockchains, Midnight incorporates **selective disclosure**, enabling compliance with regulatory frameworks while maintaining privacy. Its primary focus is safeguarding asset transactions and smart contract states through advanced cryptographic methods.  
+
+Key elements of Midnight include:  
+- **Data Protection**: Ensures privacy for asset transactions and smart contracts using ZK proofs.  
+- **Selective Disclosure**: Allows users to reveal specific data for regulatory or compliance needs.  
+- **Tokens**: The chain operates with two tokens: Knight (unshielded) and Dust (shielded).  
+- **Partnership with Cardano**: Midnight shares security and utility features with the Cardano blockchain.  
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ2Vz4IsdBGs8J6pVpM7PsvvrSYQLQbuLX9kWtfWYASSl0Eoq3DKfvOG6tCuUeTr7K3sAP4q4EPvkU7/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Core Features and Technology  
+
+### Data Protection with ZK Proofs  
+At the heart of Midnight’s architecture is the use of ZK proofs to validate transactions and enforce compliance without exposing sensitive information. The Halo 2 proof system, based on the BLS12-381 curve and KZG polynomial commitments, underpins Midnight's ZK capabilities. These cryptographic techniques allow developers to define privacy rules and generate proofs locally using a custom language called **Compact**, inspired by TypeScript.  
+
+Midnight supports:  
+- **Atomic Swaps**: Privacy-preserving transactions that allow parties to exchange assets securely.  
+- **Smart Contract Privacy**: Developers can define provable private states that interact seamlessly with on-chain and off-chain data.  
+
+### Developer-Friendly Tooling  
+One of Midnight's standout features is its developer-centric design. The **Compact** language abstracts the complexities of circuit development, enabling a familiar programming experience. Developers can focus on building dApps without delving deeply into the intricacies of ZK proof systems, making Midnight a more accessible platform for innovation.  
+
+### ZK Recursion and Contract Interoperability  
+Midnight introduces a unique approach to contract state recursion. Similar to ZK proof recursion, contracts can verify proofs from other contracts, enabling them to reason about states privately and interoperate securely. This feature enhances modularity and trust within the ecosystem.  
+
+## Integration with Substrate  
+Midnight takes full advantage of Substrate’s modular framework to build a scalable and upgradeable blockchain. Key highlights of its Substrate integration include:  
+
+### Forkless Upgrades  
+Substrate’s forkless upgrade capability allows Midnight to evolve without disrupting the network. This is critical for maintaining compatibility as the chain’s features and protocols expand.  
+
+### Host Functions for Ledger Management  
+Midnight employs host functions to integrate its custom Ledger component with the Substrate runtime. These host functions handle state transitions, proof verification, and upgrades, ensuring smooth interoperability between Midnight’s native components and Substrate.  
+
+### Partner Chain Model  
+As the first partner chain to Cardano, Midnight leverages Cardano’s validator set for enhanced security. This integration enables developers to bootstrap their networks using a boilerplate Substrate node with additional modules for Cardano interoperability.  
+
+## Compliance and Selective Disclosure  
+A significant differentiator for Midnight is its focus on compliance. The platform enables **selective disclosure**, allowing users to share specific data, such as transaction details, with authorized entities. This feature addresses regulatory concerns while maintaining user privacy.  
+
+Midnight’s selective disclosure mechanism relies on **viewing keys** that allow users to reveal certain states or transactions for compliance purposes. This makes Midnight a suitable choice for enterprises and organizations operating in regulated industries.  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wanDiiZSnaQ?si=euPELFOnmsQGULTu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Future Roadmap  
+
+### ZK Recursion at Scale  
+Midnight plans to implement chain-wide ZK recursion, enabling the entire blockchain state to be verifiable through a single, compact proof. This would facilitate the creation of trustless bridges and enhance interoperability with other blockchain ecosystems.  
+
+### Custom Consensus Mechanisms  
+The team is exploring high-throughput consensus mechanisms to optimize performance and scalability.  
+
+### Ecosystem Contributions  
+Midnight is committed to contributing to the Substrate and Polkadot ecosystems by sharing research, tools, and updates. Collaboration with other projects and teams remains a core focus as Midnight evolves.  
+
+## Developer Resources and Community  
+Midnight provides extensive documentation, research papers, and tools to support developers in building privacy-preserving dApps. A dedicated Discord community offers direct access to moderators and engineers for real-time support and collaboration.  
+
+## Conclusion  
+Midnight exemplifies the potential of Substrate in creating innovative, privacy-focused blockchains. By integrating ZK proofs, selective disclosure, and advanced tooling, it empowers developers to build secure and compliant dApps. As Midnight progresses through its testnet phase and explores new features like ZK recursion and trustless bridges, it promises to be a transformative force in the blockchain space.  
+
+For more information, developers are encouraged to explore Midnight’s [documentation](#) and join its active community to stay updated on the latest developments.  

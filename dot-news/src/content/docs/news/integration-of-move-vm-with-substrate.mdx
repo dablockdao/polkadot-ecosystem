@@ -1,0 +1,79 @@
+---
+title: 'Integration of Move VM with Substrate'
+description: 'Integration of Move VM with Substrate enhances Polkadot''s interoperability, enabling secure, innovative smart contract execution across networks.'
+date: 2024-02-17
+cover:
+  alt: ---
+  image: ../../../assets/news/move-vm-substrate-polkadot.webp
+tags: 
+    - tech
+authors:
+  - LV
+---
+
+import { ShowcaseTwitter } from 'starlight-showcases';
+
+In an impressive leap forward for blockchain technology, **the integration of the Move Virtual Machine (Move VM) with Substrate-based blockchains has been successfully accomplished by Eiger Co**. This landmark achievement paves the way for a new level of interoperability and functionality within the Polkadot ecosystem, enabling developers to leverage the robust capabilities of the Move programming language while building on Substrate networks. This article delves into the significance of this integration, the technical intricacies involved, and the broader implications for the blockchain community.
+
+Background of Move and Substrate
+--------------------------------
+
+Move is a highly secure and verified programming language, originally developed by Diem (formerly known as Facebook’s Libra) and has gained traction with blockchains like Sui and Aptos. It was designed as a platform-agnostic language, emphasizing security and formal verification to ensure robust smart contract execution.
+
+Substrate, on the other hand, is a modular framework that enables the creation of purpose-built blockchains. As the underlying framework for Polkadot, Substrate provides developers with the tools to create custom blockchains with interoperability at their core. The integration of Move VM into Substrate signifies a convergence of these two powerful technologies.
+
+Achieving Compatibility: The Technical Journey
+----------------------------------------------
+
+The process of integrating Move VM with Substrate involved several technical milestones. The team at Eiger Co. adapted the existing Diem-based Move VM to achieve full compatibility within the Substrate runtime. This adaptation was not merely a straightforward port but required substantial modification and optimization to ensure seamless operation within the Substrate environment.
+
+**MoveVM Adaptation:** The original Move VM was forked and adapted to be fully compatible with Substrate. Key steps included:
+
+- **Backend Interface:** Providing a simplified Move VM backend interface with full no-std support, encapsulating all Move VM handling operations.
+- **Storage and Address Mapping:** Establishing a direct mapping between the 32-byte address space in Move VM storage and Substrate accounts.
+- **Move Smart Contract Compiler:** Setting up a dedicated compiler and package tool capable of supporting SS58 accounts, essential for preparing Move smart contracts for execution within the Substrate runtime.
+
+**Pallet Move Design:** The Move pallet is central to this integration, allowing the publishing and execution of Move modules and scripts. Three critical extrinsic calls were defined:
+
+- **execute(origin, transaction\_bc, gas\_limit, cheque\_limit):** Facilitates the execution of Move scripts, supporting multiple signers.
+- **publish\_module(origin, bytecode, gas\_limit):** Enables the publishing of individual Move modules.
+- **publish\_module\_bundle(origin, bundle, gas\_limit):** Allows the publishing of bundled Move modules.
+
+These calls are designed to integrate seamlessly with the Substrate runtime, translating signed origins into authorized Move account access and managing the execution parameters.
+
+Gas Costs and Benchmarking
+--------------------------
+
+A significant aspect of the integration was establishing a balanced gas cost system. The Move VM calculates gas costs for each instruction, which are then converted to Substrate weights, translating into blockchain fees. This linear relationship between Move VM gas and Substrate weights ensures transparent and predictable cost management for developers and users.
+
+Eiger Co. conducted extensive benchmarking to fine-tune this relationship. By using parameterized Substrate benchmark functions and Move example code, they achieved an almost perfectly linear correlation between gas costs and Substrate weights. This precision allows for accurate gas estimation and cost management, further enhancing the usability of Move on Substrate-based networks.
+
+Implications for the Blockchain Ecosystem
+-----------------------------------------
+
+The integration of Move VM with Substrate unlocks a plethora of opportunities for developers and the broader blockchain ecosystem. Key benefits include:
+
+- **Enhanced Interoperability:** Developers can now create Move-based smart contracts that operate seamlessly within the Polkadot ecosystem, facilitating cross-chain interactions and broadening the scope of decentralized applications (dApps).
+- **Security and Verification:** Move’s emphasis on security and formal verification aligns with the high standards of the Substrate framework, ensuring robust and reliable smart contract execution.
+- **Developer Flexibility:** The ability to leverage Move’s capabilities within Substrate provides developers with greater flexibility in choosing the best tools for their specific needs, fostering innovation and diversity in blockchain solutions.
+
+<script is:inline src="https://platform.twitter.com/widgets.js"></script>  
+
+<ShowcaseTwitter
+  entries={[
+    'https://twitter.com/Polkadot/status/1816109501394637034?ref_src=twsrc%5Etfw',
+  ]}
+/>
+
+### Conclusion
+
+Eiger Co.’s successful integration of Move VM with Substrate marks a significant milestone for the Polkadot ecosystem and the blockchain community at large. By bridging these two powerful technologies, developers are empowered to create more secure, interoperable, and innovative applications. Comprehensive documentation and tutorials provided by Eiger Co. ensure that developers can quickly adopt and maximize the potential of this integration. As the blockchain landscape continues to evolve, such advancements are crucial in driving forward the capabilities and adoption of decentralized technologies.
+
+For more detailed information and to stay updated on future developments, visit the project repositories:
+
+- [Pallet Move](https://github.com/eigerco/pallet-move)
+- [Substrate Stdlib](https://github.com/eigerco/substrate-stdlib)
+- [Substrate Move](https://github.com/eigerco/substrate-move)
+- [Move Stdlib](https://github.com/eigerco/move-stdlib)
+
+Additionally, Eiger Co. encourages the community to reach out them with any questions or feedback. This integration is not just a technical achievement but a testament to the collaborative spirit and innovative drive that defines the blockchain industry. More [info about the Pallet Move in the Eiger Co. website](https://www.eiger.co/blog/eiger-brings-move-to-polkadot).

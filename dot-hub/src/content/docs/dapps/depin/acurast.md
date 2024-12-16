@@ -1,0 +1,78 @@
+---
+title: Acurast
+---
+
+Acurast Network: Decentralized Serverless Cloud for the Polkadot Ecosystem
+--------------------------------------------------------------------------
+
+In today’s interconnected world, centralized trust is pervasive, particularly in computational resources and data storage. However, the rise of large-scale data leaks and breaches has underscored the need for a permissionless and decentralized cloud future. Acurast Network, a Layer-1 blockchain, addresses these challenges by providing a decentralized, serverless cloud solution. This article explores Acurast’s features, architecture, and benefits for developers and organizations within the Polkadot ecosystem.
+
+What is Acurast?
+----------------
+
+Acurast is a decentralized serverless cloud platform designed to provide secure, confidential, and verifiable computation for various applications. By leveraging a modular architecture that separates the consensus, execution, and application layers, Acurast ensures scalability, interoperability, and security for decentralized applications (dApps).
+
+### Key Features of Acurast
+
+1. **Confidential Compute Approach**: Acurast employs advanced cryptographic techniques to ensure data privacy and integrity.
+2. **Modular Architecture**: The architecture separates consensus, execution, and application layers to enhance scalability and flexibility.
+3. **Decentralized Orchestrator**: The orchestrator matches computational resources with consumer requirements in a trustless and efficient manner.
+4. **Interoperability**: Supports multiple ecosystems, enabling seamless interaction between Web3 and Web2 applications.
+
+Acurast’s Architecture
+----------------------
+
+Acurast’s architecture is designed to transform how applications are designed and deployed, focusing on privacy, verifiability, and decentralization.
+
+### Consensus Layer
+
+The consensus layer is the foundation of Acurast, responsible for matching consumer jobs with processor resources. It includes:
+
+- **Orchestrator**: Schedules jobs and matches them with appropriate processors, facilitating liquid matching and value exchange between processors and consumers.
+- **Reputation Engine**: Ensures reliability by updating reputation scores of processors and incentivizing honest behavior.
+
+### Execution Layer
+
+The execution layer handles the actual processing of jobs and consists of:
+
+- **Acurast Secure Hardware Runtime (ASHR)**: Utilizes dedicated Android smartphones for off-chain infrastructure.
+- **Acurast Zero-Knowledge Runtime (AZKR)**: Implements zero-knowledge proofs to ensure secure and confidential computation.
+- **Universal Interoperability Layer**: Contains modules that enable interaction with different ecosystems, ensuring seamless integration.
+
+### Application Layer
+
+The application layer supports both Web2 and Web3 applications, allowing for a wide range of use cases, including DeFi protocols and beyond. Acurast’s architecture ensures privacy and verifiability without introducing new trusted entities.
+
+Stakeholders in the Acurast Network
+-----------------------------------
+
+### Consumers
+
+Consumers are individuals or organizations that need to offload computation tasks securely and efficiently. They can define jobs in accessible JavaScript code, register them, and set parameters such as schedule and costs. The Acurast Orchestrator then matches these jobs with suitable processors.
+
+### Processors
+
+Processors offer their computational resources to execute jobs defined by consumers. These processors use dedicated Android smartphones as the off-chain infrastructure behind the Acurast Secure Hardware Runtime (ASHR). In return for their services, processors are rewarded by the consumers.
+
+### Orchestrator
+
+The orchestrator is the core component of the consensus layer, responsible for scheduling jobs and matching processor resources with consumer requirements. It supports various price-finding mechanisms like auctions and advertisements, making the developer experience highly accessible and seamless.
+
+Supported Ecosystems &amp; Integrations
+---------------------------------------
+
+Acurast is designed with interoperability at its core, supporting numerous ecosystems and enabling integration with environments such as EVM, WASM, and Parachains. This flexibility allows projects and enterprises to securely interoperate regardless of the underlying technology.
+
+### Acurast Jobs
+
+Acurast Jobs are tasks executed by processors in their Trusted Execution Environment. These jobs produce an output and a proof of execution, which are then delivered to the specified destination chain, such as Astar on Polkadot.
+
+Implementation and Deployment
+-----------------------------
+
+Acurast leverages a Substrate Runtime consisting of multiple Substrate Pallets for the Acurast Protocol. The network has secured a Kusama Parachain slot for its incentivized testnet and plans to participate in Polkadot Parachain auctions. This integration provides access to Polkadot’s and Kusama’s security and enables communication with other Parachains through the Cross-Consensus Message Format (XCM).
+
+Conclusion
+----------
+
+Acurast Network represents a significant advancement in the evolution of decentralized cloud computing within the Polkadot ecosystem. By providing a secure, scalable, and interoperable platform for confidential computation, Acurast empowers developers and organizations to create innovative applications while maintaining data privacy and regulatory compliance. Whether you are a developer looking to integrate secure computation into your dApps or an organization seeking to offload computational tasks securely, Acurast offers the tools and infrastructure necessary to thrive in a decentralized future.
