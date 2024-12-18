@@ -1278,13 +1278,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
-"hub/media/og-tracker.md": {
-	id: "hub/media/og-tracker.md";
-  slug: "hub/media/og-tracker";
-  body: string;
-  collection: "docs";
-  data: any
-} & { render(): Render[".md"] };
 "hub/media/oneblock.md": {
 	id: "hub/media/oneblock.md";
   slug: "hub/media/oneblock";
@@ -1964,6 +1957,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".mdx"] };
+"tools/dao-tools/og-tracker.md": {
+	id: "tools/dao-tools/og-tracker.md";
+  slug: "tools/dao-tools/og-tracker";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
 "tools/dao-tools/polkassembly.md": {
 	id: "tools/dao-tools/polkassembly.md";
   slug: "tools/dao-tools/polkassembly";
