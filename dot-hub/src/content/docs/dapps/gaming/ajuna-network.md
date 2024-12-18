@@ -1,14 +1,11 @@
 ---
 title: 'Ajuna Network'
+description: Ajuna Network is a decentralized gaming platform that integrates blockchain technology with leading game development engines like Unity and Unreal
 ---
-
-Ajuna Network for the Polkadot Gaming
--------------------------------------
 
 Ajuna Network is a decentralized gaming platform that integrates blockchain technology with **leading game development engines like Unity and Unreal**. By leveraging the Polkadot and Kusama ecosystems, Ajuna Network aims to revolutionize the gaming industry by providing a seamless, secure, and scalable infrastructure for developers and gamers alike. This article delves into the core features, tokens, assets, and roadmap of Ajuna Network, highlighting its role within the Polkadot ecosystem.
 
-Overview of Ajuna Network
--------------------------
+## Overview of Ajuna Network
 
 **Ajuna Network is built on Substrate**, leveraging the full potential of the Polkadot ecosystem to deliver a trusted and secure blockchain experience for gaming. The platform facilitates the integration of blockchain technology with popular game development engines, enabling developers to create immersive and decentralized games. Ajuna’s mission is to provide real value to gamers and developers through a fully interoperable system for games and virtual goods.
 

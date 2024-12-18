@@ -1,13 +1,7 @@
 ---
 title: Pendulum
+description:  Unified Liquidity Standard for DOT and KSM Staking and Crowdloan Derivatives.
 ---
-DeFi  
- Bridge  
- 
- Unified Liquidity Standard for DOT &amp; KSM Staking and Crowdloan Derivatives.
-
-What is Pendulum?
------------------
 
 **Pendulum** is set to revolutionize the **integration of fiat currencies with the DeFi ecosystem**, building on several core strengths:
 

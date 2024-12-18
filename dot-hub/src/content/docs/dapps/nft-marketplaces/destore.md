@@ -1,18 +1,11 @@
 ---
 title: DeStore
+description: DeStore is Empowering businesses with no-code Web3 and blockchain solutions for seamless digital and physical product integration.
 ---
-NFTs  
- NFTs Marketplace  
-
-DeStore is Empowering businesses with no-code Web3 and blockchain solutions for seamless digital and physical product integration.
-
-DeStore: Bridging Traditional Commerce and Web3 with Phygital Solutions
------------------------------------------------------------------------
 
 Maintaining a strong online presence is essential for businesses of all sizes. DeStore is at the forefront of this transformation, pioneering inclusivity for enterprises and small family brands in the Web3 and blockchain realms. With its no-code solution, DeStore empowers users to seamlessly integrate into the future of digital commerce.
 
-Phygital Access with DeStore
-----------------------------
+## Phygital Access with DeStore
 
 DeStore introduces an innovative concept of “phygital” access, merging the physical and digital worlds to enhance business operations. This approach allows companies to tap into the benefits of blockchain technology without needing extensive technical knowledge.
 

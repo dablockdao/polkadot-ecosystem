@@ -1,13 +1,8 @@
 ---
 title: Moonwell
+description:  An open lending and borrowing app built on Base, Moonbeam, and Moonriver.
 ---
-DeFi  
- Lending  
 
- An open lending and borrowing app built on Base, Moonbeam, and Moonriver.
-
-What is Moonwell?
------------------
 
 **Moonwell is a DeFi platform on Moonbeam Network** designed to provide the different DeFi services that come with it. Its main features include:
 

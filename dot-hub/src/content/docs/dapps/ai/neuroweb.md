@@ -1,13 +1,7 @@
 ---
 title: Neuroweb
+description: NeuroWeb Network evolved from the OriginTrail Parachain through a community governance vote in December 2023.
 ---
-AI  
-
-NeuroWeb Network evolved from the OriginTrail Parachain through a community governance vote in December 2023.
-
-
-NeuroWeb: Pioneering Decentralized AI on the Polkadot Ecosystem
----------------------------------------------------------------
 
 NeuroWeb Network represents a transformative step in the intersection of artificial intelligence (AI), blockchain, and the decentralized web (Web3). As a decentralized AI blockchain, NeuroWeb is designed to incentivize knowledge creation, connectivity, and sharing through a process called Knowledge Mining. This article provides an in-depth exploration of NeuroWeb, its foundational technologies, core products, and its significant role within the Polkadot ecosystem.
 

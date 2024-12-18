@@ -1,14 +1,9 @@
 ---
 title: 'POP CLI'
+description: Streamline Polkadot development with POP CLI. Effortless project setup, dynamic pallet integration, and comprehensive documentation.
 ---
-Tools  
- Development  
 
-Streamline Polkadot development with POP CLI: effortless project setup, dynamic pallet integration, and comprehensive documentation.
-
-
-Simplifying Polkadot Development: An Introduction to POP CLI by R0GUE
----------------------------------------------------------------------
+*Simplifying Polkadot Development*
 
 The **Polkadot POP CLI** is an innovative tool developed by the R0GUE team to streamline the Polkadot development process. Designed to be a comprehensive solution for developers, POP CLI offers a range of features aimed at simplifying project setup, integrating dynamic use cases, and fostering collaboration within the Polkadot ecosystem. This tool marks a significant step forward in making Polkadot development more accessible and efficient for both newcomers and experienced developers.
 

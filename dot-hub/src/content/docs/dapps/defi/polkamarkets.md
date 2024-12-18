@@ -1,13 +1,7 @@
 ---
 title: Polkamarkets
+description:  100% user-run, fully open source, Web3 Prediction Markets protocol.
 ---
-DeFi  
- Prediction Market  
- 
- 100% user-run, fully open source, Web3 Prediction Markets protocol.
-
-What is Polkamarkets?
----------------------
 
 Polkamarkets is a decentralized prediction market platform on the Polkadot blockchain, combining DeFi and NFTs to offer a unique forecasting environment. It allows users to speculate on outcomes across various sectors, integrating liquidity provision and yield farming for enhanced user engagement. 
 

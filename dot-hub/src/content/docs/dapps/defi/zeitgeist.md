@@ -1,13 +1,7 @@
 ---
 title: Zeitgeist
+description:  Zeitgeist is an innovative platform for predicting future events.
 ---
-DeFi  
- Prediction Markets  
-
- Zeitgeist is an innovative platform for predicting future events.
-
-What is Zeitgeist?
-------------------
 
 Zeitgeist is the next unique **prediction market platform built within the Polkadot ecosystem on the Substrate framework** and includes:
 

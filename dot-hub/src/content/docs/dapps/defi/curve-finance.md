@@ -1,10 +1,10 @@
 ---
 title: 'Curve Finance'
+description: EVM dex with support for Moonbeam
 ---
 DeFi  
  DEX  
 
-EVM dex with support for Moonbeam
 
 What is Curve Finance?
 ----------------------

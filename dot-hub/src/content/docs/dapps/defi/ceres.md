@@ -1,13 +1,7 @@
 ---
 title: Ceres
+description: Ceres is a multifaceted DeFi project within the Polkadot ecosystem, aimed at providing sustainable and transparent financial solutions.
 ---
-DeFi  
- Launchpad  
-
-Ceres is a multifaceted DeFi project within the Polkadot ecosystem, aimed at providing sustainable and transparent financial solutions.
-
-Understanding Ceres: A Comprehensive Overview for the Polkadot Ecosystem Directory
-----------------------------------------------------------------------------------
 
 Ceres is a comprehensive decentralized finance (DeFi) platform built within the Polkadot ecosystem, specifically leveraging the SORA network. The project’s mission is to provide robust and transparent DeFi services, aimed at enhancing security, transparency, and financial sustainability. With a focus on long-term growth, Ceres integrates multiple innovative features, including a launchpad, liquidity locker, and token locker, to support new projects and token ecosystems.
 

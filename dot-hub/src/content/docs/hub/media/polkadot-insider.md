@@ -1,21 +1,12 @@
 ---
 title: 'Polkadot Insider'
+description: Polkadot Insider provides up-to-date news, insights and graphics resourcs about the Polkadot Network
 ---
-Ecosystem  
- Media  
-
-What is Polkadot Insider and its Role in the Polkadot Ecosystem?
-----------------------------------------------------------------
 
 Polkadot Insider is a valuable **resource for anyone interested in the latest Polkadot ecosystem news**. This platform provides up-to-date news, insights, and graphic resources about the developments within the Polkadot network, making it a crucial tool for investors, and enthusiasts alike.
 
-What is Polkadot?
------------------
 
-Polkadot is a next-generation blockchain protocol that connects multiple specialized blockchains into one unified network. It is designed to enable different blockchains to transfer messages and value in a trust-free fashion; achieving high degrees of security and scalability. Polkadot is known for its heterogeneous sharding model, where parachains (parallel blockchains) run alongside the main relay chain, contributing to its overall efficiency and scalability.
-
-The Role of Polkadot Insider
-----------------------------
+## The Role of Polkadot Insider
 
 Polkadot Insider serves as a comprehensive source of information dedicated to the Polkadot ecosystem. Here’s what you can expect from Polkadot Insider:
 

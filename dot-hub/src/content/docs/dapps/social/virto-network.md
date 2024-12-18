@@ -1,24 +1,15 @@
 ---
 title: 'Virto Network'
+description: Virto and Kreivo’s Local Incentives Protocol is creating Decentralized marketplaces empowering communities through a transparent local tax management.
 ---
-DeFi  
- Miscelaneous  
-
-Kreivo’s Local Incentives Protocol is creating Decentralized marketplaces empowering communities through a transparent local tax management.
-
-
-The Virto Network: Revolutionizing Local Economies with the Local Incentives Protocol
--------------------------------------------------------------------------------------
 
 In a world where economic inequality persists, the Virto Network introduces an innovative solution: the **Local Incentives Protocol (LIP)**. By defining a secure payment system for trading off-chain assets with cryptocurrencies, LIP connects decentralized markets and users, aiming to enhance local welfare through fair and transparent tax collection. This initiative stands out as a promising approach to mitigating economic disparities, especially in low-income regions, by empowering local communities.
 
-What is Virto Network?
-----------------------
+## What is Virto Network?
 
 **Virto Network is an innovative blockchain platform that introduces the Local Incentives Protocol (LIP)**, designed to enhance local economies by providing a secure and decentralized payment system for trading off-chain assets with cryptocurrencies. Built on the Polkadot network, Virto Network empowers autonomous local communities to manage and spend local taxes transparently, efficiently, and fairly. The protocol facilitates the creation of decentralized marketplaces, leveraging multiple decentralized technologies to support secure transactions and community governance, ultimately aiming to mitigate economic inequality and promote local welfare through scalable and transparent solutions.
 
-The Need for the Local Incentives Protocol
-------------------------------------------
+## The Need for the Local Incentives Protocol
 
 Economic inequality remains a global challenge, with governments often relying on taxes and transfers to address these disparities. However, such fiscal policies frequently prove ineffective in low-income countries due to several factors:
 
@@ -28,8 +19,7 @@ Economic inequality remains a global challenge, with governments often relying o
 
 LIP addresses these issues by enabling autonomous local communities to manage and allocate local taxes in a manner that is fair, efficient, and transparent. As a token-less parachain on the Polkadot network, LIP equips developers with APIs to create secure, scalable decentralized commerce applications.
 
-Key Components of the Local Incentives Protocol
------------------------------------------------
+## Key Components of the Local Incentives Protocol
 
 **1. Key Actors:**
 

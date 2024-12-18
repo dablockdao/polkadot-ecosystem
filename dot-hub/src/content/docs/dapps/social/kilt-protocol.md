@@ -1,23 +1,20 @@
 ---
 title: 'Kilt Protocol'
+description:  KILT Protocol empowers individuals and organizations to manage their digital identities and control their data within the Polkadot ecosystem.
 ---
-Identity  
- Moonbeam is a smart contract platform for cross-chain connected applications that unites functionality from Ethereum, Polkadot, and beyond
 
-KILT Protocol: Unleash Self-Sovereign Identity on Polkadot
-----------------------------------------------------------
+*Unleash Self-Sovereign Identity on Polkadot*
 
-KILT Protocol empowers individuals and organizations to manage their digital identities and control their data within the Polkadot ecosystem. Here’s a breakdown for your Polkadot dapps directory:
 
-What is KILT Protocol?
-----------------------
+KILT Protocol empowers individuals and organizations to manage their digital identities and control their data within the Polkadot ecosystem. 
+
+
 
 - A blockchain protocol built on Polkadot for self-sovereign data and interoperability.
 - Enables users to create and manage decentralized identifiers (DIDs) to represent their digital identities.
 - Allows trusted entities (Attesters) to issue verifiable credentials (VCs) that attest to user attributes.
 
-Key Features:
--------------
+## Kilt Protocol Key Features:
 
 - **Self-Sovereign Identity:** Users control their DIDs and decide what data to share with whom.
 - **Revocable Credentials:** Attesters can revoke credentials if necessary, ensuring data integrity.

@@ -1,13 +1,7 @@
 ---
 title: Robonomics
+description:  Updated use cases for connected robots within web3 technologies.
 ---
-Infraestructure  
- IoT  
-
- Updated use cases for connected robots within web3 technologies.
-
-What is Robonomics?
--------------------
 
 Robonomics is a groundbreaking framework designed to integrate IoT devices and robots with blockchain technology, specifically within the Ethereum and Polkadot ecosystems. It aims to facilitate a decentralized, machine-to-machine economy, where autonomous devices can operate, transact, and offer services independently. Key features and objectives include:
 

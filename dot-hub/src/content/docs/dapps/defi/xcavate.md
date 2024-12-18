@@ -1,22 +1,13 @@
 ---
 title: Xcavate
+description: Xcavate is democratizing real estate investment with blockchain technology for accessible, efficient, and sustainable property ownership.
 ---
-DeFi  
- RWA  
- 
-Xcavate is democratizing real estate investment with blockchain technology for accessible, efficient, and sustainable property ownership.
-
-
-Xcavate: Revolutionizing Real Estate Investment through Blockchain Technology  
-
---------------------------------------------------------------------------------
 
 **Addressing Critical Challenges in Real Estate.** The global real estate market, valued at over **$378.7 trillion at the end of 2022**, represents the largest store of wealth across all sectors (*Source: Savills article by Paul Torstevin)*. However, a significant disparity exists, with nearly half of the world’s wealth owned by just 1.1% of the global population (*Source: Credit Suisse Global Wealth Databook 2021*). The complexity and need for trusted intermediaries in real estate investments often exclude average individuals from participating in lucrative opportunities.
 
 Additionally, the real estate sector is a major contributor to global carbon dioxide emissions, accounting for **nearly 40% of the total emissions** (*Source: Forbes article by David Carlin Apr 5, 2022*). Of these emissions, 70% come from building operations, while the remaining 30% arise from construction activities. Furthermore, homelessness remains a pressing issue, with an estimated 150 million people worldwide lacking adequate housing (Source: The World Economic Forum website article by Patrick Henry Oct 2021).
 
-What is Xcavate and its Innovative Solution?
---------------------------------------------
+## What is Xcavate and its Innovative Solution?
 
 **Xcavate aims to democratize real estate investment** by aligning the interests of small to medium-sized developers, investors, and tenants. The platform increases capital and technical efficiency, reduces friction through automation, and eliminates intermediaries by leveraging digital identity, decentralized applications (dApps), and oracles. This transparent and auditable protocol ensures trust-less accessibility and security in the real estate market.
 

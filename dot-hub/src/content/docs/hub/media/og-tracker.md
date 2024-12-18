@@ -1,14 +1,9 @@
 ---
 title: 'OG Tracker'
+description: OG Tracker offers transparent monitoring of Polkadot OpenGov proposals, ensuring accountability, progress tracking, and comprehensive proposal reviews in one platform.
 ---
-Initiatives  
- OpenGov  
 
-OG Tracker offers transparent monitoring of Polkadot OpenGov proposals, ensuring accountability, progress tracking, and comprehensive proposal reviews in one platform.
-
-
-Learn How OG Tracker is Enhancing Transparency and Accountability in the Polkadot Ecosystem
--------------------------------------------------------------------------------------------
+*Enhancing Transparency and Accountability in the Polkadot Ecosystem*
 
 Ensuring **transparency and accountability within decentralized governance systems** is paramount. The **OG Tracker platform** is a groundbreaking initiative designed to address this need within the Polkadot ecosystem. By providing a u**ser-friendly interface**, OG Tracker allows users to **monitor the progress and deliverables of approved proposals under the Polkadot OpenGov framework**. This article delves into the features, benefits, and overall impact of the OG Tracker platform.
 

@@ -1,24 +1,17 @@
 ---
 title: 'Midnight Network'
+description: Midnight is a data-protection blockchain that prioritizes security, compliance, and user data control
 ---
-Data  
-
-Midnight is a data-protection blockchain that prioritizes security, compliance, and user data control
-
-What is Midnight Network?
--------------------------
 
 Midnight is a data-protection blockchain that prioritizes security, compliance, and user data control. It aims to provide organizations with the tools needed to protect privileged information, trade secrets, intellectual property, and personal data. By leveraging advanced cryptographic techniques, Midnight ensures that data remains confidential and secure while facilitating compliance with regulatory requirements.
 
-Key Features of Midnight Network
---------------------------------
+## Key Features of Midnight Network
 
 1. **Data Protection**: Midnight is built to protect user data, ensuring confidentiality and integrity through advanced cryptographic methods like zero-knowledge proofs (ZKPs).
 2. **Security and Compliance**: The network is designed to help organizations comply with data protection regulations while maintaining a high level of security.
 3. **Developer Experience**: Midnight offers robust development tools and a streamlined programming model to facilitate the creation of secure DApps.
 
-Why Midnight Network?
----------------------
+## Why Midnight Network?
 
 Midnight addresses three fundamental freedoms: association, commerce, and expression (ACE). These freedoms are critical for individuals and organizations to interact, transact, and communicate without fear of censorship, surveillance, or data breaches.
 
@@ -28,8 +21,7 @@ Midnight addresses three fundamental freedoms: association, commerce, and expres
 2. **Commerce**: The platform allows users to conduct commercial transactions with minimal risk of theft or persecution, while adhering to regulatory requirements.
 3. **Expression**: Midnight supports free expression by protecting user identities and allowing provable assertions through cryptographic methods.
 
-Core Technologies
------------------
+## Midnight Network Core Technologies
 
 ### Zero-Knowledge Proofs (ZKPs)
 

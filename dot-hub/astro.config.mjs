@@ -52,6 +52,9 @@ export default defineConfig({
 							{
 								label: 'Development', collapsed: true, autogenerate: { directory: 'tools/development' }
 							},
+							{
+								label: 'Archive', collapsed: true, autogenerate: { directory: 'tools/archive' }
+							},
 						]
 					},
 					{
@@ -78,13 +81,16 @@ export default defineConfig({
 							label: 'Social', collapsed: true, autogenerate: { directory: 'dapps/social' }
 						},
 						{
-							label: 'Miscelaneous', collapsed: true, autogenerate: { directory: 'dapps/miscelaneous' }
+							label: 'lMiscellaneous', collapsed: true, autogenerate: { directory: 'dapps/miscellaneous' }
 						},
 						{
 							label: 'NFT Marketplaces', collapsed: true, autogenerate: { directory: 'dapps/nft-marketplaces' }
 						},
 						{
 							label: 'Storage', collapsed: true, autogenerate: { directory: 'dapps/storage' }
+						},
+						{
+							label: 'Archive', collapsed: true, autogenerate: { directory: 'dapps/archive' }
 						},
 					  ],
 					},
@@ -104,7 +110,7 @@ export default defineConfig({
 						label: 'Media', collapsed: true, autogenerate: { directory: 'hub/media' }
 					},
 					  {
-						  label: 'Orgs', collapsed: true, autogenerate: { directory: 'hub/dev' }
+						  label: 'Orgs', collapsed: true, autogenerate: { directory: 'hub/orgs' }
 					  },
 					  {
 						label: 'Validators', collapsed: true, autogenerate: { directory: 'hub/validators' }
@@ -114,6 +120,9 @@ export default defineConfig({
 					},
 					{
 						label: 'Resources', collapsed: true, autogenerate: { directory: 'hub/resources' }
+					},
+					{
+						label: 'Archive', collapsed: true, autogenerate: { directory: 'hub/archive' }
 					},
 					  ]}
 				  ])],

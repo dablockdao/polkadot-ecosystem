@@ -1,19 +1,16 @@
 ---
 title: 'Polkadot Fellowship'
+description: Polkadot Fellowship is an initiative designed to engage and support talented individuals who are contributing to the Polkadot ecosystem.
 ---
-DAO  
- Collective  
 
-Polkadot Fellowship is an initiative designed to engage and support talented individuals who are contributing to the Polkadot ecosystem.
+*Engage and support talented individuals who are contributing to the Polkadot ecosystem.*
 
 
-What is the Polkadot Fellowship?
---------------------------------
+## What is the Polkadot Fellowship?
 
 The Polkadot Technical Fellowship represents a groundbreaking governance body within the Polkadot and Kusama networks. Established in 2022, this self-governing collective of experts and developers has been pivotal in advancing the networks’ protocols and ensuring robust, community-led governance through the innovative Polkadot OpenGov system.
 
-Polkadot Fellowship Foundation and Purpose
-------------------------------------------
+## Polkadot Fellowship Foundation and Purpose
 
 **The *Fellowship* was** **created to replace the initial *Technical Committee***, embodying a significant evolution in how Polkadot approaches network governance. It was designed to accommodate a broad spectrum of participants—from newcomers to seasoned experts—and is equipped to scale up to tens of thousands of members, dramatically lowering the barriers to entry. This inclusivity is central to its operational philosophy, enabling a wider community engagement and richer input into the network’s evolution.
 
@@ -29,8 +26,7 @@ One of the core functions of the Fellowship is to conduct referenda on various t
 
 A critical aspect of the Fellowship’s role is in the whitelisting of proposals, allowing them to execute high-stakes operations with Root-level privileges once approved via referenda. This includes the careful orchestration of proposals through the entire lifecycle—from initiation to an OpenGov referendum—ensuring that only thoroughly vetted changes are implemented. Such stringent controls safeguard the network against unwise or malicious modifications.
 
-Membership and Ranking
-----------------------
+### Membership and Ranking
 
 Membership to the Fellowship is open to all, starting from rank 0, with a clear path for advancement up to rank 9, based on contributions and expertise. The Fellowship manifesto not only outlines the responsibilities and expectations for each rank but also associates these with a corresponding remuneration structure that mirrors salaries in OECD countries, thereby attracting top talent and maintaining high motivation levels among members.
 

@@ -1,10 +1,10 @@
 ---
 title: Polkadotters
+description: Polkadotters are a Czech Polkadot enthusiasts offering top-tier validator and collator services, promoting decentralization &amp; community.
 ---
 Orgs  
  Validators  
 
-Polkadotters are a Czech Polkadot enthusiasts offering top-tier validator and collator services, promoting decentralization &amp; community.
 
 Polkadotters Validator and Collator Services in the Polkadot Ecosystem
 ----------------------------------------------------------------------

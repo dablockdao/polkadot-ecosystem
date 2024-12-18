@@ -1,13 +1,9 @@
 ---
 title: Bifrost
+description:  A decentralized, non-custodial cross-chain liquid staking protocol.
+sidebar:
+    order: 2
 ---
-DeFi  
- Liquid Staking  
-
- A decentralized, non-custodial cross-chain liquid staking protocol.
-
-What is Bifrost?
-----------------
 
 Designed with the Substrate framework, **Bifrost is a DeFi protocol that focuses on enhancing staking liquidity** and facilitating the transfer of assets cross-chain within the Polkadot ecosystem. Here are its key features:
 

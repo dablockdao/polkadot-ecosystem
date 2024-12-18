@@ -1,13 +1,7 @@
 ---
 title: PolkaSwap
+description:  AMM DEX built natively for Polkadot-Kusama on Sora Network on Sora.
 ---
-DeFi  
- DEX  
-
- AMM DEX built natively for Polkadot-Kusama on Sora Network on Sora.
-
-What is Polkaswap?
-------------------
 
 **Polkaswap** **is a decentralized exchange (DEX) tailored for the Polkadot ecosystem**, designed to facilitate non-custodial token swapping across various blockchains seamlessly. Here are its key features:
 

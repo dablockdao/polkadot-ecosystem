@@ -1,19 +1,11 @@
 ---
 title: Moonbeans
+description: MoonBeans ($BEANS) is the first token on the Moonriver and Moonbeam networks that rewards holders simply for holding the tokens.
 ---
-NFTs  
- NFTs Marketplace  
-
-MoonBeans ($BEANS) is the first token on the Moonriver and Moonbeam networks that rewards holders simply for holding the tokens.
-
-MoonBeans NFT Marketplace: A Comprehensive Guide for the Polkadot Ecosystem  
-
-------------------------------------------------------------------------------
 
 Welcome to MoonBeans, the tastiest ecosystem in the Dotsama universe! MoonBeans ($BEANS) is an innovative NFT marketplace that stands out with its unique rewards system and extraterrestrial theme. Operating on the MoonRiver and MoonBeam networks, and soon to launch on Arbitrum Nova, MoonBeans offers unmatched marketplace rewards, community governance via a DAO, and customizable storefronts. Let’s dive into the details of what makes MoonBeans an essential part of the Polkadot ecosystem.
 
-What is MoonBeans NFT Marketplace?
-----------------------------------
+## What is MoonBeans NFT Marketplace?
 
 MoonBeans ($BEANS) is the first token on the MoonRiver and MoonBeam networks that rewards holders simply for holding the tokens. The platform comprises three main components:
 
@@ -21,15 +13,13 @@ MoonBeans ($BEANS) is the first token on the MoonRiver and MoonBeam networks tha
 2. **Community DAO**: Smart contract decisions are governed by the $BEANS community via a fully functional DAO.
 3. **Customized Storefronts**: Supports NFT projects with special needs, offering custom storefronts and item pages.
 
-Moonbeans NFT Marketplace Unique Features
------------------------------------------
+## Moonbeans NFT Marketplace Unique Features
 
 - **High Marketplace Rewards**: MoonBeans offers the highest marketplace rewards available, distributed among BEANS, SEEDS, and BEANIES holders.
 - **Multichain Expansion**: Currently live on MoonRiver and MoonBeam, with Arbitrum Nova integration coming soon.
 - **Customizable NFT Experiences**: Tailored solutions for NFT projects, including custom storefronts and item pages.
 
-Moonbeans Tokenomics
---------------------
+## Moonbeans Tokenomics
 
 ### MoonBeans ($BEANS)
 
@@ -48,13 +38,11 @@ Moonbeans Tokenomics
 - **Total Supply**: 462 Beanies
 - **Rewards**: Earn passive income from marketplace fees, paid in MoonRiver tokens (MOVR).
 
-Governance: MoonBeans DAO
--------------------------
+## Governance: MoonBeans DAO
 
 The MoonBeans community governs the project through a Decentralized Autonomous Organization (DAO). Each $BEANS token equals one vote, while each Beanie NFT equals 300 votes. Proposals are brought forward and voted on via a snapshot mechanism, ensuring a democratic and decentralized decision-making process.
 
-How to Buy $BEANS
------------------
+## How to Buy $BEANS
 
 1. **Install MetaMask**: 
   - Download and install MetaMask as a Chrome extension.

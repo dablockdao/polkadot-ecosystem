@@ -1,17 +1,11 @@
 ---
 title: Subsocial
+description: Subsocial is an open platform that enables individuals and organizations to launch their decentralized social networks.
 ---
-Social  
-
-Subsocial is an open platform that enables individuals and organizations to launch their decentralized social networks.
-
-Subsocial: The Decentralized Social Media Network on Polkadot
--------------------------------------------------------------
 
 In an era where digital communication and content creation are omnipresent, the importance of data sovereignty and user control over digital identities cannot be overstated. Enter Subsocial, a cutting-edge platform designed to redefine social media through the power of blockchain technology. Built on the robust Substrate framework and integrated with the Polkadot network, Subsocial is not just a decentralized platform; it’s a gateway to creating censorship-resistant social networks and marketplaces that empower users like never before.
 
-What is Subsocial?
-------------------
+## What is Subsocial?
 
 **Subsocial** is an open platform that enables individuals and organizations to **launch their decentralized social networks**. It leverages blockchain technology to ensure that these networks are resistant to censorship and central control. Whether you’re looking to build a community like Reddit, a microblogging service like Twitter, or a content subscription service like Patreon, Subsocial provides the tools and technology to make it happen. **Its integration with IPFS for decentralized file storage** ensures that content remains accessible and secure, without the oversight of traditional central authorities.
 
@@ -19,8 +13,7 @@ What is Subsocial?
 
 At its core, **Subsocial is built using the Substrate blockchain framework**, known for its flexibility and robustness. This allows Subsocial to offer features such as **personalized news feeds, notifications, full-text searching, and rich content formats** without sacrificing search engine optimization (SEO). Substrate’s adaptability also means that Subsocial can seamlessly connect to the Polkadot network, enhancing its functionality with cross-chain interoperability and shared security.
 
-Benefits of Building on Polkadot
---------------------------------
+## Benefits of Building on Polkadot
 
 By choosing Polkadot as its backbone, Subsocial gains several advantages. Polkadot is renowned for enabling scalable multi-chain architectures. This feature allows Subsocial not only to operate its own custom blockchain tailored for social applications but also to interact with other blockchains within the Polkadot ecosystem. This **interoperability** is crucial for broadening the reach and capabilities of Subsocial, facilitating features such as **cross-chain reputation systems** or NFT (Non-Fungible Token) integrations that can enhance user engagement and monetization.
 

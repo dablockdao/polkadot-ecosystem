@@ -1,18 +1,11 @@
 ---
 title: 'POP Network'
+description: POP Network is Simplifying smart contract development on Polkadot with powerful tools, cross-chain support, and dAppChains.
 ---
-Tools  
- Development  
-
-POP Network is Simplifying smart contract development on Polkadot with powerful tools, cross-chain support, and dAppChains.
-
-POP Network: Revolutionizing Smart Contract Deployment on Polkadot
-------------------------------------------------------------------
 
 The POP Network is a cutting-edge platform designed to streamline the development and deployment of smart contracts and parachains within the Polkadot ecosystem. By offering a suite of advanced tools and services, POP Network significantly enhances the developer experience, reducing complexity and accelerating innovation.
 
-Key Features of POP Network
----------------------------
+## Key Features of POP Network
 
 **Power of Polkadot Integration** POP Network leverages the robust capabilities of Polkadot, providing developers with powerful primitives to integrate into their smart contracts. This integration reduces development time while increasing functionality, making it easier to deploy sophisticated applications.
 
@@ -24,8 +17,7 @@ Key Features of POP Network
 
 **ink! Libraries and POP CLI** The platform provides ink! libraries and the POP CLI, enabling developers to quickly access interfaces to the POP API. Standardized and templated contracts are supported by the POP CLI, further simplifying the development process.
 
-POP Network Composability and Innovation
-----------------------------------------
+## POP Network Composability and Innovation
 
 **Seamless Cross-Chain Programs** POP Network allows smart contracts to perform cross-chain interactions seamlessly, enhancing the composability of applications. This capability extends the features of parachains, including the Asset Hub, by integrating smart contracts through seamless cross-chain programs.
 

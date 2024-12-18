@@ -1,13 +1,9 @@
 ---
 title: 'Polkadot Telemetry'
+description: Polkadot Telemetry offers real-time monitoring and performance tracking for Polkadot network nodes with customizable metrics.
+sidebar:   
+    label: Telemetry
 ---
-Tools  
- DevOps  
-
-Polkadot Telemetry offers real-time monitoring and performance tracking for Polkadot network nodes with customizable metrics.
-
-What is Polkadot Telemetry? 
-----------------------------
 
 Polkadot Telemetry is a comprehensive tool designed to monitor and analyze the performance of nodes within the Polkadot network. This telemetry service, accessible through the default Polkadot telemetry dashboard at telemetry.polkadot.io, offers a real-time view of online nodes, providing essential performance metrics crucial for node operators and network administrators.
 

@@ -1,13 +1,7 @@
 ---
 title: StellaSwap
+description: All your DeFi needs in one place. Swap, earn and build on Moonbeam’s leading DEX
 ---
-DeFi  
- DEX  
-
-All your DeFi needs in one place. Swap, earn and build on Moonbeam’s leading DEX
-
-What is StellaSwap?
--------------------
 
 StellaSwap is the first **cross-chain decentralized exchange (DEX) powered by Moonbeam**. Here are the key features:
 

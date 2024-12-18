@@ -1,18 +1,13 @@
 ---
 title: 'Moonbeam Network'
+description: Moonbeam is a smart contract platform for cross-chain connected applications that unites functionality from Ethereum, Polkadot, and beyond.
 ---
-Ecosystem  
-
-Moonbeam is a smart contract platform for cross-chain connected applications that unites functionality from Ethereum, Polkadot, and beyond.
-
-What is Moonbeam Network?
--------------------------
 
 The Moonbeam Network represents a very important advance within the blockchain space, mainly aimed at developers and companies whose goal is the building of decentralized applications (DApps) that are interoperable. Being an **Ethereum-compatible smart contract parachain on the Polkadot network**, Moonbeam brings with it an uncommon and highly valuable mixture of features that are **developer-friendly** and include **scalability** and **interoperability**.
 
 It has been designed to host the same capabilities of smart contracts and develop an environment that is easy and frictionless for Ethereum tooling and network developers. Basically, Moonbeam becomes a bridge that stretches the functionality of Ethereum to the Polkadot network, enabling developers to **deploy existing Ethereum DApps with only minor changes**.
 
-### Core Features of Moonbeam dApp
+## Core Features of Moonbeam dApp
 
 1. **Full compatibility with Ethereum’s development toolkit:** For this, Moonbeam is set as a complete peer to Ethereum—with an account model, the same smart contracts, and Web3 RPC as key components of architecture.
 2. **Cross-chain Integration:** Moonbeam is built with a cross-chain integration on the Polkadot network that can now support DApp communication among different blockchains. This kind of interoperability, which is now open with multi-chain applications on Moonbeam, is precisely what the moonbeam team wanted to achieve, as now one can blend strengths from different blockchains within the Polkadot ecosystem.

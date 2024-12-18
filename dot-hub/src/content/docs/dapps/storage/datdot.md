@@ -1,15 +1,9 @@
 ---
 title: DatDot
----
-Infraestructure  
- Storage  
+description: DatDot enables reliable peer-to-peer data sharing and storage, enhancing data sovereignty and portability through innovative technology.
+---  
 
-DatDot enables reliable peer-to-peer data sharing and storage, enhancing data sovereignty and portability through innovative technology.
-
-DatDot is Revolutionizing Peer-to-Peer Data Sharing and Storage
----------------------------------------------------------------
-
-**DatDot** is an innovative project that aims to enhance the reliability and accessibility of **peer-to-peer (P2P) data sharing** by enabling the sharing of storage space and data seeding among users. The project seeks to address the inherent challenges of P2P networks, particularly the difficulty of accessing less popular or rare files. By leveraging advanced technologies and a unique protocol, DatDot aspires to make data sovereignty and portability more attainable and dependable for users.
+**DatDot** is a project that aims to enhance the reliability and accessibility of **peer-to-peer (P2P) data sharing** by enabling the sharing of storage space and data seeding among users. The project seeks to address the inherent challenges of P2P networks, particularly the difficulty of accessing less popular or rare files. By leveraging advanced technologies and a unique protocol, DatDot aspires to make data sovereignty and portability more attainable and dependable for users.
 
 DatDot Addressing P2P Network Challenges
 ----------------------------------------

@@ -1,24 +1,15 @@
 ---
 title: Kodadot
+description: KodaDot is an open-source, multi-chain NFT marketplace operating within the Polkadot and Kusama networks.
 ---
-NFTs  
- NFT Marketplace  
-
-KodaDot is an open-source, multi-chain NFT marketplace operating within the Polkadot and Kusama networks.
-
-Koda Art the NFT Marketplace for the Polkadot Ecosystem  
-
-----------------------------------------------------------
 
 In the rapidly evolving world of blockchain and decentralized applications (dApps), Non-Fungible Tokens (NFTs) have emerged as a groundbreaking innovation. KodaDot, a pioneering NFT marketplace built on the Polkadot network, offers a unique platform for artists, collectors, and developers to explore, create, and trade NFTs across multiple chains. This comprehensive article delves into the features, advantages, and community-centric approach of KodaDot, highlighting why it stands out in the Polkadot ecosystem.
 
-What is KodaDot?
-----------------
+## What is KodaDot?
 
 KodaDot is an open-source, multi-chain NFT marketplace operating within the Polkadot and Kusama networks. It is designed to aggregate various NFT standards and provide a seamless, user-friendly experience for both creators and collectors. With its support for nine different NFT standards, KodaDot is a versatile platform that caters to a diverse range of digital art and collectibles.
 
-Kodadot Key Features and Innovations
-------------------------------------
+## Kodadot Key Features and Innovations
 
 #### 1. Multi-Chain NFT Support
 

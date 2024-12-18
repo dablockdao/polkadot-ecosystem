@@ -1,16 +1,11 @@
 ---
 title: 'Madara Starknet'
+description: Built on a fork of the Substrate Framework, Madara offers a flexible and robust solution for developers aiming to build their own L2.
 ---
-Framework  
- Built on a fork of the Substrate Framework, Madara offers a flexible and robust solution for developers aiming to build their own L2.
-
-Madara Starknet: Empowering Custom App Chains
----------------------------------------------
 
 Madara Starknet is an open-source framework designed to facilitate the creation of custom app chains leveraging the power of Cairo and the Starknet technology. Built on a fork of the Substrate Framework, Madara offers a flexible and robust solution for developers aiming to build their own Layer 2 (L2) or Layer 3 (L3) blockchains. This comprehensive article explores Madara Starknet’s architecture, features, and its role within the Polkadot ecosystem.
 
-The Madara Stack: An Overview
------------------------------
+## The Madara Stack: An Overview
 
 Madara is a generalized framework for building app chains, allowing developers to create sovereign, validity, or validium rollups. It combines the battle-tested Substrate Framework with the Cairo Virtual Machine (VM) and the blockifier, both of which are used in Starknet. This setup ensures that any program execution can be provable, making it a powerful tool for developing scalable and secure blockchain applications.
 

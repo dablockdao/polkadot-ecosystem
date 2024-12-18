@@ -1,14 +1,7 @@
 ---
 title: 'Enkrypt Wallet'
+description: Enkrypt is a web3 multichain wallet. Securely manage and swap tokens and NFTs across multiple blockchains with ease.
 ---
-Tools  
- Wallet  
-
-Enkrypt is a web3 multichain wallet. Securely manage and swap tokens and NFTs across multiple blockchains with ease.
-
-
-Secure Multi-Chain Management for Tokens and NFTs with Enkrypt Wallet
----------------------------------------------------------------------
 
 The need for versatile and secure wallets is more crucial than ever. **Enkrypt wallet**, a project developed by ***MyEtherWallet***, aims to address this need by providing a robust, multi-chain web3 wallet that seamlessly integrates with numerous blockchain networks. This article delves into the features, security, and multi-chain capabilities of the Enkrypt wallet, making it an essential tool for anyone involved in the cryptocurrency space.
 

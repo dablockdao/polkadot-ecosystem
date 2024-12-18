@@ -1,14 +1,10 @@
 ---
 title: Parachains.info
+description: Parachains.info offers curated lists and comprehensive insights on Kusama and Polkadot parachains projects.
 ---
-Initiatives  
- Media  
 
-Parachains.info offers curated lists and comprehensive insights on Kusama and Polkadot parachains projects.
 
-All About Kusama and Polkadot Parachains at Parachains.info  
-
---------------------------------------------------------------
+*All About Kusama and Polkadot Parachains*
 
 Parachains.info stands as a crucial portal for individuals deeply involved in the Polkadot and Kusama blockchain ecosystems. This platform is an all-encompassing directory that provides detailed insights into numerous projects, highlighting their status, token information, market capitalization, and more. With data on over 200 projects, Parachains.info is essential for tracking the vibrant developments within these networks.
 

@@ -1,14 +1,7 @@
 ---
 title: Polkadot.js
+description: Suite of tools designed for developers and power users within the Polkadot ecosystem
 ---
-Tools  
- Developer Tools  
-
-
- A wallet built on the polkadot-js stack.
-
-Polkadot-JS Tooling for Polkadot Developers
--------------------------------------------
 
 **Polkadot-J**S is a suite of powerful tools designed for developers and power users to interact with the Polkadot blockchain at a granular level. This article provides an in-depth look at the various components of Polkadot-JS, explaining their functionalities, use cases, and how they contribute to the broader Polkadot ecosystem.
 

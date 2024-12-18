@@ -1,13 +1,7 @@
 ---
 title: AstridDAO
+description: Multi-collateral stablecoin on Astar Network.
 ---
-DeFi  
- Lending  
- 
-Multi-collateral stablecoin on Astar Network.
-
-What is AstridDAO?
-------------------
 
 AstridDAO represents much more than just another borrowing and lending protocol in the sea of many; indeed, this stands for a quantum leap in the accessibility, efficiency, and cost of decentralized borrowing.
 

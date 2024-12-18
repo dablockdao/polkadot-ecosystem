@@ -1,17 +1,9 @@
 ---
 title: 'Polkaport East 波卡東港'
+description: PolkaPort East drives Polkadot adoption in Hong Kong, fostering community growth and investor relations for the decentralized ecosystem.
 ---
-Initiatives  
-BD  
 
-PolkaPort East drives Polkadot adoption in Hong Kong, fostering community growth and investor relations for the decentralized ecosystem.
-
-- 
-- 
-- 
-
-PolkaPort East: Driving Polkadot Adoption in Hong Kong and the Greater Bay Area
--------------------------------------------------------------------------------
+*Driving Polkadot Adoption in Hong Kong and the Greater Bay Area*
 
 **PolkaPort East** has emerged as a pivotal initiative dedicated to fostering the growth and adoption of the Polkadot ecosystem in Hong Kong and the Greater Bay Area. This initiative is supported by the **Decentralized Futures program of the [Web3 Foundation](https://dablock.com/ecosystem/web3-foundation/)** and aims to connect, educate, and promote the use of Polkadot’s blockchain technology in the region. With a strategic focus on investor relations, business development, and community engagement, PolkaPort East is well-positioned to enhance the decentralization of the Polkadot network and strengthen its strategic foothold in Asia.
 

@@ -1,15 +1,9 @@
 ---
 title: 'Composable Finance'
+description: Composable Finance is revolutionizing the way we perceive and interact with DeFi, ensuring a future where blockchain ecosystems are seamlessly connected and efficiently interoperable.
 ---
 DeFi  
 Bridges  
-Composable Finance is revolutionizing the way we perceive and interact with DeFi, ensuring a future where blockchain ecosystems are seamlessly connected and efficiently interoperable.
-
-- 
-- 
-- 
-- 
-- 
 
 Composable Finance: Revolutionizing DeFi Interoperability
 ---------------------------------------------------------

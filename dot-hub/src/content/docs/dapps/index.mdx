@@ -1,12 +1,17 @@
 ---
 title: Polkadot Dapps
-description: Get started and join the biggest DAO in the world.
+description: Discover all the Dapps built on the Polkadot Ecosystem and explore the new frontier of decentralized applications.
 tableOfContents: false
 ---
 
 import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
 
-## Discover all the Polkadot Ecosystem Dapps in One Place
+import { ShowcaseProfile } from 'starlight-showcases'
+
+import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
 Discover a new frontier of decentralized applications built on the Polkadot network. 
 Our platform offers a curated selection of innovative DApps that leverage Polkadot’s scalable and interoperable blockchain technology. 
 
@@ -14,14 +19,61 @@ Whether you’re exploring decentralized finance (DeFi), engaging with non-fungi
 
 Join us in pioneering a more open, secure, and connected decentralized ecosystem.
 
-<CardGrid>
-<LinkCard title="AI" href="/dapps/ai/" description='All Polkadot AI projects'/>
-<LinkCard title="DeFi" href="/dapps/defi/" description='All Polkadot DeFi projects'/>
-<LinkCard title="DePin" href="/dapps/depin/" description='All Polkadot DePin projects'/>
-<LinkCard title="Gaming" href="/dapps/gaming/" description='All Polkadot Games'/>
-<LinkCard title="Miscelaneous" href="/dapps/miscelanoeus/" description='More Stuff'/>
-<LinkCard title="NFT Marketplaces" href="/dapps/nft-marketplaces/" description='All Polkadot NFT Marketplaces'/>
-<LinkCard title="Smart Contracts" href="/dapps/smart-contracts/" description='All Polkadot Smart Contract Projects'/>
-<LinkCard title="Social" href="/dapps/social/" description='Social stuff'/>
-<LinkCard title="Storage" href="/dapps/storage/" description='Storage stuff'/>
-</CardGrid>
+## All the Polkadot Dapps in One Place
+----------------
+<ShowcaseImage
+  entries={[
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/defi/',
+      title: 'DeFi',
+      },
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/gaming/',
+      title: 'Gaming',
+      },
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/depin/',
+      title: 'DePin',
+      },
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/nft-marketplaces/',
+      title: 'NFT Marketplaces',
+      },
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/social/',
+      title: 'Soical',
+      }, 
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/storage/',
+      title: 'Storage',
+      },
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/smart-contracts/',
+      title: 'Smart Contracts',
+      },
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/ai/',
+      title: 'AI',
+      },
+  ]}
+/>
+
+
+## Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=D4zk4GJNRpo',
+      title: 'New Polkadot App!',
+    },
+  ]}
+/>

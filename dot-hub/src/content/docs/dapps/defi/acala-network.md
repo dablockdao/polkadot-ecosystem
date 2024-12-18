@@ -1,12 +1,8 @@
 ---
 title: 'Acala Network'
+description:  Acala is an appchain powering Web3 finance.
+
 ---
-
-
- Acala is an appchain powering Web3 finance.
-
-What is Acala Network?
-----------------------
 
 **Acala is a full-stack decentralized finance (DeFi) platform on Polkadot**, offering a complete suite of financial services to the ecosystem for improved interoperability, stability, and liquidity.
 

@@ -1,9 +1,9 @@
 ---
 title: Hyperbridge
+description: Hyperbridge is a cutting-edge cross-chain interoperability solution within the Polkadot ecosystem, enabling seamless and secure communication across different blockchain networks.
 ---
 Bridge  
 
-Hyperbridge is a cutting-edge cross-chain interoperability solution within the Polkadot ecosystem, enabling seamless and secure communication across different blockchain networks.
 
 Exploring Polkadot Hyperbridge: The Future of Blockchain Interoperability
 -------------------------------------------------------------------------

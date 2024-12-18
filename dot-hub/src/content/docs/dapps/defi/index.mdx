@@ -1,22 +1,105 @@
 ---
-title: DeFi Dapps
-description: Get started and join the biggest DAO in the world.
-sidebar:
-    order: 1
+title: Polkadot DeFi Dapps 
+description: Explore top Polkadot DeFi projects revolutionizing finance with innovative solutions for liquidity, staking, and cross-chain interoperability.
+tableOfContents: false
+sidebar: 
+    label: DeFi Dapps
+    badge: Feed
+    order: 0
 ---
 
 import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
 
-## Discover all the Polkadot Ecosystem Dapps in One Place
+import { ShowcaseProfile } from 'starlight-showcases'
 
-<CardGrid>
-<LinkCard title="AI" href="/dapps/ai/" description='All Polkadot AI projects'/>
-<LinkCard title="DeFi" href="/dapps/defi/" description='All Polkadot DeFi projects'/>
-<LinkCard title="DePin" href="/dapps/depin/" description='All Polkadot DePin projects'/>
-<LinkCard title="Gaming" href="/dapps/gaming/" description='All Polkadot Games'/>
-<LinkCard title="Miscelaneous" href="/dapps/miscelanoeus/" description='More Stuff'/>
-<LinkCard title="NFT Marketplaces" href="/dapps/nft-marketplaces/" description='All Polkadot NFT Marketplaces'/>
-<LinkCard title="Smart Contracts" href="/dapps/smart-contracts/" description='All Polkadot Smart Contract Projects'/>
-<LinkCard title="Social" href="/dapps/social/" description='Social stuff'/>
-<LinkCard title="Storage" href="/dapps/storage/" description='Storage stuff'/>
-</CardGrid>
+import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Explore top Polkadot DeFi projects revolutionizing finance with innovative solutions for liquidity, staking, and cross-chain interoperability.
+By fostering cross-chain interoperability, Polkadot enables innovative solutions for liquidity, staking, and decentralized exchanges (DEXs). On this portal you will find all DeFi projects within the Polkadot ecosystem, showcasing their unique contributions and technological advancements.
+
+## Discover all the Polkadot Ecosystem DeFi Dapps in One Place
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Discover JAM with Gavin Wood, a innovative protocol revolutionizing Web3 scalability with a trustless supercomputer model.'
+    },
+                     {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Discover how JAM transforms Polkadot into a scalable Web3 cloud, enabling decentralized applications with unmatched flexibility and resilience.'
+      },  
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Explore Acala vision for frictionless UX and unified liquidity with JAM, reshaping DeFi through cross-chain innovation and tools.'
+      },
+              {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Discover JAM with Gavin Wood, a innovative protocol revolutionizing Web3 scalability with a trustless supercomputer model.'
+    },
+                     {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Discover how JAM transforms Polkadot into a scalable Web3 cloud, enabling decentralized applications with unmatched flexibility and resilience.'
+      },  
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Explore Acala vision for frictionless UX and unified liquidity with JAM, reshaping DeFi through cross-chain innovation and tools.'
+      },
+              {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Discover JAM with Gavin Wood, a innovative protocol revolutionizing Web3 scalability with a trustless supercomputer model.'
+    },
+                     {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Discover how JAM transforms Polkadot into a scalable Web3 cloud, enabling decentralized applications with unmatched flexibility and resilience.'
+      },  
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Explore Acala vision for frictionless UX and unified liquidity with JAM, reshaping DeFi through cross-chain innovation and tools.'
+      },
+  ]}
+/>
+
+  <ShowcaseCTA title='Help curate this portal!'>
+  Do you want to add or modify content? [Open a
+  PR](https://github.com/dablockdao/polkadot-ecosystem) and help build this portal!
+</ShowcaseCTA>
+
+
+## Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=v0EL2E0f-hU',
+      title: 'Polkadot Best DEX, Bridge and Memecoins!! - Alpha Airdrop',
+      description: 'The Hydration Network has rebranded from HydraDX and is currently the best option for bridging your ETH into the Polkadot ecosystem. There you can trade and swap into any polkadot native tokens and even memecoins. This video is purely for educational purposes.',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=XL6f4dPk6Rw',
+      title: '30M Transactions in 1 Month 🚀 Polkadot DeFi BOOM - The Kusamarian',
+      description: ' Hydration new money market, offering lending and borrowing, and discuss the upcoming feature to earn from liquid staked tokens thanks to Bifrost',
+    },
+  ]}
+/>
+

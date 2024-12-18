@@ -1,14 +1,7 @@
 ---
 title: Chainspect
+description: Dive into up-to-date metrics for most adopted blockchains.
 ---
-Tools  
- Analytics  
-
-Chainspect offers unbiased blockchain analytics with real-time metrics for Ethereum, Bitcoin, Solana, and more. Explore transparent data now.
-
-Chainspect: A Comprehensive Blockchain Analytics Platform  
-
-------------------------------------------------------------
 
 In the rapidly evolving landscape of blockchain technology, understanding the intricate details of different networks is essential for developers, investors, and enthusiasts. Chainspect, a pioneering blockchain analytics platform, offers a solution by providing in-depth technical metrics and comparisons for a broad range of popular blockchains.
 

@@ -1,14 +1,7 @@
 ---
 title: Odyssey
+description: Explore Odyssey, the 3D content platform revolutionizing collaboration and creation through AI and blockchain integration.
 ---
-NFTs  
- Metaverse  
-
-Explore Odyssey, the 3D content platform revolutionizing collaboration and creation through AI and blockchain integration.
-
-Understanding Aventus Network: An In-Depth Exploration for the Polkadot Ecosystem  
-
-------------------------------------------------------------------------------------
 
 **Odyssey is a pioneering open-source 3D content platform** designed to redefine virtual spaces and our physical world. By integrating advanced technologies such as AI and blockchain, Odyssey empowers creators to generate, shape, and share immersive experiences. The platform shifts the traditional unidirectional communication model to a collaborative one, fostering deep engagement and co-creation among its users.
 

@@ -1,20 +1,11 @@
 ---
 title: Ternoa
+description: Ternoa is an advanced blockchain designed to address key challenges in the Web3 space related to security and privacy.
 ---
-Ecosystem  
- Privacy  
-
-Ternoa is an advanced blockchain designed to address key challenges in the Web3 space related to security and privacy.
-
-
-Ternoa: A Comprehensive Blockchain Protocol for Privacy and Security  
-
------------------------------------------------------------------------
 
 Ternoa, a multi-network and cross-layer protocol that leverages confidential computing technologies to enhance blockchain security, privacy, and scalability. This in-depth look will cover Ternoa’s architecture, its unique features, and why it stands out as a critical component of the Web3 landscape.
 
-Overview of Ternoa. **What is Ternoa?**
----------------------------------------
+## Overview of Ternoa. **What is Ternoa?**
 
 Ternoa is an advanced blockchain protocol designed to address key challenges in the Web3 space, particularly those related to security and privacy. It combines distributed ledger technologies with confidential computing to create a robust environment for decentralized applications (dApps). Ternoa consists of three interconnected networks:
 
@@ -22,8 +13,7 @@ Ternoa is an advanced blockchain protocol designed to address key challenges in 
 2. **Ternoa Fortress**: A decentralized coprocessor network powered by Trusted Execution Environments (TEEs), which functions as a key management system for encrypting off-chain data with on-chain keys.
 3. **Ternoa zkEVM**: A Layer-2 validium that uses TEE multi-proofs for enhanced security, providing an Ethereum Virtual Machine (EVM) equivalent environment for deploying Solidity smart contracts.
 
-Ternoa Key Features and Benefits
---------------------------------
+## Ternoa Key Features and Benefits
 
 **1. Accessibility**
 
@@ -41,8 +31,7 @@ Ternoa Key Features and Benefits
 - **Decentralization**: The network is supported by hundreds of nodes and validators, ensuring decentralization and security. Ternoa’s architecture is also compatible with Polkadot’s network security.
 - **Enhanced Security with zkEVM**: Ternoa zkEVM combines zero-knowledge proofs with TEE proofs for superior network security.
 
-Ternoa Networks and Their Purposes
-----------------------------------
+## Ternoa Networks and Their Purposes
 
 **1. Ternoa Chain**
 
@@ -59,8 +48,7 @@ Ternoa Networks and Their Purposes
 - **Purpose**: Enhances zkEVM security with TEE proofs and makes the Ternoa ecosystem accessible from Ethereum.
 - **Features**: A validium that offers an EVM equivalent environment secured by TEE multi-proofs.
 
-Ternoa Use Cases
-----------------
+## Ternoa Use Cases
 
 **1. Data Privacy**
 
@@ -92,8 +80,7 @@ Ternoa Use Cases
 - **TEE Prover**: Development ongoing.
 - **EVM Ternoa Fortress**: Integration planned.
 
-Technical Deep Dive: Ternoa Chain
----------------------------------
+## Technical Deep Dive: Ternoa Chain
 
 **1. Substrate Integration**
 

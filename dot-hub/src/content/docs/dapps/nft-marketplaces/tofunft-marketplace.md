@@ -1,13 +1,7 @@
 ---
 title: 'TofuNFT Marketplace'
+description: tofuNFT Marketplace is a decentralized platform for buying, selling, and trading non-fungible tokens (NFTs), developed by SCV.Finance.
 ---
-NFTs  
- NFTs Marketplace  
-
-**tofuNFT Marketplace** is a decentralized platform for buying, selling, and trading non-fungible tokens (NFTs), developed by SCV.Finance.
-
-What is TofuNFT Marketplace?
-----------------------------
 
 **tofuNFT Marketplace** is a decentralized platform for buying, selling, and trading non-fungible tokens (NFTs), developed by SCV.Finance. Leveraging multiple blockchains, tofuNFT offers users a seamless experience with features like gas-free listings, advanced filtering, and support for both ERC-721 and soon ERC-1155 tokens.
 

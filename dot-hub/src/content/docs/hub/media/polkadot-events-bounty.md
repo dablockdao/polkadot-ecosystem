@@ -1,13 +1,9 @@
 ---
 title: 'Polkadot Events Bounty'
+description: Discover Polkadot Events Bounty and earn rewards for organizing or attending events that promote the Polkadot ecosystem.
 ---
-Initiatives  
- Events  
-¡
-Discover Polkadot Events Bounty: Earn rewards for organizing or attending events that promote the Polkadot ecosystem.
 
-Polkadot Events Bounty is Catalyzing Community Engagement and Ecosystem Growth
-------------------------------------------------------------------------------
+*Catalyzing Community Engagement and Ecosystem Growth*
 
 The **Polkadot Events Bounty program** is a strategic initiative designed to foster community engagement and promote the Polkadot ecosystem through organized events. This program, **supported by the Polkadot treasury** and governed by community votes via **OpenGov**, aims to incentivize the organization and participation in Polkadot-related events worldwide. By providing financial rewards for these activities, the Polkadot Events Bounty seeks to position the Polkadot network, its teams, and contributors at the forefront of impactful global events, thereby driving community growth and ecosystem development.
 

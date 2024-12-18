@@ -1,19 +1,13 @@
 ---
 title: UnitedBloc
+description: UnitedBloc is a collaborative DAO enhancing the Moonbeam ecosystem with tools, community engagement, and globally balanced RPC services.
 ---
-DAO  
- Validators  
 
-UnitedBloc is a collaborative DAO enhancing the Moonbeam ecosystem with tools, community engagement, and globally balanced RPC services.
-
-UnitedBloc is a Collaborative DAO for the Moonbeam Ecosystem  
-
----------------------------------------------------------------
+*a Validators Collaborative DAO for the Moonbeam Ecosystem*
 
 **UnitedBloc** is a **decentralized autonomous organization (DAO)** formed by a coalition of independent collators within the [**Moonbeam ecosystem**](https://dablock.com/dapps/moonbeam-network/). This group, driven by the belief that “the whole is greater than the sum of its parts,” aims to enhance community value through collective efforts. Comprised of 13 collators from 11 countries across four continents, UnitedBloc leverages diverse skills and perspectives to support and improve the Moonbeam network.
 
-UnitedBloc Core Mission and Values
-----------------------------------
+## UnitedBloc Core Mission and Values
 
 UnitedBloc’s mission is to provide significant community value to the Moonbeam, Moonriver, and Moonbase Alpha parachains by harnessing the collective power of its members. The organization is committed to:
 
@@ -36,8 +30,7 @@ The coalition members provide various tools and resources that benefit the broad
 
 UnitedBloc offers publicly accessible RPC nodes that are globally service balanced using GeoDNS and regionally balanced via OpenResty. This setup involves eight bare metal servers distributed worldwide, providing reliable RPC access for Moonbase, Moonriver, and Moonbeam chains. The system’s architecture ensures high availability and scalability, accommodating increased demand as necessary.
 
-UnitedBloc Community Engagement and Continuous Improvement
-----------------------------------------------------------
+## UnitedBloc Community Engagement and Continuous Improvement
 
 UnitedBloc places a strong emphasis on community engagement. Coalition members are active in Discord channels, providing assistance and fostering a friendly, informative environment. This engagement plays a vital role in maintaining the vibrant social space within the Moonbeam and Moonriver communities.
 

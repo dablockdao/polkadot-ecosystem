@@ -1,14 +1,11 @@
 ---
 title: 'Aleph Zero'
+description: Aleph Zero is a privacy-enhancing, scalable blockchain platform** that aims to combine the benefits of private and public blockchains
 ---
-
-What is Aleph Zero?
--------------------
 
 **Aleph Zero is a privacy-enhancing, scalable blockchain platform** that aims to combine the benefits of private and public blockchains. This platform is designed to provide a secure and decentralized framework for creating and managing digital assets and applications with a strong emphasis on privacy and scalability. This introduction will explore the core functionalities of Aleph Zero and its native token, ***AZERO***.
 
-Key Features of Aleph Zero
---------------------------
+## Key Features of Aleph Zero
 
 - **High Scalability:** Aleph Zero utilizes a custom consensus protocol called AlephBFT, which leverages **Directed Acyclic Graphs (DAGs)** to achieve significantly faster transaction speeds and lower fees compared to traditional blockchains.
 - **Enhanced Privacy:** Aleph Zero integrates zero-knowledge proofs (**ZKPs**) and secure multi-party computation (**sMPC**) to ensure user data privacy. This allows for secure and confidential transactions without compromising network integrity.

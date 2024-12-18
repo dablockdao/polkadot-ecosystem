@@ -1,14 +1,9 @@
 ---
 title: Interlay
+description: Interlay is a DeFi platform focused on bridging Bitcoin with Polkadot and other blockchains.
+sidebar:
+    order: 3
 ---
-DeFi  
- RWA  
-
-
- Next-gen iOS/Android app for Polkadot.
-
-What is Interlay?
------------------
 
 Interlay is a DeFi platform focused on **bridging Bitcoin with Polkadot and other blockchains**, enabling Bitcoin holders to engage in DeFi without leaving Bitcoin’s security. Its core features and goals include:
 

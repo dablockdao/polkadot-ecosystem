@@ -1,19 +1,13 @@
 ---
 title: 'Nova Wallet'
+description: Next-gen iOS/Android app for Polkadot ecosystem. 70+ networks. Amazing UX/UI. Secure & Open source.
 ---
-Tools  
-Mobile Wallet  
 
 - [](https://novawallet.io/)
 - [](https://twitter.com/NovaWalletApp)
 - [](https://github.com/novasamatech/)
 - [](https://www.youtube.com/c/NovaWallet)
 - [](https://t.me/novawallet)
-
-Next-gen iOS/Android app for Polkadot.
-
-What is Nova Wallet?
---------------------
 
 Nova Wallet is an **advanced mobile application** **designed for the Polkadot &amp; Kusama ecosystem**, available on both **iOS and Android platforms**. It offers an exceptional mobile wallet experience, supporting a wide range of features including **Governance, NFTs, extensive DApp integration** (compatible with Substrate and EVM), **Crowdloans, and asset staking**. The wallet is compatible with over 80 networks and supports hundreds of assets such as *DOT, KSM, GLMR, MOVR, AZERO, PDEX, CAPS, TUR, ZTG, and KMA*.
 

@@ -1,11 +1,7 @@
 ---
 title: Algem
+description:  Liquid staking DeFi dApp on Astar Network
 ---
-
- Liquid staking DeFi dApp on Astar Network
-
-What is Algem?
---------------
 
 Algem is a pioneering decentralized finance (DeFi) application built on the Astar Network, designed to enhance the utility and earning potential of ASTR tokens through liquid staking and lending solutions. By leveraging dApp staking on the Astar Network, Algem offers a unique blend of liquidity and earning opportunities, addressing the traditional trade-offs between staking and active participation in DeFi ecosystems.
 

@@ -3,6 +3,7 @@ title: BeamSwap
 description:  DeFi Hub on Moonbeam
 sidebar:
     badge: TOP
+    order: 5
 hero:
   tagline: One-stop defi on Astar Network.
   image: 
@@ -16,9 +17,6 @@ hero:
       icon: external
       variant: secondary
 ---
-
-## What is Beamswap?
-DeFi - DEX  
 
 **Beamswap** is a DeFi platform and **automated market maker on the Moonbeam Network**, part of the Polkadot ecosystem. Here are some of its key features:
 

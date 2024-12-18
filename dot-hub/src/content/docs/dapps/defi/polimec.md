@@ -1,14 +1,7 @@
 ---
 title: Polimec
+description: Decentralized community-driven funding protocol for Web3.
 ---
-DeFi  
- Fundraising  
-
-
-Decentralized community-driven funding protocol for Web3.
-
-What is Polimec?
-----------------
 
 **Polimec** is a liquidity mechanism developed for the Polkadot ecosystem, combining the elements of policy and mechanics to **streamline the fundraising process for early-stage projects through a decentralized, community-driven protocol**. Here are some distilled insights from the Polimec whitepaper regarding its objectives, functionality, and impact on the Web3 ecosystem:
 

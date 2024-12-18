@@ -1,19 +1,11 @@
 ---
 title: 'Sporran Wallet'
+description: With Sporran Wallet you can manage KILT Coins, create digital identities, and sign documents securely with this browser extension
 ---
-Tools  
- Wallet  
-
-With Sporran Wallet you can manage KILT Coins, create digital identities, and sign documents securely with this browser extension
-
-Sporran Wallet: The Gateway to KILT and Web3 Services  
-
---------------------------------------------------------
 
 The Sporran wallet, a desktop browser extension, is designed to be the gateway to the KILT blockchain and a broad array of Web3 services. Available for Google Chrome and Firefox, Sporran offers users the ability to manage their KILT Coin balances, sign and send transactions, and create digital identities, all while maintaining full control over their personal data.
 
-**Key Features of Sporran Wallet**
-----------------------------------
+## Key Features of Sporran Wallet
 
 1. **KILT Coin Management**: Sporran displays KILT Coin balances and enables users to sign and send transactions on the KILT blockchain. This feature positions it as a critical tool for managing KILT assets efficiently.
 2. **Decentralized Identifier (DID)**: At the heart of Sporran’s functionality is the ability to generate a decentralized identifier (DID). This unique string of letters and numbers forms the core of a user’s digital identity.
@@ -23,13 +15,13 @@ The Sporran wallet, a desktop browser extension, is designed to be the gateway t
 6. **Ecosystem Integration**: Sporran links the user’s web3name and account addresses across the KILT, Polkadot, and Ethereum ecosystems. This seamless integration allows for a more cohesive management of digital identities and assets.
 7. **Public Credential Sharing**: For users who wish to make certain credentials public, Sporran provides an easy way to share these credentials, ensuring transparency and verifiability.
 
-**Building Digital Identities with Sporran**
+## Building Digital Identities with Sporran
 
 Sporran is not just a wallet but a starting point for building robust digital identities. Through the KILT blockchain mechanisms, users can create their digital fingerprint, represented by a DID and web3name, without the need to buy or own cryptocurrency. The Checkout Service allows for payments via PayPal, making it accessible to a wider audience.
 
 By linking credentials with their DID, users can build a comprehensive digital identity. These credentials can be obtained from various sources, including SocialKYC, and are securely stored in the Sporran wallet. Users have full control over their information, enhancing privacy and security in their digital interactions.
 
-**Integration with DApps**
+## Integration with DApps
 
 Sporran is designed to communicate seamlessly with decentralized applications (DApps) built on the KILT blockchain. Developers and users can utilize Sporran in conjunction with example DApps like CertifiedProof and ProofCheck. This integration is particularly useful for those developing or testing DApps, as Sporran provides a test wallet with play coins to facilitate development.
 

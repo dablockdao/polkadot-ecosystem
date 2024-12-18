@@ -1,9 +1,9 @@
 ---
 title: 'DAM Finance'
+description: DAM Finance’s primary offering is its decentralized stablecoin, d2o, which aims to scale native liquidity for emerging networks.
 ---
 DeFi  
 
-DAM Finance’s primary offering is its decentralized stablecoin, d2o, which aims to scale native liquidity for emerging networks.
 
 An In-Depth Exploration of DAM Finance for the Polkadot Ecosystem Directory
 ---------------------------------------------------------------------------

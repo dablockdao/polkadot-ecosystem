@@ -1,16 +1,12 @@
 ---
 title: 3xpl
-
+description: Explore blockchain data fast with 3xpl. ad-free, universal format, and support for most popular blockchains.
 ---
 
 
-Exploring 3xpl: A Revolutionary Blockchain Explorer
----------------------------------------------------
-
 **3xpl**, abbreviated from “***3xplor3r***,” is a cutting-edge blockchain explorer designed to serve both ordinary crypto users and professionals in the field. Developed by alumni of Blockchair, 3xpl harnesses years of expertise to deliver a super-fast, universal interface for exploring blockchain data. This platform distinguishes itself with a focus on simplicity, speed, and an ad-free experience, setting a new standard in blockchain exploration.
 
-**3xpl Comprehensive Suite of Products**
-----------------------------------------
+## 3xpl Comprehensive Suite of Products
 
 3xpl offers a range of products tailored to different user needs:
 

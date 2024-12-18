@@ -1,23 +1,17 @@
 ---
 title: 'DSNP Protocol'
+description: Decentralized Social Networking Protocol (DSNP) for a New Era of Social Media  
 ---
-Ecosystem  
-
-Decentralized Social Networking Protocol (DSNP) for a New Era of Social Media  
-
---------------------------------------------------------------------------------
 
 The **Decentralized Social Networking Protocol (DSNP)** represents a groundbreaking approach to social networking, aiming to liberate users from the confines of centralized platforms and provide control over their identities and personal data. **Developed by [Project Liberty](https://dablock.com/ecosystem/project-liberty/)**, DSNP leverages blockchain technology to establish a universal, open, and decentralized social graph. This initiative marks a significant step towards dismantling the current surveillance economy and fostering a healthier, more equitable digital ecosystem.
 
-DSNP Protocol Origins and Development
--------------------------------------
+## DSNP Protocol Origins and Development
 
 The inception of DSNP can be traced back to the growing concerns over data privacy and control in the Web 2.0 era. Traditional social networks have centralized data storage, allowing a few corporations to monopolize user information and monetize it through advertising-driven models. This has led to various issues, including data breaches, manipulation through algorithms, and a general lack of user agency.
 
 Recognizing these challenges, Braxton Woodham and his team saw the potential of blockchain technology to create a decentralized social network. In 2014, the emergence of Ethereum provided a viable solution to the problem of decentralized data storage, leading to the conceptualization and development of DSNP. After years of research and development, including an end-to-end proof of concept, DSNP has evolved into a robust protocol that promises to redefine social networking.
 
-DSNP Protocol Core Concepts and Architecture
---------------------------------------------
+## DSNP Protocol Core Concepts and Architecture
 
 DSNP operates on the principles of self-sovereign identity, personal data privacy, and public social media. The protocol is designed to work on top of existing internet protocols like TCP/IP and HTTPS, ensuring compatibility and ease of integration.
 
@@ -25,15 +19,13 @@ DSNP operates on the principles of self-sovereign identity, personal data privac
 2. **Social Graph**: The social graph in DSNP is decentralized, representing the relationships between users without relying on a central authority. This graph is updated through public message routing on the blockchain, ensuring transparency and immutability.
 3. **Content and Messaging**: DSNP supports various types of user-generated content, referred to as Announcements. These can be public or private and are managed through state change records on the blockchain. This structure ensures that all interactions are verifiable and transparent.
 
-DSNP Protocol Collaboration and Governance
-------------------------------------------
+## DSNP Protocol Collaboration and Governance
 
 DSNP’s development is supported by a broad network of collaborators and advisors, including experts in psychology, ethics, and technology. Recent collaborations, such as the partnership with the Beckn protocol, highlight DSNP’s commitment to interoperability and building a decentralized digital future.
 
 The governance framework for DSNP is designed to be inclusive and transparent. The Project Liberty Institute recently published a draft Governance Framework, inviting feedback from the community to refine and improve the protocol. This collaborative approach ensures that DSNP evolves in a manner that aligns with the needs and values of its users.
 
-DSNP Protocol Integration with Polkadot
----------------------------------------
+## DSNP Protocol Integration with Polkadot
 
 After extensive analysis, Polkadot was chosen as the optimal blockchain platform for scaling DSNP. Polkadot’s architecture, including its energy-efficient consensus mechanisms and state sharding capabilities, makes it well-suited for implementing DSNP at scale. The first production-grade implementation of DSNP is planned as a Layer-1 parachain on Polkadot, developed in partnership with Parity Technologies.
 

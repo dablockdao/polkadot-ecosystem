@@ -1,18 +1,11 @@
 ---
 title: 'Tanssi Network'
+description: Tanssi is an appchain infrastructure protocol designed to streamline the development and deployment of custom blockchains for various applications
 ---
-Infraestructure  
-
-Tanssi is an appchain infrastructure protocol designed to streamline the development and deployment of custom blockchains for various applications
-
-Tanssi Network: Simplifying Appchain Deployment in the Polkadot Ecosystem  
-
-----------------------------------------------------------------------------
 
 Tanssi is an appchain infrastructure protocol designed to streamline the development and deployment of custom blockchains for various applications. It empowers developers by addressing the complexities often associated with traditional appchain implementations.
 
-The Challenge of Appchains
---------------------------
+## The Challenge of Appchains
 
 Building appchains typically involves managing numerous infrastructural components, including:
 
@@ -31,8 +24,7 @@ This process is not only time-consuming but also resource-intensive. Additionall
 - **Limited Interoperability:** Difficulty connecting to other blockchain ecosystems.
 - **Slow Time to Market:** Complex infrastructure hinders development focus.
 
-How Tanssi Streamlines Appchain Development
--------------------------------------------
+## How Tanssi Streamlines Appchain Development
 
 Tanssi tackles these challenges by offering several key features:
 

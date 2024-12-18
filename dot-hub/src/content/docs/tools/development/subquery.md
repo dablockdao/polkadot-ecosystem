@@ -1,17 +1,11 @@
 ---
 title: Subquery
+description: SubQuery is an open-source, decentralized data infrastructure network that provides both Remote Procedure Call (RPC) and indexed data.
 ---
-Data  
-
-SubQuery is an open-source, decentralized data infrastructure network that provides both Remote Procedure Call (RPC) and indexed data.
-
-Understanding SubQuery: A Comprehensive Guide for the Polkadot Ecosystem
-------------------------------------------------------------------------
 
 As the Polkadot ecosystem continues to expand, the demand for robust, scalable, and efficient data indexing and retrieval solutions grows. SubQuery emerges as a pivotal player in this space, offering a fast, flexible, and reliable decentralized data infrastructure network. This article delves into the intricacies of SubQuery, exploring its features, components, and the benefits it brings to web3 developers and the broader blockchain ecosystem.
 
-What is SubQuery?
------------------
+## What is SubQuery?
 
 SubQuery is an open-source, decentralized data infrastructure network that provides both Remote Procedure Call (RPC) and indexed data to consumers globally. It acts as a crucial intermediary layer, simplifying data querying and retrieval processes for decentralized applications (dApps) across various supported blockchains.
 
