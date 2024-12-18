@@ -1,13 +1,9 @@
 ---
 title: 'Department of Decentralization'
+description: Empowering communities through decentralization advocacy, the Department of Decentralization promotes innovative decentralized technologies.
 ---
-DAO  
- Events  
 
-Empowering communities through decentralization advocacy, the Department of Decentralization promotes innovative decentralized technologies.
-
-The Department of Decentralization Advocating for Distributed Authority and Empowering Communities
---------------------------------------------------------------------------------------------------
+*The Department of Decentralization Advocating for Distributed Authority and Empowering Communities* EVENTS
 
 The **Department of Decentralization (DoD)** is a dynamic non-governmental organization dedicated to **promoting the decentralization of power and distributing authority across different levels of government and society**. Established in 2018, this Berlin-based collective emerged from various crypto, decentralization, and peer-to-peer communities. The DoD’s mission is to advocate for policies and initiatives that empower local communities, reduce the concentration of power, and foster greater individual and collective autonomy.
 

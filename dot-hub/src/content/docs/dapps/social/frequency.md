@@ -1,17 +1,11 @@
 ---
 title: Frequency
+description: Frequency is a specialized Layer 1 public blockchain designed to realize the Decentralized Social Networking Protocol (DSNP).
 ---
-Social  
-
-Frequency is a specialized Layer 1 public blockchain designed to realize the Decentralized Social Networking Protocol (DSNP).
-
-Understanding Frequency in the Polkadot Ecosystem
--------------------------------------------------
 
 **Frequency** is a specialized **Layer 1 public blockchain designed to realize the [Decentralized Social Networking Protocol (DSNP)](https://dablock.com/dapps/dsnp-protocol/)**. It offers critical infrastructure for next-generation social networking applications, empowering individuals with greater control over their data and enabling participation in the evolving digital economy. Frequency provides scalable message discovery, flexible state storage for **social graph and identity data**, and primitives for cost-shifting and delegation of authority. This unique combination allows applications to offer intuitive user experiences while ensuring user control over personal data and online relationships. Frequency introduces an alternative **economic model based on Message Batching** and token staking for recurring network capacity, making it adaptable for future protocols with similar requirements. The native coin for Frequency is named **FRQCY**.
 
-Frequency Architecture
-----------------------
+## Frequency Architecture
 
 Frequency is built as a Layer 1 blockchain tailored to support high-volume, data-driven applications within a decentralized environment. Its architecture includes core components essential for operation within the **Polkadot ecosystem**, ensuring robust performance and interoperability.
 
@@ -29,8 +23,7 @@ Frequency is built as a Layer 1 blockchain tailored to support high-volume, data
   
   Changes are first deployed to Testnet before Mainnet, ensuring robust testing and smooth upgrades.
 
-Frequency Interaction Model
----------------------------
+## Frequency Interaction Model
 
 Users and applications interact with Frequency Nodes through extrinsics, State Queries, Runtime APIs, and Custom RPCs.
 
@@ -43,8 +36,7 @@ Users and applications interact with Frequency Nodes through extrinsics, State Q
 
 Frequency uses collator nodes to collect transactions and produce state transition proofs. These blocks are submitted to the **Polkadot relay chain** for validation and security. This setup allows Frequency to focus on user functionality while leveraging the Relay Chain’s robust security.
 
-Frequency Identity Management
------------------------------
+## Frequency Identity Management
 
 Frequency introduces a discoverable and addressable user identity system, crucial for social networking applications. Key components include:
 
@@ -52,8 +44,7 @@ Frequency introduces a discoverable and addressable user identity system, crucia
 2. **Control Keys:** Cryptographic keys for identity control.
 3. **User Handles:** Human-readable identifiers for MSAs.
 
-Frequency Data Management
--------------------------
+## Frequency Data Management
 
 Frequency’s data management is designed for secure and efficient high-volume user-generated data distribution.
 
@@ -62,8 +53,7 @@ Frequency’s data management is designed for secure and efficient high-volume u
 3. **Messages:** Published data conforming to Frequency Schemas, facilitating high scalability through off-chain aggregation.
 4. **Stateful Storage:** Allows users to store data as part of the chain state, with itemized and paginated storage options for efficient data management.
 
-Frequency Delegation Model
---------------------------
+## Frequency Delegation Model
 
 Frequency’s Delegation Model balances accessibility with user control by shifting complexity and fees to Providers. Users can interact with the chain without needing tokens, delegating tasks to Providers who act on their behalf.
 

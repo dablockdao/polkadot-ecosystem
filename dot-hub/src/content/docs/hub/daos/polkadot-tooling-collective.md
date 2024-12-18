@@ -1,14 +1,10 @@
 ---
 title: 'Polkadot Tooling Collective'
+description: Discover the Polkadot Tooling Collective (PoToC). Empowering developers with essential tools for the Polkadot ecosystem.
 ---
-DAOs  
- Collective  
 
-Discover the Polkadot Tooling Collective (PoToC): Empowering developers with essential tools for the Polkadot ecosystem.
+*Empowering developers with essential tools for the Polkadot ecosystem.*
 
-Understanding Aventus Network: An In-Depth Exploration for the Polkadot Ecosystem  
-
-------------------------------------------------------------------------------------
 
 The **Polkadot Tooling Collective (PoToC)** is a newly proposed initiative aimed at enriching the Polkadot ecosystem by recognizing and supporting developers who contribute significantly to the tools and libraries essential for Polkadot’s success. This article outlines the purpose, structure, and mission of PoToC, providing insights into its role within the broader Polkadot framework.
 

@@ -1,14 +1,7 @@
 ---
 title: 'Linear Finance'
+description: Discover Linear Finance, a cross-chain DeFi protocol for trading synthetic assets with low fees and deep liquidity.
 ---
-DeFi  
- Delta-One  
-
-Discover Linear Finance: a cross-chain DeFi protocol for trading synthetic assets with low fees and deep liquidity.
-
-Understanding Aventus Network: An In-Depth Exploration for the Polkadot Ecosystem  
-
-------------------------------------------------------------------------------------
 
 **Linear Finance is a decentralized finance (DeFi) project** that aims to revolutionize the way users interact with financial assets. By combining extensive experience in both cryptocurrency projects and traditional asset management, **Linear Finance provides a non-custodial, cross-chain compatible delta-one asset protocol**. This protocol allows users to seamlessly access and trade various digital and traditional assets with minimal transaction fees and zero slippage.
 

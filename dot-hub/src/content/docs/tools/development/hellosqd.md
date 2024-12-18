@@ -1,13 +1,7 @@
 ---
 title: HelloSQD
+description: SQD Network is a decentralized query engine optimized for the batch extraction of large volumes of data.
 ---
-Data  
-
-SQD Network is a decentralized query engine optimized for the batch extraction of large volumes of data.
-
-SQD Network &amp; Data Access in the Polkadot Ecosystem  
-
-----------------------------------------------------------
 
 The Polkadot ecosystem continues to grow, with numerous projects and innovations enhancing its versatility and robustness. One such significant addition is the Subsquid Network, a decentralized query engine designed for efficient, large-scale data extraction. This article delves into the details of the **Subsquid Network**, its components, and its role within the broader Polkadot ecosystem.
 

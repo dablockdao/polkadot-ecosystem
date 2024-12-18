@@ -1,19 +1,9 @@
 ---
 title: 'Polkadot Anti-Scam Team'
+description: Protecting Polkadot users from scams through education, proactive monitoring, and swift responses to fraud with Polkadot Anti-Scam Team.
 ---
-Initiative  
-Security  
 
-Protecting Polkadot users from scams through education, proactive monitoring, and swift responses to fraud with Polkadot Anti-Scam Team.
-
-- 
-- 
-- 
-- 
-- 
-
-What is the Polkadot Anti-Scam Team?
-------------------------------------
+*Protecting Polkadot Users*
 
 In the rapidly evolving world of blockchain technology, security is a paramount concern. Polkadot, known for its innovative ecosystem, has established the Polkadot Anti-Scam Team to enhance user safety. This team is committed to protecting the community from scams, fostering a safer environment for all participants.
 

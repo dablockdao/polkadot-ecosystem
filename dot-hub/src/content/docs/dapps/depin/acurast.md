@@ -1,9 +1,7 @@
 ---
 title: Acurast
+description: Acurast is a decentralized serverless cloud platform designed to provide secure, confidential, and verifiable computation for various application.
 ---
-
-Acurast Network: Decentralized Serverless Cloud for the Polkadot Ecosystem
---------------------------------------------------------------------------
 
 In today’s interconnected world, centralized trust is pervasive, particularly in computational resources and data storage. However, the rise of large-scale data leaks and breaches has underscored the need for a permissionless and decentralized cloud future. Acurast Network, a Layer-1 blockchain, addresses these challenges by providing a decentralized, serverless cloud solution. This article explores Acurast’s features, architecture, and benefits for developers and organizations within the Polkadot ecosystem.
 

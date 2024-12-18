@@ -1,19 +1,11 @@
 ---
 title: 'Singular NFT Marketplace'
+description: Explore Singular, a Modular NFT marketplace for buying, selling, and trading advanced digital assets securely on the blockchain.
 ---
-NFTs  
- NFTs Marketplace  
-
-Explore Singular, a Modular NFT marketplace for buying, selling, and trading advanced digital assets securely on the blockchain.
-
-Singular NFT Marketplace: A Professional Overview  
-
-----------------------------------------------------
 
 Singular NFT Marketplace, developed by the RMRK team, is a pioneering platform for buying, selling, and trading both regular and advanced NFTs. Singular offers users a seamless experience by combining robust blockchain technology with user-friendly interfaces. The Singular Learn portal provides extensive educational resources, catering to both beginners and seasoned users in the NFT and Web3 space.
 
 Singular NFT Marketplace Guide
-------------------------------
 
 Below we will delve into topics ranging from basic NFT concepts to advanced subjects like **Modular NFTs** and **Soulbound NFTs**. Additionally, it covers essential aspects of blockchain technology, including cryptocurrencies, crypto wallets, and safe navigation within the Web3 ecosystem.
 

@@ -1,0 +1,62 @@
+---
+title: Dwellir
+description: Dwellir is Leading blockchain infrastructure with global RPC support, 99.99% uptime, and a commitment to privacy and decentralization.
+---
+
+*Boosting Blockchain Infrastructure with Global RPC Endpoints*
+
+Dwellir AB, founded in Uppsala, Sweden, in 2021 by Gustav Nipe, Joakim Nyman, and Erik Lönroth, stands at the forefront of blockchain infrastructure development. With a firm commitment to fostering a decentralized internet, Dwellir focuses on creating robust infrastructure for prominent blockchain networks such as Polkadot and Ethereum. The company’s mission is rooted in the vision of a free and decentralized internet, emphasizing privacy, integrity, and technical excellence.
+
+## Dwellir Technical Expertise and Global Reach
+
+Dwellir has established itself as a world-class RPC (Remote Procedure Call) infrastructure provider, maintaining nodes for over 40 blockchains and processing over 500 million requests daily. This extensive experience allows Dwellir to offer unparalleled reliability and efficiency, critical for the fast-paced and constantly evolving blockchain landscape. The company’s infrastructure supports 41 public Web3 RPC node API endpoints, including major networks like Polkadot, Astar, Moonbeam, and Moonriver, providing dedicated and scalable API endpoints for seamless development.
+
+## Dwellir Commitment to Privacy and Decentralization
+
+One of Dwellir’s distinguishing features is its dedication to maintaining core systems outside of public clouds. This strategic choice underscores the company’s commitment to privacy and decentralization. By financing operations entirely through the original founders, Dwellir ensures autonomy and the freedom to innovate without external constraints.
+
+## Dwellir Strategic Expansions and Future Projects
+
+Dwellir’s recent expansions reflect its strategic vision and commitment to global presence. The company has extended its operations to Rack Centre, a state-of-the-art data center in West Africa, marking its second African expansion following its launch in Tunisia. This expansion aims to enhance ecosystem accessibility in West Africa, demonstrating Dwellir’s dedication to supporting blockchain technology on a global scale.
+
+Looking ahead, Dwellir is focused on stability and growth, with particular interest in networks like Polkadot, Kusama, and Ethereum. The company is actively seeking partnerships and scaling operations to secure its position as a leading blockchain infrastructure provider.
+
+## Dwellir Testimonials and Industry Trust
+
+Dwellir’s reputation for reliability and expertise is echoed by its partners and clients. Testimonials from industry leaders such as Ran Ji from Darwinia Network, Harald Heckmann from Zeitgeist, Ingo Rübe from KILT Protocol, and Rene Stefancic from Enjin, highlight the company’s role as a trusted and dependable partner. These endorsements reinforce Dwellir’s status as a cornerstone in the blockchain infrastructure domain.
+
+## Dwellir Service Offerings and Capabilities
+
+Dwellir offers a suite of services designed to meet diverse business needs. Key offerings include:
+
+- **99.99% Uptime Guarantee**: Ensuring applications run smoothly, even during demand spikes, without sacrificing speed or efficiency.
+- **Access to Latest Chains**: Providing immediate access to the latest blockchain networks, fostering innovation and growth.
+- **Custom Node Solutions**: Tailoring services to meet specific business requirements, whether for existing blockchain nodes or new setups.
+
+### **Dwellir Supported Blockchain Networks**
+
+Dwellir supports a broad spectrum of blockchain networks, including:
+
+- **Acala**
+- **Aleph Zero**
+- **Amplitude**
+- **Arbitrum**
+- **Astar**
+- **Avalanche**
+- **Binance Smart Chain**
+- **Darwinia**
+- **Ethereum**
+- **Fantom**
+- **Kusama**
+- **Moonbeam**
+- **Polkadot**
+- **Polygon**
+- **StarkNet**
+- **Zeitgeist**
+- And many more.
+
+This extensive network support ensures developers have access to a wide array of platforms, facilitating diverse and innovative blockchain projects.
+
+**Conclusion**
+
+Dwellir AB is a pioneering force in the blockchain infrastructure sector, driving the future of a decentralized internet with unwavering commitment to privacy, technical excellence, and global accessibility. Through strategic expansions, robust service offerings, and a deep-rooted mission to support a free and decentralized internet, Dwellir is set to continue leading the way in blockchain infrastructure development.

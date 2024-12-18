@@ -1,13 +1,10 @@
 ---
 title: 'DIN (Former Web3Go)'
+description: DIN (previously Web3Go) is transforming blockchain data analysis with comprehensive tools for Polkadot, Kusama, Ethereum, and more. Unlock data value today.
+sidebar:
+    label: DIN
 ---
-Tools  
- Analytics  
 
-DIN (previously Web3Go) is transforming blockchain data analysis with comprehensive tools for Polkadot, Kusama, Ethereum, and more. Unlock data value today.
-
-DIN Blockchain data analysis for Polkadot and Ethereum
-------------------------------------------------------
 
 **DIN** (previously Web3Go) is a **data analytics platform** designed to unlock the value behind blockchain data. Supporting Polkadot, Kusama, Ethereum, and more, Web3Go is the first project dedicated to providing comprehensive data services related to Polkadot parachain projects. As the Polkadot ecosystem expands, the need for a robust, community-oriented data platform becomes increasingly evident. Web3Go addresses this necessity by offering a suite of powerful tools to analyze and interpret blockchain data.
 

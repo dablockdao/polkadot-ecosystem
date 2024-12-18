@@ -1,28 +1,20 @@
 ---
 title: Litentry
+description:  Litentry is a decentralized, cross-chain identity aggregator protocol that empowers users to manage their digital identities across various web3 platforms.
 ---
-DeFi  
- Litentry is a decentralized, cross-chain identity aggregator protocol that empowers users to manage their digital identities across various web3 platforms.
-
-Litentry: Decentralized Identity Aggregator for Web3
-----------------------------------------------------
-
 Litentry is a decentralized, cross-chain identity aggregator protocol that empowers users to manage their digital identities across various web3 platforms. It offers a privacy-preserving solution for users to control their personal data and leverage it to gain value in the blockchain ecosystem.
 
-What is Litentry?
------------------
+## What is Litentry?
 
 Litentry operates as a decentralized identity aggregator, allowing users to create a comprehensive identity profile by linking their various web3 wallets and web2 accounts. This aggregated identity adheres to W3C DID standards, fostering interoperability across different blockchain networks.
 
-Litentry’s core functionalities include:
-----------------------------------------
+## Litentry’s core functionalities include:
 
 - **Secure Identity Management:** Users can manage their identity data through Litentry’s Identity Hub, enabling them to control what information they share with third-party applications.
 - **Privacy-Preserving Computation:** Litentry utilizes Trusted Execution Environments (TEEs) to perform secure calculations on identity data without revealing the underlying information. This protects user privacy while generating verifiable credentials.
 - **Verifiable Credentials:** Litentry issues verifiable credentials based on W3C standards. These credentials act as tamper-proof certifications of a user’s identity attributes, allowing them to share specific data points with dApps without compromising their privacy.
 
-The LIT Token
--------------
+## The LIT Token
 
 The LIT token serves as the utility token within the Litentry ecosystem. Its functions include:
 
@@ -30,8 +22,7 @@ The LIT token serves as the utility token within the Litentry ecosystem. Its fun
 - **Data Access:** Users may need to spend LIT tokens to access certain identity verification services or data analysis features offered by Litentry.
 - **Incentivization:** LIT tokens can be used to incentivize users to contribute their identity data to the network and participate in the verification process.
 
-Benefits of Litentry
---------------------
+## Benefits of Litentry
 
 Litentry offers several advantages for both users and developers:
 

@@ -1,13 +1,9 @@
 ---
 title: 'OpenGuild Labs'
+description: OpenGuild Lab is a Polkadot-focused community offering in-depth educational resources and support for Web3 developers in Southeast Asia.
 ---
-DAO  
- Education  
 
-OpenGuild Lab is: a Polkadot-focused community offering in-depth educational resources and support for Web3 developers in Southeast Asia.
-
-OpenGuild Lab: Polkadot Resources for Web3 Developers in Southeast Asia
------------------------------------------------------------------------
+*Polkadot Resources for Web3 Developers in Southeast Asia*
 
 OpenGuild Labs is a community-centric initiative designed to support developers in their journey through the Polkadot ecosystem. Established by experienced Web3 builders, OpenGuild Labs aims to provide a comprehensive and **in-depth understanding of Polkadot blockchain technology**, emphasizing a **low-level approach to its educational resources**.
 

@@ -1,14 +1,9 @@
 ---
 title: 'Fidi Web3 Analytics'
----
-Tools  
- Web3 Analytics  
-
-The Aventus Network (AvN) represents a new generation of scalable and interoperable blockchain technology.
-
-
-FiDi is Revolutionizing Web3 Analytics with Code-Free Solutions
----------------------------------------------------------------
+description: Data-Driven Portfolio Excellence.
+sidebar:
+    label: FiDi
+---  
 
 In the rapidly evolving landscape of blockchain technology and decentralized finance (DeFi), access to comprehensive and customizable analytics is crucial for informed decision-making. FiDi, an innovative platform powered by the open-source DotSight library, offers an unparalleled solution to this need. By providing a code-free analytics hub for Web3, FiDi enables users to access real-time data from a variety of providers, all within a single, intuitive platform. This article explores FiDi’s offerings, its core functionalities, and its potential impact on the blockchain ecosystem, particularly within the Polkadot network.
 

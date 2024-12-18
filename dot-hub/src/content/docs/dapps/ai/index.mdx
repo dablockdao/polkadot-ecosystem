@@ -1,27 +1,58 @@
 ---
-title: AI Dapps
-description: Get started and join the biggest DAO in the world.
+title: Polkadot AI Dapps 
+description: Explore all the Polkadot ecosystem AI Dapps.
+tableOfContents: false
+sidebar: 
+    label: AI Dapps
+    badge: Feed
 ---
 
 import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
 
-## Discover all the Polkadot Ecosystem in One Place
+import { ShowcaseProfile } from 'starlight-showcases'
 
-<CardGrid>
+import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-	<Card title="Tools" icon="laptop">
-		Wallets, Explorers, DAO tools, Development...
-	</Card>
-	<Card title="Projects" icon="rocket">
-		DeFi, Gaming, Social, Marketplaces...
-	</Card>
-	<Card title="Technology" icon="laptop">
-		Resources to understand the concepts of JAM, Agile Coretime, Elastic Scaling...
-	</Card>
-	<Card title="Media" icon="setting">
-		Events, Interviews, Podcasts, Newsletters...
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Here is a list with the best Polkadot ecosystem AI related projects
+
+## Polkadot AI Dapps
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/dapps/ai/bittensor/',
+      title: 'Bittensor',
+    },
+                     {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/ai/aventus-network/',
+      title: 'Aventus Network',
+      },  
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/ai/neuroweb/',
+      title: 'Nova Wallet',
+      },
+              {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/ai/phala-network/',
+      title: 'Phala Network',
+    },
+  ]}
+/>
+
+
+## Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=7_7ANm2DU6Q',
+      title: 'Origin Trail built - Alpha Airdrop',
+	  description: 'Origin Trail is building a "truth-driven internet" through a Decentralized Knowledge Graph (dKG) that rewards contributors with crypto tokens for adding accurate knowledge assets as NFTs',
+    },
+  ]}
+/>

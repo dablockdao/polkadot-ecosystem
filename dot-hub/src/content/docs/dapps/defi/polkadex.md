@@ -1,14 +1,7 @@
 ---
 title: Polkadex
+description: The non-custodial, CEX-like orderbook DEX for DotSama and beyond.
 ---
-DeFi  
- DEX  
-
-
-The non-custodial, CEX-like orderbook DEX for DotSama &amp; beyond.
-
-What is Polkadex?
------------------
 
 Polkadex is a DeFi **DEX (decentralized exchange) designed with the use of Substrate framework technology** and integrated within the Polkadot ecosystem. It features distinct advantages:
 

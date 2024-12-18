@@ -1,23 +1,18 @@
 ---
 title: 'Astar Network'
+description: A Scalable Network Powering a Global Web3 Vision for All.
 ---
-Ecosystem  
- 
-Astar Network: The Hub for Decentralized Applications on Polkadot
------------------------------------------------------------------
 
 Astar Network is a blockchain platform built on Polkadot, aiming to become the premier destination for decentralized applications (dApps). **It supports both Ethereum Virtual Machine (EVM) and WebAssembly (Wasm) environments**, enabling developers to leverage the strengths of both paradigms.
 
-Key Features of Astar Network
------------------------------
+# Key Features of Astar Network
 
 - **Interoperability:** Astar Network boasts a unique interoperability framework that allows dApps to interact with each other seamlessly across different blockchains within the Polkadot ecosystem. This fosters innovation and collaboration among developers.
 - **dApp Staking:** Astar’s innovative dApp Staking mechanism incentivizes developers by allowing token holders to stake their ASTR tokens on their preferred dApps. This not only rewards developers for building valuable applications but also fuels the growth of the Astar ecosystem.
 - **Scalability:** Unlike traditional blockchains, Astar Network overcomes scalability limitations. It utilizes a sharded architecture, efficiently processing a high volume of transactions without compromising security.
 - **Security:** Astar Network leverages the shared security of Polkadot, ensuring a robust and reliable environment for dApps.
 
-Astar Token (ASTR)
-------------------
+## Astar Token (ASTR)
 
 ASTR is the native token of Astar Network and serves three primary functions:
 
@@ -25,8 +20,7 @@ ASTR is the native token of Astar Network and serves three primary functions:
 - **Transactions:** Every transaction on the Astar Network requires a fee, paid in ASTR. A portion of these fees is burned, while the remainder is distributed to network validators.
 - **Governance:** ASTR token holders participate in on-chain governance, shaping the future of Astar Network through voting on critical proposals.
 
-dApp Staking Explained
-----------------------
+## dApp Staking Explained
 
 dApp Staking is a cornerstone of the Astar Network ecosystem. It provides a win-win situation for all stakeholders:
 
@@ -35,8 +29,7 @@ dApp Staking is a cornerstone of the Astar Network ecosystem. It provides a win-
   dApps: Gain access to a larger user base and attract investment through increased visibility and user participation.
 - **dApp Staking V3:** The latest version of dApp Staking introduces a more granular reward system with tiers based on the total value staked on a dApp. This incentivizes competition and ensures fair distribution of rewards.
 
-Participating in Astar Network
-------------------------------
+## Participating in Astar Network
 
 Astar offers various ways to get involved in its ecosystem:
 
@@ -44,8 +37,7 @@ Astar offers various ways to get involved in its ecosystem:
 - **Developers:** Developers can build dApps on Astar Network, taking advantage of its unique features and dApp Staking incentives.
 - **Users:** Users can interact with a wide range of dApps built on Astar Network, enjoying a secure and interoperable experience.
 
-A Deep Dive into Astar Network’s Family of Networks
----------------------------------------------------
+## A Deep Dive into Astar Network’s Family of Networks
 
 Before diving into development on Astar Network, choosing the right network is crucial. Astar offers a variety of options catering to different needs, from isolated development environments to live testing grounds. Let’s explore each network in detail:
 

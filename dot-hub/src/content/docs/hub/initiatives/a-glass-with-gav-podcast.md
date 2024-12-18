@@ -1,14 +1,11 @@
 ---
-title: 'A Glass With Gav'
+title: 'A Glass With Gav Podcast'
+description: A Glass With Gav is a monthly podcast with Dr. Gavin Wood discussing technology, governance, philosophy, and whiskey. Hosted by Mark Cachia.
+sidebar:
+    label: 'A Glass With Gav'
 ---
----
-Initiative  
- Media  
 
-A Glass With Gav is a monthly podcast with Dr. Gavin Wood discussing technology, governance, philosophy, and whiskey. Hosted by Mark Cachia.
-
-A Glass With Gav Podcast: Exploring the Mind of Dr. Gavin Wood
---------------------------------------------------------------
+*Exploring the Mind of Dr. Gavin Wood*
 
 In the of blockchain industry, few voices resonate as profoundly as **Dr. Gavin Wood**‘s. Co-founder of Ethereum and the visionary behind Polkadot, Dr. Wood has been at the forefront of blockchain innovation for over a decade. His insights and experiences are now more accessible than ever through the monthly podcast, ***A Glass With Gav***, hosted by **Mark Cachia**. This podcast offers a rare glimpse into the thoughts of one of the most influential figures in the blockchain space, covering a wide range of topics from technology and governance to philosophy and whiskey.
 

@@ -1,11 +1,8 @@
 ---
 title: 'Aventus Network'
+description: The Aventus Network (AvN) represents a new generation of scalable and interoperable blockchain technology.
 ---
-Ecosystem  
- 
 
-Understanding Aventus Network Mission
--------------------------------------
 
 The Aventus Network (AvN) represents a new generation of scalable and interoperable blockchain technology. Built on Substrate and operating as a Polkadot parachain, Aventus boasts high transaction throughput, deterministic finality, and low transaction costs. It serves as a bridge between the Ethereum and Polkadot ecosystems, enabling seamless interoperability. Since its mainnet launch in 2021, Aventus has processed over 36 million transactions, demonstrating its capability and reliability.
 

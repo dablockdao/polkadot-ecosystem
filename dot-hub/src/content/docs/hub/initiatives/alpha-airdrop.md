@@ -1,13 +1,7 @@
 ---
 title: 'Alpha Airdrop'
+description: Alpha Airdrop offers engaging and educational Polkadot video content, promoting blockchain technology through fun stories, news, and project insights
 ---
-Ecosystem  
- Media  
-
-Alpha Airdrop offers engaging and educational Polkadot video content, promoting blockchain technology through fun stories, news, and project insights
-
-What is Alpha Airdrop?
-----------------------
 
 **Alpha Airdrop** is a dedicated video content team within the Polkadot ecosystem, focusing on creating engaging and educational content about blockchain technology, specifically within Polkadot. Based in the US, the team aims to make learning about crypto fun and accessible through various forms of video content.
 

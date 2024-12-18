@@ -1,17 +1,13 @@
 ---
 title: ArtZero
+description: ArtZero is the first and currently the only non-fungible token (NFT) marketplace built with Ink! on the Aleph Zero and Astar blockchains
+sidebar:
+  label: Artzero
 ---
-NFTs  
- NFT Marketplace  
-
-ArtZero NFT Marketplace: A Comprehensive Guide for the Polkadot Ecosystem  
-
-----------------------------------------------------------------------------
 
 ArtZero is the first and currently the only non-fungible token (NFT) marketplace built with Ink! on the Aleph Zero and Astar blockchains. The platform aims to provide a secure, decentralized, and user-friendly environment for creators and collectors to engage in the dynamic world of NFTs. ArtZero is not just a marketplace; it also includes its native NFT collection called Praying Mantis Predators (PMP) on the Aleph Zero network, with plans to expand to the Astar network. Owners of PMP NFTs can stake them for a share of platform revenue and other exclusive perks.
 
-ArtZero NFT Marketplace Overview
---------------------------------
+## ArtZero NFT Marketplace Overview
 
 **Supported Standards**
 
@@ -24,8 +20,7 @@ ArtZero supports the PSP34 (ERC721) standard and is working on implementing PSP1
 - **Testnet on Aleph Zero**: [Aleph Zero Testnet](https://a0-test.artzero.io/)
 - **Testnet on Astar**: [Astar Testnet](https://shibuya.artzero.io/)
 
-Artzero NFT Marketplace Key Features
-------------------------------------
+## Artzero NFT Marketplace Key Features
 
 ### Launching Plan on Aleph Zero
 

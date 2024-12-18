@@ -1,13 +1,7 @@
 ---
 title: Zenlink
+description:  The 1st native cross-chain DEX protocol based on Polkadot.
 ---
-DeFi  
- DEX  
-
- The 1st native cross-chain DEX protocol based on Polkadot.
-
-What is Zenlink?
-----------------
 
 **Zenlink is a decentralized cross-chain liquidity protocol aimed at enhancing interoperability across various blockchains within and outside the Polkadot ecosystem**. It facilitates the connection between different DeFi ecosystems, enabling seamless asset swaps, liquidity provision, and yield farming activities across multiple chains.
 

@@ -1,10 +1,12 @@
 ---
 title: Chainflip
+description: Discover Chainflip’s decentralized protocol for seamless, efficient cross-chain swaps with accurate pricing and minimal slippage. Revolutionize crypto trading.
+sidebar: 
+    order: 7
 ---
 DefI  
  Bridge  
 
-Discover Chainflip’s decentralized protocol for seamless, efficient cross-chain swaps with accurate pricing and minimal slippage. Revolutionize crypto trading.
 
 How Chainflip is Revolutionizing Cross-Chain Swaps?
 ---------------------------------------------------

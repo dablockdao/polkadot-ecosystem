@@ -1,18 +1,11 @@
 ---
 title: Apillon
+description: Apillon is Simplifying Web3 development on Polkadot with easy APIs and prebuilt solutions for fast dApp creation.
 ---
-Tool  
- Development  
- 
-
-Apillon: Empowering Web3 Development on the Polkadot Ecosystem  
-
------------------------------------------------------------------
 
 The evolution of Web3 represents a significant shift in how we interact with the digital world. At the forefront of this revolution is Apillon, a Web3 development platform designed to simplify and accelerate the creation of decentralized applications (dApps) within the Polkadot ecosystem. By providing a comprehensive technology stack, Apillon empowers developers of all levels to build NFTs and other Web3 products with ease, reliability, and speed.
 
-What is Apillon?
-----------------
+## What is Apillon?
 
 Apillon is a cutting-edge Web3 development platform that abstracts the complexities of blockchain technology, making it accessible to a broader range of developers. Built on the robust and scalable Polkadot network, Apillon offers a suite of tools and services through standard API connections and an intuitive drag-and-drop UI. This platform ensures that developers can focus on innovation and product development without being bogged down by the intricate details of blockchain integration.
 

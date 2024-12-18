@@ -1,13 +1,7 @@
 ---
 title: 'Talisman Wallet'
+description: A user-friendly wallet built for Polkadot & Ethereum. Talisman makes web3 simple for beginners and unlocks superpowers for pros.
 ---
-Tools  
- Browser Wallet  
- 
- A user-friendly wallet built for Ethereum &amp; Polkadot
-
-What is Talisman Wallet?
-------------------------
 
 **Talisman Wallet** combines the functionality required to **manage your Ethereum-based digital assets with Polkadot**. Talisman is a non-custodial cryptocurrency wallet that guarantees nobody has access to your funds but you, while at the same time merging the security and convenience of an all-inclusive asset management platform.
 

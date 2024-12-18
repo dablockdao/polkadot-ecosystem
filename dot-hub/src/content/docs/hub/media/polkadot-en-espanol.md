@@ -1,13 +1,9 @@
 ---
 title: 'Polkadot en Español'
+description: Polkadot en Español empowering LATAM’s blockchain community with resources, events, and educational content.
 ---
-Initiative  
- Local community  
 
-Join Polkadot en Español empowering LATAM’s blockchain community with resources, events, and educational content.
-
-Join Polkadot en Español: Empowering LATAM’s Blockchain Community
------------------------------------------------------------------
+*Empowering LATAM’s Blockchain Community*
 
 Polkadot en Español is an initiative designed to engage and empower the Spanish-speaking community within the Polkadot ecosystem, particularly in the LATAM region. This effort focuses on enhancing the visibility and accessibility of Polkadot’s blockchain technology through tailored content, events, and educational programs.
 

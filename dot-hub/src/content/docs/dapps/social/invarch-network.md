@@ -1,20 +1,13 @@
 ---
 title: 'InvArch Network'
+description: The InvArch Network is designed as a multichain account abstraction hub that facilitates decentralized operations and financial management across diverse blockchains.
 ---
-Tool  
- DAO Tool  
-
-The InvArch Network is designed as a multichain account abstraction hub that facilitates decentralized operations and financial management across diverse blockchains.
-
-What is InvArch Network?
-------------------------
 
 The InvArch Network positions itself as a revolutionary blockchain infrastructure designed to streamline multichain operations and financial management. Built on the Polkadot ecosystem, **InvArch offers a novel approach to account management**, empowering individuals, organizations, and Decentralized Autonomous Organizations (DAOs) to navigate the complex landscape of blockchains with a single, unified account.
 
 This page delves into the core functionalities of InvArch Network, exploring its significance within the Polkadot dApps (decentralized applications) landscape.
 
-InvArch Network: A Multichain Account Abstraction Hub
------------------------------------------------------
+## InvArch Network: A Multichain Account Abstraction Hub
 
 InvArch Network’s core innovation lies in its multichain account abstraction. It essentially acts as a bridge between various blockchains, providing users with a universal account that transcends individual blockchain limitations. This eliminates the need for multiple accounts scattered across different blockchains, simplifying asset management and transaction execution.
 
@@ -23,8 +16,7 @@ Here’s a breakdown of **how InvArch Network facilitates multichain operations*
 - **Single Account for All Blockchains:** With an InvArch account, users can interact with any blockchain supported by the network. This eliminates the burden of managing separate accounts and private keys for each blockchain.
 - **Cross-Consensus Messaging (XCM) &amp; Multiparty Computation (MPC):** InvArch leverages XCM, a core Polkadot technology, to facilitate secure communication between parachains (independent blockchains connected to the Polkadot relay chain). Additionally, MPC empowers secure generation and control of external accounts on other blockchains without compromising private keys.
 
-Dynamic Governance and Advanced Account Management
---------------------------------------------------
+## Dynamic Governance and Advanced Account Management
 
 InvArch Network goes beyond just offering a unified account. It empowers users with sophisticated governance features and advanced account management tools.
 
@@ -35,8 +27,7 @@ InvArch Network goes beyond just offering a unified account. It empowers users w
   Dynamic Voting Thresholds and Retroactive Configurations: InvArch facilitates flexible voting mechanisms with dynamic thresholds and the ability to retroactively apply configurations.
 - **Self-Executing Governance:** Smart contracts can be deployed within InvArch accounts to automate governance processes.
 
-Custom Logic with Smart Contracts
----------------------------------
+## Custom Logic with Smart Contracts
 
 InvArch Network integrates seamlessly with smart contracts, enabling users to define custom logic for various functionalities. Smart contracts deployed on the network can be used for:
 
@@ -44,8 +35,7 @@ InvArch Network integrates seamlessly with smart contracts, enabling users to de
 - **Reputation Logic and Trustless Promotions:** Smart contracts can be designed to manage reputation systems and automate trust-based promotions within DAOs.
 - **Automating Financial Processes:** Repetitive financial tasks like payroll and budget disbursements can be automated using smart contracts on the InvArch Network.
 
-Revolutionary Potential: Bridging the Blockchain Divide
--------------------------------------------------------
+## Revolutionary Potential: Bridging the Blockchain Divide
 
 InvArch Network envisions a future where individuals and organizations operate seamlessly across blockchains with a single, non-custodial account. This revolutionary approach offers several potential benefits:
 
@@ -55,8 +45,7 @@ InvArch Network envisions a future where individuals and organizations operate s
 - **Foundation for Novel Business Models:** The multichain capabilities of InvArch unlock the potential for innovative business models that transcend blockchain boundaries.
 - **Global Economic Opportunity:** By simplifying blockchain interaction, InvArch has the potential to create a more accessible and inclusive global economic landscape.
 
-The VARCH Token: Fueling the InvArch Ecosystem
-----------------------------------------------
+## The VARCH Token: Fueling the InvArch Ecosystem
 
 The native token of the InvArch Network is VARCH. It serves several crucial purposes within the ecosystem:
 

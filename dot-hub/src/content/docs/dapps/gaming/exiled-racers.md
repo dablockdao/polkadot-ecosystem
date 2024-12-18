@@ -1,13 +1,9 @@
 ---
 title: 'Exiled Racers'
+description: Exiled Racers is a pioneering 3D NFT project within the Polkadot ecosystem, leveraging Moonbeam’s EVM compatibility to deliver hyper-realistic NFTs and rewarding play-to-enjoy experiences.
+sidebar:
+  order: 3
 ---
-NFTs  
- Gaming  
-
-Exiled Racers is a pioneering 3D NFT project within the Polkadot ecosystem, leveraging Moonbeam’s EVM compatibility to deliver hyper-realistic NFTs and rewarding play-to-enjoy experiences.
-
-What is Exiled Racers? The Ultimate Fantasy League Racing Experience in the Polkadot Ecosystem
-----------------------------------------------------------------------------------------------
 
 Exiled Racers is a pioneering 3D NFT project within the Polkadot ecosystem, leveraging Moonbeam’s EVM compatibility to deliver hyper-realistic NFTs and rewarding play-to-enjoy experiences. As Moonbeam’s first native bluechip NFT art collection, Exiled Racers seamlessly integrates high-fidelity NFT art, fantasy league sports, and gaming into a cohesive ecosystem designed for time-poor NFT fans and gamers. This community-driven fantasy league racing manager game features a low-touch, high-reward gameplay mechanic currently in its Alpha phase.
 

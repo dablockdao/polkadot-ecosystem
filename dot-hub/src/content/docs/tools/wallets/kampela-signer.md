@@ -1,23 +1,20 @@
 ---
 title: 'Kampela Signer'
+description: Kampela Signer is a hardware implementation of the Polkadot Vault. It is a small, card-shaped device designed to securely store cryptographic keys and perform signing operations.
 ---
-Wallets  
- Hardware Wallets  
+
 
 Kampela Signer is a hardware implementation of the Polkadot Vault (formerly known as Parity Signer). It is a small, card-shaped device designed to securely store cryptographic keys and perform signing operations.
 
-Kampela Signer: A Secure Key Storage Device for the Polkadot Ecosystem
-----------------------------------------------------------------------
+## Kampela Signer: A Secure Key Storage Device for the Polkadot Ecosystem
 
 In the ever-evolving landscape of blockchain and web3 technologies, secure key management is a critical component for safeguarding digital assets. The Kampela Signer stands out as a cutting-edge solution specifically designed for the Polkadot ecosystem. This article provides an in-depth look at the Kampela Signer, exploring its features, benefits, technical specifications, and its role within the Polkadot network.
 
-What is Kampela Signer?
------------------------
+## What is Kampela Signer?
 
 Kampela Signer is a hardware implementation of the Polkadot Vault (formerly known as Parity Signer). It is a small, card-shaped device designed to securely store cryptographic keys and perform signing operations. The device accepts data through a unidirectional NFC port and displays output on a monochrome electronic paper screen. It leverages modern hardware-based crypto chips to ensure maximum security.
 
-Key Features of Kampela Signer
-------------------------------
+## Key Features of Kampela Signer
 
 #### 1. **Secure Key Storage**
 

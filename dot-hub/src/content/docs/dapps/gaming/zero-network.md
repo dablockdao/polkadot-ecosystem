@@ -1,14 +1,7 @@
 ---
 title: 'Zero Network'
+description: Decentralized network enabling innovative game creation and operation in the Web3 era with advanced blockchain technology.
 ---
-Infraestructure  
- Gaming  
- 
-Decentralized network enabling innovative game creation and operation in the Web3 era with advanced blockchain technology.
-
-Understanding Aventus Network: An In-Depth Exploration for the Polkadot Ecosystem  
-
-------------------------------------------------------------------------------------
 
 **Zero Network** stands at the intersection of video games and blockchain technology, pioneering a **decentralized network designed specifically for video games in the Web3 era**. By enabling innovative creation and operation of video games, Zero Network aims to address the limitations of traditional multiplayer network games, transforming the way games are developed, played, and experienced.
 

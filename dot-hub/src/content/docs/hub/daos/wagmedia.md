@@ -1,10 +1,9 @@
 ---
 title: WagMedia
+description: WagMedia, launched in December 2021, is designed to simplify the marketing activities within the Polkadot ecosystem.
 ---
-Initiative  
- Media  
 
-**Create 2 Earn media** and content. Finders, creators &amp; writers – all welcome.
+***Create 2 Earn media** and content. Finders, creators &amp; writers – all welcome.+
 
 
 What is WagMedia?

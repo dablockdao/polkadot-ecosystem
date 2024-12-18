@@ -1,13 +1,7 @@
 ---
 title: Blockchair
+description: Universal blockchain explorer and search engine with Polkadot support.
 ---
-Tools  
- 
-
-Explore Blockchair, a privacy-focused blockchain explorer integrating 43 blockchains for seamless data search and analysis.
-
-Exploring Blockchair: A Comprehensive Blockchain Explorer
----------------------------------------------------------
 
 Blockchair stands as a pioneering blockchain explorer, integrating data from 43 distinct blockchains into a single, user-friendly search engine. This platform offers a wide range of features and services tailored to meet the needs of individuals, development teams, and research organizations. As a neutral and highly efficient tool, Blockchair facilitates the exploration, analysis, and management of blockchain data while prioritizing user privacy.
 

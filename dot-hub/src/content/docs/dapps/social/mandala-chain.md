@@ -1,14 +1,7 @@
 ---
 title: 'Mandala Chain'
+description: The gateway between Global and Emerging Blockchain Markets. Bridging Retail, Enterprise and Government.
 ---
-DAO Tool  
- Privacy  
-
-The gateway between Global and Emerging Blockchain Markets. Bridging Retail, Enterprise and Government.
-
-
-Mandala Chain Overview
-----------------------
 
 Mandala Chain is a hybrid layer 1 blockchain designed to address the challenges of data security and privacy in the blockchain space. Built with the Substrate framework, Mandala Chain offers a customizable and modular architecture that prioritizes user confidentiality and anonymity.
 

@@ -1,25 +1,17 @@
 ---
 title: NFTrade
+description: NFTrade is a decentralized, multi-chain NFT platform enabling seamless NFT creation, trading, and leveraging across blockchains
+sidebar:
+    label: NFTrade (EVM-Moonbeam)
 ---
-NFTs  
- NFTs Marketplace  
-
-NFTrade is a decentralized, multi-chain NFT platform enabling seamless NFT creation, trading, and leveraging across blockchains
-
-
-Exploring NFTrade: The Comprehensive Multi-Chain NFT Platform  
-
-----------------------------------------------------------------
 
 NFTrade is revolutionizing the NFT space with its **decentralized, multi-chain, and blockchain-agnostic platform**. As an **aggregator of all NFTs across its integrated chains**, NFTrade facilitates the entire NFT lifecycle, empowering users to create, buy, sell, swap, and leverage NFTs seamlessly across multiple blockchain networks. This article delves into the features, benefits, and unique offerings of NFTrade, highlighting its position as a leader in the NFT ecosystem.
 
-**A Holistic NFT Experience**
------------------------------
+## A Holistic NFT Experience
 
 NFTrade offers a unified platform where users can engage in the full spectrum of NFT activities. From creation to trading and leveraging, NFTrade simplifies the NFT experience by providing a comprehensive suite of tools and functionalities. This platform supports the seamless minting and s**wapping of non-fungible tokens across various blockchain networks**, ensuring users have access to a broad range of NFTs.
 
-**NFTrade Key Features and Collections**
-----------------------------------------
+## NFTrade Key Features and Collections
 
 The platform hosts an array of popular and **trending NFT collections**, including:
 
@@ -35,8 +27,7 @@ The platform hosts an array of popular and **trending NFT collections**, includi
 
 These collections highlight the diversity and vibrancy of the NFT market available on NFTrade, catering to a wide range of interests and preferences.
 
-**Educational Resources about NFTs with NFTrade Academy**
----------------------------------------------------------
+## Educational Resources about NFTs with NFTrade Academy
 
 Understanding the complexities of the NFT space can be daunting for both newcomers and seasoned participants. NFTrade addresses this challenge through its **NFTrade Academy**, a knowledge base offering valuable resources and educational materials. This initiative aims to bridge the knowledge gap, providing users with the insights and tools needed to navigate the NFT landscape effectively.
 

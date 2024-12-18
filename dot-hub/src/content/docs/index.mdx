@@ -25,34 +25,97 @@ import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
 import { Card, CardGrid, LinkCard, LinkButton, FileTree } from '@astrojs/starlight/components';
 
+import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import { Image } from 'astro:assets';
+import iDapps from '/src/assets/topDapps.png'; 
+import iTools from '/src/assets/topTools.png'; 
+import iHub from '/src/assets/topHub.png'; 
+
 &nbsp;
 
-## Discover all the Polkadot Ecosystem in One Place
+
+## Polkadot Dapps
 ----------------
-<CardGrid>
-	<Card title="Tools" icon="laptop">
-		Wallets, Explorers, DAO tools, Development...  <strong><a href="/tools/">Polkadot Tools</a> </strong>
-	</Card>
-	<Card title="Dapps" icon="rocket">
-		DeFi, Gaming, Social, Marketplaces... <strong><a href="/tools/">Polkadot Dapps</a> </strong>
-	</Card>
-	<Card title="Resources" icon="open-book">
-		Events, Interviews, Podcasts, Newsletters...  <strong><a href="/tools/">Resources</a> </strong>
-	</Card>
-	<Card title="Ecosystem Hub" icon="heart">
-		DAOs, Validators, Media, People...  <strong><a href="/tools/">Ecosystem Hub</a> </strong>
-	</Card>
-</CardGrid>
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/topDapps.png'),
+      href: '/dapps/defi',
+      title: 'DeFi',
+      description: 'Discover the most popular DefI Dapps in the Polkadot Ecosystem.'
+    },
+                     {
+      thumbnail: import('/src/assets/topDapps.png'),
+      href: '/dapps/nft-marketplaces/',
+      title: 'NFT-Marketplaces',
+      description: 'Discover the most popular NFT Marketplaces in the Polkadot Ecosystem.'
+      },  
+    {
+      thumbnail: import('/src/assets/topDapps.png'),
+      href: '/dapps/gaming/',
+      title: 'Gaming',
+      description: 'Explore the most popular games.'
+      },
+  ]}
+/>
+
+ <DirectoryLinks directory="dapps/defi" limit={6} />
+
+
 &nbsp;
-## Tools
+
+## Polkadot Tools
 ----------------
- <DirectoryLinks directory="tools" limit={10} />
-&nbsp;
-## Dapps
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/topDapps.png'),
+      href: '/tools/wallets',
+      title: 'DeFi',
+      description: 'Discover the most advanced wallets to store your assets.'
+    },
+                     {
+      thumbnail: import('/src/assets/topDapps.png'),
+      href: '/tools/block-explorers/',
+      title: 'NFT-Marketplaces',
+      description: 'Understand every movement in the network.'
+      },  
+    {
+      thumbnail: import('/src/assets/topDapps.png'),
+      href: '/dapps/development/',
+      title: 'Development',
+      description: 'Start your journey as a Polkadot developer.'
+      },
+  ]}
+/>
+
+ <DirectoryLinks directory="tools/wallets" limit={6} />
+
+## Polkadot Ecosystem Hub
 ----------------
- <DirectoryLinks directory="dapps" limit={10} />
-&nbsp;
-## Ecosystem Hub 
-----------------
-<DirectoryLinks directory="dapps" limit={10} />
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/topDapps.png'),
+      href: '/hub/daos',
+      title: 'Daos',
+      description: 'Discover the most popular DAOs and Collectives shaping the Polkadot Ecosystem.'
+    },
+                     {
+      thumbnail: import('/src/assets/topDapps.png'),
+      href: '/hub/orgs/',
+      title: 'Organizations',
+      description: 'All the organizations building the future of internet.'
+      },  
+    {
+      thumbnail: import('/src/assets/topDapps.png'),
+      href: '/dapps/development/',
+      title: 'Development',
+      description: 'Start your journey as a Polkadot developer.'
+      },
+  ]}
+/>
+<DirectoryLinks directory="hub/daos" limit={6} />
+
 

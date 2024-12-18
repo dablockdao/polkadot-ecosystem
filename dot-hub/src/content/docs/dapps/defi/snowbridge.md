@@ -1,12 +1,7 @@
 ---
 title: Snowbridge
+description: Snowbridge is a trustless, decentralized bridge between Polkadot and Ethereum, enabling seamless cross-chain communication and diverse asset transfers with secure governance.
 ---
-Bridge  
-
-Snowbridge is a trustless, decentralized bridge between Polkadot and Ethereum, enabling seamless cross-chain communication and diverse asset transfers with secure governance.
-
-What is Snowbridge?
--------------------
 
 Snowbridge is a general-purpose, trustless, and decentralized **bridge designed to facilitate seamless communication and asset transfer between Polkadot and Ethereum**. Its objective is to launch as a common-good bridge on the proposed BridgeHub parachain, enhancing interoperability within the blockchain ecosystem.
 

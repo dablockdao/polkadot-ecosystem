@@ -1,18 +1,11 @@
 ---
 title: 'Logion Network'
+description: Logion Network integrates legal frameworks with blockchain technology to offer a secure, transparent, and legally compliant tokenization solution.
 ---
-Legal  
-
-Logion Network integrates legal frameworks with blockchain technology to offer a secure, transparent, and legally compliant tokenization solution.
-
-Logion Network: Bridging Legal Frameworks and Blockchain in the Polkadot Ecosystem  
-
--------------------------------------------------------------------------------------
 
 Logion Network stands as a pioneering initiative in the Polkadot ecosystem, integrating legal frameworks with blockchain technology to offer a secure, transparent, and legally compliant tokenization solution. By incorporating human judicial oversight and advanced cryptographic principles, Logion provides a unique **“Proof of Law”** concept, ensuring that digital tokens are backed by verifiable legal evidence. This article explores the key components of the Logion Network, its technical underpinnings, and its significant role in the Polkadot ecosystem.
 
-Logion Network Key Components
------------------------------
+## Logion Network Key Components
 
 ### Decentralized Network of Judicial Officers:
 

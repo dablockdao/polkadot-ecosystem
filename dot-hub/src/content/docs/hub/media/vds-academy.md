@@ -1,13 +1,10 @@
 ---
 title: 'VDS Academy'
+description: VDS Academy delivers educational content in Portuguese on the latest Polkadot news through videos, articles, and dubbing.
 ---
-Initiative  
- Education  
 
-VDS Academy delivers top-quality educational content in Portuguese on the latest Polkadot news through videos, articles, and dubbing.
 
-VDS Academy is Elevating the Portuguese-Speaking Community with Educational Content
------------------------------------------------------------------------------------
+*Elevating the Portuguese-Speaking Community with Educational Content*
 
 **VDS Academy**, formerly known as Verbo Dotsama, is a leading educational platform designed to serve the Portuguese-speaking communities across Brazil, Portugal, Angola, Cape Verde, Guinea-Bissau, and Mozambique. The academy’s mission is to bridge the knowledge gap by providing high-quality, copyrighted videos, insightful articles, and expertly dubbed content tailored to the unique needs and interests of its audience.
 

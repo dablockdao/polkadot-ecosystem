@@ -1,5 +1,8 @@
 ---
 title: Hydration
+description: Hydration is a cross-chain liquidity protocol that will enable users to inter-swap assets across different blockchains with minimal slippage
+sidebar:
+    order: 1
 ---
 DeFi  
  DEX  

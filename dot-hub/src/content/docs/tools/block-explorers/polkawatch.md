@@ -1,12 +1,7 @@
 ---
 title: Polkawatch
----
-Tool  
- Analytics Tool  
- Learn about Polkadot public validation network with Polkawatch, Polkadot decentralization analytics and monitoring tool.
-
-Polkawatch: A Tool to Measure Decentralization in Polkadot
-----------------------------------------------------------
+description: Learn about Polkadot public validation network with Polkawatch, Polkadot decentralization analytics and monitoring tool.
+---  
 
 The Polkadot project promises a decentralized future, but true decentralization requires constant monitoring and evaluation. This is where Polkawatch comes in – an innovative analytics platform designed to assess the effectiveness of decentralization within Polkadot’s validation process.
 

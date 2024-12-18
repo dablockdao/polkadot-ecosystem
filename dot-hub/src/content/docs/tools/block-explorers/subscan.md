@@ -1,17 +1,13 @@
 ---
 title: Subscan
+description: High-precision Web3 Blockchain Explorer. Multi-signature tool, account format transform tool, analysis charts...
 ---
-Tools  
-Block Explorer  
+
 
 - [](https://www.subscan.io/)
 - [](https://twitter.com/subscan_io)
 - [](https://github.com/subscan-explorer)
 
-High-precision Web3 Blockchain Explorer.
-
-What is Subscan block explorer?
--------------------------------
 
 **Subscan is a Substrate-based blockchain explorer and analytics platform** for such blockchains. It provides the searching and analysis of blockchain data by equipping users with a range of tools and data. Here’s what users can expect from Subscan:
 

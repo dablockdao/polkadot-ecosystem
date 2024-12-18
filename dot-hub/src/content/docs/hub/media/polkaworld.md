@@ -1,13 +1,9 @@
 ---
 title: PolkaWorld
+description: PolkaWorld is the China’s leading Polkadot community, providing education, news, and events since 2019 with 50,000+ followers.
 ---
-Initiative  
- Media  
 
-PolkaWorld is the China’s leading Polkadot community, providing education, news, and events since 2019 with 50,000+ followers.
-
-How PolkaWorld is Leading the Polkadot Community in China
----------------------------------------------------------
+*Leading the Polkadot Community in China*
 
 **PolkaWorld** **is a prominent community within the Polkadot ecosystem**, primarily active **in China**. It has amassed a substantial following, boasting over 50,000 members. Since its inception in 2019, PolkaWorld has been collaborating closely with the Polkadot ecosystem and the Web3 Foundation, contributing significantly to the growth and education within the blockchain and Web3 space.
 

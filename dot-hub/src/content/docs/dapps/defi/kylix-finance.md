@@ -1,13 +1,7 @@
 ---
 title: 'Kylix Finance'
+description: Kylix Finance is a multi-chain Lending platform with self-repaying loans and a marketplace for Collateral Liquidation.
 ---
-DeFi  
-
-Kylix Finance is a multi-chain Lending platform with self-repaying loans and a marketplace for Collateral Liquidation.
-
-
-What is Kylix Finance?
-----------------------
 
 Kylix Finance is positioning itself as a transformative force in the decentralized finance (DeFi) landscape, introducing cutting-edge solutions to **multi-chain lending**. Having recently secured **parachain slot #81** on Polkadot(the last one before **[Polkadot Coretime](https://dablock.com/guides/what-is-polkadot-agile-coretime/)**), Kylix is set to revolutionize how assets are utilized, borrowed, and repaid, offering innovative **features such as self-repaying loans and an advanced marketplace for collateral liquidation**.
 

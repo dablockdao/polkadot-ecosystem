@@ -1,13 +1,7 @@
 ---
 title: YoudleDAO
+description: Discover Youdles NFTs and YoudleDAO. Cutting-edge RMRK-powered NFTs on Astar, managing a multichain DAO on InvArch.
 ---
-NFTs  
- DAO  
-
-Discover Youdles NFTs and YoudleDAO: cutting-edge RMRK-powered NFTs on Astar, managing a multichain DAO on InvArch.
-
-Exploring Youdles and YoudleDAO: A Revolution in the Polkadot Ecosystem
------------------------------------------------------------------------
 
 Nestled within the Polkadot ecosystem, Youdles NFTs and YoudleDAO bring an innovative approach to digital assets and decentralized governance.
 

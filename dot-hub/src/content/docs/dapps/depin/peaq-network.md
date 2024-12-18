@@ -1,11 +1,7 @@
 ---
 title: 'Peaq Network'
+description:  peaq is a high-performance Layer 1 blockchain specifically designed for Decentralized Physical Infrastructure Networks (DePINs) and Machine-Readable Worlds (MRWs).
 ---
-IoT  
- peaq is a high-performance Layer 1 blockchain specifically designed for Decentralized Physical Infrastructure Networks (DePINs) and Machine-Readable Worlds (MRWs).
-
-Peaq Network: Powering the Economy of Things
---------------------------------------------
 
 Peaq is a high-performance Layer 1 blockchain specifically designed for **Decentralized Physical Infrastructure Networks (DePINs)** and Machine-**Readable Worlds (MRWs)**. It offers a unique combination of scalability, security, and developer-friendliness, making it an ideal platform for building real-world applications.
 

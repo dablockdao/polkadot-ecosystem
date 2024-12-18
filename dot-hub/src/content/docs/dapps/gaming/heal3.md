@@ -1,23 +1,15 @@
 ---
 title: Heal3
+description: Discover HEAL3, a blockchain-powered app combining game-fi to promote healthy habits and financial rewards.
 ---
-NFTs  
- Gaming  
- 
-
-Discover HEAL3, a blockchain-powered app combining game-fi to promote healthy habits and financial rewards.
-What is HEAL3? Revolutionizing Healthcare with Blockchain and Game-Fi
----------------------------------------------------------------------
 
 In a rapidly evolving technological landscape, HEAL3 emerges as a pioneering healthcare application that blends blockchain technology with game-fi elements to promote healthy living and financial well-being. Launched in 2022, HEAL3 aims to address the rising concern of lifestyle-related diseases and the subsequent increase in medical expenses, a significant issue in Japan. Despite the robust social insurance system, preventive healthcare remains underutilized, particularly in the pre-disease stage. HEAL3 seeks to bridge this gap by providing a unique, engaging platform that encourages users to adopt healthier habits seamlessly.
 
-A Unique Approach to Preventive Healthcare with Heal3
------------------------------------------------------
+## A Unique Approach to Preventive Healthcare with Heal3
 
 HEAL3 sets itself apart from conventional healthcare applications through its innovative use of blockchain technology. By incorporating game-fi features, HEAL3 makes the pursuit of a healthy lifestyle both enjoyable and rewarding. Users engage in real-world health-related activities, earning original tokens known as UHT (Utility Health Tokens). These tokens are obtained through activities conducted while wearing NFT clothes, which can be leveled up or cleaned within the app. Additionally, UHTs enable participation in various in-app missions and can be exchanged for coupons, further enhancing user engagement and motivation.
 
-Heal3 Key Features and Functionalities
---------------------------------------
+## Heal3 Key Features and Functionalities
 
 **1. Blockchain Integration and Tokenomics:** HEAL3 operates on the Astar network, leveraging its stable and efficient infrastructure. The application utilizes two main tokens: UHT (Utility Health Token) and GHT (Governance Health Token). UHTs, issued as ERC-20 tokens on the Astar zkEVM, serve as the primary utility tokens within the app. They are essential for activities such as leveling up, cleaning, and enhancing NFTs, participating in missions, and exchanging items in the store. The GHT tokens, with a total issuance cap of 500 million, play a crucial role in governance and in-app activities, including exclusive mission participation and various enhancement functions.
 

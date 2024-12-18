@@ -1,14 +1,9 @@
 ---
 title: Subwork
+description: Coworking in Bled, Slovenia. SubWork offers professional workspaces, community events, and natural surroundings for optimal productivity.
 ---
-Initiative  
- Coworking  
 
-Coworking in Bled, Slovenia. SubWork offers professional workspaces, community events, and natural surroundings for optimal productivity.
-
-SubWork: is a Premier Web3 Coworking Space in Slovenia’s Julian Alps  
-
------------------------------------------------------------------------
+*Web3 Coworking Space in Slovenia’s Julian Alps*
 
 Nestled in the picturesque town of Bled in Slovenia, SubWork is more than just a coworking space; it is a thriving community designed for web3 builders, crypto enthusiasts, and AI innovators. Positioned amidst the stunning Julian Alps, SubWork offers a unique blend of professional workspace and a rejuvenating natural environment, making it an ideal destination for those seeking productivity and well-being.
 

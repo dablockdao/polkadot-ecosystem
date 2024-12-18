@@ -1,13 +1,12 @@
 ---
 title: 'Web3 EduChain'
+description: EduChain educates on Web3 through Polkadot SDK, offering guides and examples for launching and maintaining parachains.
 ---
 Initiative  
  Education  
 
-EduChain educates on Web3 through Polkadot SDK, offering guides and examples for launching and maintaining parachains.
 
-EduChain Initiative is Educating Web3 through the Polkadot Ecosystem
---------------------------------------------------------------------
+*Educating Web3 through the Polkadot Ecosystem*
 
 EduChain is a pioneering project focused on advancing Web3 education through the comprehensive utilization of the Polkadot SDK. As an on-demand parachain, EduChain is now live on the Rococo testnet, offering invaluable resources and practical examples for launching and maintaining production-grade parachains.
 

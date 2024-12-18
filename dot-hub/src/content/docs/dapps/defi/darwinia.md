@@ -7,7 +7,7 @@ DeFi
 Darwinia Network: Bridging Blockchains for Enhanced Interoperability
 --------------------------------------------------------------------
 
-In the evolving landscape of blockchain technology, the Darwinia Network is a well-known infrastructure component within the Polkadot ecosystem, focused on **facilitating interoperability between diverse blockchains**. As a component of the multi-chain future, Darwinia provides the necessary tools and frameworks for decentralized applications (DApps) to **operate seamlessly across various blockchain networks**, thus addressing some of the most pressing challenges in the blockchain industry today.
+Darwinia Network is a well-known infrastructure component within the Polkadot ecosystem, focused on **facilitating interoperability between diverse blockchains**. As a component of the multi-chain future, Darwinia provides the necessary tools and frameworks for decentralized applications (DApps) to **operate seamlessly across various blockchain networks**, thus addressing some of the most pressing challenges in the blockchain industry today.
 
 **Darwinia Core Mission and Vision**
 ------------------------------------

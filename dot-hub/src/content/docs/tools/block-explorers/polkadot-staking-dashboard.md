@@ -1,14 +1,9 @@
 ---
 title: 'Polkadot Staking Dashboard'
+description: Select nomination pools, nominate validators, manage your staking…
+sidebar:
+    label: Staking Dashboard
 ---
-Tools  
- Staking Tools  
-
-
- Select nomination pools, nominate validators, manage your staking…
-
-What is the Polkadot Staking Dashboard?
----------------------------------------
 
 The **Polkadot Staking Dashboard is an advanced web interface designed to streamline the process of staking on the Polkadot network**, Its enhance the network securityby facilitating access for users to stake their DOT token in a few clicks to secure the network and earn staking rewards.
 

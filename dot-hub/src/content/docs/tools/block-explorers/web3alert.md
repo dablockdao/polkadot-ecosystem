@@ -1,14 +1,7 @@
 ---
 title: Web3Alert
+description: Web3alert provides real-time blockchain alerts via Telegram, Slack, and Discord, keeping users informed about relevant events and activities.
 ---
-Tool  
- Miscelaneous  
-
-Web3alert provides real-time blockchain alerts via Telegram, Slack, and Discord, keeping users informed about relevant events and activities.
-
-
-Stay Ahead in the Blockchain Space with Web3alert
--------------------------------------------------
 
 In the rapidly evolving landscape of blockchain technology, staying informed about relevant events and activities is crucial. Web3alert, a cutting-edge notification service, ensures that users are always in the loop about important developments in their preferred blockchain networks, projects, or smart contracts. This innovative platform sends real-time alerts about events and calls happening on various blockchain networks directly to users via Telegram, Slack, and Discord.
 

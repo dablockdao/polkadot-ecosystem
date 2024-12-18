@@ -1,17 +1,9 @@
 ---
 title: 'Harbour Industrial Capital'
+description: Invest in DeFi, NFTs, and metaverse with Harbour Industrial Capital is specializing in Polkadot’s parachain auctions and risk-minimized strategies.
 ---
-Orgs  
-VC  
 
-Invest in DeFi, NFTs, and metaverse with Harbour Industrial Capital is specializing in Polkadot’s parachain auctions and risk-minimized strategies.
-
-- 
-- 
-- 
-
-Harbour Industrial Capital is Pioneering Investments in the Polkadot Ecosystem
-------------------------------------------------------------------------------
+*Pioneering Investments in the Polkadot Ecosystem*
 
 **Harbour Industrial Capital**, based in the Cayman Islands, is a distinguished DeFi investment fund focusing on the expansive and innovative [**Polkadot ecosystem**](https://dablock.com/ecosystem/). Renowned for its pioneering investment strategies, the fund seeks to capitalize on the diverse opportunities within [decentralized finance (DeFi)](https://dablock.com/polkadot-defi-projects/), [non-fungible tokens (NFTs)](https://dablock.com/polkadot-nft-marketplaces/), and the metaverse, all leveraging the advanced capabilities of the Polkadot blockchain.
 

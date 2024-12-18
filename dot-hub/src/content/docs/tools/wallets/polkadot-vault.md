@@ -1,13 +1,7 @@
 ---
 title: 'Polkadot Vault'
+description: Smartphone-based cold-storage wallet. Turn your extra phone, tablet, or any other iOS or Android device into a hardware wallet.
 ---
-Tools  
-Hardware Wallet  
-
-Smartphone-based cold-storage wallet.
-
-What is Polkadot Vault? (former Parity Signer)
-----------------------------------------------
 
 The **Polkadot Vault app** is an innovative hardware wallet with software representation. That means i**t ensures that your phone, be it any iOS or Android device, gets transformed into a hardware walle**t in a safe and easy manner. The app then makes the management and storage of Katal Chain, Polkadot, Kusama, and most other Substrate-based chain tokens way more comfortable for the user by using repurposing devices that lay idle for cold storage.
 

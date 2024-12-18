@@ -1,33 +1,25 @@
 ---
 title: 'Public Pressure'
+description: Public Pressure is a web3 music platform on Polkadot, empowering artists and fans with innovative revenue models and immersive experiences.
 ---
-NFTs  
- NFTs Marketplace  
 
-Public Pressure is a web3 music platform on Polkadot, empowering artists and fans with innovative revenue models and immersive experiences.
-
-Public Pressure: Transforming the Music Industry with Web3 Technology
----------------------------------------------------------------------
+*Transforming the Music Industry with Web3 Technology*
 
 Public Pressure is a pioneering Web3 Media hub, deeply embedded in subcultural movements. Launched in 2015 in London, the platform has consistently aimed to amplify emerging artists and labels, fostering an environment of discovery and innovation. Initially starting as a music blog, Public Pressure has since evolved into a comprehensive Web3 Media ecosystem, connecting artists, enthusiasts, and brands.
 
-**Public Pressure Cultural Hub**
---------------------------------
+## Public Pressure Cultural Hub
 
 Public Pressure’s flagship platform serves as a cultural incubator, empowering creators to monetize their work directly and allowing community members to own a piece of cultural content. This model enhances the visibility of artists and transforms fans into stakeholders, creating a more engaged and interactive community.
 
-**Public Pressure Magazine**
-----------------------------
+## Public Pressure Magazine
 
 From its origins as a music blog in 2015, Public Pressure has grown into a multifaceted Web3 Media ecosystem, focusing on mintable content in music, fashion, and culture. This evolution has enabled the company to bridge the gap between traditional media and the digital landscape, fostering innovative connections and providing new opportunities for creators and fans alike.
 
-**The Polkadot Blockchain Foundation**
---------------------------------------
+## The Polkadot Blockchain Foundation
 
 Public Pressure is built on the Polkadot blockchain, known for its eco-friendly and carbon-neutral credentials. Polkadot boasts the lowest total electricity consumption and carbon emissions per year among proof-of-stake blockchains. This commitment to sustainability aligns with Public Pressure’s vision of an eco-friendly digital future.
 
-**Public Pressure Empowering Artists and Fans**
------------------------------------------------
+## Public Pressure Empowering Artists and Fans
 
 Public Pressure’s mission is to transition the music industry to Web3, enabling a direct-to-fan model that allows artists to retain more control and revenue over their work. In the current music industry landscape, artists receive less than 20% of total music revenues. Public Pressure aims to rectify this imbalance by providing artists with the tools to monetize their creations directly and engage with their audience in new and innovative ways.
 

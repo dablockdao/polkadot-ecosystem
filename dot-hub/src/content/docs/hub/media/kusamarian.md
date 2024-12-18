@@ -1,12 +1,9 @@
 ---
 title: 'The Kusamarian'
----
-Media  
+description: The Kusamarian is a media brand focused on the Polkadot ecosystem. It serves and maintains public forums for Polkadot builders, nominators, and other community members
+---  
 
-The Kusamarian is a DOT-focused media brand. It serves &amp; maintains Public Forums for Polkadot Builders, Nominators…
-
-What is The Kusamarian?
------------------------
+*L0 News*
 
 The Kusamarian is a media brand focused on the Polkadot ecosystem. It serves and maintains public forums for Polkadot builders, nominators, and other community members. The brand aims to foster **communication, collaboration, and information sharing among those involved in the Polkadot network**, providing a platform for discussions, updates, and news related to Polkadot and its development.
 

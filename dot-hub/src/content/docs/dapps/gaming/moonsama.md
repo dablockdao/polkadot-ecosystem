@@ -1,13 +1,7 @@
 ---
 title: Moonsama
+description: Moonsama is a multi-chain protocol designed to accelerate the development and deployment of NFT-powered applications.
 ---
-NFTs  
- NFT Marketplace  
-
-Moonsama is a multi-chain protocol designed to accelerate the development and deployment of NFT-powered applications.
-
-Moonsama Multi-Chain NFT Applications
--------------------------------------
 
 Moonsama is a multi-chain protocol designed to accelerate the development and deployment of NFT-powered applications. By providing essential infrastructure and services, Moonsama enables creators to overcome common challenges such as scalability and interoperability, driving innovation in the NFT space.
 

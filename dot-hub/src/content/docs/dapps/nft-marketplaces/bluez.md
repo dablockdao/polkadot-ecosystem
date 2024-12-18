@@ -1,17 +1,13 @@
 ---
 title: BlueZ
+description: Bluez is a community-driven NFT marketplace on Astar Network, supporting flexible, secure multi-asset transactions and governance.
+sidebar:
+    label: Bluez (EVM-Astar)
 ---
-NFTs  
-
-Bluez is a community-driven NFT marketplace on Astar Network, supporting flexible, secure multi-asset transactions and governance.
-
-Bluez NFT Marketplace for Astar Network
----------------------------------------
 
 **Bluez is the first community-driven NFT marketplace built on the [Astar Network](https://dablock.com/dapps/astar-network/)**. Utilizing the innovative **Cross Virtual Machine (XVM)** technology, Bluez offers enhanced flexibility and convenience for creating, purchasing, and selling NFTs. It supports **multi-asset payments and streamlined transactions**, making it a premier destination for the Astar and Polkadot communities. Bluez is dedicated to providing a top-tier user experience with easy-to-use features and transparent governance.
 
-Key Features of Bluez NFT Marketplace
--------------------------------------
+## Key Features of Bluez NFT Marketplace
 
 **Advanced NFT Standards**
 

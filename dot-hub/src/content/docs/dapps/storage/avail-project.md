@@ -1,20 +1,15 @@
 ---
 title: 'Avail Project'
+description: Avail is a project aiming to bridge the gaps between various blockchain ecosystems through its innovative modular technology.
 ---
-Ecosystem  
- 
-Avail: Unifying the Fragmented Web3 Landscape
----------------------------------------------
 
 Avail is a project aiming to bridge the gaps between various blockchain ecosystems through its innovative modular technology. Avail positions itself as the unification layer for Web3, addressing fundamental issues related to scalability and user experience.
 
-The Problem: Fragmented Web3
-----------------------------
+## The Problem: Fragmented Web3
 
 The permissionless environment of Web3 has fostered a vast array of groundbreaking technologies. However, fragmentation across multiple ecosystems hinders mass adoption. Cross-ecosystem transactions are cumbersome, and user experience suffers due to a lack of cohesion. Avail tackles these challenges by offering a modular solution with a focus on scalability, interoperability, and security.
 
-Avail’s Unification Layer
--------------------------
+## Avail’s Unification Layer
 
 Avail’s architecture consists of three primary layers, each addressing specific functionalities:
 
@@ -24,15 +19,13 @@ Avail’s architecture consists of three primary layers, each addressing specifi
 
 By combining these layers, Avail aims to dissolve the current market fragmentation and establish a unified platform for developers and users across diverse ecosystems.
 
-Avail’s Vision
---------------
+# Avail’s Vision
 
 Avail aspires to be a bridge, facilitating seamless communication and integration between various blockchain networks. Through the implementation of appropriate standards and primitives, Avail seeks to promote interoperability and collaboration across blockchains. This approach not only enhances user experience but also fosters a more streamlined and efficient Web3 ecosystem.
 
 Avail’s DA layer empowers different ecosystems to innovate independently while leveraging Nexus for cross-ecosystem messaging.
 
-Avail Benefits for Developers and Users
----------------------------------------
+## Avail Benefits for Developers and Users
 
 - **Developers:** Avail offers a modular and scalable platform, simplifying blockchain integration and eliminating concerns about validator sets or tokenomics.
 - **Users:** Avail strives to provide a cohesive user experience by enabling seamless interaction across various blockchain ecosystems.

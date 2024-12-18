@@ -1,27 +1,69 @@
 ---
-title: Polkadot Dapps
+title: Polkadot Initiatives
 description: Get started and join the biggest DAO in the world.
+tableOfContents: false
+sidebar: 
+    label: Initiatives
+    badge: Feed
 ---
 
 import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
 
-## Discover all the Polkadot Ecosystem in One Place
+import { ShowcaseProfile } from 'starlight-showcases'
 
-<CardGrid stagger>
+import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-	<Card title="Tools" icon="laptop">
-		Wallets, Explorers, DAO tools, Development...
-	</Card>
-	<Card title="Projects" icon="rocket">
-		DeFi, Gaming, Social, Marketplaces...
-	</Card>
-	<Card title="Technology" icon="laptop">
-		Resources to understand the concepts of JAM, Agile Coretime, Elastic Scaling...
-	</Card>
-	<Card title="Media" icon="setting">
-		Events, Interviews, Podcasts, Newsletters...
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Here is a list with the best Polkadot wallets like Nova Wallet, Talisman, SubWallet and Polkadot Vault to secure and manage your crypto assets effectively across the entire Polkadot Dapps ecosystem.
+
+## List of Polkadot Initiatives
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Discover JAM with Gavin Wood, a innovative protocol revolutionizing Web3 scalability with a trustless supercomputer model.'
+    },
+                     {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Discover how JAM transforms Polkadot into a scalable Web3 cloud, enabling decentralized applications with unmatched flexibility and resilience.'
+      },  
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Explore Acala vision for frictionless UX and unified liquidity with JAM, reshaping DeFi through cross-chain innovation and tools.'
+      },
+              {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Discover JAM with Gavin Wood, a innovative protocol revolutionizing Web3 scalability with a trustless supercomputer model.'
+    },
+                     {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Discover how JAM transforms Polkadot into a scalable Web3 cloud, enabling decentralized applications with unmatched flexibility and resilience.'
+      },  
+  ]}
+/>
+
+
+## Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=xrhxDCEwcIE&list=PLtyd7v_I7PGkXbJmKojrZ1KXwspR1JkpV',
+      title: 'Kusamarian AAGs',
+	  description: 'The Kusamarian AAG discusses various proposals and initiatives related to the Polkadot DAO.',
+    },
+  ]}
+/>
+
