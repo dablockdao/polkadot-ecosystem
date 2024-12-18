@@ -62,6 +62,10 @@ header span {
 	padding-right: 55px;
   }
 
+  .starlight-showcases-media-asset img {
+	border-radius: 0px !important;
+  }
+
   /*
   :root {
 	--sl-color-accent-low: #2a2a2a;

@@ -1,5 +1,5 @@
 ---
-title: Polkadot Dapps
+title: Polkadot Ecosystem Hub
 description: Get started and join the biggest DAO in the world.
 tableOfContents: false
 ---
@@ -12,16 +12,38 @@ import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starl
 
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
-## Discover all the Polkadot Ecosystem in One Place
+
 A curated list with all relevant Polkadot ecosystem agents (DAOs, People, Validators…) to follow. 
-Discover the most relevant agents to follow in the Polkadot ecosystem. 
+Discover the most relevant agents to follow in the Polkadot ecosystem.
 
+## Discover all the Polkadot Ecosystem in One Place
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/daos.webp'),
+      href: '/hub/daos',
+      title: 'Daos',
+      description: 'Discover the most popular DAOs and Collectives shaping the Polkadot Ecosystem.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/orgs.webp'),
+      href: '/hub/orgs/',
+      title: 'Organizations',
+      description: 'All the organizations building the future of internet.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/initiatives.webp'),
+      href: '/dapps/initiatives/',
+      title: 'Initiatives',
+      description: 'Start your journey as a Polkadot developer.'
+      },
+          {
+      thumbnail: import('/src/assets/thumbnails/resources.webp'),
+      href: '/hub/resourcees/',
+      title: 'Resources',
+      description: 'List complete of resources for new users.'
+      },
+  ]}
+/>
 
-<CardGrid>
-<LinkCard title="DAOs" href="/hub/daos" />
-<LinkCard title="Software Devs" href="/hub/dev" /> 
-<LinkCard title="Initiatives" href="/hub/initiatives" />
-<LinkCard title="Media" href="/hub/media" />
-<LinkCard title="People" href="/hub/people" />
-<LinkCard title="Validators" href="/hub/validators" />
-</CardGrid>

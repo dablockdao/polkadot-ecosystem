@@ -32,6 +32,9 @@ import iDapps from '/src/assets/topDapps.png';
 import iTools from '/src/assets/topTools.png'; 
 import iHub from '/src/assets/topHub.png'; 
 
+
+
+
 &nbsp;
 
 
@@ -40,27 +43,31 @@ import iHub from '/src/assets/topHub.png';
 <ShowcaseImage
   entries={[
         {
-      thumbnail: import('/src/assets/topDapps.png'),
+      thumbnail: import('/src/assets/thumbnails/defi.webp'),
       href: '/dapps/defi',
       title: 'DeFi',
       description: 'Discover the most popular DefI Dapps in the Polkadot Ecosystem.'
     },
+        {
+      thumbnail: import('/src/assets/thumbnails/depin.webp'),
+      href: '/dapps/depin/',
+      title: 'DePin',
+      description: 'Polkadot Ecosystem DePin Projects.'
+      },
                      {
-      thumbnail: import('/src/assets/topDapps.png'),
+      thumbnail: import('/src/assets/thumbnails/nft-marketplaces.webp'),
       href: '/dapps/nft-marketplaces/',
       title: 'NFT-Marketplaces',
       description: 'Discover the most popular NFT Marketplaces in the Polkadot Ecosystem.'
       },  
     {
-      thumbnail: import('/src/assets/topDapps.png'),
+      thumbnail: import('/src/assets/thumbnails/gaming.webp'),
       href: '/dapps/gaming/',
       title: 'Gaming',
       description: 'Explore the most popular games.'
       },
   ]}
 />
-
- <DirectoryLinks directory="dapps/defi" limit={6} />
 
 
 &nbsp;
@@ -70,52 +77,61 @@ import iHub from '/src/assets/topHub.png';
 <ShowcaseImage
   entries={[
         {
-      thumbnail: import('/src/assets/topDapps.png'),
+      thumbnail: import('/src/assets/thumbnails/wallets.webp'),
       href: '/tools/wallets',
-      title: 'DeFi',
+      title: 'Wallets',
       description: 'Discover the most advanced wallets to store your assets.'
     },
                      {
-      thumbnail: import('/src/assets/topDapps.png'),
+      thumbnail: import('/src/assets/thumbnails/block-explorers.webp'),
       href: '/tools/block-explorers/',
-      title: 'NFT-Marketplaces',
+      title: 'Block Explorers',
       description: 'Understand every movement in the network.'
       },  
+          {
+      thumbnail: import('/src/assets/thumbnails/dao-tools.webp'),
+      href: '/tools/dao-tools/',
+      title: 'DAO Tools',
+      description: 'The most popular tools to manage DAOs.'
+      },
     {
-      thumbnail: import('/src/assets/topDapps.png'),
+      thumbnail: import('/src/assets/thumbnails/dev-tools.webp'),
       href: '/dapps/development/',
       title: 'Development',
       description: 'Start your journey as a Polkadot developer.'
       },
   ]}
 />
-
- <DirectoryLinks directory="tools/wallets" limit={6} />
 
 ## Polkadot Ecosystem Hub
 ----------------
 <ShowcaseImage
   entries={[
         {
-      thumbnail: import('/src/assets/topDapps.png'),
+      thumbnail: import('/src/assets/thumbnails/daos.webp'),
       href: '/hub/daos',
       title: 'Daos',
       description: 'Discover the most popular DAOs and Collectives shaping the Polkadot Ecosystem.'
     },
                      {
-      thumbnail: import('/src/assets/topDapps.png'),
+      thumbnail: import('/src/assets/thumbnails/orgs.webp'),
       href: '/hub/orgs/',
       title: 'Organizations',
       description: 'All the organizations building the future of internet.'
       },  
     {
-      thumbnail: import('/src/assets/topDapps.png'),
-      href: '/dapps/development/',
-      title: 'Development',
+      thumbnail: import('/src/assets/thumbnails/initiatives.webp'),
+      href: '/dapps/initiatives/',
+      title: 'Initiatives',
       description: 'Start your journey as a Polkadot developer.'
+      },
+          {
+      thumbnail: import('/src/assets/thumbnails/resources.webp'),
+      href: '/hub/resourcees/',
+      title: 'Resources',
+      description: 'List complete of resources for new users.'
       },
   ]}
 />
-<DirectoryLinks directory="hub/daos" limit={6} />
 
 
