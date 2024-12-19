@@ -16,7 +16,7 @@ Nodes within the Polkadot network can be configured to connect to the default te
 
 The substrate-telemetry project is divided into two main components: the backend and the frontend. The backend is a Rust project responsible for ingesting telemetry data from nodes, while the frontend is a React/TypeScript project that presents this data in an accessible user interface. By running a private telemetry server, operators can ensure that sensitive node information remains secure and is not publicly exposed.
 
-Setting up a private telemetry server involves several steps. Firstly, the backend binaries need to be built and run. The ***telemetry\_core*** and t***elemetry\_shard*** binaries handle the core ingestion and data distribution tasks, respectively. Once the backend is operational, the frontend can be set up to provide a user interface for viewing the telemetry data. The frontend server can be started locally, allowing operators to navigate to **http://localhost:3000 to access the UI**.
+Setting up a private telemetry server involves several steps. Firstly, the backend binaries need to be built and run. The ***telemetry\_core*** and t***elemetry\_shard*** binaries handle the core ingestion and data distribution tasks, respectively. Once the backend is operational, the frontend can be set up to provide a user interface for viewing the telemetry data. The frontend server can be started locally, allowing operators to navigate to your localhost to access the UI.
 
 For those looking for alternative monitoring solutions, the Nebula tool from ProbeLab is an option. Nebula performs a full crawl of the Polkadot peer-to-peer network, gathering additional node information that can complement the data provided by Polkadot Telemetry.
 
