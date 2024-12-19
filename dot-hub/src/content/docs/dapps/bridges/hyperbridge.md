@@ -1,22 +1,17 @@
 ---
 title: Hyperbridge
 description: Hyperbridge is a cutting-edge cross-chain interoperability solution within the Polkadot ecosystem, enabling seamless and secure communication across different blockchain networks.
+sidebar:
+    order: 1
 ---
-Bridge  
-
-
-Exploring Polkadot Hyperbridge: The Future of Blockchain Interoperability
--------------------------------------------------------------------------
 
 One of the significant challenges in the web3 industry is ensuring **secure and scalable interoperability between different blockchain networks**. Polkadot **Hyperbridge**, developed by [**Polytope Labs**](https://dablock.com/ecosystem/polytope-labs/) emerges as a groundbreaking solution to this problem, offering a highly secure, scalable, and cryptoeconomically robust interoperability protocol.
 
-The Blockchain Interoperability Challenge
------------------------------------------
+## The Blockchain Interoperability Challenge
 
 Interoperability between blockchains requires the **verification of multiple proofs**, including **consensus proofs, state proofs, and state transition validity proofs**. Performing these verification processes on-chain is compute-intensive and does not scale well, particularly when multiple blockchains need to communicate. This challenge has led to the proliferation of attestation networks, which have seen significant security breaches, resulting in losses exceeding **$2 billion in crypto assets**.
 
-Introducing Polkadot Hyperbridge Coprocessor Model
---------------------------------------------------
+## Introducing Polkadot Hyperbridge Coprocessor Model
 
 Hyperbridge employs a **coprocessor model** to address the limitations of on-chain verification. This model involves performing verification operations off-chain and securely reporting the results back on-chain with cryptographic proofs of correct execution. This approach significantly reduces the computational burden on the blockchain, enabling scalable and secure interoperability.
 
@@ -24,9 +19,6 @@ Hyperbridge employs a **coprocessor model** to address the limitations of on-cha
 
 Hyperbridge is a pioneering example of a crypto-economic coprocessor. It leverages consensus proofs to attest to the correctness of computations performed off-chain. This ensures trust-free interoperability across multiple blockchains by **aggregating the finalized states into a single proof**, allowing any blockchain to receive cross-chain messages securely and efficiently.
 
-<figure> [  
- ![polkadot hyperbridge coprocessors bridge](../../uploads/2024/08/polkadot-hyperbridge-coprocessors-bridge.webp) ](https://hyperbridge.network/)<figcaption>Image from Hyperbridge landing page</figcaption></figure>Key Features of Hyperbridge
----------------------------
 
 **Proof Aggregation**
 

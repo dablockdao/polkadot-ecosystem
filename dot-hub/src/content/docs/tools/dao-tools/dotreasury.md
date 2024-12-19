@@ -16,5 +16,3 @@ description: Info about all Polkadot and Kusama governance proposals.
 Dotreasury plays a vital role in enhancing transparency and accountability within the Polkadot and Kusama ecosystems, supporting informed decision-making and active participation from its community members.
 
 - <small>Related Token/s:</small> **N/A**
-
-### Related Projects:

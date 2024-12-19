@@ -43,19 +43,19 @@ export default defineConfig({
 						icon: 'seti:config',
 						items: [
 							{
-								label: 'Wallets', collapsed: true, autogenerate: { directory: 'tools/wallets' }
+								label: '👛 Wallets', collapsed: true, autogenerate: { directory: 'tools/wallets' }
 							},
 							{
-								label: 'Block Explorers', collapsed: true, autogenerate: { directory: 'tools/block-explorers' }
+								label: '🔎 Block Explorers', collapsed: true, autogenerate: { directory: 'tools/block-explorers' }
 							},
 							{
-								label: 'DAO Tools', collapsed: true, autogenerate: { directory: 'tools/dao-tools' }
+								label: '🗳️ DAO Tools', collapsed: true, autogenerate: { directory: 'tools/dao-tools' }
 							},
 							{
-								label: 'Development', collapsed: true, autogenerate: { directory: 'tools/development' }
+								label: '🛠️ Development', collapsed: true, autogenerate: { directory: 'tools/development' }
 							},
 							{
-								label: 'Archive', collapsed: true, autogenerate: { directory: 'tools/archive' }
+								label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'tools/archive' }
 							},
 						]
 					},
@@ -65,34 +65,40 @@ export default defineConfig({
 					  icon: 'rocket',
 					  items: [
 						{
-							label: 'DeFi', collapsed: true, autogenerate: { directory: 'dapps/defi' }
+							label: '🪙 DeFi', collapsed: true, autogenerate: { directory: 'dapps/defi' }
 						},
 						{
-							label: 'Smart Contracts', collapsed: true, autogenerate: { directory: 'dapps/smart-contracts' }
+							label: '🌉 Bridges', collapsed: true, autogenerate: { directory: 'dapps/bridges' }
 						},
 						{
-							label: 'AI', collapsed: true, autogenerate: { directory: 'dapps/ai' }
+							label: '🏠 RWA', collapsed: true, autogenerate: { directory: 'dapps/rwa' }
 						},
 						{
-							label: 'DePin', collapsed: true, autogenerate: { directory: 'dapps/depin' }
+							label: '💻 Smart Contracts', collapsed: true, autogenerate: { directory: 'dapps/smart-contracts' }
 						},
 						{
-							label: 'Gaming', collapsed: true, autogenerate: { directory: 'dapps/gaming' }
+							label: '🤖 AI', collapsed: true, autogenerate: { directory: 'dapps/ai' }
 						},
 						{
-							label: 'Social', collapsed: true, autogenerate: { directory: 'dapps/social' }
+							label: '⛽️ DePin', collapsed: true, autogenerate: { directory: 'dapps/depin' }
 						},
 						{
-							label: 'Miscellaneous', collapsed: true, autogenerate: { directory: 'dapps/miscellaneous' }
+							label: '🎮 Gaming', collapsed: true, autogenerate: { directory: 'dapps/gaming' }
 						},
 						{
-							label: 'NFT Marketplaces', collapsed: true, autogenerate: { directory: 'dapps/nft-marketplaces' }
+							label: '💬 Social', collapsed: true, autogenerate: { directory: 'dapps/social' }
 						},
 						{
-							label: 'Storage', collapsed: true, autogenerate: { directory: 'dapps/storage' }
+							label: '🧿 Miscellaneous', collapsed: true, autogenerate: { directory: 'dapps/miscellaneous' }
 						},
 						{
-							label: 'Archive', collapsed: true, autogenerate: { directory: 'dapps/archive' }
+							label: '🛍️ NFT Marketplaces', collapsed: true, autogenerate: { directory: 'dapps/nft-marketplaces' }
+						},
+						{
+							label: '📦 Storage', collapsed: true, autogenerate: { directory: 'dapps/storage' }
+						},
+						{
+							label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'dapps/archive' }
 						},
 					  ],
 					},
@@ -103,28 +109,28 @@ export default defineConfig({
 						icon: 'heart',
 						items: [
 						  {
-						  label: 'DAOs', collapsed: true, autogenerate: { directory: 'hub/daos' }
+						  label: '🏴‍☠️ DAOs', collapsed: true, autogenerate: { directory: 'hub/daos' }
 					  },
 					  {
-						  label: 'Initiatives', collapsed: true, autogenerate: { directory: 'hub/initiatives' }
+						  label: '👍 Initiatives', collapsed: true, autogenerate: { directory: 'hub/initiatives' }
 					  },
 					  {
-						label: 'Media', collapsed: true, autogenerate: { directory: 'hub/media' }
+						label: '📺 Media', collapsed: true, autogenerate: { directory: 'hub/media' }
 					},
 					  {
-						  label: 'Orgs', collapsed: true, autogenerate: { directory: 'hub/orgs' }
+						  label: '💼 Orgs', collapsed: true, autogenerate: { directory: 'hub/orgs' }
 					  },
 					  {
-						label: 'Validators', collapsed: true, autogenerate: { directory: 'hub/validators' }
+						label: '🖥️ Validators', collapsed: true, autogenerate: { directory: 'hub/validators' }
 					},
 					  {
-						label: 'People', collapsed: true, autogenerate: { directory: 'hub/people' }
+						label: '👥 People', collapsed: true, autogenerate: { directory: 'hub/people' }
 					},
 					{
-						label: 'Resources', collapsed: true, autogenerate: { directory: 'hub/resources' }
+						label: '📚 Resources', collapsed: true, autogenerate: { directory: 'hub/resources' }
 					},
 					{
-						label: 'Archive', collapsed: true, autogenerate: { directory: 'hub/archive' }
+						label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'hub/archive' }
 					},
 					  ]}
 				  ])],
