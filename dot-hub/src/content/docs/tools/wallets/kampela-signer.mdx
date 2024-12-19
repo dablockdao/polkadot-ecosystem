@@ -3,6 +3,11 @@ title: 'Kampela Signer'
 description: Kampela Signer is a hardware implementation of the Polkadot Vault. It is a small, card-shaped device designed to securely store cryptographic keys and perform signing operations.
 ---
 
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
 Kampela Signer is a hardware implementation of the Polkadot Vault (formerly known as Parity Signer). It is a small, card-shaped device designed to securely store cryptographic keys and perform signing operations.
 
@@ -106,3 +111,16 @@ Kampela Signer is an open-source project, encouraging contributions from the com
 #### Conclusion
 
 The Kampela Signer represents a significant advancement in cryptographic key management, offering a secure, transparent, and reliable solution tailored for the Polkadot ecosystem. Its air-gapped, batteryless design, combined with open-source transparency, makes it an ideal choice for users seeking enhanced security for their digital assets. Whether for transaction signing, staking, governance, or cold storage, Kampela Signer provides the tools necessary to navigate the Polkadot network securely and efficiently. Explore Kampela Signer today and take a step towards a more secure and trustworthy blockchain experience.
+
+
+## Kampela Signer  Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=0epi-r4ndjA',
+      title: 'Kampela in Action: Transaction Signing and Firmware Updates - Sub0 2023',
+      description: 'a live demonstration of the Kampela flow (both transaction signing and firmware updates). This talk is particularly useful for those interested in blockers, and challenges when building a FOSS software and hardware project in Rust.'
+          },
+  ]} />
+

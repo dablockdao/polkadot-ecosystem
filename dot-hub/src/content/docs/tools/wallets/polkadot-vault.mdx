@@ -3,6 +3,12 @@ title: 'Polkadot Vault'
 description: Smartphone-based cold-storage wallet. Turn your extra phone, tablet, or any other iOS or Android device into a hardware wallet.
 ---
 
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
 The **Polkadot Vault app** is an innovative hardware wallet with software representation. That means i**t ensures that your phone, be it any iOS or Android device, gets transformed into a hardware walle**t in a safe and easy manner. The app then makes the management and storage of Katal Chain, Polkadot, Kusama, and most other Substrate-based chain tokens way more comfortable for the user by using repurposing devices that lay idle for cold storage.
 
 ### Key Features of Polkadot Vault:
@@ -17,4 +23,22 @@ The **Polkadot Vault app** is an innovative hardware wallet with software repres
 - **Open Source**: Users and experienced developers can review the code to understand how it operates, reaffirming its transparency and security focus.
 - **Installation**: In order for one to set up a device with the Polkadot Vault, the person must first wipe the device to factory settings, download the app, and then set the gadget to Airplane Mode, keeping it permanently offline to maintain an impregnable air gap. Updating and adding new networks are performed by scanning an animated QR code without compromisation of the air-gapped security.
 
-Polkadot Vault project details:
+- You can [learn more about Polkadot Vault on its page in the Polkadot Wiki](https://wiki.polkadot.network/docs/polkadot-vault).
+- Metadata portals: [Parity](https://metadata.parity.io/#/polkadot), [Novasama](https://metadata.novasama.io/#/polkadot)
+
+
+## Polkadot Vault Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=3V9-menM0B8',
+      title: 'Polkadot Vault Guide - Cryptozilla',
+      description: 'Introduction to Polkadot Vault, vs Ledger and its advantages'
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=IG_RGLsb2g0',
+      title: 'How to Use Polkadot Vault - Fillippo',
+      description: 'Learn how to set up and create your account in the Polkadot Vault. '
+    },
+  ]} />

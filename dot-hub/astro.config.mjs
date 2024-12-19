@@ -5,6 +5,7 @@ import starlightSidebarTopics from 'starlight-sidebar-topics'
 import starlightViewModes from 'starlight-view-modes'
 import vercel from '@astrojs/vercel/static';
 import sitemap from '@astrojs/sitemap';
+import starlightLinksValidator from 'starlight-links-validator'
 
 
 // https://astro.build/config
@@ -20,6 +21,7 @@ export default defineConfig({
 		sitemap(),
 		starlight({
 			plugins: [
+				starlightLinksValidator(),
 				starlightViewModes({
 					zenModeEnabled: true,
 					zenModeCloseButtonPosition: "top-right",
@@ -81,7 +83,7 @@ export default defineConfig({
 							label: 'Social', collapsed: true, autogenerate: { directory: 'dapps/social' }
 						},
 						{
-							label: 'lMiscellaneous', collapsed: true, autogenerate: { directory: 'dapps/miscellaneous' }
+							label: 'Miscellaneous', collapsed: true, autogenerate: { directory: 'dapps/miscellaneous' }
 						},
 						{
 							label: 'NFT Marketplaces', collapsed: true, autogenerate: { directory: 'dapps/nft-marketplaces' }
@@ -128,7 +130,7 @@ export default defineConfig({
 				  ])],
 			title: 'Polkadot Ecosystem',
 			editLink: {
-				baseUrl: 'https://github.com/dablockdao/polkadotecosystem/edit/main/docs/',
+				baseUrl: 'https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-hub/',
 			  },
 			customCss: [
 				'./src/styles/custom.css',

@@ -3,6 +3,12 @@ title: Polkasafe
 description: A user-friendly Multisig for Polkadot & Kusama ecosystem.
 ---
 
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
 In the rapidly evolving world of blockchain technology, secure and efficient asset management is paramount. PolkaSafe emerges as a cutting-edge MultiSig platform, designed to offer an unparalleled asset management experience on the Polkadot blockchain. This comprehensive article explores the features, functionalities, and benefits of PolkaSafe, demonstrating its significance within the Polkadot ecosystem.
 
 ## What is PolkaSafe?
@@ -81,4 +87,13 @@ PolkaSafe is revolutionizing MultiSig asset management on the Polkadot blockchai
 
 As the Polkadot ecosystem continues to grow, PolkaSafe stands out as a leading solution for MultiSig management, offering a secure, efficient, and comprehensive platform for all your asset management needs. Embrace the future of blockchain asset management with PolkaSafe and experience the ultimate in MultiSig security and efficiency.
 
-### Related Projects:
+
+## Polkasafe Videos
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=h9QQFm_Sic0',
+      title: 'Creating A Multisig Wallet Easily And Quickly With PolkaSafe',
+      description: 'In-depth learning about how to create a multi-sig wallet quickly and easily through PolkaSafe, the gateway to the Ultimate MultiSig experience on Polkadot powered by Polkassembly.'
+    },
+  ]} />

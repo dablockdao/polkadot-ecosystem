@@ -3,6 +3,12 @@ title: 'Sporran Wallet'
 description: With Sporran Wallet you can manage KILT Coins, create digital identities, and sign documents securely with this browser extension
 ---
 
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
 The Sporran wallet, a desktop browser extension, is designed to be the gateway to the KILT blockchain and a broad array of Web3 services. Available for Google Chrome and Firefox, Sporran offers users the ability to manage their KILT Coin balances, sign and send transactions, and create digital identities, all while maintaining full control over their personal data.
 
 ## Key Features of Sporran Wallet
@@ -30,3 +36,15 @@ Sporran is designed to communicate seamlessly with decentralized applications (D
 The Sporran wallet is a powerful tool in the KILT and Web3 ecosystem. Its extensive features, from KILT Coin management to digital identity creation and credential storage, make it an essential browser extension for anyone looking to engage with decentralized services. By providing full control over personal data and ensuring secure digital interactions, Sporran empowers users to build and manage their digital identities with confidence.
 
 - <small>Related Token/s:</small> **KILT**
+
+
+
+
+<ShowcaseYouTube
+  entries={[
+        {
+      href: 'https://www.youtube.com/watch?v=ghjoGa9VBls',
+      title: 'How to setup Sporran Wallet for Kilt - Staking4All',
+      description: 'A brief easy to follow guide that shows you how to install Sporran Wallet for Kilt.'
+    },
+  ]} />

@@ -3,14 +3,7 @@ title: Hydration
 description: Hydration is a cross-chain liquidity protocol that will enable users to inter-swap assets across different blockchains with minimal slippage
 sidebar:
     order: 1
----
-DeFi  
- DEX  
-
-An ocean of liquidity for Polkadot.
-
-What is Hydration?
-------------------
+--- 
 
 Hydration (former known as HydraDX) is a ground-breaking project in the decentralized finance (DeFi) space that uses the Substrate framework, therefore forming part and parcel of the larger Polkadot ecosystem. The objective is to operationalize a **cross-chain liquidity protocol that will enable users to inter-swap assets across different blockchains with minimal slippage**. Fueled by the power of **Polkadot’s interoperability**, HydraDX is poised at resolving the sharpest problems within the modern DeFi sector—liquidity fragmentation, high transaction fees, and a lack of scalability.
 
