@@ -2,18 +2,16 @@
 title: 'Hashed Network'
 description: Hashed Network is a blockchain-based platform built on Substrate, designed to provide useful functionalities for businesses through various purpose-built pallets.
 ---
-Ecosystem  
-
-
-Introduction to Hashed Network
-------------------------------
+  
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
 Hashed Network is a blockchain-based platform built on Substrate, designed to provide useful functionalities for businesses through various purpose-built pallets. It supports applications and products that operate using these network pallets, creating a versatile and secure ecosystem for business operations. While advanced users can directly interact with the network using tools like polkadot-js, most users access the network through independent applications built on top of it.
 
 This article delves into the architecture, components, and functionalities of the Hashed Network, highlighting its significance within the Polkadot ecosystem.
 
-Hashed Network General Architecture
------------------------------------
+## Hashed Network General Architecture
 
 The architecture of Hashed Network is divided into three main layers:
 
@@ -69,8 +67,7 @@ Key applications include:
 
 The Hashed Network communicates with other parachains via the Polkadot Relay Chain, ensuring security and interoperability across different networks.
 
-Hashed Network Components
--------------------------
+## Hashed Network Components
 
 ### Afloat Client API
 
@@ -88,10 +85,7 @@ Handles backend services for confidential documents, enabling secure storage and
 
 Provides token distribution services for new accounts, reducing user onboarding friction.
 
-Bitcoin Orchestration
----------------------
-
-### Introduction
+##Bitcoin Orchestration
 
 Recent Bitcoin innovations, such as BIP 174 and the Taproot upgrade, enable developers to decouple the signing experience from transaction orchestration. Hashed Network leverages these innovations for Bitcoin orchestration.
 
@@ -162,3 +156,17 @@ Vesting records are created for each allocation category, ensuring balanced dist
 ### Conclusion
 
 Hashed Network provides a robust, secure, and versatile platform for businesses within the Polkadot ecosystem. With its comprehensive architecture, extensive functionality, and developer-friendly SDK, it stands out as a valuable addition to the blockchain landscape. Advanced users can leverage its full potential directly, while most users benefit from the seamless integration of independent applications.
+
+
+
+
+
+## Hashed Network  Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=Y34yi-kdxJM',
+      title: 'Hashed Network Connecting Solochain to Polkadot:',
+      description: 'ashed Network and the $1B secured on their solochain ready to connect with Polkadot.'    },
+  ]} />
