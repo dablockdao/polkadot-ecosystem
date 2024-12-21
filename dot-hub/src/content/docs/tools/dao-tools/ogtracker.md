@@ -1,6 +1,18 @@
 ---
 title: 'OG Tracker'
 description: OG Tracker offers transparent monitoring of Polkadot OpenGov proposals, ensuring accountability, progress tracking, and comprehensive proposal reviews in one platform.
+hero:
+  tagline: Monitoring of Polkadot OpenGov proposals
+  image: 
+    file: ../../../../assets/tools/dao-tools/ogtracker.png
+  actions:
+    - text: Tool
+      link: https://ogtracker.io/
+      icon: external
+    - text: Docs
+      link: https://docs.ogtracker.io/overview/
+      icon: external
+      variant: secondary
 ---
 
 *Enhancing Transparency and Accountability in the Polkadot Ecosystem*

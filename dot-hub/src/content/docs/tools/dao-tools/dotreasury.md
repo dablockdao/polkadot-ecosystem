@@ -1,6 +1,18 @@
 ---
 title: Dotreasury
 description: Info about all Polkadot and Kusama governance proposals.
+hero:
+  tagline: Polkadot and Kusama treasury proposals info.
+  image: 
+    file: ../../../../assets/tools/dao-tools/dotreasury.png
+  actions:
+    - text: Tool
+      link: https://www.dotreasury.com/
+      icon: external
+    - text: Github
+      link: https://github.com/opensquare-network/dotreasury
+      icon: external
+      variant: secondary
 ---
 
 **Dotreasury** is an online platform that provides comprehensive **tools for tracking and** **analyzing economic data and governance activities on the Polkadot and Kusama networks**. It serves as an essential resource for community members, validators, and developers within the Polkadot ecosystem, offering a deep dive into the economic and governance aspects of the network.

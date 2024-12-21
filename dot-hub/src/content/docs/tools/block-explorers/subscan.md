@@ -4,6 +4,18 @@ description: High-precision Web3 Blockchain Explorer. Multi-signature tool, acco
 sidebar:
   label: ✪ Subscan
   order: 1
+hero:
+  tagline: BWeb3 Portal to the Substrate & EVM Ecosystems
+  image: 
+    file: ../../../../assets/tools/block-explorers/subscan.png
+  actions:
+    - text: Tool
+      link: https://www.subscan.io/
+      icon: external
+    - text: Github
+      link: https://github.com/subscan-explorer
+      icon: external
+      variant: secondary
 ---
 **Subscan is a Substrate-based blockchain explorer and analytics platform** for such blockchains. It provides the searching and analysis of blockchain data by equipping users with a range of tools and data. Here’s what users can expect from Subscan:
 

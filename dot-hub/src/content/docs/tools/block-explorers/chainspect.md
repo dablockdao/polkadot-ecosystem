@@ -1,6 +1,18 @@
 ---
 title: Chainspect
 description: Dive into up-to-date metrics for most adopted blockchains.
+hero:
+  tagline: Up-to-date metrics for most adopted blockchains.
+  image: 
+    file: ../../../../assets/tools/block-explorers/chainspect.png
+  actions:
+    - text: Tool
+      link: https://chainspect.app/
+      icon: external
+    - text: Blog
+      link: https://chainspect.app/blog
+      icon: external
+      variant: secondary
 ---
 
 In the rapidly evolving landscape of blockchain technology, understanding the intricate details of different networks is essential for developers, investors, and enthusiasts. Chainspect, a pioneering blockchain analytics platform, offers a solution by providing in-depth technical metrics and comparisons for a broad range of popular blockchains.

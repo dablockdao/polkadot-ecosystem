@@ -1,6 +1,18 @@
 ---
 title: Polkawallet
 description: Mobile wallet for  Polkadot, Kusama, Substrate.
+hero:
+  tagline: Mobile wallet for  Polkadot, Kusama, Substrate.
+  image: 
+    file: ../../../../assets/tools/wallets/polkasafe.png
+  actions:
+    - text: Tool
+      link: https://polkawallet.io/
+      icon: external
+    - text: Github
+      link: https://github.com/polkawallet-io
+      icon: external
+      variant: secondary
 ---
 
 Polkawallet is a mobile wallet **crafted for the Polkadot ecosystem**, offering users a seamless experience with **cross-chain asset management, staking, governance, and access to multiple DeFi services**. Prioritizing security with self-custody of private keys, it enables efficient asset transfers, connection to high-speed remote nodes, and participation in ecosystem events.
