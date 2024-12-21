@@ -4,6 +4,18 @@ description: StateScan is a block explorer and analytics platform specifically d
 sidebar:
     label: ✪ Statescan
     order: 2
+hero:
+  tagline: Block explorer and analytics platform for Substrate-based blockchains,
+  image: 
+    file: ../../../../assets/tools/block-explorers/statescan.png
+  actions:
+    - text: Tool
+      link: https://www.statescan.io/
+      icon: external
+    - text: Blog
+      link: https://github.com/opensquare-network/
+      icon: external
+      variant: secondary
 ---
 
 In the fast-evolving landscape of blockchain technologies, the need for robust, user-friendly analytics tools has become paramount. For those navigating the complex networks of Substrate-based blockchains such as Polkadot and Kusama, StateScan emerges as a beacon, offering unparalleled insights into on-chain activities. This page delves into the **features and functionalities of StateScan**, illustrating how it stands out as an essential tool for both developers and users within the Polkadot, Kusama and every substrate based blockchain ecosystems.
