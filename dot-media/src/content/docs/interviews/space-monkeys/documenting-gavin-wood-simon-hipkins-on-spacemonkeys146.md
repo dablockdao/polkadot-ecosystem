@@ -1,19 +1,14 @@
 ---
 title: 'Documenting Gavin Wood - Simon Hipkins Interview'
-descripttion: 'Simon Hipkins, producer, director, and filmmaker at Key Pictures. Simon is the creative mind behind the documentary series Behind the Code'
+description: 'Simon Hipkins, producer, director, and filmmaker at Key Pictures. Simon is the creative mind behind the documentary series Behind the Code'
 sidebar:
     label: Simon Hipkins (Key Pictures)
 ---
-<div class="ose-youtube ose-uid-1f2a6b914a55dfc47872e4fe63409762 ose-embedpress-responsive" style="width:675px; height:420px; max-height:420px; max-width:100%; display:inline-block;"><iframe allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true" frameborder="0" height="420" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/EWi7xMXtbmY?feature=oembed" title="Filming the Blockchain Era - Simon Hipkins on Documenting Gavin Wood & Polkadot - Space Monkeys 146" width="675"></iframe></div>Twitter
-
-LinkedIn
-
-Telegram
+<iframe allow="accelerometer; encrypted-media;accelerometer;autoplay;clipboard-write;gyroscope;picture-in-picture clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="true" frameborder="0" height="420" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/EWi7xMXtbmY?feature=oembed" title="Filming the Blockchain Era - Simon Hipkins on Documenting Gavin Wood & Polkadot - Space Monkeys 146" width="675"></iframe>
 
 On the Space Monkeys episode #116, Jay interviews **Simon Hipkins**, producer, director, and filmmaker at Key Pictures. Simon is the creative mind behind the documentary series *Behind the Code*, a captivating piece that delves into the ambitious world of blockchain technology through the eyes of Polkadot’s visionary, Gavin Wood. In this blog post, we’ll summarize Simon’s insights and experiences from his conversation on the episode 116 of **Space Monkeys podcast by [The Kusamarian](https://twitter.com/TheKusamarian)**.
 
-The Genesis of *Behind the Code*
---------------------------------
+## The Genesis of *Behind the Code*
 
 Simon Hipkins’ journey with ***Behind the Code* began in late 2016** when he reconnected with Gavin Wood in Berlin. They had known each other since high school in the north of England, but their paths had diverged for nearly a decade. Gavin, who had already made a significant impact with Ethereum, approached Simon with a new, grand vision—Polkadot. This concept of a decentralized, interoperable blockchain network piqued Simon’s interest, even though he had little prior knowledge of blockchain technology.
 
@@ -23,8 +18,7 @@ As Simon started filming, he realized the magnitude of Gavin’s ambition. The i
 
 Simon’s initial lack of understanding of blockchain quickly transformed into a deep fascination. He even produced a television series for Channel News Asia, titled ***Inside the Crypto Kingdom***, which explored Bitcoin, cryptocurrencies, and the next generation of blockchain technologies.
 
-The Making of *Behind the Code*
--------------------------------
+## The Making of Behind the Code
 
 Filming *Behind the Code* was a long-term commitment, spanning several years. Simon balanced this project with other documentary works, gradually accumulating footage. As the project neared its launch phase, Simon recognized the need to structure the material into a coherent narrative. This led to the creation of a **multi-episode series focused on Polkadot’s development**, the problems it aimed to solve, and the passionate community driving it forward.
 

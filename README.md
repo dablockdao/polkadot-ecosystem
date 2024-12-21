@@ -84,7 +84,7 @@ Stay updated with the latest news and developments in the Polkadot ecosystem.
 
 | **Categories** | **Definition**                                                                                                                                           |
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Latest News**](https://news.polkadotecosystem.com/news/)        | Stay informed with the latest events, announcements, and developments shaping the ecosystem.         |
+| [**News**](https://news.polkadotecosystem.com/news/)        | Stay informed with the latest events, announcements, and developments shaping the ecosystem.         |
 | [**Guides**](https://news.polkadotecosystem.com/guides/)           | Explore comprehensive tutorials, step-by-step instructions, and best practices.                      |
 | [**Lists**](https://news.polkadotecosystem.com/lists/)             | Access curated listicles of resources, and references to help you navigate the Polkadot landscape.   |
 

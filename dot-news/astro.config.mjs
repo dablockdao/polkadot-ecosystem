@@ -5,7 +5,7 @@ import starlightBlog from 'starlight-blog';
 import sitemap from '@astrojs/sitemap';
 import vercel from '@astrojs/vercel/static';
 import starlightViewModes from 'starlight-view-modes';
-
+import starlightLinksValidator from 'starlight-links-validator'
 
 
 // https://astro.build/config
@@ -32,6 +32,7 @@ export default defineConfig({
 		sitemap(),
 		starlight({
 			plugins: [
+				starlightLinksValidator(),
 				starlightViewModes({
 					zenModeEnabled: true,
                     zenModeCloseButtonPosition: "top-right",
@@ -66,7 +67,7 @@ export default defineConfig({
 		},})],
 			title: 'Polkadot Ecosystem',
 			editLink: {
-				baseUrl: 'https://github.com/dablockdao/polkadotecosystem/edit/main/docs/',
+				baseUrl: 'https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-news/',
 			  },
 			customCss: [
 				'./src/styles/custom.css',
