@@ -4,7 +4,7 @@ description: EVM dex with support for Moonbeam
 hero:
   tagline: Creating deep on-chain liquidity using advanced bonding curves
   image: 
-    file: ../../../../assets/dapps/curve-finance.png
+    file: ../../../../assets/dapps/defi/curve-finance.png
   actions:
     - text: Dapp
       link: https://curve.fi/#/ethereum/swap
