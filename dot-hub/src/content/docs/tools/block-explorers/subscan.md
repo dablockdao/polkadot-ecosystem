@@ -1,14 +1,10 @@
 ---
 title: Subscan
 description: High-precision Web3 Blockchain Explorer. Multi-signature tool, account format transform tool, analysis charts...
+sidebar:
+  label: ✪ Subscan
+  order: 1
 ---
-
-
-- [](https://www.subscan.io/)
-- [](https://twitter.com/subscan_io)
-- [](https://github.com/subscan-explorer)
-
-
 **Subscan is a Substrate-based blockchain explorer and analytics platform** for such blockchains. It provides the searching and analysis of blockchain data by equipping users with a range of tools and data. Here’s what users can expect from Subscan:
 
 1. **Block Explorer**: A block explorer that allows users to view details of the blocks, including transactions, extrinsics, and events carried out in this blockchain. These include the height, hash, timestamp of the block, events which have been triggered, and the extrinsics within it, up to a maximum limit of 1,000 records.
@@ -21,5 +17,3 @@ description: High-precision Web3 Blockchain Explorer. Multi-signature tool, acco
 8. **User Interface**: The Subscan user interface is easy to use for both technical and non-technical personnel. The site has all the search and navigation placed on the platform for easier access to whatever the user might want to access.
 
 Subscan serves as a valuable tool for anyone in the Polkadot ecosystem, **offering a potent window into the on-chain activities of Substrate-based blockchains**, serving not only developers but also investors, validators, and researchers of these networks.
-
-Last time updated: **29 March, 2024**.

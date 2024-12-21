@@ -7,7 +7,6 @@ Polkadot Insider is a valuable **resource for anyone interested in the latest Po
 
 
 ## The Role of Polkadot Insider
-
 Polkadot Insider serves as a comprehensive source of information dedicated to the Polkadot ecosystem. Here’s what you can expect from Polkadot Insider:
 
 1. **Latest News**: Stay updated with the latest happenings in the Polkadot network. From upgrades and new project launches to partnerships and regulatory developments, Polkadot Insider covers it all.

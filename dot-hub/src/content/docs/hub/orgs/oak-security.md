@@ -4,15 +4,12 @@ description: Expert security audits for blockchain ecosystems like Cosmos, Polka
 ---
 
 **Fortifying the Future of Decentralized Ecosystems**
-
 Oak Security has emerged as a leading provider of security auditing and cybersecurity advisory services, particularly focusing on third-generation blockchains such as the **Cosmos SDK, CosmWasm, Polkadot and Substrate, Solana, NEAR, and Flow (Cadence) ecosystems**. Additionally, through its brand Solidified, Oak Security extends its expertise to the Ethereum and EVM-compatible ecosystems.
 
 ## Oak Security Commitment to Excellence in Security
-
 Oak Security’s approach to securing blockchain projects is rooted in a robust, thorough, and collaborative audit process. With a team of 52 expert auditors, including PhDs, economists, cryptography experts, and seasoned computer scientists, Oak Security has completed **over 400 audits and discovered more than 5,000 issues**. This impressive track record underscores their commitment to ensuring the highest levels of security for their clients.
 
 ## Oak Security Services Across the Blockchain Lifecycle
-
 Oak Security offers a wide range of services that cover all stages of a project’s lifecycle. These include:
 
 - **Idea Discovery**: Early-stage consultation to identify potential security issues.
@@ -25,7 +22,6 @@ Oak Security offers a wide range of services that cover all stages of a project�
 - **Operational Security Consulting**: Ongoing support to maintain security post-launch.
 
 ## Oak Security Specialized Expertise in Diverse Technologies
-
 Oak Security supports a variety of blockchain technologies, demonstrating versatility and a deep understanding of the unique security needs of each ecosystem. Their expertise spans:
 
 - **Cosmos SDK and CosmWasm**: Ensuring security in interoperable and modular blockchain applications.

@@ -52,6 +52,9 @@ export default defineConfig({
 								label: '🗳️ DAO Tools', collapsed: true, autogenerate: { directory: 'tools/dao-tools' }
 							},
 							{
+								label: '🧿 Miscellaneous', collapsed: true, autogenerate: {directory: 'tools/miscellaneous'}
+							},
+							{
 								label: '🛠️ Development', collapsed: true, autogenerate: { directory: 'tools/development' }
 							},
 							{

@@ -1,6 +1,8 @@
 ---
 title: Opengov.Watch
 description: OpenGov.Watch is Monitoring and enhancing Polkadot governance for a transformative, decentralized Web3 ecosystem.
+sidebar:
+    label: ⭒ OpenGov.Watch
 ---
 
 *Polkadot Governance for a Transformative Web3 Ecosystem*
@@ -8,11 +10,9 @@ description: OpenGov.Watch is Monitoring and enhancing Polkadot governance for a
 The OpenGov.Watch initiative is a pioneering project dedicated to monitoring, reporting, and actively participating in the governance of the Polkadot ecosystem. As Polkadot’s governance framework, OpenGov, evolves, OpenGov.Watch is positioned to play a critical role in ensuring transparency, accountability, and strategic direction.
 
 ### Understanding Polkadot OpenGov
-
 **Polkadot OpenGov** is an innovative governance model designed to foster **decentralized decision-making within the Polkadot ecosystem**. By leveraging blockchain technology, OpenGov aims to create a more democratic and participatory environment where stakeholders can influence the future of the network. This model is pivotal in transforming Polkadot into a robust Web3 ecosystem that champions transparency, inclusivity, and decentralization.
 
 ### Mission of OpenGov.Watch
-
 OpenGov.Watch was established with a clear vision: to support and enhance the Polkadot governance process. The initiative serves multiple purposes:
 
 1. **Monitoring and Reporting**: OpenGov.Watch provides detailed reports on the latest developments within Polkadot OpenGov and the Treasury. This ensures stakeholders are well-informed about ongoing initiatives and changes.
@@ -20,17 +20,13 @@ OpenGov.Watch was established with a clear vision: to support and enhance the Po
 3. **Technical Fellowship and Roadmap**: By offering in-depth reports on the progress of the technical fellowship and the roadmap for Polkadot 2.0, OpenGov.Watch keeps the community updated on technical advancements and future plans.
 
 ### Philosophy and Vision
-
 OpenGov.Watch operates under a philosophy that aligns with the broader Web3 ethos: decentralization, freedom, and empowerment. The initiative believes that Web3 represents a promise—a promise of a free and open internet controlled by its users rather than monopolized by corporations. OpenGov is seen as the pathway to realize this promise by creating governance structures that are participatory, transparent, and effective.
 
 ### The Role of OpenGov.Watch in the Polkadot Ecosystem
-
 OpenGov.Watch is not just a passive observer. The initiative actively participates in the governance process by:
-
 - **Leading Discussions**: OpenGov.Watch facilitates discussions to identify key issues, propose solutions, and synthesize these into actionable governance initiatives.
 - **Initiative Leadership**: The initiative takes the lead on various governance projects, ensuring they align with the decentralized ethos of Polkadot.
 - **Coordination and Cooperation**: By staying agile and flexible, OpenGov.Watch fosters cooperation among stakeholders and offers coordination to streamline governance processes.
 
 ### Conclusion
-
 As Polkadot governance continues to mature, OpenGov.Watch stands out as a crucial player in shaping the future of the ecosystem. By providing transparency, fostering education, and actively participating in governance, OpenGov.Watch ensures that Polkadot can achieve its vision of becoming the most impactful Web3 ecosystem.

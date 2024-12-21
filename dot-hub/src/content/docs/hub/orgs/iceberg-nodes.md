@@ -2,7 +2,7 @@
 title: 'Iceberg Nodes'
 description: Secure non-custodial staking services for Polkadot and Kusama, offering validator and collator expertise with community support.
 ---
-∫∫
+
 Iceberg Nodes is a company that offers secure non-custodial staking services, functioning as validators on relaychains and collators on parachains within the Polkadot and Kusama ecosystems. Founded by Luca Poggi, who has been involved in the cryptocurrency space since 2014 and the Polkadot/Kusama ecosystem since 2019, the company has established itself as a reputable participant in these blockchain networks.
 
 The company’s expertise includes serving as validators and collators for a variety of projects within the Polkadot and Kusama ecosystems, such as ChainX, Calamari, Centrifuge, and Altair. Iceberg Nodes’ infrastructure is primarily based in Europe, with servers located in France and the Netherlands, ensuring robust and secure operations.

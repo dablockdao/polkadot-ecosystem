@@ -9,48 +9,28 @@ import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
 The Aventus Network (AvN) represents a new generation of scalable and interoperable blockchain technology. Built on Substrate and operating as a Polkadot parachain, Aventus boasts high transaction throughput, deterministic finality, and low transaction costs. It serves as a bridge between the Ethereum and Polkadot ecosystems, enabling seamless interoperability. Since its mainnet launch in 2021, Aventus has processed over 36 million transactions, demonstrating its capability and reliability.
 
-**Aventus: Evolution and Capabilities**
----------------------------------------
-
-### **Early Beginnings**
-
+## Aventus: Evolution and Capabilities
 Aventus started in 2018 as a blockchain solution for the ticketing industry, aiming to combat fraud and scalping. Initially based on Ethereum, the limitations of Ethereum’s scalability led Aventus to develop its own Layer 2 solution. This evolved into the Aventus Network, which later transitioned to a Polkadot parachain to enhance its scalability and interoperability.
 
-**Aventus Technical Architecture**
-----------------------------------
-
-### **Substrate Framework**
-
-Substrate, the underlying technology of Aventus, is an open-source blockchain development framework designed for high customizability and interoperability. It allows for seamless upgrades and compatibility with Polkadot’s relay chain, ensuring that Aventus can leverage Polkadot’s pooled security and consensus mechanisms.
-
-### **Polkadot Integration**
-
-Polkadot, often referred to as a Layer 0 blockchain, connects multiple Layer 1 blockchains (parachains) into a single network. This setup allows for interoperability and data exchange between different blockchains. Aventus, as a parachain, benefits from this architecture, enhancing its security and scalability.
-
-### **Accounts and Nodes**
-
-Aventus uses a 32-byte address derived from a cryptographic public key for account management. It supports balances in its native token (AVT) and any ERC-20 token on its Layer 2 network. Aventus employs several types of nodes:
+## Aventus Technical Architecture**
+- **Substrate Framework:** Substrate, the underlying technology of Aventus, is an open-source blockchain development framework designed for high customizability and interoperability. It allows for seamless upgrades and compatibility with Polkadot’s relay chain, ensuring that Aventus can leverage Polkadot’s pooled security and consensus mechanisms.
+- **Polkadot Integration:** Polkadot, often referred to as a Layer 0 blockchain, connects multiple Layer 1 blockchains (parachains) into a single network. This setup allows for interoperability and data exchange between different blockchains. Aventus, as a parachain, benefits from this architecture, enhancing its security and scalability.
+- **Accounts and Nodes:** Aventus uses a 32-byte address derived from a cryptographic public key for account management. It supports balances in its native token (AVT) and any ERC-20 token on its Layer 2 network. Aventus employs several types of nodes:
 
 1. **RPC Nodes**: Facilitate interaction with the blockchain by sending transactions and querying data.
 2. **Archive Nodes**: Store the full history of the blockchain, used primarily for backup.
 3. **Collator Nodes**: Create blocks on the chain and maintain the blockchain by authoring and verifying transactions.
 
 ### **Extrinsics and Runtime**
-
 Extrinsics are transactions that originate from outside the blockchain network. Aventus validates these transactions through its collator nodes before they are processed and included in blocks. The runtime, operating like a virtual machine, handles state transitions and appending blocks to the chain.
 
 ### **Consensus Mechanisms**
-
 Aventus initially used a Proof of Stake (PoS) consensus but **now derives its security from Polkadot’s relay chain**. Block authorship is handled by Aventus collators using the AURA scheduling algorithm, while finality is managed by Polkadot’s relay chain validators.
 
-**Layer 1-Layer 2 Communication**
----------------------------------
-
+## Layer 1-Layer 2 Communication
 Aventus facilitates seamless communication between Layer 1 (Ethereum) and Layer 2 (Aventus) through a set of rules enforced by smart contracts and Substrate pallets. This ensures secure and efficient asset transfers and transaction processing between the two layers.
 
 **Aventus Ecosystem and Use Cases**
------------------------------------
-
 Aventus supports various applications across multiple sectors. Some notable projects include:
 
 1. **Parity**: A platform for female athletes using NFTs to address the gender pay gap.
@@ -61,26 +41,20 @@ Aventus supports various applications across multiple sectors. Some notable proj
 6. **Fruitlab**: A social network for gamers enabling revenue generation through blockchain.
 7. **ASX Sports**: A sports and entertainment platform using blockchain for fan engagement.
 
-**The Aventus Token (AVT)**
----------------------------
-
+## The Aventus Token (AVT)
 **AVT is the native utility token of the Aventus Network**, used for transaction fees, staking, and governance. Initially launched on Ethereum, AVT has a total supply of 10 million tokens. Recent governance proposals have introduced mechanisms for dynamic gas prices and additional token minting to support network growth and parachain slot auctions.
 
 **Future Roadmap**
-
 Aventus plans to further decentralize its network, enhance throughput and finality, and develop advanced economic incentives. Key initiatives include:
-
 1. **Decentralization**: Distributing collator nodes geographically and control-wise to achieve a fully decentralized network.
 2. **Enterprise Infrastructure**: Developing business-grade tools like wallets, indexers, and oracles to support diverse use cases.
 3. **Interoperability**: Expanding support for various token standards and cross-platform integration to prevent asset silos.
 4. **Privacy**: Implementing privacy-preserving technologies for secure and private transactions.
 
 ### **Conclusion**
-
 Aventus Network stands as a robust, scalable, and interoperable blockchain solution within the Polkadot ecosystem. Its technical architecture, coupled with its strategic roadmap, positions Aventus as a leading platform for enterprise-grade blockchain applications. As it continues to evolve, Aventus is set to drive innovation and adoption across multiple industries, reinforcing its role as a pivotal player in the blockchain space.
 
-
-## Aventus Network  Videos
+## Aventus Network Videos
 ------------
 <ShowcaseYouTube
   entries={[
