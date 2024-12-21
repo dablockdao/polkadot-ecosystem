@@ -4,7 +4,7 @@ description: Ceres is a multifaceted DeFi project within the Polkadot ecosystem,
 hero:
   tagline: A DeFi service on Polkadot
   image: 
-    file: ../../../../assets/dapps/ceres.png
+    file: ../../../../assets/dapps/defi/ceres.png
   actions:
     - text: Dapp
       link: https://dapps.cerestoken.io/

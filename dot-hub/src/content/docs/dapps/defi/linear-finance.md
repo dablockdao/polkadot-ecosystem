@@ -4,7 +4,7 @@ description: Discover Linear Finance, a cross-chain DeFi protocol for trading sy
 hero:
   tagline: A Cross-Chain Compatible, Decentralized Delta-One Asset Protocol.
   image: 
-    file: ../../../../assets/dapps/linear-finance.png
+    file: ../../../../assets/dapps/defi/linear-finance.png
   actions:
     - text: Dapp
       link: https://linear.finance/

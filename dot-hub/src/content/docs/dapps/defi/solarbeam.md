@@ -4,7 +4,7 @@ description: The native AMM of Moonriver and Moonbeam.
 hero:
   tagline: The native AMM of Moonriver & Moonbeam.
   image: 
-    file: ../../../../assets/dapps/solarbeam.png
+    file: ../../../../assets/dapps/defi/solarbeam.png
   actions:
     - text: Dapp
       link: https://solarbeam.io/

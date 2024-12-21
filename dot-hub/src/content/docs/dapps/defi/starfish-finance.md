@@ -4,7 +4,7 @@ description:  Leading the Entertainment-Fi experience in Web3.
 hero:
   tagline: Entertainment-Fi experience in Web3.
   image: 
-    file: ../../../../assets/dapps/starfish-finance.png
+    file: ../../../../assets/dapps/defi/starfish-finance.png
   actions:
     - text: Dapp
       link: https://app.starfish.finance/

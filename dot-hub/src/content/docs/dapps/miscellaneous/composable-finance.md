@@ -4,7 +4,7 @@ description: Composable Finance is revolutionizing the way we perceive and inter
 hero:
   tagline: Protocol security (Restaking) & chain abstraction
   image: 
-    file: ../../../../assets/dapps/composable-finance.png
+    file: ../../../../assets/dapps/defi/composable-finance.png
   actions:
     - text: Dapp
       link: https://www.composablefoundation.com/
