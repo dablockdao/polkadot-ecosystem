@@ -172,9 +172,7 @@ h1 {
 /**
  * Overrides
  */
-.hero {
-	padding-block-end: 4rem;
-}
+
 .sl-markdown-content code,
 .sl-markdown-content .starlight-aside {
 	border-radius: 0.25rem;
@@ -567,14 +565,41 @@ header {
 	--text-color: #0d1b2a;
 	--link-color: #0d1b2a;
   }
-  
-  .hero {
+
+/* HERO */
+
+   .hero {
 	border-radius: 15px;
 	padding: 30px 60px;
 	backdrop-filter: blur(12px);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	padding-block-end: 4rem;
   }
   
+.hero img {
+	animation: sway 5s infinite ease-in-out;
+}
+
+@keyframes sway {
+	0% {
+	  transform: rotate(0deg);
+	}
+	25% {
+	  transform: rotate(10deg);
+	}
+	50% {
+	  transform: rotate(0deg);
+	}
+	75% {
+	  transform: rotate(-10deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	}
+  }
+  
+/* SIDEBAR */
+
   .sidebar {
 	background-color: var(--background-color);
 	color: var(--text-color);

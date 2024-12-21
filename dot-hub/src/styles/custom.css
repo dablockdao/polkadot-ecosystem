@@ -450,6 +450,11 @@ header {
 	text-align: left;
 	overflow: hidden;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	position: relative;
   }
   
   .card::before {
@@ -509,7 +514,6 @@ header {
   .card span:hover {
 	color: var(--hover-color) !important;
 	text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
-	transform: translateY(-2px);
   }
   
   .card p {
@@ -518,10 +522,6 @@ header {
 	line-height: 1.6;
 	margin-top: 12px;
 	transition: all 0.3s ease;
-  }
-  
-  .card:hover p {
-	transform: translateY(-2px);
   }
   
   .card .sl-link-button {
@@ -635,13 +635,39 @@ header {
 	--link-color: #0d1b2a;
   }
   
+  /* HERO */
   .hero {
 	border-radius: 15px;
 	padding: 30px 60px;
 	backdrop-filter: blur(12px);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
+   
+.hero img {
+	animation: sway 5s infinite ease-in-out;
+}
+
+@keyframes sway {
+	0% {
+	  transform: rotate(0deg);
+	}
+	25% {
+	  transform: rotate(10deg);
+	}
+	50% {
+	  transform: rotate(0deg);
+	}
+	75% {
+	  transform: rotate(-10deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	}
+  }
+
+/* SIDEBAR */
+
   .sidebar {
 	background-color: var(--background-color);
 	color: var(--text-color);
@@ -915,29 +941,6 @@ iframe:hover {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-  }
-  
-
-.hero img {
-	animation: sway 5s infinite ease-in-out;
-}
-
-@keyframes sway {
-	0% {
-	  transform: rotate(0deg);
-	}
-	25% {
-	  transform: rotate(10deg);
-	}
-	50% {
-	  transform: rotate(0deg);
-	}
-	75% {
-	  transform: rotate(-10deg);
-	}
-	100% {
-	  transform: rotate(0deg);
-	}
   }
 
 @media (max-width: 768px) {

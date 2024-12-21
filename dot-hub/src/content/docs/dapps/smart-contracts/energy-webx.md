@@ -3,7 +3,6 @@ title: 'Energy Web X'
 description:  Energy Web Chain offers open-source digital technologies that help companies navigate the energy transition.
 ---
 
-
 Energy Web is a non-profit organization on a mission to accelerate the global transition to clean energy. They achieve this by developing open-source software solutions that empower companies to unlock the value of clean and distributed energy resources.
 
 At the core of Energy Web’s technology lies the **Energy Web Decentralized Operating System (EW-DOS)**. EW-DOS provides companies with the tools to build custom applications and business networks that leverage established protocols alongside pioneering technologies.

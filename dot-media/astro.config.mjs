@@ -7,6 +7,7 @@ import starlightViewModes from 'starlight-view-modes';
 import vercel from '@astrojs/vercel/static';
 import sitemap from '@astrojs/sitemap';
 import icon from "astro-icon";
+import starlightLinksValidator from 'starlight-links-validator'
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,6 +23,7 @@ export default defineConfig({
 		sitemap(),
 		starlight({
 			plugins: [
+				starlightLinksValidator(),
 				starlightImageZoom(),
 				starlightViewModes({
 					zenModeEnabled: true,
@@ -44,7 +46,7 @@ export default defineConfig({
 						icon: 'heart',
 						items: [
 							{
-								label: 'Sub0',
+								label: '💡 Sub0',
 								collapsed: true,
 								items: [
 									{
@@ -66,7 +68,7 @@ export default defineConfig({
 								],
 							},
 							{
-								label: 'Decoded',
+								label: '💠 Decoded',
 								collapsed: true,
 								items: [
 									{
@@ -87,12 +89,12 @@ export default defineConfig({
 								],
 							},
 							{
-								label: 'Web3 Summit',
+								label: '🏴 Web3 Summit',
 								collapsed: true,
 								autogenerate: { directory: 'events/web3-summit' }
 							},
 							{
-								label: 'Miscellaneous',
+								label: '🧿 Miscellaneous',
 								collapsed: true,
 								autogenerate: { directory: 'events/miscellaneous' }
 							}
@@ -104,22 +106,22 @@ export default defineConfig({
 						icon: 'comment',
 						items: [
 							{
-								label: 'Space Monkeys',
+								label: '🐒 Space Monkeys',
 								collapsed: true,
 								autogenerate: { directory: 'interviews/space-monkeys' }
 							},
 							{
-								label: 'Behind the Code',
+								label: '📺 Behind the Code',
 								collapsed: true,
 								autogenerate: { directory: 'interviews/behind-the-code' }
 							},
 							{
-								label: 'Dotcast',
+								label: '🎙️ Dotcast',
 								collapsed: true,
 								autogenerate: { directory: 'interviews/dotcast' }
 							},
 							{
-								label: 'Miscellaneous',
+								label: '🧿 Miscellaneous',
 								collapsed: true,
 								autogenerate: { directory: 'interviews/miscellaneous' }
 							}
@@ -129,7 +131,7 @@ export default defineConfig({
 			],
 			title: 'Polkadot Ecosystem',
 			editLink: {
-				baseUrl: 'https://github.com/dablockdao/dot-media/tree/main/',
+				baseUrl: 'https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-media/',
 			},
 			customCss: [
 				'./src/styles/custom.css',

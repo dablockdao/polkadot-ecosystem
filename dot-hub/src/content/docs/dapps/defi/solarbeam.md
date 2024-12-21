@@ -1,6 +1,18 @@
 ---
 title: Solarbeam
 description: The native AMM of Moonriver and Moonbeam.
+hero:
+  tagline: The native AMM of Moonriver & Moonbeam.
+  image: 
+    file: ../../../../assets/dapps/solarbeam.png
+  actions:
+    - text: Dapp
+      link: https://solarbeam.io/
+      icon: external
+    - text: Docs
+      link: https://docs.solarbeam.io/
+      icon: external
+      variant: secondary
 ---
 
 **Solarbeam is a decentralized finance (DeFi) platform built on the Moonriver Network (SOLAR)** and **Moonbeam Network (FLARE)**, which itself is a part of the larger Polkadot ecosystem. It serves as an automated market maker (AMM), similar to Uniswap on the Ethereum network, but it operates within the Polkadot framework, leveraging the interoperability and scalability that Polkadot offers.

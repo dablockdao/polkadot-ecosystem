@@ -1,6 +1,18 @@
 ---
 title: 'Linear Finance'
 description: Discover Linear Finance, a cross-chain DeFi protocol for trading synthetic assets with low fees and deep liquidity.
+hero:
+  tagline: A Cross-Chain Compatible, Decentralized Delta-One Asset Protocol.
+  image: 
+    file: ../../../../assets/dapps/linear-finance.png
+  actions:
+    - text: Dapp
+      link: https://linear.finance/
+      icon: external
+    - text: Whitepaper
+      link: https://linear.finance/defi/Linear_Whitepaper_EN.pdf
+      icon: external
+      variant: secondary
 ---
 
 **Linear Finance is a decentralized finance (DeFi) project** that aims to revolutionize the way users interact with financial assets. By combining extensive experience in both cryptocurrency projects and traditional asset management, **Linear Finance provides a non-custodial, cross-chain compatible delta-one asset protocol**. This protocol allows users to seamlessly access and trade various digital and traditional assets with minimal transaction fees and zero slippage.
@@ -47,3 +59,4 @@ LINA adopts an inflationary tokenomics model with an initial high inflation rate
 Linear Finance represents a significant advancement in the DeFi space, offering a robust and versatile platform for trading synthetic assets. By combining the strengths of blockchain technology with innovative financial instruments, **Linear Finance aims to create a more inclusive and efficient financial ecosystem**.
 
 - <small>Related Token/s:</small> **LINA**
+

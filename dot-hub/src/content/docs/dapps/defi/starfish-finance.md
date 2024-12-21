@@ -1,6 +1,18 @@
 ---
 title: 'Starfish Finance'
 description:  Leading the Entertainment-Fi experience in Web3.
+hero:
+  tagline: Entertainment-Fi experience in Web3.
+  image: 
+    file: ../../../../assets/dapps/starfish-finance.png
+  actions:
+    - text: Dapp
+      link: https://app.starfish.finance/
+      icon: external
+    - text: Docs
+      link: https://docs.starfish.finance/
+      icon: external
+      variant: secondary
 ---
 
 Starfish Finance is an innovative DeFi platform incubated with the Astar Network Program, designed to offer a multi-chain, one-stop DeFi and Entertainment-Fi experience primarily on Arbitrum One and Astar Network. The platform incorporates gamification to deliver an entertainment-rich DeFi experience, merging NFTs for decentralized financing and providing a unique user experience.

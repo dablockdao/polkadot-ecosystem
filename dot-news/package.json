@@ -18,6 +18,7 @@
     "astro-og-canvas": "^0.5.4",
     "sharp": "^0.32.5",
     "starlight-blog": "^0.14.1",
+    "starlight-links-validator": "^0.14.0",
     "starlight-showcases": "^0.2.0",
     "starlight-sidebar-topics": "^0.1.0",
     "starlight-view-modes": "^0.7.0",
