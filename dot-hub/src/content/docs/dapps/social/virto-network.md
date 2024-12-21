@@ -6,11 +6,9 @@ description: Virto and Kreivo’s Local Incentives Protocol is creating Decentra
 In a world where economic inequality persists, the Virto Network introduces an innovative solution: the **Local Incentives Protocol (LIP)**. By defining a secure payment system for trading off-chain assets with cryptocurrencies, LIP connects decentralized markets and users, aiming to enhance local welfare through fair and transparent tax collection. This initiative stands out as a promising approach to mitigating economic disparities, especially in low-income regions, by empowering local communities.
 
 ## What is Virto Network?
-
 **Virto Network is an innovative blockchain platform that introduces the Local Incentives Protocol (LIP)**, designed to enhance local economies by providing a secure and decentralized payment system for trading off-chain assets with cryptocurrencies. Built on the Polkadot network, Virto Network empowers autonomous local communities to manage and spend local taxes transparently, efficiently, and fairly. The protocol facilitates the creation of decentralized marketplaces, leveraging multiple decentralized technologies to support secure transactions and community governance, ultimately aiming to mitigate economic inequality and promote local welfare through scalable and transparent solutions.
 
 ## The Need for the Local Incentives Protocol
-
 Economic inequality remains a global challenge, with governments often relying on taxes and transfers to address these disparities. However, such fiscal policies frequently prove ineffective in low-income countries due to several factors:
 
 1. **Fairness**: Management of local resources often falls into the hands of individuals with diverse and sometimes conflicting interests.
@@ -20,47 +18,31 @@ Economic inequality remains a global challenge, with governments often relying o
 LIP addresses these issues by enabling autonomous local communities to manage and allocate local taxes in a manner that is fair, efficient, and transparent. As a token-less parachain on the Polkadot network, LIP equips developers with APIs to create secure, scalable decentralized commerce applications.
 
 ## Key Components of the Local Incentives Protocol
-
 **1. Key Actors:**
-
 - **Buyers/Customers**: Network participants who purchase goods or services without the need for trust.
 - **Sellers/Merchants**: Experienced users who trade real-world assets for cryptocurrency.
 - **Local Community**: Individuals sharing a physical space, incentivized to form communities and manage local taxes.
 - **Commercial Community**: Economic interest groups creating marketplaces with their own tokens.
 - **Union**: Higher-level decentralized autonomous organizations (DAOs) addressing global issues.
-
 **2. Process:**
-
 The world is divided into “Geo land cells” of approximately 5 km² each. Users register in a cell and can trade peer-to-peer or through a commercial community, benefiting from LIP’s secure payment system. Transactions involve a minimal system fee and a local tax, locked in the respective Geo land cell to fund future communities. Once enough resources are staked, these communities form DAOs, autonomously managing resources and governance.
-
 **3. Applications:**
-
 Commercial Communities can develop decentralized marketplace applications linked to LIP. Reference applications include:
-
 - **Swap.cash**: A fiat-crypto exchange.
 - **Flea.market**: A platform for peer-to-peer goods trade.
 - **Go.delivery**: A delivery service without intermediaries.
-
 **4. Infrastructure:**
-
 LIP integrates various decentralized technologies:
-
 - **Parachain**: Built on Substrate and part of the Polkadot network, handling consensus-critical functions such as secure payments and DAO management.
 - **Matrix**: Ensures encrypted communication and data storage.
 - **Valor**: Supports community-developed services across different infrastructures.
-
 **5. Governance:**
-
 Initially overseen by the founding team, LIP aims for decentralized governance. Local and commercial communities will progressively gain autonomy, adopting their democratic systems and contributing to the global governance framework.
-
 **6. Economics:**
-
 LIP employs multiple tokens to facilitate its operations:
-
 - **Native Token (DOT)**: Used for staking and network operations within the Polkadot ecosystem.
 - **Land Token**: Hierarchical NFTs representing land, crucial for local governance and rewards.
 - **Marketplace Token**: Issued by commercial communities, used for transaction fees and governance within specific marketplaces.
 
 #### Conclusion
-
 The Virto Network’s Local Incentives Protocol represents a groundbreaking approach to creating decentralized marketplaces that foster fair, efficient, and transparent local tax management. By leveraging the Polkadot ecosystem, LIP empowers communities to establish autonomous micro-economies, collectively addressing broader global challenges. This innovative protocol not only promises to revolutionize local economies but also to contribute significantly to the global movement towards economic equality and sustainability.

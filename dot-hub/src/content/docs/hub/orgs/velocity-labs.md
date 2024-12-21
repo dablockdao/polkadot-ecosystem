@@ -2,6 +2,7 @@
 title: 'Velocity Labs'
 description: Discover Velocity Labs’ mission to transform Polkadot into a leading DeFi hub with robust infrastructure and innovative solutions.
 sidebar:   
+    label: ⭒ Velocity Labs
     order: 4
 ---
 

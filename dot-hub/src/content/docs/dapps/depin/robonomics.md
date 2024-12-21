@@ -12,11 +12,3 @@ Robonomics is a groundbreaking framework designed to integrate IoT devices and r
 - **Decentralized Governance**: Employs a community-driven governance model, allowing XRT holders to influence the platform’s development and direction.
 
 Robonomics aims to unlock new economic models and efficiencies across various sectors by enabling seamless automation and operation of IoT and robotic technologies within the blockchain space. Despite facing challenges like security, scalability, and adoption, its vision represents a significant step towards a future of decentralized automation and smart technology integration.
-
- Last time updated: **29 March, 2024**.
-
-Web3 tools related content
---------------------------
-
-Robonomics official feeds
--------------------------

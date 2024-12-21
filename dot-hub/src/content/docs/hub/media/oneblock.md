@@ -1,6 +1,8 @@
 ---
 title: OneBlock+
 description: OneBlock+ is Leading Substrate developer community empowering growth and innovation in the Polkadot ecosystem through education and events.
+sidebar: 
+    label: ✪ OneBlock+
 ---
 
 *Pioneering Growth and Innovation in the Polkadot Ecosystem*
@@ -9,51 +11,34 @@ description: OneBlock+ is Leading Substrate developer community empowering growt
 
 **Since its establishment in 2018**, the OneBlock+ developer community has rapidly evolved into a leading **Substrate developer community**, solidifying its position as a pivotal player in the Polkadot ecosystem. With a mature and thriving community ecosystem, OneBlock+ offers developers a comprehensive growth path through Substrate technology, providing high-quality articles, interviews, technical discussions, multi-stage developer courses, hackathons, and the prominent Polkadot Decoded conference. These initiatives aim to continuously empower developers exploring the Polkadot and Substrate ecosystems.
 
-OneBlock+: A Year of Remarkable Growth
---------------------------------------
-
+## OneBlock+: A Year of Remarkable Growth
 In 2023, OneBlock+ experienced rapid growth, attracting exceptional developers and contributing to the prosperity and innovation of the Polkadot ecosystem. The community produced over 300 high-quality technical articles, shared extensively across various platforms, reaching an audience of over 20,000 followers and accumulating 174,206 reads. These articles covered a broad range of topics, including the latest technological trends, ecosystem announcements, and project milestones, providing comprehensive support to developers from learning to job seeking and practical development.
 
-OneBlock+ Original Technical Content and Industry Insights
-----------------------------------------------------------
-
+## OneBlock+ Original Technical Content and Industry Insights
 OneBlock+ published 45 original in-depth technical articles in 2023, many of which gained extensive community sharing and resharing. Highlighted articles included “OpenGov is Launched on Polkadot!”, “In-depth Analysis of Polkadot 2.0: Multicore, More Resilient, Application-Centric”, and “Will Migration of Mythical Games Lead to the Explosion of Web3 Gaming Within the Polkadot Ecosystem?”. Additionally, OneBlock+ actively covered significant hackathons, industry summits, and other major events in the Polkadot ecosystem, providing timely and valuable information to developers.
 
 ### High-Quality English Content Compilation
-
 In an effort to bridge language barriers and deliver valuable technical content to Chinese developers, OneBlock+ compiled eight issues of high-quality English content, including official speeches and ecosystem announcements. The community also translated 10 articles from the latest technical development information and detailed guides from the official Polkadot developer website, providing developers with practical and systematic tools.
 
-Polkadot Developer Interviews and Project Support
--------------------------------------------------
-
+## Polkadot Developer Interviews and Project Support
 OneBlock+ launched the Polkadot Ecosystem Project Support Program in 2023, featuring seven in-depth project interviews with blockchain projects built on Substrate and high-quality projects within the Polkadot ecosystem. These interviews provided exposure and acceleration, offering insights and references for more peers. Additionally, OneBlock+ conducted interviews with exceptional developers, uncovering their learning and career paths, further enriching the community’s knowledge base.
 
-Substrate Development Monthly Reports and Educational Programs
---------------------------------------------------------------
-
+## Substrate Development Monthly Reports and Educational Programs
 The community released 24 issues of the “Substrate Ecosystem Project Technical Monthly Report” in 2023, summarizing the technical progress of projects within the Substrate ecosystem. These reports covered important submissions, modifications, releases, community solution discussions, and technical reference documentation. Furthermore, OneBlock+ continued its Web3 Developer Learning Program, offering discussions on entering Web3, essential resources and tools for blockchain development, and how to quickly develop a chain with Substrate.
 
 ### Web3 Encyclopedia and Recruitment
-
 OneBlock+ updated its “Web3 Encyclopedia” section three times in 2023, interpreting industry terms and professional concepts in the Web3 field. The community also addressed the gap between job-seeking and recruitment demands by releasing five editions of “Web3 Recruitment” content, compiling recruitment information from various projects in the Polkadot ecosystem.
 
-Substrate Developer Education and Community Activities
-------------------------------------------------------
-
+## Substrate Developer Education and Community Activities
 In collaboration with Parity, OneBlock+ hosted six sessions of the “Substrate Blockchain Development” series of courses in 2023, cultivating over 500 developers. The courses attracted developers from various cities, with a significant number from first-tier cities like Beijing, Shanghai, Guangzhou, and Shenzhen. The majority of participants had higher educational backgrounds, and many already had development experience.
 
-OneBlock+ Engaging Events and Workshops
----------------------------------------
-
+## OneBlock+ Engaging Events and Workshops
 OneBlock+ organized numerous live events, workshops, and community-sharing discussions in 2023, fostering in-depth interaction and collaborative learning among technical developers. The community hosted six sessions of Substrate Saturday workshops, 10 Workshop &amp; Office Hour events, and three Block Space community-sharing sessions, attracting thousands of participants.
 
-Polkadot Hackathons and Decoded Conference
-------------------------------------------
-
+## Polkadot Hackathons and Decoded Conference
 The 2023 Polkadot Hackathon series, held twice, provided a total prize pool incentive of over 900,000 USD and attracted nearly 10 sponsors. The events saw significant participation, with an increase in both the number of registrations and participating projects. Additionally, Polkadot Decoded 2023 APAC, co-organized by Parity Technologies and OneBlock+, brought together developers, industry elites, and various stakeholders to discuss the future development trends of the Polkadot ecosystem.
 
 ### Looking Ahead to 2024
-
 In 2023, the Polkadot ecosystem saw substantial momentum in technological innovation and market growth. The launch of Core Time and Polkadot OpenGov, along with advancements in Asynchronous Backing and the Polkadot SDK, set the stage for further development and innovation. The Web3 Foundation’s “Decentralized Future” program and the ongoing “Web3 Foundation Grant Program” continued to drive community development.
 
 In 2024, OneBlock+ will continue to support Polkadot ecosystem developers, offering detailed and engaging technical courses, creative competitions, straightforward technical analyses, and a more active Web3 developer community. With its deep engagement and significant contributions, OneBlock+ remains a cornerstone of the Polkadot ecosystem, fostering growth, innovation, and community collaboration.

@@ -11,23 +11,16 @@ GIANT Protocol aims to decentralize and democratize access to internet connectiv
 4. **Interoperability**: GIANT Protocol ensures seamless connectivity across different networks and service providers, enhancing user experience.
 
 ### Core Elements of GIANT Protocol
-
 - **Blockchain Infrastructure**: The backbone of the protocol, facilitating secure and transparent transactions.
 - **GIANT Tokens**: The native digital currency used for transactions within the ecosystem.
 - **Smart Contracts**: Automated agreements that govern the allocation and usage of network resources.
 
 ### Benefits and Impact
-
 - **Cost Reduction**: Eliminates the need for expensive infrastructure and intermediaries.
 - **Inclusivity**: Provides opportunities for unconnected or underconnected populations to join the digital economy.
 - **Innovation**: Encourages new business models and services in the telecom sector.
 
 ### Conclusion
-
 GIANT Protocol represents a significant shift in how we access and use the internet. By decentralizing telecom services, it promises to make connectivity more equitable and efficient.
 
 - <small>Related Token/s:</small> **GIANT**
-
-
-Giant Protocol details:
------------------------

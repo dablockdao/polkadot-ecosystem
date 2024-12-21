@@ -5,9 +5,7 @@ description:  peaq is a high-performance Layer 1 blockchain specifically designe
 
 Peaq is a high-performance Layer 1 blockchain specifically designed for **Decentralized Physical Infrastructure Networks (DePINs)** and Machine-**Readable Worlds (MRWs)**. It offers a unique combination of scalability, security, and developer-friendliness, making it an ideal platform for building real-world applications.
 
-Peaq Network Key Features
--------------------------
-
+## Peaq Network Key Features
 - **Scalability:** peaq boasts a robust architecture capable of handling over 10,000 transactions per second (TPS) today, with the potential to scale beyond 500,000 TPS in the future.
 - **Security:** peaq inherits its security from Polkadot, a leading blockchain protocol known for its strong decentralization. This ensures a high Nakamoto Coefficient, making peaq resistant to attacks.
 - **Low Transaction Costs:** peaq offers transaction fees as low as $0.00025, thanks to its efficient architecture and the cost-effective blockspace provided by Polkadot.
@@ -17,37 +15,25 @@ Peaq Network Key Features
 - **Sustainability:** peaq utilizes a highly energy-efficient blockchain architecture, minimizing its environmental impact.
 - **Large Developer Ecosystem:** By leveraging Polkadot and Substrate, peaq benefits from a vast pool of experienced developers, fostering a thriving development community.
 
-Peaq Network Core Technologies
-------------------------------
-
+## Peaq Network Core Technologies
 - **Polkadot:** peaq leverages Polkadot’s security, scalability, and interoperability features.
 - **Substrate:** Substrate provides the foundation for building high-performance blockchains like peaq.
 - **EVM:** EVM compatibility allows developers to write and deploy Solidity smart contracts on peaq.
 - **ink!:** ink! is a Rust-based smart contract language offering an alternative to Solidity.
 
-Building on peaq
-----------------
-
+## Building on peaq
 Peaq offers a comprehensive developer toolkit, including:
-
 - **SDKs:** peaq provides SDKs in JavaScript and other languages, allowing developers to interact with the network and its functionalities.
 - **Block Explorers:** Explore the peaq network and analyze transactions using dedicated block explorers.
 - **Substrate Pallets:** Developers can utilize pre-built pallets for common functionalities or create custom pallets for specific needs.
 
-Peaq Use Cases
---------------
-
+## Peaq Use Cases
 peaq’s capabilities are well-suited for various DePIN and MRW applications, including:
-
 - **Supply Chain Management:** Track and verify the movement of goods in real-time.
 - **Manufacturing:** Automate processes and ensure machine-to-machine communication.
 - **Energy Management:** Optimize energy usage and enable peer-to-peer energy trading.
 - **Connected Cars:** Develop autonomous driving applications and facilitate secure vehicle data exchange.
 
 ### Conclusion
-
 Peaq is a powerful blockchain platform enabling the development of secure, scalable, and interoperable applications for the Economy of Things. Its focus on DePINs and MRWs positions it as a key player in shaping the future of connected machines and real-world data.
-
 - <small>Related Token/s:</small> **PEAQ**
-
-### Related Projects:
