@@ -1,6 +1,18 @@
 ---
 title: YoudleDAO
 description: Discover Youdles NFTs and YoudleDAO. Cutting-edge RMRK-powered NFTs on Astar, managing a multichain DAO on InvArch.
+hero:
+  tagline: Putting the “Fun” back in “Non-Fungibles”.
+  image: 
+    file: ../../../../assets/hub/daos/youdledao.png
+  actions:
+    - text: Site
+      link: https://youdles.xyz/
+      icon: external
+    - text: X
+      link: https://x.com/YoudleDAO
+      icon: external
+      variant: secondary
 ---
 
 Nestled within the Polkadot ecosystem, Youdles NFTs and YoudleDAO bring an innovative approach to digital assets and decentralized governance.

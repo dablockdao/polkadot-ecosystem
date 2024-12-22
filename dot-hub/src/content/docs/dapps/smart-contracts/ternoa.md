@@ -1,6 +1,18 @@
 ---
 title: Ternoa
 description: Ternoa is an advanced blockchain designed to address key challenges in the Web3 space related to security and privacy.
+hero:
+  tagline: Decentralized TEE Network powered by SGX for a secure and trustless future
+  image: 
+    file: ../../../../assets/dapps/ecos/ternoa.png
+  actions:
+    - text: Dapps
+      link: https://www.ternoa.network/
+      icon: external
+    - text: Docs
+      link: https://docs.ternoa.network/
+      icon: external
+      variant: secondary
 ---
 
 Ternoa, a multi-network and cross-layer protocol that leverages confidential computing technologies to enhance blockchain security, privacy, and scalability. This in-depth look will cover Ternoa’s architecture, its unique features, and why it stands out as a critical component of the Web3 landscape.

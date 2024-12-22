@@ -151,13 +151,6 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"docs": {
-"dapps/ai/aventus-network.mdx": {
-	id: "dapps/ai/aventus-network.mdx";
-  slug: "dapps/ai/aventus-network";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
 "dapps/ai/bittensor.mdx": {
 	id: "dapps/ai/bittensor.mdx";
   slug: "dapps/ai/bittensor";
@@ -718,6 +711,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"dapps/miscellaneous/aventus-network.mdx": {
+	id: "dapps/miscellaneous/aventus-network.mdx";
+  slug: "dapps/miscellaneous/aventus-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "dapps/miscellaneous/citizend.md": {
 	id: "dapps/miscellaneous/citizend.md";
   slug: "dapps/miscellaneous/citizend";
@@ -893,34 +893,34 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"dapps/rwa/xcavate.md": {
-	id: "dapps/rwa/xcavate.md";
+"dapps/rwa/xcavate.mdx": {
+	id: "dapps/rwa/xcavate.mdx";
   slug: "dapps/rwa/xcavate";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"dapps/smart-contracts/aleph-zero.md": {
-	id: "dapps/smart-contracts/aleph-zero.md";
+} & { render(): Render[".mdx"] };
+"dapps/smart-contracts/aleph-zero.mdx": {
+	id: "dapps/smart-contracts/aleph-zero.mdx";
   slug: "dapps/smart-contracts/aleph-zero";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"dapps/smart-contracts/astar-network.md": {
-	id: "dapps/smart-contracts/astar-network.md";
+} & { render(): Render[".mdx"] };
+"dapps/smart-contracts/astar-network.mdx": {
+	id: "dapps/smart-contracts/astar-network.mdx";
   slug: "dapps/smart-contracts/astar-network";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"dapps/smart-contracts/energy-webx.md": {
-	id: "dapps/smart-contracts/energy-webx.md";
+} & { render(): Render[".mdx"] };
+"dapps/smart-contracts/energy-webx.mdx": {
+	id: "dapps/smart-contracts/energy-webx.mdx";
   slug: "dapps/smart-contracts/energy-webx";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/smart-contracts/index.mdx": {
 	id: "dapps/smart-contracts/index.mdx";
   slug: "dapps/smart-contracts";
@@ -1110,6 +1110,83 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"hub/bounties/poladot-marketing-bounty.md": {
+	id: "hub/bounties/poladot-marketing-bounty.md";
+  slug: "hub/bounties/poladot-marketing-bounty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/bounties/polkadot-anti-scam-team.md": {
+	id: "hub/bounties/polkadot-anti-scam-team.md";
+  slug: "hub/bounties/polkadot-anti-scam-team";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/bounties/polkadot-events-bounty.md": {
+	id: "hub/bounties/polkadot-events-bounty.md";
+  slug: "hub/bounties/polkadot-events-bounty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/business-development/harbour-industrial-capital.md": {
+	id: "hub/business-development/harbour-industrial-capital.md";
+  slug: "hub/business-development/harbour-industrial-capital";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/business-development/illusionist-group.md": {
+	id: "hub/business-development/illusionist-group.md";
+  slug: "hub/business-development/illusionist-group";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/business-development/polkaport-east.md": {
+	id: "hub/business-development/polkaport-east.md";
+  slug: "hub/business-development/polkaport-east";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/business-development/scytale-digital.md": {
+	id: "hub/business-development/scytale-digital.md";
+  slug: "hub/business-development/scytale-digital";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/collectives/kappa-sigma-mu.md": {
+	id: "hub/collectives/kappa-sigma-mu.md";
+  slug: "hub/collectives/kappa-sigma-mu";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/collectives/polkadot-ambassadors-collective.md": {
+	id: "hub/collectives/polkadot-ambassadors-collective.md";
+  slug: "hub/collectives/polkadot-ambassadors-collective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/collectives/polkadot-fellowship.mdx": {
+	id: "hub/collectives/polkadot-fellowship.mdx";
+  slug: "hub/collectives/polkadot-fellowship";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"hub/collectives/polkadot-tooling-collective.md": {
+	id: "hub/collectives/polkadot-tooling-collective.md";
+  slug: "hub/collectives/polkadot-tooling-collective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "hub/daos/apexchimpz.md": {
 	id: "hub/daos/apexchimpz.md";
   slug: "hub/daos/apexchimpz";
@@ -1152,27 +1229,34 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"hub/daos/kappa-sigma-mu.md": {
-	id: "hub/daos/kappa-sigma-mu.md";
-  slug: "hub/daos/kappa-sigma-mu";
+"hub/daos/kusdao.md": {
+	id: "hub/daos/kusdao.md";
+  slug: "hub/daos/kusdao";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"hub/daos/polkadot-ambassadors-collective.md": {
-	id: "hub/daos/polkadot-ambassadors-collective.md";
-  slug: "hub/daos/polkadot-ambassadors-collective";
+"hub/daos/lenexus.md": {
+	id: "hub/daos/lenexus.md";
+  slug: "hub/daos/lenexus";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"hub/daos/polkadot-fellowship.mdx": {
-	id: "hub/daos/polkadot-fellowship.mdx";
-  slug: "hub/daos/polkadot-fellowship";
+"hub/daos/lucky-friday.md": {
+	id: "hub/daos/lucky-friday.md";
+  slug: "hub/daos/lucky-friday";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
+} & { render(): Render[".md"] };
+"hub/daos/polkadot-hungary-dao.md": {
+	id: "hub/daos/polkadot-hungary-dao.md";
+  slug: "hub/daos/polkadot-hungary-dao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "hub/daos/polkadot-mexico.mdx": {
 	id: "hub/daos/polkadot-mexico.mdx";
   slug: "hub/daos/polkadot-mexico";
@@ -1180,9 +1264,16 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"hub/daos/polkadot-tooling-collective.md": {
-	id: "hub/daos/polkadot-tooling-collective.md";
-  slug: "hub/daos/polkadot-tooling-collective";
+"hub/daos/reeeeeeeeeedao.mdx": {
+	id: "hub/daos/reeeeeeeeeedao.mdx";
+  slug: "hub/daos/reeeeeeeeeedao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"hub/daos/saxemberg.md": {
+	id: "hub/daos/saxemberg.md";
+  slug: "hub/daos/saxemberg";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -1243,9 +1334,51 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"hub/initiatives/oneblock.md": {
+	id: "hub/initiatives/oneblock.md";
+  slug: "hub/initiatives/oneblock";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/initiatives/opengov-watch.md": {
+	id: "hub/initiatives/opengov-watch.md";
+  slug: "hub/initiatives/opengov-watch";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/initiatives/openguild-labs.md": {
+	id: "hub/initiatives/openguild-labs.md";
+  slug: "hub/initiatives/openguild-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/initiatives/polkadot-blockchain-academy.md": {
+	id: "hub/initiatives/polkadot-blockchain-academy.md";
+  slug: "hub/initiatives/polkadot-blockchain-academy";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "hub/initiatives/polkadot-prodigy.md": {
 	id: "hub/initiatives/polkadot-prodigy.md";
   slug: "hub/initiatives/polkadot-prodigy";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/initiatives/subwork.md": {
+	id: "hub/initiatives/subwork.md";
+  slug: "hub/initiatives/subwork";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"hub/initiatives/web3-educhain.md": {
+	id: "hub/initiatives/web3-educhain.md";
+  slug: "hub/initiatives/web3-educhain";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -1264,20 +1397,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"hub/media/harbour-industrial-capital.md": {
-	id: "hub/media/harbour-industrial-capital.md";
-  slug: "hub/media/harbour-industrial-capital";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"hub/media/illusionist-group.md": {
-	id: "hub/media/illusionist-group.md";
-  slug: "hub/media/illusionist-group";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
 "hub/media/kusamarian.mdx": {
 	id: "hub/media/kusamarian.mdx";
   slug: "hub/media/kusamarian";
@@ -1285,27 +1404,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"hub/media/oneblock.md": {
-	id: "hub/media/oneblock.md";
-  slug: "hub/media/oneblock";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"hub/media/opengov-watch.md": {
-	id: "hub/media/opengov-watch.md";
-  slug: "hub/media/opengov-watch";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"hub/media/openguild-labs.md": {
-	id: "hub/media/openguild-labs.md";
-  slug: "hub/media/openguild-labs";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
 "hub/media/parachains-info.md": {
 	id: "hub/media/parachains-info.md";
   slug: "hub/media/parachains-info";
@@ -1313,37 +1411,9 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"hub/media/poladot-marketing-bounty.md": {
-	id: "hub/media/poladot-marketing-bounty.md";
-  slug: "hub/media/poladot-marketing-bounty";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"hub/media/polkadot-anti-scam-team.md": {
-	id: "hub/media/polkadot-anti-scam-team.md";
-  slug: "hub/media/polkadot-anti-scam-team";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"hub/media/polkadot-blockchain-academy.md": {
-	id: "hub/media/polkadot-blockchain-academy.md";
-  slug: "hub/media/polkadot-blockchain-academy";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
 "hub/media/polkadot-en-espanol.md": {
 	id: "hub/media/polkadot-en-espanol.md";
   slug: "hub/media/polkadot-en-espanol";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"hub/media/polkadot-events-bounty.md": {
-	id: "hub/media/polkadot-events-bounty.md";
-  slug: "hub/media/polkadot-events-bounty";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -1376,30 +1446,9 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"hub/media/polkaport-east.md": {
-	id: "hub/media/polkaport-east.md";
-  slug: "hub/media/polkaport-east";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
 "hub/media/polkaworld.md": {
 	id: "hub/media/polkaworld.md";
   slug: "hub/media/polkaworld";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"hub/media/scytale-digital.md": {
-	id: "hub/media/scytale-digital.md";
-  slug: "hub/media/scytale-digital";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"hub/media/subwork.md": {
-	id: "hub/media/subwork.md";
-  slug: "hub/media/subwork";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -1421,13 +1470,6 @@ declare module 'astro:content' {
 "hub/media/vds-academy.md": {
 	id: "hub/media/vds-academy.md";
   slug: "hub/media/vds-academy";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"hub/media/web3-educhain.md": {
-	id: "hub/media/web3-educhain.md";
-  slug: "hub/media/web3-educhain";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -1586,13 +1628,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"hub/orgs/lucky-friday-labs.md": {
-	id: "hub/orgs/lucky-friday-labs.md";
-  slug: "hub/orgs/lucky-friday-labs";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
 "hub/orgs/masternode24.md": {
 	id: "hub/orgs/masternode24.md";
   slug: "hub/orgs/masternode24";
@@ -1701,13 +1736,6 @@ declare module 'astro:content' {
 "hub/orgs/ryabina.md": {
 	id: "hub/orgs/ryabina.md";
   slug: "hub/orgs/ryabina";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"hub/orgs/saxemberg.md": {
-	id: "hub/orgs/saxemberg.md";
-  slug: "hub/orgs/saxemberg";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -2020,13 +2048,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"tools/miscellaneous/din-web3go.md": {
-	id: "tools/miscellaneous/din-web3go.md";
-  slug: "tools/miscellaneous/din-web3go";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
 "tools/miscellaneous/fidi-web3-analytics.md": {
 	id: "tools/miscellaneous/fidi-web3-analytics.md";
   slug: "tools/miscellaneous/fidi-web3-analytics";
@@ -2132,13 +2153,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"tools/wallets/polkawallet.md": {
-	id: "tools/wallets/polkawallet.md";
+"tools/wallets/polkawallet.mdx": {
+	id: "tools/wallets/polkawallet.mdx";
   slug: "tools/wallets/polkawallet";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "tools/wallets/sporran-wallet.mdx": {
 	id: "tools/wallets/sporran-wallet.mdx";
   slug: "tools/wallets/sporran-wallet";

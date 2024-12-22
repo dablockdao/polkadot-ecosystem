@@ -1,10 +1,21 @@
 ---
-title: 'Lucky Friday Labs'
-description: Discover Lucky Friday Labs is a Leading decentralized Web3 infrastructure, enterprise blockchain solutions, and community-driven social good initiatives.
-
+title: Lucky Friday
+description: Leading decentralized Web3 infrastructure, enterprise blockchain solutions, and community-driven social good initiatives.
+hero:
+  tagline: Web3 infrastructure & enterprise blockchain solutions.
+  image: 
+    file: ../../../../assets/hub/daos/lucky-friday.png
+  actions:
+    - text: Site
+      link: https://luckyfriday.io/
+      icon: external
+    - text: X
+      link: https://x.com/LuckyFridayLabs
+      icon: external
+      variant: secondary
 ---
 
-**Lucky Friday Labs** offers a unique blend of expertise in **Web3 infrastructure**, enterprise **blockchain adoption**, and **community-driven initiatives**. With a diverse team and decades of experience, Lucky Friday Labs is committed to driving Web3 innovation and fostering decentralized economies. This article delves into the core operations, ethos, and contributions of Lucky Friday Labs to the blockchain ecosystem. They are also the creators of **[TeddyDAO](https://dablock.com/ecosystem/teddydao/)**.
+**Lucky Friday Labs** offers a unique blend of expertise in **Web3 infrastructure**, enterprise **blockchain adoption**, and **community-driven initiatives**. With a diverse team and decades of experience, Lucky Friday Labs is committed to driving Web3 innovation and fostering decentralized economies. This article delves into the core operations, ethos, and contributions of Lucky Friday Labs to the blockchain ecosystem. They are also the creators of **[TeddyDAO](/hub/daos/teddydao)**.
 
 ## Lucky Friday Labs Purpose-Built Web3 Infrastructure
 Lucky Friday Labs excels in providing world-class decentralized infrastructure, avoiding the pitfalls of hyperscalers like AWS, GCP, and Azure. The company’s infrastructure strategy revolves around globally decentralized facilities, featuring web3-tuned bare-metal hardware. These facilities, owned and operated by its sister company GlobalStake, ensure high performance, security, and reliability without the risks associated with centralized cloud providers.

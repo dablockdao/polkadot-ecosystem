@@ -1,6 +1,18 @@
 ---
 title: WagMedia
 description: WagMedia, launched in December 2021, is designed to simplify the marketing activities within the Polkadot ecosystem.
+hero:
+  tagline: Create 2 Earn media and content.
+  image: 
+    file: ../../../../assets/hub/daos/wagmedia.png
+  actions:
+    - text: Site
+      link: https://thewagmedia.com/
+      icon: external
+    - text: X
+      link: https://x.com/thatMediaWag
+      icon: external
+      variant: secondary
 ---
 
 ***Create 2 Earn media** and content. Finders, creators &amp; writers – all welcome.+

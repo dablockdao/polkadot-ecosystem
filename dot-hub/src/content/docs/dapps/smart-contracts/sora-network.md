@@ -1,6 +1,18 @@
 ---
 title: 'Sora Network'
-description: An adaptive, non-debt-based monetary framework .
+description: An adaptive, non-debt-based monetary framework.
+hero:
+  tagline: An adaptive, non-debt-based monetary framework.
+  image: 
+    file: ../../../../assets/dapps/ecos/sora-network.png
+  actions:
+    - text: Dapps
+      link: https://sora.org/
+      icon: external
+    - text: Docs
+      link: https://wiki.sora.org/
+      icon: external
+      variant: secondary
 ---
 
 Sora is a decentralized autonomous economy (DAE) built on the Polkadot network, aimed at revolutionizing traditional economic models through blockchain technology. Here are the key points about Sora:
