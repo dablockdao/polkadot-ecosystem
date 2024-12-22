@@ -1,6 +1,18 @@
 ---
 title: 'Unit Network'
 description: Unit Network is a platform designed to revolutionize the token economy by integrating real-world businesses with blockchain.
+hero:
+  tagline: Integrating real-world businesses with blockchain.
+  image: 
+    file: ../../../../assets/dapps/rwa/unit-network.png
+  actions:
+    - text: Dapp
+      link: https://unit.network/
+      icon: external
+    - text: Docs
+      link: https://unit.network/documentation-hub
+      icon: external
+      variant: secondary
 ---
 
 The blockchain ecosystem is evolving rapidly, with new technologies and platforms transforming how we interact with digital assets and decentralized finance. One such transformative platform is Unit Network, a decentralized technology designed to integrate real-world businesses with blockchain, ushering in an era of sovereignty and economic prosperity. This in-depth article explores the intricacies of Unit Network, its components, and its significance within the Polkadot ecosystem.

@@ -1,6 +1,18 @@
 ---
 title: Saxemberg
 description: Saxemberg is providing secure, transparent validation and collation services for Polkadot and Kusama, championing decentralization and ethical practices.
+hero:
+  tagline: Secure, transparent validation and collation services for Polkadot.
+  image: 
+    file: ../../../../assets/hub/daos/saxemberg.png
+  actions:
+    - text: Site
+      link: https://saxemberg.com/
+      icon: external
+    - text: X
+      link: https://x.com/saxemberg
+      icon: external
+      variant: secondary
 ---
 
 **Saxemberg is a prominent player within the Polkadot and Kusama ecosystems**, offering validation and collation services. Their mission revolves around fostering a decentralized and neutral blockchain environment, focusing on credibility, privacy, and regulatory compliance. Saxemberg stands out by ensuring their operations are transparent, **their hardware is hosted in independent data centers**, and by committing to never exploit blockchain consensus rules.

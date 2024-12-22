@@ -1,6 +1,18 @@
 ---
 title: 'DOT Validator Alliance'
 description: DAO alliance of Polkadot communities dedicated to help and grow validators, nominators and entire ecosystem.
+hero:
+  tagline: Dedicated to help and grow validators.
+  image: 
+    file: ../../../../assets/hub/daos/dot-validator-alliance.png
+  actions:
+    - text: Site
+      link: https://dotvalidators.org/
+      icon: external
+    - text: X
+      link: https://x.com/DOTValAlliance
+      icon: external
+      variant: secondary
 ---
 
 
@@ -8,45 +20,24 @@ description: DAO alliance of Polkadot communities dedicated to help and grow val
 
 The **DOT Validator Alliance is a decentralized autonomous organization (DAO)** aimed at fostering a united, community-driven Polkadot ecosystem. Managed primarily on Discord, the alliance welcomes anyone interested in joining, with validators having the opportunity to become active DAO participants. The alliance’s manifesto outlines its core values and commitments, guiding its mission to support the Polkadot and Kusama networks.
 
-## Manifesto: Core Values and Commitments
+## Manifesto: Core Values
 
 The Validator Alliance has articulated its foundational principles in a manifesto. These principles resonate with every member and align with the broader goals of the [**Polkadot ecosystem**](https://dablock.com/ecosystem/). The manifesto highlights the following key commitments:
 
-### Decentralization and Community-Led Society
+### Community-Led Society
 
 The alliance believes in a **decentralized, community-led society** and aims to unite the DotSama ecosystem.
-
-### Beyond Profit: Passion for Support
-
-Validators are encouraged to support the projects they validate and the success of the new crypto economy, not just seek profit.
-
-### Service to the Network
-
-Validation is seen as a service to the network, emphasizing support for communities and nominators/delegators.
-
-### Governance Advocacy
-
-Recognizing the value of protocol governance, validators are encouraged to promote and participate in governance activities.
-
-### Long-Term Vision
-
-The alliance prioritizes long-term benefits over short-term profits, ensuring sustainable growth and success.
-
-### Decentralization Goal
-
-No single individual or entity should control more than 5% of a given network, promoting maximal decentralization.
-
-### Transparency and Openness
-
-The DAO remains transparent and open to anyone sharing its values, fostering an inclusive environment.
+- **Beyond Profit:** Passion for Support: Validators are encouraged to support the projects they validate and the success of the new crypto economy, not just seek profit.
+- **Service to the Network:** Validation is seen as a service to the network, emphasizing support for communities and nominators/delegators.
+- **Governance Advocacy:** Recognizing the value of protocol governance, validators are encouraged to promote and participate in governance activities.
+- **Long-Term Vision:** The alliance prioritizes long-term benefits over short-term profits, ensuring sustainable growth and success.
+- **Decentralization Goal:** No single individual or entity should control more than 5% of a given network, promoting maximal decentralization.
+- **Transparency and Openness:** The DAO remains transparent and open to anyone sharing its values, fostering an inclusive environment.
 
 ## DOT Validator Alliance Structure and Leadership
-
 The DOT Validator Alliance comprises community leaders dedicated to the Polkadot ecosystem. These leaders have committed their professional lives to supporting and growing the network. The founding members include prominent figures such as dev0\_sik, pathrock2, stakenode\_dev, bldnodes, polkadotters1, and several others.
 
-### Validators’ Role
-
-Validators within the alliance play a crucial role in maintaining the network’s integrity and supporting its various projects. They are expected to actively participate in governance, support their delegators, and contribute to the ecosystem’s overall success.
+- Validators’ Role: Validators within the alliance play a crucial role in maintaining the network’s integrity and supporting its various projects. They are expected to actively participate in governance, support their delegators, and contribute to the ecosystem’s overall success.
 
 ## Supported Projects and Networks
 
@@ -55,10 +46,10 @@ The DOT Validator Alliance supports a wide range of projects within the Polkadot
 - **Polkadot**: A heterogeneous multi-chain interchange enabling customized side-chains to connect with public blockchains.
 - **Kusama**: A scalable multi-chain network for innovation and early-stage Polkadot deployments.
 - **Asset-Hub**: A generic assets parachain for deploying and transferring assets, including NFTs.
-- [**Astar Network**](https://dablock.com/dapps/astar-network/): A multi-chain smart contract platform supporting various blockchains and virtual machines.
-- [**Moonbeam**](https://dablock.com/dapps/moonbeam-network/): Facilitates building decentralized applications that integrate with other blockchains.
+- [**Astar Network**](/dapps/smart-contracts/astar-network): A multi-chain smart contract platform supporting various blockchains and virtual machines.
+- [**Moonbeam**](/dapps/smart-contracts/moonbeam-network/): Facilitates building decentralized applications that integrate with other blockchains.
 - **Hydration (former HydraDX)**: A parachain benefiting from shared security and flexibility of the Substrate.
-- [**KILT Protocol**](https://dablock.com/dapps/kilt-protocol/): An open-source blockchain protocol for issuing verifiable, revocable, and anonymous credentials.
+- [**KILT Protocol**](dapps/social/kilt-protocol/): An open-source blockchain protocol for issuing verifiable, revocable, and anonymous credentials.
 
 ### Diverse and Inclusive Community
 

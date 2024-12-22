@@ -3,6 +3,18 @@ title: Chainflip
 description: Discover Chainflip’s decentralized protocol for seamless, efficient cross-chain swaps with accurate pricing and minimal slippage. Revolutionize crypto trading.
 sidebar: 
     order: 7
+hero:
+  tagline: Cross-chain swaps with accurate pricing and minimal slippage.
+  image: 
+    file: ../../../../assets/dapps/bridges/chainflip.png
+  actions:
+    - text: Dapp
+      link: https://swap.chainflip.io/
+      icon: external
+    - text: Docs
+      link: https://docs.chainflip.io/swapping/introduction
+      icon: external
+      variant: secondary
 ---
 
 ## How Chainflip is Revolutionizing Cross-Chain Swaps?

@@ -1,6 +1,18 @@
 ---
 title: 'Gavin Wood'
 description: Gavin Wood, co-founder of Ethereum and creator of Polkadot, is a leading visionary in blockchain technology and decentralized systems.
+hero:
+  tagline: Co-founder of Ethereum and creator of Polkadot & JAM.
+  image: 
+    file: ../../../../assets/hub/daos/gavin-wood.png
+  actions:
+    - text: Github
+      link: https://github.com/gavofyork
+      icon: external
+    - text: X
+      link: https://x.com/gavofyork
+      icon: external
+      variant: secondary
 ---
 
 Gavin Wood, a distinguished computer scientist and visionary in the blockchain industry, has significantly contributed to the development and evolution of decentralized technologies. As one of the co-founders of Ethereum and the mastermind behind Polkadot, Wood’s innovations have shaped the landscape of blockchain and continue to drive its future.

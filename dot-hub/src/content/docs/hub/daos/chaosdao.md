@@ -1,6 +1,18 @@
 ---
 title: ChaosDAO
 description: ChaosDAO is a decentralized and democratic on-chain voter committee, consisting of over 300 members who are actively involved in the governance of Polkadot, Kusama, and various ecosystem projects.
+hero:
+  tagline: A democratic on-chain voter committee.
+  image: 
+    file: ../../../../assets/hub/daos/chaosdao.png
+  actions:
+    - text: Site
+      link: https://chaosdao.org/
+      icon: external
+    - text: X
+      link: https://x.com/ChaosDAO
+      icon: external
+      variant: secondary
 ---  
 
 **ChaosDAO** is the decentralized democratic on-chain voting bloc, which comprises **more than 300 members empowered for decision-making in different types of referendums**. Every individual in the ChaosDAO has the right to participate in the internal voting system by a strict “one person, one vote” principle. This will ensure that each of the members’ voices is heard on equal grounds.

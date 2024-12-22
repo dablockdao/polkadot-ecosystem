@@ -1,6 +1,18 @@
 ---
 title: 'Watr Protocol'
 description: Watr is a decentralized platform designed to reshape our interaction with natural resources through blockchain technology.
+hero:
+  tagline: Interaction with natural resources through blockchain technology.
+  image: 
+    file: ../../../../assets/dapps/rwa/watr.png
+  actions:
+    - text: Dapp
+      link: https://watr.org/
+      icon: external
+    - text: Docs
+      link: https://docs.watr.org/
+      icon: external
+      variant: secondary
 ---
 
 The evolution of blockchain technology has extended beyond mere digital currencies to impact diverse sectors such as commodity trading. Watr, emerging within the Polkadot ecosystem, exemplifies this innovation by redefining how commodities are traded, traced, and trusted globally.

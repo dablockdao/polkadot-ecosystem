@@ -1,6 +1,18 @@
 ---
 title: TeddyDAO
 description: TeddyDAO is a Nonprofit NFT platform on Moonbeam network promoting social good through daily auctions for charity.
+hero:
+  tagline: A Nonprofit NFT platform and community on Moonbeam network.
+  image: 
+    file: ../../../../assets/hub/daos/teddydao.png
+  actions:
+    - text: Site
+      link: https://teddydao.org/auction
+      icon: external
+    - text: X
+      link: https://x.com/TeddyDaoNFT
+      icon: external
+      variant: secondary
 ---
 
 **TeddyDAO is a nonprofit NFT platform designed to promotelu social good** by leveraging the capabilities of blockchain technology. Built on the[ **Moonbeam network**](https://dablock.com/dapps/moonbeam-network/), **a** **Polkadot parachain**, [**TeddyDAO**](https://dablock.com/ecosystem/teddydao/) has received support through a **grant from the Moonbeam Foundation**. The platform’s mission is to raise awareness for charities and establish itself as a leading brand for charitable giving within the Web3 ecosystem. By innovating the donation process, [**TeddyDAO**](https://dablock.com/ecosystem/teddydao/), created by [**Lucky Friday Labs**](https://dablock.com/ecosystem/lucky-friday-labs/), aims to make charitable contributions more engaging and rewarding for donors.

@@ -111,12 +111,18 @@ export default defineConfig({
 						link: '/hub/',
 						icon: 'heart',
 						items: [
+							{
+								label: '🏛️ Collectives', collapsed: true, autogenerate: { directory: 'hub/collectives' }
+							},
 						  {
 						  label: '🏴‍☠️ DAOs', collapsed: true, autogenerate: { directory: 'hub/daos' }
 					  },
 					  {
 						  label: '👍 Initiatives', collapsed: true, autogenerate: { directory: 'hub/initiatives' }
 					  },
+					  {
+						label: '💰 Bounties', collapsed: true, autogenerate: { directory: 'hub/bounties' }
+					},
 					  {
 						label: '📺 Media', collapsed: true, autogenerate: { directory: 'hub/media' }
 					},
@@ -125,6 +131,9 @@ export default defineConfig({
 					  },
 					  {
 						label: '🖥️ Validators', collapsed: true, autogenerate: { directory: 'hub/validators' }
+					},
+					{
+						label: '🤝 VCs & BD', collapsed: true, autogenerate: { directory: 'hub/business-development' }
 					},
 					  {
 						label: '👥 People', collapsed: true, autogenerate: { directory: 'hub/people' }
