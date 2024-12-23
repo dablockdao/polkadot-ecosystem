@@ -5,9 +5,7 @@ description: Weekly updates on Astar Network news, tutorials, and developments, 
 
 **The Astar Bulletin (TAB)** stands as a premier source of **weekly updates**, providing the latest news and developments **within the [Astar Network ecosystem](https://dablock.com/dapps/astar-network/)**. Curated meticulously by the Astar community, for the community, TAB aims to deliver concise and comprehensive recaps of the week’s most significant events and milestones.
 
-Overview of the Astar Network
------------------------------
-
+## Overview of the Astar Network
 [**Astar Network**](https://dablock.com/dapps/astar-network/) is a cutting-edge protocol designed to streamline the development of smart contracts and decentralized applications (dApps). By offering an array of tools and an emphasis on ease of use, Astar Network positions itself as a pivotal platform within the broader blockchain and Polkadot ecosystem. Its mission is to foster innovation and provide robust infrastructure for developers to create and deploy smart contracts seamlessly.
 
 ## The Essence of The Astar Bulletin

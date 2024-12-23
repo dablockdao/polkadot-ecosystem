@@ -1,9 +1,21 @@
 ---
 title: UnitedBloc
 description: UnitedBloc is a collaborative DAO enhancing the Moonbeam ecosystem with tools, community engagement, and globally balanced RPC services.
+hero:
+  tagline: A collaborative DAO enhancing the Moonbeam ecosystem.
+  image: 
+    file: ../../../../assets/hub/daos/united-block.png
+  actions:
+    - text: Site
+      link: https://unitedbloc.com/
+      icon: external
+    - text: X
+      link: https://x.com/united_bloc
+      icon: external
+      variant: secondary
 ---
 
-*a Validators Collaborative DAO for the Moonbeam Ecosystem*
+*A Validators Collaborative DAO for the Moonbeam Ecosystem*
 
 **UnitedBloc** is a **decentralized autonomous organization (DAO)** formed by a coalition of independent collators within the [**Moonbeam ecosystem**](https://dablock.com/dapps/moonbeam-network/). This group, driven by the belief that “the whole is greater than the sum of its parts,” aims to enhance community value through collective efforts. Comprised of 13 collators from 11 countries across four continents, UnitedBloc leverages diverse skills and perspectives to support and improve the Moonbeam network.
 

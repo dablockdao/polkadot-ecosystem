@@ -7,7 +7,6 @@ The Polkadot project promises a decentralized future, but true decentralization 
 
 ## Why Decentralization Matters?
 The article compellingly argues that a decentralized Polkadot is crucial for its long-term success. A centralized system can be vulnerable to various risks, including:
-
 - **Regulatory Uncertainty:** Unclear regulations can stifle innovation and growth.
 - **Deplatforming:** Powerful entities could shut down validators they disagree with.
 - **Absence of Due Process:** A lack of fair procedures can undermine trust in the network.
@@ -26,5 +25,3 @@ By promoting decentralization, Polkawatch can contribute to a healthier Polkadot
 
 ## Exploring Polkawatch
 Head over to their official dashboard to delve deeper into Polkawatch and its functionalities. By actively using tools and resources like Polkawatch, the Polkadot community can work together to achieve a truly decentralized future for the network.
-
-- <small>Related Token/s:</small> **DOT, KSM**

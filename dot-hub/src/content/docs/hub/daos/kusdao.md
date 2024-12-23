@@ -1,6 +1,9 @@
 ---
 title: The Kus DAO
 description: The Kusamarian related DAO participating on the Polkadot governance.
+sidebar:
+    order: 2
+    label: ✪ KusDAO
 hero:
   tagline: The Kusamarian related DAO
   image: 

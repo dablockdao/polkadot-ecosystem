@@ -9,21 +9,7 @@ PolkaFrance serves as a comprehensive resource for everything related to the Pol
 
 ### What PolkaFrance Offers
 
-#### News and Updates
-
 PolkaFrance keeps users informed with the latest developments, announcements, and trends in the Polkadot and Kusama ecosystems. From major upgrades to minor tweaks, the platform covers all aspects to ensure users stay updated.
-
-#### Projects and Parachains
-
-PolkaFrance allows users to discover innovative projects and parachains building on Polkadot and Kusama. The platform provides detailed overviews, updates, and analyses of the most promising ventures within these ecosystems.
-
-#### Farming and Staking
-
-PolkaFrance offers information on the best opportunities for farming and staking within the Polkadot and Kusama networks. Through guides and updates, users can learn how to maximize their returns while understanding the associated risks.
-
-#### IPOs and IDOs
-
-PolkaFrance provides the latest information on Initial Parachain Offerings (IPOs) and Initial DEX Offerings (IDOs). Comprehensive insights into upcoming events enable users to participate in the growth of new projects from the ground up.
 
 ### PolkaFrance Platforms
 

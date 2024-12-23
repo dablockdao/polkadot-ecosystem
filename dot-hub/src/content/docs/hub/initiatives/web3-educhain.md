@@ -2,9 +2,6 @@
 title: 'Web3 EduChain'
 description: EduChain educates on Web3 through Polkadot SDK, offering guides and examples for launching and maintaining parachains.
 ---
-Initiative  
- Education  
-
 
 *Educating Web3 through the Polkadot Ecosystem*
 

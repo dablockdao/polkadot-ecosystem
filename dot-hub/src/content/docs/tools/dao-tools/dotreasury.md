@@ -25,5 +25,3 @@ hero:
 5. **Resource for Analysis**: By aggregating economic and governance data in an accessible format, Dotreasury serves as a crucial resource for analysis. This is valuable for stakeholders who wish to analyze trends, forecast network changes, or assess the impact of governance decisions on the network’s economics.
 
 Dotreasury plays a vital role in enhancing transparency and accountability within the Polkadot and Kusama ecosystems, supporting informed decision-making and active participation from its community members.
-
-- <small>Related Token/s:</small> **N/A**

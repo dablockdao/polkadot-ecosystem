@@ -17,17 +17,12 @@ Each of these components plays a unique role in providing a comprehensive interf
 ### Polkadot-JS UI
 **Polkadot-JS UI** is a web application that loads in your browser, offering extensive functionalities beyond basic wallet operations. It allows users to create accounts, send and receive transactions, and manage staking operations, among other advanced features. The UI is available in two versions: a standard DNS hosted version with the latest features, and an IPFS version, which is updated less frequently but offers greater decentralization.
 
-**Key Features**:
+**Polkadot.js Key Features**:
 - **Account Management**: Create, manage, and recover accounts.
 - **Transaction Management**: Send and receive transactions.
 - **Staking**: Participate in staking, manage validators, and view staking rewards.
 - **Governance**: Participate in Polkadot governance through voting and proposal creation.
 - **Advanced Developer Tools**: Query chain state, interact with RPC calls, and issue extrinsics.
-
-## Polkadot-JS UI Desktop App
-The **Polkadot-JS UI Desktop App** is a desktop application available for Windows, Mac, and Linux. It offers the same features as the web app but with enhanced security, as it stores encrypted accounts on the filesystem instead of the browser’s local storage. This reduces the risk of attacks such as Cross-Site Scripting (XSS).
-
-**Note**: The desktop app does not support Ledger accounts. For cold storage solutions, consider using Parity Signer (Polkadot Vault).
 
 ### Polkadot-JS Extension
 The **Polkadot-JS Extension** is an account management tool that functions as a secure key storage solution. It allows users to create, import, and manage accounts, including importing accounts from Ledger devices or Parity Signer. It does not interact directly with on-chain functions but provides a secure interface for interacting with extension-compliant dApps such as Polkadot-JS UI and Polkadot Staking Dashboard.

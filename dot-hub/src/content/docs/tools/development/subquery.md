@@ -15,21 +15,19 @@ SubQuery is an open-source, decentralized data infrastructure network that provi
 4. **Decentralized RPC Endpoints**: These endpoints are optimized for performance and scalability, providing faster and cheaper RPCs that boost the capabilities of web3 projects.
 
 ## Building with SubQuery
-### SubQuery Data Indexer
+1. SubQuery Data Indexer
 The SubQuery Data Indexer simplifies dApp development by providing easy-to-build, test, deploy, and run capabilities. It enables developers to:
-- **Build Custom APIs**: Tailor data queries to the specific needs of your dApp.
-- **Enhance User Experience**: Deliver richer, faster data to create more intuitive and immersive experiences.
-- **Scale Efficiently**: Handle large volumes of data and requests without compromising performance.
-
-### Decentralized RPC Endpoints
+        - **Build Custom APIs**: Tailor data queries to the specific needs of your dApp.
+        - **Enhance User Experience**: Deliver richer, faster data to create more intuitive and immersive experiences.
+        - **Scale Efficiently**: Handle large volumes of data and requests without compromising performance.
+2. Decentralized RPC Endpoints
 SubQuery’s decentralized RPC endpoints are designed to supercharge dApps by offering:
-- **High Performance**: Optimized endpoints ensure quick data retrieval and processing.
-- **Cost Efficiency**: Reduced costs compared to traditional centralized RPC solutions.
-- **Global Decentralization**: A robust, distributed network enhances reliability and availability.
+        - **High Performance**: Optimized endpoints ensure quick data retrieval and processing.
+        - **Cost Efficiency**: Reduced costs compared to traditional centralized RPC solutions.
+        - **Global Decentralization**: A robust, distributed network enhances reliability and availability.
 
 ## Rewards and Incentives in the SubQuery Network
-### Reward Sources
-SubQuery employs a dual reward structure to incentivize Node Operators:
+sSubQuery employs a dual reward structure to incentivize Node Operators:
 1. **Productive Work Rewards**: Node Operators earn rewards by serving requests in valid service agreements or flex plans. This ensures that active participation and performance are duly rewarded.
 2. **Network Inflation Rewards**: These rewards are allocated to Indexers for successfully running projects and serving requests. They help bootstrap the network during its early stages by providing additional incentives.
 

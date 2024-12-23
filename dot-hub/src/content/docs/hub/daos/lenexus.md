@@ -1,6 +1,9 @@
 ---
 title: Le Nexus
 description: Le Nexus is the first Polkadot hub in Paris
+sidebar:
+    order: 3
+    label: ✪ Le Nexus
 hero:
   tagline: Polkadot hub in Paris.
   image: 

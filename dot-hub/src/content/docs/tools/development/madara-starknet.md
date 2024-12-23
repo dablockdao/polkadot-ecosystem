@@ -10,7 +10,6 @@ Madara is a generalized framework for building app chains, allowing developers t
 
 ## Why Build an App Chain with Madara?
 Building an app chain with Madara provides several advantages:
-
 1. **Sovereignty Over Tech Stack:**  
   - Complete control over the technology running your chain, including account abstraction, alternative data availability (DA) layers, and new opcodes.
   - Flexibility to choose the best technologies for your application without being constrained by existing frameworks.
