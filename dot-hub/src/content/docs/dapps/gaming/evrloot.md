@@ -3,6 +3,18 @@ title: Evrloot
 description: Evrloot is an on-chain, role-playing game (RPG) designed to provide an immersive and rewarding experience for players. Built on the Moonbeam Network.
 sidebar:
     order: 2
+hero:
+  tagline: An on-chain, role-playing game (RPG)
+  image: 
+    file: ../../../../assets/dapps/gaming/evrloot.png
+  actions:
+    - text: Dapp
+      link: https://evrloot.com/
+      icon: external
+    - text: Wiki
+      link: https://evrloot.notion.site/Evrloot-WIKI-21a24d9a8c0b45e7982870b4193ba0d6
+      icon: external
+      variant: secondary
 ---
 
 **Evrloot is an** **on-chain, role-playing game (RPG)** designed to provide an immersive and rewarding experience for players. **Built on the [Moonbeam Network](https://dablock.com/dapps/moonbeam-network/)**, Evrloot prioritizes community engagement and player satisfaction. The game leverages advanced storytelling, innovative game mechanics, and **NFT 2.0 technology** to push the boundaries of blockchain gaming.

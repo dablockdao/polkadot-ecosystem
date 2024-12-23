@@ -1,9 +1,21 @@
 ---
 title: Heal3
 description: Discover HEAL3, a blockchain-powered app combining game-fi to promote healthy habits and financial rewards.
+hero:
+  tagline: Game-fi to promote healthy habits
+  image: 
+    file: ../../../../assets/dapps/gaming/heal3.png
+  actions:
+    - text: Site
+      link: https://heal3.com/
+      icon: external
+    - text: Docs
+      link: https://heal3.com/docs/whitepapers/en/v2.0.pdf
+      icon: external
+      variant: secondary
 ---
 
-In a rapidly evolving technological landscape, HEAL3 emerges as a pioneering healthcare application that blends blockchain technology with game-fi elements to promote healthy living and financial well-being. Launched in 2022, HEAL3 aims to address the rising concern of lifestyle-related diseases and the subsequent increase in medical expenses, a significant issue in Japan. Despite the robust social insurance system, preventive healthcare remains underutilized, particularly in the pre-disease stage. HEAL3 seeks to bridge this gap by providing a unique, engaging platform that encourages users to adopt healthier habits seamlessly.
+HEAL3 emerges as an application that blends blockchain technology with game-fi elements to promote healthy living and financial well-being. Launched in 2022, HEAL3 aims to address the rising concern of lifestyle-related diseases and the subsequent increase in medical expenses, a significant issue in Japan. Despite the robust social insurance system, preventive healthcare remains underutilized, particularly in the pre-disease stage. HEAL3 seeks to bridge this gap by providing a unique, engaging platform that encourages users to adopt healthier habits seamlessly.
 
 ## A Unique Approach to Preventive Healthcare with Heal3
 HEAL3 sets itself apart from conventional healthcare applications through its innovative use of blockchain technology. By incorporating game-fi features, HEAL3 makes the pursuit of a healthy lifestyle both enjoyable and rewarding. Users engage in real-world health-related activities, earning original tokens known as UHT (Utility Health Tokens). These tokens are obtained through activities conducted while wearing NFT clothes, which can be leveled up or cleaned within the app. Additionally, UHTs enable participation in various in-app missions and can be exchanged for coupons, further enhancing user engagement and motivation.

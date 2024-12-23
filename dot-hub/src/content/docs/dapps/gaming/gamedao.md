@@ -1,6 +1,18 @@
 ---
 title: GameDAO
 description: Discover how GameDAO revolutionizes game publishing with community-driven ownership, transparent governance, and blockchain-powered collaboration.
+hero:
+  tagline: Transforming the game publishing landscape 
+  image: 
+    file: ../../../../assets/dapps/gaming/gamedao.png
+  actions:
+    - text: Site
+      link: https://gamedao.co/
+      icon: external
+    - text: Docs
+      link: https://docs.gamedao.co/
+      icon: external
+      variant: secondary
 ---
 
 GameDAO is transforming the game publishing landscape by **empowering creators and players to co-own and co-create in the world of indie games, arts, music, and entertainment**. With over 2.7 billion gamers worldwide, GameDAO leverages this vast community to set new standards in game development and ownership, facilitating collaboration from concept to market in a secure, transparent environment.

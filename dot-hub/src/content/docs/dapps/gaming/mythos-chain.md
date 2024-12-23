@@ -4,6 +4,18 @@ description: The Mythos Chain operates within the Mythos Ecosystem, a Web3 gamin
 sidebar:
   label: Mythos Chain
   order: 1
+hero:
+  tagline: Earn rewards for burning calories.
+  image: 
+    file: ../../../../assets/dapps/gaming/mythoschain.png
+  actions:
+    - text: Site
+      link: https://mythos.foundation/
+      icon: external
+    - text: Games
+      link: https://mythicalgames.com/
+      icon: external
+      variant: secondary
 ---
 The Mythos Chain is making significant strides in the Web3 and blockchain technology space by migrating to the Polkadot ecosystem. This move is driven by Polkadot’s superior network security, scalability, and interoperability, positioning Mythos to enhance its decentralized autonomous organization (DAO) and Web3 gaming ecosystem. This article explores the intricacies of the Mythos Chain, its governance model, and the reasons behind its migration to Polkadot.
 
