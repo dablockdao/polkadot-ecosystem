@@ -41,7 +41,141 @@
 	}
   }
   
+  /**/
+
+  /* Tab list wrapper */
+.tablist-wrapper {
+	background: rgba(13, 14, 31, 0.7);
+	backdrop-filter: blur(8px);
+	border-radius: 12px 12px 0 0;
+	border: 1px solid rgba(255, 255, 255, 0.03);
+	border-bottom: none;
+  }
   
+  .tablist {
+	display: flex;
+	position: relative;
+  }
+  
+  /* Individual tab styling */
+  .tab {
+	padding: 12px 24px;
+	color: rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	position: relative;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	font-weight: 00;
+	font-family: Unbounded, sans-serif;
+	border-radius: 8px 8px 0 0;
+	letter-spacing: 0.5px;
+  }
+  
+  /* Hover effect */
+  .tab:hover {
+	color: rgba(255, 255, 255, 0.9);
+	background: linear-gradient(
+	  45deg,
+	  rgba(138, 43, 226, 0.05) 0%,
+	  rgba(230, 0, 122, 0.05) 100%
+	);
+	box-shadow: 0 0 20px rgba(230, 0, 122, 0.1);
+  }
+  
+  /* Active tab styling */
+  .tab[aria-selected="true"] {
+	color: #fff;
+	background: linear-gradient(
+	  45deg,
+	  rgba(138, 43, 226, 0.15) 0%,
+	  rgba(230, 0, 122, 0.15) 100%
+	);
+	box-shadow: 
+	  0 0 25px rgba(230, 0, 122, 0.2),
+	  inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+	text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Active tab glow effect */
+  .tab[aria-selected="true"]::before {
+	content: '';
+	position: absolute;
+	inset: -1px;
+	padding: 1px;
+	border-radius: 9px 9px 0 0;
+	background: linear-gradient(
+	  45deg,
+	  rgba(138, 43, 226, 0.5),
+	  rgba(230, 0, 122, 0.5)
+	);
+	mask: linear-gradient(#fff 0 0) content-box, 
+		  linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+	pointer-events: none;
+  }
+  
+  /* Content container styling */
+  [role="tabpanel"] {
+	background: rgba(13, 14, 31, 0.8);
+	backdrop-filter: blur(12px);
+	border-radius: 0 0 12px 12px;
+	padding: 24px;
+	border-top: none;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	animation: panelFade 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  /* Gradient border for content container */
+  [role="tabpanel"]::before {
+	content: '';
+	position: absolute;
+	inset: -1px;
+	padding: 1px;
+	border-radius: 0 0 13px 13px;
+	background: linear-gradient(
+	  45deg,
+	  rgba(138, 43, 226, 0.3),
+	  rgba(230, 0, 122, 0.3)
+	);
+	mask: linear-gradient(#fff 0 0) content-box, 
+		  linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+	pointer-events: none;
+  }
+  
+  @keyframes panelFade {
+	from {
+	  opacity: 0;
+	  transform: translateY(5px) scale(0.99);
+	  filter: blur(5px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0) scale(1);
+	  filter: blur(0);
+	}
+  }
+  
+  /* Focus styles */
+  .tab:focus-visible {
+	outline: none;
+	box-shadow: 
+	  0 0 0 2px rgba(230, 0, 122, 0.3),
+	  0 0 30px rgba(230, 0, 122, 0.2);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+	.tab {
+	  padding: 10px 16px;
+	  font-size: 0.95rem;
+	}
+	
+	[role="tabpanel"] {
+	  padding: 16px;
+	}
+  }
 
 /* Adjust the container width */
 .sl-container.astro-7nkwcw3z {
