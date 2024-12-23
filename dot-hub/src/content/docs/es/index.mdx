@@ -1,15 +1,15 @@
 ---
-title: All the Polkadot Ecosystem
-description: Get started and join the biggest DAO in the world.
+title: Hub del Ecosistema de Polkadot
+description: Únete a la mayor DAO del mundo.
 template: splash
 banner:
   content: 
-    Unlock All the Highlights from the <strong>Sub0 Reset</strong>.
-    <a target="_blank" rel="noopener noreferrer" href="//media.polkadotecosystem.com/events/sub0/ ">Check it out!</a>
+    Echa un vistazo al contenido del <strong>Sub0 Reset</strong>.
+    <a target="_blank" rel="noopener noreferrer" href="//media.polkadotecosystem.com/events/sub0/ ">Haz click aquí!</a>
 hero:
-  tagline: Discover all the projects and initiatives of the Polkadot ecosystem in an organized and intuitive way. (🚧 Under Construction)
+  tagline: Descubre todos los proyectos e iniciativas del ecosistema Polkadot de forma organizada e intuitiva. (🚧 En Construcción)
   image:
-    file: ../../assets/polkadothub1.png
+    file: ../../../assets/polkadothub1.png
   actions:
     - text: Tools
       link: /tools/
@@ -23,24 +23,21 @@ hero:
       icon: heart
       variant: minimal
 ---
-import { ImageCard, LinkButton2 } from '../../components/ImageCard.astro';
+
+import { ImageCard, LinkButton2 } from '../../../components/ImageCard.astro';
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
-import { Card, CardGrid, LinkCard, LinkButton, FileTree, Tabs, TabItem } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard, LinkButton, FileTree } from '@astrojs/starlight/components';
 import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 import { Image } from 'astro:assets';
 
+--------------
 
-&nbsp;
-
-
-<Tabs>
-  <TabItem label="Tools">
-  
 ## Polkadot Tools
-Esential infrastructure for interacting with and building on the Polkadot network: 
-- From secure wallets to manage digital assets to block explorers for detailed insights into network activity. 
-- Developers can kickstart their journey with robust frameworks and APIs 
-under the Development section, while DAO tools empower communities to effectively govern their projects.   
+Las siguientes herramientas de proporcionan una infraestructura esencial para interactuar con la red de Polkadot.
+Desde billeteras seguras hasta la gestión de activos digitales y exploradores de bloques para obtener información detallada sobre la actividad de la red,
+estas herramientas están diseñadas para mejorar la usabilidad y la transparencia. Los desarrolladores pueden comenzar su recorrido con marcos y API robustos
+en la sección Desarrollo, mientras que las herramientas DAO permiten a las comunidades gobernar sus proyectos de manera eficaz.
+Estas herramientas forman la columna vertebral de una experiencia Polkadot fluida e innovadora.
 
 ----------------
 <ShowcaseImage
@@ -70,17 +67,19 @@ under the Development section, while DAO tools empower communities to effectivel
       description: 'Start your journey as a Polkadot developer.'
       },
   ]}
-/>  
-  </TabItem>
+/>
 
-  <TabItem label="Dapps">
-  ## Polkadot Dapps
-The Polkadot ecosystem features a vibrant array of decentralized applications (DApps) 
-catering to diverse industries. DeFi platforms redefine financial systems, 
-while NFT marketplaces and gaming DApps offer immersive digital asset and entertainment experiences. 
-DePin projects advance decentralized physical infrastructure, and social DApps foster community engagement. 
-Additionally, storage solutions, smart contract ecosystems, and cutting-edge AI DApps underline the adaptability and 
-innovation thriving within the Polkadot ecosystem.
+
+&nbsp;
+
+
+## Polkadot Dapps
+El ecosistema Polkadot cuenta con una vibrante variedad de aplicaciones descentralizadas (DApps)
+que atienden a diversas industrias. Las plataformas DeFi redefinen los sistemas financieros,
+mientras que los mercados NFT y las DApps de juegos ofrecen experiencias inmersivas de entretenimiento y activos digitales.
+Los proyectos DePin promueven la infraestructura física descentralizada, y las DApps sociales fomentan la participación de la comunidad.
+Además, las soluciones de almacenamiento, los ecosistemas de contratos inteligentes y las DApps de IA de vanguardia subrayan la adaptabilidad y la
+innovación que prosperan dentro del ecosistema Polkadot.
 
 ----------------
 <ShowcaseImage
@@ -111,9 +110,6 @@ innovation thriving within the Polkadot ecosystem.
       },
   ]}
 />
-&nbsp;
-
-
 
 <ShowcaseImage
 entries={[
@@ -143,15 +139,17 @@ entries={[
       },
 ]}
 />
-  </TabItem>
 
-  <TabItem label="Hub">
-  ## Polkadot Ecosystem Hub
-The Polkadot Ecosystem Hub highlights the collective strength and innovation driving the network's growth. 
-Explore impactful DAOs and collectives, discover organizations shaping the future of Web3, 
-and connect with key initiatives advancing the ecosystem. 
-For newcomers, the hub offers a comprehensive library of resources to learn, grow, and actively contribute to 
-Polkadot’s vision of a decentralized internet.
+
+&nbsp;
+
+
+## Hub del Ecosistema
+El centro del ecosistema de Polkadot destaca la fuerza colectiva y la innovación que impulsan el crecimiento de la red.
+Explora DAO y colectivos impactantes, descubre organizaciones que están dando forma al futuro de la Web3 y
+conéctate con iniciativas clave que impulsan el ecosistema.
+Para los recién llegados, el centro ofrece una biblioteca completa de recursos para aprender, crecer y contribuir activamente a la
+visión de Polkadot de una Internet descentralizada.
 
 ----------------
 <ShowcaseImage
@@ -159,7 +157,7 @@ Polkadot’s vision of a decentralized internet.
         {
       thumbnail: import('/src/assets/thumbnails/daos.webp'),
       href: '/hub/daos',
-      title: 'DAOs',
+      title: 'Daos',
       description: 'Discover the most popular DAOs and Collectives shaping the Polkadot Ecosystem.'
     },
                      {
@@ -183,22 +181,18 @@ Polkadot’s vision of a decentralized internet.
   ]}
 />
 
-  </TabItem>
-</Tabs>
-
-
 &nbsp;
 
-## More Polkadot Ecosystem Resources:
+## Más recursos del ecosistema de Polkadot:
 -------------
 <CardGrid>
   <Card title="Polkadot Wiki" icon="open-book">
     Explore in-depth information on Polkadot’s technical principles and key components powering its ecosystem
-    <LinkButton href="https://wiki.polkadot.network" variant="secondary" icon="external" iconPlacement="start">Polkadot Wiki</LinkButton>
+    <LinkButton href="//https://wiki.polkadot.network" variant="secondary" icon="external" iconPlacement="start">Polkadot Wiki</LinkButton>
   </Card>
 
   <Card title="Polkadot Website" icon="information">
     Discover Polkadot's vision, innovative ecosystem, and its role in the future of decentralized technologies.    
-    <LinkButton href="https://polkadot.com/" variant="secondary" icon="external" iconPlacement="start">Polkadot.com</LinkButton>
+    <LinkButton href="//https://polkadot.com/" variant="secondary" icon="external" iconPlacement="start">Polkadot.com</LinkButton>
   </Card>
 </CardGrid>
