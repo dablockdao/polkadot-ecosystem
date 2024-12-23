@@ -1,6 +1,18 @@
 ---
 title: Moonfit
 description: MoonFit is a web3 game with which you can earn rewards for burning calories with Web3 and NFT-based fitness app promoting active living.
+hero:
+  tagline: Earn rewards for burning calories.
+  image: 
+    file: ../../../../assets/dapps/gaming/moonfit.png
+  actions:
+    - text: Dapp
+      link: https://moonfit.xyz/
+      icon: external
+    - text: Docs
+      link: https://whitepaper.moonfit.xyz/
+      icon: external
+      variant: secondary
 ---
 
 **MoonFit**, a **Web3 and NFT Lifestyle App**, aims to revolutionize the fitness industry by incentivizing users to stay active. By leveraging the Moonbeam ecosystem, MoonFit combines blockchain technology with health and fitness, offering users rewards for burning calories through physical activities.

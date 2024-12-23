@@ -1,6 +1,18 @@
 ---
 title: Cosmize
 description: COSMIZE is a metaverse platform on the Astar blockchain, enabling users to create, customize, and interact in a decentralized virtual world.
+hero:
+  tagline: A metaverse platform on the Astar blockchain.
+  image: 
+    file: ../../../../assets/dapps/gaming/cosmize.png
+  actions:
+    - text: Site
+      link: https://www.cosmize.io/
+      icon: external
+    - text: Dapp
+      link: https://app.cosmize.io/
+      icon: external
+      variant: secondary
 ---
 
 Welcome to the Polkadot ecosystem projects directory. In this article, we explore COSMIZE, a revolutionary metaverse platform built on the Astar blockchain. COSMIZE combines the vastness of the cosmos with the freedom to customize, allowing users to create and personalize their virtual spaces. This in-depth look covers COSMIZE’s vision, mission, key features, and the technology that powers it.

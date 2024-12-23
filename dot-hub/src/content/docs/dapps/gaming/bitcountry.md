@@ -1,6 +1,18 @@
 ---
 title: Bitcountry
 description:  Bit.Country offers a unique blend of 2.5D and 3D experiences, enabling community engagement on an entirely new level
+hero:
+  tagline: A unique blend of 2.5D and 3D experiences.
+  image: 
+    file: ../../../../assets/dapps/gaming/bitcountry.png
+  actions:
+    - text: Dapp
+      link: https://pioneer.bit.country/p
+      icon: external
+    - text: Docs
+      link: https://docs.bit.country/
+      icon: external
+      variant: secondary
 ---
 
 Bit.Country is a platform that empowers users to create their own metaverses. Bit.Country offers a unique blend of 2.5D and 3D experiences, enabling community engagement on an entirely new level. This comprehensive article delves into the features, purpose, and innovative approach of Bit.Country, illustrating why it is poised to revolutionize the way we interact with digital spaces.
