@@ -557,27 +557,27 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"dapps/defi/zenlink.md": {
-	id: "dapps/defi/zenlink.md";
+"dapps/defi/zenlink.mdx": {
+	id: "dapps/defi/zenlink.mdx";
   slug: "dapps/defi/zenlink";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"dapps/depin/acurast.md": {
-	id: "dapps/depin/acurast.md";
+} & { render(): Render[".mdx"] };
+"dapps/depin/acurast.mdx": {
+	id: "dapps/depin/acurast.mdx";
   slug: "dapps/depin/acurast";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"dapps/depin/giant-protocol.md": {
-	id: "dapps/depin/giant-protocol.md";
+} & { render(): Render[".mdx"] };
+"dapps/depin/giant-protocol.mdx": {
+	id: "dapps/depin/giant-protocol.mdx";
   slug: "dapps/depin/giant-protocol";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/depin/index.mdx": {
 	id: "dapps/depin/index.mdx";
   slug: "dapps/depin";
@@ -585,20 +585,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"dapps/depin/peaq-network.md": {
-	id: "dapps/depin/peaq-network.md";
+"dapps/depin/peaq-network.mdx": {
+	id: "dapps/depin/peaq-network.mdx";
   slug: "dapps/depin/peaq-network";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"dapps/depin/robonomics.md": {
-	id: "dapps/depin/robonomics.md";
+} & { render(): Render[".mdx"] };
+"dapps/depin/robonomics.mdx": {
+	id: "dapps/depin/robonomics.mdx";
   slug: "dapps/depin/robonomics";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/gaming/ajuna-network.md": {
 	id: "dapps/gaming/ajuna-network.md";
   slug: "dapps/gaming/ajuna-network";

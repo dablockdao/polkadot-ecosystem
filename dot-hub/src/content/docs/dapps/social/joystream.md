@@ -1,6 +1,18 @@
 ---
 title: Joystream
 description: Joystream is a user-owned and operated video platform built on a custom blockchain designed to address the limitations of traditional video platforms like YouTube.
+hero:
+  tagline: User-owned and operated video platform .
+  image: 
+    file: ../../../../assets/dapps/social/joystream.png
+  actions:
+    - text: Dapps
+      link: https://joystream.org/
+      icon: external
+    - text: Docs
+      link: https://handbook.joystream.org/
+      icon: external
+      variant: secondary
 ---
 
 Joystream is a user-owned and operated video platform built on a custom blockchain designed to address the limitations of traditional video platforms like YouTube. By leveraging blockchain technology, Joystream provides a decentralized, transparent, and innovative solution for content creators and consumers. It aims to democratize video content creation and distribution, ensuring fair rewards and open access for all participants.

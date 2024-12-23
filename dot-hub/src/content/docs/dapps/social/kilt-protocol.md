@@ -1,9 +1,19 @@
 ---
 title: 'Kilt Protocol'
 description:  KILT Protocol empowers individuals and organizations to manage their digital identities and control their data within the Polkadot ecosystem.
+hero:
+  tagline: Unleash Self-Sovereign Identity on Polkadot.
+  image: 
+    file: ../../../../assets/dapps/social/kilt.png
+  actions:
+    - text: Dapps
+      link: https://www.kilt.io/
+      icon: external
+    - text: Docs
+      link: https://docs.kilt.io/
+      icon: external
+      variant: secondary
 ---
-
-*Unleash Self-Sovereign Identity on Polkadot*
 
 KILT Protocol empowers individuals and organizations to manage their digital identities and control their data within the Polkadot ecosystem. 
 - A blockchain protocol built on Polkadot for self-sovereign data and interoperability.

@@ -1,6 +1,18 @@
 ---
 title: 'Logion Network'
 description: Logion Network integrates legal frameworks with blockchain technology to offer a secure, transparent, and legally compliant tokenization solution.
+hero:
+  tagline: Legal frameworks with blockchain technology.
+  image: 
+    file: ../../../../assets/dapps/social/logion.png
+  actions:
+    - text: Dapps
+      link: https://logion.network/
+      icon: external
+    - text: Docs
+      link: https://logion-network.github.io/logion-api/
+      icon: external
+      variant: secondary
 ---
 
 Logion Network stands as a pioneering initiative in the Polkadot ecosystem, integrating legal frameworks with blockchain technology to offer a secure, transparent, and legally compliant tokenization solution. By incorporating human judicial oversight and advanced cryptographic principles, Logion provides a unique **“Proof of Law”** concept, ensuring that digital tokens are backed by verifiable legal evidence. This article explores the key components of the Logion Network, its technical underpinnings, and its significant role in the Polkadot ecosystem.

@@ -1,6 +1,18 @@
 ---
 title: 'Imbue Network'
 description: Discover Imbue Network, a decentralized web3 freelance marketplace powered by Polkadot, offering secure and efficient project collaboration.
+hero:
+  tagline: Web3 freelance marketplace powered by Polkadot
+  image: 
+    file: ../../../../assets/dapps/social/imbue.png
+  actions:
+    - text: Dapps
+      link: https://www.imbue.network/
+      icon: external
+    - text: Github
+      link: https://github.com/ImbueNetwork/imbue
+      icon: external
+      variant: secondary
 ---
 
 The rapidly evolving landscape of freelancing is undergoing a significant transformation with the advent of blockchain technology. **Imbue Network**, a pioneering platform **built on the Polkadot blockchain**, stands at the forefront of this revolution. By providing a secure, transparent, and efficient environment for both freelancers and clients, Imbue Network is redefining how freelance projects are managed and executed.

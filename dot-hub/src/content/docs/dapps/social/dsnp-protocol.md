@@ -1,6 +1,18 @@
 ---
 title: 'DSNP Protocol'
-description: Decentralized Social Networking Protocol (DSNP) for a New Era of Social Media  
+description: Decentralized Social Networking Protocol (DSNP) for a New Era of Social Media
+hero:
+  tagline: Decentralized Social Networking Protocol (DSNP)
+  image: 
+    file: ../../../../assets/dapps/social/dsnp.png
+  actions:
+    - text: Dapps
+      link: https://dsnp.org/
+      icon: external
+    - text: Docs
+      link: https://spec.dsnp.org/
+      icon: external
+      variant: secondary
 ---
 
 The **Decentralized Social Networking Protocol (DSNP)** represents a groundbreaking approach to social networking, aiming to liberate users from the confines of centralized platforms and provide control over their identities and personal data. **Developed by [Project Liberty](https://dablock.com/ecosystem/project-liberty/)**, DSNP leverages blockchain technology to establish a universal, open, and decentralized social graph. This initiative marks a significant step towards dismantling the current surveillance economy and fostering a healthier, more equitable digital ecosystem.

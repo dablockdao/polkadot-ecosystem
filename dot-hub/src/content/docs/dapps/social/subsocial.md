@@ -1,6 +1,18 @@
 ---
 title: Subsocial
 description: Subsocial is an open platform that enables individuals and organizations to launch their decentralized social networks.
+hero:
+  tagline: Connecting Retail, Government, & Enterprise to Onboard the Next 100M Users
+  image: 
+    file: ../../../../assets/dapps/social/subsocial.png
+  actions:
+    - text: Dapps
+      link: https://grillapp.net/
+      icon: external
+    - text: Docs
+      link: https://docs.subsocial.network/
+      icon: external
+      variant: secondary
 ---
 
 In an era where digital communication and content creation are omnipresent, the importance of data sovereignty and user control over digital identities cannot be overstated. Enter Subsocial, a cutting-edge platform designed to redefine social media through the power of blockchain technology. Built on the robust Substrate framework and integrated with the Polkadot network, Subsocial is not just a decentralized platform; it’s a gateway to creating censorship-resistant social networks and marketplaces that empower users like never before.

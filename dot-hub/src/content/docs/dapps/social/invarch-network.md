@@ -1,6 +1,18 @@
 ---
 title: 'InvArch Network'
 description: The InvArch Network is designed as a multichain account abstraction hub that facilitates decentralized operations and financial management across diverse blockchains.
+hero:
+  tagline: A multichain account abstraction hub.
+  image: 
+    file: ../../../../assets/dapps/social/invarch.png
+  actions:
+    - text: Dapps
+      link: https://portal.invarch.network/
+      icon: external
+    - text: Github
+      link: https://github.com/Abstracted-Labs/InvArch
+      icon: external
+      variant: secondary
 ---
 
 The InvArch Network positions itself as a revolutionary blockchain infrastructure designed to streamline multichain operations and financial management. Built on the Polkadot ecosystem, **InvArch offers a novel approach to account management**, empowering individuals, organizations, and Decentralized Autonomous Organizations (DAOs) to navigate the complex landscape of blockchains with a single, unified account.

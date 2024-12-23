@@ -1,6 +1,18 @@
 ---
 title: 'Virto Network'
 description: Virto and Kreivo’s Local Incentives Protocol is creating Decentralized marketplaces empowering communities through a transparent local tax management.
+hero:
+  tagline: Decentralized marketplaces empowering communities.
+  image: 
+    file: ../../../../assets/dapps/social/virto.png
+  actions:
+    - text: Dapps
+      link: https://virto.network/en/
+      icon: external
+    - text: Docs
+      link: https://virto.network/en/docs/whitepaper
+      icon: external
+      variant: secondary
 ---
 
 In a world where economic inequality persists, the Virto Network introduces an innovative solution: the **Local Incentives Protocol (LIP)**. By defining a secure payment system for trading off-chain assets with cryptocurrencies, LIP connects decentralized markets and users, aiming to enhance local welfare through fair and transparent tax collection. This initiative stands out as a promising approach to mitigating economic disparities, especially in low-income regions, by empowering local communities.

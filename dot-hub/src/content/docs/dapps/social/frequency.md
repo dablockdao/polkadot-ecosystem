@@ -1,6 +1,18 @@
 ---
 title: Frequency
 description: Frequency is a specialized Layer 1 public blockchain designed to realize the Decentralized Social Networking Protocol (DSNP).
+hero:
+  tagline: A DSNP L1 Blockchain
+  image: 
+    file: ../../../../assets/dapps/social/frequency.png
+  actions:
+    - text: Dapps
+      link: https://www.frequency.xyz/
+      icon: external
+    - text: Docs
+      link: https://docs.frequency.xyz/
+      icon: external
+      variant: secondary
 ---
 
 **Frequency** is a specialized **Layer 1 public blockchain designed to realize the [Decentralized Social Networking Protocol (DSNP)](https://dablock.com/dapps/dsnp-protocol/)**. It offers critical infrastructure for next-generation social networking applications, empowering individuals with greater control over their data and enabling participation in the evolving digital economy. Frequency provides scalable message discovery, flexible state storage for **social graph and identity data**, and primitives for cost-shifting and delegation of authority. This unique combination allows applications to offer intuitive user experiences while ensuring user control over personal data and online relationships. Frequency introduces an alternative **economic model based on Message Batching** and token staking for recurring network capacity, making it adaptable for future protocols with similar requirements. The native coin for Frequency is named **FRQCY**.
