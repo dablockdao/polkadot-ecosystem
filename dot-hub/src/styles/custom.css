@@ -1,5 +1,48 @@
 @view-transition {navigation: auto}
 
+
+  .starlight-showcases-media-card {
+	display: block;
+	background: linear-gradient(180deg, rgba(44, 31, 47, 0.9) 0%, rgba(88, 28, 57, 0.8) 100%);
+	border-radius: 16px;
+	overflow: hidden;
+	text-decoration: none;
+	height: 100%;
+	transition: transform 0.2s ease;
+  }
+  
+  .starlight-showcases-media-card:hover {
+	transform: translateY(-2px);
+  }
+    
+  .starlight-showcases-media-asset img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain !important;
+  }
+  
+  .starlight-showcases-media-infos {
+	padding: 1.5rem;
+	background: linear-gradient(180deg, rgba(44, 31, 47, 0.95) 0%, rgba(88, 28, 57, 0.9) 100%);
+	height: 100%;
+}
+  
+  .starlight-showcases-media-title {
+	color: white;
+	font-size: 1.5rem !important;
+	font-weight: 500;
+	margin: 0;
+	text-align: center;
+  }
+  
+  @media (min-width: 640px) {
+	.not-content {
+	  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	}
+  }
+  
+  
+
 /* Adjust the container width */
 .sl-container.astro-7nkwcw3z {
 	max-width: none; /* Remove any max-width restriction */
