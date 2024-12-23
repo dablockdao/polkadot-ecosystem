@@ -1,6 +1,18 @@
 ---
 title: 'Mandala Chain'
 description: The gateway between Global and Emerging Blockchain Markets. Bridging Retail, Enterprise and Government.
+hero:
+  tagline: Connecting Retail, Government, & Enterprise to Onboard the Next 100M Users
+  image: 
+    file: ../../../../assets/dapps/social/mandala.png
+  actions:
+    - text: Dapps
+      link: https://www.mandalachain.io/
+      icon: external
+    - text: Docs
+      link: https://docs.mandalachain.io/mandalachain
+      icon: external
+      variant: secondary
 ---
 
 Mandala Chain is a hybrid layer 1 blockchain designed to address the challenges of data security and privacy in the blockchain space. Built with the Substrate framework, Mandala Chain offers a customizable and modular architecture that prioritizes user confidentiality and anonymity.

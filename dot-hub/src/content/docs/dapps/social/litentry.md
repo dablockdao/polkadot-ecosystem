@@ -1,6 +1,18 @@
 ---
 title: Litentry
 description:  Litentry is a decentralized, cross-chain identity aggregator protocol that empowers users to manage their digital identities across various web3 platforms.
+hero:
+  tagline: A decentralized, cross-chain identity aggregator protocol.
+  image: 
+    file: ../../../../assets/dapps/social/litentry.png
+  actions:
+    - text: Dapps
+      link: https://idhub.litentry.io/home
+      icon: external
+    - text: Docs
+      link: https://docs.litentry.com/
+      icon: external
+      variant: secondary
 ---
 Litentry is a decentralized, cross-chain identity aggregator protocol that empowers users to manage their digital identities across various web3 platforms. It offers a privacy-preserving solution for users to control their personal data and leverage it to gain value in the blockchain ecosystem.
 

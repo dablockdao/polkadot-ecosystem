@@ -1,6 +1,18 @@
 ---
 title: Encointer
 description: Encointer is introducing community-specific cryptocurrencies coupled with a universal basic income (UBI) to local communities.
+hero:
+  tagline: Communities Own Currency
+  image: 
+    file: ../../../../assets/dapps/social/encointer.png
+  actions:
+    - text: Dapps
+      link: https://encointer.org/
+      icon: external
+    - text: Docs
+      link: https://book.encointer.org/
+      icon: external
+      variant: secondary
 ---
 
 Encointer is an innovative blockchain platform designed to revolutionize local economies by introducing community-specific cryptocurrencies coupled with a universal basic income (**UBI**). This comprehensive article delves into the unique features of Encointer, its technological underpinnings, and its potential impact within the Polkadot ecosystem.
