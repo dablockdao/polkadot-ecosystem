@@ -3,27 +3,18 @@ title: Parachains.info
 description: Parachains.info offers curated lists and comprehensive insights on Kusama and Polkadot parachains projects.
 ---
 
-
 *All About Kusama and Polkadot Parachains*
 
 Parachains.info stands as a crucial portal for individuals deeply involved in the Polkadot and Kusama blockchain ecosystems. This platform is an all-encompassing directory that provides detailed insights into numerous projects, highlighting their status, token information, market capitalization, and more. With data on over 200 projects, Parachains.info is essential for tracking the vibrant developments within these networks.
 
 ## Comprehensive Directory for Polkadot Parachains
-**Detailed Project Listings**  
-Parachains.info offers an extensive directory of projects within the Polkadot and Kusama ecosystems. Users can explore in-depth profiles of each project, gaining insights into their goals, tokenomics, and current statuses. This feature is particularly valuable for investors and developers seeking to discover new opportunities or stay updated on existing projects.
-
-**Advanced Sorting and Filtering Options**  
-The platform provides robust sorting and filtering capabilities, allowing users to organize projects based on various criteria such as project status, token name, and market cap. This functionality ensures that users can efficiently locate the most pertinent information to their needs.
+- **Detailed Project Listings:** Parachains.info offers an extensive directory of projects within the Polkadot and Kusama ecosystems. Users can explore in-depth profiles of each project, gaining insights into their goals, tokenomics, and current statuses. This feature is particularly valuable for investors and developers seeking to discover new opportunities or stay updated on existing projects.
+- **Advanced Sorting and Filtering Options:** The platform provides robust sorting and filtering capabilities, allowing users to organize projects based on various criteria such as project status, token name, and market cap. This functionality ensures that users can efficiently locate the most pertinent information to their needs.
 
 ## Key Features of Parachains.info Portal
-**Auction and Crowdloan Information**  
-Parachains.info delivers real-time updates on Polkadot and Kusama parachain auctions and crowdloans. This includes detailed data on the amount of DOT and KSM locked in crowdloans and the availability of parachain slots. Users can monitor the progress of ongoing and past auctions, offering transparency in the competition for network slots.
-
-**Real-Time Market Data**  
-In addition to project descriptions, Parachains.info provides up-to-date market data, including token prices, market capitalizations, and trading volumes. This feature is crucial for investors who need to make informed decisions based on the latest financial data.
-
-**Community News and Updates**  
-The portal also acts as a news hub, offering the latest updates, trends, and insights into the Polkadot and Kusama ecosystems. It features articles, videos, and other resources to help users stay informed about significant developments and events.
+- **Auction and Crowdloan Information:** Parachains.info delivers real-time updates on Polkadot and Kusama parachain auctions and crowdloans. This includes detailed data on the amount of DOT and KSM locked in crowdloans and the availability of parachain slots. Users can monitor the progress of ongoing and past auctions, offering transparency in the competition for network slots.
+- **Real-Time Market Data:** In addition to project descriptions, Parachains.info provides up-to-date market data, including token prices, market capitalizations, and trading volumes. This feature is crucial for investors who need to make informed decisions based on the latest financial data.
+- **Community News and Updates:** The portal also acts as a news hub, offering the latest updates, trends, and insights into the Polkadot and Kusama ecosystems. It features articles, videos, and other resources to help users stay informed about significant developments and events.
 
 ### Conclusion
 Parachains.info is an indispensable resource for anyone engaged with Polkadot parachains and the broader Kusama ecosystem. Its comprehensive project directory, real-time market data, and detailed auction and crowdloan information provide a one-stop platform for all blockchain-related needs. Whether you are an investor, developer, or blockchain enthusiast, Parachains.info equips you with the tools and insights necessary to navigate and succeed in these dynamic ecosystems.

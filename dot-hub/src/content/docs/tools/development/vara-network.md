@@ -44,8 +44,7 @@ Vara Network’s versatile architecture supports a wide range of applications, e
 ### Conclusion
 Vara Network stands out as a powerful, versatile, and community-driven platform within the Polkadot ecosystem. By leveraging the Gear Protocol, it provides a high-performance environment for developing and deploying next-generation dApps. Its robust governance model ensures that the community has a significant role in shaping the network’s future, making Vara Network a promising player in the rapidly evolving world of blockchain technology. Whether for gaming, financial services, or supply chain management, Vara Network offers the tools and infrastructure necessary to drive innovation and adoption in the Web3 era.
 
-- <small>Related Token/s:</small> **VAR**
-
+- <small>Related Token/s:</small> **VARA**
 
 ## Polkassembly Community Videos
 ------------

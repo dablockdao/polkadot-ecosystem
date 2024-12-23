@@ -19,23 +19,22 @@ hero:
 
 ## 3xpl Comprehensive Suite of Products
 3xpl offers a range of products tailored to different user needs:
-
 1. **Blockchain Explorers**
-  - **Blazingly Fast:** 3xpl provides rapid access to blockchain data, ensuring users can quickly retrieve the information they need.
-  - **Easy-to-Use Interface:** Designed with usability in mind, the explorer interface is intuitive for both new and experienced users.
-  - **Ad-Free Experience:** By eliminating ads, 3xpl ensures a clean, distraction-free environment for users.
+    - **Blazingly Fast:** 3xpl provides rapid access to blockchain data, ensuring users can quickly retrieve the information they need.
+    - **Easy-to-Use Interface:** Designed with usability in mind, the explorer interface is intuitive for both new and experienced users.
+    - **Ad-Free Experience:** By eliminating ads, 3xpl ensures a clean, distraction-free environment for users.
 2. **PDF Services**
-  - **Transaction Receipts and Wallet Statements:** These services bridge the gap between traditional paper bank statements and crypto transactions, offering a familiar format for users transitioning to digital assets.
-  - **Universal Format:** Ensures compatibility and ease of use across various platforms and services.
+    - **Transaction Receipts and Wallet Statements:** These services bridge the gap between traditional paper bank statements and crypto transactions, offering a familiar format for users transitioning to digital assets.
+    - **Universal Format:** Ensures compatibility and ease of use across various platforms and services.
 3. **Database Dumps**
-  - **TSV Format:** Downloadable in Tab-Separated Values (TSV) format, these dumps are ready for ingestion into any Database Management System (DBMS).
-  - **Universal Format:** Facilitates integration and analysis across different systems and platforms.
+    - **TSV Format:** Downloadable in Tab-Separated Values (TSV) format, these dumps are ready for ingestion into any Database Management System (DBMS).
+    - **Universal Format:** Facilitates integration and analysis across different systems and platforms.
 4. **JSON API**
-  - **Universal Format:** Provides a consistent data output, simplifying the development and integration processes for developers.
+    - **Universal Format:** Provides a consistent data output, simplifying the development and integration processes for developers.
 5. **WebSocket API**
-  - **Universal Format:** Enables real-time data streaming, enhancing the capabilities for dynamic applications and live data monitoring.
+    - **Universal Format:** Enables real-time data streaming, enhancing the capabilities for dynamic applications and live data monitoring.
 6. **ClickHouse API**
-  - **Rapid Data Aggregation:** Ideal for users needing to aggregate and analyze blockchain data quickly, leveraging the high performance of ClickHouse.
+    - **Rapid Data Aggregation:** Ideal for users needing to aggregate and analyze blockchain data quickly, leveraging the high performance of ClickHouse.
 
 ## 3xpl Supported Blockchains
 3xpl supports a wide array of blockchains, offering extensive coverage across various networks. These include:

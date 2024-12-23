@@ -3,7 +3,6 @@ title: 'Polkadot Prodigy'
 description: Promoting Polkadot in Bulgaria through events, education, and community-building with a focus on blockchain innovation and collaboration.
 ---  
 
-
 *Hackatons Empowering Blockchain Innovation in Bulgaria and Beyond*
 
 Polkadot Prodigy, a burgeoning company of blockchain enthusiasts, community ambassadors, marketing specialists, and event organizers, is at the forefront of promoting Polkadot technology in Bulgaria and neighboring countries. With a mission to establish and maintain a robust community through education and engagement, Polkadot Prodigy is dedicated to fostering the growth and development of the Polkadot ecosystem in the region.

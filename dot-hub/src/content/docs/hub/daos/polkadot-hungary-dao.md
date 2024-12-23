@@ -1,6 +1,9 @@
 ---
 title: Polkadot Hungary DAO
 description: Polkadot meetups, hacking and sideevents, interesting contents and tutorials from the Hungarian Polkadot Community.
+sidebar:
+    order: 6
+    label: ✪ Polkadot Hungary DAO
 hero:
   tagline: Hungarian Polkadot Community.
   image: 

@@ -9,23 +9,14 @@ The **Polkadot Staking Dashboard is an advanced web interface designed to stream
 
 With the introduction of nomination pools, the dashboard has expanded its functionalities to cater to a broader range of users, from individual token holders to large-scale investors. **With nomination pools, users can stake from just 1 DOT and earn rewards**, removing the minimum DOTs (more than 500 currently) to receive rewards through staking from the traditional nomination of validators. Below are the main features, including details on nomination pools.
 
-**Easy-to-Use User Interface**: The dashboard enables the staking process with an easily accessible interface, whereby beginners or those with few experiences in staking can easily undertake the given process.
+1. **Easy-to-Use User Interface:** The dashboard enables the staking process with an easily accessible interface, whereby beginners or those with few experiences in staking can easily undertake the given process.
+2. **Polkadot Staking Validator Selection and Nomination:** Validators whose details of performance and commission rates are given can be nominated and selected by users. The nomination pools help in allowing all the customers to come together for the nominating process to nominate, which otherwise brings down the requirements of minimum staking and generally makes it available even for the people who have less token amounts.
+3. **Nomination pools:** This will be an important aspect of the Polkadot staking ecosystem, where users’ DOT tokens are pooled together to make nominations. This democratizes the staking process by removing the entry barriers and increases stakers’ possibility for rewards, particularly among small token holders who may not be having that amount required for self-nomination.
+4. **Polkadot Staking and Unstaking:** The dashboard basically allows staking and unstaking DOT tokens in a very flexible manner. The amount staked is adjustable at will by users in the user interface, meaning they can react to changing strategies or market conditions.
+5. **Polkadot Staking Reward Tracking and Management:** The expected rewards for staking, therefore, should be such that they are trackable in a way users will make choices of compounding and withdrawing said rewards. Therefore, it is imperative that the dashboard tools offer proper and effective reward management, taking into consideration individual choice and strategy.
+6. **Polkadot Network Health and Statistics:** This provides a snapshot of all important network statistics, with general information on the summary of total staked amount, inflations for the network, and other key metrics helping give insight about the overview.
 
-**Polkadot Staking Validator Selection and Nomination**
-Validators whose details of performance and commission rates are given can be nominated and selected by users. The nomination pools help in allowing all the customers to come together for the nominating process to nominate, which otherwise brings down the requirements of minimum staking and generally makes it available even for the people who have less token amounts.
-
-**Nomination pools**: This will be an important aspect of the Polkadot staking ecosystem, where users’ DOT tokens are pooled together to make nominations. This democratizes the staking process by removing the entry barriers and increases stakers’ possibility for rewards, particularly among small token holders who may not be having that amount required for self-nomination.
-
-**Polkadot Staking and Unstaking**
-The dashboard basically allows staking and unstaking DOT tokens in a very flexible manner. The amount staked is adjustable at will by users in the user interface, meaning they can react to changing strategies or market conditions.
-
-**Polkadot Staking Reward Tracking and Management**
-The expected rewards for staking, therefore, should be such that they are trackable in a way users will make choices of compounding and withdrawing said rewards. Therefore, it is imperative that the dashboard tools offer proper and effective reward management, taking into consideration individual choice and strategy.
-
-**Polkadot Network Health and Statistics**
-This provides a snapshot of all important network statistics, with general information on the summary of total staked amount, inflations for the network, and other key metrics helping give insight about the overview.
-
-**Benefits of Using the Polkadot Staking Dashboard**
+## Benefits of Using the Polkadot Staking Dashboard
 - **Increased accessibility and participation**: Low-DOT wallet users have increasingly used nomination pools to participate in staking, contributing to the security of the network and receiving rewards.
 - **Informed Decision-Making**: Complete information on the validators and network statistics helps users make decisions based on well-informed staking.
 - **Community Engagement and Collaboration**: Nomination pools harbor a sense of community between participants, fostering collaboration in securing the network.

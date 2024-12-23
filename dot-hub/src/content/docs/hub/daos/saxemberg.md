@@ -1,6 +1,9 @@
 ---
 title: Saxemberg
 description: Saxemberg is providing secure, transparent validation and collation services for Polkadot and Kusama, championing decentralization and ethical practices.
+sidebar:
+  order: 4
+  label: ✪ Saxemberg
 hero:
   tagline: Secure, transparent validation and collation services for Polkadot.
   image: 

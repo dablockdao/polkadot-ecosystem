@@ -29,7 +29,6 @@ The OpenGov framework in the Polkadot ecosystem enables community-driven governa
 
 ## The Solution: OG Tracker
 OG Tracker addresses these challenges by creating a centralized, transparent, and user-friendly platform. The primary features and benefits of OG Tracker include:
-
 - **Intuitive UI Design:** The platform boasts a simple and easy-to-navigate interface, ensuring that users can quickly access and understand proposal data.
 - **Comprehensive Reviews:** Detailed reviews of each proposal’s current status, including ongoing developments and updates.
 - **Accountability and Proof of Work:** Provides a clear record of proponents’ past work, helping the community evaluate future proposals based on historical performance.
@@ -38,14 +37,12 @@ OG Tracker addresses these challenges by creating a centralized, transparent, an
 
 ## Key Sections of the OG Tracker Platform
 The OG Tracker interface is divided into three main sections:
-
 1. **Home Dashboard:** Displays essential data about the overall approved proposals and the current state of OpenGov.
 2. **Explore Proposals:** Provides an overview of approved proposals categorized by type.
 3. **Proposal Breakdown:** Allows users to delve into detailed breakdowns of each proposal, monitoring progress, deliverables, and important milestones.
 
 ## Tracking Process and Methodology
 OG Tracker follows a meticulous tracking process to ensure accuracy and reliability:
-
 1. **Proposal Breakdown and Analysis:** Each proposal is thoroughly analyzed to highlight milestones and expected deliverables based on proposed timelines.
 2. **Information Gathering:** Data is collected from various sources such as GitHub, social media, and official websites to verify progress and adherence to deadlines.
 3. **Communication with Teams:** Direct communication with involved teams is established to gather additional information and confirm publicly available data.

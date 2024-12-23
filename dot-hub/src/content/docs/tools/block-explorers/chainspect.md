@@ -23,12 +23,12 @@ Launched in 2023, Chainspect has positioned itself as a vital tool for those see
 ## Chainspect Key Metrics and Features
 Chainspect was initially developed as a transactions per second (TPS) tracker but has since expanded to include a variety of critical metrics. These metrics provide a holistic view of blockchain performance and functionality:
 
-- **Real-Time TPS:** This metric shows the current number of transactions processed per second by a blockchain, providing insights into its real-time capacity and activity.
-- **Max Recorded TPS:** This represents the highest number of transactions per second a blockchain has achieved historically, offering a benchmark for its peak performance.
-- **Max Theoretical TPS:** This theoretical value indicates the maximum transactions per second a blockchain could handle under ideal conditions, showcasing its potential scalability.
-- **Block Time:** The average time it takes for a new block to be added to a blockchain, an essential indicator of the network’s speed and efficiency.
-- **Time to Finality (TTF):** The duration required for a transaction to be considered final and irreversible, reflecting the security and reliability of the blockchain.
-- **Governance Model:** This outlines how decisions regarding the blockchain’s operation and development are made, highlighting its governance structure and decentralization.
+1. **Real-Time TPS:** This metric shows the current number of transactions processed per second by a blockchain, providing insights into its real-time capacity and activity.
+2. **Max Recorded TPS:** This represents the highest number of transactions per second a blockchain has achieved historically, offering a benchmark for its peak performance.
+3. **Max Theoretical TPS:** This theoretical value indicates the maximum transactions per second a blockchain could handle under ideal conditions, showcasing its potential scalability.
+4. **Block Time:** The average time it takes for a new block to be added to a blockchain, an essential indicator of the network’s speed and efficiency.
+5. **Time to Finality (TTF):** The duration required for a transaction to be considered final and irreversible, reflecting the security and reliability of the blockchain.
+6. **Governance Model:** This outlines how decisions regarding the blockchain’s operation and development are made, highlighting its governance structure and decentralization.
 
 Each blockchain featured on Chainspect has a dedicated chain page that includes all these metrics, along with a concise description, popular comparisons, and social media links. For instance, the Ethereum Chain Page provides users with a detailed overview of Ethereum’s performance and metrics.
 
@@ -45,5 +45,3 @@ With approximately 700 weekly active users (WAUs) as of 2023, peaking at 1716, C
 
 #### Conclusion
 Chainspect is revolutionizing the way blockchain data is accessed and understood. By offering detailed metrics and easy comparisons for over 40 blockchains, the platform empowers developers, investors, and enthusiasts to navigate the complex world of blockchain with confidence. As the blockchain ecosystem continues to expand, Chainspect’s role as a provider of unbiased and accessible analytics will undoubtedly become even more crucial.
-
- [Tweets by chainspect\_app](https://twitter.com/chainspect_app%0A?ref_src=twsrc%5Etfw)

@@ -10,27 +10,23 @@ Subsquid Network is a **decentralized query engine optimized for the batch extra
 
 ## Components of Subsquid Network
 The Subsquid Network comprises several complementary products, each serving a unique purpose:
-
 1. **Squid SDK**: A TypeScript toolkit designed for high-performance batch indexing. It sources data directly from the Subsquid Network without the need for an archival RPC, making it ideal for building custom APIs and data pipelines.
 2. **Subsquid Cloud**: A hosted service for deploying custom indexers and GraphQL APIs. It provides the necessary infrastructure to run and manage indexers seamlessly.
 3. **Subsquid Firehose**: A lightweight adapter that allows subgraphs to run against the Subsquid Network, bypassing the need for an archival RPC node.
 4. **ApeWorx Subsquid Plugin**: This plugin integrates the Subsquid Network as a fast data source for the ApeWorx framework.
 
 ## Detailed Features of Subsquid Network
-### **API Capabilities**:
-
-- Raw event logs
-- Transaction data with receipts
-- Execution traces for selected networks
-- State diffs for selected networks
-
-### **Deployments**:
-- A production-ready private cluster running on Subsquid infrastructure (formerly Subsquid Archives)
-- A decentralized, permissionless network currently in testnet phase
+1. **API Capabilities**:
+        - Raw event logs
+        - Transaction data with receipts
+        - Execution traces for selected networks
+        - State diffs for selected networks
+2. **Deployments**:
+        - A production-ready private cluster running on Subsquid infrastructure (formerly Subsquid Archives)
+        - A decentralized, permissionless network currently in testnet phase
 
 ## Subsquid Use Cases
 Subsquid Network’s capabilities make it suitable for various applications, including but not limited to:
-
 - Historical blockchain data retrieval
 - Custom APIs for specific applications
 - Real-time data synchronization and analysis
@@ -46,7 +42,6 @@ The Squid SDK is a robust toolkit for building efficient indexers. Key features 
 
 ## Subsquid Cloud
 Subsquid Cloud offers a Platform-as-a-Service (PaaS) for deploying Squid SDK indexers. Features include:
-
 - Provisioning of compute resources and Postgres databases
 - Zero downtime migrations
 - High-performance RPC endpoints for real-time applications

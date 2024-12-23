@@ -1,0 +1,10 @@
+---
+title: Creators
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseImage, ShowcaseProfile, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+<DirectoryLinks directory="creators" limit={10} />

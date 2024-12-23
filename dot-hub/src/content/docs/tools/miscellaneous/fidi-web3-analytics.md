@@ -12,7 +12,6 @@ FiDi is designed to be infinitely customizable, allowing users to select their p
 
 ## Fidi Key Features and Functionalities
 FiDi’s platform is equipped with several key features that enhance its usability and effectiveness:
-
 - **Intuitive User Interface:** The platform’s UI allows for easy navigation and dashboard creation, making advanced analytics accessible to all users.
 - **Extensive Metric Portfolio:** FiDi supports a broad range of metrics across networks, tokens, and wallets, providing a comprehensive view of the blockchain ecosystem.
 - **Customizable Dashboard Layouts:** Users can tailor the layout of their dashboards to suit their specific needs, ensuring that the most relevant data is always at their fingertips.
@@ -35,7 +34,6 @@ FiDi’s robust metrics collection spans various aspects of the blockchain, incl
 FiDi integrates with numerous data providers to ensure comprehensive coverage and reliable data. Current providers include Chainlink, Subsquid, BigQuery, DotLake (Parity), DappRadar, and DeBank. Future integrations will expand this cohort to include services like Dune Analytics, EtherScan, and DefiLlama.
 
 ### Portfolio Analytics
-
 One of FiDi’s standout products is its Portfolio Analytics tool, accessible at [FiDi Portfolio Analytics](https://app.fidi.tech). This tool allows users to track multiple web3 wallets, both EVM and non-EVM, and provides features such as DEX aggregation, NFT analytics, and advanced staking/lending data.
 
 ## Fidi Privacy and Safety
@@ -45,5 +43,4 @@ FiDi prioritizes user privacy and security. The platform is fully non-custodial,
 FiDi’s capabilities are powered by DotSight, an open-source library that supports both on-chain and off-chain data analytics. DotSight can be deployed as a pure data service or with dotsight-ui for data visualization, offering developers ultimate customization.
 
 ### Conclusion
-
 FiDi stands out as a pioneering platform in the realm of Web3 analytics. By offering a code-free, highly customizable solution, it democratizes access to blockchain insights and empowers users to make informed decisions. With its extensive range of features, robust metrics collection, and integration with leading data providers, FiDi is poised to become an essential tool for anyone involved in the blockchain ecosystem, particularly within the Polkadot network. As FiDi continues to evolve, it will undoubtedly play a critical role in shaping the future of blockchain analytics.

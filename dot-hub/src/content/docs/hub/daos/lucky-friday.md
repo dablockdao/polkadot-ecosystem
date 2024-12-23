@@ -1,6 +1,9 @@
 ---
 title: Lucky Friday
 description: Leading decentralized Web3 infrastructure, enterprise blockchain solutions, and community-driven social good initiatives.
+sidebar:
+  order: 5
+  label: ✪ Lucky Friday
 hero:
   tagline: Web3 infrastructure & enterprise blockchain solutions.
   image: 

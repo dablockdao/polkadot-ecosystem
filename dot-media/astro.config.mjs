@@ -116,7 +116,7 @@ export default defineConfig({
 								autogenerate: { directory: 'interviews/behind-the-code' }
 							},
 							{
-								label: '🎙️ Dotcast',
+								label: '🎙️ Dotcast Interviews',
 								collapsed: true,
 								autogenerate: { directory: 'interviews/dotcast' }
 							},
@@ -126,7 +126,12 @@ export default defineConfig({
 								autogenerate: { directory: 'interviews/miscellaneous' }
 							}
 						]
-					}
+					},
+					{
+						label: 'Creators',
+						link: '/creators/',
+						icon: 'pen',
+						items: [ { label: 'DOT Content Creators', autogenerate: { directory: 'creators' } },]		}
 				])
 			],
 			title: 'Polkadot Ecosystem',

@@ -10,22 +10,20 @@ Apillon is a cutting-edge Web3 development platform that abstracts the complexit
 
 ## Apillon Key Features and Services
 Apillon’s platform is designed to lower the barrier to entry for Web3 development, providing a host of features that cater to both novice and experienced developers:
-
-- **Simple APIs and SDKs:** Apillon offers straightforward API access and a rich set of SDKs, allowing developers to integrate Web3 functionalities seamlessly.
-- **Prebuilt Solutions:** The platform provides customizable and ready-to-deploy solutions, reducing the time and effort required to launch Web3 products.
-- **Comprehensive Documentation:** Detailed and easy-to-navigate documentation ensures that developers can quickly find the information they need to build and deploy their projects.
-- **Community-Driven Governance:** Developers can participate in the platform’s evolution, proposing and voting on new features and improvements.
-- **Secure Payments:** Apillon facilitates payments over Stripe, eliminating the need for dealing with tokens for transactions.
+1. **Simple APIs and SDKs:** Apillon offers straightforward API access and a rich set of SDKs, allowing developers to integrate Web3 functionalities seamlessly.
+2. **Prebuilt Solutions:** The platform provides customizable and ready-to-deploy solutions, reducing the time and effort required to launch Web3 products.
+3. **Comprehensive Documentation:** Detailed and easy-to-navigate documentation ensures that developers can quickly find the information they need to build and deploy their projects.
+4. **Community-Driven Governance:** Developers can participate in the platform’s evolution, proposing and voting on new features and improvements.
+5. **Secure Payments:** Apillon facilitates payments over Stripe, eliminating the need for dealing with tokens for transactions.
 
 ## Built on Polkadot
 Polkadot’s vision of a decentralized internet aligns perfectly with Apillon’s mission to make Web3 development more accessible. Polkadot’s interoperability and scalability make it an ideal foundation for Apillon, enabling the platform to support a wide range of blockchain solutions and protocols.
 
 ## The NCTR Token
 Central to Apillon’s ecosystem is the NCTR token, which plays a crucial role in governance, incentivization, and payments. The NCTR tokenomics are designed to encourage participation from both developers and token holders, driving the platform’s growth and adoption.
-
-**Governance:** NCTR token holders can propose and vote on platform upgrades, ensuring that the community has a say in the platform’s development.
-**Incentivization:** The token incentivizes various activities, including development grants, bug bounties, and referral rewards, promoting active participation and continuous improvement.
-**Payments:** Developers can use NCTR tokens to pay for platform services, benefiting from reduced costs and a share of the platform’s fees.
+1. **Governance:** NCTR token holders can propose and vote on platform upgrades, ensuring that the community has a say in the platform’s development.
+2. **Incentivization:** The token incentivizes various activities, including development grants, bug bounties, and referral rewards, promoting active participation and continuous improvement.
+3. **Payments:** Developers can use NCTR tokens to pay for platform services, benefiting from reduced costs and a share of the platform’s fees.
 
 #### Token Distribution and Vesting
 The NCTR token has a total supply of 150,000,000, distributed across various funding rounds and community incentives. The vesting schedules are designed to ensure long-term commitment and stability within the ecosystem.

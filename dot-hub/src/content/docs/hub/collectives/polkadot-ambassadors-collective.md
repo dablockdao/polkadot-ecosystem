@@ -1,6 +1,9 @@
 ---
 title: 'Polkadot Ambassadors Collective'
 description: Join the Polkadot Ambassador Program to grow the ecosystem promotin Polkadot, hosting events, and engaging in the Web3 community.
+sidebar:
+    label: ✧ Ambassadors Collective
+    order: 2
 ---
 
 *A Path to Decentralized Community Growth*
