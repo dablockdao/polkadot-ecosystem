@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" src="https://github.com/dablockdao/polkadotecosystem/blob/main/dot-hub/src/assets/polkadotecosystem-banner.png" width="100%">
+<img align="center" src="https://github.com/dablockdao/polkadotecosystem/tree/main/dot-atlas/src/assets/polkadotecosystem-banner.png" width="100%">
 
 </p>
 
@@ -22,11 +22,11 @@ This project is dedicated to providing comprehensive resources, media, and news 
 
 To learn in depth about the technical concepts and Polkadot technology, go to...     
 
-[<img align="" src="https://github.com/dablockdao/polkadotecosystem/blob/main/dot-hub/src/assets/polkadotwiki.png" width="420px">](https://wiki.polkadot.network/)
+[<img align="" src="https://github.com/dablockdao/polkadotecosystem/tree/main/dot-atlas/src/assets/polkadotwiki.png" width="420px">](https://wiki.polkadot.network/)
 
 ---
 
-## Polkadot Hub
+## Polkadot ATLAS
 
 ### [polkadotecosystem.com](https://polkadotecosystem.com)
 
@@ -41,7 +41,7 @@ Discover a comprehensive resource center that provides detailed information and 
 
 ##### Directory:
 
-| Hub               | Directories                                    |
+| ATLAS               | Directories                                    |
 |-------------------|------------------------------------------------|
 | [**Tools**](https://polkadotecosystem.com/tools/)         | Wallets, Block Explorers, DAO Tools...         |
 | [**Dapps**](https://polkadotecosystem.com/dapps/)         | DeFi, AI, Gaming, Social, DePin...             |
