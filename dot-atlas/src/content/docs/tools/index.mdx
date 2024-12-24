@@ -1,0 +1,47 @@
+---
+title: Polkadot Tools
+description: Explore Polkadot’s ecosystem with essential tools for wallets, block explorers, development, governance, multisig wallets, and analytics.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+The Polkadot ecosystem tools are designed to enhance user interactions and streamline various operations within the network. 
+From wallets and block explorers to development tools and governance platforms, 
+these tools cater to a wide range of needs for both novice users and seasoned developers. 
+
+This diverse array of utilities not only ensures robust security and efficient management of digital assets 
+but also empowers users to fully engage with the Polkadot network, driving innovation and growth within the ecosystem.
+
+## Discover all the Polkadot Tools
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/wallets.webp'),
+      href: '/tools/wallets',
+      title: 'Wallets',
+      description: 'Discover the most advanced wallets to store your assets.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/block-explorers.webp'),
+      href: '/tools/block-explorers/',
+      title: 'Block Explorers',
+      description: 'Understand every movement in the network.'
+      },  
+          {
+      thumbnail: import('/src/assets/thumbnails/dao-tools.webp'),
+      href: '/tools/dao-tools/',
+      title: 'DAO Tools',
+      description: 'The most popular tools to manage DAOs.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/dev-tools.webp'),
+      href: '/dapps/development/',
+      title: 'Development',
+      description: 'Start your journey as a Polkadot developer.'
+      },
+  ]}
+/>

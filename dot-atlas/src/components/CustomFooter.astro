@@ -1,0 +1,11 @@
+---
+import Default from "@astrojs/starlight/components/Footer.astro";
+import type {Props} from "@astrojs/starlight/props";
+import FooterCards from "./FooterCards.astro";
+---
+
+<Default {...Astro.props}>
+    <slot />
+  </Default>
+
+<FooterCards showOnlyTwoCards />

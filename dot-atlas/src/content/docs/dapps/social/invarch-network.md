@@ -1,0 +1,63 @@
+---
+title: 'InvArch Network'
+description: The InvArch Network is designed as a multichain account abstraction hub that facilitates decentralized operations and financial management across diverse blockchains.
+hero:
+  tagline: A multichain account abstraction hub.
+  image: 
+    file: ../../../../assets/dapps/social/invarch.png
+  actions:
+    - text: Dapps
+      link: https://portal.invarch.network/
+      icon: external
+    - text: Github
+      link: https://github.com/Abstracted-Labs/InvArch
+      icon: external
+      variant: secondary
+---
+
+The InvArch Network positions itself as a revolutionary blockchain infrastructure designed to streamline multichain operations and financial management. Built on the Polkadot ecosystem, **InvArch offers a novel approach to account management**, empowering individuals, organizations, and Decentralized Autonomous Organizations (DAOs) to navigate the complex landscape of blockchains with a single, unified account.
+
+This page delves into the core functionalities of InvArch Network, exploring its significance within the Polkadot dApps (decentralized applications) landscape.
+
+## InvArch Network: A Multichain Account Abstraction Hub
+InvArch Network’s core innovation lies in its multichain account abstraction. It essentially acts as a bridge between various blockchains, providing users with a universal account that transcends individual blockchain limitations. This eliminates the need for multiple accounts scattered across different blockchains, simplifying asset management and transaction execution.
+
+Here’s a breakdown of **how InvArch Network facilitates multichain operations**:
+
+- **Single Account for All Blockchains:** With an InvArch account, users can interact with any blockchain supported by the network. This eliminates the burden of managing separate accounts and private keys for each blockchain.
+- **Cross-Consensus Messaging (XCM) &amp; Multiparty Computation (MPC):** InvArch leverages XCM, a core Polkadot technology, to facilitate secure communication between parachains (independent blockchains connected to the Polkadot relay chain). Additionally, MPC empowers secure generation and control of external accounts on other blockchains without compromising private keys.
+
+## Dynamic Governance and Advanced Account Management
+InvArch Network goes beyond just offering a unified account. It empowers users with sophisticated governance features and advanced account management tools.
+
+- **Saturn Multisig Protocol:** InvArch boasts the Saturn Multisig protocol, offering a comprehensive suite for managing accounts and members. This protocol allows for the creation of multichain multisig accounts with features like:
+- **Customizable roles and permissions:** DAOs and organizations can define granular control over member actions within the account.
+- **NFTs as Multisig Members:** InvArch introduces a unique concept where NFTs can function as voting members within a multisig account, enabling innovative governance structures.
+- **KYC Solutions:** Integration with KYC (Know Your Customer) solutions allows for real-world identity verification within DAOs and multisig accounts.  
+  Dynamic Voting Thresholds and Retroactive Configurations: InvArch facilitates flexible voting mechanisms with dynamic thresholds and the ability to retroactively apply configurations.
+- **Self-Executing Governance:** Smart contracts can be deployed within InvArch accounts to automate governance processes.
+
+## Custom Logic with Smart Contracts
+InvArch Network integrates seamlessly with smart contracts, enabling users to define custom logic for various functionalities. Smart contracts deployed on the network can be used for:
+
+- **Enforcing Legal Wrappers:** DAOs can leverage smart contracts to implement legal requirements and enforce specific organizational structures.
+- **Reputation Logic and Trustless Promotions:** Smart contracts can be designed to manage reputation systems and automate trust-based promotions within DAOs.
+- **Automating Financial Processes:** Repetitive financial tasks like payroll and budget disbursements can be automated using smart contracts on the InvArch Network.
+
+## Revolutionary Potential: Bridging the Blockchain Divide
+InvArch Network envisions a future where individuals and organizations operate seamlessly across blockchains with a single, non-custodial account. This revolutionary approach offers several potential benefits:
+
+- **Universal Account for Everyone:** InvArch eliminates the need for multiple blockchain accounts, simplifying user experience and promoting wider blockchain adoption.
+- **Unbanking Businesses:** Organizations can leverage InvArch to function independently across blockchains, potentially bypassing traditional financial institutions.
+- **Irrevocable Asset Control:** InvArch empowers users with complete control over their assets, regardless of the underlying blockchain network.
+- **Foundation for Novel Business Models:** The multichain capabilities of InvArch unlock the potential for innovative business models that transcend blockchain boundaries.
+- **Global Economic Opportunity:** By simplifying blockchain interaction, InvArch has the potential to create a more accessible and inclusive global economic landscape.
+
+## The VARCH Token: Fueling the InvArch Ecosystem
+The native token of the InvArch Network is VARCH. It serves several crucial purposes within the ecosystem:
+- **Network Operations:** VARCH is used to create and manage multichain accounts and DAOs on the network. Additionally, transaction fees associated with account management and governance actions are paid in VARCH.
+- **DAO Funding and Staking:** VARCH plays a central role in DAO Staking and DAO Farming. Users can lock VARCH to earn rewards and contribute to the development of DAOs on the network.
+- **Smart Contract Deployment and Execution:** Costs associated with deploying and using smart contracts on the InvArch Network are paid in VARCH.
+- **Gas Subscriptions:** For smoother operation, DAOs and multisig
+
+- <small>Related Token/s:</small> **VARCH**

@@ -1,0 +1,61 @@
+---
+title: Joystream
+description: Joystream is a user-owned and operated video platform built on a custom blockchain designed to address the limitations of traditional video platforms like YouTube.
+hero:
+  tagline: User-owned and operated video platform .
+  image: 
+    file: ../../../../assets/dapps/social/joystream.png
+  actions:
+    - text: Dapps
+      link: https://joystream.org/
+      icon: external
+    - text: Docs
+      link: https://handbook.joystream.org/
+      icon: external
+      variant: secondary
+---
+
+Joystream is a user-owned and operated video platform built on a custom blockchain designed to address the limitations of traditional video platforms like YouTube. By leveraging blockchain technology, Joystream provides a decentralized, transparent, and innovative solution for content creators and consumers. It aims to democratize video content creation and distribution, ensuring fair rewards and open access for all participants.
+
+## The Problem with Traditional Video Platforms
+Traditional video platforms like YouTube have significant drawbacks that hinder the full potential of user-generated content:
+1. **Siloed Innovation**: These platforms operate as closed systems, restricting independent developers from building new products using the existing massive content and social graph. This stifles innovation and limits the potential for new and improved services.
+2. **Undermonetized Content**: The majority of content creators struggle to monetize their content due to the advertising model, which favors large-scale creators aligned with brand interests. Less than 5% of creators on YouTube can monetize their content effectively​​.
+
+## Joystream’s Solution
+Joystream offers an open innovation platform with a public network effect, designed to empower content creators and engage audiences effectively:
+1. **Open Blockchain**: Joystream is built on an application-specific Layer 1 Proof-of-Stake (PoS) blockchain tailored for a social video platform. This ensures high performance and security while allowing for decentralized governance and operations​.
+2. **Open Social Graph**: All profiles, channels, content, assets, and metadata on Joystream are fully public and indexed, enabling anyone to publish and read content without restrictions. This openness promotes innovation and equal access​.
+3. **Content Storage and Delivery**: Large data assets like videos and images are stored and delivered through infrastructure paid for and operated by the DAO (Decentralized Autonomous Organization). This decentralized approach ensures reliable and efficient content distribution.
+4. **Video NFTs and Creator Tokens**: Joystream introduces video NFTs and dedicated creator tokens, allowing creators to monetize their content directly through auctions, peer-to-peer transactions, and revenue sharing. This system provides creators with more control and financial benefits​<button></button>​.
+5. **DAO Governance**: The Joystream DAO enables token holders to select a council that votes on proposals to manage the network. This decentralized governance model ensures that the platform evolves according to the community’s needs and interests​.
+
+## Key Features of Joystream
+**1. Open Social Graph:** Joystream’s open social graph allows for the creation and management of public and portable profiles, channels, and content items. This openness facilitates permissionless innovation and the development of new applications and services​​.
+**2. Creator Rewards:** The DAO council can implement various policies to reward creators, financing these rewards by minting new tokens. This system ensures that creators are fairly compensated for their contributions, promoting a vibrant and active community​​.
+**3. Video NFTs:** Creators can mint unique, transferable video NFTs, providing fans with a way to gain social proximity to their favorite content. These NFTs can be sold or auctioned, generating revenue and royalties for the creators​.
+**4. Creator Tokens:** Creators can issue fungible tokens for their channels, allowing fans to invest in their success. These tokens can share channel revenue, provide access to exclusive content, and facilitate liquidity through automated market makers​.
+**5. Applications:** Joystream supports a wide range of applications, leveraging its open platform to enable diverse monetization strategies and user experiences. This flexibility encourages the development of niche and specialized content communities.
+**6. Content Moderation:** Joystream’s decentralized infrastructure allows for fine-grained content moderation policies tailored to specific communities. This approach balances the need for policy enforcement with the platform’s commitment to openness and neutrality​.
+
+## The Joystream Blockchain
+Joystream’s blockchain is the backbone of its decentralized video platform, offering several key advantages:
+1. **Consensus Mechanism**: Joystream uses Nominated Proof-of-Stake (NPoS) for validator selection and block production, ensuring security and efficiency. The BABE and GRANDPA protocols provide deterministic finality and high throughput​.
+2. **Interoperability**: The blockchain supports trust-minimized interoperability with other chains, enhancing its versatility and connectivity within the broader blockchain ecosystem​
+3. **Scalability and Throughput**: Joystream’s blockchain can handle high transaction volumes, supporting the creation of numerous channels and the publication of large amounts of content without performance degradation​.
+4. **Forkless Upgrades**: The blockchain’s built-in upgrade feature allows for seamless protocol updates without the risk of network forks, ensuring continuous improvement and stability​​.
+
+## The Joystream DAO
+The DAO structure of Joystream is designed to facilitate effective and inclusive governance:
+1. **Token Holders**: The root authority in the governance system, token holders vote in periodic council elections and have a say in key decisions affecting the network​​.
+2. **Council and Proposals**: The council, elected by token holders, manages the network by creating and voting on proposals. This structure ensures that governance decisions are made by those with a vested interest in the platform’s success​.
+3. **Working Groups**: Specialized working groups manage different aspects of the network, such as content curation, storage, distribution, and application support. These groups are accountable to the council and receive recurring rewards for their contributions​.
+
+## The Network and JOY Token
+**1. Network Infrastructure:** Joystream’s network consists of various node types, including validator nodes, storage nodes, distributor nodes, query nodes, and application nodes. Each type provides essential services, ensuring the smooth operation and scalability of the platform​.
+**2. The Token (JOY):** The native $JOY token is integral to the network, used for governance, securing the network, and accessing services. $JOY tokens are minted to reward validators, council members, and creators, while transaction fees and platform fees are burned to maintain value​​.
+
+### Conclusion
+Joystream represents a groundbreaking approach to video content creation and distribution, leveraging blockchain technology to create a decentralized, user-owned platform. By addressing the limitations of traditional platforms, Joystream empowers creators and consumers, fostering innovation, fairness, and transparency. As part of the Polkadot ecosystem, Joystream is poised to become a leading player in the next generation of decentralized social media and content platforms.
+
+- <small>Related Token/s:</small> **JOY**
