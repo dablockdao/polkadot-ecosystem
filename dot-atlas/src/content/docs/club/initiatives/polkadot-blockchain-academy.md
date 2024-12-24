@@ -1,9 +1,21 @@
 ---
-title: 'Polkadot Blockchain Academy'
+title: 'PBA'
 description: The Polkadot Blockchain Academy (PBA) offers education on blockchain technology using Polkadot and Substrate.
 sidebar:
-    label: ✪ Polkadot Blockchain Academy
+    label: ✪ Polkadot Academy
     order: 2
+hero:
+  tagline: Education on blockchain technology using Polkadot and Substrate.
+  image: 
+    file: ../../../../assets/hub/initiatives/pba.png
+  actions:
+    - text: Site
+      link: https://polkadot.academy/
+      icon: external
+    - text: X
+      link: https://x.com/AcademyPolkadot
+      icon: external
+      variant: secondary
 ---
 
 *PBA Education for the next Web3 Leaders*

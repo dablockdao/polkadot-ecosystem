@@ -389,13 +389,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/initiatives/a-glass-with-gav-podcast.md": {
-	id: "club/initiatives/a-glass-with-gav-podcast.md";
+"club/initiatives/a-glass-with-gav-podcast.mdx": {
+	id: "club/initiatives/a-glass-with-gav-podcast.mdx";
   slug: "club/initiatives/a-glass-with-gav-podcast";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/initiatives/alpha-airdrop.mdx": {
 	id: "club/initiatives/alpha-airdrop.mdx";
   slug: "club/initiatives/alpha-airdrop";
