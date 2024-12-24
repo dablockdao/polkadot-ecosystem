@@ -1,4 +1,4 @@
-# Welcome to the Polkadot Ecosystem Hub
+# Welcome to the Polkadot Ecosystem Atlas
 
 Discover a comprehensive resource center that provides detailed information and direct links to all projects within the Polkadot ecosystem. Here, you can explore a wide array of initiatives, tools, and collaborations that enhance blockchain technology and decentralization.
 
