@@ -22,7 +22,7 @@ This project is dedicated to providing comprehensive resources, media, and news 
 
 To learn in depth about the technical concepts and Polkadot technology, go to...     
 
-[<img align="" src="https://github.com/dablockdao/polkadot-ecosystem/tree/blob/dot-atlas/src/assets/polkadotwiki.png" width="420px">](https://wiki.polkadot.network/)
+[<img align="" src="https://github.com/dablockdao/polkadot-ecosystem/blob/main/dot-atlas/src/assets/polkadotwiki.png" width="420px">](https://wiki.polkadot.network/)
 
 ---
 
@@ -45,7 +45,7 @@ Discover a comprehensive resource center that provides detailed information and 
 |-------------------|------------------------------------------------|
 | [**Tools**](https://polkadotecosystem.com/tools/)         | Wallets, Block Explorers, DAO Tools...         |
 | [**Dapps**](https://polkadotecosystem.com/dapps/)         | DeFi, AI, Gaming, Social, DePin...             |
-| [**Ecosystem Hub**](https://polkadotecosystem.com/hub/)   | DAOs, Initiatives, Resources, Validators...    |
+| [**Community**](https://polkadotecosystem.com/club/)   | DAOs, Initiatives, Resources, Validators...    |
 
 Join us in exploring the dynamic landscape of the Polkadot ecosystem and contributing to its growth!
 
@@ -55,7 +55,7 @@ Join us in exploring the dynamic landscape of the Polkadot ecosystem and contrib
 
 ### [media.polkadotecosystem.com](https://media.polkadotecosystem.com)
 
-Polkadot Media serves as a central hub for multimedia content related to the Polkadot ecosystem.
+Polkadot Media serves as a central point for multimedia content related to the Polkadot ecosystem.
 
 #### Features:
 
@@ -95,7 +95,7 @@ Stay updated with the latest news and developments in the Polkadot ecosystem.
 
 Feel free to explore the code, open issues, and submit pull requests to improve the project.
 
-You can also submit bug reports and feature requests as [Issues](https://github.com/dablockdao/polkadotecosystem/issues)
+You can also submit bug reports and feature requests as [Issues](https://github.com/dablockdao/polkadot-ecosystem/issues)
 
 ---
 
