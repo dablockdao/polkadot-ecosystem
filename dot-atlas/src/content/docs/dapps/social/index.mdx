@@ -1,0 +1,58 @@
+---
+title: Social Dapps 
+description: Explore all the Polkadot ecosystem Social Dapps.
+tableOfContents: false
+sidebar: 
+    label: Social Dapps
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Here is a list with the best Polkadot wallets like Nova Wallet, Talisman, SubWallet and Polkadot Vault to secure and manage your crypto assets effectively across the entire Polkadot Dapps ecosystem.
+
+## List of Social Dapps
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/social/subsocial.png'),
+      href: '/dapps/social/subsocial/',
+      title: 'Subsocial',
+    },
+                     {
+      thumbnail: import('/src/assets/dapps/social/imbue.png'),
+      href: '/dapps/social/imbue-network/',
+      title: 'Imbue Network',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/social/mandala.png'),
+      href: '/dapps/social/mandala-network/',
+      title: 'Mandala Network',
+      },
+              {
+      thumbnail: import('/src/assets/dapps/social/kilt.png'),
+      href: '/dapps/social/kilt-procol/',
+      title: 'Kilt Protocol',
+    },
+  ]}
+/>
+
+## Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=T-aCEdSDyLc',
+      title: 'Subsocial Network / Space Monkeys 001 - Kusamarian',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=OxkV3tQOj18',
+      title: 'The Subsocial Token (SUB) - Kusamarian',
+    },
+  ]}
+/>

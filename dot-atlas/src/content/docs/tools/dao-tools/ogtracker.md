@@ -1,0 +1,53 @@
+---
+title: 'OG Tracker'
+description: OG Tracker offers transparent monitoring of Polkadot OpenGov proposals, ensuring accountability, progress tracking, and comprehensive proposal reviews in one platform.
+hero:
+  tagline: Monitoring of Polkadot OpenGov proposals
+  image: 
+    file: ../../../../assets/tools/dao-tools/ogtracker.png
+  actions:
+    - text: Tool
+      link: https://ogtracker.io/
+      icon: external
+    - text: Docs
+      link: https://docs.ogtracker.io/overview/
+      icon: external
+      variant: secondary
+---
+
+*Enhancing Transparency and Accountability in the Polkadot Ecosystem*
+
+Ensuring **transparency and accountability within decentralized governance systems** is paramount. The **OG Tracker platform** is a groundbreaking initiative designed to address this need within the Polkadot ecosystem. By providing a u**ser-friendly interface**, OG Tracker allows users to **monitor the progress and deliverables of approved proposals under the Polkadot OpenGov framework**. This article delves into the features, benefits, and overall impact of the OG Tracker platform.
+
+## OG Tracker Addressing the Challenges in OpenGov
+The OpenGov framework in the Polkadot ecosystem enables community-driven governance through proposal submissions and approvals. However, this system faces several challenges:
+1. **OpenGov Fatigue:** With a high volume of proposals being submitted regularly, voters often find it challenging to keep track of ongoing developments post-approval.
+2. **Unmet Expectations:** Proposals may under-deliver or underperform without the community being aware, impacting future evaluations and trust.
+3. **Lack of Awareness:** Keeping the community informed about the current state and deadlines of each proposal is difficult.
+4. **Lost Information:** Important historical data, achievements, and unmet promises often become untraceable.
+5. **Absence of a Centralized Platform:** There is no dedicated platform that systematically tracks detailed information for each proposal, including past events and feedback.
+
+## The Solution: OG Tracker
+OG Tracker addresses these challenges by creating a centralized, transparent, and user-friendly platform. The primary features and benefits of OG Tracker include:
+- **Intuitive UI Design:** The platform boasts a simple and easy-to-navigate interface, ensuring that users can quickly access and understand proposal data.
+- **Comprehensive Reviews:** Detailed reviews of each proposal’s current status, including ongoing developments and updates.
+- **Accountability and Proof of Work:** Provides a clear record of proponents’ past work, helping the community evaluate future proposals based on historical performance.
+- **Background Information:** Offers insights into the background and impact of each proponent’s ideas and proposals.
+- **Status Tracking:** A clear system to track and display the status of deliverables, making it easy to follow progress and encountered obstacles.
+
+## Key Sections of the OG Tracker Platform
+The OG Tracker interface is divided into three main sections:
+1. **Home Dashboard:** Displays essential data about the overall approved proposals and the current state of OpenGov.
+2. **Explore Proposals:** Provides an overview of approved proposals categorized by type.
+3. **Proposal Breakdown:** Allows users to delve into detailed breakdowns of each proposal, monitoring progress, deliverables, and important milestones.
+
+## Tracking Process and Methodology
+OG Tracker follows a meticulous tracking process to ensure accuracy and reliability:
+1. **Proposal Breakdown and Analysis:** Each proposal is thoroughly analyzed to highlight milestones and expected deliverables based on proposed timelines.
+2. **Information Gathering:** Data is collected from various sources such as GitHub, social media, and official websites to verify progress and adherence to deadlines.
+3. **Communication with Teams:** Direct communication with involved teams is established to gather additional information and confirm publicly available data.
+
+For content marketing proposals, OG Tracker monitors social media accounts to evaluate the validity of deadlines and engagement metrics. For development proposals, it tracks GitHub for code commits, issues, and pull requests. In cases of approved tips or forkless upgrades, brief summaries are provided to keep the community updated.
+
+#### Conclusion
+The OG Tracker platform is set to revolutionize how the Polkadot community monitors and evaluates OpenGov proposals. By offering a transparent, comprehensive, and user-friendly interface, OG Tracker not only enhances accountability but also ensures that the community remains informed and engaged. This initiative represents a significant step forward in creating a more transparent and accountable decentralized governance system, fostering trust and efficiency within the Polkadot ecosystem.
