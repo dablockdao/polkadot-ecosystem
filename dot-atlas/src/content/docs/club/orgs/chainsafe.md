@@ -1,6 +1,20 @@
 ---
 title: ChainSafe
-description: ChainSafe is leading blockchain R&amp;D firm specializing in multi-chain solutions, web3 gaming, and decentralized storage for a robust web3 ecosystem.
+description: ChainSafe is leading blockchain R&D firm specializing in multi-chain solutions, web3 gaming, and decentralized storage for a robust web3 ecosystem.
+sidebar:
+    order: 4
+hero:
+  tagline: A blockchain R&D firm.
+  image: 
+    file: ../../../../assets/hub/orgs/chainsafe.png
+  actions:
+    - text: Site
+      link: https://chainsafe.io/
+      icon: external
+    - text: Github
+      link: https://github.com/chainsafe
+      icon: external
+      variant: secondary
 ---
 
 *Powering the Decentralized Web with Multi-Chain Research and Development*

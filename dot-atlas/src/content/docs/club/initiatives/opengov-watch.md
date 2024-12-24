@@ -22,7 +22,6 @@ The OpenGov.Watch initiative is a pioneering project dedicated to monitoring, re
 
 ### Mission of OpenGov.Watch
 OpenGov.Watch was established with a clear vision: to support and enhance the Polkadot governance process. The initiative serves multiple purposes:
-
 1. **Monitoring and Reporting**: OpenGov.Watch provides detailed reports on the latest developments within Polkadot OpenGov and the Treasury. This ensures stakeholders are well-informed about ongoing initiatives and changes.
 2. **Guides and Resources**: The initiative offers comprehensive guides and explainers to help users understand the intricacies of OpenGov. This educational aspect is crucial for onboarding new participants and ensuring they can effectively engage with the governance process.
 3. **Technical Fellowship and Roadmap**: By offering in-depth reports on the progress of the technical fellowship and the roadmap for Polkadot 2.0, OpenGov.Watch keeps the community updated on technical advancements and future plans.
