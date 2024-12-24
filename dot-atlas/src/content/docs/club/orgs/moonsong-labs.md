@@ -1,6 +1,20 @@
 ---
 title: 'Moonsong Labs'
 description: Innovating Web3 infrastructure with expert engineering, Moonsong Labs fosters and launches groundbreaking decentralized projects.
+sidebar:
+    order: 3
+hero:
+  tagline: Building the decentralized tomorrow.
+  image: 
+    file: ../../../../assets/hub/orgs/moonsonglabs.png
+  actions:
+    - text: Site
+      link: https://moonsonglabs.com/
+      icon: external
+    - text: X
+      link: https://x.com/moonsonglabs_
+      icon: external
+      variant: secondary
 ---
 
 Moonsong Labs, a distinguished Web3 Venture Studio, stands at the forefront of next-generation protocol and software infrastructure development in the Web3 space. This innovation lab not only generates cutting-edge ideas internally but also thrives on external collaborations, making it a hub for both in-house and partnered projects. The studio is composed of seasoned Web3 entrepreneurs, engineers, and operators who have consistently demonstrated their prowess in the industry. Ultimately, projects incubated within Moonsong Labs evolve into independent entities, supported by a robust network of venture capital and service providers.

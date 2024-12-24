@@ -21,7 +21,6 @@ hero:
 OpenGuild Labs is a community-centric initiative designed to support developers in their journey through the Polkadot ecosystem. Established by experienced Web3 builders, OpenGuild Labs aims to provide a comprehensive and **in-depth understanding of Polkadot blockchain technology**, emphasizing a **low-level approach to its educational resources**.
 
 #### OpenGuild Labs Core Team and Leadership
-
 OpenGuild Labs is spearheaded by a team of seasoned professionals with significant achievements in the blockchain and technology sectors. Key members include:
 
 - **Tin Chung**, who serves as the Developer Relations for Polkadot SEA. Tin brings a wealth of experience as the Co-Founder of Amazely, an AI growth platform for businesses, and Snowflake Network, an on-chain automation platform on Solana. His accolades include winning the International Blockchain Olympiad (IBCOL) and being a top project winner at the Chainlink Spring Hackathon 2021.

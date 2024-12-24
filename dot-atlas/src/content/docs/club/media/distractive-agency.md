@@ -1,6 +1,18 @@
 ---
 title: 'Distractive Agency'
 description: Grow your Polkadot project with Distractive’s expert go-to-market strategies. Trusted team behind Moonbeam and Moonriver.
+hero:
+  tagline: Marketing for the Polkadot Ecosystem.
+  image: 
+    file: ../../../../assets/hub/media/distractive.png
+  actions:
+    - text: Site
+      link: https://distractive.xyz/
+      icon: external
+    - text: X
+      link: https://x.com/distractivexyz
+      icon: external
+      variant: secondary
 ---
 
 *Marketing for the Polkadot Ecosystem*

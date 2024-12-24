@@ -5,7 +5,7 @@ sidebar:
     label: ✪ Polkadot Academy
     order: 2
 hero:
-  tagline: Education on blockchain technology using Polkadot and Substrate.
+  tagline: Education for the next Web3 Leaders.
   image: 
     file: ../../../../assets/hub/initiatives/pba.png
   actions:
@@ -18,7 +18,6 @@ hero:
       variant: secondary
 ---
 
-*PBA Education for the next Web3 Leaders*
 
 The Polkadot Blockchain Academy, founded by **Gavin Wood**, offers classroom-based education on blockchain technology using **Polkadot and Substrate**. It is led by experts from the Polkadot ecosystem, ***Parity Technologies***, and the ***Web3 Foundation***.
 

@@ -3,10 +3,19 @@ title: 'Web3 Foundation'
 description: Web3 Foundation is pioneering a decentralized web where users control their data, enabled by Polkadot and research / funding initiatives.
 sidebar:
     order: 1
+hero:
+  tagline: Pioneering a Decentralized Future.
+  image: 
+    file: ../../../../assets/hub/orgs/w3f.png
+  actions:
+    - text: Site
+      link: https://web3.foundation/
+      icon: external
+    - text: Grants
+      link: https://grants.web3.foundation/
+      icon: external
+      variant: secondary
 ---
-
-*Pioneering a Decentralized Future* 
-
 
 The **Web3 Foundation** is at the forefront of the movement to **create a decentralized web**, where users control their data, secure global digital transactions, and engage in decentralized exchanges of information and value. This article delves into the foundation’s mission, key initiatives, flagship protocols, and educational resources.
 

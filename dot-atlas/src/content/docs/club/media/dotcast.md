@@ -3,6 +3,18 @@ title: Dotcast
 description: Dotcast is a Spanish-language podcast focused on the Polkadot ecosystem, featuring news, interviews, and insights into blockchain technology.
 sidebar:
     label: ✪ Dotcast
+hero:
+  tagline: A Spanish-language podcast focused on the Polkadot ecosystem
+  image: 
+    file: ../../../../assets/hub/media/dotcast.png
+  actions:
+    - text: Youtube
+      link: https://www.youtube.com/@Dotcast
+      icon: external
+    - text: X
+      link: https://x.com/Dotcast_
+      icon: external
+      variant: secondary
 ---
 
 *Your Go-To Spanish-Language Podcast for Polkadot News and Insights*
