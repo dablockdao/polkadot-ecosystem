@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" src="https://github.com/dablockdao/polkadotecosystem/tree/main/dot-atlas/src/assets/polkadotecosystem-banner.png" width="100%">
+<img align="center" src="https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-atlas/src/assets/polkadotecosystem-banner.png" width="100%">
 
 </p>
 
@@ -22,7 +22,7 @@ This project is dedicated to providing comprehensive resources, media, and news 
 
 To learn in depth about the technical concepts and Polkadot technology, go to...     
 
-[<img align="" src="https://github.com/dablockdao/polkadotecosystem/tree/main/dot-atlas/src/assets/polkadotwiki.png" width="420px">](https://wiki.polkadot.network/)
+[<img align="" src="https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-atlas/src/assets/polkadotwiki.png" width="420px">](https://wiki.polkadot.network/)
 
 ---
 
