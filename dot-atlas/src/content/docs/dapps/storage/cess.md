@@ -1,6 +1,18 @@
 ---
 title: CESS
 description: CESS (Cumulus Encrypted Storage System) is a blockchain-powered decentralized storage and content delivery network (CDN) infrastructure designed for Web3. 
+hero:
+  tagline: Cumulus Encrypted Storage System
+  image: 
+    file: ../../../../assets/dapps/storage/cess.png
+  actions:
+    - text: Dapps
+      link: https://cess.network/
+      icon: external
+    - text: Docs
+      link: https://doc.cess.network/
+      icon: external
+      variant: secondary
 ---
 
 CESS (Cumulus Encrypted Storage System) is a blockchain-powered decentralized storage and content delivery network (CDN) infrastructure designed for Web3. It enables users and creators to share data on-chain and allows developers to build and deploy decentralized applications (DApps).

@@ -1,6 +1,18 @@
 ---
 title: 'Avail Project'
-description: Avail is a project aiming to bridge the gaps between various blockchain ecosystems through its innovative modular technology.
+description: Avail is a Web3 infrastructure layer that allows modular execution layers to scale and interoperate in a trust minimized way.
+hero:
+  tagline: The Unification Layer for Web3
+  image: 
+    file: ../../../../assets/dapps/storage/avail.png
+  actions:
+    - text: Site
+      link: https://www.availproject.org/
+      icon: external
+    - text: Docs
+      link: https://docs.availproject.org/
+      icon: external
+      variant: secondary
 ---
 
 Avail is a project aiming to bridge the gaps between various blockchain ecosystems through its innovative modular technology. Avail positions itself as the unification layer for Web3, addressing fundamental issues related to scalability and user experience.

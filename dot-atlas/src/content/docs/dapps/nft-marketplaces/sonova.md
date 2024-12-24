@@ -1,6 +1,18 @@
 ---
 title: Sonova
 description: Discover Sonova, the premier NFT marketplace on Astar Network, dedicated to sustainable ecosystems and secure trading. 
+hero:
+  tagline: A Native NFT Marketplace for Astar Network
+  image: 
+    file: ../../../../assets/dapps/nft-marketplaces/sonova.png
+  actions:
+    - text: Dapp
+      link: https://sonova.one/
+      icon: external
+    - text: X
+      link: https://x.com/SonovaNFT
+      icon: external
+      variant: secondary
 ---
 
 Sonova is revolutionizing the NFT marketplace by offering a specialized platform for collectors and professional traders on the [**Astar Network**](https://dablock.com/dapps/astar-network/). Led by a team of seasoned Web3 experts, **Sonova aims to support and nurture NFT projects and games that can create sustainable ecosystems**.

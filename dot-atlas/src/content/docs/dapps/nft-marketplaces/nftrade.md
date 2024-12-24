@@ -3,6 +3,18 @@ title: NFTrade
 description: NFTrade is a decentralized, multi-chain NFT platform enabling seamless NFT creation, trading, and leveraging across blockchains
 sidebar:
     label: NFTrade (EVM-Moonbeam)
+hero:
+  tagline: A Holistic NFT Agregator.
+  image: 
+    file: ../../../../assets/dapps/nft-marketplaces/nftrade.png
+  actions:
+    - text: Products
+      link: https://nftrade.com/
+      icon: external
+    - text: Github
+      link: https://github.com/nftrade
+      icon: external
+      variant: secondary
 ---
 
 NFTrade is revolutionizing the NFT space with its **decentralized, multi-chain, and blockchain-agnostic platform**. As an **aggregator of all NFTs across its integrated chains**, NFTrade facilitates the entire NFT lifecycle, empowering users to create, buy, sell, swap, and leverage NFTs seamlessly across multiple blockchain networks. This article delves into the features, benefits, and unique offerings of NFTrade, highlighting its position as a leader in the NFT ecosystem.
