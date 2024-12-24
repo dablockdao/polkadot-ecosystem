@@ -3,6 +3,18 @@ title: OneBlock+
 description: OneBlock+ is Leading Substrate developer community empowering growth and innovation in the Polkadot ecosystem through education and events.
 sidebar: 
     label: ✪ OneBlock+
+hero:
+  tagline: The Largest Blockchain developer community in China.
+  image: 
+    file: ../../../../assets/hub/initiatives/oneblock.png
+  actions:
+    - text: Youtube
+      link: https://www.youtube.com/@OneBlockPlus/videos
+      icon: external
+    - text: X
+      link: https://x.com/OneBlock_
+      icon: external
+      variant: secondary
 ---
 
 *Pioneering Growth and Innovation in the Polkadot Ecosystem*

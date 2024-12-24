@@ -3,6 +3,14 @@ title: Opengov.Watch
 description: OpenGov.Watch is Monitoring and enhancing Polkadot governance for a transformative, decentralized Web3 ecosystem.
 sidebar:
     label: ⭒ OpenGov.Watch
+hero:
+  tagline: Monitoring and enhancing Polkadot governance.
+  image: 
+    file: ../../../../assets/hub/initiatives/opengovwatch.png
+  actions:
+    - text: Site
+      link: https://www.opengov.watch/
+      icon: external
 ---
 
 *Polkadot Governance for a Transformative Web3 Ecosystem*
