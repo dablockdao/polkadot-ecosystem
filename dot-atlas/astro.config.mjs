@@ -106,43 +106,42 @@ export default defineConfig({
 					  ],
 					},
 					{
-						label: 'Ecosystem',
-						badge: { text: 'Hub', variant: 'success' },
-						link: '/hub/',
+						label: 'Community',
+						link: '/club/',
 						icon: 'heart',
 						items: [
 							{
-								label: '🏛️ Collectives', collapsed: true, autogenerate: { directory: 'hub/collectives' }
+								label: '🏛️ Collectives', collapsed: true, autogenerate: { directory: 'club/collectives' }
 							},
 						  {
-						  label: '🏴‍☠️ DAOs', collapsed: true, autogenerate: { directory: 'hub/daos' }
+						  label: '🏴‍☠️ DAOs', collapsed: true, autogenerate: { directory: 'club/daos' }
 					  },
 					  {
-						  label: '👍 Initiatives', collapsed: true, autogenerate: { directory: 'hub/initiatives' }
+						  label: '👍 Initiatives', collapsed: true, autogenerate: { directory: 'club/initiatives' }
 					  },
 					  {
-						label: '💰 Bounties', collapsed: true, autogenerate: { directory: 'hub/bounties' }
+						label: '💰 Bounties', collapsed: true, autogenerate: { directory: 'club/bounties' }
 					},
 					  {
-						label: '📺 Media', collapsed: true, autogenerate: { directory: 'hub/media' }
+						label: '📺 Media', collapsed: true, autogenerate: { directory: 'club/media' }
 					},
 					  {
-						  label: '💼 Orgs', collapsed: true, autogenerate: { directory: 'hub/orgs' }
+						  label: '💼 Orgs', collapsed: true, autogenerate: { directory: 'club/orgs' }
 					  },
 					  {
-						label: '🖥️ Validators', collapsed: true, autogenerate: { directory: 'hub/validators' }
+						label: '🖥️ Validators', collapsed: true, autogenerate: { directory: 'club/validators' }
 					},
 					{
-						label: '🤝 VCs & BD', collapsed: true, autogenerate: { directory: 'hub/business-development' }
+						label: '🤝 VCs & BD', collapsed: true, autogenerate: { directory: 'club/business-development' }
 					},
 					  {
-						label: '👥 People', collapsed: true, autogenerate: { directory: 'hub/people' }
+						label: '👥 People', collapsed: true, autogenerate: { directory: 'club/people' }
 					},
 					{
-						label: '📚 Resources', collapsed: true, autogenerate: { directory: 'hub/resources' }
+						label: '📚 Resources', collapsed: true, autogenerate: { directory: 'club/resources' }
 					},
 					{
-						label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'hub/archive' }
+						label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'club/archive' }
 					},
 					  ]}
 				  ])],
