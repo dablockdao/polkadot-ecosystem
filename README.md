@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" src="https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-atlas/src/assets/polkadotecosystem-banner.png" width="100%">
+<img align="center" src="https://github.com/dablockdao/polkadot-ecosystem/blob/main/dot-atlas/src/assets/polkadotecosystem-banner.png" width="100%">
 
 </p>
 
@@ -16,13 +16,13 @@
 
 This project is dedicated to providing comprehensive resources, media, and news about the Polkadot ecosystem. It is divided into three independent but interrelated projects, each serving a specific purpose:
 
-1. **Polkadot Hub** - [polkadotecosystem.com](https://polkadotecosystem.com)
+1. **Polkadot Atlas** - [polkadotecosystem.com](https://polkadotecosystem.com)
 2. **Polkadot Media** - [media.polkadotecosystem.com](https://media.polkadotecosystem.com)
 3. **Polkadot News** - [news.polkadotecosystem.com](https://news.polkadotecosystem.com)
 
 To learn in depth about the technical concepts and Polkadot technology, go to...     
 
-[<img align="" src="https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-atlas/src/assets/polkadotwiki.png" width="420px">](https://wiki.polkadot.network/)
+[<img align="" src="https://github.com/dablockdao/polkadot-ecosystem/tree/blob/dot-atlas/src/assets/polkadotwiki.png" width="420px">](https://wiki.polkadot.network/)
 
 ---
 
