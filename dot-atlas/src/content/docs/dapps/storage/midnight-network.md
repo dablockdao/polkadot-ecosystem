@@ -1,6 +1,18 @@
 ---
 title: 'Midnight Network'
 description: Midnight is a data-protection blockchain that prioritizes security, compliance, and user data control
+hero:
+  tagline: A data-protection blockchain
+  image: 
+    file: ../../../../assets/dapps/storage/midnight.png
+  actions:
+    - text: Site
+      link: https://midnight.network/
+      icon: external
+    - text: Docs
+      link: https://docs.midnight.network/
+      icon: external
+      variant: secondary
 ---
 
 Midnight is a data-protection blockchain that prioritizes security, compliance, and user data control. It aims to provide organizations with the tools needed to protect privileged information, trade secrets, intellectual property, and personal data. By leveraging advanced cryptographic techniques, Midnight ensures that data remains confidential and secure while facilitating compliance with regulatory requirements.

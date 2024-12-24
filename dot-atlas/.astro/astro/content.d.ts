@@ -1607,13 +1607,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"dapps/nft-marketplaces/moonbeans.md": {
-	id: "dapps/nft-marketplaces/moonbeans.md";
+"dapps/nft-marketplaces/moonbeans.mdx": {
+	id: "dapps/nft-marketplaces/moonbeans.mdx";
   slug: "dapps/nft-marketplaces/moonbeans";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/nft-marketplaces/nftrade.md": {
 	id: "dapps/nft-marketplaces/nftrade.md";
   slug: "dapps/nft-marketplaces/nftrade";
@@ -1628,13 +1628,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"dapps/nft-marketplaces/singular-nft-marketplace.md": {
-	id: "dapps/nft-marketplaces/singular-nft-marketplace.md";
+"dapps/nft-marketplaces/singular-nft-marketplace.mdx": {
+	id: "dapps/nft-marketplaces/singular-nft-marketplace.mdx";
   slug: "dapps/nft-marketplaces/singular-nft-marketplace";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/nft-marketplaces/sonova.md": {
 	id: "dapps/nft-marketplaces/sonova.md";
   slug: "dapps/nft-marketplaces/sonova";
@@ -1649,13 +1649,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"dapps/nft-marketplaces/unique-network.md": {
-	id: "dapps/nft-marketplaces/unique-network.md";
+"dapps/nft-marketplaces/unique-network.mdx": {
+	id: "dapps/nft-marketplaces/unique-network.mdx";
   slug: "dapps/nft-marketplaces/unique-network";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/rwa/centrifuge.mdx": {
 	id: "dapps/rwa/centrifuge.mdx";
   slug: "dapps/rwa/centrifuge";

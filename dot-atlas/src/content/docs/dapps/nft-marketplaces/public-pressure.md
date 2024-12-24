@@ -1,6 +1,18 @@
 ---
 title: 'Public Pressure'
 description: Public Pressure is a web3 music platform on Polkadot, empowering artists and fans with innovative revenue models and immersive experiences.
+hero:
+  tagline: A web3 music platform.
+  image: 
+    file: ../../../../assets/dapps/nft-marketplaces/publicpressure.png
+  actions:
+    - text: Products
+      link: https://www.publicpressure.io/
+      icon: external
+    - text: X
+      link: https://x.com/jointhepressure
+      icon: external
+      variant: secondary
 ---
 
 *Transforming the Music Industry with Web3 Technology*

@@ -15,6 +15,8 @@ hero:
       variant: secondary
 ---
 
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
 GLMR APES is an innovative NFT project that has garnered significant attention within the Polkadot ecosystem. Launched in January 2022, this collection of 1001 pixel art apes quickly became the first ever sold-out collection on the Moonbeam network. The GLMR APES community, known for its dynamic participation, has been instrumental in the development of “The Great Escape,” a pioneering web3 game that leverages the unique capabilities of blockchain technology.
 
 ## The Genesis of GLMR APES
@@ -69,3 +71,14 @@ The Great Escape aims to lower the entry barriers to web3 gaming by offering a g
 GLMR APES and The Great Escape represent the forefront of web3 innovation within the Polkadot ecosystem. By combining a robust DAO governance model with an engaging and accessible gaming experience, they are setting new standards for community-driven projects and blockchain-based gaming. As the project continues to evolve, it promises to bring even more exciting developments and opportunities for its dedicated community.
 
 - <small>Related Token/s:</small> **GLMB**
+
+## GLMR Apes Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=bf_lUMZCgL4',
+      title: 'Utility Forward NFT GLMR Apes! ',
+      description: 'P-ninja uncovers utility forward NFT Game & Governance community GLMR Apes -- the first and one of the strongest NFT communities on Polkadot's Moonbeam Network!',
+    },
+  ]} />
