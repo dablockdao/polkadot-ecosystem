@@ -12,7 +12,6 @@ PolkaPort East was founded as part of Polkadot’s broader decentralization effo
 
 ## Polkaport East Leadership Team
 The leadership team of PolkaPort East includes:
-
 - **Max Rebol**: A key spokesman for Polkadot in Hong Kong’s crypto circles, Max founded [**Harbour Industrial Capital**](https://dablock.com/ecosystem/harbour-industrial-capital/), a Polkadot-focused venture capital fund. With over 15 years of experience in the Greater China region and a background in investment banking, Max transitioned to the crypto industry after discovering Bitcoin.
 - **Vincent Chan**: With a track record of driving growth across the Polkadot ecosystem, Vincent has led growth initiatives at [**Parity Technologies**](https://dablock.com/ecosystem/parity-technologies/) and [**Astar Network**](https://dablock.com/dapps/astar-network/). His expertise spans advising startups on launch strategies and contributing to Asia’s first student-led venture capital fund.
 - **Thibault Perréard**: Leading strategic and business development initiatives for [**Bifrost**](https://dablock.com/dapps/bifrost/), a Polkadot-based project, Thibault has been instrumental in enhancing Polkadot’s presence in the APAC region. His previous experience includes working in the institutional Forex space in Switzerland.

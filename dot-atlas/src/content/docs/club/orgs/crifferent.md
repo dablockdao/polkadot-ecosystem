@@ -26,7 +26,7 @@ Crifferent runs validators on several prominent blockchain networks, including:
 - **HydraDX – HydraCJ**: 7JErgFE8wJazMqSdCja9LQqHx8npBMGZUNxPtZeFQUWhhsnE
 - **Polkadex**: esmYmhtQkYcZ2JyEa4AWfkKWN4sUBKzBC8YELS1515nqCia7K
 
-### Team:
+### Crifferent Team:
 Crifferent’s team comprises professionals with diverse expertise in research, software architecture, finance, and business advisory, including:
 - **Simon Kraus (dev0\_sik)**: Specialist in Web3, Development, Crypto, and Server management.
 - **CJ Wolff**: Finance expert.

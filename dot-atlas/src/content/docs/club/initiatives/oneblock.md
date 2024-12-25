@@ -4,7 +4,7 @@ description: OneBlock+ is Leading Substrate developer community empowering growt
 sidebar: 
     label: ✪ OneBlock+
 hero:
-  tagline: The Largest Blockchain developer community in China.
+  tagline: Polkadot Ecosystem Growth in China.
   image: 
     file: ../../../../assets/hub/initiatives/oneblock.png
   actions:
@@ -16,8 +16,6 @@ hero:
       icon: external
       variant: secondary
 ---
-
-*Pioneering Growth and Innovation in the Polkadot Ecosystem*
 
 **OneBlock+ is the first and largest blockchain developer community in China**, providing comprehensive support for developers studying Substrate and advancing their careers. As a key player in the Polkadot ecosystem, OneBlock+ organizes hackathons, educational events, and technical courses, partnering with developers, communities, business elites, and media to shape the future of the crypto world. With a long-term commitment to developer community education and ecosystem support, **OneBlock+ continues to amplify the voices and contributions of developers within the Polkadot community**.
 

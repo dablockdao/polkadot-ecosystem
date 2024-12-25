@@ -27,7 +27,6 @@ Linear Finance’s long-term vision is to democratize access to investable asset
 
 ## Linear Token (LINA)
 ##### Governance and Utility
-
 The LINA token serves multiple purposes within the Linear ecosystem:
 - **Governance**: LINA holders can participate in the governance of the platform by voting on key issues such as asset listings, oracle selection, and distribution models.
 - **Collateral**: LINA can be used as collateral in the debt pool to mint ℓUSD.

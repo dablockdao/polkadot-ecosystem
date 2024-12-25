@@ -32,5 +32,3 @@ Starfish Finance is an innovative DeFi platform incubated with the Astar Network
 **Strategic Goals** Starfish Finance utilizes the Astar Builders program to construct a next-generation **DeFi x NFT-Fi headquarters within the Polkadot ecosystem**. This initiative aims to deepen the liquidity of crypto and NFT trading and financing through stablecoin swaps and NFT-Fi, based on an enhanced Balancer AMM model. Starfish Finance invites users to a comprehensive platform where they can engage in swapping, liquidity provision, staking, farming, launching, and exploring NFT-Fi, all under one roof.
 
 This fully integrated, highly accessible platform promises a unique DeFi x NFT-Fi financing experience, underscored by the platform’s commitment to a multi-chain future and **gamified DeFi interactions**.
-
- Last time updated: **29 March, 2024**.

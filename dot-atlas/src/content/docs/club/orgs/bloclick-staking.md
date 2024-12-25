@@ -5,17 +5,13 @@ description: Non-custodial, eco-friendly staking provider supporting multiple bl
 
 **BloClick Staking** is a non-custodial, eco-friendly staking service provider that prioritizes CO2-free operations. It aims to integrate blockchain technology into daily life with a focus on curiosity and professionalism. The platform supports staking across various blockchain networks, ensuring a secure and decentralized way for users to earn rewards.
 
-**BloClick Staking Key Features:**
-----------------------------------
-
+## BloClick Staking Key Features:**
 1. **Non-Custodial:** Users retain control of their assets, reducing the risk associated with centralized platforms.
 2. **CO2-Free Operations:** Commitment to environmental sustainability through carbon-neutral operations.
 3. **No Complications:** User-friendly interface and processes for easy staking.
 4. **Professionalism:** Ensures reliable and professional service with a focus on security and performance.
 
-**BloClick Staking Supported Blockchains**
-------------------------------------------
-
+## BloClick Staking Supported Blockchains
 BloClick Staking supports a variety of blockchains, including but not limited to:
 
 1. **Mina Protocol:** Validator with a 5% fee, contributing to social and technical aspects of the network.

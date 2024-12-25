@@ -17,8 +17,6 @@ hero:
       variant: secondary
 ---
 
-*Powering the Decentralized Web with Multi-Chain Research and Development*
-
 ChainSafe Systems stands out as one of the premier multi-chain research and development firms dedicated to supporting the decentralized web. Through its high-impact contributions to leading protocols, ChainSafe has established itself as a pivotal player in the blockchain ecosystem. The company’s expertise spans node implementations, smart contract engineering, distributed systems research, blockchain applications, tools, audits, and more, all of which are rooted in its commitment to openness and community orientation.
 
 ## ChainSafe Founding and Evolution

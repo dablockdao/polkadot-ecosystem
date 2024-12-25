@@ -9,22 +9,15 @@ description: Heikon Labs is Innovating open-source software and validator servic
 Helikon Labs’ portfolio includes a range of tools and applications designed to support and improve the performance of validators on the Polkadot and Kusama networks.
 
 ### Substrate Validator Toolkit (SubVT)**
-**SubVT** is a native mobile application available on iOS and Android platforms, offering validator node operators a suite of tools to manage and optimize their validators on the Polkadot and Kusama relay chains. Developed with the support of the Kusama Treasury through on-chain proposals #99 and #129, SubVT is a testament to Helikon Labs’ commitment to enhancing validator operations.
-
-### SubVT Telegram Bot
-An upgrade over the deprecated 1KV Bot, the SubVT Telegram Bot is a feature-rich notification and reporting tool for validators on the Polkadot and Kusama networks. Written in Rust as part of the SubVT backend, this bot was developed under the support of the Web3 Foundation Grants Program, providing real-time updates and insights for validator operators.
-
-### ChainViz
-Currently in its alpha stage, ChainViz is a real-time 3D chain visualization web application for the Kusama network. This innovative tool visualizes the block production process, network status, and validator statistics in real-time, offering a dynamic and interactive way to monitor the network’s health and performance.
-
-### ChainSynth
-ChainSynth represents Helikon Labs’ foray into generative audio-visual synthesis using real-time blockchain data. In its alpha version, ChainSynth generates audio and visuals based on data from the Polkadot relay chain, showcasing the creative potential of blockchain technology.
+1. **SubVT:** is a native mobile application available on iOS and Android platforms, offering validator node operators a suite of tools to manage and optimize their validators on the Polkadot and Kusama relay chains. Developed with the support of the Kusama Treasury through on-chain proposals #99 and #129, SubVT is a testament to Helikon Labs’ commitment to enhancing validator operations.
+2. **SubVT Telegram Bot:** An upgrade over the deprecated 1KV Bot, the SubVT Telegram Bot is a feature-rich notification and reporting tool for validators on the Polkadot and Kusama networks. Written in Rust as part of the SubVT backend, this bot was developed under the support of the Web3 Foundation Grants Program, providing real-time updates and insights for validator operators.
+3. **ChainViz:** Currently in its alpha stage, ChainViz is a real-time 3D chain visualization web application for the Kusama network. This innovative tool visualizes the block production process, network status, and validator statistics in real-time, offering a dynamic and interactive way to monitor the network’s health and performance.
+4. **ChainSynth:** ChainSynth represents Helikon Labs’ foray into generative audio-visual synthesis using real-time blockchain data. In its alpha version, ChainSynth generates audio and visuals based on data from the Polkadot relay chain, showcasing the creative potential of blockchain technology.
 
 ## Helikon Labs Validator Services
 Helikon Labs operates secure and powerful validators for both the Polkadot and Kusama networks. These validators are hosted on owned high-spec rack servers located in Tier III colocation data centers in Istanbul, ensuring top-level performance and reliability. With backup instances for all validators, Helikon Labs guarantees continuous service, contributing to the decentralization and security of the networks.
 
 Validators operated by Helikon Labs include:
-
 - **ISTANBUL *– Polkadot &amp; Kusama***
 - **MELODY – *Kusama***
 - **GALATA – *Kusama***

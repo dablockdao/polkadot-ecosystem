@@ -13,8 +13,6 @@ hero:
       icon: external
 ---
 
-*Polkadot Governance for a Transformative Web3 Ecosystem*
-
 The OpenGov.Watch initiative is a pioneering project dedicated to monitoring, reporting, and actively participating in the governance of the Polkadot ecosystem. As Polkadot’s governance framework, OpenGov, evolves, OpenGov.Watch is positioned to play a critical role in ensuring transparency, accountability, and strategic direction.
 
 ### Understanding Polkadot OpenGov

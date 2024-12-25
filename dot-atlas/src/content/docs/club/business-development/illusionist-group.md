@@ -12,7 +12,6 @@ Illusionist Group began its journey by investing in engineering teams that contr
 
 ## Illusionist Group Strategic Investments and Portfolio
 Illusionist Group has an impressive portfolio, showcasing their commitment to fostering innovation in the blockchain space. Notable investments include:
-
 - [**Polkadot**](https://dablock.com/ecosystem/): A sharded network facilitating cross-chain communication and interoperability.
 - [**Kusama**](https://dablock.com/dapps/): A scalable multi-chain network designed for radical innovation and early-stage Polkadot deployments.
 - [**Acala Network**](https://dablock.com/dapps/acala-network/): The cross-chain DeFi hub and stablecoin platform on Polkadot.

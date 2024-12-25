@@ -12,18 +12,14 @@ Scytale Digital’s investment philosophy is rooted in the transformative potent
 
 ## Scytale Digital Key Investments
 Scytale Digital has strategically invested in several promising blockchain projects, including:
-
 - **Acurast:** This project is a permissionless and decentralized blockchain designed for confidential computing. Acurast aims to provide secure and private computing solutions, addressing critical needs in data privacy and security.
 - **Astar Network:** Positioned as a multi-chain dApp hub on Polkadot and Polygon, Astar Network supports Ethereum Virtual Machine (EVM) and WebAssembly. This flexibility enables developers to build decentralized applications (dApps) with enhanced functionality and interoperability.
 
 ## Scytale Digital Strategic Vision
 Scytale Digital’s approach to investment is characterized by a keen interest in technologies that align with its core values of privacy, decentralization, and digitization. The company believes in the long-term potential of blockchain to revolutionize various sectors, from finance to healthcare, by introducing more secure, transparent, and efficient systems.
-
-**Privacy:** By investing in projects like Acurast, Scytale Digital underscores its commitment to enhancing data privacy and security, which are crucial in today’s digital age.
-
-**Decentralization:** Projects like Astar Network highlight Scytale Digital’s focus on decentralization, which is a fundamental principle of blockchain technology. Decentralization ensures that control and decision-making are distributed across a network rather than being centralized in a single entity.
-
-**Digitization:** Scytale Digital recognizes the importance of digitization in driving efficiency and innovation. By supporting projects that facilitate the digital transformation of various industries, Scytale Digital is contributing to a more connected and technologically advanced future.
+1. **Privacy:** By investing in projects like Acurast, Scytale Digital underscores its commitment to enhancing data privacy and security, which are crucial in today’s digital age.
+2. **Decentralization:** Projects like Astar Network highlight Scytale Digital’s focus on decentralization, which is a fundamental principle of blockchain technology. Decentralization ensures that control and decision-making are distributed across a network rather than being centralized in a single entity.
+3. **Digitization:** Scytale Digital recognizes the importance of digitization in driving efficiency and innovation. By supporting projects that facilitate the digital transformation of various industries, Scytale Digital is contributing to a more connected and technologically advanced future.
 
 ### Conclusion
 Scytale Digital is at the forefront of blockchain and crypto investments, driven by a vision to harness the transformative power of these technologies. By focusing on privacy, decentralization, and digitization, Scytale Digital is not only investing in the future but also actively shaping it. The company’s strategic investments in projects like Acurast and Astar Network are testament to its commitment to fostering innovation and addressing the critical needs of the digital age.

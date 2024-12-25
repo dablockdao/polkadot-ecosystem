@@ -2,8 +2,6 @@
 title: Blockshard
 description: Blockshard provides secure non-custodial staking across multiple blockchain networks, offering users control and transparent fees.
 ---
-Orgs  
- Validator  
 
 Blockshard is revolutionizing the staking landscape with its non-custodial staking services, designed to maximize earnings while ensuring users maintain full control over their assets. Established in Switzerland, Blockshard leverages its advanced infrastructure to provide unparalleled security and privacy, making it a trustworthy partner for those looking to earn passive income through staking.
 
@@ -28,7 +26,7 @@ Transparency is a key value at Blockshard. The platform provides clear and upfro
 - **Customer Support**: Dedicated support to assist with any staking-related queries.
 
 ## Commitment to the Blockchain Ecosystem
-**Blockshard is a founding member of the [UnitedBloc DAO](https://dablock.com/ecosystem/unitedbloc/)**, a decentralized autonomous organization aimed at advancing the blockchain ecosystem. This involvement underscores Blockshard’s commitment to fostering a decentralized future and contributing to the broader blockchain community.
+**Blockshard is a founding member of the [UnitedBloc DAO](/club/daos/unitedblock)**, a decentralized autonomous organization aimed at advancing the blockchain ecosystem. This involvement underscores Blockshard’s commitment to fostering a decentralized future and contributing to the broader blockchain community.
 
 ### Join the Decentralized Future
 Blockshard invites individual and institutional investors to experience the benefits of its non-custodial staking services. With a focus on security, transparency, and customer satisfaction, Blockshard is well-positioned to help users earn passive income and participate in the growth of the blockchain networks they support.
