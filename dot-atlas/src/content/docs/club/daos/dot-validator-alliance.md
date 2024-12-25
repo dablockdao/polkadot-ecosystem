@@ -15,17 +15,12 @@ hero:
       variant: secondary
 ---
 
-
-*Promoting decentralization and community support within the Polkadot ecosystem.*
-
 The **DOT Validator Alliance is a decentralized autonomous organization (DAO)** aimed at fostering a united, community-driven Polkadot ecosystem. Managed primarily on Discord, the alliance welcomes anyone interested in joining, with validators having the opportunity to become active DAO participants. The alliance’s manifesto outlines its core values and commitments, guiding its mission to support the Polkadot and Kusama networks.
 
 ## Manifesto: Core Values
-
 The Validator Alliance has articulated its foundational principles in a manifesto. These principles resonate with every member and align with the broader goals of the [**Polkadot ecosystem**](https://dablock.com/ecosystem/). The manifesto highlights the following key commitments:
 
 ### Community-Led Society
-
 The alliance believes in a **decentralized, community-led society** and aims to unite the DotSama ecosystem.
 - **Beyond Profit:** Passion for Support: Validators are encouraged to support the projects they validate and the success of the new crypto economy, not just seek profit.
 - **Service to the Network:** Validation is seen as a service to the network, emphasizing support for communities and nominators/delegators.
@@ -40,7 +35,6 @@ The DOT Validator Alliance comprises community leaders dedicated to the Polkadot
 - Validators’ Role: Validators within the alliance play a crucial role in maintaining the network’s integrity and supporting its various projects. They are expected to actively participate in governance, support their delegators, and contribute to the ecosystem’s overall success.
 
 ## Supported Projects and Networks
-
 The DOT Validator Alliance supports a wide range of projects within the Polkadot and Kusama ecosystems. Some notable projects include:
 
 - **Polkadot**: A heterogeneous multi-chain interchange enabling customized side-chains to connect with public blockchains.
@@ -52,11 +46,9 @@ The DOT Validator Alliance supports a wide range of projects within the Polkadot
 - [**KILT Protocol**](/dapps/social/kilt-protocol/): An open-source blockchain protocol for issuing verifiable, revocable, and anonymous credentials.
 
 ### Diverse and Inclusive Community
-
 The alliance’s community comprises validators and collators from various backgrounds and regions, all united by their commitment to the Polkadot ecosystem. These members contribute to the network’s decentralization and support its healthy growth.
 
 #### Conclusion
-
 The **DOT Validator Alliance** stands as a testament to the power of community-driven initiatives within the Polkadot ecosystem. By fostering **decentralization**, supporting governance, and prioritizing long-term benefits, the alliance aims to ensure the sustainable success of Polkadot and Kusama networks. As the alliance grows, it continues to attract passionate validators and community leaders dedicated to building a decentralized future.
 
 For more information or to join the community, visit the DOT Validator Alliance on Discord and explore the opportunities to contribute to this dynamic and forward-thinking initiative.

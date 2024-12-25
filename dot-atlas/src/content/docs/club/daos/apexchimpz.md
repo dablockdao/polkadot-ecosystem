@@ -2,7 +2,7 @@
 title: apeXchimpz
 description: ApeXChimpz is an innovative project making waves in the blockchain and NFT ecosystems. Leveraging the power of social media
 hero:
-  tagline: NFT project since 21.
+  tagline: NFT project since 2021.
   image: 
     file: ../../../../assets/hub/daos/apexchimpz.png
   actions:
@@ -14,8 +14,6 @@ hero:
       icon: external
       variant: secondary
 ---
-
-*A New Frontier in the Blockchain and NFT Space*
 
 ApeXChimpz is an innovative project making waves in the blockchain and NFT ecosystems. Leveraging the power of social media, particularly X/Twitter, ApeXChimpz aims to create a **vibrant community around its unique digital assets and blockchain-based initiatives**. Here you can find the core aspects of ApeXChimpz, exploring what sets it apart and why it has garnered attention in the rapidly evolving world of digital assets.
 

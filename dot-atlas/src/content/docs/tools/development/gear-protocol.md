@@ -22,7 +22,7 @@ Welcome to the Polkadot ecosystem projects directory. In this article, we delve 
     - **Gasless Transactions**: Enables users to interact with the blockchain without incurring gas fees through the use of vouchers, making the platform more accessible.
     - **Signless Transactions**: Streamlines user interactions by reducing the need for frequent transaction signing, enhancing user experience.
 
-## **What is Gear Network?**
+## What is Gear Network?
 **Gear Network** – The Gear Network leverages the Gear Protocol to create a range of network solutions, including standalone Layer-1 networks, Layer-2 solutions, parachains within the Polkadot ecosystem, and custom networks. The first Layer-1 network built on Gear Protocol is Vara Network.
 
 ### Addressing Web3 Challenges

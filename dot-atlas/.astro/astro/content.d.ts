@@ -403,6 +403,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"club/initiatives/dotlake.md": {
+	id: "club/initiatives/dotlake.md";
+  slug: "club/initiatives/dotlake";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "club/initiatives/index.mdx": {
 	id: "club/initiatives/index.mdx";
   slug: "club/initiatives";
@@ -651,13 +658,6 @@ declare module 'astro:content' {
 "club/orgs/dominodes.md": {
 	id: "club/orgs/dominodes.md";
   slug: "club/orgs/dominodes";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/orgs/dotlake.md": {
-	id: "club/orgs/dotlake.md";
-  slug: "club/orgs/dotlake";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -1425,13 +1425,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"dapps/gaming/glmr-apes-the-great-escape.md": {
-	id: "dapps/gaming/glmr-apes-the-great-escape.md";
+"dapps/gaming/glmr-apes-the-great-escape.mdx": {
+	id: "dapps/gaming/glmr-apes-the-great-escape.mdx";
   slug: "dapps/gaming/glmr-apes-the-great-escape";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/gaming/heal3.md": {
 	id: "dapps/gaming/heal3.md";
   slug: "dapps/gaming/heal3";
@@ -1663,6 +1663,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"dapps/rwa/index.mdx": {
+	id: "dapps/rwa/index.mdx";
+  slug: "dapps/rwa";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "dapps/rwa/unit-network.md": {
 	id: "dapps/rwa/unit-network.md";
   slug: "dapps/rwa/unit-network";
@@ -1768,20 +1775,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"dapps/social/invarch-network.md": {
-	id: "dapps/social/invarch-network.md";
+"dapps/social/invarch-network.mdx": {
+	id: "dapps/social/invarch-network.mdx";
   slug: "dapps/social/invarch-network";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"dapps/social/joystream.md": {
-	id: "dapps/social/joystream.md";
+} & { render(): Render[".mdx"] };
+"dapps/social/joystream.mdx": {
+	id: "dapps/social/joystream.mdx";
   slug: "dapps/social/joystream";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/social/kilt-protocol.mdx": {
 	id: "dapps/social/kilt-protocol.mdx";
   slug: "dapps/social/kilt-protocol";

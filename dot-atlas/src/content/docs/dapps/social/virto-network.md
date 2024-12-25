@@ -15,6 +15,8 @@ hero:
       variant: secondary
 ---
 
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
 In a world where economic inequality persists, the Virto Network introduces an innovative solution: the **Local Incentives Protocol (LIP)**. By defining a secure payment system for trading off-chain assets with cryptocurrencies, LIP connects decentralized markets and users, aiming to enhance local welfare through fair and transparent tax collection. This initiative stands out as a promising approach to mitigating economic disparities, especially in low-income regions, by empowering local communities.
 
 ## What is Virto Network?

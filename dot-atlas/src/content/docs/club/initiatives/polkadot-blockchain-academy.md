@@ -18,7 +18,6 @@ hero:
       variant: secondary
 ---
 
-
 The Polkadot Blockchain Academy, founded by **Gavin Wood**, offers classroom-based education on blockchain technology using **Polkadot and Substrate**. It is led by experts from the Polkadot ecosystem, ***Parity Technologies***, and the ***Web3 Foundation***.
 
 ## What is the Polkadot Blockchain Academy?

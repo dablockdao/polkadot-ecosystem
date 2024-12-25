@@ -37,5 +37,4 @@ Staking is not without its commitment periods. **On Polkadot, the unbonding peri
 Amforc ensures that users have access to extensive resources and support. The Polkadot and Kusama wikis are excellent starting points for those seeking more information about these networks. For additional inquiries, Amforc’s team is available via email at **<a rel="noreferrer">staking@amforc.com</a>**.
 
 ### Conclusion
-
 Amforc stands out as a **reliable and user-friendly staking service provider** within the Polkadot and Kusama ecosystems. With a focus on security, global infrastructure, and ease of use, Amforc makes staking accessible and rewarding for a wide range of users. Whether one is new to staking or an experienced participant, Amforc provides the tools and support needed to maximize staking rewards while maintaining a secure environment.

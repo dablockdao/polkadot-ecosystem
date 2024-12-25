@@ -17,7 +17,6 @@ For example, a multiplayer shooter with 1024 concurrent players and a 1KB payloa
 
 ## Into the Realm: Balancing Pressure on State Transition
 To manage the complexity and speed of state transitions, Zero Network leverages several techniques:
-
 - **Sector-based State Syncing:** Players only need to sync the state of their current sector, reducing the overall block time and size.
 - **Caching and Preloading:** Surrounding sectors can be preloaded to anticipate player movement, adjusting the precision of state transitions based on proximity to the player.
 

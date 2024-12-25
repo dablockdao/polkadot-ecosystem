@@ -20,114 +20,47 @@ hero:
 Exiled Racers is a pioneering 3D NFT project within the Polkadot ecosystem, leveraging Moonbeam’s EVM compatibility to deliver hyper-realistic NFTs and rewarding play-to-enjoy experiences. As Moonbeam’s first native bluechip NFT art collection, Exiled Racers seamlessly integrates high-fidelity NFT art, fantasy league sports, and gaming into a cohesive ecosystem designed for time-poor NFT fans and gamers. This community-driven fantasy league racing manager game features a low-touch, high-reward gameplay mechanic currently in its Alpha phase.
 
 ### Key Features and Gameplay Mechanics
-
 Exiled Racers offers a unique gaming experience where algorithmically determined outcomes are based on various attributes of your NFTs, including Pilots, Racecrafts, and Boosters. The gameplay involves:
-
 - **NFT Attributes**: Each NFT has specific attributes that influence race outcomes, such as speed, handling, acceleration, and strength for Racecrafts, and focus, stamina, aggression, and intelligence for Pilots.
 - **Algorithm-Based Racing**: The game uses an algorithm to simulate races, considering the attributes of each NFT, the type of race, and the competition.
 - **Fantasy League Elements**: Players can engage in a fantasy league style racing manager game, where strategic decisions and predictive abilities play a crucial role.
 
 ### Milestones and Achievements in 2023
-
 Throughout 2023, Exiled Racers has achieved several significant milestones, reflecting its commitment to delivering high-quality gaming experiences and pushing the boundaries of web3 gaming. Here are some highlights:
 
-1. **High Fidelity Browser-Based Gaming Asset Development**:
-  
-  
-  - Optimized high-quality NFT assets for a seamless browser-based experience, reducing file sizes and improving performance.
-2. **Keynote Speaker at Convergence 23**:
-  
-  
-  - Shared insights and experiences at a premier web3 gaming event, showcasing the project’s innovations.
-3. **Partnership with Axelar**:
-  
-  
-  - Announced a strategic partnership to advance web3 gaming capabilities.
-4. **24-Hour Showdown Training Events**:
-  
-  
-  - Launched high-stakes training events to enhance players’ skills and introduce them to algorithmic racing mechanics.
-5. **Supercharged Race Training Sessions**:
-  
-  
-  - Revamped training sessions with streamlined experiences and new race formats.
-6. **Launch of EXR Raceway “SportsBooks”**:
-  
-  
-  - Introduced a gamified prediction platform, making it accessible to non-crypto audiences.
-7. **Showcase at Consensus23**:
-  
-  
-  - Rolled out live prediction games and engaged with attendees to broaden reach.
-8. **Initiation of the Lunar Cup**:
-  
-  
-  - Presented a racing challenge with a $2K USDC bonus prize pool, attracting racers and predictors.
-9. **Game Enhancements for the Lunar Cup**:
-  
-  
-  - Implemented major improvements, including advanced 3D art and dynamic camera systems.
-10. **Auto Entry Innovation**:
-  
-  
-  - Developed a “1-click Cup entry” feature for seamless race participation.
-11. **Accessibility Innovations**:
-  
-  
-  - Ensured instant gameplay from any device with just an email, enhancing user experience.
-12. **Transparency and Fairness**:
-  
-  
-  - Partnered with API3 DAO to ensure transparency in race results through a detailed blog post.
-13. **Feature in TechCrunch**:
-  
-  
-  - Highlighted in TechCrunch, where co-founder Sumz shared challenges and strategies for onboarding non-web3 natives.
-14. **Participation at Polkadot Decoded**:
-  
-  
-  - Discussed web3 gaming growth strategies and conducted a live race demonstration.
-15. **Pre-Event Race and Prediction Training**:
-  
-  
-  - Hosted training sessions with Moonbeam, offering bonus points and prizes.
-16. **Mainnet 2023 Track Meet**:
-  
-  
-  - Combined virtual racing with live music, attracting over 700 attendees and 1500+ predictions.
-17. **Harumi Cup Showcase**:
-  
-  
-  - Conducted a major racing event with significant prize pools and inclusive participation.
-18. **Community Leagues**:
-  
-  
-  - Introduced private leagues, allowing the community to create personalized competitive worlds.
+1. **High Fidelity Browser-Based Gaming Asset Development:** Optimized high-quality NFT assets for a seamless browser-based experience, reducing file sizes and improving performance.
+2. **Keynote Speaker at Convergence 23:** Shared insights and experiences at a premier web3 gaming event, showcasing the project’s innovations.
+3. **Partnership with Axelar::** Announced a strategic partnership to advance web3 gaming capabilities.
+4. **24-Hour Showdown Training Events:** Launched high-stakes training events to enhance players’ skills and introduce them to algorithmic racing mechanics.
+5. **Supercharged Race Training Sessions:** Revamped training sessions with streamlined experiences and new race formats.
+6. **Launch of EXR Raceway “SportsBooks”:** Introduced a gamified prediction platform, making it accessible to non-crypto audiences.
+7. **Showcase at Consensus23:** Rolled out live prediction games and engaged with attendees to broaden reach.
+8. **Initiation of the Lunar Cup:** Presented a racing challenge with a $2K USDC bonus prize pool, attracting racers and predictors.
+9. **Game Enhancements for the Lunar Cup:** Implemented major improvements, including advanced 3D art and dynamic camera systems.
+10. **Auto Entry Innovation:** Developed a “1-click Cup entry” feature for seamless race participation.
+11. **Accessibility Innovations:** Ensured instant gameplay from any device with just an email, enhancing user experience.
+12. **Transparency and Fairness:** Partnered with API3 DAO to ensure transparency in race results through a detailed blog post.
+13. **Feature in TechCrunch:** Highlighted in TechCrunch, where co-founder Sumz shared challenges and strategies for onboarding non-web3 natives.
+14. **Participation at Polkadot Decoded:** Discussed web3 gaming growth strategies and conducted a live race demonstration.
+15. **Pre-Event Race and Prediction Training:** Hosted training sessions with Moonbeam, offering bonus points and prizes.
+16. **Mainnet 2023 Track Meet:** Combined virtual racing with live music, attracting over 700 attendees and 1500+ predictions.
+17. **Harumi Cup Showcase:** Conducted a major racing event with significant prize pools and inclusive participation.
+18. **Community Leagues:** Introduced private leagues, allowing the community to create personalized competitive worlds.
 
 ### Exiled Racers: Factions, Stacks, Stats, and Predictions
-
-**Factions**: There are three unique EXR factions, each with its own story and attributes.
-
-**Racing Stacks**: Each stack includes a Racecraft, Pilot, and Booster, each with unique performance stats.
-
-**Racing Mechanics**: Once race entries close, the algorithm runs simulations based on item stats, and races can be watched on any browser.
-
-**Prediction Mechanics**: Racers and spectators can make predictions on races to earn points and rewards.
+- **Factions**: There are three unique EXR factions, each with its own story and attributes.
+- **Racing Stacks**: Each stack includes a Racecraft, Pilot, and Booster, each with unique performance stats.
+- **Racing Mechanics**: Once race entries close, the algorithm runs simulations based on item stats, and races can be watched on any browser.
+- **Prediction Mechanics**: Racers and spectators can make predictions on races to earn points and rewards.
 
 ### Innovative Audio Experience
-
 Exiled Racers has also made significant strides in creating immersive audio experiences:
-
 - **Award-Winning Sound Designer**: Partnered with a renowned sound designer to create unique game FX sounds.
 - **Three-Dimensional Soundscapes**: Utilized advanced spatial audio technology to enhance the racing experience.
 - **Adaptive Audio Integration**: Ensured high-quality audio across various devices and browsers.
 - **Dynamic Sound Design**: Created unique sounds for different racecrafts and pilots, adding a strategic layer to gameplay.
 
 ### Expanding Horizons with Havoc Racing
-
 In 2024, Exiled Racers introduced Havoc Racing, a new game type allowing any user to join races for free using randomly assigned stacks. This initiative aims to enhance user engagement, growth, and sustainability:
-
 - **Havoc Racing Leagues**: Frictionless racing experiences open to all users, with random stack assignments each race.
 - **Holders Shared Garage**: Infrastructure allowing holders to share their stacks for major events, earning leaderboard points and rewards.
-
-### Conclusion

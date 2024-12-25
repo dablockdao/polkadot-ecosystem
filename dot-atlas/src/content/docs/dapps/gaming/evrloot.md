@@ -32,15 +32,13 @@ Blockchain gaming often faces issues with unsustainable Pay-to-Earn (P2E) and Pa
 - **Player-Centric Development**: Continuously delivers fresh content and engages with the community to ensure the game remains enjoyable and rewarding.
 
 ## Evrloot Gameplay Elements
-1. Herbalism
-- **Overview**: Involves identifying and gathering plants to create potions and tinctures.
-- **Gameplay**: Players collect herbs such as Glade Grass and Mirage Sprouts, which can be used to craft various potions and remedies.
-2. Alchemy
-- **Overview**: The practice of transforming natural materials into powerful potions and tinctures.
-- **Gameplay**: Alchemists create remedies to heal or harm, making alchemy a vital skill for expeditions and battles.
-3. Preparing for Expeditions
-Players are encouraged to gather herbs and prepare potions for upcoming expeditions to The Sand Tower. Proper preparation is crucial for survival and success. If players cannot craft their own potions, they must purchase supplies from the marketplace to avoid missing out on valuable combat experience and rewards.
+1. **Herbalism:**
+    - **Overview**: Involves identifying and gathering plants to create potions and tinctures.
+    - **Gameplay**: Players collect herbs such as Glade Grass and Mirage Sprouts, which can be used to craft various potions and remedies.
+2. **Alchemy:**
+    - **Overview**: The practice of transforming natural materials into powerful potions and tinctures.
+    - **Gameplay**: Alchemists create remedies to heal or harm, making alchemy a vital skill for expeditions and battles.
+3. **Preparing for Expeditions:** Players are encouraged to gather herbs and prepare potions for upcoming expeditions to The Sand Tower. Proper preparation is crucial for survival and success. If players cannot craft their own potions, they must purchase supplies from the marketplace to avoid missing out on valuable combat experience and rewards.
 
 ### Conclusion
-
 Evrloot stands out in the blockchain gaming industry by prioritizing community and player experience, avoiding unsustainable gaming models, and leveraging advanced NFT technology. This dark fantasy RPG offers a rich, immersive experience that promises long-term engagement and satisfaction. Join the Evrloot community on the Moonbeam Network and embark on a unique gaming adventure.

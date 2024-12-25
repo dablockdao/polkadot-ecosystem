@@ -15,7 +15,7 @@ hero:
       variant: secondary
 ---
 
-Welcome to the Polkadot ecosystem projects directory. In this article, we explore COSMIZE, a revolutionary metaverse platform built on the Astar blockchain. COSMIZE combines the vastness of the cosmos with the freedom to customize, allowing users to create and personalize their virtual spaces. This in-depth look covers COSMIZE’s vision, mission, key features, and the technology that powers it.
+COSMIZE is a metaverse platform built on the Astar blockchain. COSMIZE combines the vastness of the cosmos with the freedom to customize, allowing users to create and personalize their virtual spaces. This in-depth look covers COSMIZE’s vision, mission, key features, and the technology that powers it.
 
 ## What is COSMIZE?
 **COSMIZE Overview** The name “COSMIZE” blends “Cosmos” and “Customize,” symbolizing a space where users can bring their cosmic imaginations to life. Running on the Astar blockchain, a multi-chain smart contract platform, COSMIZE supports various blockchains and virtual machines (VMs). The platform aims to create a fully interoperable metaverse ecosystem, empowering users to engage in community activities, events, quests, and more.
@@ -43,7 +43,6 @@ Welcome to the Polkadot ecosystem projects directory. In this article, we explor
 
 ## Cosmize Core Team
 The COSMIZE core team comprises experts from the immersive technology and XR industries, united by the vision of creating a transformative metaverse platform. Key team members include:
-
 - **Ace (Founder &amp; CEO)**: With 7 years in the XR industry, Ace has led several XR projects and is passionate about the metaverse.
 - **Rocketman (Co-Founder, COO &amp; Product Ops Commander)**: An XR industry veteran with 8 years of experience, Rocketman excels in product management and has a deep interest in music and cinematography.
 - **Catalize (Co-Founder &amp; CTO)**: With 9 years of experience in VR, game, and systems development, Catalize is a technology speaker and hardcore gamer.

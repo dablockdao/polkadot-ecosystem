@@ -22,26 +22,13 @@ Unit Network is a decentralized platform powered by Substrate, aimed at shaping 
 
 ## Key Components of Unit Network
 
-### Unit Network Blockchain
-The backbone of Unit Network is its blockchain, built using the Substrate framework from Parity Technologies. This modern decentralized platform leverages cutting-edge technology to deliver a flexible and robust blockchain solution.
-
-### Substrate Framework
-Substrate is a versatile toolkit for building customized blockchain networks. It provides developers with the tools and libraries necessary to create blockchain solutions tailored to specific needs, offering a high degree of customization and modularity.
-
-#### Customization and Modularity
-With Substrate, developers can customize and extend blockchain functionalities by choosing from pre-built modules or creating new ones. This flexibility allows for tailored solutions, such as managing tokens or implementing decentralized finance (DeFi) features.
-
-#### **Consensus Mechanisms**
-Substrate supports various consensus mechanisms, including Proof of Stake (PoS) and Proof of Authority (PoA). This allows the Unit Network Blockchain to select the optimal method for security, speed, and decentralization.
-
-#### Interoperability
-Substrate facilitates interoperability between different blockchains, enabling seamless data and asset sharing. This feature allows the Unit Network Blockchain to interact with other chains, enhancing its functionality and reach.
-
-#### Scalability and Performance
-To handle a high volume of transactions, Substrate offers solutions like task splitting across the network and off-chain computation. These features ensure that the Unit Network Blockchain can scale efficiently to accommodate growing user demand.
-
-#### Governance and Upgradability
-Substrate supports decentralized governance, enabling token holders to vote on changes or upgrades to the blockchain. This ensures that the community has a say in the network’s future direction, promoting a democratic and adaptable ecosystem.
+1. **Unit Network Blockchain:** The backbone of Unit Network is its blockchain, built using the Substrate framework from Parity Technologies. This modern decentralized platform leverages cutting-edge technology to deliver a flexible and robust blockchain solution.
+2. **Substrate Framework:** Substrate is a versatile toolkit for building customized blockchain networks. It provides developers with the tools and libraries necessary to create blockchain solutions tailored to specific needs, offering a high degree of customization and modularity.
+    - **Customization and Modularity:** With Substrate, developers can customize and extend blockchain functionalities by choosing from pre-built modules or creating new ones. This flexibility allows for tailored solutions, such as managing tokens or implementing decentralized finance (DeFi) features.
+    - **Consensus Mechanisms.** Substrate supports various consensus mechanisms, including Proof of Stake (PoS) and Proof of Authority (PoA). This allows the Unit Network Blockchain to select the optimal method for security, speed, and decentralization.
+    - **Interoperability:** Substrate facilitates interoperability between different blockchains, enabling seamless data and asset sharing. This feature allows the Unit Network Blockchain to interact with other chains, enhancing its functionality and reach.
+    - **Scalability and Performance:** To handle a high volume of transactions, Substrate offers solutions like task splitting across the network and off-chain computation. These features ensure that the Unit Network Blockchain can scale efficiently to accommodate growing user demand.
+    - **Governance and Upgradability:** Substrate supports decentralized governance, enabling token holders to vote on changes or upgrades to the blockchain. This ensures that the community has a say in the network’s future direction, promoting a democratic and adaptable ecosystem.
 
 ## Unit Network Protocol
 The Unit Network Protocol is at the heart of the platform’s vision to revolutionize the finance industry. It aims to create a global community and a decentralized financial system, making powerful financial tools accessible to everyone.

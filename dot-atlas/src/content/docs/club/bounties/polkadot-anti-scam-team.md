@@ -9,18 +9,13 @@ In the rapidly evolving world of blockchain technology, security is a paramount 
 
 ## Polkadot Anti-Scam Team Missions
 #### Anti-Phishing
-
 The Polkadot Anti-Scam Team is dedicated to shielding the community from phishing scams. By actively monitoring websites and social media platforms, the team identifies and neutralizes phishing attempts. This proactive approach helps prevent potential threats before they can cause harm, safeguarding users’ sensitive information and maintaining the integrity of the Polkadot network.
-
 #### Anti-Scam Education
 Education plays a crucial role in combating scams. The Anti-Scam Team provides comprehensive educational resources, including infographics, online guides, and videos. These materials aim to raise awareness about the characteristics of phishing scams, such as suspicious email addresses and requests for personal information. By educating the community, Polkadot helps users recognize and avoid scams, enhancing their overall security.
-
 #### Reactive Activities
 Despite proactive measures, scams can still occur. The Anti-Scam Team’s reactive track investigates and responds to scam incidents within the Polkadot ecosystem. Their primary goal is to assist users who have lost funds to fraudulent activities. By identifying malicious actors and collaborating with entities like Merkel Science, the team aims to prevent further scams and recover lost assets.
-
 #### Outreach
 Outreach is a critical component of the Anti-Scam Team’s efforts. This track works closely with the educational team to spread awareness about different types of scams and protective measures. By collaborating with other organizations, the outreach team amplifies its message, reaching a wider audience and fostering a well-informed community. Through strategic partnerships, they aim to cultivate a culture of vigilance and resilience against fraud.
-
 ## Polkadot Anti-Scam Collective
 The Polkadot Anti-Scam Collective is a planned on-chain, ranked-membership organization dedicated to maintaining the ecosystem’s safety. Through collective efforts, members work to identify and mitigate scams. This initiative’s repository outlines its goals, value proposition, membership structure, and rules for induction and promotion.
 

@@ -30,10 +30,8 @@ Recognizing**[ Astar Network](https://dablock.com/dapps/astar-network/)‘s conn
 Sonova has already established connections with 10 projects and companies gearing up for NFT launches. This demonstrates Sonova’s proactive approach and readiness to make a significant impact in the NFT marketplace.
 
 ### Emphasis on Security
-**Partnership with X2Y2**
-Security is a top priority for Sonova. In collaboration with X2Y2, a seasoned NFT marketplace developer, Sonova will undergo a comprehensive security audit. This partnership ensures robust technical and security measures, allowing users to confidently utilize the platform.
-**Ongoing Security Measures**
-Post-audit, Sonova will implement all recommended security fixes and optimizations. Continuous collaboration with X2Y2 will provide Sonova with ongoing technical support and marketing advice, reinforcing its commitment to a secure and reliable platform.
+1. **Partnership with X2Y2:** Security is a top priority for Sonova. In collaboration with X2Y2, a seasoned NFT marketplace developer, Sonova will undergo a comprehensive security audit. This partnership ensures robust technical and security measures, allowing users to confidently utilize the platform.
+2. **Ongoing Security Measures:** Post-audit, Sonova will implement all recommended security fixes and optimizations. Continuous collaboration with X2Y2 will provide Sonova with ongoing technical support and marketing advice, reinforcing its commitment to a secure and reliable platform.
 
 ### Conclusion
 Sonova is set to become a leading force in the NFT marketplace on the Astar Network. With a clear mission, strategic collaborations, and a robust security framework, Sonova is well-equipped to support and nurture sustainable NFT projects and games. The upcoming launch of the **SONOVA** token further underscores its commitment to rewarding loyal users and fostering a thriving community. Stay tuned for more exciting developments from Sonova as it continues to unlock new possibilities in the world of NFTs.

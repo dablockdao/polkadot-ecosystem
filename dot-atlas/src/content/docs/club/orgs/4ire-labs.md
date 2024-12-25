@@ -14,12 +14,9 @@ description: Innovative blockchain solutions for FinTech, DeFi, and banking by 4
 4. **Green Finance Development:** 4IRE Labs is at the forefront of integrating sustainability into finance through their green finance solutions. They develop carbon trading platforms, green investing portfolio management systems, and ESG (Environmental, Social, and Governance) reporting and compliance platforms, promoting a more sustainable financial ecosystem.
 
 ## 4IRE Labs Notable Products
-#### ABLE
-ABLE is a comprehensive loan management system designed for microfinance institutions (MFIs). It streamlines loan origination, debt collection, and overall loan management, enhancing the efficiency of MFIs.
-#### Datrics
-Backed by Y Combinator, Datrics is a low-code AI system that empowers businesses to harness the power of artificial intelligence without extensive coding knowledge. It provides a versatile platform for data analysis and machine learning.
-#### ProcessMIX
-ProcessMIX is a backend low-code system tailored for banks, enterprises, and Web3 applications. It offers blockchain connectors, smart contract communication, and Java repository exports, significantly accelerating backend development processes.
+1.  ABLE - ABLE is a comprehensive loan management system designed for microfinance institutions (MFIs). It streamlines loan origination, debt collection, and overall loan management, enhancing the efficiency of MFIs.
+2. Datrics - Backed by Y Combinator, Datrics is a low-code AI system that empowers businesses to harness the power of artificial intelligence without extensive coding knowledge. It provides a versatile platform for data analysis and machine learning.
+3. ProcessMIX - ProcessMIX is a backend low-code system tailored for banks, enterprises, and Web3 applications. It offers blockchain connectors, smart contract communication, and Java repository exports, significantly accelerating backend development processes.
 
 ## 4IRE Labs Leadership and Expertise
 The leadership team at 4IRE Labs brings a wealth of experience and expertise to the table. Key figures include:
