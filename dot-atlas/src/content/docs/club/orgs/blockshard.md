@@ -26,7 +26,7 @@ Transparency is a key value at Blockshard. The platform provides clear and upfro
 - **Customer Support**: Dedicated support to assist with any staking-related queries.
 
 ## Commitment to the Blockchain Ecosystem
-**Blockshard is a founding member of the [UnitedBloc DAO](/club/daos/unitedblock)**, a decentralized autonomous organization aimed at advancing the blockchain ecosystem. This involvement underscores Blockshard’s commitment to fostering a decentralized future and contributing to the broader blockchain community.
+**Blockshard is a founding member of the [UnitedBloc DAO](/club/daos/unitedbloc/)**, a decentralized autonomous organization aimed at advancing the blockchain ecosystem. This involvement underscores Blockshard’s commitment to fostering a decentralized future and contributing to the broader blockchain community.
 
 ### Join the Decentralized Future
 Blockshard invites individual and institutional investors to experience the benefits of its non-custodial staking services. With a focus on security, transparency, and customer satisfaction, Blockshard is well-positioned to help users earn passive income and participate in the growth of the blockchain networks they support.

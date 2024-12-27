@@ -9,15 +9,15 @@ const { showOnlyTwoCards, variant = "grey" } = Astro.props;
 let data = [
   {
     icon: "team-four",
-    title: "Join the Polkadot Ecosystem",
-    description: "Join one of the different communities in the Polkadot ecosystem and start your journey",
-    ctaText: `Join via <a target='_blank' rel='noopener noreferrer' href='https://polkadotecosystem.com/hub'>Polkadot Communities</a>`
+    title: "Polkadot Communities",
+    description: "Join one of the different communities in the Polkadot ecosystem and start your journey.",
+    ctaText: `<a target='_blank' rel='noopener noreferrer' href='https://polkadotecosystem.com/club'>Polkadot Communities</a>`
   },
   {
     icon: "help-circle",
     title: "Help build this Portal",
-    description: "Help us build this portal by contributing to the codebase or by suggesting improvements",
-    ctaText: `<a href='https://github.com/dablockdao/dot-media' target='_blank' rel='noopener noreferrer'>Github</a>`
+    description: "Help us build this portal by contributing to the codebase or by suggesting improvements.",
+    ctaText: `<a href='https://github.com/dablockdao/polkadot-ecosystem' target='_blank' rel='noopener noreferrer'>Github Repository</a>`
   },
 ];
 
@@ -43,3 +43,187 @@ const colorOptions = {
     ))}
   </ul>
 </section>
+
+
+<style>
+
+/*footer-cards*/
+.c-footer-cards {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.c-footer-cards .card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.c-footer-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.75rem;
+    border-radius: 1rem;
+    width: 100%;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.c-footer-cards .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.c-footer-cards .card:hover::before {
+    opacity: 1;
+}
+
+.c-footer-cards .card-title {
+    font-size: 1.2rem !important;
+    font-weight: 700;
+    font-family: unbounded !important;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    position: relative;
+    z-index: 2;
+}
+
+.c-footer-cards .card-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    flex-grow: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.c-footer-cards .card-cta {
+    position: relative;
+    font-family: unbounded !important;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ff3366;
+    font-size: 1rem;
+}
+
+.c-footer-cards .card-cta a {
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.c-footer-cards .card-cta a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.c-footer-cards .card-cta a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Light Mode */
+.c-footer-cards .card {
+    background: linear-gradient(135deg, #f0f4f8, #d7e3fc);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--sl-color-gray-7);
+}
+
+.c-footer-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.c-footer-cards .card-title {
+    color: var(--sl-color-gray-9);
+}
+
+.c-footer-cards .card-cta a {
+    color: var(--sl-color-accent);
+}
+
+.c-footer-cards .card-cta a::after {
+    background-color: var(--sl-color-accent);
+}
+
+/* Dark Mode */
+:root[data-theme='dark'] .c-footer-cards .card {
+    background: linear-gradient(135deg, #2a2d3e, #1f2937);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #d0d0d0;
+}
+
+:root[data-theme='dark'] .c-footer-cards .card:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+}
+
+:root[data-theme='dark'] .c-footer-cards .card-title {
+    color: #ffffff;
+}
+
+:root[data-theme='light'] .c-footer-cards .card-title {
+    color: black !important;
+}
+:root[data-theme='dark'] .c-footer-cards .card-cta a {
+    color: #ff3366;
+}
+
+:root[data-theme='dark'] .c-footer-cards .card-cta a::after {
+    background-color: #ff3366;
+}
+
+:root[data-theme='dark'] .c-footer-cards .card-cta a:hover {
+    color: #ff6699;
+}
+
+.c-footer-cards .card {
+	border: solid 1px #e0e0e051;
+	}
+
+
+@media (max-width: 768px) {
+    .c-footer-cards .card-list {
+        grid-template-columns: 1fr;
+    }
+
+    .c-footer-cards .card {
+        padding: 1.5rem;
+    }
+
+    .c-footer-cards .card-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .c-footer-cards .card,
+    .c-footer-cards .card::before,
+    .c-footer-cards .card-cta a,
+    .c-footer-cards .card-cta a::after {
+        transition: none;
+    }
+}
+
+</style>

@@ -1,0 +1,41 @@
+---
+title: Polkadot Bridge Dapps
+description: Explore all the Polkadot ecosystem Bridge Dapps.
+tableOfContents: false
+sidebar: 
+    label: Bridge Dapps
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+
+## Polkadot Miscellaneous Tools
+----------------
+<ShowcaseImage
+  entries={[
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/miscellaneous/polkadot-staking-dashboard/',
+      title: 'Polkadot Staking Dashboard',
+    },
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/miscellaneous/web3alert/',
+      title: 'Web3Alert',
+    },
+      {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/miscellaneous/polkadot-telemetry/',
+      title: 'Polkadot Telemetry',
+      },  
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/tools/miscellaneous/polkawatch/',
+      title: 'Polkawatch',
+      },
+  ]}
+/>

@@ -20,38 +20,23 @@ import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, Showcase
 Logion Network stands as a pioneering initiative in the Polkadot ecosystem, integrating legal frameworks with blockchain technology to offer a secure, transparent, and legally compliant tokenization solution. By incorporating human judicial oversight and advanced cryptographic principles, Logion provides a unique **“Proof of Law”** concept, ensuring that digital tokens are backed by verifiable legal evidence. This article explores the key components of the Logion Network, its technical underpinnings, and its significant role in the Polkadot ecosystem.
 
 ## Logion Network Key Components
-### Decentralized Network of Judicial Officers:
-Logion’s decentralized network of international and independent Judicial Officers is a cornerstone of its solution. These officers oversee and validate the submission of records into the system, acting as a distributed trust layer. This decentralization ensures no single entity has unilateral control, enhancing security and transparency. The integration of human oversight with blockchain technology allows for nuanced validation, crucial for complex legal and regulatory requirements associated with tokenization.
-
-### Private and Encrypted IPFS Network:
-Logion utilizes a private and encrypted InterPlanetary File System (IPFS) network to securely store submitted records. IPFS is a protocol designed to create a permanent and decentralized method of storing and sharing files. By leveraging content-addressing, IPFS allows data to be fetched from multiple locations simultaneously, improving the network’s speed and efficiency. **Logion’s private IPFS network ensures data confidentiality and decentralization**, preventing single points of failure and enabling secure, traceable deliveries of digital assets and documents.
-
-### Network of Verified Issuers:
-The network of verified issuers, including regulated professionals, adds another layer of accountability to the Logion Network. These issuers are validated by Judicial Officers and bear professional or regulated responsibility for the content they submit. This chain of accountability protects token holders’ interests and enhances the credibility of the tokens issued on the network.
-
-### Zero-Knowledge Proof (ZKP) System of Evidence Record:
-Logion employs **Zero-Knowledge Proofs (ZKP)** to provide proof of records through the Logion certificate and APIs without revealing the content of such records. ZKP allows one party to prove to another that they know a value (x) without conveying any information apart from the fact that they know the value of (x). This ensures the privacy of the parties involved while maintaining the integrity and authenticity of the tokens.
+- **Decentralized Network of Judicial Officers:** Logion’s decentralized network of international and independent Judicial Officers is a cornerstone of its solution. These officers oversee and validate the submission of records into the system, acting as a distributed trust layer. This decentralization ensures no single entity has unilateral control, enhancing security and transparency. The integration of human oversight with blockchain technology allows for nuanced validation, crucial for complex legal and regulatory requirements associated with tokenization.
+- **Private and Encrypted IPFS Network:** Logion utilizes a private and encrypted InterPlanetary File System (IPFS) network to securely store submitted records. IPFS is a protocol designed to create a permanent and decentralized method of storing and sharing files. By leveraging content-addressing, IPFS allows data to be fetched from multiple locations simultaneously, improving the network’s speed and efficiency. **Logion’s private IPFS network ensures data confidentiality and decentralization**, preventing single points of failure and enabling secure, traceable deliveries of digital assets and documents.
+- **Network of Verified Issuers:** The network of verified issuers, including regulated professionals, adds another layer of accountability to the Logion Network. These issuers are validated by Judicial Officers and bear professional or regulated responsibility for the content they submit. This chain of accountability protects token holders’ interests and enhances the credibility of the tokens issued on the network.
+- **Zero-Knowledge Proof (ZKP) System of Evidence Record:** Logion employs **Zero-Knowledge Proofs (ZKP)** to provide proof of records through the Logion certificate and APIs without revealing the content of such records. ZKP allows one party to prove to another that they know a value (x) without conveying any information apart from the fact that they know the value of (x). This ensures the privacy of the parties involved while maintaining the integrity and authenticity of the tokens.
 
 ## Logion Network Technical Architecture
-### Blockchain and Substrate Framework:
-Logion is built on the Substrate framework developed by Parity Technologies, enabling the implementation of a blockchain with native custom logic. Substrate’s modular architecture allows Logion to integrate its unique functionalities seamlessly within the Polkadot ecosystem. Logion started operating as a “solochain” and becomed a Polkadot parachain at the end of 2023, leveraging Polkadot’s hybrid consensus for enhanced security and interoperability.
-
-### Logion Node Architecture:
-A Logion node includes multiple services:
+- **Blockchain and Substrate Framework:** Logion is built on the Substrate framework developed by Parity Technologies, enabling the implementation of a blockchain with native custom logic. Substrate’s modular architecture allows Logion to integrate its unique functionalities seamlessly within the Polkadot ecosystem. Logion started operating as a “solochain” and becomed a Polkadot parachain at the end of 2023, leveraging Polkadot’s hybrid consensus for enhanced security and interoperability.
+- **Logion Node Architecture:** A Logion node includes multiple services:
 - **Substrate-based blockchain:** Provides the core blockchain functionalities.
 - **IPFS cluster:** Ensures resilient and decentralized file storage.
 - **PostgreSQL database:** Stores private and confidential data.
 - **Logion backup manager:** Backs up the PostgreSQL database in near real-time.
 - **Off-chain service:** Provides access to off-chain data through a REST API.
 - **Web server:** Acts as a proxy to the off-chain service and serves the Logion web app.
-
 This architecture ensures data privacy and access restrictions, with only the off-chain service and Substrate node exposed publicly.
-
-### Authentication:
-Logion’s off-chain service implements **JWT-based authentication**. Clients authenticate by submitting a public key, receiving a challenge and session ID, and signing the challenge with their private key. This stateless authentication ensures secure access to private data stored in the IPFS network and PostgreSQL database.
-
-### Data Integrity:
-Substrate and IPFS, being decentralized systems, ensure fault tolerance, scalability, and data integrity. The Logion backup manager enhances this by storing encrypted and compressed backups of PostgreSQL data in IPFS, ensuring recoverability in case of server failures.
+- **Authentication:** Logion’s off-chain service implements **JWT-based authentication**. Clients authenticate by submitting a public key, receiving a challenge and session ID, and signing the challenge with their private key. This stateless authentication ensures secure access to private data stored in the IPFS network and PostgreSQL database.
+- **Data Integrity:** Substrate and IPFS, being decentralized systems, ensure fault tolerance, scalability, and data integrity. The Logion backup manager enhances this by storing encrypted and compressed backups of PostgreSQL data in IPFS, ensuring recoverability in case of server failures.
 
 ## Legal Officer Case (LOC)
 **The Legal Officer Case (LOC)** is a digital folder managed by a Logion legal officer, containing both public and private data. LOCs undergo a lifecycle from draft to closure, ensuring thorough validation and transparency. LOCs can contain data items, file items, and link items, each stored securely and verifiably. The Logion web app provides unified views of LOCs, merging on-chain and off-chain data for both requesters and owners.

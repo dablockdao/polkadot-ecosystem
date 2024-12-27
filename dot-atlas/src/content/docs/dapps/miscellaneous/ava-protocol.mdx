@@ -30,7 +30,6 @@ Automation on the blockchain is currently limited by centralized or semi-central
 
 
 ### The Ava Protocol Kernel
-
 The Ava Protocol Kernel is the core component of Ava Protocol, featuring a persistent event registry for managing automated tasks. It includes the following data structures:
 1. **Task Map**: Stores information about tasks, including their owners and actions to be performed.
 2. **Trigger Map**: Stores information about triggers, such as time intervals and associated tasks.
@@ -38,14 +37,9 @@ The Ava Protocol Kernel is the core component of Ava Protocol, featuring a persi
 4. **Missed Queue**: Stores task IDs and execution times for tasks that missed their scheduled slots.
 
 ## Ava Protocol Network Key Features
-
-
 - **Registration:** Users or remote calls can interact with OAK Network to set up recurring events. The system verifies the inputs, generates a unique task ID, and adds the task to the appropriate maps and queues.
-
 - **Cancellation:** Tasks can be canceled by authorized users or remote calls. The system verifies the cancellation request, deletes the task from the maps and queues, and ensures that all future occurrences of the task are also removed.
-
 - **Time-triggered Execution:** Ava Protocol executes tasks based on pre-defined time intervals. The system calculates the current time slot, identifies tasks to be executed, and processes them within the allocated block weight. Missed tasks are moved to the missed queue for later execution.
-
 - **Conclusion:** Ava Protocol is poised to revolutionize on-chain automation by providing a trustless, decentralized, and flexible platform for executing automated actions. Its integration with the Polkadot ecosystem and use of the Substrate framework ensures robust security, interoperability, and scalability. As OAK Network continues to evolve, it aims to support a wide range of automation use cases, driving innovation and efficiency in the blockchain space.
 
 
