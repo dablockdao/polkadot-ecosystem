@@ -200,13 +200,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/business-development/harbour-industrial-capital.md": {
-	id: "club/business-development/harbour-industrial-capital.md";
+"club/business-development/harbour-industrial-capital.mdx": {
+	id: "club/business-development/harbour-industrial-capital.mdx";
   slug: "club/business-development/harbour-industrial-capital";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/business-development/illusionist-group.md": {
 	id: "club/business-development/illusionist-group.md";
   slug: "club/business-development/illusionist-group";
@@ -312,13 +312,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/daos/lucky-friday.md": {
-	id: "club/daos/lucky-friday.md";
+"club/daos/lucky-friday.mdx": {
+	id: "club/daos/lucky-friday.mdx";
   slug: "club/daos/lucky-friday";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/daos/permanencedao.mdx": {
 	id: "club/daos/permanencedao.mdx";
   slug: "club/daos/permanencedao";
@@ -1145,6 +1145,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"dapps/bridges/index.mdx": {
+	id: "dapps/bridges/index.mdx";
+  slug: "dapps/bridges";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "dapps/bridges/snowbridge.mdx": {
 	id: "dapps/bridges/snowbridge.mdx";
   slug: "dapps/bridges/snowbridge";
@@ -1824,13 +1831,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"dapps/social/virto-network.md": {
-	id: "dapps/social/virto-network.md";
+"dapps/social/virto-network.mdx": {
+	id: "dapps/social/virto-network.mdx";
   slug: "dapps/social/virto-network";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/storage/avail-project.mdx": {
 	id: "dapps/storage/avail-project.mdx";
   slug: "dapps/storage/avail-project";
@@ -2083,6 +2090,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"tools/miscellaneous/index.mdx": {
+	id: "tools/miscellaneous/index.mdx";
+  slug: "tools/miscellaneous";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/miscellaneous/polkadot-staking-dashboard.md": {
 	id: "tools/miscellaneous/polkadot-staking-dashboard.md";
   slug: "tools/miscellaneous/polkadot-staking-dashboard";

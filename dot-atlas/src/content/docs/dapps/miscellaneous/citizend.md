@@ -30,7 +30,6 @@ Citizend is built on three foundational pillars: Openness, Community, and Transp
 
 ### Project Listings
 To list on Citizend, projects must undergo a rigorous process:
-
 - Submit an application with detailed fundraising goals, token economy details, and financial projections.
 - Provide a legal opinion or undergo legal due diligence to confirm the token’s legal status.
 - Engage with a Citizend representative to agree on terms and conditions.

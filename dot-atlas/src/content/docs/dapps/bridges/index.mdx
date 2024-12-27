@@ -1,0 +1,67 @@
+---
+title: Polkadot Bridge Dapps
+description: Explore all the Polkadot ecosystem Bridge Dapps.
+tableOfContents: false
+sidebar: 
+    label: Bridge Dapps
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+
+## Polkadot Bridge Dapps
+----------------
+<ShowcaseImage
+  entries={[
+    {
+      thumbnail: import('/src/assets/dapps/bridges/hyperbridge.png'),
+      href: '/dapps/bridges/hyperbridge/',
+      title: 'Hyperbridge',
+    },
+    {
+      thumbnail: import('/src/assets/dapps/bridges/snowbridge.png'),
+      href: '/dapps/bridges/snowbridge/',
+      title: 'Snowbridge',
+    },
+      {
+      thumbnail: import('/src/assets/dapps/bridges/chainflip.png'),
+      href: '/dapps/bridges/chainflip/',
+      title: 'Chainflip',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/ai/neuroweb.png'),
+      href: '/dapps/ai/neuroweb/',
+      title: 'Substrate Bridge',
+      },
+  ]}
+/>
+
+
+## Polkadot Bridge Dapps Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=lrcNyAb_rm8',
+      title: 'Seun Lanlege: Enter Hyperbridge - Secure Communication Cross-chain ',
+      description: 'Seun discusses transforming Polkadot into a coprocessor for secure, cross-chain interaction without compromise. He dives into the state of blockchain adoption, the technology of Polkadot & a vision for Web3.',
+
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=wuuHpjRqmQM',
+      title: 'Hyper-scaling Cross-chain Compute',
+      description: 'Disussion with the promises of Hyperbridge, the impending launch of Mainnet, the token bridge available on day one & extra usecases beyond bridging! We talk about the limits of verifiable proofs with some tech stacks, ISMP & the power of individual agents in decentralized networks.',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=jXv-PIx5Thg',
+      title: 'How To Bridge From Ethereum To Polkadot Through Snowbridge',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=wq8SAg2TjKY',
+      title: 'Snowbridge, an Ethereum bridge on BridgeHub',
+    },
+  ]} />
