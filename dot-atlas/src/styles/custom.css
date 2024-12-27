@@ -19,6 +19,8 @@
 	width: 100%;
 	height: 100%;
 	object-fit: contain !important;
+	padding: 10px 10px;
+
   }
   
   .starlight-showcases-media-infos {
@@ -878,6 +880,10 @@ header {
 	}
   }
   
+  .tagline{ 
+	font-style: italic !important;
+  }
+
   /* Light Theme */
   [data-theme='light'] .hero {
 	background: linear-gradient(135deg, #E4FF07, #07FFFF);
@@ -891,11 +897,14 @@ header {
   
   /* Dark Theme */
   [data-theme='dark'] .hero {
-	background: linear-gradient(135deg, #FF2670, #7916F3);
+	background: linear-gradient(135deg, #FF2670, #000000);
 	color: #FFFFFF;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   }
-  
+  [data-theme='dark'] .tagline{ 
+	color: #fff !important;
+  }
+
   [data-theme='dark'] .hero:hover {
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
   }
