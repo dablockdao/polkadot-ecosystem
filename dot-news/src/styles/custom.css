@@ -853,6 +853,7 @@ iframe:hover {
 
 /* */
 
+
 .container {
 	display: flex;
 	justify-content: space-between;
@@ -875,6 +876,21 @@ iframe:hover {
 	object-fit: cover;
   }
   
+
+    /* Breadcrumbs */
+	.c-breadcrumbs {
+		padding-bottom: 5px !important;
+		border-bottom: 1px solid #E4FF07;
+		margin-bottom: 10px !important;
+	}
+	
+	.c-breadcrumbs li {
+		padding-bottom: 10px !important;
+	}
+	
+	[data-theme='light'] .c-breadcrumbs {
+		border-bottom: 1px solid #FF2670;
+	}
 
 
 @media (max-width: 768px) {

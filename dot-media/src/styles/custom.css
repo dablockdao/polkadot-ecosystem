@@ -756,60 +756,6 @@ iframe:hover {
 }
 
 
-/*footer-cards*/
-.c-footer-cards {
-	width: 100%;
-}
-
-.c-footer-cards .card-list {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-	gap: 1.5rem;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-/* Light Mode (default) */
-.c-footer-cards .card {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 1.5rem;
-	border: 1px solid var(--sl-color-gray-3); /* Subtle border for light mode */
-	border-radius: 1rem;
-	background-color: transparent; /* Transparent background */
-	color: var(--sl-color-gray-4);
-	width: 100%;
-	transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.c-footer-cards .card:hover {
-	transform: scale(1.02); /* Slight scale-up effect */
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-	border-color: var(--sl-color-gray-5); /* Border becomes more prominent */
-}
-
-.c-footer-cards .card-title {
-	font-size: 1.75rem;
-	font-weight: 600;
-	color: var(--sl-color-gray-5);
-	margin-bottom: 1rem;
-	line-height: 1.3;
-}
-
-.c-footer-cards .card-description {
-	font-size: 1rem;
-	color: var(--sl-color-gray-4);
-	line-height: 1.6;
-}
-
-.c-footer-cards .card-cta a {
-	color: var(--sl-color-accent);
-	text-decoration: none;
-	font-weight: 600;
-}
-
 /* Dark Mode */
 :root[data-theme='dark'] .c-footer-cards .card {
 	border: 1px solid #444444; /* Subtle border for dark mode */
@@ -880,6 +826,21 @@ iframe:hover {
 	height: auto;
 	object-fit: cover;
   }
+
+    /* Breadcrumbs */
+	.c-breadcrumbs {
+		padding-bottom: 5px !important;
+		border-bottom: 1px solid #E4FF07;
+		margin-bottom: 10px !important;
+	}
+	
+	.c-breadcrumbs li {
+		padding-bottom: 10px !important;
+	}
+	
+	[data-theme='light'] .c-breadcrumbs {
+		border-bottom: 1px solid #FF2670;
+	}
   
 
 
@@ -946,14 +907,6 @@ h1 {
   }
 
 }
-
-.c-footer-cards .card {
-	border: solid 1px #e0e0e051;
-	}
-
-	.c-footer-cards .card h3 {
-		font-size: 19px !important;
-		}
 
 	  .sl-container.astro-7nkwcw3z {
 		padding: 0rem 0rem; 
