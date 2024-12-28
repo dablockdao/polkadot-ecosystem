@@ -19,29 +19,58 @@ import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/compone
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
-AVA Protocol, or On-chain Autonomous Kernel, is a decentralized and trustless architecture designed to execute automated actions on the blockchain based on specific triggers. These triggers can include time, price, on-chain events, and interactions with smart contracts. OAK Network aims to provide a reliable, flexible, and secure way to automate financial transactions, metaverse actions, and other on-chain interactions, especially within a multi-chain environment.
 
-## The Need for Ava Protocol
-Automation on the blockchain is currently limited by centralized or semi-centralized solutions that are not fully trustless. OAK Network addresses this by enabling decentralized automation that is fully under the control of its creator. This is particularly important in a multi-chain ecosystem, where different blockchains can offload expensive and complex automation computations to OAK Network. This approach ensures ownership, security, and flexibility for users and developers.
+Ava Protocol (formerly Oak Network) is an innovative blockchain solution designed to enable seamless cross-chain automation. Built as an event-driven EigenLayer Active Validator Set (AVS), it provides developers with tools to schedule and automate any blockchain transaction. With its focus on Ethereum and Polkadot ecosystems, Ava Protocol offers intelligent automation, enhanced privacy, effortless composability, and significant cost savings, positioning itself as a transformative infrastructure for the Web3 ecosystem.
 
-### Ava Protocol Key Components
-- **Substrate Framework:** Ava Protocol is built using the Substrate framework, which is also the foundation for Polkadot and its canary network Kusama. Substrate provides extensive out-of-the-box functionality, including peer-to-peer networking, consensus mechanisms, governance features, and an Ethereum Virtual Machine (EVM) implementation. This allows OAK Network to leverage these features without needing to build them from scratch, reducing development time and effort.
-- **Polkadot Parachains:** As a parachain on Polkadot, OAK Network can directly integrate with other parachains and parathreads, facilitating token transfers and ensuring security through the relay chain. This interoperability is crucial for OAK’s cross-chain automation goals, allowing seamless interactions between different blockchain networks.
+## Ava Protocol Key Features
+1. **Trustless Automation**: Ava Protocol facilitates decentralized, trustless automation, allowing users to define specific conditions (“if this”) and corresponding actions (“then that”) for executing transactions. This ensures reliability and precision in executing tasks without manual intervention.
+2. **Super-Transactions**: These are advanced automations that consolidate multiple smart contract interactions into a single autonomous transaction. Super-transactions simplify workflows, enabling developers to build efficient, automated processes triggered by predefined conditions such as time, price thresholds, or other on-chain events.
+3. **Enhanced Privacy and Security**: Leveraging advanced Maximal Extractable Value (MEV) protection mechanisms, Ava Protocol ensures that transactions are confidential and resistant to front-running or other malicious activities. This commitment to privacy is pivotal in safeguarding user assets and information.
+4. **Cost Efficiency**: Ava Protocol significantly reduces transaction costs through optimization techniques like off-chain computation. By streamlining processes, users can save up to 90% on gas fees, making blockchain interactions more accessible and affordable.
 
+### Ava Protocol Supported Blockchains**
+Ava Protocol is compatible with both Ethereum and Polkadot, two of the most prominent blockchain ecosystems. It supports:
 
-### The Ava Protocol Kernel
-The Ava Protocol Kernel is the core component of Ava Protocol, featuring a persistent event registry for managing automated tasks. It includes the following data structures:
-1. **Task Map**: Stores information about tasks, including their owners and actions to be performed.
-2. **Trigger Map**: Stores information about triggers, such as time intervals and associated tasks.
-3. **Task Queue**: Stores task IDs that are ready to be executed.
-4. **Missed Queue**: Stores task IDs and execution times for tasks that missed their scheduled slots.
+- **EVM-Compatible Chains**: Ensures seamless integration with Ethereum-based applications.
+- **Substrate-Based Chains**: Enables advanced functionalities for Polkadot projects, including compatibility with Kusama and Rococo testnets.
 
-## Ava Protocol Network Key Features
-- **Registration:** Users or remote calls can interact with OAK Network to set up recurring events. The system verifies the inputs, generates a unique task ID, and adds the task to the appropriate maps and queues.
-- **Cancellation:** Tasks can be canceled by authorized users or remote calls. The system verifies the cancellation request, deletes the task from the maps and queues, and ensures that all future occurrences of the task are also removed.
-- **Time-triggered Execution:** Ava Protocol executes tasks based on pre-defined time intervals. The system calculates the current time slot, identifies tasks to be executed, and processes them within the allocated block weight. Missed tasks are moved to the missed queue for later execution.
-- **Conclusion:** Ava Protocol is poised to revolutionize on-chain automation by providing a trustless, decentralized, and flexible platform for executing automated actions. Its integration with the Polkadot ecosystem and use of the Substrate framework ensures robust security, interoperability, and scalability. As OAK Network continues to evolve, it aims to support a wide range of automation use cases, driving innovation and efficiency in the blockchain space.
+This dual compatibility allows developers to leverage Ava Protocol’s capabilities across multiple blockchain environments, enhancing the interoperability and efficiency of their applications.
 
+## Ava Protocol Core Components
+1. **Triggers**: Triggers define the conditions under which tasks are executed. Supported triggers include:
+   - **Time-Based**: Actions scheduled to occur at specific times or intervals.
+   - **XCMP Events**: Activation based on cross-chain message passing events.
+   - **On-Chain Events**: Triggered by specific blockchain occurrences.
+   - **Token Price**: Execution when a token reaches a predefined price threshold (currently in beta).
+   - **Numerical Data**: Activation based on specified numerical conditions (currently in beta).
+2. **Actions**: Actions are the operations performed when a trigger condition is met. Supported actions include:
+   - **Native Events**: Custom events executed on-chain.
+   - **Token Transfers**: Transfers of native tokens, KSM/DOT, or parachain tokens.
+   - **Cross-Chain Extrinsics**: Execution of transactions across multiple blockchains.
+   - **Restaking Rewards**: Automation of staking reward reinvestments.
+
+## Ava Protocol Use Cases
+Ava Protocol’s versatile framework supports a wide range of use cases:
+
+- **DeFi Applications**: Automated stop-loss orders, stable-cost averaging, and recurring payments.
+- **Gaming and NFTs**: Simplified transactions for in-game assets and NFT minting.
+- **Staking Rewards**: Automatically compounding rewards for liquidity pools and money markets.
+- **Real-World Assets**: Streamlining tokenized asset management.
+
+## Ava Protocol Integration and Accessibility
+Designed for ease of use, Ava Protocol’s infrastructure supports seamless integration with existing blockchain ecosystems. Its compatibility with EVM-compatible and Substrate-based chains ensures minimal disruption to current systems, allowing developers to enhance functionalities effortlessly.
+
+### Ava Protocol Technical Insights
+The protocol relies on robust data structures and advanced automation pallets to manage tasks. Each task comprises:
+
+- **Account ID**: Identifies the user initiating the task.
+- **Trigger Data**: Specifies the conditions for execution.
+- **Action Data**: Defines the operation to perform upon trigger activation.
+
+Tasks are stored on-chain and monitored continuously until conditions are met, ensuring reliability and transparency.
+
+### Conclusion
+Ava Protocol represents a significant leap in blockchain automation, providing developers with the tools to build efficient, secure, and cost-effective solutions. Its emphasis on privacy, interoperability, and ease of integration makes it a valuable asset for the Web3 ecosystem. By addressing the challenges of manual processes and high costs, Ava Protocol unlocks new possibilities for decentralized applications across industries.
 
 ## Ava Protocol Community Videos
 ------------
