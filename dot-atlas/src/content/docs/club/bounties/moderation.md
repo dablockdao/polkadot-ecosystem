@@ -1,0 +1,32 @@
+---
+title: 'Moderation B.'
+description: 'Polkadot Moderation Team Bounty Enhancing Community Support and Safety'
+hero:
+  tagline:  Enhancing Community Support and Safety.
+  image: 
+    file: ../../../../assets/polkadot.webp
+  actions:
+    - text: Bounty
+      link: https://polkadot.subsquare.io/treasury/bounties/24
+      icon: external
+---
+
+The **Polkadot Moderation Team Bounty** is an initiative to reward moderators for their continuous work in maintaining a safe and supportive environment across Polkadot's official platforms. This bounty ensures that moderators are adequately compensated for their efforts in managing community discussions, guiding users, and preventing fraud.
+
+## Objective
+The bounty incentivizes moderators who contribute to the Polkadot and Kusama communities by monitoring official channels, resolving disputes, and ensuring the safety of the ecosystem. The goal is to maintain a 24/7 moderation presence across various platforms to uphold the integrity of the community.
+
+## Key Responsibilities
+Moderators are responsible for:
+- **Monitoring Channels**: Ensuring conversations align with community guidelines and managing inappropriate content.
+- **Dispute Resolution**: Mediating conflicts and maintaining a respectful atmosphere.
+- **Community Guidance**: Assisting users with questions and updates on the Polkadot ecosystem.
+- **Security Management**: Identifying and banning fraudulent actors.
+
+## Evaluation and Transparency
+Moderators are evaluated through a **peer review system**, with ratings determining their rewards. This system ensures accountability and transparency, with results documented in a central database.
+
+## Conclusion
+The **Polkadot Moderation Team Bounty** plays a crucial role in maintaining a secure and engaging community. By incentivizing moderators, the bounty helps ensure that Polkadot remains a safe, productive, and inclusive ecosystem for all participants.
+
+- [Bounty 24](https://polkadot.subsquare.io/treasury/bounties/24)

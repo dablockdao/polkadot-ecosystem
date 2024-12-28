@@ -24,7 +24,7 @@ This would be a collective vote from ChaosDAO. Respect the decision made from an
 
 The member isn’t needed to explain his reasoning for the vote but, on the contrary, develops a **culture of privacy** and personal discretion in a DAO. However, in most cases, **the internal chats encourage voluntary discussions and feedback**; hence, one may share his thoughts and rationale.
 
-These feedbacks are later summarized and anonymized by the ChaosDAO as follows: \[Anon: remove quote\], and they are shared over various platforms that include Twitter and a separate Telegram channel, maintaining transparency with the community and respect for privacy.
+These feedbacks are later summarized and anonymized by the ChaosDAO and shared over various platforms with focus on X/Twitter and a polkadot governance forums like Subsquare and Polkassembly, maintaining transparency with the community and respect for privacy.
 
 ## ChaosDAO membership
 In terms of membership, proposals that would see new members join the fold of ChaosDAO should also come from and through the members, thereby presenting an organization whose growth is determined by its members. The decision on new membership will be taken, therefore, via the same **democratic voting process** that other key decisions of the DAO go through. This ensures that every member is part of deciding what type of community the composition will be, hence allowing them to have a sense of belonging and sharing collective responsibility in the participation.

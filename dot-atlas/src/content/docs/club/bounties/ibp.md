@@ -1,0 +1,64 @@
+---
+title: 'IBP'
+description: 'The Infrastructure Builders Program (IBP) - Polkadot’s Decentralized Infrastructure Initiative'
+sidebar:
+    order: 4
+    label: ✪ IBP
+hero:
+  tagline: The Infrastructure Builders Program (IBP).
+  image: 
+    file: ../../../../assets/hub/bounties/ibp.png
+  actions:
+    - text: Site
+      link: https://ibp.network/
+      icon: external
+    - text: Wiki
+      link: https://wiki.ibp.network/docs/basics/introduction/
+      icon: external
+      variant: secondary
+---
+
+The **Infrastructure Builders Program** (IBP) is a pivotal initiative designed to support the growth and decentralization of the Polkadot ecosystem. As blockchain ecosystems continue to evolve and mature, the demand for robust, decentralized infrastructure services is rising. Polkadot, a multi-chain blockchain network, is no exception. With the increasing complexity and adoption of Polkadot and its parachains, infrastructure services need to scale to meet the demands of developers, validators, and parachain teams. The IBP was developed to answer this need by providing a resilient, decentralized infrastructure service that empowers developers to focus on building while ensuring the network remains scalable and sustainable.
+
+## Introduction to the IBP
+The **Infrastructure Builders Program (IBP)** was initially proposed as a bounty on the Kusama network in December 2022, with the goal of creating a decentralized infrastructure service to support the Polkadot and Kusama networks. The main objective of the IBP is to establish a globally distributed and resilient infrastructure ecosystem that operates independently of centralized tech giants like AWS, Google Cloud, and Hetzner. This initiative is critical to Polkadot’s vision of decentralization, as it reduces reliance on large cloud service providers and ensures the security, scalability, and independence of the ecosystem.
+
+## Why the IBP is Needed
+Polkadot’s design allows for multiple blockchains, known as **parachains**, to connect to a common relay chain, enabling interoperability and scalability. As the network expands, parachain developers require high-performance, reliable infrastructure to ensure their applications run smoothly across the network. However, many parachain teams, often focused on blockchain development, lack the necessary expertise in **DevOps** and infrastructure management.
+
+Traditionally, developers in blockchain ecosystems have relied on centralized providers like AWS and Google Cloud for infrastructure. While these services offer scalable and high-performance solutions, they come with significant downsides, such as **vendor lock-in**, **centralized control**, and **high costs**. These issues were highlighted in 2022 when **Hetzner**, a major hosting provider, abruptly kicked out all **Solana validators**, underscoring the risks of relying on centralized infrastructure providers.
+
+The IBP aims to mitigate these challenges by creating a decentralized infrastructure network. It removes the need for intermediary service providers and ensures that Polkadot’s infrastructure is owned and operated by **ecosystem members**. This gives Polkadot a more **resilient**, **secure**, and **scalable** infrastructure, better equipped to support the growing demand for blockchain services.
+
+## Key Features of the IBP
+1. **Decentralized Ownership and Operations:** One of the primary features of the IBP is its **decentralized** nature. Unlike centralized infrastructure models where a single provider controls the hardware and services, the IBP relies on **multiple independent members** that own and operate their infrastructure. This decentralized approach ensures greater **resilience** and reduces the risk of single points of failure. The IBP’s services are hosted across a global network of data centers, with each member managing their own hardware. This ensures that Polkadot's infrastructure is not at the mercy of external providers or regional regulatory changes. As a result, the network is more **robust** and **self-sustaining**.
+2. **Global Coverage:** For a blockchain network like Polkadot to operate effectively, especially with global users and developers, infrastructure must be globally distributed. The IBP addresses this by deploying nodes across multiple regions worldwide. These nodes are strategically located in various **data centers** across **North America**, **Europe**, **Asia**, **Africa**, and **South America**. This global footprint ensures that **RPC services** (Remote Procedure Call) are highly **available** and **responsive** no matter where users are located.
+With more locations, users can be routed to the nearest available node, minimizing **latency** and providing a better experience. For example, the IBP supports **geo-balancing**, which ensures that user traffic is directed to the most optimal node in terms of response time.
+3. **Performance and Scalability:** The IBP is designed to meet the growing needs of Polkadot's ecosystem, particularly in handling the high demand for **RPC services**. These services are crucial for enabling communication between parachains, relay chains, and other parts of the ecosystem.In December 2023, the IBP successfully handled over **1 billion requests** within 24 hours, highlighting its scalability. The network's ability to handle massive spikes in usage — such as during the **dot-ordinals** event — demonstrates its robustness and readiness to serve a large number of users and applications.
+4. **Resilience Against Failures:** Another critical aspect of the IBP is its **failover** and **redundancy** capabilities. If a node or data center experiences issues, the system automatically reroutes traffic to other available nodes, ensuring that there is no disruption in service. This feature makes the IBP network extremely **resilient** to failures, whether they are caused by hardware malfunctions or regional network issues.
+5. **No Rate Limiting:** A significant pain point for many blockchain projects is the **rate limiting** imposed by centralized infrastructure providers. These limits can severely hinder a project’s scalability and overall performance. The IBP eliminates this issue by ensuring there are **no rate limits** on the RPC services it provides. This enables parachain teams and dApp developers to scale their projects without worrying about service limitations or sudden price increases from external providers.
+
+## The Benefits of IBP to the Polkadot Ecosystem
+The IBP offers several key advantages to the **Polkadot ecosystem**, including:
+1. **Cost-Effective Infrastructure:** The cost of using centralized infrastructure services can quickly become prohibitive, especially as usage scales. By utilizing the IBP’s decentralized infrastructure, Polkadot parachains can reduce costs and avoid the heavy premiums charged by centralized providers. Additionally, the IBP’s services are designed to scale based on **usage**, ensuring that parachains only pay for what they use.
+2. **Empowering Parachains to Focus on Development:** With the IBP handling the underlying infrastructure, parachain teams can focus on what they do best: **building**. Many parachain teams lack expertise in DevOps and infrastructure management. The IBP takes care of these tasks, allowing teams to focus on their core mission of **building innovative blockchain applications**.
+3. **Increased Security:** The decentralization of the IBP also increases the **security** of the network. With nodes spread across various geographies, the IBP is less vulnerable to **regional attacks** or **single points of failure**. Furthermore, all infrastructure is owned by IBP members, ensuring that Polkadot’s ecosystem remains in the hands of those who are deeply invested in its success.
+4. **Support for Ecosystem Projects:** Beyond basic RPC services, the IBP aims to support additional services that could benefit the broader **Polkadot ecosystem**. These services might include **telemetry**, **indexers**, **explorers**, and other tools that facilitate the development and operation of parachains and dApps. These services will be evaluated and provided based on community demand and project needs.
+
+## The IBP’s Achievements and Milestones
+Since its launch, the IBP has made significant progress in expanding its infrastructure and services. Two major milestones have been achieved:
+1. **Proof of Concept (PoC):** The IBP’s initial PoC tested the feasibility of its decentralized infrastructure model. The results were promising, and the success of this stage laid the foundation for the program’s continued growth and development.
+2. **Milestone 2 Build-Out:** The second milestone, the **build-out** of the IBP, exceeded expectations by adding **12 global locations** instead of the initially planned 10. This expansion was accomplished under budget, showcasing the IBP’s efficiency and ability to scale.
+3. **Increasing Usage and Demand:** The usage of IBP services has grown significantly since the program’s inception. The recent **demand spike** in December 2023, where the IBP served over 1 billion requests in 24 hours, highlighted the growing need for decentralized infrastructure in the Polkadot ecosystem. 
+
+## Future Plans for the IBP
+Looking ahead, the IBP plans to continue expanding its infrastructure and services. Specifically, there are plans to add new nodes in **South America**, **Asia**, and **South Africa** to further improve global coverage and redundancy. This will allow the IBP to provide even better performance and reliability for Polkadot’s parachains and ecosystem participants.
+
+Additionally, the IBP will continue to explore the provision of new **base services** that could help parachain developers and ecosystem projects. These services will be determined based on feedback from the community and ecosystem needs.
+
+## Conclusion
+The **Infrastructure Builders Program** (IBP) is a critical initiative that strengthens the decentralized infrastructure of the **Polkadot ecosystem**. By providing global, redundant, and scalable infrastructure services, the IBP enables parachains and dApp developers to focus on building innovative solutions without worrying about the underlying infrastructure. As the program continues to expand and evolve, it will play a vital role in the continued success and decentralization of the Polkadot network.
+
+With its commitment to decentralization, resilience, and scalability, the IBP is setting the standard for infrastructure services in the blockchain space.
+
+- [Bounty 50](https://polkadot.subsquare.io/treasury/bounties/50)
