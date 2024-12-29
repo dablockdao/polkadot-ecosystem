@@ -157,7 +157,7 @@ export default defineConfig({
 				TableOfContents: './src/components/TableOfContents.astro',
 			},
 			social: {
-				github: 'https://github.com/dablockdao/',
+				github: 'https://github.com/dablockdao/polkadot-ecosystem/',
 				"x.com": 'https://x.com/polkadot',
 				reddit: 'https://www.reddit.com/r/Polkadot/',
 			},
