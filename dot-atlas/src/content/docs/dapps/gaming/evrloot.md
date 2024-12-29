@@ -2,6 +2,7 @@
 title: Evrloot
 description: Evrloot is an on-chain, role-playing game (RPG) designed to provide an immersive and rewarding experience for players. Built on the Moonbeam Network.
 sidebar:
+    label: ✪ Evrloot
     order: 2
 hero:
   tagline: An on-chain, role-playing game (RPG)

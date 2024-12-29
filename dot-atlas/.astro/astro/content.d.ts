@@ -599,13 +599,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
-"club/media/polkadot-insider.md": {
-	id: "club/media/polkadot-insider.md";
+"club/media/polkadot-insider.mdx": {
+	id: "club/media/polkadot-insider.mdx";
   slug: "club/media/polkadot-insider";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/media/polkadot-promoteam-dao.md": {
 	id: "club/media/polkadot-promoteam-dao.md";
   slug: "club/media/polkadot-promoteam-dao";
@@ -613,20 +613,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
-"club/media/polkadotters.md": {
-	id: "club/media/polkadotters.md";
+"club/media/polkadotters.mdx": {
+	id: "club/media/polkadotters.mdx";
   slug: "club/media/polkadotters";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
-"club/media/polkaworld.md": {
-	id: "club/media/polkaworld.md";
+} & { render(): Render[".mdx"] };
+"club/media/polkaworld.mdx": {
+	id: "club/media/polkaworld.mdx";
   slug: "club/media/polkaworld";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/media/the-astar-bulletin-tab.md": {
 	id: "club/media/the-astar-bulletin-tab.md";
   slug: "club/media/the-astar-bulletin-tab";
@@ -641,13 +641,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
-"club/media/vds-academy.md": {
-	id: "club/media/vds-academy.md";
+"club/media/vds-academy.mdx": {
+	id: "club/media/vds-academy.mdx";
   slug: "club/media/vds-academy";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/orgs/4ire-labs.md": {
 	id: "club/orgs/4ire-labs.md";
   slug: "club/orgs/4ire-labs";
@@ -1481,13 +1481,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".mdx"] };
-"dapps/gaming/ajuna-network.md": {
-	id: "dapps/gaming/ajuna-network.md";
+"dapps/gaming/ajuna-network.mdx": {
+	id: "dapps/gaming/ajuna-network.mdx";
   slug: "dapps/gaming/ajuna-network";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/gaming/bitcountry.md": {
 	id: "dapps/gaming/bitcountry.md";
   slug: "dapps/gaming/bitcountry";

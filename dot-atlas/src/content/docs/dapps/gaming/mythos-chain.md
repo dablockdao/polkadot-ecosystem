@@ -24,7 +24,6 @@ The Mythos Chain is making significant strides in the Web3 and blockchain techno
 
 ### Key Objectives
 The primary objectives of the Mythos Ecosystem include:
-
 1. Supporting multi-chain ecosystems.
 2. Promoting unified marketplaces.
 3. Establishing decentralized financial systems.
