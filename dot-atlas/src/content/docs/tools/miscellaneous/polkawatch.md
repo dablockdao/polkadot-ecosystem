@@ -1,6 +1,18 @@
 ---
 title: Polkawatch
 description: Learn about Polkadot public validation network with Polkawatch, Polkadot decentralization analytics and monitoring tool.
+hero:
+  tagline: A Polkadot decentralization analytics platform.
+  image: 
+    file: ../../../../assets/tools/miscellaneous/polkawatch.png
+  actions:
+    - text: Site
+      link: https://polkawatch.app/
+      icon: external
+    - text: X
+      link: https://x.com/polkawatch
+      icon: external
+      variant: secondary
 ---  
 
 The Polkadot project promises a decentralized future, but true decentralization requires constant monitoring and evaluation. This is where Polkawatch comes in – an innovative analytics platform designed to assess the effectiveness of decentralization within Polkadot’s validation process.

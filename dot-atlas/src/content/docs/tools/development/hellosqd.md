@@ -1,9 +1,21 @@
 ---
 title: HelloSQD
 description: SQD Network is a decentralized query engine optimized for the batch extraction of large volumes of data.
+hero:
+  tagline: A decentralized query engine.
+  image: 
+    file: ../../../../assets/tools/dev/hellosqd.png
+  actions:
+    - text: Site
+      link: https://www.sqd.dev/
+      icon: external
+    - text: Docs
+      link: https://docs.sqd.dev/?ph_cross_site=0194129b-7f91-7238-a93c-6c6bb0d710ae
+      icon: external
+      variant: secondary
 ---
 
-The Polkadot ecosystem continues to grow, with numerous projects and innovations enhancing its versatility and robustness. One such significant addition is the Subsquid Network, a decentralized query engine designed for efficient, large-scale data extraction. This article delves into the details of the **Subsquid Network**, its components, and its role within the broader Polkadot ecosystem.
+The Subsquid Network, a decentralized query engine designed for efficient, large-scale data extraction. This article delves into the details of the **Subsquid Network**, its components, and its role within the broader Polkadot ecosystem.
 
 ## What is Subsquid Network?
 Subsquid Network is a **decentralized query engine optimized for the batch extraction of large volumes of data**. It currently serves historical on-chain data from **over 100 EVM and Substrate networks**, as well as beta support for Solana and Starknet. The data includes comprehensive elements such as event logs, transaction receipts, execution traces, and per-transaction state diffs on EVM.

@@ -1,9 +1,20 @@
 ---
 title: 'POP CLI'
 description: Streamline Polkadot development with POP CLI. Effortless project setup, dynamic pallet integration, and comprehensive documentation.
+hero:
+  tagline: Simplifying Polkadot Development
+  image: 
+    file: ../../../../assets/tools/dev/popcli.png
+  actions:
+    - text: Site
+      link: https://onpop.io/
+      icon: external
+    - text: Docs
+      link: https://learn.onpop.io/
+      icon: external
+      variant: secondary
 ---
 
-*Simplifying Polkadot Development*
 
 The **Polkadot POP CLI** is an innovative tool developed by the R0GUE team to streamline the Polkadot development process. Designed to be a comprehensive solution for developers, POP CLI offers a range of features aimed at simplifying project setup, integrating dynamic use cases, and fostering collaboration within the Polkadot ecosystem. This tool marks a significant step forward in making Polkadot development more accessible and efficient for both newcomers and experienced developers.
 
@@ -25,3 +36,4 @@ The R0GUE team is embarking on a mission to **reimagine the developer experience
 The team is seeking support from the Web3 Foundation’s Decentralization Futures program, believing that POP CLI will serve as the definitive starting point for developers entering the Polkadot ecosystem. This initiative represents the beginning of their ongoing commitment to enhance the developer experience across all avenues of Polkadot.
 
 Join the R0GUE team on this transformative journey, as they continue to innovate and simplify blockchain development within the Polkadot ecosystem.
+

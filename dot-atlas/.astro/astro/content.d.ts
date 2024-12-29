@@ -2097,13 +2097,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".mdx"] };
-"tools/dao-tools/townhall.md": {
-	id: "tools/dao-tools/townhall.md";
+"tools/dao-tools/townhall.mdx": {
+	id: "tools/dao-tools/townhall.mdx";
   slug: "tools/dao-tools/townhall";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "tools/development/apillon.mdx": {
 	id: "tools/development/apillon.mdx";
   slug: "tools/development/apillon";
@@ -2181,13 +2181,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
-"tools/development/vara-network.md": {
-	id: "tools/development/vara-network.md";
+"tools/development/vara-network.mdx": {
+	id: "tools/development/vara-network.mdx";
   slug: "tools/development/vara-network";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "tools/index.mdx": {
 	id: "tools/index.mdx";
   slug: "tools";
