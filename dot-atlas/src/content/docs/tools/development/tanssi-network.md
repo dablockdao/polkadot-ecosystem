@@ -1,6 +1,18 @@
 ---
 title: 'Tanssi Network'
 description: Tanssi is an appchain infrastructure protocol designed to streamline the development and deployment of custom blockchains for various applications
+hero:
+  tagline: An appchain infrastructure protocol.
+  image: 
+    file: ../../../../assets/tools/dev/tanssi.png
+  actions:
+    - text: Site
+      link: https://www.tanssi.network/
+      icon: external
+    - text: Docs
+      link: https://docs.tanssi.network/
+      icon: external
+      variant: secondary
 ---
 
 Tanssi is an appchain infrastructure protocol designed to streamline the development and deployment of custom blockchains for various applications. It empowers developers by addressing the complexities often associated with traditional appchain implementations.

@@ -1,6 +1,18 @@
 ---
 title: Polkadot.js
 description: Suite of tools designed for developers and power users within the Polkadot ecosystem
+hero:
+  tagline: A suite of powerful tools designed for Polkadot devs.
+  image: 
+    file: ../../../../assets/tools/dev/polkadotjs.png
+  actions:
+    - text: Site
+      link: https://polkadot.js.org/
+      icon: external
+    - text: Docs
+      link: https://polkadot.js.org/docs/
+      icon: external
+      variant: secondary
 ---
 
 **Polkadot-J**S is a suite of powerful tools designed for developers and power users to interact with the Polkadot blockchain at a granular level. This article provides an in-depth look at the various components of Polkadot-JS, explaining their functionalities, use cases, and how they contribute to the broader Polkadot ecosystem.
