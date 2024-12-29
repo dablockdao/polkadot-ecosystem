@@ -1,9 +1,15 @@
 ---
 title: 'Kappa Sigma Mu'
 description: Join Kappa Sigma Mu, a DAO blending blockchain and human commitment with unique Proof-of-Ink membership on the Kusama network.
+hero:
+  tagline: A Unique DAO in the Polkadot Ecosystem.
+  image: 
+    file: ../../../../assets/polkadot.webp
+  actions:
+    - text: Site
+      link: https://ksmsociety.io/
+      icon: external
 ---
-
-*Kappa Sigma Mu: A Unique DAO in the Polkadot Ecosystem*
 
 **Kappa Sigma Mu** is a decentralized autonomous organization (DAO) within the Polkadot ecosystem that combines elements of economic gaming with a unique social experiment. Using Substrate, **Kappa Sigma Mu incentivizes users to participate and maintain membership through rewards paid by the collective treasury**. However, the society’s purpose goes beyond mere economic incentives, aiming to bridge the gap between the onchain and offchain worlds, making blockchain technology accessible to non-technical users, and fostering new forms of organization.
 

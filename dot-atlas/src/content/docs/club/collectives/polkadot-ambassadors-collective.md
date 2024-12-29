@@ -4,9 +4,11 @@ description: Join the Polkadot Ambassador Program to grow the ecosystem promotin
 sidebar:
     label: ✧ Ambassadors Collective
     order: 2
+hero:
+  tagline: A Path to Decentralized Community Growth.
+  image: 
+    file: ../../../../assets/polkadot.webp
 ---
-
-*A Path to Decentralized Community Growth*
 
 The **Polkadot Ambassador Program** is evolving into **an on-chain, rank-based system collective** following the approval of the [**Polkadot OpenGov referendum 487**](https://polkadot.polkassembly.io/referenda/487). This initiative is designed for individuals passionate about Polkadot and Web3, offering opportunities to help grow the community, receive funding for events, and gain access to exclusive communication channels and Polkadot events.
 
