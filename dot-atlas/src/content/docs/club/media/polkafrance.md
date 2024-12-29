@@ -1,6 +1,6 @@
 ---
-title: 'Polkadot France'
-description: PolkaFrance is a premier source for Polkadot and Kusama news, updates, projects tailored for French speakers.
+title: 'Polka France'
+description: Polka France is a premier source for Polkadot and Kusama news, updates, projects tailored for French speakers.
 ---
 
 *French Community in Polkadot and Kusama*
@@ -8,11 +8,9 @@ description: PolkaFrance is a premier source for Polkadot and Kusama news, updat
 PolkaFrance serves as a comprehensive resource for everything related to the Polkadot and Kusama ecosystems for the french speakers. The platform is dedicated to providing the latest news, updates, and insights on these revolutionary blockchain networks, specifically tailored for the French-speaking community.
 
 ### What PolkaFrance Offers
-
 PolkaFrance keeps users informed with the latest developments, announcements, and trends in the Polkadot and Kusama ecosystems. From major upgrades to minor tweaks, the platform covers all aspects to ensure users stay updated.
 
 ### PolkaFrance Platforms
-
 - **Website:** Visit [polkafrance.fr](http://polkafrance.fr) for in-depth articles, project reviews, and detailed guides.
 - **Twitter:** Follow [@PolkaFrance](https://twitter.com/PolkaFrance) on Twitter for real-time updates, quick news bites, and engaging discussions.
 - **YouTube:** Subscribe to the PolkaFrance YouTube channel for video content including tutorials, interviews with industry leaders, and more.

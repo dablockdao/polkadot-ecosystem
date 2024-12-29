@@ -17,6 +17,7 @@ hero:
       icon: external
       variant: secondary
 ---
+
 **Subscan is a Substrate-based blockchain explorer and analytics platform** for such blockchains. It provides the searching and analysis of blockchain data by equipping users with a range of tools and data. Here’s what users can expect from Subscan:
 
 1. **Block Explorer**: A block explorer that allows users to view details of the blocks, including transactions, extrinsics, and events carried out in this blockchain. These include the height, hash, timestamp of the block, events which have been triggered, and the extrinsics within it, up to a maximum limit of 1,000 records.
