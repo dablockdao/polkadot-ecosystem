@@ -1516,20 +1516,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
-"dapps/gaming/evrloot.md": {
-	id: "dapps/gaming/evrloot.md";
+"dapps/gaming/evrloot.mdx": {
+	id: "dapps/gaming/evrloot.mdx";
   slug: "dapps/gaming/evrloot";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
-"dapps/gaming/exiled-racers.md": {
-	id: "dapps/gaming/exiled-racers.md";
+} & { render(): Render[".mdx"] };
+"dapps/gaming/exiled-racers.mdx": {
+	id: "dapps/gaming/exiled-racers.mdx";
   slug: "dapps/gaming/exiled-racers";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/gaming/gamedao.md": {
 	id: "dapps/gaming/gamedao.md";
   slug: "dapps/gaming/gamedao";
@@ -2146,6 +2146,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
+"tools/development/papi.mdx": {
+	id: "tools/development/papi.mdx";
+  slug: "tools/development/papi";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
 "tools/development/polkadotjs.md": {
 	id: "tools/development/polkadotjs.md";
   slug: "tools/development/polkadotjs";
