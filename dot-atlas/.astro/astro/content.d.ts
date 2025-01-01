@@ -2118,6 +2118,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"tools/development/dedot.mdx": {
+	id: "tools/development/dedot.mdx";
+  slug: "tools/development/dedot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/development/gear-protocol.md": {
 	id: "tools/development/gear-protocol.md";
   slug: "tools/development/gear-protocol";
@@ -2174,6 +2181,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"tools/development/reactivedot.mdx": {
+	id: "tools/development/reactivedot.mdx";
+  slug: "tools/development/reactivedot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/development/subquery.md": {
 	id: "tools/development/subquery.md";
   slug: "tools/development/subquery";
