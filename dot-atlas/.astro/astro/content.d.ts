@@ -1089,6 +1089,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
+"dapps/archive/datdot.md": {
+	id: "dapps/archive/datdot.md";
+  slug: "dapps/archive/datdot";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
 "dapps/archive/dotins.md": {
 	id: "dapps/archive/dotins.md";
   slug: "dapps/archive/dotins";
@@ -1530,13 +1537,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".mdx"] };
-"dapps/gaming/gamedao.md": {
-	id: "dapps/gaming/gamedao.md";
+"dapps/gaming/gamedao.mdx": {
+	id: "dapps/gaming/gamedao.mdx";
   slug: "dapps/gaming/gamedao";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/gaming/glmr-apes-the-great-escape.mdx": {
 	id: "dapps/gaming/glmr-apes-the-great-escape.mdx";
   slug: "dapps/gaming/glmr-apes-the-great-escape";
@@ -1544,13 +1551,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".mdx"] };
-"dapps/gaming/heal3.md": {
-	id: "dapps/gaming/heal3.md";
+"dapps/gaming/heal3.mdx": {
+	id: "dapps/gaming/heal3.mdx";
   slug: "dapps/gaming/heal3";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/gaming/index.mdx": {
 	id: "dapps/gaming/index.mdx";
   slug: "dapps/gaming";
@@ -1565,13 +1572,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
-"dapps/gaming/mythos-chain.md": {
-	id: "dapps/gaming/mythos-chain.md";
+"dapps/gaming/mythos-chain.mdx": {
+	id: "dapps/gaming/mythos-chain.mdx";
   slug: "dapps/gaming/mythos-chain";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "dapps/gaming/odyssey.md": {
 	id: "dapps/gaming/odyssey.md";
   slug: "dapps/gaming/odyssey";
@@ -1964,13 +1971,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".mdx"] };
-"dapps/storage/datdot.md": {
-	id: "dapps/storage/datdot.md";
-  slug: "dapps/storage/datdot";
-  body: string;
-  collection: "docs";
-  data: any
-} & { render(): Render[".md"] };
 "dapps/storage/index.mdx": {
 	id: "dapps/storage/index.mdx";
   slug: "dapps/storage";
