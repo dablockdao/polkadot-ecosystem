@@ -1,6 +1,18 @@
 ---
 title: 'Gear Protocol'
 description: The Gear Protocol is a versatile platform designed to streamline the development of dApps.
+hero:
+  tagline: Streamline the development of Dapps with Substrate.
+  image: 
+    file: ../../../../assets/tools/dev/gear.png
+  actions:
+    - text: Site
+      link: https://gear-tech.io/
+      icon: external
+    - text: X
+      link: https://x.com/gear_techs
+      icon: external
+      variant: secondary
 ---
 
 Welcome to the Polkadot ecosystem projects directory. In this article, we delve into the Gear Protocol, a cutting-edge Substrate-based programming platform that simplifies the development and execution of decentralized applications (dApps) and smart contracts. Gear Protocol’s unique features make it an essential tool for developers aiming to harness the power of Web3 technologies efficiently.
