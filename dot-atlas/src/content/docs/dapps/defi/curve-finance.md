@@ -15,7 +15,6 @@ hero:
       variant: secondary
 ---
 
-
 ## What is Curve Finance?
 **Curve Finance** is a decentralized exchange (DEX) specifically designed for stablecoin trading and low-slippage swaps between assets of similar value. Founded by **Michael Egorov** in early 2020, Curve Finance aims to provide efficient and low-cost trading solutions in the DeFi space. Unlike traditional exchanges, Curve Finance leverages **automated market maker (AMM)** algorithms to facilitate trades without relying on order books. This approach not only ensures liquidity but also minimizes the price slippage that typically occurs in volatile markets.
 
@@ -28,7 +27,6 @@ Curve Finance stands out in the DeFi ecosystem due to its unique features and fu
 4. Governance: Curve Finance operates under a decentralized governance model. CRV token holders can propose and vote on changes to the protocol, ensuring that the community has a say in its development and direction.
 
 ## Curve Finance Use Cases and Applications
-
 Curve Finance has a wide range of use cases and applications within the DeFi ecosystem:
 1. Stablecoin Trading: Traders looking to swap stablecoins with minimal price impact can use Curve Finance for efficient and **low-cost transactions**.
 2. Liquidity Provision: Users can earn passive income by providing liquidity to **Curve’s pools**. The fees collected from trades are distributed among liquidity providers, offering a lucrative opportunity for yield generation.
