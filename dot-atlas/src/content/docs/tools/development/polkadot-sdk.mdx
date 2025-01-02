@@ -1,0 +1,186 @@
+---
+title: Polkadot SDK
+description: Polkadot SDK is a robust toolkit for building scalable, interoperable blockchain solutions on the Polkadot network.
+hero:
+  tagline: The Parity Polkadot Blockchain SDK.
+  image: 
+    file: ../../../../assets/polkadot.webp
+  actions:
+    - text: Github
+      link: https://github.com/paritytech/polkadot-sdk?tab=readme-ov-file
+      icon: external
+    - text: Docs
+      link: https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/index.html
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+The Polkadot SDK represents a cornerstone for developers looking to build on the Polkadot network, a revolutionary multi-chain blockchain platform that enables interoperability, scalability, and security across diverse blockchain ecosystems. By offering a robust set of tools, frameworks, and libraries, the Polkadot SDK streamlines the process of creating blockchain applications, parachains, and runtimes that integrate seamlessly within the Polkadot ecosystem.
+
+This guide delves deep into the Polkadot SDK’s components, functionalities, and best practices, providing developers with a clear roadmap to harness its full potential.
+
+## What is the Polkadot SDK?
+The Polkadot SDK is a comprehensive toolkit designed for blockchain developers. It encompasses tools, frameworks, and libraries essential for:
+
+- Building sovereign blockchains with Substrate.
+- Creating application-specific runtimes using FRAME.
+- Transforming Substrate-based chains into Polkadot-compatible parachains using Cumulus.
+- Facilitating secure and efficient communication between parachains via XCM (Cross-Consensus Messaging).
+
+The SDK empowers developers to build scalable, interoperable blockchains while reducing the complexity of integrating with the Polkadot network.
+
+### Key Features
+1. **Interoperability:** Enables secure communication and data sharing across heterogeneous blockchains.
+2. **Scalability:** Supports a multi-chain architecture, allowing parallel transaction processing.
+3. **Customizability:** Provides modular tools for creating tailor-made blockchains and runtimes.
+4. **Ease of Use:** Offers templates, guides, and a well-documented library for rapid development.
+5. **Security:** Incorporates advanced cryptographic protocols and a robust security policy.
+
+## Components of the Polkadot SDK
+### 1. Substrate
+Substrate is the foundational framework of the Polkadot SDK. It simplifies blockchain development by providing pre-built modules and templates.
+
+#### Features of Substrate:
+- **Modularity:** Build blockchains with customizable components.
+- **WASM Support:** Run application logic in a WebAssembly (WASM) runtime for cross-platform compatibility.
+- **Advanced Networking:** Integrates peer-to-peer networking capabilities.
+- **Developer-Friendly Tools:** Includes templates and CLI tools for streamlined blockchain creation.
+
+### 2. FRAME
+FRAME (Framework for Runtime Aggregation of Modularized Entities) is the core framework used to develop application-specific blockchain runtimes on Substrate.
+
+#### Key Aspects:
+- **Runtime Logic:** Allows developers to define custom blockchain logic.
+- **Pallets:** Modular, reusable components for adding functionalities like governance, staking, or token management.
+- **Customizability:** Enables developers to create unique application-specific chains (App Chains).
+
+### 3. Cumulus
+Cumulus bridges Substrate-based chains to the Polkadot network, converting them into fully functional parachains.
+
+#### Highlights:
+- **Parachain Compatibility:** Transforms existing Substrate chains into Polkadot-compatible parachains.
+- **Node Adaptation:** Converts Substrate-based nodes into parachain nodes.
+- **Seamless Integration:** Simplifies the onboarding process for developers entering the Polkadot ecosystem.
+
+### 4. XCM
+XCM (Cross-Consensus Messaging) is Polkadot’s protocol for enabling communication between parachains and other consensus systems.
+
+#### Benefits:
+- **Interoperability:** Facilitates secure message passing between heterogeneous chains.
+- **Extensibility:** Designed to support future use cases beyond parachains.
+- **Efficiency:** Minimizes overhead for cross-chain interactions.
+
+## Getting Started with Polkadot SDK
+Developers can quickly set up a Polkadot node using the provided tools and documentation, ensuring an efficient start to the development journey.
+
+### Development Workflow
+1. **Install Dependencies:** Ensure that Rust and other prerequisites are installed.
+2. **Clone the Repository:** Retrieve the latest Polkadot SDK from GitHub.
+3. **Use Templates:** Leverage pre-built templates to jumpstart development.
+4. **Customize Components:** Modify runtimes and pallets to suit specific application needs.
+5. **Deploy and Test:** Use the Polkadot SDK’s testing tools to validate the implementation.
+
+### Documentation and Resources
+- **Official Documentation:** Comprehensive guides and API references.
+- **Rust Docs:** Detailed documentation for Rust-based components.
+- **Community Support:** Access forums, StackExchange, and GitHub issues for assistance.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Polkadot SDK Docs',
+      picture: 'https://avatars.githubusercontent.com/u/14176906?s=48&v=4',
+      href: 'https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/index.html',
+      description:
+        "The Polkadot SDK Developer Documentation. A minimal, but always-accurate source of information for those wishing to build on the Polkadot SDK.",
+    },
+  ]}
+/>
+
+## Tooling and Utilities
+
+### Polkadot SDK Version Manager (PSVM)
+A utility to manage and update dependencies in Cargo.toml files, ensuring compatibility with the latest stable SDK versions.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'PSVM',
+      picture: 'https://avatars.githubusercontent.com/u/14176906?s=48&v=4',
+      href: 'https://github.com/paritytech/psvm',
+      description:
+        "Polkadot SDK Version Manager.",
+    },
+  ]}
+/>
+### Polkadot SDK Key Tools
+1. **Subkey:** A key management utility for generating and managing cryptographic keys.
+2. **Benchmarking Tools:** FRAME-omni-bencher for performance optimization.
+3. **Chain Spec Builder:** Simplifies the creation of chain specifications.
+
+## Release Cycle and Support
+- **Stable Releases:** Polkadot SDK follows a quarterly release cycle, with each version supported for one year. Developers can access upcoming versions in the Release Registry and update dependencies using PSVM.
+- **Security Policies:** The Polkadot SDK adheres to a strict security policy, outlined in the `SECURITY.md` file. Developers are encouraged to report vulnerabilities to maintain the platform’s integrity.
+
+## Contributing to the Polkadot SDK
+The Polkadot SDK thrives on community involvement. Developers can:
+- **Address Open Issues:** Start with beginner-friendly issues labeled as "mentor."
+- **Follow Contribution Guidelines:** Adhere to coding standards and the Contributor Covenant Code of Conduct.
+- **Earn On-Chain Rewards:** Outstanding contributions may be rewarded with on-chain tips.
+
+### Polkadot Fellowship
+The SDK’s development aligns closely with the Polkadot Fellowship organization, which governs runtime and parachain advancements. This collaboration ensures the continuous evolution of the SDK.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Polkadot Fellowship',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/hub/daos/fellowship.png',
+      href: '/club/collectives/polkadot-fellowship',
+      description:
+        "Polkadot Ecosystem Developers Governance Body.",
+    },
+  ]}
+/>
+
+### Notable Projects Using Polkadot SDK
+1. **Avail:** A modular blockchain for data availability.
+2. **Cardano Partner Chains:** Leveraging Polkadot’s interoperability features.
+3. **StarkNet’s Madara Sequencer:** Enhancing scalability in the StarkNet ecosystem.
+4. **Polymesh:** A blockchain for regulated securities.
+
+#### Conclusion
+The Polkadot SDK is a powerful enabler for developers aiming to build innovative, interoperable, and scalable blockchain solutions. By leveraging its robust components—Substrate, FRAME, Cumulus, and XCM—developers can create next-generation blockchain applications that seamlessly integrate with the Polkadot ecosystem. Whether you're a beginner or an experienced blockchain developer, the Polkadot SDK offers the tools and resources to turn your vision into reality.
+
+## Polkadot SDK Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=G5c6yIzwxlA',
+      title: 'Polkadot & Getting Started With Polkadot SDK',
+    },
+         {
+      href: 'https://www.youtube.com/watch?v=zjnAM3kdK88',
+      title: 'The Complete Guide Building Blockchains With the Polkadot SDK | Bader Youssef ',
+         },
+         {
+      href: 'https://www.youtube.com/watch?v=n-9t48kxeRk',
+      title: 'The Complete Guide to Becoming A Substrate Developer | Sub0 2023',
+         },
+         {
+      href: 'https://www.youtube.com/watch?v=kp0m_NQyVPU',
+      title: 'Polkadot SDK, Substrate, Frame, Pallets and their structure - for beginners',
+         },
+                  {
+      href: 'https://www.youtube.com/watch?v=yw2q9L0tRFI',
+      title: 'Workshop: Utilize Polkadot SDK for Unity',
+         },
+                  {
+      href: 'https://www.youtube.com/watch?v=UJnDP7mQUug',
+      title: 'Polkadot Hackathon 2024 Workshop #4',
+         },
+  ]} />
+

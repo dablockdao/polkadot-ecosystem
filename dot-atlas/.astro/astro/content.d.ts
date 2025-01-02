@@ -319,13 +319,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/collectives/polkadot-ambassadors-collective.md": {
-	id: "club/collectives/polkadot-ambassadors-collective.md";
+"club/collectives/polkadot-ambassadors-collective.mdx": {
+	id: "club/collectives/polkadot-ambassadors-collective.mdx";
   slug: "club/collectives/polkadot-ambassadors-collective";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/collectives/polkadot-fellowship.mdx": {
 	id: "club/collectives/polkadot-fellowship.mdx";
   slug: "club/collectives/polkadot-fellowship";
@@ -2167,6 +2167,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"tools/development/polkadot-sdk.mdx": {
+	id: "tools/development/polkadot-sdk.mdx";
+  slug: "tools/development/polkadot-sdk";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/development/polkadotjs.md": {
 	id: "tools/development/polkadotjs.md";
   slug: "tools/development/polkadotjs";
@@ -2212,6 +2219,13 @@ declare module 'astro:content' {
 "tools/development/vara-network.mdx": {
 	id: "tools/development/vara-network.mdx";
   slug: "tools/development/vara-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"tools/development/zombienet.mdx": {
+	id: "tools/development/zombienet.mdx";
+  slug: "tools/development/zombienet";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
