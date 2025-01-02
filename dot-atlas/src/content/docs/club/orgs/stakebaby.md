@@ -1,11 +1,19 @@
 ---
 title: StakeBaby
 description: StakeBaby offers high-yield staking rewards, 100% uptime, and community-driven validators across seven major blockchain networks.
+hero:
+  tagline: Peace of Mind Crypto Staking.
+  image: 
+    file: ../../../../assets/hub/orgs/protofire.png
+  actions:
+    - text: Site
+      link: https://www.stakebaby.com/
+      icon: external
 ---
 
 StakeBaby, a leading player in the blockchain staking ecosystem, has positioned itself as a premier service provider offering high-yield staking rewards and robust infrastructure. With a solid foundation of $5 million in backing, StakeBaby is redefining the standards of crypto staking through its innovative solutions and community-centric approach.
 
-## StakeBaby Validator Established Expertise and Diverse Network Support**
+## StakeBaby Validator Established Expertise and Diverse Network Support
 StakeBaby’s credibility is underpinned by its status as an established player in the blockchain industry. The company supports staking across seven major networks: **[Polkadex](https://dablock.com/dapps/polkadex/)**, [**Composable Finance**](https://dablock.com/dapps/composable-finance/), Moonriver, [**Moonbeam**](https://dablock.com/dapps/moonbeam-network/), Polygon Matic, [**KILT**](https://dablock.com/dapps/kilt-protocol/), and Syntropy. This diverse network support ensures that users have multiple options to diversify their staking portfolios and maximize returns.
 
 ## StakeBaby Unmatched Performance and Reliability

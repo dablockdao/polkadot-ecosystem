@@ -1,6 +1,18 @@
 ---
 title: MasterNode24
 description: Reliable validator and staking provider in the Polkadot ecosystem, ensuring security, redundancy, and maximum rewards for users.
+hero:
+  tagline: Validator and staking provider from Germany..
+  image: 
+    file: ../../../../assets/hub/orgs/masternode24.png
+  actions:
+    - text: Site
+      link: https://masternode24.de/
+      icon: external
+    - text: X
+      link: https://x.com/masternode24
+      icon: external
+      variant: secondary
 ---
 
 **MasterNode24**, a **Germany-based validator and staking provider**, has established itself as a reliable player in the rapidly evolving world of blockchain technology. With a focus on security, redundancy, and leveraging extensive experience in the industry, MasterNode24 offers robust services to those involved in the Polkadot ecosystem.

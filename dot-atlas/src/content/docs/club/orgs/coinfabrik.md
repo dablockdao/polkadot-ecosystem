@@ -1,6 +1,18 @@
 ---
 title: Coinfabrik
 description: Leading Web3 innovation with smart contract audits, blockchain development, and consulting, CoinFabrik secures and scales decentralized solutions globally.
+hero:
+  tagline: 10 Years Securing the Ecosystem and Bringing Innovation Onchain.
+  image: 
+    file: ../../../../assets/hub/orgs/coinfabrik.png
+  actions:
+    - text: Site
+      link: https://www.coinfabrik.com/
+      icon: external
+    - text: X
+      link: https://x.com/coinfabrik
+      icon: external
+      variant: secondary
 ---
 
 CoinFabrik has been at the forefront of Web3 innovations for over a decade, establishing itself as a leader in blockchain security, decentralized solution development, and blockchain consulting. With a solid foundation of expertise in the Polkadot ecosystem and a track record of over 500 successful projects, CoinFabrik offers comprehensive services designed to meet the evolving needs of the blockchain community.

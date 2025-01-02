@@ -54,7 +54,6 @@ Citizend adheres to KYC and AML standards to ensure secure token launches. The p
 
 ## The CTND Token
 The CTND token is central to the Citizend ecosystem, providing utility for:
-
 - Accessing guaranteed allocations for winning projects by staking CTND tokens.
 - Participating in platform governance and decentralization efforts.
 - Providing liquidity to projects launching on Citizend.

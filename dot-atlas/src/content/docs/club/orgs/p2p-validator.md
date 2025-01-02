@@ -1,9 +1,19 @@
 ---
 title: 'P2P Validator'
 description: P2P Validator offers secure institutional staking and RPC node services for top PoS blockchains, managing $1.5B+ assets. Reliable and innovative.
----  
-
-*Leading Institutional Staking and RPC Node Provider*
+hero:
+  tagline: Leading Institutional Staking and RPC Node Provider.
+  image: 
+    file: ../../../../assets/hub/orgs/p2pvalidator.png
+  actions:
+    - text: Site
+      link: https://p2p.org/
+      icon: external
+    - text: X
+      link: https://x.com/p2pvalidator
+      icon: external
+      variant: secondary
+---
 
 P2P Validator stands at the forefront of institutional staking and RPC node provision, offering secure and non-custodial staking services tailored for professional investors. By simplifying the staking process for token holders, P2P enables participation in staking without the need to manage or run a node independently. This ease of access has positioned P2P as a preferred partner for many in the blockchain ecosystem.
 

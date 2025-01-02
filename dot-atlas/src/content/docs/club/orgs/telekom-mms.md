@@ -1,6 +1,18 @@
 ---
 title: 'Telekom MMS'
 description: Telekom MMS offers reliable staking services, advanced blockchain infrastructure, and Web3 solutions for secure, sustainable crypto asset growth.
+hero:
+  tagline: Unparalleled Staking Infrastructure.
+  image: 
+    file: ../../../../assets/hub/orgs/telekom.png
+  actions:
+    - text: Site
+      link: https://www.telekom.de/
+      icon: external
+    - text: X
+      link: https://x.com/Telekom_zockt
+      icon: external
+      variant: secondary
 ---
 
 As the blockchain ecosystem continues to evolve, **Deutsche Telekom’s innovative subsidiary**, **Telekom MMS** (Managed Mobile Services), emerges as a pivotal player in the realm of staking services. Leveraging its robust infrastructure and deep expertise, Telekom MMS offers a comprehensive suite of services designed to empower enterprises and individual investors within the blockchain and Web3 ecosystem.
