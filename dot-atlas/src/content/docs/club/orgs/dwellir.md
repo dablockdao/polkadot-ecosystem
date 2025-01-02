@@ -1,9 +1,20 @@
 ---
 title: Dwellir
 description: Dwellir is Leading blockchain infrastructure with global RPC support, 99.99% uptime, and a commitment to privacy and decentralization.
----
+hero:
+  tagline:  Boosting Blockchain Infrastructure with Global RPC Endpoints.
+  image: 
+    file: ../../../../assets/hub/orgs/dwellir.png
+  actions:
+    - text: Site
+      link: https://www.dwellir.com/
+      icon: external
+    - text: X
+      link: https://x.com/DwellirOfficial
+      icon: external
+      variant: secondary
 
-*Boosting Blockchain Infrastructure with Global RPC Endpoints*
+---
 
 Dwellir AB, founded in Uppsala, Sweden, in 2021 by Gustav Nipe, Joakim Nyman, and Erik Lönroth, stands at the forefront of blockchain infrastructure development. With a firm commitment to fostering a decentralized internet, Dwellir focuses on creating robust infrastructure for prominent blockchain networks such as Polkadot and Ethereum. The company’s mission is rooted in the vision of a free and decentralized internet, emphasizing privacy, integrity, and technical excellence.
 

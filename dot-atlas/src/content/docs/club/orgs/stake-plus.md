@@ -1,7 +1,20 @@
 ---
 title: 'Stake Plus'
 description: Stake Plus is a Renewable energy-powered blockchain validator and collator, supporting Polkadot ecosystem through staking, governance, and innovative infrastructure programs.
+hero:
+  tagline: Stake, Vote & Build Web3 Together.
+  image: 
+    file: ../../../../assets/hub/orgs/stakeplus.png
+  actions:
+    - text: Site
+      link: https://stake.plus/
+      icon: external
+    - text: X
+      link: https://x.com/StakePlusCrypto
+      icon: external
+      variant: secondary
 ---
+
 
 **Stake Plus** offers **validating and collating services** on various blockchain networks, focusing on the **Polkadot ecosystem**. Powered exclusively by renewable energy, Stake Plus stands at the forefront of sustainable blockchain infrastructure, validating on Kusama and Polkadot, and collating on Moonriver, [**Moonbeam**](https://dablock.com/dapps/moonbeam-network/), Asset Hubs…
 

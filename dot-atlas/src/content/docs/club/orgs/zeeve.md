@@ -1,13 +1,24 @@
 ---
 title: Zeeve
 description: Zeeve provides secure, scalable blockchain infrastructure solutions for quick deployment and management of blockchain networks and dApps.
+hero:
+  tagline: Rollup as a Service.
+  image: 
+    file: ../../../../assets/hub/orgs/zeeve.png
+  actions:
+    - text: Site
+      link: https://www.zeeve.io/
+      icon: external
+    - text: X
+      link: https://x.com/0xZeeve
+      icon: external
+      variant: secondary
 ---
 
-In the rapidly evolving landscape of blockchain technology, Zeeve stands out as a leading infrastructure provider, offering comprehensive, enterprise-grade solutions for launching and managing blockchain networks and decentralized applications (dApps). With its robust platform, Zeeve aims to streamline blockchain deployment and management, enabling organizations to quickly build, deploy, and scale their blockchain-based projects.
+Zeeve stands out as a leading infrastructure provider in the blockchain industry, offering comprehensive, enterprise-grade solutions for launching and managing blockchain networks and decentralized applications (dApps). With its robust platform, Zeeve aims to streamline blockchain deployment and management, enabling organizations to quickly build, deploy, and scale their blockchain-based projects.
 
 ## Key Features of Zeeve
 Zeeve’s platform is designed to provide an optimized, secure, and scalable infrastructure for blockchain deployments. Here are the key features that make Zeeve a preferred choice for enterprises and developers:
-
 1. **Faster Time to Market**: Zeeve accelerates the blockchain deployment process, offering optimized price performance that helps organizations bring their solutions to market more quickly.
 2. **Enterprise-Grade Security**: Security is a top priority for Zeeve, with compliance certifications such as ISO 27001, SOC2 Type 2, and GDPR. These certifications ensure that the infrastructure meets the highest security standards.
 3. **Flexible Deployment Options**: Zeeve offers various deployment options, including its managed service across nine clouds and over 150 regions, as well as the ability for organizations to use their own public or private cloud.
@@ -19,7 +30,6 @@ Zeeve’s platform is designed to provide an optimized, secure, and scalable inf
 
 ## Launching Polkadot Parachains with Zeeve
 Zeeve extends its top-tier infrastructure management system to support Polkadot Parachains, empowering web3 builders and enterprises to launch their parachains with ease. Here’s how Zeeve facilitates this process:
-
 - **Seamless Deployment**: Zeeve provides a user-friendly platform to launch Polkadot Parachains with a few clicks, allowing custom configurations and rapid setup of both Testnet and Mainnet environments.
 - **Comprehensive Maintenance**: The platform handles all aspects of maintenance, including 24/7 monitoring, security checks, regular backups, and adherence to enterprise SLA.
 - **Security and Scalability**: Zeeve ensures the highest security standards with ISO 27001, SOC 2 Type 2, and GDPR compliance, coupled with continuous security monitoring.

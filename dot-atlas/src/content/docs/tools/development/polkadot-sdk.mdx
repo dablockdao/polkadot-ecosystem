@@ -39,38 +39,23 @@ The SDK empowers developers to build scalable, interoperable blockchains while r
 5. **Security:** Incorporates advanced cryptographic protocols and a robust security policy.
 
 ## Components of the Polkadot SDK
-### 1. Substrate
-Substrate is the foundational framework of the Polkadot SDK. It simplifies blockchain development by providing pre-built modules and templates.
-
-#### Features of Substrate:
-- **Modularity:** Build blockchains with customizable components.
-- **WASM Support:** Run application logic in a WebAssembly (WASM) runtime for cross-platform compatibility.
-- **Advanced Networking:** Integrates peer-to-peer networking capabilities.
-- **Developer-Friendly Tools:** Includes templates and CLI tools for streamlined blockchain creation.
-
-### 2. FRAME
-FRAME (Framework for Runtime Aggregation of Modularized Entities) is the core framework used to develop application-specific blockchain runtimes on Substrate.
-
-#### Key Aspects:
-- **Runtime Logic:** Allows developers to define custom blockchain logic.
-- **Pallets:** Modular, reusable components for adding functionalities like governance, staking, or token management.
-- **Customizability:** Enables developers to create unique application-specific chains (App Chains).
-
-### 3. Cumulus
-Cumulus bridges Substrate-based chains to the Polkadot network, converting them into fully functional parachains.
-
-#### Highlights:
-- **Parachain Compatibility:** Transforms existing Substrate chains into Polkadot-compatible parachains.
-- **Node Adaptation:** Converts Substrate-based nodes into parachain nodes.
-- **Seamless Integration:** Simplifies the onboarding process for developers entering the Polkadot ecosystem.
-
-### 4. XCM
-XCM (Cross-Consensus Messaging) is Polkadot’s protocol for enabling communication between parachains and other consensus systems.
-
-#### Benefits:
-- **Interoperability:** Facilitates secure message passing between heterogeneous chains.
-- **Extensibility:** Designed to support future use cases beyond parachains.
-- **Efficiency:** Minimizes overhead for cross-chain interactions.
+1. **Substrate:** Substrate is the foundational framework of the Polkadot SDK. It simplifies blockchain development by providing pre-built modules and templates. Features of Substrate:
+    - **Modularity:** Build blockchains with customizable components.
+    - **WASM Support:** Run application logic in a WebAssembly (WASM) runtime for cross-platform compatibility.
+    - **Advanced Networking:** Integrates peer-to-peer networking capabilities.
+    - **Developer-Friendly Tools:** Includes templates and CLI tools for streamlined blockchain creation.
+2. **FRAME:** FRAME (Framework for Runtime Aggregation of Modularized Entities) is the core framework used to develop application-specific blockchain runtimes on Substrate. Key Aspects:
+    - **Runtime Logic:** Allows developers to define custom blockchain logic.
+    - **Pallets:** Modular, reusable components for adding functionalities like governance, staking, or token management.
+    - **Customizability:** Enables developers to create unique application-specific chains (App Chains).
+3. **Cumulus:** Cumulus bridges Substrate-based chains to the Polkadot network, converting them into fully functional parachains. Highlights:
+    - **Parachain Compatibility:** Transforms existing Substrate chains into Polkadot-compatible parachains.
+    - **Node Adaptation:** Converts Substrate-based nodes into parachain nodes.
+    - **Seamless Integration:** Simplifies the onboarding process for developers entering the Polkadot ecosystem.
+4. **XCM:** XCM (Cross-Consensus Messaging) is Polkadot’s protocol for enabling communication between parachains and other consensus systems. Benefits:
+    - **Interoperability:** Facilitates secure message passing between heterogeneous chains.
+    - **Extensibility:** Designed to support future use cases beyond parachains.
+    - **Efficiency:** Minimizes overhead for cross-chain interactions.
 
 ## Getting Started with Polkadot SDK
 Developers can quickly set up a Polkadot node using the provided tools and documentation, ensuring an efficient start to the development journey.
@@ -99,9 +84,9 @@ Developers can quickly set up a Polkadot node using the provided tools and docum
   ]}
 />
 
-## Tooling and Utilities
+### Tooling and Utilities
 
-### Polkadot SDK Version Manager (PSVM)
+#### Polkadot SDK Version Manager (PSVM)
 A utility to manage and update dependencies in Cargo.toml files, ensuring compatibility with the latest stable SDK versions.
 
 <ShowcaseProfile
@@ -115,7 +100,7 @@ A utility to manage and update dependencies in Cargo.toml files, ensuring compat
     },
   ]}
 />
-### Polkadot SDK Key Tools
+#### Polkadot SDK Key Tools
 1. **Subkey:** A key management utility for generating and managing cryptographic keys.
 2. **Benchmarking Tools:** FRAME-omni-bencher for performance optimization.
 3. **Chain Spec Builder:** Simplifies the creation of chain specifications.

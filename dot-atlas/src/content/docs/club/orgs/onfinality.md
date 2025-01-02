@@ -1,9 +1,19 @@
 ---
 title: OnFinality
 description: OnFinality provides scalable blockchain infrastructure, offering API services and one-click node solutions to simplify and accelerate web3 development.
+hero:
+  tagline: Blockchain Infrastructure for Web3 Developers.
+  image: 
+    file: ../../../../assets/hub/orgs/onfinality.png
+  actions:
+    - text: Site
+      link: https://www.onfinality.io/
+      icon: external
+    - text: X
+      link: https://x.com/OnFinality
+      icon: external
+      variant: secondary
 ---  
-
-Blockchain Infrastructure for Web3 Developers
 
 On blockchain, the need for efficient and scalable infrastructure becomes paramount. Enter **OnFinality**, **a blockchain infrastructure platform designed to streamline the workflow of web3 builders**, saving them time and simplifying their lives. OnFinality offers a comprehensive suite of services that enable developers to deploy, test, and manage their blockchain nodes effortlessly. This article delves into the key features, partnerships, and advantages of OnFinality, highlighting its significance in the Polkadot ecosystem and beyond.
 

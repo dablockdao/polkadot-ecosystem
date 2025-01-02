@@ -3,6 +3,18 @@ title: Zondax
 description: Zondax is leading blockchain security and innovation with trusted solutions for secure hardware wallets, data integration, and protocol engineering.
 sidebar:
     order: 6
+hero:
+  tagline: Expertise in Ledger Applications.
+  image: 
+    file: ../../../../assets/hub/orgs/zondax.png
+  actions:
+    - text: Site
+      link: https://zondax.ch/
+      icon: external
+    - text: X
+      link: https://x.com/_zondax_
+      icon: external
+      variant: secondary
 ---
 
 Zondax is a trailblazer in the blockchain industry, offering a range of secure, efficient, and innovative solutions that empower leaders to scale and grow. With a deep commitment to pioneering technology and security, Zondax stands at the forefront of blockchain research and development (R&amp;D).

@@ -1,6 +1,18 @@
 ---
 title: 'Cardinal Cryptography'
 description: Cardinal Cryptography, a venture studio and consulting company, stands at the forefront of blockchain innovation.
+hero:
+  tagline:  A venture studio and consulting company. Core devs of Aleph Zero.
+  image: 
+    file: ../../../../assets/hub/orgs/cardinalcryptography.png
+  actions:
+    - text: Site
+      link: https://cardinal.co/
+      icon: external
+    - text: X
+      link: https://x.com/cardinal_hq
+      icon: external
+      variant: secondary
 ---
 
 Cardinal Cryptography, a venture studio and consulting company, stands at the forefront of blockchain innovation. Specializing in the development of blockchain, decentralized finance (DeFi), Decentralized Identifiers (DIDs), and metaverse systems, Cardinal Cryptography is redefining the landscape of digital technology. As the core developers behind Aleph Zero, a groundbreaking layer 1 blockchain, Cardinal Cryptography leverages its profound expertise to assist teams in building bespoke applications on this advanced blockchain platform.

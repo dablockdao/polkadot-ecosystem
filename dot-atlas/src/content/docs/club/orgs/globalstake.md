@@ -1,7 +1,20 @@
 ---
 title: GlobalStake
-description: GlobalStake offer secure, high-yield Web3 infrastructure for institutional investors, providing SOC2-compliant, carbon-negative staking services globally
+description: GlobalStake offer secure, high-yield Web3 infrastructure for institutional investors, providing SOC2-compliant, carbon-negative staking services globally.
+hero:
+  tagline: Unrivaled Expertise for Enterprise-Grade Infrastructure.
+  image: 
+    file: ../../../../assets/hub/orgs/globalstake.png
+  actions:
+    - text: Site
+      link: https://globalstake.io/
+      icon: external
+    - text: X
+      link: https://x.com/global_stake
+      icon: external
+      variant: secondary
 ---
+
 
 GlobalStake is more than just a service provider. Through its enterprise-grade data centers, cutting-edge infrastructure, and meticulously engineered equipment, **GlobalStake aims to secure and optimize proof-of-stake networks**, offering unmatched returns and security for institutional investors, custodians, and exchanges.
 

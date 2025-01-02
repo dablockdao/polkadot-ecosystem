@@ -1,5 +1,14 @@
 ---
 title: 'CoinStudio Validator'
+hero:
+  tagline:  A venture studio and consulting company. Core devs of Aleph Zero.
+  image: 
+    file: ../../../../assets/hub/orgs/coinstudio.png
+  actions:
+    - text: X
+      link: https://x.com/stakingstudio
+      icon: external
+      variant: secondary
 ---
 
 **CoinStudio** stands out as a distinguished participant in the blockchain community, particularly within the Polkadot and Kusama ecosystems. With a rich background in engineering and management, CoinStudio leverages 25 years of diverse experience to make significant contributions to decentralized governance. This article explores the multifaceted role of CoinStudio, highlighting their extensive involvement, innovative initiatives, and strategic approach to governance.

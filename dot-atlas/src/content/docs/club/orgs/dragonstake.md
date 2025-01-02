@@ -1,6 +1,18 @@
 ---
 title: DragonStake
 description: DragonStake offers secure staking across top blockchain networks like Polkadot and Cosmos with low fees and active community support.
+hero:
+  tagline: Minimizing Fees, Maximizing Quality.
+  image: 
+    file: ../../../../assets/hub/orgs/dragonstake.png
+  actions:
+    - text: Site
+      link: https://www.dragonstake.io/
+      icon: external
+    - text: X
+      link: https://x.com/DragonStake
+      icon: external
+      variant: secondary
 ---
 
 DragonStake emerges as a distinguished player in the realm of blockchain staking, offering robust solutions across multiple networks, including Polkadot, Cosmos, Kusama, and more. Founded with a focus on blockchain security and non-custodial staking, DragonStake has positioned itself as a pivotal contributor to the decentralized ecosystem since its inception in 2021.

@@ -4,9 +4,19 @@ description: Discover Velocity Labs’ mission to transform Polkadot into a lead
 sidebar:   
     label: ⭒ Velocity Labs
     order: 4
+hero:
+  tagline: Catalyze the DeFi Innovation on Polkadot
+  image: 
+    file: ../../../../assets/hub/orgs/velocitylabs.png
+  actions:
+    - text: Site
+      link: https://www.velocitylabs.org/
+      icon: external
+    - text: X
+      link: https://x.com/v_labs
+      icon: external
+      variant: secondary
 ---
-
-*Catalyze the DeFi Innovation on Polkadot*
 
 Comprised of seasoned DeFi and Polkadot experts, the team of Velocity Labs is dedicated to **building critical market infrastructure and tooling to unlock Polkadot’s full potential**. Their mission is clear: to make Polkadot the premier platform for scalable and unstoppable DeFi applications.
 

@@ -1,9 +1,19 @@
 ---
 title: 'bLd Nodes'
 description: bLd Nodes offers secure staking on Kusama, with a focus on reliability and low commissions in the Polkadot ecosystem.
+hero:
+  tagline:  Reliable Validator in the Polkadot Ecosystem.
+  image: 
+    file: ../../../../assets/hub/orgs/bldnodes.png
+  actions:
+    - text: Blog
+      link: https://medium.com/bld-nodes
+      icon: external
+    - text: X
+      link: https://x.com/bLdNodes
+      icon: external
+      variant: secondary
 ---
-
-*A Reliable Validator in the Polkadot Ecosystem*
  
 bLd Nodes, a dedicated participant in the blockchain sphere since 2020, has recently launched its operational validator node for the Kusama Network, a pivotal platform within the Polkadot ecosystem. Committed to providing a robust and secure staking service, bLd Nodes aims to offer stakers a trustworthy avenue to engage with the decentralized web.
 
