@@ -15,7 +15,6 @@ hero:
       variant: secondary
 ---
 
-## Composable Finance: Revolutionizing DeFi Interoperability
 Composable Finance is at the forefront of decentralized finance (DeFi), aiming to deliver **trust-minimized interoperability and seamless cross-chain execution**. This innovative platform is constructing the first trustless infrastructure for DeFi, facilitating the connection of various chains and applications across multiple blockchain ecosystems.
 
 ## Key Features of Composable Finance

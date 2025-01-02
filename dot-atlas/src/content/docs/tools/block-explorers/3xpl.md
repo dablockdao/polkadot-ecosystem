@@ -45,10 +45,10 @@ hero:
 Each supported blockchain comes with detailed data formats, including Main, Internal, ERC-20, ERC-721, ERC-1155, and other specialized tokens.
 
 ## How 3xpl Stands Out
-**Speed and Efficiency** 3xpl is designed to be significantly faster than traditional blockchain explorers, offering speeds up to 10 times quicker across all services. This speed is crucial for both casual users needing quick transaction lookups and professionals requiring rapid data analysis.
-**Universal Data Format** A key feature of 3xpl is its universal data format, which simplifies integration and usage across different blockchains. This uniformity means that users can expect the same API output and data dump formats regardless of the blockchain, streamlining processes for developers and analysts.
-**Ad-Free Experience** 3xpl’s commitment to an ad-free experience ensures that users can navigate the platform without distractions, making it a preferred choice for those looking for a clean and efficient data exploration tool.
-**Limitations** While 3xpl excels in providing a universal and fast platform, it does not process blockchain-specific data. This universalization can be seen as a trade-off, offering a more streamlined but potentially less detailed experience compared to blockchain-specific explorers.
+-  **Speed and Efficiency:** 3xpl is designed to be significantly faster than traditional blockchain explorers, offering speeds up to 10 times quicker across all services. This speed is crucial for both casual users needing quick transaction lookups and professionals requiring rapid data analysis.
+- **Universal Data Format:** A key feature of 3xpl is its universal data format, which simplifies integration and usage across different blockchains. This uniformity means that users can expect the same API output and data dump formats regardless of the blockchain, streamlining processes for developers and analysts.
+- **Ad-Free Experience:** 3xpl’s commitment to an ad-free experience ensures that users can navigate the platform without distractions, making it a preferred choice for those looking for a clean and efficient data exploration tool.
+- **Limitations:** While 3xpl excels in providing a universal and fast platform, it does not process blockchain-specific data. This universalization can be seen as a trade-off, offering a more streamlined but potentially less detailed experience compared to blockchain-specific explorers.
 
 ## 3xpl Connection to Blockchair**
 3xpl is built by former Blockchair team members, leveraging their extensive experience and knowledge. This connection ensures that 3xpl benefits from the lessons learned and best practices developed over years of work in blockchain data services. However, 3xpl takes a step further in terms of speed, universality, and user experience.

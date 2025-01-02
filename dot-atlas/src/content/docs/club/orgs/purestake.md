@@ -1,6 +1,18 @@
 ---
 title: PureStake
 description:  Secure, reliable blockchain infrastructure and services by PureStake, specializing in Polkadot and Algorand networks. Trusted by developers worldwide.
+hero:
+  tagline: Provider of API, infrastructure, and software development services..
+  image: 
+    file: ../../../../assets/hub/orgs/purestake.png
+  actions:
+    - text: Site
+      link: https://purestake.com/
+      icon: external
+    - text: X
+      link: https://x.com/purestakeco
+      icon: external
+      variant: secondary
 ---
 
 PureStake is a distinguished name in the blockchain infrastructure landscape, leveraging two decades of expertise in building robust networks and infrastructure. The company’s core values emphasize security and reliability above all, a philosophy that sometimes prioritizes these aspects over the introduction of new features. The team at PureStake comprises seasoned entrepreneurs with a successful track record in technology startups within the SaaS and cloud markets.

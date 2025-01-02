@@ -1,9 +1,19 @@
 ---
-title: '4ire Labs'
+title: 4ire Labs
 description: Innovative blockchain solutions for FinTech, DeFi, and banking by 4IRE Labs, driving efficiency, sustainability, and global market success.
+hero:
+  tagline: Transforming FinTech, DeFi, and Banking through Blockchain Innovation
+  image: 
+    file: ../../../../assets/hub/orgs/fourirelabs.png
+  actions:
+    - text: Site
+      link: https://4irelabs.com/
+      icon: external
+    - text: X
+      link: https://x.com/4irelabs
+      icon: external
+      variant: secondary
 ---
-
-*Transforming FinTech, DeFi, and Banking through Blockchain Innovation*
 
 **4IRE Labs** is a prominent player in the blockchain and financial technology space, specializing in providing cutting-edge solutions that cater to the evolving needs of FinTech, DeFi, and banking industries. With a strategic alliance between 4IRE Labs and RND Point, the company leverages a robust team of over 300 professionals and boasts 14 years of excellence backed by significant European investors. This article delves into the multifaceted services and solutions offered by 4IRE Labs, highlighting their expertise in blockchain technology, financial software development, and green finance.
 

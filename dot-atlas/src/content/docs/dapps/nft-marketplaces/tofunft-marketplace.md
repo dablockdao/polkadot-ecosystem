@@ -17,7 +17,7 @@ hero:
 
 **tofuNFT Marketplace** is a decentralized platform for buying, selling, and trading non-fungible tokens (NFTs), developed by SCV.Finance. Leveraging multiple blockchains, tofuNFT offers users a seamless experience with features like gas-free listings, advanced filtering, and support for both ERC-721 and soon ERC-1155 tokens.
 
-Key highlights of tofuNFT include:
+## Key highlights of tofuNFT Marketlace
 1. **User-Friendly Interface**: Easy to navigate for both beginners and experienced users.
 2. **Multiple Wallet Support**: Compatible with wallets like Metamask, Trust Wallet, Coinbase Wallet, and more.
 3. **Trading Options**: Offers both fixed price listings and English auctions with incentive bidding.

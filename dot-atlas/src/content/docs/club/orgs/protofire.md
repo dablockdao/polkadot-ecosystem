@@ -1,9 +1,20 @@
 ---
 title: Protofire
 description: Protofire drives TVL and user adoption in DeFi and web3 through expert blockchain development and innovative marketing.
+hero:
+  tagline: Catalyzing Growth in the Blockchain Ecosystem.
+  image: 
+    file: ../../../../assets/hub/orgs/protofire.png
+  actions:
+    - text: Site
+      link: https://www.protofire.io/
+      icon: external
+    - text: X
+      link: https://x.com/protofire
+      icon: external
+      variant: secondary
 ---
 
-## How Protofire is Catalyzing Growth in the Blockchain Ecosystem
 **Protofire DAO** is a prominent entity in the blockchain realm, renowned for its commitment to **propelling Total Value Locked (TVL) and user adoption for DeFi and web3 projects.** By leveraging a blend of in-house and third-party components, Protofire optimizes costs while enhancing the quality of blockchain solutions. This strategic approach is designed to foster sustained growth through meticulous planning, seamless compatibility, and innovative marketing.
 
 ## Empowering Blockchain Networks and DeFi Protocols

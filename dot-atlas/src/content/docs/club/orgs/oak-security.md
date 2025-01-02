@@ -1,9 +1,20 @@
 ---
 title: 'Oak Security'
 description: Expert security audits for blockchain ecosystems like Cosmos, Polkadot, Solana, NEAR, Flow, and Ethereum by Oak Security.
+hero:
+  tagline: Securing the decentralized, trustless future.
+  image: 
+    file: ../../../../assets/hub/orgs/oak-security.png
+  actions:
+    - text: Site
+      link: https://www.oaksecurity.io/
+      icon: external
+    - text: X
+      link: https://x.com/SecurityOak
+      icon: external
+      variant: secondary
 ---
 
-**Fortifying the Future of Decentralized Ecosystems**
 Oak Security has emerged as a leading provider of security auditing and cybersecurity advisory services, particularly focusing on third-generation blockchains such as the **Cosmos SDK, CosmWasm, Polkadot and Substrate, Solana, NEAR, and Flow (Cadence) ecosystems**. Additionally, through its brand Solidified, Oak Security extends its expertise to the Ethereum and EVM-compatible ecosystems.
 
 ## Oak Security Commitment to Excellence in Security

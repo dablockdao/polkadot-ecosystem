@@ -1,6 +1,18 @@
 ---
 title: 'Stateless Money'
 description:  Decentralized staking services for Polkadot, Kusama, Elrond, and Tezos. Maximize returns with Stateless.Money’s secure validation solutions.
+hero:
+  tagline: The Future of Money is Stateless
+  image: 
+    file: ../../../../assets/hub/orgs/statelessmoney.png
+  actions:
+    - text: Site
+      link: https://stateless.money/
+      icon: external
+    - text: X
+      link: https://x.com/MoneyStateless
+      icon: external
+      variant: secondary
 ---
 
 Stateless.Money is an innovative staking service provider dedicated to enhancing network decentralization without sacrificing cost efficiency or performance. Specializing in the operation of validation software for a variety of prominent blockchain protocols, Stateless.Money plays a crucial role in the ecosystems of Polkadot, Kusama, Elrond, and Tezos. The company’s mission is to facilitate a more decentralized and resilient blockchain infrastructure, ensuring that networks remain robust and secure while offering competitive staking services.

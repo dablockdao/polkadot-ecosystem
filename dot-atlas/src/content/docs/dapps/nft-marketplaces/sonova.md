@@ -21,7 +21,7 @@ Sonova is revolutionizing the NFT marketplace by offering a specialized platform
 Despite being a new platform, Sonova boasts a team with extensive experience in the Web3 space. The primary mission of Sonova is to tackle one of the most significant challenges in the Web3 industry: the lack of projects dedicated to building sustainable ecosystems. By fostering NFT projects and games, Sonova aims to fill this gap effectively.
 
 ## Astar Network Collaboration
-Recognizing**[ Astar Network](https://dablock.com/dapps/astar-network/)‘s connections with industry giants like Sony, Docomo, and Toyota, Sonova** is poised to provide the necessary infrastructure for collaboration. This will enable Web3 native projects to thrive on the Astar Network, positioning Astar as a pivotal player in overcoming Web3 challenges.
+Recognizing**[ Astar Network](/dapps/smart-contracts/astar-network/)‘s connections with industry giants like Sony, Docomo, and Toyota, Sonova** is poised to provide the necessary infrastructure for collaboration. This will enable Web3 native projects to thrive on the Astar Network, positioning Astar as a pivotal player in overcoming Web3 challenges.
 
 ## Sonova Roles and Responsibilities
 **Sonova assumes multiple roles within the Astar ecosystem**: builder, believer, community leader, and user. Each role comes with distinct responsibilities and missions, ensuring that Sonova remains an integral part of the **Astar community**, dedicated to providing the best user experience and services.
