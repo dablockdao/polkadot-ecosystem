@@ -1,0 +1,65 @@
+---
+title: Smoldot
+description: A lightweight, efficient client for Substrate-based blockchains like Polkadot and Kusama, enabling secure, decentralized connectivity.
+hero:
+  tagline: A Lightweight Client for Substrate-Based Chains.
+  image: 
+    file: ../../../../assets/polkadot.webp
+  actions:
+    - text: Github
+      link: https://github.com/smol-dot/smoldot
+      icon: external
+    - text: Docs
+      link: https://docs.rs/crate/smoldot-light/latest
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+Smoldot is an innovative lightweight client specifically designed to support Substrate-based blockchain networks, including prominent chains such as Polkadot and Kusama. Its modular architecture and focus on efficiency make it a key tool for developers and organizations looking to interact with these ecosystems in a streamlined manner. Below, we delve into the essential aspects of Smoldot and its contributions to blockchain development.
+
+## What is Smoldot?
+Smoldot stands for “small dot,” emphasizing its lightweight nature and focus on scalability. It offers an alternative to full nodes by allowing connections to Substrate-based blockchains with minimal resource usage. The project comprises multiple components that cater to various development needs, enabling flexibility and adaptability across different platforms.
+
+### Key Features of Smoldot
+1. **Lightweight Design:** Smoldot is optimized for resource efficiency, making it suitable for embedded systems, mobile applications, and lightweight setups.
+2. **Cross-Platform Compatibility:** It supports environments ranging from JavaScript (both browser and Node.js/Deno) to Rust, ensuring broad usability.
+3. **Direct Network Connectivity:** Smoldot connects directly to blockchain networks, eliminating the dependency on centralized RPC servers. This feature enhances security and decentralization.
+4. **Stable and Experimental APIs:** While some components of Smoldot offer a stable API, others remain experimental to encourage iterative improvements and innovation.
+
+## Components of Smoldot
+Smoldot consists of four main components, each tailored to specific use cases:
+1. **Smoldot-Light-JS:**
+   - A JavaScript package that functions as a light client.
+   - Works seamlessly in both browser and Node.js/Deno environments.
+   - Available via npm and Deno.land, with comprehensive documentation for easy integration.
+2. **Smoldot Library:**
+   - A Rust-based library providing general-purpose primitives for Substrate and Polkadot ecosystems.
+   - Serves as the foundation for other Smoldot components.
+   - Includes detailed API documentation and test coverage.
+3. **Smoldot-Light:**
+   - A platform-agnostic Rust library enabling connections to Substrate-based chains as a light client.
+   - Offers a semi-stable API, allowing occasional minor updates.
+4. **Smoldot-Full-Node:**
+   - A prototype for a full node implementation capable of connecting to Substrate-based blockchains.
+   - Currently experimental and not recommended for production use.
+
+## Security Considerations
+Smoldot is designed with security as a priority. While it addresses common threats in blockchain interactions, it remains vulnerable to some inherent challenges of Substrate-based networks, such as eclipse attacks and long-range attacks. Developers are advised to:
+- Limit offline periods to minimize vulnerability to long-range attacks.
+- Use finalized blocks for critical operations to ensure data integrity.
+Despite these challenges, Smoldot’s light client approach inherently reduces the risk of trusting centralized servers, thereby bolstering the overall security model.
+
+## Use Cases
+Smoldot’s versatility enables its use in a variety of scenarios:
+1. **Web Applications:** Integrate Smoldot-Light-JS for decentralized blockchain interactions directly in the browser.
+2. **Mobile Development:** Utilize Smoldot-Light for Rust-based applications or create bindings for other technologies such as Flutter or React Native.
+3. **Embedded Systems:** Leverage Smoldot’s lightweight nature for devices with limited resources.
+4. **Development and Prototyping:** Experiment with Smoldot-Full-Node for exploring blockchain functionalities.
+
+## Smoldot and the Polkadot Ecosystem
+Polkadot and its sister chain Kusama rely on Substrate’s flexible framework, and Smoldot’s design ensures robust compatibility with these ecosystems. By supporting features inherent to Substrate, Smoldot enables connections to most Substrate-based blockchains, broadening its applicability.
+
+## Conclusion
+Smoldot’s lightweight, modular, and efficient approach marks it as a significant advancement in the blockchain domain. Its ability to connect directly to Substrate-based blockchains without the reliance on centralized infrastructure aligns with the ethos of decentralization. As the Polkadot and Kusama ecosystems continue to expand, Smoldot’s role as a versatile and reliable client is poised to grow, offering developers the tools they need to build scalable and secure blockchain applications.
