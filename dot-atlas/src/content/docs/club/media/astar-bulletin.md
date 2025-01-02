@@ -1,6 +1,18 @@
 ---
 title: 'The Astar Bulletin (TAB)'
 description: Weekly updates on Astar Network news, tutorials, and developments, curated by the community for developers and enthusiasts.
+hero:
+  tagline: Weekly Updates on the Astar Network.
+  image: 
+    file: ../../../../assets/hub/media/theastarbulletin.png
+  actions:
+    - text: Blog
+      link: https://theastarbulletin.news/
+      icon: external
+    - text: X
+      link: https://x.com/AstarBulletin
+      icon: external
+      variant: secondary
 ---
 
 **The Astar Bulletin (TAB)** stands as a premier source of **weekly updates**, providing the latest news and developments **within the [Astar Network ecosystem](https://dablock.com/dapps/astar-network/)**. Curated meticulously by the Astar community, for the community, TAB aims to deliver concise and comprehensive recaps of the week’s most significant events and milestones.
