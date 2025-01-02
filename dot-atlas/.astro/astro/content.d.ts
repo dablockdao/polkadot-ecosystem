@@ -410,13 +410,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/daos/polkadot-hungary-dao.md": {
-	id: "club/daos/polkadot-hungary-dao.md";
-  slug: "club/daos/polkadot-hungary-dao";
+"club/daos/polkadot-hungary.mdx": {
+	id: "club/daos/polkadot-hungary.mdx";
+  slug: "club/daos/polkadot-hungary";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/daos/polkadot-mexico.mdx": {
 	id: "club/daos/polkadot-mexico.mdx";
   slug: "club/daos/polkadot-mexico";
@@ -2125,16 +2125,16 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"tools/development/gear-protocol.md": {
-	id: "tools/development/gear-protocol.md";
-  slug: "tools/development/gear-protocol";
+"tools/development/frontier.mdx": {
+	id: "tools/development/frontier.mdx";
+  slug: "tools/development/frontier";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"tools/development/hellosqd.md": {
-	id: "tools/development/hellosqd.md";
-  slug: "tools/development/hellosqd";
+} & { render(): Render[".mdx"] };
+"tools/development/gear-protocol.md": {
+	id: "tools/development/gear-protocol.md";
+  slug: "tools/development/gear-protocol";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -2146,13 +2146,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"tools/development/madara-starknet.md": {
-	id: "tools/development/madara-starknet.md";
+"tools/development/ink.mdx": {
+	id: "tools/development/ink.mdx";
+  slug: "tools/development/ink";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"tools/development/madara-starknet.mdx": {
+	id: "tools/development/madara-starknet.mdx";
   slug: "tools/development/madara-starknet";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "tools/development/papi.mdx": {
 	id: "tools/development/papi.mdx";
   slug: "tools/development/papi";
@@ -2174,20 +2181,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"tools/development/polkadotjs.md": {
-	id: "tools/development/polkadotjs.md";
+"tools/development/polkadotjs.mdx": {
+	id: "tools/development/polkadotjs.mdx";
   slug: "tools/development/polkadotjs";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"tools/development/pop-cli.md": {
-	id: "tools/development/pop-cli.md";
+} & { render(): Render[".mdx"] };
+"tools/development/pop-cli.mdx": {
+	id: "tools/development/pop-cli.mdx";
   slug: "tools/development/pop-cli";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "tools/development/pop-network.md": {
 	id: "tools/development/pop-network.md";
   slug: "tools/development/pop-network";
@@ -2202,6 +2209,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"tools/development/smoldot.mdx": {
+	id: "tools/development/smoldot.mdx";
+  slug: "tools/development/smoldot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"tools/development/sqd.md": {
+	id: "tools/development/sqd.md";
+  slug: "tools/development/sqd";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "tools/development/subquery.md": {
 	id: "tools/development/subquery.md";
   slug: "tools/development/subquery";
@@ -2209,13 +2230,41 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"tools/development/tanssi-network.md": {
-	id: "tools/development/tanssi-network.md";
+"tools/development/substrate-api-sidecar.mdx": {
+	id: "tools/development/substrate-api-sidecar.mdx";
+  slug: "tools/development/substrate-api-sidecar";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"tools/development/substrate-connect.mdx": {
+	id: "tools/development/substrate-connect.mdx";
+  slug: "tools/development/substrate-connect";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"tools/development/subxt.mdx": {
+	id: "tools/development/subxt.mdx";
+  slug: "tools/development/subxt";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"tools/development/tanssi-network.mdx": {
+	id: "tools/development/tanssi-network.mdx";
   slug: "tools/development/tanssi-network";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
+"tools/development/txwrapper.mdx": {
+	id: "tools/development/txwrapper.mdx";
+  slug: "tools/development/txwrapper";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/development/vara-network.mdx": {
 	id: "tools/development/vara-network.mdx";
   slug: "tools/development/vara-network";

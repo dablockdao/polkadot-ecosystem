@@ -1,0 +1,54 @@
+---
+title: Frontier
+description: The Ethereum compatibility layer for Substrate, enabling seamless dApp migration, EVM execution, and blockchain interoperability.
+hero:
+  tagline: The Ethereum Compatibility Layer for Substrate.
+  image: 
+    file: ../../../../assets/polkadot.webp
+  actions:
+    - text: Github
+      link: https://github.com/polkadot-evm/frontier/tree/master
+      icon: external
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+**Frontier** serves as the essential Ethereum Virtual Machine (EVM) backbone for Polkadot, enabling seamless compatibility between Substrate-based blockchains and Ethereum's ecosystem. Designed with developers in mind, Frontier allows Ethereum decentralized applications (dApps) to function unmodified within the Polkadot network, fostering interoperability and scalability.
+
+## Key Features of Frontier
+1. **Ethereum Compatibility:** Frontier provides a robust compatibility layer for Ethereum's EVM, allowing developers to deploy Ethereum dApps on Polkadot without requiring code modifications. By integrating familiar Ethereum RPC APIs, Frontier ensures that developers can continue using their preferred Ethereum tools and workflows. Furthermore, Frontier supports Ethereum Layer 2 solutions, enhancing its versatility for migration and scalability needs.
+2. **Migration Framework:** Frontier goes beyond simple compatibility by offering advanced migration capabilities. It supports strategies such as state export/import and transaction-level replays. Its unique "Pre-Log Wrapper Block" feature facilitates zero-downtime migrations, making it an ideal solution for blockchain projects transitioning to Substrate.
+3. **Development and Versioning Workflow:** Frontier employs a structured development workflow managed through pull requests. Adhering to semantic versioning ensures systematic updates and clarity. Developers are encouraged to document notable changes in the changelog and maintain version consistency across crates.
+
+## Addressing Strategies in Frontier
+Frontier provides two strategies for handling Ethereum H160 addresses:
+1. **H256 to H160 Mapping**: Converts the first 160 bytes of a H256 address into an H160 format.
+2. **Native H160 via AccountId20**: Utilizes `fp-account` to map Ethereum-native H160 addresses directly. This approach supports ECDSA signatures, aligning with Ethereum's native functionality.
+
+## Components of Frontier
+Frontier comprises two main components that can be activated independently, depending on the blockchain's requirements:
+1. **Pallet EVM**: This component enables the execution of EVM contracts directly on Substrate. It seamlessly integrates Ethereum addresses and values, providing flexibility for developers to deploy EVM-compatible code with minimal disruption.
+2. **Pallet Ethereum with RPC Methods**: This module facilitates full Ethereum block emulation, validating Ethereum-encoded transactions and enabling existing Ethereum dApps to operate on Substrate with minimal changes.
+
+### EVM Execution Only
+For Substrate-based blockchains focusing solely on EVM execution, Frontier provides lightweight integration. This approach eliminates the need for Ethereum RPCs, allowing Substrate to manage accounts and sign transactions for EVM accounts. While dApps require frontend adjustments to use the Substrate API, this model ensures high compatibility and adaptability.
+
+### Full Ethereum Emulation
+In scenarios where full Ethereum compatibility is required, Frontier generates complete Ethereum blocks within the Substrate runtime. This mode supports traditional Ethereum transactions and enables existing dApps to function seamlessly.
+
+### Pre-Block Feeding for Migration
+Frontier also introduces the pre-block feeding model, a work-in-progress feature aimed at facilitating blockchain migrations from Ethereum to Substrate. By mirroring Ethereum blocks as Substrate blocks, this strategy enables a gradual transition while leveraging Substrate’s advanced features like on-chain governance and forkless upgrades.
+
+## Why Frontier Matters
+Frontier is not just a bridge between Ethereum and Substrate—it is a transformative solution that empowers developers to innovate within Polkadot's decentralized ecosystem. By unifying Ethereum's robust tooling with Substrate's modularity and scalability, Frontier accelerates blockchain interoperability and adoption.
+For more technical insights and to explore its capabilities, consult the official [Frontier documentation](https://github.com/paritytech/frontier). Frontier represents a leap forward in blockchain technology, making it a cornerstone of the Polkadot ecosystem.
+
+## Frontier Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+             {
+      href: 'https://www.youtube.com/watch?v=U18uEgWVZy4',
+      title: 'Sub0 Online: Using Frontier to Build an Ethereum-Compatible Substrate-Based Chain',
+          },
+  ]} />
