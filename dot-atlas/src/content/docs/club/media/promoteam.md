@@ -1,5 +1,5 @@
 ---
-title: 'Polkadot Promoteam DAO'
+title: 'Promoteam'
 description: PromoTeam DAO promotes Polkadot and Kusama ecosystems through videos, articles, and events, engaging 60K+ subscribers worldwide.
 ---
 
