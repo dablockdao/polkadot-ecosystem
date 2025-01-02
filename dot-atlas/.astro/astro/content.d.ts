@@ -508,13 +508,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
-"club/initiatives/opengov-watch.md": {
-	id: "club/initiatives/opengov-watch.md";
+"club/initiatives/opengov-watch.mdx": {
+	id: "club/initiatives/opengov-watch.mdx";
   slug: "club/initiatives/opengov-watch";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/initiatives/openguild-labs.mdx": {
 	id: "club/initiatives/openguild-labs.mdx";
   slug: "club/initiatives/openguild-labs";
