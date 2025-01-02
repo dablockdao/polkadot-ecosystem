@@ -1,6 +1,18 @@
 ---
 title: Paranodes
 description: ParaNodes offers Premier Polkadot and Kusama validator services, ensuring performance, reliability, and community engagement with dedicated servers and expert team.
+hero:
+  tagline: Unmatched Infrastructure Focused on the Polkadot Ecosystem.
+  image: 
+    file: ../../../../assets/hub/orgs/paranodes.png
+  actions:
+    - text: Site
+      link: https://www.paranodes.io/
+      icon: external
+    - text: X
+      link: https://x.com/ParaNodes
+      icon: external
+      variant: secondary
 ---
 
 ParaNodes stands as a premier provider of validator and collator services within the Polkadot and Kusama ecosystems. Comprising a team of highly experienced professionals, ParaNodes is committed to enhancing the performance, reliability, and security of blockchain networks. This article explores the core features, team expertise, and the recognized status of ParaNodes within the blockchain community.

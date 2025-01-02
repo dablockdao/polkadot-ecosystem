@@ -1,9 +1,19 @@
 ---
 title: 'Boosty Labs'
 description: Leading blockchain development company, Boosty Labs offers expert out-staffing, IT outsourcing, and innovative solutions for decentralized technologies.
+hero:
+  tagline:  Boosty Labs is Leading the Way in Blockchain Development.
+  image: 
+    file: ../../../../assets/hub/orgs/boostylabs.png
+  actions:
+    - text: Site
+      link: https://boostylabs.com/
+      icon: external
+    - text: X
+      link: https://x.com/BoostyLabs
+      icon: external
+      variant: secondary
 ---
-
-*Boosty Labs is Leading the Way in Blockchain Development*
 
 Boosty Labs, established in late 2017, has quickly emerged as a prominent blockchain development company, leveraging a wealth of experience from founding multiple fintech startups. This experience, encompassing both successes and failures, has shaped the company’s approach and refined its expertise, making it a trusted partner for many in the blockchain and cryptocurrency space.
 

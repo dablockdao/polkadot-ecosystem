@@ -3,6 +3,18 @@ title: TurboFlakes
 description: TurboFlakes empowers Polkadot and Kusama with innovative tools &amp; secure validator services for decentralized blockchain networks.
 sidebar:
     order: 5
+hero:
+  tagline: Building Reliable Infrastructure.
+  image: 
+    file: ../../../../assets/hub/orgs/turboflakes.png
+  actions:
+    - text: Site
+      link: https://www.turboflakes.io/
+      icon: external
+    - text: X
+      link: https://x.com/turboflakes
+      icon: external
+      variant: secondary
 ---
 
 TurboFlakes has emerged as a dedicated entity within the Polkadot ecosystem, focusing on enhancing infrastructure reliability and user experience through innovative tools and robust validator services.

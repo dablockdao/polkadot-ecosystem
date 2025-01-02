@@ -1,7 +1,20 @@
 ---
 title: 'Project Liberty'
 description: Discover how Project Liberty is Empowering users with control over their data through decentralized social networking and open protocols.
+hero:
+  tagline: Open Protocols and User Empowerment.
+  image: 
+    file: ../../../../assets/hub/orgs/projectliberty.png
+  actions:
+    - text: Site
+      link: https://www.projectliberty.io/
+      icon: external
+    - text: X
+      link: https://x.com/pro_jectliberty
+      icon: external
+      variant: secondary
 ---
+
 
 In an era where data is the new currency, **Project Liberty is charting a new course for the digital age**. This transformative initiative, **led by McCourt Global**, seeks to establish an open, inclusive data economy that empowers individuals and places control back into the hands of citizens. At the heart of Project Liberty’s mission is the [**Decentralized Social Networking Protocol (DSNP)**](https://dablock.com/dapps/dsnp-protocol/), a groundbreaking approach that aims to revolutionize social media and digital interactions.
 

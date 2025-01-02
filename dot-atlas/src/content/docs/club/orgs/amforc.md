@@ -3,9 +3,19 @@ title: Amforc
 description: Secure and reliable staking services for Polkadot and Kusama networks, accessible to all users. Earn rewards effortlessly with Amforc.
 sidebar:
     label: ⭒ Amforc
+hero:
+  tagline: Enhancing Staking for Polkadot and Kusama Networks.
+  image: 
+    file: ../../../../assets/hub/orgs/amforc.png
+  actions:
+    - text: Site
+      link: https://amforc.com/
+      icon: external
+    - text: X
+      link: https://x.com/amforcag
+      icon: external
+      variant: secondary
 ---
-
-*Enhancing Staking for Polkadot and Kusama Networks*
 
 As blockchain technology evolves, staking has become a crucial component of maintaining network security and decentralization. Amforc, a staking service provider, has established itself as a reliable and secure option for users within the [**Polkadot and Kusama ecosystems**](https://dablock.com/ecosystem/). Based in Switzerland, **Amforc** leverages its expertise in IT security and blockchain technology to offer a seamless staking experience, ensuring that users can earn rewards with minimal technical complexity.
 

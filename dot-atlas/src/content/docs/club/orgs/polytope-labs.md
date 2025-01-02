@@ -3,8 +3,19 @@ title: 'Polytope Labs'
 description: Polytope Labs advances blockchain tech with cutting-edge research on cryptographic primitives, cross-chain interoperability, and decentralized applications.
 sidebar:
     order: 7
+hero:
+  tagline: Blockchain research and development.
+  image: 
+    file: ../../../../assets/hub/orgs/polytopelabs.png
+  actions:
+    - text: Research
+      link: https://research.polytope.technology/
+      icon: external
+    - text: X
+      link: https://x.com/PolytopeLabs
+      icon: external
+      variant: secondary
 ---
-
 
 **Polytope Labs** stands at the forefront of blockchain research and development, driving the decentralization revolution through its cutting-edge work on blockchain primitives and protocols. As a leading **blockchain R&amp;D lab**, Polytope Labs focuses on advancing the technological foundations necessary for a decentralized web3 infrastructure, currently working on [**Hyperbridge**](https://dablock.com/dapps/hyperbridge/).
 

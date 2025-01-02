@@ -1,6 +1,18 @@
 ---
 title: 'Helikon Labs'
 description: Heikon Labs is Innovating open-source software and validator services for Polkadot and Kusama, enhancing blockchain performance and security.
+hero:
+  tagline: Open-source software and validator services for Polkadot .
+  image: 
+    file: ../../../../assets/hub/orgs/helikonlabs.png
+  actions:
+    - text: Site
+      link: https://helikon.io/
+      icon: external
+    - text: X
+      link: https://x.com/helikonlabs
+      icon: external
+      variant: secondary
 ---
 
 **Helikon Labs**, a forward-thinking blockchain company based in Istanbul, is dedicated to developing robust, open-source software solutions for the Polkadot and Kusama blockchain networks. **Backed by the [Web3 Foundation](https://dablock.com/ecosystem/web3-foundation/) and the Kusama Treasury**, Helikon Labs is at the forefront of innovation in the blockchain space, offering products and services that enhance the functionality and security of these networks.

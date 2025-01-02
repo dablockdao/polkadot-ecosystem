@@ -1,9 +1,19 @@
 ---
 title: 'BlockDeep Labs'
 description: Empowering businesses with innovative blockchain solutions, expert architecture design, and strategic advisory services. Leading in Polkadot and Substrate.
+hero:
+  tagline:  BlockDeep Labs Innovating with Polkadot Tech.
+  image: 
+    file: ../../../../assets/hub/orgs/blockdeeplabs.png
+  actions:
+    - text: Site
+      link: https://www.blockdeep.io/
+      icon: external
+    - text: X
+      link: https://x.com/0xBlockDeep
+      icon: external
+      variant: secondary
 ---
-
-*BlockDeep Labs Innovating with Polkadot Tech*
 
 BlockDeep Labs stands as a beacon of excellence in the realm of decentralized technologies, offering premium services that span blockchain solution development, architecture design, and strategic advisory. With an unparalleled command over the Polkadot ecosystem, Substrate, Ethereum, and comprehensive blockchain development, BlockDeep Labs is at the forefront of driving innovation and empowering businesses.
 

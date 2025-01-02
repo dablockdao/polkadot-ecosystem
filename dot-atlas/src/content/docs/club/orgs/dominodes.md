@@ -1,7 +1,20 @@
 ---
 title: DomiNodes
 dscription: Professional Proof-of-Stake node operator offering secure staking services and infrastructure for multiple blockchain networks.
+hero:
+  tagline: Premier provider of Proof-of-Stake (PoS) node operations.
+  image: 
+    file: ../../../../assets/hub/orgs/dragonstake.png
+  actions:
+    - text: Site
+      link: https://dominodes.io/
+      icon: external
+    - text: X
+      link: https://x.com/dominodes
+      icon: external
+      variant: secondary
 ---
+
 
 **DomiNodes** stands out as a **premier provider of Proof-of-Stake (PoS) node operations**, infrastructure services, and staking solutions. The company prides itself on its international team, which boasts extensive experience in IT systems architecture, development, and management. DomiNodes is committed to ensuring high-quality, reliable infrastructure to support blockchain networks, with a mission to drive the mass adoption of web3 technologies and democratize the decentralized financial system.
 

@@ -3,10 +3,20 @@ title: R0GUE
 description: R0GUE is Innovating Web3 with Polkadot expertise, offering development, tooling, and consultancy for seamless decentralized applications and blockchain solutions.
 sidebar:
     order: 3
+hero:
+  tagline:  Pioneering Web3 Innovation and Polkadot Expertise.
+  image: 
+    file: ../../../../assets/hub/orgs/r0gue.png
+  actions:
+    - text: Site
+      link: https://r0gue.io/
+      icon: external
+    - text: Github
+      link: https://github.com/r0gue-io
+      icon: external
+      variant: secondary
 ---
 
-
-## R0GUE: Pioneering Web3 Innovation and Polkadot Expertise
 R0GUE is a dynamic company dedicated to solving the demands of Web3 by building cutting-edge products, providing premier consultancy services, and developing advanced tooling. With a focus on pushing the boundaries of Web3, **R0GUE empowers developers, communities, and businesses** to harness the full potential of **decentralized technologies for real-world applications**.
 
 ## R0GUE Leading Web3 Innovation
