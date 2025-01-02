@@ -20,7 +20,6 @@ Starfish Finance is an innovative DeFi platform incubated with the Astar Network
 **Vision and Product Suite** Starfish Finance is on a journey to become the top Web3 Entertainment-Fi brand, building on a robust DeFi technological foundation while expanding into gamified features across the Astar Network, Arbitrum, and additional ecosystems. It engages the community with “SEAN Times,” a weekly newsletter that provides insights from Starfish leadership.
 
 **Key Features**
-
 1. **Swap (Astar Network)**: Allows users to trade tokens and stablecoins across multi-token pools.
 2. **Liquidity (Astar Network)**: Users can provide liquidity or create pools with up to eight tokens, sharing in the trading fees.
 3. **Farm (Astar Network)**: Offers the opportunity for users to stake Liquidity Pool Tokens in farms to earn bonus rewards.
