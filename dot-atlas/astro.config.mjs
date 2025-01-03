@@ -55,7 +55,7 @@ export default defineConfig({
 								label: '🧿 Miscellaneous', collapsed: true, autogenerate: {directory: 'tools/miscellaneous'}
 							},
 							{
-								label: '🛠️ Development', collapsed: true, autogenerate: { directory: 'tools/development' }
+								label: '🛠️ Development', collapsed: true, autogenerate: { directory: 'tools/dev' }
 							},
 							{
 								label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'tools/archive' }
@@ -174,8 +174,8 @@ export default defineConfig({
 			},
 			lastUpdated: true,
 			expressiveCode: {
-				styleOverrides: { borderRadius: '10px',  // Slightly increased for a softer look
-					borderWidth: '1px',  // Retaining the defined width for clarity
+				styleOverrides: { borderRadius: '10px',
+					borderWidth: '1px',
 							},
 				themes: ['github-dark-high-contrast', ]
 			  },

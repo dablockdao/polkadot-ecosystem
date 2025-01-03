@@ -35,17 +35,13 @@ Bit.Country is driven by a vision to democratize access to the metaverse, enabli
 - **Bit.Country Pioneer:** Bit.Country Pioneer is the deployment of Bit.Country on the Kusama network. It serves as a testing ground for new features and innovations before they are rolled out on the main Bit.Country network.
 
 ## Key Components of Bit.Country
-
-### Metaverses and Land Blocks
-- **Metaverse**: A sovereign virtual world with its own landscape, marketplace, and governance.
-- **Land Block**: A core unit of area within a metaverse, which can be subdivided and developed. Land blocks serve as the foundation for community activities and asset placement.
-
-### Social Tokens and Governance
-- **Social Tokens**: These tokens can be used for utility and governance within a metaverse. They incentivize community participation and allow for decentralized decision-making.
-- **Governance**: NUUM holders and councils co-govern the network, ensuring that decisions are made collectively and transparently.
-
-### Marketplace and Trading
-Bit.Country features a decentralized marketplace where users can trade NFTs and other assets. The marketplace supports both native and external assets, providing a comprehensive trading platform for the metaverse.
+1. **Metaverses and Land Blocks:**
+    - **Metaverse**: A sovereign virtual world with its own landscape, marketplace, and governance.
+    - **Land Block**: A core unit of area within a metaverse, which can be subdivided and developed. Land blocks serve as the foundation for community activities and asset placement.
+2. **Social Tokens and Governance:**
+    - **Social Tokens**: These tokens can be used for utility and governance within a metaverse. They incentivize community participation and allow for decentralized decision-making.
+    - **Governance**: NUUM holders and councils co-govern the network, ensuring that decisions are made collectively and transparently.
+3. **Marketplace and Trading:** Bit.Country features a decentralized marketplace where users can trade NFTs and other assets. The marketplace supports both native and external assets, providing a comprehensive trading platform for the metaverse.
 
 ### The Continuum
 The Continuum is a grid map of metaverses within Bit.Country. It represents an aggregation of thriving digital civilizations, with new slots proposed and managed through community governance. Metaverses can participate in auctions to secure spots on the Continuum, gaining recognition and benefits within the broader Bit.Country ecosystem.

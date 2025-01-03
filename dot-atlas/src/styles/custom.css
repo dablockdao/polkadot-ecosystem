@@ -1,5 +1,14 @@
 @view-transition {navigation: auto}
 
+/*DirectoryLinks link cards*/
+.sl-link-card {
+	background-color: #000;
+}
+.sl-link-card a {
+	color:#074d7c
+
+}
+
   .starlight-showcases-media-card {
 	display: block;
 	background: linear-gradient(180deg, rgba(255, 38, 112, 0.9) 0%, rgba(174, 183, 203, 0.8) 100%);

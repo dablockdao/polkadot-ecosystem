@@ -17,7 +17,6 @@ hero:
       variant: secondary
 ---
 
-## How Chainflip is Revolutionizing Cross-Chain Swaps?
 The ability to seamlessly swap assets across different blockchain networks is becoming increasingly vital. **Chainflip aims to address this need by providing a decentralized, efficient, and secure protocol for cross-chain swaps**. This article delves into Chainflip’s vision, its core features, and how it stands out in the competitive landscape of blockchain technology.
 
 Chainflip’s primary goal is to simplify and enhance the process of swapping between Layer 1 (L1) crypto assets. The project focuses on several key attributes and metrics to achieve this vision. Chainflip was the first project in deliver native BTC swaps to the Polkadot ecosystem.  
