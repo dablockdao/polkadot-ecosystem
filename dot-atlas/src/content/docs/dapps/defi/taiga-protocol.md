@@ -7,7 +7,6 @@ Taiga Protocol is a synthetic asset protocol designed to address the issue of li
 
 ## What is Taiga Protocol?
 Built on the Acala parachain, Taiga Protocol offers several key functionalities:
-
 - **Stable Asset System:** This system uses a combination of StableSwap DEXs and synthetic assets to maintain a stable value peg for assets like DOT and KSM.
 - **tDOT &amp; tKSM:** These synthetic assets represent a unified pool of staking and crowdloan derivatives for DOT and KSM respectively. They offer users a convenient way to access liquidity and staking rewards without managing multiple derivative tokens.
 - **3pool:** This is the first stablecoin pool on Kusama, allowing users to swap between aUSD, USDC, and USDT with low slippage.

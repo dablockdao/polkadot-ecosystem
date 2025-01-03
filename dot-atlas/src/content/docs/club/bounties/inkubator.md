@@ -11,7 +11,7 @@ hero:
       icon: external
 ---
 
-The Polkadot ecosystem continues to evolve, fostering innovation across the blockchain landscape. One of the most prominent initiatives driving this innovation is **ink!ubator**, a program designed to support projects utilizing the **ink! smart contract** language on Polkadot and other Substrate-based chains. The initiative seeks to accelerate the development of decentralized applications (dApps), infrastructure, and ecosystem tools that will shape the future of blockchain technology.
+The Polkadot ecosystem continues to evolve, fostering innovation across the blockchain landscape. One of the most prominent initiatives driving this innovation is **ink!ubator**, a program designed to support projects utilizing the **[ink! smart contract](/tools/dev/ink/)** language on Polkadot and other Substrate-based chains. The initiative seeks to accelerate the development of decentralized applications (dApps), infrastructure, and ecosystem tools that will shape the future of blockchain technology.
 
 ## Introduction to Ink!ubator
 **ink!ubator** is an initiative funded by the Polkadot Treasury’s Bounty Program, with the primary goal of strengthening the Polkadot ecosystem through the **ink!** smart contract framework. By focusing on **developer growth**, **security audits**, **full-stack tooling**, and high-impact product launches, ink!ubator provides vital resources to emerging projects. The program is structured to offer direct support to developers building on Polkadot, providing mentorship, grants, and technical assistance to ensure successful project delivery.

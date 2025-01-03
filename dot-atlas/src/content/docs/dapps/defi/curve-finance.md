@@ -15,7 +15,6 @@ hero:
       variant: secondary
 ---
 
-## What is Curve Finance?
 **Curve Finance** is a decentralized exchange (DEX) specifically designed for stablecoin trading and low-slippage swaps between assets of similar value. Founded by **Michael Egorov** in early 2020, Curve Finance aims to provide efficient and low-cost trading solutions in the DeFi space. Unlike traditional exchanges, Curve Finance leverages **automated market maker (AMM)** algorithms to facilitate trades without relying on order books. This approach not only ensures liquidity but also minimizes the price slippage that typically occurs in volatile markets.
 
 ## Curve Finance Key Features and Functionalities
