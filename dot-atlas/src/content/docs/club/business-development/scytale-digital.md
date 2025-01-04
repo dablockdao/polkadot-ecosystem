@@ -1,9 +1,19 @@
 ---
 title: 'Scytale Digital'
 description: Scytale Digital leads blockchain investment, focusing on privacy, decentralization, and digitization. Innovative digital asset management.
+hero:
+  tagline: Pioneering Blockchain Investment for the Future.
+  image: 
+    file: ../../../../assets/hub/orgs/scytaledigital.png
+  actions:
+    - text: Site
+      link: https://www.scytale.digital/
+      icon: external
+    - text: X
+      link: https://x.com/scytaledigital
+      icon: external
+      variant: secondary
 ---
-
-*Pioneering Blockchain Investment for the Future*
 
 Scytale Digital stands out as an industry-leading digital asset manager. Founded by a team of investment management experts, blockchain technology specialists, and visionary entrepreneurs, **Scytale Digital is dedicated to investing in early-stage blockchain and crypto projects**. This article explores the mission, key investments, and strategic vision of Scytale Digital, highlighting its significant role in shaping the future of blockchain technology.
 
