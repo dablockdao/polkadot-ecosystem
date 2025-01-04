@@ -1,9 +1,19 @@
 ---
 title: 'Illusionist Group'
 description: Illusionist Group invests in innovative blockchain projects, fostering a robust ecosystem for developers, investors, and communities.
----   
-
-*The Vision of Illusionist Group*
+hero:
+  tagline: Global blockchain and digital investment fund.
+  image: 
+    file: ../../../../assets/hub/orgs/harbourindustrialcapital.png
+  actions:
+    - text: Site
+      link: https://illusionistgroup.com/
+      icon: external
+    - text: X
+      link: https://x.com/IllusionistGRP
+      icon: external
+      variant: secondary
+--- 
 
 **Illusionist Group**, founded in early 2020, is a **global blockchain and digital investment fund** with a strong focus on blockchain and cryptocurrency projects in the Polkadot ecosystem. With a strategic emphasis on investing in technical teams possessing robust and innovative technology, the group aims to cultivate a larger and stronger blockchain ecosystem. By supporting these teams, Illusionist Group aspires to build a sustainable future for investors, developers, and the broader community.
 
