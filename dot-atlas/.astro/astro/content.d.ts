@@ -1033,6 +1033,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"club/resources/awesome-polkadot.mdx": {
+	id: "club/resources/awesome-polkadot.mdx";
+  slug: "club/resources/awesome-polkadot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/resources/handbook.mdx": {
+	id: "club/resources/handbook.mdx";
+  slug: "club/resources/handbook";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "club/resources/index.mdx": {
 	id: "club/resources/index.mdx";
   slug: "club/resources";

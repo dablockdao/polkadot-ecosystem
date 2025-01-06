@@ -135,7 +135,7 @@ export default defineConfig({
 						label: '🤝 VCs & BD', collapsed: true, autogenerate: { directory: 'club/business-development' }
 					},
 					  {
-						label: '👥 People', collapsed: true, autogenerate: { directory: 'club/people' }
+						label: '👥 Catalysts', collapsed: true, autogenerate: { directory: 'club/people' }
 					},
 					{
 						label: '📚 Resources', collapsed: true, autogenerate: { directory: 'club/resources' }
