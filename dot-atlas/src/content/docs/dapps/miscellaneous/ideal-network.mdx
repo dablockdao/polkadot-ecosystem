@@ -1,0 +1,90 @@
+---
+title: Ideal Network
+description: The Ideal Network revolutionizes blockchain with secure, interoperable randomness, enabling decentralized applications, cross-chain functionality, and innovative encryption.
+hero:
+  tagline: Revolutionizing Decentralized Randomness.
+  image: 
+    file: ../../../../assets/dapps/miscellaneous/ideal-network.png
+  actions:
+    - text: Site
+      link: https://idealabs.network/
+      icon: external
+    - text: Docs
+      link: https://docs.idealabs.network/
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Randomness is a critical component for various blockchain applications, from cryptographic security to decentralized applications and smart contracts. The Ideal Network (IDN) addresses this need with an innovative and interoperable decentralized randomness beacon. Built on Substrate, the Ideal Network combines cutting-edge cryptographic protocols with the flexibility of the Polkadot ecosystem, offering publicly verifiable randomness that is both secure and efficient. This article explores the architecture, functionality, and potential applications of the Ideal Network, along with its implications for the broader blockchain landscape.
+
+## Understanding the Ideal Network
+The Ideal Network (IDN) serves as a decentralized randomness beacon designed to generate publicly verifiable on-chain randomness. Its innovative approach lies in embedding randomness generation into each finalized block, ensuring seamless integration and trustless verification for both on-chain and off-chain use cases. The IDN beacon operates as an interoperable solution, making it particularly valuable within Polkadot’s multi-chain ecosystem as a parachain, enabling cross-chain randomness accessibility.
+
+## How It Works: A Deep Dive into the Architecture
+1. **Multiparty Computation Protocol:** The Ideal Network’s randomness beacon leverages a multiparty computation (MPC) protocol, where collators execute an additional voting round on each finalized block. This process parallels the functionality of BEEFY, Polkadot’s finality gadget. Using threshold BLS (Boneh-Lynn-Shacham) signatures, each participant signs the finalized block hash, producing a secure and verifiable output if a sufficient number of collators contribute honestly.
+    - **Threshold BLS Signatures:** These signatures ensure that at least a predetermined threshold of participants collaborate to generate the beacon’s output.
+    - **DLEQ Proofs:** The protocol employs Discrete Logarithm Equality (DLEQ) proofs for verifying the correctness of the combined signature, ensuring cryptographic integrity.
+2. **Interoperable Randomness Beacon (IRB):** An Interoperable Randomness Beacon (IRB) generates a hash-chain of randomness pulses, each cryptographically linked to its predecessor. Unlike traditional randomness solutions that output unordered values, IRBs provide a causal ordering of randomness pulses, enabling efficient and trustless verification. Each pulse is associated with a unique, deterministic identity function, which ensures collision resistance and enables easy subscription to future outputs.
+    - **Hash-Chains:** Cryptographically linked pulses form a simplified version of a blockchain, maintaining the sequence and ensuring the integrity of randomness outputs.
+    - **Identity Function:** A secure identity function \( ID: N \to \{0,1\}^d \) assigns a unique identity to each pulse, supporting timelock encryption and future-proof randomness utilization.
+3. **Beacon Pulses and Verification:** Each pulse in the Ideal Network comprises a payload and a zero-knowledge proof, serialized to bytes for easy verification. The payload contains threshold BLS signatures, while the proof ensures the authenticity of the randomness output.
+- **Pulse Structure:**
+
+  ```json
+  {
+      "header": {
+          "identity": "<unique identity>",
+          "next_identity": "<pre-commitment>",
+          "parent_hash": "<hash of previous pulse>"
+      },
+      "body": {
+          "pulse": "<randomness data>"
+      }
+  }
+  ```
+
+## Verification Function
+A polynomial-time verification function \( V \) validates pulses against public parameters, ensuring that each pulse maintains the integrity of the hash-chain.
+
+## Post-Finality Gadget: Enhancing Security
+The Ideal Network introduces the ETF Post-Finality Gadget (PFG), an adaptation of Polkadot’s BEEFY gadget. By seeding the network with a resharing of a master secret and leveraging threshold BLS signatures, the PFG adds an additional layer of security to finalized blocks. The ETF Worker component, running within each authority, uses the reshared secret to produce signed commitments, ensuring seamless integration with the randomness beacon.
+
+### ETF Pallets
+The Ideal Network’s architecture includes specialized pallets for storage and verification:
+- **ETF Pallet:** Stores public parameters for identity-based encryption, updated via a democratic governance process.
+- **Beefy-ETF Pallet:** Incorporates runtime storage for slot secrets, adding cryptographic security to block production.
+
+## Applications of the Ideal Network
+The IDN’s ability to generate publicly verifiable randomness has far-reaching implications for blockchain applications:
+1. **Smart Contracts and Dapps:** Randomness is a cornerstone for applications such as lotteries, gaming, and fair asset distribution. By providing verifiable randomness, the Ideal Network eliminates potential manipulation, ensuring trust in smart contract operations.
+2. **Cross-Chain Randomness:** As a parachain within Polkadot’s ecosystem, the IDN facilitates cross-chain randomness, enabling secure and interoperable functionalities across diverse blockchains.
+3. **Timelock Encryption:** The IDN supports hybrid cryptosystems combining AES-GCM and identity-based encryption (IBE). Timelock encryption allows the secure sealing of messages for future decryption, with applications in auctions, voting, and secure data sharing.
+4. **Shielded Transactions:** By enabling private transaction scheduling, the IDN supports shielded transactions, ensuring confidentiality and security in decentralized finance (DeFi) and other sensitive operations.
+
+## Technical Innovations: Timelock Encryption and Auctions
+The Ideal Network’s timelock encryption mechanism facilitates innovative use cases, such as sealed-bid auctions. The network’s auction framework uses timelock encryption to seal bids for ERC721 tokens, ensuring non-interactive winner selection while maintaining full decentralization.
+
+### Workflow for Auctions:
+1. **Setup:** The auction owner specifies parameters and deploys the auction.
+2. **Bidding Phase:** Participants encrypt their bids with timelock encryption and submit them on-chain.
+3. **Reveal Phase:** After the deadline, the network reveals the randomness, decrypting and verifying bids.
+4. **Winner Selection:** The contract selects the highest bidder, with the winner paying the second-highest bid.
+
+## Advantages of the Ideal Network
+1. **Decentralization and Security:** By integrating randomness generation directly into the blockchain, the IDN eliminates reliance on centralized oracles.
+2. **Interoperability:** Seamless compatibility with Polkadot’s multi-chain framework ensures widespread adoption and usability.
+3. **Efficiency:** Optimized verification and hash-chaining mechanisms reduce computational overhead.
+4. **Scalability:** The parachain design enables the IDN to scale across various blockchain ecosystems.
+
+## Future Prospects and Roadmap
+The Ideal Network continues to evolve, with ongoing development aimed at enhancing its capabilities:
+- **Distributed Key Generation:** Transitioning to fully decentralized key generation mechanisms.
+- **Enhanced Governance:** Democratizing parameter updates for the ETF pallet.
+- **Advanced Use Cases:** Expanding support for zero-knowledge proofs and privacy-preserving protocols.
+
+## Conclusion
+The Ideal Network represents a paradigm shift in how randomness is generated and utilized within blockchain ecosystems. By combining interoperability, security, and efficiency, it offers a robust foundation for decentralized applications, cross-chain interactions, and cryptographic innovations. As blockchain technology continues to mature, the Ideal Network’s contributions to randomness and encryption are poised to play a pivotal role in shaping the decentralized future.
