@@ -1509,6 +1509,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"interviews/space-monkeys/sm173-kiam-paimani-jam.md": {
+	id: "interviews/space-monkeys/sm173-kiam-paimani-jam.md";
+  slug: "interviews/space-monkeys/sm173-kiam-paimani-jam";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "interviews/space-monkeys/what-is-bali-blockchain-center-and-indonesia-bet-on-blockchain-technology.md": {
 	id: "interviews/space-monkeys/what-is-bali-blockchain-center-and-indonesia-bet-on-blockchain-technology.md";
   slug: "interviews/space-monkeys/what-is-bali-blockchain-center-and-indonesia-bet-on-blockchain-technology";
