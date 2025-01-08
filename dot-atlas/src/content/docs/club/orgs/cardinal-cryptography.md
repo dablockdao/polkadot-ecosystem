@@ -38,7 +38,6 @@ These services are geared towards a variety of sectors, including DeFi, FinTech,
 
 ## Cardinal Cryptograpgy Noteworthy Achievements
 Cardinal Cryptography takes pride in its contributions to several high-impact projects and initiatives:
-
 - Development of a scalable layer 1 blockchain with privacy-preserving features enabled by ZK and MPC.
 - Support for the Kosciuszko Institute during the CYBERSEC European Forum.
 - Contribution to the development of Sovryn, a non-custodial, permissionless Bitcoin trading and lending platform.

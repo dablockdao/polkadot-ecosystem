@@ -12,31 +12,14 @@ description: Non-custodial, eco-friendly staking provider supporting multiple bl
 4. **Professionalism:** Ensures reliable and professional service with a focus on security and performance.
 
 ## BloClick Staking Supported Blockchains
-BloClick Staking supports a variety of blockchains, including but not limited to:
+BloClick Staking supports a variety of blockchains, including ecosystem but not limited to the following ones in the Polkadot:
 
-1. **Mina Protocol:** Validator with a 5% fee, contributing to social and technical aspects of the network.
-2. **Desmos:** Genesis validator supporting decentralized social networking.
-3. **Moonriver &amp; Moonbeam:** Ethereum-compatible smart contract parachains on Kusama and Polkadot, respectively.
-4. **Blast API:** Web3 infrastructure provider offering RPC services for multiple networks.
-5. **Gravity Bridge:** Interoperable bridge between Ethereum and Cosmos ecosystems.
-6. **Velas:** AI-operated DPoS blockchain.
-7. **Solana:** High-performance blockchain for decentralized applications.
-8. **Joystream:** Decentralized video streaming platform.
-9. **Regen Network:** Market for climate solutions.
-10. **Empowerchain:** Blockchain for the circular economy.
-11. **Fetch.ai:** Decentralized machine learning platform.
-12. **Stargaze:** Protocol for decentralized social networking and NFTs.
-13. **Polkadex:** Decentralized orderbook-based cryptocurrency exchange.
-14. **Vega:** Decentralized network for trading and derivatives.
-15. **Umee Network:** Blockchain for cross-chain communication and DeFi.
-16. **OmniFlix:** Platform for minting and managing media assets across multiple chains.
-17. **AssetMantle:** Platform for creating and trading NFTs.
-18. **Pendulum &amp; Amplitude:** Networks for Forex operations on blockchain.
-19. **OAK Network:** Platform for trustless automation of transactions.
-20. **Passage3D:** Customizable 3D world for virtual interactions.
-21. **Dymension:** Platform for deploying app-chains called RollApps.
-22. **Zeitgeist:** Blockchain for prediction markets.
-23. **Peaq Krest Network:** Blockchain for real-world applications like mobility and energy.
-24. **Qwoyn Network:** Bridge between traditional gaming and Web3 ecosystem.
+1. **Moonriver &amp; Moonbeam:** Ethereum-compatible smart contract parachains on Kusama and Polkadot, respectively.
+2. **Joystream:** Decentralized video streaming platform.
+3. **Polkadex:** Decentralized orderbook-based cryptocurrency exchange.
+4. **Pendulum & Amplitude:** Networks for Forex operations on blockchain.
+5. **AVA Protocol:** Platform for trustless automation of transactions.
+6. **Zeitgeist:** Blockchain for prediction markets.
+7. **Peaq Krest Network:** Blockchain for real-world applications like mobility and energy.
 
 **Future Prospects:** BloClick Staking aims to continue expanding its services and blockchain support, contributing to the growth and decentralization of the blockchain ecosystem while maintaining a commitment to sustainability and user control.
