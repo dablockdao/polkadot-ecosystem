@@ -423,7 +423,7 @@ header span {
 	--sl-color-text: #FFFFFF; /* White */
 	--sl-color-accent: #FF2670; /* Polkadot Pink */
 	--sl-color-secondary: #E4FF07; /* Lime */
-	--sl-color-highlight: #07FFFF; /* Cyan */
+	/** --sl-color-highlight: #07FFFF; Cyan */
 	--sl-color-muted: #6E7391; /* Storm 700 */
 	--sl-background-gradient: linear-gradient(145deg, #121212, #1e1e1e); 
   }
@@ -433,7 +433,7 @@ header span {
 	--sl-color-text: #000000; /* Black */
 	--sl-color-accent: #FF2670; /* Polkadot Pink */
 	--sl-color-secondary: #7916F3; /* Violet */
-	--sl-color-highlight: #07FFFF; /* Cyan */
+	/** --sl-color-highlight: #07FFFF; Cyan */
 	--sl-color-muted: #DCE2E9; /* Storm 200 */
 	--sl-background-gradient: linear-gradient(
 	  120deg,
@@ -537,6 +537,23 @@ header span {
 /**
  * Overrides
  */
+
+ .sl-markdown-content p, 
+ .sl-markdown-content ul, 
+ .sl-markdown-content li {
+	font-size: 17px;
+ }
+
+ [data-theme='dark'] .sl-markdown-content p, 
+ [data-theme='dark'] .sl-markdown-content ul, 
+ [data-theme='dark'] .sl-markdown-content li {
+	font-size: 17px;
+	color: #DCE2E9;
+ }
+ [data-theme='dark'] .sl-markdown-content strong {
+	font-size: 17px;
+	color: #FFFFFF;
+ }
 
 .sl-markdown-content code,
 .sl-markdown-content .starlight-aside {
@@ -716,17 +733,17 @@ header span {
 			180rem;
 }
 
+header {
+	background-color: #000000 !important;
+	-webkit-backdrop-filter: blur(2rem);
+	backdrop-filter: blur(2rem);
+	border-bottom: 1px solid transparent;
+}
+[data-theme="light"] header {
+	background-color: #FFFFFF !important; 
+}
 
 @media (min-width: 72rem) {
-	header {
-		background-color: #000000 !important;
-		-webkit-backdrop-filter: blur(2rem);
-		backdrop-filter: blur(2rem);
-		border-bottom: 1px solid transparent;
-	}
-	[data-theme="light"] header {
-		background-color: #FFFFFF !important; 
-	}
 
 	.right-sidebar {
 		border-inline-start-color: transparent;
@@ -997,27 +1014,27 @@ header span {
 
   /* Light Theme */
   [data-theme='light'] .hero {
-	background: linear-gradient(135deg, #E4FF07, #07FFFF);
+	background: #07FFFF;
 	color: #000000;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 1px 1px #AEB7CB;
   }
   
   [data-theme='light'] .hero:hover {
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 0px 2px 2px #AEB7CB;
   }
   
   /* Dark Theme */
   [data-theme='dark'] .hero {
-	background: linear-gradient(135deg, #FF2670, #000000);
+	background: #000000;
 	color: #FFFFFF;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 1px 1px #6E7391;
   }
   [data-theme='dark'] .tagline{ 
 	color: #fff !important;
   }
 
   [data-theme='dark'] .hero:hover {
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 2px 2px #6E7391;
   }
   
 
@@ -1230,6 +1247,26 @@ iframe:hover {
 [data-theme='light'] .c-breadcrumbs {
 	border-bottom: 1px solid #FF2670;
 }
+
+	/*Starlight Theme Select*/
+
+	starlight-theme-select svg {
+		width: 21px;
+		height: auto;
+		display: flex !important;
+		justify-content: center !important; 
+			}
+
+	starlight-theme-select svg.caret {
+			display: none;
+			width: 0;
+			height: 0;
+	}
+
+	starlight-theme-select select:not(:active)  {
+		font-size: 1px;
+	}
+
 
 @media (max-width: 768px) {
 
