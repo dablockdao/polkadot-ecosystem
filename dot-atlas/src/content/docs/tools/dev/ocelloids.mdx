@@ -1,0 +1,87 @@
+---
+title: 'Ocelloids'
+description: 'Effortlessly access real-time, cross-chain blockchain data with Ocelloids. Simplify integration, enhance automation, and build smarter apps.'
+hero:
+  tagline: Access real-time, cross-chain blockchain data.
+  image: 
+    file: ../../../../assets/tools/dev/ocelloids.png
+  actions:
+    - text: Site
+      link: https://www.ocelloids.net/
+      icon: external
+    - text: Docs
+      link: https://www.ocelloids.net/docs/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+As blockchain technology continues to revolutionize industries, efficient access to on-chain data has become essential for developers and enterprises building on multi-chain ecosystems. Ocelloids emerges as a groundbreaking solution, offering advanced tools and services tailored for seamless blockchain data integration and automation. This article delves into the capabilities of Ocelloids, highlighting its role in simplifying cross-chain data access and enhancing event-driven application development.
+
+### **What is Ocelloids?**
+Ocelloids is a robust suite of services and tools designed to provide real-time, customizable data products derived from on-chain activities across multiple blockchain networks. By enabling developers to query and subscribe to aggregated data streams, Ocelloids eliminates the complexities of handling disparate blockchain protocols, paving the way for streamlined multi-chain application development.
+
+### **Key Features of Ocelloids Services**
+**1. **Multi-Chain Data Aggregation:** Ocelloids aggregates data from over 20 blockchain networks, including Polkadot, Kusama, Moonbeam, Acala, and more. Its Data Steward agent enriches metadata for assets and currencies, allowing users to access tailored cross-chain data in a single query. This capability significantly reduces the overhead associated with multi-chain data management.
+**2. **Real-Time Data Streams:** With Ocelloids’ WebSocket-based data streams, developers can integrate real-time on-chain data into their applications effortlessly. This functionality is ideal for monitoring cross-chain interactions, tracking asset movements, and responding to blockchain events with minimal latency.
+**3. **Reliable Webhooks for Event Notifications:** Ocelloids’ webhook system ensures reliable delivery of critical updates. By subscribing to events through the General Informant agent or the XCM Monitor, users can receive notifications about specific blockchain activities, such as extrinsic executions, storage changes, and cross-chain messaging (XCM) outcomes.
+
+### **Core Agents in Ocelloids Ecosystem**
+1. **Data Steward:** The Data Steward agent focuses on aggregating and enriching data for blockchain assets and currencies. Developers can leverage its API to retrieve comprehensive metadata, enabling more intuitive and user-friendly applications.
+2. **General Informant:** This agent empowers users to monitor blockchain extrinsics, storage, and events with customizable filters. By providing granular control over subscription inputs and outputs, the General Informant simplifies data tracking and integration.
+3. **XCM Monitor:** Designed specifically for tracking cross-chain interactions, the XCM Monitor facilitates effortless monitoring of asset transfers and XCM messaging. It provides detailed insights into the journey of cross-chain assets, including sent, relayed, and received statuses.
+
+### **Ocelloids TypeScript Client Library**
+For JavaScript and TypeScript developers, Ocelloids offers a dedicated client library. This library simplifies interaction with Ocelloids’ APIs, enabling efficient data queries and subscription management. Example use cases include querying multi-chain asset data and subscribing to XCM events:
+
+```typescript
+import { OcelloidsClient } from "@sodazone/ocelloids-client";
+
+const client = new OcelloidsClient(API_TOKEN);
+const agent = client.agent("steward");
+
+agent.query({
+  op: "assets",
+  criteria: [
+    { network: "urn:ocn:polkadot:1000", assets: ["1984"] },
+    { network: "urn:ocn:polkadot:2034", assets: ["15", "10", "25"] }
+  ]
+}).then(res => console.log(res.items));
+```
+
+### **Applications of Ocelloids**
+Ocelloids enables a wide range of use cases, from building real-time dashboards for blockchain monitoring to powering decentralized exchanges (DEXs) with up-to-date cross-chain asset data. Its lightweight, customizable solution is particularly suited for:
+- **Cross-Chain Transfer Tracking**: Monitor the status of XCM asset transfers and receive notifications on specific waypoints.
+- **Real-Time DeFi Applications**: Enable instant updates for decentralized finance platforms, ensuring accurate and timely data for users.
+- **Event-Driven Automation**: Trigger workflows based on blockchain events, such as successful asset transfers or specific extrinsic executions.
+
+### **Why Choose Ocelloids?**
+1. **Wide Blockchain Coverage**
+Ocelloids supports a diverse range of blockchain networks, ensuring developers can access data from major ecosystems like Polkadot, Kusama, Moonbeam, and more.
+**2. **Open Source Flexibility**
+Licensed under the Apache License 2.0, Ocelloids promotes transparency and collaboration. Developers can audit, customize, and innovate without vendor lock-in.
+3. **High Performance and Reliability**
+Ocelloids’ infrastructure is designed for scalability and efficiency. Recent performance tests demonstrated its ability to handle thousands of concurrent WebSocket subscriptions with minimal overhead, ensuring uninterrupted service.
+
+### Conclusion
+Ocelloids stands out as a pioneering solution in the blockchain space, providing developers with the tools needed to harness the power of multi-chain ecosystems. By offering real-time data streams, reliable webhooks, and aggregated APIs, Ocelloids simplifies the complexities of blockchain integration, empowering developers to build smarter, event-driven applications. As the demand for efficient cross-chain solutions grows, Ocelloids is well-positioned to lead the way in unlocking blockchain’s full potential.
+
+## Ocelloids Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+             {
+      href: 'https://www.youtube.com/watch?v=i3VRFSnyytA',
+      title: 'Ocelloids XCM Tracker [demo]',
+          },
+          {
+      href: 'https://www.youtube.com/watch?v=LGqg-DVIrvs',
+      title: 'Polkadot-Kusama Bridge Tracking',
+          },
+              {
+      href: 'https://www.youtube.com/watch?v=zzEMETD2K8M',
+      title: 'Enhanced XCM UX with Ocelloids [demo]',
+        },
+
+  ]} />
