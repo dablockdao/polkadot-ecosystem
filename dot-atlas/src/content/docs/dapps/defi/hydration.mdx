@@ -1,6 +1,6 @@
 ---
 title: Hydration
-description: Hydration is a cross-chain liquidity protocol that will enable users to inter-swap assets across different blockchains with minimal slippage
+description: Hydration is a cross-chain liquidity protocol that will enable users to inter-swap assets across different blockchains with minimal slippage.
 sidebar:
     label: ✪ Hydration
     order: 1
@@ -22,15 +22,63 @@ import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, Showcase
 
 Hydration (former known as HydraDX) is a ground-breaking project in the decentralized finance (DeFi) space that uses the Substrate framework, therefore forming part and parcel of the larger Polkadot ecosystem. The objective is to operationalize a **cross-chain liquidity protocol that will enable users to inter-swap assets across different blockchains with minimal slippage**. Fueled by the power of **Polkadot’s interoperability**, HydraDX is poised at resolving the sharpest problems within the modern DeFi sector—liquidity fragmentation, high transaction fees, and a lack of scalability.
 
-## Core Features of Hydration:
-- **Omnipool**: This differs significantly from traditional DEXs, where each trading pair operates from separate pools. This innovative approach reduces the fragmentation of liquidity among many pools, hence allowing for more effective trades.
-- **Cross-Chain Swaps**: Built on Polkadot, HydraDX inherently supports asset swapping between different blockchains without the need for centralized exchanges, promoting a truly interoperable DeFi ecosystem.
-- **Low Slippage**: By aggregating liquidity into a single pool through Polkadot’s scalable infrastructure, HydraDX minimizes slippage even for large orders, which is a significant advantage over the high slippage costs found on most other DEX platforms.
-- **Scalability**: Leveraging the shared security and interoperability features of the Polkadot network, HydraDX is designed to meet the high throughput demands of DeFi applications, ensuring faster transaction times and lower fees for users.
-- **HYDRA Token**: The native token of the HydraDX platform, HYDRA, is central to the ecosystem. It is used for governance, allowing token holders to vote on developmental and operational issues, and as an incentive for liquidity providers who stake their tokens to earn rewards, thereby maintaining a healthy and liquid market.
-- **Security and Decentralization**: Built with Substrate, HydraDX emphasizes security and robust technical architecture. It operates under a fully decentralized governance model where HYDRA token holders make community-based decisions, aligning the platform with the best interests of its users.
+Hydration is a next-generation protocol built on the Polkadot network. Hydration’s mission is clear: to make DeFi efficient, simple, and unstoppable. By combining swaps, lending, and a stablecoin under a unified, scalable appchain, Hydration seeks to streamline DeFi operations and enhance accessibility for users worldwide.
 
-**The Future of HydraDX**: Looking forward, HydraDX plans to expand its ecosystem by integrating more blockchains, increasing the diversity of assets available for trading. The project is also focused on enhancing its user interface and overall user experience to make decentralized finance more accessible to a broader audience.
+## The Core Innovation: Omnipool
+At the heart of Hydration’s ecosystem lies the Omnipool, an innovative Automated Market Maker (AMM) that consolidates all assets into a single trading pool. This groundbreaking approach eliminates liquidity fragmentation, enabling:
+- **Lower Slippage**: Traders experience reduced price impact during transactions.
+- **Fewer Hops**: Direct asset swaps within a single pool enhance efficiency.
+- **Capital Efficiency**: Unified liquidity pools minimize wasted resources, benefiting liquidity providers (LPs) and traders alike.
+
+The Omnipool supports single-sided liquidity provisioning, allowing users to provide liquidity for their chosen asset while gaining exposure to all other assets in the pool. To incentivize participation, Hydration introduces Hydrated Farms, which offer rewards to early liquidity providers in addition to trading fees.
+
+## Security and Risk Management
+Security remains a top priority for Hydration. The protocol employs multiple layers of protection, including:
+- **Comprehensive Audits**: Regular security evaluations by industry experts.
+- **Bug Bounty Programs**: Incentives for identifying vulnerabilities.
+- **Advanced Mechanisms**: Liquidity caps, protocol fees, and circuit breakers to safeguard user funds.
+
+Hydration also addresses impermanent loss (IL) through non-inflationary measures, providing LPs with mechanisms to mitigate IL while participating in the Omnipool.
+
+## The HDX Token: Governance and Utility
+The HDX token is central to Hydration’s decentralized governance model. HDX holders can:
+- **Vote on Protocol Upgrades**: Influence the future development of the platform.
+- **Set Base Network Fees**: Adjust fee structures for swaps.
+- **Allocate Treasury Funds**: Support ecosystem growth initiatives.
+
+The initial supply of HDX was capped at 10 billion tokens, later reduced to 6.5 billion through community governance. The allocation supports diverse stakeholders, including LBP participants, team members, investors, and the DAO treasury, ensuring long-term sustainability.
+
+
+
+## Hydration’s DeFi Services
+Hydration combines a suite of DeFi products to deliver an integrated, user-friendly experience:
+1. **Swaps:** Users can trade assets seamlessly within the Omnipool. Hydration’s AMM design ensures minimal slippage and lower trading fees compared to traditional platforms. Advanced features, such as Split Trades, enable large orders to be executed incrementally, reducing price impact.
+2. **Lending and Borrowing:** Hydration integrates a fork of AAVE v3 to enable lending and borrowing with added efficiencies:
+    - **Collateralized Borrowing:** Users can borrow against their assets with dynamic interest rates based on supply and demand.
+    - **On-Chain Liquidations:** Hydration’s appchain architecture prioritizes liquidations, reducing delays and risks associated with general-purpose blockchains.
+    - **Internalized MEV:** By internalizing maximum extractable value (MEV), the protocol redirects liquidation fees to the DAO, enhancing ecosystem sustainability.
+3. **Stablecoin Support:** Hydration supports stablecoin trading through specialized Stablepools, which aggregate liquidity for stable assets. This design ensures reduced slippage and optimized capital efficiency, benefiting users engaged in stablecoin swaps.
+4. **Automated Trading:** Hydration’s Dollar-Cost Averaging (DCA) feature allows users to automate trades over time, mitigating the impact of market volatility. The Yield DCA feature further enables users to reinvest staking rewards, diversifying their portfolios efficiently.
+5. **Staking:** HDX staking rewards participants who actively support the network. Rewards are dynamically distributed based on users’ staking duration and governance participation. Enhanced loyalty mechanisms incentivize long-term engagement while offering gamified reward boosts.
+
+## Cross-Chain Compatibility
+As part of the Polkadot ecosystem, Hydration leverages cross-chain interoperability to facilitate seamless asset transfers. Through bridges like Wormhole and Polkadot’s XCM protocol, users can move assets between Ethereum, Moonbeam, and other parachains, expanding their trading opportunities.
+
+## User-Friendly Wallet Support
+Hydration ensures accessibility by supporting various wallet options:
+- **Mobile Wallets:** Compatible with Nova Wallet and SubWallet for easy on-the-go access.
+- **Desktop Wallets:** Integrates with browser extensions like Talisman and native desktop wallets like Nova Spectre.
+- **Hardware Wallets:** Supports Ledger devices for added security.
+- **Parity Signer:** Allows users to convert smartphones into air-gapped hardware wallets for enhanced safety.
+
+## Future Developments
+Hydration’s roadmap includes several exciting features:
+- **HOLLAR Stablecoin:** A native stablecoin designed to further enhance trading efficiency within the ecosystem.
+- **Isolated Pools:** Separate pools for high-risk assets, allowing users to manage exposure and mitigate potential losses.
+- **Enhanced Governance Mechanisms:** Expanding the DAO’s influence and decentralizing decision-making further.
+
+## Conclusion
+Hydration is redefining DeFi by merging innovation, security, and community-driven governance. With the Omnipool at its core and a suite of user-focused features, Hydration positions itself as a leader in the Polkadot ecosystem, offering unmatched efficiency and simplicity. For users and developers alike, Hydration represents a step forward in building a robust, sustainable, and decentralized financial future.
 
 ## Hydration Community Videos
 ------------

@@ -426,10 +426,11 @@ header span {
 	--sl-color-highlight: #07FFFF; /* Cyan */
 	--sl-color-muted: #6E7391; /* Storm 700 */
 	--sl-background-gradient: linear-gradient(
-	  120deg,
-	  #000000, /* Black */
-	  #6E7391 /* Storm 700 */
-	);
+		120deg,
+		#000000 95%, /* Black (dominant) */
+		#FF2670 5%  /* Polkadot Pink (very subtle edge) */
+	  );
+		  
   }
   
   :root[data-theme="light"] {
