@@ -148,6 +148,7 @@ export default defineConfig({
 				replacesTitle: true,
 			},
 			components: {
+				ThemeSelect: './src/components/CustomThemeSelect.astro',
 				Head: './src/components/CustomHead.astro',
 				Footer:'./src/components/CustomFooter.astro',
 				SiteTitle: './src/components/CustomSiteTitle.astro',
