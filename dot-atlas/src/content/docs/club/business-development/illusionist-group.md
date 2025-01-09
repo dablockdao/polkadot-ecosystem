@@ -4,7 +4,7 @@ description: Illusionist Group invests in innovative blockchain projects, foster
 hero:
   tagline: Global blockchain and digital investment fund.
   image: 
-    file: ../../../../assets/hub/orgs/harbourindustrialcapital.png
+    file: ../../../../assets/hub/orgs/illusionistgroup.png
   actions:
     - text: Site
       link: https://illusionistgroup.com/
