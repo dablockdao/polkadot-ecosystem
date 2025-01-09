@@ -425,12 +425,7 @@ header span {
 	--sl-color-secondary: #E4FF07; /* Lime */
 	--sl-color-highlight: #07FFFF; /* Cyan */
 	--sl-color-muted: #6E7391; /* Storm 700 */
-	--sl-background-gradient: linear-gradient(
-		120deg,
-		#000000 95%, /* Black (dominant) */
-		#FF2670 5%  /* Polkadot Pink (very subtle edge) */
-	  );
-		  
+	--sl-background-gradient: linear-gradient(145deg, #121212, #1e1e1e); 
   }
   
   :root[data-theme="light"] {
@@ -447,6 +442,42 @@ header span {
 	);
   }
   
+  :root {
+	--pink-hsl: 319, 100%, 9%;
+	--overlay-pink: hsla(var(--pink-hsl), 1);
+	--sl-color-bg-sidebar: transparent;
+	--top-gradient-bg: #000000;
+	--hero-gradient-bg: #000000;
+	--sl-color-bg-nav: var(--sl-color-bg);
+	--icon-size: 1.2rem;
+	--icon-spacing: 0.5rem;
+}
+
+.sl-banner {
+	background: var(--sl-color-accent);
+}
+
+:root[data-theme='light'] {
+	--top-gradient-bg: hsla(319, 100%, 50%, 0.1);
+	--hero-gradient-bg: hsla(189, 96%, 42%, 0.15);
+	--sl-color-bg-sidebar: transparent;
+}
+
+:root {
+	--background-color: #0d1b2a;
+	--text-color: #e0e1dd;
+	--link-color: #e0e1dd;
+	--link-hover-bg: rgba(38, 150, 255, 0.1);
+	--link-hover-color: #2696ff;
+  }
+  
+  :root[data-theme='light'] {
+	--background-color: #e0f7ff;
+	--text-color: #0d1b2a;
+	--link-color: #0d1b2a;
+  }
+
+
   body {
 	background: var(--sl-background-gradient);
 	color: var(--sl-color-text);
@@ -677,22 +708,6 @@ header span {
 	}
 }
 
-:root {
-	--pink-hsl: 319, 100%, 9%;
-	--overlay-pink: hsla(var(--pink-hsl), 1);
-	--sl-color-bg-sidebar: transparent;
-	--top-gradient-bg: hsla(319, 100%, 9%, 0.4);
-	--hero-gradient-bg: hsla(189, 96%, 42%, 0.1);
-	--sl-color-bg-nav: var(--sl-color-bg);
-	--icon-size: 1.2rem;
-	--icon-spacing: 0.5rem;
-}
-
-:root[data-theme='light'] {
-	--top-gradient-bg: hsla(319, 100%, 50%, 0.1);
-	--hero-gradient-bg: hsla(189, 96%, 42%, 0.15);
-	--sl-color-bg-sidebar: transparent;
-}
 
 .page {
 	background:
@@ -701,16 +716,18 @@ header span {
 			180rem;
 }
 
-header {
-	border-bottom: 1px solid transparent;
-}
 
 @media (min-width: 72rem) {
 	header {
-		background-color: transparent !important;
-		-webkit-backdrop-filter: blur(2rem) !important;
-		backdrop-filter: blur(2rem) !important;
+		background-color: #000000 !important;
+		-webkit-backdrop-filter: blur(2rem);
+		backdrop-filter: blur(2rem);
+		border-bottom: 1px solid transparent;
 	}
+	[data-theme="light"] header {
+		background-color: #FFFFFF !important; 
+	}
+
 	.right-sidebar {
 		border-inline-start-color: transparent;
 	}
@@ -938,19 +955,6 @@ header {
     transform: translateY(-2px);
 }
 
-:root {
-	--background-color: #0d1b2a;
-	--text-color: #e0e1dd;
-	--link-color: #e0e1dd;
-	--link-hover-bg: rgba(38, 150, 255, 0.1);
-	--link-hover-color: #2696ff;
-  }
-  
-  :root[data-theme='light'] {
-	--background-color: #e0f7ff;
-	--text-color: #0d1b2a;
-	--link-color: #0d1b2a;
-  }
 
 
   /* HERO */
