@@ -487,6 +487,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".mdx"] };
+"club/initiatives/accelerate-polkadot.mdx": {
+	id: "club/initiatives/accelerate-polkadot.mdx";
+  slug: "club/initiatives/accelerate-polkadot";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
 "club/initiatives/alpha-airdrop.mdx": {
 	id: "club/initiatives/alpha-airdrop.mdx";
   slug: "club/initiatives/alpha-airdrop";
@@ -525,6 +532,13 @@ declare module 'astro:content' {
 "club/initiatives/openguild-labs.mdx": {
 	id: "club/initiatives/openguild-labs.mdx";
   slug: "club/initiatives/openguild-labs";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
+"club/initiatives/papermoon.mdx": {
+	id: "club/initiatives/papermoon.mdx";
+  slug: "club/initiatives/papermoon";
   body: string;
   collection: "docs";
   data: any
@@ -665,6 +679,41 @@ declare module 'astro:content' {
 "club/media/webzero.mdx": {
 	id: "club/media/webzero.mdx";
   slug: "club/media/webzero";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
+"club/memecoins/beefy.mdx": {
+	id: "club/memecoins/beefy.mdx";
+  slug: "club/memecoins/beefy";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
+"club/memecoins/gavunwud.mdx": {
+	id: "club/memecoins/gavunwud.mdx";
+  slug: "club/memecoins/gavunwud";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
+"club/memecoins/index.mdx": {
+	id: "club/memecoins/index.mdx";
+  slug: "club/memecoins";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
+"club/memecoins/pink.mdx": {
+	id: "club/memecoins/pink.mdx";
+  slug: "club/memecoins/pink";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
+"club/memecoins/stink.mdx": {
+	id: "club/memecoins/stink.mdx";
+  slug: "club/memecoins/stink";
   body: string;
   collection: "docs";
   data: any

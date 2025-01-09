@@ -141,6 +141,9 @@ export default defineConfig({
 						label: '📚 Resources', collapsed: true, autogenerate: { directory: 'club/resources' }
 					},
 					{
+						label: '🎪 Memecoins', collapsed: true, autogenerate: { directory: 'club/memecoins' }
+					},
+					{
 						label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'club/archive' }
 					},
 					  ]}
