@@ -1,74 +1,67 @@
 ---
-title: 'OG Tracker'
-description: OG Tracker offers transparent monitoring of Polkadot OpenGov proposals, ensuring accountability, progress tracking, and comprehensive proposal reviews in one platform.
+title: 'Governance Bot'
+description: ChaosDAO Governance Bot automates voting on Polkadot/Kusama, fostering transparent, collaborative decision-making within decentralized communities.
 hero:
-  tagline: Enhancing Transparency and Accountability in the Polkadot Ecosystem.
+  tagline:  Revolutionizing Decentralized Decision-Making on Polkadot and Kusama.
   image: 
-    file: ../../../../assets/tools/dao-tools/ogtracker.png
+    file: ../../../../assets/hub/daos/chaosdao.png
   actions:
-    - text: Tool
-      link: https://ogtracker.io/
+    - text: Github
+      link: https://github.com/ChaosDAO-org/InternalGov-2.0
       icon: external
-    - text: Docs
-      link: https://docs.ogtracker.io/overview/
-      icon: external
-      variant: secondary
 ---
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
 
-Ensuring **transparency and accountability within decentralized governance systems** is paramount. The **OG Tracker platform** is a groundbreaking initiative designed to address this need within the Polkadot ecosystem. By providing a u**ser-friendly interface**, OG Tracker allows users to **monitor the progress and deliverables of approved proposals under the Polkadot OpenGov framework**. This article delves into the features, benefits, and overall impact of the OG Tracker platform.
+In the dynamic and rapidly evolving landscape of blockchain technology, effective governance is paramount. ChaosDAO introduces a cutting-edge governance bot designed to enhance collaborative decision-making and streamline the voting process on the Polkadot and Kusama ecosystems. By leveraging automation and fostering community engagement, this tool ensures a transparent, efficient, and inclusive approach to decentralized governance.
 
-## OG Tracker Addressing the Challenges in OpenGov
-The OpenGov framework in the Polkadot ecosystem enables community-driven governance through proposal submissions and approvals. However, this system faces several challenges:
-1. **OpenGov Fatigue:** With a high volume of proposals being submitted regularly, voters often find it challenging to keep track of ongoing developments post-approval.
-2. **Unmet Expectations:** Proposals may under-deliver or underperform without the community being aware, impacting future evaluations and trust.
-3. **Lack of Awareness:** Keeping the community informed about the current state and deadlines of each proposal is difficult.
-4. **Lost Information:** Important historical data, achievements, and unmet promises often become untraceable.
-5. **Absence of a Centralized Platform:** There is no dedicated platform that systematically tracks detailed information for each proposal, including past events and feedback.
+## Overview of the Governance Bot
+The ChaosDAO Governance Bot is a robust solution tailored to monitor governance referenda on the Polkadot and Kusama networks. Its primary function is to create dedicated discussion threads for each referendum, allowing community members to deliberate before the proxy account casts a vote on behalf of the collective. By integrating seamlessly with Discord, the bot facilitates an organized and interactive platform for stakeholders to share insights and reach a consensus.
 
-## The Solution: OG Tracker
-OG Tracker addresses these challenges by creating a centralized, transparent, and user-friendly platform. The primary features and benefits of OG Tracker include:
-- **Intuitive UI Design:** The platform boasts a simple and easy-to-navigate interface, ensuring that users can quickly access and understand proposal data.
-- **Comprehensive Reviews:** Detailed reviews of each proposal’s current status, including ongoing developments and updates.
-- **Accountability and Proof of Work:** Provides a clear record of proponents’ past work, helping the community evaluate future proposals based on historical performance.
-- **Background Information:** Offers insights into the background and impact of each proponent’s ideas and proposals.
-- **Status Tracking:** A clear system to track and display the status of deliverables, making it easy to follow progress and encountered obstacles.
+## Governance Bot Key Features:
+1. **Automated Referenda Monitoring**: The bot continuously tracks governance proposals, ensuring timely updates for community discussions.
+2. **Thread Creation**: For every referendum, the bot generates a specific thread within a designated Discord forum, fostering focused and structured conversations.
+3. **Proxy Voting**: After internal deliberations, the bot executes votes using a proxy account, aligning with the majority decision and pre-defined voting periods.
+4. **Customizable Vote Periods**: Tailored settings for Polkadot and Kusama proposals allow for flexibility based on the origin of each referendum.
+5. **24/7 Reliability**: With PM2 process management, the bot operates continuously, ensuring uninterrupted service.
 
-## Key Sections of the OG Tracker Platform
-The OG Tracker interface is divided into three main sections:
-1. **Home Dashboard:** Displays essential data about the overall approved proposals and the current state of OpenGov.
-2. **Explore Proposals:** Provides an overview of approved proposals categorized by type.
-3. **Proposal Breakdown:** Allows users to delve into detailed breakdowns of each proposal, monitoring progress, deliverables, and important milestones.
+## Enhancing Community Collaboration
+The ChaosDAO Governance Bot transforms governance by enabling comprehensive discussions within a dedicated Discord forum. Community members can openly exchange perspectives on proposals, ensuring informed decisions that reflect collective insights. This setup encourages active participation, transparency, and trust among stakeholders.
 
-## Tracking Process and Methodology
-OG Tracker follows a meticulous tracking process to ensure accuracy and reliability:
-1. **Proposal Breakdown and Analysis:** Each proposal is thoroughly analyzed to highlight milestones and expected deliverables based on proposed timelines.
-2. **Information Gathering:** Data is collected from various sources such as GitHub, social media, and official websites to verify progress and adherence to deadlines.
-3. **Communication with Teams:** Direct communication with involved teams is established to gather additional information and confirm publicly available data.
+## Example Use Case:
+Consider a proposal originating from the "Treasurer" role on the Kusama network. After its on-chain introduction, the bot initiates a five-day internal voting period. Based on the community's decision, the proxy account casts an "AYE" or "NAY" vote. If the stance changes during the subsequent revote period, the bot adjusts accordingly, reflecting the collective consensus.
 
-For content marketing proposals, OG Tracker monitors social media accounts to evaluate the validity of deadlines and engagement metrics. For development proposals, it tracks GitHub for code commits, issues, and pull requests. In cases of approved tips or forkless upgrades, brief summaries are provided to keep the community updated.
-
-#### Conclusion
-The OG Tracker platform is set to revolutionize how the Polkadot community monitors and evaluates OpenGov proposals. By offering a transparent, comprehensive, and user-friendly interface, OG Tracker not only enhances accountability but also ensures that the community remains informed and engaged. This initiative represents a significant step forward in creating a more transparent and accountable decentralized governance system, fostering trust and efficiency within the Polkadot ecosystem.
+## Technical Implementation
+The bot’s deployment involves the following steps:
+1. **Initial Setup**: Configure the bot with a Discord API key, server ID, and forum ID.
+2. **Environment Configuration**: Rename the provided `.env.sample` file to `.env` and populate it with necessary credentials.
+3. **Dependency Installation**: Use Python and Node.js to install prerequisite libraries and tooling.
+4. **Process Management**: Employ PM2 to maintain 24/7 bot uptime, allowing for seamless updates and monitoring.
 
 
-## OG Tracker Community Videos
-------------
-<ShowcaseYouTube
-  entries={[
-    {
-      href: 'https://www.youtube.com/watch?v=SckOmgQ_Iug',
-      title: 'OG Tracker - A Polkadot Governance Tracker Platform | Describedot',
-      description: 'Key features of OG Tracker and compare it with other platforms like DoTreasury and Polkassembly.'  },
-  ]} />
+## Voting Periods and Settings
+ChaosDAO’s Governance Bot adheres to distinct voting periods for Polkadot and Kusama, depending on the proposal’s origin. For instance:
+- **Kusama**:
+    - Root: Decision Period (14 days), Internal Vote Period (5 days), Revote Period (10 days)
+    - SmallTipper: Decision Period (7 days), Internal Vote Period (1 day), Revote Period (4 days)
+- **Polkadot**:
+    - Root: Decision Period (28 days), Internal Vote Period (7 days), Revote Period (20 days)
+    - BigSpender: Decision Period (28 days), Internal Vote Period (7 days), Revote Period (20 days)
 
+This structure ensures adaptability and precision in executing on-chain votes, reflecting the evolving preferences of the community.
 
+## Benefits of the Governance Bot
+1. **Streamlined Governance**: Automation reduces manual oversight, enabling faster and more accurate decision-making.
+2. **Inclusive Participation**: The discussion platform ensures all voices are heard, fostering a sense of ownership and collaboration.
+3. **Enhanced Transparency**: Public threads and clear voting processes build trust within the community.
+4. **Customizability**: Role-specific vote settings cater to diverse proposal origins and decision-making needs.
 
-<ShowcaseTwitter
-  entries={[
-    'https://x.com/og_tracker/status/1869409786300674187',
-  ]}
-/>
+## Support and Resources
+For assistance or inquiries, ChaosDAO provides multiple channels:
+- **Telegram**: [n4droj](https://t.me/n4droj)
+- **Twitter**: [n4dro](https://twitter.com/n4dro)
 
- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+Additional resources, including the bot’s source code and deployment guidelines, are available on GitHub under the Apache-2.0 license. This transparency enables community contributions and continuous improvement of the bot’s functionality.
+
+### Conclusion
+The ChaosDAO Governance Bot stands as a pivotal innovation in decentralized governance. By combining automation, community engagement, and transparent decision-making, it empowers the Polkadot and Kusama ecosystems to navigate governance challenges effectively. As blockchain technology continues to evolve, tools like this underscore the importance of collaborative and informed decision-making in shaping the future of decentralized networks.

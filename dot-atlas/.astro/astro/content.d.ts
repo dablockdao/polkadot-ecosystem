@@ -2426,6 +2426,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".mdx"] };
+"tools/dev/solang.mdx": {
+	id: "tools/dev/solang.mdx";
+  slug: "tools/dev/solang";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
 "tools/dev/sqd.md": {
 	id: "tools/dev/sqd.md";
   slug: "tools/dev/sqd";
@@ -2538,6 +2545,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
+"tools/miscellaneous/wagmedia-bot.mdx": {
+	id: "tools/miscellaneous/wagmedia-bot.mdx";
+  slug: "tools/miscellaneous/wagmedia-bot";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
 "tools/miscellaneous/web3alert.mdx": {
 	id: "tools/miscellaneous/web3alert.mdx";
   slug: "tools/miscellaneous/web3alert";
