@@ -9,9 +9,7 @@ The Sub0 Asia 2024 conference highlighted crucial strategies for improving secur
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vSCJJ-9ZT7YA8OXUsVo4X_qh_HKQ9qjqx1R_mZp0hG7VhGYCFYkN15QOOSX5zJNurEjqZHhKGrxWqfs/embed?start=false&loop=true&delayms=60000" width="960"></iframe>
 
-Key Takeaways from the Talk
----------------------------
-
+## Key Takeaways from the Talk
 1. **Importance of Security in Blockchain Development**
   - Security is pivotal in the blockchain space, as vulnerabilities can lead to significant financial losses and reputational damage. Ensuring robust security practices are integrated into the development lifecycle is essential.
 2. **Current State of Security Efforts**
@@ -32,9 +30,7 @@ Key Takeaways from the Talk
 6. **Role of Security Ambassadors**
   - Security Ambassadors play a crucial role in bridging the gap between security teams and developers. They help instill a security-focused mindset within development teams, ensuring security is considered at every stage of the development process.
 
-Implementing Effective Security Measures
-----------------------------------------
-
+## Implementing Effective Security Measures
 1. **Start with Basic Security Training**
   - Ensure that all developers have a fundamental understanding of security principles. This can be achieved through mandatory training sessions and ongoing education programs.
 2. **Integrate Security into Development Lifecycle**
@@ -49,7 +45,6 @@ Implementing Effective Security Measures
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/4gfQ3Kwf9aM?si=TfmAgz88rEkt1fn5" title="YouTube video player" width="560"></iframe>
 
 ### Conclusion
-
 The talk at Sub0 Asia 2024 emphasized that while significant strides have been made in identifying security vulnerabilities within the Substrate ecosystem, the focus now needs to shift towards efficiently fixing these issues and preventing future ones. By adopting a holistic approach to security, integrating best practices into the development lifecycle, and leveraging community and professional resources, the Substrate ecosystem can achieve a robust security posture.
 
 For more detailed insights and practical guidance on enhancing security within the Substrate ecosystem, refer to the comprehensive resources provided by SRLabs and Parity.

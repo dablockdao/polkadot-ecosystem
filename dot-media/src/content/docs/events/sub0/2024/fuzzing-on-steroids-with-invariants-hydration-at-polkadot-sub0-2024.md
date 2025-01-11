@@ -9,15 +9,11 @@ sidebar:
 
 In a recent tech talk at [**Polkadot Sub0 2024**](https://dablock.com/web3-events/polkadot-sub0/) by **Martin Hloska** and **Valery Gantchev** from **Hydration** (former HydraDX), the spotlight was on an advanced approach to fuzzing known as “*Fuzzing on Steroids with Invariants*“. This innovative technique is tailored to enhance the detection of edge cases and potential vulnerabilities within the substrate runtimes of blockchain applications, particularly those utilizing the **Hydration (former known as HydraDX) protocol**.
 
-What is Fuzzing?
-----------------
-
+## What is Fuzzing?
 Fuzzing is an **automated testing technique that involves generating streams of random inputs and applying them to an API to detect unexpected behaviors** or crashes. In the context of blockchain, fuzzing is crucial for identifying potential vulnerabilities in the extrinsics, which are the public APIs that can be called by anyone.
 
-HydraDX’s Approach to Fuzzing
------------------------------
-
-HydraDX utilizes a specific fuzzer developed by **SRLabs**, known as the **Substrate Runtime Fuzzer**, which is built on top of **Ziggy**. This fuzzer employs coverage-guided fuzzing to systematically explore the code and detect areas that might cause crashes or unexpected behavior. The fuzzer’s ability to provide insights into the coverage of the code and help identify roadblocks makes it an invaluable tool in the development process.
+## Hydration’s Approach to Fuzzing
+Hydration (former HydraDX) utilizes a specific fuzzer developed by **SRLabs**, known as the **Substrate Runtime Fuzzer**, which is built on top of **Ziggy**. This fuzzer employs coverage-guided fuzzing to systematically explore the code and detect areas that might cause crashes or unexpected behavior. The fuzzer’s ability to provide insights into the coverage of the code and help identify roadblocks makes it an invaluable tool in the development process.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vRSJTwR_oGeIwvVZqVLQ7_Jk9-dYeycoHvucotHhAS6d7k4jJ_eS8ZnGq8qjbACFqkOwKevjCWUUs63/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 
