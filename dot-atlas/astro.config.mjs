@@ -157,8 +157,8 @@ export default defineConfig({
 				'./src/fonts/font-face.css',
 			  ],
 			logo: {
-				light: './src/assets/atlas1.png',
-				dark: './src/assets/atlas2.png',
+				light: './src/assets/ecosystem1.png',
+				dark: './src/assets/ecosystem2.png',
 				replacesTitle: true,
 			},
 			components: {
