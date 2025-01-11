@@ -60,8 +60,8 @@ export default defineConfig({
 				recentPostCount: 5,
 				prefix: 'news',
 				title: {
-					en: 'Latest News',
-					fr: 'News',
+					en: 'News',
+					fr: 'Nouvelles',
 					es: 'Noticias',
 					pt: 'Notícias',
 		},})],
@@ -74,8 +74,8 @@ export default defineConfig({
 				'./src/fonts/font-face.css',
 			  ],
 			logo: {
-				light: './src/assets/news1.png',
-				dark: './src/assets/news2.png',
+				light: './src/assets/ecosystem1.png',
+				dark: './src/assets/ecosystem2.png',
 				replacesTitle: true,
 			},
 			components: {
