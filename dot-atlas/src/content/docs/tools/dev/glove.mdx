@@ -1,0 +1,40 @@
+---
+title: Glove
+description: Glove ensures secure, anonymous, and verifiable voting for Polkadot OpenGov using AWS Nitro Enclaves, enhancing privacy and trust.
+hero:
+  tagline:  Secure and Anonymous Voting for Polkadot OpenGov.
+  image: 
+    file: ../../../../assets/tools/dev/glove.png
+  actions:
+    - text: Github
+      link: https://apillon.io/
+      icon: external
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+Glove is an innovative service designed for Polkadot OpenGov, enabling voters to participate in referenda securely and anonymously. By leveraging AWS Nitro Enclaves, Glove ensures privacy and trust in decentralized governance.
+
+### Key Features
+1. **Secure Vote Mixing**: Utilizes AWS Nitro Enclaves for isolated, tamper-proof vote processing.
+2. **Anonymity**: Ensures voters’ preferences remain confidential.
+3. **Verifiability**: Allows users to confirm their votes were mixed by authenticated enclaves.
+
+### Building and Deploying
+Glove can be built using Docker on an x86-64 machine. Deployment requires an AWS EC2 instance with Nitro Enclaves, DynamoDB for storage, and appropriate IAM roles.
+
+### Verifying Votes
+Participants can verify that their votes were securely mixed and reflect their preferences on-chain. Glove’s client tool ensures the enclave’s authenticity through measurement checks.
+
+### Deployment Tools
+- **Terraform/OpenTofu**: Automates infrastructure setup.
+- **Ansible**: Configures the service and enclaves.
+- **GitHub Actions**: Handles CI/CD for updates.
+
+### Important Notes
+- Avoid debug mode in production to maintain security.
+- Ensure version consistency for enclave verification.
+- Use `--regular-mix` only for testing to avoid information leakage.
+
+### Conclusion
+Glove advances blockchain governance by combining security, privacy, and transparency. It empowers Polkadot OpenGov participants with a reliable and verifiable voting solution, fostering trust and inclusivity in decision-making.
