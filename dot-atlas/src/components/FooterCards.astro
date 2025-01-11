@@ -32,11 +32,11 @@ const colorOptions = {
 ---
 
 <section class="c-footer-cards">
-  <h2 class="sr-only">Useful links</h2>
+  <span class="sr-only">Useful links</span>
   <ul class="card-list">
     {data?.map((item) => (
       <li class={`card ${colorOptions[variant]}`}>
-        <h3 class="card-title">{item.title}</h3>
+        <span class="card-title">{item.title}</span>
         <p class="card-description">{item.description}</p>
         <p class="card-cta" set:html={item.ctaText} />
       </li>
