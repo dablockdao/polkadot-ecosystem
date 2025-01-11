@@ -2230,6 +2230,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".mdx"] };
+"tools/dao-tools/chaosdao-bot.mdx": {
+	id: "tools/dao-tools/chaosdao-bot.mdx";
+  slug: "tools/dao-tools/chaosdao-bot";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
 "tools/dao-tools/dotreasury.md": {
 	id: "tools/dao-tools/dotreasury.md";
   slug: "tools/dao-tools/dotreasury";
@@ -2307,6 +2314,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
+"tools/dev/glove.mdx": {
+	id: "tools/dev/glove.mdx";
+  slug: "tools/dev/glove";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
 "tools/dev/index.mdx": {
 	id: "tools/dev/index.mdx";
   slug: "tools/dev";
@@ -2387,6 +2401,20 @@ declare module 'astro:content' {
 "tools/dev/reactivedot.mdx": {
 	id: "tools/dev/reactivedot.mdx";
   slug: "tools/dev/reactivedot";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
+"tools/dev/revive.mdx": {
+	id: "tools/dev/revive.mdx";
+  slug: "tools/dev/revive";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
+"tools/dev/scout.mdx": {
+	id: "tools/dev/scout.mdx";
+  slug: "tools/dev/scout";
   body: string;
   collection: "docs";
   data: any
