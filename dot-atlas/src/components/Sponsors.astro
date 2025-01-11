@@ -5,13 +5,13 @@ import example2Logo from '../assets/polkadot-treasury-light.png'
 
 const sponsors = [
   {
-    name: 'Polkadot',
+    name: '',
     img: example1Logo,
     url: 'https://polkadot.com',
     size: 'large'
   },
   {
-    name: 'Kusama',
+    name: '',
     img: example2Logo,
     url: 'https://polkadot.subsquare.io',
     size: 'large'
@@ -23,7 +23,7 @@ const sponsors = [
   {sponsors.map(sponsor => (
     <a target="_blank" rel="noopener" href={sponsor.url} class={sponsor.size ?? ''}>
       <article>
-        <h4>{sponsor.name}</h4>
+        <span>{sponsor.name}</span>
         <Image height={sponsor.size === 'large' ? 36 : 36} src={sponsor.img} alt={sponsor.name}/>
       </article>
     </a>

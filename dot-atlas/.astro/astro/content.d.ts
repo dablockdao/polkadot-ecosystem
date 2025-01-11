@@ -186,20 +186,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/bounties/antiscam.md": {
-	id: "club/bounties/antiscam.md";
+"club/bounties/antiscam.mdx": {
+	id: "club/bounties/antiscam.mdx";
   slug: "club/bounties/antiscam";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/bounties/bridges-bug-bounty.md": {
-	id: "club/bounties/bridges-bug-bounty.md";
+} & { render(): Render[".mdx"] };
+"club/bounties/bridges-bug-bounty.mdx": {
+	id: "club/bounties/bridges-bug-bounty.mdx";
   slug: "club/bounties/bridges-bug-bounty";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/bounties/defi-bounty.mdx": {
 	id: "club/bounties/defi-bounty.mdx";
   slug: "club/bounties/defi-bounty";
@@ -207,13 +207,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/bounties/dotplay.md": {
-	id: "club/bounties/dotplay.md";
+"club/bounties/dotplay.mdx": {
+	id: "club/bounties/dotplay.mdx";
   slug: "club/bounties/dotplay";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/bounties/events.md": {
 	id: "club/bounties/events.md";
   slug: "club/bounties/events";
@@ -221,13 +221,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/bounties/ibp.md": {
-	id: "club/bounties/ibp.md";
+"club/bounties/ibp.mdx": {
+	id: "club/bounties/ibp.mdx";
   slug: "club/bounties/ibp";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/bounties/index.mdx": {
 	id: "club/bounties/index.mdx";
   slug: "club/bounties";
@@ -291,13 +291,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/bounties/ux-bounty.md": {
-	id: "club/bounties/ux-bounty.md";
+"club/bounties/ux-bounty.mdx": {
+	id: "club/bounties/ux-bounty.mdx";
   slug: "club/bounties/ux-bounty";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/business-development/harbour-industrial-capital.mdx": {
 	id: "club/business-development/harbour-industrial-capital.mdx";
   slug: "club/business-development/harbour-industrial-capital";
@@ -462,6 +462,13 @@ declare module 'astro:content' {
 "club/daos/polkadot-poland.mdx": {
 	id: "club/daos/polkadot-poland.mdx";
   slug: "club/daos/polkadot-poland";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/daos/polkadotafrica.mdx": {
+	id: "club/daos/polkadotafrica.mdx";
+  slug: "club/daos/polkadotafrica";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -900,6 +907,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"club/orgs/math-crypto.mdx": {
+	id: "club/orgs/math-crypto.mdx";
+  slug: "club/orgs/math-crypto";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/metaspan.mdx": {
+	id: "club/orgs/metaspan.mdx";
+  slug: "club/orgs/metaspan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "club/orgs/moonsong-labs.mdx": {
 	id: "club/orgs/moonsong-labs.mdx";
   slug: "club/orgs/moonsong-labs";
@@ -956,6 +977,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"club/orgs/polkabiz.mdx": {
+	id: "club/orgs/polkabiz.mdx";
+  slug: "club/orgs/polkabiz";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "club/orgs/polkachu.md": {
 	id: "club/orgs/polkachu.md";
   slug: "club/orgs/polkachu";
@@ -994,6 +1022,13 @@ declare module 'astro:content' {
 "club/orgs/r0gue.mdx": {
 	id: "club/orgs/r0gue.mdx";
   slug: "club/orgs/r0gue";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/rotko-networks.mdx": {
+	id: "club/orgs/rotko-networks.mdx";
+  slug: "club/orgs/rotko-networks";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
