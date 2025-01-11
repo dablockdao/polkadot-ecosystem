@@ -6,9 +6,7 @@ sidebar:
 ---
 Polkadot Decoded 2024 saw an engaging panel titled “*What’s Next? Things We’d Love to See on Polkadot*“, featuring insights from industry leaders *[Alex Bird](https://x.com/itsbirdo_)*, *Chrissy Hill*, *Raul Romanutti*, *Kerstin Larsson*, and [*Ben McMahon*](https://x.com/lolmcshizz). This discussion, held at the Ecosystem Showcase Stage, delved into the future of Polkadot, covering **key areas such as OpenGov funding, enterprise adoption, UX for developers, and more**.
 
-Polkadot Ecosystem Showcase Panel Key Highlights:
--------------------------------------------------
-
+## Polkadot Ecosystem Showcase Panel Key Highlights:
 1. **OpenGov Funding and Governance** Raul Romanutti opened the panel with an in-depth look at the OpenGov model and its evolution from Governance 1. He highlighted the increased ease of submitting proposals and the positive community participation in voting. However, **Raul emphasized the need for a hybrid governance model**, combining direct democracy with representation, and improved UX for bounties and collectives.
 2. **Optimistic Project Funding (OPF)** Ben McMahon introduced the concept of Optimistic Project Funding (OPF), recently approved through OpenGov. **OPF aims to redirect a portion of inflation funds to specific projects based on community voting**, providing substantial incentives for popular projects. This approach is designed to attract more developers and projects to the Polkadot ecosystem by ensuring a more direct and lucrative funding mechanism.
 3. **Enterprise Adoption** Kerstin Larsson discussed the challenges and opportunities in enterprise adoption of blockchain technology. She identified three main barriers: complex communication, data privacy concerns, and interoperability beyond the ecosystem. **Kerstin emphasized the need for simplified language, private sidechains for data-sensitive industries, and stronger cross-ecosystem collaboration** to enhance enterprise adoption.
