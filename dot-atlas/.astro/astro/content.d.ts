@@ -2300,6 +2300,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"tools/dev/parachainbuilder.mdx": {
+	id: "tools/dev/parachainbuilder.mdx";
+  slug: "tools/dev/parachainbuilder";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/dev/paraspell.mdx": {
 	id: "tools/dev/paraspell.mdx";
   slug: "tools/dev/paraspell";
