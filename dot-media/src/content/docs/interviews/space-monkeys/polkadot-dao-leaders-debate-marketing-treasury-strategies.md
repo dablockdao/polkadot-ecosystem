@@ -6,16 +6,12 @@ sidebar:
 ---
 In the fast-paced and ever-evolving world of blockchain, the effective management of a decentralized autonomous organization (DAO) is both an art and a science. The recent [**Kusamarian Space Monkeys**](https://dablock.com/ecosystem/kusamarian/) 157 episode provided a platform for some of the most influential figures within the[ **Polkadot ecosystem** ](https://dablock.com/ecosystem/)to discuss and debate critical issues surrounding marketing strategies, treasury management, and long-term planning. This debate is particularly relevant as Polkadot continues to grow its presence in the blockchain space, and **decisions made today will have far-reaching consequences.**
 
-Setting the Stage: Polkadot’s Current Position
-----------------------------------------------
-
+## Setting the Stage: Polkadot’s Current Position
 Polkadot, a multi-chain network designed to enable cross-chain transfers of any type of data or asset, has garnered significant attention for its unique architecture and potential to revolutionize decentralized applications (dApps). However, with great power comes great responsibility, and the Polkadot community is well aware of the challenges that lie ahead.
 
 The discussion in Space Monkeys 157 brought together key players including Tommy, known as Alice und Bob, Yanis from the [**Web3 Foundation**](https://dablock.com/ecosystem/web3-foundation/), Shant Bra, a core developer, Tomas from [**Bifrost**](https://dablock.com/dapps/bifrost/), Mach from Mach Parity Cordev, Joe from [**Parity Technologies**](https://dablock.com/ecosystem/parity-technologies/) or [**Web3 Foundation**](https://dablock.com/ecosystem/web3-foundation/), and Giotto, a Polkadot DAO whale. The conversation revolved around the pressing issues of how the Polkadot treasury should be managed, whether the focus should be on saving or spending, and how to effectively market Polkadot to the broader blockchain community and beyond.
 
-Polkadot Treasury Debate: Spend or Save?
-----------------------------------------
-
+## Polkadot Treasury Debate: Spend or Save?
 One of the most heated discussions during the session was centered around the question of whether **Polkadot’s treasury should be conserved or actively spent**. The treasury, funded by the network’s inflation mechanism, is a vital resource for driving ecosystem growth, but its utilization must be strategic.
 
 **The Case for Spending:**  
@@ -24,9 +20,7 @@ A significant portion of the panel argued in favor of spending the treasury, emp
 **The Case for Conservatism:**  
 On the other side of the debate, more conservative voices like Giotto expressed concerns about the sustainability of heavy spending. **Giotto argued that while spending is necessary, it must be done with a focus on accountability and long-term impact**. The Polkadot treasury should not be exhausted on short-term gains, but rather used **strategically to ensure that funds are available for future needs**. This perspective is rooted in the belief that careful management of resources is essential to weather market volatility and ensure the network’s longevity.
 
-Polkadot Long-Term Strategy: Defining Success
----------------------------------------------
-
+## Polkadot Long-Term Strategy: Defining Success
 The panelists also engaged in a forward-looking discussion on what success should look like for Polkadot in the next five years. This conversation touched on the ideal outcomes of today’s spending choices and how they would shape Polkadot’s future.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/LxThzaS23KI?si=RsJoPJKRDF4RV2pC" title="YouTube video player" width="560"></iframe>
@@ -39,9 +33,7 @@ A key point raised during the discussion was the need to **identify and target t
 
 Giotto’s theory, for example, posits that venture capitalists (VCs) play a crucial role in determining which blockchain projects succeed. By **creating broad awareness and demonstrating Polkadot’s value**, the DAO can signal to VCs that Polkadot is the chain to invest in, which in turn attracts entrepreneurs and developers to build on the platform.
 
-Marketing Polkadot: Awareness vs. Performance
----------------------------------------------
-
+## Marketing Polkadot: Awareness vs. Performance
 Marketing is a critical component of Polkadot’s strategy, and the panelists had differing views on the most effective approach. The debate boiled down to two primary schools of thought: broad awareness marketing versus performance marketing.
 
 **Awareness Marketing:**  
@@ -54,9 +46,7 @@ On the other side, there are those who believe that Polkadot’s marketing effor
 
 A hybrid approach was suggested, where broad awareness campaigns are supplemented with targeted performance marketing efforts aimed at specific verticals within the blockchain space. This would allow Polkadot to capture new markets and users who are not currently engaged with blockchain technology but could benefit from Polkadot’s unique offerings.
 
-Polkadot Tooling and Developer Experience: The Path to Better Adoption
-----------------------------------------------------------------------
-
+## Polkadot Tooling and Developer Experience: The Path to Better Adoption
 Another crucial aspect of the discussion was the need for better tooling and developer experience within the Polkadot ecosystem. The panelists acknowledged that while Polkadot’s technology is powerful, it is also complex, and this complexity can be a barrier to adoption.
 
 **Bridging the Gap Between Potential and Practicality:**  
@@ -65,9 +55,7 @@ One of the key points raised was the gap between what is possible on Polkadot an
 **The Role of Polkadot Plaza:**  
 The concept of Polkadot Plaza was also discussed as a potential solution to these challenges. Polkadot Plaza could serve as a unified platform that brings together all the tools and resources developers need to build on Polkadot. However, there was a strong sentiment that Plaza should not be branded separately but should be seen as an integral part of the Polkadot ecosystem. This would help to reinforce the idea that Polkadot is a comprehensive solution, rather than a collection of disparate tools.
 
-Polkadot Treasury Management: Moving Towards a Sustainable Model
-----------------------------------------------------------------
-
+## Polkadot Treasury Management: Moving Towards a Sustainable Model
 The management of Polkadot’s treasury was another critical issue addressed in the discussion. The current model, which involves significant spending from the treasury, has raised **concerns about sustainability**.
 
 **Establishing a Budget:**  
@@ -76,9 +64,7 @@ One of the proposals was to establish a more formal budget for the treasury, set
 **Request for Proposals (RFP) System:**  
 Another suggestion was to implement a Request for Proposals (RFP) system, where teams can compete for treasury funds by presenting their solutions to specific challenges. This competitive process would encourage innovation and **ensure that the best ideas are funded, ultimately leading to better outcomes for the Polkadot ecosystem**.
 
-Conclusion: Finding Consensus for Polkadot’s Future
----------------------------------------------------
-
+## Finding Consensus for Polkadot’s Future
 The Space Monkeys 157 episode highlighted the diversity of opinions within the Polkadot DAO and the complexity of the decisions that need to be made. From marketing strategies to treasury management, the panelists provided valuable insights into the challenges and opportunities that lie ahead for Polkadot.
 
 As the network continues to grow, it will be crucial to find a balance between spending and saving, broad awareness and targeted marketing, and innovation and sustainability. By fostering a collaborative environment and encouraging open debate, **the Polkadot DAO is well-positioned to navigate these challenges and ensure that Polkadot remains at the forefront of the blockchain revolution.**

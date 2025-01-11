@@ -2,11 +2,6 @@
 import type { Props } from '@astrojs/starlight/props';
 import Default from '@astrojs/starlight/components/SocialIcons.astro';
 ---
-<nav class="topMenu">
-    <a class="topLink" href="/guides/">Guides</a>
-    <a class="topLink" href="/lists/">Lists</a>
-</nav>
-
 
 <Default {...Astro.props}><slot /></Default>
 
@@ -18,61 +13,19 @@ import Default from '@astrojs/starlight/components/SocialIcons.astro';
         margin: -0.5em;
         text-decoration: none;
     }
- 
-    .topMenu {
-  display: flex;                           
-  justify-content: center;                 
-  align-items: center;                     
-  padding: 5px 0;                          
-  border-radius: 10px;                    
-  box-shadow: 0 2px 15px var(--box-shadow);  
-  margin: 0 15px;                          
+
+    ..sl-hidden div:nth-of-type(2) {
+  /* Estilos para el segundo div */
+  background-color: yellow !important;
 }
 
-
- .topLink {
-  display: inline-block;                   
-  font-family: 'Arial', sans-serif;        
-  font-size: 0.9rem;                       
-  color: var(--text-light);                
-  padding: 5px 10px;                       
-  margin: 0 3px;                           
-  text-decoration: none;                  
-  border-radius: 5px;                      
-  transition: background-color 0.3s, color 0.3s;  
-}
-
- :root[data-theme='light'] .topLink {
-  color: black;                           
-}
-
-:root .topLink {
-  color: var(--span-dark);              
-}
-
-.topLink:hover {
-  color: var(--hover-color-light);        
-  background-color: rgba(255, 38, 112, 0.1); 
-}
-
- :root[data-theme='light'] .topLink:hover {
-  color: rgb(30, 30, 32);                 
-  background-color: rgba(83, 79, 80, 0.1);  
-}
-
-:root .topLink:hover {
-  color: #ff2670;                         
-  background-color: rgba(255, 38, 112, 0.1);  
-}
 
 @media (max-width: 768px) {
 
 .social-icons {
     display: block !important;              
 }
-.topMenu {
-    display: block !important;              
-}
+
 .social-icons > * {
     display: block !important;             
     margin-bottom: 10px;       

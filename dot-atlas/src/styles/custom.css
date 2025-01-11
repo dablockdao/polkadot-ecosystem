@@ -69,6 +69,7 @@ body {
 a {
 	color: var(--sl-color-accent);
 	text-decoration: none;
+	
 }
 
 a:hover {
@@ -766,51 +767,47 @@ header {
 }
 
 .sl-link-button.primary {
-    background: linear-gradient(45deg, #1e1e1e, #3a3a3a) !important;
+    background-color: #1a1a1a;
     color: #fff !important;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 [data-theme='light'] .sl-link-button.primary {
-    background: linear-gradient(45deg, #f0f0f0, #d9d9d9) !important;
+    background-color: #DCE2E9;
     color: #000 !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
 }
 
 .sl-link-button.primary:hover {
-    background: linear-gradient(45deg, #3a3a3a, #5c5c5c);
     transform: translateY(-2px);
 }
 
 [data-theme='light'] .sl-link-button.primary:hover {
-    background: linear-gradient(45deg, #d9d9d9, #ffffff);
     transform: translateY(-2px);
 }
 
 .sl-link-button.minimal {
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid rgba(255, 255, 255, 0.7);
+	background: linear-gradient(90deg, #FF2670, #FF5A8C);
+    color: #fff !important;
     padding: 10px 20px !important;
     box-shadow: none;
 }
 
 [data-theme='light'] .sl-link-button.minimal {
-    background-color: transparent;
-    color: #000;
-    border: 2px solid rgba(0, 0, 0, 0.7);
+    background-color: #FF2670;
+    color: #fff !important;
 }
 
 .sl-link-button.minimal:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #FF2670;
     color: #fff;
     transform: translateY(-2px);
 }
 
 [data-theme='light'] .sl-link-button.minimal:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #000;
+    background-color: #FF2670;
+    color: #fff;
     transform: translateY(-2px);
 }
 
