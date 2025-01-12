@@ -1,0 +1,96 @@
+---
+title: Chopsticks
+description: Chopsticks simplifies Substrate blockchain development with local forking, block replay, and XCM testing for efficient innovation.
+hero:
+  tagline: Create parallel reality of your Substrate network.
+  image: 
+    file: ../../../../assets/tools/dev/chopsticks.png
+  actions:
+    - text: Github
+      link: https://github.com/AcalaNetwork/chopsticks/
+      icon: external
+    - text: Wiki
+      link: https://github.com/AcalaNetwork/chopsticks/wiki
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+**Chopsticks**, a tool developed and maintained by the **Acala Foundation**, has become an essential resource for developers **building on Polkadot**. By enabling local chain forking and comprehensive block analysis, Chopsticks simplifies complex development workflows, providing an efficient and flexible solution for blockchain **experimentation and testing**.
+
+## What is Chopsticks?
+Chopsticks is designed to address critical challenges in blockchain development by offering:
+1. **Local Chain Forking**: Create localized versions of existing chains to test configurations without impacting live networks.
+2. **Block Replay & Analysis**: Investigate extrinsic impacts on chain state by replaying specific blocks.
+3. **Multi-Block Forking for XCM Testing**: Simulate Cross-Consensus Messaging (XCM) interactions between chains for thorough validation.
+
+This tool enables developers to explore new ideas, debug issues, and build innovative solutions with reduced risk and cost.
+
+## Key Features of Chopsticks
+1. **Lightweight and Efficient.** Chopsticks leverages the **Smoldot light client**, making it efficient for local chain interactions. However, it supports only the native **Polkadot SDK API**, limiting its use for Ethereum JSON-RPC-based interactions.
+2. **Comprehensive Configuration Options.** Users can customize their local fork with parameters such as:
+    - **Genesis file**: Define the raw genesis data.
+    - **Block number or hash**: Specify the block to fork.
+    - **Custom runtime**: Use a specific Wasm runtime for advanced scenarios.
+    - **Storage overrides**: Modify chain storage values for testing.
+3. **Developer-Oriented Tools.** Chopsticks integrates seamlessly with popular tools like **Polkadot.js**, enabling intuitive interaction with forked chains. Developers can:
+    - Use Polkadot.js Apps to explore and interact with local forks.
+    - Leverage the Polkadot.js library for programmatic interactions.
+4. **XCM Testing Made Simple.** Chopsticks supports local simulation of XCM messages between multiple parachains and relay chains, facilitating robust multi-chain testing environments.
+
+## Installation and Setup
+### Prerequisites:
+To use Chopsticks, ensure you have the following installed:
+- **Node.js**: The JavaScript runtime environment.
+- **npm** or **Yarn**: Package managers for Node.js.
+
+### Installation:
+You can install Chopsticks globally or locally in your project.
+
+- **Global Installation**:
+```bash
+npm i -g @acala-network/chopsticks@latest
+```
+- Local Installation:
+```bash
+mkdir my-chopsticks-project
+cd my-chopsticks-project
+npm init -y
+npm i @acala-network/chopsticks@latest
+```
+- Run Chopsticks locally:
+```bash
+npx @acala-network/chopsticks
+```
+
+## Chopsticks Usage Examples
+1. **Forking a Network:** Fork the Polkadot network at block 100:
+```bash
+npx @acala-network/chopsticks --endpoint wss://rpc.polkadot.io --block 100
+```
+2. **Replay Blocks:** Replay block 1000 of Moonbeam and save output to a JSON file:
+```bash
+npx @acala-network/chopsticks run-block \
+  --endpoint wss://wss.api.moonbeam.network \
+  --block 1000 \
+  --output-path=./moonbeam-output.json
+```
+3. **XCM Simulation:** Simulate interactions between Polkadot, Moonbeam, and Astar:
+```bash
+npx @acala-network/chopsticks xcm \
+  --r polkadot \
+  --p moonbeam \
+  --p astar
+```
+
+## Developer Utilities
+Chopsticks provides a robust WebSocket API to manage local chains programmatically:
+- **`dev_newBlock`**: Create new blocks.
+- **`dev_setStorage`**: Modify on-chain storage values.
+- **`dev_timeTravel`**: Set timestamps for future blocks.
+
+These utilities are particularly useful for testing governance mechanisms, extrinsic dispatching, and state transitions.
+
+## Conclusion
+Chopsticks has emerged as an indispensable tool for developers working on Substrate-based blockchains. By facilitating local testing, debugging, and multi-chain interaction simulations, it empowers developers to innovate confidently in the Polkadot ecosystem.

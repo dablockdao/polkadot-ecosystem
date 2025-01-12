@@ -2293,6 +2293,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".mdx"] };
+"tools/dev/chopsticks.mdx": {
+	id: "tools/dev/chopsticks.mdx";
+  slug: "tools/dev/chopsticks";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
 "tools/dev/dedot.mdx": {
 	id: "tools/dev/dedot.mdx";
   slug: "tools/dev/dedot";
