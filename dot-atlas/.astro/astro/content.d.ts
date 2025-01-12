@@ -2237,6 +2237,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"tools/dao-tools/delegit.mdx": {
+	id: "tools/dao-tools/delegit.mdx";
+  slug: "tools/dao-tools/delegit";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/dao-tools/dotreasury.md": {
 	id: "tools/dao-tools/dotreasury.md";
   slug: "tools/dao-tools/dotreasury";
@@ -2377,6 +2384,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"tools/dev/polkadart.mdx": {
+	id: "tools/dev/polkadart.mdx";
+  slug: "tools/dev/polkadart";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/dev/polkadot-contract-wizard.mdx": {
 	id: "tools/dev/polkadot-contract-wizard.mdx";
   slug: "tools/dev/polkadot-contract-wizard";
@@ -2429,6 +2443,13 @@ declare module 'astro:content' {
 "tools/dev/scout.mdx": {
 	id: "tools/dev/scout.mdx";
   slug: "tools/dev/scout";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"tools/dev/simnode.mdx": {
+	id: "tools/dev/simnode.mdx";
+  slug: "tools/dev/simnode";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -2524,6 +2545,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"tools/miscellaneous/chainviz.mdx": {
+	id: "tools/miscellaneous/chainviz.mdx";
+  slug: "tools/miscellaneous/chainviz";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/miscellaneous/fidi-web3-analytics.mdx": {
 	id: "tools/miscellaneous/fidi-web3-analytics.mdx";
   slug: "tools/miscellaneous/fidi-web3-analytics";
@@ -2552,6 +2580,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"tools/miscellaneous/polkatax.mdx": {
+	id: "tools/miscellaneous/polkatax.mdx";
+  slug: "tools/miscellaneous/polkatax";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/miscellaneous/polkawatch.md": {
 	id: "tools/miscellaneous/polkawatch.md";
   slug: "tools/miscellaneous/polkawatch";
@@ -2559,6 +2594,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"tools/miscellaneous/staking-rewards-collector.mdx": {
+	id: "tools/miscellaneous/staking-rewards-collector.mdx";
+  slug: "tools/miscellaneous/staking-rewards-collector";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"tools/miscellaneous/subvt.mdx": {
+	id: "tools/miscellaneous/subvt.mdx";
+  slug: "tools/miscellaneous/subvt";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/miscellaneous/wagmedia-bot.mdx": {
 	id: "tools/miscellaneous/wagmedia-bot.mdx";
   slug: "tools/miscellaneous/wagmedia-bot";
