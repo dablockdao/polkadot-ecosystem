@@ -28,30 +28,24 @@ Polkadot.js API (@polkadot/api) has been the go-to solution for developers in th
 
 ## How Dedot Innovates
 Dedot was built to address these pain points while embracing the latest advancements in blockchain technology. Here’s how Dedot stands out:
-
 1. **Compact and Efficient**:
-   - **Reduced Bundle Size**: By eliminating dependencies on `wasm-blob` and `bn.js` and leveraging Metadata v14 and v15, Dedot reduces the bundle size by 7-8x compared to @polkadot/api.
-   - **Optimized Memory Usage**: Dedot’s reliance on native TypeScript/JavaScript types and efficient handling of large metadata blobs result in 4-5x lower memory consumption.
-
+    - **Reduced Bundle Size**: By eliminating dependencies on `wasm-blob` and `bn.js` and leveraging Metadata v14 and v15, Dedot reduces the bundle size by 7-8x compared to @polkadot/api.
+    - **Optimized Memory Usage**: Dedot’s reliance on native TypeScript/JavaScript types and efficient handling of large metadata blobs result in 4-5x lower memory consumption.
 2. **Enhanced Type and API Support**:
-   - Dedot dynamically generates TypeScript types and APIs from runtime metadata, providing precise suggestions for Substrate-based blockchains and ink! smart contracts.
-   - The dedicated `@dedot/chaintypes` package ensures developers can quickly adapt to runtime upgrades and maintain compatibility across multiple networks.
-
+    - Dedot dynamically generates TypeScript types and APIs from runtime metadata, providing precise suggestions for Substrate-based blockchains and ink! smart contracts.
+    - The dedicated `@dedot/chaintypes` package ensures developers can quickly adapt to runtime upgrades and maintain compatibility across multiple networks.
 3. **Support for Advanced Use Cases**:
-   - **Typed Contract APIs**: Developers can enjoy seamless integration and type suggestions for ink! smart contracts.
-   - **Low-Level JSON-RPC Client**: For those requiring direct interaction with blockchain nodes, Dedot provides a fully typed low-level client.
-
+    - **Typed Contract APIs**: Developers can enjoy seamless integration and type suggestions for ink! smart contracts.
+    - **Low-Level JSON-RPC Client**: For those requiring direct interaction with blockchain nodes, Dedot provides a fully typed low-level client.
 4. **Forward-Thinking Features**:
-   - **Light Client Integration**: With support for Smoldot, Dedot allows developers to build lightweight dapps without relying on full node synchronization.
-   - **Metadata Caching**: A built-in caching mechanism speeds up metadata retrieval, enhancing application performance.
+    - **Light Client Integration**: With support for Smoldot, Dedot allows developers to build lightweight dapps without relying on full node synchronization.
+    - **Metadata Caching**: A built-in caching mechanism speeds up metadata retrieval, enhancing application performance.
 
 ## A Seamless Transition from Polkadot.js API
-
 Recognizing the widespread adoption of @polkadot/api, Dedot’s design incorporates familiar API styling to simplify migration. While it is not a drop-in replacement, its intentional similarities make transitioning smoother and more intuitive for developers.
 
 ## Features on the Horizon
 Dedot’s roadmap is packed with innovations aimed at further enhancing the dapp development experience:
-
 - **Compact Metadata**: Streamlining metadata to include only essential information, reducing network load and improving application efficiency.
 - **XCM Utilities**: Simplifying the creation of cross-chain messages through intuitive tools.
 - **React Native Support**: Empowering developers to build mobile applications for the Polkadot ecosystem.

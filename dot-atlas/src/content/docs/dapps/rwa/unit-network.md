@@ -21,7 +21,6 @@ The blockchain ecosystem is evolving rapidly, with new technologies and platform
 Unit Network is a decentralized platform powered by Substrate, aimed at shaping the emerging token economy. It provides a comprehensive solution for integrating businesses with blockchain technology, offering tools for tokenization, decentralized finance, and community management.
 
 ## Key Components of Unit Network
-
 1. **Unit Network Blockchain:** The backbone of Unit Network is its blockchain, built using the Substrate framework from Parity Technologies. This modern decentralized platform leverages cutting-edge technology to deliver a flexible and robust blockchain solution.
 2. **Substrate Framework:** Substrate is a versatile toolkit for building customized blockchain networks. It provides developers with the tools and libraries necessary to create blockchain solutions tailored to specific needs, offering a high degree of customization and modularity.
     - **Customization and Modularity:** With Substrate, developers can customize and extend blockchain functionalities by choosing from pre-built modules or creating new ones. This flexibility allows for tailored solutions, such as managing tokens or implementing decentralized finance (DeFi) features.

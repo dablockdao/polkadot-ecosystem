@@ -1,0 +1,98 @@
+---
+title: Polkadart
+description: Polkadart simplifies Polkadot app development with Dart APIs, type safety, key management, and blockchain interaction tools.
+hero:
+  tagline: Simplifying Hybrid Application Development on Polkadot.
+  image: 
+    file: ../../../../assets/tools/dev/polkadart.png
+  actions:
+    - text: Docs
+      link: https://polkadart.dev/
+      icon: external
+    - text: Github
+      link: https://github.com/leonardocustodio/polkadart
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+Polkadart is an innovative library designed to empower developers in creating hybrid applications within the Polkadot ecosystem. By providing simple, easy-to-use APIs, Polkadart enables seamless interaction with any Polkadot-based blockchain. Built on the Dart programming language, this library offers a robust set of tools to query nodes, interact with chains, and manage blockchain-specific functionalities.
+
+## What is Polkadart?
+Polkadart is a comprehensive library that acts as a clean wrapper around methods exposed by Polkadot/Substrate network clients. It defines all node types and APIs, allowing developers to interact with Polkadot chains effortlessly. Its ecosystem includes a suite of specialized packages, each designed to handle specific blockchain operations, making Polkadart a versatile and powerful tool for blockchain application development.
+
+## Key Features of Polkadart
+1. **Comprehensive API Support:** Polkadart abstracts complex network protocols, providing straightforward APIs for interacting with Polkadot-based chains. These APIs support:
+    - Querying node data
+    - Executing transactions
+    - Real-time event listening, such as block creation and balance updates
+2. **Type-Safe Development:** The Polkadart CLI facilitates type generation by interpreting the metadata of a specific blockchain. This ensures type safety and auto-completion, enabling developers to work with network-specific APIs securely and efficiently.
+3. **Key Management and Cryptographic Support:** Polkadart includes tools for managing key pairs, signing transactions, and addressing cryptographic operations through its **Keyring**, **SECP256k1 ECDSA**, and **SR25519** packages.
+4. **SCALE Codec Implementation:** The library provides a Dart implementation of the SCALE codec, an efficient data encoding/decoding method used in Substrate-based chains.
+5. **SS58 Address Management:** Polkadart supports encoding and decoding of SS58 addresses, a format commonly used in Polkadot and Substrate ecosystems.
+6. **BIP39 Mnemonic Support:** With the **substrate_bip39** package, developers can generate human-readable mnemonic phrases to secure cryptographic keys.
+7. **Substrate Metadata Decoding:** Polkadart simplifies the decoding of Substrate blockchain metadata, making it easier to access constants, extrinsics, events, and other on-chain data.
+8. **Ink! Smart Contract Interactions:** The **ink_abi** package provides tools to encode and decode ink! smart contract ABIs, enabling interaction with Polkadot ecosystem smart contracts.
+
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Polkadart Introduction on the Polkadot Forum',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-news/src/assets/polkadot.webp',
+      href: 'https://forum.polkadot.network/t/introducing-polkadart-a-dart-and-flutter-library-for-polkadot-based-blockchains/10697',
+      description:
+        "Introducing Polkadart: A Dart and Flutter library for Polkadot-Based Blockchains.",
+    },
+  ]}
+/>
+
+## Polkadart Ecosystem: Modular Packages
+Polkadart operates as a monorepo, with packages that can be used independently or combined for broader functionality. Below is an overview of its key packages:
+
+| **Package**             | **Description**                                                                 |
+|--------------------------|---------------------------------------------------------------------------------|
+| `polkadart`              | Core Dart APIs for Polkadot interaction                                         |
+| `polkadart_cli`          | Type generator for Dart based on blockchain metadata                           |
+| `polkadart_keyring`      | Keychain management and transaction signing                                    |
+| `polkadart_scale_codec`  | SCALE encoder/decoder                                                          |
+| `secp256k1_ecdsa`        | SECP256k1 cryptographic signing                                                |
+| `sr25519`                | SR25519 cryptographic signing                                                  |
+| `ss58`                   | SS58 address encoding/decoding                                                 |
+| `substrate_bip39`        | Mnemonic phrase generation for cryptographic keys                              |
+| `substrate_metadata`     | Substrate metadata decoder                                                     |
+| `ink_abi`                | Tools for encoding/decoding ink! smart contract ABIs                           |
+
+## Getting Started with Polkadart
+### Installation
+To begin using Polkadart, add the core package to your `pubspec.yaml` file:
+
+```yaml
+dependencies:
+  polkadart: ^<latest_version>
+```
+
+## Type Generation
+For type generation, install and configure the **Polkadart CLI**, which generates type-safe APIs tailored to specific networks.
+
+## Key Functionalities
+- **Listening to New Blocks**: Applications can subscribe to real-time block creation events.  
+- **Monitoring Wallet Balances**: Developers can listen to balance changes for on-chain accounts.  
+- **Executing Transfers**: Simplified APIs make transferring assets between wallets straightforward.  
+- **Reading Blockchain Storage**: Tools for decoding and querying on-chain data.  
+
+## Community and Contributions
+Polkadart thrives on community collaboration. Contributions are welcomed in various forms, including:
+- Proposing features  
+- Reporting or fixing bugs  
+- Writing and translating documentation  
+- Developing examples and guides  
+- Submitting pull requests  
+The project adheres to the **Contributor Covenant code of conduct** to ensure a welcoming and inclusive environment.
+
+## Supported by Web3 Foundation
+Polkadart is funded by the **Web3 Foundation’s Open Grants Program**, which supports projects advancing the Polkadot ecosystem. This support has been instrumental in expanding Polkadart's capabilities and fostering innovation within the Web3 space.
+
+## Built with Polkadart
+**Encointer Wallet** is a notable example of an application leveraging Polkadart. The platform facilitates community-based currencies, demonstrating the library's versatility and potential in real-world scenarios.

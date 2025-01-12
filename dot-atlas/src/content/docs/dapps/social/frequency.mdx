@@ -22,18 +22,17 @@ import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, Showcase
 ## Frequency Architecture
 Frequency is built as a Layer 1 blockchain tailored to support high-volume, data-driven applications within a decentralized environment. Its architecture includes core components essential for operation within the **Polkadot ecosystem**, ensuring robust performance and interoperability.
 1. **Operational Model**Frequency nodes are crucial for maintaining chain state and processing data. Nodes can be configured for various roles:  
-  - **Full Nodes:** Maintain the full state of the chain.
-  - **Light Client Nodes:** Allow applications to observe chain events.
-  - **Archive Nodes:** Store the complete historical state of the chain.
+    - **Full Nodes:** Maintain the full state of the chain.
+    - **Light Client Nodes:** Allow applications to observe chain events.
+    - **Archive Nodes:** Store the complete historical state of the chain.
   Nodes run the Frequency Runtime, encapsulated in platform-independent WebAssembly (Wasm) code, ensuring consistent state transition processing across the network. Upgrades to the Frequency Runtime are managed through Frequency Governance.
 2. **Deployment**
-  - **Mainnet:** Utilizes validators from the Polkadot Relay Chain for production.
-  - **Testnet:** Uses validators on the Polkadot Rococo Testnet Relay Chain for testing and development.
-  Changes are first deployed to Testnet before Mainnet, ensuring robust testing and smooth upgrades.
+    - **Mainnet:** Utilizes validators from the Polkadot Relay Chain for production.
+    - **Testnet:** Uses validators on the Polkadot Rococo Testnet Relay Chain for testing and development.
+Changes are first deployed to Testnet before Mainnet, ensuring robust testing and smooth upgrades.
 
 ## Frequency Interaction Model
 Users and applications interact with Frequency Nodes through extrinsics, State Queries, Runtime APIs, and Custom RPCs.
-
 1. **Extrinsics:** Transactions performed on the chain, requiring cryptographic signatures for validation.
 2. **State Queries:** Directly access the key-value store of the chain state.
 3. **Runtime APIs:** Provide access to chain and node information without direct key-value store access.
@@ -57,7 +56,6 @@ Frequency’s data management is designed for secure and efficient high-volume u
 
 ## Frequency Delegation Model
 Frequency’s Delegation Model balances accessibility with user control by shifting complexity and fees to Providers. Users can interact with the chain without needing tokens, delegating tasks to Providers who act on their behalf.
-
 **Frequency (FRQCY) Tokenomics**
 Frequency’s economic model supports scalable social networking, focusing on non-financial data transactions.
 1. **Collator Incentives:** Rewards for block formation.

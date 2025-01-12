@@ -1,0 +1,60 @@
+---
+title: Staking Rewards collector
+description: Track staking rewards effortlessly with the Staking Rewards Collector, supporting multiple networks and detailed analytics for informed decisions.
+hero:
+  tagline: Track staking rewards across multiple networks.
+  image: 
+    file: ../../../../assets/hub/orgs/w3f.png
+  actions:
+    - text: Github
+      link: https://github.com/w3f/staking-rewards-collector
+      icon: external
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+Staking has emerged as a pivotal aspect of blockchain technology, enabling participants to earn rewards while securing decentralized networks. To streamline the tracking and analysis of staking rewards, tools like the Staking Rewards Collector have become indispensable. Version 1.7.4 of the Staking Rewards Collector provides users with a robust solution for collecting, analyzing, and exporting staking data. This article delves into the features, functionality, and significance of this tool in the blockchain ecosystem.
+
+## What is the Staking Rewards Collector?
+The Staking Rewards Collector is an open-source tool designed to help blockchain enthusiasts, investors, and developers track staking rewards across multiple networks. It supports various ecosystems, including Polkadot, Kusama, Moonriver, Moonbeam, Shiden, Astar, Centrifuge, and KILT. By automating the collection of staking and price data, the tool simplifies complex calculations and helps users understand their staking performance over time.
+
+## Key Features of Version 1.7.4
+1. **Enhanced Price Data Collection**
+    - **Support for CryptoCompare API**: Users can now choose CryptoCompare as their price data provider, enabling queries for historical price data beyond one year.
+    - **Customizable Currency Options**: The tool allows fiat value calculations in multiple currencies, such as USD, EUR, CHF, and GBP, enhancing its utility for global users.
+2. **Improved Staking Reward Tracking**
+    - **Network Support**: The tool caters to a diverse set of blockchain networks, ensuring compatibility with major staking ecosystems.
+    - **Annualized Return Calculations**: With an accurate start balance, the tool estimates annualized returns, providing valuable insights into staking efficiency.
+3. **Enhanced User Experience**
+    - **Configurable API Settings**: Users can set custom sleep delays to avoid timeouts when querying Subscan’s API, ensuring smooth data retrieval.
+    - **Exportable Output**: Results can be exported in both CSV and JSON formats, facilitating easy integration with other tools and systems.
+4. **Compatibility Updates**
+    - **Node.js Requirement**: The latest version requires Node.js 18+ to support modern API functionalities like `fetch()`.
+    - **Console Enhancements**: Updates include the addition of timestamps to the console output for better traceability.
+
+## How It Works
+The Staking Rewards Collector operates through a straightforward setup process:
+1. **Clone the Repository**: Users begin by cloning the tool’s repository from GitHub.
+2. **Configure Inputs**: Customization is achieved by editing the `config/userInput.json` file, where users specify parameters like wallet addresses, networks, start and end dates, and API keys.
+3. **Run the Tool**: Once configured, users execute the tool using Yarn to collect staking and price data.
+4. **Analyze Results**: The tool generates detailed outputs, including:
+    - **CSV Files**: A tabular representation of staking rewards.
+    - **JSON Files**: Comprehensive data summaries, including annualized returns and daily staking details.
+
+## Use Cases
+The Staking Rewards Collector is ideal for:
+- **Individual Stakers**: Investors tracking their staking performance and optimizing rewards.
+- **Tax Reporting**: Collecting and organizing staking data for compliance with regional tax regulations.
+- **Research and Analytics**: Providing detailed datasets for blockchain analysts and developers.
+
+## Why It Matters
+Staking rewards are a cornerstone of blockchain-based income. However, tracking these rewards manually can be time-consuming and error-prone. The Staking Rewards Collector addresses these challenges by automating data collection and providing actionable insights. Its ability to integrate staking and price data makes it an invaluable tool for individuals and institutions alike.
+
+## Challenges and Limitations
+Despite its utility, users should be aware of the tool’s limitations:
+- **Third-Party Dependencies**: Reliance on APIs from Subscan, CoinGecko, and CryptoCompare means that disruptions in these services could impact functionality.
+- **Data Accuracy**: Users are advised to cross-verify results, especially for tax or compliance purposes.
+- **Technical Requirements**: Familiarity with tools like Git and Node.js is necessary for setup and operation.
+
+## Conclusion
+The Staking Rewards Collector v1.7.4 represents a significant advancement in staking analytics. By offering comprehensive tracking across multiple networks and providing detailed price data, it empowers users to make informed decisions. Whether you’re an investor seeking to maximize returns or a researcher analyzing blockchain trends, this tool is an essential asset for navigating the dynamic world of staking.
