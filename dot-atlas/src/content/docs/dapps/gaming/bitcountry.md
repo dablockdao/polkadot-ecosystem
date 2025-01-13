@@ -15,10 +15,10 @@ hero:
       variant: secondary
 ---
 
-Bit.Country is a platform that empowers users to create their own metaverses. Bit.Country offers a unique blend of 2.5D and 3D experiences, enabling community engagement on an entirely new level. This comprehensive article delves into the features, purpose, and innovative approach of Bit.Country, illustrating why it is poised to revolutionize the way we interact with digital spaces.
+Bit.Country is a platform that tries to empower users to create their own metaverses. Bit.Country offers a unique blend of 2.5D and 3D experiences, enabling community engagement on an entirely new level. This comprehensive article delves into the features, purpose, and innovative approach of Bit.Country, illustrating why it is poised to revolutionize the way we interact with digital spaces.
 
 ## What is Bit.Country?
-Bit.Country is an innovative platform that allows users to create, manage, and engage with their own metaverses. These user-created digital worlds can host social groups, offer immersive experiences, and leverage NFTs to enhance community interaction. The platform is designed to be accessible to everyone, regardless of technical expertise, making it a versatile tool for both casual users and developers.
+Bit.Country allows users to create, manage, and engage with their own metaverses. These user-created digital worlds can host social groups, offer immersive experiences, and leverage NFTs to enhance community interaction. The platform is designed to be accessible to everyone, regardless of technical expertise, making it a versatile tool for both casual users and developers.
 
 ### Key Features
 - **2.5D and 3D Worlds**: Bit.Country supports both 2.5D and 3D environments, providing flexible options for visual experiences.

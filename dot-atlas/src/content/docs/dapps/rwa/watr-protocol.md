@@ -15,7 +15,7 @@ hero:
       variant: secondary
 ---
 
-The evolution of blockchain technology has extended beyond mere digital currencies to impact diverse sectors such as commodity trading. Watr, emerging within the Polkadot ecosystem, exemplifies this innovation by redefining how commodities are traded, traced, and trusted globally.
+Watr, emerging within the Polkadot ecosystem, exemplifies this innovation by redefining how commodities are traded, traced, and trusted globally.
 
 ## The Vision and Mission of Watr
 Watr is a decentralized platform designed to reshape our interaction with natural resources through blockchain technology. Its mission is to serve as the digital commons for commodities, bridging gaps between traditional commodity markets and the emerging digital economy. Watr aims to create an open and connected ecosystem that enables transparent, efficient, and ethical commodity transactions.

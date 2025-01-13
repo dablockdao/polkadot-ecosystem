@@ -23,12 +23,12 @@ Pathrock Network specializes in staking services, providing secure and non-custo
 ## Pathrock Expertise in the Polkadot Ecosystem
 Pathrock Network’s involvement in the Polkadot ecosystem is particularly noteworthy. Polkadot, a multi-chain blockchain platform, facilitates cross-chain communication and interoperability, making it a critical infrastructure for decentralized applications (dApps). Pathrock supports several Polkadot parachains, including:
 
-- [**Astar Network**](https://dablock.com/dapps/astar-network/): A multi-chain Polkadot dApp hub.
-- [**Basilisk**](https://dablock.com/dapps/basilisk/): A liquidity protocol built for Kusama.
-- [**Bifrost**](https://dablock.com/dapps/bifrost/): Designed for staking’s liquidity.
-- [**Calamari**](https://dablock.com/dapps/manta-atlantic/): The privacy hub for Kusama.
-- [**Moonbeam Network**](https://dablock.com/dapps/moonbeam-network/): A smart contract platform on Polkadot.
-- [**Moonriver**](https://dablock.com/dapps/moonbeam-network/): Supports Solidity smart contracts on Kusama.
+- **Astar Network**: A multi-chain Polkadot dApp hub.
+- **Basilisk**: A liquidity protocol built for Kusama.
+- **Bifrost**: Designed for staking’s liquidity.
+- **Calamari**: The privacy hub for Kusama.
+- **Moonbeam Network**: A smart contract platform on Polkadot.
+- **Moonriver**: Supports Solidity smart contracts on Kusama.
 
 By supporting these projects, Pathrock plays a vital role in the expansion and success of the Polkadot network.
 

@@ -15,7 +15,7 @@ hero:
       variant: secondary
 ---
 
-**UnitedBloc** is a **decentralized autonomous organization (DAO)** formed by a coalition of independent collators within the [**Moonbeam ecosystem**](https://dablock.com/dapps/moonbeam-network/). This group, driven by the belief that “the whole is greater than the sum of its parts,” aims to enhance community value through collective efforts. Comprised of 13 collators from 11 countries across four continents, UnitedBloc leverages diverse skills and perspectives to support and improve the Moonbeam network.
+**UnitedBloc** is a **decentralized autonomous organization (DAO)** formed by a coalition of independent collators within the **Moonbeam ecosystem**. This group, driven by the belief that “the whole is greater than the sum of its parts,” aims to enhance community value through collective efforts. Comprised of 13 collators from 11 countries across four continents, UnitedBloc leverages diverse skills and perspectives to support and improve the Moonbeam network.
 
 ## UnitedBloc Core Mission and Values
 UnitedBloc’s mission is to provide significant community value to the Moonbeam, Moonriver, and Moonbase Alpha parachains by harnessing the collective power of its members. The organization is committed to:

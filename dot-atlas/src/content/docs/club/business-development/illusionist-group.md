@@ -22,18 +22,18 @@ Illusionist Group began its journey by investing in engineering teams that contr
 
 ## Illusionist Group Strategic Investments and Portfolio
 Illusionist Group has an impressive portfolio, showcasing their commitment to fostering innovation in the blockchain space. Notable investments include:
-- [**Polkadot**](https://dablock.com/ecosystem/): A sharded network facilitating cross-chain communication and interoperability.
-- [**Kusama**](https://dablock.com/dapps/): A scalable multi-chain network designed for radical innovation and early-stage Polkadot deployments.
-- [**Acala Network**](https://dablock.com/dapps/acala-network/): The cross-chain DeFi hub and stablecoin platform on Polkadot.
-- [**Bit.Country**](https://dablock.com/dapps/bitcountry/): A platform enabling users to create their own virtual worlds and display tradable assets.
-- [**SubQuery**](https://dablock.com/dapps/subquery/): A transformative tool for querying world data for a Web3 future.
+- **Polkadot**: A sharded network facilitating cross-chain communication and interoperability.
+- **Kusama**: A scalable multi-chain network designed for radical innovation and early-stage Polkadot deployments.
+- **Acala Network**: The cross-chain DeFi hub and stablecoin platform on Polkadot.
+- **Bit.Country**: A platform enabling users to create their own virtual worlds and display tradable assets.
+- **SubQuery**: A transformative tool for querying world data for a Web3 future.
 - **DotMarketCap**: A data aggregator for the Polkadot network, providing prices, charts, and market capitalization information.
-- [**SubSocial**](https://dablock.com/dapps/subsocial/): An open platform for decentralized social networks and marketplaces.
-- [**Manta Network**](https://dablock.com/dapps/manta-atlantic/): The first layer-1, privacy-preserving protocol for DeFi built on Substrate.
+- **SubSocial**: An open platform for decentralized social networks and marketplaces.
+- **Manta Network**: The first layer-1, privacy-preserving protocol for DeFi built on Substrate.
 - **SubDAO**: A cross-chain platform linking DAOs and DApps on Polkadot.
 - **Equilibrium**: The first decentralized interoperable money market on Polkadot.
 
-Additionally, Illusionist Group has invested in a wide array of projects like [Unique](https://dablock.com/dapps/unique-network/), [RMRK](https://dablock.com/dapps/rmrk/), Clover Finance, [Bifrost](https://dablock.com/dapps/bifrost/), Sigmadex, Standard, Kylin Network, DeepDAO, [Ternoa](https://dablock.com/dapps/ternoa/), Symmetry, Creaticles, Crafting Finance, Impossible Finance, [Zeitgeist](https://dablock.com/dapps/zeitgeist/), DeFi Land, Cyclos, OpenSwap, [Zenlink](https://dablock.com/dapps/zenlink/), [Subsquid](https://dablock.com/dapps/subsquid/), [InvArch](https://dablock.com/dapps/invarch-network/), Subspace Labs, MetaDojo, Tapio Protocol, and [Joystream](https://dablock.com/dapps/joystream/).
+Additionally, Illusionist Group has invested in a wide array of projects like Unique, RMRK, Clover Finance, Bifrost, Sigmadex, Standard, Kylin Network, DeepDAO, Ternoa, Symmetry, Creaticles, Crafting Finance, Impossible Finance, Zeitgeist, DeFi Land, Cyclos, OpenSwap, Zenlink, Subsquid, InvArch, Subspace Labs, MetaDojo, Tapio Protocol, and Joystream.
 
 ## Illusionist Group Community and Ecosystem Building
 A significant aspect of Illusionist Group’s strategy is its dedication to community building. They believe that a robust community is essential for the success and sustainability of blockchain projects. Through their investments and support, they have contributed to the growth of vibrant communities around their portfolio projects. For instance, Polka Warriors, a community of Polkadot token holders, has grown to become the largest in the Polkadot ecosystem, thanks in part to Illusionist Group’s backing.

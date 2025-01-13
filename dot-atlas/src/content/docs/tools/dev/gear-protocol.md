@@ -15,10 +15,10 @@ hero:
       variant: secondary
 ---
 
-Welcome to the Polkadot ecosystem projects directory. In this article, we delve into the Gear Protocol, a cutting-edge Substrate-based programming platform that simplifies the development and execution of decentralized applications (dApps) and smart contracts. Gear Protocol’s unique features make it an essential tool for developers aiming to harness the power of Web3 technologies efficiently.
+Gear Protocol is a Substrate-based programming platform that simplifies the development and execution of decentralized applications (dApps) and smart contracts. Gear Protocol’s unique features make it an essential tool for developers aiming to harness the power of Web3 technologies efficiently.
 
-## Overview of Gear Protocol
-**What is Gear Protocol?** The Gear Protocol is a versatile platform designed to streamline the development of dApps. It operates on the Substrate framework, ensuring high compatibility within the Polkadot ecosystem. By leveraging WebAssembly (Wasm) for execution, Gear Protocol supports multiple popular programming languages, including Rust, C, and C++, allowing developers to create sophisticated applications without learning new languages.
+## What is Gear Protocol?
+The Gear Protocol is a versatile platform designed to streamline the development of dApps. It operates on the Substrate framework, ensuring high compatibility within the Polkadot ecosystem. By leveraging WebAssembly (Wasm) for execution, Gear Protocol supports multiple popular programming languages, including Rust, C, and C++, allowing developers to create sophisticated applications without learning new languages.
 
 ## Gear Protocol Key Features and Benefits
 1. **Developer-Friendly Environment**
@@ -35,7 +35,7 @@ Welcome to the Polkadot ecosystem projects directory. In this article, we delve 
     - **Signless Transactions**: Streamlines user interactions by reducing the need for frequent transaction signing, enhancing user experience.
 
 ## What is Gear Network?
-**Gear Network** – The Gear Network leverages the Gear Protocol to create a range of network solutions, including standalone Layer-1 networks, Layer-2 solutions, parachains within the Polkadot ecosystem, and custom networks. The first Layer-1 network built on Gear Protocol is Vara Network.
+The Gear Network leverages the Gear Protocol to create a range of network solutions, including standalone Layer-1 networks, Layer-2 solutions, parachains within the Polkadot ecosystem, and custom networks. The first Layer-1 network built on Gear Protocol is Vara Network.
 
 ### Addressing Web3 Challenges
 1. **Scalability:** Gear Protocol’s parallel processing and efficient resource allocation address the scalability limitations of traditional blockchain platforms.

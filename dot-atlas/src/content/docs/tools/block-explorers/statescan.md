@@ -18,7 +18,7 @@ hero:
       variant: secondary
 ---
 
-In the fast-evolving landscape of blockchain technologies, the need for robust, user-friendly analytics tools has become paramount. For those navigating the complex networks of Substrate-based blockchains such as Polkadot and Kusama, StateScan emerges as a beacon, offering unparalleled insights into on-chain activities. This page delves into the **features and functionalities of StateScan**, illustrating how it stands out as an essential tool for both developers and users within the Polkadot, Kusama and every substrate based blockchain ecosystems.
+For those users navigating the complex networks of Substrate-based blockchains such as Polkadot and Kusama, StateScan offers unparalleled insights into on-chain activities. This page delves into the **features and functionalities of StateScan**, illustrating how it stands out as an essential tool for both developers and users within the Polkadot, Kusama and every substrate based blockchain ecosystems.
 
 ## Introduction to StateScan
 StateScan is a block explorer and analytics platform specifically designed for Substrate-based blockchains. Substrate is a framework that enables the creation of customizable blockchains, and it forms the foundation of prominent networks like Polkadot and Kusama. StateScan leverages the unique architecture of Substrate to provide detailed and actionable insights into transactions, accounts, blocks, and other on-chain data.
