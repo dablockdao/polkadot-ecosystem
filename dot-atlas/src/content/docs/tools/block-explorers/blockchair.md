@@ -15,7 +15,7 @@ hero:
       variant: secondary
 ---
 
-Blockchair stands as a pioneering blockchain explorer, integrating data from 43 distinct blockchains into a single, user-friendly search engine. This platform offers a wide range of features and services tailored to meet the needs of individuals, development teams, and research organizations. As a neutral and highly efficient tool, Blockchair facilitates the exploration, analysis, and management of blockchain data while prioritizing user privacy.
+Blockchair is integrating data from 43 distinct blockchains into a single, user-friendly search engine. This platform offers a wide range of features and services tailored to meet the needs of individuals, development teams, and research organizations. As a neutral and highly efficient tool, Blockchair facilitates the exploration, analysis, and management of blockchain data while prioritizing user privacy.
 
 ## Blochair, An All-Encompassing Blockchain Explorer
 Blockchair’s core functionality revolves around its robust search capabilities. Users can search for addresses, transactions, and blocks across multiple blockchains, including prominent ones like Bitcoin, Ethereum, Polkadot, and many others. The explorer provides real-time data, showcasing the latest blocks, average transaction fees, and market prices, ensuring users stay updated with the dynamic crypto landscape.

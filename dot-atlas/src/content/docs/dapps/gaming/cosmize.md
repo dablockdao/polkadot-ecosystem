@@ -15,7 +15,7 @@ hero:
       variant: secondary
 ---
 
-COSMIZE is a metaverse platform built on the Astar blockchain. COSMIZE combines the vastness of the cosmos with the freedom to customize, allowing users to create and personalize their virtual spaces. This in-depth look covers COSMIZE’s vision, mission, key features, and the technology that powers it.
+COSMIZE is a metaverse platform **built on the Astar blockchain**. COSMIZE combines the vastness of the cosmos with the freedom to customize, allowing users to create and personalize their virtual spaces. This in-depth look covers COSMIZE’s vision, mission, key features, and the technology that powers it.
 
 ## What is COSMIZE?
 **COSMIZE Overview** The name “COSMIZE” blends “Cosmos” and “Customize,” symbolizing a space where users can bring their cosmic imaginations to life. Running on the Astar blockchain, a multi-chain smart contract platform, COSMIZE supports various blockchains and virtual machines (VMs). The platform aims to create a fully interoperable metaverse ecosystem, empowering users to engage in community activities, events, quests, and more.

@@ -18,7 +18,7 @@ hero:
 The **DOT Validator Alliance is a decentralized autonomous organization (DAO)** aimed at fostering a united, community-driven Polkadot ecosystem. Managed primarily on Discord, the alliance welcomes anyone interested in joining, with validators having the opportunity to become active DAO participants. The alliance’s manifesto outlines its core values and commitments, guiding its mission to support the Polkadot and Kusama networks.
 
 ## Manifesto: Core Values
-The Validator Alliance has articulated its foundational principles in a manifesto. These principles resonate with every member and align with the broader goals of the [**Polkadot ecosystem**](https://dablock.com/ecosystem/). The manifesto highlights the following key commitments:
+The Validator Alliance has articulated its foundational principles in a manifesto. These principles resonate with every member and align with the broader goals of the **Polkadot ecosystem**. The manifesto highlights the following key commitments:
 
 ### Community-Led Society
 The alliance believes in a **decentralized, community-led society** and aims to unite the DotSama ecosystem.

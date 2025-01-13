@@ -18,7 +18,7 @@ hero:
       variant: secondary
 ---
 
-The Polkadot Marketing Bounty is an initiative dedicated to amplifying awareness, adoption, and engagement within the Polkadot ecosystem. Designed as a strategic and community-driven approach, this bounty aligns resources and expertise to position Polkadot as the leader in Web3 innovation.
+The Polkadot Marketing Bounty is an initiative dedicated to **amplifying awareness, adoption, and engagement within the Polkadot ecosystem**. Designed as a strategic and community-driven approach, this bounty aligns resources and expertise to position Polkadot as the leader in Web3 innovation.
 
 ## What is the Polkadot Marketing Bounty?
 This initiative provides a transparent framework to fund and execute impactful marketing campaigns. Through a monthly allocation of 200,000 DOT, the bounty supports:

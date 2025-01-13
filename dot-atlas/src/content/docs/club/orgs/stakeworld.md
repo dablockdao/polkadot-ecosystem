@@ -12,7 +12,6 @@ In addition to validator nodes, Stakeworld operates multiple public archive RPC 
 
 ## StakeWorld Expanding the Ecosystem: Polkadot and Kusama
 Stakeworld’s services extend across several key areas within the Polkadot and Kusama ecosystems:
-
 - **Polkadot**: Stakeworld supports Polkadot through its RPC and validator services, as well as providing collator services for Assethub and Bridgehub.
 - **Kusama**: Similar to Polkadot, Stakeworld offers RPC and validator services, along with collator services for Assethub and Bridgehub.
 - **Westend**: For the Westend test network, Stakeworld provides essential RPC services, ensuring that developers can test their applications in a realistic environment.

@@ -1,14 +1,7 @@
 ---
 title: Polkachu
 description: Polkachu is a validator and infrastructure provider across 105+ networks, trusted with $313M in staked assets.
-
 ---
-Orgs  
- Validator  
-
-Understanding Aventus Network: An In-Depth Exploration for the Polkadot Ecosystem  
-
-------------------------------------------------------------------------------------
 
 Polkachu stands as a pivotal figure in the realm of blockchain validation, boasting a comprehensive suite of services and infrastructure that supports over 105 distinct blockchain networks. Founded by a group of seasoned technology professionals, Polkachu is driven by a vision of a decentralized future, dedicating its efforts to maintaining robust infrastructure and delivering top-tier validation services across various proof-of-stake (PoS) and Tendermint-based blockchains.
 

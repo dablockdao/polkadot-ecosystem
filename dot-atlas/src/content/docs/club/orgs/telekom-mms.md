@@ -25,13 +25,11 @@ Staking is a fundamental mechanism in Proof-of-Stake (PoS) blockchain networks. 
 
 ## Telekom MMS’s Staking Services
 Telekom MMS offers a broad portfolio of staking solutions tailored to meet the diverse needs of its clients. These services include:
-
 1. **Public Validator Nodes:** Telekom MMS provides public validator nodes that users worldwide can delegate their assets to, earning staking rewards while benefiting from the company’s reliable infrastructure.
 2. **White Label Solutions:** For enterprises wishing to operate their own validator nodes, Telekom MMS offers customizable white label solutions, enabling businesses to leverage their robust infrastructure without extensive in-house technical expertise.
 
 ## Expanding Beyond Staking: Oracle and Indexing Services
 In addition to staking services, Telekom MMS offers Oracle and Indexing services that form the backbone of many Web3 applications.
-
 - **Oracle Services:** By integrating real-world data into distributed ledger technology (DLT) ecosystems, Telekom MMS’s Oracle solutions enable a wide range of applications in decentralized finance (DeFi), supply chain management, and gaming.
 - **Indexing Services:** Telekom MMS’s indexing services provide complex data structures through subgraphs, essential for optimizing Web3 applications across various sectors, including online retail, financial services, and social media.
 
