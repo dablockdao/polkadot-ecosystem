@@ -4,12 +4,12 @@ description: 'Agile Coretime keynote by Gavin Wood at Protocl Berg 2023'
 sidebar: 
   label: Gavin Wood (Protocol Berg 2023)
 ---
-**At the Protocol Berg event, [Gavin Wood](https://dablock.com/ecosystem/gavin-wood/), co-founder of Ethereum and founder of Polkadot**, delivered an insightful keynote that delved into the concept of Agile Coretime. As a significant figure in the blockchain industry, Wood’s talk provided a comprehensive overview of the Polkadot ecosystem and introduced new ideas to enhance blockchain scalability and efficiency. Here, we break down the key points from Gavin Wood keynote at the Protocol Berg event in Berlin for those looking to understand the **future direction of Polkadot and blockchain technology**.
+**At the Protocol Berg event, Gavin Wood, co-founder of Ethereum and founder of Polkadot**, delivered an insightful keynote that delved into the concept of Agile Coretime. As a significant figure in the blockchain industry, Wood’s talk provided a comprehensive overview of the Polkadot ecosystem and introduced new ideas to enhance blockchain scalability and efficiency. Here, we break down the key points from Gavin Wood keynote at the Protocol Berg event in Berlin for those looking to understand the **future direction of Polkadot and blockchain technology**.
 
 In the following link you can consult all the[ **slides from Gavin Wood’s keynote on Protocol Berg**](https://hackmd.io/@polkadot/Protocolberg2023np).
 
 ## The Structure of Polkadot: A Multi-Chain Blockchain Network
-Polkadot is fundamentally a scalable, heterogeneous multi-chain blockchain network. **[Gavin Wood](https://dablock.com/ecosystem/gavin-wood/) described Polkadot as a “blockchain of blockchains”,** a platform designed to connect multiple blockchains, enabling them to operate securely and efficiently. The core components of this system include:
+Polkadot is fundamentally a scalable, heterogeneous multi-chain blockchain network. **Gavin Wood described Polkadot as a “blockchain of blockchains”,** a platform designed to connect multiple blockchains, enabling them to operate securely and efficiently. The core components of this system include:
 
 1. **Relay Chain**: The central chain that coordinates the entire network.
 2. **Parachains**: Independent blockchains that plug into the Relay Chain, benefiting from shared security and interoperability.

@@ -2,7 +2,7 @@
 title: 'RegionX Coretime Marketplace Introduction on Polkadot'
 description: 'Insights from Sergej Sakac Polkadot Decoded 2024 talk on coretime marketplaces, from slot auctions to agile coretime models.'
 ---
-In a comprehensive presentation at [**Polkadot Decoded 2024**](https://dablock.com/web3-events/polkadot-decoded/), Sergej Sakac, a notable contributor to Polkadot and founder of [**Region X**](https://dablock.com/dapps/regionx/), detailed the evolution and improvements in the coretime marketplace on Polkadot. His talk highlighted the transition from the traditional slot auction model to the innovative agile coretime model, addressing both the benefits and challenges encountered along the way.
+In a comprehensive presentation at **Polkadot Decoded 2024**, Sergej Sakac, a notable contributor to Polkadot and founder of **Region X**, detailed the evolution and improvements in the coretime marketplace on Polkadot. His talk highlighted the transition from the traditional slot auction model to the innovative agile coretime model, addressing both the benefits and challenges encountered along the way.
 
 ## Sergej Sakac Background and Polkadot Expertise
 Sergej Sakac brings a wealth of experience to the table. He is a core Polkadot and Substrate contributor and a member of the Polkadot Technical Fellowship. Sakac is also an alumnus of the Polkadot Blockchain Academy at Berkeley and serves as the founder and lead developer of Region X. His insights into coretime marketplaces are grounded in both technical expertise and practical experience in the ecosystem.

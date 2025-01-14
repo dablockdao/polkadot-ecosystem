@@ -5,7 +5,7 @@ sidebar:
     label: Ghali El Ouarzazi (Avail)
 ---
 
-At Sub0 Asia 2024, **Ghali El Ouarzazi**, a senior blockchain engineer at [**Avail**](https://dablock.com/dapps/avail-project/), delivered an insightful presentation on the role of light clients and decentralized scalability on Substrate. Here’s a comprehensive overview of the talk, focusing on the importance of light clients and the architectural choices that make decentralized scalability feasible.
+At Sub0 Asia 2024, **Ghali El Ouarzazi**, a senior blockchain engineer at **Avail**, delivered an insightful presentation on the role of light clients and decentralized scalability on Substrate. Here’s a comprehensive overview of the talk, focusing on the importance of light clients and the architectural choices that make decentralized scalability feasible.
 
 ## Introduction to Avail Project
 Avail is renowned as a data availability layer built on Substrate. This layer is crucial in the Ethereum ecosystem, especially as rollups become a central solution for off-chain computation. With increasing demand for data availability, solutions like Avail are essential for ensuring that rollups and app-specific chains have access to reliable and scalable data.

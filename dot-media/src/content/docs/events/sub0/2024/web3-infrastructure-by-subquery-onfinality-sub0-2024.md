@@ -9,10 +9,8 @@ sidebar:
 
 At a recent tech event, **Marta Adamczyk** from **SubQuery** **Network** and **OnFinality** shared groundbreaking developments in Web3 infrastructure. Her talk, titled “Web3 Infra Revolutionised,” focused on SubQuery’s journey, their current achievements, and the exciting future that lies ahead.
 
-SubQuery’s Evolution and Achievements
--------------------------------------
-
-[**SubQuery**](https://dablock.com/dapps/subquery/) started three years ago as an open-source indexer, primarily serving the Polkadot ecosystem. Over time, it expanded its reach to other ecosystems such as Ethereum, Cosmos, Algorand, and Avalanche. Today, **SubQuery supports an impressive 160 networks**, providing essential indexing services that facilitate efficient data retrieval from blockchains.
+## SubQuery’s Evolution and Achievements
+**SubQuery** started three years ago as an open-source indexer, primarily serving the Polkadot ecosystem. Over time, it expanded its reach to other ecosystems such as Ethereum, Cosmos, Algorand, and Avalanche. Today, **SubQuery supports an impressive 160 networks**, providing essential indexing services that facilitate efficient data retrieval from blockchains.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vRyVHYDo4Oyy2dr5Wy9LD2K3OJNxkICa1NQmkrBrpsWzeKaUkRlBtpL8Wd9Wj8CuNq3_XRX41xcEFrm/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 

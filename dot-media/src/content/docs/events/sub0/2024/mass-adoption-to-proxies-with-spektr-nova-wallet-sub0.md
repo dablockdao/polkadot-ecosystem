@@ -19,8 +19,8 @@ At its core, a proxy allows one account to perform actions on behalf of another.
 
 ## Setting Up Proxies with Spektr and Nova Wallet
 **1. Delegating Staking Operations:**
-- **Cold Wallet to Hot Wallet**: If you have a cold wallet (e.g., a **Ledger device**) and want to delegate staking operations to a hot wallet (e.g., [**Nova Wallet**](https://dablock.com/dapps/nova-wallet/)), you can set up a regular proxy. This setup allows you to perform staking-related tasks without repeatedly accessing your cold wallet.**Steps:**
-  - Connect your cold wallet to [**Nova Wallet**](https://dablock.com/dapps/nova-wallet/).
+- **Cold Wallet to Hot Wallet**: If you have a cold wallet (e.g., a **Ledger device**) and want to delegate staking operations to a hot wallet (e.g., **Nova Wallet**), you can set up a regular proxy. This setup allows you to perform staking-related tasks without repeatedly accessing your cold wallet.**Steps:**
+  - Connect your cold wallet to **Nova Wallet**.
   - Set up a proxy account with permissions limited to staking operations.
   - Use your hot wallet to perform staking operations, reducing the need to access the cold wallet frequently.
 
@@ -43,4 +43,4 @@ Sergeev’s talk included practical demonstrations using Nova Wallet, showcasing
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/26zgX-8pnuU?si=UC-uo2hc9FQT5Tur" title="YouTube video player" width="560"></iframe>
 
 #### Conclusion
-Proxies, when used effectively, can significantly enhance the security and efficiency of digital account management. By understanding and implementing the setups discussed by Valentin Sergeev, users can leverage the full potential of proxies through tools like **Spektr** and [**Nova Wallet**](https://dablock.com/dapps/nova-wallet/). Whether you’re managing personal accounts or overseeing corporate finances, proxies offer a flexible and secure solution to streamline your operations.
+Proxies, when used effectively, can significantly enhance the security and efficiency of digital account management. By understanding and implementing the setups discussed by Valentin Sergeev, users can leverage the full potential of proxies through tools like **Spektr** and **Nova Wallet**. Whether you’re managing personal accounts or overseeing corporate finances, proxies offer a flexible and secure solution to streamline your operations.

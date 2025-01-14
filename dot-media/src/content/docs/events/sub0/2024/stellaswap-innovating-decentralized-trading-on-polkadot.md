@@ -7,10 +7,10 @@ sidebar:
 
 ![Mohammadreza Ashouri - Polkadot Security Vectors](/src/assets/sub0-2024/mohammadreza-sub0.webp)
 
-In a recent Builders AMA, **Aziz Zainuddin**, a core contributor to [**StellaSwap**](https://dablock.com/dapps/stellaswap/), shared insights into the platform’s groundbreaking innovations and their impact on the decentralized finance (DeFi) ecosystem on Polkadot. This article explores the highlights of his talk, focusing on StellaSwap’s efficient trading router, liquid staking, and Merkle rewarder.
+In a recent Builders AMA, **Aziz Zainuddin**, a core contributor to **StellaSwap**, shared insights into the platform’s groundbreaking innovations and their impact on the decentralized finance (DeFi) ecosystem on Polkadot. This article explores the highlights of his talk, focusing on StellaSwap’s efficient trading router, liquid staking, and Merkle rewarder.
 
 ## StellaSwap’s Achievements and Overview
-StellaSwap, based on the [**Moonbeam Network**](https://dablock.com/dapps/moonbeam-network/), is the leading decentralized exchange (DEX) on Polkadot, surpassing **$1 billion in trade volume and dominating 60% of Polkadot’s trade volume**. This success underscores StellaSwap’s role as the primary trading hub within the Polkadot ecosystem.
+StellaSwap, based on the **Moonbeam Network**, is the leading decentralized exchange (DEX) on Polkadot, surpassing **$1 billion in trade volume and dominating 60% of Polkadot’s trade volume**. This success underscores StellaSwap’s role as the primary trading hub within the Polkadot ecosystem.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vTYURtwdqeWZ8dXGKCiTTxGsuCdnPM5O3LlkjKxXrSKprZhNZS_jOix8VB7YrbUDsU3nap0Vhe_6Npi/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 

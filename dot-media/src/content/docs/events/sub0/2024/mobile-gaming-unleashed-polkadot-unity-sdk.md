@@ -5,7 +5,7 @@ sidebar:
     label: Polkadot Unity SDKS
 ---
 
-In the landscape of mobile gaming, developers constantly seek tools and platforms that can provide a seamless and enhanced gaming experience. The recent tech talk by Rotislav Litovkin and Cedric Decoster from[ **Ajuna Network**](https://dablock.com/dapps/ajuna-network/) shines a spotlight on the **Polkadot Unity SDK**, using the Hexalem game as a case study to illustrate its potential. This article delves into the key takeaways from their presentation and explores how this SDK can revolutionize mobile game development.
+In the landscape of mobile gaming, developers constantly seek tools and platforms that can provide a seamless and enhanced gaming experience. The recent tech talk by Rotislav Litovkin and Cedric Decoster from **Ajuna Network** shines a spotlight on the **Polkadot Unity SDK**, using the Hexalem game as a case study to illustrate its potential. This article delves into the key takeaways from their presentation and explores how this SDK can revolutionize mobile game development.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vR47-7q6ahfqCOMl4g-OPYbxYDC15lCxqzzSbwc40xo9KjRqCVSjAtRvvKFKM6bAs9hdUgv7XI5jUhi/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 

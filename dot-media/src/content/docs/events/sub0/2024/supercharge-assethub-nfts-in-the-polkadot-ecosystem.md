@@ -7,10 +7,10 @@ sidebar:
 
 ![Mohammadreza Ashouri - Polkadot Security Vectors](/src/assets/sub0-2024/mohammadreza-sub0.webp)
 
-The Polkadot ecosystem stands out for its innovative solutions and interoperability. **Viktor Valastin** from [**KodaDot**](https://dablock.com/dapps/kodadot/) recently delivered an insightful tech talk on “***Supercharge AssetHub NFTs in Polkadot Ecosystem***“, where he delved into the advancements and advantages of **using AssetHub for NFTs**.
+The Polkadot ecosystem stands out for its innovative solutions and interoperability. **Viktor Valastin** from **KodaDot** recently delivered an insightful tech talk on “***Supercharge AssetHub NFTs in Polkadot Ecosystem***“, where he delved into the advancements and advantages of **using AssetHub for NFTs**.
 
 ## What is KodaDot?
-[**KodaDot**](https://dablock.com/dapps/kodadot/) **is an open-source NFT marketplace within the Polkadot ecosystem**, designed to be multi-chain powered. This means it operates seamlessly across various chains like Polkadot, Kusama, and others running on the EVM. KodaDot is technology agnostic, **allowing integration with different metadata standards such as OpenSea and Rarible**. The platform is bounty-based, encouraging developers from other ecosystems to contribute and earn DOT.
+**KodaDot**] **is an open-source NFT marketplace within the Polkadot ecosystem**, designed to be multi-chain powered. This means it operates seamlessly across various chains like Polkadot, Kusama, and others running on the EVM. KodaDot is technology agnostic, **allowing integration with different metadata standards such as OpenSea and Rarible**. The platform is bounty-based, encouraging developers from other ecosystems to contribute and earn DOT.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vRCByZZoHXRV4myQYa4jwZT5PaWydnLGudNw06CFTICrYXfFkBLGujXgcE5-JY6tEAO4ehT2DVyoWq_/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 

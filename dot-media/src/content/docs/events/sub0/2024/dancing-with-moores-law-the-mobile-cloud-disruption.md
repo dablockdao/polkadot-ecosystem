@@ -19,14 +19,14 @@ Acurast is at the forefront of leveraging mobile hardware to surpass traditional
 Currently, a few companies dominate **66% of the global cloud market**, leading to monopolistic pricing and data ownership issues. Acurast aims to disrupt this monopoly by offering a decentralized alternative. By using mobile devices, Acurast provides a more secure and efficient cloud solution. These devices are equipped with strongbox-capable **trusted execution environments (TEEs)** like Google’s Titan M2, ensuring high security and confidentiality.
 
 ### **Practical Implications and Use Cases**
-[**Acurast**](https://dablock.com/dapps/acurast/)‘s approach has several practical benefits:
+- **Acurast**‘s approach has several practical benefits:
 - **Cost-Effectiveness:** Mobile devices are significantly cheaper than traditional server hardware.
 - **Energy Efficiency:** Operating costs are drastically lower, making it an environmentally friendly option.
 - **Upcycling:** Old or partially broken devices can be repurposed, reducing electronic waste.
 - **Accessibility:** It opens up opportunities for regions with limited access to traditional cloud services.
 
 #### **Performance Metrics**
-Acurast’s performance metrics are impressive. In comparative studies, [**mobile devices running Acurast software**](https://dablock.com/dapps/acurast/) have demonstrated superior execution times compared to major cloud providers, even when accounting for network latency. This makes Acurast a viable option for a wide range of applications, from web crawling to complex computational tasks.
+Acurast’s performance metrics are impressive. In comparative studies, **mobile devices running Acurast software**have demonstrated superior execution times compared to major cloud providers, even when accounting for network latency. This makes Acurast a viable option for a wide range of applications, from web crawling to complex computational tasks.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/u6fmRg0dQzk?si=RKd8zb582rLK3Vzv" title="YouTube video player" width="560"></iframe>
 

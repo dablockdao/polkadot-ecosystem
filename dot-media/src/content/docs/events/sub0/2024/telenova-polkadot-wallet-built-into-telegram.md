@@ -5,7 +5,7 @@ sidebar:
     label: Leemo (Telenova)
 ---
 
-Telenova is an innovative Polkadot wallet seamlessly integrated into Telegram, introduced by Leemo from [**Nova Technologies**](https://dablock.com/dapps/nova-wallet/). This tech talk, presented at **Sub0 Asia 2024**, delves into the intricacies of building substrate apps on Telegram, the rationale behind choosing this platform, and the features and benefits of Telenova. Here, we expand on the key points from Leemo’s presentation and incorporate insights from the presentation slides.
+Telenova is an innovative Polkadot wallet seamlessly integrated into Telegram, introduced by Leemo from **Nova Technologies**. This tech talk, presented at **Sub0 Asia 2024**, delves into the intricacies of building substrate apps on Telegram, the rationale behind choosing this platform, and the features and benefits of Telenova. Here, we expand on the key points from Leemo’s presentation and incorporate insights from the presentation slides.
 
 ## Introduction to Substrate Apps on Telegram
 **Leemo** began by explaining the architecture of Telegram apps, highlighting that they function as web apps within Telegram itself. These apps utilize the standard JavaScript stack for frontend development and any standard backend stack for bot development. **Nova Technologies** leveraged these tools to create **Telenova**, although they encountered some limitations, such as differing behaviors across devices and the need to navigate both Telegram and Substrate SDKs’ restrictions.

@@ -5,7 +5,7 @@ sidebar:
     label: Filippo Franchini (Web3 Foundation)
 ---
 
-[Polkadot Decoded 2024](https://dablock.com/web3-events/polkadot-decoded/) saw a significant talk delivered by [Filippo Franchini](https://x.com/filippoweb3), technical educator at the [**Web3 Foundation**](https://dablock.com/ecosystem/web3-foundation/), focusing on “*The Polkadot Roadmap 2024-25 and Beyond*“. This session shed light on the advanced technological framework and future developments of Polkadot, a major player in the blockchain ecosystem. The discussion encompassed various aspects, including the **enhancements to Polkadot’s architecture**, innovative protocols, and strategic goals set for the next two years.
+Polkadot Decoded 2024 saw a significant talk delivered by Filippo Franchini, technical educator at the **Web3 Foundation**, focusing on “*The Polkadot Roadmap 2024-25 and Beyond*“. This session shed light on the advanced technological framework and future developments of Polkadot, a major player in the blockchain ecosystem. The discussion encompassed various aspects, including the **enhancements to Polkadot’s architecture**, innovative protocols, and strategic goals set for the next two years.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vTB_mya7B5AxdJXcbXe3kSrZ7RGuLQtZXhrraz5U0Jc6hj-keWSxOJNjX82hkBXWdfprQJdPsG3R4kZ/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 

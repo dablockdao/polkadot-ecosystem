@@ -4,7 +4,7 @@ description: 'Explore Polkadot unmatched speed, versatility, and eco-friendlines
 sidebar:
     label: Alexander Mitrovich (Unique Network)
 ---
-At the Polkadot Decoded 2024 conference, Alexander Mitrovich from [**Unique Network**](https://dablock.com/dapps/unique-network/) delivered a compelling talk on the future of blockchain technology and the pivotal role of Polkadot in leading this transformation. His presentation, titled “Unleashing Superior Tech for Millions – It’s Time to Deliver Abstract,” underscored the unmatched capabilities of Polkadot’s technology and its readiness to serve millions of users.
+At the Polkadot Decoded 2024 conference, Alexander Mitrovich from **Unique Network** delivered a compelling talk on the future of blockchain technology and the pivotal role of Polkadot in leading this transformation. His presentation, titled “Unleashing Superior Tech for Millions – It’s Time to Deliver Abstract,” underscored the unmatched capabilities of Polkadot’s technology and its readiness to serve millions of users.
 
 Mitrovich began by adopting an optimistic tone, symbolically putting on “pink glasses” to highlight the bright future he envisions for Polkadot. He emphasized that Polkadot stands out as the superior blockchain technology due to its speed, versatility, and eco-friendliness, particularly in the realm of Non-Fungible Tokens (NFTs).
 

@@ -2,7 +2,7 @@
 title: 'IScaling with Layer 2 Tech Stack by Maarten Henskens'
 description: 'Scaling blockchain: Maarten Henskens of Astar Network shares insights on Layer 2 tech stack at Polkadot Decoded 2024.'
 ---
-In the blockchain industry, scalability remains a critical challenge. At [Polkadot Decoded 2024](https://dablock.com/web3-events/polkadot-decoded/), Maarten Henskens, Head of the Astar Foundation, delivered an insightful talk on “Scaling Further with Layer 2 Tech Stack: Our Learnings.” This article delves into the key points of his presentation, highlighting the advancements and challenges encountered by Astar Network in their pursuit of enhanced scalability.
+In the blockchain industry, scalability remains a critical challenge. At Polkadot Decoded 2024, Maarten Henskens, Head of the Astar Foundation, delivered an insightful talk on “Scaling Further with Layer 2 Tech Stack: Our Learnings.” This article delves into the key points of his presentation, highlighting the advancements and challenges encountered by Astar Network in their pursuit of enhanced scalability.
 
 ## Astar Network: A Brief Overview
 **Astar Network**, originally launched as Plasm in 2019, has evolved into a robust blockchain protocol founded in Japan. It focuses on driving blockchain adoption in Asia through partnerships with major Japanese corporations such as Sony and NTT Docomo. Astar Network’s unique approach involves integrating multiple virtual machines, including Ethereum Virtual Machine (EVM) and WebAssembly (Wasm), providing developers with versatile environments to deploy smart contracts.

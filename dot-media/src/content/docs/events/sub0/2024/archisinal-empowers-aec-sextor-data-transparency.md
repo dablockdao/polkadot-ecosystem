@@ -6,7 +6,7 @@ sidebar:
 
 ---
 
-The **Architecture, Engineering, and Construction (AEC)** sector is renowned for its complexity, involving numerous stakeholders, intricate processes, and significant financial investments. Despite technological advancements, the industry has struggled with inefficiencies, particularly in data management and dispute resolution. These challenges often lead to delays, cost overruns, and unresolved disputes that can cripple projects. However, with the advent of **blockchain technology and artificial intelligence (AI)**, a new paradigm is emerging—data democratization and arbitration transparency. This article explores how these innovations, particularly within the [**Polkadot ecosystem**](https://dablock.com/ecosystem/), are set to transform the AEC sector, providing a deep dive into the principles, implementation strategies, and potential benefits.
+The **Architecture, Engineering, and Construction (AEC)** sector is renowned for its complexity, involving numerous stakeholders, intricate processes, and significant financial investments. Despite technological advancements, the industry has struggled with inefficiencies, particularly in data management and dispute resolution. These challenges often lead to delays, cost overruns, and unresolved disputes that can cripple projects. However, with the advent of **blockchain technology and artificial intelligence (AI)**, a new paradigm is emerging—data democratization and arbitration transparency. This article explores how these innovations, particularly within the **Polkadot ecosystem**, are set to transform the AEC sector, providing a deep dive into the principles, implementation strategies, and potential benefits.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vSTtz5mw7j4scMzRmyD18GYBtS8dliE3f6ISl8dq7L5dhDYWyQXyLy8B4S7vVoRJC2Fv50sFIcYR9kf/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 
@@ -33,7 +33,7 @@ Artificial intelligence complements blockchain technology by providing tools for
 3. **Enhanced Communication**: AI-powered tools can facilitate better communication among stakeholders by providing real-time updates, automated notifications, and intelligent chatbots that can answer queries and resolve issues on the spot.
 
 ## Archisinal and the Future of AEC Case Study
-**[Archisinal](https://dablock.com/dapps/archisinal/)**, a pioneering platform within the Polkadot ecosystem, **exemplifies how blockchain and AI can be leveraged to address the challenges in the AEC sector**. The platform aims to revolutionize the way we interact with real-world assets in the built environment by providing a transparent, decentralized, and efficient project management solution.
+**Archisinal**, a pioneering platform within the Polkadot ecosystem, **exemplifies how blockchain and AI can be leveraged to address the challenges in the AEC sector**. The platform aims to revolutionize the way we interact with real-world assets in the built environment by providing a transparent, decentralized, and efficient project management solution.
 
 #### The Arisal Platform: Key Features
 1. **Transparent Data Dashboard**: Archisinal offers a fully transparent data dashboard that can be accessed and queried by all stakeholders. This transparency drives accountability, reduces disputes, and enhances communication across the project lifecycle.
@@ -56,6 +56,6 @@ The integration of blockchain and AI in the AEC sector is not just a technologic
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Mjmla2O9sCM?si=y_ShlBVr9izvCKdG" title="YouTube video player" width="560"></iframe>
 
 ### Conclusion
-The AEC sector stands at the cusp of a digital revolution, driven by the twin forces of blockchain and AI. **Platforms like [Archisinal](https://dablock.com/dapps/archisinal/) are leading the charge**, demonstrating how data democratization and arbitration transparency can address longstanding challenges in the industry. As these technologies continue to evolve, they promise to usher in a new era of efficiency, collaboration, and trust in the AEC sector, benefiting all stakeholders involved.
+The AEC sector stands at the cusp of a digital revolution, driven by the twin forces of blockchain and AI. **Platforms like Archisinal are leading the charge**, demonstrating how data democratization and arbitration transparency can address longstanding challenges in the industry. As these technologies continue to evolve, they promise to usher in a new era of efficiency, collaboration, and trust in the AEC sector, benefiting all stakeholders involved.
 
 This article has aimed to provide a comprehensive overview of the potential of blockchain and AI in transforming the AEC sector. By focusing on data democratization and arbitration transparency, the industry can move towards a more decentralized, transparent, and efficient future. The successful implementation of these technologies, as exemplified by Archisinal, will be crucial in achieving these goals.

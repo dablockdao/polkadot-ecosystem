@@ -4,7 +4,7 @@ description: 'Learn about the launch of the Initial Paranet Offering on OriginTr
 sidebar:
     label: Branimir Rakic (Origintrail)
 ---
-Branimir Rakic of [**OriginTrail**](https://dablock.com/dapps/neuroweb/) took the stage at Polkadot Decoded 2024 to present the groundbreaking concept of launching an Initial Paranet Offering (IPO) on the OriginTrail Decentralized Knowledge Graph (DKG). This innovative initiative aims to leverage the decentralized and open-source nature of the Polkadot ecosystem to build a truly open AI.
+Branimir Rakic of **OriginTrail** took the stage at Polkadot Decoded 2024 to present the groundbreaking concept of launching an Initial Paranet Offering (IPO) on the OriginTrail Decentralized Knowledge Graph (DKG). This innovative initiative aims to leverage the decentralized and open-source nature of the Polkadot ecosystem to build a truly open AI.
 
 ## Understanding the Concept: Decentralized Knowledge Graph
 Rakic opened his presentation by discussing the emergence of a new global collective intelligence driven by AI. He highlighted the challenges associated with current AI models, such as data ownership, centralization, hallucinations, bias, and model collapse. These issues underscore the importance of building a decentralized knowledge base that is verifiable, crowdsourced, and owned by all of humanity.

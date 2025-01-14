@@ -7,7 +7,7 @@ sidebar:
 
 ![Mohammadreza Ashouri - Polkadot Security Vectors](/src/assets/sub0-2024/mohammadreza-sub0.webp)
 
-At the recent [**Sub0 Asia 2024**](https://dablock.com/web3-events/polkadot-sub0/), Bruno from [**R0gue**](https://dablock.com/ecosystem/r0gue/) provided an insightful **introduction to Substrate, an open-source framework for building blockchains**. With his extensive experience as a Substrate developer at [**Parity Technologies**](https://dablock.com/ecosystem/parity-technologies/), Bruno outlined the key aspects of Substrate, its architecture, and the benefits it offers to developers and businesses. This article will summarize the main points of Bruno’s presentation, highlighting why Substrate is a powerful tool for building future-proof blockchains.
+At the recent **Sub0 Asia 2024**, Bruno from **R0gue** provided an insightful **introduction to Substrate, an open-source framework for building blockchains**. With his extensive experience as a Substrate developer at **Parity Technologies**, Bruno outlined the key aspects of Substrate, its architecture, and the benefits it offers to developers and businesses. This article will summarize the main points of Bruno’s presentation, highlighting why Substrate is a powerful tool for building future-proof blockchains.
 
 ## What is Substrate Framework?
 **Substrate is an open-source, battle-tested Rust framework designed for building future-proof blockchains**. It is optimized for most use cases and built by developers for developers. Substrate simplifies the process of creating custom blockchains by providing a modular architecture that abstracts away the common components of blockchain development, such as database management, networking, transaction processing, and consensus mechanisms.
@@ -47,5 +47,4 @@ For those who may not need a full custom blockchain, [**Substrate also supports 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/_cbJh1WQMy8?si=dQHDNccnVTjKeUz3" title="YouTube video player" width="560"></iframe>
 
 ### Conclusion
-
 Substrate is a powerful framework for building custom blockchains that offers flexibility, modularity, and future-proof capabilities through forkless upgrades. With a strong community, comprehensive documentation, and robust governance tools, **Substrate is well-suited for developers and businesses looking to leverage blockchain technology**. As demonstrated by Bruno Galvao ([**R0GUE**](https://dablock.com/ecosystem/r0gue/)) at [**Sub0 Asia 2024**](https://dablock.com/web3-events/polkadot-sub0/), Substrate’s combination of advanced features and ease of use makes it a compelling choice for blockchain development.

@@ -4,7 +4,7 @@ description: 'Explore the Agile Coretime Architecture in Polkadot, focusing on f
 sidebar:
     label: Donal Murray (Parity)
 ---
-A new critical component of Polkadot is the Coretime architecture, designed to enhance the efficiency, flexibility, and predictability of blockchain resources. This article offers a **deep dive into the Agile Coretime Architecture** and its pricing mechanisms, providing insights valuable to developers, teams, and stakeholders in the Polkadot ecosystem. This is a brief summary taken from **[Donal Murray](https://x.com/domuiri)‘s talk at [Polkadot Decoded 2024](https://dablock.com/web3-events/polkadot-decoded/)**.
+A new critical component of Polkadot is the Coretime architecture, designed to enhance the efficiency, flexibility, and predictability of blockchain resources. This article offers a **deep dive into the Agile Coretime Architecture** and its pricing mechanisms, providing insights valuable to developers, teams, and stakeholders in the Polkadot ecosystem. This is a brief summary taken from **[Donal Murray](https://x.com/domuiri)‘s talk at Polkadot Decoded 2024**.
 
 ## Polkadot Coretime Aims and Objectives
 The Coretime architecture was developed with specific objectives in mind, aiming to address the limitations of previous models and improve the overall utility of the Polkadot network. Key aims include:

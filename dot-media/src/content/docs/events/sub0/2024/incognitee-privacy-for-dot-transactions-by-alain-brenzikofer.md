@@ -5,7 +5,7 @@ sidebar:
     label: Alain Brenzikofer (Incognitee)
 ---
 
-At [**Polkadot Decoded 2024**](https://dablock.com/web3-events/polkadot-decoded/), **Alain Brenzikofer** from the [**Integritee Network**](https://dablock.com/dapps/integritee/) delivered an insightful presentation titled “*Incognitee: Privacy for DOT Transactions*“. The talk emphasized the crucial role of privacy in blockchain technology, particularly for [**Polkadot’s ecosystem**](https://dablock.com/ecosystem/), and introduced an innovative solution to enhance privacy while maintaining compliance with regulatory standards.
+At **Polkadot Decoded 2024**, **Alain Brenzikofer** from the **Integritee Network** delivered an insightful presentation titled “*Incognitee: Privacy for DOT Transactions*“. The talk emphasized the crucial role of privacy in blockchain technology, particularly for **Polkadot’s ecosystem**, and introduced an innovative solution to enhance privacy while maintaining compliance with regulatory standards.
 
 ## The Polarization of Privacy
 Brenzikofer began by addressing the polarized views on privacy. On one end, there are **those who demand absolute privacy** and view any attempt at compliance as a compromise. **On the other, some fear non-compliance and its potential repercussions**. He highlighted the current state of Polkadot as leaning towards extreme surveillance, offering pseudonymity rather than true privacy. Pseudonymity, he argued, is insufficient as long-term behaviors can still reveal identities.
@@ -32,4 +32,4 @@ The presentation concluded with a call for community support to accelerate the d
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/AdTN9sA_d4o?si=PWPu00kax34lqmnE" title="YouTube video player" width="560"></iframe>
 
 ### Conclusion: Balancing Privacy and Compliance
-**Alain Brenzikofer’s presentation at[ Polkadot Decoded 2024](https://dablock.com/web3-events/polkadot-decoded/)** underscored the necessity of privacy in the digital age and presented a viable solution for Polkadot users to achieve it. By balancing privacy with regulatory compliance, Incognitee aims to provide a secure and private transaction environment, fostering greater confidence and adoption within the blockchain community.
+**Alain Brenzikofer’s presentation at Polkadot Decoded 2024** underscored the necessity of privacy in the digital age and presented a viable solution for Polkadot users to achieve it. By balancing privacy with regulatory compliance, Incognitee aims to provide a secure and private transaction environment, fostering greater confidence and adoption within the blockchain community.

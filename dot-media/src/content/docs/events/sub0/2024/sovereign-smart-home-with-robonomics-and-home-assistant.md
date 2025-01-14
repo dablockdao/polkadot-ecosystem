@@ -7,12 +7,12 @@ sidebar:
 
 ![Mohammadreza Ashouri - Polkadot Security Vectors](/src/assets/sub0-2024/mohammadreza-sub0.webp)
 
-In the ever-evolving world of smart home technology, **Sergei Lonshakov** from [**Robonomics**](https://dablock.com/dapps/robonomics/) introduces an innovative approach at the Sub0 conference: ***the Sovereign Smart Home***. This groundbreaking integration leverages Robonomics and Home Assistant to offer a decentralized and secure smart home solution.
+In the ever-evolving world of smart home technology, **Sergei Lonshakov** from **Robonomics** introduces an innovative approach at the Sub0 conference: ***the Sovereign Smart Home***. This groundbreaking integration leverages Robonomics and Home Assistant to offer a decentralized and secure smart home solution.
 
 Introduction to Robonomics Parachain
 ------------------------------------
 
-Sergei begins by providing an overview of the [**Robonomics parachain**](https://dablock.com/dapps/robonomics/) concept and its current development stage. **Robonomics parachain enables end-users to interact with digital twins of physical objects**, such as smart devices or complex robotic systems. This interaction triggers state transitions in the parachain, allowing real smart devices to receive information from the network and execute actions.
+Sergei begins by providing an overview of the **Robonomics parachain** concept and its current development stage. **Robonomics parachain enables end-users to interact with digital twins of physical objects**, such as smart devices or complex robotic systems. This interaction triggers state transitions in the parachain, allowing real smart devices to receive information from the network and execute actions.
 
 Smart Home Use Cases
 --------------------
@@ -24,7 +24,7 @@ The highlight of Sergei’s talk is the application of Robonomics in smart homes
 Home Assistant Integration
 --------------------------
 
-A significant portion of Sergei’s presentation focuses on the **integration of [Robonomics](https://dablock.com/dapps/robonomics/) with Home Assistant**, an open-source smart home solution. By installing Home Assistant on a Raspberry Pi, users can control their smart home devices locally without intermediaries. This setup ensures enhanced security and privacy, as all user data is encrypted and stored on the parachain using the user’s keys.
+A significant portion of Sergei’s presentation focuses on the **integration of Robonomics with Home Assistant**, an open-source smart home solution. By installing Home Assistant on a Raspberry Pi, users can control their smart home devices locally without intermediaries. This setup ensures enhanced security and privacy, as all user data is encrypted and stored on the parachain using the user’s keys.
 
 ### Key Features and Benefits
 

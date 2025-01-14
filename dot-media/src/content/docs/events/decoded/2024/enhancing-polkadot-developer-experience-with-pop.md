@@ -2,7 +2,7 @@
 title: 'Enhancing Polkadot Developer Experience with POP'
 description: 'Enhance your Polkadot development with POP: a revolutionary platform for smart contracts and streamlined developer tools.'
 ---
-In a recent address at [Polkadot Decoded 2024](https://dablock.com/web3-events/polkadot-decoded/), Alejandro from [R0GUE](https://dablock.com/ecosystem/r0gue/) unveiled an ambitious initiative aimed at redefining the developer experience within the Polkadot ecosystem. The new platform, named **POP**, seeks to elevate the standards of developer engagement and application development on Polkadot. This article delves into the key points of Alejandro’s presentation, highlighting the significance of [**POP**](https://dablock.com/dapps/pop-network/) in fostering a more efficient and user-friendly development environment.
+In a recent address at Polkadot Decoded 2024, Alejandro from R0GUE unveiled an ambitious initiative aimed at redefining the developer experience within the Polkadot ecosystem. The new platform, named **POP**, seeks to elevate the standards of developer engagement and application development on Polkadot. This article delves into the key points of Alejandro’s presentation, highlighting the significance of **POP** in fostering a more efficient and user-friendly development environment.
 
 **POP Setting New Standards in Developer Experience**
 -----------------------------------------------------
@@ -19,7 +19,7 @@ Beyond their in-house initiatives, Rogue is also dedicated to supporting third-p
 **Introducing POP: Elevating Developer Engagement**
 ---------------------------------------------------
 
-The centerpiece of Rogue’s efforts is [**POP**](https://dablock.com/dapps/pop-network/), a platform designed to enhance the developer experience on Polkadot. Alejandro detailed how POP aims to facilitate the creation of a wide range of applications, from parachains to smart contracts and beyond. By providing specialized tools and solutions, POP seeks to remove barriers and streamline the development process.
+The centerpiece of Rogue’s efforts is **POP**, a platform designed to enhance the developer experience on Polkadot. Alejandro detailed how POP aims to facilitate the creation of a wide range of applications, from parachains to smart contracts and beyond. By providing specialized tools and solutions, POP seeks to remove barriers and streamline the development process.
 
 **POP Network: Empowering Smart Contract Development**
 ------------------------------------------------------
@@ -34,7 +34,7 @@ POP is designed to support both Ink and Solidity, with a strong focus on Ink due
 **POP CLI: A Comprehensive Tool for Polkadot Development**
 ----------------------------------------------------------
 
-Alejandro introduced [**POP CLI**](https://dablock.com/dapps/pop-cli/), an all-in-one tool designed to support the entire development lifecycle on Polkadot. POP CLI aims to be the fastest and most efficient way for developers to get started, providing seamless setups, automatic dependency management, and access to a growing suite of templates. This tool is built with a user-centric approach, ensuring that features are driven by developer feedback and needs.
+Alejandro introduced **POP CLI**, an all-in-one tool designed to support the entire development lifecycle on Polkadot. POP CLI aims to be the fastest and most efficient way for developers to get started, providing seamless setups, automatic dependency management, and access to a growing suite of templates. This tool is built with a user-centric approach, ensuring that features are driven by developer feedback and needs.
 
 **POP Network Community Support and Future Prospects**
 ------------------------------------------------------

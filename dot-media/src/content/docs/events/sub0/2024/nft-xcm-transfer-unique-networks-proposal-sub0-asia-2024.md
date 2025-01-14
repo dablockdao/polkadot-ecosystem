@@ -8,7 +8,7 @@ sidebar:
 In a recent presentation at the Sub0 conference, **Daniel Shiposha** provided a comprehensive **review of the** **Unique Network’s treasury proposal concerning XCM** (Cross-Consensus Messaging) NFTs. Here’s a detailed look into the key points discussed.
 
 ## Introduction to XCM NFTs
-**XCM NFTs** represent a significant advancement in cross-chain NFT transfers within the [**Polkadot ecosystem**](https://dablock.com/ecosystem/). Shiposha highlighted that the first successful cross-chain NFT transfers between [**Quartz**](https://dablock.com/dapps/unique-network/) and [**Karura**](https://dablock.com/dapps/acala-network/) networks marked a critical milestone. The proposal aims to extend these capabilities, benefiting the entire ecosystem.
+**XCM NFTs** represent a significant advancement in cross-chain NFT transfers within the **Polkadot ecosystem**. Shiposha highlighted that the first successful cross-chain NFT transfers between **Quartz** and **Karura** networks marked a critical milestone. The proposal aims to extend these capabilities, benefiting the entire ecosystem.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vTFb8y5NPbMOGIdM6612TDPEys96VCK-E3kJ2zo9rPV8HTiZT2Bdrbrdceo87sYxSvmMRFK8bNMcTqj/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 
