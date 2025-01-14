@@ -15,7 +15,7 @@ hero:
       variant: secondary
 ---
 
-Sonova is offering a specialized platform for collectors and professional traders on the [**Astar Network**](https://dablock.com/dapps/astar-network/). Led by a team of seasoned Web3 experts, **Sonova aims to support and nurture NFT projects and games that can create sustainable ecosystems**.
+Sonova is offering a specialized platform for collectors and professional traders on the **Astar Network**. Led by a team of seasoned Web3 experts, **Sonova aims to support and nurture NFT projects and games that can create sustainable ecosystems**.
 
 ## The Vision Behind Sonova
 Despite being a new platform, Sonova boasts a team with extensive experience in the Web3 space. The primary mission of Sonova is to tackle one of the most significant challenges in the Web3 industry: the lack of projects dedicated to building sustainable ecosystems. By fostering NFT projects and games, Sonova aims to fill this gap effectively.
