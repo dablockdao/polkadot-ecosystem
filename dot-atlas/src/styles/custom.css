@@ -1099,3 +1099,11 @@ starlight-theme-select select:not(:active)  {
 .sl-container.astro-7nkwcw3z {
 		padding: 0rem 0rem; 
 }
+
+
+.card {
+	width: 100% !important;
+	display: block !important; /* Para asegurarte de que ocupe todo el espacio */
+	box-sizing: border-box; /* Considera padding y border dentro del ancho */
+  }
+  
