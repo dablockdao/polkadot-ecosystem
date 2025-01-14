@@ -2,7 +2,7 @@
 title: 'Top 15 Peaq Ecosystem Projects: Driving the Future of DePiN'
 description: 'Explore the top 15 projects in the Peaq ecosystem, driving innovation in decentralized physical infrastructure networks (DePIN).'
 ---
-The Peaq ecosystem stands as a beacon of innovation in the rapidly evolving world of blockchain technology, particularly within the Polkadot ecosystem. As a scalable, green, and decentralized layer-1 blockchain, **[Peaq Network](https://dablock.com/dapps/peaq-network/) is specifically designed to support Decentralized Physical Infrastructure Networks (DePIN) and Machine Real-World Assets (RWA)**. With its robust infrastructure, Peaq enables a wide range of applications across the Internet of Things (IoT), DePIN, and beyond. This article delves into the top 15 projects within the Peaq ecosystem, showcasing the diversity and potential of this burgeoning network.
+The Peaq ecosystem stands as a beacon of innovation in the rapidly evolving world of blockchain technology, particularly within the Polkadot ecosystem. As a scalable, green, and decentralized layer-1 blockchain, **Peaq Network is specifically designed to support Decentralized Physical Infrastructure Networks (DePIN) and Machine Real-World Assets (RWA)**. With its robust infrastructure, Peaq enables a wide range of applications across the Internet of Things (IoT), DePIN, and beyond. This article delves into the top 15 projects within the Peaq ecosystem, showcasing the diversity and potential of this burgeoning network.
 
 1. **Peaq Network**
 -------------------

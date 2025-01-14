@@ -36,11 +36,7 @@ To efficiently manage accounts on Polkadot and avoid complications related to th
 3. **Understand Transaction Costs**: Before initiating any transfer, factor in the transaction fees. Ensure that the post-transfer balance, after deducting the fees, stays above the ED to keep the account active.
 4. **Reactivating Accounts**: If an account does get reaped, it can be reactivated by depositing an amount greater than the ED. This restores account activity but does not recover any burned funds.
 
-- - - - - -
-
 Conclusion
 ----------
 
 The concepts of Existential Deposit and Keep-Alive Transfers are integral to maintaining the efficiency and functionality of the Polkadot network. By understanding and implementing these mechanisms, users can ensure their accounts remain active and avoid unnecessary losses. Proper balance management, coupled with the strategic use of Keep-Alive checks, allows for a smoother and more secure experience on the Polkadot blockchain.
-
-- - - - - -

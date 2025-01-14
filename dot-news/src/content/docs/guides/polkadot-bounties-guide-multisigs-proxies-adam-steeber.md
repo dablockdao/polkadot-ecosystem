@@ -26,7 +26,6 @@ The process of establishing bounties and child bounties involves several steps:
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="420" src="https://www.youtube.com/embed/Qv_nJVcvQr8?si=A8k5YZ7MFWEyKtYz" title="YouTube video player" width="560"></iframe>
 
-Understanding [Polkadot Multisigs](https://dablock.com/polkadot-multisig-wallets/)
 ----------------------------------------------------------------------------------
 
 Multisig (multi-signatory) accounts require multiple signatures to execute transactions, enhancing security and collaboration. A multisig account is deterministic and can be regenerated with the same set of signatories and thresholds.
@@ -82,8 +81,5 @@ For a detailed walkthrough, including practical examples and further explanation
 
 Related Resources:
 
-- <span class="yt-core-attributed-string--link-inherit-color" dir="auto">[**Polkadot JS App**](https://dablock.com/dapps/polkadotjs/) </span>
-- [**Subscan**](https://dablock.com/dapps/subscan/)
-- <span class="yt-core-attributed-string--link-inherit-color" dir="auto">[**Multix**](https://dablock.com/dapps/multix/) </span>
 - <span class="yt-core-attributed-string--link-inherit-color" dir="auto">[**Subkey**](https://docs.substrate.io/reference/command-line-tools/subkey/) (account generation/transformation tool) / external link</span>
 - <span class="yt-core-attributed-string--link-inherit-color" dir="auto">[**Polkadot Wiki**](https://wiki.polkadot.network/) / external link</span>

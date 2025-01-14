@@ -12,16 +12,12 @@ USDC has been a preferred stablecoin within the Polkadot ecosystem, particularly
 
 Beyond the AssetHub, USDC is also widely adopted across multiple Polkadot parachains. The aggregate amount of USDC on these parachains is reported at **$162.3 million**. This wide distribution of USDC underscores its versatility and importance in facilitating transactions and liquidity pools across the Polkadot network.
 
-<figure aria-describedby="caption-attachment-10895" class="wp-caption alignnone" id="attachment_10895" style="width: 800px">![USDC in Polkadot AssetHub](../../uploads/2024/07/polkadot-assethub-stablecoin.webp)<figcaption class="wp-caption-text" id="caption-attachment-10895">USDC in Polkadot AssetHub by [**DotLake**](https://dablock.com/ecosystem/dotlake/)</figcaption></figure>
-
 ## USDT in Polkadot AssetHub
 Similarly, USDT has established itself as a key player within the Polkadot DeFi landscape. The total sum of USDT within the Polkadot AssetHub currently stands at **$74.5 million**. This substantial amount reflects USDT’s role as a primary medium for stable, low-volatility transactions within the network.
 
 USDT’s influence extends across the Polkadot ecosystem, with its sum across various parachains reaching **$194.7 million**. This data highlights USDT’s broad acceptance and critical function in maintaining liquidity across numerous DeFi platforms and applications within Polkadot.
 
-<figure aria-describedby="caption-attachment-10896" class="wp-caption alignnone" id="attachment_10896" style="width: 800px">![usdt in polkadot assethub](../../uploads/2024/07/usdt-in-polkadot-assethub.webp)<figcaption class="wp-caption-text" id="caption-attachment-10896">USDT in polkadot assethub by [**DotLake**](https://dablock.com/ecosystem/dotlake/)</figcaption></figure>
-
 #### **Conclusion**
 The presence and distribution of USDC and USDT within the Polkadot AssetHub and across its parachains are clear indicators of the significance of these stablecoins in the network’s DeFi environment. With **$58.7 million** of USDC and **$74.5 million** of USDT in the AssetHub alone, coupled with their extensive sums of **$162.3 million** and **$194.7 million** across parachains respectively, it is evident that these stablecoins are foundational to Polkadot’s financial infrastructure.
 
-As the Polkadot ecosystem continues to mature, the role of stablecoins like USDC and USDT is likely to expand, further solidifying their place as essential components for ensuring liquidity, stability, and interoperability across decentralized finance. These metrics, sourced from [**DotLake**](https://dablock.com/ecosystem/dotlake/), provide valuable insight into the growing reliance on stablecoins within Polkadot, emphasizing their importance for the network’s users and developers.
+As the Polkadot ecosystem continues to mature, the role of stablecoins like USDC and USDT is likely to expand, further solidifying their place as essential components for ensuring liquidity, stability, and interoperability across decentralized finance. These metrics, sourced from **DotLake**, provide valuable insight into the growing reliance on stablecoins within Polkadot, emphasizing their importance for the network’s users and developers.

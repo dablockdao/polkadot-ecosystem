@@ -2,7 +2,7 @@
 title: 'Polkadot SPREE: Shared Protected Runtime Execution Enclaves'
 description: 'Learn about SPREE in Polkadot: secure, shared logic modules enabling trustless cross-chain communication and consistent execution.'
 ---
-One of the critical innovations within the [**Polkadot ecosystem**](https://dablock.com/ecosystem/) is the concept of **Shared Protected Runtime Execution Enclaves (SPREE)**. This article provides an introduction to SPREE, highlighting its significance, functionalities, and potential use cases in the broader context of the Polkadot ecosystem.
+One of the critical innovations within the **Polkadot ecosystem** is the concept of **Shared Protected Runtime Execution Enclaves (SPREE)**. This article provides an introduction to SPREE, highlighting its significance, functionalities, and potential use cases in the broader context of the Polkadot ecosystem.
 
 What is SPREE?
 --------------
@@ -49,10 +49,3 @@ In this scenario, the SPREE module would ensure that asset transfers between par
 ### Conclusion
 
 **Shared Protected Runtime Execution Enclaves (SPREE)** represent a significant advancement in the Polkadot ecosystem, enabling secure, trustless execution of cross-chain messages. By providing a shared and protected execution environment, SPREE modules ensure that parachains can interact with each other consistently and securely, without the need for trust-based mechanisms. As Polkadot continues to evolve, **SPREE is poised to play a crucial role in enabling innovative cross-chain applications and enhancing the overall security of the network**.
-
-- You can find more info at the [official Polkadot Wiki SPREE page](https://wiki.polkadot.network/docs/learn-spree).
-- [**Introduction to Polkadot Elastic Scaling**](https://dablock.com/guides/introduction-guide-to-polkadot-elastic-scaling-new-feature/)**.**
-- [**Introduction to Polkadot Agile Coretime**](https://dablock.com/guides/what-is-polkadot-agile-coretime/)**.**
-- [**Introduction to Quic Protocol and it’s role in JAM Architecture**](https://dablock.com/guides/quic-protocol-role-jam-chains-networking-architecture/).
-
-- - - - - -

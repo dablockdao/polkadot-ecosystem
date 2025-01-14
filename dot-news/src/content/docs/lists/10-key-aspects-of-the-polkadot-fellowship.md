@@ -2,7 +2,7 @@
 title: '10 Key Aspects of the Polkadot Fellowship'
 description: '10 key aspects to understand how the Polkadot fellowship works and how to be able to join this polkadot collective of core developers.'
 ---
-The [**Polkadot Fellowship**](https://dablock.com/ecosystem/polkadot-fellowship/) is a membership organization integral to the Polkadot ecosystem, designed to be a rules-based, rank-order society whose administration is deeply rooted in blockchain protocols. Dr. Gavin Wood, a key figure in the creation of Polkadot, has detailed the structure and objectives of the Fellowship in the [**Polkadot Fellowship Manifesto**](https://github.com/polkadot-fellows/manifesto/blob/main/manifesto.pdf). The Fellowship’s formation was propelled by the need for a more structured and systematic approach to managing the decentralization of technical decision-making and governance within the Polkadot network.
+The **Polkadot Fellowship** is a membership organization integral to the Polkadot ecosystem, designed to be a rules-based, rank-order society whose administration is deeply rooted in blockchain protocols. Dr. Gavin Wood, a key figure in the creation of Polkadot, has detailed the structure and objectives of the Fellowship in the [**Polkadot Fellowship Manifesto**](https://github.com/polkadot-fellows/manifesto/blob/main/manifesto.pdf). The Fellowship’s formation was propelled by the need for a more structured and systematic approach to managing the decentralization of technical decision-making and governance within the Polkadot network.
 
 Key Aspects of the Polkadot Fellowship:
 ---------------------------------------
@@ -18,4 +18,4 @@ Key Aspects of the Polkadot Fellowship:
 9. **Inclusivity and Education**: The Fellowship, while exclusive in its membership, also focuses on spreading knowledge and educating the wider community about the technicalities and philosophies underpinning the Polkadot network.
 10. **Rewards and Recognition**: The Fellowship system includes allowances and prizes to financially support members’ contributions and incentivize ongoing participation and excellence within the network.
 
-In essence, the **[Polkadot Fellowship](https://dablock.com/ecosystem/polkadot-fellowship/)** plays a pivotal role in shaping the future of the Polkadot ecosystem by cultivating and **leveraging technical expertise within a decentralized governance framework**. It ensures that the growth and development of the network are driven by those who have demonstrated their capabilities and commitment to its success.
+In essence, the **Polkadot Fellowship** plays a pivotal role in shaping the future of the Polkadot ecosystem by cultivating and **leveraging technical expertise within a decentralized governance framework**. It ensures that the growth and development of the network are driven by those who have demonstrated their capabilities and commitment to its success.

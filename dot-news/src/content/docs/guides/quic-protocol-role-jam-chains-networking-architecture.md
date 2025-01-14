@@ -88,8 +88,6 @@ On the server side, **major content delivery networks (CDNs) and cloud providers
 
 According to recent statistics, a growing percentage of websites are now using QUIC, with adoption rates expected to continue rising as more browsers and servers support the protocol. This trend underscores the importance of QUIC in the modern internet landscape, as it enables faster, more reliable connections that can enhance user experiences across a wide range of applications.
 
-- - - - - -
-
 ### Conclusion
 
 The QUIC protocol represents a significant evolution in transport layer technology, offering substantial improvements over TCP in terms of latency, reliability, and security. By addressing the limitations of TCP and introducing innovative features like multiplexed connections, connection migration, and built-in encryption, QUIC has positioned itself as a critical component of the modern internet infrastructure.
@@ -98,5 +96,4 @@ As adoption of QUIC continues to grow, its impact on the internet will become in
 
 - [**Quic Protocol page at Wikipedia**](https://en.wikipedia.org/wiki/QUIC)
 - **[Tracking issue for QUIC support #536 (Polkadot SDK Github)](https://github.com/paritytech/polkadot-sdk/issues/536)**
-
-- - - - - -
+ 

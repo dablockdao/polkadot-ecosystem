@@ -37,15 +37,8 @@ How to Join a Polkadot Nomination Pool
 
 To join a nomination pool on Polkadot, several tools can streamline the process and enhance your experience. The [**Polkadot Staking Dashboard**](https://dablock.com/dapps/polkadot-staking-dashboard/) offers a user-friendly interface, allowing you to easily manage your staking activities, track rewards, and join pools with just a few clicks. For mobile users, the [**Nova Wallet**](https://dablock.com/dapps/nova-wallet/) provides a secure and convenient way to **interact with Polkadot’s staking system**, including the ability to join nomination pools on the go. Additionally, [**Polkadot.js**](https://dablock.com/dapps/polkadotjs/) offers a more advanced, web-based interface for users who prefer a granular level of control over their staking operations, including joining pools, managing proxy accounts, and configuring staking preferences. These tools collectively make participating in Polkadot’s staking system more accessible and efficient, catering to both novice and experienced users.
 
-- - - - - -
-
 #### Conclusion
 
 Polkadot’s staking system offers flexibility through traditional nominating and nomination pools, each with its own set of advantages. Traditional nominating is ideal for users with a significant amount of DOT who are willing to actively manage their stakes and participate in governance. On the other hand, **nomination pools provide an easier and more accessible way to earn staking rewards with a lower entry barrier**, now with the added benefit of participating in governance activities.
 
 As the Polkadot ecosystem continues to evolve, the introduction of the “***Delegate and Stake***” strategy underscores the platform’s commitment to decentralization and community involvement, ensuring that all members have the opportunity to contribute to the network’s future.
-
-- [**Polkadot Enables Governance for Nomination Pool Stakers**](https://dablock.com/news/polkadot-enables-governance-for-nomination-pool-stakers/)**.**
-- [**TOP 35 Polkadot Ecosystem Validators**](https://dablock.com/polkadot-validators/).
-
-- - - - - -

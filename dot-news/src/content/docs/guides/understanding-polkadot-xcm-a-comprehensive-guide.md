@@ -98,8 +98,6 @@ The future of XCM is bright, with ongoing development and adoption within the Po
 
 The continued evolution of XCM, driven by community contributions and real-world use cases, will lead to even more powerful and innovative applications. From DeFi and NFTs to cross-chain governance and beyond, XCM has the potential to reshape how blockchains interact and collaborate, paving the way for a more interconnected and efficient decentralized world.
 
-- - - - - -
-
 #### **Conclusion**
 
 XCM represents a significant leap forward in blockchain interoperability, offering a flexible and powerful language for cross-consensus communication. By enabling blockchains to specialize and collaborate, XCM fosters a more efficient and scalable ecosystem, unlocking new possibilities for developers and users alike.
@@ -108,9 +106,3 @@ As the Polkadot ecosystem continues to grow, XCM will play an increasingly impor
 
 - [Polkadot Fellowship github XCM specifications](https://github.com/polkadot-fellows/xcm-format).
 - [Introduction to XCM page at the official Polkadot Wiki](https://wiki.polkadot.network/docs/learn-xcm).
-- [**Polkadot XCMv5 – Decoded 2024**](https://dablock.com/tech-talks/polkadot-xcmv5-enhancing-user-experience-decoded-2024/).
-- **[XCM Rate Limiters Safeguarding Polkadot Chains from Toxic Flows – Sub0 2024](https://dablock.com/tech-talks/understanding-xcm-rate-limiters-safeguarding-polkadot-chains-from-toxic-flows/).**
-- [**NFT XCM Transfer – Unique Network – Sub0 2024**](https://dablock.com/tech-talks/nft-xcm-transfer-unique-networks-proposal-sub0-asia-2024/)
-- **[Introduction to Polkadot SPREE.](https://dablock.com/guides/spree-shared-protected-runtime-execution-enclaves-in-polkadot/)**
-
-- - - - - -

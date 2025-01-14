@@ -2,12 +2,12 @@
 title: 'How to Vote in Polkadot OpenGov with vDOT Bifrost'
 description: 'Learn how to vote in Polkadot OpenGov using vDOT from Bifrost liquid staking, maximizing rewards while retaining liquidity.'
 ---
-The Polkadot ecosystem is evolving with **new tools and technologies that enhance users experience when engaging more deeply with the network**. One of the latest innovations is the ability to **vote in Polkadot OpenGov using** **vDOT**, a synthetic token generated through [**Bifrost’s liquid staking**](https://dablock.com/dapps/bifrost/). This functionality not only enhances participation in governance but also allows users to earn rewards while maintaining liquidity. In this article, we’ll explore how to use vDOT for governance participation, detailing each step of the process and the benefits it offers.
+The Polkadot ecosystem is evolving with **new tools and technologies that enhance users experience when engaging more deeply with the network**. One of the latest innovations is the ability to **vote in Polkadot OpenGov using** **vDOT**, a synthetic token generated through **Bifrost’s liquid staking**. This functionality not only enhances participation in governance but also allows users to earn rewards while maintaining liquidity. In this article, we’ll explore how to use vDOT for governance participation, detailing each step of the process and the benefits it offers.
 
 Understanding vDOT and Bifrost Liquid Staking
 ---------------------------------------------
 
-**vDOT is a synthetic asset c**reated through the liquid staking process on [**Bifrost**](https://dablock.com/dapps/bifrost/), a Polkadot parachain. Liquid staking is a novel approach that enables users to stake their DOT tokens without locking them up entirely. Instead of being inaccessible, these staked assets are converted into vDOT, which can be utilized in various decentralized finance (DeFi) applications, including governance.
+**vDOT is a synthetic asset c**reated through the liquid staking process on **Bifrost**, a Polkadot parachain. Liquid staking is a novel approach that enables users to stake their DOT tokens without locking them up entirely. Instead of being inaccessible, these staked assets are converted into vDOT, which can be utilized in various decentralized finance (DeFi) applications, including governance.
 
 Bifrost’s liquid staking mechanism allows users to retain liquidity while still earning staking rewards. The introduction of vDOT has opened up new avenues for Polkadot users to engage in network governance, all while benefiting from the financial incentives that staking provides.
 
@@ -73,7 +73,6 @@ Beyond governance participation, vDOT can be used in other DeFi activities withi
 - **Liquidity Provision**: Provide liquidity with vDOT on various decentralized exchanges (DEXs) to earn fees and incentives.
 
 ### Conclusion
-
 The integration of vDOT into the Polkadot governance framework marks a significant step forward in decentralized governance. **By allowing users to stake their DOT and receive vDOT, Bifrost has enabled a new level of flexibility**, combining the benefits of staking with active participation in governance. As the Polkadot ecosystem continues to evolve, vDOT is likely to play an increasingly important role in empowering users to influence the future of the network while maximizing their financial returns.
 
 For those involved in the Polkadot ecosystem, understanding and utilizing vDOT for governance is essential. With the steps outlined in this guide, you are now equipped to engage more deeply with the network, driving the direction of Polkadot while enjoying the benefits of liquid staking.

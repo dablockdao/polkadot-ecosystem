@@ -2,12 +2,12 @@
 title: 'How to Earn Passive Income with Subsocial &#038; GrillApp Guide'
 description: 'Earn passive income on Subsocial by staking SUB tokens and creating content on this decentralized social networking platform.'
 ---
-Lately, platforms like [**Subsocial** ](https://dablock.com/dapps/subsocial/)(GrillApp) are paving the way for new opportunities in social networking and passive income generation. **Subsocial is a decentralized, censorship-resistant social networking protocol** built on the [**Polkadot ecosystem**](https://dablock.com/ecosystem/). It allows users to create and manage their own social spaces while offering the potential to earn rewards through staking and content creation. This guide provides an in-depth look at how to leverage Subsocial to generate passive income.
+Lately, platforms like **Subsocial**(GrillApp) are paving the way for new opportunities in social networking and passive income generation. **Subsocial is a decentralized, censorship-resistant social networking protocol** built on the **Polkadot ecosystem**. It allows users to create and manage their own social spaces while offering the potential to earn rewards through staking and content creation. This guide provides an in-depth look at how to leverage Subsocial to generate passive income.
 
 **What is Subsocial?**
 ----------------------
 
-Subsocial is an open platform designed to empower users to build decentralized social networks and communities. Unlike traditional social media platforms, [**Subsocial**](https://dablock.com/dapps/subsocial/) is built on a decentralized way, **providing users with full control over their content, data, and digital identity**. By utilizing Subsocial, users can create censorship-resistant spaces where they can freely share ideas, interact with others, and, importantly, earn rewards.
+Subsocial is an open platform designed to empower users to build decentralized social networks and communities. Unlike traditional social media platforms, **Subsocial** is built on a decentralized way, **providing users with full control over their content, data, and digital identity**. By utilizing Subsocial, users can create censorship-resistant spaces where they can freely share ideas, interact with others, and, importantly, earn rewards.
 
 **Earning Passive Income on Subsocial**
 ---------------------------------------
@@ -44,10 +44,5 @@ Subsocial is more than just a staking platform—it is also a dynamic social net
 2. **Passive Earnings from Content**: 
   - As users engage with your content, you earn **SUB tokens**. This form of income complements the rewards you receive from staking, enhancing your overall passive income potential on Subsocial.
 
-- - - - - -
-
 **Conclusion**
-
 Subsocial offers a unique blend of decentralized social networking and financial rewards, making it an attractive platform for users looking to earn passive income. By staking SUB tokens and actively participating in the content ecosystem, users can benefit from both the growth of the platform and their contributions to it. Whether you are new to Web3 or an experienced blockchain enthusiast, Subsocial provides a compelling opportunity to engage in the decentralized future of social media and earn along the way.
-
-- - - - - -

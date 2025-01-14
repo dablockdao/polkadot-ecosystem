@@ -1,7 +1,7 @@
 ---
 title: 'top 5 polkadot frontend tools'
 ---
-As the [**Polkadot ecosystem**](https://dablock.com/ecosystem/) expands, developers and blockchain enthusiasts are increasingly seeking tools that simplify interaction with this multi-chain platform. Among the essential tools that stand out in the Polkadot ecosystem are **Reactive DOT**, the **Polkadot API**, **Polkadot Onboard**, and **Polkadot.js**. These frontend tools play a critical role in making Polkadot more accessible and user-friendly, enabling developers to build more efficient and responsive applications on the network.
+As the **Polkadot ecosystem**expands, developers and blockchain enthusiasts are increasingly seeking tools that simplify interaction with this multi-chain platform. Among the essential tools that stand out in the Polkadot ecosystem are **Reactive DOT**, the **Polkadot API**, **Polkadot Onboard**, and **Polkadot.js**. These frontend tools play a critical role in making Polkadot more accessible and user-friendly, enabling developers to build more efficient and responsive applications on the network.
 
 1. Reactive DOT: A Streamlined Approach to Polkadot Development
 ---------------------------------------------------------------
@@ -68,12 +68,7 @@ To learn about more libraries and resources to develop applications in Polkadot,
 
 1. [***Polkadot Frontend Development Experience – Polkadot Forum***](https://forum.polkadot.network/t/frontend-development-experience/4393)***,***
 2. [***Polkadot Development Tools – Polkadot Wiki***](https://wiki.polkadot.network/docs/build-tools-index)***.***
-3. [***40 Resources to Learn Polkadot Development – Dablock***](https://dablock.com/web3-learn/)***.***
-
-- - - - - -
 
 ### Conclusion
 
 **Reactive DOT**, the **Polkadot API (PAPI)**, **Polkadot Onboard**, and **Polkadot.js** are all critical tools in the Polkadot ecosystem, each serving a unique role in simplifying the development and onboarding process. Reactive DOT offers a framework for building dynamic dApps, the **Polkadot API provides a comprehensive interface for blockchain interactions,** Polkadot Onboard simplifies wallet integration, and Polkadot.js is the first frontend library for developers, but now is no longer recommended as it is right now only in maintenance mode. Together, these tools empower developers and users alike, driving innovation and adoption within the Polkadot ecosystem. As the network continues to grow, the role of these tools will only become more significant, fostering a more robust and accessible blockchain environment.
-
-- - - - - -

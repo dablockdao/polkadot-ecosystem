@@ -12,14 +12,10 @@ tags:
 ---
 **The Cumulus node has recently launched its MVP release for elastic scaling**, marking a pivotal moment for parachain teams. Announced on July 31, 2024, this update introduces groundbreaking features aimed at enhancing throughput and performance across the network.
 
-Key Features of the Elastic Scaling MVP
----------------------------------------
-
+## Key Features of the Elastic Scaling MVP
 The latest release, identified as stable2407 1, **integrates support for elastic scaling into the Cumulus node**. This new functionality allows parachains to leverage up to three cores per relay chain block. As a result, parachains can now experience up to three times the throughput compared to previous capabilities, with block times reduced to just two seconds.
 
-Polkadot Relay Chain Enhancements
----------------------------------
-
+## Polkadot Relay Chain Enhancements
 From a relay chain perspective, the elastic scaling functionality is fully implemented and currently **active on the Westend and Rococo testnets**. This feature represents a major step forward in Polkadot’s scalability efforts. However, due to security considerations, **all nodes (collators) of an elastic parachain are required to be trusted**. Collators must now announce or gossip blocks only to trusted nodes, necessitating a temporary private network setup until further RFC updates are completed.
 
 ### Collator Adjustments
@@ -32,9 +28,7 @@ Currently, the maximum throughput achievable with elastic scaling is observed wh
 
 The Polkadot development team is committed to further optimizing the cumulus block authorship process to improve throughput limitations. The ongoing work, detailed in the GitHub issue [Elastic Scaling: Streamlined Block Production](https://github.com/paritytech/polkadot-sdk/issues/5190), aims to address current inefficiencies and enhance overall performance.
 
-Getting Started with Elastic Scaling
-------------------------------------
-
+## Getting Started with Elastic Scaling
 For developers looking to experiment with the new elastic scaling features, the following prerequisites are necessary:
 
 - Polkadot binary stable2407 1
@@ -46,7 +40,6 @@ A sample test for elastic scaling is available in the [Zombienet tests](https://
 For those using the Polkadot parachain node template, additional instructions for incorporating elastic scaling node support can be found [here](https://forum.polkadot.network/t/elastic-scaling-mvp-launched/9392).
 
 ### Conclusion
-
 The launch of the elastic scaling MVP is a significant milestone for the Polkadot ecosystem, offering enhanced performance and scalability for parachains. As development continues, further optimizations are expected to refine and expand these capabilities, reinforcing Polkadot’s commitment to advancing blockchain technology.
 
 - For more information you can consult the [original post in the Polkadot forum](https://forum.polkadot.network/t/elastic-scaling-mvp-launched/9392) where you can continue the discussion about this news.

@@ -11,17 +11,17 @@ Governance is a cornerstone of the Polkadot network, enabling participants to ha
 
 ### Why Governance Matters
 
-Polkadot’s governance framework is designed to **evolve the network without hard forks**, ensuring continuity and stability. This dynamic system includes various components such as the Council (removed), the Technical Committee (replaced by the[ **Polkadot Technical Fellowship**](https://dablock.com/ecosystem/polkadot-fellowship/)), and the current **OpenGov framework**. With the Polkadot OpenGov mechanichs, stakeholders and all ecosystem entities work together to propose, deliberate, and implement changes.
+Polkadot’s governance framework is designed to **evolve the network without hard forks**, ensuring continuity and stability. This dynamic system includes various components such as the Council (removed), the Technical Committee (replaced by the **Polkadot Technical Fellowship**, and the current **OpenGov framework**. With the Polkadot OpenGov mechanichs, stakeholders and all ecosystem entities work together to propose, deliberate, and implement changes.
 
 ### How to Get Involved in Polkadot OpenGov
 
 To participate in Polkadot’s governance, you must hold DOT, the native token of the network. The more DOT you hold, the greater your influence on proposals. Here are the steps to get started:
 
-1. **Acquire DOT**: Purchase DOT tokens from a reputable exchange and transfer them to you own custodial wallet. Or use platforms like [**snowbridge**](https://dablock.com/dapps/snowbridge/) to bring your tokens from Ethereum.
+1. **Acquire DOT**: Purchase DOT tokens from a reputable exchange and transfer them to you own custodial wallet. Or use platforms like **snowbridge** to bring your tokens from Ethereum.
 2. **Bond Your DOT**: By bonding your DOT, you can participate in voting and propose referenda. This process locks your tokens for a specific period, ensuring your commitment to the network’s decisions.
 3. **Participate in OpenGov**: OpenGov is Polkadot’s new governance framework, allowing any DOT holder to submit proposals or vote on them directly. This system replaces the previous governance model and aims to make decision-making more accessible and transparent.
 
-By engaging in governance, you not only influence the direction of Polkadot but also gain a deeper understanding of the ecosystem’s intricacies. In this post you can [**learn more about the Polkadot OpenGov tracks**](https://dablock.com/guides/understanding-polkadot-opengov-tracks-guide/) and its different implications.
+By engaging in governance, you not only influence the direction of Polkadot but also gain a deeper understanding of the ecosystem’s intricacies. In this post you can **learn more about the Polkadot OpenGov tracks** and its different implications.
 
 
 2. Develop on Polkadot
@@ -39,10 +39,10 @@ Substrate is a modular framework that allows developers to build their own **blo
 
 ### Building Polkadot Appchains
 
-Parachains are independent blockchains that run in parallel to Polkadot, benefiting from the network’s security and interoperability. With the recent model of [**Polkadot Agile Coretime**](https://dablock.com/tech-talks/agile-coretime-architecture-and-pricing-deep-dive/), the concept of parachain is being replaced for other more general like **Appchains**. In any case, developing a parachain involves the following steps:
+Parachains are independent blockchains that run in parallel to Polkadot, benefiting from the network’s security and interoperability. With the recent model of **Polkadot Agile Coretime**, the concept of parachain is being replaced for other more general like **Appchains**. In any case, developing a parachain involves the following steps:
 
 1. **Design Your Parachain**: Determine the specific use case for your parachain, whether it’s DeFi, gaming, or identity management. The flexibility of Substrate allows you to customize every aspect of your chain.
-2. [**Test on Paseo Network**](https://dablock.com/guides/how-to-use-paseo-network-new-polkadot-testnet/): The new Polkadot’s testnet for parachains and replacement for Rococo. Deploying your parachain on Paseo allows you to test its functionality, security, and performance before going live on Polkadot.
+2. **Test on Paseo Network**: The new Polkadot’s testnet for parachains and replacement for Rococo. Deploying your parachain on Paseo allows you to test its functionality, security, and performance before going live on Polkadot.
 3. **Get Polkadot Coretime**: For this you now can bid for a parachain slots, that are limited and allocated through an auction process. To secure a slot, you’ll need to participate in a parachain auction, where you can use your own DOT or rally community support through a crowdloan. This process is going to be replaced in no time by the Polkadot Coretime model, which is going to be much more flexible and accessible for new projects.
 
 Developing on Polkadot offers a unique opportunity to innovate in a cutting-edge blockchain environment, with access to tools and resources that are second to none.
@@ -58,7 +58,7 @@ Polkadot uses a **Nominated Proof of Stake (NPoS)** consensus mechanism. In this
 
 ### How to Stake DOT
 
-The steps to stake DOT are very easy. First, if you hold a little amount of DOT, you can stake your tokens DOT through the different Polkadot Nomination Pools. You can easy access it through apps like [**Nova Wallet** ](https://dablock.com/dapps/nova-wallet/)or the [**Polkadot Staking Dashboard**](https://dablock.com/dapps/polkadot-staking-dashboard/). You can also stake your DOTs nominating validators by yourself using the same interfaces and tools:
+The steps to stake DOT are very easy. First, if you hold a little amount of DOT, you can stake your tokens DOT through the different Polkadot Nomination Pools. You can easy access it through apps like **Nova Wallet** or the **Polkadot Staking Dashboard**. You can also stake your DOTs nominating validators by yourself using the same interfaces and tools:
 
 1. **Choose a Validator**: Research and select reliable validators to nominate. Factors to consider include their commission rate, track record, and community reputation.
 2. **Bond Your DOT**: Bond your DOT tokens to the validators you have chosen. This process locks your tokens for a specific period, during which they are used to secure the network.
@@ -66,7 +66,7 @@ The steps to stake DOT are very easy. First, if you hold a little amount of DOT,
 
 ### Liquid Staking
 
-Liquid staking is a recent development in the Polkadot ecosystem that allows you to stake your DOT while retaining liquidity, with[ **solutions like the ones provided by Bifrost**](https://dablock.com/tech-talks/bifrost-slpx-revolutionizing-omni-chain-liquid-staking/). This means you can still use your staked assets in DeFi applications, providing more flexibility and maximizing your earning potential.
+Liquid staking is a recent development in the Polkadot ecosystem that allows you to stake your DOT while retaining liquidity, with **solutions like the ones provided by Bifrost**. This means you can still use your staked assets in DeFi applications, providing more flexibility and maximizing your earning potential.
 
 Staking DOT is not only a way to earn rewards but also a way to contribute to the network’s security and stability, making it a crucial aspect of involvement in Polkadot.
 
@@ -77,7 +77,7 @@ The Polkadot community is vibrant and diverse, offering numerous ways to connect
 
 ### Community Forums and Social Media
 
-Joining online forums, Discord channels, and social media groups dedicated to the[ **Polkadot ecosystem** ](https://dablock.com/ecosystem/)is a great way to stay informed and engage in discussions. These platforms are filled with enthusiasts, developers, and experts who share insights, answer questions, and collaborate on projects.
+Joining online forums, Discord channels, and social media groups dedicated to the **Polkadot ecosystem** is a great way to stay informed and engage in discussions. These platforms are filled with enthusiasts, developers, and experts who share insights, answer questions, and collaborate on projects.
 
 1. **Polkadot Forum**: The official Polkadot forum is a hub for discussions on governance, development, and general topics related to the ecosystem. Participating in these discussions can deepen your understanding and allow you to share your perspective.
 2. **Discord and Telegram**: Polkadot’s Discord and Telegram channels are active with real-time conversations, announcements, and community-driven events. Engaging in these channels helps you stay updated on the latest developments and connect with others in the ecosystem.
@@ -87,8 +87,8 @@ Joining online forums, Discord channels, and social media groups dedicated to th
 
 Polkadot hosts and participates in numerous events, from virtual meetups to large-scale conferences. Attending these events is an excellent way to learn from experts, network with industry leaders, and discover new projects.
 
-1. [**Polkadot Decoded**](https://dablock.com/web3-events/polkadot-decoded/): This is the flagship event of the Polkadot ecosystem, featuring keynote speeches, technical workshops, and panel discussions. Polkadot Decoded is an excellent opportunity to hear directly from the developers, researchers, and entrepreneurs shaping the future of the network.
-2. **Hackathons**: Polkadot frequently organizes hackathons that bring together developers from around the world to solve challenges, build innovative projects, and collaborate on new ideas. Participating in these hackathons can enhance your technical skills and allow you to contribute to groundbreaking developments. Also technical events like the [**Polkadot Sub0**](https://dablock.com/web3-events/polkadot-sub0/).
+1. **Polkadot Decoded**: This is the flagship event of the Polkadot ecosystem, featuring keynote speeches, technical workshops, and panel discussions. Polkadot Decoded is an excellent opportunity to hear directly from the developers, researchers, and entrepreneurs shaping the future of the network.
+2. **Hackathons**: Polkadot frequently organizes hackathons that bring together developers from around the world to solve challenges, build innovative projects, and collaborate on new ideas. Participating in these hackathons can enhance your technical skills and allow you to contribute to groundbreaking developments. Also technical events like the **Polkadot Sub0**.
 3. **Local Meetups**: Many cities around the world host Polkadot-themed meetups. These smaller gatherings are a great way to connect with local enthusiasts, share ideas, and foster collaboration on regional projects.
 
 ### Contribute to the Ecosystem
@@ -114,13 +114,13 @@ Polkadot’s open-source nature means that its documentation is constantly evolv
 2. **Creating New Content**: If you notice a gap in the existing documentation, consider creating **new guides or FAQs** that address common questions or challenges faced by users.
 3. **Translating Documentation**: Polkadot’s global community benefits from having documentation available in multiple languages. If you are multilingual, consider translating key resources into other languages to reach a broader audience.
 
-In this post you can know more about the [**Polkadot developer experience**](https://dablock.com/news/improving-polkadot-developer-experience-with-documentation-tools/) and the latest surveys on this topic.
+In this post you can know more about the **Polkadot developer experience** and the latest surveys on this topic.
 
 ### Create Educational Content
 
 Beyond formal documentation, creating educational content such as blog posts, video tutorials, webinars, and courses can significantly impact the community:
 
-1. **Write Blog Posts**: Share your knowledge and insights about Polkadot through detailed blog posts on platforms like Medium, [GrillApp](https://dablock.com/dapps/subsocial/), or your personal website.
+1. **Write Blog Posts**: Share your knowledge and insights about Polkadot through detailed blog posts on platforms like Medium, GrillApp, or your personal website.
 2. **Produce Video Tutorials**: Visual learners can benefit from video tutorials that walk through everything from setting up a wallet to developing on Substrate. Platforms like YouTube are ideal for reaching a wide audience.
 3. **Host Webinars and Workshops**: Interactive webinars and workshops allow you to engage directly with the community, answer questions, and provide hands-on guidance.
 
