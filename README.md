@@ -17,6 +17,8 @@ The Polkadot Ecosystem portal is the definitive platform for exploring the Polka
 ## Key Projects
 The portal comprises three independent but interconnected projects, each serving a specific purpose:
 
+&nbsp;
+
 <div align="center">
 
 | **Section**             | **Domain**                                   | **Description**                                                 |
@@ -27,17 +29,21 @@ The portal comprises three independent but interconnected projects, each serving
 
 </div>
 
+&nbsp;
+
 <img align="center" src="https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/polkadotecosystem-banner.png" width="100%">
 
 ## Polkadot ATLAS
-### [polkadotecosystem.com](https://polkadotecosystem.com)
 A comprehensive resource center offering detailed information and direct links to projects within the Polkadot ecosystem. 
 
-#### Key Features:
-- **Project Listings**: Detailed descriptions and links to various Polkadot projects, including parachains, dApps, and developer tools.
-- **Educational Resources**: Articles, guides, and tutorials to deepen your understanding of Polkadot.
-- **Community Initiatives**: Information on community-driven projects, events, and participation opportunities.
-- **Governance Updates**: Insights into on-chain governance, proposals, and referendums affecting the network.
+#### [polkadotecosystem.com](https://polkadotecosystem.com) Key Features:
+- **Curated Lists of Projects**: Detailed descriptions and links to all Polkadot projects, including dApps, wallets, developer tools, initiatives, daos, resources, bounties...
+- **Project Details Include**:
+  - **Overview**: A concise summary of each project's purpose and functionality.
+  - **Category**: Clear classification into sectors and subcategories.
+  - **Direct Links**: Convenient access to project websites, social channels, related content...
+
+&nbsp;
 
 <div align="center">
 
@@ -49,14 +55,17 @@ A comprehensive resource center offering detailed information and direct links t
 
 </div>
 
+&nbsp;
+
 ## Polkadot Media
-### [media.polkadotecosystem.com](https://media.polkadotecosystem.com)
 A central point for multimedia content related to the Polkadot ecosystem.
 
-#### Key Features:
+#### [media.polkadotecosystem.com](https://media.polkadotecosystem.com) Key Features:
 - **Podcasts and Interviews**: Listen to discussions with key figures in the community.
 - **Videos and Webinars**: Tutorials, conference talks, and promotional content.
 - **Infographics and Visuals**: Data visualizations and conceptual graphics.
+
+&nbsp;
 
 <div align="center">
 
@@ -65,14 +74,19 @@ A central point for multimedia content related to the Polkadot ecosystem.
 | [**Events**](https://media.polkadotecosystem.com/events/)             | Sub0, Decoded, Web3 Summit...              |
 | [**Interviews**](https://media.polkadotecosystem.com/interviews/)     | Space Monkeys, Web3 Thinkers...            |
 
-</div>
+</div
+
+&nbsp;
 
 ## Polkadot News
-### [news.polkadotecosystem.com](https://news.polkadotecosystem.com)
 Stay updated with the latest news and developments in the Polkadot ecosystem.
+
+#### [news.polkadotecosystem.com](https://news.polkadotecosystem.com) Key Features:
 - **Latest Announcements:** Official updates from the Polkadot team.
 - **Community News:** Highlights and news from community projects.
 - **Market Insights:** Analysis and reports on market trends affecting Polkadot and its tokens.
+
+&nbsp;
 
 <div align="center">
 
@@ -84,6 +98,8 @@ Stay updated with the latest news and developments in the Polkadot ecosystem.
 
 </div>
 
+&nbsp;
+
 ## How to Contribute
 We welcome contributions from the community! This project is maintained by DablockDAO members, and we encourage anyone to join us and participate by:
 1. **Exploring the Repository**:
@@ -91,24 +107,60 @@ We welcome contributions from the community! This project is maintained by Dablo
    - Review existing issues for bugs, enhancements, or features.
 2. **Submitting Contributions**:
    - Fork the repository and create a new branch for your changes.
-   - Submit a detailed Pull Request (PR) with a clear explanation of your changes.
-   - Ensure your PR includes tests or relevant updates if modifying core components.
+   - Submit a Pull Request (PR) with a explanation of your changes.
 3. **Reporting Bugs and Requesting Features**:
    - Open an issue for bugs or feature requests [here](https://github.com/dablockdao/polkadot-ecosystem/issues).
-   - Provide detailed descriptions to help maintainers reproduce the issue or understand your request.
+   - Provide descriptions to help maintainers reproduce the issue or understand your request.
 4. **Community Discussions**:
    - Join discussions in our forums or contribute ideas for improvement.
-        - [Polkadot Forum Announcement]()
+        - **[Polkadot Forum Announcement]()**
 
-> **Note:** This project uses [AstroJS](https://astro.build/) and [Starlight](https://github.com/withastro/starlight). Familiarity with these tools is a plus but not mandatory for contributions.
+> **Note:** This project is built with [AstroJS](https://github.com/withastro/astro) and [Starlight](https://github.com/withastro/starlight). While familiarity with these technologies is beneficial, it's not required to contribute to this project.
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/dablockdao/polkadot-ecosystem.git
+cd polkadot-ecosystem
+```
+
+2. Install dependencies
+```bash
+# Using npm
+npm install
+```
+
+3. Start the development server
+```bash
+# Using npm
+npm run dev
+```
+
+- `src/content/docs/`: Content (Markdown files)
+- `src/components/`: Components.
+- `astro.config.mjs`: Configuration file
+
+```bash
+├── src/
+│   ├── content/
+│   │   └── docs/
+│   │       └── index.md
+│   └── components/
+│       └── *.astro
+├── astro.config.mjs
+└── package.json
+```
 
 ## Internationalization
 We support and encourage contributions to make the ecosystem accessible to a global audience through translations, cultural adaptations, and multilingual resources. Your efforts in translating, reviewing, or suggesting improvements help us reach more users worldwide, fostering inclusivity and engagement across diverse communities.
-- The portal is currently being developed primarily in *English* and is expected to be translated gradually into *Spanish*, *Portuguese*, *French* and *Italian*.
+> The portal is currently being developed in English and will gradually be translated into other languages, starting with *Spanish*, *Portuguese*, *French*, and *Italian*.
 
 ## Join the Polkadot Community
 Help us build a vibrant, informed, and thriving Polkadot ecosystem. 
-By exploring resources, contributing your expertise, and connecting with like-minded individuals, you become a vital part of a global community passionate about blockchain innovation and decentralization. Together, we can create meaningful opportunities, drive impactful projects, and ensure the growth and accessibility of the Polkadot ecosystem for everyone.
+By exploring resources, contributing your expertise, and connecting with like-minded individuals, you become a vital part of a global community passionate about blockchain innovation and decentralization. 
+
+Together, we can create meaningful opportunities, drive impactful projects, and ensure the growth and accessibility of the Polkadot ecosystem for everyone.
 
 ## License
 The Polkadot Ecosystem portal is licensed under the GPL-3.0 free software license.
