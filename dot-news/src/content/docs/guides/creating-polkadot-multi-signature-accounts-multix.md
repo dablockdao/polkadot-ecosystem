@@ -2,10 +2,10 @@
 title: 'Creating Polkadot Multi-Signature Accounts with MultiX'
 description: 'Create secure multi-signature accounts with MultiX in Polkadot, featuring flexible signatory management via pure proxies. Learn the process step-by-step.'
 ---
-In a recent workshop, a comprehensive walkthrough was provided on **creating multi-signature (multisig) accounts using [MultiX](https://dablock.com/dapps/multix/)**, a tool developed by [**ChainSafe**](https://dablock.com/ecosystem/chainsafe/). This guide is essential for users interested in the Polkadot ecosystem, particularly those aiming to implement more secure and flexible account management.
+In a recent workshop, a comprehensive walkthrough was provided on **creating multi-signature (multisig) accounts using MultiX**, a tool developed by **ChainSafe**. This guide is essential for users interested in the Polkadot ecosystem, particularly those aiming to implement more secure and flexible account management.
 
 ## Introduction to MultiX and Multi-Signature Accounts
-**[MultiX](https://dablock.com/dapps/multix/), developed by the [ChainSafe team](https://dablock.com/ecosystem/chainsafe/)**, is a tool designed for creating and managing multisig accounts on various networks, including Westend, Polkadot, and Kusama. A multisig account requires multiple approvals (signatures) for executing transactions, enhancing security by distributing control among several participants.
+**MultiX, developed by the ChainSafe team**, is a tool designed for creating and managing multisig accounts on various networks, including Westend, Polkadot, and Kusama. A multisig account requires multiple approvals (signatures) for executing transactions, enhancing security by distributing control among several participants.
 
 ## Setting Up a Multi-Signature Account
 1. **Login and Network Selection:** The process begins by logging into the MultiX platform and selecting the appropriate network. While the workshop used the Westend testnet, the same procedure applies to Polkadot and Kusama.
@@ -38,12 +38,3 @@ To demonstrate practical application, the workshop included sending and approvin
 
 ### Conclusion
 MultiX provides a robust solution for creating and managing multisig accounts in the Polkadot ecosystem. The tool’s integration with pure proxies enhances flexibility, allowing for dynamic changes in signatory management without altering the core account address. This workshop highlighted the importance of using MultiX for secure, multi-party account management, emphasizing careful handling of advanced proxy configurations to avoid any potential loss of control.
-
-The workshop effectively demonstrated the step-by-step process, offering a clear understanding of multisig accounts and pure proxies, thus empowering users to leverage these tools for enhanced security and operational efficiency within the blockchain space.
-
-For more details, users can refer to the instructional video provided by [**ChainSafe**](https://dablock.com/ecosystem/chainsafe/), which elaborates on each step and the technical nuances involved.
-
-- [**Polkadot Multisigs Guide with Talisman Signet**](https://dablock.com/guides/guide-to-polkadot-multisig-solutions-talisman-signet/)**.**
-- [**TOP 10 Polkadot Multisig Wallets**](https://dablock.com/polkadot-multisig-wallets/).
-
-- - - - - -

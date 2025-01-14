@@ -187,13 +187,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"guides/dedot-javascript-typescript-client-polkadot-substrate-chains.md": {
-	id: "guides/dedot-javascript-typescript-client-polkadot-substrate-chains.md";
-  slug: "guides/dedot-javascript-typescript-client-polkadot-substrate-chains";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
 "guides/delegation-and-voting-in-polkadot-opengov-guide.md": {
 	id: "guides/delegation-and-voting-in-polkadot-opengov-guide.md";
   slug: "guides/delegation-and-voting-in-polkadot-opengov-guide";
@@ -246,13 +239,6 @@ declare module 'astro:content' {
 "guides/guide-to-setting-up-and-using-deloitte-kyc-credentials.md": {
 	id: "guides/guide-to-setting-up-and-using-deloitte-kyc-credentials.md";
   slug: "guides/guide-to-setting-up-and-using-deloitte-kyc-credentials";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"guides/how-to-check-your-mythos-airdrop-allocation.md": {
-	id: "guides/how-to-check-your-mythos-airdrop-allocation.md";
-  slug: "guides/how-to-check-your-mythos-airdrop-allocation";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -533,13 +519,6 @@ declare module 'astro:content' {
 "lists/best-moonbeam-gaming-projects.md": {
 	id: "lists/best-moonbeam-gaming-projects.md";
   slug: "lists/best-moonbeam-gaming-projects";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"lists/best-polkadot-ecosystem-bounties.md": {
-	id: "lists/best-polkadot-ecosystem-bounties.md";
-  slug: "lists/best-polkadot-ecosystem-bounties";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -862,13 +841,6 @@ declare module 'astro:content' {
 "news/web3-foundation-grants-program-round-20.mdx": {
 	id: "news/web3-foundation-grants-program-round-20.mdx";
   slug: "news/web3-foundation-grants-program-round-20";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"news/what-is-the-polkadot-blockchain-academys-impact-on-the-ecosystem.mdx": {
-	id: "news/what-is-the-polkadot-blockchain-academys-impact-on-the-ecosystem.mdx";
-  slug: "news/what-is-the-polkadot-blockchain-academys-impact-on-the-ecosystem";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">

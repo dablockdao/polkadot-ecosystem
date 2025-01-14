@@ -2,7 +2,7 @@
 title: 'How to Use Polkadot Vault: A Technical Guide'
 description: 'Learn how to securely use Polkadot Vault for account management and transactions within the Polkadot ecosystem.'
 ---
-[**Polkadot Vault**](https://dablock.com/dapps/polkadot-vault/), formerly known as the Party Designer app, is an advanced account management tool designed for the Polkadot ecosystem. It offers users the ability to generate and store multiple private keys securely, manage accounts, and sign transactions while keeping private keys offline. This guide provides a comprehensive overview of how to use the Polkadot Vault, from installation to transaction management.
+**Polkadot Vault**, formerly known as the Party Designer app, is an advanced account management tool designed for the Polkadot ecosystem. It offers users the ability to generate and store multiple private keys securely, manage accounts, and sign transactions while keeping private keys offline. This guide provides a comprehensive overview of how to use the Polkadot Vault, from installation to transaction management.
 
 Polkadot Vault Installation and Initial Setup
 ---------------------------------------------
@@ -39,7 +39,7 @@ Polkadot Vault Generating and Managing Keys
 Using Polkadot Vault with Polkadot.js
 -------------------------------------
 
-**7. Export Keys to [Polkadot.js](https://dablock.com/dapps/polkadotjs/)**
+**7. Export Keys to Polkadot.js**
 
 - To use the Vault app with the Polkadot.js browser extension, export the public key via QR code. In Polkadot.js, select ‘Attach External QR Scanner Account’ and scan the QR code displayed on your phone. This will import the account into Polkadot.js.
 

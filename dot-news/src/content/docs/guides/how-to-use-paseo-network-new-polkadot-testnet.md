@@ -35,7 +35,7 @@ To start using the Paseo Network, follow these steps:
 
 ### 1. **Set Up a Compatible Wallet**
 
-First, you need to set up a wallet that is compatible with the Polkadot ecosystem. Talisman, a user-friendly wallet with a robust interface, is highly recommended for this purpose. **[Talisman Wallet](https://dablock.com/dapps/talisman-wallet/) supports both Polkadot mainnet and testnet environments**.
+First, you need to set up a wallet that is compatible with the Polkadot ecosystem. Talisman, a user-friendly wallet with a robust interface, is highly recommended for this purpose. **Talisman Wallet supports both Polkadot mainnet and testnet environments**.
 
 - **Download and Install Talisman**: Visit the [Talisman website](https://talisman.xyz) and follow the instructions to download and install the wallet extension.
 - **Create a New Wallet**: If you’re new to Polkadot, create a new wallet within Talisman. Be sure to securely store your seed phrase, as this is crucial for recovering your wallet.
@@ -100,9 +100,3 @@ Using the Paseo Network offers several key benefits:
 2. **Testing Grounds for Developers**: Developers can test new features, dApps, and parachains in a live environment that closely mimics the Polkadot mainnet.
 3. **Community-Driven**: As a decentralized testnet, Paseo is supported by the Polkadot community, reflecting the broader ethos of decentralization that Polkadot champions.
 4. **Preparation for Mainnet**: By using Paseo, users and developers can confidently transition to the Polkadot mainnet, having already practiced and refined their interactions on the testnet.
-
-#### Conclusion
-
-Paseo Network stands as a crucial component of the Polkadot ecosystem, offering a robust and decentralized testnet environment where users and developers can safely explore, experiment, and innovate. Whether you’re a developer testing a new dApp or a user learning how to interact with the Polkadot network, Paseo provides the tools and environment needed to build confidence and ensure success on the Polkadot mainnet.
-
-By familiarizing yourself with Paseo’s features and capabilities, you can contribute to the growth and resilience of the [**Polkadot ecosystem**](https://dablock.com/ecosystem/), helping to drive forward the vision of a decentralized and interoperable future. Whether you are staking tokens, participating in governance, or experimenting with cross-chain transfers, Paseo is the ideal platform to hone your skills and prepare for the Polkadot mainnet.

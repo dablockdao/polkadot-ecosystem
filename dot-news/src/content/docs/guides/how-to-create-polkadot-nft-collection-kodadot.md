@@ -4,30 +4,27 @@ description: 'Learn how to create and sell NFTs on Polkadot with Kodadot. Step-b
 ---
 The world of **Non-Fungible Tokens (NFTs)** has grown exponentially, offering creators and collectors new opportunities within blockchain ecosystems. Among these ecosystems, **Polkadot stands out for its unique multi-chain framework** that enhances interoperability and security. Kodadot is a powerful platform within the Polkadot ecosystem that allows users to create, manage, and trade NFTs with ease. This guide walks you through the **process of creating an NFT collection on Kodadot**, providing step-by-step instructions to ensure a seamless experience.
 
-What is Kodadot NFT Marketplace?
---------------------------------
-
-[**Kodadot**](https://dablock.com/dapps/kodadot/) **is an NFT platform with a focus on the Polkadot ecosystem**, specifically designed to facilitate the creation, management, and sale of NFTs. It has been recently rebranded to Koda. It provides an intuitive interface and comprehensive tools that cater to both new and experienced users in the NFT space. **Koda supports multiple types of digital assets**, including images, music, videos, and 3D models, making it a versatile choice for creators.
+## What is Kodadot NFT Marketplace?
+**Kodadot** **is an NFT platform with a focus on the Polkadot ecosystem**, specifically designed to facilitate the creation, management, and sale of NFTs. It has been recently rebranded to Koda. It provides an intuitive interface and comprehensive tools that cater to both new and experienced users in the NFT space. **Koda supports multiple types of digital assets**, including images, music, videos, and 3D models, making it a versatile choice for creators.
 
 One of the key features of Kodadot is its integration with the Polkadot ecosystem, which ensures that NFTs created on the platform benefit from Polkadot’s robust security, scalability, and interoperability. Moreover, Kodadot’s support for parachains and systemchains like **Polkadot AssetHub** allows creators to leverage specialized chains for their NFT projects.
 
-First Steps Before Creating A Polkadot NFT Collection
------------------------------------------------------
+## First Steps Before Creating A Polkadot NFT Collection
 
-Before you can create an NFT collection on Kodadot, you need to connect your wallet to the platform. **Kodadot supports various [Polkadot-compatible wallets](https://dablock.com/polkadot-wallets/)**, with Talisman being one of the most popular choices.
+Before you can create an NFT collection on Kodadot, you need to connect your wallet to the platform. **Kodadot supports various**, with Talisman being one of the most popular choices.
 
 ### Step 1: Connect Your Wallet
 
 1. Visit the [**Kodadot website**](https://kodadot.xyz/) (now rebranded to *Koda* Art).
 2. In the top right corner, click on “Connect”.
-3. **Select your [preferred Polkadot wallet](https://dablock.com/polkadot-wallets/)**, such as [**Talisman Wallet**](https://dablock.com/dapps/talisman-wallet/).
+3. **Select your preferred Polkadot wallet**, such as **Talisman Wallet**.
 4. Follow the prompts to connect your wallet to Koda. Once connected, your wallet will be linked to the platform, allowing you to create and manage NFTs.
 
 ### Step 2: Fund Your Wallet
 
 To create an NFT collection on Kodadot, you will need to have **DOT** (Polkadot’s nativetoken) in your wallet. These funds are required to pay for network fees and to lock up deposits for the NFTs you create.
 
-1. Open your [**Talisman wallet**](https://dablock.com/dapps/talisman-wallet/).
+1. Open your **Talisman wallet**.
 2. Click on the three dots to access the menu and select the “Swap” option.
 3. Navigate to the XCM (Cross-Consensus Message) section.
 4. **Transfer DOT from the Relay Chain to AssetHub**, as this is the parachain where your NFT collection will be created. Ensure you transfer an amount greater than the existential deposit of 0.01 DOT.
@@ -139,13 +136,8 @@ If you didn’t list your NFTs for sale during the minting process, you can do s
 2. Click on the “Sell” option and set a price in DOT.
 3. Confirm the listing, and your NFT will be available for purchase on the Kodadot marketplace.
 
-- - - - - -
-
 Conclusion
 ----------
-
 Creating a Polkadot NFT collection with Kodadot is a straightforward process that empowers artists and creators to leverage the benefits of blockchain technology. With its user-friendly interface and robust integration with the Polkadot ecosystem, Kodadot makes it easy to create, manage, and sell NFTs, all while enjoying the security and scalability that Polkadot offers.
 
 By following this guide, you can confidently create your own NFT collection, mint unique digital assets, and potentially reach a global audience of collectors and enthusiasts. As the NFT space continues to grow, platforms like Kodadot will play a crucial role in shaping the future of digital art and collectibles.
-
-- - - - - -

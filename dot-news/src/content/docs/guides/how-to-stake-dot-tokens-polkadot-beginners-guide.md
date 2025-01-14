@@ -21,17 +21,17 @@ Getting Started with Polkadot Staking
 
 Before you begin staking, you need to store your DOT tokens in a secure wallet. Polkadot supports a variety of wallets, including:
 
-- **[Nova Wallet](https://dablock.com/dapps/nova-wallet/):** A mobile based wallet with staking and governance features.
-- [**Polkadot-JS**](https://dablock.com/dapps/polkadotjs/): The official web-based wallet with comprehensive staking features.
-- [**SubWallet**](https://dablock.com/dapps/subwallet/) and [**Talisman Wallet**](https://dablock.com/dapps/talisman-wallet/): Browser extensions that provide easy access to staking.
-- [**Ledger**](https://dablock.com/news/introduction-to-the-new-polkadot-ledger-app/): A hardware wallet that offers enhanced security for your DOT tokens.
+- **Nova Wallet:** A mobile based wallet with staking and governance features.
+- [**Polkadot-JS**: The official web-based wallet with comprehensive staking features.
+- **SubWallet** and **Talisman Wallet**: Browser extensions that provide easy access to staking.
+- **Ledger**: A hardware wallet that offers enhanced security for your DOT tokens.
 
 These wallets are listed on the official Polkadot website and are considered secure and user-friendly.
 
 The Polkadot Staking Dashboard
 ------------------------------
 
-Polkadot has introduced a new [**Staking Dashboard**](https://dablock.com/dapps/polkadot-staking-dashboard/), simplifying the staking process. This dashboard is compatible with Ledger devices and does not require any browser extensions or third-party wallets. The dashboard provides an intuitive interface to manage your staking activities, including selecting validators, monitoring rewards, and managing nomination pools.
+Polkadot has introduced a new **Staking Dashboard**, simplifying the staking process. This dashboard is compatible with Ledger devices and does not require any browser extensions or third-party wallets. The dashboard provides an intuitive interface to manage your staking activities, including selecting validators, monitoring rewards, and managing nomination pools.
 
 Staking Options on Polkadot
 ---------------------------

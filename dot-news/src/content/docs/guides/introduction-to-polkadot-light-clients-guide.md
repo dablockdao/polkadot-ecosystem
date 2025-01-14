@@ -47,9 +47,9 @@ Substrate Connect Enabling Light Clients in the Polkadot Ecosystem
 
 ### Key Features of Substrate Connect:
 
-1. **Browser-Based Light Clients**: Substrate Connect allows light clients to run directly in the browser, making it easier for users to interact with P[**olkadot-based dApps** ](https://dablock.com/dapps/)without the need for additional software installations.
+1. **Browser-Based Light Clients**: Substrate Connect allows light clients to run directly in the browser, making it easier for users to interact with **Polkadot-based dApps** without the need for additional software installations.
 2. **JavaScript Integration**: Developers can integrate [**Substrate Connect**](https://docs.substrate.io/learn/light-clients-in-substrate-connect/) into their applications using JavaScript, enabling seamless interaction with the Polkadot network through light clients.
-3. **Multi-Chain Support**: Substrate Connect supports multiple chains within the [**Polkadot ecosystem**](https://dablock.com/ecosystem/), including Kusama, Westend, and Rococo, allowing dApps to interact with various blockchains using a single light client.
+3. **Multi-Chain Support**: Substrate Connect supports multiple chains within the **Polkadot ecosystem**, including Kusama, Westend, and Rococo, allowing dApps to interact with various blockchains using a single light client.
 4. **No Centralized Dependencies**: By eliminating the need for centralized RPC nodes, Substrate Connect enhances the decentralization of dApps, ensuring that users can interact with the blockchain in a trustless manner.
 
 Implementing Polkadot Light Clients with Substrate Connect
@@ -88,8 +88,6 @@ As the Polkadot ecosystem continues to grow, the role of light clients is expect
 
 Future developments in light client technology are likely to focus on improving security, reducing latency, and expanding functionality. **As more dApps adopt light clients, the Polkadot ecosystem will become more decentralized, secure, and accessible** to a broader audience.
 
-- - - - - -
-
 ### Conclusion
 
 Polkadot light clients represent a pivotal advancement in the blockchain space, offering a secure, efficient, and decentralized way to interact with the network. By leveraging Substrate Connect, developers can easily integrate light clients into their applications, providing users with a seamless and trustless experience.
@@ -97,5 +95,4 @@ Polkadot light clients represent a pivotal advancement in the blockchain space, 
 As blockchain technology continues to evolve, light clients will play a crucial role in driving adoption and ensuring that decentralized applications remain true to the principles of security and decentralization. For developers and users alike, **understanding and utilizing Polkadot light clients is essential for navigating the future of Web3**.
 
 - For more details about Polkadot Light Clients, there is a[ *dedicated page about this topic at the Official Polkadot Wiki*](https://wiki.polkadot.network/docs/build-light-clients).
-
-- - - - - -
+ 

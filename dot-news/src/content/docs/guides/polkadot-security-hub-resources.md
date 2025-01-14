@@ -55,7 +55,7 @@ Despite the robust security features inherent in the Polkadot network, several c
 
 ### 1. **Runtime Misconfiguration**
 
-Even if a pallet is correctly implemented, misconfigurations in the runtime can lead to unexpected behavior and security vulnerabilities. The hub categorizes runtime misconfigurations into subcategories, such as **[XCM (Cross-Consensus Message)](https://dablock.com/tech-talks/polkadot-xcmv5-enhancing-user-experience-decoded-2024/) misconfigurations**, which require careful attention to access control and message handling settings.
+Even if a pallet is correctly implemented, misconfigurations in the runtime can lead to unexpected behavior and security vulnerabilities. The hub categorizes runtime misconfigurations into subcategories, such as **XCM Cross-Consensus Message misconfigurations**, which require careful attention to access control and message handling settings.
 
 To mitigate these risks, the hub recommends regular verification of all configurations and comparisons with successful implementations in other chains. Additionally, it provides detailed guidance on ensuring robust access control in XCM configurations and securing message handling processes.
 
@@ -86,7 +86,7 @@ Through initiatives like Parathreat and the regular publication of vulnerability
 
 ### Conclusion
 
-**The Polkadot Security Hub is an invaluable resource for anyone involved in the development and deployment of projects within the [Polkadot ecosystem](https://dablock.com/ecosystem/)**. By providing comprehensive information on security vulnerabilities, best practices, and tools, the hub plays a crucial role in safeguarding the network’s integrity and ensuring its continued success.
+**The Polkadot Security Hub is an invaluable resource for anyone involved in the development and deployment of projects within the Polkadot Ecosystem**. By providing comprehensive information on security vulnerabilities, best practices, and tools, the hub plays a crucial role in safeguarding the network’s integrity and ensuring its continued success.
 
 As the Polkadot ecosystem continues to grow and evolve, the importance of security will only increase. By leveraging the resources available through the Polkadot Security Hub, developers and security professionals can stay ahead of potential threats and contribute to a more secure and resilient blockchain environment.
 

@@ -32,7 +32,6 @@ Their **commitment to neutrality** is further reinforced by their refusal to joi
 
 ## Saxemberg OpenGov Treasury Guidelines
 Saxemberg has established **comprehensive guidelines for participating in OpenGov Treasury referenda**, aimed at promoting transparency, accountability, and the sustainable development of the Polkadot ecosystem. Key points include:
-
 1. **Verified On-chain IDs:** Ensuring the legitimacy of proposals by verifying identities.
 2. **Proper Discussion:** Encouraging thorough socialization of projects before referendums.
 3. **Honest Conversations:** Discouraging last-minute vote swaying and promoting early discussions.
@@ -52,7 +51,6 @@ Saxemberg has established **comprehensive guidelines for participating in OpenGo
 
 ## Saxemberg Operational Directives
 Saxemberg maintains a strong stance on public discourse and transparency in its operations. Key directives include:
-
 1. **Public Discussions:** Keeping discussions about active referenda public whenever possible.
 2. **Clarifications:** Approaching proposers privately for clarifications on delicate topics.
 3. **Pre-publication Feedback:** Providing feedback on proposals before they become public.
@@ -61,7 +59,6 @@ Saxemberg maintains a strong stance on public discourse and transparency in its 
 
 ## Saxemberb Validator and Collator Services
 **Saxemberg operates multiple validators on Polkadot and Kusam**a, ensuring the security and efficiency of these networks. Their validators are carefully managed to provide optimal performance and reliability.
-
 - **Polkadot Validators:**
   - Validator 1: *153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC*
   - Validator 2: *16UgRGtYLuDWsBvjLLtc6FYVB3qSCV9c4sidcN4zaFm9qCFR*

@@ -58,15 +58,10 @@ While Agile Coretime presents numerous opportunities, as mentioned in this first
 **Polkadot Coretime Marketplaces: Lastic and RegionX**
 ------------------------------------------------------
 
-To further enhance the flexibility and efficiency of blockspace allocation, Polkadot introduces marketplaces like **[Lastic](https://dablock.com/dapps/lastic/)** and **[RegionX](https://dablock.com/dapps/regionx/)**. Lastic provides a platform for buying and selling blockspace, allowing users to access coretime flexibly.
+To further enhance the flexibility and efficiency of blockspace allocation, Polkadot introduces marketplaces like **Lastic** and **RegionX]**. Lastic provides a platform for buying and selling blockspace, allowing users to access coretime flexibly.
 
-<figure aria-describedby="caption-attachment-10994" class="wp-caption aligncenter" id="attachment_10994" style="width: 751px">![lastic app interface](../../uploads/2024/08/lastic-app-interface.webp)<figcaption class="wp-caption-text" id="caption-attachment-10994">Lastic app interface</figcaption></figure>
+**RegionX**, on the other hand, offers a decentralized marketplace where **blockspace is traded as NFTs**, enabling customized usage patterns and dynamic pricing. Both platforms leverage Polkadot’s innovative coretime model, opening new opportunities for developers and projects to optimize their resource management in the Polkadot ecosystem.
 
-[**RegionX**](https://dablock.com/dapps/regionx/), on the other hand, offers a decentralized marketplace where **blockspace is traded as NFTs**, enabling customized usage patterns and dynamic pricing. Both platforms leverage Polkadot’s innovative coretime model, opening new opportunities for developers and projects to optimize their resource management in the Polkadot ecosystem.
-
-<figure aria-describedby="caption-attachment-10996" class="wp-caption aligncenter" id="attachment_10996" style="width: 752px">![regionx app interface](../../uploads/2024/08/regionx-app-interface.webp)<figcaption class="wp-caption-text" id="caption-attachment-10996">[**regionx**](https://dablock.com/dapps/regionx/) app interface</figcaption></figure>
-
-- - - - - -
 
 ### Conclusion
 
@@ -75,9 +70,5 @@ Polkadot’s Agile Coretime represents a significant leap forward in **blockchai
 As Polkadot continues to evolve, Agile Coretime will play a critical role in enabling scalable, high-performance decentralized applications, driving innovation, and ensuring that the network remains at the forefront of Web3 development.
 
 Related content:
-
-- [**What is Agile Coretime, Dablock.**](https://dablock.com/guides/what-is-polkadot-agile-coretime/)
 - [**Introduction to Agile Coretime, Polkadot Wiki.**](https://wiki.polkadot.network/docs/learn-agile-coretime)
 - [**Core Time Sales on Polkadot: A New Era of Resource Allocation Assets, OnlyDeFiGuy.**](https://medium.com/@OnlyDeFiGuy/core-time-sales-on-polkadot-a-new-era-of-resource-allocation-assets-b21a1698daa0)
-
-- - - - - -

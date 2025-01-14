@@ -2,7 +2,7 @@
 title: 'Phala Phat Contracts Guide: Unlocking Off-Chain Computation'
 description: 'Unlock powerful off-chain computation for dApps with Phala Phat Contracts, bridging Web3 and Web2 seamlessly, securely, and efficiently.'
 ---
-In the blockchain industry, **smart contracts have become the backbone of decentralized applications (dApps)**. However, as the demand for more complex and resource-intensive operations grows, traditional on-chain computation faces limitations. This is where **[Phala Network](https://dablock.com/dapps/phala-network/)‘s Phat Contracts come into play**, offering a revolutionary approach to smart contract execution that bridges the gap between Web3 and Web2, enabling seamless off-chain computation.
+In the blockchain industry, **smart contracts have become the backbone of decentralized applications (dApps)**. However, as the demand for more complex and resource-intensive operations grows, traditional on-chain computation faces limitations. This is where **Phala Network‘s Phat Contracts come into play**, offering a revolutionary approach to smart contract execution that bridges the gap between Web3 and Web2, enabling seamless off-chain computation.
 
 What Are Phala Phat Contracts?
 ------------------------------
@@ -62,14 +62,3 @@ Phala Network has made it easy for developers to start building with Phat Contra
 - **Phat Contract Starter Kit:** A ready-to-use solution that simplifies the process of connecting APIs to your smart contract, supporting a wide range of EVM-compatible blockchains.
 - **Phat Bricks:** A no-code development tool that allows you to deploy applications without writing code, using pre-defined components and customizable templates.
 - **Ink! Smart Contracts:** Phat Contracts are fully compatible with Substrate’s pallet-contracts, allowing you to leverage existing tools and libraries for ink! smart contracts.
-
-### Conclusion
-
-Phala Network’s Phat Contracts represent a significant advancement in the world of smart contracts, offering developers the ability to perform off-chain computations while maintaining the security, decentralization, and trustlessness that are the hallmarks of blockchain technology. With their ability to bridge the gap between Web3 and Web2, Phat Contracts are poised to unlock new possibilities for dApp developers, enabling them to create more powerful, efficient, and user-friendly applications.  
-As the blockchain ecosystem continues to evolve, Phat Contracts are likely to play a pivotal role in shaping the future of decentralized applications. By providing a flexible, cost-effective, and secure solution for off-chain computation, Phat Contracts empower developers to push the boundaries of what is possible in the world of Web3, ushering in a new era of innovation and growth.
-
-The Execution Layer of Web3 AI
-------------------------------
-
-Access the summary and slides of the Phala Network team’s latest presentation at Polkadot Decoded 2024  
-Click Here

@@ -27,7 +27,7 @@ The introduction of **Agile Coretime** marked a pivotal development, first deplo
 3. Polkadot &lt;&gt; Kusama Bridge Activations
 ----------------------------------------------
 
-April saw the activation of the BEEFY protocol on the [**Polkadot &lt;&gt; Kusama Bridge**](https://dablock.com/news/the-polkadot-kusama-bridge-is-now-live/), enabling the first transactions of DOT and KSM across the bridge. The initial transfers of DOT and KSM across the bridge demonstrate progress in interoperability between the Polkadot and Kusama networks.
+April saw the activation of the BEEFY protocol on the **Polkadot &lt;&gt; Kusama Bridge**), enabling the first transactions of DOT and KSM across the bridge. The initial transfers of DOT and KSM across the bridge demonstrate progress in interoperability between the Polkadot and Kusama networks.
 
 ### Snowbridge Development Progress
 
@@ -36,7 +36,7 @@ Additionally, the **Snowbridge launch went up for a community vote**, highlighti
 4. Understand JAM with the latest Talks by Dr. Gavin Wood
 ---------------------------------------------------------
 
-In a recent keynote at Sub0, Gavin Wood provided an extensive overview of JAM, a cutting-edge project under development at Parity Technologies. Designed as a potential successor to the Polkadot relay chain, JAM introduces several innovative concepts poised to reshape blockchain technology. In this article you can see a **[summary of Gavin Wood’s Keynote at Sub0 2023 presenting JAM](https://dablock.com/tech-talks/jam-overview-of-gavin-woods-keynote-at-sub0/)**, with the links and the full video..
+In a recent keynote at Sub0, Gavin Wood provided an extensive overview of JAM, a cutting-edge project under development at Parity Technologies. Designed as a potential successor to the Polkadot relay chain, JAM introduces several innovative concepts poised to reshape blockchain technology. In this article you can see a **summary of Gavin Wood’s Keynote at Sub0 2023 presenting JAM**, with the links and the full video..
 
 JAM, short for Join Accumulate Machine, is a novel blockchain concept designed to improve and extend the capabilities of Polkadot. The acronym JAM originates from its computational model: Collect, Refine, Join, Accumulate.
 
@@ -94,7 +94,7 @@ These developments not only reflect Polkadot’s robust technical foundation but
 
 That’s all for this month’s update! Polkadot continues to make **significant progress on its core tech and bridges**, along with **ongoing security measures**. Stay tuned for the May update!
 
-Before finishing this post, remember that tickets are now available to attend the[ **2024 edition of Polkadot Decoded** ](https://dablock.com/news/polkadot-decoded-2024-tickets/)on July 11 in Brussels!
+Before finishing this post, remember that tickets are now available to attend the **2024 edition of Polkadot Decoded** on July 11 in Brussels!
 
 If you want to know more about the **latest developments in Polkadot technology**, you can read the **[full report on the network’s official forum](https://forum.polkadot.network/t/paritytech-update-for-april-2024/7646)**.
 

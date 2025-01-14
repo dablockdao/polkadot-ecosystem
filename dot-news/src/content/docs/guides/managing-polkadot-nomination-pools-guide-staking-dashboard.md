@@ -7,7 +7,7 @@ Polkadot offers users a comprehensive staking dashboard to manage their staking 
 Overview of the Polkadot Staking Dashboard
 ------------------------------------------
 
-The[ **Polkadot staking dashboard**](https://dablock.com/dapps/polkadot-staking-dashboard/) serves as a user-friendly interface for staking operations within the Polkadot ecosystem. Users can access various features, including account management, nomination pools, and detailed staking information. While this guide uses the Westend testnet for demonstration, the procedures are identical for Kusama and Polkadot networks.
+The **Polkadot staking dashboard** serves as a user-friendly interface for staking operations within the Polkadot ecosystem. Users can access various features, including account management, nomination pools, and detailed staking information. While this guide uses the Westend testnet for demonstration, the procedures are identical for Kusama and Polkadot networks.
 
 ### Getting Started: Connecting an Account
 
@@ -62,4 +62,4 @@ Pool administrators have the option to destroy a pool when necessary:
 
 #### Conclusion
 
-The [**Polkadot staking dashboard** ](https://dablock.com/dapps/polkadot-staking-dashboard/)provides a robust platform for managing staking activities, particularly through its nomination pools feature. By offering detailed control over pool creation, management, and destruction, the dashboard ensures both administrators and members can participate effectively in the Polkadot ecosystem. This guide highlights the critical steps and features, enabling users to leverage the full potential of Polkadot’s staking capabilities.
+The **Polkadot staking dashboard** provides a robust platform for managing staking activities, particularly through its nomination pools feature. By offering detailed control over pool creation, management, and destruction, the dashboard ensures both administrators and members can participate effectively in the Polkadot ecosystem. This guide highlights the critical steps and features, enabling users to leverage the full potential of Polkadot’s staking capabilities.

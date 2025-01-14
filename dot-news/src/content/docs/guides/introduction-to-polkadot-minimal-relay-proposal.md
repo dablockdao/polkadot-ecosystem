@@ -21,7 +21,7 @@ The Shift to a Minimal Relay
 
 Polkadot 2.0 introduces the concept of the Minimal Relay, a strategic move aimed at offloading certain functionalities from the Relay Chain to improve the network’s overall efficiency. The core idea behind the Minimal Relay is to remove as much processing burden as possible from the Relay Chain, allowing it to focus primarily on its essential role of securing the network and facilitating cross-chain communication.
 
-The proposal for the Minimal Relay is detailed in **RFC 32**, authored by **Joe Petrowski** and [**Gavin Wood**](https://dablock.com/ecosystem/gavin-wood/). According to their proposal, several key services currently handled by the Relay Chain will be migrated to dedicated [**System Chains**](https://dablock.com/polkadot-system-chains/) or **Common Good Parachains**. These specialized parachains will take over functions such as staking, governance, identity management, and balance tracking, thus reducing the load on the Relay Chain.
+The proposal for the Minimal Relay is detailed in **RFC 32**, authored by **Joe Petrowski** and **Gavin Wood**. According to their proposal, several key services currently handled by the Relay Chain will be migrated to dedicated **System Chains** or **Common Good Parachains**. These specialized parachains will take over functions such as staking, governance, identity management, and balance tracking, thus reducing the load on the Relay Chain.
 
 The Rationale Behind the Polkadot Minimal Relay
 -----------------------------------------------
@@ -43,12 +43,7 @@ Moreover, certain System Chains have already begun to be implemented. For exampl
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/cXa1oEEzcRE?si=yXyuuAdQp1UQeBTG" title="YouTube video player" width="560"></iframe>
 
-- - - - - -
-
 ### Polkadot Looking Forward
-
-As Polkadot continues its evolution towards Polkadot 2.0 and beyond, the **Polkadot** **Minimal Relay concept** represents a significant step forward in optimizing the network for scalability and performance. By migrating key functions to [**System Chains**](https://dablock.com/polkadot-system-chains/), Polkadot aims to reduce the load on its Relay Chain, allowing it to offer more secure and efficient services to its growing ecosystem of parachains.
+As Polkadot continues its evolution towards Polkadot 2.0 and beyond, the **Polkadot** **Minimal Relay concept** represents a significant step forward in optimizing the network for scalability and performance. By migrating key functions to **System Chains**, Polkadot aims to reduce the load on its Relay Chain, allowing it to offer more secure and efficient services to its growing ecosystem of parachains.
 
 This strategic move not only prepares Polkadot for future growth but also reinforces its position as a leader in blockchain technology, setting a precedent for other networks to follow in their quest for scalability and efficiency.
-
-- - - - - -

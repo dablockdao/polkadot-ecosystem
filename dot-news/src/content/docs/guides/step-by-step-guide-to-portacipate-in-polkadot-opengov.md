@@ -12,7 +12,7 @@ Before diving into the practical aspects of participating, it is crucial to unde
 Key features of Polkadot OpenGov include:
 
 - **Direct Democracy:** Unlike Governance V1, which involved a Council and Technical Committee, **OpenGov eliminates these bodies**, placing all decision-making power in the hands of the public (i.e., **token holders**).
-- **Multiple Voting Tracks:** OpenGov introduces a system where [**proposals are categorized and processed through different tracks**](https://dablock.com/guides/understanding-polkadot-opengov-tracks-guide/), each with its own parameters, including the length of the voting period and the number of simultaneous referenda.
+- **Multiple Voting Tracks:** OpenGov introduces a system where **proposals are categorized and processed through different tracks**, each with its own parameters, including the length of the voting period and the number of simultaneous referenda.
 - **Multi-Role Delegations:** Token holders can delegate their voting power on specific tracks to different entities, allowing for more nuanced and informed voting decisions.
 - **Approval and Support Curves:** These curves determine whether a proposal is approved based on both the proportion of ‘aye’ votes and the overall support from the community.
 
@@ -44,7 +44,7 @@ Polkadot OpenGov allows any token holder to propose a referendum. However, parti
 ### Proposing a Polkadot Referendum
 
 1. **Navigate to the Governance Interface:**
-  - Access the governance section via the [***Polkadot.js app***](https://dablock.com/dapps/polkadotjs/) or directly through some of the current Polkadot ecosystem governance forums like [***Polkassembly***](https://dablock.com/dapps/polkassembly/) or [**Subsquare**](https://dablock.com/dapps/subsquare/).
+  - Access the governance section via the ***Polkadot.js app*** or directly through some of the current Polkadot ecosystem governance forums like ***Polkassembly*** or **Subsquare**.
 2. **Create a Proposal:**
   - Click on the “Submit preimage” option to propose a referendum.
   - Fill out the required fields, including the type of proposal (e.g., a treasury proposal, a runtime upgrade), and upload the preimage file that describes your proposal.
@@ -71,8 +71,8 @@ Step 4: Monitoring and Managing Your Participation
 
 Polkadot OpenGov is dynamic, with multiple referenda happening simultaneously across different tracks. To stay informed and manage your participation effectively, consider the following tools:
 
-- **OG Tracker:** [OG Tracker](https://dablock.com/ecosystem/og-tracker/) is a dedicated tool that helps you monitor ongoing referenda, track your voting history, and analyze governance activity across the network.
-- **OpenGov.watch:** [OpenGov.watch](https://dablock.com/ecosystem/opengov-watch/) provides real-time updates and insights on governance proposals, making it easier for token holders to stay informed about important decisions and upcoming votes.
+- **OG Tracker:** OG Tracker is a dedicated tool that helps you monitor ongoing referenda, track your voting history, and analyze governance activity across the network.
+- **OpenGov.watch:** OpenGov.watch provides real-time updates and insights on governance proposals, making it easier for token holders to stay informed about important decisions and upcoming votes.
 
 Step 5: Understanding and Using Approval and Support Curves
 -----------------------------------------------------------
@@ -99,15 +99,3 @@ Polkadot OpenGov includes mechanisms to cancel or kill referenda that are deemed
 
 - **Referendum Canceller:** This mechanism can cancel an ongoing referendum, refunding the submission and decision deposits to their originators. It is used when there is an error or when the proposal is no longer relevant.
 - **Referendum Killer:** This more drastic option is used to immediately kill a referendum that is malicious or poses a risk to the network. The decision deposit is forfeited, and the proposal is removed from the voting queue.
-
-- - - - - -
-
-### Conclusion
-
-Polkadot OpenGov represents a significant step forward in decentralized governance. By following the steps outlined in this guide, you can actively participate in shaping the future of the Polkadot network. Whether you are submitting proposals, voting on referenda, or delegating your voting power, your involvement is crucial to ensuring the network remains secure, innovative, and community-driven.
-
-For more information and to stay updated on governance activities, regularly visit [OG Tracker](https://dablock.com/ecosystem/og-tracker/) and [OpenGov.watch](https://dablock.com/ecosystem/opengov-watch/).
-
-- You can also visit the [official Polkadot wiki page covering the OpenGov topic](https://wiki.polkadot.network/docs/learn-polkadot-opengov).
-
-- - - - - -

@@ -1,10 +1,11 @@
 ---
 title: 'Beginners Guide to Polkadot Proxy Accounts'
 ---
+
 Polkadot introduces a robust feature known as **Proxy Accounts**. This functionality is not only instrumental in enhancing the security of user accounts but also in streamlining complex account management processes, particularly for corporate and high-stakes use cases.
 
 ## What are Polkadot Proxy Accounts?
-Proxy Accounts in the[ **Polkadot ecosystem**](https://dablock.com/ecosystem/) offer users the ability to delegate specific roles and tasks from a primary account to smaller, secondary accounts. These proxies can perform actions on behalf of the main account, reducing the need for the primary account to engage in frequent transactions, thereby minimizing the exposure of its private keys to potential threats.
+Proxy Accounts in the **Polkadot ecosystem** offer users the ability to delegate specific roles and tasks from a primary account to smaller, secondary accounts. These proxies can perform actions on behalf of the main account, reducing the need for the primary account to engage in frequent transactions, thereby minimizing the exposure of its private keys to potential threats.
 
 ### Why Use Proxy Accounts?
 Proxy Accounts serve multiple purposes, primarily revolving around **security and efficiency**:
@@ -42,5 +43,4 @@ Polkadot also introduces Pure Proxy Accounts, a specialized type of proxy accoun
 
 Polkadot’s Proxy Accounts provide a powerful tool for enhancing security and efficiency in the management of digital assets. Whether for individual users seeking to protect their primary accounts or for organizations managing complex account structures, proxies offer a customizable solution to meet various needs. As the Polkadot ecosystem continues to evolve, the strategic **use of Proxy Accounts** will undoubtedly play a crucial role in ensuring the security and scalability of decentralized operations.
 
-- Related content: *[Bounties &amp; Proxies Guide by Adam Steeber](https://dablock.com/guides/polkadot-bounties-guide-multisigs-proxies-adam-steeber/)*.
 - [Polkadot Wiki page about Proxies](https://wiki.polkadot.network/docs/learn-proxies).

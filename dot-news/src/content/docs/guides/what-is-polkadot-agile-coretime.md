@@ -13,7 +13,6 @@ That can be attributed to very high entry barriers for small and medium projects
 
 **Flexible coretime model:** purchase of coretime in bulk for a month, and renewals are protected against price change. This adaptability allows the efficient budgeting of parachain projects, because it may need to continuously produce blocks or have less frequent access to the resources required by the core.
 
-<figure aria-describedby="caption-attachment-3993" class="wp-caption alignnone" id="attachment_3993" style="width: 650px">![Polkadot Agile Coretime: Coreplay](../../uploads/2024/04/polkadot-coretime-and-coreplay-actors.webp)<figcaption class="wp-caption-text" id="caption-attachment-3993">Polkadot Agile Coretime: Coreplay</figcaption></figure>
 
 The Architecture of Agile Coretime
 ----------------------------------
@@ -25,8 +24,6 @@ The Architecture of Agile Coretime
 1. **Bulk Coretime &amp; On-demand Coretime:** From buying coretime, bulk quantity, and on-demand, it caters to the variable needs of parachain developers.
 2. **Secondary Markets for Coretime:** The flexibility of splitting and selling coretime in smaller lots would result in an efficient secondary market and, in turn, usher in an improvement in efficiency in allocation.
 3. **Elastic Scaling:** in future development, scales move elastic without being limited by the amount of resources assigned, which allows multiples cores for one task.
-
-<figure aria-describedby="caption-attachment-3949" class="wp-caption alignnone" id="attachment_3949" style="width: 650px">![Polkadot Coretime - <i>Polkadot Wiki</i>](../../uploads/2024/04/polkadot-coretime-usage.webp "Polkadot Coretime")<figcaption class="wp-caption-text" id="caption-attachment-3949">Polkadot Coretime – [*Polkadot Wiki*](https://wiki.polkadot.network/docs/learn-agile-coretime)</figcaption></figure>
 
 The Impact on the Polkadot Ecosystem
 ------------------------------------

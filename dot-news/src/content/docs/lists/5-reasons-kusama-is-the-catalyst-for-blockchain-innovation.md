@@ -22,7 +22,7 @@ Kusama places a strong emphasis on community involvement and decision-making. It
 
 Compared to Polkadot, Kusama has lower barriers to entry for blockchain projects and parachain slot auctions. This is particularly beneficial for smaller projects or those in the early stages of development, as it provides them with an opportunity to launch their parachains and access a vibrant ecosystem without the need for significant capital investment. As such, Kusama plays a crucial role in democratizing access to blockchain technology and fostering diversity within the ecosystem.
 
-And now, with the [**implementation of agile coretime**](https://dablock.com/guides/what-is-polkadot-agile-coretime/), the entry barrier to access the blockspace offered by Kusama is even lower.
+And now, with the **implementation of agile coretime**, the entry barrier to access the blockspace offered by Kusama is even lower.
 
 ### 5. **A Thriving Ecosystem for Risk-Taking**
 

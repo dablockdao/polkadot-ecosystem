@@ -30,20 +30,15 @@ The activation of BEEFY on Kusama is a clear indicator of Polkadot’s commitmen
 
 ### **1. Polkadot &lt;&gt; Kusama Bridge:**
 
-The first major use case for BEEFY is the [**Polkadot &lt;&gt; Kusama bridge**](https://dablock.com/news/the-polkadot-kusama-bridge-is-now-live/), which allows seamless asset transfers and communication between these two networks. This bridge is a critical step towards achieving true interoperability within the Polkadot ecosystem and serves as a model for future cross-chain initiatives.
+The first major use case for BEEFY is the **Polkadot & Kusama bridge**, which allows seamless asset transfers and communication between these two networks. This bridge is a critical step towards achieving true interoperability within the Polkadot ecosystem and serves as a model for future cross-chain initiatives.
 
 ### **2. Snowbridge:**
 
-**Another significant application of BEEFY is [Snowbridg](https://dablock.com/dapps/snowbridge/)**e, a trustless bridge between Polkadot and Ethereum. **Snowbridge leverages BEEFY’s efficient finality proofs** to facilitate secure and transparent interactions between these two leading blockchain networks, paving the way for greater collaboration and innovation in decentralized finance (DeFi) and other sectors.
+**Another significant application of BEEFY is Snowbridge**, a trustless bridge between Polkadot and Ethereum. **Snowbridge leverages BEEFY’s efficient finality proofs** to facilitate secure and transparent interactions between these two leading blockchain networks, paving the way for greater collaboration and innovation in decentralized finance (DeFi) and other sectors.
 
 ### **3. Hyperbridge:**
-
 Hyperbridge, a project developed by Polytope Labs, aims to extend BEEFY’s capabilities even further by enabling interoperability across multiple Layer 1 and Layer 2 blockchains. This ambitious initiative highlights the potential of BEEFY to serve as the foundation for a truly interconnected blockchain ecosystem.
-
-- - - - - -
 
 ### Conclusion
 
 BEEFY represents a significant advancement in Polkadot’s ongoing efforts to create a seamless and interoperable blockchain ecosystem. By enhancing the efficiency and reliability of cross-chain bridges, **BEEFY is helping to lay the groundwork for a future where blockchains can communicate and collaborate without the need for centralized intermediaries**. As Polkadot continues to innovate in this space, BEEFY is set to play a central role in shaping the next generation of decentralized applications and services.
-
-- - - - - -
