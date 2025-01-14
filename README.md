@@ -1,5 +1,5 @@
 <p align="center">
-<img align="center" src="https://github.com/dablockdao/polkadot-ecosystem/blob/main/dot-atlas/src/assets/polkadotecosystem-banner.png" width="100%">
+<img align="center" src="https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/dotbanner.png" width="100%">
 
 </p>
 
