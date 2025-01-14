@@ -5,7 +5,7 @@ sidebar:
     label: Alex Siman (Subsocial)
 ---
 
-At the Sub0 2024 conference, **Alex Siman** from [**Subsocial Network**](https://dablock.com/dapps/subsocial/) presented an insightful talk on how the **Polkadot SDK empowers social finance**. This innovative use of blockchain technology is transforming social networking and content monetization, offering new incentives for content creators and enabling seamless interactions for users.
+At the Sub0 2024 conference, **Alex Siman** from **Subsocial Network** presented an insightful talk on how the **Polkadot SDK empowers social finance**. This innovative use of blockchain technology is transforming social networking and content monetization, offering new incentives for content creators and enabling seamless interactions for users.
 
 ## Introduction to Subsocial and Polkadot SDK
 Subsocial is a pioneering project leveraging the Polkadot SDK, previously known as Substrate, to build a decentralized social networking platform. The project aims to provide a comprehensive layer for social networking and content monetization with built-in incentives for content creators. By utilizing Polkadot SDK, Subsocial has developed a blockchain that functions as a **parachain within the Polkadot ecosystem**.

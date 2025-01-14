@@ -5,7 +5,7 @@ sidebar:
     label: Prahbu Eswarla (Ternoa)
 ---
 
-In Web3, innovative solutions are constantly being developed to tackle challenges related to security, scalability, and privacy. At **Sub0 2024 in Bangkok**, **Prabhu Eswarla** from[ **Capsule Corp (Ternoa)**](https://dablock.com/dapps/ternoa/) delivered an insightful presentation on the use of **Trusted Execution Environments (TEE)** as **co-processors within Polkadot chains**. This approach aims to enhance data privacy and computational integrity in decentralized applications.
+In Web3, innovative solutions are constantly being developed to tackle challenges related to security, scalability, and privacy. At **Sub0 2024 in Bangkok**, **Prabhu Eswarla** from **Capsule Corp (Ternoa)** delivered an insightful presentation on the use of **Trusted Execution Environments (TEE)** as **co-processors within Polkadot chains**. This approach aims to enhance data privacy and computational integrity in decentralized applications.
 
 ## Understanding Co-Processors
 Co-processors are specialized hardware designed to perform specific tasks more efficiently than general-purpose CPUs. They have been widely used in graphics rendering, cryptographic operations, and machine learning. In the context of blockchain technology, **co-processors can offload complex computations and provide verifiable results**, ensuring that critical operations are performed securely and efficiently.

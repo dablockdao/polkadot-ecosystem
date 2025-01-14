@@ -8,7 +8,7 @@ sidebar:
 ![Nikola Todorovic](/src/assets/sub0-2024/mohammadreza-sub0.webp)
 
 
-In a recent talk at the Sub0 Asia 2024, **Nikola Todorovic** and **Branimir Rakic**, key figures at [**Origintrail (NeuroWeb)**](https://dablock.com/dapps/neuroweb/), presented an innovative concept that positions knowledge as a new asset class. They explored how AI-ready knowledge mining on Polkadot can revolutionize data ownership, usage, and the overall AI landscape. Here’s a comprehensive review of their presentation.
+In a recent talk at the Sub0 Asia 2024, **Nikola Todorovic** and **Branimir Rakic**, key figures at **Origintrail (NeuroWeb)**, presented an innovative concept that positions knowledge as a new asset class. They explored how AI-ready knowledge mining on Polkadot can revolutionize data ownership, usage, and the overall AI landscape. Here’s a comprehensive review of their presentation.
 
 ## The Problem with Current AI Data Practices
 The speakers highlighted several critical issues with current AI practices:

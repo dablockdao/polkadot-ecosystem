@@ -2,7 +2,7 @@
 title: 'Introducing Nova Wallet Spend Card'
 description: 'Nova Wallet simplifies Polkadot staking and introduces the Spend Card for seamless real-world use of crypto assets'
 ---
-Nova Wallet has recently made headlines with its remarkable advancements in the Polkadot ecosystem, showcasing how it simplifies staking and introduces groundbreaking features. At a recent event, Anton and Leemo from [**Nova Wallet**](https://dablock.com/dapps/nova-wallet/) detailed these innovations, emphasizing their commitment to user experience, security, and utility. This article delves into their presentation, highlighting key aspects that position Nova Wallet at the forefront of blockchain technology.  
+Nova Wallet has recently made headlines with its remarkable advancements in the Polkadot ecosystem, showcasing how it simplifies staking and introduces groundbreaking features. At a recent event, Anton and Leemo from **Nova Wallet** detailed these innovations, emphasizing their commitment to user experience, security, and utility. This article delves into their presentation, highlighting key aspects that position Nova Wallet at the forefront of blockchain technology.  
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vQdrf9D_Oqfz77uTfqc8cbhrThOsDD-kN-6EQq5vFGV65QXyu5Z2HOf94uxpXx6WJznKCRXKBc_ThdV/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 
 ## Key Highlights from the** **Nova Wallet** **Presentation at Decoded 2024

@@ -7,7 +7,7 @@ sidebar:
 
 ![Mohammadreza Ashouri - Polkadot Security Vectors](/src/assets/sub0-2024/mohammadreza-sub0.webp)
 
-At the Sub0 2024 conference, **Chris Ling** and **Glide** from [**Talisman**](https://dablock.com/dapps/talisman-wallet/) introduced Signet, a groundbreaking multi-signature (multisig) solution designed to enhance data privacy and account abstraction for enterprises and institutions. The presentation delved into the technical intricacies and practical applications of Signet, showcasing its innovative features through live demonstrations.
+At the Sub0 2024 conference, **Chris Ling** and **Glide** from **Talisman** introduced Signet, a groundbreaking multi-signature (multisig) solution designed to enhance data privacy and account abstraction for enterprises and institutions. The presentation delved into the technical intricacies and practical applications of Signet, showcasing its innovative features through live demonstrations.
 
 ## What is Talisman Signet?
 **Signet is a multisig solution based on the proxy and multisig pallets**, designed to streamline the management of proxy accounts and multisig configurations. The core concept revolves around the “*Vault*,” which serves as a unit of the proxied account and the multisig. This structure allows for a seamless integration of the proxy account, which can be a pure proxy (seedless) or an imported non-pure proxy, with the multisig account derived from the signers and the threshold.

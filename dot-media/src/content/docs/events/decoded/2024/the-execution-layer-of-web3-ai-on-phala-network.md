@@ -4,7 +4,7 @@ description: 'Phala Network AI co-processor integrating AI with blockchain for d
 sidebar:
     label: Joshua Waller (Phalla Network)
 ---
-At Polkadot Decoded 2024, Joshua Waller, the Director of Technical Evangelism at [**Phala Network**](https://dablock.com/dapps/phala-network/), delivered an insightful presentation on Phala Network’s role as the execution layer of Web3 AI. The talk detailed Phala’s journey from its inception to becoming a pivotal player in the AI and blockchain ecosystem, showcasing its innovative AI co-processor capabilities.
+At Polkadot Decoded 2024, Joshua Waller, the Director of Technical Evangelism at **Phala Network**, delivered an insightful presentation on Phala Network’s role as the execution layer of Web3 AI. The talk detailed Phala’s journey from its inception to becoming a pivotal player in the AI and blockchain ecosystem, showcasing its innovative AI co-processor capabilities.
 
 ## Historical Context and Evolution of Phala Network
 Waller began by tracing the history of Phala Network, highlighting its consistent delivery of products since 2017. The network’s white paper was released in 2019, followed by the mainnet launch in late 2021 and the parachain launch on Kusama and Polkadot in 2022. Phala successfully bootstrapped its protocol with over 30,000 attested Trusted Execution Environment (TEE) nodes, now surpassing 36,000 nodes.

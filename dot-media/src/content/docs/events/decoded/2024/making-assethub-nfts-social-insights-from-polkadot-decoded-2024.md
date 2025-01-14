@@ -4,7 +4,7 @@ description: 'Transform AssetHub NFTs into social experiences with Koda, enhanci
 sidebar:
     label: Vikto Valastin (Koda Art)
 ---
-In the edition of [**Polkadot Decoded 2024**](https://dablock.com/web3-events/polkadot-decoded/), Viktor Valastin, co-founder of Koda ([**Kodadot NFT Marketplace**](https://dablock.com/dapps/kodadot/)), delved into the transformative potential of making AssetHub NFTs social. This talk provided a deep dive into the innovative mechanisms behind integrating social dynamics with NFTs, aiming to enhance user engagement and interaction within the blockchain ecosystem.
+In the edition of **Polkadot Decoded 2024**, Viktor Valastin, co-founder of Koda (**Kodadot NFT Marketplace**), delved into the transformative potential of making AssetHub NFTs social. This talk provided a deep dive into the innovative mechanisms behind integrating social dynamics with NFTs, aiming to enhance user engagement and interaction within the blockchain ecosystem.
 
 ## Understanding Koda: A Generative NFT Marketplace
 Koda stands as a generative NFT marketplace within the Polkadot and EVM ecosystems. As a technology-agnostic platform, Koda accommodates various technological frameworks, including JavaScript, assembly, and more exotic technologies. With a robust bounty-based model, Koda has successfully attracted over 130 contributors, boasting more than 600 stars and 350+ forks on GitHub.

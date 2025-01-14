@@ -24,7 +24,7 @@ The Web3 Foundation’s commitment to better technology was evident through thei
 - **Economics and Governance Overhaul**: Proposals to refine Polkadot’s economic and governance models, aiming to reduce inflation and simplify staking rewards and treasury inflows.
 
 ## Scytale Digital Capital Deployment
-Addressing the challenge of raising early-stage venture funding in the **polkadot ecosystem**, Thiago announced a new Polkadot ecosystem fund in partnership with [**Scytale Digital**](https://dablock.com/ecosystem/scytale-digital/). This fund, comprising both venture and liquid strategies, **aims to provide crucial capital to early-stage projects and liquidity to protocols**.
+Addressing the challenge of raising early-stage venture funding in the **polkadot ecosystem**, Thiago announced a new Polkadot ecosystem fund in partnership with **Scytale Digital**. This fund, comprising both venture and liquid strategies, **aims to provide crucial capital to early-stage projects and liquidity to protocols**.
 
 ### Building Alliances
 Recognizing the need for greater cross-pollination with other blockchain ecosystems, the **Web3 Foundation** is actively working to forge more alliances. A notable upcoming event is the Web3 Summit, scheduled for August in Berlin, designed to bring together diverse voices from across the Web3 space.

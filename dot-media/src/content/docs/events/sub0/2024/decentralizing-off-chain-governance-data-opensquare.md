@@ -8,7 +8,7 @@ sidebar:
 In an enlightening session at Sub0 Asia 2024, **Yongfeng Li from OpenSquare** discussed the imperative need and methodology for **decentralizing off-chain governance data**. His presentation offered a deep dive into the workings and future directions of OpenSquare’s products, especially focusing on their innovative approach to governance in the Web3 ecosystem.
 
 ## OpenSquare’s Vision and Product Suite
-OpenSquare aims to create a comprehensive collaboration platform for the Web3 world, akin to LinkedIn but tailored for blockchain environments. Currently, they are emphasizing infrastructure products, with [**SubsSquare**](https://dablock.com/dapps/subsquare/) being the most prominent among them. SubsSquare has gained significant traction, being trusted by numerous users and projects.
+OpenSquare aims to create a comprehensive collaboration platform for the Web3 world, akin to LinkedIn but tailored for blockchain environments. Currently, they are emphasizing infrastructure products, with **SubsSquare** being the most prominent among them. SubsSquare has gained significant traction, being trusted by numerous users and projects.
 
 ## The Governance Process and Current Challenges
 Yongfeng outlined the typical governance process, which involves two main activities:

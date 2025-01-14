@@ -5,7 +5,7 @@ sidebar:
     label: Michalis Frakiadakis (Web3 Foundation)
 ---
 
-At the recent Sub0 Asia 2024 event, **Michalis Fragkiadakis from the [Web3 Foundation](https://dablock.com/ecosystem/web3-foundation/) delivered an insightful talk on interacting with substrate chains using JavaScript and Python**. This session provided valuable information on leveraging these programming languages to automate and simplify tasks for both developers and non-developers. Here’s a detailed look at the key points from his talk.  
+At the recent Sub0 Asia 2024 event, **Michalis Fragkiadakis from the Web3 Foundation delivered an insightful talk on interacting with substrate chains using JavaScript and Python**. This session provided valuable information on leveraging these programming languages to automate and simplify tasks for both developers and non-developers. Here’s a detailed look at the key points from his talk.  
 <iframe frameborder="0" height="400" marginheight="0" marginwidth="0" scrolling="no" src="https://www.slideshare.net/slideshow/embed_code/key/94lRnDFcqyJnFS?hostedIn=slideshare&page=upload" width="700"><span class="mce_SELRES_start" data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;">﻿</span></iframe>  
 Michalis Fragkiadakis, the Support and Anti-Scam Lead at the Web3 Foundation, emphasized that the tools and scripts he discussed are designed for non-developers. This approach ensures that anyone can efficiently handle tasks that would otherwise be tedious and time-consuming.
 
@@ -17,7 +17,7 @@ The first part of the talk focused on the Python library called **PySubstrate In
 - **Practical Example:** The example script highlighted how to create a substrate object, read destination addresses from a file, and execute batch transactions. This method significantly reduces the manual effort required for multiple transactions.
 
 ## JavaScript Library: Polkadot.js
-The second part of the talk moved to the JavaScript library,**[ Polkadot.js](https://dablock.com/dapps/polkadotjs/), developed and maintained by [Parity Technologies](https://dablock.com/ecosystem/parity-technologies/)**. Polkadot.js offers a suite of tools including apps, APIs, and extensions, but Michalis focused on using the API to build scripts.
+The second part of the talk moved to the JavaScript library,**Polkadot.js, developed and maintained by Parity Technologies**. Polkadot.js offers a suite of tools including apps, APIs, and extensions, but Michalis focused on using the API to build scripts.
 
 ### Polkadot.js Key Features:
 - **Sorting Accounts for Nominated Proof of Stake (NPoS):** Michalis explained a script that sorts accounts in the last bag for the NPoS election. This script ensures that accounts with higher stakes are prioritized, which is crucial for fair and efficient staking rewards distribution.

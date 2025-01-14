@@ -4,7 +4,7 @@ description: 'Polimec redefines Web3 fundraising with innovative solutions, enha
 sidebar:   
     label: Luca von Wyttenbach (Polimec)
 ---
-At Polkadot Decoded 2024, Luca von Wyttenbach, a key figure at [**Polimec**](https://dablock.com/dapps/polimec/), delivered an insightful presentation on redefining Web3 fundraising. He outlined Polimec’s innovative approach to addressing the challenges faced by projects in the blockchain ecosystem when raising funds.
+At Polkadot Decoded 2024, Luca von Wyttenbach, a key figure at **Polimec**, delivered an insightful presentation on redefining Web3 fundraising. He outlined Polimec’s innovative approach to addressing the challenges faced by projects in the blockchain ecosystem when raising funds.
 
 ## The Journey of Polimec Protocol
 Luca began by reflecting on Polimec’s progress over the past three years. The team started by exploring the ecosystem, understanding market demands, and connecting with other projects. Last year, they showcased a demo of their product, and this year, they proudly presented their live product and its capabilities within the ecosystem.

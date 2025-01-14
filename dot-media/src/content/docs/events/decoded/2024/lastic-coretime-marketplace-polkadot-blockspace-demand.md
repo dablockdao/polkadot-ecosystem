@@ -2,7 +2,7 @@
 title: 'Lastic Coretime Marketplace'
 description: 'Discover the economic and technical insights of Lastic core time marketplace in the Polkadot ecosystem from Polkadot Decoded 2024.'
 ---
-**At [Polkadot Decoded 2024](https://dablock.com/web3-events/polkadot-decoded/), [Phil Lucsok](https://x.com/ph_lux), co-founder of [Lastic](https://dablock.com/dapps/lastic/)**, delivered a comprehensive presentation on the dynamics of **Polkadot blockspace and coretime**. Along with his co-founder, [Aurora](https://x.com/poppyseedDev), Phil has been instrumental in developing Lastic, a **platform designed to streamline and enhance the blockspace marketplace**.
+**At Polkadot Decoded 2024, [Phil Lucsok](https://x.com/ph_lux), co-founder of Lastic**, delivered a comprehensive presentation on the dynamics of **Polkadot blockspace and coretime**. Along with his co-founder, [Aurora](https://x.com/poppyseedDev), Phil has been instrumental in developing Lastic, a **platform designed to streamline and enhance the blockspace marketplace**.
 
 ## Understanding Blockspace as a Commodity
 Phil began by addressing the fundamental nature of blockspace. Contrary to popular belief, blockspace is not a single commodity but a class of commodities. Each blockchain, such as Bitcoin, Ethereum, and Polkadot, provides unique blockspace with varying qualities in security, availability, and flexibility. For instance, while Bitcoin’s blockspace is primarily used for transactions and some inscriptions, **Polkadot’s relay chain and parachains offer highly flexible blockspace suitable for a wide range of applications**.

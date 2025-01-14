@@ -2,7 +2,7 @@
 title: 'Unleashing Omnichain Access with InvArch MPC'
 description: 'InvArch MPC is a groundbreaking solution for seamless blockchain interoperability and unified account management across multiple networks.'
 ---
-At the Polkadot Decoded 2024 event, Gabriel Facco de Arruda, founder and CTO of [**InvArch Network**](https://dablock.com/dapps/invarch-network/), presented a transformative solution aimed at addressing a critical challenge in the blockchain ecosystem: account fragmentation. This challenge arises as the future of Web3 envisions a seamless integration of thousands of chains and decentralized applications (dApps) into one global system of networks.
+At the Polkadot Decoded 2024 event, Gabriel Facco de Arruda, founder and CTO of **InvArch Network**, presented a transformative solution aimed at addressing a critical challenge in the blockchain ecosystem: account fragmentation. This challenge arises as the future of Web3 envisions a seamless integration of thousands of chains and decentralized applications (dApps) into one global system of networks.
 
 ## Blockchain Account Fragmentation and the Need for a Unified Solution
 In his presentation, Gabriel highlighted the fragmentation problem wherein every additional bridged network introduces another account for users to manage. This leads to a complex user experience where a single user might need multiple wallets and accounts to navigate the Web3 landscape. Such fragmentation is not only inconvenient but also limits the scalability and usability of blockchain technology across different platforms.

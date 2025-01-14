@@ -14,11 +14,11 @@ sidebar:
 ## The Genesis of Polkadot and Early DeFi Ventures
 Polkadot’s journey began with its Genesis block in May 2020, followed by the first parachain crowdloans in November 2021. The initial excitement was palpable, with Polkadot being touted as a solution to the blockchain trilemma by offering decentralization, interoperability, and scalability without compromise. This promise attracted a wave of builders, capital, and interest.
 Key early projects included:
-- [**Acala**](https://dablock.com/dapps/acala-network/): The first parachain, which aimed to provide DeFi infrastructure with customizable substrate layer primitives and an EVM+ environment for application development.
-- [**Moonbeam**](https://dablock.com/dapps/moonbeam-network/): The second parachain that became the entry point for users and liquidity, leveraging EVM compatibility and numerous bridges.
-- [**Interlay**](https://dablock.com/dapps/interlay/): Focused on decentralized bridging to bring Bitcoin into the Polkadot ecosystem through InterBTC.
-- [**Hydration**](https://dablock.com/dapps/hydration/): An app chain showcasing substrate’s customization capabilities.
-- [**Centrifuge**](https://dablock.com/dapps/centrifuge/): Pioneers in real-world assets (RWA), transitioning from Ethereum to a substrate solo chain and eventually a parachain.
+- **Acala**: The first parachain, which aimed to provide DeFi infrastructure with customizable substrate layer primitives and an EVM+ environment for application development.
+- **Moonbeam**: The second parachain that became the entry point for users and liquidity, leveraging EVM compatibility and numerous bridges.
+- **Interlay**: Focused on decentralized bridging to bring Bitcoin into the Polkadot ecosystem through InterBTC.
+- **Hydration**: An app chain showcasing substrate’s customization capabilities.
+- **Centrifuge**: Pioneers in real-world assets (RWA), transitioning from Ethereum to a substrate solo chain and eventually a parachain.
 
 ## The Challenges: A False Start
 Despite the initial hype, Polkadot’s DeFi journey faced significant setbacks. The ecosystem encountered several major issues:

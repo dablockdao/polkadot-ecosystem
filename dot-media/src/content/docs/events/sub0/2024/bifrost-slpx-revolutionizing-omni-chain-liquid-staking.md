@@ -7,18 +7,15 @@ sidebar:
 
 ![Tyrone Pan - Bifrost SLPx Liquid Staking](/src/assets/sub0-2024/bifrost.webp)
 
-At Sub0 2024, Tyrone Pan from [**Bifrost**](https://dablock.com/dapps/bifrost/) unveiled the **Bifrost SLPx**, an **omni-chain liquid staking solution** designed to streamline and enhance the staking experience across multiple blockchain ecosystems. This talk shed light on the principles, workings, and applications of the SLPx stack, illustrating how it stands to revolutionize liquid staking.
+At Sub0 2024, Tyrone Pan from **Bifrost**unveiled the **Bifrost SLPx**, an **omni-chain liquid staking solution** designed to streamline and enhance the staking experience across multiple blockchain ecosystems. This talk shed light on the principles, workings, and applications of the SLPx stack, illustrating how it stands to revolutionize liquid staking.
 
-Understanding Liquid Staking and Bifrost’s Role
------------------------------------------------
+## Understanding Liquid Staking and Bifrost’s Role
 
 ### **Liquid Staking Tokens (LSTs):**
-
 - **Representation Tokens:** Liquid staking tokens (LSTs) act as representation tokens for staked assets, enabling their use across various DeFi applications while still earning staking rewards.
 - **Middle Layer Functionality:** LSTs serve as a middle layer between applications and different blockchain layers, providing flexibility and liquidity to staked assets.
 
 ### **Bifrost’s Approach:**
-
 - **Omni-Chain Protocol:** Bifrost SLPx is designed to work seamlessly across multiple chains, including Polkadot, Cosmos, and EVM-compatible chains.
 - **V Tokens:** On Bifrost’s native chain, staked assets are converted into V tokens, which are liquid staking tokens that can be utilized across different protocols and chains.
 

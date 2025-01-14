@@ -8,7 +8,7 @@ sidebar:
 In a recent tech talk, Ghan Vashishtha from Zeeve Inc. presented an engaging workshop on deploying parachains with a focus on the ease of one-click deployment and thorough testing using Larch on Zombienet. This session, part of Zeeve’s Subzero series, highlighted the streamlined **processes and advanced tools that Zeeve offers to simplify and enhance parachain deployment and management**.
 
 ## Overview of Zeeve and Its Offerings
-[**Zeeve**](https://dablock.com/ecosystem/zeeve/) Inc. has been a pivotal player in the Web3 ecosystem, providing robust infrastructure solutions to enterprises globally. With a team of over 100 professionals, Zeeve has developed comprehensive solutions for deploying and managing parachains and app chains. The company’s offerings include a full-stack approach to parachain operations, covering everything from development setup to production deployment and ongoing management.
+**Zeeve** Inc. has been a pivotal player in the Web3 ecosystem, providing robust infrastructure solutions to enterprises globally. With a team of over 100 professionals, Zeeve has developed comprehensive solutions for deploying and managing parachains and app chains. The company’s offerings include a full-stack approach to parachain operations, covering everything from development setup to production deployment and ongoing management.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vRgaRvuK24ZhLW0CwzFbLrj2D3LsbBdPvlNl8ag746RlQIJEEU0OW4Jjlzx2DdIsyOOSLYX_4ftaCP1/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 

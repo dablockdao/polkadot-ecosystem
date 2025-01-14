@@ -4,7 +4,7 @@ description: 'Discover Identity Hub by KILT Protocol revolutionizing digital ide
 sidebar:
     label: Antonio Antonino (Kilt Protocol)
 ---
-In a significant leap towards enhancing digital identity management, Antonio Antonino from **[KILT Protocol](https://dablock.com/dapps/kilt-protocol/) introduced the concept of “*Identity Hub*” at [Polkadot Decoded 2024](https://dablock.com/web3-events/polkadot-decoded/)**. This innovative solution aims to be the next iteration of the People Chain, addressing critical issues of fragmentation and interoperability within and beyond the Polkadot ecosystem.
+In a significant leap towards enhancing digital identity management, Antonio Antonino from **KILT Protoco introduced the concept of “*Identity Hub*” at Polkadot Decoded 2024**. This innovative solution aims to be the next iteration of the People Chain, addressing critical issues of fragmentation and interoperability within and beyond the Polkadot ecosystem.
 
 ## Understanding Digital Identity in the Modern Era
 Digital identity is a crucial component in today’s interconnected world, facilitating access to digital services and ensuring secure online interactions. However, the current landscape is fragmented, **with various blockchain and non-blockchain systems operating in silos**. This disjointed approach not only complicates identity management but also hinders the seamless integration of services across different platforms.

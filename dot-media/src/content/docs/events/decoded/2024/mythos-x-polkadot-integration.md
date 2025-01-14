@@ -8,7 +8,7 @@ description: 'Discover the Mythos x Polkadot integration, enhancing blockchain g
 The event featured prominent figures from the blockchain and gaming industries, including Gautam Dhameja from Blockdeep Labs, Cameron Thacker from Mythical Games, and Alistair Singh from Snowfork. These experts discussed the intricate details of the Mythos project, its migration to Polkadot, and the critical role of Snowbridge in ensuring seamless interoperability between Ethereum and Polkadot.
 
 ## **The Evolution of Blockchain Gaming: From Ethereum to Polkadot**
-Mythical Games initially developed its first game, “Blancos Block Party,” on the EOS blockchain due to Ethereum’s limitations in transaction throughput and scalability. However, the shortcomings of EOS led [**Mythical Games** ](https://dablock.com/dapps/mythos-chain/)to explore more robust solutions. The team eventually chose Polkadot for its stability, throughput, and decentralized governance, making it a perfect fit for the expansive needs of blockchain gaming.
+Mythical Games initially developed its first game, “Blancos Block Party,” on the EOS blockchain due to Ethereum’s limitations in transaction throughput and scalability. However, the shortcomings of EOS led **Mythical Games**to explore more robust solutions. The team eventually chose Polkadot for its stability, throughput, and decentralized governance, making it a perfect fit for the expansive needs of blockchain gaming.
 
 ## Key Advantages of Polkadot for Mythos
 1. **Stability and Reliability**: Polkadot’s robust infrastructure ensures that applications remain functional and accessible, addressing concerns related to chain downtimes experienced on other platforms like Solana.
@@ -18,7 +18,7 @@ Mythical Games initially developed its first game, “Blancos Block Party,” on
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/pc7hqRADmPQ?si=y1uuknEZi0MyCMbY" title="YouTube video player" width="560"></iframe>
 
 ## Snowbridge: Bridging Ethereum and Polkadot
-A highlight of the integration is the [**Snowbridge**](https://dablock.com/dapps/snowbridge/), a trustless, decentralized bridge facilitating seamless token transfers between Ethereum and Polkadot. Alistair Singh elaborated on Snowbridge’s design principles, emphasizing its role in maintaining the integrity and continuity of Mythos’ ERC-20 tokens during the migration process. The bridge allows for one-click transfers, ensuring a user-friendly experience for both developers and end-users.
+A highlight of the integration is the **Snowbridge**, a trustless, decentralized bridge facilitating seamless token transfers between Ethereum and Polkadot. Alistair Singh elaborated on Snowbridge’s design principles, emphasizing its role in maintaining the integrity and continuity of Mythos’ ERC-20 tokens during the migration process. The bridge allows for one-click transfers, ensuring a user-friendly experience for both developers and end-users.
 
 ## Polkadot x Mythos Future Prospects and Ecosystem Growth
 Looking ahead, the Mythos x Polkadot integration aims to expand beyond token bridging. Upcoming features include support for Polkadot assets on Ethereum, generalized code execution between the two chains, and enhanced SDKs for easier integration. The project also explores potential use cases for NFT bridging, broadening the scope of digital asset interoperability.

@@ -5,7 +5,7 @@ sidebar:
     label: Parambir Singh (Polkassembly)
 ---
 
-In a recent talk at Polkadot Sub0 2024 Bangkok, **Parambir Singh** from [**Polkassembly**](https://dablock.com/dapps/polkassembly/) delved into the intricate world of governance and multisigs within the Polkadot ecosystem. This session provided a comprehensive overview of the evolution of Polkadot’s governance, the current state of multisigs, and the innovations brought forward by Polkassembly to streamline and enhance these processes.
+In a recent talk at Polkadot Sub0 2024 Bangkok, **Parambir Singh** from **Polkassembly** delved into the intricate world of governance and multisigs within the Polkadot ecosystem. This session provided a comprehensive overview of the evolution of Polkadot’s governance, the current state of multisigs, and the innovations brought forward by Polkassembly to streamline and enhance these processes.
 
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vQmenzqH-o_m_5Bot93o8gQp4MufLyKUfR_p1902zUSbuIxh046u1mzGeh6kyIHwefjmcHZVZfspm5S/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
 
@@ -26,13 +26,13 @@ Today, Polkadot boasts an advanced governance model known as OpenGov. This model
 - **Governance Stats**: The platform offers in-depth analytics on governance activities, helping users understand voting patterns, proposal outcomes, and participation levels.
 
 ## Advancements in Multisigs with Polkassembly
-One of the significant pain points in blockchain operations is the management of multisignature (multisig) accounts. Traditional methods for setting up and managing multisigs on Polkadot were cumbersome and often required deep technical knowledge. Polkassembly’s new multisig solution, [**PokaSafe**](https://dablock.com/dapps/polkasafe/), addresses these challenges head-on.
+One of the significant pain points in blockchain operations is the management of multisignature (multisig) accounts. Traditional methods for setting up and managing multisigs on Polkadot were cumbersome and often required deep technical knowledge. Polkassembly’s new multisig solution, **PokaSafe**, addresses these challenges head-on.
 
 #### Features of PokaSafe
 1. **Simplified Onboarding**: Setting up a multisig account is now a straightforward process involving just a few steps, similar to user-friendly web2 applications.
 2. **Comprehensive Transaction Management**: Users can categorize and label transactions for better accounting and management.
 3. **Batch Transfers**: The ability to execute multiple transfers in a single transaction, reducing complexity and saving time.
-4. **Cross-Network Integration**: [**PokaSafe**](https://dablock.com/dapps/polkasafe/) supports **multisigs that span across substrate-based and EVM-based networks**, enhancing flexibility and utility.
+4. **Cross-Network Integration**: **PokaSafe** supports **multisigs that span across substrate-based and EVM-based networks**, enhancing flexibility and utility.
 
 ## Polkassembly Future Directions and Innovations
 Polkassembly is continuously evolving to meet the needs of the Polkadot community. Future enhancements include:
@@ -43,4 +43,4 @@ Polkassembly is continuously evolving to meet the needs of the Polkadot communit
 <iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/LPsh8vu5wWs?si=VMVNzOnLtcOa2E5C" title="YouTube video player" width="560"></iframe>
 
 ### Conclusion
-Parambir Singh’s presentation at Sub0 highlighted the dynamic and evolving nature of governance within the Polkadot ecosystem. With innovations like OpenGov and [**PokaSafe**](https://dablock.com/dapps/polkasafe/), [**Polkassembly**](https://dablock.com/dapps/polkassembly/) is at the forefront of making decentralized governance more accessible, efficient, and transparent. These advancements not only improve the user experience but also strengthen the overall resilience and effectiveness of the Polkadot network.
+Parambir Singh’s presentation at Sub0 highlighted the dynamic and evolving nature of governance within the Polkadot ecosystem. With innovations like OpenGov and **PokaSafe**, **Polkassembly** is at the forefront of making decentralized governance more accessible, efficient, and transparent. These advancements not only improve the user experience but also strengthen the overall resilience and effectiveness of the Polkadot network.

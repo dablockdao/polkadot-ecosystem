@@ -5,7 +5,7 @@ sidebar:
     label: Jeff Burdges
 ---
 
-Sharding has become an indispensable component in scaling blockchain networks to handle real-world applications. **Jeff Burdges of the [Web3 Foundation](https://dablock.com/ecosystem/web3-foundation/)** recently delivered an insightful presentation titled “*WIP: Efficient Block-Auditing for Blockchains*“, shedding light on Polkadot’s innovative approach to sharding and block auditing. This article delves into the key aspects of his talk, exploring how Polkadot addresses the challenges of scalability, security, and efficiency in blockchain technology.
+Sharding has become an indispensable component in scaling blockchain networks to handle real-world applications. **Jeff Burdges of the Web3 Foundation** recently delivered an insightful presentation titled “*WIP: Efficient Block-Auditing for Blockchains*“, shedding light on Polkadot’s innovative approach to sharding and block auditing. This article delves into the key aspects of his talk, exploring how Polkadot addresses the challenges of scalability, security, and efficiency in blockchain technology.
 
 **The Necessity of Sharding in Blockchain Networks**
 ----------------------------------------------------

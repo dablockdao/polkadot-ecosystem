@@ -4,7 +4,7 @@ description: 'Explore Polkadot liquidity challenges and solutions, focusing on s
 sidebar:
     label: Nicolas Arevalo (Velocity Labs)
 ---
-The 2024 edition of Polkadot Decoded featured a crucial talk by **Nico, co-founder and CEO of [Velocity Labs](https://dablock.com/ecosystem/velocity-labs/)**, that delved deep into the liquidity challenges facing the Polkadot ecosystem. The presentation, titled “Opening the Floodgates of Liquidity for Polkadot,” addressed the pain points and potential solutions for enhancing liquidity across the Polkadot ecosystem, which has seen significant growth but still struggles to attract and retain liquidity comparable to its market cap and technological promise.
+The 2024 edition of Polkadot Decoded featured a crucial talk by **Nico, co-founder and CEO of Velocity Labs**, that delved deep into the liquidity challenges facing the Polkadot ecosystem. The presentation, titled “Opening the Floodgates of Liquidity for Polkadot,” addressed the pain points and potential solutions for enhancing liquidity across the Polkadot ecosystem, which has seen significant growth but still struggles to attract and retain liquidity comparable to its market cap and technological promise.
 
 ## The Current State of Polkadot Ecosystem LiquiditY
 Nico began his talk by outlining the current state of affairs within the [**Polkadot ecosystem**](https://dablock.com/ecosystem/). With 49 live parachains and a market cap of approximately $8 billion, Polkadot is positioned as a formidable player in the blockchain space. However, the ecosystem’s Total Value Locked (TVL) tells a different story, standing at a mere $125 million. This figure pales in comparison to Ethereum’s TVL and even to other layer-1 blockchains like Avalanche and Cosmos.
