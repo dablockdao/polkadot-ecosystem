@@ -2,7 +2,7 @@
 title: 'TofuNFT Marketplace'
 description: tofuNFT Marketplace is a decentralized platform for buying, selling, and trading non-fungible tokens (NFTs), developed by SCV.Finance.
 hero:
-  tagline: A EVM NFT Marketplace.
+  tagline: EVM NFT Marketplace.
   image: 
     file: ../../../../assets/dapps/nft-marketplaces/tofunft.png
   actions:
