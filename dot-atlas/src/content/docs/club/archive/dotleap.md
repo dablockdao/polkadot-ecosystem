@@ -1,6 +1,18 @@
 ---
 title: DotLeap
 description: DotLeap is a Polkadot newsletter providing the latest news, insights, and analyses. Follow on social media for timely updates
+hero:
+  tagline: Weekly newsletter for the Polkadot Ecosystem.
+  image: 
+    file: ../../../../assets/hub/initiatives/dotleap.png
+  actions:
+    - text: Site
+      link: https://newsletter.dotleap.com/
+      icon: external
+    - text: X
+      link: https://x.com/DotLeap
+      icon: external
+      variant: secondary
 ---
 
 **DotLeap is a comprehensive newsletter dedicated to providing in-depth coverage of the Polkadot ecosystem**. Curated by experts, it offers readers the latest updates, insights, and analyses on Polkadot’s developments, technological innovations, and strategic movements. The newsletter serves as a valuable resource for staying informed about governance proposals, staking opportunities, and key events within the community.

@@ -36,8 +36,36 @@
 }
 
 .sl-banner {
-	background: var(--sl-color-accent);
+	background: linear-gradient(135deg, #FF2670, #D30057);
+	font-family: Unbounded, sans-serif;
+	padding: 0.5rem 2rem !important;	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	border-radius: 8px;
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
+
+.sl-banner a {
+	color: #E4FF07 !important;
+	font-size: 17px;
+	text-decoration: none;
+	font-weight: 400;
+	transition: transform 0.3s ease, text-shadow 0.3s ease;
+	padding: 5px 25px 5px 25px;
+	border-radius: 10px;
+	background-color: #000;
+	border: solid 1px #E4FF07;
+
+	}
+
+.sl-banner a:hover {
+	transform: scale(1.05) rotate(0.5deg);
+	text-shadow: 0 0 10px #E4FF07, 
+				 0 0 20px #E4FF07, 
+				 0 0 30px #E4FF07;
+  }
 
 :root[data-theme='light'] {
 	--top-gradient-bg: hsla(319, 100%, 50%, 0.1);
@@ -751,16 +779,16 @@ header {
 }
 
 .sl-link-button.primary {
-    background-color: #1a1a1a;
+    background-color: #1a1a1a !important;
     color: #fff !important;
     border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	border: solid 1px #6E7391 !important;
 }
 
 [data-theme='light'] .sl-link-button.primary {
-    background-color: #DCE2E9;
+    background-color: #DCE2E9 !important;
     color: #000 !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+	border: solid 1px #DCE2E9 !important;
 }
 
 .sl-link-button.primary:hover {
@@ -776,6 +804,7 @@ header {
     color: #fff !important;
     padding: 10px 20px !important;
     box-shadow: none;
+	border: solid 1px #6E7391 !important;
 }
 
 [data-theme='light'] .sl-link-button.minimal {
