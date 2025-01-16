@@ -23,9 +23,9 @@ The portal comprises three independent but interconnected projects, each serving
 
 | **Section**             | **Domain**                                   | **Description**                                                 |
 |--------------------------|----------------------------------------------|-----------------------------------------------------------------|
-| [**Atlas**](https://polkadotecosystem.com/tools/) | [polkadotecosystem.com](https://polkadotecosystem.com)           | Directory of all projects and initiatives in the ecosystem.     |
-| [**Media**](https://polkadotecosystem.com/club/)  | [media.polkadotecosystem.com](https://media.polkadotecosystem.com) | Media coverage of events and interviews from the ecosystem.     |
-| [**News**](https://polkadotecosystem.com/dapps/)  | [news.polkadotecosystem.com](https://news.polkadotecosystem.com) | Comprehensive news, guides, and lists from the ecosystem.       |
+| [**Atlas**](https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-atlas) | [polkadotecosystem.com](https://polkadotecosystem.com)           | Directory of all projects and initiatives in the ecosystem.     |
+| [**Media**](https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-media)  | [media.polkadotecosystem.com](https://media.polkadotecosystem.com) | Media coverage of events and interviews from the ecosystem.     |
+| [**News**](https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-news)  | [news.polkadotecosystem.com](https://news.polkadotecosystem.com) | Comprehensive news, guides, and lists from the ecosystem.       |
 
 </div>
 
