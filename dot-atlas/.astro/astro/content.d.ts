@@ -158,13 +158,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
-"club/archive/dotleap.md": {
-	id: "club/archive/dotleap.md";
+"club/archive/dotleap.mdx": {
+	id: "club/archive/dotleap.mdx";
   slug: "club/archive/dotleap";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/archive/playproject.md": {
 	id: "club/archive/playproject.md";
   slug: "club/archive/playproject";
@@ -186,13 +186,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
-"club/archive/wizard-amigos.md": {
-	id: "club/archive/wizard-amigos.md";
+"club/archive/wizard-amigos.mdx": {
+	id: "club/archive/wizard-amigos.mdx";
   slug: "club/archive/wizard-amigos";
   body: string;
   collection: "docs";
   data: any
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/bounties/antiscam.mdx": {
 	id: "club/bounties/antiscam.mdx";
   slug: "club/bounties/antiscam";
@@ -1523,6 +1523,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: any
 } & { render(): Render[".md"] };
+"dapps/defi/magic-ramp.mdx": {
+	id: "dapps/defi/magic-ramp.mdx";
+  slug: "dapps/defi/magic-ramp";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
 "dapps/defi/moonwell.mdx": {
 	id: "dapps/defi/moonwell.mdx";
   slug: "dapps/defi/moonwell";
@@ -2688,6 +2695,13 @@ declare module 'astro:content' {
 "tools/wallets/nova-wallet.mdx": {
 	id: "tools/wallets/nova-wallet.mdx";
   slug: "tools/wallets/nova-wallet";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".mdx"] };
+"tools/wallets/plutowallet.mdx": {
+	id: "tools/wallets/plutowallet.mdx";
+  slug: "tools/wallets/plutowallet";
   body: string;
   collection: "docs";
   data: any
