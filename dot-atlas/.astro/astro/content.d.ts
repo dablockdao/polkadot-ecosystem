@@ -305,62 +305,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/business-development/harbour-industrial-capital.mdx": {
-	id: "club/business-development/harbour-industrial-capital.mdx";
-  slug: "club/business-development/harbour-industrial-capital";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/business-development/illusionist-group.md": {
-	id: "club/business-development/illusionist-group.md";
-  slug: "club/business-development/illusionist-group";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/business-development/magenta-labs.mdx": {
-	id: "club/business-development/magenta-labs.mdx";
-  slug: "club/business-development/magenta-labs";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/business-development/nftmozaic.mdx": {
-	id: "club/business-development/nftmozaic.mdx";
-  slug: "club/business-development/nftmozaic";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/business-development/papermoon.mdx": {
-	id: "club/business-development/papermoon.mdx";
-  slug: "club/business-development/papermoon";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/business-development/polkaport-east.mdx": {
-	id: "club/business-development/polkaport-east.mdx";
-  slug: "club/business-development/polkaport-east";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/business-development/scytale-digital.mdx": {
-	id: "club/business-development/scytale-digital.mdx";
-  slug: "club/business-development/scytale-digital";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/business-development/transistor.mdx": {
-	id: "club/business-development/transistor.mdx";
-  slug: "club/business-development/transistor";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
 "club/collectives/polkadot-ambassadors-collective.mdx": {
 	id: "club/collectives/polkadot-ambassadors-collective.mdx";
   slug: "club/collectives/polkadot-ambassadors-collective";
@@ -627,111 +571,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/media/astar-bulletin.md": {
-	id: "club/media/astar-bulletin.md";
-  slug: "club/media/astar-bulletin";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/media/distractive.mdx": {
-	id: "club/media/distractive.mdx";
-  slug: "club/media/distractive";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/dotcast.mdx": {
-	id: "club/media/dotcast.mdx";
-  slug: "club/media/dotcast";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/kusamarian.mdx": {
-	id: "club/media/kusamarian.mdx";
-  slug: "club/media/kusamarian";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/parachains-info.mdx": {
-	id: "club/media/parachains-info.mdx";
-  slug: "club/media/parachains-info";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/polkadot-en-espanol.md": {
-	id: "club/media/polkadot-en-espanol.md";
-  slug: "club/media/polkadot-en-espanol";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/media/polkadot-insider.mdx": {
-	id: "club/media/polkadot-insider.mdx";
-  slug: "club/media/polkadot-insider";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/polkadot-now.mdx": {
-	id: "club/media/polkadot-now.mdx";
-  slug: "club/media/polkadot-now";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/polkadotters.mdx": {
-	id: "club/media/polkadotters.mdx";
-  slug: "club/media/polkadotters";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/polkafrance.md": {
-	id: "club/media/polkafrance.md";
-  slug: "club/media/polkafrance";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/media/polkaworld.mdx": {
-	id: "club/media/polkaworld.mdx";
-  slug: "club/media/polkaworld";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/promoteam.mdx": {
-	id: "club/media/promoteam.mdx";
-  slug: "club/media/promoteam";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/the-dots.mdx": {
-	id: "club/media/the-dots.mdx";
-  slug: "club/media/the-dots";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/vds-academy.mdx": {
-	id: "club/media/vds-academy.mdx";
-  slug: "club/media/vds-academy";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/media/webzero.mdx": {
-	id: "club/media/webzero.mdx";
-  slug: "club/media/webzero";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
 "club/memecoins/beefy.mdx": {
 	id: "club/memecoins/beefy.mdx";
   slug: "club/memecoins/beefy";
@@ -767,139 +606,76 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/4ire-labs.md": {
-	id: "club/orgs/4ire-labs.md";
-  slug: "club/orgs/4ire-labs";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/orgs/amforc.mdx": {
-	id: "club/orgs/amforc.mdx";
-  slug: "club/orgs/amforc";
+"club/orgs/bd/harbour-industrial-capital.mdx": {
+	id: "club/orgs/bd/harbour-industrial-capital.mdx";
+  slug: "club/orgs/bd/harbour-industrial-capital";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/bld-nodes.md": {
-	id: "club/orgs/bld-nodes.md";
-  slug: "club/orgs/bld-nodes";
+"club/orgs/bd/illusionist-group.md": {
+	id: "club/orgs/bd/illusionist-group.md";
+  slug: "club/orgs/bd/illusionist-group";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/blockdeep-labs.mdx": {
-	id: "club/orgs/blockdeep-labs.mdx";
-  slug: "club/orgs/blockdeep-labs";
+"club/orgs/bd/magenta-labs.mdx": {
+	id: "club/orgs/bd/magenta-labs.mdx";
+  slug: "club/orgs/bd/magenta-labs";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/blockshard.md": {
-	id: "club/orgs/blockshard.md";
-  slug: "club/orgs/blockshard";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/orgs/bloclick-staking.md": {
-	id: "club/orgs/bloclick-staking.md";
-  slug: "club/orgs/bloclick-staking";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/orgs/boosty-labs.md": {
-	id: "club/orgs/boosty-labs.md";
-  slug: "club/orgs/boosty-labs";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/orgs/cardinal-cryptography.md": {
-	id: "club/orgs/cardinal-cryptography.md";
-  slug: "club/orgs/cardinal-cryptography";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/orgs/certhum.md": {
-	id: "club/orgs/certhum.md";
-  slug: "club/orgs/certhum";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/orgs/chainsafe.mdx": {
-	id: "club/orgs/chainsafe.mdx";
-  slug: "club/orgs/chainsafe";
+"club/orgs/bd/nftmozaic.mdx": {
+	id: "club/orgs/bd/nftmozaic.mdx";
+  slug: "club/orgs/bd/nftmozaic";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/coinfabrik.mdx": {
-	id: "club/orgs/coinfabrik.mdx";
-  slug: "club/orgs/coinfabrik";
+"club/orgs/bd/papermoon.mdx": {
+	id: "club/orgs/bd/papermoon.mdx";
+  slug: "club/orgs/bd/papermoon";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/coinstudio-validator.md": {
-	id: "club/orgs/coinstudio-validator.md";
-  slug: "club/orgs/coinstudio-validator";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/orgs/crifferent.md": {
-	id: "club/orgs/crifferent.md";
-  slug: "club/orgs/crifferent";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/orgs/dominodes.md": {
-	id: "club/orgs/dominodes.md";
-  slug: "club/orgs/dominodes";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"club/orgs/dragonstake.mdx": {
-	id: "club/orgs/dragonstake.mdx";
-  slug: "club/orgs/dragonstake";
+"club/orgs/bd/polkabiz.mdx": {
+	id: "club/orgs/bd/polkabiz.mdx";
+  slug: "club/orgs/bd/polkabiz";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/dwellir.mdx": {
-	id: "club/orgs/dwellir.mdx";
-  slug: "club/orgs/dwellir";
+"club/orgs/bd/polkaport-east.mdx": {
+	id: "club/orgs/bd/polkaport-east.mdx";
+  slug: "club/orgs/bd/polkaport-east";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/globalstake.mdx": {
-	id: "club/orgs/globalstake.mdx";
-  slug: "club/orgs/globalstake";
+"club/orgs/bd/scytale-digital.mdx": {
+	id: "club/orgs/bd/scytale-digital.mdx";
+  slug: "club/orgs/bd/scytale-digital";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/helikon-labs.mdx": {
-	id: "club/orgs/helikon-labs.mdx";
-  slug: "club/orgs/helikon-labs";
+"club/orgs/bd/transistor.mdx": {
+	id: "club/orgs/bd/transistor.mdx";
+  slug: "club/orgs/bd/transistor";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/iceberg-nodes.md": {
-	id: "club/orgs/iceberg-nodes.md";
-  slug: "club/orgs/iceberg-nodes";
+"club/orgs/bd/velocity-labs.mdx": {
+	id: "club/orgs/bd/velocity-labs.mdx";
+  slug: "club/orgs/bd/velocity-labs";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "club/orgs/index.mdx": {
 	id: "club/orgs/index.mdx";
   slug: "club/orgs";
@@ -907,254 +683,478 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/limechain.mdx": {
-	id: "club/orgs/limechain.mdx";
-  slug: "club/orgs/limechain";
+"club/orgs/infrastructure/amforc.mdx": {
+	id: "club/orgs/infrastructure/amforc.mdx";
+  slug: "club/orgs/infrastructure/amforc";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/masternode24.md": {
-	id: "club/orgs/masternode24.md";
-  slug: "club/orgs/masternode24";
+"club/orgs/infrastructure/bld-nodes.md": {
+	id: "club/orgs/infrastructure/bld-nodes.md";
+  slug: "club/orgs/infrastructure/bld-nodes";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/math-crypto.mdx": {
-	id: "club/orgs/math-crypto.mdx";
-  slug: "club/orgs/math-crypto";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/metaspan.mdx": {
-	id: "club/orgs/metaspan.mdx";
-  slug: "club/orgs/metaspan";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/moonsong-labs.mdx": {
-	id: "club/orgs/moonsong-labs.mdx";
-  slug: "club/orgs/moonsong-labs";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/oak-security.mdx": {
-	id: "club/orgs/oak-security.mdx";
-  slug: "club/orgs/oak-security";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/onfinality.mdx": {
-	id: "club/orgs/onfinality.mdx";
-  slug: "club/orgs/onfinality";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/opslayer.md": {
-	id: "club/orgs/opslayer.md";
-  slug: "club/orgs/opslayer";
+"club/orgs/infrastructure/blockshard.md": {
+	id: "club/orgs/infrastructure/blockshard.md";
+  slug: "club/orgs/infrastructure/blockshard";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/p2p-validator.mdx": {
-	id: "club/orgs/p2p-validator.mdx";
-  slug: "club/orgs/p2p-validator";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/paranodes.mdx": {
-	id: "club/orgs/paranodes.mdx";
-  slug: "club/orgs/paranodes";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/parity-technologies.mdx": {
-	id: "club/orgs/parity-technologies.mdx";
-  slug: "club/orgs/parity-technologies";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/pathrock.md": {
-	id: "club/orgs/pathrock.md";
-  slug: "club/orgs/pathrock";
+"club/orgs/infrastructure/bloclick-staking.md": {
+	id: "club/orgs/infrastructure/bloclick-staking.md";
+  slug: "club/orgs/infrastructure/bloclick-staking";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/polkabiz.mdx": {
-	id: "club/orgs/polkabiz.mdx";
-  slug: "club/orgs/polkabiz";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/polkachu.md": {
-	id: "club/orgs/polkachu.md";
-  slug: "club/orgs/polkachu";
+"club/orgs/infrastructure/certhum.md": {
+	id: "club/orgs/infrastructure/certhum.md";
+  slug: "club/orgs/infrastructure/certhum";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/polytope-labs.mdx": {
-	id: "club/orgs/polytope-labs.mdx";
-  slug: "club/orgs/polytope-labs";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/project-liberty.mdx": {
-	id: "club/orgs/project-liberty.mdx";
-  slug: "club/orgs/project-liberty";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/protofire.mdx": {
-	id: "club/orgs/protofire.mdx";
-  slug: "club/orgs/protofire";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/purestake.mdx": {
-	id: "club/orgs/purestake.mdx";
-  slug: "club/orgs/purestake";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/r0gue.mdx": {
-	id: "club/orgs/r0gue.mdx";
-  slug: "club/orgs/r0gue";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/rotko-networks.mdx": {
-	id: "club/orgs/rotko-networks.mdx";
-  slug: "club/orgs/rotko-networks";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/ryabina.md": {
-	id: "club/orgs/ryabina.md";
-  slug: "club/orgs/ryabina";
+"club/orgs/infrastructure/coinstudio-validator.md": {
+	id: "club/orgs/infrastructure/coinstudio-validator.md";
+  slug: "club/orgs/infrastructure/coinstudio-validator";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/sao-mai-games.md": {
-	id: "club/orgs/sao-mai-games.md";
-  slug: "club/orgs/sao-mai-games";
+"club/orgs/infrastructure/crifferent.md": {
+	id: "club/orgs/infrastructure/crifferent.md";
+  slug: "club/orgs/infrastructure/crifferent";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/scio-labs.mdx": {
-	id: "club/orgs/scio-labs.mdx";
-  slug: "club/orgs/scio-labs";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/senseinode.mdx": {
-	id: "club/orgs/senseinode.mdx";
-  slug: "club/orgs/senseinode";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/stake-plus.mdx": {
-	id: "club/orgs/stake-plus.mdx";
-  slug: "club/orgs/stake-plus";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/stakebaby.mdx": {
-	id: "club/orgs/stakebaby.mdx";
-  slug: "club/orgs/stakebaby";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/stakenode.md": {
-	id: "club/orgs/stakenode.md";
-  slug: "club/orgs/stakenode";
+"club/orgs/infrastructure/dominodes.md": {
+	id: "club/orgs/infrastructure/dominodes.md";
+  slug: "club/orgs/infrastructure/dominodes";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/stakeworld.md": {
-	id: "club/orgs/stakeworld.md";
-  slug: "club/orgs/stakeworld";
+"club/orgs/infrastructure/dragonstake.mdx": {
+	id: "club/orgs/infrastructure/dragonstake.mdx";
+  slug: "club/orgs/infrastructure/dragonstake";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/dwellir.mdx": {
+	id: "club/orgs/infrastructure/dwellir.mdx";
+  slug: "club/orgs/infrastructure/dwellir";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/globalstake.mdx": {
+	id: "club/orgs/infrastructure/globalstake.mdx";
+  slug: "club/orgs/infrastructure/globalstake";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/helikon-labs.mdx": {
+	id: "club/orgs/infrastructure/helikon-labs.mdx";
+  slug: "club/orgs/infrastructure/helikon-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/iceberg-nodes.md": {
+	id: "club/orgs/infrastructure/iceberg-nodes.md";
+  slug: "club/orgs/infrastructure/iceberg-nodes";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/staking4all.mdx": {
-	id: "club/orgs/staking4all.mdx";
-  slug: "club/orgs/staking4all";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/stateless-money.mdx": {
-	id: "club/orgs/stateless-money.mdx";
-  slug: "club/orgs/stateless-money";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"club/orgs/telekom-mms.md": {
-	id: "club/orgs/telekom-mms.md";
-  slug: "club/orgs/telekom-mms";
+"club/orgs/infrastructure/masternode24.md": {
+	id: "club/orgs/infrastructure/masternode24.md";
+  slug: "club/orgs/infrastructure/masternode24";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/turboflakes.md": {
-	id: "club/orgs/turboflakes.md";
-  slug: "club/orgs/turboflakes";
+"club/orgs/infrastructure/math-crypto.mdx": {
+	id: "club/orgs/infrastructure/math-crypto.mdx";
+  slug: "club/orgs/infrastructure/math-crypto";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/metaspan.mdx": {
+	id: "club/orgs/infrastructure/metaspan.mdx";
+  slug: "club/orgs/infrastructure/metaspan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/onfinality.mdx": {
+	id: "club/orgs/infrastructure/onfinality.mdx";
+  slug: "club/orgs/infrastructure/onfinality";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/opslayer.md": {
+	id: "club/orgs/infrastructure/opslayer.md";
+  slug: "club/orgs/infrastructure/opslayer";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/orgs/velocity-labs.mdx": {
-	id: "club/orgs/velocity-labs.mdx";
-  slug: "club/orgs/velocity-labs";
+"club/orgs/infrastructure/p2p-validator.mdx": {
+	id: "club/orgs/infrastructure/p2p-validator.mdx";
+  slug: "club/orgs/infrastructure/p2p-validator";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/web3-foundation.mdx": {
-	id: "club/orgs/web3-foundation.mdx";
-  slug: "club/orgs/web3-foundation";
+"club/orgs/infrastructure/paranodes.mdx": {
+	id: "club/orgs/infrastructure/paranodes.mdx";
+  slug: "club/orgs/infrastructure/paranodes";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/zeeve.mdx": {
-	id: "club/orgs/zeeve.mdx";
-  slug: "club/orgs/zeeve";
+"club/orgs/infrastructure/pathrock.md": {
+	id: "club/orgs/infrastructure/pathrock.md";
+  slug: "club/orgs/infrastructure/pathrock";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/infrastructure/polkachu.md": {
+	id: "club/orgs/infrastructure/polkachu.md";
+  slug: "club/orgs/infrastructure/polkachu";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/infrastructure/rotko-networks.mdx": {
+	id: "club/orgs/infrastructure/rotko-networks.mdx";
+  slug: "club/orgs/infrastructure/rotko-networks";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"club/orgs/zondax.mdx": {
-	id: "club/orgs/zondax.mdx";
-  slug: "club/orgs/zondax";
+"club/orgs/infrastructure/ryabina.md": {
+	id: "club/orgs/infrastructure/ryabina.md";
+  slug: "club/orgs/infrastructure/ryabina";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/infrastructure/senseinode.mdx": {
+	id: "club/orgs/infrastructure/senseinode.mdx";
+  slug: "club/orgs/infrastructure/senseinode";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/stake-plus.mdx": {
+	id: "club/orgs/infrastructure/stake-plus.mdx";
+  slug: "club/orgs/infrastructure/stake-plus";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/stakebaby.mdx": {
+	id: "club/orgs/infrastructure/stakebaby.mdx";
+  slug: "club/orgs/infrastructure/stakebaby";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/stakenode.md": {
+	id: "club/orgs/infrastructure/stakenode.md";
+  slug: "club/orgs/infrastructure/stakenode";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/infrastructure/stakeworld.md": {
+	id: "club/orgs/infrastructure/stakeworld.md";
+  slug: "club/orgs/infrastructure/stakeworld";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/infrastructure/staking4all.mdx": {
+	id: "club/orgs/infrastructure/staking4all.mdx";
+  slug: "club/orgs/infrastructure/staking4all";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/stateless-money.mdx": {
+	id: "club/orgs/infrastructure/stateless-money.mdx";
+  slug: "club/orgs/infrastructure/stateless-money";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/telekom-mms.md": {
+	id: "club/orgs/infrastructure/telekom-mms.md";
+  slug: "club/orgs/infrastructure/telekom-mms";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/infrastructure/turboflakes.md": {
+	id: "club/orgs/infrastructure/turboflakes.md";
+  slug: "club/orgs/infrastructure/turboflakes";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/marcoms/astar-bulletin.md": {
+	id: "club/orgs/marcoms/astar-bulletin.md";
+  slug: "club/orgs/marcoms/astar-bulletin";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/marcoms/distractive.mdx": {
+	id: "club/orgs/marcoms/distractive.mdx";
+  slug: "club/orgs/marcoms/distractive";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/dotcast.mdx": {
+	id: "club/orgs/marcoms/dotcast.mdx";
+  slug: "club/orgs/marcoms/dotcast";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/kusamarian.mdx": {
+	id: "club/orgs/marcoms/kusamarian.mdx";
+  slug: "club/orgs/marcoms/kusamarian";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/parachains-info.mdx": {
+	id: "club/orgs/marcoms/parachains-info.mdx";
+  slug: "club/orgs/marcoms/parachains-info";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/polkadot-en-espanol.md": {
+	id: "club/orgs/marcoms/polkadot-en-espanol.md";
+  slug: "club/orgs/marcoms/polkadot-en-espanol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/marcoms/polkadot-insider.mdx": {
+	id: "club/orgs/marcoms/polkadot-insider.mdx";
+  slug: "club/orgs/marcoms/polkadot-insider";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/polkadot-now.mdx": {
+	id: "club/orgs/marcoms/polkadot-now.mdx";
+  slug: "club/orgs/marcoms/polkadot-now";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/polkadotters.mdx": {
+	id: "club/orgs/marcoms/polkadotters.mdx";
+  slug: "club/orgs/marcoms/polkadotters";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/polkafrance.md": {
+	id: "club/orgs/marcoms/polkafrance.md";
+  slug: "club/orgs/marcoms/polkafrance";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/marcoms/polkaworld.mdx": {
+	id: "club/orgs/marcoms/polkaworld.mdx";
+  slug: "club/orgs/marcoms/polkaworld";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/promoteam.mdx": {
+	id: "club/orgs/marcoms/promoteam.mdx";
+  slug: "club/orgs/marcoms/promoteam";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/the-dots.mdx": {
+	id: "club/orgs/marcoms/the-dots.mdx";
+  slug: "club/orgs/marcoms/the-dots";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/vds-academy.mdx": {
+	id: "club/orgs/marcoms/vds-academy.mdx";
+  slug: "club/orgs/marcoms/vds-academy";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/webzero.mdx": {
+	id: "club/orgs/marcoms/webzero.mdx";
+  slug: "club/orgs/marcoms/webzero";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/4ire-labs.md": {
+	id: "club/orgs/software/4ire-labs.md";
+  slug: "club/orgs/software/4ire-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/software/blockdeep-labs.mdx": {
+	id: "club/orgs/software/blockdeep-labs.mdx";
+  slug: "club/orgs/software/blockdeep-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/boosty-labs.md": {
+	id: "club/orgs/software/boosty-labs.md";
+  slug: "club/orgs/software/boosty-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/software/cardinal-cryptography.md": {
+	id: "club/orgs/software/cardinal-cryptography.md";
+  slug: "club/orgs/software/cardinal-cryptography";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/software/chainsafe.mdx": {
+	id: "club/orgs/software/chainsafe.mdx";
+  slug: "club/orgs/software/chainsafe";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/coinfabrik.mdx": {
+	id: "club/orgs/software/coinfabrik.mdx";
+  slug: "club/orgs/software/coinfabrik";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/limechain.mdx": {
+	id: "club/orgs/software/limechain.mdx";
+  slug: "club/orgs/software/limechain";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/moonsong-labs.mdx": {
+	id: "club/orgs/software/moonsong-labs.mdx";
+  slug: "club/orgs/software/moonsong-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/oak-security.mdx": {
+	id: "club/orgs/software/oak-security.mdx";
+  slug: "club/orgs/software/oak-security";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/parity-technologies.mdx": {
+	id: "club/orgs/software/parity-technologies.mdx";
+  slug: "club/orgs/software/parity-technologies";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/polytope-labs.mdx": {
+	id: "club/orgs/software/polytope-labs.mdx";
+  slug: "club/orgs/software/polytope-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/project-liberty.mdx": {
+	id: "club/orgs/software/project-liberty.mdx";
+  slug: "club/orgs/software/project-liberty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/protofire.mdx": {
+	id: "club/orgs/software/protofire.mdx";
+  slug: "club/orgs/software/protofire";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/purestake.mdx": {
+	id: "club/orgs/software/purestake.mdx";
+  slug: "club/orgs/software/purestake";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/r0gue.mdx": {
+	id: "club/orgs/software/r0gue.mdx";
+  slug: "club/orgs/software/r0gue";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/sao-mai-games.md": {
+	id: "club/orgs/software/sao-mai-games.md";
+  slug: "club/orgs/software/sao-mai-games";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"club/orgs/software/scio-labs.mdx": {
+	id: "club/orgs/software/scio-labs.mdx";
+  slug: "club/orgs/software/scio-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/web3-foundation.mdx": {
+	id: "club/orgs/software/web3-foundation.mdx";
+  slug: "club/orgs/software/web3-foundation";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/zeeve.mdx": {
+	id: "club/orgs/software/zeeve.mdx";
+  slug: "club/orgs/software/zeeve";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/zondax.mdx": {
+	id: "club/orgs/software/zondax.mdx";
+  slug: "club/orgs/software/zondax";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">

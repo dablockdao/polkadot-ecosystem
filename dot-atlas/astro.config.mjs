@@ -123,17 +123,8 @@ export default defineConfig({
 						label: '💰 Bounties', collapsed: true, autogenerate: { directory: 'club/bounties' }
 					},
 					  {
-						label: '📺 Media', collapsed: true, autogenerate: { directory: 'club/media' }
-					},
-					  {
 						  label: '💼 Orgs', collapsed: true, autogenerate: { directory: 'club/orgs' }
 					  },
-					  {
-						label: '🖥️ Validators', collapsed: true, autogenerate: { directory: 'club/validators' }
-					},
-					{
-						label: '🤝 VCs & BD', collapsed: true, autogenerate: { directory: 'club/business-development' }
-					},
 					  {
 						label: '👥 Catalysts', collapsed: true, autogenerate: { directory: 'club/people' }
 					},
