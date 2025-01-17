@@ -40,7 +40,7 @@ DatDot can be utilized in various ways, catering to different user needs and dev
 DatDot is driven by a small group of open-source developers dedicated to providing social and technical infrastructure for the next-generation internet. The project’s code is available on GitHub, reflecting its commitment to transparency and community collaboration. Regular updates and announcements are shared on Twitter, and the community can engage via Discord and Cabal.
 
 ## Funding and Support
-The development of DatDot has been supported by the **Playproject**, private donations, the [**Web3 Foundation**](/club/orgs/web3-foundation/), and the **Polkadot treasury**. This funding underscores the project’s potential to transform P2P data sharing and storage.
+The development of DatDot has been supported by the **Playproject**, private donations, the [**Web3 Foundation**](/club/orgs/software/web3-foundation/), and the **Polkadot treasury**. This funding underscores the project’s potential to transform P2P data sharing and storage.
 
 ### Conclusion
 DatDot represents a significant advancement in P2P technology, offering a reliable and efficient solution for data sharing and storage. By automating the matchmaking process and ensuring the integrity of hosted data, DatDot paves the way for a more accessible and sovereign data ecosystem. As the project progresses towards its alpha release, it holds the promise of revolutionizing how data is managed and shared in decentralized networks.
