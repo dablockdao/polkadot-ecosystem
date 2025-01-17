@@ -1054,6 +1054,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"club/orgs/sao-mai-games.md": {
+	id: "club/orgs/sao-mai-games.md";
+  slug: "club/orgs/sao-mai-games";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "club/orgs/scio-labs.mdx": {
 	id: "club/orgs/scio-labs.mdx";
   slug: "club/orgs/scio-labs";
