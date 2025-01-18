@@ -135,7 +135,7 @@ root of the project, from a terminal:
 1. Clone the repository
 ```bash
 git clone https://github.com/dablockdao/polkadot-ecosystem.git
-cd polkadot-ecosystem
+cd polkadot-ecosystem/dot-atlas
 ```
 
 2. Install dependencies
