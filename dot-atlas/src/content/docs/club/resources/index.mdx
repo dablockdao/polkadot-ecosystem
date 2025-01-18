@@ -6,7 +6,9 @@ sidebar:
     badge: Feed
 ---
 
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, showcaseText } from 'starlight-showcases';
 import { Card, CardGrid, LinkCard, LinkButton, Aside } from '@astrojs/starlight/components';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
 This collection features curated documentation, tutorials, 
 and community guides designed to support developers, researchers, 
@@ -19,11 +21,8 @@ and engagement with Polkadot's innovative blockchain technology.
 </Aside>
 
 ## Community
+- [Polkadot Forum](https://forum.polkadot.network/)
 
-## Development
-- [Learn with Bruno](https://www.youtube.com/@brunopgalvao/videos): Youtube channel of Bruno Galvao, co-founder of [R0GUE](/club/orgs/software/r0gue), the creators of POP. Learn how to build on Polkadot.
-- **[Polkadot SDK Best Practices](https://libro.blockdeep.dev/index.html)**: This book compiles essential insights and best practices derived from BlockDeep's comprehensive code reviews across various Polkadot projects. The purpose of this guide is to help developers, reviewers, and contributors understand and address common issues that can arise in blockchain development when building with Polkadot SDK.
-- **[Tin Chung Blog](https://blog.chungquantin.com/)**: Interesting articles breaking down of the sharded network design of Polkadot and the Tanssi architecture.
 
 ## Marketing
 - **[Polkadot Brand Hub (notion)](https://distractive.notion.site/Polkadot-Brand-Hub-df6eda0f66df453ba6f7d2712f30d036)**: include branding as "*Powered by Polkadot*", "*Secured by Polkadot*" "*Funded by Polkadot*" in your marketing materials.
@@ -31,7 +30,17 @@ and engagement with Polkadot's innovative blockchain technology.
         - [Polkadot Icons Set](https://icons.polkadot.network/)
         - [Unbounded Font](https://unbounded.polkadot.network/)
 
+## Software Development
+- **[Polkadot Dev Docs](https://docs.polkadot.com/)
+- **[Substrate & Polkadot StackExchange Forum](https://substrate.stackexchange.com/):** Ask questions, find answers and collaborate at work with Stack Overflow forum for Substrate and Polkadot.
+- **[Awesome Substrate](https://github.com/polkadot-developers/awesome-substrate):** A curated list of awesome projects and resources related to the Substrate blockchain development framework.
+- **[Learn with Bruno](https://www.youtube.com/@brunopgalvao/videos):** Youtube channel of Bruno Galvao, co-founder of [R0GUE](/club/orgs/software/r0gue), the creators of POP. Learn how to build on Polkadot.
+- **[Polkadot SDK Best Practices](https://libro.blockdeep.dev/index.html)**: This book compiles essential insights and best practices derived from BlockDeep's comprehensive code reviews across various Polkadot projects. The purpose of this guide is to help developers, reviewers, and contributors understand and address common issues that can arise in blockchain development when building with Polkadot SDK.
+- **[Tin Chung Blog](https://blog.chungquantin.com/)**: Interesting articles breaking down of the sharded network design of Polkadot and the Tanssi architecture.
+
 ## Business Development
+- **[BizDev Bible](https://github.com/shawntabrizi/awesome-polkadot):** Access the original Awesome Polkadot repository with the full list by Shawn Tabrizi.
+- **[The Polkadot Playbook](https://github.com/shawntabrizi/awesome-polkadot/blob/master/playbook.md):** Simple, accurate answers to common questions about Polkadot, backed by extensive references and source material, empowering anyone to become a Polkadot ambassador.
 - **[Delivery Partners Directory](https://github.com/blockdeep/delivery-partners)**: Resource to help you find expert engineering partners capable of building with the Polkadot SDK or setting up the infrastructure to run your chain. List of delivery partners:
 
 <Card title="Delivery Partners List">
@@ -55,20 +64,35 @@ and engagement with Polkadot's innovative blockchain technology.
 
 
 ## Infrastructure
-
+- **[ONE-T - Substrate Blockchain Analytics](https://apps.turboflakes.io/#/dashboard) by TurboFlakes:** Monitor and explore the Polkadot network — search for your favourite Validators or Nomination Pools and visualize historic or realtime blockchain data analytics.
+- **[SCOUTY](https://github.com/turboflakes/scouty) by TurboFlakes:** A command-line interface (CLI) to keep an eye on substrate-based chains and hook things up.
+- **[CRUNCH](https://github.com/turboflakes/crunch) by TurboFlakes:** A command-line interface (CLI) to easily automate payouts of staking rewards on Substrate-based chains.
+- **[Validator Guides](https://stakeworld.io/docs/validate) by StakeWorld:** Introduction guide to set up a Polkadot validator node.
+- **[Snapshots](https://stakeworld.io/docs/snapshot) by Stakeworld:** Polkadot, Kusama and Paseo snapshots tool.
 
 ## Governance
+- [OpenGov.Watch](https://opengov.watch)
+- [OG Tracker](https://ogtracker.io)
+- [Subsquare](https://www.subsquare.io/)
+- [Polkassembly](https://polkassembly.io/)
+- [Polkadot Treasury Proposal Guidelines](https://docs.google.com/document/d/1IZykdp2cyQavcRyZd_dgNj5DcgxgZR6kAqGdcNARu1w/edit?tab=t.0#heading=h.gjdgxs)
 
 ## Ecosystem Blogs
 - [Basti's Blog](https://blog.kchr.de/)
+- [Kian's Meditations](https://blog.kianenigma.com/)
+- [Shawn Tabrizi's Blog](https://www.shawntabrizi.com/blog/)
 
 ## JAM
+- **[Gray Paper](https://graypaper.com/)**
 - **[Knowledge Map for JAM](https://github.com/openguild-labs/learn-jam)**
-
+- **[JAM Client Implementers](https://jamcha.in/clients)**
+- **[JAM Prize](https://jam.web3.foundation/)**
+- **[Gav's Unofficial JAM Prize Notes](https://hackmd.io/@polkadot/jamprize)**
+- **[Demystifying JAM](https://blog.kianenigma.com/posts/tech/demystifying-jam/) by Kian Paimani**
 
 ## Miscellaneous
 - **[Polkadot Inflation Model](https://dotless.xyz/)**: Interactive visualization of Polkadot's economic model
         - This visualization compares Polkadot's old (10% fixed) and new inflation models, as implemented through Referendum 1139. The chart shows how much DOT has been saved by switching to the new model.
 
-
+## Resources Feed
 <DirectoryLinks directory="club/resources" />
