@@ -487,6 +487,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"club/initiatives/dotcodeschool.mdx": {
+	id: "club/initiatives/dotcodeschool.mdx";
+  slug: "club/initiatives/dotcodeschool";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "club/initiatives/dotlake.mdx": {
 	id: "club/initiatives/dotlake.mdx";
   slug: "club/initiatives/dotlake";
@@ -644,6 +651,13 @@ declare module 'astro:content' {
 "club/orgs/bd/polkabiz.mdx": {
 	id: "club/orgs/bd/polkabiz.mdx";
   slug: "club/orgs/bd/polkabiz";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/bd/polkadot-community-foundation.mdx": {
+	id: "club/orgs/bd/polkadot-community-foundation.mdx";
+  slug: "club/orgs/bd/polkadot-community-foundation";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -1890,6 +1904,13 @@ declare module 'astro:content' {
 "dapps/nft-marketplaces/destore.mdx": {
 	id: "dapps/nft-marketplaces/destore.mdx";
   slug: "dapps/nft-marketplaces/destore";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"dapps/nft-marketplaces/dotmemo.mdx": {
+	id: "dapps/nft-marketplaces/dotmemo.mdx";
+  slug: "dapps/nft-marketplaces/dotmemo";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
