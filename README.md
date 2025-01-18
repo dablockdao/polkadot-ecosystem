@@ -118,7 +118,7 @@ We welcome contributions from the community! This project is maintained by Dablo
         - **[Polkadot Forum Announcement]()**
 
 ## Commands
-These docs are built using [Astro](https://github.com/withastro/astro) and [Starlight](https://github.com/withastro/starlight). All commands are run from the
+This portal is built using [Astro](https://github.com/withastro/astro) and [Starlight](https://github.com/withastro/starlight). All commands are run from the
 root of the project, from a terminal:
 
 | Command                   | Action                                           |
