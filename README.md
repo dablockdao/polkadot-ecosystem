@@ -1,6 +1,8 @@
+<a href="https://polkadotecosystem.com">
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/dotbanner.png" width="100%">
 </p>
+</a>
 
 <div align="center">
 <h1>Polkadot Ecosystem</h1>
@@ -115,7 +117,18 @@ We welcome contributions from the community! This project is maintained by Dablo
    - Join discussions in our forums or contribute ideas for improvement.
         - **[Polkadot Forum Announcement]()**
 
-> **Note:** This project is built with [AstroJS](https://github.com/withastro/astro) and [Starlight](https://github.com/withastro/starlight). While familiarity with these technologies is beneficial, it's not required to contribute to this project.
+## Commands
+These docs are built using [Astro][https://github.com/withastro/astro] and [Starlight][https://github.com/withastro/starlight]. All commands are run from the
+root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
 ### Installation
 
