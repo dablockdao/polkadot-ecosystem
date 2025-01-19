@@ -2454,6 +2454,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"tools/dev/polkadot-runtime-releaser.mdx": {
+	id: "tools/dev/polkadot-runtime-releaser.mdx";
+  slug: "tools/dev/polkadot-runtime-releaser";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/dev/polkadot-sdk.mdx": {
 	id: "tools/dev/polkadot-sdk.mdx";
   slug: "tools/dev/polkadot-sdk";
