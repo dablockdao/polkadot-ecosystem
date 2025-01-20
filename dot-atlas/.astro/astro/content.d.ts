@@ -774,6 +774,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/gtstaking.md": {
+	id: "club/orgs/infrastructure/gtstaking.md";
+  slug: "club/orgs/infrastructure/gtstaking";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "club/orgs/infrastructure/helikon-labs.mdx": {
 	id: "club/orgs/infrastructure/helikon-labs.mdx";
   slug: "club/orgs/infrastructure/helikon-labs";
