@@ -1,8 +1,16 @@
 ---
 title: Crifferent
-description: Experts in web3, crypto, and finance offering R&D, analytics, and engineering services. Trusted validators acros
+description: Experts in web3, crypto, and finance offering R&D, analytics, and engineering services. Trusted Polkadot validators.
 sidebar:
     label: ⭒ Crifferent
+hero:
+  tagline: Staking as a Service
+  image: 
+    file: ../../../../../assets/hub/orgs/crifferent.png
+  actions:
+    - text: Site
+      link: https://crifferent.de/
+      icon: external
 ---
 
 **Crifferent** is a cutting-edge company specializing in future technologies, software development, web3, crypto, and finance. With over ten years of experience, Crifferent positions itself as a reliable partner for research and evaluation in these domains. The company not only pursues its own R&amp;D campaigns but also offers research, analytics, and engineering services to clients.

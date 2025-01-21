@@ -1,0 +1,83 @@
+---
+// Hero2.astro
+---
+
+<section class="hero2">
+    <div class="hero-content">
+      <h1>All the Polkadot Ecosystem Curated in One Place</h1>
+      <p>
+        The hottest dApps, Solution Providers, Enterprises and Ecosystem Enablers like Guilds, VCs, Accelerators and Incubators in one place
+      </p>
+      <div class="button-group">
+        <a href="#list-project" class="button button-secondary">List Your Project</a>
+        <a href="#explore" class="button button-primary">Explore</a>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    .hero2 {
+      color: #fff;
+      padding: 6rem 2rem;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+  
+    p {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      line-height: 1.5;
+      margin-bottom: 2.5rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
+    }
+  
+    .button-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .button {
+      padding: 0.75rem 2rem;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+  
+    .button-primary {
+      background-color: #E91E63;
+      color: white;
+    }
+  
+    .button-primary:hover {
+      background-color: #D81B60;
+    }
+  
+    .button-secondary {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+  
+    .button-secondary:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  </style>
