@@ -305,6 +305,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"club/collectives/index.mdx": {
+	id: "club/collectives/index.mdx";
+  slug: "club/collectives";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "club/collectives/polkadot-ambassadors-collective.mdx": {
 	id: "club/collectives/polkadot-ambassadors-collective.mdx";
   slug: "club/collectives/polkadot-ambassadors-collective";

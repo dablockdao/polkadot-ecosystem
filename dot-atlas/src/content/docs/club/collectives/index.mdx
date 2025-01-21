@@ -1,0 +1,35 @@
+---
+title: Polkadot Collectives
+description: Explore Polkadot Collectives and Open Working Groups.
+tableOfContents: false
+sidebar: 
+    label: Collectives
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+The Polkadot Collectives are a critical evolution within the Polkadot ecosystem, designed to foster collaboration and decentralization on a broader scale. 
+These specialized governance groups enable communities to come together with shared goals, whether through creating decentralized organizations (DAOs), funding initiatives, or coordinating large-scale projects.
+
+## Polkadot Main Collectives
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/hub/daos/fellowship.png'),
+      href: '/club/collectives/polkadot-fellowship/',
+      title: 'Technical Fellowship',
+      description: 'Polkadot Ecosystem Developers Governance Body.',
+    }, 
+    {
+      thumbnail: import('/src/assets/hub/daos/ambassadors.png'),
+      href: '/club/collectives/polkadot-ambassadors-collective/',
+      title: 'Ambassador Collective',
+      description: 'A Path to Decentralized Community Growth of Polkadot.',
+      },
+  ]}
+/>
