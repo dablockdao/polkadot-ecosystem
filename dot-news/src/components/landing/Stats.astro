@@ -1,0 +1,115 @@
+---
+// Stats.astro
+---
+
+<section class="stats-section">
+    <div class="stats-container">
+      <div class="stats-content">
+        <h2>Ecosystem Growth at brightest glance</h2>
+        <p class="subtitle">Dive into key growth metrics showcasing the Polkadot ecosystem's rapid evolution.</p>
+        
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Projects Deployed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">DAOs Created</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1000+</span>
+            <span class="stat-label">Developers Community</span>
+          </div>
+        </div>
+      </div>
+      <div class="decorative-circle" aria-hidden="true"></div>
+    </div>
+  </section>
+  
+  <style>
+    .stats-section {
+      color: #fff;
+      padding: 4rem 2rem;
+    }
+  
+    .stats-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      overflow: hidden;
+    }
+  
+    .stats-content {
+      position: relative;
+      z-index: 2;
+    }
+  
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+  
+    .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.8;
+      margin-bottom: 3rem;
+      font-style: italic;
+    }
+  
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+  
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .stat-number {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      color: #E91E63;
+    }
+  
+    .stat-label {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+  
+    .decorative-circle {
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 200px;
+      height: 200px;
+      background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-01-21%20at%2017.54.19-ZZhAk4LZYGgMLQLzw6BbTCdJdGAiJ2.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.8;
+    }
+  
+    @media (max-width: 768px) {
+      .decorative-circle {
+        opacity: 0.2;
+      }
+      
+      .stats-container {
+        padding: 2rem 1.5rem;
+      }
+      
+      .stats-grid {
+        gap: 1.5rem;
+      }
+    }
+  </style>
