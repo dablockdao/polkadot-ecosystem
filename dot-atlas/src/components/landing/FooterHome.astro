@@ -1,0 +1,241 @@
+---
+// Footer.astro
+
+import { Icon } from '@astrojs/starlight/components';
+
+
+---
+
+<footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-nav">
+        <div class="footer-col">
+          <span>Tools</span>
+          <ul>
+            <li><a href="https://polkadotecosystem.com/tools/wallets">Wallets</a></li>
+            <li><a href="https://polkadotecosystem.com/tools/block-explorers">Block Explorers</a></li>
+            <li><a href="https://polkadotecosystem.com/tools/dao-tools">DAO Tools</a></li>
+            <li><a href="https://polkadotecosystem.com/tools/dev">Development Tools</a></li>
+            <li><a href="https://polkadotecosystem.com/tools/miscellaneous">Miscellaneous</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <span>Dapps</span>
+          <ul>
+            <li><a href="https://polkadotecosystem.com/dapps/defi">DeFi</a></li>
+            <li><a href="https://polkadotecosystem.com/dapps/bridges">Bridges</a></li>
+            <li><a href="https://polkadotecosystem.com/dapps/depin">DePin</a></li>
+            <li><a href="https://polkadotecosystem.com/dapps/ai">AI</a></li>
+            <li><a href="https://polkadotecosystem.com/dapps/gaming">Gaming</a></li>
+            <li><a href="https://polkadotecosystem.com/dapps/social">Social</a></li>
+            <li><a href="https://polkadotecosystem.com/dapps/smart-contracts">Smart Contracts</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <span>Community</span>
+          <ul>
+            <li><a href="https://polkadotecosystem.com/club/daos">DAOs</a></li>
+            <li><a href="https://polkadotecosystem.com/club/bounties">Bounties</a></li>
+            <li><a href="https://polkadotecosystem.com/club/collectives">Collectives</a></li>
+            <li><a href="https://polkadotecosystem.com/club/initiatives">Initiatives</a></li>
+            <li><a href="https://polkadotecosystem.com/club/orgs">Orgs</a></li>
+            <li><a href="https://polkadotecosystem.com/club/resources">Resources</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <span>Media</span>
+          <ul>
+            <li><a href="https://media.polkadotecosystem.com/events">Events</a></li>
+            <li><a href="https://media.polkadotecosystem.com/interviews">Interviews</a></li>
+            <li><a href="https://media.polkadotecosystem.com/creators">Creators</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <span>DOT Platforms</span>
+          <ul>
+            <li><a href="https://polkadot.com/" target="_blank" rel="noopener noreferrer">Polkadot Site⬈</a></li>
+            <li><a href="https://wiki.polkadot.network/" target="_blank" rel="noopener noreferrer">Polkadot Wiki⬈</a></li>
+            <li><a href="https://docs.polkadot.com/" target="_blank" rel="noopener noreferrer">Polkadot Docs⬈</a></li>
+            <li><a href="https://forum.polkadot.network/" target="_blank" rel="noopener noreferrer">Polkadot Forum⬈</a></li>
+            <li><a href="https://polkadot.com/community/ambassador-program" target="_blank" rel="noopener noreferrer">Polkadot Ambassadors⬈</a></li>
+            <li><a href="https://polkadot.com/community/events" target="_blank" rel="noopener noreferrer">Polkadot Events⬈</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <img class="logo" src="https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/ecosystem1.png" alt="Polkadot Ecosystem" width="125" height="50" />
+          <span class="copyright">©2025</span>
+        </div>
+  
+        <div class="social-links">
+          <a href="https://polkadot-discord.w3f.tools/" aria-label="Discord"><Icon name="discord" />          </a>
+          <a href="https://www.reddit.com/r/Polkadot/" aria-label="Reddit"><Icon name="reddit" />          </a>
+          <a href="https://github.com/paritytech/polkadot-sdk" aria-label="GitHub"><Icon name="github" />          </a>
+          <a href="https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw" aria-label="YouTube"><Icon name="youtube" />          </a>
+          <a href="https://x.com/Polkadot" aria-label="Twitter"><Icon name="x.com" />          </a>
+          <a href="https://www.instagram.com/polkadotnetwork/" aria-label="Instagram"><Icon name="instagram" />          </a>
+        </div>
+  
+        <a href="mailto:lv@dablock.com" class="get-in-touch">GET IN TOUCH</a>
+      </div>
+    </div>
+  </footer>
+  
+<style>
+
+.site-footer {
+    color: var(--text-color);
+    padding: 3rem 0;
+    border: solid 1px #2d2d2d;
+    border-radius: 25px;
+    background-color: var(--background-color);
+}
+  
+.footer-content {
+    width: 100%;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+  
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+  
+.footer-col span {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+    display: block;
+}
+  
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.footer-col li {
+    margin-bottom: 0.75rem;
+}
+  
+.footer-col a {
+  color: rgba(255, 255, 255, 0.8); 
+  text-decoration: none; 
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.footer-col a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ff007a; 
+  transition: width 0.3s ease; 
+}
+
+.footer-col a:hover {
+  color: #ff007a; 
+}
+
+.footer-col a:hover::after {
+  width: 100%; 
+}
+  
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.social-links {
+    display: flex;
+  align-items: center;
+  gap: 1rem; 
+  margin: auto 35px auto auto;
+}
+
+.social-links a svg {
+    font-size: 33px;
+}
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 1.5rem;
+    }
+  
+    .social-links a {
+      margin-right: 1rem;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .social-links a:hover {
+      color: #ff007a;
+    }
+  
+    .get-in-touch {
+      background-color: #ff007a;
+      color: #ffffff !important;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+  
+    .get-in-touch:hover {
+      background-color: #e6006b;
+    }
+  
+    .logo {
+      content: url('https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/ecosystem2.png');
+    }
+  
+    @media (max-width: 768px) {
+      .footer-nav {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+
+    :root[data-theme="light"] a {
+        color: #000000;
+    }
+
+    :root[data-theme="light"] {
+      --background-color: #ffffff;
+      --text-color: #000000;
+    }
+
+    :root[data-theme="dark"] {
+      --background-color: #000000;
+      --text-color: #ffffff;
+    }
+
+    :root[data-theme="light"] .logo {
+      content: url('https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/ecosystem1.png');
+    }
+
+</style>
+
