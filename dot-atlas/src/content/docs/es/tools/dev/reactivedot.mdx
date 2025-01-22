@@ -1,0 +1,59 @@
+---
+title: 'ReactiveDOT'
+description: 'Una librería liviana y reactiva para construir front-ends de Substrate de alto rendimiento, aprovechando Polkadot-API para un desarrollo fluido.'
+hero:
+  tagline: 'Transformando el Desarrollo Front-End en Substrate.'
+  image: 
+    file: ../../../../../assets/tools/dev/reactivedot.png
+  actions:
+    - text: 'Sitio'
+      link: https://reactivedot.dev/
+      icon: external
+    - text: 'Github'
+      link: https://github.com/tien/reactive-dot
+      icon: external
+      variant: secondary
+---
+
+**ReactiveDOT** es una innovadora y ligera librería reactiva creada para desarrollar aplicaciones front-end en Substrate. Diseñada teniendo en cuenta las necesidades de los desarrolladores modernos, ReactiveDOT se integra perfectamente con el ecosistema de Polkadot, aprovechando el potencial de la Polkadot-API para ofrecer una experiencia de desarrollo modular, eficiente y sencilla. Este artículo profundiza en sus características, capacidades y potencial, destacando el papel de ReactiveDOT como un elemento revolucionario para quienes desarrollan front-ends en Substrate.
+
+## Características Clave de ReactiveDOT
+1. **Alto Rendimiento y Ligereza**  
+   Una de las características más destacadas de ReactiveDOT es su enfoque en el rendimiento y la eficiencia. Al **cachear valores** y asegurar que múltiples lecturas de los mismos datos a lo largo de la aplicación se realicen sólo una vez, ReactiveDOT disminuye las operaciones redundantes y mantiene los datos constantemente actualizados. Esta optimización se traduce en aplicaciones más rápidas y una experiencia de usuario fluida.
+
+2. **Enfoque Centrado en Desarrolladores Front-End**  
+   ReactiveDOT pone un gran énfasis en la experiencia del desarrollador. Todos los valores en la librería son **reactivos**, lo cual facilita el trabajo con datos dinámicos. Además, incorpora **React Suspense** como un elemento de primera clase, ofreciendo sólidas capacidades de manejo asincrónico y de errores. Esto garantiza que los desarrolladores puedan crear aplicaciones altamente interactivas y resilientes con un esfuerzo mínimo.
+
+3. **Impulsado por Polkadot-API**  
+   ReactiveDOT se basa en la potente **Polkadot-API**, reconocida por su modularidad y composabilidad. La librería se alinea con una filosofía de “light-client first”, asegurando que los desarrolladores puedan construir aplicaciones escalables, eficientes y preparadas para el futuro.
+
+4. **Casos de Uso y Aplicaciones**  
+   ReactiveDOT es versátil, abarcando un amplio rango de casos de uso en el ecosistema de Polkadot, tales como:
+   - **Visor de Estadísticas Minimalistas y Bloques**: Los desarrolladores pueden crear rápidamente paneles de control para ver estadísticas de la cadena e información de bloques.  
+   - **Gestión de Conexión de Wallet**: Gracias a sus capacidades de integración, ReactiveDOT simplifica la conexión con monederos usando herramientas como DOT Connect.  
+   - **Consulta de Almacenamiento, Constantes y APIs de Runtime**: La librería permite consultar de forma eficiente datos on-chain, constantes y APIs de runtime.  
+   - **Generador de Extrinsics**: Desde enviar “remarks” sencillos hasta construir mensajes complejos entre cadenas (XCM), ReactiveDOT facilita el proceso.
+
+### Demostración Práctica: DOT Console
+Para demostrar sus capacidades, el creador de ReactiveDOT desarrolló la aplicación [DOT Console](https://dotconsole.app/). Este “developer console” demuestra:  
+- **Alto rendimiento** basado en Polkadot-API (PAPI).  
+- **Gestión de estado simplificada** e interfaces front-end optimizadas con ReactiveDOT.  
+- **Integración con monederos** y funciones avanzadas de consulta para cadenas Substrate.  
+
+El código fuente de este proyecto está disponible para el público, fomentando que los desarrolladores exploren y aporten al ecosistema. [Repositorio en GitHub](https://github.com/tien/dot-console)
+
+Puedes leer más sobre DOT Console en este post en el foro: [ReactiveDOT x PAPI](https://forum.polkadot.network/t/show-and-tell-reactivedot-x-papi/9388)
+
+### Cómo Empezar con ReactiveDOT
+La documentación de ReactiveDOT ofrece una guía clara para desarrolladores que buscan construir front-ends en Substrate. Entre sus puntos clave se incluyen:
+- **Facilidad de Configuración**: El diseño modular de la librería asegura un proceso de integración fluido.  
+- **Amplia Cobertura de la API**: Los desarrolladores tienen acceso a una gran variedad de hooks y utilidades, como `useQuery`, `useMutation` y `useConnectWallet`.  
+- **Soporte para Aplicaciones Multicadena**: ReactiveDOT simplifica la creación de DApps multicadena, posicionándose como la opción preferida para proyectos en el ecosistema de Polkadot.
+
+### La Visión detrás de ReactiveDOT
+El creador de ReactiveDOT, Tien, tiene la visión de **empoderar a los desarrolladores** en el ecosistema Polkadot. Al reconocer los desafíos de construir DApps front-end, Tien diseñó ReactiveDOT para **reducir la complejidad** y **mejorar la productividad** del desarrollador. Con un desarrollo y soporte continuos, ReactiveDOT aspira a convertirse en una herramienta esencial para desarrolladores de front-ends en Substrate.
+
+#### Conclusión
+ReactiveDOT representa un gran avance en el ecosistema de Polkadot, ofreciendo una solución de **alto rendimiento** y **amigable para desarrolladores** al momento de construir aplicaciones front-end en Substrate. Al centrarse en la reactividad, una arquitectura ligera y la integración con Polkadot-API, aborda puntos críticos que enfrentan los desarrolladores. Ya sea que estés construyendo un panel de control sencillo o una aplicación compleja multicadena, ReactiveDOT te ofrece las herramientas necesarias para triunfar. Explora ReactiveDOT hoy y experimenta el futuro del desarrollo de front-ends en Substrate.
+
+- [Publicación en el Foro](https://forum.polkadot.network/t/reactive-dot-a-reactive-library-for-building-substrate-front-ends/8655)

@@ -1,0 +1,63 @@
+---
+title: 'Ink!'
+description: 'Ink! es un lenguaje de contratos inteligentes basado en Rust para Substrate, optimizando la seguridad, escalabilidad y eficiencia en el desarrollo blockchain.'
+hero:
+  tagline: 'Desarrollo de Contratos Inteligentes en Substrate y Polkadot.'
+  image: 
+    file: ../../../../../assets/polkadot.webp
+  actions:
+    - text: 'Github'
+      link: https://github.com/use-ink/ink
+      icon: external
+    - text: 'Documentación'
+      link: https://use.ink/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+**Ink!** ha emergido como un lenguaje de contratos inteligentes de primer nivel, combinando el poder de Rust con la versatilidad de WebAssembly (Wasm).
+
+## ¿Qué es ink!?
+**Ink!** es un lenguaje específico de dominio embebido (eDSL) para escribir contratos inteligentes en Rust, diseñado específicamente para integrarse sin problemas con blockchains construidas usando el **marco Substrate**. Aprovecha la seguridad inherente, el rendimiento y los beneficios del ecosistema de Rust para ofrecer una solución robusta para el desarrollo de aplicaciones Web3.
+A diferencia de los ecosistemas blockchain tradicionales donde Solidity domina, ink! se enfoca en ofrecer características de vanguardia como mínima sobrecarga en tiempo de ejecución, seguridad de tipos y optimización avanzada. Esto lo convierte en una elección ideal para desarrolladores que priorizan la **seguridad, escalabilidad y compatibilidad cross-chain** en el ecosistema Polkadot.
+
+## Por qué Rust es la Columna Vertebral de ink!
+Rust, un lenguaje de programación de sistemas conocido por su rendimiento y seguridad, forma la columna vertebral de ink!. Fue elegido por su capacidad para producir binarios compactos, eliminar comportamientos indefinidos y soportar herramientas avanzadas. Las características clave que distinguen a Rust para el desarrollo de contratos inteligentes incluyen:
+- **Seguridad de Memoria:** Asegura una ejecución segura sin errores en tiempo de ejecución.
+- **Binarios Pequeños:** Ideal para el entorno blockchain, donde la eficiencia es primordial.
+- **Soporte Nativo para Wasm:** Soporte nativo para WebAssembly, la arquitectura de ejecución objetivo para ink!.
+- **Ecosistema Rico:** Herramientas como `rustfmt`, `clippy` y `rust-analyzer` se integran sin problemas, agilizando la experiencia de desarrollo.
+
+Al construir sobre Rust, ink! asegura que los desarrolladores puedan escribir contratos inteligentes seguros y eficientes mientras se benefician de los continuos avances del ecosistema de Rust.
+
+## ink! y WebAssembly: Una Pareja Perfecta para Blockchain
+En el núcleo de la filosofía de diseño de ink! se encuentra su dependencia de WebAssembly. Wasm, con su **alto rendimiento, independencia de plataforma y pequeño tamaño de binario**, se alinea perfectamente con los requisitos de los entornos blockchain. Asegura una ejecución determinista, un sandboxing robusto y compatibilidad con múltiples lenguajes de programación, empoderando aún más a los desarrolladores dentro del ecosistema Polkadot.
+
+## Videos de la Comunidad de ink!
+------------
+<ShowcaseYouTube
+  entries={[
+             {
+      href: 'https://www.youtube.com/watch?v=TrjPztapLXo',
+      title: 'Introducción a ink! - Polkadot Deep Dives',
+      description: 'Introducción a ink! y cómo facilita el desarrollo de contratos inteligentes seguros y eficientes en Polkadot.'
+          },
+                       {
+      href: 'https://www.youtube.com/watch?v=rm3M7VxuzbY',
+      title: 'Ink! Avanzado - Polkadot Deep Dives',
+      description: 'Exploración de características avanzadas de ink! y su integración con Substrate.'
+          },
+                       {
+      href: 'https://www.youtube.com/watch?v=SoNLZfsd0mQ',
+      title: 'Comienza a Construir dApps con ink! - Sub0 2023',
+      description: 'Tutorial sobre cómo iniciar el desarrollo de dApps usando ink! en el evento Sub0 2023.'
+          },
+                       {
+      href: 'https://www.youtube.com/watch?v=ZNVWkn9UUk0',
+      title: 'Contratos Inteligentes y ink! - Decoded 2023',
+      description: 'Discusión sobre el papel de ink! en el desarrollo de contratos inteligentes en el evento Decoded 2023.'
+          },
+  ]} />

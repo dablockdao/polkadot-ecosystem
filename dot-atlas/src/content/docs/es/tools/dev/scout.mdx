@@ -1,0 +1,51 @@
+---
+title: 'Scout'
+description: 'Scout es una herramienta de código abierto que ayuda a detectar vulnerabilidades en pallets de Substrate y contratos inteligentes ink!, reforzando la seguridad.'
+hero:
+  tagline: 'Identificando Vulnerabilidades y Técnicas de Detección en Substrate.'
+  image:
+    file: ../../../../../assets/hub/orgs/coinfabrik.png
+  actions:
+    - text: 'Github'
+      link: https://github.com/CoinFabrik/scout
+      icon: external
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+El auge de la tecnología blockchain ha incrementado la necesidad de contar con prácticas sólidas de seguridad, especialmente en el desarrollo de pallets y runtimes de Substrate. A pesar de la importancia de la codificación segura, todavía existe un vacío de herramientas efectivas diseñadas específicamente para detectar vulnerabilidades en pallets de Substrate. Las herramientas existentes para el análisis de código Rust y contratos inteligentes suelen no abordar los desafíos únicos del desarrollo de pallets, dejando a los desarrolladores, sin importar su nivel de experiencia, desprovistos de un apoyo adecuado.
+
+**Scout** se presenta como una innovadora solución de código abierto y extensible para afrontar estos desafíos. Al integrar técnicas avanzadas de detección de vulnerabilidades en los flujos de trabajo de los desarrolladores, Scout busca proteger el ecosistema de Substrate de forma proactiva. Este artículo profundiza en el desarrollo, las capacidades y el futuro de Scout, a la vez que destaca su papel a la hora de reforzar las buenas prácticas de seguridad en Substrate y en contratos inteligentes ink!.
+
+## La Evolución de Scout: Un Compañero de Seguridad de Código Abierto
+Scout es una herramienta de análisis estático creada para empoderar a los desarrolladores de blockchain con la capacidad de detectar vulnerabilidades en contratos inteligentes ink! y en pallets de Substrate. Surgió de la colaboración entre **CoinFabrik** y centros académicos como la Universidad de Buenos Aires, con el apoyo de organizaciones destacadas de la industria blockchain, entre ellas la **Web3 Foundation** y **Aleph Zero**.
+
+Inicialmente centrado en contratos inteligentes ink!, Scout
+
+integra una interfaz de línea de comandos (CLI) y una extensión para Visual Studio Code, facilitando así su integración en el flujo de trabajo de los desarrolladores. La herramienta detecta 23 clases de vulnerabilidades —incluyendo ataques de reentrada o variables de almacenamiento no inicializadas— permitiendo a los equipos identificar y corregir posibles fallos a lo largo del proceso de desarrollo. Con un diseño orientado al usuario, Scout simplifica el a menudo complejo proceso de codificación segura, haciéndolo accesible incluso para desarrolladores con una limitada experiencia en seguridad.
+
+## Ampliando el Alcance de Scout: de Contratos Inteligentes a Pallets de Substrate
+En su siguiente etapa, Scout extiende sus capacidades más allá de contratos inteligentes ink! para abarcar también los **pallets de Substrate**. La necesidad de esta ampliación resulta evidente, ya que las vulnerabilidades en el código de los pallets pueden comprometer la seguridad de parachains enteras. Por ejemplo, una función de minteo mal diseñada podría permitir a un atacante generar tokens ilimitados, provocando graves perjuicios a la red.
+
+La detección de este tipo de vulnerabilidades conlleva una gran complejidad. Incluso tras décadas de investigación en herramientas de análisis para lenguajes como C, todavía se descubren errores críticos. Con un enfoque robusto de análisis, Scout busca minimizar los falsos positivos, a la vez que detecta con precisión las vulnerabilidades. Técnicas como el *linting* —análisis de la sintaxis de un programa para detectar errores o malas prácticas— juegan un papel fundamental en este proceso.
+
+Durante la fase de desarrollo de Scout para contratos inteligentes ink!, **CoinFabrik** utilizó **Dylint**, una herramienta de linting para Rust, para crear detectores dinámicos y precisos de clases de vulnerabilidad específicas. Esta metodología, basada en la creación de contratos inteligentes de prueba que ejemplifican cada tipo de vulnerabilidad, garantizó la exactitud de los detectores de Scout. Ahora, este enfoque se está adaptando para los pallets de Substrate, con el objetivo de abordar sus particulares retos en materia de seguridad.
+
+## Integrando la Seguridad en el Ciclo de Desarrollo de Substrate
+El diseño de Scout prioriza la facilidad de uso, permitiendo a los desarrolladores incorporar controles de seguridad sin complicaciones en su proceso de desarrollo. Su extensión para VSCode ofrece advertencias emergentes a medida que se escribe código, mientras que la CLI genera completos informes de vulnerabilidades. Estas características garantizan que la seguridad no sea algo que se deje para el final, sino un componente integral de la cadena de desarrollo.
+
+En esta nueva fase, Scout se involucrará aún más con la comunidad de desarrolladores de Substrate para recopilar un conjunto de casos de prueba que reflejen fielmente las vulnerabilidades que se presentan en la realidad. Este esfuerzo colaborativo busca asegurar que Scout responda con eficacia a los retos de seguridad que surgen en el entorno de desarrollo. Con la participación de la comunidad, Scout podrá adaptarse a amenazas emergentes y mantenerse relevante en el entorno dinámico de la tecnología blockchain.
+
+### Colabora con el Desarrollo de Scout
+CoinFabrik invita a la comunidad de blockchain a contribuir al desarrollo de Scout compartiendo perspectivas, referencias o ejemplos de vulnerabilidades conocidas en el código y en pallets de Substrate. En concreto, el equipo de Scout busca:
+
+- Casos de vulnerabilidades reconocidas en código y pallets de Substrate.  
+- Reportes de auditorías realizadas en proyectos de Substrate.  
+- Investigación o herramientas de código abierto enfocadas en la detección de vulnerabilidades en Substrate.
+
+A través de la colaboración, Scout aspira a convertirse en un pilar de la programación segura dentro del ecosistema de Polkadot, permitiendo a los desarrolladores construir aplicaciones resilientes y reduciendo el riesgo de explotaciones.
+
+### Conclusión
+Scout supone un gran avance en cuanto a herramientas de seguridad para la industria blockchain, al proporcionar a los desarrolladores un método eficaz y accesible de detección de vulnerabilidades. Con la ampliación de sus capacidades a los pallets de Substrate, Scout desempeñará un rol determinante en el fortalecimiento del ecosistema Polkadot. Gracias al apoyo de la comunidad y a la constante innovación, Scout encarna la visión de un desarrollo blockchain seguro y pone las mejores prácticas de seguridad al alcance de todos los desarrolladores.
+
+Para conocer más o contribuir al desarrollo de Scout, visita el repositorio del proyecto o comparte tus ideas con el equipo de CoinFabrik. Juntos, podremos construir un ecosistema blockchain más sólido y seguro.

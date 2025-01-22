@@ -1,0 +1,101 @@
+---
+title: 'Polkadot.js'
+description: 'Suite de herramientas diseñadas para desarrolladores y usuarios avanzados dentro del ecosistema Polkadot.'
+hero:
+  tagline: 'Una potente suite de herramientas diseñada para desarrolladores de Polkadot.'
+  image: 
+    file: ../../../../../assets/tools/dev/polkadotjs.png
+  actions:
+    - text: 'Sitio'
+      link: https://polkadot.js.org/
+      icon: external
+    - text: 'Documentación'
+      link: https://polkadot.js.org/docs/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+**Polkadot-JS** es un conjunto de herramientas potentes diseñadas para que desarrolladores y usuarios avanzados interactúen con la blockchain de Polkadot a un nivel detallado. Este artículo ofrece una visión profunda de los distintos componentes de Polkadot-JS, explicando sus funcionalidades, casos de uso y cómo contribuyen al ecosistema más amplio de Polkadot.
+
+## Resumen de las Herramientas de Polkadot-JS
+Polkadot-JS incluye varias herramientas clave:
+1. **Polkadot-JS UI**
+2. **Polkadot-JS UI Desktop App**
+3. **Polkadot-JS Extension**
+4. **Polkadot-JS API**
+5. **Polkadot-JS Phishing List**
+
+Cada uno de estos componentes cumple un rol único para proporcionar una interfaz completa de interacción con la blockchain de Polkadot.
+
+### Polkadot-JS UI
+**Polkadot-JS UI** es una aplicación web que se carga en tu navegador y ofrece amplias funcionalidades más allá de las operaciones básicas de un monedero. Permite a los usuarios crear cuentas, enviar y recibir transacciones, gestionar la participación en staking y acceder a otras funciones avanzadas. La interfaz está disponible en dos versiones:  
+- Una versión estándar alojada en DNS con las últimas características.  
+- Una versión en IPFS, actualizada con menor frecuencia pero con mayor grado de descentralización.
+
+**Funciones Clave de Polkadot.js UI**:
+- **Gestión de Cuentas**: Crear, administrar y recuperar cuentas.  
+- **Gestión de Transacciones**: Enviar y recibir transacciones.  
+- **Staking**: Participar en staking, administrar validadores y ver recompensas de staking.  
+- **Gobernanza**: Participar en la gobernanza de Polkadot a través de votaciones y creación de propuestas.  
+- **Herramientas Avanzadas para Desarrolladores**: Consultar el estado de la cadena, interactuar con llamadas RPC y emitir extrinsics.
+
+### Polkadot-JS Extension
+La **Polkadot-JS Extension** es una herramienta de gestión de cuentas que funciona como un almacenamiento seguro de claves. Permite a los usuarios crear, importar y administrar cuentas, incluidas las importadas desde dispositivos Ledger o Parity Signer. No interactúa directamente con funciones en la cadena, pero proporciona una interfaz segura para la interacción con dApps compatibles con la extensión, como Polkadot-JS UI y Polkadot Staking Dashboard.
+
+**Funciones Clave**:
+- **Gestión de Cuentas**: Crear e importar cuentas, administrar llaves de forma segura.  
+- **Actualización de Metadata**: Asegurar la compatibilidad con la metadata más reciente de la cadena.  
+- **Seguridad**: Alertar a los usuarios sobre URLs maliciosas y bloquear automáticamente cuentas sospechosas.
+
+### Polkadot-JS API
+La **Polkadot-JS API** es una API de JavaScript que permite a los desarrolladores interactuar con la blockchain de Polkadot de forma programática. Genera interfaces de manera dinámica basadas en la metadata recuperada del nodo conectado, haciéndola altamente flexible y adaptable a distintas cadenas y versiones de runtime.
+
+**Funciones Clave**:
+- **Consulta de Datos On-Chain**: Recuperar el estado de la cadena, constantes y eventos.  
+- **Emisión de Extrinsics**: Enviar transacciones firmadas, sin firmar o inherentes a la cadena.  
+- **Generación Dinámica de Interfaces**: Adaptación automática a diferentes cadenas y versiones de runtime.
+
+### Polkadot-JS Phishing List
+La **Polkadot-JS Phishing List** es una lista curada de forma comunitaria sobre actores y operadores maliciosos. La extensión Polkadot-JS utiliza esta lista para advertir a los usuarios sobre URLs sospechosas y bloquear automáticamente cuentas incluidas en la lista. Esto fortalece la seguridad y protege a los usuarios contra ataques de phishing.
+
+## Uso de las Herramientas Polkadot-JS
+**Creación de una Cuenta**:
+1. Accede a la Polkadot-JS UI o a la Polkadot-JS Extension.  
+2. Sigue las indicaciones para crear una cuenta nueva, asegurándote de almacenar de forma segura la frase semilla o el archivo JSON de respaldo.
+
+**Consulta del Estado de la Cadena**:
+1. Abre Polkadot-JS UI y navega a Developer &gt; Chain state.  
+2. Selecciona el módulo y el método que quieras consultar, luego ejecuta la consulta para obtener los datos.
+
+**Emisión de Extrinsics**:
+1. Ve a la pestaña Extrinsics en Polkadot-JS UI.  
+2. Selecciona el tipo de transacción que deseas enviar, completa los parámetros requeridos y firma la transacción con tu cuenta.
+
+**Staking**:
+1. Ingresa a Network &gt; Staking en Polkadot-JS UI.  
+2. Gestiona tus operaciones de staking, incluyendo la vinculación de fondos, nominación de validadores y reclamo de recompensas.
+
+**Mejores Prácticas**:
+- **Usar Múltiples Cuentas**: Para mayor seguridad y privacidad, utiliza distintas cuentas para diferentes cadenas.  
+- **Aprovechar Proxies**: Utiliza pure proxies para administrar multisigs sin cambiar direcciones externas.  
+- **Participar en la Comunidad**: Contribuye a la Polkadot-JS Phishing List para ayudar a proteger a la comunidad de actores malintencionados.
+
+### Conclusión
+Polkadot-JS ofrece un conjunto completo de herramientas para que desarrolladores y usuarios avanzados interactúen con la blockchain de Polkadot. Desde la versátil Polkadot-JS UI hasta la robusta Polkadot-JS API, estas herramientas brindan amplias funcionalidades para gestionar cuentas, consultar datos, emitir transacciones y participar en gobernanza y staking. Tanto si eres un desarrollador construyendo sobre Polkadot como un usuario avanzado que gestiona operaciones complejas, Polkadot-JS te proporciona las herramientas necesarias para desenvolverte de manera efectiva en el ecosistema de Polkadot.
+
+## Videos de la Comunidad Polkadot.js
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=hgNl5KNGn24&list=PLIHT2Jhq922aCYrmDdy4js0ioQdNeAqtb&index=2',
+      title: 'Construyendo una dApp con polkadot.js, React y TypeScript: 1 - Introducción',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=ishrt1gqGYc&list=PLIHT2Jhq922aCYrmDdy4js0ioQdNeAqtb&index=2',
+      title: 'Construyendo una dApp con polkadot.js, React y TypeScript: 2 - Cómo conectarse con el RPC',
+    },
+  ]}
+/>
