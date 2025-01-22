@@ -1,0 +1,89 @@
+---
+title: Polkadot DeFi Dapps
+description: Explora los principales proyectos DeFi de Polkadot que están revolucionando las finanzas con soluciones innovadoras para liquidez, staking e interoperabilidad entre cadenas.
+tableOfContents: false
+sidebar: 
+    label: DeFi Dapps
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Explora los principales proyectos DeFi de Polkadot que están revolucionando las finanzas con soluciones innovadoras para liquidez, staking e interoperabilidad entre cadenas.
+Al fomentar la interoperabilidad entre cadenas, Polkadot habilita soluciones innovadoras para liquidez, staking e intercambios descentralizados (DEX). En este portal encontrarás todos los proyectos DeFi dentro del ecosistema Polkadot, mostrando sus contribuciones únicas y avances tecnológicos.
+
+## Polkadot DeFi Dapps y Proyectos
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/defi/hydration.png'),
+      href: '/es/dapps/defi/hydration/',
+      title: 'Hydration',
+      description: 'DEX, Préstamos y Créditos, ¡y mucho más!',
+    },
+                     {
+      thumbnail: import('/src/assets/dapps/defi/bifrost.png'),
+      href: '/es/dapps/defi/bifrost/',
+      title: 'Bifrost',
+      description: 'Staking líquido',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/defi/stellaswap.png'),
+      href: '/es/dapps/defi/stellaswap/',
+      title: 'Stellaswap',
+      description: 'DEX más popular de Polkadot EVM, en Moonbeam',
+      },
+              {
+      thumbnail: import('/src/assets/dapps/defi/beamswap.png'),
+      href: '/es/dapps/defi/beamswap/',
+      title: 'Beamswap',
+      description: 'DEX EVM',
+    },
+  ]}
+/>
+
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/defi/interlay-finance.png'),
+      href: '/es/dapps/defi/hydration/',
+      title: 'Interlay',
+    },
+                     {
+      thumbnail: import('/src/assets/dapps/defi/kylix-finance.png'),
+      href: '/es/dapps/defi/kylix-finance/',
+      title: 'Kylix Finance',
+
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/defi/polimec.png'),
+      href: '/es/dapps/defi/polimec/',
+      title: 'Polimec',
+      },
+              {
+      thumbnail: import('/src/assets/dapps/defi/pendulum.png'),
+      href: '/es/dapps/defi/pendulum/',
+      title: 'Pendulum',
+    },
+  ]}
+/>
+
+## Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=v0EL2E0f-hU',
+      title: '¡El Mejor DEX, Puente y Memecoins de Polkadot! - Alpha Airdrop',
+      description: 'La red Hydration se ha renombrado de HydraDX y actualmente es la mejor opción para transferir tus ETH al ecosistema Polkadot. Allí puedes intercambiar y cambiar a cualquier token nativo de Polkadot e incluso memecoins. Este video es puramente educativo.',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=XL6f4dPk6Rw',
+      title: '30M de Transacciones en 1 Mes 🚀 El Boom DeFi de Polkadot - The Kusamarian',
+      description: 'Nuevo mercado monetario de Hydration, que ofrece préstamos y créditos, y discute la próxima función para ganar con tokens liquidados gracias a Bifrost.',
+    },
+  ]} />

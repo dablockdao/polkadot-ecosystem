@@ -1,0 +1,75 @@
+---
+title: RegionX
+description: RegionX es un mercado descentralizado para el comercio de blockspace en Polkadot, ofreciendo soluciones flexibles y eficientes para la adquisición de blockspace.
+hero:
+  tagline: Comercio de blockspace en Polkadot.
+  image: 
+    file: ../../../../../assets/dapps/miscellaneous/regionx.png
+  actions:
+    - text: Dapp
+      link: https://app.regionx.tech/
+      icon: external
+    - text: Docs
+      link: https://docs.regionx.tech/docs
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton, ListCard } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+El uso eficiente de blockspace es fundamental para mantener la alta disponibilidad y el rendimiento de los sistemas descentralizados. El **ecosistema Polkadot**, conocido por su alta seguridad y flexibilidad, ofrece una plataforma robusta para soluciones innovadoras destinadas a optimizar el uso del blockspace. **RegionX es un mercado descentralizado diseñado para el comercio de blockspace dentro de la red Polkadot**. Este artículo explora los aspectos clave de RegionX, su modelo único de mercado y su impacto potencial en el ecosistema Polkadot.
+
+## Entendiendo el blockspace en el ecosistema Polkadot
+El blockspace es el producto fundamental de los sistemas de consenso descentralizados, representando la capacidad computacional y de almacenamiento requerida para ejecutar y finalizar operaciones. Dentro de la red Polkadot, el blockspace se caracteriza por tres propiedades clave:
+
+- **Calidad**: Seguridad del sistema de consenso subyacente, indicando resistencia a ataques.
+- **Disponibilidad**: Accesibilidad del blockspace, influenciada por las dinámicas de oferta y demanda.
+- **Flexibilidad**: El rango de operaciones que la blockchain subyacente puede soportar.
+
+Polkadot sobresale en la producción de blockspace de alta calidad gracias a su arquitectura multihilo, similar a un CPU, que permite el procesamiento en paralelo sin comprometer la seguridad. Su uso de la arquitectura **WebAssembly (WASM)** mejora aún más su flexibilidad, permitiendo la ejecución de una amplia variedad de códigos.
+
+## Mercado de blockspace de RegionX
+RegionX busca aprovechar las fortalezas de Polkadot al ofrecer un mercado para el comercio de blockspace. Este mercado utiliza las propiedades únicas de Polkadot para crear un entorno de comercio flexible y eficiente. A continuación, se presentan los componentes principales de RegionX:
+
+### Paradigma Agile Coretime
+RegionX utiliza el **paradigma Agile Coretime**, introduciendo dos nuevos métodos de asignación de Coretime en Polkadot:
+
+1. **Coretime por lotes**: Programado con antelación y asignado periódicamente a través de una cadena especializada llamada Coretime-chain, ideal para usuarios que planifican sus necesidades de blockspace con anticipación.
+2. **Coretime instantáneo**: Asignado según sea necesario, adecuado para tareas inmediatas o de corta duración.
+
+Estos métodos son similares a las instancias reservadas y bajo demanda en la computación en la nube, ofreciendo a los usuarios mayor flexibilidad y eficiencia.
+
+### Regiones: Los bloques de construcción del mercado
+En el mercado RegionX, el blockspace se comercializa como NFTs conocidos como “regiones,” que representan la propiedad del blockspace durante un período específico. Las regiones pueden subdividirse (particionarse) o compartirse (interlazarse), permitiendo patrones de uso personalizados. Esta flexibilidad aborda dos limitaciones principales de las compras directas de blockspace en la cadena Coretime:
+- **Asignación excesiva**: Las regiones de la cadena Coretime representan la propiedad de un núcleo completo de Polkadot durante 28 días, lo cual a menudo es más de lo necesario.
+- **Activación retrasada**: Las regiones solo se activan al inicio del próximo ciclo de 28 días, haciendo imposible el acceso inmediato.
+
+El mercado RegionX permite el comercio de regiones tanto próximas como activas, proporcionando a los usuarios un acceso más inmediato y personalizado al blockspace.
+
+### Modelo de precios dinámico
+A diferencia de los NFTs tradicionales, las regiones se deprecian en valor con el tiempo debido a sus plazos de uso. RegionX implementa un modelo de precios dinámico que refleja esta depreciación, calculando el precio en función del tiempo utilizable restante de una región. Este modelo asegura una representación precisa del valor y precios justos en el mercado.
+
+## Arquitectura técnica y funcionalidad entre cadenas
+RegionX se establece como una parachain dedicada dentro del ecosistema Polkadot, incorporando su funcionalidad de mercado a través de pallets de substrate. Utiliza **Cross-Consensus Messaging (XCM)** para la interacción fluida con otras parachains, facilitando la adquisición programática de blockspace.
+
+### Trabajadores off-chain y verificación de propiedades
+Para mantener propiedades precisas de las regiones, **RegionX emplea trabajadores off-chain para obtener y verificar registros de propiedades de la cadena Coretime**. Esto asegura que las propiedades se mantengan consistentes y precisas mientras residen en la parachain de RegionX.
+
+**Conclusión**
+A medida que el ecosistema Polkadot continúa creciendo, la gestión eficiente del blockspace se vuelve cada vez más crucial. RegionX ofrece una solución revolucionaria al crear un mercado dinámico y **flexible para el comercio de blockspace**. Al reducir las barreras de entrada y mejorar el acceso al blockspace, RegionX está preparado para fomentar un mayor desarrollo dentro de la red Polkadot, promoviendo la innovación y el crecimiento en el espacio blockchain.
+
+Con su modelo de mercado único y su sólida infraestructura técnica, RegionX se erige como un testimonio de las capacidades en evolución de las tecnologías descentralizadas y su potencial para transformar los ecosistemas blockchain.
+- <small>Token/s relacionados:</small> **DOT, KSM**
+- [Tweets by RegionX Labs](https://twitter.com/RegionXLabs%0A?ref_src=twsrc%5Etfw)
+
+## Videos de la comunidad de RegionX
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+        href: 'https://www.youtube.com/watch?v=d8UBA_0orKA',
+      title: 'La vida después de PBA con RegionX',
+    },
+  ]} />

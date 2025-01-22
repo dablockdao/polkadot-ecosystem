@@ -1,0 +1,67 @@
+---
+title: 'DAM Finance'
+description: La oferta principal de DAM Finance es su stablecoin descentralizada, d2o, que tiene como objetivo escalar la liquidez nativa para redes emergentes.
+hero:
+  tagline: d2o es una stablecoin omnichain nativa con utilidad en Polkadot
+  image: 
+    file: ../../../../../assets/dapps/defi/dam-finance.png
+  actions:
+    - text: Dapp
+      link: https://app.dam.finance/
+      icon: external
+    - text: Documentación
+      link: https://docs.dam.finance/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+DAM Finance, o Decentralized Asset Management Finance, es una plataforma innovadora en el espacio de finanzas descentralizadas (DeFi) que ofrece una infraestructura global de liquidez. Esta plataforma está diseñada para facilitar el movimiento de liquidez a través de diversas redes blockchain soberanas, convirtiéndola en una solución versátil y robusta para el paisaje moderno de DeFi. La oferta principal de DAM Finance es su stablecoin descentralizada, d2o, que tiene como objetivo escalar la liquidez nativa para redes emergentes sin los típicos compromisos asociados con soluciones tradicionales de puente.
+
+## Componentes Principales de DAM Finance
+1. **Stablecoin d2o**
+    - **Visión general**: d2o es una stablecoin omnichain diseñada para mantener un valor cercano a $1 por token. Sirve como un conducto de liquidez, canalizando liquidez de regiones donde es abundante hacia áreas donde más se necesita. Inicialmente, d2o está respaldado 1:1 con USDC en Ethereum.
+    - **Estabilidad del Peg**: El valor de d2o se estabiliza a través de un pool Curve stableswap en Moonbeam, permitiendo oportunidades de arbitraje para mantener el peg de $1. Si el precio se desvía, los arbitrajistas pueden comprar d2o cuando esté por debajo de $1 o venderlo cuando esté por encima de $1 para estabilizar su valor.
+    - **Comisiones**: Se cobra una comisión del 0.25% al canjear d2o, lo que asegura la sostenibilidad de la plataforma.
+
+2. **Protocolo dReservoir**
+    - **Funcionalidad**: El dReservoir es un protocolo descentralizado que permite la transferencia segura de valor entre blockchains. Funciona quemando activos en una blockchain y reacuñándolos en otra, comenzando con d2o. Este proceso facilita el movimiento de liquidez sin la necesidad de grandes pools de liquidez dentro de contratos puente.
+    - **Seguridad**: El dReservoir aprovecha el dGuardian, una aplicación de seguridad que monitorea las transacciones cross-chain para prevenir explotaciones y asegurar la integridad de los activos teletransportados.
+
+3. **Aplicación de Seguridad dGuardian**
+    - **Rol**: El dGuardian es una capa adicional de seguridad que supervisa la legitimidad de las actividades de teletransportación. Asegura que cada operación de acuñación siga una operación de quema, marcando y deteniendo cualquier transacción sospechosa para prevenir la acuñación no autorizada de tokens.
+    - **Funcionalidad**: En caso de una posible explotación, el dGuardian puede congelar cuentas para permitir investigaciones basadas en la comunidad. Esta medida temporal asegura la seguridad del ecosistema hasta que se resuelva el problema.
+
+## Infraestructura Técnica y Despliegue de DAM Finance
+1. **Acuñación y Teletransportación de d2o:** Los usuarios pueden acuñar d2o en Ethereum depositando USDC en una proporción 1:1. Una vez acuñado, d2o puede ser teletransportado a otras redes, como Moonbeam, a través del protocolo dReservoir. El proceso de teletransportación implica quemar d2o en la red de origen y reacuñarlo en la red de destino, facilitado por protocolos de mensajería cross-chain.
+2. **Redes de Despliegue:** d2o está actualmente desplegado en Ethereum y Moonbeam, con esfuerzos en curso para extender su disponibilidad a otras redes. Las direcciones de contrato son accesibles públicamente para transparencia y verificación.
+3. **Mensajería Inter-Blockchain:** DAM Finance utiliza protocolos de mensajería asincrónica, específicamente LayerZero y Hyperlane, para gestionar las comunicaciones cross-chain. Estos protocolos aseguran que los mensajes se envíen y reciban de manera confiable, habilitando la teletransportación de d2o de manera fluida y segura.
+
+## Interacción del Usuario e Integración en el Ecosistema de DAM Finance
+1. **Obtención y Uso de d2o:** Los usuarios pueden adquirir d2o a través de la aplicación web DAM Finance conectando sus wallets de Ethereum y convirtiendo USDC en d2o. Una vez obtenido, d2o puede ser utilizado dentro del ecosistema Moonbeam para diversas actividades DeFi, incluyendo comercio y cobertura contra la volatilidad del mercado.
+2. **Canje de d2o:** Los poseedores de d2o pueden canjear sus tokens de vuelta a USDC en Ethereum. El proceso de canje implica quemar d2o, con una pequeña tarifa deducida para apoyar las operaciones de la plataforma.
+3. **Utilidades Futuras:** La utilidad de d2o está en expansión, con planes de integrarlo aún más en el ecosistema Moonbeam y más allá. Esto incluye el uso de d2o como par de stablecoin nativo, un activo de reserva y un medio de intercambio para pagos.
+
+## Seguridad y Gobernanza de DAM Finance
+1. **Operaciones de dGuardian:** El dGuardian juega un papel crítico en el mantenimiento de la seguridad del ecosistema DAM. Al monitorear las transacciones y hacer cumplir los invariantes del protocolo, asegura que todas las actividades cross-chain sean legítimas y seguras.
+2. **Mejoras en el Protocolo:** DAM Finance está mejorando continuamente sus protocolos y explorando nuevas medidas de seguridad. Los desarrollos futuros pueden incluir la extensión de las capacidades del dGuardian a otros tokens y servicios dentro del ecosistema, mejorando la seguridad y la confianza general.
+
+### **Conclusión**
+DAM Finance representa un avance significativo en el espacio DeFi, ofreciendo una solución descentralizada y robusta para el movimiento de liquidez cross-chain. Con su innovadora stablecoin d2o, el seguro protocolo dReservoir y el sistema de seguridad vigilante dGuardian, DAM Finance está en camino de convertirse en una piedra angular del ecosistema Polkadot. Su compromiso con la transparencia, la seguridad y una experiencia de usuario fluida lo posiciona como líder en la facilitación del flujo escalable de liquidez a través de redes blockchain. A medida que DAM Finance continúa expandiéndose y evolucionando, promete ofrecer mayor eficiencia y fiabilidad en el paisaje financiero descentralizado.
+
+- <small>Tokens Relacionados:</small> **d2o**
+
+## Videos de la Comunidad de DAM Finance
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=3cAiWM4236Q',
+      title: 'Innovaciones de DAM Finance sin Puentes - Space Monkeys 104',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=xXo1l4fPTpY',
+      title: 'DAM Finance Teletransportación vs. Puentes de Activos',
+    },
+  ]} />

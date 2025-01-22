@@ -2300,6 +2300,202 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"es/dapps/defi/acala-network.mdx": {
+	id: "es/dapps/defi/acala-network.mdx";
+  slug: "es/dapps/defi/acala-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/algem.mdx": {
+	id: "es/dapps/defi/algem.mdx";
+  slug: "es/dapps/defi/algem";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/arthswap.mdx": {
+	id: "es/dapps/defi/arthswap.mdx";
+  slug: "es/dapps/defi/arthswap";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/astriddao.mdx": {
+	id: "es/dapps/defi/astriddao.mdx";
+  slug: "es/dapps/defi/astriddao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/beamswap.mdx": {
+	id: "es/dapps/defi/beamswap.mdx";
+  slug: "es/dapps/defi/beamswap";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/bifrost.mdx": {
+	id: "es/dapps/defi/bifrost.mdx";
+  slug: "es/dapps/defi/bifrost";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/ceres.md": {
+	id: "es/dapps/defi/ceres.md";
+  slug: "es/dapps/defi/ceres";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/defi/curve-finance.md": {
+	id: "es/dapps/defi/curve-finance.md";
+  slug: "es/dapps/defi/curve-finance";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/defi/dam-finance.mdx": {
+	id: "es/dapps/defi/dam-finance.mdx";
+  slug: "es/dapps/defi/dam-finance";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/darwinia.mdx": {
+	id: "es/dapps/defi/darwinia.mdx";
+  slug: "es/dapps/defi/darwinia";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/hydration.mdx": {
+	id: "es/dapps/defi/hydration.mdx";
+  slug: "es/dapps/defi/hydration";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/index.mdx": {
+	id: "es/dapps/defi/index.mdx";
+  slug: "es/dapps/defi";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/interlay.mdx": {
+	id: "es/dapps/defi/interlay.mdx";
+  slug: "es/dapps/defi/interlay";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/kylix-finance.mdx": {
+	id: "es/dapps/defi/kylix-finance.mdx";
+  slug: "es/dapps/defi/kylix-finance";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/linear-finance.md": {
+	id: "es/dapps/defi/linear-finance.md";
+  slug: "es/dapps/defi/linear-finance";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/defi/magic-ramp.mdx": {
+	id: "es/dapps/defi/magic-ramp.mdx";
+  slug: "es/dapps/defi/magic-ramp";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/moonwell.mdx": {
+	id: "es/dapps/defi/moonwell.mdx";
+  slug: "es/dapps/defi/moonwell";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/pendulum.mdx": {
+	id: "es/dapps/defi/pendulum.mdx";
+  slug: "es/dapps/defi/pendulum";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/polimec.mdx": {
+	id: "es/dapps/defi/polimec.mdx";
+  slug: "es/dapps/defi/polimec";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/polkadex.mdx": {
+	id: "es/dapps/defi/polkadex.mdx";
+  slug: "es/dapps/defi/polkadex";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/polkamarkets.mdx": {
+	id: "es/dapps/defi/polkamarkets.mdx";
+  slug: "es/dapps/defi/polkamarkets";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/polkaswap.mdx": {
+	id: "es/dapps/defi/polkaswap.mdx";
+  slug: "es/dapps/defi/polkaswap";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/solarbeam.md": {
+	id: "es/dapps/defi/solarbeam.md";
+  slug: "es/dapps/defi/solarbeam";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/defi/starfish-finance.md": {
+	id: "es/dapps/defi/starfish-finance.md";
+  slug: "es/dapps/defi/starfish-finance";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/defi/stellaswap.mdx": {
+	id: "es/dapps/defi/stellaswap.mdx";
+  slug: "es/dapps/defi/stellaswap";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/taiga-protocol.md": {
+	id: "es/dapps/defi/taiga-protocol.md";
+  slug: "es/dapps/defi/taiga-protocol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/defi/zeitgeist.mdx": {
+	id: "es/dapps/defi/zeitgeist.mdx";
+  slug: "es/dapps/defi/zeitgeist";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/defi/zenlink.mdx": {
+	id: "es/dapps/defi/zenlink.mdx";
+  slug: "es/dapps/defi/zenlink";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "es/dapps/depin/acurast.mdx": {
 	id: "es/dapps/depin/acurast.mdx";
   slug: "es/dapps/depin/acurast";
@@ -2331,6 +2527,314 @@ declare module 'astro:content' {
 "es/dapps/depin/robonomics.mdx": {
 	id: "es/dapps/depin/robonomics.mdx";
   slug: "es/dapps/depin/robonomics";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/gaming/age-of-chronos.mdx": {
+	id: "es/dapps/gaming/age-of-chronos.mdx";
+  slug: "es/dapps/gaming/age-of-chronos";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/gaming/ajuna-network.mdx": {
+	id: "es/dapps/gaming/ajuna-network.mdx";
+  slug: "es/dapps/gaming/ajuna-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/gaming/bitcountry.md": {
+	id: "es/dapps/gaming/bitcountry.md";
+  slug: "es/dapps/gaming/bitcountry";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/gaming/cosmize.md": {
+	id: "es/dapps/gaming/cosmize.md";
+  slug: "es/dapps/gaming/cosmize";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/gaming/evrloot.mdx": {
+	id: "es/dapps/gaming/evrloot.mdx";
+  slug: "es/dapps/gaming/evrloot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/gaming/exiled-racers.mdx": {
+	id: "es/dapps/gaming/exiled-racers.mdx";
+  slug: "es/dapps/gaming/exiled-racers";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/gaming/gamedao.mdx": {
+	id: "es/dapps/gaming/gamedao.mdx";
+  slug: "es/dapps/gaming/gamedao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/gaming/glmr-apes-the-great-escape.mdx": {
+	id: "es/dapps/gaming/glmr-apes-the-great-escape.mdx";
+  slug: "es/dapps/gaming/glmr-apes-the-great-escape";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/gaming/heal3.mdx": {
+	id: "es/dapps/gaming/heal3.mdx";
+  slug: "es/dapps/gaming/heal3";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/gaming/index.mdx": {
+	id: "es/dapps/gaming/index.mdx";
+  slug: "es/dapps/gaming";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/gaming/moonfit.md": {
+	id: "es/dapps/gaming/moonfit.md";
+  slug: "es/dapps/gaming/moonfit";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/gaming/mythos-chain.mdx": {
+	id: "es/dapps/gaming/mythos-chain.mdx";
+  slug: "es/dapps/gaming/mythos-chain";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/gaming/odyssey.md": {
+	id: "es/dapps/gaming/odyssey.md";
+  slug: "es/dapps/gaming/odyssey";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/gaming/zero-network.md": {
+	id: "es/dapps/gaming/zero-network.md";
+  slug: "es/dapps/gaming/zero-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/index.mdx": {
+	id: "es/dapps/index.mdx";
+  slug: "es/dapps";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/agrotoken.mdx": {
+	id: "es/dapps/miscellaneous/agrotoken.mdx";
+  slug: "es/dapps/miscellaneous/agrotoken";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/archisinal.mdx": {
+	id: "es/dapps/miscellaneous/archisinal.mdx";
+  slug: "es/dapps/miscellaneous/archisinal";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/ava-protocol.mdx": {
+	id: "es/dapps/miscellaneous/ava-protocol.mdx";
+  slug: "es/dapps/miscellaneous/ava-protocol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/aventus-network.mdx": {
+	id: "es/dapps/miscellaneous/aventus-network.mdx";
+  slug: "es/dapps/miscellaneous/aventus-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/citizend.md": {
+	id: "es/dapps/miscellaneous/citizend.md";
+  slug: "es/dapps/miscellaneous/citizend";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/miscellaneous/composable-finance.md": {
+	id: "es/dapps/miscellaneous/composable-finance.md";
+  slug: "es/dapps/miscellaneous/composable-finance";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/miscellaneous/hashed-network.mdx": {
+	id: "es/dapps/miscellaneous/hashed-network.mdx";
+  slug: "es/dapps/miscellaneous/hashed-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/ideal-network.mdx": {
+	id: "es/dapps/miscellaneous/ideal-network.mdx";
+  slug: "es/dapps/miscellaneous/ideal-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/index.mdx": {
+	id: "es/dapps/miscellaneous/index.mdx";
+  slug: "es/dapps/miscellaneous";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/integritee.mdx": {
+	id: "es/dapps/miscellaneous/integritee.mdx";
+  slug: "es/dapps/miscellaneous/integritee";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/laos-network.mdx": {
+	id: "es/dapps/miscellaneous/laos-network.mdx";
+  slug: "es/dapps/miscellaneous/laos-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/lastic.mdx": {
+	id: "es/dapps/miscellaneous/lastic.mdx";
+  slug: "es/dapps/miscellaneous/lastic";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/regionx.mdx": {
+	id: "es/dapps/miscellaneous/regionx.mdx";
+  slug: "es/dapps/miscellaneous/regionx";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/t3rn.mdx": {
+	id: "es/dapps/miscellaneous/t3rn.mdx";
+  slug: "es/dapps/miscellaneous/t3rn";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/true-network.mdx": {
+	id: "es/dapps/miscellaneous/true-network.mdx";
+  slug: "es/dapps/miscellaneous/true-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/miscellaneous/xx-network.mdx": {
+	id: "es/dapps/miscellaneous/xx-network.mdx";
+  slug: "es/dapps/miscellaneous/xx-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/nft-marketplaces/artzero.mdx": {
+	id: "es/dapps/nft-marketplaces/artzero.mdx";
+  slug: "es/dapps/nft-marketplaces/artzero";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/nft-marketplaces/bluez.mdx": {
+	id: "es/dapps/nft-marketplaces/bluez.mdx";
+  slug: "es/dapps/nft-marketplaces/bluez";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/nft-marketplaces/destore.mdx": {
+	id: "es/dapps/nft-marketplaces/destore.mdx";
+  slug: "es/dapps/nft-marketplaces/destore";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/nft-marketplaces/dotmemo.mdx": {
+	id: "es/dapps/nft-marketplaces/dotmemo.mdx";
+  slug: "es/dapps/nft-marketplaces/dotmemo";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/nft-marketplaces/index.mdx": {
+	id: "es/dapps/nft-marketplaces/index.mdx";
+  slug: "es/dapps/nft-marketplaces";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/nft-marketplaces/kodadot.mdx": {
+	id: "es/dapps/nft-marketplaces/kodadot.mdx";
+  slug: "es/dapps/nft-marketplaces/kodadot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/nft-marketplaces/moonbeans.mdx": {
+	id: "es/dapps/nft-marketplaces/moonbeans.mdx";
+  slug: "es/dapps/nft-marketplaces/moonbeans";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/nft-marketplaces/nftrade.md": {
+	id: "es/dapps/nft-marketplaces/nftrade.md";
+  slug: "es/dapps/nft-marketplaces/nftrade";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/nft-marketplaces/public-pressure.md": {
+	id: "es/dapps/nft-marketplaces/public-pressure.md";
+  slug: "es/dapps/nft-marketplaces/public-pressure";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/nft-marketplaces/singular-nft-marketplace.mdx": {
+	id: "es/dapps/nft-marketplaces/singular-nft-marketplace.mdx";
+  slug: "es/dapps/nft-marketplaces/singular-nft-marketplace";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/nft-marketplaces/sonova.md": {
+	id: "es/dapps/nft-marketplaces/sonova.md";
+  slug: "es/dapps/nft-marketplaces/sonova";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/nft-marketplaces/tofunft-marketplace.md": {
+	id: "es/dapps/nft-marketplaces/tofunft-marketplace.md";
+  slug: "es/dapps/nft-marketplaces/tofunft-marketplace";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/nft-marketplaces/unique-network.mdx": {
+	id: "es/dapps/nft-marketplaces/unique-network.mdx";
+  slug: "es/dapps/nft-marketplaces/unique-network";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -2380,6 +2884,181 @@ declare module 'astro:content' {
 "es/dapps/rwa/xcavate.mdx": {
 	id: "es/dapps/rwa/xcavate.mdx";
   slug: "es/dapps/rwa/xcavate";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/smart-contracts/aleph-zero.mdx": {
+	id: "es/dapps/smart-contracts/aleph-zero.mdx";
+  slug: "es/dapps/smart-contracts/aleph-zero";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/smart-contracts/astar-network.mdx": {
+	id: "es/dapps/smart-contracts/astar-network.mdx";
+  slug: "es/dapps/smart-contracts/astar-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/smart-contracts/energy-webx.mdx": {
+	id: "es/dapps/smart-contracts/energy-webx.mdx";
+  slug: "es/dapps/smart-contracts/energy-webx";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/smart-contracts/index.mdx": {
+	id: "es/dapps/smart-contracts/index.mdx";
+  slug: "es/dapps/smart-contracts";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/smart-contracts/moonbeam-network.mdx": {
+	id: "es/dapps/smart-contracts/moonbeam-network.mdx";
+  slug: "es/dapps/smart-contracts/moonbeam-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/smart-contracts/sora-network.md": {
+	id: "es/dapps/smart-contracts/sora-network.md";
+  slug: "es/dapps/smart-contracts/sora-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/smart-contracts/ternoa.md": {
+	id: "es/dapps/smart-contracts/ternoa.md";
+  slug: "es/dapps/smart-contracts/ternoa";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/dapps/social/dsnp-protocol.mdx": {
+	id: "es/dapps/social/dsnp-protocol.mdx";
+  slug: "es/dapps/social/dsnp-protocol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/encointer.mdx": {
+	id: "es/dapps/social/encointer.mdx";
+  slug: "es/dapps/social/encointer";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/frequency.mdx": {
+	id: "es/dapps/social/frequency.mdx";
+  slug: "es/dapps/social/frequency";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/imbue-network.mdx": {
+	id: "es/dapps/social/imbue-network.mdx";
+  slug: "es/dapps/social/imbue-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/index.mdx": {
+	id: "es/dapps/social/index.mdx";
+  slug: "es/dapps/social";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/invarch-network.mdx": {
+	id: "es/dapps/social/invarch-network.mdx";
+  slug: "es/dapps/social/invarch-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/joystream.mdx": {
+	id: "es/dapps/social/joystream.mdx";
+  slug: "es/dapps/social/joystream";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/kilt-protocol.mdx": {
+	id: "es/dapps/social/kilt-protocol.mdx";
+  slug: "es/dapps/social/kilt-protocol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/litentry.mdx": {
+	id: "es/dapps/social/litentry.mdx";
+  slug: "es/dapps/social/litentry";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/logion-network.mdx": {
+	id: "es/dapps/social/logion-network.mdx";
+  slug: "es/dapps/social/logion-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/mandala-chain.mdx": {
+	id: "es/dapps/social/mandala-chain.mdx";
+  slug: "es/dapps/social/mandala-chain";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/subsocial.mdx": {
+	id: "es/dapps/social/subsocial.mdx";
+  slug: "es/dapps/social/subsocial";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/social/virto-network.mdx": {
+	id: "es/dapps/social/virto-network.mdx";
+  slug: "es/dapps/social/virto-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/storage/avail-project.mdx": {
+	id: "es/dapps/storage/avail-project.mdx";
+  slug: "es/dapps/storage/avail-project";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/storage/cess.mdx": {
+	id: "es/dapps/storage/cess.mdx";
+  slug: "es/dapps/storage/cess";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/storage/crust-network.mdx": {
+	id: "es/dapps/storage/crust-network.mdx";
+  slug: "es/dapps/storage/crust-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/storage/index.mdx": {
+	id: "es/dapps/storage/index.mdx";
+  slug: "es/dapps/storage";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/dapps/storage/midnight-network.mdx": {
+	id: "es/dapps/storage/midnight-network.mdx";
+  slug: "es/dapps/storage/midnight-network";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
