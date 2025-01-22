@@ -1,0 +1,90 @@
+---
+title: 'Madara Starknet'
+description: 'Construido sobre un fork del Framework Substrate, Madara ofrece una solución flexible y robusta para desarrolladores que buscan construir su propia L2.'
+hero:
+  tagline: 'Crea cadenas de aplicaciones con Madara Starknet'
+  image: 
+    file: ../../../../../assets/tools/dev/madarastarknet.png
+  actions:
+    - text: 'Sitio'
+      link: https://www.madara.build/
+      icon: external
+    - text: 'Documentación'
+      link: https://docs.madara.build/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+Madara Starknet es un framework de código abierto diseñado para facilitar la creación de cadenas de aplicaciones personalizadas, aprovechando la potencia de Cairo y la tecnología Starknet.  
+Construido sobre un fork del Framework Substrate, Madara ofrece una solución flexible y robusta para desarrolladores que buscan construir sus propias cadenas Layer 2 (L2) o Layer 3 (L3). Este artículo explora la arquitectura de Madara Starknet, sus características y su rol dentro del ecosistema de Polkadot.
+
+## La Pila de Madara: Visión General
+Madara es un framework generalizado para construir cadenas de aplicaciones, permitiendo a los desarrolladores crear rollups soberanos, de validez o validium. Combina el probado Framework Substrate con la Máquina Virtual (VM) de Cairo y el blockifier, ambos utilizados en Starknet. Esta configuración garantiza que cualquier ejecución de programa pueda ser demostrable, convirtiéndose así en una herramienta poderosa para desarrollar aplicaciones blockchain escalables y seguras.
+
+## ¿Por qué construir una cadena de aplicaciones con Madara?
+Crear una cadena de aplicaciones con Madara brinda varias ventajas:
+
+1. **Soberanía sobre la pila tecnológica:**  
+   - Control total sobre la tecnología que impulsa tu cadena, incluyendo la abstracción de cuentas, capas alternativas de disponibilidad de datos (DA) y nuevos opcodes.  
+   - Flexibilidad para elegir las mejores tecnologías para tu aplicación sin estar limitado por los frameworks existentes.
+
+2. **Características personalizadas e innovación:**
+   - Posibilidad de introducir nuevos opcodes o usar una VM diferente.  
+   - Implementación de abstracción de cuentas de manera nativa.  
+   - Creación de tokens de comisión personalizados o incluso sin comisiones.  
+   - Uso de capas de DA alternativas para reducir costos.  
+   - Mayor capacidad de procesamiento y menor competencia por espacio en los bloques.  
+   - Lógica personalizada a nivel de protocolo adaptada a las necesidades específicas de la aplicación.
+
+3. **Despliegue rápido:**
+   - Lanzar cadenas de aplicaciones que aprovechan la tecnología ZK (zero-knowledge) para mejorar la seguridad de Ethereum, ofreciendo al mismo tiempo flexibilidad para innovaciones técnicas.
+
+## Pioneros en la tecnología de cadenas de aplicaciones
+Starkware, el equipo detrás de Starknet, ha sido pionero en la escalabilidad mediante cadenas de aplicaciones desde 2021. Cairo, una de las primeras tecnologías ZK, ha sido clave en la escalabilidad de Ethereum y se utiliza en producción por grandes proyectos como dYdX, Immutable, Sorare y Starknet. Cairo asegura más de 700 millones de dólares y ha facilitado más de 1 billón de dólares en operaciones. Madara expande esta innovación al proporcionar un framework de código abierto para construir cadenas de aplicaciones utilizando Cairo y la tecnología de Starknet.
+
+### Madara y Starknet: una relación simbiótica
+Starknet es un rollup ZK de propósito general que escala Ethereum utilizando criptografía STARK y Cairo. Está diseñado para ser la solución ZK más escalable, innovando en todas las capas de la pila, incluida la VM, la capa RPC y la abstracción de cuentas. Madara, aunque no es una cadena en sí misma, proporciona la pila tecnológica que permite a los desarrolladores construir sus propias cadenas utilizando la misma tecnología que Starknet y StarkEx.
+
+#### Arquitectura de Madara
+Madara se basa en el Framework Substrate, conocido por su flexibilidad y seguridad. Substrate ha asegurado más de mil millones de dólares en producción y respalda más de 150 cadenas. La arquitectura de Madara está diseñada para mejorar la modularidad y el rendimiento de L2/L3, haciendo que el runtime sea compatible con std y utilizando el trie Bonsai para un manejo eficiente de datos.
+
+### Ciclo de vida de una transacción en Madara
+1. **JSON RPC Client:**
+   - Maneja las transacciones de los usuarios, realiza la validación y las reenvía al runtime.
+2. **Pallet Starknet:**
+   - El componente principal donde ocurre la mayor parte de la ejecución y el almacenamiento.  
+   - Gestiona la validación de nonce y firmas, la ejecución de transacciones y los cambios de almacenamiento.
+3. **Blockifier y Cairo VM:**  
+   - Ejecuta los smart contracts en Cairo y gestiona la lógica de construcción de bloques.
+4. **Offchain Workers:**
+   - Se ejecutan de forma asíncrona con el runtime para manejar tareas como liquidación, mensajería L1->L2, diffs de estado y disponibilidad de datos.
+5. **Lógica de ejecución:**
+   - Gestiona diferentes tipos de transacciones, incluyendo invoke, deploy account, declare y L1 handler.  
+   - Asegura que las transacciones pasen la validación y se ejecuten correctamente.
+
+## Disponibilidad de datos e interoperabilidad
+Madara es compatible con múltiples capas de disponibilidad de datos como Ethereum, Avail y Celestia, y se planea integrar EigenDA y NearDA. El framework busca ser modular en cada capa, permitiendo a los desarrolladores elegir la opción de DA que mejor se adapte a sus necesidades.
+
+Para la interoperabilidad, Madara prevé un futuro con miles de cadenas de aplicaciones, cada una abordando problemas únicos. Se discuten soluciones que incluyen secuenciación compartida y agregación de pruebas para mejorar la comunicación y colaboración entre cadenas.
+
+### Conclusión
+Madara Starknet representa un avance significativo en la tecnología blockchain, al ofrecer a los desarrolladores las herramientas para construir cadenas de aplicaciones altamente personalizadas, escalables y seguras. Al aprovechar el sólido Framework Substrate y la innovadora Máquina Virtual de Cairo, Madara brinda una plataforma flexible y poderosa para el desarrollo blockchain. Como parte del ecosistema de Polkadot, Madara se beneficia de la seguridad compartida y la interoperabilidad, consolidándose como un actor clave en el futuro de las aplicaciones descentralizadas.
+
+- <small>Token/s Relacionado/s:</small> **STRK**
+
+## Videos de la Comunidad de Madara Starknet
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=k9yu64MSivg',
+      title: 'Construye tu primera DApp con Madara: Desde el Smart Contract hasta la UI',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=ofR8-thEdiw',
+      title: 'Introducción a Madara - Creando cadenas de aplicaciones Starknet a la medida',
+    },
+  ]}
+/>

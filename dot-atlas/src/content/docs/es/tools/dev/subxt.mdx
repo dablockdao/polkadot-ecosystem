@@ -1,0 +1,80 @@
+---
+title: 'Subxt'
+description: 'Subxt es una potente librería en Rust para la interacción fluida con nodos basados en Substrate en el ecosistema Polkadot.'
+hero:
+  tagline: 'Una librería en Rust para interacciones con blockchains basadas en Substrate.'
+  image: 
+    file: ../../../../../assets/polkadot.webp
+  actions:
+    - text: 'Github'
+      link: https://github.com/paritytech/subxt
+      icon: external
+    - text: 'Documentación'
+      link: https://docs.rs/subxt/latest/subxt/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+**Subxt** es una librería de vanguardia en Rust y WebAssembly diseñada para facilitar la interacción con nodos basados en Substrate. A medida que el ecosistema de Polkadot sigue creciendo, herramientas como Subxt resultan críticas para desarrolladores que buscan métodos eficientes y confiables de construir aplicaciones descentralizadas (dApps) o interactuar con redes blockchain. Este artículo describe las funcionalidades, características y usos de Subxt, subrayando su importancia dentro de los ecosistemas de Substrate y Polkadot.
+
+## ¿Qué es Subxt?
+Subxt se presenta como una librería de uso amigable para desarrolladores, que conecta las aplicaciones con nodos basados en Substrate. Construida para Rust y compatible con WebAssembly, Subxt permite a los desarrolladores interactuar con redes blockchain de forma fluida, con tipado seguro y alta flexibilidad.
+
+### Características Clave de Subxt
+1. **Envío de Extrinsics:**  
+   El nombre “Subxt” hace referencia a su capacidad para enviar extrinsics—transacciones o llamadas al runtime de una blockchain. Esta función principal habilita a los desarrolladores a ejecutar operaciones complejas directamente en la red.
+
+2. **Suscripción a Bloques y Lectura de Eventos:**  
+   Subxt ofrece capacidades para suscribirse a eventos de la blockchain y leer extrinsics asociados con nuevos bloques. Esto resulta especialmente útil para monitorear y responder a actividades de la red en tiempo real.
+
+3. **Acceso a Almacenamiento:**  
+   Los desarrolladores pueden leer e iterar valores en el almacenamiento, asegurando el acceso a datos críticos alojados en la blockchain.
+
+4. **Llamadas a APIs de Runtime:**  
+   Subxt admite la ejecución de llamadas a las APIs del runtime para obtener resultados, lo que permite interactuar con la lógica personalizada implementada en blockchains basadas en Substrate.
+
+5. **Uso de Metadata:**  
+   La librería aprovecha la metadata de la blockchain, permitiendo a los desarrolladores consultar dinámicamente constantes y valores personalizados, aumentando la flexibilidad.
+
+6. **Compatibilidad con WebAssembly y Navegadores:**  
+   Subxt puede compilarse a WebAssembly, lo que la hace utilizable en entornos de navegador. Esto amplía su aplicabilidad a aplicaciones front-end y a escenarios de blockchain ligeros.
+
+7. **Soporte No-Std:**  
+   Gracias al crate `subxt-core`, los desarrolladores pueden operar en entornos `#[no_std]`, lo que brinda soluciones para sistemas embebidos o escenarios con recursos limitados.
+
+8. **Light Client Integrado:**  
+   Al incorporar el cliente ligero smoldot, Subxt puede conectarse a nodos de blockchain sin depender de configuraciones de nodo completo.
+
+## Primeros Pasos con Subxt
+Para comenzar a utilizar Subxt, generalmente se recomienda descargar la metadata desde el nodo Substrate al que se apunta. La herramienta `subxt-cli` simplifica este proceso:
+
+```bash
+cargo install subxt-cli
+subxt metadata -f bytes > metadata.scale
+```
+
+Este comando guarda la metadata codificada, permitiendo a los desarrolladores crear interfaces adaptadas a sus proyectos.
+
+## Aplicaciones Reales de Subxt
+La versatilidad de Subxt la convierte en un activo valioso para múltiples casos de uso, tales como:
+
+- **Interacción con Smart Contracts**: Herramientas CLI como `cargo-contract` usan Subxt para desplegar y probar contratos inteligentes Wasm.  
+- **Mensajería entre Cadenas**: Aplicaciones como `xcm-cli` aprovechan Subxt para enviar transacciones XCM (Cross-Consensus Messaging).  
+- **Automatización de Staking**: Herramientas como `crunch` utilizan Subxt para automatizar la recolección de recompensas de staking en cadenas basadas en Substrate.  
+- **Monitoreo de Blockchain**: Proyectos como `polkadot-introspector` hacen uso de Subxt para obtener información de nodos Polkadot.  
+- **Intercambios Descentralizados**: Plataformas como Chainflip se basan en Subxt para swaps cross-chain fluidos.
+
+## Ventajas de Subxt
+- **Tipado Seguro**: La librería garantiza interacciones tipadas de forma segura con los nodos, reduciendo errores de ejecución y reforzando la confiabilidad del código.  
+- **Flexibilidad**: Los desarrolladores pueden alternar entre interfaces fuertemente tipadas y dinámicas, según las necesidades del proyecto.  
+- **Integración con el Ecosistema**: La alineación de Subxt con los estándares de Substrate y Polkadot facilita la integración con proyectos existentes.
+
+## Alternativas a Subxt
+Aunque Subxt es una herramienta potente, existen alternativas como la librería `substrate-api-client`, que proporcionan funcionalidades similares. Los desarrolladores pueden optar por la que mejor se ajuste a sus requerimientos y experiencia.
+
+## Conclusión
+Subxt dota a los desarrolladores de la capacidad de interactuar con nodos basados en Substrate de forma efectiva, ofreciendo un conjunto robusto de herramientas para la construcción, prueba y despliegue de aplicaciones blockchain. Su tipado seguro, compatibilidad con navegadores y utilidad en casos prácticos la convierten en una herramienta esencial para el ecosistema de Polkadot. Ya sea para crear dApps, automatizar tareas o realizar llamadas a APIs de runtime, Subxt ofrece la confiabilidad y el rendimiento necesarios para el éxito.
+
+Para más detalles, visita la [documentación oficial de Subxt](https://github.com/paritytech/subxt) y explora su extensa guía y ejemplos.

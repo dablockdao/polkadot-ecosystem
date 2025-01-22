@@ -1,0 +1,61 @@
+---
+title: 'Substrate Connect'
+description: 'Una herramienta descentralizada y segura que permite interacciones de navegador con blockchains basadas en Substrate a través de light clients.'
+hero:
+  tagline: 'Una solución descentralizada para una interacción fluida con la blockchain.'
+  image: 
+    file: ../../../../../assets/polkadot.webp
+  actions:
+    - text: 'Github'
+      link: https://github.com/paritytech/substrate-connect
+      icon: external
+    - text: 'Documentación'
+      link: https://substrate.io/developers/substrate-connect/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+**Substrate Connect** permite la interacción directa con blockchains basadas en Substrate a través de tu navegador.  
+Aprovechando el **light client smoldot WebAssembly (WASM)**, Substrate Connect elimina la necesidad de servidores RPC de terceros, brindando así una alternativa segura, eficiente y descentralizada. Este enfoque revoluciona la forma en que desarrolladores y usuarios se relacionan con el ecosistema de Polkadot y sus parachains.
+
+Al incrustar un cliente ligero de blockchain en navegadores o extensiones, Substrate Connect posibilita a los desarrolladores de aplicaciones descentralizadas (dApps) la creación de experiencias más seguras, eficientes y amigables para el usuario, sin poner en riesgo la confianza en la descentralización.
+
+## Desarrolla dApps Seguras y Efectivas con Polkadot
+Substrate Connect ofrece una serie de paquetes NPM diseñados para simplificar el desarrollo de aplicaciones descentralizadas en redes basadas en Substrate, incluyendo Polkadot y Kusama. Estas herramientas permiten a los desarrolladores:
+
+- Establecer conexiones seguras y eficientes a cadenas de Substrate usando el light client smoldot WASM a través de `@substrate/connect`.  
+- Integrar extensiones de navegador que implementan protocolos de descubrimiento, facilitando la interacción con light clients mediante `@substrate/smoldot-discovery`.  
+- Añadir capacidades de light client a extensiones de navegador con `@substrate/light-client-extension-helpers`.
+
+### Proyectos de Demostración
+Para ilustrar las capacidades de Substrate Connect, se ofrecen varios proyectos de ejemplo:
+- **Basic Light Client Demo**: Muestra la recuperación de datos de la cadena usando `@substrate/connect`.  
+- **Light Client Extension Demo**: Demuestra una extensión de navegador que utiliza un light client.  
+- **Wallet Extension Demo**: Ofrece una experiencia completa de monedero en Polkadot, impulsada por un light client.
+
+## ¿Por Qué Incrustar un Light Client en Extensiones de Navegador?
+El uso de un light client en extensiones de navegador brinda ventajas incomparables para las dApps:
+- **Recursos Compartidos entre dApps**: Un único light client compartido por múltiples dApps reduce los tiempos de inicio y sincronización, optimizando la eficiencia.  
+- **Superación de Limitaciones del Navegador**: Al abordar restricciones como las limitaciones de WebSocket, Substrate Connect habilita conexiones peer-to-peer robustas, asegurando un rendimiento confiable incluso en dispositivos con recursos limitados.
+
+## Documentación Exhaustiva de la API
+Los desarrolladores pueden acceder a una detallada documentación de la API para integrar Substrate Connect en sus proyectos. Incluye guías para aprovechar los paquetes principales, como `@substrate/connect` y `@substrate/discovery`.
+
+## Redes Compatibles
+Substrate Connect es compatible con diversas redes del ecosistema Polkadot, entre ellas:
+- **Polkadot**: Una cadena segura y fragmentada que permite composibilidad entre cadenas.  
+- **Kusama**: Una red experimental de evolución rápida que funciona como red canaria de Polkadot.  
+- **Westend**: Un entorno de pruebas para despliegues en Polkadot y Kusama.  
+...
+
+## Substrate Connect en Acción
+La extensión de navegador de Substrate Connect simplifica la conectividad a la blockchain al actualizar y sincronizar continuamente las especificaciones de cadena de redes como Polkadot, Kusama, Rococo y Westend. Esto garantiza que las dApps accedan en todo momento al estado más reciente de la blockchain sin overhead adicional.
+
+Cuando una dApp integra Substrate Connect, se comunica directamente con la extensión de navegador, aprovechando sus capacidades de light client para ofrecer sincronización de datos en tiempo real. Este enfoque incrementa la seguridad, reduce la latencia y simplifica la interacción de los usuarios con redes descentralizadas.
+
+## Más sobre Light Clients
+Los light clients son fundamentales para el desarrollo de aplicaciones descentralizadas. Ofrecen una alternativa menos intensiva en recursos frente a los nodos completos, permitiendo sincronizaciones más rápidas y compatibilidad con navegadores, dispositivos móviles y entornos IoT. La implementación de light clients en Substrate Connect garantiza interacciones de blockchain eficientes y seguras, sentando las bases para una nueva generación de dApps.
+
+Substrate Connect marca un salto transformador para desarrolladores y usuarios en el ecosistema de Polkadot. Al eliminar la dependencia de nodos centralizados, fomenta un entorno más seguro, eficiente y verdaderamente descentralizado. Explora las posibilidades de Substrate Connect para aprovechar al máximo tus proyectos blockchain.

@@ -1,38 +1,38 @@
 ---
-title: Polkadot Development Tools
-description: Explore Polkadot Development Tools.
+title: 'Herramientas de Desarrollo para Polkadot'
+description: 'Explora las Herramientas de Desarrollo para Polkadot.'
 tableOfContents: false
 sidebar: 
-    label: Dev Tools
-    badge: Feed
+    label: 'Herramientas de Dev'
+    badge: 'Feed'
 ---
 
 import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
-Polkadot development tools encompass a variety of **frameworks, libraries, and resources that simplify the creation and integration of specialized blockchains within Polkadot**’s secure and scalable multi-chain environment. By leveraging Substrate’s modular architecture, developers can easily customize core functionalities while benefiting from interoperability across the Polkadot network. 
+Las herramientas de desarrollo para Polkadot abarcan una gran variedad de **frameworks, librerías y recursos que simplifican la creación e integración de blockchains especializadas en el entorno seguro y escalable de múltiples cadenas de Polkadot**. Al aprovechar la arquitectura modular de Substrate, los desarrolladores pueden personalizar fácilmente las funcionalidades principales mientras se benefician de la interoperabilidad en toda la red de Polkadot.
 
-## Polkadot Development Tools
+## Herramientas de Desarrollo para Polkadot
 ----------------
 <ShowcaseImage
   entries={[
-                  {
+    {
       thumbnail: import('/src/assets/tools/dev/papi.png'),
       href: '/tools/dev/papi/',
       title: 'PAPI (Polkadot API)',
     },
-                     {
+    {
       thumbnail: import('/src/assets/tools/dev/popcli.png'),
       href: '/tools/dev/pop-cli/',
       title: 'POP CLI',
-      },  
+    },
     {
       thumbnail: import('/src/assets/tools/dev/bagpipes.png'),
       href: '/tools/dev/bagpipes/',
       title: 'Bagpipes',
-      },
-              {
+    },
+    {
       thumbnail: import('/src/assets/tools/dev/polkadotjs.png'),
       href: '/tools/dev/polkadotjs/',
       title: 'PolkadotJS',
@@ -42,17 +42,17 @@ Polkadot development tools encompass a variety of **frameworks, libraries, and r
 
 <ShowcaseImage
   entries={[
-                  {
+    {
       thumbnail: import('/src/assets/tools/dev/reactivedot.png'),
       href: '/tools/dev/reactivedot/',
       title: 'ReactiveDOT',
     },
-                     {
+    {
       thumbnail: import('/src/assets/tools/dev/dedot.png'),
       href: '/tools/dev/dedot/',
       title: 'Dedot',
-      },  
-                    {
+    },
+    {
       thumbnail: import('/src/assets/tools/dev/paraspell.png'),
       href: '/tools/dev/paraspell/',
       title: 'Paraspell',
@@ -61,23 +61,23 @@ Polkadot development tools encompass a variety of **frameworks, libraries, and r
       thumbnail: import('/src/assets/tools/dev/gear.png'),
       href: '/tools/dev/gear-protocol/',
       title: 'Gear Protocol',
-      },
+    },
   ]}
 />
 
 <ShowcaseImage
   entries={[
-                  {
+    {
       thumbnail: import('/src/assets/tools/dev/chopsticks.png'),
       href: '/tools/dev/chopsticks/',
       title: 'Chopsticks',
     },
-                     {
+    {
       thumbnail: import('/src/assets/tools/dev/parachainbuilder.png'),
       href: '/tools/dev/parachainbuilder/',
       title: 'Parachain Builder',
-      },  
-                    {
+    },
+    {
       thumbnail: import('/src/assets/tools/dev/polkadart.png'),
       href: '/tools/dev/polkadart/',
       title: 'Polkadart',
@@ -86,11 +86,11 @@ Polkadot development tools encompass a variety of **frameworks, libraries, and r
       thumbnail: import('/src/assets/tools/dev/zombienet.png'),
       href: '/tools/dev/zombienet/',
       title: 'Zombienet',
-      },
+    },
   ]}
 />
 
-## Polkadot Development Videos
+## Videos de Desarrollo en Polkadot
 ----------------
 <ShowcaseYouTube
   entries={[
@@ -98,29 +98,27 @@ Polkadot development tools encompass a variety of **frameworks, libraries, and r
       href: 'https://www.youtube.com/watch?v=AOungsvyRag',
       title: 'Building on Polkadot - Shawn Tabrizi',
     },
-        {
+    {
       href: 'https://www.youtube.com/watch?v=cnYsY04aa9I',
       title: '5 Resources to learn Polkadot Development - LV',
     },
   ]}
 />
 
-
-## Polkadot Development Resources
+## Recursos de Desarrollo para Polkadot
 ----------------
-<Card title="Development Resources" icon="information">
-| Resource                                   | Description                                                                                   |
-|-------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [Awesome Polkadot](https://github.com/shawntabrizi/awesome-polkadot?tab=readme-ov-file) | A curated list of awesome resources related to Polkadot by Shawn Tabrizi.                                       |
-| [Introduction to Polkadot Cloud](https://forum.polkadot.network/t/the-polkadot-cloud/10670) | Introduction to Polkadot Cloud and how it works.                                               |
-| [Rust & Polkadot Workshop](https://www.shawntabrizi.com/rust-and-polkadot-workshop/#/) | Workshop for learning Rust and its integration with Polkadot.                                  |
-| [Polkadot Development Documentation](https://docs.polkadot.com/) | Official Polkadot developer documentation.                                                     |
-| [Deploy on Paseo Testnet](https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero/deploy-to-testnet/) | Guide to deploying on the Paseo testnet.                                                       |
-| [Build a Custom Pallet](https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero/build-custom-pallet/) | Tutorial for creating a custom pallet on Polkadot.                                             |
-| [Set Up a Parachain Template](https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero/set-up-a-template) | Instructions for setting up a parachain template.                                              |
-| [Polkadot Remix](https://remix.polkadot.io/#lang=en&optimize=false&runs=200&evmVersion=null) | Tool for developing smart contracts in Polkadot.                                               |
-| [Polkadot Cloud](https://polkadot.cloud/) | Official website of Polkadot Cloud.                                               |
-| [Polkadot Faucet](https://faucet.polkadot.io/) | Service for requesting free test tokens for Polkadot testnets.                                 |
-| [Interoperability](https://docs.polkadot.com/develop/toolkit/interoperability/) | Documentation on interoperability within the Polkadot ecosystem.     
-
+<Card title="Recursos de Desarrollo" icon="information">
+| Recurso                                                                                                       | Descripción                                                                                                                      |
+|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| [Awesome Polkadot](https://github.com/shawntabrizi/awesome-polkadot?tab=readme-ov-file)                      | Una lista seleccionada de recursos destacados relacionados con Polkadot, creada por Shawn Tabrizi.                              |
+| [Introduction to Polkadot Cloud](https://forum.polkadot.network/t/the-polkadot-cloud/10670)                   | Introducción a Polkadot Cloud y su funcionamiento.                                                                               |
+| [Rust & Polkadot Workshop](https://www.shawntabrizi.com/rust-and-polkadot-workshop/#/)                       | Taller para aprender Rust y su integración con Polkadot.                                                                         |
+| [Polkadot Development Documentation](https://docs.polkadot.com/)                                             | Documentación oficial de desarrollo de Polkadot.                                                                                 |
+| [Deploy on Paseo Testnet](https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero/deploy-to-testnet/) | Guía para desplegar en la testnet Paseo.                                                                                       |
+| [Build a Custom Pallet](https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero/build-custom-pallet/) | Tutorial para crear un pallet personalizado en Polkadot.                                                                        |
+| [Set Up a Parachain Template](https://docs.polkadot.com/tutorials/polkadot-sdk/parachains/zero-to-hero/set-up-a-template) | Instrucciones para configurar una plantilla de parachain.                                                                      |
+| [Polkadot Remix](https://remix.polkadot.io/#lang=en&optimize=false&runs=200&evmVersion=null)                   | Herramienta para desarrollar contratos inteligentes en Polkadot.                                                                 |
+| [Polkadot Cloud](https://polkadot.cloud/)                                                                     | Sitio oficial de Polkadot Cloud.                                                                                                 |
+| [Polkadot Faucet](https://faucet.polkadot.io/)                                                                | Servicio para solicitar tokens de prueba gratuitos para testnets de Polkadot.                                                    |
+| [Interoperability](https://docs.polkadot.com/develop/toolkit/interoperability/)                               | Documentación sobre interoperabilidad dentro del ecosistema de Polkadot.                                                         |
 </Card>

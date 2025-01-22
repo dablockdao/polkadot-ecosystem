@@ -1,0 +1,100 @@
+---
+title: 'Txwrapper'
+description: 'Txwrapper-core son herramientas esenciales para constructores de cadenas FRAME que crean librerías de transacciones seguras y offline en el ecosistema Polkadot.'
+hero:
+  tagline: 'Un conjunto de herramientas para librerías de transacciones offline en cadenas FRAME.'
+  image: 
+    file: ../../../../../assets/polkadot.webp
+  actions:
+    - text: 'Github'
+      link: https://github.com/paritytech/txwrapper-core
+      icon: external
+    - text: 'Documentación'
+      link: https://paritytech.github.io/txwrapper-core/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+El auge de los ecosistemas blockchain ha generado la necesidad de contar con herramientas robustas que simplifiquen las transacciones, manteniendo al mismo tiempo eficiencia y seguridad. Para quienes desarrollan en Polkadot y Substrate, la librería **txwrapper-core** se convierte en una solución clave. Diseñado para creadores de cadenas basadas en FRAME, este conjunto de herramientas permite crear, mantener y probar librerías específicas para la generación de transacciones offline. Al ofrecer un proceso de integración fluido, **txwrapper-core** mejora los flujos de trabajo de transacciones offline tanto para desarrolladores como para usuarios finales.
+
+## ¿Qué es txwrapper-core?
+**txwrapper-core** es la pieza central de la suite txwrapper, un conjunto de paquetes destinados a habilitar la generación de transacciones offline en entornos blockchain específicos. Estas librerías están orientadas a distintos casos de uso, ofreciendo utilidades para crear, firmar y decodificar transacciones sin requerir conexión a la red en tiempo real. Construido sobre la base de la librería **polkadot.js**, el conjunto de herramientas txwrapper proporciona un entorno escalable y personalizable para desarrolladores de blockchain.
+
+## Funciones Clave de Txwrapper Core
+1. **Librerías Específicas de Cada Cadena.**  
+   **txwrapper-core** actúa como paquete base para desarrollar librerías enfocadas en redes concretas (a menudo llamadas txwrappers). Ejemplos incluyen:
+   - **@substrate/txwrapper-polkadot**: Dedicada a Polkadot, Kusama y sus respectivas cadenas de sistema.  
+   - **@substrate/txwrapper-orml**: Compatible con cadenas que utilizan pallets ORML, como Acala.
+
+2. **Diseño Modular.**  
+   La suite se compone de varios paquetes interdependientes, cada uno cumpliendo un rol específico:
+   - **@substrate/txwrapper-core**: Funcionalidades esenciales para crear txwrappers específicos de cada cadena.  
+   - **@substrate/txwrapper-registry**: Facilita la creación de registros para cadenas que usan tipos de **@polkadot/apps-config**.  
+   - **@substrate/txwrapper-substrate**: Ofrece dispatchables para pallets de Substrate.  
+   - **[@substrate/txwrapper-dev](https://github.com/paritytech/txwrapper-core/tree/main/packages/txwrapper-dev)**: Incluye herramientas de desarrollo, como registries y metadata.
+
+3. **Flujo de Trabajo para Transacciones Offline.**  
+   La suite txwrapper capacita a los desarrolladores para:
+   1. **Construir transacciones** sin conexión a la red.  
+   2. **Firmar transacciones** de forma segura, sin exponer llaves privadas.  
+   3. **Decodificar transacciones** para verificación antes de su envío.
+
+## Ejemplos y Plantillas en Txwrapper
+Para desarrolladores novatos o experimentados, **txwrapper-core** incorpora ejemplos y plantillas:
+- **[@substrate/txwrapper-example](https://github.com/paritytech/txwrapper-core/tree/main/packages/txwrapper-examples):** Muestra cómo construir, firmar y decodificar transacciones usando librerías como **@substrate/txwrapper-polkadot**.  
+- **[@substrate/txwrapper-template](https://github.com/paritytech/txwrapper-core/tree/main/packages/txwrapper-template):** Plantilla de inicio para crear nuevas librerías enfocadas en cadenas específicas.
+
+## Beneficios Clave de Txwrapper
+1. **Seguridad y Eficiencia:**  
+   La generación de transacciones offline reduce la exposición a vulnerabilidades de la red, reforzando la protección de llaves privadas y datos sensibles.  
+
+2. **Escalabilidad:**  
+   Los desarrolladores pueden adaptar rápidamente estas herramientas para admitir nuevas cadenas o actualizar las existentes, garantizando una utilidad y flexibilidad duraderas.  
+
+3. **Colaboración de Código Abierto:**  
+   La suite txwrapper es de código abierto bajo la licencia GPL-3.0-o-posterior, fomentando la contribución de la comunidad global de desarrolladores. Su repositorio incluye herramientas para la construcción, prueba y publicación de actualizaciones de manera eficiente.
+
+## Uso y Mantenimiento de Txwrapper
+Los desarrolladores pueden integrar txwrapper-core a sus proyectos siguiendo estos pasos:
+
+1. **Instalación de Dependencias con yarn:**
+   ```bash
+   yarn install
+   ```
+
+## Compilar los Paquetes
+Para compilar los paquetes, ejecuta el siguiente comando:
+```bash
+yarn run build
+```
+
+## Pruebas y Linting
+Para garantizar compatibilidad, ejecuta pruebas y linting con:
+```bash
+yarn run test
+yarn run lint
+```
+
+### Conclusión
+Al proporcionar herramientas para la generación segura de transacciones offline, txwrapper-core simplifica flujos de trabajo complejos y permite a los desarrolladores crear soluciones eficientes y específicas para cada cadena. Con su fundamento de código abierto y una comunidad activa, txwrapper-core se consolida como un recurso esencial en el panorama de Web3 en expansión.
+
+## Videos de la Comunidad Txwrapper
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=8oqZhdl7C1o',
+      title: 'API Sidecar and TX Wrapper | Polkadot Deep Dive',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=IK4sVrPbBCM',
+      title: 'Polkadot Deep Dives: API Sidecar & TxWrapper',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=_lQU_7IDjAc',
+      title: 'Integrations Tools Being Built and Maintained | Substrate Seminar',
+    },
+  ]}
+/>

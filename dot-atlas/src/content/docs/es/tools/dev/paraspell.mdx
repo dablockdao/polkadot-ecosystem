@@ -1,0 +1,100 @@
+---
+title: Paraspell
+description: 'Desbloquea la interoperabilidad entre cadenas con las herramientas XCM de ParaSpell, ofreciendo transferencias de activos, mensajería y visualización de datos sin complicaciones en Polkadot.'
+hero:
+  tagline: 'Desbloqueando la funcionalidad entre cadenas de forma fluida en el ecosistema de Polkadot.'
+  image: 
+    file: ../../../../../assets/tools/dev/paraspell.png
+  actions:
+    - text: 'Sitio'
+      link: https://paraspell.xyz/
+      icon: external
+    - text: 'Github'
+      link: https://github.com/paraspell/xcm-tools/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+La suite de herramientas de ParaSpell ofrece capacidades sin precedentes para la comunicación entre cadenas a través de sus soluciones XCM (Cross-Consensus Message).  
+Este artículo profundiza en la gama de herramientas de ParaSpell, sus capacidades técnicas y el gran impacto que aportan a los ecosistemas de Polkadot y Kusama.
+
+## ¿Qué es ParaSpell?
+ParaSpell es un conjunto de herramientas avanzadas diseñadas para simplificar y mejorar las interacciones entre cadenas en el ecosistema Polkadot. Aborda las complejidades de la interoperabilidad blockchain, permitiendo a los desarrolladores crear aplicaciones descentralizadas (dApps) eficientes, confiables y fáciles de usar. Al aprovechar las herramientas XCM de ParaSpell, los proyectos pueden lograr transferencias de activos sin fricción, mensajería entre cadenas y mucho más, todo en una fracción del tiempo que solía requerirse.
+
+## Componentes Principales de ParaSpell
+1. **XCM SDK:**  
+   El XCM SDK es la piedra angular de la oferta de ParaSpell. Diseñado para desarrolladores, esta robusta biblioteca simplifica la integración de la funcionalidad entre cadenas en las dApps. Sus características clave incluyen:  
+   - **Interoperabilidad**: Soporta transferencias de activos en más de 58 parachains y cadenas de relevo compatibles con XCM.  
+   - **Mecanismos de Respaldo**: Cambia automáticamente a un endpoint de API funcional en caso de falla.  
+   - **Capacidad de DRY Run**: Permite a los desarrolladores simular mensajes XCM para garantizar su validez antes de la ejecución.  
+   - **Flexibilidad de Activos**: Admite diversos métodos de selección de activos, incluyendo ID, símbolo y formatos multi-activos.  
+   - **Personalización**: Ofrece opciones para seleccionar versiones de XCM y desplegar en testnets o en localhost.  
+
+   La facilidad de uso y la documentación completa del XCM SDK lo convierten en la opción preferida para los desarrolladores de todo el ecosistema.
+
+2. **XCM API:**  
+   Para proyectos que requieren una configuración mínima, la XCM API ofrece una alternativa sin necesidad de instalar paquetes y mantiene toda la funcionalidad del SDK. Es especialmente adecuada para aplicaciones con requisitos estrictos de espacio y rendimiento. Sus características destacadas incluyen:  
+   - Autenticación de tokens integrada para prevención de ataques DDoS.  
+   - Opciones de despliegue privado para tiempos de respuesta más rápidos.  
+   - Mensajes XCM preconstruidos para reducir la carga computacional en el servidor.  
+
+   La XCM API permite una integración liviana, ideal para entornos con recursos limitados.
+
+3. **XCM Router:**  
+   Los intercambios entre cadenas nunca han sido tan sencillos, gracias a XCM Router. Esta herramienta permite a los desarrolladores enviar un tipo de activo y recibir otro de manera fluida. Sus aspectos más destacados incluyen:  
+   - Acceso a 524 pools de liquidez.  
+   - Selección automática de la ruta de intercambio óptima.  
+   - Integración con Snowbridge de Polkadot para compatibilidad con Ethereum.  
+
+   XCM Router es especialmente valioso para proyectos de intercambio descentralizado (DEX) que buscan intercambios de activos eficientes a través de cadenas.
+
+4. **XCM Analyser:**  
+   Comprender llamadas XCM complejas ya no es un desafío. El XCM Analyser descifra mensajes complejos y los convierte en formatos legibles. Gracias a su naturaleza liviana y dependencias mínimas, se ha convertido en una herramienta esencial para desarrolladores e investigadores.
+
+5. **XCM Visualizator:**  
+   El XCM Visualizator transforma los datos de mensajería entre cadenas en atractivas visualizaciones 3D. Esta herramienta proporciona información sobre la escalabilidad de la red, las cadenas más activas, los activos más transferidos y más. Los investigadores pueden descargar datos y gráficos para un análisis adicional, haciendo de esta herramienta un pilar para la toma de decisiones basada en datos.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'XCM Visualizator',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/tools/dev/paraspell.png',
+      href: 'https://xcm-visualizator.tech/',
+      description:
+        'Visualiza las interacciones XCM dentro del ecosistema Polkadot.',
+    },  
+  ]}
+/>
+
+## ¿Por Qué Elegir ParaSpell?
+ParaSpell no es solo una suite de herramientas; es una solución integral para los desarrolladores que se enfrentan a la complejidad de la interoperabilidad entre cadenas. A continuación, algunas razones por las que destaca:
+
+1. **Confiabilidad**: Todas las herramientas se someten a comprobaciones mensuales para garantizar la compatibilidad con las últimas actualizaciones de pallets y configuraciones de parachains.  
+2. **Documentación Completa**: Los desarrolladores cuentan con guías detalladas, lo que facilita la implementación.  
+3. **Código Abierto**: ParaSpell es completamente gratuito, sin costos ocultos ni suscripciones, en consonancia con los principios de la descentralización.  
+4. **Experiencia Probada**: Con seis subvenciones de la Web3 Foundation y numerosos reconocimientos en Polkadot Global Series Hackathons, ParaSpell cuenta con una sólida trayectoria de innovación y confianza en la comunidad.
+
+## Una Visión de Futuro
+ParaSpell sigue evolucionando, con el compromiso de ofrecer herramientas de vanguardia que empoderen a los desarrolladores y fortalezcan el ecosistema de Polkadot. Las próximas actualizaciones y nuevas herramientas prometen optimizar aún más la interoperabilidad, asegurando que ParaSpell siga siendo un pilar en la innovación entre cadenas.
+
+Para los desarrolladores y equipos que buscan aprovechar el poder de XCM, ParaSpell ofrece recursos sin parangón, soporte experto y una visión alineada con el futuro de la tecnología descentralizada.  
+Explora las herramientas de ParaSpell hoy mismo y desbloquea todo el potencial de la interoperabilidad entre cadenas en el ecosistema de Polkadot. Visita sus [repositorios en GitHub](https://github.com/paraspell/xcm-tools/) y su [documentación oficial](https://paraspell.xyz/) para comenzar.
+
+- [Publicación en el foro](https://forum.polkadot.network/t/paraspell-xcm-tools-go-cross-chain-within-seconds-latest-upgrades-future-upgrades-maintenance-report/11302)
+
+## Videos de la Comunidad Paraspell
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/shorts/d-oIDauvSuM',
+      title: 'XCM Explicado por Dusan Morhac',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=G3tHQbQD4vo',
+      title: 'XCM & Paraspell Polkadot Journey con Dušan Morháč - AwesomeDOT Podcast #6',
+    },
+  ]}
+/>

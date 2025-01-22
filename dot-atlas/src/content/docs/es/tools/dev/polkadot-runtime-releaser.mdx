@@ -1,0 +1,112 @@
+---
+title: Polkadot Runtime Releaser
+description: 'Optimiza el desarrollo de runtimes para Polkadot con PRR y sus builds deterministas, integración con Docker y avanzadas herramientas de gestión de runtimes.'
+sidebar:
+  label: P. Runtime Releaser
+hero:
+  tagline: 'Simplificando el desarrollo de runtimes.'
+  image: 
+    file: ../../../../../assets/polkadot.webp
+  actions:
+    - text: 'Github'
+      link: https://github.com/hack-ink/polkadot-runtime-releaser
+      icon: external
+    - text: 'Workshop'
+      link: https://github.com/hack-ink/polkadot-runtime-releaser-workshop
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+El Polkadot Runtime Releaser (PRR) es una herramienta de línea de comandos (CLI) diseñada para **simplificar y optimizar el proceso de liberar runtimes en proyectos de blockchain basados en Polkadot-SDK**.  
+Con un conjunto de características robustas, PRR garantiza builds deterministas, una gestión eficiente de runtimes y una experiencia de desarrollo estandarizada.  
+En esta guía, exploramos sus funcionalidades clave, métodos de instalación y aplicaciones prácticas.
+
+## Por Qué es Importante el Polkadot Runtime Releaser
+En Polkadot y sus parachains, el runtime es la lógica central que rige el comportamiento de la cadena.  
+Garantizar que las versiones (releases) de runtimes sean consistentes, eficientes y reproducibles es fundamental para mantener la estabilidad y el rendimiento de la red.  
+PRR atiende estas necesidades al proporcionar:
+
+- **Builds Deterministas de Runtimes**: Elimina la variabilidad entre entornos de desarrollo.  
+- **Gestión de Runtimes**: Facilita la inspección y depuración de runtimes.  
+- **Procesos Simplificados**: Reduce la complejidad de trabajar con runtimes basados en Polkadot-SDK.
+
+Al estandarizar estos procesos, PRR ayuda a los desarrolladores a enfocarse en la innovación al mismo tiempo que garantiza la confiabilidad operativa.
+
+## Características Clave del Polkadot Runtime Releaser
+1. **Builds Deterministas:** PRR asegura que todas las compilaciones de runtimes sean reproducibles utilizando versiones consistentes de Rust y entornos Docker. Esto elimina discrepancias causadas por distintas configuraciones de desarrollo local.  
+2. **Compatibilidad Multiplataforma:** El CLI está disponible en las principales plataformas:  
+   - **Instalación desde el Código Fuente**: Los desarrolladores pueden clonar el repositorio e instalar PRR vía Cargo.  
+   - **Binarios Preconstruidos**: PRR ofrece binarios específicos para macOS y Linux, simplificando el proceso de instalación.  
+3. **Gestión del Toolchain de Rust:** PRR admite una versión fija del toolchain de Rust usando un archivo `rust-toolchain.toml`. Este enfoque garantiza compatibilidad y consistencia en las compilaciones, mejorando la confiabilidad.  
+4. **Integración con Docker:** Para proporcionar un entorno de build controlado, PRR aprovecha contenedores Docker. Al usar una imagen Docker dedicada mantenida por la comunidad, los desarrolladores evitan conflictos y dependencias asociadas con configuraciones locales.  
+5. **Inspección Flexible de Runtimes:** PRR ofrece potentes capacidades de inspección para archivos WASM de runtimes, permitiendo a los desarrolladores analizar, depurar y verificar la lógica del runtime de manera eficiente.
+
+<ShowcaseCTA title="Configurar Chopsticks">
+Aquí tienes un resumen rápido de cómo comenzar con Polkadot Runtime Releaser. Para instrucciones detalladas e información adicional, consulta el **[README oficial](https://github.com/hack-ink/polkadot-runtime-releaser) en el repositorio de GitHub** proporcionado por los autores.
+</ShowcaseCTA>
+
+## Instalación y Configuración
+### Instalando PRR
+Los desarrolladores pueden instalar PRR mediante varios métodos:
+
+- **Desde el Código Fuente**:  
+  Clona el repositorio y compila usando Cargo:
+  ```bash
+  git clone https://github.com/hack-ink/polkadot-runtime-releaser
+  cd polkadot-runtime-releaser
+  cargo install --path cli
+  ```
+- **Desde Crates.io**:  
+  ```bash
+  cargo install polkadot-runtime-releaser-cli
+  ```
+- **Utilizando Binarios Preconstruidos** (macOS/Linux):  
+  Descarga y configura el binario desde las releases de GitHub.
+
+### Configurando el Toolchain de Rust
+Para builds deterministas, PRR recomienda crear un archivo `rust-toolchain.toml` en la raíz del proyecto. Esto asegura que se usen la versión y componentes adecuados de Rust para compilar los runtimes. Ejemplo de configuración:
+
+```toml
+[toolchain]
+channel = "stable"
+components = ["cargo", "clippy", "rust-src", "rustc", "rustfmt"]
+profile = "minimal"
+targets = ["wasm32-unknown-unknown"]
+```
+
+### Uso de Docker para Builds
+PRR utiliza la imagen `polkadot-runtime-releaser` de Docker por defecto. Los desarrolladores pueden especificar versiones o proporcionar imágenes personalizadas para mayor flexibilidad.
+
+## Buenas Prácticas para la Gestión de Runtimes
+1. **Repositorios Separados de Runtimes:** PRR fomenta el uso de repositorios separados para runtimes de override y lógica de runtime. Esta estructura, adoptada por proyectos líderes en el ecosistema de Polkadot como Astar, Darwinia y Moonbeam, facilita el mantenimiento y el control de versiones.  
+2. **Overrides de Runtimes:** Los overrides de runtimes son esenciales para depuración y mejoras de características, como habilitar trazas EVM o recolectar registros detallados. PRR simplifica este proceso, facilitando la gestión tanto de runtimes en cadena como de depuración.  
+3. **Automatización de Flujos de Trabajo:** Con PRR, los equipos pueden automatizar las compilaciones e inspecciones de runtimes utilizando GitHub Actions. Esta integración asegura releases más rápidos y un mejor control de calidad.
+
+## **Ejemplos de Uso**
+### **Compilar un Runtime**
+Para compilar un runtime basado en Polkadot-SDK, PRR ofrece un comando sencillo:
+```bash
+prr build <nombre-crate-runtime> -f <features>
+```
+Este comando admite varias banderas para personalizar la compilación, incluyendo:
+- Seleccionar versiones del toolchain de Rust.  
+- Usar imágenes Docker.  
+- Cachear resultados para un desarrollo local más rápido.
+
+### Inspeccionar un Runtime
+Analiza un archivo WASM de runtime con el siguiente comando:
+```bash
+prr inspect <ruta-al-archivo-wasm> -b
+```
+La bandera `-b` mejora la legibilidad del output, facilitando la visualización de estructuras JSON.
+
+## Ventajas de PRR para Desarrolladores de Polkadot
+- **Mayor Eficiencia**: Simplifica la compilación, inspección y liberación de runtimes.  
+- **Estandarización**: Garantiza consistencia en proyectos que usan el Polkadot SDK.  
+- **Depuración Mejorada**: Ofrece herramientas detalladas de inspección de runtimes.  
+- **Escalabilidad**: Adecuado tanto para desarrolladores individuales como para equipos grandes que gestionan múltiples runtimes.
+
+## Conclusión
+El Polkadot Runtime Releaser es una herramienta poderosa que aborda los desafíos críticos en el desarrollo de runtimes para blockchains basadas en Polkadot. Al aprovechar sus funcionalidades, los desarrolladores pueden asegurar builds deterministas, flujos de trabajo optimizados y una gestión de runtimes mejorada. Con soporte para entornos Docker, configuración del toolchain de Rust e inspección de runtimes, PRR está destinado a convertirse en una parte indispensable del kit de herramientas de desarrollo en Polkadot.
