@@ -175,9 +175,11 @@ By exploring resources, contributing your expertise, and connecting with like-mi
 
 Together, we can create meaningful opportunities, drive impactful projects, and ensure the growth and accessibility of the Polkadot ecosystem for everyone.
 
+<a href="https://x.com/LVweb3/status/1881350751580307720">
 <p align="center">
 <img align="center" src="https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/polkadot-dot-ecosystem.png" width="100%">
 </p>
+</a>
 
 ## License
 The Polkadot Ecosystem portal is licensed under the GPL-3.0 free software license.
