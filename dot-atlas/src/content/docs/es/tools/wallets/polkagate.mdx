@@ -1,0 +1,39 @@
+---
+title: 'PolkaGate'
+description: 'Billetera Polkadot disponible como una extensión de navegador de código abierto.'
+hero:
+  tagline: 'Una puerta de entrada al ecosistema Polkadot.'
+  image: 
+    file: ../../../../../assets/tools/wallets/polkagate.png
+  actions:
+    - text: 'Herramienta'
+      link: https://polkagate.xyz/
+      icon: external
+    - text: 'Documentación'
+      link: https://support.polkadot.network/support/solutions/folders/65000157854
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+PolkaGate, desarrollada por la Fundación PolkaGate y financiada por la Tesorería Kusama, es una notable billetera Polkadot disponible como una extensión de navegador de código abierto. Soporta una amplia gama de DApps y herramientas dentro del ecosistema, enfatizando un enfoque no custodial para la gestión de billeteras.
+Esto asegura que los usuarios retengan acceso exclusivo a sus cuentas, subrayando la importancia de asegurar las frases mnemónicas y los archivos de respaldo. PolkaGate soporta varios navegadores, incluyendo Chrome, Edge, Brave y Firefox, ofreciendo características como creación y restauración de cuentas, cuentas de solo visualización y conexiones a Polkadot Vault y cuentas de Ledger.
+
+## Videos de la Comunidad de Polkagate
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=acdJ2aA2xi8',
+      title: 'Creando Identidades On-Chain con Polkagate',
+      description: 'Aprende cómo establecer identidades on-chain de manera sencilla utilizando la extensión Polkagate. Sigue nuestro guía paso a paso, desde abrir la extensión hasta personalizar tu identidad.'
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=n5Rr7zUaQVM',
+      title: 'Staking Solo en Polkadot usando la extensión PolkaGate',
+      description: 'Los stakers (nominadores) con una cantidad suficiente de tokens pueden optar por el staking solo. Cada staker solo será responsable de nominar validadores y monitorearlos para renominar si es necesario.'
+    },
+  ]} />
