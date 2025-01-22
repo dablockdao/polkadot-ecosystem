@@ -1,0 +1,144 @@
+---
+import { LinkButton } from '@astrojs/starlight/components';
+---
+
+  <div class="cta-container">
+    <div class="cta-text">
+      <h1>Contributing to the Ecosystem?<br>List your project</h1>
+      <p>
+        Empower your vision and showcase your impact. List your project to gain visibility, connect
+        with collaborators, and contribute to the growth of the thriving blockchain ecosystem.<br><br>
+        <LinkButton href="mailto:lv@dablock.com" variant="minimal"> Submit Project </LinkButton>
+      </p>
+    </div>
+    <div class="calendar-embed">
+      <!-- Calendly inline widget begin -->
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/lv-dablock/30min"
+        style="min-width:320px;height:420px;"
+      ></div>
+      <script
+        type="text/javascript"
+        src="https://assets.calendly.com/assets/external/widget.js"
+        async
+      ></script>
+      <!-- Calendly inline widget end -->
+    </div>
+  </div>
+
+  <style>
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.cta-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center !important;
+  padding: 2rem;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* CTA Text */
+.cta-text {
+  flex: 1 1 40%;
+  max-width: 40%;
+}
+
+.cta-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.cta-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Calendar Embed */
+.calendar-embed {
+  flex: 1 1 50%;
+  max-width: 50%;
+  min-width: 320px;
+}
+
+.calendly-inline-widget {
+  width: 100%;
+  height: 700px;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .cta-text {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .calendar-embed {
+    max-width: 100%;
+    flex: 1 1 100%;
+    height: 600px;
+  }
+
+  .calendly-inline-widget {
+    height: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cta-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .cta-text p {
+    font-size: 1rem;
+  }
+
+  .calendar-embed {
+    height: 500px;
+  }
+
+  .calendly-inline-widget {
+    height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .cta-text p {
+    font-size: 0.95rem;
+  }
+
+  .calendar-embed {
+    height: 400px;
+  }
+
+  .calendly-inline-widget {
+    height: 400px;
+  }
+}
+
+  </style>
+
+
+
