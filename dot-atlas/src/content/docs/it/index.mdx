@@ -1,0 +1,199 @@
+---
+title: Tutto l'Ecosistema Polkadot Curato in Un Unico Luogo
+description: Inizia subito e unisciti alla DAO più grande del mondo.
+template: splash
+banner:
+  content: 
+    <a target="_blank" rel="noopener noreferrer" href="//media.polkadotecosystem.com/events/sub0/">Evidenze del Reset Sub0</a>
+hero:
+  tagline: Scopri tutti i progetti e le iniziative dell'ecosistema Polkadot in modo organizzato e intuitivo.
+  image:
+    file: ../../../assets/atlas.png
+  actions:
+    - text: Strumenti
+      link: /tools/
+      icon: right-arrow
+    - text: Dapp
+      link: /dapps/
+      icon: right-arrow
+      variant: primary
+    - text: Community
+      link: /club/
+      icon: heart
+      variant: minimal
+---
+
+import { ImageCard, LinkButton2 } from '../../../components/ImageCard.astro';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+import { Card, CardGrid, LinkCard, LinkButton, FileTree, Tabs, TabItem } from '@astrojs/starlight/components';
+import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import { Image } from 'astro:assets';
+import Hero2 from '/src/components/landing/Hero2.astro';
+import Stats from '/src/components/landing/Stats.astro';
+import CallCTA from '/src/components/landing/CallCTA.astro';
+
+&nbsp;
+&nbsp;
+
+<Tabs>
+  <TabItem label="Strumenti">
+  
+## Strumenti di Polkadot
+Infrastruttura essenziale per interagire e costruire sulla rete Polkadot:  
+- Dai wallet sicuri per gestire asset digitali ai block explorer per approfondimenti dettagliati sull'attività della rete.  
+- Gli sviluppatori possono iniziare con framework e API robusti nella sezione Sviluppo, mentre gli strumenti DAO consentono alle community di gestire efficacemente i propri progetti.
+
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/wallets.png'),
+      href: '/tools/wallets',
+      title: 'Wallet',
+      description: 'Scopri i wallet più avanzati per conservare i tuoi asset.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/block-explorers.png'),
+      href: '/tools/block-explorers/',
+      title: 'Block Explorer',
+      description: 'Comprendi ogni movimento nella rete.'
+      },  
+          {
+      thumbnail: import('/src/assets/thumbnails/dao-tools.png'),
+      href: '/tools/dao-tools/',
+      title: 'Strumenti DAO',
+      description: 'Gli strumenti più popolari per gestire i DAO.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/dev-tools.png'),
+      href: '/tools/dev/',
+      title: 'Sviluppo',
+      description: 'Inizia il tuo viaggio come sviluppatore Polkadot.'
+      },
+  ]}
+/>  
+  </TabItem>
+
+  <TabItem label="Dapp">
+  ## Dapp di Polkadot
+L'ecosistema Polkadot presenta un vivace assortimento di applicazioni decentralizzate (DApp) che si rivolgono a vari settori.  
+Le piattaforme DeFi ridefiniscono i sistemi finanziari, mentre i marketplace NFT e le Dapp di gaming offrono esperienze digitali immersive.  
+I progetti DePin avanzano l'infrastruttura fisica decentralizzata, e le Dapp sociali promuovono il coinvolgimento della community.  
+Inoltre, le soluzioni di archiviazione, gli ecosistemi di smart contract e le Dapp di intelligenza artificiale evidenziano l'adattabilità e l'innovazione fiorente nell'ecosistema Polkadot.
+
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/defi.png'),
+      href: '/dapps/defi',
+      title: 'DeFi',
+      description: 'Scopri le Dapp DeFi più popolari nell’Ecosistema Polkadot.'
+    },
+        {
+      thumbnail: import('/src/assets/thumbnails/depin.png'),
+      href: '/dapps/depin/',
+      title: 'DePin',
+      description: 'Progetti DePin nell’Ecosistema Polkadot.'
+      },
+                     {
+      thumbnail: import('/src/assets/thumbnails/nft-marketplaces.png'),
+      href: '/dapps/nft-marketplaces/',
+      title: 'NFT Market',
+      description: 'Scopri i marketplace NFT più popolari nell’Ecosistema Polkadot.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/gaming.png'),
+      href: '/dapps/gaming/',
+      title: 'Gaming',
+      description: 'Esplora i giochi più popolari.'
+      },
+  ]}
+/>
+&nbsp;
+
+<ShowcaseImage
+entries={[
+ {
+      thumbnail: import('/src/assets/thumbnails/social.png'),
+      href: '/dapps/social/',
+      title: 'Social',
+      description: 'Scopri le Dapp social più popolari nell’Ecosistema Polkadot.'
+      }, 
+    {
+      thumbnail: import('/src/assets/thumbnails/data.png'),
+      href: '/dapps/storage/',
+      title: 'Archiviazione',
+      description: 'Scopri le Dapp di archiviazione e dati più popolari nell’Ecosistema Polkadot.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/smart-contracts.png'),
+      href: '/dapps/smart-contracts/',
+      title: 'Smart Contracts',
+      description: 'Scopri gli ecosistemi di Smart Contract più popolari basati su Polkadot e Substrate.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/ai.png'),
+      href: '/dapps/ai/',
+      title: 'AI',
+      description: 'Scopri le Dapp AI più popolari nell’Ecosistema Polkadot.'
+      },
+]}
+/>
+  </TabItem>
+
+  <TabItem label="Community">
+  ## Community di Polkadot
+L'Hub dell’Ecosistema Polkadot evidenzia la forza collettiva e l'innovazione che guidano la crescita della rete.  
+Esplora DAO e collettivi di impatto, scopri organizzazioni che stanno plasmando il futuro del Web3 e connettiti con iniziative chiave per far progredire l’ecosistema.  
+Per i nuovi arrivati, l'hub offre una biblioteca completa di risorse per imparare, crescere e contribuire attivamente alla visione di Polkadot di un internet decentralizzato.
+
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/daos.png'),
+      href: '/club/daos',
+      title: 'DAO',
+      description: 'Scopri i DAO e i Collettivi più popolari che modellano l’Ecosistema Polkadot.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/orgs.png'),
+      href: '/club/orgs/',
+      title: 'Organizzazioni',
+      description: 'Tutte le organizzazioni che costruiscono il futuro di internet.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/initiatives.png'),
+      href: '/club/initiatives/',
+      title: 'Iniziative',
+      description: 'Inizia il tuo viaggio come sviluppatore Polkadot.'
+      },
+          {
+      thumbnail: import('/src/assets/thumbnails/resources.png'),
+      href: '/club/resourcees/',
+      title: 'Risorse',
+      description: 'Lista completa delle risorse per i nuovi utenti.'
+      },
+  ]}
+/>
+  </TabItem>
+</Tabs>
+
+&nbsp;
+
+<CallCTA />
+
+## +Risorse dell’Ecosistema:
+-------------
+<CardGrid>
+  <Card title="Wiki di Polkadot" icon="open-book">
+    Esplora informazioni approfondite sui principi tecnici di Polkadot e sui componenti chiave che alimentano il suo ecosistema.
+    <LinkButton href="https://wiki.polkadot.network" variant="secondary" icon="external" iconPlacement="start">Wiki di Polkadot</LinkButton>
+  </Card>
+
+  <Card title="Sito Web di Polkadot" icon="information">
+    Scopri la visione di Polkadot, il suo ecosistema innovativo e il suo ruolo nel futuro delle tecnologie decentralizzate.
+    <LinkButton href="https://polkadot.com/" variant="secondary" icon="external" iconPlacement="start">Polkadot.com</LinkButton>
+  </Card>
+</CardGrid>
