@@ -2594,6 +2594,83 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"es/tools/miscellaneous/chainviz.mdx": {
+	id: "es/tools/miscellaneous/chainviz.mdx";
+  slug: "es/tools/miscellaneous/chainviz";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/tools/miscellaneous/fidi-web3-analytics.mdx": {
+	id: "es/tools/miscellaneous/fidi-web3-analytics.mdx";
+  slug: "es/tools/miscellaneous/fidi-web3-analytics";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/tools/miscellaneous/index.mdx": {
+	id: "es/tools/miscellaneous/index.mdx";
+  slug: "es/tools/miscellaneous";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/tools/miscellaneous/polkadot-staking-dashboard.mdx": {
+	id: "es/tools/miscellaneous/polkadot-staking-dashboard.mdx";
+  slug: "es/tools/miscellaneous/polkadot-staking-dashboard";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/tools/miscellaneous/polkadot-telemetry.md": {
+	id: "es/tools/miscellaneous/polkadot-telemetry.md";
+  slug: "es/tools/miscellaneous/polkadot-telemetry";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/tools/miscellaneous/polkatax.mdx": {
+	id: "es/tools/miscellaneous/polkatax.mdx";
+  slug: "es/tools/miscellaneous/polkatax";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/tools/miscellaneous/polkawatch.md": {
+	id: "es/tools/miscellaneous/polkawatch.md";
+  slug: "es/tools/miscellaneous/polkawatch";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/tools/miscellaneous/staking-rewards-collector.mdx": {
+	id: "es/tools/miscellaneous/staking-rewards-collector.mdx";
+  slug: "es/tools/miscellaneous/staking-rewards-collector";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/tools/miscellaneous/subvt.mdx": {
+	id: "es/tools/miscellaneous/subvt.mdx";
+  slug: "es/tools/miscellaneous/subvt";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/tools/miscellaneous/wagmedia-bot.mdx": {
+	id: "es/tools/miscellaneous/wagmedia-bot.mdx";
+  slug: "es/tools/miscellaneous/wagmedia-bot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/tools/miscellaneous/web3alert.mdx": {
+	id: "es/tools/miscellaneous/web3alert.mdx";
+  slug: "es/tools/miscellaneous/web3alert";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "es/tools/wallets/enkrypt-wallet.mdx": {
 	id: "es/tools/wallets/enkrypt-wallet.mdx";
   slug: "es/tools/wallets/enkrypt-wallet";
