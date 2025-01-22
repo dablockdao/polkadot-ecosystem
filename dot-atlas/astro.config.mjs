@@ -141,7 +141,7 @@ export default defineConfig({
 				  ])],
 			title: 'Polkadot Ecosystem',
 			editLink: {
-				baseUrl: 'https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-hub/',
+				baseUrl: 'https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-atlas/',
 			  },
 			customCss: [
 				'./src/styles/custom.css',
