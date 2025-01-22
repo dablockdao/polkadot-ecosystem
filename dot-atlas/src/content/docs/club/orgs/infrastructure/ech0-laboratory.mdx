@@ -1,0 +1,125 @@
+---
+title: Ech0's Laboratory
+description: Ech0’s Laboratory ensures secure Polkadot and Kusama validation through robust hardware, transparent operations, and dedicated self-stake.
+hero:
+  tagline: Secure and Transparent Validation in the Polkadot Ecosystem.
+  image: 
+    file: ../../../../../assets/hub/orgs/ech0.png
+  actions:
+    - text: Site
+      link: https://ech0.re
+      icon: external
+    - text: X
+      link: https://twitter.com/ech0re
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+Ech0’s Laboratory is a dedicated security-focused operator within the Polkadot and Kusama ecosystems, striving to maintain reliable and transparent validation services. 
+Supported by the Decentralized Nodes program from the Web3 Foundation, Ech0’s Laboratory demonstrates its commitment to blockchain security, robust hardware infrastructure, and responsive communication channels. 
+Below is an overview of how the organization achieves these standards and why nominators can trust their operations.
+
+## Polkadot and Kusama Validators
+Ech0’s Laboratory currently operates one validator on the Kusama network and one validator on the Polkadot network. 
+Both validators have established reputations for reliability, with consistently monitored performance metrics and on-chain verification of their identities.
+
+### Kusama Validator
+- **Identity**: Ech0.re/01  
+- **Stash Address**: `Dfw2gjWfm19j3Q9ewn9PJiDyCdFsBs9QQ2ZiRAZ3k2QNVar`  
+- **Commission Fee**: 10%  
+- **Telemetry Name**: EchoStake-KSM-01  
+
+### Polkadot Validator
+- **Identity**: ECH0.RE/01  
+- **Stash Address**: `126cWhehuBFhQvbDqt26dWBNgELfkpc72WvJV3sx82qRogkT`  
+- **Commission Fee**: 4%  
+- **Telemetry Name**: EchoStake-DOT-01  
+
+Ech0’s Laboratory is actively accepting new nominations and aims to become fully independent from the Decentralized Nodes program by 2025.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Kusama: missed Paravalidation vote investigation',
+      picture: 'http://localhost:4321/_image?href=%2F%40fs%2FUsers%2Flv%2FDocuments%2FGitHub%2Fpolkadotecosystem%2Fdot-atlas%2Fsrc%2Fassets%2Fhub%2Forgs%2Fech0.png%3ForigWidth%3D400%26origHeight%3D400%26origFormat%3Dpng&w=400&h=400&f=webp',
+      link: 'https://ech0.re/kusama-missed-paravalidation-vote-investigation/',
+      description:
+        "The founder of Echo's Laboratory details his initial missed Kusama para-validation vote, thoroughly investigates potential causes, assesses negligible impact, and showcases SubVT’s monitoring.",
+    },
+  ]}
+/>
+
+## Hardware and Hosting
+To maintain a high standard of security and performance, Ech0’s Laboratory leverages **dedicated bare metal servers** hosted at OVH in France (Roubaix). 
+These servers adhere to the recommended security practices for blockchain validators, ensuring robust uptime and consistent block production.
+- **Operating System**: Ubuntu 24.04 LTS x86_64  
+- **RAM**: 64 GB DDR5 ECC On-Die (5200 MHz)  
+- **CPU**: AMD EPYC 4344P (8 cores / 16 threads, 3.8 GHz / 5.3 GHz)  
+- **Storage**: 2×960 GB SSD NVMe RAID 1  
+- **Public Bandwidth**: 1 Gb/s  
+
+Regular monitoring and proactive maintenance help ensure that each validator remains stable and meets the rigorous demands of Polkadot and Kusama networks.
+
+## On-Chain Identity and Communication
+Since nominators entrust their funds to validators, transparency and accessibility are paramount. Ech0’s Laboratory verifies its on-chain identities on both Polkadot and Kusama through Polkassembly. 
+The team is readily reachable via multiple channels:
+
+- **Email**: [me@ech0.re](mailto:me@ech0.re)  
+- **X/Twitter**: [@ech0re](https://twitter.com/ech0re)  
+- **Element/Matrix**: `@ech0.re:matrix.org`  
+- **Discord**: `ech0.re`  
+- **Website**: [https://ech0.re](https://ech0.re)
+
+## Assets Security and Hardware Wallets
+
+Protecting staked assets is a critical concern in blockchain validation. Ech0’s Laboratory employs **hardware cold wallets** featuring secure elements to minimize risk. The following devices are used to store validator keys and execute essential transactions:
+
+1. **Ledger Nano S Plus** (Backup Device)  
+2. **Ledger Nano X** (Live Device, used for urgent actions)  
+3. **Ledger Flex** (Live Device, additionally used for NFC security authentication)
+
+Each device is protected by a PIN and remains fully encrypted. Three consecutive failed PIN attempts result in a complete wipe of the stored keys, significantly enhancing security.
+
+### Seed Phrase Protection
+The seed phrase for Ech0’s Laboratory is engraved on a **Cryptotag Zeus** metal plate, ensuring it remains waterproof, fireproof, corrosion-proof, and even bulletproof. This backup measure guarantees continuity in the event of device failure or loss.
+
+## Proxies for Efficient Operations
+Ech0’s Laboratory employs proxy accounts, set up in the Nova hot wallet, to perform routine tasks (e.g., bonding, commission adjustments, session key updates, and governance voting) without repeatedly exposing the main hardware wallets.
+- **Staking Proxy (Polkadot)**: `13THs2ArG9dkJxqLUvEDYiCy7aGmYRvdoz5iyrkSTegJ4FdV`  
+- **Staking Proxy (Kusama)**: `F2cP1Ff2jPCd5eGHyzGJWjpQYZMeoBgBsBzDE33PMsGcw55`  
+- **Governance Proxy (Polkadot)**: `16g6ZBYbEP3kRMgVBki7zdvdGpymXDyHWzj3D3rDaEATXzc8`  
+- **Governance Proxy (Kusama)**: `JFR5AdPzxoCjUVQzpUAkSTUZoGMdbEKtsqJSR8pVwMS6Voi`
+
+These proxies facilitate day-to-day validator operations while preserving the highest level of security for underlying private keys.
+
+## Self Stake for Aligned Incentives
+To demonstrate commitment and alignment with network security, Ech0’s Laboratory bonds a significant amount of personal funds into its validators:
+- **Kusama**: 170 KSM  
+- **Polkadot**: 8,000 DOT staked for validation, plus an additional 3,000 DOT for nomination  
+- **Total**: 11,000 DOT and 170 KSM at stake  
+
+Because these funds are susceptible to slashing in cases of misconduct or downtime, Ech0’s Laboratory underscores its dedication to secure and compliant operation.
+
+## About Ech0’s Laboratory
+Launched in November 2024 by Adam, a French security researcher with over eight years of experience and a master’s degree in cybersecurity, **Ech0’s Laboratory** explores various facets of blockchain, cybersecurity, and beyond. 
+Adam also participates in Le Nexus DAO for Polkadot and Kusama governance and serves as the president of Root-Me, a cybersecurity e-learning platform. 
+
+This independent publication offers:
+- **Unmodified archival content**, posted prior to the official website launch.  
+- **Newly published articles** on cybersecurity, blockchain, and other topics within the boundaries of applicable laws.  
+
+<ShowcaseTwitter
+  entries={[
+    'https://x.com/ech0re/status/1881435962506371159',
+  ]}
+/>
+
+ <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+### Conclusion
+Ech0’s Laboratory stands as a reliable, secure, and transparent validator operator in the **Polkadot** and **Kusama** ecosystems. 
+Through rigorous hardware configurations, comprehensive security practices, and significant self-stake investments, Ech0’s Laboratory has proven its dedication to the long-term health and decentralization of these blockchain networks. 
+By maintaining open communication channels and verifiable on-chain identities, the team underscores its commitment to trust and accountability—priorities essential for any staker seeking dependable validation services.

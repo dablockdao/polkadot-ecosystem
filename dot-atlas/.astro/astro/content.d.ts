@@ -774,6 +774,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"club/orgs/infrastructure/ech0-laboratory.mdx": {
+	id: "club/orgs/infrastructure/ech0-laboratory.mdx";
+  slug: "club/orgs/infrastructure/ech0-laboratory";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "club/orgs/infrastructure/globalstake.mdx": {
 	id: "club/orgs/infrastructure/globalstake.mdx";
   slug: "club/orgs/infrastructure/globalstake";
