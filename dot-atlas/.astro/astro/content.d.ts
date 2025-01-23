@@ -2223,6 +2223,139 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"es/club/bounties/antiscam.mdx": {
+	id: "es/club/bounties/antiscam.mdx";
+  slug: "es/club/bounties/antiscam";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/bridges-bug-bounty.mdx": {
+	id: "es/club/bounties/bridges-bug-bounty.mdx";
+  slug: "es/club/bounties/bridges-bug-bounty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/defi-bounty.mdx": {
+	id: "es/club/bounties/defi-bounty.mdx";
+  slug: "es/club/bounties/defi-bounty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/dotplay.mdx": {
+	id: "es/club/bounties/dotplay.mdx";
+  slug: "es/club/bounties/dotplay";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/events.mdx": {
+	id: "es/club/bounties/events.mdx";
+  slug: "es/club/bounties/events";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/ibp.mdx": {
+	id: "es/club/bounties/ibp.mdx";
+  slug: "es/club/bounties/ibp";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/index.mdx": {
+	id: "es/club/bounties/index.mdx";
+  slug: "es/club/bounties";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/inkubator.md": {
+	id: "es/club/bounties/inkubator.md";
+  slug: "es/club/bounties/inkubator";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/club/bounties/legal-bounty.mdx": {
+	id: "es/club/bounties/legal-bounty.mdx";
+  slug: "es/club/bounties/legal-bounty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/marketing.mdx": {
+	id: "es/club/bounties/marketing.mdx";
+  slug: "es/club/bounties/marketing";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/meetups.mdx": {
+	id: "es/club/bounties/meetups.mdx";
+  slug: "es/club/bounties/meetups";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/moderation.mdx": {
+	id: "es/club/bounties/moderation.mdx";
+  slug: "es/club/bounties/moderation";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/bounties/pal.md": {
+	id: "es/club/bounties/pal.md";
+  slug: "es/club/bounties/pal";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/club/bounties/pioneers-prize.md": {
+	id: "es/club/bounties/pioneers-prize.md";
+  slug: "es/club/bounties/pioneers-prize";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/club/bounties/technical-support.md": {
+	id: "es/club/bounties/technical-support.md";
+  slug: "es/club/bounties/technical-support";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/club/bounties/ux-bounty.mdx": {
+	id: "es/club/bounties/ux-bounty.mdx";
+  slug: "es/club/bounties/ux-bounty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/resources/awesome-polkadot.mdx": {
+	id: "es/club/resources/awesome-polkadot.mdx";
+  slug: "es/club/resources/awesome-polkadot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/resources/handbook.mdx": {
+	id: "es/club/resources/handbook.mdx";
+  slug: "es/club/resources/handbook";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/resources/index.mdx": {
+	id: "es/club/resources/index.mdx";
+  slug: "es/club/resources";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "es/dapps/ai/bittensor.mdx": {
 	id: "es/dapps/ai/bittensor.mdx";
   slug: "es/dapps/ai/bittensor";
@@ -3917,13 +4050,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"tools/dev/pop-network.md": {
-	id: "tools/dev/pop-network.md";
+"tools/dev/pop-network.mdx": {
+	id: "tools/dev/pop-network.mdx";
   slug: "tools/dev/pop-network";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "tools/dev/reactivedot.mdx": {
 	id: "tools/dev/reactivedot.mdx";
   slug: "tools/dev/reactivedot";
