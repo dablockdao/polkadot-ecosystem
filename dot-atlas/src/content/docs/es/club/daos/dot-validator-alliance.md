@@ -4,7 +4,7 @@ description: Alianza DAO de comunidades de Polkadot dedicada a ayudar y hacer cr
 hero:  
   tagline: Dedicados a ayudar y hacer crecer a los validadores.  
   image:  
-    file: ../../../../assets/hub/daos/dot-validator-alliance.png  
+    file: ../../../../../assets/hub/daos/dot-validator-alliance.png  
   actions:  
     - text: Sitio  
       link: https://dotvalidators.org/  

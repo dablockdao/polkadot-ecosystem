@@ -4,7 +4,7 @@ description: Gavin Wood, cofundador de Ethereum y creador de Polkadot, es un vis
 hero:
   tagline: Cofundador de Ethereum y creador de Polkadot & JAM.
   image: 
-    file: ../../../../assets/hub/daos/gavin-wood.png
+    file: ../../../../../assets/hub/daos/gavin-wood.png
   actions:
     - text: Github
       link: https://github.com/gavofyork

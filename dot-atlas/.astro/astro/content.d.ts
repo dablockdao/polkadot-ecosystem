@@ -2223,6 +2223,125 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"de/tools/index.mdx": {
+	id: "de/tools/index.mdx";
+  slug: "de/tools";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/enkrypt-wallet.mdx": {
+	id: "de/tools/wallets/enkrypt-wallet.mdx";
+  slug: "de/tools/wallets/enkrypt-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/fearless-wallet.mdx": {
+	id: "de/tools/wallets/fearless-wallet.mdx";
+  slug: "de/tools/wallets/fearless-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/index.mdx": {
+	id: "de/tools/wallets/index.mdx";
+  slug: "de/tools/wallets";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/kampela-signer.mdx": {
+	id: "de/tools/wallets/kampela-signer.mdx";
+  slug: "de/tools/wallets/kampela-signer";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/mimir.mdx": {
+	id: "de/tools/wallets/mimir.mdx";
+  slug: "de/tools/wallets/mimir";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/multix.mdx": {
+	id: "de/tools/wallets/multix.mdx";
+  slug: "de/tools/wallets/multix";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/nova-wallet.mdx": {
+	id: "de/tools/wallets/nova-wallet.mdx";
+  slug: "de/tools/wallets/nova-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/plutowallet.mdx": {
+	id: "de/tools/wallets/plutowallet.mdx";
+  slug: "de/tools/wallets/plutowallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/polkadot-vault.mdx": {
+	id: "de/tools/wallets/polkadot-vault.mdx";
+  slug: "de/tools/wallets/polkadot-vault";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/polkagate.mdx": {
+	id: "de/tools/wallets/polkagate.mdx";
+  slug: "de/tools/wallets/polkagate";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/polkasafe.mdx": {
+	id: "de/tools/wallets/polkasafe.mdx";
+  slug: "de/tools/wallets/polkasafe";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/polkawallet.mdx": {
+	id: "de/tools/wallets/polkawallet.mdx";
+  slug: "de/tools/wallets/polkawallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/sporran-wallet.mdx": {
+	id: "de/tools/wallets/sporran-wallet.mdx";
+  slug: "de/tools/wallets/sporran-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/subwallet.mdx": {
+	id: "de/tools/wallets/subwallet.mdx";
+  slug: "de/tools/wallets/subwallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/talisman-wallet.mdx": {
+	id: "de/tools/wallets/talisman-wallet.mdx";
+  slug: "de/tools/wallets/talisman-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/wallets/xsigners.mdx": {
+	id: "de/tools/wallets/xsigners.mdx";
+  slug: "de/tools/wallets/xsigners";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "es/club/bounties/antiscam.mdx": {
 	id: "es/club/bounties/antiscam.mdx";
   slug: "es/club/bounties/antiscam";
@@ -2335,6 +2454,216 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"es/club/collectives/index.mdx": {
+	id: "es/club/collectives/index.mdx";
+  slug: "es/club/collectives";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/collectives/polkadot-ambassadors-collective.mdx": {
+	id: "es/club/collectives/polkadot-ambassadors-collective.mdx";
+  slug: "es/club/collectives/polkadot-ambassadors-collective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/collectives/polkadot-fellowship.mdx": {
+	id: "es/club/collectives/polkadot-fellowship.mdx";
+  slug: "es/club/collectives/polkadot-fellowship";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/collectives/polkadot-tooling-collective.md": {
+	id: "es/club/collectives/polkadot-tooling-collective.md";
+  slug: "es/club/collectives/polkadot-tooling-collective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/club/daos/apexchimpz.mdx": {
+	id: "es/club/daos/apexchimpz.mdx";
+  slug: "es/club/daos/apexchimpz";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/cctf-dao.mdx": {
+	id: "es/club/daos/cctf-dao.mdx";
+  slug: "es/club/daos/cctf-dao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/chaosdao.mdx": {
+	id: "es/club/daos/chaosdao.mdx";
+  slug: "es/club/daos/chaosdao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/dot-validator-alliance.md": {
+	id: "es/club/daos/dot-validator-alliance.md";
+  slug: "es/club/daos/dot-validator-alliance";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/club/daos/index.mdx": {
+	id: "es/club/daos/index.mdx";
+  slug: "es/club/daos";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/kappa-sigma-mu.mdx": {
+	id: "es/club/daos/kappa-sigma-mu.mdx";
+  slug: "es/club/daos/kappa-sigma-mu";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/kusdao.mdx": {
+	id: "es/club/daos/kusdao.mdx";
+  slug: "es/club/daos/kusdao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/lenexus.mdx": {
+	id: "es/club/daos/lenexus.mdx";
+  slug: "es/club/daos/lenexus";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/lucky-friday.mdx": {
+	id: "es/club/daos/lucky-friday.mdx";
+  slug: "es/club/daos/lucky-friday";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/permanencedao.mdx": {
+	id: "es/club/daos/permanencedao.mdx";
+  slug: "es/club/daos/permanencedao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/polkadot-africa.mdx": {
+	id: "es/club/daos/polkadot-africa.mdx";
+  slug: "es/club/daos/polkadot-africa";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/polkadot-hungary.mdx": {
+	id: "es/club/daos/polkadot-hungary.mdx";
+  slug: "es/club/daos/polkadot-hungary";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/polkadot-mexico.mdx": {
+	id: "es/club/daos/polkadot-mexico.mdx";
+  slug: "es/club/daos/polkadot-mexico";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/polkadot-poland.mdx": {
+	id: "es/club/daos/polkadot-poland.mdx";
+  slug: "es/club/daos/polkadot-poland";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/reeeeeeeeeedao.mdx": {
+	id: "es/club/daos/reeeeeeeeeedao.mdx";
+  slug: "es/club/daos/reeeeeeeeeedao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/saxemberg.md": {
+	id: "es/club/daos/saxemberg.md";
+  slug: "es/club/daos/saxemberg";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/club/daos/teddydao.mdx": {
+	id: "es/club/daos/teddydao.mdx";
+  slug: "es/club/daos/teddydao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/daos/unitedbloc.md": {
+	id: "es/club/daos/unitedbloc.md";
+  slug: "es/club/daos/unitedbloc";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/club/daos/youdledao.mdx": {
+	id: "es/club/daos/youdledao.mdx";
+  slug: "es/club/daos/youdledao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/index.mdx": {
+	id: "es/club/index.mdx";
+  slug: "es/club";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/memecoins/beefy.mdx": {
+	id: "es/club/memecoins/beefy.mdx";
+  slug: "es/club/memecoins/beefy";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/memecoins/gavunwud.mdx": {
+	id: "es/club/memecoins/gavunwud.mdx";
+  slug: "es/club/memecoins/gavunwud";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/memecoins/index.mdx": {
+	id: "es/club/memecoins/index.mdx";
+  slug: "es/club/memecoins";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/memecoins/pink.mdx": {
+	id: "es/club/memecoins/pink.mdx";
+  slug: "es/club/memecoins/pink";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/memecoins/stink.mdx": {
+	id: "es/club/memecoins/stink.mdx";
+  slug: "es/club/memecoins/stink";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/people/gavin-wood.md": {
+	id: "es/club/people/gavin-wood.md";
+  slug: "es/club/people/gavin-wood";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "es/club/resources/awesome-polkadot.mdx": {
 	id: "es/club/resources/awesome-polkadot.mdx";
   slug: "es/club/resources/awesome-polkadot";
@@ -3759,6 +4088,125 @@ declare module 'astro:content' {
 "es/tools/wallets/xsigners.mdx": {
 	id: "es/tools/wallets/xsigners.mdx";
   slug: "es/tools/wallets/xsigners";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/index.mdx": {
+	id: "fr/tools/index.mdx";
+  slug: "fr/tools";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/enkrypt-wallet.mdx": {
+	id: "fr/tools/wallets/enkrypt-wallet.mdx";
+  slug: "fr/tools/wallets/enkrypt-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/fearless-wallet.mdx": {
+	id: "fr/tools/wallets/fearless-wallet.mdx";
+  slug: "fr/tools/wallets/fearless-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/index.mdx": {
+	id: "fr/tools/wallets/index.mdx";
+  slug: "fr/tools/wallets";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/kampela-signer.mdx": {
+	id: "fr/tools/wallets/kampela-signer.mdx";
+  slug: "fr/tools/wallets/kampela-signer";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/mimir.mdx": {
+	id: "fr/tools/wallets/mimir.mdx";
+  slug: "fr/tools/wallets/mimir";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/multix.mdx": {
+	id: "fr/tools/wallets/multix.mdx";
+  slug: "fr/tools/wallets/multix";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/nova-wallet.mdx": {
+	id: "fr/tools/wallets/nova-wallet.mdx";
+  slug: "fr/tools/wallets/nova-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/plutowallet.mdx": {
+	id: "fr/tools/wallets/plutowallet.mdx";
+  slug: "fr/tools/wallets/plutowallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/polkadot-vault.mdx": {
+	id: "fr/tools/wallets/polkadot-vault.mdx";
+  slug: "fr/tools/wallets/polkadot-vault";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/polkagate.mdx": {
+	id: "fr/tools/wallets/polkagate.mdx";
+  slug: "fr/tools/wallets/polkagate";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/polkasafe.mdx": {
+	id: "fr/tools/wallets/polkasafe.mdx";
+  slug: "fr/tools/wallets/polkasafe";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/polkawallet.mdx": {
+	id: "fr/tools/wallets/polkawallet.mdx";
+  slug: "fr/tools/wallets/polkawallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/sporran-wallet.mdx": {
+	id: "fr/tools/wallets/sporran-wallet.mdx";
+  slug: "fr/tools/wallets/sporran-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/subwallet.mdx": {
+	id: "fr/tools/wallets/subwallet.mdx";
+  slug: "fr/tools/wallets/subwallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/talisman-wallet.mdx": {
+	id: "fr/tools/wallets/talisman-wallet.mdx";
+  slug: "fr/tools/wallets/talisman-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/wallets/xsigners.mdx": {
+	id: "fr/tools/wallets/xsigners.mdx";
+  slug: "fr/tools/wallets/xsigners";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">

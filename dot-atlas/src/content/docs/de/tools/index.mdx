@@ -1,0 +1,46 @@
+---
+title: Polkadot Tools
+description: Entdecke das Polkadot-Ökosystem mit wichtigen Tools für Wallets, Block-Explorer, Entwicklung, Governance, Multisig-Wallets und Analytics.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Die Polkadot-Ökosystem-Tools wurden entwickelt, um die Interaktionen der Benutzer zu verbessern und verschiedene Operationen innerhalb des Netzwerks zu optimieren. 
+Von Wallets und Block-Explorern bis hin zu Entwicklungstools und Governance-Plattformen 
+decken diese Tools eine breite Palette von Bedürfnissen für sowohl unerfahrene Benutzer als auch erfahrene Entwickler ab.
+
+Diese vielfältige Sammlung von Tools gewährleistet nicht nur eine robuste Sicherheit und eine effiziente Verwaltung digitaler Vermögenswerte, 
+sondern befähigt die Benutzer auch, sich vollständig mit dem Polkadot-Netzwerk auseinanderzusetzen und so Innovation und Wachstum im Ökosystem voranzutreiben.
+
+## Polkadot-Ökosystem-Tools
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/wallets.png'),
+      href: '/de/tools/wallets',
+      title: 'Wallets',
+      description: 'Entdecke die fortschrittlichsten Wallets zur Aufbewahrung deiner Vermögenswerte.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/block-explorers.png'),
+      href: '/tools/block-explorers/',
+      title: 'Block Explorer',
+      description: 'Verstehe jede Bewegung im Netzwerk.'
+      },  
+          {
+      thumbnail: import('/src/assets/thumbnails/dao-tools.png'),
+      href: '/tools/dao-tools/',
+      title: 'DAO-Tools',
+      description: 'Die beliebtesten Tools zur Verwaltung von DAOs.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/dev-tools.png'),
+      href: '/tools/dev/',
+      title: 'Entwicklung',
+      description: 'Starte deine Reise als Polkadot-Entwickler.'
+      },
+  ]} />
