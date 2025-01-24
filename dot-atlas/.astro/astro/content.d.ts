@@ -158,13 +158,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"club/archive/dotleap.mdx": {
-	id: "club/archive/dotleap.mdx";
-  slug: "club/archive/dotleap";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
 "club/archive/playproject.md": {
 	id: "club/archive/playproject.md";
   slug: "club/archive/playproject";
@@ -504,6 +497,13 @@ declare module 'astro:content' {
 "club/initiatives/dotlake.mdx": {
 	id: "club/initiatives/dotlake.mdx";
   slug: "club/initiatives/dotlake";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/initiatives/dotleap.mdx": {
+	id: "club/initiatives/dotleap.mdx";
+  slug: "club/initiatives/dotleap";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -4088,6 +4088,13 @@ declare module 'astro:content' {
 "es/tools/wallets/xsigners.mdx": {
 	id: "es/tools/wallets/xsigners.mdx";
   slug: "es/tools/wallets/xsigners";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/index.mdx": {
+	id: "fr/index.mdx";
+  slug: "fr";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
