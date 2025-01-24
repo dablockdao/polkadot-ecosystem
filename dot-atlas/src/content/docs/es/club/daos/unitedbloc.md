@@ -4,7 +4,7 @@ description: UnitedBloc es una DAO colaborativa que mejora el ecosistema de Moon
 hero:
   tagline: Una DAO Colaborativa de Validadores para el Ecosistema de Moonbeam.
   image: 
-    file: ../../../../assets/hub/daos/united-block.png
+    file: ../../../../../assets/hub/daos/united-block.png
   actions:
     - text: Sitio
       link: https://unitedbloc.com/

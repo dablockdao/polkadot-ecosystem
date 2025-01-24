@@ -7,7 +7,7 @@ sidebar:
 hero:
   tagline: Servicios de validación y colación seguros y transparentes para Polkadot.
   image: 
-    file: ../../../../assets/hub/daos/saxemberg.png
+    file: ../../../../../assets/hub/daos/saxemberg.png
   actions:
     - text: Sitio
       link: https://saxemberg.com/

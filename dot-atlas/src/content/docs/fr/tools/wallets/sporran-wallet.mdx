@@ -1,0 +1,73 @@
+---
+title: 'Portefeuille Sporran'
+description: Avec le Portefeuille Sporran, vous pouvez gérer des KILT Coins, créer des identités numériques et signer des documents de manière sécurisée avec cette extension de navigateur.
+hero:
+  tagline: Conservez vos KILT Coins et stockez vos identifiants numériques.
+  image: 
+    file: ../../../../../assets/tools/wallets/sporran-wallet.png
+  actions:
+    - text: Outil
+      link: https://www.sporran.org/
+      icon: external
+    - text: Documentation
+      link: https://github.com/BTE-Trusted-Entity/sporran-extension
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Le portefeuille Sporran, une extension de navigateur de bureau, est conçu pour être la passerelle vers la blockchain KILT et une large gamme de services Web3. 
+Disponible pour Google Chrome et Firefox, Sporran permet aux utilisateurs de gérer leurs soldes de KILT Coins, de signer et d'envoyer des transactions, ainsi que de créer des identités numériques, tout en conservant un contrôle total sur leurs données personnelles.
+
+## Fonctionnalités Clés du Portefeuille Sporran
+1. **Gestion des KILT Coins** : Sporran affiche les soldes de KILT Coins et permet aux utilisateurs de signer et d'envoyer des transactions sur la blockchain KILT. Cette fonctionnalité en fait un outil essentiel pour gérer efficacement les actifs KILT.
+2. **Identifiant Décentralisé (DID)** : Au cœur de la fonctionnalité de Sporran se trouve la possibilité de générer un identifiant décentralisé (DID). Cette chaîne unique de lettres et de chiffres forme le noyau de l'identité numérique de l'utilisateur.
+3. **Représentation Web3name** : Les utilisateurs peuvent représenter leur DID avec un Web3name unique et facilement lisible de leur choix. Cela ajoute une touche personnalisée à leur présence numérique, améliorant ainsi l'expérience utilisateur et la gestion de l'identité.
+4. **Stockage et Partage de Crédentiels** : Sporran fonctionne comme un portefeuille physique pour les identifiants numériques. Les utilisateurs peuvent y stocker des identifiants personnels émis par SocialKYC ou d'autres services compatibles. Ils ont un contrôle total sur ces identifiants, décidant de la quantité d'informations à partager et avec qui.
+5. **Signature de Documents Numériques avec DIDsign** : Sporran permet aux utilisateurs de signer tout type de fichier numérique de manière privée et décentralisée à l'aide de DIDsign. Cela renforce la sécurité et l'authenticité des transactions numériques.
+6. **Intégration avec l'Écosystème** : Sporran relie le Web3name et les adresses de comptes de l'utilisateur à travers les écosystèmes KILT, Polkadot et Ethereum. Cette intégration transparente permet une gestion plus cohérente des identités numériques et des actifs.
+7. **Partage Public de Crédentiels** : Pour les utilisateurs qui souhaitent rendre certains identifiants publics, Sporran fournit un moyen simple de partager ces identifiants, assurant ainsi transparence et vérifiabilité.
+
+## Création d'Identités Numériques avec Sporran
+Sporran n'est pas seulement un portefeuille, mais un point de départ pour créer des identités numériques robustes. 
+Grâce aux mécanismes de la blockchain KILT, les utilisateurs peuvent créer leur empreinte numérique, représentée par un **DID et un Web3name**, sans avoir besoin d'acheter ou de posséder de la cryptomonnaie. 
+Le service de paiement permet des paiements via PayPal, ce qui le rend accessible à un plus large public.
+
+En liant des identifiants à leur DID, les utilisateurs peuvent construire une identité numérique complète.
+Ces identifiants peuvent être obtenus à partir de diverses sources, y compris **SocialKYC**, et sont stockés en toute sécurité dans le portefeuille Sporran. 
+Les utilisateurs ont un contrôle total sur leurs informations, renforçant ainsi la confidentialité et la sécurité de leurs interactions numériques.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'SocialKYC',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/dapps/social/kilt.png',
+      href: 'https://socialkyc.io/',
+      description:
+        "Attestation d'identité décentralisée. Créez vos identifiants sociaux décentralisés.",
+    },
+  ]}
+/>
+
+## Intégration avec les DApps
+Sporran est conçu pour communiquer de manière transparente avec les applications décentralisées (DApps) construites sur la blockchain KILT. 
+Les développeurs et les utilisateurs peuvent utiliser Sporran en conjonction avec des DApps d'exemple comme CertifiedProof et ProofCheck. 
+Cette intégration est particulièrement utile pour ceux qui développent ou testent des DApps, car Sporran fournit un portefeuille de test avec des pièces de jeu pour faciliter le développement.
+
+**Conclusion**
+Le portefeuille Sporran est un outil puissant dans l'écosystème KILT et Web3. Ses nombreuses fonctionnalités, de la gestion des KILT Coins à la création d'identités numériques et au stockage des identifiants, en font une extension de navigateur essentielle pour toute personne souhaitant interagir avec des services décentralisés. En offrant un contrôle total sur les données personnelles et en garantissant des interactions numériques sécurisées, Sporran permet aux utilisateurs de créer et de gérer leurs identités numériques en toute confiance.
+- <small>Token(s) Associé(s) :</small> **KILT**
+
+## Vidéos Communautaires du Portefeuille Sporran
+------------
+<ShowcaseYouTube
+  entries={[
+        {
+      href: 'https://www.youtube.com/watch?v=ghjoGa9VBls',
+      title: 'Comment configurer le Portefeuille Sporran pour Kilt - Staking4All',
+      description: 'Un guide facile à suivre qui vous montre comment installer le Portefeuille Sporran pour Kilt.'
+    },
+  ]} />
