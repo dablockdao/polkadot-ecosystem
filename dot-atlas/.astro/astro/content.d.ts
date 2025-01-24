@@ -2174,6 +2174,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"dapps/social/polkaidentity.mdx": {
+	id: "dapps/social/polkaidentity.mdx";
+  slug: "dapps/social/polkaidentity";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "dapps/social/subsocial.mdx": {
 	id: "dapps/social/subsocial.mdx";
   slug: "dapps/social/subsocial";
