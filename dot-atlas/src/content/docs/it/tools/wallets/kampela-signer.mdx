@@ -1,0 +1,85 @@
+---
+title: 'Kampela Signer'
+description: Kampela Signer è un'implementazione hardware del Polkadot Vault. È un dispositivo di piccole dimensioni a forma di carta progettato per memorizzare in modo sicuro le chiavi crittografiche e eseguire operazioni di firma.
+hero:
+  tagline: Firmatario hardware Polkadot.
+  image: 
+    file: ../../../../../assets/tools/wallets/kampela.png
+  actions:
+    - text: Strumento
+      link: https://www.kampe.la/
+      icon: external
+    - text: Github
+      link: https://github.com/Kalapaja
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Kampela Signer è **un'implementazione hardware del Polkadot Vault** (precedentemente noto come Parity Signer). È un piccolo dispositivo a forma di carta progettato per memorizzare in modo sicuro le chiavi crittografiche e eseguire operazioni di firma.
+
+## Dispositivo di Memorizzazione delle Chiavi per l'Ecosistema Polkadot
+Nel blockchain, la gestione sicura delle chiavi è un componente critico per proteggere gli asset digitali. Kampela Signer è una soluzione progettata specificamente per l'ecosistema Polkadot.
+
+## Cos'è Kampela Signer?
+Kampela Signer è un'implementazione hardware del Polkadot Vault (precedentemente noto come Parity Signer). È un piccolo dispositivo a forma di carta progettato per memorizzare in modo sicuro le chiavi crittografiche e eseguire operazioni di firma. Il dispositivo accetta dati tramite una porta NFC unidirezionale e visualizza l'output su uno schermo a inchiostro elettronico monocromatico. Utilizza chip crittografici hardware moderni per garantire la massima sicurezza.
+
+## Caratteristiche Principali di Kampela Signer
+1. **Memorizzazione Sicura delle Chiavi:** Kampela Signer è costruito con una cassaforte crittografica che supporta curve ellittiche utilizzate da Substrate, il framework che alimenta Polkadot. Memorizza le chiavi private in modo sicuro ed esegue tutte le operazioni di firma all'interno del chip, garantendo che le chiavi non siano mai esposte a minacce esterne.
+2. **Funzionamento Air-Gapped:** Il dispositivo funziona in un ambiente air-gapped, il che significa che è completamente isolato da reti e internet. Questo design elimina il rischio di attacchi remoti e garantisce che le chiavi private rimangano sicure.
+3. **Comunicazione NFC Unidirezionale:** Kampela Signer comunica tramite una porta NFC unidirezionale, che accetta solo input di dati. Questo metodo di comunicazione garantisce che i dati fluiscano nel dispositivo senza segnali in uscita, migliorando ulteriormente la sicurezza prevenendo potenziali fughe di dati.
+4. **Display E-Paper:** Lo schermo a inchiostro elettronico monocromatico fornisce una visualizzazione chiara ed efficiente in termini di consumo energetico per l'interfaccia utente. Questo tipo di display è anche meno suscettibile a hackeraggi visivi rispetto agli schermi tradizionali.
+5. **Design Senza Batteria:** Kampela Signer è progettato per non avere batteria, alimentandosi solo tramite la connessione NFC quando in uso. Questa caratteristica estende la durata del dispositivo e riduce la necessità di manutenzione o sostituzione della batteria.
+
+## Specifiche Tecniche di Kampela Signer
+**Hardware**
+- **Fattore di Forma**: Di dimensioni simili a una carta di credito, portatile per essere facilmente trasportato nel portafoglio.
+- **Tecnologia NFC**: Porta NFC unidirezionale per un input sicuro dei dati.
+- **Display**: Schermo a inchiostro elettronico monocromatico per un output chiaro e sicuro.
+- **Chip Crypto**: Elemento sicuro che supporta le curve ellittiche utilizzate da Substrate.
+
+**Software**
+- **Firmware Open-Source**: Il firmware è completamente open-source, permettendo audit e miglioramenti da parte della comunità.
+- **App Companion**: Siltti, un'app Android companion, interagisce con il dispositivo per facilitare le transazioni e la gestione delle chiavi.
+
+## Vantaggi di Kampela Signer
+1. **Sicurezza Avanzata:** Essendo air-gapped e senza batteria, Kampela Signer fornisce un livello di sicurezza senza pari per la gestione delle chiavi crittografiche. L'uso di elementi sicuri e operazioni di firma su chip garantisce che le chiavi non siano mai esposte a minacce potenziali.
+2. **Trasparenza e Fiducia:** Come progetto open-source, i componenti hardware e software di Kampela Signer sono completamente trasparenti. Questa apertura consente audit dalla comunità e miglioramenti continui, aumentando la fiducia tra gli utenti.
+3. **Durabilità e Affidabilità:** Il design senza batteria garantisce una durata operativa più lunga e affidabilità, rendendo Kampela Signer una scelta ideale per la memorizzazione a lungo termine delle chiavi e la gestione delle stesse.
+
+## Casi d'Uso di Kampela Signer nell'Ecosistema Polkadot
+Kampela Signer è particolarmente adatto per diverse applicazioni all'interno dell'ecosistema Polkadot:
+1. **Firma Sicura delle Transazioni:** Kampela Signer può essere utilizzato per firmare in modo sicuro le transazioni sulla rete Polkadot, garantendo che le chiavi private rimangano offline e protette dalle minacce online.
+2. **Staking e Governance:** Gli utenti che partecipano allo staking e alla governance nell'ecosistema Polkadot possono gestire le loro chiavi di voto e di staking in modo sicuro utilizzando Kampela Signer, garantendo che i loro contributi rimangano sicuri.
+3. **Cold Storage:** Per la memorizzazione a lungo termine delle chiavi crittografiche, Kampela Signer fornisce una soluzione altamente sicura. Il suo design air-gapped e senza batteria garantisce che le chiavi rimangano al sicuro da minacce online e offline.
+
+### Integrazione e Strumenti Companion
+1. **App Companion Siltti**
+Siltti è un'app Android companion progettata per interfacciarsi con Kampela Signer. Facilita le transazioni e la gestione delle chiavi, fornendo un'interfaccia utente semplice per interagire con il dispositivo.
+2. **Strumento Firmware Pilkki**
+Il progetto Pilkki include strumenti per il flashing del firmware sui devkit di Kampela. Questo consente agli sviluppatori di aggiornare e personalizzare il firmware del dispositivo secondo necessità.
+
+### Comunità e Contributi Open-Source
+Kampela Signer è un progetto open-source, che incoraggia i contributi dalla comunità. Il progetto è organizzato in diversi repository:
+- **kampela-firmware**: Contiene le sorgenti del firmware e i progetti software associati.
+- **kampela-hardware**: Include gli schemi di progettazione hardware e i file supplementari.
+- **kampela-common**: Una raccolta di librerie condivise utilizzate sia dalla parte “hot” che “cold” del progetto.
+- **siltti**: L'app Android companion per interfacciarsi con il dispositivo.
+- **docs**: Documentazione variegata che copre vari aspetti del progetto.
+
+#### Conclusione
+Kampela Signer rappresenta un significativo avanzamento nella gestione delle chiavi crittografiche, offrendo una soluzione sicura, trasparente e affidabile progettata per l'ecosistema Polkadot. Il suo design air-gapped e senza batteria, combinato con la trasparenza open-source, lo rende una scelta ideale per gli utenti che cercano una maggiore sicurezza per i loro asset digitali. Che si tratti di firmare transazioni, staking, governance o cold storage, Kampela Signer fornisce gli strumenti necessari per navigare in modo sicuro ed efficiente nella rete Polkadot. Esplora Kampela Signer oggi e fai un passo verso un'esperienza blockchain più sicura e affidabile.
+
+## Video della Comunità Kampela Signer
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=0epi-r4ndjA',
+      title: 'Kampela in Action: Firma delle Transazioni e Aggiornamenti del Firmware - Sub0 2023',
+      description: 'Una dimostrazione dal vivo del flusso di Kampela (sia la firma delle transazioni che gli aggiornamenti del firmware). Questo intervento è particolarmente utile per coloro che sono interessati a blocchi e sfide nella costruzione di un progetto FOSS software e hardware in Rust.'
+          },
+  ]} />

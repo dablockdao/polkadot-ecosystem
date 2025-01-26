@@ -4337,9 +4337,114 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"it/tools/wallets/enkrypt-wallet.mdx": {
+	id: "it/tools/wallets/enkrypt-wallet.mdx";
+  slug: "it/tools/wallets/enkrypt-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/fearless-wallet.mdx": {
+	id: "it/tools/wallets/fearless-wallet.mdx";
+  slug: "it/tools/wallets/fearless-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/index.mdx": {
+	id: "it/tools/wallets/index.mdx";
+  slug: "it/tools/wallets";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/kampela-signer.mdx": {
+	id: "it/tools/wallets/kampela-signer.mdx";
+  slug: "it/tools/wallets/kampela-signer";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/mimir.mdx": {
+	id: "it/tools/wallets/mimir.mdx";
+  slug: "it/tools/wallets/mimir";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/multix.mdx": {
+	id: "it/tools/wallets/multix.mdx";
+  slug: "it/tools/wallets/multix";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "it/tools/wallets/nova-wallet.mdx": {
 	id: "it/tools/wallets/nova-wallet.mdx";
   slug: "it/tools/wallets/nova-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/plutowallet.mdx": {
+	id: "it/tools/wallets/plutowallet.mdx";
+  slug: "it/tools/wallets/plutowallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/polkadot-vault.mdx": {
+	id: "it/tools/wallets/polkadot-vault.mdx";
+  slug: "it/tools/wallets/polkadot-vault";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/polkagate.mdx": {
+	id: "it/tools/wallets/polkagate.mdx";
+  slug: "it/tools/wallets/polkagate";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/polkasafe.mdx": {
+	id: "it/tools/wallets/polkasafe.mdx";
+  slug: "it/tools/wallets/polkasafe";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/polkawallet.mdx": {
+	id: "it/tools/wallets/polkawallet.mdx";
+  slug: "it/tools/wallets/polkawallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/sporran-wallet.mdx": {
+	id: "it/tools/wallets/sporran-wallet.mdx";
+  slug: "it/tools/wallets/sporran-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/subwallet.mdx": {
+	id: "it/tools/wallets/subwallet.mdx";
+  slug: "it/tools/wallets/subwallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/talisman-wallet.mdx": {
+	id: "it/tools/wallets/talisman-wallet.mdx";
+  slug: "it/tools/wallets/talisman-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/wallets/xsigners.mdx": {
+	id: "it/tools/wallets/xsigners.mdx";
+  slug: "it/tools/wallets/xsigners";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
