@@ -4337,6 +4337,181 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"it/tools/block-explorers/3xpl.md": {
+	id: "it/tools/block-explorers/3xpl.md";
+  slug: "it/tools/block-explorers/3xpl";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/tools/block-explorers/blockchair.md": {
+	id: "it/tools/block-explorers/blockchair.md";
+  slug: "it/tools/block-explorers/blockchair";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/tools/block-explorers/chainspect.md": {
+	id: "it/tools/block-explorers/chainspect.md";
+  slug: "it/tools/block-explorers/chainspect";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/tools/block-explorers/index.mdx": {
+	id: "it/tools/block-explorers/index.mdx";
+  slug: "it/tools/block-explorers";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/block-explorers/statescan.md": {
+	id: "it/tools/block-explorers/statescan.md";
+  slug: "it/tools/block-explorers/statescan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/tools/block-explorers/subscan.mdx": {
+	id: "it/tools/block-explorers/subscan.mdx";
+  slug: "it/tools/block-explorers/subscan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/dao-tools/chaosdao-bot.mdx": {
+	id: "it/tools/dao-tools/chaosdao-bot.mdx";
+  slug: "it/tools/dao-tools/chaosdao-bot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/dao-tools/delegit.mdx": {
+	id: "it/tools/dao-tools/delegit.mdx";
+  slug: "it/tools/dao-tools/delegit";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/dao-tools/dotreasury.md": {
+	id: "it/tools/dao-tools/dotreasury.md";
+  slug: "it/tools/dao-tools/dotreasury";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/tools/dao-tools/index.mdx": {
+	id: "it/tools/dao-tools/index.mdx";
+  slug: "it/tools/dao-tools";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/dao-tools/ogtracker.mdx": {
+	id: "it/tools/dao-tools/ogtracker.mdx";
+  slug: "it/tools/dao-tools/ogtracker";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/dao-tools/polkassembly.mdx": {
+	id: "it/tools/dao-tools/polkassembly.mdx";
+  slug: "it/tools/dao-tools/polkassembly";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/dao-tools/subsquare.mdx": {
+	id: "it/tools/dao-tools/subsquare.mdx";
+  slug: "it/tools/dao-tools/subsquare";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/dao-tools/townhall.mdx": {
+	id: "it/tools/dao-tools/townhall.mdx";
+  slug: "it/tools/dao-tools/townhall";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/miscellaneous/chainviz.mdx": {
+	id: "it/tools/miscellaneous/chainviz.mdx";
+  slug: "it/tools/miscellaneous/chainviz";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/miscellaneous/fidi-web3-analytics.mdx": {
+	id: "it/tools/miscellaneous/fidi-web3-analytics.mdx";
+  slug: "it/tools/miscellaneous/fidi-web3-analytics";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/miscellaneous/index.mdx": {
+	id: "it/tools/miscellaneous/index.mdx";
+  slug: "it/tools/miscellaneous";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/miscellaneous/polkadot-staking-dashboard.mdx": {
+	id: "it/tools/miscellaneous/polkadot-staking-dashboard.mdx";
+  slug: "it/tools/miscellaneous/polkadot-staking-dashboard";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/miscellaneous/polkadot-telemetry.md": {
+	id: "it/tools/miscellaneous/polkadot-telemetry.md";
+  slug: "it/tools/miscellaneous/polkadot-telemetry";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/tools/miscellaneous/polkatax.mdx": {
+	id: "it/tools/miscellaneous/polkatax.mdx";
+  slug: "it/tools/miscellaneous/polkatax";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/miscellaneous/polkawatch.md": {
+	id: "it/tools/miscellaneous/polkawatch.md";
+  slug: "it/tools/miscellaneous/polkawatch";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/tools/miscellaneous/staking-rewards-collector.mdx": {
+	id: "it/tools/miscellaneous/staking-rewards-collector.mdx";
+  slug: "it/tools/miscellaneous/staking-rewards-collector";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/miscellaneous/subvt.mdx": {
+	id: "it/tools/miscellaneous/subvt.mdx";
+  slug: "it/tools/miscellaneous/subvt";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/miscellaneous/wagmedia-bot.mdx": {
+	id: "it/tools/miscellaneous/wagmedia-bot.mdx";
+  slug: "it/tools/miscellaneous/wagmedia-bot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/miscellaneous/web3alert.mdx": {
+	id: "it/tools/miscellaneous/web3alert.mdx";
+  slug: "it/tools/miscellaneous/web3alert";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "it/tools/wallets/enkrypt-wallet.mdx": {
 	id: "it/tools/wallets/enkrypt-wallet.mdx";
   slug: "it/tools/wallets/enkrypt-wallet";
