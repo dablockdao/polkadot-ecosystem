@@ -4344,6 +4344,125 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"pt/tools/index.mdx": {
+	id: "pt/tools/index.mdx";
+  slug: "pt/tools";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/enkrypt-wallet.mdx": {
+	id: "pt/tools/wallets/enkrypt-wallet.mdx";
+  slug: "pt/tools/wallets/enkrypt-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/fearless-wallet.mdx": {
+	id: "pt/tools/wallets/fearless-wallet.mdx";
+  slug: "pt/tools/wallets/fearless-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/index.mdx": {
+	id: "pt/tools/wallets/index.mdx";
+  slug: "pt/tools/wallets";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/kampela-signer.mdx": {
+	id: "pt/tools/wallets/kampela-signer.mdx";
+  slug: "pt/tools/wallets/kampela-signer";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/mimir.mdx": {
+	id: "pt/tools/wallets/mimir.mdx";
+  slug: "pt/tools/wallets/mimir";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/multix.mdx": {
+	id: "pt/tools/wallets/multix.mdx";
+  slug: "pt/tools/wallets/multix";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/nova-wallet.mdx": {
+	id: "pt/tools/wallets/nova-wallet.mdx";
+  slug: "pt/tools/wallets/nova-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/plutowallet.mdx": {
+	id: "pt/tools/wallets/plutowallet.mdx";
+  slug: "pt/tools/wallets/plutowallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/polkadot-vault.mdx": {
+	id: "pt/tools/wallets/polkadot-vault.mdx";
+  slug: "pt/tools/wallets/polkadot-vault";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/polkagate.mdx": {
+	id: "pt/tools/wallets/polkagate.mdx";
+  slug: "pt/tools/wallets/polkagate";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/polkasafe.mdx": {
+	id: "pt/tools/wallets/polkasafe.mdx";
+  slug: "pt/tools/wallets/polkasafe";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/polkawallet.mdx": {
+	id: "pt/tools/wallets/polkawallet.mdx";
+  slug: "pt/tools/wallets/polkawallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/sporran-wallet.mdx": {
+	id: "pt/tools/wallets/sporran-wallet.mdx";
+  slug: "pt/tools/wallets/sporran-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/subwallet.mdx": {
+	id: "pt/tools/wallets/subwallet.mdx";
+  slug: "pt/tools/wallets/subwallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/talisman-wallet.mdx": {
+	id: "pt/tools/wallets/talisman-wallet.mdx";
+  slug: "pt/tools/wallets/talisman-wallet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/wallets/xsigners.mdx": {
+	id: "pt/tools/wallets/xsigners.mdx";
+  slug: "pt/tools/wallets/xsigners";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/archive/polkaholic.md": {
 	id: "tools/archive/polkaholic.md";
   slug: "tools/archive/polkaholic";
