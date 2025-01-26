@@ -1,0 +1,47 @@
+---
+title: Ferramentas Polkadot
+description: Explore o ecossistema Polkadot com ferramentas essenciais para carteiras, exploradores de blocos, desenvolvimento, governança, carteiras multisig e análises.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+As ferramentas do ecossistema Polkadot foram projetadas para aprimorar as interações dos usuários e otimizar várias operações dentro da rede.
+De carteiras e exploradores de blocos a ferramentas de desenvolvimento e plataformas de governança,
+essas ferramentas atendem a uma ampla gama de necessidades, tanto para usuários iniciantes quanto para desenvolvedores experientes.
+
+Essa variedade de utilitários não apenas garante uma segurança robusta e uma gestão eficiente dos ativos digitais,
+mas também capacita os usuários a se envolverem completamente com a rede Polkadot, impulsionando a inovação e o crescimento dentro do ecossistema.
+
+## Ferramentas do Ecossistema Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/wallets.png'),
+      href: '/tools/wallets',
+      title: 'Carteiras',
+      description: 'Descubra as carteiras mais avançadas para armazenar seus ativos.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/block-explorers.png'),
+      href: '/tools/block-explorers/',
+      title: 'Exploradores de Blocos',
+      description: 'Entenda cada movimento na rede.'
+      },  
+          {
+      thumbnail: import('/src/assets/thumbnails/dao-tools.png'),
+      href: '/tools/dao-tools/',
+      title: 'Ferramentas DAO',
+      description: 'As ferramentas mais populares para gerenciar DAOs.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/dev-tools.png'),
+      href: '/tools/dev/',
+      title: 'Desenvolvimento',
+      description: 'Comece sua jornada como desenvolvedor Polkadot.'
+      },
+  ]}
+/>
