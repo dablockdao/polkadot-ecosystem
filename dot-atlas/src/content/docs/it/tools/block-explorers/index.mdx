@@ -1,0 +1,42 @@
+---
+title: Polkadot Block Explorers
+description: Explore Polkadot block explorers.
+tableOfContents: false
+sidebar: 
+    label: Block Explorers
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Polkadot block explorer tools provide users with detailed insights into blockchain activity, including transactions, accounts, and network statistics. These tools enhance transparency and usability, allowing developers and users to monitor activity across Polkadot and its parachains. With user-friendly interfaces and robust analytics, they are essential for exploring and understanding the Polkadot ecosystem.
+
+## Polkadot Block Explorers
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/tools/block-explorers/subscan.png'),
+      href: '/tools/block-explorers/subscan',
+      title: 'Subscan',
+    },
+                     {
+      thumbnail: import('/src/assets/tools/block-explorers/statescan.png'),
+      href: '/tools/block-explorers/statescan',
+      title: 'Statescan',
+      },  
+    {
+      thumbnail: import('/src/assets/tools/block-explorers/chainspect.png'),
+      href: '/tools/block-explorers/chainspect',
+      title: 'Chainspect',
+      },
+              {
+      thumbnail: import('/src/assets/tools/block-explorers/3xpl.png'),
+      href: '/tools/block-explorers/3xpl',
+      title: '3xpl',
+    },
+  ]}
+/>
