@@ -557,6 +557,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"club/initiatives/polkadot-education-app.mdx": {
+	id: "club/initiatives/polkadot-education-app.mdx";
+  slug: "club/initiatives/polkadot-education-app";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "club/initiatives/polkadot-prodigy.mdx": {
 	id: "club/initiatives/polkadot-prodigy.mdx";
   slug: "club/initiatives/polkadot-prodigy";
@@ -1127,6 +1134,13 @@ declare module 'astro:content' {
 "club/orgs/software/polytope-labs.mdx": {
 	id: "club/orgs/software/polytope-labs.mdx";
   slug: "club/orgs/software/polytope-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/software/probelab.mdx": {
+	id: "club/orgs/software/probelab.mdx";
+  slug: "club/orgs/software/probelab";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -2660,6 +2674,90 @@ declare module 'astro:content' {
 "es/club/memecoins/stink.mdx": {
 	id: "es/club/memecoins/stink.mdx";
   slug: "es/club/memecoins/stink";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/bd/harbour-industrial-capital.mdx": {
+	id: "es/club/orgs/bd/harbour-industrial-capital.mdx";
+  slug: "es/club/orgs/bd/harbour-industrial-capital";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/bd/illusionist-group.md": {
+	id: "es/club/orgs/bd/illusionist-group.md";
+  slug: "es/club/orgs/bd/illusionist-group";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"es/club/orgs/bd/magenta-labs.mdx": {
+	id: "es/club/orgs/bd/magenta-labs.mdx";
+  slug: "es/club/orgs/bd/magenta-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/bd/nftmozaic.mdx": {
+	id: "es/club/orgs/bd/nftmozaic.mdx";
+  slug: "es/club/orgs/bd/nftmozaic";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/bd/papermoon.mdx": {
+	id: "es/club/orgs/bd/papermoon.mdx";
+  slug: "es/club/orgs/bd/papermoon";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/bd/polkabiz.mdx": {
+	id: "es/club/orgs/bd/polkabiz.mdx";
+  slug: "es/club/orgs/bd/polkabiz";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/bd/polkadot-community-foundation.mdx": {
+	id: "es/club/orgs/bd/polkadot-community-foundation.mdx";
+  slug: "es/club/orgs/bd/polkadot-community-foundation";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/bd/polkaport-east.mdx": {
+	id: "es/club/orgs/bd/polkaport-east.mdx";
+  slug: "es/club/orgs/bd/polkaport-east";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/bd/scytale-digital.mdx": {
+	id: "es/club/orgs/bd/scytale-digital.mdx";
+  slug: "es/club/orgs/bd/scytale-digital";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/bd/transistor.mdx": {
+	id: "es/club/orgs/bd/transistor.mdx";
+  slug: "es/club/orgs/bd/transistor";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/bd/velocity-labs.mdx": {
+	id: "es/club/orgs/bd/velocity-labs.mdx";
+  slug: "es/club/orgs/bd/velocity-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"es/club/orgs/index.mdx": {
+	id: "es/club/orgs/index.mdx";
+  slug: "es/club/orgs";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
