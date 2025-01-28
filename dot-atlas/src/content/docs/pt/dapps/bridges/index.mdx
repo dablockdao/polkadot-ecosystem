@@ -1,0 +1,68 @@
+---
+title: Dapps de Ponte Polkadot
+description: Explore todos os Dapps de Ponte do ecossistema Polkadot.
+tableOfContents: false
+sidebar: 
+    label: Dapps de Ponte
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Os Dapps de ponte do Polkadot permitem conectividade perfeita entre blockchains, permitindo que ativos e dados se movam entre diferentes redes de forma segura e eficiente. Construídos na arquitetura interoperável do Polkadot, esses Dapps melhoram a colaboração entre cadeias, desbloqueiam liquidez e oferecem aos usuários maior flexibilidade para navegar no ecossistema descentralizado.
+
+## Dapps de Ponte Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+    {
+      thumbnail: import('/src/assets/dapps/bridges/hyperbridge.png'),
+      href: '/dapps/bridges/hyperbridge/',
+      title: 'Hyperbridge',
+    },
+    {
+      thumbnail: import('/src/assets/dapps/bridges/snowbridge.png'),
+      href: '/dapps/bridges/snowbridge/',
+      title: 'Snowbridge',
+    },
+      {
+      thumbnail: import('/src/assets/dapps/bridges/chainflip.png'),
+      href: '/dapps/bridges/chainflip/',
+      title: 'Chainflip',
+      },  
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/bridges/',
+      title: 'Substrate Bridge',
+      },
+  ]}
+/>
+
+
+## Vídeos de Dapps de Ponte Polkadot
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=lrcNyAb_rm8',
+      title: 'Seun Lanlege: Entre no Hyperbridge - Comunicação Segura entre Cadeias',
+      description: 'Seun discute a transformação do Polkadot em um coprocessador para interação segura entre cadeias sem compromissos. Ele aborda o estado da adoção de blockchain, a tecnologia do Polkadot e uma visão para o Web3.',
+
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=wuuHpjRqmQM',
+      title: 'Hyper-scaling Cross-chain Compute',
+      description: 'Discussão sobre as promessas do Hyperbridge, o lançamento iminente da Mainnet, a ponte de tokens disponível no primeiro dia e casos de uso extras além da ponte! Falamos sobre os limites das provas verificáveis com algumas pilhas tecnológicas, ISMP e o poder dos agentes individuais em redes descentralizadas.',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=jXv-PIx5Thg',
+      title: 'Como Fazer a Ponte de Ethereum para Polkadot Através do Snowbridge',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=wq8SAg2TjKY',
+      title: 'Snowbridge, uma ponte Ethereum no BridgeHub',
+    },
+  ]} />

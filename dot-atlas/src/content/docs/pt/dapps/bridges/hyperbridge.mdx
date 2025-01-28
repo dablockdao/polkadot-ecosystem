@@ -1,0 +1,102 @@
+---
+title: Hyperbridge
+description: Hyperbridge é uma solução inovadora de interoperabilidade entre cadeias dentro do ecossistema Polkadot, permitindo comunicação segura e contínua entre diferentes redes de blockchain.
+sidebar:
+    label: ✪ Hyperbridge
+    order: 1
+hero:
+  tagline: Solução de interoperabilidade entre cadeias dentro do ecossistema Polkadot.
+  image: 
+    file: ../../../../../assets/dapps/bridges/hyperbridge.png
+  actions:
+    - text: Dapp
+      link: https://app.hyperbridge.network/
+      icon: external
+    - text: Docs
+      link: https://docs.hyperbridge.network/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+Um dos desafios significativos na indústria web3 é garantir **interoperabilidade segura e escalável entre diferentes redes de blockchain**. O **Hyperbridge** da Polkadot, desenvolvido pelo **[Polytope Labs](/club/orgs/software/polytope-labs/)**, surge como uma solução inovadora para esse problema, oferecendo um protocolo de interoperabilidade altamente seguro, escalável e robusto do ponto de vista criptoeconômico.
+
+## O Desafio da Interoperabilidade de Blockchain
+A interoperabilidade entre blockchains exige a **verificação de múltiplas provas**, incluindo **provas de consenso, provas de estado e provas de validade de transições de estado**. Realizar esses processos de verificação on-chain é intensivo em computação e não escala bem, especialmente quando múltiplos blockchains precisam se comunicar. Esse desafio levou à proliferação de redes de atestação, que sofreram significativas falhas de segurança, resultando em perdas superiores a **$2 bilhões em ativos cripto**.
+
+## Apresentando o Modelo de Coprocessador do Polkadot Hyperbridge
+O Hyperbridge utiliza um **modelo de coprocessador** para lidar com as limitações da verificação on-chain. Esse modelo envolve a realização de operações de verificação off-chain e o reporte seguro dos resultados de volta para on-chain com provas criptográficas de execução correta. Essa abordagem reduz significativamente a carga computacional na blockchain, permitindo uma interoperabilidade escalável e segura.
+
+### Coprocessador Criptoeconômico
+O Hyperbridge é um exemplo pioneiro de coprocessador criptoeconômico. Ele utiliza provas de consenso para atestar a correção das computações realizadas off-chain. Isso garante interoperabilidade sem confiança entre múltiplos blockchains, **agregando os estados finalizados em uma única prova**, permitindo que qualquer blockchain receba mensagens entre cadeias de forma segura e eficiente.
+
+#### Agregação de Provas
+O Hyperbridge escala a interoperabilidade sem confiança, verificando e **agregando os estados finalizados de todos os blockchains conectados em uma** **única prova**. Esta prova agregada pode ser usada por qualquer blockchain para validar mensagens entre cadeias, garantindo comunicação segura e escalável por toda a rede.
+
+### Relayers Permissivos do Hyperbridge
+O Polkadot Hyperbridge é o primeiro protocolo a utilizar provas criptográficas para impulsionar uma rede descentralizada e permissiva de **relayers**. Esses relayers, operando sem a necessidade de inclusão em listas brancas ou staking, são incentivados por taxas dos usuários para transmitir mensagens entre cadeias. **Este modelo garante um sistema de transmissão de mensagens totalmente descentralizado e eficiente**.
+
+### Interoperabilidade Agnóstica de Cadeia
+**O Hyperbridge é projetado para ser agnóstico de cadeia**, permitindo que os desenvolvedores construam aplicações que possam interoperar de forma segura com qualquer blockchain. O protocolo fornece uma **interface unificada para operações multichain**, facilitando a transferência segura e sem confiança de ativos e dados entre diferentes blockchains.
+
+## Começando com o Hyperbridge
+Novos usuários podem começar explorando a [**Especificação do Protocolo Hyperbridge**](https://docs.hyperbridge.network/protocol), que fornece uma visão abrangente dos componentes e funcionalidades do protocolo. Este documento é frequentemente atualizado para refletir os avanços e mudanças mais recentes no protocolo.
+
+### Ferramentas de Desenvolvimento Hyperbridge
+#### SDK Solidity
+[**O Hyperbridge oferece um SDK Solidity**](https://docs.hyperbridge.network/developers/evm/getting-started) que permite a contratos inteligentes enviar e receber mensagens entre cadeias e fazer consultas de armazenamento entre cadeias. Este SDK fornece uma interface simples para interagir com o protocolo Hyperbridge, facilitando a integração de funcionalidades entre cadeias nas aplicações dos desenvolvedores.
+#### SDK Polkadot
+Para cadeias baseadas em substrate, o Hyperbridge fornece o [**SDK ISMP**](https://docs.hyperbridge.network/developers/polkadot/integration), permitindo que essas cadeias enviem e recebam mensagens entre cadeias e realizem consultas de armazenamento entre cadeias. Este SDK estende o runtime substrate existente com capacidades de interoperabilidade entre cadeias, facilitando a comunicação sem interrupções.
+
+## Rede Hyperbridge e Operadores de Nós
+Os operadores de rede são responsáveis por executar a **rede Hyperbridge**, transmitir mensagens e produzir blocos. Eles são **incentivados por taxas pagas pelos usuários para realizar operações entre cadeias**, garantindo o funcionamento eficiente e seguro da rede.
+
+### Operadores de Nós e Relayers
+Os operadores de nós e relayers desempenham um papel crucial no ecossistema Hyperbridge, transmitindo mensagens entre cadeias. A natureza permissiva dos relayers **permite que qualquer pessoa participe e ganhe taxas**, promovendo uma infraestrutura de rede descentralizada e robusta.
+
+## Especificações Técnicas do Hyperbridge
+O Hyperbridge utiliza **primitivas criptográficas avançadas** para garantir a correção das mensagens entre cadeias. Isso inclui funções hash, Árvores Merkle, assinaturas digitais, esquemas de compromisso polinomial e mais. Essas primitivas são essenciais para a produção e verificação de provas de consenso, provas de estado e provas de validade de transições de estado.
+
+### Provas de Interoperabilidade
+**Provas de interoperabilidade** são provas criptográficas que atestam a validade das **mensagens entre cadeias**. Elas incluem provas de consenso e provas de estado, que, juntas, mediam a comunicação segura entre blockchains.
+
+### Algoritmos de Consenso e Máquinas de Estado
+O Hyperbridge suporta vários algoritmos de consenso, como **GRANDPA**, **BEEFY** e **Casper FFG**, garantindo compatibilidade com diferentes redes de blockchain. Além disso, implementa algoritmos de máquinas de estado para verificar os compromissos de estado e reexecutar transições de estado, oferecendo garantias de segurança abrangentes.
+
+## Casos de Uso e Aplicações do Hyperbridge
+O Hyperbridge desbloqueia inúmeras possibilidades para aplicações entre cadeias, incluindo:
+- **Consultas de Provas de Estado:** Leia de forma segura dados on-chain verificados por provas de estado inquebráveis.
+- **Governança entre Cadeias:** Gerencie aplicações em várias cadeias transmitindo ações de governança através do Hyperbridge.
+- **DeFi:** Habilite novos produtos DeFi, como staking líquido entre cadeias, exchanges descentralizadas, ponte de tokens nativos e muito mais.
+
+#### Conclusão
+O Polkadot Hyperbridge, da **[Polytope Labs](/club/orgs/software/polytope-labs/)**, representa um avanço significativo na interoperabilidade entre blockchains, resolvendo desafios críticos com uma solução segura, escalável e robusta do ponto de vista criptoeconômico. Ao aproveitar o modelo de coprocessador e técnicas criptográficas avançadas, o Hyperbridge possibilita comunicação sem interrupções e sem confiança entre blockchains, pavimentando o caminho para um futuro multichain verdadeiramente interconectado.
+Para desenvolvedores e entusiastas de blockchain, o Hyperbridge oferece um conjunto de ferramentas poderosas e [**documentação abrangente**](https://docs.hyperbridge.network/) para começar a construir aplicações entre cadeias de próxima geração. Com sua arquitetura inovadora e garantias de segurança robustas, o Hyperbridge está pronto para se tornar um pilar na paisagem de interoperabilidade entre blockchains.
+
+
+## Vídeos da Comunidade Hyperbridge
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=lrcNyAb_rm8',
+      title: 'Seun Lanlege: Entre no Hyperbridge - Comunicação Segura entre Cadeias',
+      description: 'Seun discute a transformação da Polkadot em um coprocessador para interação segura entre cadeias sem compromissos. Ele mergulha no estado da adoção de blockchain, na tecnologia da Polkadot e na visão para o Web3.',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=wuuHpjRqmQM',
+      title: 'Hyper-scaling Cross-chain Compute',
+      description: 'Discutimos as promessas do Hyperbridge, o lançamento iminente da Mainnet, a ponte de tokens disponível no primeiro dia e casos de uso além da ponte! Falamos sobre os limites das provas verificáveis com algumas pilhas tecnológicas, ISMP e o poder dos agentes individuais em redes descentralizadas.',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=lcD54lC-Hm8',
+      title: 'O que é o Hyperbridge? Desvendando o Futuro da Interoperabilidade entre Cadeias',
+      description: 'O Hyperbridge, um protocolo entre cadeias com o apoio da Polkadot, permite aos usuários transferir dados e ativos entre blockchains independentes.',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=1sK67-JJIks',
+      title: 'Como Transferir Ativos para a Polkadot com Hyperbridge',
+      description: 'Tutorial sobre como usar o Hyperbridge, um protocolo entre cadeias com o apoio da Polkadot, permitindo que os usuários transferem dados e ativos entre blockchains independentes.',
+    },
+  ]} />
