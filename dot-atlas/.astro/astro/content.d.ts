@@ -641,6 +641,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"club/orgs/bd/just.mdx": {
+	id: "club/orgs/bd/just.mdx";
+  slug: "club/orgs/bd/just";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "club/orgs/bd/magenta-labs.mdx": {
 	id: "club/orgs/bd/magenta-labs.mdx";
   slug: "club/orgs/bd/magenta-labs";
@@ -2240,6 +2247,104 @@ declare module 'astro:content' {
 "dapps/storage/midnight-network.mdx": {
 	id: "dapps/storage/midnight-network.mdx";
   slug: "dapps/storage/midnight-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/block-explorers/3xpl.md": {
+	id: "de/tools/block-explorers/3xpl.md";
+  slug: "de/tools/block-explorers/3xpl";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"de/tools/block-explorers/blockchair.md": {
+	id: "de/tools/block-explorers/blockchair.md";
+  slug: "de/tools/block-explorers/blockchair";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"de/tools/block-explorers/chainspect.md": {
+	id: "de/tools/block-explorers/chainspect.md";
+  slug: "de/tools/block-explorers/chainspect";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"de/tools/block-explorers/index.mdx": {
+	id: "de/tools/block-explorers/index.mdx";
+  slug: "de/tools/block-explorers";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/block-explorers/statescan.md": {
+	id: "de/tools/block-explorers/statescan.md";
+  slug: "de/tools/block-explorers/statescan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"de/tools/block-explorers/subscan.mdx": {
+	id: "de/tools/block-explorers/subscan.mdx";
+  slug: "de/tools/block-explorers/subscan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/dao-tools/chaosdao-bot.mdx": {
+	id: "de/tools/dao-tools/chaosdao-bot.mdx";
+  slug: "de/tools/dao-tools/chaosdao-bot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/dao-tools/delegit.mdx": {
+	id: "de/tools/dao-tools/delegit.mdx";
+  slug: "de/tools/dao-tools/delegit";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/dao-tools/dotreasury.md": {
+	id: "de/tools/dao-tools/dotreasury.md";
+  slug: "de/tools/dao-tools/dotreasury";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"de/tools/dao-tools/index.mdx": {
+	id: "de/tools/dao-tools/index.mdx";
+  slug: "de/tools/dao-tools";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/dao-tools/ogtracker.mdx": {
+	id: "de/tools/dao-tools/ogtracker.mdx";
+  slug: "de/tools/dao-tools/ogtracker";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/dao-tools/polkassembly.mdx": {
+	id: "de/tools/dao-tools/polkassembly.mdx";
+  slug: "de/tools/dao-tools/polkassembly";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/dao-tools/subsquare.mdx": {
+	id: "de/tools/dao-tools/subsquare.mdx";
+  slug: "de/tools/dao-tools/subsquare";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/tools/dao-tools/townhall.mdx": {
+	id: "de/tools/dao-tools/townhall.mdx";
+  slug: "de/tools/dao-tools/townhall";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -4204,6 +4309,104 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"fr/tools/block-explorers/3xpl.md": {
+	id: "fr/tools/block-explorers/3xpl.md";
+  slug: "fr/tools/block-explorers/3xpl";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"fr/tools/block-explorers/blockchair.md": {
+	id: "fr/tools/block-explorers/blockchair.md";
+  slug: "fr/tools/block-explorers/blockchair";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"fr/tools/block-explorers/chainspect.md": {
+	id: "fr/tools/block-explorers/chainspect.md";
+  slug: "fr/tools/block-explorers/chainspect";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"fr/tools/block-explorers/index.mdx": {
+	id: "fr/tools/block-explorers/index.mdx";
+  slug: "fr/tools/block-explorers";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/block-explorers/statescan.md": {
+	id: "fr/tools/block-explorers/statescan.md";
+  slug: "fr/tools/block-explorers/statescan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"fr/tools/block-explorers/subscan.mdx": {
+	id: "fr/tools/block-explorers/subscan.mdx";
+  slug: "fr/tools/block-explorers/subscan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/dao-tools/chaosdao-bot.mdx": {
+	id: "fr/tools/dao-tools/chaosdao-bot.mdx";
+  slug: "fr/tools/dao-tools/chaosdao-bot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/dao-tools/delegit.mdx": {
+	id: "fr/tools/dao-tools/delegit.mdx";
+  slug: "fr/tools/dao-tools/delegit";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/dao-tools/dotreasury.md": {
+	id: "fr/tools/dao-tools/dotreasury.md";
+  slug: "fr/tools/dao-tools/dotreasury";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"fr/tools/dao-tools/index.mdx": {
+	id: "fr/tools/dao-tools/index.mdx";
+  slug: "fr/tools/dao-tools";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/dao-tools/ogtracker.mdx": {
+	id: "fr/tools/dao-tools/ogtracker.mdx";
+  slug: "fr/tools/dao-tools/ogtracker";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/dao-tools/polkassembly.mdx": {
+	id: "fr/tools/dao-tools/polkassembly.mdx";
+  slug: "fr/tools/dao-tools/polkassembly";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/dao-tools/subsquare.mdx": {
+	id: "fr/tools/dao-tools/subsquare.mdx";
+  slug: "fr/tools/dao-tools/subsquare";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/tools/dao-tools/townhall.mdx": {
+	id: "fr/tools/dao-tools/townhall.mdx";
+  slug: "fr/tools/dao-tools/townhall";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "fr/tools/index.mdx": {
 	id: "fr/tools/index.mdx";
   slug: "fr/tools";
@@ -4662,6 +4865,104 @@ declare module 'astro:content' {
 "pt/dapps/index.mdx": {
 	id: "pt/dapps/index.mdx";
   slug: "pt/dapps";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/block-explorers/3xpl.md": {
+	id: "pt/tools/block-explorers/3xpl.md";
+  slug: "pt/tools/block-explorers/3xpl";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"pt/tools/block-explorers/blockchair.md": {
+	id: "pt/tools/block-explorers/blockchair.md";
+  slug: "pt/tools/block-explorers/blockchair";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"pt/tools/block-explorers/chainspect.md": {
+	id: "pt/tools/block-explorers/chainspect.md";
+  slug: "pt/tools/block-explorers/chainspect";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"pt/tools/block-explorers/index.mdx": {
+	id: "pt/tools/block-explorers/index.mdx";
+  slug: "pt/tools/block-explorers";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/block-explorers/statescan.md": {
+	id: "pt/tools/block-explorers/statescan.md";
+  slug: "pt/tools/block-explorers/statescan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"pt/tools/block-explorers/subscan.mdx": {
+	id: "pt/tools/block-explorers/subscan.mdx";
+  slug: "pt/tools/block-explorers/subscan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/dao-tools/chaosdao-bot.mdx": {
+	id: "pt/tools/dao-tools/chaosdao-bot.mdx";
+  slug: "pt/tools/dao-tools/chaosdao-bot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/dao-tools/delegit.mdx": {
+	id: "pt/tools/dao-tools/delegit.mdx";
+  slug: "pt/tools/dao-tools/delegit";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/dao-tools/dotreasury.md": {
+	id: "pt/tools/dao-tools/dotreasury.md";
+  slug: "pt/tools/dao-tools/dotreasury";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"pt/tools/dao-tools/index.mdx": {
+	id: "pt/tools/dao-tools/index.mdx";
+  slug: "pt/tools/dao-tools";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/dao-tools/ogtracker.mdx": {
+	id: "pt/tools/dao-tools/ogtracker.mdx";
+  slug: "pt/tools/dao-tools/ogtracker";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/dao-tools/polkassembly.mdx": {
+	id: "pt/tools/dao-tools/polkassembly.mdx";
+  slug: "pt/tools/dao-tools/polkassembly";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/dao-tools/subsquare.mdx": {
+	id: "pt/tools/dao-tools/subsquare.mdx";
+  slug: "pt/tools/dao-tools/subsquare";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/tools/dao-tools/townhall.mdx": {
+	id: "pt/tools/dao-tools/townhall.mdx";
+  slug: "pt/tools/dao-tools/townhall";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
