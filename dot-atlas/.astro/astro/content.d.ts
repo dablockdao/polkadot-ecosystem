@@ -4302,6 +4302,90 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"fr/dapps/ai/bittensor.mdx": {
+	id: "fr/dapps/ai/bittensor.mdx";
+  slug: "fr/dapps/ai/bittensor";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/ai/index.mdx": {
+	id: "fr/dapps/ai/index.mdx";
+  slug: "fr/dapps/ai";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/ai/neurolanche.mdx": {
+	id: "fr/dapps/ai/neurolanche.mdx";
+  slug: "fr/dapps/ai/neurolanche";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/ai/neuroweb.mdx": {
+	id: "fr/dapps/ai/neuroweb.mdx";
+  slug: "fr/dapps/ai/neuroweb";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/ai/phala-network.mdx": {
+	id: "fr/dapps/ai/phala-network.mdx";
+  slug: "fr/dapps/ai/phala-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/bridges/axelar.md": {
+	id: "fr/dapps/bridges/axelar.md";
+  slug: "fr/dapps/bridges/axelar";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"fr/dapps/bridges/chainflip.md": {
+	id: "fr/dapps/bridges/chainflip.md";
+  slug: "fr/dapps/bridges/chainflip";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"fr/dapps/bridges/hyperbridge.mdx": {
+	id: "fr/dapps/bridges/hyperbridge.mdx";
+  slug: "fr/dapps/bridges/hyperbridge";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/bridges/index.mdx": {
+	id: "fr/dapps/bridges/index.mdx";
+  slug: "fr/dapps/bridges";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/bridges/snowbridge.mdx": {
+	id: "fr/dapps/bridges/snowbridge.mdx";
+  slug: "fr/dapps/bridges/snowbridge";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/bridges/wormhole.md": {
+	id: "fr/dapps/bridges/wormhole.md";
+  slug: "fr/dapps/bridges/wormhole";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"fr/dapps/index.mdx": {
+	id: "fr/dapps/index.mdx";
+  slug: "fr/dapps";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "fr/index.mdx": {
 	id: "fr/index.mdx";
   slug: "fr";
