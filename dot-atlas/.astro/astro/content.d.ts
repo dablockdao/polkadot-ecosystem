@@ -4736,6 +4736,41 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"it/dapps/ai/bittensor.mdx": {
+	id: "it/dapps/ai/bittensor.mdx";
+  slug: "it/dapps/ai/bittensor";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/ai/index.mdx": {
+	id: "it/dapps/ai/index.mdx";
+  slug: "it/dapps/ai";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/ai/neurolanche.mdx": {
+	id: "it/dapps/ai/neurolanche.mdx";
+  slug: "it/dapps/ai/neurolanche";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/ai/neuroweb.mdx": {
+	id: "it/dapps/ai/neuroweb.mdx";
+  slug: "it/dapps/ai/neuroweb";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/ai/phala-network.mdx": {
+	id: "it/dapps/ai/phala-network.mdx";
+  slug: "it/dapps/ai/phala-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "it/dapps/bridges/axelar.md": {
 	id: "it/dapps/bridges/axelar.md";
   slug: "it/dapps/bridges/axelar";
@@ -4921,6 +4956,13 @@ declare module 'astro:content' {
 "it/tools/dao-tools/townhall.mdx": {
 	id: "it/tools/dao-tools/townhall.mdx";
   slug: "it/tools/dao-tools/townhall";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/tools/index.mdx": {
+	id: "it/tools/index.mdx";
+  slug: "it/tools";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
