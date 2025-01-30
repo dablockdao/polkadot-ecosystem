@@ -1,0 +1,116 @@
+---
+title: Polkadot Dapps
+description: Entdecke alle Dapps, die im Polkadot-Ökosystem entwickelt wurden, und erkunde die neue Ära der dezentralen Anwendungen.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton, linklist } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Entdecke eine neue Ära dezentraler Anwendungen, die auf dem Polkadot-Netzwerk aufgebaut sind. 
+Unsere Plattform bietet eine kuratierte Auswahl innovativer DApps, die die skalierbare und interoperable Blockchain-Technologie von Polkadot nutzen.
+
+Ob du dich für dezentrale Finanzen (DeFi), nicht-fungible Token (NFTs) oder blockchainbasiertes Gaming interessierst – unsere DApps-Seite verbindet dich mit innovativen Lösungen, die die digitale Landschaft neu gestalten. 
+Begleite uns dabei, ein offeneres, sichereres und besser vernetztes dezentrales Ökosystem zu schaffen.
+
+## Alle Polkadot Dapps an einem Ort
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/defi.png'),
+      href: '/dapps/defi',
+      title: 'DeFi',
+      description: 'Entdecke die beliebtesten DeFi-Dapps im Polkadot-Ökosystem.'
+    },
+        {
+      thumbnail: import('/src/assets/thumbnails/depin.png'),
+      href: '/dapps/depin/',
+      title: 'DePin',
+      description: 'DePin-Projekte im Polkadot-Ökosystem.'
+      },
+                     {
+      thumbnail: import('/src/assets/thumbnails/nft-marketplaces.png'),
+      href: '/dapps/nft-marketplaces/',
+      title: 'NFT-Marktplätze',
+      description: 'Entdecke die beliebtesten NFT-Marktplätze im Polkadot-Ökosystem.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/gaming.png'),
+      href: '/dapps/gaming/',
+      title: 'Gaming',
+      description: 'Erkunde die beliebtesten Blockchain-Spiele.'
+      },
+  ]}
+/>
+
+<ShowcaseImage
+entries={[
+ {
+      thumbnail: import('/src/assets/thumbnails/social.png'),
+      href: '/dapps/social/',
+      title: 'Soziale Netzwerke',
+      description: 'Entdecke die beliebtesten sozialen Dapps im Polkadot-Ökosystem.'
+      }, 
+    {
+      thumbnail: import('/src/assets/thumbnails/data.png'),
+      href: '/dapps/storage/',
+      title: 'Speicherung',
+      description: 'Entdecke die beliebtesten Speicher- und Daten-Dapps im Polkadot-Ökosystem.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/smart-contracts.png'),
+      href: '/dapps/smart-contracts/',
+      title: 'Smart Contracts',
+      description: 'Entdecke die beliebtesten Smart-Contract-Ökosysteme auf Polkadot und Substrate.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/ai.png'),
+      href: '/dapps/ai/',
+      title: 'KI',
+      description: 'Entdecke die beliebtesten KI-Dapps im Polkadot-Ökosystem.'
+      },
+]}/>
+
+## Handverlesene Dapps & Projekte
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/defi/hydration.png'),
+      href: '/dapps/defi/hydration',
+      title: 'Hydration',
+      description: 'DeFi / DEX'
+    },
+        {
+      thumbnail: import('/src/assets/dapps/depin/peaq.png'),
+      href: '/dapps/depin/peaq-network/',
+      title: 'Peaq Network',
+      description: 'DePin'
+      },
+                     {
+      thumbnail: import('/src/assets/dapps/gaming/evrloot.png'),
+      href: '/dapps/gaming/evrloot',
+      title: 'Evrloot',
+      description: 'Gaming'
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/bridges/hyperbridge.png'),
+      href: '/dapps/bridges/hyperbridge/',
+      title: 'Hyperbridge',
+      description: 'Bridge'
+      },
+  ]}
+/>
+
+## Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=D4zk4GJNRpo',
+      title: 'Neue Polkadot-App!',
+    },
+  ]}
+/>
