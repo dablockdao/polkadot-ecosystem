@@ -2251,6 +2251,125 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"de/dapps/ai/bittensor.mdx": {
+	id: "de/dapps/ai/bittensor.mdx";
+  slug: "de/dapps/ai/bittensor";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/ai/index.mdx": {
+	id: "de/dapps/ai/index.mdx";
+  slug: "de/dapps/ai";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/ai/neurolanche.mdx": {
+	id: "de/dapps/ai/neurolanche.mdx";
+  slug: "de/dapps/ai/neurolanche";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/ai/neuroweb.mdx": {
+	id: "de/dapps/ai/neuroweb.mdx";
+  slug: "de/dapps/ai/neuroweb";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/ai/phala-network.mdx": {
+	id: "de/dapps/ai/phala-network.mdx";
+  slug: "de/dapps/ai/phala-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/bridges/axelar.md": {
+	id: "de/dapps/bridges/axelar.md";
+  slug: "de/dapps/bridges/axelar";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"de/dapps/bridges/chainflip.md": {
+	id: "de/dapps/bridges/chainflip.md";
+  slug: "de/dapps/bridges/chainflip";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"de/dapps/bridges/hyperbridge.mdx": {
+	id: "de/dapps/bridges/hyperbridge.mdx";
+  slug: "de/dapps/bridges/hyperbridge";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/bridges/index.mdx": {
+	id: "de/dapps/bridges/index.mdx";
+  slug: "de/dapps/bridges";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/bridges/snowbridge.mdx": {
+	id: "de/dapps/bridges/snowbridge.mdx";
+  slug: "de/dapps/bridges/snowbridge";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/bridges/wormhole.md": {
+	id: "de/dapps/bridges/wormhole.md";
+  slug: "de/dapps/bridges/wormhole";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"de/dapps/depin/acurast.mdx": {
+	id: "de/dapps/depin/acurast.mdx";
+  slug: "de/dapps/depin/acurast";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/depin/giant-protocol.mdx": {
+	id: "de/dapps/depin/giant-protocol.mdx";
+  slug: "de/dapps/depin/giant-protocol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/depin/index.mdx": {
+	id: "de/dapps/depin/index.mdx";
+  slug: "de/dapps/depin";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/depin/peaq-network.mdx": {
+	id: "de/dapps/depin/peaq-network.mdx";
+  slug: "de/dapps/depin/peaq-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/depin/robonomics.mdx": {
+	id: "de/dapps/depin/robonomics.mdx";
+  slug: "de/dapps/depin/robonomics";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/index.mdx": {
+	id: "de/dapps/index.mdx";
+  slug: "de/dapps";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "de/tools/block-explorers/3xpl.md": {
 	id: "de/tools/block-explorers/3xpl.md";
   slug: "de/tools/block-explorers/3xpl";

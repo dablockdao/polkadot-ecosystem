@@ -1,0 +1,86 @@
+---
+title: Snowbridge
+description: Snowbridge ist eine vertrauenslose, dezentrale Brücke zwischen Polkadot und Ethereum, die nahtlose Cross-Chain-Kommunikation und vielfältige Asset-Übertragungen mit sicherer Governance ermöglicht.
+sidebar:
+    label: ✪ Snowbridge
+    order: 2
+hero:
+  tagline: Vollständig vertrauenslose Brücke zwischen Polkadot und Ethereum.
+  image: 
+    file: ../../../../../assets/dapps/bridges/snowbridge.png
+  actions:
+    - text: Dapp
+      link: https://app.snowbridge.network/
+      icon: external
+    - text: Docs
+      link: https://docs.snowbridge.network/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+Snowbridge ist eine allgemeine, vertrauenslose und dezentrale **Brücke, die entwickelt wurde, um nahtlose Kommunikation und den Asset-Transfer zwischen Polkadot und Ethereum zu erleichtern**. Ziel ist es, als eine Brücke im Gemeinwohl auf der vorgeschlagenen BridgeHub-Parachain zu starten und die Interoperabilität im Blockchain-Ökosystem zu verbessern.
+
+## Snowbridge Schlüsselkoncepte
+- **Vertrauenslosigkeit:** In der Blockchain-Technologie bezeichnet Vertrauenslosigkeit ein System, in dem Endnutzer keine Teilnehmer oder Gruppen von Teilnehmern vertrauen müssen, um ihre Mittel zu schützen und die Systemfunktionalität zu gewährleisten. Stattdessen verlassen sie sich auf Protokolle, Mathematik, Kryptografie, Code und wirtschaftliche Prinzipien. **Snowbridge zielt darauf ab, eine vertrauenslose Umgebung zu bieten**, in der die Sicherheit der Nutzer und ihre Erwartungen unabhängig vom Verhalten der Teilnehmer gewahrt bleiben.
+- **Allgemeine Funktionalität:** Im Gegensatz zu vielen Brücken, die sich ausschließlich auf Token-Transfers konzentrieren, **unterstützt Snowbridge die Übertragung verschiedener Assets**, einschließlich nicht-fungibler Token, Kreditverträgen und generalisierten Asset-Übertragungen. Sie ermöglicht willkürliche Zustandsübertragungen zwischen Chains durch Nachrichten, die nicht an eine bestimmte Anwendung gebunden sind, und ermöglicht so vielfältige Cross-Chain-Anwendungen.
+- **Zustellbarkeit und Lieferung**
+Snowbridge unterscheidet zwischen **Garantierter Zustellbarkeit** und **Garantierter Lieferung**. Garantierte Zustellbarkeit stellt sicher, dass eine Nachricht über die Brücke übertragen werden kann, wenn der Absender bereit ist, die Software auszuführen und Gasgebühren zu bezahlen. Garantierte Lieferung stellt sicher, dass **starke Anreize oder Anforderungen für Dritte bestehen, Nachrichten weiterzuleiten**, um die Zustellung der Nachricht sicherzustellen, auch wenn der Absender sie nicht weiterleitet.
+## Snowbridge Überblick
+Snowbridge bietet eine sichere Brücke zwischen der BridgeHub-Parachain und dem Ethereum-Gateway-Vertrag. Es ermöglicht die Kommunikation zwischen jeder Polkadot-Parachain und Ethereum unter Verwendung des **XCMP-Nachrichtenprotokolls von Polkadot**. Parachains können XCM-Anweisungen an BridgeHub senden, um die Brücke zu nutzen.
+
+## Snowbridge Komponenten
+### BridgeHub
+**BridgeHub hostet verschiedene Brücken**, einschließlich derjenigen zu Ethereum und Kusama. Es umfasst die folgenden Komponenten:
+- **InboundQueue**: Verifiziert eingehende Nachrichten aus Ethereum, konvertiert sie in XCM-Skripte und sendet sie an die Ziel-Parachain.
+- **OutboundQueue**: Verwalte ausgehende XCM-Nachrichten zu Ethereum, puffert Nachrichten und erzeugt Merkle-Wurzeln zur Verifizierung.
+- **EthereumBeaconClient**: Implementiert einen Light-Client, um die Ethereum Beacon Chain zu verfolgen und eingehende Nachrichten zu verifizieren.
+- **System**: Bietet grundlegende Systemfunktionen für den Betrieb der Brücke.
+
+### Ethereum
+Auf der Ethereum-Seite dreht sich die Brücke um einen zentralen Gateway-Vertrag, der für das Empfangen, Verifizieren und Versenden von Nachrichten zwischen Ethereum und Polkadot verantwortlich ist.
+- **Gateway**: Verwalte eingehende und ausgehende Nachrichten, Token-Transfers und andere höherwertige Anwendungsfunktionen.
+- **Agent**: Agiert als Proxy für Konsenssysteme in Polkadot, erleichtert Token-Einzahlungen und die Nachrichtenübermittlung an Zielverträge.
+- **BeefyClient**: Implementiert einen Light-Client zur Verifizierung des Polkadot-Konsenses mit dem BEEFY-Gadget.
+
+### Kanäle
+Bridge-Nachrichten fließen durch logische Kanäle, wobei jede Parachain ihren eigenen dedizierten Kanal zugewiesen bekommt. Dieses Design ermöglicht es der Parachain-Governance, das Rebalancing und benutzerdefinierte Gebühr- und Belohnungsmodelle zu verwalten, **um potenzielle Blockierungsprobleme zu minimieren**.
+
+#### Channels API
+- **create\_channel**: Erstelle einen neuen Kanal mit einer anfänglichen Konfiguration.
+- **update\_channel**: Aktualisiere einen bestehenden Kanal mit einer neuen Konfiguration.
+
+## Snowbridge Gebühren und Belohnungen
+Gebühren werden durch ein strukturiertes System verwaltet, bei dem die gesammelten Gebühren einem Konto gutgeschrieben werden, das von der Parachain im Quellnetzwerk kontrolliert wird. Kosten werden von einem Konto abgebucht, das von der Parachain im Zielnetzwerk kontrolliert wird, wodurch **finanzielle Balance und Nachhaltigkeit** gewährleistet werden.
+
+## Snowbridge Verifizierung
+Snowbridge setzt On-Chain-Light-Clients zur vertrauenslosen Nachrichtenverifizierung ein. Es wurden **Light-Clients für Polkadot** (**BEEFY**) und **Ethereum** (**PoS**) entwickelt, um eine sichere und effiziente Cross-Chain-Kommunikation zu gewährleisten.
+
+## Snowbridge Governance
+Als ein Gemeinwohl-Projekt wird die **Governance von Snowbridge ausschließlich durch das Gov2-Modell von Polkadot verwaltet**. Diese dezentrale Governance-Struktur stellt sicher, dass keine zentrale Kontrolle existiert und fördert die Beteiligung der Gemeinschaft an Entscheidungsprozessen.
+
+#### Fazit
+Snowbridge hebt sich als robuste, vertrauenslose und dezentrale Brücke hervor, die eine umfassende Interoperabilität zwischen Polkadot und Ethereum ermöglicht. Durch die Unterstützung vielfältiger Asset-Übertragungen und die Anwendung fortschrittlicher Verifizierungs- und Governance-Mechanismen zielt Snowbridge darauf ab, die Konnektivität und Sicherheit im Blockchain-Ökosystem zu verbessern.
+
+## Snowbridge Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+        {
+      href: 'https://www.youtube.com/watch?v=jXv-PIx5Thg',
+      title: 'How To Bridge From Ethereum To Polkadot Through Snowbridge',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=wq8SAg2TjKY',
+      title: 'Snowbridge, an Ethereum bridge on BridgeHub',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=dk2PAIvwPrs',
+      title: 'Introductionn to Snowbridge (ES) - LV',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=tO6aQCjY5Zg',
+      title: 'Ethereum a Polkadot con Turtle & Snowbridge',
+    },
+  ]} />
