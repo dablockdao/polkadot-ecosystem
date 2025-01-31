@@ -2370,6 +2370,55 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"de/dapps/rwa/centrifuge.mdx": {
+	id: "de/dapps/rwa/centrifuge.mdx";
+  slug: "de/dapps/rwa/centrifuge";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/rwa/curio.mdx": {
+	id: "de/dapps/rwa/curio.mdx";
+  slug: "de/dapps/rwa/curio";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/rwa/g6networks.mdx": {
+	id: "de/dapps/rwa/g6networks.mdx";
+  slug: "de/dapps/rwa/g6networks";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/rwa/index.mdx": {
+	id: "de/dapps/rwa/index.mdx";
+  slug: "de/dapps/rwa";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/rwa/unit-network.md": {
+	id: "de/dapps/rwa/unit-network.md";
+  slug: "de/dapps/rwa/unit-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"de/dapps/rwa/watr-protocol.md": {
+	id: "de/dapps/rwa/watr-protocol.md";
+  slug: "de/dapps/rwa/watr-protocol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"de/dapps/rwa/xcavate.mdx": {
+	id: "de/dapps/rwa/xcavate.mdx";
+  slug: "de/dapps/rwa/xcavate";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "de/tools/block-explorers/3xpl.md": {
 	id: "de/tools/block-explorers/3xpl.md";
   slug: "de/tools/block-explorers/3xpl";
