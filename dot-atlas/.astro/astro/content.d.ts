@@ -2328,76 +2328,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"de/dapps/defi/acala-network.mdx": {
-	id: "de/dapps/defi/acala-network.mdx";
-  slug: "de/dapps/defi/acala-network";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"de/dapps/defi/bifrost.mdx": {
-	id: "de/dapps/defi/bifrost.mdx";
-  slug: "de/dapps/defi/bifrost";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"de/dapps/defi/hydration.mdx": {
-	id: "de/dapps/defi/hydration.mdx";
-  slug: "de/dapps/defi/hydration";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"de/dapps/defi/index.mdx": {
-	id: "de/dapps/defi/index.mdx";
-  slug: "de/dapps/defi";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"de/dapps/defi/interlay.mdx": {
-	id: "de/dapps/defi/interlay.mdx";
-  slug: "de/dapps/defi/interlay";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"de/dapps/defi/moonwell.mdx": {
-	id: "de/dapps/defi/moonwell.mdx";
-  slug: "de/dapps/defi/moonwell";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"de/dapps/defi/polimec.mdx": {
-	id: "de/dapps/defi/polimec.mdx";
-  slug: "de/dapps/defi/polimec";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"de/dapps/defi/polkadex.mdx": {
-	id: "de/dapps/defi/polkadex.mdx";
-  slug: "de/dapps/defi/polkadex";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"de/dapps/defi/stellaswap.mdx": {
-	id: "de/dapps/defi/stellaswap.mdx";
-  slug: "de/dapps/defi/stellaswap";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"de/dapps/defi/zeitgeist.mdx": {
-	id: "de/dapps/defi/zeitgeist.mdx";
-  slug: "de/dapps/defi/zeitgeist";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
 "de/dapps/depin/acurast.mdx": {
 	id: "de/dapps/depin/acurast.mdx";
   slug: "de/dapps/depin/acurast";
@@ -4568,6 +4498,76 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"fr/dapps/defi/acala-network.mdx": {
+	id: "fr/dapps/defi/acala-network.mdx";
+  slug: "fr/dapps/defi/acala-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/defi/bifrost.mdx": {
+	id: "fr/dapps/defi/bifrost.mdx";
+  slug: "fr/dapps/defi/bifrost";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/defi/hydration.mdx": {
+	id: "fr/dapps/defi/hydration.mdx";
+  slug: "fr/dapps/defi/hydration";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/defi/index.mdx": {
+	id: "fr/dapps/defi/index.mdx";
+  slug: "fr/dapps/defi";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/defi/interlay.mdx": {
+	id: "fr/dapps/defi/interlay.mdx";
+  slug: "fr/dapps/defi/interlay";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/defi/moonwell.mdx": {
+	id: "fr/dapps/defi/moonwell.mdx";
+  slug: "fr/dapps/defi/moonwell";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/defi/polimec.mdx": {
+	id: "fr/dapps/defi/polimec.mdx";
+  slug: "fr/dapps/defi/polimec";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/defi/polkadex.mdx": {
+	id: "fr/dapps/defi/polkadex.mdx";
+  slug: "fr/dapps/defi/polkadex";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/defi/stellaswap.mdx": {
+	id: "fr/dapps/defi/stellaswap.mdx";
+  slug: "fr/dapps/defi/stellaswap";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/defi/zeitgeist.mdx": {
+	id: "fr/dapps/defi/zeitgeist.mdx";
+  slug: "fr/dapps/defi/zeitgeist";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "fr/dapps/depin/acurast.mdx": {
 	id: "fr/dapps/depin/acurast.mdx";
   slug: "fr/dapps/depin/acurast";
@@ -4967,6 +4967,69 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"it/dapps/defi/bifrost.mdx": {
+	id: "it/dapps/defi/bifrost.mdx";
+  slug: "it/dapps/defi/bifrost";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/defi/hydration.mdx": {
+	id: "it/dapps/defi/hydration.mdx";
+  slug: "it/dapps/defi/hydration";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/defi/index.mdx": {
+	id: "it/dapps/defi/index.mdx";
+  slug: "it/dapps/defi";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/defi/interlay.mdx": {
+	id: "it/dapps/defi/interlay.mdx";
+  slug: "it/dapps/defi/interlay";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/defi/moonwell.mdx": {
+	id: "it/dapps/defi/moonwell.mdx";
+  slug: "it/dapps/defi/moonwell";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/defi/polimec.mdx": {
+	id: "it/dapps/defi/polimec.mdx";
+  slug: "it/dapps/defi/polimec";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/defi/polkadex.mdx": {
+	id: "it/dapps/defi/polkadex.mdx";
+  slug: "it/dapps/defi/polkadex";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/defi/stellaswap.mdx": {
+	id: "it/dapps/defi/stellaswap.mdx";
+  slug: "it/dapps/defi/stellaswap";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/defi/zeitgeist.mdx": {
+	id: "it/dapps/defi/zeitgeist.mdx";
+  slug: "it/dapps/defi/zeitgeist";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "it/dapps/depin/acurast.mdx": {
 	id: "it/dapps/depin/acurast.mdx";
   slug: "it/dapps/depin/acurast";
