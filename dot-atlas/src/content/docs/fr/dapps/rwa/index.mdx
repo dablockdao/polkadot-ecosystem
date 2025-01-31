@@ -1,0 +1,71 @@
+---
+title: Projets RWA Polkadot
+description: Les projets RWA (Real-World Asset) de Polkadot relient les actifs traditionnels à la technologie blockchain.
+tableOfContents: false
+sidebar: 
+    order: 0
+    label: Projets RWA
+    badge: Flux
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Les projets RWA (Real-World Asset) de Polkadot relient les actifs traditionnels à la technologie blockchain. Ils permettent la tokenisation d'actifs réels tels que l'immobilier, les matières premières et les instruments financiers, offrant ainsi une plus grande accessibilité, transparence et efficacité. Construits sur le réseau évolutif et interopérable de Polkadot, ces projets ouvrent de nouvelles opportunités pour les investissements mondiaux et l'innovation dans la gestion des actifs.
+
+## Projets RWA Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/rwa/centrifuge.png'),
+      href: '/dapps/rwa/centrifuge/',
+      title: 'Centrifuge',
+      description: 'La plateforme pour la finance on-chain.',
+    },
+                     {
+      thumbnail: import('/src/assets/dapps/rwa/unit-network.png'),
+      href: '/dapps/rwa/unit-network/',
+      title: 'Unit Network',
+      description: 'Intégration des entreprises réelles avec la blockchain.',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/rwa/xcavate.png'),
+      href: '/dapps/rwa/xcavate/',
+      title: 'Xcavate',
+      description: 'Investissement immobilier avec la technologie blockchain.',
+      },
+              {
+      thumbnail: import('/src/assets/dapps/rwa/watr.png'),
+      href: '/dapps/rwa/watr-protocol/',
+      title: 'Watr Protocol',
+      description: 'Interaction avec les ressources naturelles via la technologie blockchain.',
+    },
+  ]}
+/>
+
+
+## Vidéos des projets RWA
+------------
+<ShowcaseYouTube
+  entries={[
+              {
+      href: 'https://www.youtube.com/watch?v=QI-EG3GfZVk',
+      title: '2024.11 Centrifuge Governance Call 31',
+      description: 'Mise à jour de la gouvernance. Initiative stratégique d\'échange de tokens pour Centrifuge DAO. Renouvellement de la liquidité du marché de prêts RWA.',
+          },
+              {
+      href: 'https://www.youtube.com/watch?v=orT3YZzJ0KQ',
+      title: 'Centrifuge sur Polkadot apportant plus de 220 millions de dollars d\'actifs réels sur la chaîne !',
+      description: 'Aujourd\'hui, Csaint discute avec Centrifuge, la parachain Polkadot apportant des actifs réels sur la chaîne avec des partenaires comme MakerDAO et BlockTower Capital.',
+          },
+        {
+    href: 'https://www.youtube.com/watch?v=gAwGyWmEKmA',
+      title: 'Xcavate en 90 secondes',
+    },
+        {
+    href: 'https://www.youtube.com/watch?v=lvPosDVjraw',
+      title: 'Présentation de Xcavate',
+    },
+  ]} />

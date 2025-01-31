@@ -1,0 +1,58 @@
+---
+title: Projets Polkadot DePin 
+description: Explorez tous les projets DePin de l'écosystème Polkadot.
+tableOfContents: false
+sidebar: 
+    label: Dapps DePin
+    badge: Flux
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Les projets Polkadot DePIN (Decentralized Physical Infrastructure Networks) combinent la blockchain avec des infrastructures réelles, permettant la création de réseaux décentralisés pour des actifs tels que les télécommunications, l'énergie et le transport. Construits sur la plateforme interopérable et évolutive de Polkadot, ces projets améliorent l'efficacité, la transparence et l'accessibilité tout en favorisant l'innovation dans la gestion et la monétisation des infrastructures physiques.
+
+## Projets Polkadot DePin
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/depin/peaq.png'),
+      href: '/dapps/depin/peaq-network/',
+      title: 'Peaq Network',
+      description: 'Alimenter l économie des machines.',
+    },
+                     {
+      thumbnail: import('/src/assets/dapps/depin/robonomics.png'),
+      href: '/dapps/depin/robonomics/',
+      title: 'Robonomics',
+      description: 'Des robots au sein des technologies web3',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/depin/acurast.png'),
+      href: '/dapps/depin/acurast/',
+      title: 'Acurast',
+      description: 'Un cloud décentralisé sans serveur.',
+      },
+              {
+      thumbnail: import('/src/assets/dapps/depin/giantprotocol.png'),
+      href: '/dapps/depin/giant-protocol/',
+      title: 'Giant Protocol',
+      description: 'Démocratiser l accès à la connectivité Internet',
+    },
+  ]}
+/>
+
+## Vidéos Polkadot DePin
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=LqasvQ_1vE0',
+      title: 'Pourquoi tant de DePIN migrent-ils vers Peaq ? - TOKEN2049',
+    },
+  ]}
+/>
