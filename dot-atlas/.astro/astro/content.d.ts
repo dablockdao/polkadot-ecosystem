@@ -2489,6 +2489,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"de/index.mdx": {
+	id: "de/index.mdx";
+  slug: "de";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "de/tools/block-explorers/3xpl.md": {
 	id: "de/tools/block-explorers/3xpl.md";
   slug: "de/tools/block-explorers/3xpl";
@@ -5705,6 +5712,13 @@ declare module 'astro:content' {
 "pt/dapps/rwa/xcavate.mdx": {
 	id: "pt/dapps/rwa/xcavate.mdx";
   slug: "pt/dapps/rwa/xcavate";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/index.mdx": {
+	id: "pt/index.mdx";
+  slug: "pt";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
