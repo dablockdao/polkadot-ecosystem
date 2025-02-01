@@ -3980,6 +3980,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"es/index.mdx": {
+	id: "es/index.mdx";
+  slug: "es";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "es/tools/block-explorers/3xpl.md": {
 	id: "es/tools/block-explorers/3xpl.md";
   slug: "es/tools/block-explorers/3xpl";
@@ -4785,6 +4792,104 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"fr/dapps/social/dsnp-protocol.mdx": {
+	id: "fr/dapps/social/dsnp-protocol.mdx";
+  slug: "fr/dapps/social/dsnp-protocol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/encointer.mdx": {
+	id: "fr/dapps/social/encointer.mdx";
+  slug: "fr/dapps/social/encointer";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/frequency.mdx": {
+	id: "fr/dapps/social/frequency.mdx";
+  slug: "fr/dapps/social/frequency";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/imbue-network.mdx": {
+	id: "fr/dapps/social/imbue-network.mdx";
+  slug: "fr/dapps/social/imbue-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/index.mdx": {
+	id: "fr/dapps/social/index.mdx";
+  slug: "fr/dapps/social";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/invarch-network.mdx": {
+	id: "fr/dapps/social/invarch-network.mdx";
+  slug: "fr/dapps/social/invarch-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/joystream.mdx": {
+	id: "fr/dapps/social/joystream.mdx";
+  slug: "fr/dapps/social/joystream";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/kilt-protocol.mdx": {
+	id: "fr/dapps/social/kilt-protocol.mdx";
+  slug: "fr/dapps/social/kilt-protocol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/litentry.mdx": {
+	id: "fr/dapps/social/litentry.mdx";
+  slug: "fr/dapps/social/litentry";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/logion-network.mdx": {
+	id: "fr/dapps/social/logion-network.mdx";
+  slug: "fr/dapps/social/logion-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/mandala-chain.mdx": {
+	id: "fr/dapps/social/mandala-chain.mdx";
+  slug: "fr/dapps/social/mandala-chain";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/polkaidentity.mdx": {
+	id: "fr/dapps/social/polkaidentity.mdx";
+  slug: "fr/dapps/social/polkaidentity";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/subsocial.mdx": {
+	id: "fr/dapps/social/subsocial.mdx";
+  slug: "fr/dapps/social/subsocial";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/dapps/social/virto-network.mdx": {
+	id: "fr/dapps/social/virto-network.mdx";
+  slug: "fr/dapps/social/virto-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "fr/index.mdx": {
 	id: "fr/index.mdx";
   slug: "fr";
@@ -5243,6 +5348,104 @@ declare module 'astro:content' {
 "it/dapps/rwa/xcavate.mdx": {
 	id: "it/dapps/rwa/xcavate.mdx";
   slug: "it/dapps/rwa/xcavate";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/dsnp-protocol.mdx": {
+	id: "it/dapps/social/dsnp-protocol.mdx";
+  slug: "it/dapps/social/dsnp-protocol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/encointer.mdx": {
+	id: "it/dapps/social/encointer.mdx";
+  slug: "it/dapps/social/encointer";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/frequency.mdx": {
+	id: "it/dapps/social/frequency.mdx";
+  slug: "it/dapps/social/frequency";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/imbue-network.mdx": {
+	id: "it/dapps/social/imbue-network.mdx";
+  slug: "it/dapps/social/imbue-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/index.mdx": {
+	id: "it/dapps/social/index.mdx";
+  slug: "it/dapps/social";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/invarch-network.mdx": {
+	id: "it/dapps/social/invarch-network.mdx";
+  slug: "it/dapps/social/invarch-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/joystream.mdx": {
+	id: "it/dapps/social/joystream.mdx";
+  slug: "it/dapps/social/joystream";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/kilt-protocol.mdx": {
+	id: "it/dapps/social/kilt-protocol.mdx";
+  slug: "it/dapps/social/kilt-protocol";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/litentry.mdx": {
+	id: "it/dapps/social/litentry.mdx";
+  slug: "it/dapps/social/litentry";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/logion-network.mdx": {
+	id: "it/dapps/social/logion-network.mdx";
+  slug: "it/dapps/social/logion-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/mandala-chain.mdx": {
+	id: "it/dapps/social/mandala-chain.mdx";
+  slug: "it/dapps/social/mandala-chain";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/polkaidentity.mdx": {
+	id: "it/dapps/social/polkaidentity.mdx";
+  slug: "it/dapps/social/polkaidentity";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/subsocial.mdx": {
+	id: "it/dapps/social/subsocial.mdx";
+  slug: "it/dapps/social/subsocial";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/social/virto-network.mdx": {
+	id: "it/dapps/social/virto-network.mdx";
+  slug: "it/dapps/social/virto-network";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
