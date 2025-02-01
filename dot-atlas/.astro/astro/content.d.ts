@@ -2328,6 +2328,76 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"de/dapps/defi/bifrost.mdx": {
+	id: "de/dapps/defi/bifrost.mdx";
+  slug: "de/dapps/defi/bifrost";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/defi/hydration.mdx": {
+	id: "de/dapps/defi/hydration.mdx";
+  slug: "de/dapps/defi/hydration";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/defi/index.mdx": {
+	id: "de/dapps/defi/index.mdx";
+  slug: "de/dapps/defi";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/defi/interlay.mdx": {
+	id: "de/dapps/defi/interlay.mdx";
+  slug: "de/dapps/defi/interlay";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/defi/kylix-finance.mdx": {
+	id: "de/dapps/defi/kylix-finance.mdx";
+  slug: "de/dapps/defi/kylix-finance";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/defi/moonwell.mdx": {
+	id: "de/dapps/defi/moonwell.mdx";
+  slug: "de/dapps/defi/moonwell";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/defi/polkadex.mdx": {
+	id: "de/dapps/defi/polkadex.mdx";
+  slug: "de/dapps/defi/polkadex";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/defi/stellaswap.mdx": {
+	id: "de/dapps/defi/stellaswap.mdx";
+  slug: "de/dapps/defi/stellaswap";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/defi/zeitgeist.mdx": {
+	id: "de/dapps/defi/zeitgeist.mdx";
+  slug: "de/dapps/defi/zeitgeist";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/dapps/defi/zenlink.mdx": {
+	id: "de/dapps/defi/zenlink.mdx";
+  slug: "de/dapps/defi/zenlink";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "de/dapps/depin/acurast.mdx": {
 	id: "de/dapps/depin/acurast.mdx";
   slug: "de/dapps/depin/acurast";
