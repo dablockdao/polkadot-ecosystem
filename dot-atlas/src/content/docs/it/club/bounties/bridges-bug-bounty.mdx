@@ -1,0 +1,96 @@
+---
+title: 'Bridges Bug Bounty'
+description: 'Polkadot Bridges Bug Bounty: Rafforzare la Sicurezza Cross-Chain'
+hero:
+  tagline:  Rafforzare la Sicurezza Cross-Chain.
+  image: 
+    file: ../../../../../assets/polkadot.webp
+  actions:
+    - text: Sito
+      link: https://polkadot.com/bridges-bug-bounty
+      icon: external
+    - text: Bounty
+      link: https://polkadot.subsquare.io/treasury/bounties/44
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+I ponti blockchain sono essenziali per abilitare l'interoperabilità tra diversi ecosistemi blockchain.
+Con la crescita della rete Polkadot e delle sue parachain, garantire la sicurezza e l'efficienza dei suoi ponti diventa fondamentale.
+Per mantenere una sicurezza robusta, Polkadot ha lanciato un programma di bug bounty completo focalizzato sulla sua infrastruttura di bridge, incoraggiando la comunità a identificare e segnalare vulnerabilità.
+Il Polkadot Bridges Bug Bounty è progettato per proteggere le connessioni vitali tra Polkadot e Kusama, offrendo ricompense significative per scoperte preziose.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Bridges Bug Bounty - Ultimo Aggiornamento (13/01/2024)',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-news/src/assets/polkadot.webp',
+      href: 'https://forum.polkadot.network/t/bridges-security-bug-bounty-2024-update/11415',
+      description:
+        "Il Bounty sulla Sicurezza dei Ponti Polkadot <> Kusama ha un budget di 250.000$ in DOT e 250.000$ in KSM, e mira a migliorare la sicurezza del ponte Polkadot <> Kusama identificando potenziali vulnerabilità e risolvendole tempestivamente...",
+    },
+  ]}
+/>
+
+## Cos'è il Polkadot Bridges Bug Bounty?
+L'infrastruttura di bridge di Polkadot facilita la comunicazione tra diverse blockchain all'interno dell'ecosistema, consentendo transazioni e passaggio di messaggi cross-chain. Questa funzionalità è vitale per il successo delle reti Polkadot e Kusama, nonché delle rispettive parachain. Tuttavia, come per qualsiasi sistema di tale importanza, i ponti blockchain sono bersagli frequenti per attori malintenzionati. Il programma Polkadot Bridges Bug Bounty è progettato per identificare e mitigare potenziali rischi di sicurezza, offrendo ricompense agli hacker etici che scoprono vulnerabilità prima che possano essere sfruttate.
+
+Il programma bounty si concentra su una serie di componenti all'interno dell'ecosistema Polkadot, inclusi i Parity Bridges Common, che forniscono i blocchi costitutivi per la creazione di ponti blockchain. Ciò include pallet Substrate che gestiscono la sincronizzazione delle intestazioni e il passaggio dei messaggi, nonché librerie per la costruzione di relayer che abilitano la comunicazione cross-chain. Questi elementi sono fondamentali per garantire il funzionamento fluido dei ponti Polkadot e qualsiasi vulnerabilità scoperta in queste aree può avere implicazioni significative per la sicurezza e la stabilità della rete.
+
+## Componenti Chiave nel Perimetro di Azione
+Il programma Polkadot Bridges Bug Bounty copre un ampio perimetro, comprendendo diverse aree critiche dell'infrastruttura dei ponti. Alcuni dei componenti più importanti inclusi sono:
+1. **Parity Bridges Common**: Un insieme di componenti utilizzati per costruire ponti. Include pallet Substrate per la sincronizzazione delle intestazioni e il passaggio di messaggi tra catene.
+2. **Polkadot SDK: Bridges**: L'SDK utilizzato per costruire e gestire ponti all'interno della rete Polkadot, abilitando la funzionalità cross-chain.
+3. **XCM & Bridgeshub**: Si concentra sul passaggio di messaggi cross-chain (XCM) e sui meccanismi sottostanti che consentono una comunicazione sicura tra i ponti.
+4. **Bridge Hub Parachains**: Le parachain che gestiscono la logica dei ponti e la comunicazione tra diverse blockchain, garantendo il trasferimento sicuro dei dati attraverso la rete.
+5. **Runtimes: Bridge Hub**: L'ambiente runtime sottostante che gestisce le operazioni degli hub di bridge, cruciale per mantenere l'integrità del meccanismo di collegamento.
+
+## Cosa Rende una Segnalazione di Qualità?
+Per garantire l'efficacia del programma di bug bounty, il team di Polkadot cerca segnalazioni originali e di impatto che rivelino vulnerabilità reali con conseguenze concrete. I seguenti criteri definiscono una buona segnalazione di bug:
+- **Proof-of-Concept**: È necessaria una prova di concetto (PoC) funzionante o prove sufficienti della sfruttabilità della vulnerabilità per la valutazione. Questo aiuta il team di sicurezza a comprendere la portata e la gravità del problema.
+- **Visione d'Impatto**: I partecipanti devono delineare l'impatto potenziale della vulnerabilità, includendo uno scenario dettagliato di attacco e descrivendo eventuali condizioni necessarie per lo sfruttamento.
+- **Originalità**: Il bug deve essere inedito. Le segnalazioni basate su scoperte nuove, non trattate in forum pubblici o in audit precedenti, avranno la priorità.
+
+Seguendo queste linee guida, i ricercatori assicurano che le loro segnalazioni siano preziose e attuabili, aumentando le probabilità di ottenere una ricompensa.
+
+## Come Partecipare e Ricevere il Pagamento
+Polkadot valorizza il duro lavoro e l'esperienza dei bug hunter e garantisce che i partecipanti idonei siano ricompensati per i loro contributi. Il processo di pagamento prevede pochi semplici passaggi:
+1. **Completare il KYC (Know Your Customer)**: I partecipanti devono verificare la propria identità completando le procedure KYC per essere idonei alle ricompense.
+2. **Firmare la Lettera di Ricompensa**: Dopo aver scoperto una vulnerabilità valida, i partecipanti devono firmare una lettera di ricompensa che descrive i termini di pagamento.
+3. **Fornire un Indirizzo**: I partecipanti devono fornire un indirizzo DOT/KSM per ricevere il pagamento della ricompensa.
+
+Le ricompense vengono determinate in base alla gravità delle scoperte, con vulnerabilità più critiche idonee a premi più elevati. I migliori contributori saranno inoltre riconosciuti nella Hall of Fame del Bug Bounty, con la possibilità di considerazione prioritaria per la Polkadot Blockchain Academy.
+
+## Regole Importanti per i Partecipanti al Bug Bounty
+Durante la partecipazione al Polkadot Bridges Bug Bounty, è essenziale seguire diverse regole di condotta per garantire un processo equo ed etico:
+- **Segnalare Immediatamente i Difetti Critici**: Se i partecipanti identificano una vulnerabilità significativa, devono interrompere l'indagine in quel momento, raccogliere prove minime e segnalare il problema.
+- **Evitare di Sfruttare la Vulnerabilità**: I partecipanti non devono utilizzare o incoraggiare altri a sfruttare le vulnerabilità scoperte per guadagno personale.
+- **Rispettare l'Infrastruttura**: Qualsiasi azione che possa interrompere le operazioni del sistema o influire negativamente sulle risorse condivise è vietata. Un comportamento etico garantisce che la comunità nel suo insieme ne tragga beneficio.
+- **Nessun Coinvolgimento nel Codice Difettoso**: Coloro che hanno contribuito o scritto il codice difettoso non possono partecipare alla segnalazione di vulnerabilità in quel codice.
+- **Conformità alle Sanzioni**: I partecipanti provenienti da paesi soggetti a sanzioni potrebbero non essere idonei per le ricompense, sebbene Polkadot possa offrire donazioni benefiche in tali casi.
+
+## Conclusione
+Il programma Polkadot Bridges Bug Bounty è un'iniziativa importante volta a garantire la sicurezza dell'infrastruttura dei ponti della rete e a garantire un'interoperabilità sicura tra Polkadot e Kusama. Sfruttando l'esperienza della comunità blockchain, il team di Polkadot mira a identificare e risolvere proattivamente le vulnerabilità prima che possano essere sfruttate da attori malintenzionati. Con ricompense attraenti per segnalazioni preziose, il programma offre un'eccellente opportunità per gli hacker etici di contribuire alla sicurezza continua di uno degli ecosistemi blockchain più entusiasmanti al mondo.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Bounty 44',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-news/src/assets/polkadot.webp',
+      href: 'https://polkadot.subsquare.io/treasury/bounties/44',
+    },
+  ]}
+/>
+
+## Video della Comunità sul Bridges Bug Bounty
+------------
+<ShowcaseYouTube
+  entries={[
+       {
+      href: 'https://www.youtube.com/watch?v=2RuZ6svqcxE',
+      title: 'Demistificare i Ponti Trustless nell’Ecosistema Polkadot',
+          },
+  ]}
+/>

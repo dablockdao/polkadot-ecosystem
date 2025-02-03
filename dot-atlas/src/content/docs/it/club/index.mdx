@@ -1,0 +1,51 @@
+---
+title: Polkadot Community
+description: Get started and join the biggest DAO in the world.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+The Polkadot Ecosystem Club provides a unified collection of key elements shaping the network. 
+It includes a comprehensive directory of **DAOs and collectives**, highlighting groups that lead governance efforts, manage treasuries, 
+and drive innovation within the ecosystem through its different initiatives. 
+
+These collectives represent the collaborative spirit of Polkadot, 
+showcasing how decentralized decision-making enables transparent and efficient project management. Additionally, the hub features details about **organizations actively contributing to the ecosystem**, 
+including development teams and institutions that work together to build the future of blockchain technology.
+
+*A curated list with all relevant Polkadot ecosystem agents (DAOs, People, Validators…) to follow.*
+
+## All the Polkadot Ecosystem in One Place
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/daos.png'),
+      href: '/club/daos',
+      title: 'DAOs',
+      description: 'Discover the most popular DAOs and Collectives shaping the Polkadot Ecosystem.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/orgs.png'),
+      href: '/club/orgs/',
+      title: 'Orgs',
+      description: 'All the organizations building the future of internet.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/initiatives.png'),
+      href: '/club/initiatives/',
+      title: 'Initiatives',
+      description: 'Start your journey as a Polkadot developer.'
+      },
+          {
+      thumbnail: import('/src/assets/thumbnails/resources.png'),
+      href: '/club/resources/',
+      title: 'Resources',
+      description: 'List complete of resources for new users.'
+      },
+  ]}
+/>
+
