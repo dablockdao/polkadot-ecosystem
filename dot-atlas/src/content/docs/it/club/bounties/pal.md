@@ -2,7 +2,7 @@
 title: 'Assurance Legion (PAL)'
 sidebar:
     label: PAL
-description: 'L\'Assurance Legion è un gruppo di esperti di sicurezza impegnati a garantire la sicurezza della rete Polkadot.'
+description: 'L\ Assurance Legion è un gruppo di esperti di sicurezza impegnati a garantire la sicurezza della rete Polkadot.'
 hero:
   tagline: Impegnati a garantire la sicurezza della rete Polkadot.
   image: 
