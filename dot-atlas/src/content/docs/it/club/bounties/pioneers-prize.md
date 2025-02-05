@@ -1,6 +1,6 @@
 ---
 title: 'Premio Pionieri'
-description: 'Polkadot Pioneers Prize: Promuovere l'Innovazione e la Decentralizzazione nell\'Ecosistema Web3'
+description: 'Polkadot Pioneers Prize: Promuovere l Innovazione e la Decentralizzazione nell\ Ecosistema Web3'
 hero:
   tagline:  Promuovere l'Innovazione e la Decentralizzazione nell\'Ecosistema Web3.
   image: 

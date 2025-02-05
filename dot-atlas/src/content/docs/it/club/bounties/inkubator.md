@@ -1,6 +1,6 @@
 ---
 title: 'Ink!ubator'
-descritpion: 'Ink!ubator Bounty: Un catalizzatore per l'innovazione all'interno dell'ecosistema Polkadot'
+descritpion: 'Ink!ubator Bounty: Un catalizzatore per l innovazione all interno dell ecosistema Polkadot'
 hero:
   tagline: Crescita degli sviluppatori, audit di sicurezza e strumenti per ink!
   image:

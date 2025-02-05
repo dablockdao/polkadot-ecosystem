@@ -697,6 +697,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"club/orgs/bd/sunset-labs.md": {
+	id: "club/orgs/bd/sunset-labs.md";
+  slug: "club/orgs/bd/sunset-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "club/orgs/bd/transistor.mdx": {
 	id: "club/orgs/bd/transistor.mdx";
   slug: "club/orgs/bd/transistor";
@@ -707,6 +714,13 @@ declare module 'astro:content' {
 "club/orgs/bd/velocity-labs.mdx": {
 	id: "club/orgs/bd/velocity-labs.mdx";
   slug: "club/orgs/bd/velocity-labs";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/bd/web3dealdesk.mdx": {
+	id: "club/orgs/bd/web3dealdesk.mdx";
+  slug: "club/orgs/bd/web3dealdesk";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -5121,6 +5135,153 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"it/club/bounties/antiscam.mdx": {
+	id: "it/club/bounties/antiscam.mdx";
+  slug: "it/club/bounties/antiscam";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/bridges-bug-bounty.mdx": {
+	id: "it/club/bounties/bridges-bug-bounty.mdx";
+  slug: "it/club/bounties/bridges-bug-bounty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/defi-bounty.mdx": {
+	id: "it/club/bounties/defi-bounty.mdx";
+  slug: "it/club/bounties/defi-bounty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/dotplay.mdx": {
+	id: "it/club/bounties/dotplay.mdx";
+  slug: "it/club/bounties/dotplay";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/events.mdx": {
+	id: "it/club/bounties/events.mdx";
+  slug: "it/club/bounties/events";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/ibp.mdx": {
+	id: "it/club/bounties/ibp.mdx";
+  slug: "it/club/bounties/ibp";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/index.mdx": {
+	id: "it/club/bounties/index.mdx";
+  slug: "it/club/bounties";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/inkubator.md": {
+	id: "it/club/bounties/inkubator.md";
+  slug: "it/club/bounties/inkubator";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/club/bounties/legal-bounty.mdx": {
+	id: "it/club/bounties/legal-bounty.mdx";
+  slug: "it/club/bounties/legal-bounty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/marketing.mdx": {
+	id: "it/club/bounties/marketing.mdx";
+  slug: "it/club/bounties/marketing";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/meetups.mdx": {
+	id: "it/club/bounties/meetups.mdx";
+  slug: "it/club/bounties/meetups";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/moderation.mdx": {
+	id: "it/club/bounties/moderation.mdx";
+  slug: "it/club/bounties/moderation";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/bounties/pal.md": {
+	id: "it/club/bounties/pal.md";
+  slug: "it/club/bounties/pal";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/club/bounties/pioneers-prize.md": {
+	id: "it/club/bounties/pioneers-prize.md";
+  slug: "it/club/bounties/pioneers-prize";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/club/bounties/technical-support.md": {
+	id: "it/club/bounties/technical-support.md";
+  slug: "it/club/bounties/technical-support";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/club/bounties/ux-bounty.mdx": {
+	id: "it/club/bounties/ux-bounty.mdx";
+  slug: "it/club/bounties/ux-bounty";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/collectives/index.mdx": {
+	id: "it/club/collectives/index.mdx";
+  slug: "it/club/collectives";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/collectives/polkadot-ambassadors-collective.mdx": {
+	id: "it/club/collectives/polkadot-ambassadors-collective.mdx";
+  slug: "it/club/collectives/polkadot-ambassadors-collective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/collectives/polkadot-fellowship.mdx": {
+	id: "it/club/collectives/polkadot-fellowship.mdx";
+  slug: "it/club/collectives/polkadot-fellowship";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/collectives/polkadot-tooling-collective.md": {
+	id: "it/club/collectives/polkadot-tooling-collective.md";
+  slug: "it/club/collectives/polkadot-tooling-collective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/club/index.mdx": {
+	id: "it/club/index.mdx";
+  slug: "it/club";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "it/dapps/ai/bittensor.mdx": {
 	id: "it/dapps/ai/bittensor.mdx";
   slug: "it/dapps/ai/bittensor";
@@ -5751,6 +5912,41 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"pt/club/collectives/index.mdx": {
+	id: "pt/club/collectives/index.mdx";
+  slug: "pt/club/collectives";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/club/collectives/polkadot-ambassadors-collective.mdx": {
+	id: "pt/club/collectives/polkadot-ambassadors-collective.mdx";
+  slug: "pt/club/collectives/polkadot-ambassadors-collective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/club/collectives/polkadot-fellowship.mdx": {
+	id: "pt/club/collectives/polkadot-fellowship.mdx";
+  slug: "pt/club/collectives/polkadot-fellowship";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"pt/club/collectives/polkadot-tooling-collective.md": {
+	id: "pt/club/collectives/polkadot-tooling-collective.md";
+  slug: "pt/club/collectives/polkadot-tooling-collective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"pt/club/index.mdx": {
+	id: "pt/club/index.mdx";
+  slug: "pt/club";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "pt/dapps/ai/bittensor.mdx": {
 	id: "pt/dapps/ai/bittensor.mdx";
   slug: "pt/dapps/ai/bittensor";
@@ -6143,6 +6339,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"tools/archive/madara-starknet.mdx": {
+	id: "tools/archive/madara-starknet.mdx";
+  slug: "tools/archive/madara-starknet";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "tools/archive/polkaholic.md": {
 	id: "tools/archive/polkaholic.md";
   slug: "tools/archive/polkaholic";
@@ -6325,13 +6528,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"tools/dev/madara-starknet.mdx": {
-	id: "tools/dev/madara-starknet.mdx";
-  slug: "tools/dev/madara-starknet";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
 "tools/dev/morekudos.mdx": {
 	id: "tools/dev/morekudos.mdx";
   slug: "tools/dev/morekudos";
@@ -6363,6 +6559,13 @@ declare module 'astro:content' {
 "tools/dev/paraspell.mdx": {
 	id: "tools/dev/paraspell.mdx";
   slug: "tools/dev/paraspell";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"tools/dev/perfuse.mdx": {
+	id: "tools/dev/perfuse.mdx";
+  slug: "tools/dev/perfuse";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
