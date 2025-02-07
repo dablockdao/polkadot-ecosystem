@@ -18,7 +18,6 @@ hero:
 Fluffy Labs has emerged as a significant contributor to the Polkadot ecosystem, focusing on developing crucial development tools and infrastructure for the JAM (Join-Accumulate Machine) protocol. The team specializes in creating blockchain tools that enhance developer experience and ecosystem accessibility.
 
 ## Fluffy Labs Core Projects
-
 ### PVM Debugger
 The Polkadot Virtual Machine (PVM) Debugger stands as one of Fluffy Labs' flagship contributions. This tool addresses critical needs in the development and validation of PVM implementations, offering features such as:
 
@@ -52,7 +51,6 @@ Typeberry represents Fluffy Labs' implementation of the JAM protocol. While curr
 - A reference for other JAM implementors
 
 ## Additional Tools in Development
-
 Fluffy Labs maintains an active development pipeline with several projects:
 
 - Trie Visualiser: Educational tool for understanding JAM's binary merkle trie
@@ -61,7 +59,6 @@ Fluffy Labs maintains an active development pipeline with several projects:
 - JAM Network Dashboard (planned)
 
 ## Technical Leadership and Community Engagement
-
 The Fluffy Labs team, led by Piotr Zwolinski and including experienced developers like Tomasz Drwięga, demonstrates strong technical capability and community focus. Their approach to development emphasizes:
 
 - Open-source development under permissive licenses
@@ -70,7 +67,6 @@ The Fluffy Labs team, led by Piotr Zwolinski and including experienced developer
 - Integration with existing ecosystem tools
 
 ## Future Direction and Impact
-
 Fluffy Labs continues to shape the Polkadot ecosystem through:
 
 - Ongoing development of essential developer tools
