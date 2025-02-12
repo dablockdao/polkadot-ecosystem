@@ -984,6 +984,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"club/orgs/marcoms/astar-bulletin copy.md": {
+	id: "club/orgs/marcoms/astar-bulletin copy.md";
+  slug: "club/orgs/marcoms/astar-bulletin-copy";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "club/orgs/marcoms/astar-bulletin.md": {
 	id: "club/orgs/marcoms/astar-bulletin.md";
   slug: "club/orgs/marcoms/astar-bulletin";
@@ -1008,6 +1015,13 @@ declare module 'astro:content' {
 "club/orgs/marcoms/kusamarian.mdx": {
 	id: "club/orgs/marcoms/kusamarian.mdx";
   slug: "club/orgs/marcoms/kusamarian";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"club/orgs/marcoms/pala-labs.mdx": {
+	id: "club/orgs/marcoms/pala-labs.mdx";
+  slug: "club/orgs/marcoms/pala-labs";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -4725,6 +4739,27 @@ declare module 'astro:content' {
 "fr/club/memecoins/stink.mdx": {
 	id: "fr/club/memecoins/stink.mdx";
   slug: "fr/club/memecoins/stink";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/resources/awesome-polkadot.mdx": {
+	id: "fr/club/resources/awesome-polkadot.mdx";
+  slug: "fr/club/resources/awesome-polkadot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/resources/handbook.mdx": {
+	id: "fr/club/resources/handbook.mdx";
+  slug: "fr/club/resources/handbook";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/resources/index.mdx": {
+	id: "fr/club/resources/index.mdx";
+  slug: "fr/club/resources";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
