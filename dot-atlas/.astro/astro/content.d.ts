@@ -1376,6 +1376,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"dapps/archive/lastic.mdx": {
+	id: "dapps/archive/lastic.mdx";
+  slug: "dapps/archive/lastic";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "dapps/archive/layerx-network.md": {
 	id: "dapps/archive/layerx-network.md";
   slug: "dapps/archive/layerx-network";
@@ -1929,13 +1936,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"dapps/miscellaneous/lastic.mdx": {
-	id: "dapps/miscellaneous/lastic.mdx";
-  slug: "dapps/miscellaneous/lastic";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
 "dapps/miscellaneous/regionx.mdx": {
 	id: "dapps/miscellaneous/regionx.mdx";
   slug: "dapps/miscellaneous/regionx";
@@ -2317,6 +2317,41 @@ declare module 'astro:content' {
 "de/club/index.mdx": {
 	id: "de/club/index.mdx";
   slug: "de/club";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/club/memecoins/beefy.mdx": {
+	id: "de/club/memecoins/beefy.mdx";
+  slug: "de/club/memecoins/beefy";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/club/memecoins/gavunwud.mdx": {
+	id: "de/club/memecoins/gavunwud.mdx";
+  slug: "de/club/memecoins/gavunwud";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/club/memecoins/index.mdx": {
+	id: "de/club/memecoins/index.mdx";
+  slug: "de/club/memecoins";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/club/memecoins/pink.mdx": {
+	id: "de/club/memecoins/pink.mdx";
+  slug: "de/club/memecoins/pink";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"de/club/memecoins/stink.mdx": {
+	id: "de/club/memecoins/stink.mdx";
+  slug: "de/club/memecoins/stink";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -4624,6 +4659,76 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"fr/club/collectives/index.mdx": {
+	id: "fr/club/collectives/index.mdx";
+  slug: "fr/club/collectives";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/collectives/polkadot-ambassadors-collective.mdx": {
+	id: "fr/club/collectives/polkadot-ambassadors-collective.mdx";
+  slug: "fr/club/collectives/polkadot-ambassadors-collective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/collectives/polkadot-fellowship.mdx": {
+	id: "fr/club/collectives/polkadot-fellowship.mdx";
+  slug: "fr/club/collectives/polkadot-fellowship";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/collectives/polkadot-tooling-collective.md": {
+	id: "fr/club/collectives/polkadot-tooling-collective.md";
+  slug: "fr/club/collectives/polkadot-tooling-collective";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"fr/club/index.mdx": {
+	id: "fr/club/index.mdx";
+  slug: "fr/club";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/memecoins/beefy.mdx": {
+	id: "fr/club/memecoins/beefy.mdx";
+  slug: "fr/club/memecoins/beefy";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/memecoins/gavunwud.mdx": {
+	id: "fr/club/memecoins/gavunwud.mdx";
+  slug: "fr/club/memecoins/gavunwud";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/memecoins/index.mdx": {
+	id: "fr/club/memecoins/index.mdx";
+  slug: "fr/club/memecoins";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/memecoins/pink.mdx": {
+	id: "fr/club/memecoins/pink.mdx";
+  slug: "fr/club/memecoins/pink";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"fr/club/memecoins/stink.mdx": {
+	id: "fr/club/memecoins/stink.mdx";
+  slug: "fr/club/memecoins/stink";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "fr/dapps/ai/bittensor.mdx": {
 	id: "fr/dapps/ai/bittensor.mdx";
   slug: "fr/dapps/ai/bittensor";
@@ -5338,6 +5443,27 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"it/club/resources/awesome-polkadot.mdx": {
+	id: "it/club/resources/awesome-polkadot.mdx";
+  slug: "it/club/resources/awesome-polkadot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/resources/handbook.mdx": {
+	id: "it/club/resources/handbook.mdx";
+  slug: "it/club/resources/handbook";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/club/resources/index.mdx": {
+	id: "it/club/resources/index.mdx";
+  slug: "it/club/resources";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "it/dapps/ai/bittensor.mdx": {
 	id: "it/dapps/ai/bittensor.mdx";
   slug: "it/dapps/ai/bittensor";
@@ -5513,6 +5639,104 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"it/dapps/gaming/age-of-chronos.mdx": {
+	id: "it/dapps/gaming/age-of-chronos.mdx";
+  slug: "it/dapps/gaming/age-of-chronos";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/gaming/ajuna-network.mdx": {
+	id: "it/dapps/gaming/ajuna-network.mdx";
+  slug: "it/dapps/gaming/ajuna-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/gaming/bitcountry.md": {
+	id: "it/dapps/gaming/bitcountry.md";
+  slug: "it/dapps/gaming/bitcountry";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/dapps/gaming/cosmize.md": {
+	id: "it/dapps/gaming/cosmize.md";
+  slug: "it/dapps/gaming/cosmize";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/dapps/gaming/evrloot.mdx": {
+	id: "it/dapps/gaming/evrloot.mdx";
+  slug: "it/dapps/gaming/evrloot";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/gaming/exiled-racers.mdx": {
+	id: "it/dapps/gaming/exiled-racers.mdx";
+  slug: "it/dapps/gaming/exiled-racers";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/gaming/gamedao.mdx": {
+	id: "it/dapps/gaming/gamedao.mdx";
+  slug: "it/dapps/gaming/gamedao";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/gaming/glmr-apes-the-great-escape.mdx": {
+	id: "it/dapps/gaming/glmr-apes-the-great-escape.mdx";
+  slug: "it/dapps/gaming/glmr-apes-the-great-escape";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/gaming/heal3.mdx": {
+	id: "it/dapps/gaming/heal3.mdx";
+  slug: "it/dapps/gaming/heal3";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/gaming/index.mdx": {
+	id: "it/dapps/gaming/index.mdx";
+  slug: "it/dapps/gaming";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/gaming/moonfit.md": {
+	id: "it/dapps/gaming/moonfit.md";
+  slug: "it/dapps/gaming/moonfit";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/dapps/gaming/mythos-chain.mdx": {
+	id: "it/dapps/gaming/mythos-chain.mdx";
+  slug: "it/dapps/gaming/mythos-chain";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"it/dapps/gaming/odyssey.md": {
+	id: "it/dapps/gaming/odyssey.md";
+  slug: "it/dapps/gaming/odyssey";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"it/dapps/gaming/zero-network.md": {
+	id: "it/dapps/gaming/zero-network.md";
+  slug: "it/dapps/gaming/zero-network";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
 "it/dapps/index.mdx": {
 	id: "it/dapps/index.mdx";
   slug: "it/dapps";
