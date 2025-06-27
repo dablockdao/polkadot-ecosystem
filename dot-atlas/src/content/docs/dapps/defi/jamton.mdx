@@ -1,0 +1,79 @@
+---
+title: Jamton
+description: Jamton Layer-2 Polkadot parachain merges TON and Polkadot for high-yield liquid staking and cross-chain liquidity.
+hero:
+  tagline: TON-DOT liquidity for liquid staking
+  image: 
+    file: ../../../../assets/dapps/defi/jamton.png
+  actions:
+    - text: Dapp
+      link: https://app.jamton.network/
+      icon: external
+    - text: X
+      link: https://x.com/JamtonNetwork
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+Jamton is an emerging Layer-2 network that aggregates liquidity and staking across **The Open Network (TON)** and **Polkadot**, giving users a single venue for high-yield staking, cross-chain transfers, and DeFi execution. Built with **Substrate** and secured by the Polkadot relay chain, Jamton operates as a parachain while simultaneously acting as a scaling layer for TON-based assets and applications.
+
+## Jamton Technical Foundations
+
+| Component               | Purpose                                               | Key Detail                                                                       |
+| ----------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------- |
+| **Substrate Parachain** | Execution environment with shared security            | Won Polkadot parachain slot and connects to the relay chain                      |
+| **Layer-2 for TON**     | Off-loads throughput and expands TON’s feature set    | Accelerates transaction finality for stTON and other TON assets                  |
+| **XCM Bridges**         | Native cross-chain messaging                          | Active channel to Polkadot Asset Hub; roadmap includes Ethereum & Bitcoin        |
+| **EVM Compatibility**   | Solidity smart-contract support                       | Lets Ethereum dApps deploy on Jamton while tapping Polkadot security             |
+
+Jamton leverages **Polkadot’s parallelized transaction processing** and native cross-chain messaging (XCM) to coordinate asset transfers between TON, Polkadot, and other ecosystems.
+
+## Jamton Financial Primitives
+
+### Liquid Staking & DOTON
+
+Twin liquid-staking modules accept **TON** and **DOT** deposits. They mint a single composable asset, **DOTON**, representing a blended staking position. DOTON can be held, traded, or restaked to capture extra protocol rewards and network fees.
+
+### Restaking & Yield Optimisation
+
+A native restaking engine reallocates DOTON across top-performing validators and employs MEV strategies (e.g., back-running large swaps) to maximise net yield. Rebalancing is automatic, removing the need for manual redelegation.
+
+## Liquidity Infrastructure
+
+* **Cross-Chain Bridges** – Canonical bridges for TON ↔ Polkadot today; plans for Ethereum L2s and Bitcoin Taproot Assets.  
+* **Integrated Order-Book DEX** – “Capital DEX” merges an AMM pool with an on-chain order book so market-makers and passive LPs share liquidity.  
+* **Telegram Mini App** – Staking, swapping, and governance tools embedded directly in Telegram, Ton users’ primary channel.  
+
+## Jamton Governance & Security
+
+Jamton adopts **Polkadot OpenGov** pallets for on-chain upgrades, treasury spending, and parameter changes. Token-weighted voting will gradually hand control to DOTON holders, while the relay chain’s validator set enforces economic security at consensus.
+
+## Developer & User Experience
+
+* **Unified API surface** – Substrate RPC plus Ethereum-style JSON-RPC.  
+* **SDKs & Tooling** – TypeScript SDK, Solidity templates, and ink! examples streamline dApp migration.  
+* **Abstract Accounts** – Planned ERC-4337-style account abstraction to simplify UX across wallets.  
+
+## Jamton Roadmap & Ecosystem Traction
+
+| Milestone                        | Status  | Notes                                                          |
+| -------------------------------- | ------- | -------------------------------------------------------------- |
+| Testnet v1                       | ✅      | stTON liquid staking and basic bridging live                   |
+| Parachain slot lease (2024–26)   | ✅      | On-boarded September 2024                                      |
+| Mainnet launch                   | 🚀 Q3 25 | DOTON issuance, hardened bridge                                |
+| EVM pallet + Capital DEX         | 🔄 Q4 25 | Adds order-book trading and MEV-aware routing                  |
+| Telegram Mini App GA             | 🔄 Q1 26 | Full staking + governance in Telegram                          |
+
+Current partners include wallet providers **Ton Keeper**, **Nova**, and **SubWallet**, plus **Chainlink** for oracle price feeds.
+
+## Competitive Positioning
+
+1. **Dual-chain collateral** – Combined TON + DOT exposure offers broader yield options than single-asset LSDs.  
+2. **Polkadot security layer** – Parachain status delivers shared security and native cross-chain messaging unavailable to standalone L2s.  
+3. **Telegram distribution** – Direct line to TON’s retail base via Mini Apps, a channel competitors lack.  
+
+## Conclusion
+
+Jamton positions itself as a **cross-chain liquidity and staking aggregator** that merges TON’s billion-user potential with Polkadot’s multi-chain infrastructure. Successful roll-out of DOTON, the Capital DEX, and a friction-less Telegram experience could make Jamton a pivotal gateway between Telegram’s community and Polkadot’s DeFi landscape, while providing developers an EVM-compatible canvas backed by relay-chain security. Continued progress on governance decentralisation and bridge hardening will determine whether Jamton achieves durable network effects and realises its vision of seamless, high-yield liquidity across chains.
