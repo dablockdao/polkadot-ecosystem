@@ -57,20 +57,25 @@ Saxemberg maintains a strong stance on public discourse and transparency in its 
 4. **Non-authoring of Referenda:** Avoiding becoming authors of referenda unless directly involved.
 5. **Favoring Open Communication:** Promoting open communication over signing NDAs or confidentiality agreements.
 
-## Saxemberb Validator and Collator Services
+## Saxemberg Validator and Collator Services
 **Saxemberg operates multiple validators on Polkadot and Kusam**a, ensuring the security and efficiency of these networks. Their validators are carefully managed to provide optimal performance and reliability.
 - **Polkadot Validators:**
   - Validator 1: *153YD8ZHD9dRh82U419bSCB5SzWhbdAFzjj4NtA5pMazR2yC*
   - Validator 2: *16UgRGtYLuDWsBvjLLtc6FYVB3qSCV9c4sidcN4zaFm9qCFR*
+  - Validator 3: *12ryLNrg44r7Qv7oWZa2wK6PuzUmAMueyVHRBsyR5N6anEaV*
   - Pool: Saxemberg Pool Party – Pool #217
+- **Hyperbridge Collators and Relayers:**
+  - Collator / Relayer 1: *15ot6nuB5XZe4uUAc3xF4JjxRDkTnSLrnanc9QxK7Xs7ZKvZ*
+  - Collator / Relayer 2: *12Nt6vSYawNd1cg2siWtNv44GNzYJ1znYW6qdEMWWSLWmAzv*
+  - Relayer 3: *15ot7876vzeMpziZND85geXSzCDmiVYWTNUsGSsVukpZJffA*
 - **Kusama Validators:**
   - Validator 1: *J19LYGghRCe4Ct3VW4Vz1amMoUgogS1sh2FQvPWroKcDdb1*
   - Validator 2: *Cu2z7dVVdzFyDVTjUPm7feV9RFQ8QiG3yLGsVEj5NohFXk7*
   - Validator 3: *Dfg9gbTwG6aghwLYTfYoV4dXyhCRBLbRyFwENADHmg4zfDF*
   - Validator 4: *GL7MYnpQr7jgJqK8wSRUQuob1TvTY7uRJP6LUNeUyvMUhQR*
-  - Validator 5: *GAGaWf9wiFGidsQdcLfHRrndVsfTRx9SKfMNJFekk7ue2zL*
-  - Validator 6: *EAZLkHboA6P5ZnKASbKB2EdnSzRFHr2FrbxRRtyWyrHhVQ3*
 - **Zeitgeist Collator:**
   - *dDyKB2kbsf2rDWuK4LnQ1PU9HbM1oyqXvuiwMuwAwA1cnuSic*
 
 Saxemberg’s commitment to the Polkadot and Kusama ecosystems is evident through their rigorous validation and collation services, ethical practices, and transparent operational guidelines. By championing decentralization and neutrality, Saxemberg plays a crucial role in the ongoing development and success of these blockchain networks.
+
+Saxemberg is also a minor investor entity in the Polkadot ecosystem with Saxemberg Capital.
