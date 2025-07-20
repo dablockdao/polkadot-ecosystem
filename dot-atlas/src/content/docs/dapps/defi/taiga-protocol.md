@@ -1,6 +1,14 @@
 ---
 title: 'Taiga Protocol'
 description: Taiga Protocol is a synthetic asset protocol designed to address the issue of liquidity fragmentation in the Polkadot and Kusama ecosystems.
+hero:
+  tagline: Unified Liquidity Standard for DOT & KSM Staking 
+  image: 
+    file: ../../../../assets/dapps/defi/taiga-protocol.png
+  actions:
+    - text: Dapp
+      link: https://www.taigaprotocol.io/
+      icon: external
 ---
 
 Taiga Protocol is a synthetic asset protocol designed to address the issue of liquidity fragmentation in the Polkadot and Kusama ecosystems. By creating unified synthetic assets like tDOT and tKSM, Taiga simplifies DeFi participation and unlocks new opportunities for developers and users.
