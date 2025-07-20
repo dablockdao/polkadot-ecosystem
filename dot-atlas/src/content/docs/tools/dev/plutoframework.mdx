@@ -1,0 +1,81 @@
+---
+title: PlutoFramework
+description: PlutoFramework is a Modular Framework for Mobile Application Development in Substrate-Based Blockchain Environments.
+hero:
+  tagline: Substrate Mobile Application Development
+  actions:
+    - text: Docs
+      link: https://plutolabs.gitbook.io/
+      icon: external
+    - text: Github
+      link: https://github.com/RostislavLitovkin/PlutoFramework
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+PlutoFramework is a cross-platform development framework designed to facilitate the creation of mobile applications with Web3 functionalities, particularly for projects built on Substrate-based blockchains. Developed in C# using the .NET MAUI framework, PlutoFramework enables developers to build and manage mobile apps targeting both Android and iOS platforms, with integrated support for blockchain interactions, wallet functionality, and modular UI components.
+
+## Technical Architecture and Scope
+PlutoFramework adopts a layered architecture that separates user-facing components from core logic and blockchain integration. The framework utilizes Substrate.Net.Api—part of the Polkadot Unity SDK—to manage communication with Substrate-based networks. It supports synchronous and asynchronous querying of chain state, submission of extrinsics, and interaction with multiple parachains in parallel.
+
+The system design encourages a modular approach where each Substrate pallet can be represented by a corresponding UI component. These components can be reused across chains or adapted for specific configurations. Applications built with PlutoFramework maintain a clear separation between frontend logic and blockchain-specific functionality.
+
+## Key Capabilities
+### Platform Independence
+The use of .NET MAUI allows for a single codebase to target both major mobile operating systems. This architecture reduces duplication of effort and simplifies ongoing maintenance.
+
+### Blockchain Interaction
+- **State Queries**: Supports real-time and parallel querying across multiple parachains.
+- **Extrinsics Submission**: Developers can construct and submit transactions using pre-generated runtime-specific methods.
+- **Chain Support**: Compatible with any Substrate-based network and capable of integrating with EVM environments.
+
+### Wallet Integration
+The framework includes built-in wallet features, including account generation, key import/export, and biometric authentication where available. Wallet-related functions are integrated into the initial setup and user onboarding experience.
+
+### Transaction Analysis
+The Transaction Analyzer module offers a pre-execution validation layer for extrinsics. By simulating transactions on a local blockchain fork (via Acala Chopsticks), it provides insights into the expected behavior of the transaction. This includes event emissions, payload decoding, and potential side effects, improving user transparency and minimizing risks of unintended actions.
+
+### Component System
+UI elements are organized into reusable components mapped to individual Substrate pallets. Developers can define, register, and customize components through a structured interface system. Visual Studio Item Templates are provided to standardize component creation and reduce development time.
+
+Interfaces include:
+- `ISubstrateClientLoadableAsyncView`
+- `ILocalLoadableView`
+- `ISetEmptyView`
+- `IMainSubstrateClientLoadableView`
+
+These interfaces enable consistent lifecycle management and data loading patterns across components.
+
+## Chain Registration and Customization
+To integrate a new blockchain, developers must:
+1. Generate a client representation using `Substrate.Net.Toolchain`.
+2. Define the chain configuration in `chains.json` and related constants.
+3. Extend chain-specific event handlers and extrinsic processing.
+4. Link the new chain client to the component system and UI layers.
+
+The framework provides a clear set of steps and scripts for this process, accommodating a wide range of chain configurations within the Polkadot and Kusama ecosystems.
+
+## Constraints and Exclusions
+PlutoFramework does not provide infrastructure or backend services. Specifically:
+
+- It does not host or run blockchain nodes.
+- It does not offer indexing services (though integration with SubQuery or Subsquid is possible).
+- It does not include default UI designs; visual customization is expected to be handled by the application team.
+- It is not intended for use with non-Substrate-based blockchains.
+
+## Integration with GraphQL Indexers
+To optimize data retrieval and reduce latency, PlutoFramework supports integration with external GraphQL indexers. The recommended tools include:
+
+- **SubQuery**: for custom data filtering and historical state queries.
+- **Subsquid**: for batch processing and efficient data indexing.
+
+StrawberryShake is used for GraphQL client generation, enabling statically-typed access to indexed data sources.
+
+## Use in Governance, NFTs, and Identity
+PlutoFramework includes template components for common Web3 functions such as referenda participation, balance tracking, identity management, and NFT galleries. These components rely on standard Substrate pallets and may be extended or replaced as needed. Governance components are linked to on-chain referenda and display voting history and outcomes in real time.
+
+## Summary
+PlutoFramework provides a structured environment for developing mobile applications that interact with Substrate-based blockchains. Its modular architecture, built-in wallet support, and simulation-based transaction analysis system facilitate reliable and maintainable app development. While it does not cover backend infrastructure or design services, it offers a comprehensive frontend solution for teams building on Polkadot, Kusama, or custom Substrate chains.
+
