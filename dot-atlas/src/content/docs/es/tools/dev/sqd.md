@@ -83,8 +83,6 @@ El impacto de SQD Network es evidente gracias a su adopción en proyectos líder
 1. **PancakeSwap:** Este exchange descentralizado aprovecha SQD Network para indexar datos de manera eficiente, integrando funcionalidades multichain sin contratiempos.  
 2. **RAILGUN:** Emplea la capacidad de rastreo de llamadas de SQD Network para respaldar sus mecanismos de privacidad, como el Privacy Pool/Proof of Innocence (PPOI).  
 3. **Guru Network:** Gracias a la integración con el Squid SDK, Guru Network potencia sus paneles de análisis y procesos de IA con datos blockchain en tiempo real e históricos.  
-4. **Skybreach:** En el ámbito del gaming, Skybreach recurre al SDK de indexación de SQD para acceder a datos completos de EVM, impulsando experiencias de juego de nueva generación.  
-5. **[Polimec](/dapps/defi/polimec):** Polimec aprovecha la infraestructura robusta de SQD Network para escalar sus servicios DeFi a múltiples redes de forma eficiente.
 
 ## Cómo Comenzar con SQD Network
 Para los desarrolladores de Polkadot interesados en aprovechar el potencial de SQD Network, el proceso de integración es sencillo:
