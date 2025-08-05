@@ -1,0 +1,68 @@
+---
+title: Mubert
+description: Mubert Protocol on Polkadot manages generative music IP, licensing, attribution, and royalties with MM25 metadata and API.
+hero:
+  tagline: On-chain IP for generative music
+  image: 
+    file: ../../../../assets/dapps/miscellaneous/mubert.png
+  actions:
+    - text: Site
+      link: https://mubert.com/render
+      icon: external
+    - text: X
+      link: https://x.com/mubertapp
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Mubert is a creator focused protocol that combines generative AI and Web3 to register, attribute, license, and monetize music and other media. The project operates a Substrate based parachain in the Polkadot ecosystem and offers a production grade API for real time music generation and streaming.
+
+## Mubert Main value
+* Verifiable ownership and provenance recorded on chain
+* Machine readable licensing with automatic royalty distribution
+* Attribution that covers human created and AI assisted works
+* Developer ready access to generative music through a public API
+
+## Mubert Key components
+* **Polkadot parachain**
+  Dedicated chain that hosts intellectual property logic, benefits from shared security, and uses XCM for interoperability.
+* **IP Onchain pallet**
+  Runtime module that represents works, datasets, and derivative links. It provides calls for registration, policy configuration, usage recording, and settlement.
+* **MM25 music metadata**
+  Schema that captures contributors, stems and loops, instruments, model and dataset references, license terms, and usage constraints.
+* **Creative Data Token**
+  Asset used for data and content transactions, royalty splits, access control, and community signaling such as staking on artists or genres.
+* **Mubert API**
+  Text to music and image to music generation with genre and mood controls, long form streaming, and easy integration for applications that need immediate audio delivery.
+
+## How it works
+1. A creator or rights holder describes an asset with MM25 and registers it on the parachain.
+2. A policy defines permitted uses and the split tree for revenue.
+3. Applications request music through the API or interact with the chain through RPC.
+4. Usage events are recorded for attribution and periodic settlement distributes proceeds to credited parties.
+
+## Primary use cases
+* Adaptive soundtracks for games, fitness, and live streaming
+* Background music for social video with built in attribution
+* Programmatic licensing for brands and retail environments
+* Marketplaces for datasets, stems, and genre specific AI agents
+
+## Who benefits
+* Creators and labels seeking transparent attribution and payouts
+* Developers building UGC platforms, games, and interactive media
+* Data and model providers who want revenue sharing when their assets power derivative works
+
+## Why Polkadot
+* Shared security and predictable upgrades for media scale event volumes
+* Cross chain messaging that connects identity, payments, and content services
+* Flexible runtime for specialized intellectual property logic
+
+## Signals of traction
+Public materials indicate long term API usage, an active creator network, and completion of a Web3 Foundation grant milestone, suggesting readiness for production integrations within the Polkadot community.
+
+## Summary
+Mubert delivers a coherent stack for the creator economy that unites a Polkadot parachain, an IP oriented Substrate pallet, the MM25 metadata standard for music, and a mature generation API. The design emphasizes clear provenance, enforceable policy, and scalable settlement to support sustainable monetization for both AI native and human made content.
