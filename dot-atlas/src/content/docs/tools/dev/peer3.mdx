@@ -1,0 +1,58 @@
+---
+title: Peer3
+description: Peer3 SDK enables real time peer to peer smart contracts on Polkadot with state channels, zero fees, shared security.
+hero:
+  tagline: p2p state channels for real time Web3 on Polkadot
+  image: 
+    file: ../../../../assets/tools/dev/peer3.png
+  actions:
+    - text: Dapp
+      link: https://peer3.to/
+      icon: external
+    - text: Github
+      link: https://github.com/peer3to/state-channels-plus
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+Peer3 is a developer first project that brings real time peer to peer execution to Web3 while preserving the security guarantees of a distributed ledger. It offers an SDK that runs smart contracts directly between users and falls back to a blockchain for settlement and dispute resolution. The approach targets improved user experience and zero transaction fees for interactions that do not require global consensus, with Polkadot as the primary ecosystem focus. 
+
+## What Peer3 is
+Peer3 provides a state channels SDK that lets applications execute contract logic between users’ devices, then anchor outcomes on chain when needed. The current implementation supports EVM contracts and is designed to be VM agnostic, leaving room for future runtimes such as PVM in the Polkadot context. The project encourages developers to treat the blockchain as a final arbiter for correctness while keeping most activity off chain for speed and cost efficiency. 
+
+## How the architecture works
+Peer3 moves frequent application interactions off chain. Users gossip signed updates to peers and track shared state locally. If any peer behaves dishonestly, any honest participant can trigger an on chain dispute, and the ledger enforces the valid state and applies penalties. This pattern offers real time performance for most actions and relies on the ledger only for liveness, settlement, and finality. 
+
+From a developer perspective, the TypeScript layer builds on ethers. A contract instance is enshrined during setup so that calls look and feel like normal on chain interactions, yet they execute peer to peer with shared security inherited from the ledger. 
+
+## Why this matters for Polkadot
+Polkadot emphasizes shared security and flexible execution environments. Peer3 aligns with that design by keeping rapid interaction at the edge while using the relay secured environment for settlement and disputes. The public demo advertises infrastructure partners within the Polkadot stack, reflecting ecosystem integration and a focus on builder experience.
+
+## Funding and ecosystem signals
+The Web3 Foundation supported Peer3 with a Level 3 grant to deliver a minimal feature set of the SDK. Subsequently, Polkadot OpenGov approved and paid a treasury spend to develop a production version, with a mix of stablecoins and DOT and a delayed payment structure to manage delivery risk. These milestones indicate both technical progress and community governance backing.
+
+## Developer experience
+* **Familiar tooling:** TypeScript SDK layered on ethers for straightforward integration in dapps that already target EVM. 
+* **Contract model:** State machines implement a base interface and interact through a manager contract that connects peer updates with on chain enforcement. 
+* **Examples and docs:** Reference games such as tic tac toe and a step by step introduction help teams prototype quickly. 
+
+## Performance and fees
+Because users validate only what concerns them, the model removes explicit transaction fees for ordinary interactions. Costs are implicit in hardware and bandwidth at the edge, while the chain is used only when settlement or dispute resolution is required. This yields a user experience similar to Web2 latency while preserving the ability to enforce rules on chain.
+
+## Security model
+* **Local honesty assumptions:** Any honest peer can detect invalid updates and escalate.
+* **On chain finality:** The ledger acts as a neutral court that settles disputes and applies penalties, which deters malicious behavior.
+* **Shared security:** Applications inherit security from the underlying Polkadot environment at settlement time. 
+
+## Early use cases
+Gaming illustrates the design well. Dealing cards, placing bets, and checking hands can run peer to peer for instant feedback. Only the final payout or disputes need to touch the chain. Peer3 highlights poker as a flagship example to show verifiable fairness with a Web2 grade experience.
+Other target areas include consumer apps that require instant interactions, micro payments in high frequency settings, supply chain events that benefit from quick updates with auditable settlement, and social applications that handle value transfer. 
+
+## Limitations to consider
+The minimal feature set is intended for experimentation and performance demonstrations. Teams should wait for the full feature set before production use. As with any state channels approach, developers must think about channel management, connectivity assumptions, and recovery paths during disputes.
+
+
+## Getting started
+Developers can review the public repository, study the examples, and watch the technical overview videos. The live demo showcases real time behavior within the Polkadot aligned stack. 
