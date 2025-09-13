@@ -161,4 +161,154 @@ more bounties:
 - [system parachain collator bounty](https://polkadot.subsquare.io/treasury/bounties/32)
 - [Moderation Team Bounty](/club/bounties/moderation/)
 - [[Bridges Bug Bounty](/club/bounties/bridges-bug-bounty/)]
-...
+
+
+
+
+## Polkadot Bounties: 2025 Guide to Funding, Curating, and Delivering Impact
+Polkadot’s bounty system lets the community fund ongoing work—marketing, infrastructure, security, UX, and education—via OpenGov. This guide explains how bounties work, how they differ from tips and direct treasury spends, and the exact steps to propose, curate, and deliver a bounty aligned with 2025 compliance standards.
+
+## What is a Polkadot bounty?
+A **bounty** is an on-chain budget approved by OpenGov to fund a program of work run by **curators**. Curators coordinate applications, define milestones, award child bounties (if used), and release payments for completed deliverables—while reporting progress and spend to the community. Bounties are designed for recurring or multi-workstream needs that don’t fit a one-off grant.
+
+**ELI5:** A bounty is like a community-approved “department budget” with a clear mission (for example, “fund meetups” or “maintain public RPCs”). Curators act like project managers who accept proposals and pay contributors when milestones are delivered.
+
+## OpenGov in practice: tracks, limits, and timelines
+Bounty budgets are approved through **Treasury tracks** in OpenGov. Tracks have different spending limits and time parameters (lead-in, decision, confirm, enact). Commonly referenced categories include **tipper tracks** (for small, retroactive payments) and **spender tracks** (for budget approvals). Track parameters can evolve; always match your request size and urgency to the appropriate track and plan communications around the timeline windows.
+
+## Bounties vs child bounties vs tips vs direct spends
+| Mechanism                 | Best for                                             | Who applies                           | How decisions happen                                                 | Payment style                                             | Typical size & speed                        |
+| ------------------------- | ---------------------------------------------------- | ------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------- |
+| **Bounty**                | Recurring programs, many contributors, ongoing scope | Curators solicit contributors         | Budget approved on a spender track; curators award work within scope | Milestones via curator awards (often with child bounties) | Medium–large; medium speed                  |
+| **Child bounty**          | Discrete tasks under a parent bounty                 | Contributors apply to the bounty team | Curators open/award child bounties under the parent                  | One-off award per task/milestone                          | Small–medium; faster under an active bounty |
+| **Tip**                   | Retroactive micro-funding for completed work         | Anyone can request a tip or be tipped | Tip tracks (small/big)                                               | Single payment                                            | Small; fastest                              |
+| **Direct treasury spend** | One-off, well-scoped projects                        | Project team                          | Spender track referendum                                             | Lump-sum or milestone if specified                        | Varies; depends on track and scrutiny       |
+
+## Key bounty categories in 2025
+* **Marketing & Outreach** — content, distribution, analytics, ambassador enablement
+* **Events & Meetups** — conferences, regional meetups, hackathons
+* **Infrastructure & Reliability** — public RPCs, indexers, dashboards, monitoring
+* **Developer Experience & UX** — docs, SDK tooling, UX audits, onboarding
+* **Security & Risk** — audits, incident response playbooks, security education
+* **Community & Education** — translation, workshops, moderation, anti-scam initiatives
+
+## How it works: roles & lifecycle
+**Roles**
+* **Proposer:** authors the bounty scope and budget, opens the referendum
+* **Voters/Delegates:** review, discuss, and vote on the proposal
+* **Curators:** operate the bounty, run intake, award tasks, verify delivery, release payments, and report
+* **Contributors:** deliver milestones or child bounty tasks
+* **Auditors/Community:** review reports, surface issues, and provide feedback
+
+**Lifecycle**
+1. **Scoping:** define mission, success metrics, budget tranches, timeline, and risks
+2. **Governance:** submit preimage, choose track, open referendum
+3. **Curation setup:** configure curator multisig, intake form, templates, and public tracking
+4. **Execution:** open tasks/child bounties, accept applications, monitor delivery
+5. **Payments & reporting:** milestone releases, monthly updates, and final retrospective
+6. **Renewal or sunset:** propose extension or close with final accounting
+
+## Step-by-step: proposing a bounty (with checklist)
+### 0) Pre-work: align with standards
+* Align with current bounty compliance expectations (budget cadence, transparency, conflict-of-interest handling)
+* Prepare an **off-chain spec** with mission, scope, roles, intake process, KPIs, budget envelope, timeline, reporting, and risk controls
+
+### 1) Choose the right track
+* Match the **initial ask** to a spender track and timeline; reserve tips for small retroactive items
+
+### 2) Draft the on-chain preimage
+* Prepare the preimage for the referendum (create/fund the bounty)
+* Bond the decision deposit and open the referendum on the chosen track
+
+### 3) Publish the full proposal off-chain
+* Post a comprehensive brief for reviewers: KPIs, budget tranches, reporting schedule, team bios, conflict disclosures
+
+### 4) Engage the vote
+* Share context threads, answer questions, and be responsive through the lead-in and decision windows
+
+### 5) Upon approval: set up curation & intake
+* Configure the **curator multisig**, intake forms, templates, and public tracker
+* Announce the **application process** with scope, value, timeline, and budget range
+
+### 6) Run operations (child bounties optional)
+* Open child bounties for well-scoped tasks; award and close on delivery
+* Release payments per milestones; publish monthly reports aligned with the agreed standard
+
+**Copy-paste checklist**
+* [ ] Standards-aligned scope, KPIs, budget tranches
+* [ ] Spender track selected; preimage & deposit ready
+* [ ] Full spec posted; Q\&A thread open
+* [ ] Curator multisig & intake ops set
+* [ ] Reporting cadence & dashboards agreed
+* [ ] Child bounty template and award flow documented
+
+## How curators should run a bounty (operating model)
+**Governance & roles**
+Publish curator names, responsibilities, decision rules, and conflict disclosures.
+
+**Intake & selection**
+Standardized application form; objective scoring aligned to KPIs; timely feedback.
+
+**Budgeting & cadence**
+Request funds by quarter or milestone; maintain a public ledger and reconcile each month.
+
+**Execution & QA**
+Define acceptance criteria; stage reviews; require verifiable artifacts (PRs, hashes, reports).
+
+**Transparency**
+Monthly public updates, per-award summaries, and a live tracker.
+
+**Risk controls**
+Limit prepayments; tie releases to delivery; rotate reviewers on sensitive items.
+
+## Practical example: a small marketing bounty
+**Scenario:** Fund a quarter of content, distribution, and analytics for ecosystem projects.
+
+* **Ask:** medium-sized spender track with quarterly tranches and explicit KPIs (reach, CTR, conversion proxies, builder intake)
+* **Structure:** one parent bounty; recurring child bounties for briefs, design, localization, and distribution
+* **Intake:** public form + weekly office hours; evaluation rubric published
+* **Reporting:** monthly KPI report and spend summary; quarterly retrospective
+* **Controls:** milestone-based releases; strict disclosure for any curator-related vendors
+
+## Common pitfalls & tips
+**Pitfalls**
+* Vague scope and unclear KPIs
+* Oversized initial ask for a new team
+* Weak intake process and documentation
+* Missing monthly reporting
+* Misaligned track selection and timing
+
+**Tips**
+* Start smaller and iterate; scale after proof of execution
+* Publish your rubric and ledger to reduce friction
+* Use child bounties for modular, parallelizable tasks
+* Mirror the latest compliance headings in your proposal
+* Include high-signal metrics and artifacts in every update
+
+## FAQs
+**1) How big can my bounty be?**
+Match your ask to a spender track appropriate for the scope and risk. Larger, multi-quarter programs often start smaller and scale after proof of execution.
+
+**2) Do I need to create child bounties?**
+No, but they help for discrete tasks under a parent bounty and often speed up delivery.
+
+**3) What deposit and steps are required to submit?**
+You’ll prepare a preimage and bond a decision deposit when opening a referendum on the chosen track. Follow the on-chain UI and confirm details before submission.
+
+**4) Where should I post the full proposal?**
+Use the governance portal associated with your community to share the long-form spec (scope, KPIs, budget, team, conflicts) so voters have full context.
+
+**5) Can curators be compensated?**
+Yes—define curator fees and responsibilities transparently in the scope and align with the current compliance expectations.
+
+**6) How long does voting take?**
+Timeframes depend on track parameters (lead-in, decision, confirm). Plan your communications accordingly.
+
+**7) What’s the difference between a tip and a bounty payment?**
+Tips are small, retroactive single payments; bounty payments are milestone-based awards under an approved bounty budget.
+
+**8) How do I show impact?**
+Publish monthly reports, maintain an open ledger, and attach artifacts; reference analytics dashboards where possible.
+
+## Conclusion
+Polkadot bounties are a powerful way to fund essential, ongoing work with community oversight. If you align with current standards, choose the right track, publish a clear intake and rubric, and report monthly, you’ll build trust—and renewal will follow.
