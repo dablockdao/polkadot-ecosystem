@@ -1,6 +1,6 @@
 ---
 title: Polkadot Block Explorers
-description: Explore Polkadot block explorers.
+description: Learn what Polkadot block explorers do and when to use Subscan, Statescan, Chainspect, or 3xpl. Features, use-cases, tips, and FAQs for 2025.
 tableOfContents: false
 sidebar: 
     label: Block Explorers
@@ -40,3 +40,171 @@ Polkadot block explorer tools provide users with detailed insights into blockcha
     },
   ]}
 />
+
+## Polkadot Block Explorers Complete Guide 2025
+Polkadot block explorers are the primary lens for understanding activity across the relay chain and its network of parachains. They transform raw blocks extrinsics and events into clear pages that anyone can search and interpret. With these tools you can trace transfers see how governance evolves watch staking dynamics and follow cross chain messages from origin to destination. Explorers also surface context like timestamps accounts fees and pallet calls so that findings can be verified and shared. For builders analysts and everyday users they turn a complex multi chain system into information that is actionable and trustworthy.
+
+## What is a Polkadot block explorer
+A block explorer is a web app that ingests and indexes chain data then exposes it through search pages and programmatic access.
+
+* Blocks and extrinsics including height hash signer pallet call fee and outcome
+* Events and logs emitted by pallets such as balances staking and XCM
+* Accounts with free and locked balances transfers staking nominations and optional identity
+* Governance with referenda tracks votes delegations and treasury activity
+* Parachain context including chain lists assets and XCM routing
+* APIs and exports for dashboards research and automation
+
+## How to choose the right explorer
+Pick the tool that fits your job to be done.
+
+1. **Quick lookups and sharing:**
+   Prefer very fast search clean result pages and stable permalinks
+
+2. **Deep Polkadot detail:**
+   Choose explorers that decode pallets events staking and governance with clear labels
+
+3. **Parachain hopping and XCM trails:**
+   Use explorers that show context across chains or make it easy to jump between them
+
+4. **Analyst workflows:**
+   Look for CSV or JSON export and public APIs with reasonable limits
+
+5. **Education and onboarding:**
+   Favor clear wording helpful tooltips and beginner friendly navigation
+
+## The main Polkadot explorers
+
+### Subscan
+**Best for** daily use by token holders validators governance participants and builders who need rich Polkadot specific context
+
+**Highlights**
+* Comprehensive account pages with balances transfers staking and identity
+* Detailed extrinsics and events with pallet and call decoding
+* Strong governance coverage including referenda tracks votes and treasury related items
+* Broad parachain support with an easy chain switcher and asset views
+* Public API suitable for dashboards bots and alerts
+
+**Typical tasks**
+* Verify a DOT transfer by extrinsic hash
+* Inspect a referendum timeline turnout and notable voters
+* Review a validator era points commission and performance
+
+### Statescan
+**Best for** users and developers who want a clear state focused view of accounts storage and metadata in a minimal interface
+
+**Highlights**
+* Substrate and Polkadot first decoding of storage and state queries
+* Lightweight layout that emphasizes accounts balances and calls
+* Handy for peeking into pallet storage and understanding low level behavior
+
+**Typical tasks**
+* Confirm an account balance and recent actions
+* Check storage items and events tied to a pallet without extra noise
+
+### Chainspect
+**Best for** analysts and power users who want a comparative view across chains with curated metrics and insights
+
+**Highlights**
+* Emphasis on metrics network health and comparisons across parachains
+* Useful for governance and treasury observers who follow program performance and trends
+* Export friendly views for reports and research
+
+**Typical tasks**
+* Scan parachain activity to spot anomalies or patterns
+* Pull time series snapshots for dashboards or internal documents
+
+### 3xpl
+**Best for** instant universal search across many networks when you want to paste a hash or address and get a fast answer that includes Polkadot
+
+**Highlights**
+* One search bar that recognizes many chains
+* Helpful as a first pass before switching to a Polkadot focused tool
+* Friendly for teammates who are not Polkadot native
+
+**Typical tasks**
+* Paste a hash or address to identify its chain and basic details
+* Share a single link result for quick confirmations
+
+## Feature overview without a table
+- **Relay chain and parachains:**
+Subscan Statescan Chainspect and 3xpl all cover the relay chain and many parachains
+
+- **Extrinsics and pallet decoding:**
+Strong in Subscan and Statescan
+Summary oriented in Chainspect
+Basic in 3xpl
+
+- **XCM and cross chain context:**
+Good in Subscan for selected views
+Aggregate insights in Chainspect
+Basic elsewhere
+
+- **Governance:**
+Deep in Subscan
+Dashboard style views in Chainspect
+Basic in Statescan and 3xpl
+
+- **Staking and validators:**
+Detailed in Subscan
+Overview in Chainspect
+Basic elsewhere
+
+- **APIs and exports:**
+Available in Subscan and Chainspect
+Limited in others
+
+## Common workflows
+
+### Verify a treasury payout with Subscan
+1. Paste the extrinsic hash or the referendum identifier in the search bar
+2. Open the extrinsic to confirm status fee and events
+3. Inspect related events to see the Treasury pallet action
+4. Cross check the beneficiary account and timestamp for your record
+
+### Track a referendum you voted on using Subscan then Chainspect
+1. Open the referendum page in Subscan to review timeline turnout and votes
+2. Note the track depositors and major voters
+3. Switch to Chainspect to compare participation with other periods
+
+### Quick sanity check of an address with Statescan
+1. Paste the account
+2. Confirm free and locked balance and recent extrinsics
+3. Jump to Subscan if you need deep history
+
+### Paste and go across ecosystems with 3xpl
+1. Paste an address or hash into 3xpl
+2. Confirm the chain and high level details
+3. Follow the Polkadot specific link to Subscan or Statescan for full decoding
+
+## Tips and good practices
+* When you cannot find a transaction make sure you are on the correct parachain
+* Remember that an extrinsic is the call and events show the effects check both
+* Cross chain moves can appear as related calls or events on multiple chains
+* Build alerts for treasury payments or validator shifts with public APIs
+* For public accountability always share a permalink to a specific extrinsic or referendum
+* Explorers show public on chain data only private keys and off chain identity are never exposed unless an account opts into on chain identity
+
+## FAQ
+1. **What is the difference between a block an extrinsic and an event?**
+A block is a batch of on chain changes
+An extrinsic is a call included in a block
+Events are signals that pallets emit to confirm outcomes such as credits slashes or XCM messages
+
+3. **Why can I not find my transaction on the relay chain?**
+Many actions occur on parachains
+Switch to the parachain where you executed the action and search again
+
+3. **Which explorer should I share in public reports?**
+Choose the one that provides the clearest context for your audience
+For detailed governance or treasury context Subscan is a strong default
+For comparative analytics use Chainspect
+For quick confirmations or minimal state views try Statescan or 3xpl
+
+4. **Can I export explorer data?**
+Some explorers offer APIs and exports
+Check documentation for endpoints formats and limits
+
+5. **How do I follow XCM transfers?**
+Start with the source chain extrinsic
+Follow related events and any linked destination chain references
+Some explorers summarize XCM automatically while others require manual chain hopping
