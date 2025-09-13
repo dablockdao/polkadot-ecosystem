@@ -36,12 +36,6 @@ Polkadot RWA (Real-World Asset) projects bridge traditional assets with blockcha
       title: 'Xcavate',
       description: 'Real estate investment with blockchain technology.',
       },
-              {
-      thumbnail: import('/src/assets/dapps/rwa/watr.png'),
-      href: '/dapps/rwa/watr-protocol/',
-      title: 'Watr Protocol',
-      description: 'Interaction with natural resources through blockchain technology.',
-    },
   ]}
 />
 
@@ -69,3 +63,114 @@ Polkadot RWA (Real-World Asset) projects bridge traditional assets with blockcha
       title: 'Xcavate presentation',
     },
   ]} />
+
+## Polkadot RWA Projects: A 2025 Builder’s Guide
+
+Real-world asset (RWA) projects on Polkadot are moving beyond pilots toward production-grade finance. This guide explains how RWAs work on Polkadot, compares leading projects (Centrifuge, Unit Network, Xcavate, Watr Protocol), and shows how to design compliant, composable RWA flows using Asset Hub, KILT credentials, and trustless bridges.
+
+
+## Why Polkadot for RWAs (ELI5 + context)
+**ELI5:** Tokenizing “things” (invoices, T-bills, real estate, commodities) means turning their rights or claims into on-chain tokens. Polkadot is a network of specialized blockchains (parachains) that share security and speak the same language (XCM), so your tokenized asset can move across apps while preserving compliance checks.
+
+**What’s changed in 2025**
+* **Trustless Ethereum–Polkadot bridge:** Snowbridge is the canonical, trustless bridge for ETH and ERC-20s, enabling RWA liquidity to flow between Ethereum DeFi and Polkadot-native rails without multisig risk.
+* **Asset Hub & system chains:** Asset issuance and ecosystem functions are consolidating onto Asset Hub, simplifying standards and UX for fungible and NFT assets and enabling tighter integrations with DeFi parachains.
+* **Identity & compliance:** KILT provides reusable, verifiable credentials (KYC/KYB) usable across chains and with enterprises—critical for permissioned RWA markets.
+
+## How RWA tokenization works on Polkadot
+At a high level:
+1. **Legal structuring** (SPV or fund, custody, disclosures).
+2. **On-chain issuance** on a tokenization platform or Asset Hub, binding legal rights to tokens.
+3. **Compliance gating** via DIDs and credentials (e.g., KILT) to limit access by investor type or jurisdiction.
+4. **Interoperable distribution** to DeFi and exchanges using XCM and bridges (Asset Hub, Snowbridge).
+5. **Lifecycle operations**: price oracles, NAV reporting, redemptions, attestations, and audits.
+
+## Project landscape: Centrifuge, Unit Network, Xcavate.
+
+### Centrifuge
+* **What it is:** A pioneer of RWA tokenization with deep integrations into DeFi and institutions; historically Substrate-based with Polkadot roots. The latest architecture provides multichain EVM infrastructure while continuing to interoperate with Polkadot via bridges and standards.
+* **Why builders care:** Mature pool model for private credit and T-bill wrappers, institutional workflows, and growing DeFi onramps. Discussions in governance signal deployment options as Asset Hub adds EVM support.
+
+### Unit Network
+* **What it is:** A Substrate chain focused on making it easy for communities and SMBs to create token economies—a long-tail RWA and tokenization approach—positioned for Polkadot’s multi-chain architecture.
+* **Why builders care:** Low-code issuance, marketplaces, and treasury tools for real-world businesses exploring tokenization beyond institutional credit.
+
+### Xcavate
+* **What it is:** A protocol targeting end-to-end real estate tokenization (from land registry to sales), with an appchain path on Polkadot, focusing on verifiable property data and asset-DID messaging.
+* **Why builders care:** Sector-specific compliance and data model for real estate, plus integrations for property lifecycle events.
+
+**Supporting rails to know**
+* **Snowbridge** for ETH↔Polkadot capital mobility.
+* **Pendulum/Spacewalk** for fiat-stablecoin routing via Stellar, useful for FX and settlement currency.
+* **KILT** for reusable identity and compliance credentials.
+* **Asset Hub** for standards-aligned fungible and NFT issuance under Polkadot’s shared security.
+
+## Feature comparison
+
+| Project           | Primary asset focus                       | Technical base                  | Compliance & identity                            | Distribution rails                                | DeFi integrations (examples)         | 2025 status snapshot                                 |
+| ----------------- | ----------------------------------------- | ------------------------------- | ------------------------------------------------ | ------------------------------------------------- | ------------------------------------ | ---------------------------------------------------- |
+| **Centrifuge**    | Private credit, treasury wrappers         | Substrate roots; multichain EVM | Institutional workflows, credentials, governance | Asset Hub (EVM path), Snowbridge to ETH           | EVM DeFi, RWA launchpads             | V3 live across EVM; continued ecosystem integrations |
+| **Unit Network**  | SMB/community token economies             | Substrate L1, Polkadot-oriented | Platform tools, community governance             | Polkadot multi-chain architecture                 | Native marketplace and DEX features  | Building L1 and tooling                              |
+| **Xcavate**       | Real estate (registry→construction→sales) | Polkadot appchain               | Asset-linked data, DID messaging                 | Polkadot interop; Asset Hub targets               | Sector-specific DeFi hooks (roadmap) | Polkadot debut and 2025 mainnet path                 |
+
+> Notes: Centrifuge’s multichain approach broadens distribution to EVM while Polkadot rails (Asset Hub plus Snowbridge) enable bi-directional liquidity. Unit focuses on user-friendly issuance; Xcavate goes deep on real-estate data.
+
+## Designing a compliant RWA flow (reference architecture)
+**Actors:** Issuer (SPV or fund), Verifier (KYC/KYB), Custodian or Trustee, Oracle or Administrator, Investors, DeFi venues.
+
+**Rails:**
+* **Issuance** on **Asset Hub** (fungible asset standard) or on a sector-specific appchain, with metadata referencing legal docs.
+* **Access control** via **KILT** verifiable credentials (investor accreditation, jurisdiction).
+* **Liquidity** via **Snowbridge** for ETH markets and **XCM** to Polkadot DeFi (e.g., Hydration, Bifrost).
+* **Fiat rails** through **Pendulum/Spacewalk** for FX and fiat-stablecoins.
+
+## Step-by-step: First RWA issuance on Polkadot (example path)
+1. **Scope and structure**
+   Pick asset class (e.g., short-duration credit). Set up SPV and servicing.
+2. **Choose issuance rail**
+   * **Centrifuge** if you need multichain EVM reach plus bridging to Polkadot.
+   * **Asset Hub** if you want native Polkadot issuance with composability across system chains and parachains.
+3. **Compliance gating**
+   Issue **KILT** credentials (accreditation or KYB). Require these to interact with pools or transfer tokens.
+4. **Mint and distribute**
+   Mint RWA tokens; whitelist investors by credential; expose via DEX or OTC flows; allow **Snowbridge** transfers for ETH-side demand.
+5. **Lifecycle operations**
+   Set up price or NAV oracles, custody attestations, and reporting dashboards.
+6. **Liquidity expansion**
+   Route settlement currency via **Pendulum/Spacewalk** to reach fiat-stablecoins and FX venues when needed.
+
+## Common pitfalls & pro tips
+* **Mistaking bridges:** For institutional flows, prefer trustless bridges like **Snowbridge** over multisig bridges.
+* **Skipping credentials:** Without reusable KYC/KYB (**KILT**), you’ll rebuild compliance in every app. Design once, reuse everywhere.
+* **Fragmented UX:** Issuing off-standard assets complicates XCM and DeFi. Prefer **Asset Hub** standards for broad compatibility.
+* **Liquidity myopia:** Plan distribution on both **EVM** (via Snowbridge or Centrifuge) and **Polkadot-native** venues.
+* **Ignoring FX/fiat:** If redemptions settle in fiat, design early for **Pendulum/Spacewalk** stablecoin routes.
+* **Security complacency:** RWA protocols are targets. Budget for audits, pause switches, and redemption failsafes.
+
+## FAQs
+**1) What are “Polkadot RWA projects”?**
+Protocols that tokenize real-world assets and build on, or interoperate with, Polkadot’s multi-chain architecture (e.g., Centrifuge, Unit Network, Xcavate).
+
+**2) Is Centrifuge still “on Polkadot” if the latest version is multichain?**
+Centrifuge began on Substrate and now operates across EVM chains; with Snowbridge and Asset Hub’s EVM path, distribution can span both ecosystems.
+
+**3) How do I move RWA liquidity between Ethereum and Polkadot?**
+Use Snowbridge, the trustless bridge, for ETH and ERC-20 transfers.
+
+**4) How do I handle KYC/KYB without central silos?**
+Issue reusable credentials with KILT and gate interactions by credential type or issuer.
+
+**5) Can I issue directly on Polkadot?**
+Yes. Asset Hub supports standards-aligned issuance with ecosystem-wide composability.
+
+**6) Where do fiat stablecoins and FX fit in?**
+Pendulum’s Spacewalk brings Stellar-origin fiat stablecoins into Polkadot for settlement and FX markets.
+
+**7) Are RWAs risky?**
+They carry legal, operational, and smart-contract risks. Always implement audits and conservative controls. Not financial advice.
+
+**8) What does “Polkadot 2.0” change for RWAs?**
+Flexible coretime and system-chain improvements (Asset Hub, Bridge Hub) make specialized appchains and standards-based issuance easier to deploy and scale.
+
+## Conclusion
+Polkadot’s standards, identity, and trustless bridging make it a pragmatic base for RWAs that need both compliance and liquidity. Pick your sector platform (Centrifuge, Unit Network, Xcavate, Watr), design with **KILT + Asset Hub**, and route distribution via **Snowbridge** to meet investors where they are.
