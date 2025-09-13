@@ -66,3 +66,164 @@ Polkadot bridge dApps enable seamless connectivity between blockchains, allowing
       title: 'Snowbridge, an Ethereum bridge on BridgeHub',
     },
   ]} />
+
+## Polkadot Bridges: Secure Paths for Cross-Chain Assets
+
+Bridges let value and messages move between Polkadot and external chains. This expert guide explains Polkadot’s native, trust-minimized bridges, how they differ from swap networks and custodial routes, and exactly how to move assets safely with clear, builder-ready steps.
+
+## What problem Polkadot bridges solve
+Most liquidity still lives on chains like Ethereum and Bitcoin. Builders want that liquidity to power apps on Polkadot rollups for DeFi, payments, and more. Polkadot bridges verify foreign chain state and carry assets or messages with minimal new trust assumptions. Native bridges such as Snowbridge and the DOT-KSM route are designed around on-chain light clients and Polkadot’s Bridge Hub, rather than multisigs or custodial gateways.
+
+## Quick ELI5
+Imagine Polkadot as a city with many districts. XCM is the bus that moves people between districts. Bridges are the border crossings that connect the city to other countries like Ethereum or Bitcoin. Native bridges put passport control on-chain with cryptographic checks. Swap networks like Chainflip are more like safe currency exchanges at the border.
+
+## Types of bridges at a glance
+* **Native trust-minimized bridges**
+  On-chain light clients verify consensus and state proofs. Examples include Snowbridge for Ethereum and the DOT-KSM bridge for Polkadot and Kusama.
+* **Liquidity networks and DEX-style routers**
+  Swap native coins across chains without wrapping, using validator networks with threshold signatures. Example is Chainflip.
+* **Collateralized bridges**
+  Mint a one-to-one representation backed by over-collateralized vaults. Example is Interlay iBTC.
+* **Gateway protocols**
+  External messaging or token bridges that route assets into EVM parachains like Moonbeam, then XCM moves them further inside Polkadot.
+
+## Native Polkadot bridges
+### Snowbridge
+A general-purpose, trust-minimized bridge between Ethereum and Polkadot. It operates as a common-good bridge on Bridge Hub, integrates with Asset Hub, and uses XCM for delivery to parachains. It supports ERC-20 transfers between Ethereum and Polkadot destinations, with Ethereum-side actions paid in ETH. Cost-efficient verification on Ethereum is enabled by BEEFY proofs.
+
+**Why teams use it**
+* Minimized trust assumptions compared to multi-sig bridges
+* Native integration with Asset Hub and XCM
+* Clear developer surface for ERC-20 flows
+
+### DOT-KSM via Bridge Hub
+A trust-minimized route between the Polkadot and Kusama ecosystems. It connects Asset Hubs on both networks and supports DOT, KSM, and other eligible assets once registered. Ideal for ecosystem treasury flows, parachain liquidity routing, and user transfers between the two networks.
+
+**Why teams use it**
+* Direct DOT and KSM movement between ecosystems
+* Extensible to other registered assets
+* Operates through Bridge Hub pallets and light clients
+
+### Hyperbridge
+An interoperability coprocessor designed to scale cryptographically secure, proof-based bridging across many chains. It leverages BEEFY and ISMP to provide request-response messaging and state verification, positioning Polkadot as a verifiable compute layer for cross-chain applications.
+
+**Why teams use it**
+* Proof-driven model that generalizes beyond a single counterparty
+* HTTP-like cross-chain requests and responses
+* Flexible architecture for complex cross-chain apps
+
+## Other ways to move value without wrapped IOUs
+### Chainflip
+A cross-chain DEX that swaps native assets between chains like BTC, ETH, and SOL without issuing wrapped tokens. It uses a Substrate app-chain and a permissionless validator set with threshold signatures to manage protocol vaults and settle swaps.
+
+**When to pick it**
+
+* You want a direct swap into a different native asset
+* You prefer an exchange-style UX over bridge deposit and claim
+
+### Interlay iBTC
+A decentralized, over-collateralized Bitcoin representation for Polkadot. Users mint iBTC by locking BTC through vaults and can redeem back to native BTC. iBTC is programmable across Polkadot parachains, which suits DeFi use cases needing Bitcoin exposure.
+
+### Wormhole routes via Moonbeam
+Moonbeam exposes external routes so assets can enter the Polkadot ecosystem through an EVM parachain gateway. After ingress, XCM can move assets to other parachains. Useful when you need broad asset coverage and EVM tooling on the destination.
+
+### Wallet UIs and aggregators
+* **SubWallet** adds in-app flows for Snowbridge and DOT-KSM, plus XCM routing.
+* **Talisman Portal** aggregates routes to simplify bridging and swaps between Ethereum and Polkadot destinations.
+
+## Comparison table
+| Route               | Security model                                             | Main direction          | Asset types                          | Polkadot landing point           | Primary use case                             |
+| ------------------- | ---------------------------------------------------------- | ----------------------- | ------------------------------------ | -------------------------------- | -------------------------------------------- |
+| Snowbridge          | On-chain light clients with BEEFY verification on Ethereum | Ethereum ↔ Polkadot     | ERC-20 tokens                        | Asset Hub then XCM to parachains | Bring EVM liquidity with minimal new trust   |
+| DOT-KSM Bridge      | On-chain GRANDPA light clients via Bridge Hub              | Polkadot ↔ Kusama       | DOT, KSM, eligible registered assets | Asset Hub on both networks       | Move funds between ecosystems and parachains |
+| Hyperbridge         | ISMP and BEEFY-based proof coprocessor                     | Multichain ↔ Polkadot   | Tokens and messages, app-defined     | Target parachain chosen by app   | Scalable, proof-based cross-chain apps       |
+| Chainflip           | PoS validators with TSS vaults, native swaps               | Multichain ↔ Multichain | Native BTC, ETH, SOL, stablecoins    | User wallet on target chain      | Fast swaps without bridge claim steps        |
+| Interlay iBTC       | Over-collateralized vaults with mint and redeem            | Bitcoin ↔ Polkadot      | iBTC (BTC-backed)                    | Parachains that list iBTC        | Programmable BTC exposure in DeFi            |
+| Wormhole → Moonbeam | External signer set with attestations                      | 20+ chains ↔ Moonbeam   | Tokens supported by route            | Moonbeam then XCM                | Broad asset ingress through EVM gateway      |
+
+## How it works under the hood
+* **Bridge Hub** is a system parachain that hosts bridge pallets and light clients. It underpins Snowbridge, the DOT-KSM route, and future native bridges.
+* **BEEFY** posts compact finality proofs that let external chains verify Polkadot state efficiently. This reduces verification cost while maintaining strong security.
+* **GRANDPA bridge pallets** provide light clients for Substrate chains, enabling trust-minimized Substrate-to-Substrate links.
+* **ISMP and Hyperbridge** generalize proof-based messaging for scalable cross-chain requests and state reads.
+* **Liquidity networks** like Chainflip use validator-run threshold signatures to atomically settle swaps of native assets, which avoids wrapped tokens but introduces a different validator security model.
+
+## Step by step guide
+Example flow to move an ERC-20 from Ethereum to a Polkadot DeFi parachain using Snowbridge.
+
+1. **Pick the route**
+   Choose Snowbridge for trust-minimized ERC-20 transfers. If your goal is to end with another native asset, consider a direct swap via Chainflip.
+
+2. **Prepare wallets**
+   Use an Ethereum wallet for sending and a Polkadot wallet for receiving, or a multichain wallet that supports both and can handle XCM.
+
+3. **Initiate the transfer**
+   In the Snowbridge UI or an integrated wallet, select the ERC-20, destination parachain, and recipient address. Approve and submit the Ethereum transaction.
+
+4. **Verification and mint on Asset Hub**
+   Snowbridge relayers submit proofs to the light client. The token representation is created on Asset Hub, then XCM delivers it to your chosen parachain account.
+
+5. **Use the asset**
+   Trade on a DEX like Hydration or deploy into DeFi. Some UIs bundle the end-to-end flow for one-click transfers.
+
+**Checklist**
+* Confirm the token is registered on Asset Hub if it is a first-time asset
+* Keep a small ETH balance for approvals and bridge fees
+* Double-check the destination parachain and address format
+
+## Common pitfalls and tips
+* **“Native ETH” confusion**
+  Bridged ETH typically arrives as WETH on the destination. Verify token symbols in the wallet list.
+* **Wrong address format**
+  Some destinations expect an SS58 address and others accept EVM addresses. Confirm before sending.
+* **Liquidity vs bridge**
+  If you want to swap into a different asset, a native swap via Chainflip can be faster than bridging then trading.
+* **Registration requirements**
+  The DOT-KSM route supports more than DOT and KSM, but assets require proper registration on the Asset Hubs.
+* **Security assumptions**
+  Native bridges minimize new trust. Liquidity networks trade different assumptions for speed and breadth. Match the route to your risk and UX goals.
+
+## Suggested images and diagrams
+1. **Diagram**
+   Title: Polkadot native bridge architecture
+   Alt: Diagram showing Ethereum, Snowbridge on Bridge Hub, Asset Hub, and XCM to parachains
+2. **Flowchart**
+   Title: ERC-20 to parachain flow via Snowbridge
+   Alt: Stepwise flow from approval on Ethereum to delivery on a Polkadot parachain
+3. **Comparison graphic**
+   Title: Trust models of bridging options
+   Alt: Side by side of native light client bridges, liquidity networks, and collateralized bridges
+4. **UX mockup**
+   Title: Wallet bridge route selector
+   Alt: Interface showing route selection, fees, and estimated time
+5. **Security layers**
+   Title: BEEFY proof verification overview
+   Alt: Layers from validator signatures to proof submission and verification
+
+## FAQs
+1. **Is Snowbridge the official route between Ethereum and Polkadot**
+Yes. It is operated as a common-good, trust-minimized bridge with native integration into Asset Hub and XCM.
+
+2. **Does Snowbridge support both tokens and messages**
+It is general-purpose and supports token transfers now, with messaging oriented around on-chain verification.
+
+3. **What is Hyperbridge in simple terms**
+A proof-driven interoperability coprocessor that uses BEEFY and ISMP to scale secure cross-chain requests and state verification.
+
+4. **How do I bring BTC to Polkadot without wrapping risk**
+Use Chainflip for native BTC swaps into assets on other chains, or use Interlay to mint iBTC if you want a programmable Bitcoin representation inside Polkadot DeFi.
+
+5. **Can I move DOT to Kusama and back**
+Yes. The DOT-KSM bridge supports DOT, KSM, and other registered assets between Asset Hubs, with documented flows in both directions.
+
+6. **Which wallets make bridging easier**
+SubWallet and Talisman provide integrated routes for Snowbridge and other options, plus XCM delivery.
+
+7. **Where do bridged tokens arrive on Polkadot**
+They typically land on Asset Hub first, then XCM delivers them to the selected parachain account.
+
+8. **Is Wormhole a Polkadot native bridge**
+No. It is an external interoperability protocol that can route assets into Moonbeam, after which XCM can move them to other parachains.
+
+## Conclusion
+Polkadot offers multiple secure paths for cross-chain liquidity. Use Snowbridge or the DOT-KSM route when you want minimized trust and tight Asset Hub integration. Use Chainflip for fast native swaps. Employ wallet UIs and routed liquidity when UX is the top priority.
