@@ -56,3 +56,137 @@ Polkadot DePIN (Decentralized Physical Infrastructure Networks) projects combine
     },
   ]}
 />
+
+## Polkadot DePIN Projects: 2025 Guide to IoT, Storage, Compute, and Energy
+A introduction guide to the top Polkadot DePIN projects.
+
+DePIN turns real-world infrastructure into programmable networks: phones, sensors, robots, storage nodes, and energy assets. On Polkadot, you can compose **specialized chains** under shared security and move data and value with **native cross-chain messaging**. In 2024–2025, storage and data layers matured: **Crust** became a steady choice for IPFS-backed persistence, **CESS** pushed toward storage plus decentralized delivery, **Avail** gave rollups robust **data availability**, and **Midnight** advanced **selective disclosure** and privacy-preserving execution. Picking the right mix lowers outages and costs while improving compliance and UX.
+
+## ELI5: DePIN and the data stack
+* **DePIN**: networks that reward real devices and hardware (phones, gateways, storage nodes, meters).
+* **Decentralized storage**: keeps files and objects available over time (websites, media, NFT metadata, sensor archives).
+* **Data availability (DA)**: lets everyone verify that a rollup published the data it claims. DA is for **verifiable publication**, not file hosting.
+* **Data protection / privacy**: prove correctness while revealing only what is necessary (selective disclosure, zero-knowledge).
+
+> Fast rule of thumb: Storage = “keep and fetch files.” DA = “prove the data exists for verification.” Privacy = “compute and verify without leaking sensitive information.”
+
+## Why Polkadot fits DePIN
+* **Specialized chains with shared security.** DePINs can be sovereign L1s or parachains that inherit security from the relay chain.
+* **Native interoperability.** XCM moves messages and assets between DePIN domains without fragile external bridges.
+* **Modularity and scale.** Compute, connectivity, storage, and energy workflows can live on different chains and still feel unified to end users.
+* **Governance alignment.** OpenGov tooling enables grants, upgrades, and program funding directly on-chain.
+
+## How DePIN works on Polkadot
+1. **Device onboarding and identity:**
+   Enroll devices, assign identities or machine NFTs, and register capabilities or service agreements.
+
+2. **Connectivity and data ingress:**
+   Use phone-based or gateway-based connectivity to discover devices and ingest telemetry or events.
+
+3. **Off-chain or edge compute:**
+   Schedule verifiable jobs close to the edge for pricing, inference, validation, or aggregation.
+
+4. **Durable storage and retrieval:**
+   Persist raw data and proofs to decentralized storage with content addressing for auditability.
+
+5. **Incentives and settlement:**
+   Define rewards for contributions (connectivity, compute, storage, energy flexibility) and settle payouts via smart contracts.
+
+6. **Interoperability and composition:**
+   Use XCM to pass proofs, receipts, and tokens across parachains so the end-to-end flow behaves like one product.
+
+## Project snapshots
+### peaq Network
+**What it is:** A Polkadot-tech, DePIN-first L1 focused on the machine economy, aiming to host fleets of real-world apps and devices with both EVM and Wasm smart contracts. peaq emphasizes “Machine DeFi” primitives like machine NFTs and staking for device revenue.
+**Why it matters:** If your product centers on monetizing vehicles, robots, or shared devices, peaq provides purpose-built rails and is positioning as the home base for many DePINs.
+**Good for:** Mobility networks, shared hardware marketplaces, machine-RWA experiments.
+
+### Robobomics
+**What it is:** A robotics and IoT platform operating in the Polkadot family, with practical integrations like Home Assistant and device digital twins.
+**Why it matters:** If you need deterministic control of robots and smart homes with on-chain telemetry and service marketplaces, Robonomics provides end-to-end tooling.
+**Good for:** Home automation at scale, robotics fleets, industrial IoT proofs.
+
+### Acurast
+**What it is:** A decentralized serverless compute network that turns idle smartphones into secure compute nodes, enabling confidential AI and verifiable jobs.
+**Why it matters:** For DePINs needing verifiable off-chain compute, inference, or scheduled jobs mapped to real devices, Acurast delivers elastic capacity without centralized clouds.
+**Good for:** Edge compute, confidential workloads, AI inference networks.
+
+### Energy Web X
+**What it is:** An energy-sector DePIN building a public Substrate chain centered on worker node networks that run energy workflows and coordinate assets, with a Polkadot integration strategy.
+**Why it matters:** If you work with utilities, grid operators, or EV infrastructure, Energy Web X aligns with enterprise-grade identity and workflow orchestration.
+**Good for:** Renewable certificates, grid flexibility, EV charging networks.
+
+### GIANT Protocol
+**What it is:** A connectivity project that aims to tokenize bandwidth and create markets for access, with a stated plan to pursue a Polkadot path. Status and timelines are evolving.
+**Why it matters:** If you need tokenized bandwidth or telecom-adjacent staking models, GIANT is worth monitoring for cross-carrier incentives.
+**Good for:** Data plans as assets, bandwidth marketplaces, telecom loyalty integrations.
+
+## Quick landscape: devices, compute, energy, storage & data layers
+### Connectivity, devices, and compute
+* **Robonomics** — robotics and smart home control with device twins and service agreements.
+* **Acurast** — decentralized serverless compute on smartphones for confidential or verifiable jobs.
+* **Energy Web X** — energy worker-node networks to run sector workflows with enterprise alignment.
+* **peaq** — machine-economy L1 with machine NFTs and revenue primitives.
+
+### Storage & data layers (the focus of this merge)
+* **Crust Network** — Polkadot parachain that incentivizes IPFS pinning and replication. Use for persistent assets, sites, and metadata with multi-gateway retrieval.
+**Substrate L1 mentions:**
+* **CESS** — Substrate L1 for persistent storage plus a decentralized delivery layer. Consider when you need frequent reads and latency-sensitive UX.
+* **Avail** — independent network for **data availability** in modular stacks and rollups; pair with storage for user-facing files.
+* **Midnight** — data-protection chain with **selective disclosure** and privacy-preserving logic; not a file store.
+
+**Also mention (adjacent and complementary):**
+* **Subspace (Autonomys Network)** — archival storage and data services for modular stacks.
+* **Joystream** — media-centric chain for decentralized video storage and distribution.
+* **OriginTrail NeuroWeb** — decentralized knowledge graph anchoring and verification (often referencing IPFS/Filecoin).
+* **Frequency** — social data and identity rails often paired with storage networks for content payloads.
+
+## Feature comparison
+| Project        | Primary domain                  | Chain status in Polkadot stack     | Dev model                            | Typical hardware                 | Example uses                                 |
+| -------------- | ------------------------------- | ---------------------------------- | ------------------------------------ | -------------------------------- | -------------------------------------------- |
+| peaq           | Machine economy, DePIN platform | Polkadot-tech L1 targeting DePIN   | EVM + Wasm, machine NFTs             | Vehicles, robots, shared devices | Monetize fleets, machine revenue sharing     |
+| Robonomics     | Robotics and smart homes        | Parachain presence                 | Device twins, Home Assistant         | Robots, home hubs                | On-chain control, telemetry, service markets |
+| Acurast        | Serverless compute              | Integrated with Polkadot ecosystem | Jobs on phone nodes, confidential AI | Smartphones                      | Edge compute, verifiable jobs, AI inference  |
+| Crust          | Decentralized storage           | Polkadot parachain                 | IPFS incentive layer, storage APIs   | Storage nodes, gateways          | NFT media, sensor archives, static hosting   |
+| Energy Web X   | Energy worker node networks     | Public Substrate network           | Workflows on worker nodes            | Meters, EVSE, grid assets        | Certificates, grid services, mobility energy |
+| GIANT Protocol | Tokenized bandwidth             | Building toward a Polkadot path    | Telecom-style primitives             | Routers, phones                  | Bandwidth markets, data plan assets          |
+
+> Notes: Some projects operate as parachains today. Others integrate through Substrate and Polkadot tooling while parachain status or timelines evolve. Confirm mainnet details in project docs before deployment.
+
+## Common pitfalls and tips
+* **Mistaking DA for storage**
+  DA validates publication for rollups. It does not host files. Pair Avail with a storage network.
+
+* **Single-gateway dependency**
+  One gateway is a single point of failure. Add multiple gateways and support native IPFS.
+
+* **Ignoring privacy early**
+  If you process sensitive user inputs, design for privacy from day one and push that logic to Midnight.
+
+* **Over-optimistic roadmaps**
+  Some features roll out over time. Confirm mainnet status and SLAs before committing critical workloads.
+
+* **Putting big files on-chain**
+  Use content addressing. Reference CIDs; don’t bloat the relay chain or parachain state with large payloads.
+
+## FAQs
+1. **What is the advantage of building DePIN on Polkadot vs a single L1?**
+Specialization plus interoperability. Parachains focus on one job, then exchange messages and assets securely.
+
+2. **Can I start as a smart contract and later shift to a parachain?**
+Yes. Many teams begin with contracts or an app-chain, then evolve toward parachain connectivity when economics or throughput justify it.
+
+3. **Can I store files on Polkadot?**
+Store files off-chain in a decentralized storage network and reference content IDs in pallets or contracts.
+
+4. **Is Crust a Polkadot parachain?**
+Yes. Crust runs as a parachain and provides incentives and tooling for IPFS-backed storage.
+
+5. **How do I keep assets highly available?**
+Replicate pins, use multiple gateways, schedule renewals, and test retrieval through different paths.
+
+6. **Can I use plain IPFS without a network like Crust?**
+Yes, but you must operate your own pinning and replication. Storage networks add incentives and operational tooling.
+
+## Conclusion
+Polkadot is emerging as a practical home for DePIN that touches the real world: phones, robots, sensors, storage clusters, and power assets. Start small, compose the right parachains for the job, and make interoperability a first-class requirement from day one.
