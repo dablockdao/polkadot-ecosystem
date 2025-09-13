@@ -98,9 +98,6 @@ export default defineConfig({
 							label: '🛍️ NFT Marketplaces', collapsed: true, autogenerate: { directory: 'dapps/nft-marketplaces' }
 						},
 						{
-							label: '📦 Storage', collapsed: true, autogenerate: { directory: 'dapps/storage' }
-						},
-						{
 							label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'dapps/archive' }
 						},
 					  ],
