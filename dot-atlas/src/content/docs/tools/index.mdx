@@ -45,3 +45,128 @@ but also empowers users to fully engage with the Polkadot network, driving innov
       },
   ]}
 />  
+
+## Polkadot Tools: The 2025 Stack for Wallets, Explorers, OpenGov & Devs
+A pragmatic guide to the essential Polkadot tools—wallets, block explorers, governance portals, analytics, and developer SDKs—so teams can choose the right stack, move faster, and avoid common pitfalls. Written for builders and power users, updated for **September 2025**.
+
+Search results for **Polkadot tools** can feel fragmented: some lists are outdated, others miss OpenGov realities or Asset Hub workflows. This guide curates the **current** toolset (September 2025), explains *when to use what*, and shows how to integrate wallets, explorers, governance portals, analytics, and developer SDKs into a cohesive workflow.
+
+## Polkadot in one minute (ELI5 & context)
+* **What Polkadot is:** a network of blockchains (“parachains”) secured by a central **relay chain**. Parachains talk to each other via **XCM** messages.
+* **OpenGov:** Polkadot’s on-chain governance with *tracks* (e.g., Treasury, Root) and **multi-role delegations** so you can delegate different tracks to different experts.
+* **Asset Hub:** a system parachain for creating and managing fungible and non-fungible assets; the relay chain focuses on consensus/security and does not manage assets directly.
+
+> **ELI5:** Think of Polkadot as a **city of districts**. The relay chain is city security and roads; each district (parachain) runs its own businesses. **Asset Hub** is the district’s registry for tokens/NFTs. **OpenGov** is the city council where rules and budgets are decided on-chain.
+
+## Core categories and top picks
+
+### Wallets
+* **Nova Wallet (mobile).** Polkadot-first, supports many networks, WalletConnect, staking, OpenGov voting/delegation, and Ledger support. Strong mobile UX.
+* **Talisman (extension + portal).** Multi-chain (Polkadot + EVM + Solana), in-wallet DeFi/staking, portfolio, and clean everyday UX.
+* **SubWallet (extension + mobile).** Broad Polkadot/Substrate/EVM coverage; solid Ledger integration (Generic app).
+* **Polkadot Vault (air-gapped).** Turns an offline iOS/Android device into a signing wallet via QR; ideal for high-security treasury operations.
+
+### Block explorers
+* **Subscan.** Widely used Substrate explorer suite with deep chain data, events/extrinsics breakdowns, and APIs.
+* **Statescan.** Open-source explorer focused on Polkadot/Kusama assets, uniques, and system parachains like Asset Hub.
+* **3xpl.** Fast, privacy-friendly, multi-chain explorer—great for quick lookups.
+* **Blockchair.** Alternative stats and search for secondary checks.
+
+### OpenGov & DAO tooling
+* **Polkassembly.** Proposal pages, discussions, voting & delegation UI, creation flows for referenda.
+* **Subsquare.** Modern OpenGov portal with visual vote distributions, tally history, and identity/address search.
+* **doTreasury.** Aggregates treasury balances, inflows/outflows, and per-project pages for historical analysis.
+* **OpenShore.** Near real-time OpenGov analytics: live spending by category and proposal patterns.
+* **OG Tracker.** Delivery tracking and self-reporting for funded proposals to improve accountability.
+
+### Developer toolkit
+Short list of practical tools for building, shipping, and testing on Polkadot.
+
+#### Core clients
+* **PAPI (Polkadot API):** Typed JS/TS client to read state, listen to events, and submit extrinsics.
+* **Dedot:** Lightweight, tree-shakable JS/TS client for lean, multi-chain dApps.
+* **ReactiveDOT:** Reactive bindings (on top of PAPI) for simple front-end state/data flows.
+
+#### CLI & deployment
+* **POP CLI:** Scaffold, build, and test projects from the terminal.
+* **Polkadot Deployment Portal (PDP):** Web UI to deploy and manage Polkadot-native stacks.
+* **Bagpipes:** No-code workflows to chain actions across tools and chains.
+
+#### Cross-chain & testing
+* **Paraspell:** SDK to simplify XCM (cross-chain) transfers and routing.
+* **Chopsticks:** Fork live networks locally to simulate state/XCM safely.
+
+**Quick picks**
+* Front-end: **PAPI** (+ **ReactiveDOT** if you want reactive patterns).
+* Minimal client: **Dedot**.
+* Ship fast: **POP CLI** for scaffolding; **PDP** for deployments.
+* Cross-chain: **Paraspell**; test locally with **Chopsticks**.
+
+
+## Feature comparisons
+
+### Wallets (comparison)
+| Wallet         | Platforms             | OpenGov voting/delegation | Security model            | Multi-chain scope        | Highlights                              |
+| -------------- | --------------------- | ------------------------- | ------------------------- | ------------------------ | --------------------------------------- |
+| Nova           | iOS, Android          | Yes                       | Ledger, watch-only        | 100+ networks            | Mobile-first UX; staking; WalletConnect |
+| Talisman       | Browser ext + web     | Via portals               | Ledger; Vault integration | Polkadot + EVM + Solana  | Clean UX; DeFi/staking; portfolio       |
+| SubWallet      | Extension, Mobile     | Yes                       | Ledger (Generic app)      | Polkadot/Substrate + EVM | Broad coverage; desktop + mobile        |
+| Polkadot Vault | iOS/Android (offline) | Via QR with connected UI  | Air-gapped signer         | Substrate family         | High-security signing for teams         |
+
+### Explorers (comparison)
+| Explorer   | Scope                        | Open source | Strengths                                | Typical use                          |
+| ---------- | ---------------------------- | ----------- | ---------------------------------------- | ------------------------------------ |
+| Subscan    | Substrate ecosystem          | Partial     | Deep chain data, events/extrinsics, APIs | Daily driver for accounts/extrinsics |
+| Statescan  | Polkadot/Kusama + parachains | Yes         | Asset-centric views; system chains       | Asset tracking, uniques, Asset Hub   |
+| 3xpl       | Multi-chain                  | n/a         | Fast, privacy-friendly, ad-free          | Quick lookups + sanity checks        |
+| Blockchair | Multi-chain                  | n/a         | Alternative stats & search               | Secondary reference                  |
+
+### OpenGov & analytics (comparison)
+| Tool         | Role                         | What it adds                                         | When to use                               |
+| ------------ | ---------------------------- | ---------------------------------------------------- | ----------------------------------------- |
+| Polkassembly | Forum + voting/delegation UI | Proposal creation, threads, turnout/threshold UI     | Drafting, discussing, voting on referenda |
+| Subsquare    | OpenGov portal               | Visual vote bubbles, tally history, identity search  | Side-by-side analysis and voting          |
+| doTreasury   | Treasury analytics           | Aggregated balances, inflows/outflows, project pages | Budget research; past spend analysis      |
+| OpenShore    | Near real-time analytics     | Live outflows by category, proposal patterns         | Current-quarter monitoring; quick context |
+| OG Tracker   | Delivery tracker             | Milestones & self-reported updates                   | Post-approval accountability tracking     |
+
+
+## Mini-guide: assemble your stack in 30 minutes
+1. **Pick a wallet.** Nova for mobile. Talisman or SubWallet for desktop dApps. Polkadot Vault for high-security cold storage (air gapped).
+2. **Wire in governance.** Use Subsquare and Polkassembly to follow proposals, vote, and manage delegations. 
+3. **Add explorers.** Use Subscan for deep dives; Statescan for Asset Hub/system chains; 3xpl for quick checks; keep XCSCAN for cross-chain traces.
+4. **Monitor treasury flows.** doTreasury for history and aggregates; OpenShore for near real time category outflows and proposal patterns.
+5. **Dev setup.** For JS/TS, start with PAPI or Dedot; add smoldot to go light-client-first. For REST backends, deploy Sidecar. For testnets, use Chopsticks/Zombienet; for cross-chain UX, add ParaSpell.
+6. **Asset Hub basics.** Register the asset, note its asset ID and location. Rehearse a staging flow end to end: mint → transfer → XCM. Use Paraspell to script transfers; Bagpipes for no-code demos.
+
+
+## Common pitfalls & pro tips
+* **Mixing hot and cold keys.** Keep high-value keys air-gapped and use delegation for day-to-day voting.
+* **Relying on a single governance UI.** Cross-check tallies/thresholds on Subsquare and Polkassembly.
+* **Out-of-date metadata on air-gapped devices.** Update Vault metadata after runtime upgrades for correct extrinsic decoding.
+* **Confusing relay chain vs Asset Hub.** Assets live on Asset Hub; use it for mint/burn/transfer flows.
+
+## FAQs
+### What is the simplest way to vote in Polkadot OpenGov?
+Use **Polkassembly** or **Subsquare** to discuss and vote; **Nova** adds mobile-friendly flows.
+
+### How do I securely sign large transactions?
+Use **Polkadot Vault** on a dedicated offline phone. Initiate the transaction from a connected device and sign via QR on the air-gapped device.
+
+### Where do I create and manage tokens on Polkadot?
+On **Asset Hub**, the system parachain dedicated to asset creation/transfers. Follow official docs for registration and configuration.
+
+### Which explorer should I default to?
+**Subscan** for deep Substrate data; **Statescan** for Asset Hub/system chains; **3xpl** for quick multi-chain checks; **XCSCAN** for cross-chain routes.
+
+### What’s the fastest way to build a Polkadot app?
+JS/TS: **PAPI** or Dedot (+ smoldot for light-client mode). Rust: subxt. REST: Sidecar.
+
+### How do I monitor treasury spending right now versus historically?
+**OpenShore** provides near real-time outflows and category mixes. **doTreasury** aggregates historical data and offers project pages and balances.
+
+### Is Subsquare or Polkassembly the official portal?
+Both are widely used community portals; feature sets differ, so many users keep both open for complete context.
+
+## Conclusion
+The tools listed above cover routine needs across wallets, exploration, governance, analytics, and development within the Polkadot ecosystem. Selecting one option in each category and documenting associated procedures generally suffices for most teams.
