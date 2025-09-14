@@ -17,48 +17,99 @@ hero:
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-KILT Protocol empowers individuals and organizations to manage their digital identities and control their data within the Polkadot ecosystem. 
-- A blockchain protocol built on Polkadot for self-sovereign data and interoperability.
-- Enables users to create and manage decentralized identifiers (DIDs) to represent their digital identities.
-- Allows trusted entities (Attesters) to issue verifiable credentials (VCs) that attest to user attributes.
+## KILT Protocol: Unleash Self-Sovereign Identity on Polkadot (2025 Guide)
+KILT Protocol is Polkadot’s self-sovereign identity (SSI) parachain for issuing W3C-style decentralized identifiers (DIDs) and verifiable, revocable credentials. This guide explains how KILT works, why builders choose it on Polkadot, how to ship a DID + credential flow with Sporran/web3name/DIDsign, and where KILT is used in production.
 
-## Kilt Protocol Key Features:
-- **Self-Sovereign Identity:** Users control their DIDs and decide what data to share with whom.
-- **Revocable Credentials:** Attesters can revoke credentials if necessary, ensuring data integrity.
-- **Secure and Private:** TEE technology safeguards sensitive information during credential issuance and verification.
-- **Trust Marketplace:** Attesters can be compensated for issuing trusted credentials.
+## What is KILT Protocol? (and ELI5)
+KILT is a Polkadot parachain purpose-built for decentralized identifiers (DIDs) and **verifiable, revocable** credentials. Credentials are held by users, not platforms; on-chain you anchor minimal data (hashes/status), preserving privacy and enabling revocation.
+**ELI5.** Imagine your wallet holds cards (driver’s license, membership). With KILT, the “cards” are digital credentials in your **Sporran** wallet; you show just what’s needed (e.g., “over 18”) while a verifier can check it’s legit—without ever copying your personal data.
 
-### Benefits:
-- **Empowers Users:** Individuals gain control over their digital identities and data.
-- **Enhanced Security:** TEE protects sensitive data during credential processing.
-- **Streamlined Trust Management:** Reduces reliance on centralized authorities for identity verification.
-- **New Business Models:** Enables businesses to build on trust infrastructure for innovative applications.
+## Why Polkadot? Shared security & XCM
+KILT runs as a Polkadot parachain, inheriting **shared security** from the Relay Chain and gaining native cross-chain messaging (XCM) to reach other parachains/apps. This lets identity actions interoperate across the ecosystem without custom bridges.
 
-### Components:
-- **DIDs:** Unique identifiers for entities on the KILT blockchain.
-- **Verifiable Credentials (VCs):** Issued by Attesters to certify user attributes.
-- **Attesters:** Trusted entities authorized to issue VCs.
-- **KILT Token (KILT):** Used for network fees, resource allocation, and staking within the KILT ecosystem.
+## Core concepts
+### DIDs: light vs full
+* **Light DID**: created locally (off-chain), good for many uses.
+* **Full (on-chain) DID**: anchored on KILT for on-chain actions (write CTypes, attestations, delegations, key rotation). Creating one requires a refundable **deposit (\~2 KILT)**, which you can reclaim by deleting the DID.
 
-## Kilt Protocol - How it Works:
-- **User Creates DID:** A user creates a DID on the KILT blockchain to represent their digital identity.
-- **Request Credential:** The user requests a credential from a trusted Attester for a specific attribute.
-- **Attester Issues VC:** The Attester verifies the claim and issues a VC if satisfied.  
-  User Presents VC: The user selectively presents relevant information from the VC to a Verifier.
-- **Verifier Checks Authenticity:** The Verifier confirms the VC’s authenticity and trusts the Attester.
+> **Note:** KILT supports DID keys for authentication, encryption, attestation, and delegation.
 
-## KILT vs. Centralized Identity Management:
-- KILT eliminates the need for centralized authorities, giving users control over their data.
-- Revocable credentials ensure data accuracy and prevent misuse.
-- Secure enclaves protect sensitive information during credential processing.
+### CTypes, credentials, attestations & revocation
+* **CTYPE**: JSON schema defining what a credential claims (e.g., *“Over-18”*).
+* **Credential**: user-held data matching a CTYPE.
+* **Attestation**: **hash** of the credential written on-chain by an attester; enables **revocation** and timestamping while the actual personal data stays off-chain.
 
-**Explore KILT Further:**
-- [KILT Protocol Website](https://www.kilt.io/)
-- [KILT Developer Docs](https://docs.kilt.io/)
-- [KILT Identity Management](https://www.kilt.io/protocol)
+### Wallet & tools: Sporran, web3name, SocialKYC, DIDsign
+* **Sporran**: browser wallet for KILT coins, DIDs & credentials.
+* **web3name (w3n)**: human-readable handle bound to your DID; can link addresses across KILT/Polkadot/Ethereum (via w3ndi).
+* **SocialKYC**: issues credentials after you prove control of social accounts/email—privacy-preserving alternative to centralized logins.
+* **DIDsign**: decentralized document/file e-signing & verification using your **on-chain DID**; supports multi-sign and timestamping.
 
-## Incorporating KILT into Polkadot Dapps:
-KILT offers a unique solution for dapps requiring secure and user-controlled identity management. By integrating KILT, developers can build trust-based applications that empower users and unlock new possibilities within the Polkadot ecosystem.
+## How KILT works (issuer–holder–verifier)
+1. **Holder** requests a credential from an **Issuer/Attester** (e.g., *“age over 18”*).
+2. Issuer checks evidence, creates credential for the holder, and anchors a **root hash** on KILT.
+3. **Verifier** receives a presentation from the holder, checks signature + that the on-chain attestation exists and is **not revoked**.
+4. If requirements change, issuer **revokes** (and can remove) the attestation on-chain.
+
+## In the wild: production use cases
+* **Deloitte (Switzerland)** – Reusable **KYC/KYB** credentials built on KILT (live since 2023), designed for banking-grade compliance while keeping user data off-chain and under user control.
+* **Polimec** – Fundraising platform on Polkadot uses **reusable KYC credentials** anchored on KILT to enable compliant participation and privacy-preserving verification.
+* **web3name in Nova Wallet** – Link a w3n to addresses across Polkadot, Ethereum, Bitcoin via **w3ndi** for human-readable transfers and identity.
+
+## Mini-guide: ship a DID + credential flow
+**Prereqs:** Chrome/Firefox, Sporran, small KILT balance (or Checkout Service).
+
+1. **Install Sporran & create a light DID.**
+2. **Upgrade to a full DID** (deposit ≈ 2 KILT; refundable on deletion).
+3. **Claim a web3name** (requires full DID + small tx fees).
+4. **Obtain a credential** (e.g., SocialKYC or enterprise issuer).
+5. **Present the credential** to your app via KILT SDK; verify on-chain attestation + status.
+6. (Optional) **Sign files with DIDsign** and share the signature/metadata bundle for independent verification.
+
+**Practical example:**
+*Investor onboarding on a Polkadot dApp*: Require a “KYC-Passed” credential from a recognized attester (e.g., Deloitte). Your verifier checks the user’s presentation + attestation status on KILT; store only the attestation reference and your own access decision—no personal data retained.
+
+## Comparison: KILT vs Heima vs Polygon ID
+| Tool/Protocol     | DID/VC model                                                     | Privacy model                           | Revocation                                           | Interop & stack                                                                        | Typical use cases                                                          |
+| ----------------- | ---------------------------------------------------------------- | --------------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| **KILT Protocol** | W3C-style DIDs (light/full) + VCs; on-chain **attestation hash** | Off-chain data; on-chain hash & status  | On-chain revocation/removal by attester              | Polkadot parachain, shared security, XCM; tools: Sporran, web3name, SocialKYC, DIDsign | KYC/KYB, age/role proofs, enterprise doc signing, cross-ecosystem identity |
+| **Heima**      | DID aggregation + VC issuance                                    | Privacy via **TEEs** + IdentityHub      | VC issuance & identity scores; off-chain aggregation | Substrate/Polkadot; cross-chain reputation                                             | Reputation, airdrops, credit scoring, identity graphs                      |
+| **Polygon ID**    | Iden3 DIDs + **ZK** proofs                                       | **Zero-knowledge** selective disclosure | ZK-friendly revocation models                        | EVM/Polygon; OIDC/Verite integrations emerging                                         | Private on-chain checks (e.g., “over 18”) without revealing PII            |
+
+## Common pitfalls & tips
+* **Don’t confuse light vs full DIDs.** On-chain actions (attestations, delegations, w3n) require a **full** DID (refundable deposit).
+* **Linked accounts aren’t for transfers.** When linking an Ethereum account to your DID, **don’t** use that link itself for asset transfers—use the actual address.
+* **Design revocation early.** Decide whether you need “mark-as-revoked” or “revoke & remove”; wire this into issuer workflows and verifier checks.
+* **Minimize on-chain writes.** Keep PII off-chain; anchor only hashes/status to save fees and preserve privacy.
+* **OIDC bridges.** You can place DIDs/VCs behind familiar **OpenID Connect** sign-in flows; this helps Web2 apps adopt SSI without rebuilding auth.
+
+## FAQs
+**1) Is user data stored on chain?**
+No. Credentials live off-chain with the user; the chain anchors a **hash + status** (attestation) to enable verification and revocation.
+
+**2) What’s the difference between a light and full DID?**
+Light DIDs are local/off-chain; full DIDs are **anchored on KILT** and unlock on-chain actions (CTypes, attestations, delegations). Full DIDs require a refundable deposit.
+
+**3) How do revocations work?**
+The attester writes/updates **attestation status** on KILT. Verifiers check the presented credential against the on-chain attestation and its current status.
+
+**4) Do I need KILT coins to start?**
+Yes for on-chain operations (fees/deposits). For end users, **Checkout Service** can anchor a DID and let you pay with fiat while keeping keys on your device.
+
+**5) Can I use KILT identity across Polkadot and EVM?**
+Yes. web3name can link addresses across Polkadot and **Ethereum** (via w3ndi). DIDsign and credential flows are chain-agnostic from the verifier’s POV.
+
+**6) Why build on Polkadot?**
+Parachains inherit **shared security** and use **XCM** to interoperate—ideal for identity that many chains/apps must trust.
+
+**7) Is Deloitte really using KILT?**
+Yes. Deloitte Switzerland announced and shipped **reusable KYC/KYB credentials** on KILT in 2023.
+
+**8) Can I sign PDFs/contracts with my DID?**
+Yes. **DIDsign** enables decentralized signing and verification of files, including multi-sign workflows with timestamps.
+
+## Conclusion
+KILT gives builders a standards-aligned, privacy-first identity layer with **revocation**, **delegations**, and **interoperability** baked in. Running on Polkadot means shared security and easy cross-chain reach. If you’re shipping compliance-sensitive dApps (fundraising, fintech, enterprise workflows) or simply want portable identity for your users, KILT is battle-tested and ready.
 
 ## Kilt Community Videos
 ------------
