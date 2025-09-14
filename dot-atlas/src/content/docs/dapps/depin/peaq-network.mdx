@@ -1,5 +1,5 @@
 ---
-title: 'Peaq Network'
+title: 'peaq Network'
 description:  Powering the Machine Economy. Layer-1 blockchain for all things real. Home of DePIN, Machine RWA, and Machine DeFi.
 sidebar:
     label: ✪ PEAQ Network
@@ -20,40 +20,119 @@ hero:
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
 
-Peaq is a high-performance Layer 1 blockchain specifically designed for **Decentralized Physical Infrastructure Networks (DePINs)** and Machine-**Readable Worlds (MRWs)**. It offers a unique combination of scalability, security, and developer-friendliness, making it an ideal platform for building real-world applications.
+## peaq Network: The Polkadot DePIN Layer for the Machine Economy
+peaq Network is a Polkadot-based Layer-1 purpose-built for Decentralized Physical Infrastructure Networks (DePIN). It combines ultra-low fees, EVM + ink! support, and plug-and-play “Modular DePIN Functions” (IDs, access control, data verification, UMT) so founders can ship real-world apps across mobility, energy, connectivity, and more. Updated **September 2025**.
 
-## Peaq Network Key Features
-- **Scalability:** peaq boasts a robust architecture capable of handling over 10,000 transactions per second (TPS) today, with the potential to scale beyond 500,000 TPS in the future.
-- **Security:** peaq inherits its security from Polkadot, a leading blockchain protocol known for its strong decentralization. This ensures a high Nakamoto Coefficient, making peaq resistant to attacks.
-- **Low Transaction Costs:** peaq offers transaction fees as low as $0.00025, thanks to its efficient architecture and the cost-effective blockspace provided by Polkadot.
-- **Multi-Chain Capabilities:** peaq seamlessly interacts with Polkadot and other major blockchains like Cosmos, Solana, and Binance, enabling data and token transfer across ecosystems.
-- **EVM Compatibility:** peaq supports both EVM (Ethereum Virtual Machine) and ink! smart contracts, allowing developers familiar with Ethereum or Substrate to build on peaq with ease.
-- **Ready-to-Use DePIN Functions:** peaq provides pre-built functionalities like self-sovereign Machine IDs, access control, and data verification, streamlining dApp development for DePINs.
-- **Sustainability:** peaq utilizes a highly energy-efficient blockchain architecture, minimizing its environmental impact.
-- **Large Developer Ecosystem:** By leveraging Polkadot and Substrate, peaq benefits from a vast pool of experienced developers, fostering a thriving development community.
+## ELI5: What peaq Network is
+peaq is a **Layer-1 blockchain** that specializes in **DePIN**—apps where real-world machines and devices (cars, drones, routers, meters, rigs) earn, prove, and coordinate via on-chain logic. peaq runs as a **Polkadot parachain** (i.e., an application-specific L1 secured by the Relay Chain), inheriting shared security and native cross-chain messaging.
 
-## Peaq Network Core Technologies
-- **Polkadot:** peaq leverages Polkadot’s security, scalability, and interoperability features.
-- **Substrate:** Substrate provides the foundation for building high-performance blockchains like peaq.
-- **EVM:** EVM compatibility allows developers to write and deploy Solidity smart contracts on peaq.
-- **ink!:** ink! is a Rust-based smart contract language offering an alternative to Solidity.
+* **Low fees & high throughput** for machine-to-machine (M2M) interactions (fees reported as low as **\$0.00025**; throughput claims of **\~10,000 TPS** today, with a path to higher via elastic scaling). Treat these as vendor-reported figures—validate for your workload.
+* **EVM + ink!** smart contract support: reuse Solidity or write ink! in Rust.
+* **Modular DePIN Functions**: drop-in building blocks for machine identity, access, data verification, and **UMT** (nanosecond-grade time sync).
 
-## Building on peaq
-Peaq offers a comprehensive developer toolkit, including:
-- **SDKs:** peaq provides SDKs in JavaScript and other languages, allowing developers to interact with the network and its functionalities.
-- **Block Explorers:** Explore the peaq network and analyze transactions using dedicated block explorers.
-- **Substrate Pallets:** Developers can utilize pre-built pallets for common functionalities or create custom pallets for specific needs.
+## Key features & architecture
+### Ultra-low cost, throughput-oriented
+peaq positions itself with **\~\$0.00025** transaction fees and **\~10,000 TPS** capacity, with roadmap scaling beyond **100k TPS** via Polkadot’s **Agile Coretime** and peaq’s elastic scaling approach. Independent live benchmarks are limited; pilot under realistic load.
 
-## Peaq Use Cases
-peaq’s capabilities are well-suited for various DePIN and MRW applications, including:
-- **Supply Chain Management:** Track and verify the movement of goods in real-time.
-- **Manufacturing:** Automate processes and ensure machine-to-machine communication.
-- **Energy Management:** Optimize energy usage and enable peer-to-peer energy trading.
-- **Connected Cars:** Develop autonomous driving applications and facilitate secure vehicle data exchange.
+### Security & decentralization via Polkadot
+As a parachain, peaq shares Polkadot Relay Chain security and benefits from Nominated Proof-of-Stake decentralization. Polkadot’s **coretime** model lets parachains elastically buy compute (“cores”) as demand grows—useful for DePIN bursts.
 
-### Conclusion
-Peaq is a powerful blockchain platform enabling the development of secure, scalable, and interoperable applications for the Economy of Things. Its focus on DePINs and MRWs positions it as a key player in shaping the future of connected machines and real-world data.
-- <small>Related Token/s:</small> **PEAQ**
+### Multiruntime: EVM + ink!
+* **EVM**: compatibility for tooling and Solidity contracts.
+* **ink!**: Rust-based smart contracts (Substrate native), useful when you need fine-grained control and Wasm-first features.
+
+## Modular DePIN Functions (how they work)
+peaq ships **plug-and-play primitives** so you don’t reinvent infra:
+1. **peaq ID (Self-Sovereign Machine ID)** – DID-style credentials so machines/devices identify and mutually authenticate. Useful for payments, rentals, and data attestations.
+2. **peaq access (RBAC for machines)** – on-chain, role-based access control to gate machine capabilities (e.g., who can unlock a scooter; which drone can enter a zone).
+3. **peaq verify (tiered data verification)** – patterns for validating physical data in a DePIN (crypto proofs, redundancy, economic checks).
+4. **UMT (Universal Machine Time)** – an on-chain, Precision Time Protocol-style approach targeting **nanosecond-level** synchronization so robots/drones/vehicles can coordinate safely.
+
+These functions are exposed via SDKs so web2/web3 teams can integrate quickly without deep Substrate expertise.
+
+## Developer experience: SDKs, tooling, runtimes
+* **SDKs:** Official **JavaScript** SDK, with **Python** also available.
+* **Explorers & infra:** EVM/Substrate explorers and managed node services are available for development and production.
+* **Runtimes:** Choose **EVM** for speed of porting; choose **ink!/pallets** for custom logic and tight runtime integration.
+
+## Interoperability & Polkadot advantages
+* **XCM:** Natively message across Polkadot parachains—move assets, invoke remote functions, or compose flows (e.g., settle on Asset Hub, call EVM on Moonbeam).
+* **Agile Coretime:** Buy additional compute as your DePIN scales; better cost/performance alignment vs fixed auction slots.
+* **“Parachain as L1”:** Parachains are sovereign L1s that **inherit shared security**—useful mental model when scoping trust boundaries.
+
+## Token & economics (operational view)
+* **Ticker:** PEAQ
+* **Genesis supply:** **4,200,000,000** (per publicly shared tokenomics).
+* **Utility:** fees, block production, governance, and machine trust primitives. Builders should treat token use as infra cost and design for end-user abstraction where possible.
+
+> **Disclaimer:** This article is educational and **not investment advice**. Always validate performance/fee claims and conduct your own research.
+
+## Mini-guide: Stand up a basic DePIN on peaq
+**Goal:** A minimal “sensor-to-chain” loop using peaq ID, access control, and verified data.
+1. **Create project & choose runtime**
+   Decide **EVM** (Solidity) or **ink!** (Rust). For rapid iteration, start on EVM.
+2. **Install SDK & connect**
+   Add the peaq SDK (JS) and connect to a peaq RPC. Configure keys and environment.
+3. **Issue Machine IDs**
+   Mint or register **peaq IDs** for your device class (e.g., sensor node). Store DID locally with rotation policy.
+4. **Attach access policy**
+   Use **peaq access** to define roles (owner, maintainer, renter) and map on-chain permissions to device capabilities.
+5. **Stream data with verification**
+   Implement **peaq verify** tiers (signatures, redundancy, economic checks). Start with signature + multi-source corroboration.
+6. **Time-sync critical ops**
+   If coordination precision matters (drones, grids), integrate **UMT** for synchronized events and ordering.
+7. **Payments & incentives**
+   Wire usage fees, staking, or bounties. Keep fees abstracted; batch small txs or use meta-tx relays where feasible.
+8. **Cross-chain flows (optional)**
+   Use **XCM** to settle assets or trigger logic on other parachains (e.g., EVM calls on Moonbeam).
+9. **Observability**
+   Expose health metrics and build an indexer; verify device population and data volumes against explorer telemetry.
+10. **Pilot, then scale coretime**
+    As load grows, plan for **Agile Coretime** purchases to scale compute.
+
+## Comparison: peaq’s Modular Functions at a glance
+| Function               | What it solves                    | Typical calls / artifacts                 | Example use cases                                                |
+| ---------------------- | --------------------------------- | ----------------------------------------- | ---------------------------------------------------------------- |
+| **peaq ID**            | Verifiable machine identity (DID) | Issue DID, sign/verify credentials        | KYC-free device onboarding, pay-per-use machines, fleet identity |
+| **peaq access (RBAC)** | Capability gating by role         | Assign roles; check role → permit action  | Unlock scooter, restrict drone zone, tiered maintenance          |
+| **peaq verify**        | Trust in physical data            | Crypto proof, redundancy, economic checks | Sensor slashing, oracle sanity, rewards gating                   |
+| **UMT**                | Precise, on-chain time sync       | Time attestations; PTP-style sync         | Drone swarms, micro-grids, industrial robots                     |
+
+## Common pitfalls & pro tips
+**1) Treat TPS/fee numbers as planning inputs, not SLAs.** Public materials cite **\~\$0.00025** fees and **\~10k TPS**; independent live TPS dashboards are sparse. Pilot with realistic load, then optimize batching.
+**2) Secure device keys at the edge.** Rotate device credentials and store DIDs in secure elements; design for offline grace windows.
+**3) Map RBAC to *physical* safety.** Don’t conflate wallet ownership with operational control; include geofences, rate-limits, and human overrides.
+**4) Verify data economically.** Redundant sampling + slashing is often more robust than pure signatures.
+**5) Plan for cross-chain UX.** Abstract XCM/fees with relays and avoid forcing users to hold multiple assets; prefer intent-based flows.
+**6) Budget for Agile Coretime.** As you scale, model compute purchases in your unit economics.
+
+## FAQs
+**Is peaq EVM-compatible?**
+Yes—peaq supports **EVM** and **ink!**, so you can port Solidity or build in Rust.
+
+**How much do transactions cost on peaq?**
+peaq materials cite fees as low as **\$0.00025** per transaction; validate costs under your workload and gas dynamics.
+
+**What throughput can I expect?**
+Figures commonly cited are **\~10,000 TPS** today with roadmap scaling via elastic coretime. Benchmark for your app.
+
+**What is UMT and why should I care?**
+**UMT** provides an on-chain Precision Time Protocol for precise synchronization of devices such as drones, vehicles, and robots.
+
+**How does peaq interoperate with other chains?**
+As a **Polkadot parachain**, peaq uses **XCM** for native cross-chain messaging with other parachains and can bridge externally where available.
+
+**What’s the PEAQ token’s genesis supply?**
+**4,200,000,000**.
+
+**Who is already building on peaq?**
+Public showcases highlight DePINs across multiple industries (mobility, mapping, storage). Evaluate case studies and telemetry for your domain.
+
+**Does peaq inherit Polkadot’s security?**
+Yes—parachains inherit shared security from the Relay Chain while remaining sovereign.
+
+## Conclusion
+If you’re building a **machine-native** app—where devices earn, prove data, or coordinate actions—**peaq Network** offers a practical path: **low fees**, **EVM + ink!**, and **ready-made machine functions**. Start with a small sensor pilot, wire **peaq ID + access + verify + UMT**, and expand capacity with **Agile Coretime** as demand grows.
 
 
 
