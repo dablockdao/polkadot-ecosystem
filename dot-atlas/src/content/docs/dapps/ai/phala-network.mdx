@@ -19,44 +19,115 @@ hero:
 ---
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-Phala Network is a blockchain protocol that unlocks the potential of Artificial Intelligence (AI) in the Web3 space. It acts as the execution layer for **Web3 AI**, enabling developers to build secure and private smart contracts that leverage AI capabilities.
 
-## Why Phala Network?
-Traditional blockchain networks struggle to handle complex AI computations due to limitations in privacy and processing power. Phala Network solves this by introducing a hybrid architecture that combines blockchain technology with **Trusted Execution Environments (TEEs)**.n
+## Phala Network: The Execution Layer for Web3 AI
+Phala Network brings confidential, verifiable AI to Web3 by running off-chain agent logic inside hardware-secured enclaves and anchoring proofs on a Polkadot parachain. This guide explains how Phala works, what **Phat Contracts** and **AI-Agent Contracts** enable, where TEEs fit alongside zkML/oracles, and how to ship a small agent in practice—plus pitfalls, FAQs, and SEO-ready resources.
 
-### Here’s what Phala offers:
-- **Secure and Private AI Execution:** TEE technology ensures the confidentiality of AI computations, protecting sensitive data and algorithms.
-- **Smart Contract Integration:** AI functionality becomes seamlessly integrated with smart contracts, enabling new possibilities for decentralized applications.
-- **Decentralized Infrastructure:** Phala leverages a network of distributed workers, providing reliable and scalable computing resources for AI tasks.
+## Why this matters (problem/benefit)
+Blockchains are great at consensus, not at private, heavy, or API-driven compute. Most AI agents today run off-chain with opaque logic and exposed API keys. Phala Network closes that gap: developers publish agent logic on a Polkadot parachain; execution happens inside **trusted execution environments (TEEs)**, producing proofs that are verified on-chain. You get **private inputs**, **tamper-resistant execution**, and **on-chain-verifiable outcomes**, with cross-chain reach through Polkadot.
 
-## Phala Network Key Components:
-- **TEE Workers:** These are secure enclaves within CPUs that isolate AI computations, guaranteeing data privacy.
-- **Smart Contracts:** Developers can build AI-powered smart contracts using Phala’s framework, enabling logic execution based on AI outputs.
-- **Phala Token (PHA):** The native token used for network fees, resource allocation, and staking within the Phala ecosystem.
+## ELI5
+Think of Phala as a **locked computer room** that runs your AI code. Only your program can see the data inside; even the system admin can’t peek. The room hands back a stamped receipt (attestation) proving what ran. The blockchain stores the receipts and coordinates many such rooms. That’s how you call models and APIs privately while keeping Web3-grade auditability.
 
-### Benefits of Building with Phala:
-- **Unlocking Web3 for Everyone:** AI-powered agents can simplify complex blockchain interactions, making Web3 more user-friendly.
-- **Enhanced Security and Privacy:** Secure enclaves protect sensitive AI models and data, fostering trust within the ecosystem.
-- **New Application Possibilities:** The integration of AI with smart contracts opens doors for innovative and intelligent dApps.
+## How Phala Network works
+### Architecture: TEE + parachain
+* **TEE layer (off-chain):** Phala uses Intel SGX to run agent logic inside secure enclaves (pRuntime). SGX isolates code and data so even privileged processes can’t read them. The enclave produces **remote attestations**—proofs of correct execution.
+* **Parachain layer (on-chain):** Phala is a Polkadot **parachain**, inheriting shared security and cross-chain connectivity. Attestations are verified on-chain; contracts and scheduling live on the parachain; results can be forwarded to other chains via Polkadot’s interoperability.
+* **Gatekeepers & workers:** **Gatekeeper** nodes manage encryption keys; **workers** (compute providers) run enclaves. Gatekeepers also run pRuntime inside SGX and require stricter hardware confidence levels.
+* **Execution flow (simplified):**
+  1. Publish contract/agent.
+  2. Enclave fetches code and verifies it.
+  3. Enclave executes logic, talks to models/APIs if needed, and signs a proof.
+  4. The parachain verifies the proof and records the result; hooks can trigger cross-chain updates.
 
-<ShowcaseProfile
-  entries={[
-    {
-      name: 'Agent Wars',
-      picture: 'https://agentwars.phala.network/images/logo-large.png',
-      href: 'https://agentwars.phala.network/',
-      description:
-        "Agent Wars is the first experiment on combining tokenomics and AI agents. Agent Wars enables anyone, even non-engineers, to create their own agent (a unique avatar tied to an X account).",
-    },
-  ]}
-/>
+### Phat Contracts & AI-Agent Contracts
+* **Phat Contract** is Phala’s off-chain, TEE-backed “smart contract”: event-driven tasks, secure secret storage (API keys), API/model calls, and cross-chain writes. It emits cluster-internal events you consume with the JS SDK for automation.
+* **AI-Agent Contract** packages model-centric behaviors (tools, memory, triggers) so teams can create, own, and monetize AI agents that interoperate with on-chain apps.
+* **For compute providers:** tooling like a **budget balancer** tunes reward flows across Phala/Khala networks under Phala’s tokenomics.
 
-## Explore Phala Network further:
-- **[Phala Network Docs](https://docs.phala.network/)**: Learn more about building with Phala’s developer resources.
-- **Phala Compute Infrastructure:** Deep dive into the technical aspects of Phala’s network infrastructure.
-- **AI Agent Contract:** Understand how to build smart contracts that leverage AI capabilities.
+## Key features
+* **Confidential compute by default:** Inputs (secrets, user data) stay sealed inside SGX during execution; proofs (attestations) bind results to the measured code.
+* **On-chain verifiability:** Attestations are checked on the parachain, making off-chain AI work auditable and programmable from contracts.
+* **Polkadot-native interoperability:** Being a parachain lets Phala route results, messages, and asset actions to other chains without custom bridges.
+* **Agent tooling ecosystem:** docs, CLI/JS SDK, and emerging integrations (e.g., GPU TEE inference and agent frameworks) target practical AI agent deployments.
 
-- <small>Related Token/s:</small> **PHA**
+## When to use Phala vs alternatives (comparison)
+**Approaches to “AI in Web3”**
+
+| Layer / tool                |         Private inputs |                           Verifiable execution |     Latency |                    Cost | Developer effort | Typical use cases                                               |
+| --------------------------- | ---------------------: | ---------------------------------------------: | ----------: | ----------------------: | ---------------: | --------------------------------------------------------------- |
+| **Phala (TEE + parachain)** |          **Yes (SGX)** | **Yes (remote attestation verified on-chain)** |  Low-to-mid |              Low-to-mid |         Moderate | Agents with secrets, API/model calls, cross-chain automation    |
+| **zkML (proof-of-ML)**      | Yes (proof hides data) |                 **Strong cryptographic proof** | Mid-to-high | Mid-to-high (proof gen) |             High | Verifiable inference where trust-minimization outweighs latency |
+| **Oracle/API middleware**   |               Optional |                            Weak (trust oracle) |     **Low** |                 **Low** |          **Low** | Fast reads/writes without privacy or strong verification        |
+
+*Notes:* The table is directional; exact SLOs depend on model size, proof systems, and network conditions. Phala emphasizes SGX-secured privacy + on-chain attestation; zkML emphasizes pure cryptographic verifiability; oracle routes optimize simplicity/latency without privacy.
+
+## Mini-guide: build & ship a simple AI agent
+**Goal:** A Phat/AI-Agent Contract that watches an on-chain event, calls an LLM with a secret key, and writes a summarized outcome back to a target chain.
+
+1. **Model your trigger & state**
+   * Define the **event source** (e.g., a Substrate/ink! event or an EVM log).
+   * Define **state** you need to keep (windowed lists, last processed block, throttling flags).
+
+2. **Scaffold the project**
+   * Scaffold a **Phat Contract** / **AI-Agent Contract** and enable the **JS SDK** for event capture and job dispatch.
+
+3. **Secrets & I/O**
+   * Store your **LLM API key** in enclave-protected storage.
+   * Implement a call handler that formats prompts, retries on rate-limits, and guards tokens (max context).
+   * For deterministic post-processing, normalize outputs (JSON schema, strict parsing).
+
+4. **Attestation & verification path**
+   * Ensure your runtime calls produce attestations and are verified by the parachain before you emit follow-up transactions.
+
+5. **Cross-chain write-back**
+   * Use cross-chain hooks to post results (e.g., a summary hash or score) to a target chain/app; Polkadot interoperability supports many parachains.
+
+6. **Local testing**
+   * Run locally; simulate events; capture cluster events with the JS SDK; validate that your agent handles timeouts, duplicate events, and empty responses.
+
+7. **Ship & monitor**
+   * Deploy to the network; add basic observability (structured logs, health checks); set SLOs for freshness and failure budgets.
+
+**Practical example:**
+A “Governance Analyst” agent watches **OpenGov** referendum submissions, fetches proposal text/attachments, calls an LLM to summarize risk vectors, then writes a **score + reason** back to a DAO dashboard (and optionally to an on-chain record). Secrets (API keys, preliminary data) never leave the enclave; the chain verifies that the approved agent code produced the result.
+
+## Common pitfalls & pro tips
+* **Treat LLM output as untrusted:** validate with JSON schemas; add rule-based sanity checks; never let free-text directly authorize on-chain actions.
+* **Handle non-determinism:** keep prompts short and tool-driven; use few-shot exemplars; normalize outputs before signing.
+* **Secret management ≠ endpoint security:** TEEs protect keys in-use; still rotate keys and limit scopes.
+* **Provisioning compute:** if you’re running **workers**, confirm SGX support and BIOS settings; Gatekeepers need higher SGX confidence.
+* **Budgeting / rewards:** if you also provide compute, review tokenomics tooling (e.g., a budget balancer) for Phala/Khala balancing.
+* **Choose the right tool:** for strict cryptographic verifiability of model math (no TEE trust), zkML may be preferable; for fast, private API/model calls with on-chain checks, Phala fits well.
+
+## FAQs
+**1) What exactly is a Phat Contract?**
+A Phat Contract is Phala’s TEE-backed off-chain program that can hold secrets, call external APIs/models, react to chain events, and write back on-chain. It emits cluster events consumable via the JS SDK.
+
+**2) How is execution verified if it’s off-chain?**
+The enclave produces **remote attestations** binding code identity and outputs; Phala verifies them on its parachain so other contracts can trust the results.
+
+**3) What hardware underpins confidentiality?**
+Intel SGX. Code/data run inside SGX-protected enclaves (pRuntime). Even privileged OS processes can’t snoop.
+
+**4) Can Phala agents interact with other chains and dapps?**
+Yes. As a Polkadot **parachain**, Phala benefits from native cross-chain messaging and integrations across the ecosystem.
+
+**5) What’s the difference between AI-Agent Contracts and Phat Contracts?**
+AI-Agent Contracts are opinionated packages for model-centric behaviors (tools, memory, monetization). Phat Contracts are the general TEE compute runtime they build on.
+
+**6) Do I need SGX hardware to build?**
+No. Developers can build and test locally; **compute providers** need SGX when operating workers/gatekeepers on mainnet.
+
+**7) How does this compare to just using an oracle?**
+Oracles are simpler but don’t provide strong privacy guarantees for inputs or verifiable execution receipts; Phala focuses on both.
+
+**8) Is there momentum around AI agents/tooling?**
+Yes—Phala’s materials outline agent tooling such as GPU TEE inference and builder kits as part of a broader confidential-AI roadmap.
+
+## Conclusion
+If you’re shipping AI features that need **private inputs**, **provable execution**, and **multi-chain reach**, Phala Network is purpose-built for that job. Start with a small event-driven agent, wire up secrets and attestations, then iterate toward richer toolchains and cross-chain automation.
+
 
 ## Phala Network Community Videos
 ------------
