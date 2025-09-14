@@ -17,50 +17,53 @@ hero:
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-**Frequency** is a specialized **Layer 1 public blockchain designed to realize the [Decentralized Social Networking Protocol (DSNP)](/dapps/social/dsnp-protocol/)**. It offers critical infrastructure for next-generation social networking applications, empowering individuals with greater control over their data and enabling participation in the evolving digital economy. Frequency provides scalable message discovery, flexible state storage for **social graph and identity data**, and primitives for cost-shifting and delegation of authority. This unique combination allows applications to offer intuitive user experiences while ensuring user control over personal data and online relationships. Frequency introduces an alternative **economic model based on Message Batching** and token staking for recurring network capacity, making it adaptable for future protocols with similar requirements. The native coin for Frequency is named **FRQCY**.
+## Frequency: The DSNP L1 Blockchain on Polkadot (2025 Guide)
+Frequency is a Polkadot parachain purpose-built to run the Decentralized Social Networking Protocol (DSNP), enabling portable social identities and graphs across interoperable apps. This guide explains how Frequency + DSNP work, the FRQCY + Capacity economic model, where MeWe’s large-scale migration stands, and how builders can ship DSNP-compatible apps today.
 
-## Frequency Architecture
-Frequency is built as a Layer 1 blockchain tailored to support high-volume, data-driven applications within a decentralized environment. Its architecture includes core components essential for operation within the **Polkadot ecosystem**, ensuring robust performance and interoperability.
-1. **Operational Model**Frequency nodes are crucial for maintaining chain state and processing data. Nodes can be configured for various roles:  
-    - **Full Nodes:** Maintain the full state of the chain.
-    - **Light Client Nodes:** Allow applications to observe chain events.
-    - **Archive Nodes:** Store the complete historical state of the chain.
-  Nodes run the Frequency Runtime, encapsulated in platform-independent WebAssembly (Wasm) code, ensuring consistent state transition processing across the network. Upgrades to the Frequency Runtime are managed through Frequency Governance.
-2. **Deployment**
-    - **Mainnet:** Utilizes validators from the Polkadot Relay Chain for production.
-    - **Testnet:** Uses validators on the Polkadot Rococo Testnet Relay Chain for testing and development.
-Changes are first deployed to Testnet before Mainnet, ensuring robust testing and smooth upgrades.
+## Why Frequency + DSNP
+Most social platforms lock your identity, graph, and distribution behind proprietary silos. **DSNP** standardizes the social layer (identities, relationships, announcements) so any app can interoperate. **Frequency** is the production blockchain that runs DSNP operations at scale, so users can move between apps without losing their social capital. Think “SMTP for social,” but with on-chain assurances.
 
-## Frequency Interaction Model
-Users and applications interact with Frequency Nodes through extrinsics, State Queries, Runtime APIs, and Custom RPCs.
-1. **Extrinsics:** Transactions performed on the chain, requiring cryptographic signatures for validation.
-2. **State Queries:** Directly access the key-value store of the chain state.
-3. **Runtime APIs:** Provide access to chain and node information without direct key-value store access.
-4. **Custom RPCs:** Allow for complex processing and external calls not suitable for the Wasm runtime.
+## ELI5: DSNP vs “web2 social”
+* **Web2:** your handle, followers, and posts stay trapped in one app.
+* **DSNP on Frequency:** your **DSNP identity** + **social graph** live on shared infrastructure. Switch apps, keep your people and history.
 
-### Collators and Relay Chain
-Frequency uses collator nodes to collect transactions and produce state transition proofs. These blocks are submitted to the **Polkadot relay chain** for validation and security. This setup allows Frequency to focus on user functionality while leveraging the Relay Chain’s robust security.
+## What Frequency is (and why Polkadot)
+**Frequency** is a **Layer-1 Polkadot parachain**, built with Substrate, designed to execute DSNP operations (identity, graph, announcements). Polkadot supplies shared security and XCM interoperability; Frequency focuses on social performance and an economic model tailored for high-volume social transactions.
 
-## Frequency Identity Management
-Frequency introduces a discoverable and addressable user identity system, crucial for social networking applications. Key components include:
-1. **Message Source Accounts (MSAs):** Unique to Frequency, enabling data with verifiable authorship.
-2. **Control Keys:** Cryptographic keys for identity control.
-3. **User Handles:** Human-readable identifiers for MSAs.
+## Core concepts & how it works
+### Identities (MSA)
+* **Message Source Account (MSA):** the on-chain identity tied to a DSNP User ID.
+* Stores delegation relationships and schema permissions; manages profile/graph state.
 
-## Frequency Data Management
-Frequency’s data management is designed for secure and efficient high-volume user-generated data distribution.
-1. **Schemas:** Define data structure, storage, and semantics for protocol-related data.
-2. **Schema Registry:** On-chain repository for Frequency Schemas, ensuring data correctness and interoperability.
-3. **Messages:** Published data conforming to Frequency Schemas, facilitating high scalability through off-chain aggregation.
-4. **Stateful Storage:** Allows users to store data as part of the chain state, with itemized and paginated storage options for efficient data management.
+### Providers & Delegation
+* Users can **delegate** posting/management rights to **Providers** (e.g., apps or services) and selectively grant schema permissions—useful for “coinless” UX where apps sponsor interactions.
 
-## Frequency Delegation Model
-Frequency’s Delegation Model balances accessibility with user control by shifting complexity and fees to Providers. Users can interact with the chain without needing tokens, delegating tasks to Providers who act on their behalf.
-**Frequency (FRQCY) Tokenomics**
-Frequency’s economic model supports scalable social networking, focusing on non-financial data transactions.
-1. **Collator Incentives:** Rewards for block formation.
-2. **Provider Incentives:** Capacity model for cost-efficient Message publishing.
-3. **User Incentives:** Provider Boosting mechanism for user support and rewards.
+### Announcements, Schemas & Messages
+* DSNP defines **Announcements** (posts, follows, etc.) mapped to **Schemas**.
+* Frequency’s **Messages** pallet stores announcements or **Batch Publications** to scale throughput efficiently.
+
+### Operations (extrinsics)
+* DSNP operations are executed via **Substrate extrinsics** exposed by pallets: MSA (identity), Messages (announcements), Schema (data types), and stateful storage primitives.
+
+### Identity enrichment (optional)
+* Projects can enrich identities with **KILT DIDs** to bind verifiable credentials to DSNP identities where needed (KYC, age attestations, etc.).
+
+## Tokenomics: FRQCY & “Capacity”
+* **FRQCY** is Frequency’s utility token. Fees for general transactions are paid in FRQCY (XRQCY on testnets).
+* Frequency also offers **Capacity**—a renewing, stake-based allowance so **Providers** can perform certain DSNP transactions without per-tx fees. Capacity accrues based on **staked FRQCY**; the ratio is governed on-chain and resets each **Capacity epoch**.
+* **Design goal:** combine a standard fee market with staking-based throughput for app-sponsored, “coinless” UX at scale and predictable cost profiles.
+
+> **Why this matters:** For social networking, cost predictability and sponsorship are key. Capacity lets a Provider pre-commit to throughput, then batch and publish posts/graphs efficiently.
+
+## Real-world adoption: MeWe’s migration
+**MeWe** (20M+ users) began integrating DSNP on Frequency in 2023, publicizing milestones such as:
+
+* The “largest migration to decentralized social” initiative (late 2023).
+* 500k active users migrated to Web3 via Frequency (early 2024).
+* 1M+ users on-chain milestones reported through 2024–2025, with hundreds of thousands owning their social graph.
+
+These milestones demonstrate DSNP/Frequency at consumer scale—not just a lab demo.
+
 
 <ShowcaseText
   entries={[
@@ -72,19 +75,80 @@ Frequency’s economic model supports scalable social networking, focusing on no
   ]}
 />
 
-### FRQCY Initial Token Distribution
-One billion FRQCY were created at Genesis and allocated as follows:
-- **Frequency Network Foundation**
-  - Foundation: 2.0%
-  - On-Chain Treasury: 53.0%
-  - Strategic Partners: 5.0%
-- **Amplica Labs**
-  - Investors: 22.0%
-  - Team: 14.5%
-  - Treasury: 3.5%
+## Architecture: Where data lives
+* **On-chain (Frequency):** identities (MSAs), delegations, graph/state pointers, announcement commitments, and batched publications per DSNP schemas.
+* **Off-chain (app infra):** rich media/content blobs can be pinned elsewhere (e.g., app CDN or decentralized storage) and referenced from DSNP announcements.
 
-#### Conclusion
-Frequency, developed by[ **Project Liberty**](/club/orgs/software/project-liberty/), stands as a robust infrastructure for decentralized social networking within the Polkadot ecosystem. Its innovative architecture, comprehensive data management, and user-centric economic model position it as a cornerstone for future social networking applications, emphasizing user control, scalability, and interoperability.
+## Build on Frequency: step-by-step
+### A. Plan your UX & identity
+1. Decide if users sign directly or delegate to your **Provider** (recommended for mass-market).
+2. (Optional) Integrate **KILT DIDs** for credential-based features (age-gating, verified creators).
+
+### B. Wire DSNP primitives
+3. Create **MSAs** and set **delegations/permissions** to your Provider for the schemas you’ll use.
+4. Choose your **Schemas** (posts, follows, profiles); map UI actions to DSNP **Announcements**.
+
+### C. Publish efficiently
+5. Use **Batch Publications** whenever possible to aggregate many posts/follows in one operation.
+6. Decide what goes **on-chain** vs **off-chain** (e.g., store text + pointers on-chain; media off-chain).
+
+### D. Economics & ops
+7. Stake **FRQCY** to earn **Capacity** proportional to your expected DSNP throughput; monitor the epoch schedule and governance-set ratios.
+8. For bursts, fall back to paying FRQCY fees; keep a treasury wallet topped up.
+
+### E. Interop & compliance
+9. Expose export/import tools for DSNP handles & graphs to honor portability.
+10. If you need cross-chain assets or bridges (e.g., rewards), lean on Polkadot/XCM patterns from the broader ecosystem.
+
+**Practical example — a Twitter-like feed:**
+
+* User signs into your app → Provider holds a delegated key.
+* User posts → your service composes a DSNP **Announcement** and batches with others.
+* A single **Batch Publication** writes it to Frequency, emitting events your indexer subscribes to.
+* Any DSNP-aware client can render that post alongside the user’s existing graph.
+
+## Common pitfalls & tips
+* **Forgetting delegation scope:** grant only the schemas your Provider needs; over-broad permissions are a risk.
+* **Not batching:** costs + latency spike if you publish every announcement individually. Batch by default.
+* **Capacity sizing:** under-staking leads to throttling; model daily/weekly peaks and stake FRQCY accordingly.
+* **Identity collisions:** if you add DIDs, store bindings carefully and surface revocation UX.
+* **Spec drift:** track DSNP spec updates and Frequency runtime changes for pallet/extrinsic updates.
+
+## How Frequency compares (quick table)
+| Stack                     | Base / Consensus               | Identity Primitive                                                                      | Data Availability                                                                  | Fee/Economics                                          | Notes                                                                |
+| ------------------------- | ------------------------------ | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
+| **Frequency + DSNP**      | Polkadot parachain (Substrate) | **MSA** (DSNP user) with **delegations** to Providers; optional **KILT DID** enrichment | On-chain announcements/records + batched publications; pointers to off-chain media | **FRQCY** fees + **Capacity** (stake-based throughput) | Production DSNP implementation; supports app-sponsored “coinless” UX |
+| **AT Protocol (Bluesky)** | Federated (no L1 requirement)  | **DID (did\:plc)** per **PDS**                                                          | Repo model on PDS; federation sync                                                 | No chain fees; ops are server-level                    | Focus on portability between servers; not blockchain-based           |
+| **Farcaster**             | Ethereum L2 (Optimism/Base)    | **FID** (ID Registry), keys, storage rental                                             | “Hubs” gossip network + on-chain registries                                        | On-chain registration + off-chain hubs                 | Frames & strong dev momentum                                         |
+| **Lens**                  | Lens Chain (ZK-stack)          | Lens profiles                                                                           | Momoka/DA + L2                                                                     | L2 fees; DA via specialized layers                     | Migrated from Polygon to a dedicated L2 in 2025                      |
+
+## FAQs
+**1) Is there a token?**
+Yes. **FRQCY** is Frequency’s native utility token for fees; **Capacity** is a renewing, stake-based allowance for certain transactions.
+
+**2) Do end-users need tokens?**
+Not necessarily. Apps can operate as **Providers**, stake FRQCY to earn **Capacity**, and sponsor UX—so users can post without holding tokens.
+
+**3) What exactly is DSNP?**
+An open protocol that standardizes identities, graphs, and announcement formats so apps interoperate. It’s app-agnostic—akin to SMTP/HTTP for social.
+
+**4) Where are posts stored?**
+Announcements are committed/published on-chain (with batch options); media can live off-chain and be referenced.
+
+**5) Can I enrich DSNP identities with verifiable credentials?**
+Yes; use a DID system such as **KILT** to attach attestations.
+
+**6) Is anyone big using it?**
+**MeWe** has publicly announced and shipped milestones indicating hundreds of thousands of users migrated to DSNP on Frequency, with over a million on-chain events reported through 2024–2025.
+
+**7) Why Polkadot?**
+Parachains get shared security and native interop (XCM), letting Frequency focus on DSNP scale and economics.
+
+**8) Is this financial advice?**
+No—this article is educational, not investment advice.
+
+## Conclusion
+Frequency operationalizes DSNP on a production L1, giving builders portable identities, programmable graphs, and predictable posting economics via FRQCY + Capacity. If you’re shipping social apps (consumer or enterprise), start by mapping your UI to DSNP schemas, decide on Provider-backed UX, and size your Capacity so you can batch efficiently. **Ready to build?** Map your features to DSNP operations, stand up your Provider, and ship your first Batch Publication.
 
 ## Frequency Community Videos
 ------------
