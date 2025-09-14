@@ -20,65 +20,117 @@ hero:
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-Hydration (former known as HydraDX) is a ground-breaking project in the decentralized finance (DeFi) space that uses the Substrate framework, therefore forming part and parcel of the larger Polkadot ecosystem. The objective is to operationalize a **cross-chain liquidity protocol that will enable users to inter-swap assets across different blockchains with minimal slippage**. Fueled by the power of **Polkadot’s interoperability**, HydraDX is poised at resolving the sharpest problems within the modern DeFi sector—liquidity fragmentation, high transaction fees, and a lack of scalability.
 
-Hydration is a next-generation protocol built on the Polkadot network. Hydration’s mission is clear: to make DeFi efficient, simple, and unstoppable. By combining swaps, lending, and a stablecoin under a unified, scalable appchain, Hydration seeks to streamline DeFi operations and enhance accessibility for users worldwide.
+Hydration is Polkadot’s DeFi appchain that unifies **swaps (Omnipool)**, **lending/borrowing (Aave-v3–style money market)**, and **HOLLAR**, an over-collateralized stablecoin—plus a cross-chain swap UX that abstracts XCM under the hood. This guide distills how Hydration works, when to use each product, and how to execute a remote swap from DOT to USDT on Asset Hub in a few steps.
 
-## The Core Innovation: Omnipool
-At the heart of Hydration’s ecosystem lies the Omnipool, an innovative Automated Market Maker (AMM) that consolidates all assets into a single trading pool. This groundbreaking approach eliminates liquidity fragmentation, enabling:
-- **Lower Slippage**: Traders experience reduced price impact during transactions.
-- **Fewer Hops**: Direct asset swaps within a single pool enhance efficiency.
-- **Capital Efficiency**: Unified liquidity pools minimize wasted resources, benefiting liquidity providers (LPs) and traders alike.
+## Why Hydration matters now
 
-The Omnipool supports single-sided liquidity provisioning, allowing users to provide liquidity for their chosen asset while gaining exposure to all other assets in the pool. To incentivize participation, Hydration introduces Hydrated Farms, which offer rewards to early liquidity providers in addition to trading fees.
+Polkadot’s modular architecture puts assets across **Asset Hub** and many parachains. Hydration simplifies this by concentrating liquidity in the **Omnipool**, providing a **money market**, and introducing **HOLLAR** for a native, over-collateralized unit of account—all on a single DeFi appchain that leverages XCM for cross-chain settlement. For users and DAOs, that means fewer tabs, fewer bridges, and fewer foot-guns.
 
-## Security and Risk Management
-Security remains a top priority for Hydration. The protocol employs multiple layers of protection, including:
-- **Comprehensive Audits**: Regular security evaluations by industry experts.
-- **Bug Bounty Programs**: Incentives for identifying vulnerabilities.
-- **Advanced Mechanisms**: Liquidity caps, protocol fees, and circuit breakers to safeguard user funds.
+> **Context (Sept 2025):** Hydration evolved from HydraDX, rebranding as the network expanded from trading into lending and a native stablecoin.
 
-Hydration also addresses impermanent loss (IL) through non-inflationary measures, providing LPs with mechanisms to mitigate IL while participating in the Omnipool.
+## ELI5: Hydration in one minute
 
-## The HDX Token: Governance and Utility
-The HDX token is central to Hydration’s decentralized governance model. HDX holders can:
-- **Vote on Protocol Upgrades**: Influence the future development of the platform.
-- **Set Base Network Fees**: Adjust fee structures for swaps.
-- **Allocate Treasury Funds**: Support ecosystem growth initiatives.
+* **One appchain, three pillars:** **Trade** in one big pool, **borrow/lend** like Aave v3, **mint/use HOLLAR** against crypto collateral.
+* **Liquidity lives together:** The **Omnipool** holds many assets in a single pool so routes are shorter and slippage is reduced.
+* **Cross-chain without the pain:** “Remote swaps” package XCM steps so you can end with the asset **where you want it** (e.g., USDT on Asset Hub) in one flow.
 
-The initial supply of HDX was capped at 10 billion tokens, later reduced to 6.5 billion through community governance. The allocation supports diverse stakeholders, including LBP participants, team members, investors, and the DAO treasury, ensuring long-term sustainability.
+## How Hydration works
 
+### 1) Omnipool trading
 
+The **Hydration Omnipool** is a novel AMM concentrating multi-asset liquidity in one pool. Instead of hopping pool-to-pool, most trades route internally, improving capital efficiency and depth. Mathematical specs and risk controls (caps, fees, circuit breakers) underpin the design.
 
-## Hydration’s DeFi Services
-Hydration combines a suite of DeFi products to deliver an integrated, user-friendly experience:
-1. **Swaps:** Users can trade assets seamlessly within the Omnipool. Hydration’s AMM design ensures minimal slippage and lower trading fees compared to traditional platforms. Advanced features, such as Split Trades, enable large orders to be executed incrementally, reducing price impact.
-2. **Lending and Borrowing:** Hydration integrates a fork of AAVE v3 to enable lending and borrowing with added efficiencies:
-    - **Collateralized Borrowing:** Users can borrow against their assets with dynamic interest rates based on supply and demand.
-    - **On-Chain Liquidations:** Hydration’s appchain architecture prioritizes liquidations, reducing delays and risks associated with general-purpose blockchains.
-    - **Internalized MEV:** By internalizing maximum extractable value (MEV), the protocol redirects liquidation fees to the DAO, enhancing ecosystem sustainability.
-3. **Stablecoin Support:** Hydration supports stablecoin trading through specialized Stablepools, which aggregate liquidity for stable assets. This design ensures reduced slippage and optimized capital efficiency, benefiting users engaged in stablecoin swaps.
-4. **Automated Trading:** Hydration’s Dollar-Cost Averaging (DCA) feature allows users to automate trades over time, mitigating the impact of market volatility. The Yield DCA feature further enables users to reinvest staking rewards, diversifying their portfolios efficiently.
-5. **Staking:** HDX staking rewards participants who actively support the network. Rewards are dynamically distributed based on users’ staking duration and governance participation. Enhanced loyalty mechanisms incentivize long-term engagement while offering gamified reward boosts.
+**Who benefits**
 
-## Cross-Chain Compatibility
-As part of the Polkadot ecosystem, Hydration leverages cross-chain interoperability to facilitate seamless asset transfers. Through bridges like Wormhole and Polkadot’s XCM protocol, users can move assets between Ethereum, Moonbeam, and other parachains, expanding their trading opportunities.
+* **Traders:** Tighter pricing on long-tail pairs via single-pool routing.
+* **Projects/DAOs:** One venue to deepen liquidity and set **DAO-approved** listings via on-chain governance.
 
-## User-Friendly Wallet Support
-Hydration ensures accessibility by supporting various wallet options:
-- **Mobile Wallets:** Compatible with Nova Wallet and SubWallet for easy on-the-go access.
-- **Desktop Wallets:** Integrates with browser extensions like Talisman and native desktop wallets like Nova Spectre.
-- **Hardware Wallets:** Supports Ledger devices for added security.
-- **Parity Signer:** Allows users to convert smartphones into air-gapped hardware wallets for enhanced safety.
+### 2) Lending & borrowing
 
-## Future Developments
-Hydration’s roadmap includes several exciting features:
-- **HOLLAR Stablecoin:** A native stablecoin designed to further enhance trading efficiency within the ecosystem.
-- **Isolated Pools:** Separate pools for high-risk assets, allowing users to manage exposure and mitigate potential losses.
-- **Enhanced Governance Mechanisms:** Expanding the DAO’s influence and decentralizing decision-making further.
+Hydration runs a fork of **Aave v3** to supply assets, earn yield, and borrow against collateral. This integrates naturally with trading and HOLLAR use cases (e.g., mint stablecoin, hedge, or lever up).
 
-## Conclusion
-Hydration is redefining DeFi by merging innovation, security, and community-driven governance. With the Omnipool at its core and a suite of user-focused features, Hydration positions itself as a leader in the Polkadot ecosystem, offering unmatched efficiency and simplicity. For users and developers alike, Hydration represents a step forward in building a robust, sustainable, and decentralized financial future.
+### 3) HOLLAR stablecoin
+
+**HOLLAR** is Hydration’s **over-collateralized** stablecoin targeting ≈\$1, minted against crypto collateral. It is *not* algorithmic; every HOLLAR is backed by deposited assets in the system, with risk parameters and liquidations as guardrails.
+
+### 4) Cross-chain swaps (“remote swaps”)
+
+Hydration’s developer docs describe **remote swaps** that compose XCM instructions so a user can, for example, swap **DOT on the Relay Chain** into **USDT on Asset Hub** in one UX flow. The app crafts the needed XCM under the hood, handling reserve locations and final destinations.
+
+## Hydration App on Polkadot: Key features at a glance
+
+* **Unified DeFi appchain:** trading, lending, and a native stablecoin on Polkadot.
+* **Single-pool liquidity model (Omnipool):** efficient routing, fewer hops, governance-gated listings.
+* **Aave-v3–style money market:** supply/borrow with risk tooling derived from a proven framework.
+* **Over-collateralized stablecoin (HOLLAR):** crypto-backed, protocol-native, and designed for composable use in swaps, lending, or treasuries.
+* **Cross-chain UX:** package XCM so users end with the asset on the **right chain** (e.g., Asset Hub).
+
+## Feature comparison table
+
+| Product/Tool           | Purpose                                | Where it runs        | Liquidity/Backing        | Notable mechanics                               | Typical users             |
+| ---------------------- | -------------------------------------- | -------------------- | ------------------------ | ----------------------------------------------- | ------------------------- |
+| **Omnipool (Trading)** | Spot swaps across many assets          | Hydration appchain   | Multi-asset single pool  | Single-hop routing, risk caps, circuit breakers | Traders, DAOs seeding POL |
+| **Lending/Borrowing**  | Supply assets, earn APR, borrow        | Hydration appchain   | Pooled lenders’ assets   | Aave v3-style risk params, interest rate curves | Yield seekers, hedgers    |
+| **HOLLAR**             | Over-collateralized stablecoin (\~\$1) | Hydration appchain   | Crypto collateral vaults | Liquidations, collateral ratios                 | Treasuries, traders, LPs  |
+| **Remote swaps**       | Cross-chain swap + deliver             | Hydration UI via XCM | App routes to end chain  | XCM composition by reserve/destination          | End-users, wallets        |
+
+(Details sourced from Hydration docs.)
+
+## HDX Token: The Governance Engine of Hydration DAO
+
+**HDX** is Hydration’s native governance and incentive token: holding HDX grants you voting power in the **Hydration DAO**, which decides on protocol changes—including whether a project’s asset is listed in the Omnipool via public referenda of HDX holders. Beyond governance, HDX helps align behavior across the appchain by **redistributing protocol revenue** to participants who take beneficial actions (e.g., liquidity provision or other DAO-defined activities), reinforcing sustainable liquidity and risk management. Historically, HDX distribution included an LBP phase with **xHDX** claims, and the token has continued to anchor the project’s evolution from **HydraDX** to **Hydration** under on-chain mandates.
+
+## Mini-guide: DOT → USDT on Asset Hub via Hydration
+
+**Goal:** End with **USDT on Asset Hub** starting from **DOT**.
+
+1. **Connect wallet** to Hydration App (e.g., Talisman/Polkadot.js/Nova).
+2. **Choose source asset & origin**: DOT (Relay Chain).
+3. **Choose destination asset & chain**: USDT (Asset Hub).
+4. **Review route & fees**: The UI composes a **remote swap** that trades DOT and delivers USDT to Asset Hub in one flow.
+5. **Sign once**: Approve the batched XCM.
+6. **Verify settlement** on Asset Hub (explorer/wallet).
+
+> Tip: If you’re moving from CEX → Asset Hub → Hydration, you can also use the **Cross-Chain** page in Hydration’s app and supported wallets (e.g., Talisman, Nova).
+
+## Practical example: Treasury DCA & liquidity routing
+
+Public proposals have described using Hydration’s **rolling DCA** to diversify the Polkadot Treasury into **tBTC**, and then deploying liquidity back into the Omnipool to support ecosystem pairs. The workflow shows how treasuries can combine **DCA**, **Omnipool LP**, and **cross-chain settlement** in practice.
+
+## Common pitfalls & pro tips
+
+* **Reserve location matters:** XCM behavior depends on where an asset’s **reserve** lives (Relay Chain, Asset Hub, or a parachain). Hydration’s remote swaps handle this, but advanced users should still understand reserve chains to predict fees/weights.
+* **DAO listings ≠ automatic:** Tokens list in the Omnipool only after **Hydration DAO** approval through referenda—even if criteria are met. Plan lead time for governance.
+* **Stablecoin is collateralized:** **HOLLAR** is *not* algorithmic; treat it like a Maker-style crypto-backed stablecoin with collateral/liq. limits. Watch health factors when borrowing.
+* **Money-market risks:** Aave v3-derived designs are battle-tested but not risk-free. Monitor interest rate spikes, collateral factors, and liquidation thresholds.
+* **Cross-chain fees & confirmations:** Remote swaps abstract XCM, but you still incur **execution fees** and should verify final balances on the destination chain.
+
+## FAQs
+
+**1) What’s the simplest mental model for Hydration?**
+A **DeFi hub** on Polkadot that merges **trading**, **lending**, and a **stablecoin** under one chain and UI.
+
+**2) How is the Omnipool different from standard DEX pools?**
+It’s a **single multi-asset pool** (not fragmented pairs), so most routes are internal, improving efficiency and depth.
+
+**3) Is HOLLAR algorithmic?**
+No. It is **over-collateralized** and minted against crypto collateral with liquidations.
+
+**4) What powers Hydration’s lending?**
+A fork of **Aave v3** with risk parameters and interest rate models suited to Hydration’s asset set.
+
+**5) Can I end a swap on Asset Hub or another parachain?**
+Yes. The **remote swap** flow composes XCM so you receive the asset on the destination chain (e.g., USDT on Asset Hub).
+
+**6) Who decides which tokens list in the Omnipool?**
+**Hydration DAO** via on-chain referenda of **HDX** holders; listings can be declined even if guidelines are met.
+
+**7) Where does Asset Hub fit in?**
+Asset Hub is Polkadot’s system chain for issuing/holding assets and is a common landing zone for stablecoins like **USDT** in cross-chain flows.
+
+**8) Is this investment advice?**
+No. This is **educational** information about protocol mechanics and UX.
 
 ## Hydration Community Videos
 ------------
@@ -109,3 +161,56 @@ Hydration is redefining DeFi by merging innovation, security, and community-driv
       title: '⚠️100X UNDERVALUED ALTCOIN! YOU NEED TO SEE!🚨',
     },
   ]} />
+
+## Strategies: GDOT (GIGADOT) & GETH (GIGAETH)
+**Quick primer.**
+**GDOT** and **GETH** are Hydration “strategy tokens” that *bundle multiple yield sources into a single asset* while keeping exposure to **DOT** and **ETH**, respectively.
+
+* **GDOT** blends: DOT staking yield via **vDOT**, lending yield via **aDOT**, plus liquidity/trading incentives available on Hydration. It can also be used as **collateral** in Hydration Borrow.
+* **GETH** blends: ETH staking yield via **wstETH**, lending yield via **aETH**, and fees/incentives from the **wstETH–aETH** pool; it’s designed to be **collateralizable** and LP-able on Hydration.
+
+### Core plays (for power users & treasuries)
+
+* **Hold for composite yield.** Simply holding GDOT/GETH accrues the packaged yields from their underlying components—no active juggling across staking, lending, and LPs.
+* **Use as collateral; borrow stable liquidity.** Post GDOT/GETH as collateral in **Hydration Borrow** to draw **HOLLAR** (or other supported assets), funding operations or strategies *without selling* your DOT/ETH exposure. Monitor **health factor** and liquidation thresholds.
+* **LP & farm when incentives are attractive.** Supply GDOT/GETH liquidity (single-sided via Omnipool or configured pools) to capture trading fees and programmatic incentives when active.
+* **Route cross-chain outcomes.** After borrowing or swapping, use Hydration’s remote-swap UX to deliver assets (e.g., USDT) to **Asset Hub** or another parachain—reducing manual XCM steps.
+
+### Three practical strategy templates
+
+**1) “Set-and-sip” yield stack (no leverage)**
+
+* Acquire **GDOT** (for DOT exposure) or **GETH** (for ETH exposure).
+* Hold to auto-accrue the blended staking + lending + LP incentives; optionally allocate a small slice to LPs when APRs are attractive.
+* Rebalance quarterly; treat as a *consolidated yield sleeve* in a Polkadot treasury.
+
+**2) Collateralized HOLLAR runway (conservative)**
+
+* Deposit **GDOT** or **GETH** as **collateral** in Hydration Borrow.
+* Borrow **HOLLAR** against it to cover operating spend, market-making quotes, or controlled DCA into target assets.
+* Keep **HF ≥ 1.8–2.0** (illustrative) and set alerts; repay with operating flows or periodic swaps.
+
+**3) Yield-compounding loop (advanced, risk-on)**
+
+* For DOT: loop with **vDOT** exposure inside **GDOT**—post GDOT as collateral, borrow DOT/HOLLAR, re-enter GDOT or vDOT until marginal APR ≈ borrow cost + risk premium.
+* For ETH: similar loop using **GETH** collateral; note GETH’s stack (wstETH + aETH + pool fees) and watch pool peg dynamics.
+* This accelerates APY but tightens liquidation bands; model adverse moves and peg slippage before sizing.
+
+### Implementation notes & checkpoints
+
+* **Whitelists/params.** Confirm GDOT/GETH are **enabled as collateral** and check current LTVs, liquidation thresholds, and borrow APRs in-app before executing.
+* **ETH stack specifics.** The **wstETH–aETH** stableswap and **aETH** interest leg are integral to GETH’s blend; governance referenda configured these components (including peg update bounds) when enabling GIGAETH and related pools.
+* **Incentive windows.** Hydration has run **GIGAHydration** campaigns (e.g., extra **GDOT** farms) that temporarily boost returns—use, but don’t overfit your strategy to expiring boosts.
+
+### Risk & ops checklist (read before sizing)
+
+* **Composite risk.** GDOT/GETH inherit risk from all legs (staking derivatives, lending markets, LP pools) and smart-contract/governance changes. Size accordingly.
+* **Collateral health.** Borrowing against strategy tokens compounds volatility; keep buffers, set alerts, and understand **health factor** math.
+* **Peg/path dependencies.** GETH relies on **wstETH–aETH** mechanics; extreme market conditions can widen spreads or impact rebalance costs. Governance parameters (e.g., max peg update) exist but do not eliminate basis risk.
+* **Incentive decay.** Boost programs (e.g., GDOT farms) are transient; ensure your base carry still clears funding costs post-incentives.
+
+> **Heads-up:** Nothing here is investment advice. Treat GDOT/GETH as *tools* to package multiple yield streams; model worst-case scenarios (rate spikes, collateral haircuts, peg moves) before deploying treasury-scale capital.
+
+
+## Conclusion
+Hydration collapses DeFi complexity on Polkadot into one coherent hub: **Omnipool** for depth and routing, **lending** for capital efficiency, **HOLLAR** for a native, collateralized unit of account, and **remote swaps** to put the right asset on the right chain. For power users, treasuries, and DAOs, it’s a pragmatic way to trade, route, borrow, and settle across Polkadot with fewer steps.
