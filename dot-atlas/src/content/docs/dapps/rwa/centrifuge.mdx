@@ -19,14 +19,120 @@ hero:
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-The DeFi platform **Centrifuge amalgamates real-world assets (RWAs) with blockchain technology** to offer a unique approach toward liquidity and financing. Here are the key features and objectives:
-- **Tokenization of Real-World Assets**: Centrifuge enables users to tokenize real-world assets such as invoices, real estate, and royalties. These assets are represented as NFTs, making them usable in the DeFi ecosystem.
-- **Decentralized Protocol**: It operates on a decentralized network that ensures security, transparency, and innovation. Open protocols are maintained by developers to build financial applications.
-- **Integration with DeFi**: Through Tinlake, an application built on Ethereum, Centrifuge integrates RWAs with DeFi platforms. This setup allows for the extraction of liquidity and investment into RWAs.
-- **Yield Generation and Financing**: The platform opens new financing avenues for asset holders and provides pooling of tokenized assets and yield opportunities for DeFi investors.
-- **CFG Token**: Centrifuge’s native token, CFG, is used for governance, rewarding validators, and incentivizing network participation.
+## Centrifuge on Polkadot: The 2025 Guide to Tokenized RWAs, deRWA & V3
+Centrifuge brings real-world assets (RWAs) onchain with a compliance-aware, multichain stack. This expert guide explains how it works today (V3), what changed from Tinlake, how it fits into Polkadot, and how investors and issuers can use Centrifuge responsibly.
 
-**Centrifuge aims to bridge traditional finance with DeFi**, enabling real economic activity on the blockchain while addressing regulatory compliance and sector adoption. Developed within the Polkadot ecosystem, it enhances its capabilities for interoperability and potential to revolutionize finance.
+## Why Centrifuge matters now
+In 2025, tokenized treasuries, private credit, and fund products moved from pilots to meaningful AUM. Centrifuge sits at this inflection point, offering issuers and asset managers a compliance-aware path to tokenize capital markets instruments and route them into DeFi while preserving legal structure. With V3, Centrifuge emphasizes standardized vaults, portability across chains, and DeFi-ready wrappers so that tokenized assets can circulate wherever liquidity and risk management are best.
+
+## ELI5: Centrifuge in 30 seconds
+Centrifuge is like a **tokenization factory plus an investor portal**. Asset managers put real assets (e.g., invoices, real estate, treasuries) into legally structured pools. The protocol mints onchain representations, handles investor flows (including KYC where required), and lets those assets plug into DeFi apps. The outcome: real-world yield with onchain rails and better composability.
+
+## What is Centrifuge?
+Centrifuge began as a Polkadot/Substrate parachain focused on RWA tokenization and evolved into a **multichain, EVM-native architecture (V3)**. Legacy **Tinlake** on Ethereum pioneered NFT-backed pools with senior/junior tranches (DROP/TIN). The modern stack standardizes vault behavior, improves portability across chains, and introduces wrappers designed for DeFi integrations.
+
+## How Centrifuge works (V3)
+### Pools, vaults & standards (ERC-4626 / ERC-7540)
+* **Pools**: Legally structured portfolios (often via SPVs) that define mandate, fees, liquidity terms, and investor eligibility.
+* **Vault types**:
+  * **ERC-4626 (synchronous)**: Instant share minting on deposit; scheduled redemption windows.
+  * **ERC-7540 (asynchronous)**: Two-step request/claim flows for both deposits and redemptions, aligning onchain actions with off-chain settlement cycles.
+* **Why it matters**: Vault type determines liquidity expectations, NAV update cadence, and operational timelines for cash flows.
+
+### deRWA tokens & composability
+**deRWA** wrappers make institution-grade assets more portable. Pools can expose positions as freely transferable tokens designed to integrate with DEXs, money markets, and structured product protocols, while upstream compliance and investor gating remain at the pool level.
+
+### Multichain operations
+V3 supports deployment on multiple EVM chains and cross-chain messaging to move representations where liquidity or integrations are best. This improves market access (issuers can meet investors where they are) and unlocks secondary use cases like collateralization, hedging, and structured yield—subject to the destination protocol’s risk controls.
+
+## Centrifuge & Polkadot: the 2025 relationship
+Centrifuge’s roots are in **Polkadot**, leveraging Substrate to tailor an RWA-first chain and ecosystem integrations. As the RWA category matured, Centrifuge prioritized **multichain EVM deployments** for broader liquidity and developer surface area. This is complementary to Polkadot’s roadmap as **Asset Hub** expands programmability (including EVM support), making Centrifuge’s RWA components deployable wherever the compliance model and liquidity justify it.
+
+## CFG token & governance
+**CFG** is the native governance token of the Centrifuge protocol. Governance responsibilities have been transitioning from the legacy chain context toward governance mechanisms compatible with the multichain EVM model. Holders should track proposals concerning:
+
+* Protocol upgrades and vault standard parameters
+* Onboarding processes for new pools/issuers
+* Treasury and incentive designs to support integrations and audits
+
+*Note:* Always consult the latest governance documents and proposals before making decisions; processes and venues can evolve.
+
+## Who Centrifuge is for
+* **Asset managers & fund issuers**: Launch tokenized funds or credit pools with clear mandates, reporting, and redemption schedules.
+* **Institutions & DeFi allocators**: Access onchain exposures to treasuries, private credit, real estate-backed strategies, and more, with standard vault semantics.
+* **Builders & DeFi protocols**: Integrate deRWA tokens into DEXs, lending markets, structured products, and cross-chain routers to expand collateral options.
+
+## RWA landscape: where Centrifuge fits (comparison)
+| Protocol         | Primary focus                                 | Typical chains | Tokenization model                                  | Investor access                   | DeFi composability               | Example product                         |
+| ---------------- | --------------------------------------------- | -------------- | --------------------------------------------------- | --------------------------------- | -------------------------------- | --------------------------------------- |
+| **Centrifuge**   | Fund/credit pools; deRWA wrappers             | Multichain EVM | Pools & vaults (ERC-4626/7540) + deRWA              | KYC-gated per pool; institutional | High (designed for integrations) | Tokenized T-Bills/funds; private credit |
+| **Ondo Finance** | Tokenized treasuries & funds                  | Ethereum + EVM | Tokenized fund shares                               | Qualified for some products       | Medium-high                      | Short-duration U.S. treasuries shares   |
+| **Maple**        | Institutional credit marketplaces             | Ethereum + EVM | Onchain lending pools                               | Institutional lenders             | Medium                           | Credit pools (KYC borrowers)            |
+| **Goldfinch**    | Private credit via under-collateralized loans | Ethereum       | Protocol-native underwriting + off-chain collateral | KYC for certain tranches/regions  | Medium                           | Senior/Junior vaults                    |
+| **Backed**       | Tokenized securities/indices                  | EVM            | Fully backed tokens via licensed custodians         | Qualified/whitelisted holders     | Medium                           | Tokenized trackers/indices              |
+
+*This table is illustrative, focusing on product shape, not endorsements.*
+
+## Mini-guide: investing in a Centrifuge pool
+1. **Check eligibility & docs**
+   Confirm jurisdiction and investor type (many pools require KYC). Review mandate, fees, and redemption schedules. Identify whether the vault is **ERC-4626** (synchronous) or **ERC-7540** (asynchronous).
+
+2. **Complete KYC/whitelisting**
+   Follow the issuer’s onboarding flow (identity verification and accreditation where required). Expect standard disclosures and risk acknowledgments.
+
+3. **Connect wallet & select asset**
+   Choose the target chain and deposit asset (e.g., stablecoins). Approve contracts and confirm the deposit transaction.
+
+4. **Understand liquidity windows**
+   * **ERC-4626**: Deposits are usually instant; redemptions align to periodic windows.
+   * **ERC-7540**: Expect a two-phase request/claim cycle for both deposit and redemption.
+
+5. **Monitor NAV & reports**
+   Track portfolio updates, utilization, delinquency metrics (for credit pools), and the timing of upcoming windows.
+
+## Practical example
+**Goal:** Allocate USDC to short-duration treasury exposure via a Centrifuge pool, then use the position in DeFi.
+
+* **A. Onboard:** Complete KYC and wallet whitelisting; verify the operating chain.
+* **B. Allocate:** Deposit USDC; receive shares or a deRWA wrapper depending on the pool’s interface.
+* **C. Compose:** Where supported, bring the token into a money market or DEX to borrow, hedge, or rebalance—subject to each venue’s risk parameters and liquidity.
+
+## Common pitfalls & tips
+* **Redemption assumptions:** Asynchronous (ERC-7540) vaults require patience—plan around request/claim windows rather than expecting instant exits.
+* **Eligibility drift:** Pool eligibility can change (mandate updates, jurisdictional shifts). Confirm status before topping up.
+* **NAV vs. market pricing:** Understand how share price tracks NAV, fees, and realization schedules—especially in credit strategies with payment cycles.
+* **Chain and router risk:** Cross-chain portability is powerful but introduces additional risk surfaces. Prefer official interfaces and audited deployments.
+* **Regulatory reality:** Tokenized securities remain securities; your obligations do not disappear onchain. Consult offering materials and local rules.
+
+## FAQs
+**1) Is Centrifuge still a Polkadot parachain?**
+Centrifuge originated on Polkadot/Substrate. In 2025 it introduced an EVM-first, multichain architecture while maintaining compatibility with Polkadot’s direction (e.g., Asset Hub programmability).
+
+**2) What are deRWA tokens?**
+Wrappers that make institution-grade assets transferable and DeFi-compatible while compliance is enforced upstream at the pool level.
+
+**3) How do vault standards affect me?**
+**ERC-4626** offers instant deposits with scheduled redemption windows; **ERC-7540** uses request/claim cycles. Liquidity planning depends on which standard your pool uses.
+
+**4) What changed from Tinlake?**
+Tinlake pioneered NFT-collateralized pools with DROP/TIN tranches. V3 standardizes vaults, expands multichain operations, and emphasizes composability via deRWA.
+
+**5) Who approves new pools?**
+Issuers typically submit onboarding proposals for community and governance review, including mandate, risk, reporting, and operational details.
+
+**6) Can I use my position as collateral elsewhere?**
+Yes—where integrations exist. Availability and parameters vary by chain and venue.
+
+**7) What does CFG do now?**
+CFG governs protocol decisions and incentives. Governance venues and processes are evolving alongside the multichain architecture.
+
+**8) Is this investment advice?**
+No. RWAs involve legal, operational, and market risks. Review offering documents and comply with local regulations.
+
+## Conclusion
+Centrifuge’s journey—from Polkadot-native chain to a multichain EVM protocol with deRWA—demonstrates how RWAs can be both **compliant** and **composable**. If you’re an issuer, it’s a credible path to launch tokenized funds or credit at scale. If you’re an allocator, it’s a way to access real-world yield with onchain efficiency—provided you understand vault mechanics, eligibility, and redemption timelines.
+
+
 
 ## Centrifuge Community Videos
 ------------
