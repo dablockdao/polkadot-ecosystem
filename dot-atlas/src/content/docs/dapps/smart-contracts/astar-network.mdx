@@ -17,58 +17,107 @@ hero:
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-Astar Network is a blockchain platform built on Polkadot, aiming to become the premier destination for decentralized applications (dApps). **It supports both Ethereum Virtual Machine (EVM) and WebAssembly (Wasm) environments**, enabling developers to leverage the strengths of both paradigms.
+## Astar Network in 2025: Polkadot’s smart-contract hub evolving into a multichain collective
+Astar Network has matured from a Polkadot smart-contract parachain into a multichain “collective” with a sharper focus: fast execution on Polkadot, sustainable economics, and a unified ASTR token that now operates across chains (including Soneium) via standards like Chainlink CCIP and ERC-7802. Along the way, Astar transitioned to Polkadot’s Agile Coretime, activated Asynchronous Backing (\~6s blocks), sunset its zkEVM, and doubled down on dApp Staking—streamlining how builders get funded and how users earn.
 
-# Key Features of Astar Network
-- **Interoperability:** Astar Network boasts a unique interoperability framework that allows dApps to interact with each other seamlessly across different blockchains within the Polkadot ecosystem. This fosters innovation and collaboration among developers.
-- **dApp Staking:** Astar’s innovative dApp Staking mechanism incentivizes developers by allowing token holders to stake their ASTR tokens on their preferred dApps. This not only rewards developers for building valuable applications but also fuels the growth of the Astar ecosystem.
-- **Scalability:** Unlike traditional blockchains, Astar Network overcomes scalability limitations. It utilizes a sharded architecture, efficiently processing a high volume of transactions without compromising security.
-- **Security:** Astar Network leverages the shared security of Polkadot, ensuring a robust and reliable environment for dApps.
+## What is Astar Network?
+Astar is a Polkadot parachain purpose-built for smart contracts (EVM **and** Wasm/ink!), with native features like dApp Staking and forkless governance upgrades. It runs as an application chain secured by the Polkadot Relay Chain while offering an Ethereum-compatible EVM plus a Wasm runtime for ink! contracts.
 
-## Astar Token (ASTR)
-ASTR is the native token of Astar Network and serves three primary functions:
-- **Staking:** ASTR holders can stake their tokens on dApps to earn rewards and support the projects they believe in.
-- **Transactions:** Every transaction on the Astar Network requires a fee, paid in ASTR. A portion of these fees is burned, while the remainder is distributed to network validators.
-- **Governance:** ASTR token holders participate in on-chain governance, shaping the future of Astar Network through voting on critical proposals.
+In 2025, Astar’s evolution has two pillars:
 
-## dApp Staking Explained
-dApp Staking is a cornerstone of the Astar Network ecosystem. It provides a win-win situation for all stakeholders:
-- **Developers:** Earn a basic income through staked ASTR tokens, allowing them to focus on building innovative dApps.
-- **Stakers:** Earn rewards by supporting their favorite dApps and contributing to the network’s growth.  
-  dApps: Gain access to a larger user base and attract investment through increased visibility and user participation.
-- **dApp Staking V3:** The latest version of dApp Staking introduces a more granular reward system with tiers based on the total value staked on a dApp. This incentivizes competition and ensures fair distribution of rewards.
+1. **Operate efficiently on Polkadot** — Astar adopted **Agile Coretime** (pay-as-you-go blockspace) and **Asynchronous Backing** (faster blocks) to improve performance and cost.
+2. **Extend ASTR across chains** — Astar implemented **Chainlink CCIP** and **ERC-7802 SuperchainERC20** so ASTR can move between Astar and Soneium and, over time, other OP-Stack chains.
 
-## Participating in Astar Network
-Astar offers various ways to get involved in its ecosystem:
-- **Stakers:** ASTR holders can stake their tokens on the Astar Portal to support dApps and earn rewards.
-- **Developers:** Developers can build dApps on Astar Network, taking advantage of its unique features and dApp Staking incentives.
-- **Users:** Users can interact with a wide range of dApps built on Astar Network, enjoying a secure and interoperable experience.
+## Quick ELI5
+Think of Polkadot as a secure highway (Relay Chain) and Astar as a fast lane on that highway where apps run. In 2025, Astar bought a flexible **toll plan** (Agile Coretime) instead of renting a full lane for years, and upgraded its cars to go **twice as fast** (Asynchronous Backing \~6s blocks). Its ASTR “ticket” now works in another city (Soneium) thanks to a **universal turnstile** (CCIP + ERC-7802), and builders get paid when people support their apps (**dApp Staking**).
 
-## A Deep Dive into Astar Network’s Family of Networks
-Before diving into development on Astar Network, choosing the right network is crucial. Astar offers a variety of options catering to different needs, from isolated development environments to live testing grounds. Let’s explore each network in detail:
+## Key 2025 updates at a glance
+* **Agile Coretime live (Aug 2025):** Astar moved from long, prepaid slot leases to 28-day, flexible reservations, handled on-chain with auto-renewals via governance and an operations committee.
+* **Asynchronous Backing on mainnet (Jun 2025):** block time reduced roughly **12s → \~6s**; emissions per block adjusted so **annual inflation remains stable**.
+* **Astar zkEVM sunset (Mar 31, 2025):** access disabled; migration guidance was provided ahead of shutdown.
+* **ASTR as a cross-chain asset (Jun 2025):** CCIP + ERC-7802 enable seamless movement of ASTR between Astar and Soneium (and broader Superchain over time).
+* **dApp Staking v3** continues to fund builders and reward stakers with improved UX and documentation.
 
-#### Local Networks:
-- **Substrate Node:** Ideal for those comfortable with code. You can either build the local node from source or use a pre-built binary. This offers complete control but requires some technical expertise.
-- **Swanky Node:** Designed for Wasm smart contract development. This pre-configured Substrate node streamlines the local development process.
-- **Zombienet:** Perfect for testing scenarios with full control. Zombienet allows you to download and configure a local test network with a customizable Relay Chain and parachains. This is great for simulating complex interactions.
+## Architecture & execution environments
+Astar provides **two** programmable environments:
 
-#### Testnets:
-- **Shibuya (Substrate):** The closest mirror to Astar’s mainnet. Shibuya operates as a parachain on the internal Tokio Relay Chain, providing a real-world testing environment for developers. It uses the SBY token, obtainable from the Astar Portal faucet.
-- **zKyoto (Sepolia):** While deprecated, it’s worth mentioning for historical context. zKyoto was an early zkEVM testnet utilizing zk rollup technology.
+* **EVM:** deploy Solidity contracts with familiar tooling (Hardhat/Foundry, MetaMask).
+* **Wasm/ink!:** Rust-based smart contracts compiled to Wasm for efficiency and safety.
 
-#### Mainnets:
-- **Shiden Parachain (Substrate):** A live “canary network” connected to Kusama. Shiden serves as a proving ground for new Astar runtime features before deployment on the mainnet. It has its own tokenomics with the SDN token.
-- **Astar Parachain (Substrate):** The heart of the Astar ecosystem, connected to the Polkadot Relay Chain. This is where real-world dApps are deployed and the ASTR token is used.
-- **Astar zkEVM:** A Layer 2 scaling solution built on top of Ethereum. This Validium-based network leverages Polygon AggLayer, offering scalability and security benefits to Ethereum dApps.
+This dual-VM design lets teams choose the right tool—or even mix both—while relying on Polkadot for shared security and XCM for cross-chain messaging.
 
-## Choosing the Right Network:
-- **Local Networks:** Use these for initial development and testing in a controlled environment.
-- **Shibuya Testnet:** Perfect for simulating real-world conditions before deploying to a mainnet.
-- **Shiden Parachain:** Ideal for testing new features and functionalities before pushing them to the Astar mainnet.
-- **Astar Parachain:** This is where your dApp goes live for the world to use.
-- **Astar zkEVM:** Utilize this for Ethereum dApps seeking faster transaction processing and lower fees.
+## Token & economics (ASTR)
+Astar’s economics are tuned for **sustainability** rather than headline APRs. In 2025, Astar detailed dynamic tokenomics targeting modest, predictable inflation with emissions that adapt to network conditions (e.g., staking participation) and mechanisms like fee burning. Governance changes rebalanced base staker rewards and stabilized dApp Staking yields.
 
-By understanding the distinct functionalities of each network, you can select the most suitable environment for your development needs within the Astar ecosystem.
+Community discussions in mid-2025 introduced proposals to **cap** total ASTR supply over time—an active governance topic to track if supply caps matter to your thesis.
+
+> **Disclaimer:** This section is informational, not investment advice. Token parameters can evolve through governance.
+
+## dApp Staking: how builders and users both win
+**dApp Staking** routes a portion of network emissions to **projects** that the community stakes on, so builders receive continuous funding while stakers earn rewards for backing real usage.
+
+At a glance:
+* **For builders:** “Build2Earn” style rewards tied to community support; reduces VC dependence.
+* **For users:** stake ASTR on apps you believe in and earn; signals demand to the network.
+* **For Astar:** funding concentrates on useful apps, improving ecosystem quality over time.
+
+## Interoperability & the ASTR cross-chain strategy
+In 2025, Astar deployed an ASTR contract compatible with **Chainlink CCIP** and **ERC-7802 (SuperchainERC20)**, enabling canonical mint/burn flows and standardized cross-chain accounting between Astar and **Soneium** (an OP-Stack L2). This avoids liquidity fragmentation and sets ASTR up to interoperate across the OP Superchain as those standards mature.
+
+Astar’s broader thesis: **stay performant on Polkadot** while **extending ASTR** into ecosystems where entertainment and consumer apps can flourish—Soneium today, additional OP-Stack networks tomorrow.
+
+## How it works: execution, scaling, and upgrades
+* **Agile Coretime (Polkadot):** A pay-as-you-go execution model with 28-day cycles replaces fixed parachain leases. Astar automated Coretime renewals via on-chain governance and set up DOT reserves to avoid downtime.
+* **Asynchronous Backing:** Parallelizes block production/validation, **\~6s** blocks on Astar, higher throughput, no change to annual issuance (emissions per block adjusted).
+* **Governance:** Upgrades and economic tweaks (e.g., tokenomics rebalancing) occur transparently via OpenGov and Astar-specific forums.
+* **Smart contracts:** Builders can target EVM or Wasm/ink! and use XCM for cross-chain asset/message flows across Polkadot (e.g., via Asset Hub).
+
+## Feature comparison (Astar components)
+| Component                | What it is                                           | Who it’s for                           | Key benefits                                                | Caveats / notes                                                   |
+| ------------------------ | ---------------------------------------------------- | -------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------- |
+| **Astar EVM**            | Ethereum-compatible runtime on Astar                 | Solidity teams, EVM tooling            | Familiar stack; Polkadot security; XCM access               | Mind chain-specific gas/nonce UX; test thoroughly across bridges. |
+| **Wasm/ink!**            | Rust-to-Wasm smart contracts                         | Rust teams; safety/perf sensitive apps | Fine-grained control, efficiency; future-proof              | Different tooling & audit practices vs EVM.                       |
+| **dApp Staking v3**      | Builder funding + staker rewards                     | Developers & ASTR holders              | Aligns incentives; ongoing emissions; governance visibility | Rewards fluctuate with parameters and participation.              |
+| **Agile Coretime**       | Flexible execution reservations                      | Protocol ops; infra teams              | Lower overhead; dynamic scaling; no long leases             | Requires treasury/DOT management; governance setup.               |
+| **Asynchronous Backing** | Faster inclusion pipeline                            | Everyone                               | \~6s blocks; higher throughput; smoother UX                 | Off-chain systems may need to update block-time assumptions.      |
+| **ASTR CCIP + ERC-7802** | Cross-chain ASTR (Astar ↔ Soneium; Superchain-ready) | Apps needing multi-chain liquidity     | Canonical mint/burn; fewer wraps; standard events           | Bridge dependencies; monitor standards maturity.                  |
+
+## Mini-guide: staking ASTR on dApp Staking v3
+1. **Open the Astar Portal → dApp Staking.** Ensure you’re on **Astar Network (Polkadot mainnet)**.
+2. **Discover dApps.** Review projects, docs, and activity before backing.
+3. **Vote & Stake.** Choose a dApp, enter the amount, confirm, and sign. Unclaimed rewards (if any) are claimed automatically on stake.
+4. **Monitor & rebalance.** Periodically check rewards and consider diversifying across multiple dApps.
+
+*Tip:* Read the latest v3 user guide for detailed flows (moving stakes, unstaking, claiming).
+
+## Common pitfalls & tips
+* **Assuming 12s blocks:** Update bots/analytics to **\~6s** block times post-Asynchronous Backing.
+* **Ignoring governance changes:** Tokenomics parameters can adjust; follow official announcements to avoid outdated APR assumptions.
+* **Using the deprecated zkEVM:** It was **sunset March 31, 2025**. Do not deploy or bridge there.
+* **Bridging blind:** Prefer canonical routes (e.g., CCIP for ASTR) and verify destination chain support (such as Soneium).
+* **One-stack thinking:** Consider when EVM vs Wasm is the right tool; Astar supports both.
+
+## FAQ
+**Is Astar still a Polkadot parachain after Agile Coretime?**
+Yes—Agile Coretime **replaces** long-term slot leases with flexible 28-day reservations; Astar continues operating on Polkadot with on-chain governance handling renewals.
+
+**What happened to Astar zkEVM?**
+The Astar zkEVM was **deprecated on March 31, 2025**; access was disabled and users were instructed to withdraw/migrate before shutdown.
+
+**How fast is Astar now?**
+With Asynchronous Backing, Astar targets \~**6-second** blocks (down from \~12s) and higher throughput; per-block emissions were adjusted to keep annual issuance stable.
+
+**How does dApp Staking v3 fund builders?**
+Stakers allocate ASTR to chosen projects; emissions route rewards to those builders while stakers also earn—aligning funding with usage.
+
+**Can ASTR move between Astar and Soneium?**
+Yes. Astar implemented **CCIP** and **ERC-7802** to enable canonical mint/burn and standardized cross-chain transfers, starting with Soneium.
+
+**Where do I track future governance/economic changes?**
+Follow the official blog and forum for OpenGov proposals, tokenomics updates, and technical upgrades.
+
+## Conclusion
+Astar’s 2025 pivot is pragmatic: **faster blocks, flexible blockspace, stable funding, and a cross-chain ASTR.** For builders, that’s a realistic path to ship—EVM or Wasm—without sacrificing reach. For communities, it’s a way to back what matters and see it funded continuously.
 
 ### Additional Resources:
 - [Astar Network Website](https://astar.network/)
