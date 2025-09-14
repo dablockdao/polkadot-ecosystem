@@ -1,8 +1,6 @@
 ---
 title: Chainflip
 description: Discover Chainflip’s decentralized protocol for seamless, efficient cross-chain swaps with accurate pricing and minimal slippage. Revolutionize crypto trading.
-sidebar: 
-    order: 7
 hero:
   tagline: Cross-chain swaps with accurate pricing and minimal slippage.
   image: 

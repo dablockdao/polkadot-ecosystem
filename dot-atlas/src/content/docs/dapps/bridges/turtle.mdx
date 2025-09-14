@@ -1,6 +1,6 @@
 ---
 title: Turtle
-description: 2025 Turtle for Polkadot: trustless Snowbridge and XCM transfers, alternatives, and step-by-step Ethereum→Asset Hub USDC bridging.
+description: UI for trustless Snowbridge and XCM transfers, alternatives, and step-by-step Ethereum→Asset Hub USDC bridging.
 hero:
   tagline: The Unified Bridge UI. 
   image: 
@@ -21,7 +21,7 @@ This expert guide explains what the Turtle app is, how it uses **Snowbridge** (E
 ## What is Turtle (in one minute)
 **Turtle** is a unified UI for moving tokens across Polkadot and Ethereum. It’s built by **Velocity Labs** and sits on top of **trustless** protocols—**Snowbridge** for Ethereum↔Polkadot and **XCM/XCMP** for parachain↔parachain—to provide a single, simple transfer experience.
 
-Turtle **v2** added native **XCM** support alongside Snowbridge transfers so users can route assets directly to popular parachains in one flow.
+Turtle **v2** added native **XCM** support alongside Snowbridge trnansfers so users can route assets directly to popular parachains in one flow.
 
 Snowbridge itself is Polkadot’s **trustless** Ethereum bridge (no multisig), connected via Bridge Hub, and Turtle can act as its UI—including showing transfer-time estimates.
 
@@ -33,12 +33,11 @@ Snowbridge itself is Polkadot’s **trustless** Ethereum bridge (no multisig), c
 ## How the Turtle app works
 **Stack & security.** Turtle orchestrates transfers across:
 * **Snowbridge** for Ethereum ↔ Polkadot (trustless, Bridge Hub–connected)
-* **XCM/XCMP** for intra-Polkadot routing
-  All while surfacing **ETA** for transfers and simplifying wallet steps.
+* **XCM/XCMP** for intra-Polkadot routing. All while surfacing **ETA** for transfers and simplifying wallet steps.
 
 **What you can transfer.** Users commonly move **ETH, DOT, USDC, USDT**, and more, depending on integrations.
 
-**Time & costs.** End-to-end Snowbridge transfers typically wait on **Ethereum finality**, often on the order of \~20–45 minutes (varies with network conditions and gas). This is a protocol-level constraint, not a UI choice.
+**Time & costs.** End-to-end Snowbridge transfers typically wait on **Ethereum finality**, often on the order of 20–45 minutes (varies with network conditions and gas). This is a protocol-level constraint, not a UI choice.
 
 **Asset semantics (important!).**
 * **Bridged tokens from different bridges are not interchangeable by default.** E.g., USDC bridged via Snowbridge is **not** the same asset as USDC bridged via another bridge. Using multiple bridges can strand liquidity.
@@ -76,7 +75,7 @@ Use **Chainflip** when you want a **swap** (not a bridge) between Polkadot nativ
    * **From:** Ethereum Mainnet — **USDC** (USDC on ETH).
    * **To:** **Polkadot Asset Hub** (destination account you control). Turtle will route via **Snowbridge**.
 4. **Review the details:**
-   * **Estimated time:** often **\~20–45 minutes** depending on Ethereum finality and gas.
+   * **Estimated time:** often **20–45 minutes** depending on Ethereum finality and gas.
    * **Fees:** ETH gas on the send leg; minor fees on Asset Hub receipt.
 5. **Approve & Bridge:** Sign the **ERC-20 approval** (first time) and the **bridge tx**. Keep your wallet open until confirmations finish.
 6. **Verify on receipt:** After finality, you’ll receive **Snowbridge-wrapped USDC** on Asset Hub (distinct from **native USDC** issued by Circle). Check your balance in a compatible explorer/wallet.
@@ -91,7 +90,6 @@ Use **Chainflip** when you want a **swap** (not a bridge) between Polkadot nativ
 * **Destination chain fees.** If you route via XCM to a parachain, make sure you have the **right fee token** there (Hydration “remote swap” can help acquire fees atomically).
 * **Native vs bridged USDC.** Decide **before** moving funds which variant you need for your target protocol. Native USDC is issued by Circle on Asset Hub; bridged USDC comes via Snowbridge.
 
-
 ## FAQs
 **1) Is Turtle custodial?**
 No. It’s a **UI** that routes through **Snowbridge** (trustless) and **XCM/XCMP**. Custody remains in your wallets; proofs are verified on-chain.
@@ -100,7 +98,7 @@ No. It’s a **UI** that routes through **Snowbridge** (trustless) and **XCM/XCM
 Ethereum ↔ Polkadot via Snowbridge; intra-Polkadot routes via XCM. Common assets include **ETH, DOT, USDC, USDT**, and others as integrations expand.
 
 **3) How long do Snowbridge transfers take?**
-Typically **\~20–45 minutes**, driven by Ethereum finality and gas conditions.
+Typically **20–45 minutes**, driven by Ethereum finality and gas conditions.
 
 **4) Does Turtle show time estimates?**
 Yes—Snowbridge can be accessed via Turtle, which **shows transfer time estimates**.
