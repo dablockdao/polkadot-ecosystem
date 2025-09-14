@@ -67,6 +67,112 @@ Crust Network employs an on-chain governance system using Substrate technology. 
 Crust Network is a robust and innovative solution for decentralized cloud storage, leveraging blockchain technology to create a secure, scalable, and economically sustainable infrastructure. By aligning the interests of all participants with the network’s growth and ensuring the security of its protocol, Crust Network stands out as a key player in the Polkadot ecosystem and the broader Web3 landscape.
 - <small>Related Token/s:</small> **GLMR**
 
+
+
+
+
+## Crust Network: the Polkadot-native decentralized cloud storage (2025 guide)
+Crust Network is a Substrate-based L1 that turns the IPFS storage layer into a programmable, incentivized market—secured by **GPoS** consensus, verified by **MPoW** (TEE-based storage proofs), and exposed to apps via gateways and on-chain storage orders. In 2024 Crust also won a Polkadot parachain slot (lease to May 2026), tightening its integration with the broader ecosystem.
+
+## Why this matters (search intent)
+Teams building on Polkadot (and beyond) need **durable, multi-replica storage** for app assets, game content, NFT media, and off-chain proofs—without running centralized pinning or wrestling with complex miner marketplaces. **Crust Network** provides a single place to **upload to IPFS, create on-chain storage orders (DSM),** and have **many nodes replicate** your content—**with Polkadot-native composability** via its parachain.
+
+## ELI5: What is Crust Network?
+Crust is a blockchain that **pays nodes to store your IPFS files** and proves that they’re actually storing them. It supports multiple storage protocols (like IPFS) and exposes simple interfaces so apps can order storage and retrieval—think **“IPFS + incentives + proofs + governance,”** wired into Polkadot.
+
+## How Crust works
+### MPoW: storage verification
+Crust’s **MPoW (Meaningful Proof of Work)** is a **TEE-backed** mechanism run by **sWorker** processes that attest to real storage. Nodes periodically report encrypted workload proofs; the chain uses these to meter storage and authorize rewards/quotas.
+
+### GPoS: consensus linked to storage
+Consensus is **GPoS (Guaranteed Proof of Stake)**—a PoS-derived design that **ties staking quota to storage proofs**: if you don’t store, your staking power shrinks. This aligns security, storage capacity, and economic incentives.
+
+### DSM: the decentralized storage market
+**DSM (Decentralized Storage Market)** is the on-chain marketplace where users place **storage orders** (list of CIDs). Crust nodes replicate and serve this data; DSM coordinates incentives for long-term storage and retrieval performance.
+
+## Architecture & components
+* **Crust mainnet (L1) + Crust Parachain (Polkadot):** In 2024 Crust won **Polkadot parachain auction #71** (lease **Jul 3, 2024 → May 8, 2026**). Orders can be initiated from the **Crust Parachain** and auto-converted into mainnet orders—a cleaner UX for Polkadot apps.
+* **IPFS W3Auth gateways & pinning:** Web3Auth-enabled gateways accept uploads, pin to IPFS, and create DSM orders on-chain. After nodes pull the data, gateways drop the cache.
+* **sWorker (TEE):** Each storage node runs an **SGX-based enclave** to attest storage, forming the foundation of MPoW. (Requires SGX-capable CPUs.)
+* **Tooling & docs:** “Crust Storage 101” provides the basic upload → pin → order flow; the overview and developer guides document the 3-layer stack (MPoW/GPoS/DSM) and IPFS focus.
+
+
+## CRU token utility & roles
+**CRU** is the network’s utility and governance token. Functions include **staking for GPoS**, **guarantees/collateral for nodes**, **fees**, **purchasing storage**, and **voting**. (Bridges exist to EVM for ERC-20 format, but mainnet CRU is canonical.)
+
+**Participant roles:**
+
+* **Validators:** produce blocks, stay online, stake CRU, and maintain resources. Rewards are shared; misbehavior is penalized.
+* **Candidates:** compete to join the validator set; can also provide storage.
+* **Guarantors:** delegate CRU to back specific nodes and share their rewards (with slash risk).
+* **Users:** pay for storage/retrieval via DSM, often through gateway integrations.
+
+> **Polkadot integration note:** In late 2024 Crust raised the **mainnet → Ethereum bridge fee** amid higher gas costs; if your ops rely on ERC-20 CRU, budget accordingly.
+
+## Crust vs Filecoin vs Arweave vs Storj
+Below is a pragmatic comparison of the dominant decentralized storage designs. Use it to decide fit by **data lifecycle** (permanent vs renewable), **chain composability**, **proof model**, and **ops complexity**.
+| Network           | Storage model                                                    | Proof/consensus                                                            | Retrieval & access                                                        | App-layer UX                                      | Polkadot alignment                                                 |
+| ----------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------ |
+| **Crust Network** | Renewable IPFS pinning with multi-replica incentives via **DSM** | **MPoW** (TEE/SGX storage attestations) + **GPoS** (stake tied to storage) | IPFS gateways (W3Auth), DSM incentivizes retrieval; multi-replica pinning | Simple: upload → on-chain order; good SDK/docs    | **Parachain**; orders from Crust Parachain → mainnet; XCM-friendly |
+| **Filecoin**      | Renewable contracts (“deals”) for data storage                   | **PoRep** + **PoSt** (zk-SNARK-compressed)                                 | IPFS/Filecoin gateways; retrieval markets                                 | Powerful but heavier ops (sealing, deal mgmt)     | Indirect (bridges exist); not Polkadot-native                      |
+| **Arweave**       | **Permanent storage** (one-time fee)                             | **Proof-of-Access / Blockweave**                                           | HTTP gateways; permaweb tooling                                           | Very simple for permanent data; cost upfront      | Not Polkadot-native; best for immutable assets                     |
+| **Storj**         | Renewable object storage (S3-like)                               | Client-side encryption + **erasure coding** over many nodes                | S3-compatible access; paid via STORJ                                      | Familiar cloud UX; strong multi-region durability | Not Polkadot-native; great for bulk objects                        |
+
+
+## Step-by-step: store a file with Crust
+1. **Prepare your asset** → image, JSON, video, or static build.
+2. **Upload to an IPFS W3Auth gateway** → sign in (Web3Auth), upload; get the **CID**. Gateway caches temporarily.
+3. **Place a DSM storage order** → your app (or the gateway) submits an **on-chain storage order** listing the CID(s).
+4. **Network replication** → Crust IPFS nodes pull your content and start serving it; sWorker/MPoW reports prove storage.
+5. **Retrieve from gateways / IPFS** → use any IPFS-compatible gateway (and pin to your own node if you run one).
+6. **Monitor** → track order status and replication; renew orders periodically if your use case requires ongoing pinning (unlike Arweave’s permanent model).
+
+## Practical example: pin an NFT collection
+* **Context:** You’re minting 10k NFTs on a Polkadot parachain and need resilient media + metadata.
+* **Workflow:**
+
+  1. Batch-upload `/images/*` and `/metadata/*.json` to a W3Auth gateway → record the **root CID**.
+  2. Submit a **DSM order** with the CID list (or root).
+  3. Store the CID in your NFT contract; fetch over a gateway at render time.
+  4. Rotate to multiple gateways / add your own IPFS node for extra resilience.
+
+
+## Common pitfalls & tips
+* **SGX hardware for node ops:** Running storage workers requires **Intel SGX**; ensure BIOS/CPU support before provisioning.
+* **Bridge fee awareness:** If you bridge CRU to Ethereum for treasury ops, note higher fees and volatile gas; keep operational CRU on mainnet if possible.
+* **Permanent vs renewable:** For **immutable/permanent** archives (e.g., governance records), compare Crust’s renewable orders vs **Arweave’s** one-time permanence.
+* **Deal hygiene:** For high-value assets, split large directories by thematic folders and pin both **leaf** and **root CIDs** to reduce single-CID blast radius on retrieval.
+* **Multichain app design:** If you build on Polkadot, initiating orders on the **Crust Parachain** simplifies UX and reduces cross-domain coordination.
+
+## FAQs
+**1) Is Crust a Polkadot parachain?**
+Yes. Crust won **Parachain Auction #71** with a lease running from **July 3, 2024 to May 8, 2026**.
+
+**2) Does Crust store files permanently?**
+Crust is optimized for **renewable, incentivized IPFS storage** via DSM. For **permanent** storage, evaluate Arweave’s one-time payment model.
+
+**3) What proofs does Crust use to verify storage?**
+**MPoW** leverages **Intel SGX** attestation via **sWorker** enclaves; reports feed into **GPoS**, which ties staking power to proven storage.
+
+**4) How does Crust compare to Filecoin?**
+Filecoin uses **Proof-of-Replication** and **Proof-of-Spacetime** (with zk-SNARK compression). Crust uses SGX-based MPoW with a lighter ops footprint for pinning-style workloads.
+
+**5) Can I start orders from within Polkadot?**
+Yes—**place-order** calls on the **Crust Parachain** are auto-converted into Crust mainnet orders.
+
+**6) What’s the role of CRU?**
+Staking for GPoS, guarantees/collateral, fees, purchasing storage, and governance participation.
+
+**7) Do I need to run my own IPFS node?**
+Not required. Gateways accept uploads and the network replicates. Running your own node can improve latency and sovereignty.
+
+**8) Is there a developer “hello world”?**
+Yes—intro guides show uploading to IPFS and creating DSM orders; gateways are HTTP-compatible.
+
+
+## Conclusion
+Crust Network is the **Polkadot-aligned** way to turn IPFS storage into a robust, verifiable, and economically sustainable service layer—**without** rolling your own pinning infrastructure. For builders and power users, the winning workflow is: **upload → DSM order → monitor**.
+
 ## Crust Network Community Videos
 ----------------
 <ShowcaseYouTube
