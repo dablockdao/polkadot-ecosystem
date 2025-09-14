@@ -20,55 +20,100 @@ import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, Showcase
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
 
-Ava Protocol (formerly Oak Network) is an innovative blockchain solution designed to enable seamless cross-chain automation. Built as an event-driven EigenLayer Active Validator Set (AVS), it provides developers with tools to schedule and automate any blockchain transaction. With its focus on Ethereum and Polkadot ecosystems, Ava Protocol offers intelligent automation, enhanced privacy, effortless composability, and significant cost savings, positioning itself as a transformative infrastructure for the Web3 ecosystem.
+## Ava Protocol: Private, Autonomous Cross-Chain Transactions for Polkadot & EVM
+Ava Protocol (formerly OAK Network) is an event-driven automation layer that lets builders ship **private, autonomous “super-transactions”** across chains. It combines an **EigenLayer AVS** security model with **TEE-backed confidentiality** and a no-code **Studio** for visual workflows—useful for DeFi, RWAs, DAOs, and AI agents with EVM endpoints and Polkadot ties.
 
-## Ava Protocol Key Features
-1. **Trustless Automation**: Ava Protocol facilitates decentralized, trustless automation, allowing users to define specific conditions (“if this”) and corresponding actions (“then that”) for executing transactions. This ensures reliability and precision in executing tasks without manual intervention.
-2. **Super-Transactions**: These are advanced automations that consolidate multiple smart contract interactions into a single autonomous transaction. Super-transactions simplify workflows, enabling developers to build efficient, automated processes triggered by predefined conditions such as time, price thresholds, or other on-chain events.
-3. **Enhanced Privacy and Security**: Leveraging advanced Maximal Extractable Value (MEV) protection mechanisms, Ava Protocol ensures that transactions are confidential and resistant to front-running or other malicious activities. This commitment to privacy is pivotal in safeguarding user assets and information.
-4. **Cost Efficiency**: Ava Protocol significantly reduces transaction costs through optimization techniques like off-chain computation. By streamlining processes, users can save up to 90% on gas fees, making blockchain interactions more accessible and affordable.
+## Why this matters (problem → benefit)
+**Problem:** Cross-chain ops are brittle. Teams stitch triggers, bots, relayers, and wallets; users leak alpha in the mempool; MEV risk grows with every hop.
+**Benefit:** Ava provides **event-driven execution** (time/price/state), **verifiable security** via an **EigenLayer AVS**, and **confidential automation** powered by TEEs—so complex, multi-step flows can run **autonomously and privately** across chains.
+## ELI5
+Think of Ava as a **smart robot assistant for your crypto**. You tell it: “*When price hits X or contract Y emits event Z, do these actions in order.*” It watches, decides, and **executes automatically**—and it can do so **privately** (hiding sensitive parameters) and **across multiple chains**.
 
-### Ava Protocol Supported Blockchains**
-Ava Protocol is compatible with both Ethereum and Polkadot, two of the most prominent blockchain ecosystems. It supports:
-- **EVM-Compatible Chains**: Ensures seamless integration with Ethereum-based applications.
-- **Substrate-Based Chains**: Enables advanced functionalities for Polkadot projects, including compatibility with Kusama and Rococo testnets.
+## What is Ava Protocol?
+Ava Protocol is an **Actively Validated Service (AVS)** built on **EigenLayer** that powers **autonomous smart-contract execution**—“super-transactions”—on EVM chains. The project **rebranded from OAK Network** to reflect a broader multi-chain vision. On top of the AVS, **Ava Protocol Studio** (a no-code builder) lets teams compose visual, event-driven workflows (triggers, branches, actions), deploy them to Ethereum/L2s, and monitor execution.
 
-This dual compatibility allows developers to leverage Ava Protocol’s capabilities across multiple blockchain environments, enhancing the interoperability and efficiency of their applications.
+## How Ava Protocol works
+### 1) EigenLayer-secured AVS
+* **Restaked ETH** and a decentralized **operator** set back the correctness of automations.
+* This provides a credibly neutral security layer and scale to EVMs and rollups.
 
-## Ava Protocol Core Components
-1. **Triggers**: Triggers define the conditions under which tasks are executed. Supported triggers include:
-   - **Time-Based**: Actions scheduled to occur at specific times or intervals.
-   - **XCMP Events**: Activation based on cross-chain message passing events.
-   - **On-Chain Events**: Triggered by specific blockchain occurrences.
-   - **Token Price**: Execution when a token reaches a predefined price threshold (currently in beta).
-   - **Numerical Data**: Activation based on specified numerical conditions (currently in beta).
-2. **Actions**: Actions are the operations performed when a trigger condition is met. Supported actions include:
-   - **Native Events**: Custom events executed on-chain.
-   - **Token Transfers**: Transfers of native tokens, KSM/DOT, or parachain tokens.
-   - **Cross-Chain Extrinsics**: Execution of transactions across multiple blockchains.
-   - **Restaking Rewards**: Automation of staking reward reinvestments.
+### 2) Event-driven execution (“super-transactions”)
+* Workflows fire on **time**, **price**, or **on-chain state** (oracle conditions, contract events, block intervals).
+* Actions can batch swaps, route liquidity, orchestrate treasury movements, or manage RWA lifecycles.
 
-## Ava Protocol Use Cases
-Ava Protocol’s versatile framework supports a wide range of use cases:
-- **DeFi Applications**: Automated stop-loss orders, stable-cost averaging, and recurring payments.
-- **Gaming and NFTs**: Simplified transactions for in-game assets and NFT minting.
-- **Staking Rewards**: Automatically compounding rewards for liquidity pools and money markets.
-- **Real-World Assets**: Streamlining tokenized asset management.
+### 3) Privacy & MEV mitigation
+* **Trusted Execution Environments (TEEs)** protect sensitive logic and parameters (e.g., trigger thresholds, amounts) during automation.
+* **Private transaction routing** mitigates mempool exposure to reduce frontrunning and sandwich risk.
 
-## Ava Protocol Integration and Accessibility
-Designed for ease of use, Ava Protocol’s infrastructure supports seamless integration with existing blockchain ecosystems. Its compatibility with EVM-compatible and Substrate-based chains ensures minimal disruption to current systems, allowing developers to enhance functionalities effortlessly.
+### 4) Agent-ready design
+* Ava targets **AI-native agents**: workflows can observe, decide, and act with **verifiable execution guarantees**, programmable **smart wallets** (ERC-4337/6900), and decentralized triggers.
 
-### Ava Protocol Technical Insights
-The protocol relies on robust data structures and advanced automation pallets to manage tasks. Each task comprises:
+## Ava Protocol & the Polkadot ecosystem
+* **Origins as OAK Network (Polkadot/Kusama):** OAK won a Polkadot parachain auction and operated **Turing** on Kusama to R\&D cross-chain automation.
+* **Rebrand & expansion:** In mid-2024, OAK → **Ava Protocol**, announcing an AVS on Ethereum while maintaining Polkadot roots and signaling future support paths (eventually JAM).
+* **2025 transitions:** **Turing** operations paused with a **conversion path** for legacy holders to **AP** (ERC-20) as Ava consolidated onto the AVS; statements in early 2025 indicated the Polkadot parachain had not yet launched.
+* **Builder implication:** Ava brings **automation know-how from Polkadot** plus **production security from EigenLayer**—a pragmatic choice for **Polkadot teams with EVM endpoints** (e.g., Moonbeam) and multi-chain products spanning EVM + Substrate.
 
-- **Account ID**: Identifies the user initiating the task.
-- **Trigger Data**: Specifies the conditions for execution.
-- **Action Data**: Defines the operation to perform upon trigger activation.
+## Key features
+* **Event-driven automation:** time, oracle price, on-chain events, conditional branches.
+* **Privacy & MEV defense:** TEE-backed confidentiality for logic/parameters + private submission to reduce leakage risks.
+* **EigenLayer AVS security:** decentralized operators backed by restaked ETH.
+* **No-code Studio:** visual canvas, templates, simulation, and dashboards.
+* **Agent-ready wallets:** ERC-4337/6900 for delegated, granular permissions.
+* **Composability:** EVM-first today; historical Substrate expertise; integrates with oracles, subgraphs, TEEs, and messaging layers.
 
-Tasks are stored on-chain and monitored continuously until conditions are met, ensuring reliability and transparency.
+## Where it fits vs Gelato & Chainlink
+| Tool                                 | Security Model                              | Trigger Types                      | Privacy / MEV Mitigation                         | Cross-Chain Focus                   | No-Code Builder                  |
+| ------------------------------------ | ------------------------------------------- | ---------------------------------- | ------------------------------------------------ | ----------------------------------- | -------------------------------- |
+| **Ava Protocol**                     | **EigenLayer AVS** (restaked ETH operators) | Time/price/state, branching        | **TEE-backed confidentiality** + private routing | EVM mainnet & L2s; Polkadot lineage | **Studio** (visual workflows)    |
+| **Gelato Automate / Web3 Functions** | Decentralized executor network              | Time/cron/state, off-chain compute | Private routes available; not TEE-native         | Broad EVM coverage                  | Cloud & code-first (SDKs)        |
+| **Chainlink Automation (Keepers)**   | Chainlink DON operators                     | Time/cron/state checks             | Reliability-first; no native TEE privacy         | Broad EVM coverage                  | Dev-centric registries & tooling |
 
-### Conclusion
-Ava Protocol represents a significant leap in blockchain automation, providing developers with the tools to build efficient, secure, and cost-effective solutions. Its emphasis on privacy, interoperability, and ease of integration makes it a valuable asset for the Web3 ecosystem. By addressing the challenges of manual processes and high costs, Ava Protocol unlocks new possibilities for decentralized applications across industries.
+> Note: **OpenZeppelin Defender** automation is slated for sunset (no new sign-ups; deprecation timeline announced), nudging teams to alternatives like Ava, Gelato, and Chainlink.
+
+
+## Step-by-step: Build a private cross-chain stop-loss
+**Goal:** If **wETH** drops below a threshold, **swap to USDC** on an L2 **without leaking** your trigger/size.
+1. **Open Ava Protocol Studio** and connect your wallet. Start from the **Stop-Loss** template or a blank canvas.
+2. **Trigger:** Add a **block-interval** or **time** trigger (e.g., every 3 minutes).
+3. **Oracle read:** Pull the ETH/USDC price feed; add a **branch** to continue when price ≤ target.
+4. **Action:** Call the DEX (e.g., Uniswap V3) with slippage guard; set **max gas**, **deadline**, and recipient.
+5. **Privacy:** Enable **private routing** to avoid mempool exposure; ensure **TEE privacy** is on for parameters (if your flow uses confidential branches).
+6. **Simulation:** Run a dry-run; check execution logs and alerts.
+7. **Deploy & monitor:** Use the dashboard to watch executions, task state, gas usage, and event history.
+
+## Common pitfalls & tips
+* **Privacy ≠ just private submission:** Private routing hides TXs from the public mempool but not necessarily your **logic/parameters**. For full secrecy, combine **private submission** with **TEE-based confidentiality**.
+* **Oracle drift & slippage:** Use conservative slippage + deadlines; branch on **oracle** and **pool** state where possible.
+* **Finality windows:** For L2↔L1 flows, account for finality and retries.
+* **Operational visibility:** Use **simulation** and **alerts** before going live; start with small sizes.
+* **Ecosystem status:** Verify current **Polkadot-side** components (e.g., Turing status, parachain availability) before relying on Substrate automation.
+
+## FAQs
+**1) Is Ava Protocol live on Ethereum today?**
+Yes—Ava operates as an **EigenLayer AVS** on Ethereum mainnet.
+
+**2) How does Ava keep my automation private?**
+Ava integrates **TEE-backed confidentiality** for triggers/parameters and supports **private routing** to mitigate MEV.
+
+**3) What’s the current state of Ava on Polkadot?**
+Ava’s lineage is **OAK Network**. **Turing** (Kusama) paused in 2025 with a legacy conversion path to **AP**; public notes in early 2025 indicated the Polkadot parachain had not yet launched.
+
+**4) Can I build without code?**
+Yes—**Ava Protocol Studio** provides a visual, no-code builder with templates, simulation, and monitoring.
+
+**5) How is Ava different from Gelato or Chainlink Automation?**
+Ava emphasizes **TEE-backed confidentiality** and an **EigenLayer AVS** security model; Gelato and Chainlink focus on robust automation via executor/keeper networks and private submission, but without a native TEE privacy layer.
+
+**6) Does Ava support AI agents?**
+Yes—Ava targets **AI-native, verifiable agent workflows** and supports programmable smart wallets (ERC-4337/6900).
+
+**7) Is there a token?**
+Ava referenced an **AP** token and conversion from OAK/TUR. Always confirm the latest status before interacting. *Not financial advice.*
+
+## Conclusion
+Ava Protocol unifies **automation**, **privacy**, and **verifiable security**—ideal for Polkadot builders with EVM endpoints, DeFi teams, DAOs, and AI-agent experiments. If you’re orchestrating **multi-step**, **cross-chain** actions and need **confidentiality**, Ava offers a pragmatic path from prototype to production.
+
 
 ## Ava Protocol Community Videos
 ------------

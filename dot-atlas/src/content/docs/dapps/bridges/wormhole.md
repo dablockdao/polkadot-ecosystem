@@ -114,17 +114,5 @@ In 2022, Wormhole suffered a major exploit; funds were backstopped. Always evalu
 **8) Can wallets/aggregators abstract all this?**
 Yes. UX layers (e.g., wallet swaps and app routers) can abstract hops while still using MRL/routers under the hood.
 
-## Suggested images/diagrams
-* **Architecture diagram:** “Wormhole GMP into Moonbeam/Acala → XCM to parachains.”
-  *Alt:* Diagram showing Wormhole mint on Moonbeam/Acala and XCM arrows to multiple parachains.
-* **Security model chart:** “Guardian-based vs Light-client (Snowbridge).”
-  *Alt:* Comparison graphic of committee signatures vs light-client verification.
-* **User flow storyboard:** “ETH on Ethereum → HydraDX via MRL.”
-  *Alt:* Step-by-step boxes from source wallet to destination balance.
-* **Token provenance map:** “Where assets are minted (Moonbeam/Acala vs Asset Hub).”
-  *Alt:* Map highlighting mint locations and subsequent XCM paths.
-* **Pitfalls checklist visual:** “Fees, caps, monitoring, circuit-breakers.”
-  *Alt:* Checklist graphic of common pitfalls with icons.
-
 ## Conclusion
 **Wormhole × Polkadot** is best framed as **“GMP into Polkadot, XCM across Polkadot.”** For trust-minimized ETH/USDC at the system level, use **Snowbridge**. For broad, fast access to external liquidity, **Wormhole via Moonbeam (MRL) or Acala Router** is a practical, production-tested path.
