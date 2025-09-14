@@ -1,0 +1,121 @@
+---
+title: Turtle
+description: 2025 Turtle for Polkadot: trustless Snowbridge and XCM transfers, alternatives, and step-by-step Ethereum→Asset Hub USDC bridging.
+hero:
+  tagline: The Unified Bridge UI. 
+  image: 
+    file: ../../../../assets/dapps/bridges/turtle.png
+  actions:
+    - text: Dapp
+      link: https://turtle.cool/
+      icon: external
+    - text: X
+      link: https://x.com/TurtlecoolApp
+      icon: external
+      variant: secondary
+---
+
+## Turtle App for Polkadot: The Unified Bridge UI (2025 Guide)
+This expert guide explains what the Turtle app is, how it uses **Snowbridge** (Ethereum ↔ Polkadot) and **XCM/XCMP** (parachain ↔ parachain) under the hood, when to use it versus alternatives, and how to execute a reliable transfer end-to-end. Updated **September 2025**, with practical steps and tips.
+
+## What is Turtle (in one minute)
+**Turtle** is a unified UI for moving tokens across Polkadot and Ethereum. It’s built by **Velocity Labs** and sits on top of **trustless** protocols—**Snowbridge** for Ethereum↔Polkadot and **XCM/XCMP** for parachain↔parachain—to provide a single, simple transfer experience.
+
+Turtle **v2** added native **XCM** support alongside Snowbridge transfers so users can route assets directly to popular parachains in one flow.
+
+Snowbridge itself is Polkadot’s **trustless** Ethereum bridge (no multisig), connected via Bridge Hub, and Turtle can act as its UI—including showing transfer-time estimates.
+
+## ELI5: Bridge vs XCM vs Cross-chain Swaps
+* **Bridging (Snowbridge):** Move assets **between ecosystems** (Ethereum ↔ Polkadot). Security comes from on-chain light clients and consensus proofs—**not** a custodian. Expect finality-driven wait times.
+* **XCM/XCMP (inside Polkadot):** Standard for moving assets and instructions **between parachains** (e.g., Asset Hub → Hydration) with Polkadot-level security.
+* **Cross-chain swaps (DEX routers like Chainflip or Hydration “remote swaps”):** Swap one native asset for another across chains via liquidity networks or XCM-powered atomic flows—often **without** minting a bridged/wrapped token.
+
+## How the Turtle app works
+**Stack & security.** Turtle orchestrates transfers across:
+* **Snowbridge** for Ethereum ↔ Polkadot (trustless, Bridge Hub–connected)
+* **XCM/XCMP** for intra-Polkadot routing
+  All while surfacing **ETA** for transfers and simplifying wallet steps.
+
+**What you can transfer.** Users commonly move **ETH, DOT, USDC, USDT**, and more, depending on integrations.
+
+**Time & costs.** End-to-end Snowbridge transfers typically wait on **Ethereum finality**, often on the order of \~20–45 minutes (varies with network conditions and gas). This is a protocol-level constraint, not a UI choice.
+
+**Asset semantics (important!).**
+* **Bridged tokens from different bridges are not interchangeable by default.** E.g., USDC bridged via Snowbridge is **not** the same asset as USDC bridged via another bridge. Using multiple bridges can strand liquidity.
+* Polkadot also has **native USDC** on **Asset Hub**, separate from bridged variants. Turtle flows may land you in **Snowbridge-wrapped** USDC/USDT or you may choose to route into **native** USDC via follow-on steps—understand the difference before deploying funds.
+* Polkadot governance has set **Snowbridge-wrapped USDC/USDT** as **sufficient** assets with defined metadata/ED on Asset Hub, improving UX across wallets and apps.
+
+## When to use Turtle vs alternatives
+Use **Turtle** when you want a **single UI** that:
+
+* Bridges **to/from Ethereum** trustlessly (Snowbridge), **and**
+* Routes assets further via **XCM** to the parachain where you’ll actually use them.
+
+Use the **Snowbridge Web App** if you want the **bare-metal bridge** UI for troubleshooting or direct transfers (e.g., power users validating proofs/receipts).
+
+Use **Hydration “remote swaps”** to **swap across Polkadot parachains** in one atomic flow (no Ethereum) and often to acquire the right fee token at destination.
+
+Use **Chainflip** when you want a **swap** (not a bridge) between Polkadot native assets and external chains (BTC/ETH/USDC), now integrated with **Asset Hub** for one-click UX.
+
+## Feature comparison
+| Tool                       | Primary function                             | Security model                                 | Ecosystems covered                        | Asset result                                                    | Shows ETA | Best for                                            |
+| -------------------------- | -------------------------------------------- | ---------------------------------------------- | ----------------------------------------- | --------------------------------------------------------------- | --------- | --------------------------------------------------- |
+| **Turtle app**             | Unified **bridge + XCM** UI                  | Trustless (**Snowbridge** + Polkadot security) | Ethereum ↔ Polkadot + parachain routing   | Bridged (Snowbridge) or routed to target chain asset            | Yes       | One-stop UX from Ethereum into a specific parachain |
+| **Snowbridge Web**         | Direct **bridge** UI                         | Trustless light-clients via Bridge Hub         | Ethereum ↔ Polkadot                       | **Snowbridge-wrapped** assets on Asset Hub / parachains via XCM | Sometimes | Low-level control and debugging                     |
+| **Hydration Remote Swaps** | **Cross-chain swap inside Polkadot**         | Polkadot consensus & XCM atomic flows          | Parachain ↔ parachain                     | Swapped native parachain asset                                  | N/A       | Intra-Polkadot asset rebalancing                    |
+| **Chainflip**              | **Cross-chain DEX swap** (no wrapped tokens) | Protocol validator set                         | Polkadot (Asset Hub) ↔ BTC/ETH/USDC, etc. | Native assets on each side (swap)                               | N/A       | Direct swaps vs. manual bridging                    |
+
+## Step-by-step: Bridge USDC from Ethereum → Polkadot Asset Hub with Turtle
+> **Goal:** Move **USDC (Ethereum)** to **Polkadot Asset Hub**, then (optionally) route to a target parachain via XCM.
+
+1. **Open Turtle** and choose **Transfer**. Confirm the app shows Snowbridge/XCM support and an ETA widget.
+2. **Connect wallets:**
+   * **Ethereum side:** MetaMask (or compatible).
+   * **Polkadot side:** a Polkadot wallet that supports Asset Hub (e.g., SubWallet/Polkadot.js extension).
+3. **Select route:**
+   * **From:** Ethereum Mainnet — **USDC** (USDC on ETH).
+   * **To:** **Polkadot Asset Hub** (destination account you control). Turtle will route via **Snowbridge**.
+4. **Review the details:**
+   * **Estimated time:** often **\~20–45 minutes** depending on Ethereum finality and gas.
+   * **Fees:** ETH gas on the send leg; minor fees on Asset Hub receipt.
+5. **Approve & Bridge:** Sign the **ERC-20 approval** (first time) and the **bridge tx**. Keep your wallet open until confirmations finish.
+6. **Verify on receipt:** After finality, you’ll receive **Snowbridge-wrapped USDC** on Asset Hub (distinct from **native USDC** issued by Circle). Check your balance in a compatible explorer/wallet.
+7. **(Optional) Route via XCM:** If your end-use is on a parachain (e.g., a DEX), send the asset from Asset Hub to that parachain using **XCM**. Many dApps/wallets abstract this step.
+
+> **Note:** Polkadot also has **native USDC on Asset Hub**. If your intent is to use *native* USDC (not Snowbridge-wrapped), plan your sourcing accordingly (on-ramp, CEX withdrawal, or cross-chain swap flow that lands in native USDC).
+
+## Common pitfalls & pro tips
+* **Mixing bridges creates non-fungible “USDCs.”** Snowbridge-wrapped ≠ other bridges’ wrapped assets; liquidity may fragment across apps. Stick to **one** bridge for a given treasury workflow.
+* **Expect wait times.** Snowbridge waits on **Ethereum finality**; don’t panic if you don’t see funds for \~20–45 minutes.
+* **Check “sufficient asset” status.** Snowbridge-wrapped USDC/USDT have been marked **sufficient** on Asset Hub, improving UX; ensure your wallet is up to date to display them correctly.
+* **Destination chain fees.** If you route via XCM to a parachain, make sure you have the **right fee token** there (Hydration “remote swap” can help acquire fees atomically).
+* **Native vs bridged USDC.** Decide **before** moving funds which variant you need for your target protocol. Native USDC is issued by Circle on Asset Hub; bridged USDC comes via Snowbridge.
+
+
+## FAQs
+**1) Is Turtle custodial?**
+No. It’s a **UI** that routes through **Snowbridge** (trustless) and **XCM/XCMP**. Custody remains in your wallets; proofs are verified on-chain.
+
+**2) Which assets and chains does Turtle support?**
+Ethereum ↔ Polkadot via Snowbridge; intra-Polkadot routes via XCM. Common assets include **ETH, DOT, USDC, USDT**, and others as integrations expand.
+
+**3) How long do Snowbridge transfers take?**
+Typically **\~20–45 minutes**, driven by Ethereum finality and gas conditions.
+
+**4) Does Turtle show time estimates?**
+Yes—Snowbridge can be accessed via Turtle, which **shows transfer time estimates**.
+
+**5) Are bridged tokens the same across different bridges?**
+No. **Tokens from different bridges are distinct.** Avoid mixing to prevent UX issues.
+
+**6) What’s the difference between Snowbridge-wrapped and native USDC on Polkadot?**
+**Native USDC** is issued by **Circle** on Asset Hub; **Snowbridge-wrapped** USDC is a bridge representation. Apps may support one or both—check before moving.
+
+**7) Do I need two wallets?**
+Yes—an **EVM wallet** (e.g., MetaMask) for Ethereum and a **Polkadot wallet** for Asset Hub/parachains. (Snowbridge’s requirements reflect this split.)
+
+**8) What if I just want to swap DOT ⇄ ETH without wrapping?**
+Consider **cross-chain swaps** (e.g., Chainflip) rather than bridging when your intent is a swap, not a transfer.
+
+## Conclusion
+For most users and DAOs, **Turtle** is the **simplest, trustless path** to move funds from **Ethereum into the exact Polkadot parachain** where you’ll use them—combining **Snowbridge** security with **XCM** routing in one UI. If your need is intra-Polkadot asset rebalancing, use **Hydration Remote Swaps**; if you want pure swaps across ecosystems, consider a cross-chain DEX. Start by defining **which USDC/USDT variant** you need, then choose the route that lands in the **right asset on the right chain**.
