@@ -22,15 +22,126 @@ import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/compone
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
-**Polkassembly offers a discussion and governance forum tailored for the Polkadot and Kusama ecosystems**, providing an open platform in blockchain governance for clear transparency.
+## Polkassembly: The 2025 Guide to Polkadot OpenGov’s Governance Hub
+Polkassembly is the community hub for discovering, discussing, and acting on Polkadot OpenGov—covering referenda, treasury, delegation, preimages, and more. This 2025 guide explains what Polkassembly is, how it works, and how to use it efficiently as a voter, delegate, or proposer.
 
-## Key Features of Polkassembly
-1. **Governance Tracking**: Track governance actions such as proposals, referenda, and treasury proposals within Polkadot and Kusama.
-2. **Community Discussion**: Offers a platform where users can discuss, debate, and share ideas on governance issues, hence fostering a democratic process of engagement.
-3. **Proposal Submission and Notifications**: Provides functionalities for the direct submission of proposals and receiving notifications on governance activities to enable active community participation.
-4. **Transparency and Participation**: Aims to make all governance processes open, transparent, and accessible, encouraging much more active participation from the community in decision-making.
+## What is Polkassembly (and why it matters)
+Polkassembly is a governance forum and dashboard used across **Polkadot** and **Kusama** (and many parachains) to bridge *on-chain* decisions with *off-chain* discussion. It centralizes referenda, treasury proposals, bounties, preimages, delegation, batch voting and analytics, making OpenGov participation more approachable for everyone.
 
-Polkassembly plays a crucial role in governance empowerment and addresses a number of issues, such as maintaining the platform’s neutrality and flexible adaptation to the ever-emerging needs of governance in the Polkadot and Kusama ecosystems. **It is key in linking technical governance mechanisms to the larger community**, supporting the health and democracy of these blockchain ecosystems.
+On **polkadot.polkassembly.io**, you’ll find top-level sections like **Discussions**, **Delegation**, **Batch Voting**, **Preimages**, **Treasury**, **Bounties**, **Referenda**, and **Community/Analytics**, plus a forthcoming **Klara** AI assistant aimed at streamlining governance research and Q\&A.
+
+Polkadot OpenGov itself is Polkadot’s on-chain, transparent governance system. Votes and outcomes are recorded on-chain and auditable in real time; token holders create and vote on referenda, including treasury spending.
+
+## ELI5: Polkassembly in one minute
+Think of **Polkassembly** as Polkadot’s town hall:
+
+* **See what’s on the ballot** (referenda, treasury, bounties).
+* **Read the debate** (comments, updates, and links).
+* **Delegate** your votes to someone aligned with your views—or **vote** yourself.
+* **Track preimages** (the “exact code/instruction” behind a proposal) to verify what’s really being voted on.
+
+## Key features at a glance
+* **Unified governance hub:** Browse referenda, treasury, bounties, and discussions in one place.
+* **Profiles & wallet login:** Create a profile by connecting your wallet and signing a message; monitor your votes and comments.
+* **Track-level delegation:** Delegate by track (e.g., Treasury, Admin) with stats for delegates and totals across DOT supply. As of **September 2025**, Polkassembly displays **\~439.39M DOT delegated** across **154 delegates** and **565 delegators** (figures fluctuate).
+* **Batch Voting:** Vote on multiple items with a defined default and submit once—handy for active voters.
+* **Preimages explorer:** Inspect preimages, deposits, sizes, and status to validate the exact change being proposed.
+* **AI assistant (Klara):** An emerging Polkassembly chat interface designed to help navigate governance (wallet connect UX live, functionality rolling out).
+
+## How Polkassembly fits into OpenGov
+
+OpenGov is Polkadot’s governance architecture: on-chain proposals become **referenda** and can be **delegated** by track; every vote is recorded on the relay chain. Polkassembly fetches on-chain data and enriches it with discussion and tooling that make participation simpler (e.g., preimages list, batch voting).
+
+## When to use Polkassembly vs other tools
+* **Use Polkassembly** when you need the *end-to-end governance workflow*—discover, discuss, delegate, and vote in one place; verify preimages; and watch treasury/bounty pipelines.
+* **Use SubSquare** if you prefer its dashboards, notifications, or chain coverage; it’s widely deployed across substrate chains and actively maintained.
+* **Use the Delegation Dashboard** when your focus is *multi-role delegation* UX across OpenGov tracks.
+* **Use Polkadot-JS UI** for low-level control and raw extrinsics (power-user workflows).
+
+## Feature comparison: Polkassembly vs SubSquare vs Delegation Dashboard vs Polkadot-JS UI
+
+| Feature / Tool                                | Polkassembly           | SubSquare            | Delegation Dashboard   | Polkadot-JS UI            |
+| --------------------------------------------- | ---------------------- | -------------------- | ---------------------- | ------------------------- |
+| On-chain data (referenda, treasury, bounties) | ✅ Unified hubs         | ✅ Wide chain support | ➖ (delegation-centric) | ✅ Raw views               |
+| Off-chain discussions & profiles              | ✅ Comments & profiles  | ✅ Discussions        | ➖                      | ➖                         |
+| Track-level delegation                        | ✅ Built-in             | ✅                    | ✅ Primary purpose      | ⚠️ Manual                 |
+| Batch voting                                  | ✅ Batch Voting page    | ➖                    | ➖                      | ⚠️ Manual multi-tx        |
+| Preimages explorer                            | ✅ Dedicated view       | ✅                    | ➖                      | ⚠️ Requires manual lookup |
+| Analytics / community features                | ✅ (site sections)      | ✅ (varies per chain) | ➖                      | ➖                         |
+| AI assistant                                  | 🚧 Klara (rolling out) | ➖                    | ➖                      | ➖                         |
+
+## Step-by-step mini-guide
+### A) Create a Polkassembly profile
+1. **Connect your wallet** (e.g., SubWallet, Talisman, Nova, Polkadot-JS).
+2. **Sign a message** to prove ownership; Polkassembly sets up a profile so you can comment, track votes, and receive notifications.
+
+### B) Delegate your votes by track
+1. Open **Delegation**.
+2. **Pick a track** (e.g., Treasury, Admin).
+3. **Choose a delegate** using their on-page stats; confirm amount/conviction.
+4. **Submit** and verify on-chain. (Totals and delegate counts are visible on the page.)
+
+### C) Batch vote efficiently
+1. Open **Batch Voting**.
+2. **Set default** (e.g., AYE/ NAY / ABSTAIN / with conviction).
+3. Quickly **override** specific items if needed.
+4. **Sign once** to submit a batch.
+
+### D) Validate a proposal’s preimage
+1. Open **Preimages**.
+2. Copy the preimage **hash** and inspect deposit, size, and call arguments.
+3. Cross-check the referendum referencing that preimage before voting.
+
+## Practical checklist
+* [ ] Wallet connected and profile set.
+* [ ] Followed delegates you trust; reviewed their track records.
+* [ ] Set a **batch voting default** for busy weeks.
+* [ ] Verified the **preimage** matches the intent of the proposal.
+* [ ] Subscribed to updates via your preferred governance app(s).
+
+## Common pitfalls & tips
+**Pitfall:** Voting without reading the **preimage**.
+**Tip:** Always skim the call, deposit, and size to be sure the action matches the forum post.
+
+**Pitfall:** Delegating to a single person for all tracks.
+**Tip:** OpenGov supports *per-track* delegation—spread risk by track.
+
+**Pitfall:** Transaction fatigue leading to missed votes.
+**Tip:** Use **Batch Voting** with a default stance, then override exceptions.
+
+**Pitfall:** Confusing off-chain narratives with on-chain reality.
+**Tip:** Decisions are enforced *on-chain*—validate via Polkassembly’s on-chain data and Polkadot support docs.
+
+**Pitfall:** Ignoring AI helpers.
+**Tip:** Try **Klara** as it rolls out for quicker discovery and context.
+
+## FAQs
+**1) What is Polkassembly?**
+A governance forum and dashboard that aggregates on-chain OpenGov items (referenda, treasury, bounties), with profiles, discussion, delegation, preimages, and more.
+
+**2) How do I log in?**
+Connect a wallet and sign a message to create/manage a profile and interact (comment, monitor votes).
+
+**3) Can I delegate by track?**
+Yes—Polkassembly’s Delegation page supports track-level delegation with live stats and totals.
+
+**4) What’s “batch voting”?**
+A flow that lets you set a default stance and cast many votes in one submission—ideal for active participants.
+
+**5) Where can I verify what a proposal *actually* does?**
+Use **Preimages** to see the exact call (and deposit/size) tied to a referendum.
+
+**6) How is Polkassembly different from SubSquare?**
+Both surface OpenGov data and discussions; SubSquare also covers many substrate chains and has its own UX. Choose whichever suits your workflow.
+
+**7) Is there an AI helper?**
+Yes—**Klara** is being introduced as an AI hub for governance discovery (wallet connect screen live).
+
+**8) Is Polkassembly “official”?**
+It’s a widely used governance portal for Polkadot and Kusama, referenced across the Polkadot Wiki and support guides, and has received treasury support via proposals.
+
+## Conclusion
+Polkassembly is the most complete *one-stop* governance hub for Polkadot participants. Whether you’re proposing treasury work, delegating by track, or batch-voting across a busy week, mastering Polkassembly will save time and help you vote with confidence.
 
 ## Polkassembly Community Videos
 ------------
