@@ -20,36 +20,118 @@ hero:
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-Nova Wallet is revolutionizing the mobile wallet experience by setting new standards for functionality, security, and accessibility. Designed with user-centric features, it offers robust security measures to protect your digital assets, seamless staking options to help you maximize your earnings, and extensive support for a wide range of DApps. 
+## Nova Wallet in 2025: New Features, How It Works, and When to Use It
+Nova Wallet is a mobile-first, non-custodial wallet for Polkadot and Kusama. In 2025, Nova shipped major updates—multisig wallets, a Polkadot debit card (EEA), OpenGov voting with pool-staked DOT, smarter XCM transfers, Unified Address Format (UAF) support, and more. This guide explains what’s new, why it matters, and how to use Nova Wallet safely and effectively.
 
-With Nova Wallet, users can enjoy a streamlined and secure **gateway to the Polkadot ecosystem**, empowering them to explore, transact, and grow their digital presence.
+## What is Nova Wallet (and who it’s for)
+Nova Wallet is an iOS/Android, **self-custodial** Polkadot wallet built by Novasama Technologies. It supports DOT/KSM and parachain assets, governance, staking, XCM transfers, DApps, NFTs, and hardware wallets—optimized for mobile.
 
-## What is Nova Wallet?
-Nova Wallet stands out as a next-generation mobile wallet designed for the Polkadot and Kusama ecosystems. With compatibility across **90+ networks** and support for **over 410 cross-chain transfer options**, it provides unparalleled accessibility to users. Whether you are managing assets, staking tokens, or interacting with decentralized applications (DApps), Nova Wallet delivers an all-in-one solution.
+**Best for:** mobile-first DOT users, nominators/pool stakers, DAO treasurers who want multisig, and DeFi users who need reliable XCM routing.
 
-## Key Features of Nova Wallet:
-1. **Comprehensive Asset Management**  
-    - Manage assets from Polkadot, Ethereum, and other networks in one place.  
-    - Send, receive, swap, and buy tokens effortlessly.  
-    - Track operation history and cross-chain transfers.  
-2. **Simple Staking**  
-    - Stake tokens like DOT, KSM, AZERO, and GLMR directly on the blockchain.  
-    - Maximize rewards with no intermediary fees.  
-    - Super Simple Staking enables quick and easy staking for beginners.  
-3. **Governance Participation**  
-    - Access Polkadot’s OpenGov system directly from the wallet.  
-    - Vote on referenda, delegate votes, and join crowdloans.  
-    - A clear governance dashboard provides all relevant details.  
-4. **DApp Browser & WalletConnect**  
-    - Use Substrate and EVM-based DApps with the built-in browser.  
-    - Connect to desktop or mobile DApps using WalletConnect.  
-5. **Security & Privacy**  
-    - Self-custodial wallet keeps private keys on the user’s device.  
-    - Features PIN protection, phishing prevention, and hardware wallet compatibility.  
-    - Open-source code available on GitHub for transparency.  
+**Not ideal for:** users who need a desktop browser extension (Nova is mobile-only; consider SubWallet on desktop).
 
-## Community and Support
-Nova Wallet’s community-oriented approach is a key driver of its success. Funded by various treasuries within the ecosystem, Nova Wallet actively seeks user feedback to shape its development. The team offers comprehensive support through email, Telegram, and GitHub, ensuring users have access to help when needed.
+## ELI5: Nova Wallet in one minute
+Think of Polkadot as many blockchains that talk to each other. Nova is your **phone app** that:
+
+* keeps your keys offline (non-custodial),
+* lets you **stake** DOT easily (even from small amounts via pools),
+* vote in **OpenGov**, even if your DOT is pool-staked,
+* move tokens between chains using **XCM** with safety checks,
+* connect to **DApps** (DeFi, NFTs),
+* and—new—use a **debit card** (EEA) funded with DOT for real-world spending.
+
+## What’s new in 2025 (at a glance)
+* **Multisig wallets** (discover/create/sign; HW wallet & proxies) in the 10.1.x line.
+* **Nova x Mercuryo Polkadot debit card** (EEA): fund with DOT; Apple/Google Pay.
+* **OpenGov with pool-staked tokens** supported (runtime change + Nova client updates).
+* **Cross-chain (XCM) auto-route detection & pre-flight simulation** to avoid trapped assets.
+* **Unified Address Format (UAF)** support alongside legacy addresses during transition.
+* **Price charts** in-app; **sell tokens** via providers; **Ledger EVM support**; **KodaDot NFTs on Asset Hub**.
+
+## Key features explained
+### Staking (direct & pools) + OpenGov with pool-staked DOT
+Nova offers **direct staking** and **nomination pools**, enabling staking from small amounts via pools with simple flows. With recent Polkadot runtime updates and Nova client support, **pool members can vote in OpenGov** without unpooling—so you don’t trade off yield for governance.
+
+**Why it matters:** Stake small amounts and still participate in governance.
+
+### Cross-chain (XCM) transfers: auto-routing & simulation
+Nova introduced **automatic XCM route detection** and **simulations** to reduce failed deliveries (and “trapped assets”). If assets do trap, Nova provides recovery guidance using chain events, and its **XCM fee estimation** improves predictability.
+
+**Why it matters:** Fewer failed transactions and clearer fees/routes across Asset Hub & parachains.
+
+### Unified Address Format (UAF)
+Nova supports **UAF**, providing both **legacy** and **unified** addresses during the ecosystem transition.
+
+**Why it matters:** A consistent address style across chains reduces confusion and mis-sends.
+
+### Hardware wallets (Ledger, Polkadot Vault)
+Nova supports **Ledger** (Nano X/Flex/Stax via Bluetooth; some models via USB on Android) and **Polkadot Vault** (air-gapped QR signing), with clear pairing/signing flows.
+
+**Why it matters:** Combine cold storage with mobile convenience.
+
+### DApp Browser & EVM/Polkadot connectivity
+Nova’s in-app browser connects to **Polkadot DApps** and many **EVM** DApps. A **Desktop Mode** toggle helps when a site isn’t mobile-optimized.
+
+### NFTs & price charts
+View **NFTs** across supported networks, and check **price charts** (1D–All) inside token detail screens. Nova also surfaces **KodaDot NFTs** on Asset Hub.
+
+### Buy/Sell & off-ramp
+Nova aggregates providers for **buy** and **sell** flows, making fiat on/off-ramping easier directly from the app.
+
+### Multisig wallets
+The 10.1.x release line adds: discover existing multisigs, create/sign transactions, and use **multisig with hardware wallets & proxies** (on Polkadot + Asset Hub, Kusama + KAH, Hydration, Mythos, Moonbeam, and more).
+
+**Why it matters:** DAO treasuries and teams can manage policies securely on mobile.
+
+### Nova x Mercuryo Polkadot Debit Card (EEA)
+A **Mastercard-backed debit card** you **top up with DOT** in-app; works where Mastercard is accepted and can be added to **Apple Pay/Google Pay**. Availability: **EEA** (KYC required).
+
+
+## Nova vs SubWallet (quick comparison)
+| Capability                 | **Nova Wallet (Mobile)**                 | **SubWallet (Mobile + Extension)**                 |
+| -------------------------- | ---------------------------------------- | -------------------------------------------------- |
+| Platforms                  | iOS/Android (mobile-first)               | iOS/Android + Chrome/Firefox extension             |
+| Staking                    | Direct & pools in-app                    | Direct & pools in-app                              |
+| OpenGov w/ pool-staked DOT | **Supported** (runtime + client updates) | Supported                                          |
+| XCM transfers              | Auto-route detection + **simulation**    | Robust XCM; desktop + mobile                       |
+| UAF support                | **Supported**                            | Supported across ecosystem                         |
+| DApp connectivity          | Mobile DApp browser; Desktop Mode        | Mobile & desktop; extension improves desktop flows |
+| Hardware wallets           | Ledger (BT/USB\*) & Polkadot Vault (QR)  | Ledger, Polkadot Vault, Keystone                   |
+| Multisig                   | **Built-in multisig** (10.1.x)           | Supported (flows vary)                             |
+| Debit card                 | **Nova x Mercuryo (EEA)**                | N/A                                                |
+
+\* USB on Android only for certain models.
+
+## Step-by-step mini-guide
+**Goal:** stake DOT, vote in OpenGov with pool-staked DOT, send a safe cross-chain transfer—and optionally set up the debit card (EEA).
+
+1. **Install & secure**
+* Install Nova on iOS/Android, create/import wallet, **back up your seed** (offline).
+* (Optional) Connect **Ledger** or **Polkadot Vault** for cold-signing.
+
+2. **Stake DOT**
+* Open **Staking** → choose **Pool** to start from small amounts or **Direct** for full control.
+
+3. **Vote in OpenGov with pool-staked DOT**
+* Open **Vote** → pick referendum → **Vote** (supported for nomination pool members).
+
+4. **Cross-chain transfer safely**
+* Tap **Send** → choose destination chain → review **auto-detected route** & **simulation** results → confirm. If funds trap, follow the in-app recovery guidance.
+
+5. **Connect to DApps**
+* Open **DApp Browser**, paste DApp URL (e.g., a DeFi appchain), enable **Desktop Mode** if the site isn’t mobile-optimized.
+
+6. **Use the debit card (EEA)**
+* **Assets → Manage Debit Card → Issue card**, complete KYC, top up with DOT, and add to Apple/Google Pay.
+
+## Common pitfalls & pro tips
+* **UAF transition:** when copying an address, Nova can show **unified and legacy** formats—match what the counterparty expects.
+* **Destination fees & existential deposits:** ensure the destination chain will retain enough native tokens/ED after XCM; use Nova’s previews and fee estimates.
+* **“Trapped assets” fear:** simulations reduce risk; if something fails, use the recovery flow referencing chain events.
+* **Mobile DApps that look “broken”:** enable **Desktop Mode** from the DApp browser menu.
+* **Hardware wallet models:** Bluetooth/USB support varies; check compatibility before large transfers.
+* **Debit card geography:** the Nova x Mercuryo card is currently **EEA-only** and requires KYC.
+
 
 <ShowcaseProfile
   entries={[
@@ -66,8 +148,34 @@ Nova Wallet’s community-oriented approach is a key driver of its success. Fund
   ]}
 />
 
-### Conclusion
-For those looking to explore the Polkadot and Ethereum ecosystems, Nova Wallet provides a secure, intuitive, and feature-packed solution. Whether you’re staking, managing assets, or engaging with governance, Nova Wallet empowers users with the tools they need to succeed. With its continued focus on innovation and user-centric design, Nova Wallet is poised to remain a leader in the blockchain wallet space.
+
+## FAQs
+**1) Is Nova Wallet custodial?**
+No—Nova is a **non-custodial** wallet; you control your keys.
+
+**2) Can I stake small amounts of DOT?**
+Yes. With **nomination pools**, you can start from small amounts; Nova guides you through it.
+
+**3) I’m in a nomination pool—can I still vote in OpenGov?**
+Yes. Polkadot enables **pool-staked tokens to vote**; Nova supports this flow.
+
+**4) How does Nova prevent XCM failures?**
+Nova **auto-detects routes** and **simulates** transfers to reduce failures; if assets become trapped, use the recovery guide.
+
+**5) Which hardware wallets work?**
+**Ledger Nano X/Flex/Stax** via Bluetooth (USB for some models on Android) and **Polkadot Vault** for air-gapped QR signing.
+
+**6) Does Nova support NFTs?**
+Yes—view NFTs across supported networks in the **Your NFTs** view.
+
+**7) Is there a desktop extension?**
+No—Nova is mobile-only. If you need a browser extension for desktop DApps, consider SubWallet.
+
+**8) Where is the debit card available?**
+In the **EEA**, with KYC. You can add it to Apple Pay/Google Pay and spend wherever Mastercard is accepted.
+
+## Conclusion
+Nova Wallet has matured into a **full-featured Polkadot mobile suite**—combining secure key management, staking, OpenGov, reliable XCM, multisig, and even real-world payments (EEA). For most mobile users in the DOT/KSM ecosystem, Nova offers a well-lit path from **on-chain actions** to **everyday utility**.
 
 ## Nova Wallet Community Videos
 ------------
