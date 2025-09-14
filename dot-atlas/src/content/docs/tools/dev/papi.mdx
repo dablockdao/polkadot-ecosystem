@@ -17,37 +17,168 @@ hero:
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
 
-**PAPI (Polkadot API)** is an advanced TypeScript library meticulously designed to streamline interactions with Polkadot chains. 
-With its "light-client first" philosophy, PAPI redefines what’s possible in decentralized application development.
+## Polkadot-API (PAPI): A Modern TypeScript API for Polkadot Builders
+This expert guide explains what Polkadot-API (PAPI) is, why it matters, and how to use it to build fast, type-safe dApps across Polkadot chains. We compare PAPI with `@polkadot/api` (polkadot.js) and Dedot, then walk through setup, code examples, governance & ink! integrations, common pitfalls, and SEO-ready FAQs.
 
-## A Lightweight and Robust Solution
-PAPI prioritizes efficiency and accessibility, boasting a minimal impact on the main application bundle at under 50kB. This lightweight nature doesn’t compromise functionality; instead, it enables developers to integrate powerful blockchain capabilities directly into browser-based applications. Built atop the new JSON-RPC specification, PAPI is optimized for light clients, allowing nodes to operate seamlessly in resource-constrained environments.
+## Why PAPI? (Problem → Benefit)
+**Problem:** Many Polkadot dApps still rely on heavy RPC clients, manual codec handling, and loosely typed calls. This leads to brittle code, slower bundles, and runtime breakage during upgrades.
 
-## Fully Typed for Developer Delight
-One of the standout features of PAPI is its comprehensive TypeScript support. Developers can rely on their IDEs to deliver precise type information for every operation on a Polkadot chain, enhancing both productivity and code reliability. This rich typing extends across storage reads, constants, transactions, events, and runtime calls, ensuring that every interaction with the chain is well-documented and predictable.
+**Benefit with PAPI:** PAPI is light-client-first, ships fully typed APIs generated from on-chain metadata, and favors small, tree-shakable bundles—while supporting observables or promises, multi-chain connections, and modern developer experience (DX).
 
-## Key Features
-1. **Light-Client First:** PAPI is architected to maximize the potential of light clients, leveraging the latest JSON-RPC advancements to provide a seamless node-running experience directly from the browser.
-2. **Comprehensive TypeScript Support:** Types and documentation are auto-generated from on-chain metadata, enabling developers to write, debug, and maintain their code effortlessly.
-3. **Versatile Chain Interactions:** PAPI facilitates simultaneous connections to multiple chains, making it an invaluable tool for projects requiring interoperability within the Polkadot ecosystem.
-4. **Future-Proof:** With support for generating multiple descriptors and conducting compatibility checks, PAPI ensures readiness for upcoming runtime updates.
-5. **Flexible APIs:** Whether you prefer promise-based or observable-based workflows, PAPI provides both options to cater to varying development styles.
-6. **Secure Signing Options:** PAPI supports signers from browser extensions and private keys, ensuring secure transaction handling tailored to developer needs.
-
-## Developer-Centric Design
-Built with performance and modularity in mind, PAPI’s composable library structure allows developers to use only the components they need, reducing unnecessary bloat. Dynamic imports further enhance performance, enabling faster loading times for applications.
-
-The library’s reliance on native BigInt instead of external BigNumber libraries simplifies arithmetic operations, improving both efficiency and maintainability.
-
-## Seamless Integration
-PAPI offers first-class support for Polkadot JS (PJS) extensions, making integration with existing tools straightforward. This synergy ensures that developers can leverage familiar workflows while benefiting from PAPI’s enhanced capabilities.
-
-## Unlock the Full Potential of Polkadot
-As Polkadot cements its place as a leading blockchain ecosystem, PAPI empowers developers to harness its full potential. Whether you’re building decentralized finance (DeFi) applications, non-fungible token (NFT) platforms, or any other dApp, PAPI provides the tools to simplify development and enhance user experiences.
-
-With its lightweight design, robust TypeScript support, and future-ready architecture, PAPI is more than just a library—it’s a gateway to the next generation of blockchain innovation. Explore the possibilities and transform your Polkadot projects with PAPI today.
+## ELI5
+PAPI is a **TypeScript toolkit** that talks to Polkadot chains. It **learns types from the chain itself**, so your IDE autocompletes pallets/calls/events; it can **run a light client in the browser**, and it **helps keep your app small and fast**.
 
 - [PAPI intro tutorial by Shawn Tabrizi](https://github.com/shawntabrizi/papi-intro-tutorial)
+
+## How PAPI Works
+At its core, PAPI consists of:
+
+* A **client** that connects via a **provider** (WebSocket or light client).
+* A **Typed API** generated by a small CLI that downloads each chain’s metadata and produces type descriptors you import.
+* **Promise** and **Observable** interfaces for storage, constants, runtime calls, transactions, and events—plus dynamic imports and native `bigint` to keep the bundle lean.
+
+PAPI is designed around modern JSON-RPC and light-client workflows (so you can run trust-minimized dApps in the browser).
+
+## Key Features
+* **Light-client first:** Run trust-minimized apps in web & Node environments.
+* **Fully typed DX:** Types/docs generated from on-chain metadata; IDE autocompletes pallets, calls, events.
+* **Multi-chain by design:** Connect to multiple chains in one app.
+* **Small & fast:** Tree-shakable subpaths, native `bigint`, dynamic imports, minimal bundle impact.
+* **Promises & Observables:** Subscribe to blocks and transactions or use simple promises.
+* **Upgrade aware:** Regenerate descriptors per runtime change and preflight compatibility.
+* **First-class transactions:** Typed extrinsics, fee estimation, error types, and watchable lifecycle.
+
+## PAPI vs polkadot.js vs Dedot (Comparison)
+Below is a practical view of where each library shines for 2025 builds.
+
+| Tool                              | Type System & DX                                             | Light Client Support                | Bundle Footprint          | Codegen / Types From Metadata    | JSON-RPC              | Multi-chain | Promises/Observables | ink! / Gov SDKs                  | Notes                                 |
+| --------------------------------- | ------------------------------------------------------------ | ----------------------------------- | ------------------------- | -------------------------------- | --------------------- | ----------- | -------------------- | -------------------------------- | ------------------------------------- |
+| **PAPI**                          | Fully typed descriptors; IDE autocompletion; native `bigint` | **Designed light-client-first**     | **Small / tree-shakable** | CLI-generated descriptors        | Modern spec           | Yes         | Both                 | SDKs for ink! & OpenGov          | Modern, modular, upgrade-aware        |
+| **polkadot.js (`@polkadot/api`)** | Mature API; strong community                                 | RPC-centric (light client separate) | Heavier in typical builds | Dynamic from metadata at runtime | Legacy-compatible     | Yes         | Promise & RxJS       | Broad ecosystem adoption         | The long-standing standard            |
+| **Dedot**                         | Lightweight; tree-shakable                                   | Works with light clients            | Small / tree-shakable     | Per-chain TS types               | Multi-version support | Yes         | Promise-style        | ink! support; migration-friendly | Next-gen client emphasizing DX & size |
+
+**Takeaway:** For **new TypeScript dApps** that want **light-client**, **strict typing**, and **small bundles**, PAPI (or Dedot) is often the best fit; `@polkadot/api` remains a solid, mature baseline with broad ecosystem adoption.
+
+## Quick Start: Step-by-Step
+### 1) Install & generate types
+```bash
+npm i polkadot-api
+npx papi add dot -n polkadot
+npx papi
+# (Optional) add "postinstall": "papi" to package.json
+```
+
+This downloads the latest Polkadot metadata and generates the `@polkadot-api/descriptors` you’ll import.
+
+### 2) Create a client (light client in the browser)
+```ts
+import { dot } from "@polkadot-api/descriptors";
+import { createClient } from "polkadot-api";
+import { getSmProvider } from "polkadot-api/sm-provider";
+import { chainSpec } from "polkadot-api/chains/polkadot";
+import { startFromWorker } from "polkadot-api/smoldot/from-worker";
+import SmWorker from "polkadot-api/smoldot/worker?worker";
+
+const worker = new SmWorker();
+const smoldot = startFromWorker(worker);
+const chain = await smoldot.addChain({ chainSpec });
+
+const client = createClient(getSmProvider(chain));
+const dotApi = client.getTypedApi(dot);
+```
+
+### 3) Query storage (strongly typed)
+```ts
+const accountInfo = await dotApi.query.System.Account.getValue("14...SS58");
+```
+
+### 4) Add a signer (extension or custom)
+Use a browser wallet via the injected signer:
+
+```ts
+import { getInjectedExtensions, connectInjectedExtension } from "polkadot-api/pjs-signer";
+
+const [extId] = getInjectedExtensions();
+const ext = await connectInjectedExtension(extId);
+const { polkadotSigner } = ext.getAccounts()[0];
+```
+
+Or construct a signer from your own key material (sr25519/ed25519/ecdsa).
+
+## Practical Example: Transfer + Fee Estimation + Watch
+### 1) Build the extrinsic (typed)
+```ts
+import { MultiAddress } from "@polkadot-api/descriptors";
+
+const tx = dotApi.tx.Balances.transfer_keep_alive({
+  dest: MultiAddress.Id("16...dest"),
+  value: 10n ** 10n, // 1 DOT
+});
+```
+
+### 2) Estimate fees first
+```ts
+const estimated = await tx.getEstimatedFees("16...sender");
+console.log("Estimated fee (planck):", estimated);
+```
+
+### 3) Sign & submit and **watch** lifecycle
+```ts
+// Promise flavor: resolves at finalization
+const result = await tx.signAndSubmit(polkadotSigner);
+console.log(result.block.number, result.ok, result.events);
+
+// Observable flavor: granular events while it propagates
+tx.signSubmitAndWatch(polkadotSigner).subscribe(ev => {
+  if (ev.type === "signed") console.log("Signed:", ev.txHash);
+  if (ev.type === "broadcasted") console.log("Broadcasted:", ev.txHash);
+  if (ev.type === "txBestBlocksState" && ev.found) console.log("In best block…");
+  if (ev.type === "finalized") console.log("Finalized in", ev.block.number);
+});
+```
+
+## Governance & ink! SDKs
+* **OpenGov:** The Governance SDK wraps track curves, preimages, spender origins, and subscription helpers. It can auto-select tracks, compute confirmation windows, and expose chart-ready thresholds—ideal for dashboards.
+* **ink!:** The ink! SDK provides type-safe deploy, dry-run, gas/storage estimates, message calls, and event decoding for ink! v6 contracts—purpose-built for TypeScript UIs.
+
+## Common Pitfalls & Pro Tips
+1. **Forgetting codegen:** After upgrading PAPI or when a chain updates runtime metadata, **regenerate descriptors** (`papi`)—or wire it to `postinstall`.
+2. **`bigint` handling:** Amounts are `bigint`. Don’t mix with JS `number`; prefer constants like `10n ** 10n`.
+3. **Signer mismatches:** Use the correct scheme (sr25519/ed25519/ecdsa) and address format. The signer helpers clarify this.
+4. **Watching tx state:** Prefer `signSubmitAndWatch` for robust UX; handle invalidity via typed errors and surface `dispatchError` to users.
+5. **Multi-chain coordination:** Keep per-chain descriptors separate and share client utilities (observables) thoughtfully to avoid mixing state.
+6. **RPC vs light client:** For decentralization and resilience, prefer the light client; you can still use WebSocket providers where needed.
+
+---
+
+## FAQs
+**1) How is PAPI different from `@polkadot/api`?**
+PAPI emphasizes light-client-first architecture, code-generated types, native `bigint`, and modern DX; `@polkadot/api` is the long-standing, RPC-centric standard with Promise/RxJS APIs and broad ecosystem support.
+
+**2) Do I need a light client to use PAPI?**
+No. PAPI supports WebSocket providers, but it shines with a light client in browser or Node.
+
+**3) Will runtime upgrades break my app?**
+Regenerate descriptors and use compatibility checks; PAPI helps you preflight upgrades and keep types aligned.
+
+**4) Can I connect to multiple chains in one app?**
+Yes—multi-chain is supported out of the box.
+
+**5) How do I integrate wallets?**
+Use `polkadot-api/pjs-signer` to connect to injected browser extensions and obtain a `PolkadotSigner`.
+
+**6) Does PAPI support ink! smart contracts?**
+Yes—use the ink! SDK for type-safe deployment, calls, events, and estimates.
+
+**7) Can I estimate fees before sending a transaction?**
+Yes—`getEstimatedFees(from, options?)` returns a `bigint` fee estimate.
+
+**8) Is Dedot a competitor or complement?**
+Dedot is another modern TS client focused on small bundles and DX; both Dedot and PAPI improve the developer experience over older patterns.
+
+## Conclusion
+**If you’re starting a new Polkadot dApp in 2025, make PAPI your default.** You’ll ship smaller bundles, gain compile-time safety, and get a first-class light-client UX—without sacrificing observables, fee estimation, or governance/ink! workflows.
+
 
 ## Polkadot-API (PAPI) Community Videos
 ------------
