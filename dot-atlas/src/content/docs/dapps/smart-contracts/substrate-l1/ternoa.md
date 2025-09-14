@@ -4,7 +4,7 @@ description: Ternoa is an advanced blockchain designed to address key challenges
 hero:
   tagline: Decentralized TEE Network powered by SGX for a secure and trustless future
   image: 
-    file: ../../../../assets/dapps/ecos/ternoa.png
+    file: ../../../../../assets/dapps/ecos/ternoa.png
   actions:
     - text: Dapps
       link: https://www.ternoa.network/

@@ -4,7 +4,7 @@ description: An adaptive, non-debt-based monetary framework.
 hero:
   tagline: An adaptive, non-debt-based monetary framework.
   image: 
-    file: ../../../../assets/dapps/ecos/sora-network.png
+    file: ../../../../../assets/dapps/ecos/sora-network.png
   actions:
     - text: Dapps
       link: https://sora.org/
