@@ -20,18 +20,115 @@ hero:
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-**Subscan is a Substrate-based blockchain explorer and analytics platform** for such blockchains. It provides the searching and analysis of blockchain data by equipping users with a range of tools and data. Here’s what users can expect from Subscan:
+## Subscan: The Polkadot Multi-Chain Explorer & API, Explained (2025)
+This expert guide breaks down how to use **Subscan** for day-to-day Polkadot research and operations—accounts, extrinsics, staking rewards, OpenGov, and cross-chain (XCM) activity—plus how it compares to alternatives and how to integrate its API in your tooling.
 
-1. **Block Explorer**: A block explorer that allows users to view details of the blocks, including transactions, extrinsics, and events carried out in this blockchain. These include the height, hash, timestamp of the block, events which have been triggered, and the extrinsics within it, up to a maximum limit of 1,000 records.
-2. **Account Details**: Subscan can query account details of an address with its account balance, transaction history, and interactions it has with the smart contracts or features of the on-chain governance.
-3. **Staking Information**: Subscan provides full-featured staking data for networks with a staking mechanism that secures network security, including information on validators, nominators, staking rewards, and slashes.
-4. **Governance and Treasury**: Subscan lays out governance works, including proposals, referenda, treasury proposals to bounty programs. Users can track the status of governance actions in its totality from proposal stages, including ongoing and completed proposals, votes, and the results of these votes.
-5. **Network Statistics**: This includes a variety of network statistics, such as total supply, volume of transactions, number of active accounts, among others. This helps in determining the health and activity of the network.
-6. **Custom Queries**: Custom queries will allow advanced users to reach deeper into Subscan’s blockchain data. This use case is developed more for developers, researchers, and analysts who may need specific sets of data.
-7. **Cross-Chain Data**: As a result of its strong attention to interoperability, Subscan also provides a set of tools to browse cross-chain data. Cross-chain data includes parachains (in the case of Polkadot and Kusama) together with their messages and transactions.
-8. **User Interface**: The Subscan user interface is easy to use for both technical and non-technical personnel. The site has all the search and navigation placed on the platform for easier access to whatever the user might want to access.
+## What is Subscan (and why it matters)
+**Subscan** is a one-stop, multi-chain **block explorer** for the Substrate ecosystem (Polkadot, Kusama, Asset Hub, and parachains) with growing EVM support. It positions itself as “Explorer as a Service” (EaaS), meaning the same productized explorer runs across many networks with consistent UX and endpoints.
 
-Subscan serves as a valuable tool for anyone in the Polkadot ecosystem, **offering a potent window into the on-chain activities of Substrate-based blockchains**, serving not only developers but also investors, validators, and researchers of these networks.
+On Polkadot specifically, Subscan exposes chain state in a familiar way—**blocks, extrinsics, events, accounts**—and adds **governance**, **staking**, **XCM** and portfolio-style views you’ll use daily as a builder, validator, or analyst.
+
+For teams and integrators, Subscan offers a **hosted API** that serves indexed data for dozens of networks across the Substrate family.
+
+## ELI5: Subscan in one minute
+Think of Subscan like **search + analytics** for Polkadot. You paste an address, hash, or block number; Subscan looks it up on the right chain and shows what happened (transfers, staking payouts, governance votes, XCM hops), with links you can drill into. It’s the fastest “what happened?” tool for most operational questions.
+
+## Key features for Polkadot users
+### 1) Multi-network coverage
+* Dedicated explorers for **Polkadot**, **Kusama**, **Asset Hub**, and most major parachains—consistent navigation across all.
+
+### 2) XCM dashboards
+* **XCM Dashboard** pages visualize **asset flows, messages, channels, and transfers**—ideal for debugging cross-chain UX or analyzing liquidity routes. Mobile-friendly improvements landed in 2025.
+
+### 3) OpenGov (Referenda v2) views
+* **Referenda pages** show track, status, origins, amounts (with USD equivalents), and detailed posts—useful to monitor treasury and protocol changes across tracks.
+
+### 4) Staking & rewards
+* Account pages tabulate **rewards & slash history**; portfolio tools add **Stake Now / Claim Rewards** shortcuts to reduce click-paths from research to action.
+
+### 5) EVM-aware explorer
+* For EVM parachains (e.g., Moonbeam, Astar, peaq), Subscan renders **EVM tx input data**, **ERC-20 balances with price**, and **ERC-1155 quantities**.
+
+### 6) Portfolio, watchlists & alerts
+* Subscan’s portfolio surface supports **multi-chain tracking**, **yield monitoring**, and quick actions; public pages highlight **watchlists** and **real-time alerts**.
+
+## How Subscan works (high level)
+At a high level Subscan runs indexers that follow each chain’s blocks, parsing **extrinsics/events** (and EVM data where present). That data powers both the web explorer and dedicated **HTTP APIs**. There’s also **Subscan Essentials**, an open-source scaffold for Substrate explorers that underpins subscan.io deployments—handy to study architecture or self-host a minimal explorer.
+
+Subscan complements developer-centric tools listed in the official Polkadot docs (e.g., Blockscout/Routescan for EVM/PolkaVM contexts) and sits alongside other Substrate explorers in the broader tooling landscape.
+
+## Subscan vs. other explorers (comparison)
+Below is a pragmatic “choose-by-job” snapshot. (Features vary by chain; always check the live instance.)
+| Explorer                        | Multi-chain coverage                  | XCM visualizations                                   | OpenGov (v2) views             | EVM/PolkaVM features                                   | Public API            | Open source                 | Notes                                                                            |
+| ------------------------------- | ------------------------------------- | ---------------------------------------------------- | ------------------------------ | ------------------------------------------------------ | --------------------- | --------------------------- | -------------------------------------------------------------------------------- |
+| **Subscan**                     | Extensive Substrate + many parachains | **Yes** (XCM dashboards: flows, messages, transfers) | **Yes** (referenda v2 details) | **Yes** (EVM input decode, ERC-20 price, ERC-1155 qty) | **Yes** (hosted API)  | **Essentials** scaffold OSS | Portfolio, watchlists, quick staking actions.                                    |
+| **Statescan**                   | Polkadot, Kusama & parachains         | Basic to moderate                                    | Some                           | Limited EVM specifics                                  | Not primary focus     | **Yes** (open-source)       | Positions itself as open-source, cost-effective.                                 |
+| **Polkaholic**                  | High parachain coverage               | **Strong** (XCM monitoring)                          | Some governance linkages       | Substrate-first                                        | Public endpoints vary | Parts open                  | Focus on cross-chain account & XCM analytics.                                    |
+| **Polkadot.js Apps (Explorer)** | Any connected Substrate chain         | No XCM visuals                                       | Minimal governance UI          | N/A                                                    | N/A                   | **Yes**                     | Best for dev-grade **RPC** interactions; Subscan offers friendlier read-only UX. |
+| **Blockscout / Routescan**      | Chain-by-chain                        | No                                                   | No                             | **Yes** (EVM/PolkaVM focus)                            | Yes                   | Yes (Blockscout)            | Recommended for smart-contract traces on EVM/PolkaVM.                            |
+
+> Ecosystem note: Subscan’s business model and funding have been debated publicly in the Polkadot forum; treat it as background when choosing infra partners.
+
+## Mini-guide: Trace an XCM transfer & verify a payout
+### A) Trace an XCM transfer (Polkadot → a parachain)
+1. Open the **XCM Dashboard** on the source network (e.g., `polkadot.subscan.io/xcm_dashboard`).
+2. Use **“XCM Transfer”** or **“XCM Message”** views to filter by **Source** and **Target** parachain.
+3. Click a transfer row to drill into the **message details**, HRMP channel, and linked **extrinsics/events** on both sides.
+4. Follow the links to account/extrinsic pages for confirmations, fees, and any failures (version mismatches, insufficient weight).
+
+**Why this matters:** XCM debugging often requires seeing *both* ends of a hop. Subscan stitches these links and surfaces hot channels and recent flows to spot congested routes. Mobile optimizations in 2025 make quick checks easier on the go.
+
+### B) Verify a staking payout hit your address
+1. Paste your **address** into Subscan (Polkadot instance).
+2. On the account page, open the **“Reward”** tab for a dated list of payouts and slashes.
+3. Click through to the **payout extrinsic** (or era payout) to confirm the block, validator, and amount (plus any fees).
+4. If you use the **Portfolio** surface, the **Stake Now / Claim Rewards** buttons can jump-start common actions once you’ve verified data.
+
+## API notes (developers)
+* **Scope & coverage.** Subscan’s hosted HTTP API exposes indexed data for many Substrate networks (chain-agnostic endpoints like `block`, `extrinsic`, `account`, plus network-specific).
+* **Example.** Historical docs show `POST /api/open/block` with parameters (`block_num`, `block_hash`)—the exact pathing can vary by network and plan; consult the live docs your key unlocks.
+* **Plans.** The pro site lists coverage and pricing for HTTP endpoints by network; quotas are globally shared per key with typical RPS limits.
+* **Self-host option.** The **Subscan Essentials** repo provides the architecture baseline and plugin model if you need to study or replicate components.
+
+**Practical integration tips**
+* Cache by **block hash** (immutable) rather than height when possible.
+* Treat Subscan as **indexer truth** for UX, but always retain a **node RPC fallback** for mission-critical paths.
+* For cross-chain analytics, correlate Subscan XCM ids with your own event tracking to avoid double-counting retries.
+
+## Common pitfalls & pro tips
+* **SS58 formats:** The same keypair can display different **SS58-encoded** addresses on different networks. Always copy addresses from the **correct network explorer** before transferring.
+* **Finality lag vs. indexer lag:** A block can be finalized while an indexer is still ingesting—refresh or check the peer network’s page if something looks missing.
+* **Era math:** On Polkadot, rewards are paid **per era**; filters make more sense by era than by date for reconciliation.
+* **XCM versions:** Many failures are due to **XCM version/weight** mismatches; use dashboards and extrinsic detail to see the error site quickly (source vs. destination).
+* **EVM vs. Substrate roles:** Some parachains keep **native Substrate accounts** alongside **EVM addresses**; use the EVM account lists and decoded input data when analyzing contract flows.
+
+## FAQs
+**1) Is Subscan the “official” Polkadot explorer?**
+No single explorer is “the” official one. The Polkadot docs list multiple explorers (Subscan, Blockscout, Routescan, etc.), each serving different needs.
+
+**2) Can I rely on Subscan data for accounting?**
+For **ops dashboards and investigations**—yes. For **final accounting**, always reconcile with **node RPC** or wallet exports to guard against transient indexer gaps.
+
+**3) Where do I see XCM activity?**
+Use Subscan’s **XCM Dashboard** per network to view **flows, messages, channels, and transfers**, and drill into edges that failed.
+
+**4) How do I check if a treasury proposal passed?**
+Open the **Referenda v2** page, filter by track (e.g., Treasury), and inspect the decision status and execution details.
+
+**5) Does Subscan support EVM tokens and prices?**
+Yes—Subscan’s 2025 updates added **ERC-20 price display** and improved **EVM input decoding**, plus **ERC-1155** quantity views.
+
+**6) Can I get alerts when specific accounts move funds?**
+Subscan provides **watchlists and real-time alerts** via its portfolio/pro surfaces.
+
+**7) I need a fully open-source explorer—alternatives?**
+Consider **Statescan** (open-source, cost-focused) or community projects like **Polkaholic** for multi-chain analytics.
+
+**8) Is there any controversy around Subscan’s model?**
+Funding and pricing have been debated on the Polkadot forum; review that context as background when choosing infra.
+
+## Conclusion
+For **builders and analysts**, **Subscan** remains the quickest way to answer “what happened on-chain?” across Polkadot and its parachains—with strong XCM, OpenGov, and EVM surfacing, plus an API for your dashboards. Pair it with Polkadot.js Apps for dev-grade operations and alternative explorers for redundancy.
 
 ## Subscan Community Videos
 ------------
