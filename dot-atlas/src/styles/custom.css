@@ -345,6 +345,39 @@ h2 {
   }
 }
 
+/* —— Hard override so our padding wins over Starlight's —— */
+.sl-markdown-content table > :is(thead,tbody,tfoot) > tr > :is(th,td),
+.prose              table > :is(thead,tbody,tfoot) > tr > :is(th,td),
+article             table > :is(thead,tbody,tfoot) > tr > :is(th,td),
+main                table > :is(thead,tbody,tfoot) > tr > :is(th,td){
+  /* tune these two clamps to taste */
+  padding-block: clamp(0.75rem, 1.1vw, 1.05rem) !important;
+  padding-inline: clamp(0.9rem, 1.6vw, 1.25rem) !important;
+  line-height: 1.5; /* keeps rows feeling airy */
+}
+
+/* header gets a touch more vertical padding to match visuals */
+.sl-markdown-content table thead th,
+.prose              table thead th,
+article             table thead th,
+main                table thead th{
+  padding-block: clamp(0.9rem, 1.2vw, 1.15rem) !important;
+  padding-inline: clamp(0.9rem, 1.6vw, 1.25rem) !important;
+}
+
+/* optional: give first/last columns a little extra breathing room */
+.sl-markdown-content table :is(td,th):first-child,
+.prose              table :is(td,th):first-child,
+article             table :is(td,th):first-child,
+main                table :is(td,th):first-child{
+  padding-inline-start: calc(clamp(0.9rem, 1.6vw, 1.25rem) + .2rem) !important;
+}
+.sl-markdown-content table :is(td,th):last-child,
+.prose              table :is(td,th):last-child,
+article             table :is(td,th):last-child,
+main                table :is(td,th):last-child{
+  padding-inline-end: calc(clamp(0.9rem, 1.6vw, 1.25rem) + .2rem) !important;
+}
 
 
 /* HERO */
