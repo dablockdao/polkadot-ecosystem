@@ -49,7 +49,7 @@ export default defineConfig({
 								label: '🔎 Block Explorers', collapsed: true, autogenerate: { directory: 'tools/block-explorers' }
 							},
 							{
-								label: '🗳️ DAO Tools', collapsed: true, autogenerate: { directory: 'tools/dao-tools' }
+								label: '🗳️ DAOs & Governance', collapsed: true, autogenerate: { directory: 'tools/dao-tools' }
 							},
 							{
 								label: '🧿 Miscellaneous', collapsed: true, autogenerate: {directory: 'tools/miscellaneous'}
@@ -71,7 +71,13 @@ export default defineConfig({
 							label: '🪙 DeFi', collapsed: true, autogenerate: { directory: 'dapps/defi' }
 						},
 						{
+							label: '🎮 Gaming', collapsed: true, autogenerate: { directory: 'dapps/gaming' }
+						},
+						{
 							label: '🌉 Bridges', collapsed: true, autogenerate: { directory: 'dapps/bridges' }
+						},
+						{
+							label: '⛽️ DePin', collapsed: true, autogenerate: { directory: 'dapps/depin' }
 						},
 						{
 							label: '🏠 RWA', collapsed: true, autogenerate: { directory: 'dapps/rwa' }
@@ -81,12 +87,6 @@ export default defineConfig({
 						},
 						{
 							label: '🤖 AI', collapsed: true, autogenerate: { directory: 'dapps/ai' }
-						},
-						{
-							label: '⛽️ DePin', collapsed: true, autogenerate: { directory: 'dapps/depin' }
-						},
-						{
-							label: '🎮 Gaming', collapsed: true, autogenerate: { directory: 'dapps/gaming' }
 						},
 						{
 							label: '💬 Social', collapsed: true, autogenerate: { directory: 'dapps/social' }
@@ -134,7 +134,27 @@ export default defineConfig({
 					{
 						label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'club/archive' }
 					},
-					  ]}
+					  ]},
+					  		{
+						label: 'Media',
+						link: '/media/',
+						icon: 'seti:video',
+						items: [
+							{
+								label: 'Events', collapsed: true, autogenerate: { directory: 'media/events' }
+							},
+						]
+					},
+								{
+						label: 'Learn',
+						link: '/learn/',
+						icon: 'open-book',
+						items: [
+							{
+								label: 'Courses', collapsed: true, autogenerate: { directory: 'learn/courses' }
+							},
+						]
+					},
 				  ])],
 			title: 'Polkadot Ecosystem',
 			editLink: {
@@ -145,8 +165,8 @@ export default defineConfig({
 				'./src/fonts/font-face.css',
 			  ],
 			logo: {
-				light: './src/assets/ecosystem1.png',
-				dark: './src/assets/ecosystem2.png',
+				light: './src/assets/polkadot11.png',
+				dark: './src/assets/polkadot22.png',
 				replacesTitle: true,
 			},
 			components: {

@@ -152,7 +152,8 @@ h2 {
 	  --sl-content-width: 60rem;
 	}
 }
-  
+
+
 /**
  * Overrides
  */
@@ -443,7 +444,7 @@ h2 {
     color: rgba(51, 51, 51, 0.7);
 }
 
-/* Adjust the container width */
+/* Adjust the container width 
 .sl-container.astro-7nkwcw3z {
 	max-width: none; 
 }
@@ -462,7 +463,7 @@ h2 {
 
 .main-content {
 	flex: 1;  
-}
+}*/
 
 .right-sidebar-container h2 {
 	font-size: 17px !important;
@@ -1134,10 +1135,10 @@ starlight-theme-select select:not(:active)  {
 }
 
 }
-
+/*
 .sl-container.astro-7nkwcw3z {
 		padding: 0rem 0rem; 
-}
+}*/
 
 
 .card {

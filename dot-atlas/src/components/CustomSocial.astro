@@ -3,10 +3,28 @@ import type { Props } from '@astrojs/starlight/props';
 import Default from '@astrojs/starlight/components/SocialIcons.astro';
 ---
 
+<nav class="topMenu2">
+    <a class="topLink" href="/tools/">Tools</a>
+    <a class="topLink" href="/dapps/">Dapps</a>
+    <a class="topLink" href="/club/">Community</a>
+    <a class="topLink" href="/club/">Media</a>
+    <a class="topLink" href="/club/">Learn</a>
+</nav>
 
 <Default {...Astro.props}><slot /></Default>
 
 <style>
+
+
+.topMenu2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  border-radius: 10px;
+  margin: 0 15px 0 35px;
+}
+
   .tm1 {
         border: 1px solid #6E7391;
         background-color: #000000;
