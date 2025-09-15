@@ -1,0 +1,136 @@
+---
+title: Mewe
+description: MeWe uses DSNP on Polkadot’s Frequency to deliver portable, self-sovereign identities and graph portability, no crypto needed.
+hero:
+  tagline:  Real Connections, Real Communities.
+  image: 
+    file: ../../../../assets/dapps/social/mewe.png
+  actions:
+    - text: Dapps
+      link: https://mewe.com/
+      icon: external
+    - text: X
+      link: https://x.com/mewe
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+ 
+# MeWe & Polkadot: How DSNP + Frequency Bring Web2 Social to Web3 (2025 Guide)
+This guide explains what **MeWe** is doing with **Polkadot**, why **DSNP** and the **Frequency** parachain matter, and how users/devs can onboard to Web3 social—without needing crypto. We cover the architecture, timelines, comparisons to Lens/Farcaster/ActivityPub/AT Protocol, and practical steps.
+
+## Why this matters (problem → benefit)
+**Problem:** Social networks lock your identity and social graph inside siloed databases. If a platform changes policy, you lose reach, portability, and control.
+
+**Benefit:** With **Polkadot’s Frequency parachain** and **DSNP (Decentralized Social Networking Protocol)**, **MeWe** is moving users toward **self-sovereign social identities** and **portable social graphs**. That means you can keep your handle and relationships across compatible apps—**without needing to buy tokens** or learn DeFi.
+
+## ELI5: MeWe × Polkadot in one minute
+* **MeWe** = privacy-centric social app (tens of millions of accounts).
+* **DSNP** = open protocol for portable social identities & feeds.
+* **Frequency** = a **Polkadot parachain** purpose-built to run DSNP at scale.
+* Together, they let MeWe users **opt in** to a **Web3 handle** and **own their social graph**, while MeWe’s UX stays familiar (no crypto required).
+
+## How it works: DSNP + Frequency + MeWe
+
+### At a glance
+* **DSNP** defines how social actions are represented and broadcast. Announcements (e.g., posts, profile updates) are **anchored on-chain** and **link to content stored off-chain**, forming a verifiable chain of trust from identity → activity.
+* **Frequency** runs DSNP at scale as a **Polkadot parachain**, providing throughput and shared security. Apps like MeWe can leverage **DSNP + Frequency** for identity and graph portability while keeping familiar UI.
+* **MeWe** onboards users with an **opt-in Web3 flow** (choose a **Universal Handle**; keep using the app as normal). You **don’t need to buy crypto**, and you can continue using MeWe without Web3 enabled.
+
+### Deeper dive
+* **Identity & handles:** Users get a DSNP/Frequency handle (portable identifier). Your social graph (follows, followers) can be encoded so other DSNP-compatible apps can read it—preserving relationships across apps.
+* **Data model:** DSNP models **broadcast announcements** on a consensus system with **links to off-chain content** (e.g., object storage). This reduces costs and keeps feeds fast while retaining cryptographic verifiability.
+* **Why Polkadot:** Frequency is a parachain on Polkadot—benefiting from shared security and interoperability. A dedicated chain for social helps meet latency/scale needs for mainstream apps.
+
+## What’s happened so far (timeline)
+* **Sep 2022:** Public announcements of **MeWe → DSNP** integration plans.
+* **Apr 2023:** MeWe adopts **Frequency (Polkadot)** to bring self-sovereign identity to a large user base.
+* **Nov 2023:** Reports of \~**170k** active users on Web3 post-integration.
+* **Jan 2024:** \~**500k** active users migrated—at the time, among the largest Web2→Web3 social migrations.
+* **Aug 2024:** Frequency celebrates **1M+ on-chain users** with MeWe.
+* **Early 2025:** Public posts claim **1.4M+** users migrated.
+* **2025 context:** Numbers vary by source and timeframe; expect continued iteration on features and reporting.
+
+> **Note:** MeWe has also publicized collaborations with other chains for specific app features. Its **identity & social graph migration** is anchored via **DSNP on Polkadot’s Frequency**. Always verify the latest statements for scope and metrics.
+
+## Key features & benefits
+* **User-owned identity & graph:** Keep your handle and relationships across DSNP-aware apps.
+* **No crypto required for users:** MeWe’s UX doesn’t force wallets/tokens for basic use.
+* **Scalability for social:** Frequency specializes in high-volume announcements; content stays off-chain with on-chain anchors.
+* **Interoperability:** Built on Polkadot—parachain model, shared security, potential future XCM integrations.
+* **Developer friendly:** Open protocol (DSNP) with clear primitives (announcements, identities, feeds).
+
+## MeWe–Polkadot vs other “open social” stacks
+| Stack                                  | Layer & Chain                                  | Identity Model                          | Data Placement                                                              | Portability                                        | Governance/Moderation                                                | Notable Scale/Status                                                                             |
+| -------------------------------------- | ---------------------------------------------- | --------------------------------------- | --------------------------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **MeWe + DSNP + Frequency (Polkadot)** | Protocol + **Polkadot parachain** (Frequency)  | DSNP handle mapped to on-chain identity | **Announcements on-chain**; content off-chain with cryptographic references | Designed for cross-app portability via DSNP        | App-level policies; protocol openness fosters multi-client ecosystem | Reported milestones include 500k active migrated (early 2024) and 1M+ on-chain users (2024–2025) |
+| **Farcaster**                          | Protocol; contracts on an EVM L2 + **Hubs**    | On-chain IDs; key & storage registries  | Identity & storage credits on-chain; **posts off-chain** via Hubs           | Portable across Farcaster clients                  | Client/provider policies; open infra (indexers, hubs)                | Rapid client ecosystem growth (Frames, builders)                                                 |
+| **Lens**                               | Protocol; **dedicated chain + DA**             | Lens accounts/handles                   | DA layer; chain finality for social primitives                              | Designed for SocialFi & app-level portability      | Protocol + app-level                                                 | Migrated to a dedicated chain with DA (2025)                                                     |
+| **ActivityPub**                        | **Protocol only** (W3C)                        | Server-scoped accounts (Fediverse)      | Federated servers; no blockchain                                            | Portability via federation; server migrations vary | Instance admins; federation norms                                    | W3C standard; used by Mastodon and others                                                        |
+| **AT Protocol (Bluesky)**              | **Protocol only** (federated PDS/BGS/AppViews) | **DID**-based identity                  | Repos synced over HTTP/WebSockets; no blockchain                            | Strong portability across AT-based apps            | AppViews/labelers; community infra                                   | Rapid user growth; independent infra efforts                                                     |
+
+## Step-by-step: Claiming a MeWe Web3 identity & building with DSNP
+
+### For MeWe users (no crypto needed)
+1. **Open MeWe** → look for the **Web3 / Social Web** prompt.
+2. **Opt-in** to migration; **choose a Universal Handle** (suffix ensures uniqueness).
+3. **Continue using MeWe** normally; your identity/graph can now be portable to DSNP-compatible apps.
+4. **Security tip:** Save recovery info and enable 2FA where offered.
+
+### For developers (quick start)
+1. **Learn DSNP basics:** Announcements, Identifiers, Graph.
+2. **Model your app** around DSNP **Announcements** (Broadcast, Reply, Update) with off-chain content + on-chain anchors.
+3. **Integrate Frequency** (submit announcements; verify identities/handles). Start with public endpoints/SDKs where available.
+4. **User onboarding:** Mirror MeWe’s approach—**no wallet required** for basic flows; abstract keys where possible.
+5. **Interop testing:** Validate read/write with other DSNP clients; test profile/graph portability.
+
+## Common pitfalls & pro tips
+
+* **Assuming content is “fully on-chain.”** DSNP anchors events on-chain but links to off-chain content for scale. Design storage accordingly.
+* **Handle collisions/UX:** DSNP handles may include **suffixes**; communicate this clearly to users.
+* **Governance & moderation:** Protocols don’t remove the need for app-level policies. Plan moderation/abuse tooling (labeling, filtering, reporting).
+* **Multi-chain headlines ≠ identity migration.** MeWe’s identity/graph migration leverages **DSNP on Frequency (Polkadot)**; other chain partnerships may target different app features. Clarify scope in your messaging.
+
+## Suggested images & diagrams (with ALT ideas)
+1. **Architecture diagram:** DSNP Announcements → Frequency (on-chain anchors) → Off-chain media storage.
+
+   * *ALT:* “DSNP announcements anchored on Frequency with off-chain content references.”
+2. **Identity & handle flow:** User opts into Universal Handle; mapping to DSNP identity; portability to other clients.
+
+   * *ALT:* “MeWe Web3 handle mapped to DSNP identity for cross-app portability.”
+3. **Data lifecycle:** Create post → sign → anchor announcement → fetch in clients → verify.
+
+   * *ALT:* “Lifecycle of a DSNP post from creation to verification.”
+4. **Comparison matrix visual:** MeWe+DSNP vs Farcaster vs Lens vs ActivityPub vs AT Protocol.
+
+   * *ALT:* “Comparison of open social stacks across identity, data, and portability.”
+
+
+## FAQs
+**1) Do I need DOT or any crypto to use MeWe’s Web3 features?**
+No. Web3 is opt-in; you can use MeWe without buying crypto.
+
+**2) What exactly is DSNP?**
+An **open protocol** for social identities/feeds designed for **portability** and verifiable announcements.
+
+**3) What’s Frequency’s role and how is Polkadot involved?**
+Frequency is a **Polkadot parachain** purpose-built to run DSNP at scale—anchoring announcements and identities while apps keep familiar UX.
+
+**4) How many MeWe users have migrated?**
+Public figures evolved over time (e.g., hundreds of thousands of active users migrated; seven-figure on-chain counts). Exact numbers vary by source and date.
+
+**5) How is this different from Mastodon/ActivityPub?**
+ActivityPub is a **W3C protocol** (no blockchain). DSNP adds **on-chain announcements** and standardized portability via a specialized chain (Frequency).
+
+**6) How does this compare to Farcaster or Lens?**
+Farcaster keeps **identity on an EVM L2** with content via **Hubs**; Lens moved to a **dedicated chain** with a data-availability layer. DSNP/Frequency emphasizes **portable identities + on-chain announcements** for scale.
+
+**7) Can I take my MeWe identity to other apps?**
+Yes—DSNP’s goal is portability of identity and graph across compatible apps. Availability depends on the target app’s DSNP support.
+
+**8) Is this investment advice about DOT or any token?**
+No—this guide is educational. **Not financial advice.**
+
+## Conclusion
+**MeWe’s DSNP + Frequency path on Polkadot** shows a credible route from Web2 scale to Web3 portability—**without forcing tokens on users**. If you’re a **builder**, start modeling your social actions as **DSNP announcements** and plug into **Frequency**. If you’re a **community or brand**, claim your **Universal Handle** and future-proof your audience portability.

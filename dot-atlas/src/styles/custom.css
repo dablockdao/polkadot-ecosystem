@@ -157,9 +157,8 @@ h2 {
 /**
  * Overrides
  */
-
- /* ===========================
-   Global Table Design System
+/* ===========================
+   Global Table Design System v2
    (no HTML changes required)
    =========================== */
 
@@ -172,13 +171,15 @@ h2 {
   --tbl-hairline: var(--sl-color-hairline, rgba(255,255,255,.09));
   --tbl-accent: var(--sl-color-accent, #ff2670);
 
-  /* layout */
+  /* layout + rhythm (responsive via clamp) */
   --tbl-radius: 14px;
-  --tbl-pad-y: .75rem;
-  --tbl-pad-x: 1rem;
-  --tbl-font: 0.95rem;
-  --tbl-sticky-top: 0px;      /* bump if you have a fixed header */
-  --tbl-row-gap: 1px;         /* dashed separators thickness */
+  --tbl-pad-x: clamp(0.65rem, 1.4vw, 1.1rem);  /* ⬅ tighter on mobile, comfy on desktop */
+  --tbl-pad-y: clamp(0.5rem, 0.9vw, 0.85rem);  /* ⬅ vertical density improved */
+  --tbl-font: clamp(0.9rem, 0.25vw + 0.85rem, 1rem);
+  --tbl-line: 1.45;
+  --tbl-sticky-top: 0px;                       /* bump if you have a fixed header */
+  --tbl-row-gap: 1px;                          /* dashed separators thickness */
+  --tbl-row-radius-fix: 0.5px;                 /* avoids antialias seams on rounding */
 }
 
 /* Scope to common content wrappers so it doesn't hit UI layout tables */
@@ -186,13 +187,15 @@ h2 {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
+  table-layout: auto;
   font-size: var(--tbl-font);
   font-variant-numeric: tabular-nums;
+  line-height: var(--tbl-line);
   background: var(--tbl-bg);
   color: var(--tbl-text);
   border: 1px solid var(--tbl-hairline);
-  border-radius: var(--tbl-radius);
-  overflow: hidden;                 /* enables rounded corners */
+  border-radius: calc(var(--tbl-radius) + var(--tbl-row-radius-fix));
+  overflow: hidden; /* enables rounded corners */
   box-shadow: 0 1px 0 rgba(255,255,255,.04) inset;
 }
 
@@ -201,11 +204,12 @@ h2 {
   display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
   scrollbar-gutter: stable both-edges;
-  min-width: min(100%, 780px);      /* avoid ultra-narrow columns */
+  min-width: 720px; /* avoid ultra-narrow columns; was 780px and "min( )" */
 }
 
-/* sticky header */
+/* sticky header with subtle under-shadow for depth */
 :where(.sl-markdown-content, .prose, article, main) table thead th{
   position: sticky;
   top: var(--tbl-sticky-top);
@@ -213,17 +217,24 @@ h2 {
   background: var(--tbl-bg);
   backdrop-filter: saturate(120%) blur(6px);
   text-align: left;
-  padding: .85rem var(--tbl-pad-x);
+  padding-block: calc(var(--tbl-pad-y) + 0.15rem);
+  padding-inline: var(--tbl-pad-x);
   font-weight: 650;
+  letter-spacing: .1px;
   border-bottom: 1px solid var(--tbl-hairline);
+  box-shadow: 0 6px 10px -8px rgba(0,0,0,.6);
 }
 
 /* cells */
 :where(.sl-markdown-content, .prose, article, main) table :is(td, th[scope="row"]){
-  padding: var(--tbl-pad-y) var(--tbl-pad-x);
+  padding-block: var(--tbl-pad-y);
+  padding-inline: var(--tbl-pad-x);
   vertical-align: top;
-  line-height: 1.45;
 }
+
+/* give first/last columns a touch more breathing room */
+:where(.sl-markdown-content, .prose, article, main) table :is(td, th):first-child{ padding-inline-start: calc(var(--tbl-pad-x) + .2rem); }
+:where(.sl-markdown-content, .prose, article, main) table :is(td, th):last-child { padding-inline-end:   calc(var(--tbl-pad-x) + .2rem); }
 
 /* inner element resets for tidy content */
 :where(.sl-markdown-content, .prose, article, main) table :is(td, th) p{ margin: 0; }
@@ -232,19 +243,29 @@ h2 {
   background: color-mix(in oklab, var(--tbl-text) 10%, transparent);
   border: 1px solid var(--tbl-hairline);
   border-radius: 6px;
-  padding: .05rem .35rem;
+  padding: .05rem .4rem;
   font-size: 0.88em;
 }
 
-/* zebra + separators */
-:where(.sl-markdown-content, .prose, article, main) table tbody tr:nth-child(even) :is(td, th){
-  background: color-mix(in oklab, var(--tbl-bg) 96%, #ffffff 4%);
-}
-:where(.sl-markdown-content, .prose, article, main) table tbody tr + tr :is(td, th){
-  border-top: var(--tbl-row-gap) dashed color-mix(in oklab, var(--tbl-hairline) 70%, transparent);
+/* links inside cells */
+:where(.sl-markdown-content, .prose, article, main) table a{
+  color: var(--tbl-text);
+  text-decoration-color: color-mix(in oklab, var(--tbl-accent) 70%, transparent);
+  text-underline-offset: 2px;
 }
 
-/* hover row */
+/* zebra + separators (crisper, less contrasty) */
+:where(.sl-markdown-content, .prose, article, main) table tbody tr:nth-child(even) :is(td, th){
+  background: color-mix(in oklab, var(--tbl-bg) 96.5%, #ffffff 3.5%);
+}
+:where(.sl-markdown-content, .prose, article, main) table tbody tr + tr :is(td, th){
+  border-top: var(--tbl-row-gap) dashed color-mix(in oklab, var(--tbl-hairline) 75%, transparent);
+}
+
+/* hover row with motion-safe transition */
+@media (prefers-reduced-motion: no-preference){
+  :where(.sl-markdown-content, .prose, article, main) table tbody tr{ transition: background-color .14s ease; }
+}
 :where(.sl-markdown-content, .prose, article, main) table tbody tr:is(:hover, :focus-within) :is(td, th){
   background: var(--tbl-bg-soft);
 }
@@ -253,13 +274,14 @@ h2 {
 :where(.sl-markdown-content, .prose, article, main) table th[scope="row"]{
   font-weight: 650;
   white-space: nowrap;
+  color: var(--tbl-text);
 }
 
-/* caption style (Markdown supports table captions in some MDX setups) */
+/* caption style */
 :where(.sl-markdown-content, .prose, article, main) table caption{
   caption-side: top;
   text-align: left;
-  padding: .9rem var(--tbl-pad-x);
+  padding: calc(var(--tbl-pad-y) + .15rem) var(--tbl-pad-x);
   color: var(--tbl-muted);
   font-weight: 500;
   border-bottom: 1px solid var(--tbl-hairline);
@@ -274,7 +296,7 @@ h2 {
   background: color-mix(in oklab, var(--tbl-bg) 92%, #ffffff 8%);
 }
 
-/* optional width hints (works with Markdown alignment pipes) */
+/* alignment helpers (Markdown alignment pipes) */
 :where(.sl-markdown-content, .prose, article, main) table :is(td[align="right"], th[align="right"]){ text-align: right; }
 :where(.sl-markdown-content, .prose, article, main) table :is(td[align="center"], th[align="center"]){ text-align: center; }
 
@@ -285,18 +307,44 @@ h2 {
 :where(.sl-markdown-content, .prose, article, main) table tbody tr:last-child td:last-child { border-bottom-right-radius: var(--tbl-radius); }
 
 /* density presets (toggle by adding a class to <body> or a parent—optional) */
-.table-compact :where(table) { --tbl-pad-y: .55rem; --tbl-font: 0.9rem; }
-.table-cozy    :where(table) { --tbl-pad-y: .9rem;  --tbl-font: 1rem;   }
+.table-compact :where(table){ --tbl-pad-y: .45rem; --tbl-pad-x: .7rem; --tbl-font: .9rem; }
+.table-cozy    :where(table){ --tbl-pad-y: .95rem; --tbl-pad-x: 1.2rem; --tbl-font: 1.02rem; }
+
+/* accessibility: clear keyboard focus inside tables */
+:where(.sl-markdown-content, .prose, article, main) table :is(a, button, [tabindex]){:focus-visible{
+  outline: 2px solid color-mix(in oklab, var(--tbl-accent) 85%, #fff 0%);
+  outline-offset: 2px;
+  border-radius: 6px;
+}}
+
+/* optional: sticky first column when a parent adds .table-sticky-first */
+.table-sticky-first :where(table) tbody td:first-child,
+.table-sticky-first :where(table) thead th:first-child{
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--tbl-bg);
+  box-shadow: 6px 0 8px -6px rgba(0,0,0,.5);
+}
 
 /* fallback if browser doesn’t support color-mix/oklab */
 @supports not (color: color-mix(in oklab, #000 50%, #fff 50%)){
-  :where(.sl-markdown-content, .prose, article, main) table tbody tr:nth-child(even) :is(td, th){
-    background: rgba(255,255,255,.03);
+  :where(.sl-markdown-content, .prose, article, main) table tbody tr:nth-child(even) :is(td, th){ background: rgba(255,255,255,.03); }
+  :where(.sl-markdown-content, .prose, article, main) table code{ background: rgba(255,255,255,.06); }
+}
+
+/* print tidy */
+@media print{
+  :where(.sl-markdown-content, .prose, article, main) table{
+    box-shadow: none;
+    border-color: #999;
   }
-  :where(.sl-markdown-content, .prose, article, main) table code{
-    background: rgba(255,255,255,.06);
+  :where(.sl-markdown-content, .prose, article, main) table thead th{
+    backdrop-filter: none;
+    box-shadow: none;
   }
 }
+
 
 
 /* HERO */
