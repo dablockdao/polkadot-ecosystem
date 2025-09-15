@@ -2,25 +2,6 @@
 title: Polkadot Ecosystem
 description: Get started and join the biggest DAO in the world.
 template: splash
-banner:
-  content: 
-    <a target="_blank" rel="noopener noreferrer" href="//media.polkadotecosystem.com/events/sub0/ ">Sub0 Reset Highlights</a>
-hero:
-  tagline: Discover all the projects and initiatives of the Polkadot ecosystem in an organized and intuitive way.
-  image:
-    file: ../../assets/polkadot-token.png
-  actions:
-    - text: Tools
-      link: /tools/
-      icon: right-arrow
-    - text: Dapps
-      link: /dapps/
-      icon: right-arrow
-      variant: primary
-    - text: Community
-      link: /club/
-      icon: heart
-      variant: minimal
 ---
 
 import { ImageCard, LinkButton2 } from '../../components/ImageCard.astro';
@@ -190,26 +171,6 @@ Polkadot’s vision of a decentralized internet.
 
 &nbsp;
 
-<a id="listproject"></a>
-<CallCTA />
-
-
-## +Ecosystem Resources:
--------------
-<CardGrid>
-  <Card title="Polkadot Wiki" icon="open-book">
-    Explore in-depth information on Polkadot’s technical principles and key components powering its ecosystem
-    <LinkButton href="https://wiki.polkadot.network" variant="secondary" icon="external" iconPlacement="start">Polkadot Wiki</LinkButton>
-  </Card>
-
-  <Card title="Polkadot Website" icon="information">
-    Discover Polkadot's vision, innovative ecosystem, and its role in the future of decentralized technologies.    
-    <LinkButton href="https://polkadot.com/" variant="secondary" icon="external" iconPlacement="start">Polkadot.com</LinkButton>
-  </Card>
-</ CardGrid>
-
-
-
 ## ELI5: What is the Polkadot ecosystem?
 Polkadot is a **network of blockchains**. A central **relay chain** provides shared security; specialized **parachains** plug in to add capabilities (DeFi, identity, gaming, etc.). **XCM** is the native messaging standard for moving assets and instructions across chains. **Asset Hub** is a system chain for issuing and managing tokens/NFTs that other chains can use; some networks support **paying fees in non-native assets** via asset-conversion pools.
 
@@ -283,6 +244,8 @@ Polkadot is a **network of blockchains**. A central **relay chain** provides sha
 * **DIA**, **Band**, **API3** (availability varies by parachain).
 * On-chain randomness via **VRF** on chains that expose it.
 
+<a id="listproject"></a>
+<CallCTA />
 
 ## Dapps: what you’ll actually use
 
@@ -366,6 +329,22 @@ Polkadot is a **network of blockchains**. A central **relay chain** provides sha
 * **Governance overwhelm:** Start with **per-track delegation** to reputable voters; escalate to direct voting later.
 * **Runtime vs contracts:** Building a parachain offers maximal control but higher complexity; contracts are faster to ship but bound by chain limits.
 * **Bridges:** Treat as production infra; start with **test amounts**, monitor confirmations, and document your playbooks.
+
+
+## +Ecosystem Resources:
+-------------
+<CardGrid>
+  <Card title="Polkadot Wiki" icon="open-book">
+    Explore in-depth information on Polkadot’s technical principles and key components powering its ecosystem
+    <LinkButton href="https://wiki.polkadot.network" variant="secondary" icon="external" iconPlacement="start">Polkadot Wiki</LinkButton>
+  </Card>
+
+  <Card title="Polkadot Website" icon="information">
+    Discover Polkadot's vision, innovative ecosystem, and its role in the future of decentralized technologies.    
+    <LinkButton href="https://polkadot.com/" variant="secondary" icon="external" iconPlacement="start">Polkadot.com</LinkButton>
+  </Card>
+</ CardGrid>
+
 
 ## FAQs
 **1) What is Asset Hub and why should I care?**
