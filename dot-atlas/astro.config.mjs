@@ -107,6 +107,9 @@ export default defineConfig({
 						link: '/club/',
 						icon: 'heart',
 						items: [
+										  {
+						label: '💰 Bounties', collapsed: true, autogenerate: { directory: 'club/bounties' }
+					},
 							{
 								label: '🏛️ Collectives', collapsed: true, autogenerate: { directory: 'club/collectives' }
 							},
@@ -117,17 +120,8 @@ export default defineConfig({
 						  label: '👍 Initiatives', collapsed: true, autogenerate: { directory: 'club/initiatives' }
 					  },
 					  {
-						label: '💰 Bounties', collapsed: true, autogenerate: { directory: 'club/bounties' }
-					},
-					  {
 						  label: '💼 Orgs', collapsed: true, autogenerate: { directory: 'club/orgs' }
 					  },
-					  {
-						label: '👥 Catalysts', collapsed: true, autogenerate: { directory: 'club/people' }
-					},
-					{
-						label: '📚 Resources', collapsed: true, autogenerate: { directory: 'club/resources' }
-					},
 					{
 						label: '🎪 Memecoins', collapsed: true, autogenerate: { directory: 'club/memecoins' }
 					},
@@ -135,26 +129,6 @@ export default defineConfig({
 						label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'club/archive' }
 					},
 					  ]},
-					  		{
-						label: 'Media',
-						link: '/media/',
-						icon: 'seti:video',
-						items: [
-							{
-								label: 'Events', collapsed: true, autogenerate: { directory: 'media/events' }
-							},
-						]
-					},
-								{
-						label: 'Learn',
-						link: '/learn/',
-						icon: 'open-book',
-						items: [
-							{
-								label: 'Courses', collapsed: true, autogenerate: { directory: 'learn/courses' }
-							},
-						]
-					},
 				  ])],
 			title: 'Polkadot Ecosystem',
 			editLink: {
