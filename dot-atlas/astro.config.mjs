@@ -143,6 +143,9 @@ export default defineConfig({
 						{
 								label: 'Glossary', collapsed: true, autogenerate: { directory: 'resources/glossary' }
 						},
+												{
+								label: 'Faucets', collapsed: true, autogenerate: { directory: 'resources/faucets' }
+						},
 					  ]},
 				  ])],
 			title: 'Polkadot Ecosystem',
