@@ -56,3 +56,9 @@ Node Operators must stake a minimum amount of SQT to participate in the network 
 SubQuery is revolutionizing the data infrastructure landscape within the Polkadot ecosystem and beyond. By providing a scalable, decentralized, and efficient solution for data indexing and retrieval, SubQuery empowers developers to build more powerful and responsive dApps. Its innovative reward structures and economic model further enhance its appeal, making it a critical component of the burgeoning web3 ecosystem.
 Whether you are a developer looking to integrate advanced data solutions into your project or a Node Operator seeking new opportunities, SubQuery offers the tools and incentives to drive your success in the decentralized future.
 - <small>Related Token/s:</small> **SQT**
+
+
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQN95gX-oyE69itSue44MKgpRwjUcTRMtZ5BGn0uzOCO3okZBK6rpaB3N2LMaJVhk8XJ1CB5dJ6hmgJ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9_ve6VzL3b0?si=IUB7Dm4BUb0pK4Ad" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
