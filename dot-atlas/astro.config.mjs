@@ -123,9 +123,6 @@ export default defineConfig({
 						  label: '💼 Orgs', collapsed: true, autogenerate: { directory: 'club/orgs' }
 					  },
 					{
-						label: '🎪 Memecoins', collapsed: true, autogenerate: { directory: 'club/memecoins' }
-					},
-					{
 						label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'club/archive' }
 					},
 					  ]},
