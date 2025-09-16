@@ -52,10 +52,10 @@ export default defineConfig({
 								label: '🗳️ DAOs & Governance', collapsed: true, autogenerate: { directory: 'tools/dao-tools' }
 							},
 							{
-								label: '🧿 Miscellaneous', collapsed: true, autogenerate: {directory: 'tools/miscellaneous'}
+								label: '🛠️ Development', collapsed: true, autogenerate: { directory: 'tools/dev' }
 							},
 							{
-								label: '🛠️ Development', collapsed: true, autogenerate: { directory: 'tools/dev' }
+								label: '🧿 Miscellaneous', collapsed: true, autogenerate: {directory: 'tools/miscellaneous'}
 							},
 							{
 								label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'tools/archive' }
@@ -80,22 +80,22 @@ export default defineConfig({
 							label: '⛽️ DePin', collapsed: true, autogenerate: { directory: 'dapps/depin' }
 						},
 						{
-							label: '🏠 RWA', collapsed: true, autogenerate: { directory: 'dapps/rwa' }
-						},
-						{
-							label: '💻 Smart Contracts', collapsed: true, autogenerate: { directory: 'dapps/smart-contracts' }
+							label: '🎨 NFTs', collapsed: true, autogenerate: { directory: 'dapps/nft-marketplaces' }
 						},
 						{
 							label: '🤖 AI', collapsed: true, autogenerate: { directory: 'dapps/ai' }
 						},
 						{
+							label: '🏠 RWA', collapsed: true, autogenerate: { directory: 'dapps/rwa' }
+						},
+						{
 							label: '💬 Social', collapsed: true, autogenerate: { directory: 'dapps/social' }
 						},
 						{
-							label: '🧿 Miscellaneous', collapsed: true, autogenerate: { directory: 'dapps/miscellaneous' }
+							label: '💻 Smart Contracts', collapsed: true, autogenerate: { directory: 'dapps/smart-contracts' }
 						},
 						{
-							label: '🛍️ NFT Marketplaces', collapsed: true, autogenerate: { directory: 'dapps/nft-marketplaces' }
+							label: '🧿 Miscellaneous', collapsed: true, autogenerate: { directory: 'dapps/miscellaneous' }
 						},
 						{
 							label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'dapps/archive' }
@@ -107,17 +107,17 @@ export default defineConfig({
 						link: '/club/',
 						icon: 'heart',
 						items: [
-										  {
+					{
 						label: '💰 Bounties', collapsed: true, autogenerate: { directory: 'club/bounties' }
 					},
-							{
-								label: '🏛️ Collectives', collapsed: true, autogenerate: { directory: 'club/collectives' }
-							},
-						  {
-						  label: '🏴‍☠️ DAOs', collapsed: true, autogenerate: { directory: 'club/daos' }
-					  },
 					  {
-						  label: '👍 Initiatives', collapsed: true, autogenerate: { directory: 'club/initiatives' }
+						  label: '🌱 Initiatives', collapsed: true, autogenerate: { directory: 'club/initiatives' }
+					  },
+					  	{
+								label: '🏛️ Collectives', collapsed: true, autogenerate: { directory: 'club/collectives' }
+						},
+						{
+						  label: '👥 DAOs', collapsed: true, autogenerate: { directory: 'club/daos' }
 					  },
 					  {
 						  label: '💼 Orgs', collapsed: true, autogenerate: { directory: 'club/orgs' }
@@ -125,6 +125,24 @@ export default defineConfig({
 					{
 						label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'club/archive' }
 					},
+					  ]},
+										{
+						label: 'Resources',
+						link: '/resources/',
+						icon: 'open-book',
+						items: [
+					  	{
+								label: 'How-to Guides', collapsed: true, autogenerate: { directory: 'resources/guides' }
+						},
+											  	{
+								label: 'Media', collapsed: true, autogenerate: { directory: 'resources/media' }
+						},
+						{
+								label: 'Kits & Templates', collapsed: true, autogenerate: { directory: 'resources/templates' }
+						},
+						{
+								label: 'Glossary', collapsed: true, autogenerate: { directory: 'resources/glossary' }
+						},
 					  ]},
 				  ])],
 			title: 'Polkadot Ecosystem',

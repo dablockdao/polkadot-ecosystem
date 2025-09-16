@@ -1368,4 +1368,54 @@ starlight-theme-select select:not(:active)  {
 	display: block !important; /* Para asegurarte de que ocupe todo el espacio */
 	box-sizing: border-box; /* Considera padding y border dentro del ancho */
   }
+
+
+  /* ===== Tablas responsivas SIN JS ===== */
+:where(.content) table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: separate;
+  border-spacing: 0;
+  max-width: 100%;
+  margin-inline: calc(-1 * var(--sl-spacing-3, 1rem));
+  padding-inline: var(--sl-spacing-3, 1rem);
+}
+
+:where(.content) table th,
+:where(.content) table td {
+  padding: .6rem .75rem;
+  line-height: 1.25;
+}
+
+:where(.content) table td,
+:where(.content) table th {
+  white-space: nowrap;
+}
+:where(.content) table td[data-wrap],
+:where(.content) table th[data-wrap] {
+  white-space: normal;
+}
+
+:where(.content) table {
+  background: var(--sl-color-bg-soft, #121219);
+  border: 1px solid var(--sl-color-hairline, rgba(255,255,255,.08));
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  :where(.content) table { font-size: .95rem; }
+}
+
+@media (max-width: 640px) {
+  :where(.content) table { font-size: .9rem; min-width: 640px; }
+  :where(.content) table th,
+  :where(.content) table td { padding: .5rem .6rem; }
+}
+
+@media (max-width: 640px) {
+  :where(.content) table thead th:nth-child(6),
+  :where(.content) table tbody td:nth-child(6) { display: none; }
+}
+
   

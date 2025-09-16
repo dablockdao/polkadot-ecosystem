@@ -75,3 +75,8 @@ Ternoa is an advanced blockchain protocol designed to address key challenges in 
 ### Conclusion
 Ternoa is a groundbreaking protocol in the Polkadot ecosystem, offering a secure, private, and scalable environment for dApp development. Its multi-network architecture, built-in confidentiality features, and robust security mechanisms make it an ideal platform for developers looking to create the next generation of decentralized applications. By addressing key challenges in Web3, Ternoa is poised to play a pivotal role in the future of blockchain technology.
 - <small>Related Token/s:</small> **CAPS**
+
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vSpKyWF3Evq23lXhd7A6xNk5QxSkV6ebp-r5fAV4Qj5nbdR8Mt_O1nwIiAJm4fJnWkmIYfsA6wBemZi/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/gx1nlYm6atw?si=zaEC3ptHC6OUVOVe" title="YouTube video player" width="560"></iframe>
