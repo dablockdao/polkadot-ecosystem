@@ -4,7 +4,7 @@ dscription: Professional Proof-of-Stake node operator offering secure staking se
 hero:
   tagline: Premier provider of Proof-of-Stake (PoS) node operations.
   image: 
-    file: ../../../../../assets/hub/orgs/dragonstake.png
+    file: ../../../../../assets/hub/orgs/dominodes.png
   actions:
     - text: Site
       link: https://dominodes.io/

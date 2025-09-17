@@ -153,233 +153,6 @@ h2 {
 	}
 }
 
-
-/**
- * Overrides
- */
-/* ===========================
-   Global Table Design System v2
-   (no HTML changes required)
-   =========================== */
-
-:root{
-  /* theme tokens (auto-pick Starlight vars if present) */
-  --tbl-bg: var(--sl-color-bg, #0b0b0f);
-  --tbl-bg-soft: var(--sl-color-bg-soft, #121219);
-  --tbl-text: var(--sl-color-text, #e8e8ef);
-  --tbl-muted: var(--sl-color-text-muted, #aeb7cb);
-  --tbl-hairline: var(--sl-color-hairline, rgba(255,255,255,.09));
-  --tbl-accent: var(--sl-color-accent, #ff2670);
-
-  /* layout + rhythm (responsive via clamp) */
-  --tbl-radius: 14px;
-  --tbl-pad-x: clamp(0.65rem, 1.4vw, 1.1rem);  /* ⬅ tighter on mobile, comfy on desktop */
-  --tbl-pad-y: clamp(0.5rem, 0.9vw, 0.85rem);  /* ⬅ vertical density improved */
-  --tbl-font: clamp(0.9rem, 0.25vw + 0.85rem, 1rem);
-  --tbl-line: 1.45;
-  --tbl-sticky-top: 0px;                       /* bump if you have a fixed header */
-  --tbl-row-gap: 1px;                          /* dashed separators thickness */
-  --tbl-row-radius-fix: 0.5px;                 /* avoids antialias seams on rounding */
-}
-
-/* Scope to common content wrappers so it doesn't hit UI layout tables */
-:where(.sl-markdown-content, .prose, article, main) table{
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  table-layout: auto;
-  font-size: var(--tbl-font);
-  font-variant-numeric: tabular-nums;
-  line-height: var(--tbl-line);
-  background: var(--tbl-bg);
-  color: var(--tbl-text);
-  border: 1px solid var(--tbl-hairline);
-  border-radius: calc(var(--tbl-radius) + var(--tbl-row-radius-fix));
-  overflow: hidden; /* enables rounded corners */
-  box-shadow: 0 1px 0 rgba(255,255,255,.04) inset;
-}
-
-/* graceful horizontal scroll on small screens */
-:where(.sl-markdown-content, .prose, article, main) table{
-  display: block;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-x: contain;
-  scrollbar-gutter: stable both-edges;
-  min-width: 720px; /* avoid ultra-narrow columns; was 780px and "min( )" */
-}
-
-/* sticky header with subtle under-shadow for depth */
-:where(.sl-markdown-content, .prose, article, main) table thead th{
-  position: sticky;
-  top: var(--tbl-sticky-top);
-  z-index: 1;
-  background: var(--tbl-bg);
-  backdrop-filter: saturate(120%) blur(6px);
-  text-align: left;
-  padding-block: calc(var(--tbl-pad-y) + 0.15rem);
-  padding-inline: var(--tbl-pad-x);
-  font-weight: 650;
-  letter-spacing: .1px;
-  border-bottom: 1px solid var(--tbl-hairline);
-  box-shadow: 0 6px 10px -8px rgba(0,0,0,.6);
-}
-
-/* cells */
-:where(.sl-markdown-content, .prose, article, main) table :is(td, th[scope="row"]){
-  padding-block: var(--tbl-pad-y);
-  padding-inline: var(--tbl-pad-x);
-  vertical-align: top;
-}
-
-/* give first/last columns a touch more breathing room */
-:where(.sl-markdown-content, .prose, article, main) table :is(td, th):first-child{ padding-inline-start: calc(var(--tbl-pad-x) + .2rem); }
-:where(.sl-markdown-content, .prose, article, main) table :is(td, th):last-child { padding-inline-end:   calc(var(--tbl-pad-x) + .2rem); }
-
-/* inner element resets for tidy content */
-:where(.sl-markdown-content, .prose, article, main) table :is(td, th) p{ margin: 0; }
-:where(.sl-markdown-content, .prose, article, main) table :is(td, th) p + p{ margin-top: .5rem; }
-:where(.sl-markdown-content, .prose, article, main) table code{
-  background: color-mix(in oklab, var(--tbl-text) 10%, transparent);
-  border: 1px solid var(--tbl-hairline);
-  border-radius: 6px;
-  padding: .05rem .4rem;
-  font-size: 0.88em;
-}
-
-/* links inside cells */
-:where(.sl-markdown-content, .prose, article, main) table a{
-  color: var(--tbl-text);
-  text-decoration-color: color-mix(in oklab, var(--tbl-accent) 70%, transparent);
-  text-underline-offset: 2px;
-}
-
-/* zebra + separators (crisper, less contrasty) */
-:where(.sl-markdown-content, .prose, article, main) table tbody tr:nth-child(even) :is(td, th){
-  background: color-mix(in oklab, var(--tbl-bg) 96.5%, #ffffff 3.5%);
-}
-:where(.sl-markdown-content, .prose, article, main) table tbody tr + tr :is(td, th){
-  border-top: var(--tbl-row-gap) dashed color-mix(in oklab, var(--tbl-hairline) 75%, transparent);
-}
-
-/* hover row with motion-safe transition */
-@media (prefers-reduced-motion: no-preference){
-  :where(.sl-markdown-content, .prose, article, main) table tbody tr{ transition: background-color .14s ease; }
-}
-:where(.sl-markdown-content, .prose, article, main) table tbody tr:is(:hover, :focus-within) :is(td, th){
-  background: var(--tbl-bg-soft);
-}
-
-/* first column (row header if present) */
-:where(.sl-markdown-content, .prose, article, main) table th[scope="row"]{
-  font-weight: 650;
-  white-space: nowrap;
-  color: var(--tbl-text);
-}
-
-/* caption style */
-:where(.sl-markdown-content, .prose, article, main) table caption{
-  caption-side: top;
-  text-align: left;
-  padding: calc(var(--tbl-pad-y) + .15rem) var(--tbl-pad-x);
-  color: var(--tbl-muted);
-  font-weight: 500;
-  border-bottom: 1px solid var(--tbl-hairline);
-  background: linear-gradient(180deg, color-mix(in oklab, #fff 2%, transparent), transparent);
-}
-
-/* footer (totals, notes) */
-:where(.sl-markdown-content, .prose, article, main) table tfoot td{
-  padding: .8rem var(--tbl-pad-x);
-  color: var(--tbl-muted);
-  border-top: 1px solid var(--tbl-hairline);
-  background: color-mix(in oklab, var(--tbl-bg) 92%, #ffffff 8%);
-}
-
-/* alignment helpers (Markdown alignment pipes) */
-:where(.sl-markdown-content, .prose, article, main) table :is(td[align="right"], th[align="right"]){ text-align: right; }
-:where(.sl-markdown-content, .prose, article, main) table :is(td[align="center"], th[align="center"]){ text-align: center; }
-
-/* corner polish */
-:where(.sl-markdown-content, .prose, article, main) table thead th:first-child{ border-top-left-radius: var(--tbl-radius); }
-:where(.sl-markdown-content, .prose, article, main) table thead th:last-child { border-top-right-radius: var(--tbl-radius); }
-:where(.sl-markdown-content, .prose, article, main) table tbody tr:last-child td:first-child{ border-bottom-left-radius: var(--tbl-radius); }
-:where(.sl-markdown-content, .prose, article, main) table tbody tr:last-child td:last-child { border-bottom-right-radius: var(--tbl-radius); }
-
-/* density presets (toggle by adding a class to <body> or a parent—optional) */
-.table-compact :where(table){ --tbl-pad-y: .45rem; --tbl-pad-x: .7rem; --tbl-font: .9rem; }
-.table-cozy    :where(table){ --tbl-pad-y: .95rem; --tbl-pad-x: 1.2rem; --tbl-font: 1.02rem; }
-
-/* accessibility: clear keyboard focus inside tables */
-:where(.sl-markdown-content, .prose, article, main) table :is(a, button, [tabindex]){:focus-visible{
-  outline: 2px solid color-mix(in oklab, var(--tbl-accent) 85%, #fff 0%);
-  outline-offset: 2px;
-  border-radius: 6px;
-}}
-
-/* optional: sticky first column when a parent adds .table-sticky-first */
-.table-sticky-first :where(table) tbody td:first-child,
-.table-sticky-first :where(table) thead th:first-child{
-  position: sticky;
-  left: 0;
-  z-index: 1;
-  background: var(--tbl-bg);
-  box-shadow: 6px 0 8px -6px rgba(0,0,0,.5);
-}
-
-/* fallback if browser doesn’t support color-mix/oklab */
-@supports not (color: color-mix(in oklab, #000 50%, #fff 50%)){
-  :where(.sl-markdown-content, .prose, article, main) table tbody tr:nth-child(even) :is(td, th){ background: rgba(255,255,255,.03); }
-  :where(.sl-markdown-content, .prose, article, main) table code{ background: rgba(255,255,255,.06); }
-}
-
-/* print tidy */
-@media print{
-  :where(.sl-markdown-content, .prose, article, main) table{
-    box-shadow: none;
-    border-color: #999;
-  }
-  :where(.sl-markdown-content, .prose, article, main) table thead th{
-    backdrop-filter: none;
-    box-shadow: none;
-  }
-}
-
-/* —— Hard override so our padding wins over Starlight's —— */
-.sl-markdown-content table > :is(thead,tbody,tfoot) > tr > :is(th,td),
-.prose              table > :is(thead,tbody,tfoot) > tr > :is(th,td),
-article             table > :is(thead,tbody,tfoot) > tr > :is(th,td),
-main                table > :is(thead,tbody,tfoot) > tr > :is(th,td){
-  /* tune these two clamps to taste */
-  padding-block: clamp(0.75rem, 1.1vw, 1.05rem) !important;
-  padding-inline: clamp(0.9rem, 1.6vw, 1.25rem) !important;
-  line-height: 1.5; /* keeps rows feeling airy */
-}
-
-/* header gets a touch more vertical padding to match visuals */
-.sl-markdown-content table thead th,
-.prose              table thead th,
-article             table thead th,
-main                table thead th{
-  padding-block: clamp(0.9rem, 1.2vw, 1.15rem) !important;
-  padding-inline: clamp(0.9rem, 1.6vw, 1.25rem) !important;
-}
-
-/* optional: give first/last columns a little extra breathing room */
-.sl-markdown-content table :is(td,th):first-child,
-.prose              table :is(td,th):first-child,
-article             table :is(td,th):first-child,
-main                table :is(td,th):first-child{
-  padding-inline-start: calc(clamp(0.9rem, 1.6vw, 1.25rem) + .2rem) !important;
-}
-.sl-markdown-content table :is(td,th):last-child,
-.prose              table :is(td,th):last-child,
-article             table :is(td,th):last-child,
-main                table :is(td,th):last-child{
-  padding-inline-end: calc(clamp(0.9rem, 1.6vw, 1.25rem) + .2rem) !important;
-}
-
-
 /* HERO */
 
 .hero {
@@ -1370,6 +1143,240 @@ starlight-theme-select select:not(:active)  {
   }
 
 
+
+
+
+
+
+
+
+
+/**
+ * Overrides
+ */
+/* ===========================
+   Global Table Design System v2
+   (no HTML changes required)
+   =========================== */
+
+:root{
+  /* theme tokens (auto-pick Starlight vars if present) */
+  --tbl-bg: var(--sl-color-bg, #0b0b0f);
+  --tbl-bg-soft: var(--sl-color-bg-soft, #121219);
+  --tbl-text: var(--sl-color-text, #e8e8ef);
+  --tbl-muted: var(--sl-color-text-muted, #aeb7cb);
+  --tbl-hairline: var(--sl-color-hairline, rgba(255,255,255,.09));
+  --tbl-accent: var(--sl-color-accent, #ff2670);
+
+  /* layout + rhythm (responsive via clamp) */
+  --tbl-radius: 14px;
+  --tbl-pad-x: clamp(0.65rem, 1.4vw, 1.1rem);  /* ⬅ tighter on mobile, comfy on desktop */
+  --tbl-pad-y: clamp(0.5rem, 0.9vw, 0.85rem);  /* ⬅ vertical density improved */
+  --tbl-font: clamp(0.9rem, 0.25vw + 0.85rem, 1rem);
+  --tbl-line: 1.45;
+  --tbl-sticky-top: 0px;                       /* bump if you have a fixed header */
+  --tbl-row-gap: 1px;                          /* dashed separators thickness */
+  --tbl-row-radius-fix: 0.5px;                 /* avoids antialias seams on rounding */
+}
+
+/* Scope to common content wrappers so it doesn't hit UI layout tables */
+:where(.sl-markdown-content, .prose, article, main) table{
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: auto;
+  font-size: var(--tbl-font);
+  font-variant-numeric: tabular-nums;
+  line-height: var(--tbl-line);
+  background: var(--tbl-bg);
+  color: var(--tbl-text);
+  border: 1px solid var(--tbl-hairline);
+  border-radius: calc(var(--tbl-radius) + var(--tbl-row-radius-fix));
+  overflow: hidden; /* enables rounded corners */
+  box-shadow: 0 1px 0 rgba(255,255,255,.04) inset;
+}
+
+/* graceful horizontal scroll on small screens */
+:where(.sl-markdown-content, .prose, article, main) table{
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-gutter: stable both-edges;
+  min-width: 720px; /* avoid ultra-narrow columns; was 780px and "min( )" */
+}
+
+/* sticky header with subtle under-shadow for depth */
+:where(.sl-markdown-content, .prose, article, main) table thead th{
+  position: sticky;
+  top: var(--tbl-sticky-top);
+  z-index: 1;
+  background: var(--tbl-bg);
+  backdrop-filter: saturate(120%) blur(6px);
+  text-align: left;
+  padding-block: calc(var(--tbl-pad-y) + 0.15rem);
+  padding-inline: var(--tbl-pad-x);
+  font-weight: 650;
+  letter-spacing: .1px;
+  border-bottom: 1px solid var(--tbl-hairline);
+  box-shadow: 0 6px 10px -8px rgba(0,0,0,.6);
+}
+
+/* cells */
+:where(.sl-markdown-content, .prose, article, main) table :is(td, th[scope="row"]){
+  padding-block: var(--tbl-pad-y);
+  padding-inline: var(--tbl-pad-x);
+  vertical-align: top;
+}
+
+/* give first/last columns a touch more breathing room */
+:where(.sl-markdown-content, .prose, article, main) table :is(td, th):first-child{ padding-inline-start: calc(var(--tbl-pad-x) + .2rem); }
+:where(.sl-markdown-content, .prose, article, main) table :is(td, th):last-child { padding-inline-end:   calc(var(--tbl-pad-x) + .2rem); }
+
+/* inner element resets for tidy content */
+:where(.sl-markdown-content, .prose, article, main) table :is(td, th) p{ margin: 0; }
+:where(.sl-markdown-content, .prose, article, main) table :is(td, th) p + p{ margin-top: .5rem; }
+:where(.sl-markdown-content, .prose, article, main) table code{
+  background: color-mix(in oklab, var(--tbl-text) 10%, transparent);
+  border: 1px solid var(--tbl-hairline);
+  border-radius: 6px;
+  padding: .05rem .4rem;
+  font-size: 0.88em;
+}
+
+/* links inside cells */
+:where(.sl-markdown-content, .prose, article, main) table a{
+  color: var(--tbl-text);
+  text-decoration-color: color-mix(in oklab, var(--tbl-accent) 70%, transparent);
+  text-underline-offset: 2px;
+}
+
+/* zebra + separators (crisper, less contrasty) */
+:where(.sl-markdown-content, .prose, article, main) table tbody tr:nth-child(even) :is(td, th){
+  background: color-mix(in oklab, var(--tbl-bg) 96.5%, #ffffff 3.5%);
+}
+:where(.sl-markdown-content, .prose, article, main) table tbody tr + tr :is(td, th){
+  border-top: var(--tbl-row-gap) dashed color-mix(in oklab, var(--tbl-hairline) 75%, transparent);
+}
+
+/* hover row with motion-safe transition */
+@media (prefers-reduced-motion: no-preference){
+  :where(.sl-markdown-content, .prose, article, main) table tbody tr{ transition: background-color .14s ease; }
+}
+:where(.sl-markdown-content, .prose, article, main) table tbody tr:is(:hover, :focus-within) :is(td, th){
+  background: var(--tbl-bg-soft);
+}
+
+/* first column (row header if present) */
+:where(.sl-markdown-content, .prose, article, main) table th[scope="row"]{
+  font-weight: 650;
+  white-space: nowrap;
+  color: var(--tbl-text);
+}
+
+/* caption style */
+:where(.sl-markdown-content, .prose, article, main) table caption{
+  caption-side: top;
+  text-align: left;
+  padding: calc(var(--tbl-pad-y) + .15rem) var(--tbl-pad-x);
+  color: var(--tbl-muted);
+  font-weight: 500;
+  border-bottom: 1px solid var(--tbl-hairline);
+  background: linear-gradient(180deg, color-mix(in oklab, #fff 2%, transparent), transparent);
+}
+
+/* footer (totals, notes) */
+:where(.sl-markdown-content, .prose, article, main) table tfoot td{
+  padding: .8rem var(--tbl-pad-x);
+  color: var(--tbl-muted);
+  border-top: 1px solid var(--tbl-hairline);
+  background: color-mix(in oklab, var(--tbl-bg) 92%, #ffffff 8%);
+}
+
+/* alignment helpers (Markdown alignment pipes) */
+:where(.sl-markdown-content, .prose, article, main) table :is(td[align="right"], th[align="right"]){ text-align: right; }
+:where(.sl-markdown-content, .prose, article, main) table :is(td[align="center"], th[align="center"]){ text-align: center; }
+
+/* corner polish */
+:where(.sl-markdown-content, .prose, article, main) table thead th:first-child{ border-top-left-radius: var(--tbl-radius); }
+:where(.sl-markdown-content, .prose, article, main) table thead th:last-child { border-top-right-radius: var(--tbl-radius); }
+:where(.sl-markdown-content, .prose, article, main) table tbody tr:last-child td:first-child{ border-bottom-left-radius: var(--tbl-radius); }
+:where(.sl-markdown-content, .prose, article, main) table tbody tr:last-child td:last-child { border-bottom-right-radius: var(--tbl-radius); }
+
+/* density presets (toggle by adding a class to <body> or a parent—optional) */
+.table-compact :where(table){ --tbl-pad-y: .45rem; --tbl-pad-x: .7rem; --tbl-font: .9rem; }
+.table-cozy    :where(table){ --tbl-pad-y: .95rem; --tbl-pad-x: 1.2rem; --tbl-font: 1.02rem; }
+
+/* accessibility: clear keyboard focus inside tables */
+:where(.sl-markdown-content, .prose, article, main) table :is(a, button, [tabindex]){:focus-visible{
+  outline: 2px solid color-mix(in oklab, var(--tbl-accent) 85%, #fff 0%);
+  outline-offset: 2px;
+  border-radius: 6px;
+}}
+
+/* optional: sticky first column when a parent adds .table-sticky-first */
+.table-sticky-first :where(table) tbody td:first-child,
+.table-sticky-first :where(table) thead th:first-child{
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: var(--tbl-bg);
+  box-shadow: 6px 0 8px -6px rgba(0,0,0,.5);
+}
+
+/* fallback if browser doesn’t support color-mix/oklab */
+@supports not (color: color-mix(in oklab, #000 50%, #fff 50%)){
+  :where(.sl-markdown-content, .prose, article, main) table tbody tr:nth-child(even) :is(td, th){ background: rgba(255,255,255,.03); }
+  :where(.sl-markdown-content, .prose, article, main) table code{ background: rgba(255,255,255,.06); }
+}
+
+/* print tidy */
+@media print{
+  :where(.sl-markdown-content, .prose, article, main) table{
+    box-shadow: none;
+    border-color: #999;
+  }
+  :where(.sl-markdown-content, .prose, article, main) table thead th{
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+}
+
+/* —— Hard override so our padding wins over Starlight's —— */
+.sl-markdown-content table > :is(thead,tbody,tfoot) > tr > :is(th,td),
+.prose              table > :is(thead,tbody,tfoot) > tr > :is(th,td),
+article             table > :is(thead,tbody,tfoot) > tr > :is(th,td),
+main                table > :is(thead,tbody,tfoot) > tr > :is(th,td){
+  /* tune these two clamps to taste */
+  padding-block: clamp(0.75rem, 1.1vw, 1.05rem) !important;
+  padding-inline: clamp(0.9rem, 1.6vw, 1.25rem) !important;
+  line-height: 1.5; /* keeps rows feeling airy */
+}
+
+/* header gets a touch more vertical padding to match visuals */
+.sl-markdown-content table thead th,
+.prose              table thead th,
+article             table thead th,
+main                table thead th{
+  padding-block: clamp(0.9rem, 1.2vw, 1.15rem) !important;
+  padding-inline: clamp(0.9rem, 1.6vw, 1.25rem) !important;
+}
+
+/* optional: give first/last columns a little extra breathing room */
+.sl-markdown-content table :is(td,th):first-child,
+.prose              table :is(td,th):first-child,
+article             table :is(td,th):first-child,
+main                table :is(td,th):first-child{
+  padding-inline-start: calc(clamp(0.9rem, 1.6vw, 1.25rem) + .2rem) !important;
+}
+.sl-markdown-content table :is(td,th):last-child,
+.prose              table :is(td,th):last-child,
+article             table :is(td,th):last-child,
+main                table :is(td,th):last-child{
+  padding-inline-end: calc(clamp(0.9rem, 1.6vw, 1.25rem) + .2rem) !important;
+}
+
+
   /* ===== Tablas responsivas SIN JS ===== */
 :where(.content) table {
   display: block;
@@ -1418,4 +1425,57 @@ starlight-theme-select select:not(:active)  {
   :where(.content) table tbody td:nth-child(6) { display: none; }
 }
 
-  
+  /* ——— Responsive Markdown tables (no wrapper needed) ——— */
+:where(.sl-markdown-content, .prose, article, main) table{
+  /* kill earlier constraints that block responsiveness */
+  min-width: initial !important;
+
+  /* make the table create its own horizontal scroll when needed */
+  display: block;
+  width: max-content;      /* grow to content width so scroll appears */
+  min-width: 100%;         /* but never smaller than its container */
+  max-width: 100%;         /* don’t overflow the container box itself */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  scrollbar-gutter: stable both-edges;
+}
+
+/* keep cells compact; opt-in wrapping with [data-wrap] */
+:where(.sl-markdown-content, .prose, article, main) table :is(td, th){
+  white-space: nowrap;
+}
+:where(.sl-markdown-content, .prose, article, main) table :is(td[data-wrap], th[data-wrap]){
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* simplify sticky behavior: header sticks to viewport, not inside a scroller */
+:where(.sl-markdown-content, .prose, article, main) table thead th{
+  position: sticky;
+  top: var(--tbl-sticky-top, 0px);
+  z-index: 2;
+  /* drop heavy effects that can break sticky on mobile */
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+/* mobile niceties */
+@media (max-width: 768px){
+  :where(.sl-markdown-content, .prose, article, main) table{
+    /* ensure scroll area doesn’t get clipped by paddings */
+    margin-inline: calc(-1 * var(--sl-spacing-3, 1rem));
+    padding-inline: var(--sl-spacing-3, 1rem);
+  }
+  :where(.sl-markdown-content, .prose, article, main) table :is(th, td){
+    padding: .6rem .7rem;
+    font-size: .95rem;
+  }
+}
+
+/* optional: hide very wide utility columns on small screens */
+@media (max-width: 640px){
+  :where(.sl-markdown-content, .prose, article, main) table :is(thead th:nth-child(6), tbody td:nth-child(6)){
+    display: none;
+  }
+}

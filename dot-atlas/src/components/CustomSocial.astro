@@ -1,20 +1,77 @@
 ---
 import type { Props } from '@astrojs/starlight/props';
 import Default from '@astrojs/starlight/components/SocialIcons.astro';
+const props = Astro.props as Props;
 ---
 
-<nav class="topMenu2">
-    <a class="topLink" href="/tools/">Tools</a>
-    <a class="topLink" href="/dapps/">Dapps</a>
-    <a class="topLink" href="/club/">Community</a>
-    <a class="topLink" href="/resources/">Resources</a>
+<nav class="topMenu2" role="navigation" aria-label="Main">
+  <button class="menuToggle" aria-controls="topMenu2-list" aria-expanded="false">
+    Menu
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+
+  <ul class="menu" id="topMenu2-list" data-open="false">
+    <li class="has-sub">
+      <a class="topLink" href="/tools/" aria-haspopup="true" aria-expanded="false">Tools</a>
+      <button class="submenuToggle" aria-label="Expand Tools">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="/tools/wallets">Wallets</a></li>
+        <li><a href="/tools/block-explorers">Explorers</a></li>
+        <li><a href="/tools/dao-tools">Governance</a></li>
+        <li><a href="/tools/dev">Development</a></li>
+        <li><a href="/tools/miscellaneous">Miscellaneous</a></li>
+      </ul>
+    </li>
+
+    <li class="has-sub">
+      <a class="topLink" href="/dapps/" aria-haspopup="true" aria-expanded="false">Dapps</a>
+      <button class="submenuToggle" aria-label="Expand Dapps">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="/dapps/defi">DeFi</a></li>
+        <li><a href="/dapps/gaming">Gaming</a></li>
+        <li><a href="/dapps/bridges">Bridges</a></li>
+        <li><a href="/dapps/depin">DePin</a></li>
+        <li><a href="/dapps/social">Social</a></li>
+      </ul>
+    </li>
+
+    <li class="has-sub">
+      <a class="topLink" href="/club/" aria-haspopup="true" aria-expanded="false">Community</a>
+      <button class="submenuToggle" aria-label="Expand Community">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="/club/bounties">Bounties</a></li>
+        <li><a href="/club/initiatives">Initiatives</a></li>
+        <li><a href="/club/collectives">Collectives</a></li>
+        <li><a href="/club/daos">DAOs</a></li>
+        <li><a href="/club/orgs">Orgs</a></li>
+      </ul>
+    </li>
+
+    <li class="has-sub">
+      <a class="topLink" href="/resources/" aria-haspopup="true" aria-expanded="false">Resources</a>
+      <button class="submenuToggle" aria-label="Expand Resources">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="/resources/media/">Media</a></li>
+        <li><a href="/resources/guides/">Guides</a></li>
+        <li><a href="/resources/templates">Templates</a></li>
+        <li><a href="/resources/glossary">Glossary</a></li>
+        <li><a href="/resources/faucets">Faucets</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
 
-<Default {...Astro.props}><slot /></Default>
+<Default {...props}><slot /></Default>
 
 <style>
-
-
 .topMenu2 {
   display: flex;
   justify-content: center;
@@ -23,108 +80,278 @@ import Default from '@astrojs/starlight/components/SocialIcons.astro';
   border-radius: 10px;
   margin: 0 15px 0 35px;
 }
-
-  .tm1 {
-        border: 1px solid #6E7391;
-        background-color: #000000;
-        display: flex;                           
-  justify-content: center;                 
-  align-items: center;                     
-  padding: 5px 0;                          
-  border-radius: 10px;                    
-  box-shadow: 0 2px 15px var(--box-shadow);  
-  margin: 0 15px;   
+.tm1 {
+  border: 1px solid #6E7391;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px var(--box-shadow);
+  margin: 0 15px;
   transition: all .2s ease-in-out;
-  }
-
-  .tm1:hover {
-    background-color: rgba(255, 38, 112, 0.1); 
-  }
-
-  :root[data-theme='light'] .tm1 {
-    background-color: #ffffff;
-  }
-
-  :root[data-theme='light'] .tm1:hover {
-    background-color: rgba(83, 79, 80, 0.1);  
-  }
-
-  .tm1 a {
-    transition: all .2s ease-in-out;
-
-  }
-  .tm1 a:hover {
-    color: #ff2670 !important;         
-    background-color: transparent !important;  
-    transform: scale(1.05);              
-
-  }
-    a {
-      font-family: 'Unbounded Medium', sans-serif !important;
-        color: var(--sl-color-text-accent);
-        padding: 0.5em;
-        margin: -0.5em;
-        text-decoration: none;
-    }
- 
-    .topMenu {
-  display: flex;                           
-  justify-content: center;                 
-  align-items: center;                     
-  padding: 5px 0;                          
-  border-radius: 10px;                    
-  box-shadow: 0 2px 15px var(--box-shadow);  
-  margin: 0 15px;                          
 }
-
-
- .topLink {
-  display: inline-block;                   
-  font-family: 'Arial', sans-serif;        
-  font-size: 0.9rem;                       
-  color: var(--text-light);                
-  padding: 5px 10px;                       
-  margin: 0 3px;                           
-  text-decoration: none;                  
-  border-radius: 5px;                      
-  transition: background-color 0.3s, color 0.3s;  
+.tm1:hover { background-color: rgba(255, 38, 112, 0.1); }
+:root[data-theme='light'] .tm1 { background-color: #ffffff; }
+:root[data-theme='light'] .tm1:hover { background-color: rgba(83, 79, 80, 0.1); }
+.tm1 a { transition: all .2s ease-in-out; }
+.tm1 a:hover {
+  color: #ff2670 !important;
+  background-color: transparent !important;
+  transform: scale(1.05);
 }
-
- :root[data-theme='light'] .topLink {
-  color: black;                           
-}
-
-:root .topLink {
-  color: var(--span-dark);              
-}
-
-.topLink:hover {
-  color: var(--hover-color-light);        
-  background-color: rgba(255, 38, 112, 0.1); 
-}
-
- :root[data-theme='light'] .topLink:hover {
-  color: rgb(30, 30, 32);                 
-  background-color: rgba(83, 79, 80, 0.1);  
-}
-
-:root .topLink:hover {
-  color: #ff2670;                         
-  background-color: rgba(255, 38, 112, 0.1);  
-}
-
-@media (max-width: 768px) {
-
-.social-icons {
-    display: block !important;              
+a {
+  font-family: 'Unbounded Medium', sans-serif !important;
+  color: var(--sl-color-text-accent);
+  padding: 0.5em;
+  margin: -0.5em;
+  text-decoration: none;
 }
 .topMenu {
-    display: block !important;              
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px var(--box-shadow);
+  margin: 0 15px;
 }
-.social-icons > * {
-    display: block !important;             
-    margin-bottom: 10px;       
-    width: 100%;                  
+.topLink {
+  display: inline-block;
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  padding: 5px 10px;
+  margin: 0 3px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
+:root[data-theme='light'] .topLink { color: black; }
+:root .topLink { color: var(--span-dark); }
+.topLink:hover {
+  color: var(--hover-color-light);
+  background-color: rgba(255, 38, 112, 0.1);
 }
+:root[data-theme='light'] .topLink:hover {
+  color: rgb(30, 30, 32);
+  background-color: rgba(83, 79, 80, 0.1);
+}
+:root .topLink:hover {
+  color: #ff2670;
+  background-color: rgba(255, 38, 112, 0.1);
+}
+@media (max-width: 768px) {
+  .social-icons { display: block !important; }
+  .topMenu { display: block !important; }
+  .social-icons > * {
+    display: block !important;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+:root{
+  --nav-bg: var(--sl-color-bg, #0b0b0f);
+  --nav-bg-soft: var(--sl-color-bg-soft, #121219);
+  --nav-text: var(--sl-color-text, #e8e8ef);
+  --nav-muted: var(--sl-color-text-muted, #aeb7cb);
+  --nav-hairline: var(--sl-color-hairline, rgba(255,255,255,.09));
+  --nav-accent: var(--sl-color-accent, #ff2670);
+  --nav-radius: 12px;
+  --nav-pad-x: clamp(.5rem, 1.2vw, .9rem);
+  --nav-pad-y: .6rem;
+  --nav-gap: clamp(.25rem, 1.2vw, .75rem);
+  --nav-z: 50;
+  --shadow-lg: 0 10px 30px rgba(0,0,0,.25), 0 2px 10px rgba(0,0,0,.2);
+}
+
+.topMenu2 { position: relative; gap: var(--nav-gap); }
+.topMenu2 .menuToggle {
+  display: none;
+  appearance: none;
+  border: 1px solid var(--nav-hairline);
+  background: var(--nav-bg-soft);
+  color: var(--nav-text);
+  border-radius: 10px;
+  padding: .55rem .7rem;
+  cursor: pointer;
+  align-items: center;
+  gap: .5rem;
+}
+.topMenu2 .menuToggle svg { width: 18px; height: 18px; }
+
+.topMenu2 .menu {
+  list-style: none;
+  display: flex;
+  gap: var(--nav-gap);
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.topMenu2 .menu > li { position: relative; }
+
+.topMenu2 .topLink {
+  color: var(--nav-text) !important;
+  padding: var(--nav-pad-y) var(--nav-pad-x);
+  border-radius: var(--nav-radius);
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  white-space: nowrap;
+}
+.topMenu2 .topLink:hover,
+.topMenu2 .topLink:focus-visible {
+  background: color-mix(in oklab, var(--nav-bg-soft) 80%, var(--nav-accent) 20%);
+  outline: none;
+}
+.topMenu2 .has-sub > .topLink::after {
+  content: "▾";
+  font-size: .8em;
+  line-height: 1;
+  transition: transform .15s ease, opacity .15s ease;
+  opacity: .9;
+}
+
+.topMenu2 .submenu,
+.topMenu2 .submenu li { list-style: none; margin: 0; padding: 0; }
+.topMenu2 .submenu li::marker { content: ""; }
+.topMenu2 .submenu li::before { content: none !important; }
+
+.topMenu2 .submenu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 6px);
+  min-width: 200px;
+  background: var(--nav-bg);
+  border: 1px solid var(--nav-hairline);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  padding: .30rem;
+  display: grid;
+  gap: .18rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity .12s ease, transform .12s ease, visibility .12s step-end;
+  z-index: var(--nav-z);
+}
+.topMenu2 .submenu a {
+  display: block;
+  margin: 0 !important;
+  box-sizing: border-box;
+  white-space: nowrap;
+  color: var(--nav-text);
+  font-family: 'Unbounded', system-ui, -apple-system, Segoe UI, Inter, Roboto, sans-serif !important;
+  font-weight: 500 !important;
+  font-size: .88rem !important;
+  line-height: 1.45;
+  letter-spacing: 0;
+  padding: .45rem .75rem !important;
+  border-radius: 10px;
+}
+.topMenu2 .submenu a:hover,
+.topMenu2 .submenu a:focus-visible {
+  background: var(--nav-bg-soft);
+  color: var(--nav-accent);
+}
+
+.topMenu2 .has-sub:hover > .submenu,
+.topMenu2 .has-sub:focus-within > .submenu {
+  opacity: 1; visibility: visible; transform: translateY(0);
+}
+.topMenu2 .has-sub:hover > .topLink::after,
+.topMenu2 .has-sub:focus-within > .topLink::after {
+  transform: rotate(180deg);
+}
+
+.topMenu2 .submenuToggle { display: none !important; }
+
+@media (max-width: 900px) {
+  .topMenu2 {
+    border: 1px solid var(--nav-hairline);
+    background: var(--nav-bg);
+    border-radius: 16px;
+    padding: .4rem;
+    margin: 0 15px;
+    width: calc(100% - 30px);
+    flex-direction: column;
+    gap: .4rem;
+  }
+  .topMenu2 .menuToggle { display: inline-flex; width: 100%; justify-content: space-between; }
+  .topMenu2 .menu { display: none; flex-direction: column; align-items: stretch; gap: .25rem; width: 100%; }
+  .topMenu2 .menu[data-open="true"] { display: flex; }
+  .topMenu2 .has-sub { display: grid; grid-template-columns: 1fr auto; align-items: center; }
+  .topMenu2 .has-sub > .topLink { padding: .75rem .9rem; border-radius: 10px; }
+  .topMenu2 .has-sub > .topLink::after { display: none; }
+  .topMenu2 .submenuToggle {
+    display: inline-flex !important;
+    margin-right: .2rem;
+    appearance: none;
+    border: 1px solid var(--nav-hairline);
+    background: var(--nav-bg-soft);
+    color: var(--nav-text);
+    border-radius: 10px;
+    padding: .55rem;
+    cursor: pointer;
+  }
+  .topMenu2 .submenuToggle svg { width: 16px; height: 16px; }
+  .topMenu2 .submenu {
+    position: static;
+    box-shadow: none;
+    border: 1px solid var(--nav-hairline);
+    margin: .25rem .1rem .4rem;
+    padding: .3rem;
+    opacity: 1; visibility: visible; transform: none;
+    display: none;
+  }
+  .topMenu2 li[data-open="true"] > .submenu { display: grid; }
+}
+
+
 </style>
+
+<script>
+(() => {
+  const nav = document.querySelector('.topMenu2');
+  if (!nav) return;
+
+  const menu = nav.querySelector('#topMenu2-list');
+  const menuBtn = nav.querySelector('.menuToggle');
+
+  menuBtn && menuBtn.addEventListener('click', () => {
+    const isOpen = menu && menu.getAttribute('data-open') === 'true';
+    if (menu && menuBtn) {
+      menu.setAttribute('data-open', String(!isOpen));
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+    }
+  });
+
+  nav.querySelectorAll('.has-sub').forEach((li) => {
+    const link = li.querySelector('.topLink');
+    const btn = li.querySelector('.submenuToggle');
+
+    li.addEventListener('mouseenter', () => link && link.setAttribute('aria-expanded', 'true'));
+    li.addEventListener('mouseleave', () => link && link.setAttribute('aria-expanded', 'false'));
+
+    btn && btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const open = li.getAttribute('data-open') === 'true';
+      li.setAttribute('data-open', String(!open));
+      link && link.setAttribute('aria-expanded', String(!open));
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+    if (menu) menu.setAttribute('data-open', 'false');
+    nav.querySelectorAll('.has-sub').forEach((li) => {
+      li.setAttribute('data-open', 'false');
+      const link = li.querySelector('.topLink');
+      link && link.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>
