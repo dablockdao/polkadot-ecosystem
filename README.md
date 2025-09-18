@@ -25,8 +25,6 @@ The **Polkadot Ecosystem** portal is a community-driven initiative led by Dabloc
 |---|---|---|
 | **Atlas** | [polkadotecosystem.com](https://polkadotecosystem.com) | Directory of projects and initiatives across the ecosystem. |
 
-<img align="center" src="https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/polkadotecosystem-banner.png" width="100%">
-
 ## Polkadot ATLAS
 
 A comprehensive resource with profiles and direct links to projects within the Polkadot ecosystem.
