@@ -1,5 +1,5 @@
 ---
-/* Stats.astro — versión compacta y alineada */
+/* Stats.astro — compact, theme-aware */
 ---
 
 <section class="stats" aria-labelledby="stats-title">
@@ -32,193 +32,156 @@
         </div>
       </div>
     </div>
+
+    <div class="art" aria-hidden="true">
+      <div class="orb"></div>
+      <div class="swirl"></div>
+    </div>
   </div>
 </section>
 
 <style>
-/* -------------------- Tokens -------------------- */
-:root{
-  --radius: 24px;
-  --gap: 2rem;
+
+  /* ===== Stats.astro — versión compacta desktop ===== */
+
+/* Tokens locales (hereda Starlight si existen) */
+.stats{
   --accent: #ff2670;
   --accent-2: #f40d5f;
 
-  --text-dark: #0f0f12;
-  --text-light: #f7f7f8;
-  --muted-dark: rgba(255,255,255,.72);
-  --muted-light: rgba(15,15,18,.68);
-  --card-dark: rgba(255,255,255,.04);
-  --card-light:#fff;
-  --stroke-dark: rgba(255,255,255,.08);
-  --stroke-light: rgba(15,15,18,.08);
+  --text: var(--sl-color-text, #e8e8ef);
+  --muted: var(--sl-color-text-muted, #aeb7cb);
+  --bg: var(--sl-color-bg, #0b0b0f);
+  --bg-soft: var(--sl-color-bg-soft, #121219);
+  --hairline: var(--sl-color-hairline, rgba(255,255,255,.10));
+
+  --radius: 18px;
+  --gap: clamp(.75rem, 2vw, 1.25rem);
+  --pad-x: clamp(.9rem, 2.2vw, 1.5rem);
+  --pad-y: clamp(1rem, 2.2vw, 1.6rem);
+  color: var(--text);
+  padding: clamp(1.25rem, 3vw, 2.25rem) 0;     /* ⬅️ menos alto */
 }
 
-:root[data-theme="dark"]{
-  --text: var(--text-light);
-  --muted: var(--muted-dark);
-  --card: var(--card-dark);
-  --stroke: var(--stroke-dark);
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
-  --glow: 0 0 100px rgba(255,38,112,.16);
-}
-:root[data-theme="light"]{
-  --text: var(--text-dark);
-  --muted: var(--muted-light);
-  --card: var(--card-light);
-  --stroke: var(--stroke-light);
-  --shadow: 0 10px 30px rgba(0,0,0,.06);
-  --glow: 0 0 100px rgba(255,38,112,.12);
-}
-
-/* -------------------- Layout -------------------- */
-.stats{ padding: clamp(2.25rem, 5vw, 5rem) 0; color: var(--text); }
-
+/* Card más delgada y sin segunda columna (arte absoluto) */
 .card{
   position: relative;
   border-radius: var(--radius);
-  background: var(--card);
-  border: 1px solid var(--stroke);
-  box-shadow: var(--shadow);
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--bg-soft) 96%, transparent),
+      color-mix(in oklab, var(--bg) 100%, transparent));
+  border: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+  box-shadow: 0 10px 24px color-mix(in oklab, black 18%, transparent);
   overflow: hidden;
   isolation: isolate;
-
-  /* 1fr texto / columna arte compacta */
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: stretch;
 }
 
-.copy{
-  padding: clamp(1.75rem, 4vw, 3rem) clamp(1.25rem, 3vw, 2.25rem);
-  z-index: 1;
+/* “halo” muy sutil sin sumar altura */
+.card::before{
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(80% 60% at 10% 0%,
+      color-mix(in oklab, var(--accent) 6%, transparent), transparent 60%),
+    radial-gradient(70% 60% at 110% 100%,
+      color-mix(in oklab, var(--accent-2) 5%, transparent), transparent 60%);
+  pointer-events: none;
+  opacity: .65;
 }
 
+/* Texto */
+.copy{ padding: var(--pad-y) var(--pad-x); z-index: 1; }
 h2{
-  margin: 0 0 .75rem 0;
+  margin: 0 0 .5rem 0;
   font-weight: 800;
   letter-spacing: -0.02em;
-  line-height: 1.05;
-  font-size: clamp(2rem, 3.6vw, 3.25rem);
+  line-height: 1.06;
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);     /* ⬅️ menor en desktop */
 }
 .nowrap{ white-space: nowrap; }
-
 .subtitle{
-  margin: 0 0 2rem 0;
-  max-width: 48ch;
+  margin: 0 0 1.2rem 0;
+  max-width: 58ch;
   color: var(--muted);
-  font-size: clamp(.95rem, 1.6vw, 1.125rem);
+  font-size: clamp(.95rem, 1.4vw, 1.05rem);
 }
 
-/* -------------------- Grid de stats -------------------- */
+/* Grid de métricas */
 .grid{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--gap);
   align-items: start;
 }
-
 .item{
   position: relative;
-  padding-top: 1.25rem;
-  border-top: 1px dashed var(--stroke);
+  padding-top: .9rem;                                  /* ⬅️ menos aire arriba */
+  border-top: 1px dashed color-mix(in oklab, var(--text) 18%, transparent);
 }
-
-/* pin + línea */
 .pin{
-  position: absolute;
-  top: 0; left: 0;
-  width: 10px; height: 10px;
-  border-radius: 999px;
+  position: absolute; top: 0; left: 0;
+  width: 8px; height: 8px; border-radius: 999px;
   background: var(--accent);
   transform: translateY(-50%);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 24%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 24%, transparent);
 }
 
-/* NÚMEROS: alineación perfecta */
+/* Números compactos */
 .number{
-  /* caja estable */
-  --num-size: clamp(2.25rem, 5vw, 3.6rem);
-  display: inline-flex;            /* el sup ya no deforma la línea */
-  align-items: baseline;
-  font-size: var(--num-size);
-  min-height: calc(var(--num-size) * 1.05);
+  --num: clamp(1.9rem, 3.8vw, 2.6rem);
+  display: inline-flex; align-items: baseline;
+  font-size: var(--num);
+  min-height: calc(var(--num) * 1.05);
   line-height: 1;
-
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  font-variant-numeric: tabular-nums lining-nums; /* ancho fijo */
+  font-weight: 900; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums lining-nums;
   background: linear-gradient(92deg, var(--accent), var(--accent-2));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  text-shadow: 0 0 1px rgba(0,0,0,.15);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  text-shadow: 0 0 1px rgba(0,0,0,.12);
 }
-.number sup{
-  position: relative;
-  top: -0.25em;    /* sube el “+” sin tocar la línea */
-  margin-left: .05em;
-  line-height: 0;
-  font-size: .45em;
-}
+.number sup{ position: relative; top: -0.25em; margin-left: .05em; line-height: 0; font-size: .45em; }
+.label{ margin-top: .3rem; font-size: clamp(.93rem, 1.4vw, 1rem); color: color-mix(in oklab, var(--text) 82%, transparent); }
 
-.label{
-  margin-top: .35rem;
-  font-size: clamp(.95rem, 1.6vw, 1.125rem);
-  opacity: .9;
-}
-
-/* -------------------- Arte (png más pequeño) -------------------- */
+/* Arte decorativo ABSOLUTO (no afecta la altura) */
 .art{
-  position: relative;
-  /* ancho máximo controlado; evita espacios muertos */
-  width: clamp(160px, 22vw, 260px);
-  min-height: 240px;          /* más compacto */
-  margin: auto clamp(.75rem, 2vw, 1.25rem) auto 0;
+  position: absolute;
+  bottom: clamp(.6rem, 1.2vw, .9rem);
+  left: clamp(.6rem, 1.2vw, .9rem);
+  width: clamp(120px, 18vw, 200px);
+  height: clamp(120px, 18vw, 200px);
+  min-height: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .45;
 }
 .orb{
-  position: absolute;
-  inset: -15% -30% -20% -10%;
-  filter: blur(36px);
-  opacity: .4;
+  position: absolute; inset: -25% -35% -25% -15%;
+  filter: blur(26px);
   background:
-    radial-gradient(40% 40% at 70% 30%, rgba(255,38,112,.35), transparent 60%),
-    radial-gradient(45% 45% at 20% 75%, rgba(255,38,112,.22), transparent 60%);
-  box-shadow: var(--glow);
+    radial-gradient(40% 40% at 70% 30%, color-mix(in oklab, var(--accent) 32%, transparent), transparent 60%),
+    radial-gradient(45% 45% at 20% 75%, color-mix(in oklab, var(--accent-2) 24%, transparent), transparent 60%);
 }
 .swirl{
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
+  position: absolute; inset: 0; margin: auto; width: 100%; height: 100%;
   background-image: url('https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/atlas.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: .55;
-  mix-blend-mode: screen;
+  background-size: contain; background-repeat: no-repeat; background-position: center;
+  mix-blend-mode: screen; opacity: .42;
 }
 
-/* -------------------- Responsive -------------------- */
+/* Responsivo */
 @media (max-width: 980px){
-  .card{ grid-template-columns: 1fr; }
+  .stats{ padding: clamp(1rem, 3.5vw, 1.75rem) 0; }
+  .grid{ grid-template-columns: 1fr; gap: 1rem; }
   .art{
-    order: 2;
-    width: clamp(140px, 42vw, 200px);
-    min-height: 180px;
-    margin: 0 auto 1rem auto;
-    opacity: .35;
+    left: 50%; transform: translateX(-50%);
+    width: clamp(120px, 42vw, 180px); height: clamp(120px, 42vw, 180px);
+    opacity: .32;
   }
-  .copy{ order: 1; }
 }
 
-@media (max-width: 640px){
-  .grid{ grid-template-columns: 1fr; gap: 1.1rem; }
-}
-
-/* Hover sutil (solo si hay motion) */
+/* Motion */
 @media (prefers-reduced-motion: no-preference){
   .swirl{ transition: transform .6s ease, opacity .3s ease; }
   .card:hover .swirl{ transform: scale(1.03) rotate(-2deg); }
 }
-</style>

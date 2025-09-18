@@ -12,135 +12,91 @@ import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/compone
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
-The Polkadot Collectives are a critical evolution within the Polkadot ecosystem, designed to foster collaboration and decentralization on a broader scale. 
-These specialized governance groups enable communities to come together with shared goals, whether through creating decentralized organizations (DAOs), funding initiatives, or coordinating large-scale projects.
+The Polkadot Collectives are a critical evolution within the Polkadot ecosystem, designed to foster collaboration and decentralization on a broader scale.
+These specialized governance groups enable communities to come together with shared goals—coordinating technical stewardship, accelerating safe upgrades, and supporting large-scale network initiatives.
 
 ## Polkadot Main Collectives
 ----------------
-<ShowcaseImage
-  entries={[
-        {
-      thumbnail: import('/src/assets/hub/daos/fellowship.png'),
-      href: '/club/collectives/polkadot-fellowship/',
-      title: 'Technical Fellowship',
-      description: 'Polkadot Ecosystem Developers Governance Body.',
-    }, 
-  ]}
-/>
+ <DirectoryLinks directory="club/collectives" />
 
-## Polkadot Collectives: How the Fellowship & Alliance Supercharge OpenGov
+## Polkadot Collectives: How the Fellowship Supercharges OpenGov
 
-Polkadot Collectives are on-chain organizations hosted on the **Collectives system parachain**. Today, the two headline collectives—the **Polkadot Technical Fellowship** and the **Polkadot Alliance**—provide expert stewardship and ecosystem standards that complement OpenGov, enabling safer upgrades, faster incident response, and coordinated community action. Updated **September 2025**.
+Polkadot Collectives are on-chain organizations hosted on the **Collectives system parachain**. Today, the headline collective—the **Polkadot Technical Fellowship**—provides expert stewardship that complements OpenGov, enabling safer upgrades, faster incident response, and more predictable release trains. *Updated September 2025.*
 
 ## What are Polkadot Collectives? (ELI5)
-Think of **Collectives** as *specialized on-chain groups* dedicated to the long-term health of Polkadot. They live on the **Collectives system chain** and maintain their own membership rules, ranks, and governance processes. Today, the chain hosts the **Technical Fellowship** (expert engineers) and the **Polkadot Alliance** (ecosystem standards & anti-abuse).
-
-> **Key fact:** The Collectives system parachain was added to Polkadot via **Referendum 81** and exists **only on Polkadot** (no Kusama equivalent).
+Think of **Collectives** as *specialized on-chain groups* dedicated to the long-term health of Polkadot. They live on the **Collectives system chain** and maintain their own membership rules, ranks, and governance processes.
+> **Key fact:** The Collectives system parachain was added to Polkadot via a network referendum and exists **only on Polkadot** (no Kusama equivalent).
 
 ## Why this matters for builders & governors
-* **Safer upgrades:** The Fellowship can whitelist time-critical, low-risk technical proposals using the **Whitelisted Caller** origin/track, allowing faster enactment than Root when appropriate.
-* **Ecosystem integrity:** The Alliance coordinates projects around shared standards, recognition of good actors, and surfacing of bad practices—reducing user risk and reputational drag.
-* **Clear separation of concerns:** Token-holder OpenGov keeps the final say for broad governance, while collectives supply expert review and codified norms that improve decision quality.
+* **Safer, quicker upgrades:** The Fellowship can enable the **Whitelisted Caller** track for *neutral, low-risk* technical actions, shortening time-to-fix while preserving checks and transparency.
+* **Predictable engineering cadence:** Expert, rank-weighted review improves the quality of technical proposals and their alignment with network safety.
+* **Clear separation of concerns:** Token-holder OpenGov retains the final say; the Fellowship supplies expert due diligence and pre-vetting.
 
 ## Landscape at a glance
 * **System chain:** *Collectives* (host environment for collective logic, membership, ranks).
-* **Active collectives:**
-  * **Polkadot Technical Fellowship** — ranked individual experts who steward technical safety & upgrades.
-  * **Polkadot Alliance** — organization-level body promoting standards and exposing misconduct; founded by **Acala, Astar, Interlay, KILT, Moonbeam, Phala, Subscan**.
-* **Data visibility:** Collectives activity is queryable on public analytics dashboards.
+* **Active collective today:** **Polkadot Technical Fellowship** — ranked individual experts stewarding technical safety & upgrades.
+* **Data visibility:** Collective activity is trackable via public governance dashboards and chain explorers.
 
 ## How the Collectives parachain works
-**Collectives** is a **system parachain** owned by the network (DOT holders via OpenGov), like Asset Hub or Bridge Hub. It provides runtime pallets for collective membership, ranks, proposals, and actions. New collectives can be added through governance if/when the ecosystem needs them.
+**Collectives** is a **system parachain** owned by the network (DOT holders via OpenGov), like Asset Hub or Bridge Hub. It provides runtime pallets for collective membership, ranks, proposals, and actions. New collectives can be added through governance as the ecosystem evolves.
 
-**OpenGov interplay:**
-* The **Fellowship** can authorize the **Whitelisted Caller** origin to execute pre-vetted calls with Root-level privileges under stricter constraints (scope, timing), enabling *expedited yet safer* technical enactments.
-* Tracks and parameters differ from Root to reduce time-to-fix for neutral technical changes (e.g., runtime upgrades).
+**OpenGov interplay**
+* The **Fellowship** can authorize the **Whitelisted Caller** origin to execute pre-vetted calls with Root-level privileges under strict constraints (scope, timing).
+* Track parameters differ from Root to reduce lead-in/confirmation for time-critical, *neutral* upgrades.
 
-## Collective profiles
-
-### Polkadot Technical Fellowship
-A rules-based, ranked membership of individual experts stewarding Polkadot’s technical direction and safety. Ranks (0–9) determine voting weight and responsibilities; higher ranks review/approve **whitelisted** technical actions. The Fellowship replaced Governance V1’s Technical Committee with a more scalable, merit-based structure.
+## Collective profile: Polkadot Technical Fellowship
+A rules-based, ranked membership (levels 0–9) of individual experts stewarding Polkadot’s technical direction and safety. Higher ranks review and approve **whitelist** authorizations for eligible proposals. It replaces Governance V1’s Technical Committee with a more scalable, merit-based structure.
 
 **What it does**
-* Reviews RFCs, runtime changes, and *time-critical* fixes for safety.
-* Votes to authorize **Whitelisted Caller** for eligible proposals.
-* Applies rank-weighted voting for internal decisions.
+* Reviews RFCs, runtime changes, and urgent fixes for safety and minimal risk.
+* Votes to authorize **Whitelisted Caller** for eligible technical actions.
+* Uses rank-weighted voting for internal decisions and inductions.
 
 **Why builders care**
-* Reduced friction for **neutral** technical upgrades that shouldn’t wait through full Root timelines.
-* Public process documented via community portals and dashboards; better predictability for release trains.
+* Lower friction for **neutral** technical upgrades that shouldn’t wait for full Root timelines.
+* Public, documented processes improve predictability for release trains and incident response.
 
 **Joining**
-* Individuals can apply and progress ranks via evidence of contributions; the process uses on-chain referenda within the collective and rank-based voting.
-
-### Polkadot Alliance
-An on-chain consortium of projects that codifies **ecosystem standards**, recognizes positive contributors, and surfaces bad actors or anti-user behavior. It was **seeded by seven founding members** (Acala, Astar, Interlay, KILT, Moonbeam, Phala, Subscan) and operates with roles such as *Fellows* and *Allies*.
-
-**What it does**
-* Establishes shared norms for open-source conduct and brand integrity.
-* Coordinates responses to ecosystem-wide abuse patterns in collaboration with community safety efforts.
-
-**Why builders care**
-* Clear guidance on acceptable practices for listings, claims, and code reuse.
-* Reputation benefits for Alliance members when engaging users and partners.
+* Individuals apply and progress ranks with evidence of contributions (PRs, audits, reproducible tests). Inductions and promotions are handled on-chain within the collective.
 
 ## Collectives vs OpenGov & Treasury: who does what?
 
 | Function / Body             | Who participates          | Primary scope                     | Typical actions                                         | Time-sensitivity      | Notes                                                                                      |
 | --------------------------- | ------------------------- | --------------------------------- | ------------------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------ |
-| **Technical Fellowship**    | Ranked individual experts | Technical safety & upgrades       | Review RFCs, whitelist neutral fixes                    | High (for whitelists) | Enables **Whitelisted Caller** origin with a constrained fast path.                        |
-| **Polkadot Alliance**       | Projects/organizations    | Standards, integrity, recognition | Maintain norms, recognize contributors, flag misconduct | Medium                | Founded by Acala, Astar, Interlay, KILT, Moonbeam, Phala, Subscan.                         |
-| **OpenGov (Token holders)** | DOT holders & delegates   | All governance (tracks)           | Referenda on upgrades, treasury, parameters             | Varies by track       | Root vs. Whitelisted Caller have different lead-in/confirmation deadlines.                 |
-| **Treasury Bounties**       | Curators + community      | Ongoing workstreams               | Fund anti-scam, tooling, education, ops                 | Ongoing               | Anti-scam bounty is a well-known precedent.                                                |
+| **Technical Fellowship**    | Ranked individual experts | Technical safety & upgrades       | Review RFCs, pre-vet neutral fixes, whitelist calls     | High (for whitelists) | Enables **Whitelisted Caller** with a constrained “fast path” for safe, pre-vetted calls.  |
+| **OpenGov (Token holders)** | DOT holders & delegates   | All governance (tracks)           | Referenda on upgrades, treasury, parameters             | Varies by track       | Root vs. Whitelisted Caller have different lead-in/confirmation timelines.                 |
+| **Treasury Bounties**       | Curators + community      | Ongoing workstreams               | Fund anti-scam, tooling, education, ops                 | Ongoing               | Good venue for non-runtime initiatives and community operations.                           |
 
-## Mini-guide: engaging with a collective
-1. **Map your intent.**
-   * *Technical change?* Start with the **Fellowship** process (RFC, review, potential whitelist).
-   * *Ecosystem standards/recognition?* Engage the **Alliance**.
-
-2. **Prepare evidence.**
-   * For Fellowship: link PRs, audits, reproducible test vectors, and an impact/risk brief aligned to neutral, low-risk change criteria.
-   * For Alliance: show consistent open-source conduct, community service, and conformance with ecosystem norms.
-
-3. **Use the right venue.**
-   * **RFC & technical review** via the Fellowship’s documented process and discussion interfaces.
-   * **Alliance membership / actions** via the Alliance’s documented process and community threads.
-
-4. **Align with OpenGov timelines.**
-   * If whitelisting is appropriate, coordinate the **Whitelisted Caller** track for expedited enactment; otherwise follow Root.
-
-5. **Communicate and monitor.**
-   * Share rationale, risk bounds, and testing results; monitor chain activity after enactment.
+## Mini-guide: engaging with the Fellowship
+1. **Map your intent.** If it’s a *technical, neutral, low-risk* change, target the **Fellowship** path (RFC → review → potential whitelist).
+2. **Prepare evidence.** Link PRs, audits, test vectors, and a risk/impact brief aligned to whitelist criteria.
+3. **Use the right venue.** Follow the Fellowship’s documented process for discussion and signaling.
+4. **Align with OpenGov timelines.** If whitelisting fits, coordinate the **Whitelisted Caller** track; otherwise follow Root.
+5. **Communicate and monitor.** Share rationale, risk bounds, and testing results; monitor chain health after enactment.
 
 ## Practical example: fast-tracking a critical runtime fix
 * **Scenario:** A parachain-wide bug is discovered; a minimal patch is ready.
-* **Path:** Team drafts an RFC + risk assessment → Fellowship review → **Whitelisted Caller** authorization for the call → OpenGov referendum on the Whitelisted Caller track → expedited enactment if approved.
-* **Outcome:** Safe, timely upgrade without bypassing checks or overusing Root authority.
+* **Path:** Team drafts an RFC + risk assessment → Fellowship review → **Whitelisted Caller** authorization → OpenGov referendum on the Whitelisted Caller track → expedited enactment if approved.
+* **Outcome:** Safe, timely upgrade without overusing Root authority.
 
 ## FAQs
 **1) What lives on the Collectives chain today?**  
-The **Technical Fellowship** and the **Polkadot Alliance** are the headline collectives hosted by the Collectives system chain.
+The **Technical Fellowship** is the headline collective currently hosted on the Collectives system chain.
 
 **2) Is the Fellowship “above” OpenGov?**  
 No. It **advises and authorizes** the **Whitelisted Caller** origin for specific, constrained cases; OpenGov still governs enactment via track rules.
 
-**3) Who founded the Alliance?**  
-Seven projects: **Acala, Astar, Interlay, KILT, Moonbeam, Phala, Subscan**.
-
-**4) Can individuals join the Alliance?**  
-The Alliance is designed *primarily for organizations/projects*; individuals typically engage via their teams or through other programs.
-
-**5) How do I apply to the Fellowship?**  
+**3) How do I apply to the Fellowship?**  
 There’s a rank-based induction process; an interface supports applications, and members progress by contributing evidence over time.
 
-**6) What is Whitelisted Caller, exactly?**  
-An origin/track allowing pre-vetted, neutral technical actions to execute faster than Root, subject to Fellowship authorization and track rules.
+**4) What is Whitelisted Caller, exactly?**  
+An origin/track allowing pre-vetted, *neutral* technical actions to execute faster than Root, subject to Fellowship authorization and track rules.
 
-**7) Is there a Collectives chain on Kusama?**  
+**5) Is there a Collectives chain on Kusama?**  
 No; Collectives exists **only on Polkadot**.
 
-**8) Where can I see activity and metrics?**  
-Public analytics dashboards track extrinsics/events and can be extended for custom monitoring.
+**6) Where can I see activity and metrics?**  
+Public dashboards and chain explorers surface extrinsics, referenda, and runtime releases for the Collectives chain and Fellowship-governed upgrades.
 
 ## Conclusion
-Polkadot’s **Collectives** formalize expert stewardship (Fellowship) and ecosystem standards (Alliance) in a transparent, on-chain way—tightening the feedback loop between **builders**, **users**, and **governance**. If you maintain core software or lead an ecosystem team, plug into the relevant collective **now**: align with its process, prepare your evidence, and help upgrade the network responsibly.
+Polkadot’s **Collectives** formalize expert stewardship via the **Technical Fellowship**—tightening the loop between **builders**, **users**, and **governance**. If you maintain core software or lead a team, plug into the Fellowship’s process now: prepare your evidence, align with the right track, and help upgrade the network responsibly.

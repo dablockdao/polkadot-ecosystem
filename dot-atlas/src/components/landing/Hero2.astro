@@ -1,120 +1,141 @@
 ---
-// Hero2.astro
+/* src/components/HomeHero.astro */
 ---
 
-<section class="hero2">
-    <div class="hero-content">
-      <h2>All the Polkadot Ecosystem Curated in One Place</h2>
-      <p>
-        The hottest dApps, Solution Providers, Enterprises and Ecosystem Enablers like Guilds, VCs, Accelerators and Incubators in one place
-      </p>
-      <div class="button-group">
-        <a href="#listproject" class="button button-secondary">List Your Project</a>
-        <a href="#explore" class="button button-primary">Explore</a>
-      </div>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="eyebrow"><span class="dot"></span> Polkadot Ecosystem Atlas</div>
+
+    <h1 id="hero-title" class="title">
+      All the Polkadot Ecosystem <span class="accent">Curated in One Place</span>
+    </h1>
+
+    <p class="subtitle">
+      The hottest dApps, solution providers, enterprises, and ecosystem enablers — guilds, VCs,
+      accelerators, and incubators — in one place.
+    </p>
+
+    <div class="btn-group">
+      <a href="#listproject" class="btn btn-secondary">List Your Project</a>
+      <a href="#explore" class="btn btn-primary">Explore</a>
     </div>
-  </section>
-  
-  <style>
-.hero2 {
-  padding: 3rem 0rem;
-  text-align: left;
-  min-height: 75vh;
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  </div>
+</section>
+
+<style>
+:root{
+  --hero-bg: var(--sl-color-bg, #0b0b0f);
+  --hero-bg-soft: var(--sl-color-bg-soft, #121219);
+  --hero-text: var(--sl-color-text, #e8e8ef);
+  --hero-muted: var(--sl-color-text-muted, #aeb7cb);
+  --hero-accent: var(--sl-color-accent, #ff2670);
 }
 
-.hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
+/* sección */
+.hero{
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--hero-bg);
+  color: var(--hero-text);
+  padding-block: clamp(2.5rem, 7vw, 5rem);
+  min-height: 52svh;
+  border-top: 1px solid color-mix(in oklab, var(--hero-text) 8%, transparent);
 }
 
-.hero-content h2 {
-  font-size: 45px !important;
-  font-weight: 700;
-  line-height: 2em;
-  margin-bottom: 1.5rem;
+/* glow + grid */
+.hero::before,
+.hero::after{
+  content: "";
+  position: absolute; inset: 0; pointer-events: none; z-index: -1;
+}
+.hero::before{
+  background:
+    radial-gradient(60% 50% at 55% 0%,
+      color-mix(in oklab, var(--hero-accent) 22%, transparent) 0%,
+      transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.03), transparent 55%);
+}
+.hero::after{
+  opacity: .07;
+  background-image:
+    linear-gradient(transparent 0 98%, currentColor 98% 100%),
+    linear-gradient(90deg, transparent 0 98%, currentColor 98% 100%);
+  background-size: 32px 32px;
 }
 
-.hero-content p {
-  font-size: 21px !important;
-  line-height: 1.5;
-  margin-bottom: 2.5rem;
-  max-width: 800px;
-  opacity: 0.9;
+/* container */
+.wrap{
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 2rem);
 }
 
-.button-group {
-  display: flex;
-  gap: 1rem;
-  justify-content: left;
-  flex-wrap: wrap;
+/* eyebrow */
+.eyebrow{
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-size: .75rem;
+  color: color-mix(in oklab, var(--hero-text) 70%, transparent);
+  border: 1px solid color-mix(in oklab, var(--hero-text) 12%, transparent);
+  background: color-mix(in oklab, var(--hero-text) 6%, transparent);
+  border-radius: 999px;
+  padding: .35rem .6rem;
+  margin-bottom: .9rem;
+  backdrop-filter: blur(4px);
+}
+.dot{ width: .5rem; height: .5rem; border-radius: 999px; background: var(--hero-accent); }
+
+/* título */
+.title{
+  margin: 0 0 1rem 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  font-size: clamp(2rem, 5.5vw, 3.2rem);
+  text-wrap: balance;
+}
+.accent{
+  display: block;
+  background: linear-gradient(90deg, var(--hero-text),
+    color-mix(in oklab, var(--hero-accent) 65%, white));
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
 }
 
-.button {
-  padding: 0.75rem 2rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: all 0.2s ease;
+/* texto */
+.subtitle{
+  max-width: 820px;
+  margin: 0 0 2rem 0;
+  font-size: clamp(1.05rem, 1.2vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--hero-muted);
 }
 
-.button-primary {
-  background-color: #E91E63;
-  color: #fff !important;
+/* botones */
+.btn-group{ display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn{
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: .9rem 1.6rem; border-radius: 14px; font-weight: 600;
+  text-decoration: none; border: 1px solid transparent;
+  transition: transform .12s ease, filter .2s ease, background-color .2s ease;
 }
+.btn:focus-visible{ outline: 2px solid color-mix(in oklab, var(--hero-accent) 60%, transparent); outline-offset: 2px; }
 
-.button-primary:hover {
-  background-color: #D81B60;
+.btn-primary{
+  background: var(--hero-accent); color:#fff !important;
+  box-shadow: 0 10px 28px color-mix(in oklab, var(--hero-accent) 32%, transparent);
 }
+.btn-primary:hover{ transform: translateY(-1px); filter: brightness(1.05); }
 
-.button-secondary {
-  transition: background-color 0.2s ease;
+.btn-secondary{
+  background: color-mix(in oklab, var(--hero-text) 8%, transparent);
+  border-color: color-mix(in oklab, var(--hero-text) 14%, transparent);
+  color: var(--hero-text) !important;
 }
+.btn-secondary:hover{ background: color-mix(in oklab, var(--hero-text) 14%, transparent); }
 
-:root[data-theme="dark"] .hero2 {
-  color: #fff;
-/* background-color: #121212; */
+/* light tweaks */
+:root[data-theme="light"] .subtitle{
+  color: color-mix(in oklab, #000 60%, transparent);
 }
-
-:root[data-theme="dark"] .button-secondary {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #fff !important;
-}
-
-:root[data-theme="dark"] .button-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-:root[data-theme="light"] .hero2 {
-  color: #333;
-/*  background-color: #f9f9f9; */
-}
-
-:root[data-theme="light"] .hero-content h2 {
-  color: #222;
-}
-
-:root[data-theme="light"] .hero-content p {
-  color: #555;
-}
-
-:root[data-theme="light"] .button-secondary {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #333 !important;
-}
-
-:root[data-theme="light"] .button-secondary:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-
-.hero-content h2 {
-  font-size: 39px !important;
-}
-}
-
-
-  </style>
+</style>

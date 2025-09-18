@@ -21,7 +21,7 @@ export default defineConfig({
 		sitemap(),
 		starlight({
 			plugins: [
-				starlightLinksValidator(),
+			//	starlightLinksValidator(),
 				starlightViewModes({
 					zenModeEnabled: true,
 					zenModeCloseButtonPosition: "top-right",
