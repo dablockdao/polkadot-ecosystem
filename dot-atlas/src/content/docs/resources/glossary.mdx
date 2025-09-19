@@ -1,0 +1,361 @@
+---
+title: Polkadot Glossary 2025
+description: Concise, accurate definitions for Polkadot, OpenGov, XCM, staking, coretime, and more.
+---
+
+A practical, no-fluff glossary for builders, analysts, and power users working with Polkadot and modern Web3 stacks. It focuses on concepts that matter in real workflows—governance, XCM messaging, staking, and coretime—and reflects the current state of the network as of **September 2025**.
+
+## Web3 & Polkadot Glossary (2025)
+
+## A
+
+### Account
+Keypair controlling an address and on-chain assets.
+
+An account’s keypair authorizes transactions and governance actions; wallets simply manage keys, while the chain’s state tracks balances and locks. Hardware/air-gapped or injected accounts change how keys are stored, not what an account is.
+
+### Address
+Public identifier used to send/receive assets and make calls.
+
+It’s derived from the public key and encodes network-format details; addresses may also appear as QR codes for signing or payments.
+
+### AMM (Automated Market Maker)
+DEX model using liquidity pools to price assets algorithmically.
+
+AMMs replace order books with invariant-based pricing across pools; slippage and fees depend on pool depth and swap size.
+
+### Asset Hub
+System parachain for issuing and managing fungible/non-fungible assets.
+
+Provides mint/burn/transfer primitives and unified asset IDs under shared security, making it the canonical spot for DOT-native tokens and NFTs to live and interoperate across the ecosystem. 
+
+### Availability Cores
+Relay-chain execution/availability slots assigned to parachains/threads under coretime.
+
+Parachains are scheduled onto availability cores; validators fetch candidates and related metadata via runtime APIs to check availability and proceed with approvals. 
+
+## B
+
+### BABE
+Slot-based block production on the relay chain.
+
+BABE assigns leaders per slot to propose blocks; later, GRANDPA finalizes chains of blocks, separating authorship from finality for liveness and safety. 
+
+### Block
+Bundle of state transitions plus header and metadata.
+
+Contains extrinsics and consensus metadata describing how the runtime transformed prior state into the new state. 
+
+### Blockspace
+Usable capacity (compute + storage + security) finalized by the network.
+
+In Polkadot’s blockspace-centric design, the “product” is finalized execution capacity across many chains, with quality and availability varying by design and scheduling. 
+
+### Bonding
+Locking tokens to take on network roles (e.g., staking).
+
+Bonded DOT can secure the network (staking) or be used in mechanisms like (legacy) auctions; unbonding introduces time-based exit delays. 
+
+### Bridge
+Trust-minimized connection to external networks.
+
+Bridge parachains make external chains appear parachain-like to the relay chain, enabling message or asset movement with explicit security assumptions. 
+
+## C
+
+### Capacity (Validator)
+Nominator saturation level beyond which some nominators earn no rewards.
+
+When a validator is “at capacity,” additional nominators risk being outside the rewarded set if the validator becomes oversubscribed in the next election. 
+
+### Collator
+Parachain node building blocks and submitting proofs to validators.
+
+Collators collect parachain transactions, produce candidates, and attach proofs so relay-chain validators can verify the state transition. 
+
+### Collectives (Parachain)
+System parachain hosting on-chain groups (e.g., Technical Fellowship, Alliance).
+
+Dedicated to governance-adjacent organizations that operate on-chain and support protocol stewardship and ecosystem norms. 
+
+### Commission (Validator)
+Fee a validator takes before sharing rewards.
+
+Validator commission is subtracted first; remaining rewards distribute to backing nominators pro-rata to stake and activity. 
+
+### Consensus
+Block production plus agreement (BABE + GRANDPA).
+
+BABE authors blocks per slot; GRANDPA voters finalize a chain prefix, giving deterministic finality rather than probabilistic confirmation. 
+
+### Coretime
+Model where parachains consume relay-chain time on demand (replaces auctions).
+
+Instead of long-lived slot leases, chains can operate as on-demand parathreads or buy time flexibly; scheduling maps to availability cores for execution.
+
+### Cross-Chain
+Interoperable exchange of messages/assets across chains.
+
+Implemented via protocols like HRMP today with an XCMP target; delivers ordered, guaranteed message delivery under the relay chain’s security. 
+
+## D
+
+### DApp
+Application with decentralized backends or state.
+
+The UI can be web or native; the key is on-chain state/logic and wallet-based authorization rather than centralized servers. 
+
+### DMP (Downward Message Passing)
+Messages from relay chain to a parachain.
+
+Part of vertical message passing; downward messages may also originate from another parachain but route via the relay chain. 
+
+### DOT
+Polkadot’s native token for governance, staking, and bonding.
+
+DOT powers voting/treasury, secures the network via staking and slashing, and can be bonded for protocol operations. 
+
+## E
+
+### Epoch / Era / Session
+Epoch: BABE slots; Era: staking reward period; Session: validator set window.
+
+Epochs break into slots with eligible leaders; eras group sessions for payout and staking recalculation; sessions gate validator set changes and key usage. 
+
+### Equivocation
+Publishing conflicting data (e.g., two blocks for one slot).
+
+BABE equivocation is authoring multiple blocks in a slot; GRANDPA equivocation is signing conflicting chains—both slashable consensus faults. 
+
+### Extrinsic
+External input to the runtime (signed transactions or inherents).
+
+SCALE-encoded extrinsics carry versioning, signatures (if any), and call data; “transactions” are signed and fee-bearing, while “inherents” are unsigned, block-author-inserted items like timestamps with separate validation rules. 
+
+## F
+
+### Finality
+Irreversible block inclusion (via GRANDPA).
+
+### Fellowship (Technical)
+Expert body stewarding protocol quality and safety.
+
+### FRAME
+Substrate’s pallet library for building runtimes.
+
+## G
+
+### Governance (OpenGov)
+Track-based referenda with origins and conviction voting.
+
+### GRANDPA
+Finality gadget that finalizes chains of blocks.
+
+## H
+
+### Hard Fork / Soft Fork
+Non-backward-compatible vs backward-compatible protocol changes.
+
+### HRMP
+Relay-routed parachain↔parachain messaging precursor to full XCMP (active).
+
+## I
+
+### Inherents
+Unsigned extrinsics inserted by block authors (e.g., timestamp).
+
+### Injected Account
+Wallet-managed account surfaced in UIs.
+
+### Interoperability
+General capability for chains and applications to work together.
+
+## J–L
+
+### JSON-RPC
+Interface used by nodes, wallets, and tooling.
+
+### Keep-Alive Check
+Prevents transfers that would drop balance below existential deposit.
+
+### Kusama (KSM)
+Independent canary network for Polkadot.
+
+### libp2p
+Peer-to-peer networking stack used by nodes.
+
+## M
+
+### Mainnet
+Live production network.
+
+### Message (XCMP/HRMP)
+Data packet sent between parachains or via relay chain.
+
+### Metadata
+Machine-readable description of runtime types and calls.
+
+## N
+
+### NFT
+Non-fungible token representing unique assets.
+
+### Node Explorer
+Tool to browse node/chain data.
+
+### Nomination
+Backing validators with staked DOT in NPoS.
+
+### Nominator
+Account bonding DOT to support validators.
+
+### NPoS
+Nominated Proof-of-Stake; shared risk/reward among validators and nominators.
+
+## O
+
+### On-Chain Governance
+Governance executed entirely by chain logic.
+
+### OpenGov
+Polkadot’s governance protocol using tracks and origins.
+
+### Origin
+Privilege context under which a call executes (e.g., Root, Fellowship, system).
+
+### Oversubscribed (Validator)
+More nominators than capacity; only top stake earns rewards.
+
+## P
+
+### Pallet
+Substrate runtime module implementing domain logic.
+
+### ParaID
+Numeric identifier for a parachain/thread.
+
+### Parachain
+Chain secured by Polkadot’s shared security, executing in parallel.
+
+### Parathread (On-Demand)
+Pay-as-you-go execution aligned with coretime consumption.
+
+### Parity Technologies
+Core developer of Substrate and Polkadot implementations.
+
+### People Chain
+System parachain for identity-related primitives.
+
+### Polkadot (Relay Network)
+Heterogeneous multi-chain network with shared security and XCM.
+
+### Polkadot Alliance
+Collective promoting standards and discouraging malicious behavior.
+
+### PoS / PoW
+Consensus participation by stake / by computational work.
+
+### Proof of Validity
+Evidence enabling validators to verify parachain state transitions.
+
+### Proposal / Referendum
+Governance item submitted for network-wide decision.
+
+### Protocol
+Rules for communication and state transitions.
+
+## R
+
+### Random Seed
+On-chain randomness used in consensus and lotteries.
+
+### Relay Chain
+Base chain coordinating consensus, finality, and cross-chain messaging.
+
+### Remarks
+No-op extrinsics to annotate blocks.
+
+### Rococo
+Testnet for parachain and XCM testing.
+
+### Root Origin
+Highest-privilege origin in Substrate.
+
+### Runtime
+Wasm state-transition function defining chain logic.
+
+## S
+
+### SDK
+Tooling for building apps and chains (e.g., Substrate).
+
+### Sealing
+Producing a block (distinct from finality).
+
+### Session / Session Keys / Certificate
+Validator operating window; keys for duties; proof of key ownership.
+
+### Shared Security
+Parachains inherit the relay chain’s security.
+
+### Slashing
+Penalty for malicious or negligent validator behavior.
+
+### Staking
+Bonding DOT to secure the network as validator or nominator.
+
+### State Transition Function
+Deterministic function transforming chain state.
+
+### System Parachains
+Governance-allocated chains providing protocol services (Asset Hub, People, Collectives).
+
+## T–U
+
+### Teleport
+Burn/mint movement of an asset between chains per XCM rules.
+
+### Tracks (OpenGov)
+Parallel governance lanes with tailored parameters and origins.
+
+### Transaction
+Signed extrinsic that pays fees and triggers runtime logic.
+
+### Transfer
+Same-chain asset movement.
+
+### UMP (Upward Message Passing)
+Messages from parachains to the relay chain.
+
+## V–Z
+
+### Validator
+Relay-chain node participating in consensus, finality, and parachain checks.
+
+### Vertical Message Passing
+Umbrella for UMP (up) and DMP (down) with the relay chain.
+
+### Voting (OpenGov)
+Stake- and conviction-weighted voting on tracks.
+
+### XCMP
+Efficient parachain↔parachain messaging protocol (HRMP remains compatible during transition).
+
+---
+
+## FAQs
+
+**What’s the difference between HRMP and XCMP?**  
+HRMP routes messages via the relay chain; XCMP is the target efficient protocol for direct parachain↔parachain messaging.
+
+**Did coretime replace slot auctions?**  
+Yes. Parachains and threads now consume relay-chain time on demand instead of bidding in long auctions.
+
+**What does “origin” mean in OpenGov?**  
+It’s the privilege context a call executes with (e.g., Root, Fellowship, system); tracks constrain which origins can dispatch what.
+
+**Is a parathread the same as a parachain?**  
+No. Parathreads are on-demand; parachains reserve more continuous execution via coretime allocations.
+
+**How do finality and block production differ?**  
+BABE authors blocks; GRANDPA finalizes them, making history irreversible.

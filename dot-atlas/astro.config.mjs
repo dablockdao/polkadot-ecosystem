@@ -141,10 +141,10 @@ export default defineConfig({
 								label: 'Kits & Templates', collapsed: true, autogenerate: { directory: 'resources/templates' }
 						},
 						{
-								label: 'Glossary', collapsed: true, autogenerate: { directory: 'resources/glossary' }
+								label: 'Glossary', link: '/resources/glossary/' 
 						},
 												{
-								label: 'Faucets', collapsed: true, autogenerate: { directory: 'resources/faucets' }
+								label: 'Faucets', link: '/resources/faucets/' 
 						},
 					  ]},
 				  ])],
