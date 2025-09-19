@@ -533,14 +533,34 @@ Validator operating window; keys for duties; proof of key ownership.
 ### Shared Security
 Parachains inherit the relay chain’s security.
 
+Parachains inherit validator security from the relay chain, so an attacker must compromise Polkadot as a whole to tamper with any one chain’s finalized state. This sharply reduces the cost and complexity of bootstrapping a new chain’s security budget.
+Design implication: you still model domain risk (your runtime, collators, liquidity), but you don’t need to recruit/finance your own validator set to get robust finality.
+
 ### Slashing
 Penalty for malicious or negligent validator behavior.
+
+Slashes scale with fault severity (e.g., equivocation vs prolonged offline) and are shared with nominators backing that validator. Historic offenses decay over time but signal operator quality.
+Ops tip: run sentries, rotate session keys cleanly, and monitor finality lag; most accidental slashes are preventable with basic hygiene.
+
+### Spend Period 
+Treasury approvals accrue and settle on cadence (e.g., every 24 days). Plan cash-flow so deliverables and invoices align with the next spend period to avoid idle time between “Approved” and “Paid.”
+Good practice: include a buffer in proposals for FX/volatility and clearly list milestones that map to specific spend windows.
 
 ### Staking
 Bonding DOT to secure the network as validator or nominator.
 
+In NPoS, rewards depend on validator performance, commission, and whether your nomination was active that era. Spreading stake across quality validators often beats “chasing APY.”
+Surface: active/inactive status, projected inclusion, and slash history. Educating users here prevents misattribution (“staking is broken”) when the issue is oversubscription.
+
 ### State Transition Function
 Deterministic function transforming chain state.
+
+Treat STF like your chain’s “kernel.” Every upgrade must specify storage migrations, weights, and origin checks. Fuzz tests catch edge cases that unit tests miss.
+For app devs: never assume storage layout; always read via types generated from runtime metadata to survive upgrades.
+
+### Substrate 
+Build with FRAME pallets, wire origins/weights, and ship as a Wasm runtime. You can start centralized (few validators) and later plug into shared security by becoming a parachain.
+Dev loop: write pallet → add benchmarks → integrate in runtime → test on Paseo/Westend → ship via OpenGov.
 
 ### System Parachains
 Governance-allocated chains providing protocol services (Asset Hub, People, Collectives).
@@ -548,19 +568,34 @@ They’re funded/allocated by governance (no auctions) because they provide prot
 
 App builders should default to these chains for shared primitives to maximize interoperability and reduce duplication.
 
+These are protocol utilities (Assets, Identity, Collectives) allocated by governance, not markets. Prefer them for canonical features so users enjoy uniform semantics across the ecosystem.
+Be ready for metadata updates (asset names, IDs, origins). Indexers should subscribe to system-chain events, not hardcode.
+
 ## T–U
 
 ### Teleport
 Burn/mint movement of an asset between chains per XCM rules.
 
+Teleports burn on source and mint on destination only for native assets with explicit allowlists. If a chain disables teleports for an asset, use reserve-based transfers instead.
+UX: show whether a transfer is teleport or reserve-based, who pays fees, and expected arrival time.
+
 ### Tracks (OpenGov)
 Parallel governance lanes with tailored parameters and origins.
+
+Each OpenGov track tunes approval/support curves, deposits, and timings for its privilege level. Treasury tracks differ from Root/Fellowship tracks—don’t generalize one track’s thresholds to another.
+Visualize live progress against the track’s curves so voters see when additional support is still needed.
 
 ### Transaction
 Signed extrinsic that pays fees and triggers runtime logic.
 
+A signed extrinsic that pays fees and executes a call. Include tips to prioritize during congestion and watch weight when batching.
+Post transaction hash and block for support/debugging; it reduces back-and-forth.
+
 ### Transfer
 Same-chain asset movement.
+
+On Substrate, transfers check ED (existential deposit) and optional keep-alive. Batched or XCM transfers can fail partially; design idempotent retries and surface refunds.
+Always show post-transfer balance to the user before signing.
 
 ### UMP (Upward Message Passing)
 Messages from parachains to the relay chain.
@@ -570,19 +605,37 @@ Messages from parachains to the relay chain.
 ### Validator
 Relay-chain node participating in consensus, finality, and parachain checks.
 
+Hardware, network, and ops discipline matter more than headline APY. Look for no slash history, stable commission, responsive ops, and clear identity.
+Run sentry nodes, protect keys with HSM/hardware, and automate alerts for equivocation/offline risk.
+
+Relay validators also perform approval checks for parachain candidates and participate in GRANDPA. If approval assignments lag, parachain inclusion slows even if collators are fine.
+Monitor assignment load and availability metrics; they’re leading indicators of network health.
+
 ### Vertical Message Passing
 Umbrella for UMP (up) and DMP (down) with the relay chain.
+
+Two paths: UMP (parachain → relay) and DMP (relay → parachain). Parachains must gracefully handle out-of-order arrivals and retries.
+Log message IDs and outcomes for reliable reconciliation across hops.
 
 ### Voting (OpenGov)
 Stake- and conviction-weighted voting on tracks.
 
+Stake-weighted with conviction locks; abstain is different from no. Whales can’t easily dominate high-conviction outcomes without locking for long.
+Encourage delegation for users who won’t follow daily governance—idle stake is governance debt.
+
 ### XCMP
 Efficient parachain↔parachain messaging protocol (HRMP remains compatible during transition).
 
----
+XCMP carries typed XCM instructions (e.g., TransferAsset, WithdrawAsset, BuyExecution, ReserveAssetDeposited) directly between parachains without storing full message payloads on the relay chain. It preserves ordering and delivery guarantees per channel (“lane”), uses fees/weight accounting on the destination chain, and supports refunds when execution cannot proceed. Compared with HRMP, XCMP reduces relay-chain storage/overhead while keeping the same developer-facing XCM interface, so most apps can migrate with minimal code change.
+
+Operationally, treat each route as a resource with back-pressure: if the destination chain is congested or a handler errors, messages queue and refunds may return to the sender. Always display to users who pays which fee, the expected existential deposit (ED) on the destination, and whether the transfer is a teleport (native) or reserve-based (remote). For robustness, make handlers idempotent, log message IDs/outcomes for reconciliation, and monitor queue depth, execution weight, and refund events so you can retry or surface actionable errors instead of “lost transfer” ambiguity.
+
+### zk-SNARKs 
+Great for privacy and succinct verification; expensive to prove, cheap to verify. If you integrate SNARK-based flows, show proof size, verification cost, and trusted setup (if any).
+Pair with remarked CIDs or commitments so auditors can link private proofs to public funding without revealing sensitive data.
+
 
 ## FAQs
-
 **What’s the difference between HRMP and XCMP?**  
 HRMP routes messages via the relay chain; XCMP is the target efficient protocol for direct parachain↔parachain messaging.
 
