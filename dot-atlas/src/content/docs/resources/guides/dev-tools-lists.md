@@ -7,7 +7,7 @@ sidebar:
 
 A practical, up-to-date map of the open-source Polkadot Stack—wallets, SDKs, client libraries, smart-contract tooling, node infrastructure, governance dashboards, explorers, and front-end integrations—plus workflows, gotchas, and FAQs for builders shipping real dapps on Polkadot and its parachains.
 
-## What is the “Polkadot Stack”? (ELI5 + Pro view)
+## What is the “Polkadot Stack”?
 **ELI5:** Polkadot is a *network of blockchains*. The Polkadot Stack is the open-source toolbox developers use to build apps, launch chains, deploy smart contracts, view data, and participate in governance—everything from wallets and APIs to SDKs and dashboards.
 
 **Pro view:** The stack spans Layer-0 (Relay Chain), Layer-1s (parachains), and application layers. It includes the Polkadot Blockchain SDK (formerly “Substrate”), ink! for Wasm contracts, client libraries in TypeScript/Rust/Go/Python, light clients (smoldot), and DX tooling (Zombienet, Chopsticks, benchmarking CLI) plus UX layers (wallets, explorers, governance UIs).

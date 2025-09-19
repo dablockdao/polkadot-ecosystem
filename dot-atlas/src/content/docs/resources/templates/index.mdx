@@ -1,0 +1,155 @@
+---
+title: Polkadot Templates
+description: Discover all the Polkadot ecosystem templates and kits in one place.
+---
+
+## Polkadot Templates & Kits by Vertical
+
+**Ship faster with opinionated, production-ready starter kits for DeFi, DePIN, Gaming, NFTs, Governance/DAO, Analytics, and Wallet UX.** Each kit bundles code scaffolds, integration recipes, and launch checklists aligned with Polkadot system chains and leading parachains—so you focus on product, not plumbing.
+
+## Why this exists
+Building on Polkadot can feel like assembling a jet mid-flight: multiple execution environments, bridges, wallets, explorers, and governance tracks. Our verticalized kits compress that complexity into clear, repeatable paths to MVP—with sensible defaults for assets, identity, XCM routing, data indexing, and funding operations.
+
+**What you’ll get in every kit**
+* **Scaffolded code** (contracts/pallets + front-end hooks)
+* **Chain wiring** (Asset Hub, XCMP/XCM flows, explorers)
+* **Wallet & UX patterns** (connect modal, human-readable signing)
+* **Data & analytics** (indexing schema, charts, alerts)
+* **Ops & governance** (runbooks, treasury playbooks, SLA-style checklists)
+
+
+## ELI5
+Think “LEGO for Polkadot verticals.” Open the box → follow the build guide → swap bricks as you grow. No yak-shaving.
+
+## Who it’s for
+* Startup teams racing to PMF
+* Protocol DAOs standardizing launch playbooks
+* Agencies and integrators seeking repeatable delivery
+* Researchers and educators assembling demo stacks
+
+## How it works
+1. **Pick a vertical kit** below.
+2. **Choose your execution path** (EVM, ink!, or runtime).
+3. **Wire system chains** for assets and identity.
+4. **Turn on telemetry** (indexers, dashboards, alerts).
+5. **Follow the launch checklist** (testnet → beta → mainnet).
+
+## Vertical Kits
+### DeFi Kit
+**Use when:** You’re building AMMs, money markets, stablecoins, remote swaps, or yield strategies.
+**Includes:**
+
+* Token templates (ERC-20/PSP-22) and Asset Hub registration scripts
+* Liquidity bootstrap flows and remote-swap helpers
+* Risk dashboard scaffold (TVL, volume, pool health)
+* Incentives & audit request templates for governance
+  **MVP path:** Issue asset → seed liquidity → ship swap UI → publish simple analytics → define pause/guard rails.
+
+### DePIN Kit
+**Use when:** You reward real-world actions (mobility, sensing, compute).
+**Includes:**
+
+* Device registry module + proof submission pipeline
+* Attestation/oracle bridge patterns
+* Reward curve configs with slashing hooks
+* Fleet dashboard (maps, payouts, anomalies)
+  **MVP path:** Register device → submit proofs → compute rewards → distribute on Asset Hub → verify on explorer.
+
+### Gaming Kit
+**Use when:** You need on-chain items, currencies, leaderboards, tournaments.
+**Includes:**
+
+* Game currency + marketplace contracts
+* NFT minting with loot tables and batches
+* Leaderboards/tournaments with season resets
+* Player wallet overlay and account-abstraction patterns
+  **MVP path:** Mint currency/NFT → enable trading → run a season → distribute rewards.
+
+### NFTs & Media Kit
+**Use when:** You’re shipping collections, memberships, tickets, or media rights.
+**Includes:**
+
+* Collection scaffolds with royalties and soulbound options
+* Lazy minting, allowlists, and bulk airdrops
+* Ticketing template with on-chain verification flow
+* Media licensing metadata schema
+  **MVP path:** Create collection → mint → list → claim page + proofs of attendance.
+
+### Governance & DAO Kit
+**Use when:** You coordinate funds, upgrades, and community decisions.
+**Includes:**
+
+* Proposal authoring pack (scope, budget, milestones)
+* Treasury disbursement runbooks (vesting, bounties, curators)
+* Off-chain signaling → on-chain proposal bridge patterns
+* Voting portal UI with track filters and status alerts
+  **MVP path:** Draft → review → submit → track execution with public dashboards.
+
+### Data, Indexing & Analytics Kit
+**Use when:** You aggregate chain events into dashboards and APIs.
+**Includes:**
+
+* ETL pipeline scaffold (ingest → transform → serve)
+* Metrics API and prebuilt charts/tables
+* CSV exports and webhook alerts
+* Governance event parsers (proposals, referenda, disbursements)
+  **MVP path:** Ingest key events → expose KPIs → alert on thresholds.
+
+### Wallets, UX & Onboarding Kit
+**Use when:** You want frictionless sign-in and multi-chain clarity.
+**Includes:**
+
+* Multi-wallet connect modal with network selector
+* Transaction explainer (fees, origins, XCM route previews)
+* Account-abstraction samples where supported
+* Phishing and safety prompts baked into flows
+  **MVP path:** One-click connect → safe signing → explorer deep-links → clear error states.
+
+## Choosing your execution environment
+* **EVM:** Fastest path for Solidity teams; abundant tooling.
+* **ink!:** Rust contracts with strong type safety and efficient runtimes.
+* **Runtime pallets:** Maximum performance and protocol-level control once you’ve hit PMF.
+
+*Rule of thumb:* Start with contracts, graduate to pallets as requirements solidify.
+
+## Five-step selection guide
+1. **Define your core loop:** swap, reward, mint, vote, index, or onboard.
+2. **Pick EE:** speed (EVM), control (ink!/runtime), or hybrid.
+3. **Anchor system chains:** Asset Hub for assets; People/identity where relevant.
+4. **Turn on observability:** indexers, dashboards, alerts from day one.
+5. **Decide bridge story early:** remote swaps, bridged liquidity, or local only.
+
+## Example: DeFi MVP in 7 days
+* **Day 1:** Front-end scaffold, wallet connect, chain selector.
+* **Day 2:** Issue asset; set up Asset Hub routing.
+* **Day 3:** DEX pool create/seed; basic swap UI.
+* **Day 4:** Index pool events; TVL/volume charts.
+* **Day 5:** Health alerts; pausability wired.
+* **Day 6:** Governance draft for incentives/audit.
+* **Day 7:** Testnet fire-drill; public beta notes.
+
+## Common pitfalls & tips
+* **Duplicating primitives across chains** → Default to canonical system chains and XCMP/XCM.
+* **Ignoring analytics until launch** → Add metrics and alerts at inception.
+* **Premature runtime customization** → Prove demand with contracts first.
+* **Wallet confusion** → Ship a chain-aware connect modal and plain-language signing prompts.
+* **Bridge as afterthought** → Decide your liquidity and routing model early.
+
+## FAQs
+**What’s the fastest route to MVP?**
+Start on EVM or ink! with the matching kit, then iterate toward runtime modules as needs harden.
+
+**Do I need Asset Hub?**
+If you issue or move fungible/non-fungible assets across the ecosystem, yes—use it as the canonical anchor.
+
+**How do I support multiple wallets cleanly?**
+Use a unified connect layer with network detection and human-readable confirmations.
+
+**When should I consider governance?**
+If you’ll seek treasury support, incentives, or protocol changes—align your proposal artifacts early.
+
+**How do I keep data consistent across parachains?**
+Adopt a shared indexing schema, expose a single metrics API, and run alerts on top.
+
+**Can I mix kits?**
+Absolutely. They’re composable. Pair DeFi with Wallet UX and Analytics, for example.

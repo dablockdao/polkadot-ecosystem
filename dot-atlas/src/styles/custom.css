@@ -101,10 +101,12 @@ h2 {
   border-radius: 0.25rem;
 }
 
+/*
 @media (min-width: 100rem) {
   :root { --sl-content-width: 56rem; }
   :root:not([data-has-toc]) { --sl-content-width: 60rem; }
 }
+*/
 
 /* ===========================
    SECTION: Banner
