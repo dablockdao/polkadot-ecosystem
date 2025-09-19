@@ -1,60 +1,117 @@
 ---
 title: 'Beginners Guide to Polkadot Smart Contracts'
 description: 'Explore smart contracts on Polkadot, including ink! and EVM environments, and learn about differences between smart contracts and parachains.'
+sidebar: 
+    label: Smart Contracts 101
 ---
-Polkadot, has been a game-changer in the decentralized technology space. Created by **Dr. Gavin Wood**, one of the co-founders of Ethereum, Polkadot has introduced a unique approach to scalability, security, and cross-chain functionality. A pivotal element of this ecosystem is its smart contract capabilities, which, while not native to the Polkadot Relay Chain, are fully supported by several of its parachains. This article provides an in-depth guide to understanding Polkadot smart contracts, exploring the current landscape, and examining their future within the Polkadot ecosystem.
 
-## Understanding the Polkadot Architecture: Layer 0 and Layer 1
-Polkadot is fundamentally different from many blockchain platforms because of its multi-chain architecture. At its core lies the **Polkadot Relay Chain**, often referred to as a **“Layer 0” blockchain**. This base layer provides security, consensus, and interoperability across all connected chains, known as parachains. However, the Relay Chain does not natively support smart contracts. Instead, this functionality is delegated to the parachains, which operate as “Layer 1” blockchains within the Polkadot network.
+A practical, expert-level tour of smart contracts in the Polkadot ecosystem. We cover the architecture (Layer-0 Relay Chain vs parachains), the two dominant environments (ink!/Wasm and EVM), how fees/weights work, when to choose contracts vs. a custom parachain, and what’s coming next with PolkaVM and the proposed “Plaza” system chain.
 
-Parachains are sovereign blockchains that run parallel to each other, connected to the Relay Chain. They can host **decentralized applications (dApps)**, process transactions, and most importantly, support smart contracts. This setup allows developers to create and deploy smart contracts in various environments, tailored to the specific needs of the application.
+## Polkadot at a Glance: Layer-0 & Parachains
+Polkadot is a **Layer-0 network** (the Relay Chain) that provides security, consensus, and cross-chain interoperability for a set of sovereign **Layer-1 parachains**. The Relay Chain itself does **not** run user smart contracts; parachains do. This design lets teams pick or build the best execution environment for their use case while sharing security and messaging across the ecosystem.
 
-## Smart Contract Environments in Polkadot: ink! and EVM
-Polkadot offers developers two primary environments for creating and deploying smart contracts: ink! and the **Ethereum Virtual Machine (EVM)**. Each environment has distinct advantages, catering to different developer preferences and use cases.
+## Smart Contract Environments on Polkadot
+Polkadot supports multiple smart-contract styles—most notably **ink! (Wasm)** and **EVM (Solidity)** today, plus the **PolkaVM** (RISC-V-based) path that’s rolling out across the stack.
 
-1. **ink! Smart Contracts:** ink! is a domain-specific language developed by Parity Technologies specifically for writing smart contracts on Substrate-based blockchains. Written in Rust and compiled to **WebAssembly (Wasm)**, ink! is designed to offer performance, safety, and flexibility. Developers familiar with Rust will find ink! to be a powerful tool, allowing them to leverage the full capabilities of Rust’s memory safety and performance optimizations. One of the key features of ink! is its integration with the **Contracts pallet**, which is part of the **Substrate framework**. This pallet provides the necessary tools and interfaces for deploying and managing Wasm-based smart contracts on parachains. The Contracts pallet introduces several enhancements over traditional EVM-based contracts, such as caching, efficient state management, and the ability to support a wide range of programming languages that compile to Wasm.
-2. **Ethereum Virtual Machine (EVM) Smart Contracts:** For developers who prefer working with **Solidity**, Polkadot also supports the Ethereum Virtual Machine (EVM) through the **Frontier framework**. Frontier is a suite of tools that enables Substrate-based blockchains to natively run Ethereum contracts with the same API/RPC interface that Ethereum exposes. This compatibility layer allows developers to port existing Ethereum dApps to Polkadot with minimal modifications, making it easier to tap into the growing Polkadot ecosystem. Several parachains, such as Moonbeam and Astar, have implemented the EVM, allowing developers to deploy Solidity-based contracts alongside Wasm-based contracts. This dual environment support enables true interoperability between different contract standards and opens up new possibilities for cross-chain applications.
+### ink! (Wasm)
+**ink!** is a Rust-based domain-specific language that compiles to **WebAssembly (Wasm)**. It runs via a **Contracts pallet** on parachains that enable it, offering memory safety from Rust and predictable performance from Wasm. The ink! toolchain integrates tightly with Substrate, and the docs explain how ink!, Substrate and the Contracts pallet fit together.
 
-## Developing on Polkadot: Smart Contracts vs. Parachains
-When considering development on Polkadot, it’s crucial to understand the difference between building a smart contract and developing a parachain. These two approaches offer different levels of control, complexity, and scalability.
+**Where you’ll use it:** ink! contracts are live on multiple parachains that enable the Contracts pallet (e.g., Astar’s Wasm/ink! environment).
 
-### Smart Contracts: A Higher Layer of Abstraction
-Smart contracts on Polkadot are self-contained scripts that execute specific instructions on a given blockchain. When developers write a smart contract, they are creating **logic that interacts with and deploys to a specific chain address**. Smart contracts are generally easier to develop and deploy compared to full parachains, making them an attractive option for developers looking to build dApps quickly.
+**Why choose ink!:**
+* **Safety & performance** via Rust/Wasm.
+* **First-class Substrate integration** and palette-level control for chain builders.
+* **Future-friendly** with Polkadot’s multi-VM direction.
 
-However, smart contracts have limitations, such as the need to manage upgradeability and gas fees. On platforms like Ethereum, smart contracts must pay “gas” to execute, which prevents infinite loops and other potential exploits. Although parachains on Polkadot typically use a weight-fee model rather than gas metering, the principle of resource limitation still applies.
+### EVM (Solidity via Frontier)
+For Solidity developers, Polkadot offers broad **EVM compatibility** through **Frontier**—a Substrate suite providing EVM execution and Ethereum-style JSON-RPC. Parachains like **Moonbeam** and **Astar** expose familiar Ethereum tooling (Remix, Hardhat, Foundry) with full JSON-RPC, so existing dApps can port with minimal change.
 
-### Parachains: Defining the Chain’s State Transition Logic
-In contrast, **developing a parachain involves creating an entire blockchain with its own runtime**, which defines the **state transition logic** of the chain. Parachain development is more complex but offers significantly more control and flexibility. Parachains can dictate their own environment, including how smart contracts are executed, and can swap out their entire codebase through governance mechanisms. This makes parachains ideal for projects that require custom functionality, high scalability, or specific economic models.
+**Why choose EVM:**
+* **Familiar tooling** and large developer pool.
+* **Fast migration** for existing Ethereum dApps.
+* **Rich wallet/tool support** via JSON-RPC.
 
-Moreover, **parachains can host smart contracts themselves**, allowing other developers to deploy contracts on the custom-built chain. This capability enables parachain developers to create ecosystems within ecosystems, fostering innovation and collaboration across the Polkadot network.
+### PolkaVM & RISC-V (emerging)
+Polkadot’s roadmap introduces **PolkaVM**, a **RISC-V-based** virtual machine and new contract stack designed for scale and broad language support, alongside Ethereum compatibility routes on Polkadot Hub and beyond. It aims for high performance and a simpler developer path while staying inside Polkadot’s shared-security model.
 
-## The Evolution of Gas Fees and Resource Management
-One of the key challenges in smart contract platforms is managing computational resources and preventing abuse, such as denial-of-service (DoS) attacks. Traditional smart contract platforms like Ethereum address this issue through gas fees, where contracts must pay for the computational resources they consume. This model ensures that contracts cannot run indefinitely, as they will eventually run out of gas and halt execution.
+## Smart Contracts vs. Parachains
+**Smart Contracts**
+Deploying a contract is lightweight and fast: you target an existing parachain, pay fees, and ship. Best for **dApps, DeFi protocols, NFTs, games**, and experiments where you don’t need to control the chain’s core logic.
 
-Polkadot parachains take a different approach. Instead of gas fees, **Polkadot uses a weight-fee model for resource management**. This model calculates the cost of a transaction based on the computational resources it will consume, measured in “weight.” While this approach offers more flexibility and efficiency, it also requires developers to carefully design their contracts to avoid resource-heavy operations, such as infinite loops.
+**Parachains**
+Building a parachain means writing the **runtime (state-transition logic)**—maximum control and customization: custom pallets, fee models, scheduling, governance hooks, and the ability to expose **your own contract environment** (ink!, EVM, or both). Choose this when you need **custom economics, execution semantics, or deep performance tuning**.
 
-The **Polkadot ecosystem** also emphasizes proactive resource management at the parachain level. Parachain developers have the freedom to implement advanced resource management strategies, ensuring that the chain remains performant and secure without the strict limitations imposed by gas metering.
+**Rule of thumb**
+* Start with **contracts** to validate product–market fit quickly.
+* Move to (or launch with) a **parachain** when platform-level control or bespoke features become essential.
 
-## Polkadot Plaza: The Future of Smart Contracts in the Polkadot Ecosystem
-As Polkadot continues to evolve, so too does its approach to smart contract support. A significant development in this area is the proposal for the “Plaza,” a highly scalable system chain that consolidates various functionalities into a single hub for users, developers, liquidity, and applications. This proposal aims to create a megacity within the Polkadot ecosystem, where smart contracts, asset issuance, staking, and bridging are all integrated into a seamless, user-friendly environment.
 
-### **The Plaza Vision**
-The **Plaza** is envisioned as a synchronous, composable system chain that can support hundreds of millions of transactions per day. It will leverage Polkadot’s Elastic Scaling technology, which allows a single chain to use multiple cores to process transactions in parallel. This approach will enable the Plaza to scale far beyond the current limits of most blockchain platforms, supporting a wide range of applications and use cases.
+## Fees, Weights, and Resource Management
+Polkadot and most parachains use a **weight-based fee model** (not gas metering in the Ethereum sense). Each extrinsic (transaction) typically carries:
 
-Smart contract support will be a cornerstone of the Plaza. By integrating RISC-V smart contracts via **PolkaVM**, the Plaza will support new programming languages like ink! while maintaining compatibility with existing Ethereum dApps. This dual support will make the Plaza a hub for both traditional blockchain developers and those looking to explore new possibilities in the Polkadot ecosystem.
+* a **base/length fee** component, and
+* a **weight fee** proportional to execution complexity.
 
-**User and Developer Experience**
-One of the key goals of the Plaza is to improve the user and developer experience by consolidating functionalities that are currently spread across multiple chains. Users will no longer need to juggle assets, accounts, and state across different chains, while developers will benefit from reduced time and cost overheads. The Plaza will offer near-zero fees until scaling limits are reached, making it an attractive platform for both small-scale and enterprise-level applications.
+This protects network resources and incentivizes efficient code. Parachains may tweak parameters, but the core approach—**“convert weight to fee”**—is standard across Substrate-based chains.
 
-The introduction of a priority-fee mechanism within the Plaza also presents an opportunity for value accrual to the DOT token, Polkadot’s native asset. By burning a portion of priority fees, the Plaza can create a sustainable economic model that incentivizes developers and users to participate in the ecosystem.
+## Mini-Guides: Hello World in Each Environment
+> High-level steps to orient you. Always follow the latest chain-specific docs for precise commands and versions.
 
-**Strategic Focus on Usability and Scalability**
-The Plaza proposal represents a strategic shift towards focusing on usability and scalability within the Polkadot ecosystem. While the current trend has been to distribute functionalities across multiple chains, the Plaza aims to concentrate resources on building a single, highly scalable system that can serve as the core of the Polkadot network. This approach will allow Polkadot to compete with synchronous systems while laying the groundwork for future expansion as scaling pressures increase.
+### ink! on a Contracts-enabled parachain
+1. **Tooling:** Install Rust toolchain + `cargo-contract`.
+2. **Scaffold:** `cargo contract new flipper` to generate a sample project.
+3. **Build & test:** `cargo contract build` and run unit/integration tests locally.
+4. **Choose a network:** Select a Contracts-enabled parachain (e.g., Astar’s ink! environment).
+5. **Fund & connect:** Get an account funded on your target network; connect via Polkadot.js Apps or the chain’s portal.
+6. **Deploy:** Upload Wasm, instantiate with constructor args, record the contract address.
+7. **Interact:** Use the chain portal or SDK (e.g., Polkadot.js) to call messages; monitor storage/weight usage.
 
-## Conclusion: Embracing the Future of Polkadot Smart Contracts
-Polkadot’s approach to smart contracts, characterized by its **support for both ink! and EVM environments**, offers developers unparalleled flexibility and control. As the ecosystem continues to grow, the introduction of the Plaza represents a significant step forward in realizing the full potential of smart contracts on Polkadot. By creating a centralized hub for smart contracts, asset issuance, staking, and more, the Plaza will enable developers to innovate and build on a scale previously unimaginable.
+### Solidity on an EVM parachain (Moonbeam/Astar)
+1. **Tooling:** Hardhat or Foundry; set the network RPC to your target.
+2. **Write & test:** Author Solidity contracts, run unit tests locally.
+3. **Compile:** `npx hardhat compile` (or Foundry `forge build`).
+4. **Deploy:** Run your migration script against the parachain RPC; confirm the on-chain address.
+5. **Verify (optional):** Use the chain’s explorer verification flow.
+6. **Integrate:** Frontends use standard Ethereum JSON-RPC methods and libraries.
 
-As Polkadot prepares to enter this new era, developers and users alike have the opportunity to be at the forefront of blockchain technology. Whether building on existing parachains or contributing to the development of the Plaza, the Polkadot ecosystem offers endless possibilities for those willing to explore its depths. The future of smart contracts on Polkadot is bright, and the journey is just beginning.
+## Common Pitfalls & Pro Tips
+* **Assume weight, not gas:** Even on EVM chains, fee dynamics and block fullness may differ from Ethereum mainnet. Profile your calls and watch block limits.
+* **Version drift:** Keep `cargo-contract`, ink! macros, and node runtimes aligned; read release notes before upgrading.
+* **Chain specifics:** Moonbeam vs. Astar differ in precompiles, fee curves, and native assets. Read each network’s docs before deploying.
+* **Upgradability:** Prefer well-audited proxy/upgrade patterns; Wasm and EVM ecosystems both support safe upgrade strategies (be deliberate with admin keys and governance).
+* **Cross-chain UX:** When contracts rely on XCM or cross-chain calls, test failure modes (timeouts, fees, queues).
+* **Security first:** Use formal audits where appropriate; minimally, threat-model reentrancy, unchecked external calls, and resource-exhaustion patterns.
 
-- [Polkadot Wiki page about Smart Contracts](https://wiki.polkadot.network/docs/build-smart-contracts).
 
+## What’s Next: Plaza & a Unified Developer UX
+Polkadot contributors proposed **Plaza**—a “batteries-included,” high-throughput **system chain** intended to consolidate common functions (assets, contracts, staking, bridging) with **near-zero fees until scaling limits** and elastic multi-core throughput. The vision includes **smart-contract support (Rust and EVM via RISC-V/PolkaVM)** and priority-fee economics. It’s a strategic move to improve UX by concentrating functionality in a single, scalable hub.
+
+> **Takeaway:** Build today on existing parachains (ink! or EVM). Track PolkaVM and Plaza for next-gen scale and a simpler deployment target across the ecosystem.
+
+## FAQs
+**Is the Relay Chain ever going to support smart contracts directly?**
+No—by design, the Relay Chain focuses on consensus/security and leaves execution to parachains.
+
+**Which should I pick—ink! or EVM?**
+If you want Rust safety/Wasm performance and tight Substrate integration, choose **ink!**. If you’re porting an Ethereum dApp with minimal changes and want maximum tooling continuity, pick **EVM** (Moonbeam/Astar). Many teams use both.
+
+**Do Polkadot chains use gas?**
+They use a **weight-based fee model**. Some EVM parachains expose gas-like UX for compatibility, but under the hood fees map to execution weight and network conditions.
+
+**Can I deploy Solidity and ink! on the same parachain?**
+Yes, on chains that enable both environments (for example, Astar supports EVM and Wasm).
+
+**What is PolkaVM and why RISC-V?**
+PolkaVM is a Polkadot-native, **RISC-V-based VM** for contracts, aiming for high performance and broad language options, with paths for Ethereum compatibility.
+
+**What is Plaza?**
+A proposed **system chain** to unify common functions (contracts, assets, staking, bridging) with high throughput and near-zero fees until scaling limits.
+
+**How do JSON-RPC tools work on Moonbeam?**
+Moonbeam provides **Ethereum JSON-RPC compatibility**, so standard Ethereum wallets/libraries work out of the box.
+
+**Where do I find the latest fee/weight parameters?**
+In each chain’s runtime docs and explorers; start with Polkadot developer docs on weights/fees, then your target parachain’s documentation.
+
+## Conclusion
+Polkadot gives you a **choose-your-own-runtime** path: ship fast with **smart contracts** (ink! or EVM) or build deep with a **custom parachain**. Today’s contracts are production-ready across multiple parachains, and tomorrow’s stack (PolkaVM + Plaza) is set to improve scale, compatibility, and UX further.

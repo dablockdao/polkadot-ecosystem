@@ -1,143 +1,165 @@
 ---
-title: 'How to Create a Polkadot NFT Collection with Kodadot (Koda)'
+title: 'How to Create NFTs on Polkadot (Koda, Chaotic, Unique Network)'
 description: 'Learn how to create and sell NFTs on Polkadot with Kodadot. Step-by-step guide for artists and creators.'
+sidebar: 
+    label: Create NFTs
 ---
-The world of **Non-Fungible Tokens (NFTs)** has grown exponentially, offering creators and collectors new opportunities within blockchain ecosystems. Among these ecosystems, **Polkadot stands out for its unique multi-chain framework** that enhances interoperability and security. Kodadot is a powerful platform within the Polkadot ecosystem that allows users to create, manage, and trade NFTs with ease. This guide walks you through the **process of creating an NFT collection on Kodadot**, providing step-by-step instructions to ensure a seamless experience.
 
-## What is Kodadot NFT Marketplace?
-**Kodadot** **is an NFT platform with a focus on the Polkadot ecosystem**, specifically designed to facilitate the creation, management, and sale of NFTs. It has been recently rebranded to Koda. It provides an intuitive interface and comprehensive tools that cater to both new and experienced users in the NFT space. **Koda supports multiple types of digital assets**, including images, music, videos, and 3D models, making it a versatile choice for creators.
+A practical, up-to-date guide to minting and selling NFTs on Polkadot using three routes: **Koda/Kodadot** on Asset Hub, the newly opened **Chaotic (beta)** marketplace, and **Unique Network** (NFT-centric parachain). Includes steps, comparisons, pitfalls, and FAQs—no external links.
 
-One of the key features of Kodadot is its integration with the Polkadot ecosystem, which ensures that NFTs created on the platform benefit from Polkadot’s robust security, scalability, and interoperability. Moreover, Kodadot’s support for parachains and systemchains like **Polkadot AssetHub** allows creators to leverage specialized chains for their NFT projects.
+## Why mint NFTs on Polkadot
+Polkadot combines **low fees**, **shared security**, and **interoperability**. You can mint on a common-good chain (Asset Hub) with broad reach or on a purpose-built parachain (Unique Network) with advanced NFT primitives. Marketplaces like **Koda/Kodadot** and **Chaotic (beta now open)** provide friendly UIs for creators.
 
-## First Steps Before Creating A Polkadot NFT Collection
+## ELI5
+* **Asset Hub** = a public gallery where anyone can create a room (collection) and hang pieces (NFTs).
+* **Koda/Kodadot** = the concierge/storefront that makes using Asset Hub easy.
+* **Chaotic (beta)** = a fresh, curated marketplace experience now open for creators and early adopters.
+* **Unique Network** = a building designed just for NFTs, with advanced features for utility and programmability.
 
-Before you can create an NFT collection on Kodadot, you need to connect your wallet to the platform. **Kodadot supports various**, with Talisman being one of the most popular choices.
+## Your main options
 
-### Step 1: Connect Your Wallet
+### 1) Koda/Kodadot (on Polkadot Asset Hub)
+* Mature, creator-friendly UI.
+* Fast path to minting and listing on Asset Hub.
+* Supports images, audio, video, 3D, and editions; royalties and collection settings included.
 
-1. Visit the [**Kodadot website**](https://kodadot.xyz/) (now rebranded to *Koda* Art).
-2. In the top right corner, click on “Connect”.
-3. **Select your preferred Polkadot wallet**, such as **Talisman Wallet**.
-4. Follow the prompts to connect your wallet to Koda. Once connected, your wallet will be linked to the platform, allowing you to create and manage NFTs.
+### 2) Chaotic (beta) — **now open**
+* New flagship marketplace experience for Polkadot.
+* Beta is live: you can connect, mint (as available), and list.
+* Strong focus on discovery and community momentum during the beta phase.
 
-### Step 2: Fund Your Wallet
+### 3) Unique Network (NFT-centric parachain)
+* Advanced NFT features and dev tooling (Substrate & EVM-style APIs).
+* Ideal for custom logic, on-chain utilities, and complex metadata workflows.
+* Multiple routes: no-code minting UIs and full developer SDKs.
 
-To create an NFT collection on Kodadot, you will need to have **DOT** (Polkadot’s nativetoken) in your wallet. These funds are required to pay for network fees and to lock up deposits for the NFTs you create.
+## Key concepts: Asset Hub, EDs, deposits
+* **Existential Deposit (ED):** Minimum native balance to keep an account alive on Asset Hub (commonly 0.01 DOT).
+* **Returnable Deposits:** Creating collections/items on Asset Hub requires deposits to deter spam; **burning** items/collections typically unlocks them.
+* **Budgeting:** Keep extra DOT for deposits and tx fees beyond the ED.
 
-1. Open your **Talisman wallet**.
-2. Click on the three dots to access the menu and select the “Swap” option.
-3. Navigate to the XCM (Cross-Consensus Message) section.
-4. **Transfer DOT from the Relay Chain to AssetHub**, as this is the parachain where your NFT collection will be created. Ensure you transfer an amount greater than the existential deposit of 0.01 DOT.
+## Koda/Kodadot: step-by-step
 
-Creating Your Polkadot NFT Collection with Kodadot
---------------------------------------------------
+> Target: Polkadot **Asset Hub** (system chain). Wallet examples: **Talisman**, **SubWallet**, **Nova** (extension/desktop as appropriate).
 
-With your wallet connected and funded, you can now proceed to **create your NFT collection on Kodadot**.
+1. **Prepare wallet & funds**
+   * Install your Polkadot wallet.
+   * XCM-transfer a small amount of **DOT to Asset Hub** (≥ ED + buffer for deposits/fees).
 
-### Step 1: Initiate Collection Creation
+2. **Connect to Koda/Kodadot**
+   * Open Koda/Kodadot and connect your Asset Hub account.
+   * Verify the account holding the DOT you just moved.
 
-1. On the Kodadot platform, navigate to the “Create” section located at the top of the page.
-2. Select “Create Collection” from the dropdown menu.
+3. **Create a collection**
+   * Go to **Create → Collection**.
+   * Upload **cover image**, set **Name**, **Description**, and optional **supply cap** (uncheck “Unlimited” to cap).
+   * Choose **Chain: Polkadot Asset Hub**.
+   * Set **royalties** (percentage) and optional **payout address**.
+   * **Sign** to pay the **returnable deposit** and finalize the collection.
 
-### Step 2: Upload a Collection Cover Image
+4. **Mint NFTs**
+   * **Create → NFT**. Upload media (PNG/JPG/GIF/SVG, audio/video/3D).
+   * Name, description, **attributes/traits**, supply (editions), and **select the collection**.
+   * (Optional) enable **For Sale** and set **price in DOT**.
+   * **Sign** to mint (per-item deposit + fees).
 
-The cover image is the visual representation of your NFT collection and is crucial for attracting potential buyers.
+5. **Manage & sell**
+   * Edit metadata (where supported), list/unlist, transfer, or burn to reclaim deposits.
+   * Track primary sales and royalties on secondary trades within supported markets.
 
-1. Click on the image upload section.
-2. Select an image from your computer that best represents your collection. Kodadot supports various formats, including PNG, JPG, GIF, and SVG.
-3. Upload the image and ensure it meets the platform’s guidelines.
+## Chaotic (beta): step-by-step
+> **Beta is active.** Interfaces and exact flows can evolve—watch the app’s UI cues.
 
-### Step 3: Name and Describe Your Collection
+1. **Connect wallet**
+   * Use a Polkadot wallet and ensure **DOT on Asset Hub** (≥ ED + buffer).
 
-Next, provide a name and description for your collection. These details will help users understand the theme and purpose of your NFTs.
+2. **Create or import collection**
+   * If the beta UI supports creating new collections, follow prompts similar to Koda/Kodadot.
+   * If importing, point to an existing Asset Hub collection you own.
 
-1. Enter a unique name for your collection in the “Name” field.
-2. In the “Description” field, you can optionally provide more context about your collection, such as its inspiration, purpose, or the types of NFTs it will include.
+3. **Mint items**
+   * Upload media, set metadata and traits, choose editions/supply.
+   * Confirm deposits/fees and sign.
 
-### Step 4: Set the Maximum Number of NFTs (Optional)
+4. **List for sale**
+   * Set price (DOT) and listing parameters (fixed price / other modes as available).
+   * Confirm and sign the listing transaction.
 
-If you want to limit the number of NFTs in your collection, you can set a maximum cap.
+5. **Promote**
+   * Announce on social, share previews, and leverage Chaotic’s beta-phase discovery to reach early collectors.
 
-1. Uncheck the “***Unlimited NFTs***” option.
-2. Enter the desired maximum number of NFTs that can be included in this collection.
+## Unique Network: step-by-step
+**No-code route**
+1. Create a Unique Network account.
+2. Use the chain’s web minting UI (or partner UIs) to define **collection**, **royalties**, and **metadata**.
+3. Upload media; mint items; optionally list on supported markets.
 
-### Step 5: Choose the Blockchain and Set Fees
+**Developer route**
+1. Choose **Substrate SDK** or **EVM-style API**.
+2. Define schemas, attributes, and logic (e.g., upgradeable traits, tickets, in-app utility).
+3. Script collection creation, minting, and marketplace integration in CI.
 
-1. Select the parachain where your collection will be minted. In this case, choose “***AssetHub***“.
-2. Set the commission fee you wish to earn from the sale of your NFTs. This fee can be adjusted depending on your preferences.
-3. Optionally, you can direct the commission payments to another wallet, such as a collaborator or a dedicated business wallet.
+**When to pick Unique**
+* You need **programmable utility**, unusual ownership logic, or heavier on-chain features than Asset Hub workflows typically offer.
 
-### Step 6: Pay the Deposit and Create the Collection
+## Feature comparison
+| Capability | **Koda/Kodadot (Asset Hub)**             | **Chaotic (Beta)**                       | **Unique Network**                           |
+| ---------- | ---------------------------------------- | ---------------------------------------- | -------------------------------------------- |
+| Focus      | Mature, creator-friendly UI on Asset Hub | New marketplace experience (beta active) | NFT-centric parachain with advanced features |
+| Minting    | Full UI for collections & items          | Beta minting/listing (features evolving) | No-code UI + SDKs (Substrate/EVM)            |
+| Costs      | Asset Hub deposits + low tx fees         | Similar, if using Asset Hub              | Chain-specific fees; no Asset Hub deposits   |
+| Royalties  | Configurable in flow                     | Supported in marketplace listing (beta)  | Highly flexible via chain features           |
+| Best for   | Quick start, broad reach on Polkadot     | Early discovery in a fresh market        | Complex logic & utility-heavy collections    |
 
-To finalize the creation of your collection, you need to pay a deposit. This deposit ensures that the collection is properly recorded on the blockchain and is typically refundable.
+## Launch checklist
+* [ ] Wallet installed and **Asset Hub funded** (≥ 0.01 DOT + buffer).
+* [ ] **Collection basics**: name, cover, description, license, royalty split.
+* [ ] **Metadata plan**: traits/attributes schema, versioning, image derivatives.
+* [ ] **Storage**: IPFS/Arweave + pinning; keep CIDs manifest.
+* [ ] **Editions & pricing**: fixed price, auctions (if supported), allowlist or open.
+* [ ] **Reveal plan**: pre-reveal placeholder, final metadata switch.
+* [ ] **QA**: test a small “Gen-0” mint end-to-end.
+* [ ] **Go-to-market**: teaser thread, spaces/AMAs, collabs, cross-post to communities.
 
-1. Review the deposit amount displayed on the screen.
-2. Click “Create New Collection”.
-3. Confirm the transaction in your wallet. Once approved, your collection will be created and visible on Kodadot.
+## Common pitfalls & pro tips
+**Pitfall:** Funding only the Relay Chain account.
+**Fix:** **XCM-transfer DOT to Asset Hub** before minting/listing.
 
-Adding NFTs to Your Collection
-------------------------------
+**Pitfall:** Forgetting returnable deposits.
+**Fix:** Budget for **collection + per-item deposits + tx fees**; remember you can **reclaim** on burn.
 
-With your collection in place, you can now add individual NFTs to it.
+**Pitfall:** Unpinned media/metadata.
+**Fix:** Pin files and keep a **CID manifest**; test renders on mobile/desktop.
 
-### Step 1: Select the NFT Creation Option
+**Pitfall:** Royalty path not tested.
+**Fix:** Mint a low-price test item, run a secondary sale, and verify payouts.
 
-1. Return to the “Create” section on Kodadot.
-2. Select “Create NFT” from the dropdown menu.
+**Pro tips:**
+* Use a **cap** for scarcity; document it in the collection description.
+* Keep a **press kit** (logo, banners, artist statement) to streamline listings and PR.
+* In beta markets (Chaotic), ship **smaller drops** to learn the flow, then scale.
 
-### Step 2: Upload Your NFT Media
+## FAQs
+**1) What’s the minimum DOT I need on Asset Hub?**
+Keep at least **0.01 DOT** for the ED and extra for deposits/fees.
 
-Kodadot supports various types of media, including images, music, videos, and 3D models.
+**2) Are Asset Hub deposits permanent costs?**
+No. They are **returnable** when you burn the items/collection.
 
-1. Click on the upload section and select the file you want to mint as an NFT.
-2. Ensure your media file is in one of the supported formats and adheres to the platform’s guidelines.
+**3) Can I start on Koda and also list on Chaotic?**
+Yes—if both target the same chain (e.g., Asset Hub) and your collection is compatible, you can broaden distribution.
 
-### Step 3: Name and Describe Your NFT
+**4) How do I choose between Asset Hub and Unique Network?**
+If you want **speed and simplicity**, pick Asset Hub (Koda/Chaotic). If you need **advanced logic/utility**, use Unique.
 
-Just like with the collection, you need to provide a name and optional description for your NFT.
+**5) What media types can I mint?**
+Common formats (images, audio, video, 3D) are supported; check the UI for current limits.
 
-1. Enter a unique name in the “Name” field.
-2. If desired, provide a description that gives potential buyers more information about the NFT’s content, inspiration, or utility.
+**6) How do royalties work?**
+Set a royalty % and payout address during collection/NFT creation, then verify behavior on your marketplace.
 
-### Step 4: Choose the Blockchain and Set Price
+**7) Can I migrate chains later?**
+Yes. You can re-issue a collection elsewhere, but plan for brand continuity and collector communication.
 
-1. Select the same parachain (AssetHub) where your collection was created.
-2. If you wish to sell the NFT immediately, toggle the “For Sale” option.
-3. Set a price in DOT for the NFT.
-
-### Step 5: Assign the NFT to a Collection
-
-1. From the dropdown menu, select the collection you created earlier.
-2. Specify the number of copies of this NFT you wish to mint. Kodadot allows you to mint multiple copies with unique identifiers for each.
-
-### Step 6: Pay the Deposit and Mint the NFT
-
-As with the collection, a deposit is required to mint each NFT. The deposit amount varies depending on the number of copies you mint.
-
-1. Review the deposit amount.
-2. Click “Create New NFT” and confirm the transaction in your wallet.
-
-Once the transaction is complete, your NFT will be minted and added to your collection. It will also be listed on the Kodadot marketplace if you chose to put it up for sale.
-
-Managing and Selling Your Polkadot NFTs with Kodadot
-----------------------------------------------------
-
-After creating and minting your NFTs, you can manage and sell them directly on the Kodadot platform.
-
-### Managing Your Collection
-
-Kodadot provides tools for managing your NFT collection, including options to edit details, add more NFTs, or remove items from the collection. You can also monitor the performance of your NFTs, tracking sales and commissions earned.
-
-### Listing NFTs for Sale
-
-If you didn’t list your NFTs for sale during the minting process, you can do so later.
-
-1. Navigate to your collection and select the NFT you want to sell.
-2. Click on the “Sell” option and set a price in DOT.
-3. Confirm the listing, and your NFT will be available for purchase on the Kodadot marketplace.
-
-Conclusion
-----------
-Creating a Polkadot NFT collection with Kodadot is a straightforward process that empowers artists and creators to leverage the benefits of blockchain technology. With its user-friendly interface and robust integration with the Polkadot ecosystem, Kodadot makes it easy to create, manage, and sell NFTs, all while enjoying the security and scalability that Polkadot offers.
-
-By following this guide, you can confidently create your own NFT collection, mint unique digital assets, and potentially reach a global audience of collectors and enthusiasts. As the NFT space continues to grow, platforms like Kodadot will play a crucial role in shaping the future of digital art and collectibles.
+**8) Is Chaotic safe to use during beta?**
+Treat beta as **production-lite**: test small, monitor updates, and read all prompts carefully.
