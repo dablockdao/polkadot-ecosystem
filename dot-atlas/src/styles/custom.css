@@ -12,7 +12,7 @@
   --sl-color-accent: #FF2670;
   --sl-color-secondary: #E4FF07;
   --sl-color-muted: #6E7391;
-  --sl-background-gradient: linear-gradient(145deg, #121212, #1e1e1e);
+  --sl-background: linear-gradient(145deg, #121212, #1e1e1e);
 
   --pink-hsl: 319, 100%, 9%;
   --overlay-pink: hsla(var(--pink-hsl), 1);
@@ -30,6 +30,8 @@
   --link-hover-bg: rgba(38, 150, 255, 0.1);
   --link-hover-color: #2696ff;
 }
+
+
 
 /* ===========================
    SECTION: Root Variables (Light)
@@ -90,8 +92,8 @@ h1 {
 [data-theme='light'] h1 { color: #000000 !important; }
 
 h2 {
-  font-family: 'Unbounded Medium', sans-serif;
-  font-size: 27px !important;
+  font-family: 'Lato Bold', sans-serif;
+  font-size: 29px !important;
   line-height: 1.5em !important;
 }
 
