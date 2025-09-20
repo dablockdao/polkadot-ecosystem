@@ -40,20 +40,6 @@ const props = Astro.props as Props;
     </li>
 
     <li class="has-sub">
-      <a class="topLink" href="/club/" aria-haspopup="true" aria-expanded="false">Community</a>
-      <button class="submenuToggle" aria-label="Expand Community">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <ul class="submenu">
-        <li><a href="/club/bounties">Bounties</a></li>
-        <li><a href="/club/initiatives">Initiatives</a></li>
-        <li><a href="/club/collectives">Collectives</a></li>
-        <li><a href="/club/daos">DAOs</a></li>
-        <li><a href="/club/orgs">Orgs</a></li>
-      </ul>
-    </li>
-
-    <li class="has-sub">
       <a class="topLink" href="/resources/" aria-haspopup="true" aria-expanded="false">Resources</a>
       <button class="submenuToggle" aria-label="Expand Resources">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -66,6 +52,21 @@ const props = Astro.props as Props;
         <li><a href="/resources/faucets">Faucets</a></li>
       </ul>
     </li>
+
+        <li class="has-sub">
+      <a class="topLink" href="/club/" aria-haspopup="true" aria-expanded="false">Community</a>
+      <button class="submenuToggle" aria-label="Expand Community">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="/club/bounties">Bounties</a></li>
+        <li><a href="/club/initiatives">Initiatives</a></li>
+        <li><a href="/club/collectives">Collectives</a></li>
+        <li><a href="/club/daos">DAOs</a></li>
+        <li><a href="/club/orgs">Orgs</a></li>
+      </ul>
+    </li>
+    
   </ul>
 </nav>
 
