@@ -15,18 +15,50 @@ import CallCTA from '/src/components/landing/CallCTA.astro';
 
 <Hero2 />
 <Stats />
-&nbsp;
+
+<CardGrid>
+  <LinkCard
+    title="Tools Directory"
+    href="/tools"
+    description="Wallets, explorers, DAO ops, and developer infrastructure."
+  />
+  <LinkCard
+    title="Dapps Directory"
+    href="/dapps"
+    description="Discover live DeFi, social, gaming, and AI experiences."
+  />
+  <LinkCard
+    title="Community Hub"
+    href="/club"
+    description="Meet DAOs, initiatives, and orgs building with Polkadot."
+  />
+  <LinkCard
+    title="Resource Library"
+    href="/resources"
+    description="Guides, templates, media, and support for faster onboarding."
+  />
+</CardGrid>
+
+## What is the Polkadot ecosystem?
+Polkadot is a **network of blockchains**. A central **relay chain** provides shared security; specialized **parachains** plug in to add capabilities (DeFi, identity, gaming, etc.). **XCM** is the native messaging standard for moving assets and instructions across chains. **Asset Hub** is a system chain for issuing and managing tokens/NFTs that other chains can use; some networks support **paying fees in non-native assets** via asset-conversion pools.
+
+## How the ecosystem is organized
+* **Relay Chain:** Security & coordination; not for dapps.
+* **System Chains:**
+  * **Asset Hub** for assets/NFTs and fee-payment features via conversion pools.
+  * **Bridge Hub** for connecting Polkadot to external ecosystems via light-client or verified bridges.
+* **Parachains:** App-specific chains for DeFi, identity, gaming, compute, storage, social, RWA/DePIN, etc.
+* **Routing:** **XCM** for intra-Polkadot transfers/instructions; **bridges** for external chains.
+* **Portals & Tools:** Wallets, explorers, OpenGov dashboards, SDKs, APIs, indexers, oracles.
+
 &nbsp;
 
 <a id="explore"></a>
 <Tabs>
   <TabItem label="Tools">
   
-## Polkadot Tools
-Esential infrastructure for interacting with and building on the Polkadot network: 
-- From secure wallets to manage digital assets to block explorers for detailed insights into network activity. 
-- Developers can kickstart their journey with robust frameworks and APIs 
-under the Development section, while DAO tools empower communities to effectively govern their projects.   
+  ## Polkadot Tools
+Essential infrastructure for interacting with Polkadot—wallets, explorers, DAO tooling, and developer frameworks.  
 
 ----------------
 <ShowcaseImage
@@ -61,12 +93,7 @@ under the Development section, while DAO tools empower communities to effectivel
 
   <TabItem label="Dapps">
   ## Polkadot Dapps
-The Polkadot ecosystem features a vibrant array of decentralized applications (DApps) 
-catering to diverse industries. DeFi platforms redefine financial systems, 
-while NFT marketplaces and gaming DApps offer immersive digital asset and entertainment experiences. 
-DePin projects advance decentralized physical infrastructure, and social DApps foster community engagement. 
-Additionally, storage solutions, smart contract ecosystems, and cutting-edge AI DApps underline the adaptability and 
-innovation thriving within the Polkadot ecosystem.
+Explore live DeFi, bridge, gaming, NFT, social, AI, and infrastructure experiences secured by Polkadot parachains.
 
 ----------------
 <ShowcaseImage
@@ -75,7 +102,7 @@ innovation thriving within the Polkadot ecosystem.
       thumbnail: import('/src/assets/thumbnails/Trading.png'),
       href: '/dapps/defi',
       title: 'DeFi',
-      description: 'Discover the most popular DefI Dapps in the Polkadot Ecosystem.'
+      description: 'Discover the most popular DeFi dapps in the Polkadot ecosystem.'
     },
         {
       thumbnail: import('/src/assets/thumbnails/DePIN2.png'),
@@ -105,25 +132,25 @@ entries={[
       thumbnail: import('/src/assets/thumbnails/NFTs.png'),
       href: '/dapps/nft-marketplaces/',
       title: 'NFTs',
-      description: 'Discover the most popular NFT Marketplaces in the Polkadot Ecosystem.'
+      description: 'Explore active NFT marketplaces across the Polkadot ecosystem.'
       }, 
  {
       thumbnail: import('/src/assets/thumbnails/social-media.png'),
       href: '/dapps/social/',
       title: 'Social',
-      description: 'Discover the most popular Social Dapps in the Polkadot Ecosystem.'
+      description: 'Connect with social and creator dapps powered by parachains.'
       }, 
     {
       thumbnail: import('/src/assets/thumbnails/smart-contracts2.png'),
       href: '/dapps/smart-contracts/',
       title: 'Smart Contracts',
-      description: 'Discover the most popular Smart Contracts Ecosystems built on Polkadot and Substrate.'
+      description: 'Find smart-contract ecosystems built on Polkadot and Substrate.'
       },
     {
       thumbnail: import('/src/assets/thumbnails/dApps.png'),
       href: '/dapps/ai/',
       title: 'AI',
-      description: 'Discover the most popular AI Dapps in the Polkadot Ecosystem.'
+      description: 'Browse emerging AI dapps leveraging Polkadot interoperability.'
       },
 ]}
 />
@@ -137,18 +164,6 @@ Access guides, references, templates, and media to onboard faster and keep your 
 <ShowcaseImage
   entries={[
     {
-      thumbnail: import('/src/assets/thumbnails/Debate.png'),
-      href: '/resources/glossary/',
-      title: 'Glossary',
-      description: 'Quick definitions for core Polkadot terminology and concepts.'
-    },
-    {
-      thumbnail: import('/src/assets/thumbnails/TokensAssets.png'),
-      href: '/resources/faucets/',
-      title: 'Faucets',
-      description: 'Testnet tokens and onboarding flows for builders and testers.'
-    },
-   {
       thumbnail: import('/src/assets/thumbnails/open-source.png'),
       href: '/resources/guides/',
       title: 'Guides',
@@ -160,8 +175,22 @@ Access guides, references, templates, and media to onboard faster and keep your 
       title: 'Templates',
       description: 'Ready-to-use proposal, reporting, and campaign templates.'
     },
+        {
+      thumbnail: import('/src/assets/thumbnails/Debate.png'),
+      href: '/resources/glossary/',
+      title: 'Glossary',
+      description: 'Quick definitions for core Polkadot terminology and concepts.'
+    },
+    {
+      thumbnail: import('/src/assets/thumbnails/TokensAssets.png'),
+      href: '/resources/faucets/',
+      title: 'Faucets',
+      description: 'Testnet tokens and onboarding flows for builders and testers.'
+    },
   ]}
 />
+&nbsp;
+
   </TabItem>
 
   <TabItem label="Community">
@@ -191,13 +220,13 @@ Polkadot’s vision of a decentralized internet.
       thumbnail: import('/src/assets/thumbnails/Community.png'),
       href: '/club/initiatives/',
       title: 'Initiatives',
-      description: 'Start your journey as a Polkadot developer.'
+      description: 'Community-led programs, events, and grassroots campaigns.'
       },
           {
       thumbnail: import('/src/assets/thumbnails/Treasury.png'),
       href: '/club/bounties/',
       title: 'Bounties',
-      description: 'List complete of Polkadot bounties.'
+      description: 'Complete list of live and archived Polkadot bounties.'
       },
   ]}
 />
@@ -205,19 +234,6 @@ Polkadot’s vision of a decentralized internet.
 </Tabs>
 
 &nbsp;
-
-What is the Polkadot ecosystem?
-Polkadot is a **network of blockchains**. A central **relay chain** provides shared security; specialized **parachains** plug in to add capabilities (DeFi, identity, gaming, etc.). **XCM** is the native messaging standard for moving assets and instructions across chains. **Asset Hub** is a system chain for issuing and managing tokens/NFTs that other chains can use; some networks support **paying fees in non-native assets** via asset-conversion pools.
-
-## How the ecosystem is organized
-* **Relay Chain:** Security & coordination; not for dapps.
-* **System Chains:**
-  * **Asset Hub** for assets/NFTs and fee-payment features via conversion pools.
-  * **Bridge Hub** for connecting Polkadot to external ecosystems via light-client or verified bridges.
-* **Parachains:** App-specific chains for DeFi, identity, gaming, compute, storage, social, RWA/DePIN, etc.
-* **Routing:** **XCM** for intra-Polkadot transfers/instructions; **bridges** for external chains.
-* **Portals & Tools:** Wallets, explorers, OpenGov dashboards, SDKs, APIs, indexers, oracles.
-
 ## Core user tools
 ### Wallets
 **Purpose:** Account creation, key management, transfers, staking, governance, dapp connections.

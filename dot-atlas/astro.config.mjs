@@ -102,7 +102,28 @@ export default defineConfig({
 						},
 					  ],
 					},
-					{
+										{
+						label: 'Resources',
+						link: '/resources/',
+						icon: 'open-book',
+						items: [
+					  	{
+								label: 'How-to Guides', collapsed: true, autogenerate: { directory: 'resources/guides' }
+						},
+											  	{
+								label: 'Media', collapsed: true, autogenerate: { directory: 'resources/media' }
+						},
+						{
+								label: 'Kits & Templates', collapsed: true, autogenerate: { directory: 'resources/templates' }
+						},
+						{
+								label: 'Glossary', link: '/resources/glossary/' 
+						},
+						{
+								label: 'Faucets', link: '/resources/faucets/' 
+						},
+					  ]},
+					  					{
 						label: 'Community',
 						link: '/club/',
 						icon: 'heart',
@@ -125,27 +146,6 @@ export default defineConfig({
 					{
 						label: '⚫️ Archive', collapsed: true, autogenerate: { directory: 'club/archive' }
 					},
-					  ]},
-										{
-						label: 'Resources',
-						link: '/resources/',
-						icon: 'open-book',
-						items: [
-					  	{
-								label: 'How-to Guides', collapsed: true, autogenerate: { directory: 'resources/guides' }
-						},
-											  	{
-								label: 'Media', collapsed: true, autogenerate: { directory: 'resources/media' }
-						},
-						{
-								label: 'Kits & Templates', collapsed: true, autogenerate: { directory: 'resources/templates' }
-						},
-						{
-								label: 'Glossary', link: '/resources/glossary/' 
-						},
-						{
-								label: 'Faucets', link: '/resources/faucets/' 
-						},
 					  ]},
 				  ])],
 			title: 'Polkadot Ecosystem',
