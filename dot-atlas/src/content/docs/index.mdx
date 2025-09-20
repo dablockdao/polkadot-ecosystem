@@ -253,7 +253,6 @@ Polkadot’s vision of a decentralized internet.
 * **Subscan:** Broad multi-network coverage (relay chain, Asset Hub, many parachains); familiar UI for quick lookups.
 * **Statescan:** Open-source explorer; self-hostable; developer-friendly for custom deployments and integrations.
 
-**Pro tip:** Cross-check important transactions on **two** explorers when in doubt.
 
 ### Governance & OpenGov portals
 **Purpose:** Discover proposals (referenda), discuss, delegate, and vote.
@@ -330,12 +329,12 @@ Polkadot’s vision of a decentralized internet.
 
 ## Feature comparison tables
 ### Wallets
-| Wallet         | Platforms             | OpenGov voting/delegation | Security model            | Multi-chain scope        | Highlights                              |
-| -------------- | --------------------- | ------------------------- | ------------------------- | ------------------------ | --------------------------------------- |
-| Nova           | iOS, Android          | Yes                       | Ledger, watch-only        | 100+ networks            | Mobile-first UX; staking; WalletConnect |
-| Talisman       | Browser ext + web     | Via portals               | Ledger; Vault integration | Polkadot + EVM + Solana  | Clean UX; DeFi/staking; portfolio       |
-| SubWallet      | Extension, Mobile     | Yes                       | Ledger (Generic app)      | Polkadot/Substrate + EVM | Broad coverage; desktop + mobile        |
-| Polkadot Vault | iOS/Android (offline) | Via QR with connected UI  | Air-gapped signer         | Substrate family         | High-security signing for teams         |
+| Wallet         | Platforms                  | OpenGov voting / delegation | Security model                                        | Multi-chain scope                      | Highlights                                  |
+| -------------- | -------------------------- | --------------------------- | ----------------------------------------------------- | -------------------------------------- | ------------------------------------------- |
+| Nova           | iOS, Android               | Yes (in-app)                | Device secure enclave; **Ledger** support; watch-only | Substrate-first; EVM via WalletConnect | Mobile-first UX; staking tools; portfolio   |
+| Talisman       | Browser extension + web    | Yes (integrated portals)    | Extension sandbox; **Ledger** support                 | **Polkadot/Substrate + EVM + Solana**           | Clean UI; DeFi/staking; portfolio dashboard |
+| SubWallet      | Extension, iOS, Android    | Yes (in-app)                | Extension sandbox; **Ledger** (generic app)           | **Polkadot/Substrate + EVM**           | Broad chain/app coverage; desktop+mobile    |
+| Polkadot Vault | iOS/Android (offline only) | Via connected UI (QR signs) | **Air-gapped signer** (QR); cold storage              | Substrate family                       | High-security signing for teams/treasuries  |
 
 ### Block Explorers
 | Explorer   | Scope                        | Open source | Strengths                                | Typical use                          |
@@ -393,7 +392,7 @@ Polkadot’s vision of a decentralized internet.
 
 ## FAQs
 **1) What is Asset Hub and why should I care?**
-A system chain for creating and managing tokens/NFTs used across Polkadot. It can also enable fee-payment in supported assets when conversion pools exist.
+A system chain for creating and managing tokens/NFTs used across Polkadot.
 
 **2) How does OpenGov differ from typical governance?**
 Proposals are grouped into **tracks** with different risk profiles. You can **delegate per track** to different experts instead of a single all-purpose delegate.

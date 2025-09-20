@@ -1,5 +1,7 @@
 ---
+import swirlImage from '../../assets/atlas.png';
 /* Stats.astro — compact, theme-aware */
+const swirlSrc = swirlImage.src;
 ---
 
 <section class="stats" aria-labelledby="stats-title">
@@ -40,7 +42,7 @@
   </div>
 </section>
 
-<style>
+<style define:vars={{ swirl: swirlSrc }}>
 
   /* ===== Stats.astro — versión compacta desktop ===== */
 
@@ -54,6 +56,7 @@
   --bg: var(--sl-color-bg, #0b0b0f);
   --bg-soft: var(--sl-color-bg-soft, #121219);
   --hairline: var(--sl-color-hairline, rgba(255,255,255,.10));
+  --divider: color-mix(in oklab, var(--text) 18%, transparent);
 
   --radius: 18px;
   --gap: clamp(.75rem, 2vw, 1.25rem);
@@ -113,11 +116,21 @@ h2{
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--gap);
   align-items: start;
+  position: relative;
+  overflow: hidden;
 }
 .item{
   position: relative;
-  padding-top: .9rem;                                  /* ⬅️ menos aire arriba */
-  border-top: 1px dashed color-mix(in oklab, var(--text) 18%, transparent);
+  padding-top: clamp(.9rem, 2vw, 1.15rem);             /* ⬅️ menos aire arriba */
+}
+.item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(var(--gap) * -0.5);
+  right: calc(var(--gap) * -0.5);
+  border-top: 1px dashed var(--divider);
+  pointer-events: none;
 }
 .pin{
   position: absolute; top: 0; left: 0;
@@ -125,6 +138,7 @@ h2{
   background: var(--accent);
   transform: translateY(-50%);
   box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 24%, transparent);
+  z-index: 1;
 }
 
 /* Números compactos */
@@ -164,9 +178,14 @@ h2{
 }
 .swirl{
   position: absolute; inset: 0; margin: auto; width: 100%; height: 100%;
-  background-image: url('https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/atlas.png');
+  background-image: url(var(--swirl));
   background-size: contain; background-repeat: no-repeat; background-position: center;
   mix-blend-mode: screen; opacity: .42;
+}
+
+:root[data-theme="light"] .stats .swirl{
+  mix-blend-mode: multiply;
+  opacity: .28;
 }
 
 /* Responsivo */
