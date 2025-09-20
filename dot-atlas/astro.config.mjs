@@ -143,7 +143,7 @@ export default defineConfig({
 						{
 								label: 'Glossary', link: '/resources/glossary/' 
 						},
-												{
+						{
 								label: 'Faucets', link: '/resources/faucets/' 
 						},
 					  ]},
