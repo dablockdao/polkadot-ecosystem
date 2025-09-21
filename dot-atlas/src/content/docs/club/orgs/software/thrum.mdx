@@ -1,0 +1,161 @@
+---
+title: Thrum
+description: Learn how Thrum’s NOMT and Ikura boost Polkadot throughput and simplify rollup DA—with benchmarks, architecture, and quick-start steps.
+hero:
+  tagline: High-Throughput State and Blobchains for Polkadot Builders
+  image: 
+    file: ../../../../../assets/tools/dev/thrum.png
+  actions:
+    - text: Site
+      link: https://thrum.dev/
+      icon: external
+    - text: Github
+      link: https://github.com/thrumdev
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+
+## Thrum’s NOMT & Ikura: High-Throughput State and Blobchains for Polkadot Builders
+Thrum is shipping two important pieces for the Polkadot stack: **NOMT**, a nearly-optimal Merkle-trie state database targeting tens of thousands of TPS on consumer hardware, and **Ikura**, a blobchain parachain that makes data availability friendly to modern rollup kits. This guide explains what they are, how they work, why they matter for Polkadot/JAM, and how to get hands-on—without the hype.
+
+## Why this matters (problem → benefit)
+**Problem:** In real-world blockchains, **state I/O** dominates runtime cost. Traditional Merkle-trie + KV stores saturate disks before CPUs, throttling throughput and making proofs/PoV generation expensive. On the data side, **rollups** need DA that’s easy to integrate and test across SDKs.
+
+**Benefit:**
+* **NOMT** rethinks the state database for authenticated storage: higher random-access throughput, fast merklization, and stable performance on commodity NVMe. Result: more TPS headroom for runtimes and VMs, faster witness generation, smoother validator work.
+* **Ikura** gives Polkadot/Kusama a *blobchain* you can actually spin up and connect to popular rollup kits via adapters—lowering integration friction for DA workflows.
+
+## ELI5: NOMT and blobchains
+* **NOMT** (Nearly-Optimal Merkle Trie) is like upgrading from a cluttered warehouse to a **high-speed automated shelving system** where the items (state keys) are always found fast, and every pick/put automatically updates a **fingerprint** (the Merkle root) you can prove to anyone.
+* **Blobchain (Ikura)** is a **“bulletin board chain”** optimized to post and retrieve **blobs** (chunks of data) that rollups can use as DA. It provides the plumbing and adapters so your rollup SDK can talk to Polkadot’s DA with minimal custom glue.
+
+## Thrum’s projects at a glance
+* **NOMT**: Rust, embedded KV + authenticated Merkle database; aims for **\~25k TPS** at **1B keys** on **consumer hardware**; preview release **v1.0-preview**.
+* **Ikura (blobs)**: A **parachain** and **adapters** for Sovereign SDK / Rollkit; quick demos via Zombienet; includes **namespaced Merkle trie** and an RPC shim.
+
+## How NOMT works (and why it’s fast)
+### Design goals
+* **Authenticated state** with **Merkle multiproofs** for batch changes.
+* **High random-access throughput** (worst-case friendly), not just cache-happy hot-set wins.
+* **Crash-resilience** (WAL + shadow paging) and **thread-safe API** for parallel VMs.
+
+### Internal architecture (plain-English)
+* **Beatree**: a B-tree variant for raw key-value pairs; tuned for uniform/random access.
+* **Bitbox**: a sparse **binary Merkle tree** stored in an on-disk hashtable aligned with SSD strengths.
+  Together they decouple “find/update my item fast” from “prove the new state root,” minimizing disk thrash.
+
+### Performance snapshot & setup notes
+* Benchmarked on **Ryzen-class CPUs + NVMe**; headline results include **tens of thousands of TPS** under worst-case random access with witnesses enabled, scaling to very large key counts.
+* Targets Linux with **io\_uring** to exploit modern NVMe parallelism; still developer-friendly on macOS for day-to-day.
+
+### Why it matters to Substrate/Polkadot/JAM
+Polkadot and its parachains rely on **Wasm runtime + Merkle proofs**; PoV verification touches parts of the trie each block. A faster authenticated DB boosts:
+
+* **Block production & validation headroom**
+* **PoV proof generation/verification**
+* **Runtime/VM parallelism** (thanks to thread-safe API)
+
+## Ikura: blobchains on Polkadot/Kusama
+### What Ikura provides
+* A **parachain** purpose-built for blob/data availability workflows.
+* **Adapters**: Sovereign SDK + Rollkit, with demos you can run locally (Zombienet).
+* **Shim & bindings**: an RPC bridge and client helpers for easy integration.
+
+### Developer flow (conceptual)
+1. Deploy Ikura locally (e.g., 2 validators + 1 collator via Zombienet).
+2. Run the **adapter** for your rollup kit (Sovereign or Rollkit).
+3. Post blobs from your rollup → fetch/verify on the other side → execute.
+   That’s a realistic end-to-end DA pipeline using Polkadot primitives.
+
+### Why blobchains + Polkadot?
+Rollups send sequenced **data blobs** for later verification. A blobchain with **namespaced Merkle** structures + parachain safety gives you DA alignment with **XCMP** and Polkadot’s **validator set**, and slots naturally into a future **JAM** grid of parallel cores.
+
+## Where this fits in Polkadot & JAM
+
+* **Today:** Parachains/rollups bottleneck on state I/O and proof generation. NOMT + Ikura improve both sides: *state DB* and *DA integration*.
+* **JAM tomorrow:** JAM’s design emphasizes **parallel cores** with verifiable sideband compute. Faster authenticated state + clean DA pathways are **first-order** inputs to utilization and cost.
+
+> Note: There are public indications of active integration work for NOMT with Polkadot-SDK. Track official repos and announcements for concrete milestones.
+
+## Quick start: try NOMT & Ikura
+
+### A) NOMT (state DB) — lab run
+
+1. **Clone & build**
+
+   ```bash
+   git clone <NOMT_REPO_URL> && cd nomt
+   cargo build --release
+   ```
+2. **Run an example (simple commit)**
+
+   ```bash
+   cargo run -p commit_batch
+   ```
+3. **Benchmark (worst-case random transfers)**
+
+   ```bash
+   cargo run -p benchtop -- --items 128000000 --tps-target 40000
+   ```
+4. **Explore witnesses**
+
+   ```bash
+   cargo run -p witness_verification
+   ```
+
+> Replace `<NOMT_REPO_URL>` with your local mirror or the appropriate repository location in your org.
+
+### B) Ikura (blobchain) — local DA demo
+
+1. **Prereqs:** `zombienet` + `ikura-chain` binaries in `PATH`.
+2. **Spin up localnet**
+
+   ```bash
+   ./zombienet.sh
+   ```
+3. **Sovereign demo (post and consume blobs)**
+
+   ```bash
+   cargo run -p ikura-shim -- serve sov --submit-dev-alice
+   cd demo/sovereign/demo-rollup && cargo run
+   ./test_create_token.sh
+   ```
+4. **Rollkit demo** (optional): start shim, init local Rollkit, send a tx, verify balances.
+
+## Common pitfalls & pro tips
+* **Don’t benchmark on SATA SSDs** (you’ll under-estimate NOMT); use NVMe and Linux `io_uring`.
+* **Worst-case patterns mislead**: random-access tests are intentionally harsh; real workloads skew hot-set and should exceed lab TPS.
+* **Witness on/off matters**: enabling witness generation lowers headline TPS but mirrors validator reality. Compare apples to apples.
+* **Mac for dev, Linux for perf**: develop on macOS, measure on Linux to see real gains.
+* **Ikura adapters evolve**: pin adapter versions (Sovereign/Rollkit); regenerate keys when resetting localnets.
+
+## FAQs
+**1) Is NOMT a replacement for RocksDB/ParityDB inside Substrate?**
+Yes—NOMT is designed as an **embedded authenticated state DB** and can serve as a drop-in replacement, with integration specifics depending on your node SDK.
+
+**2) How fast is NOMT, practically?**
+On a modern desktop (e.g., Ryzen-class CPU with consumer NVMe), NOMT has demonstrated **tens of thousands of TPS** even under worst-case random access with witnesses enabled.
+
+**3) What makes NOMT different from Patricia tries used elsewhere?**
+NOMT separates the raw KV (**Beatree**) from the Merkle layer (**Bitbox**) and organizes on-disk layout to match SSD characteristics—cutting I/O amplification common in classic trie-in-KV setups.
+
+**4) Can Ikura work with my rollup kit?**
+Ikura ships adapters for **Sovereign SDK** and **Rollkit** with runnable demos and an RPC shim. You can extend the pattern to other kits.
+
+**5) How does this fit into Polkadot’s Wasm runtime/upgrades?**
+Faster authenticated state helps **PoV proof** paths and leaves more budget for execution; Polkadot’s Wasm runtime model and on-chain upgrades remain unchanged.
+
+**6) Is this JAM-ready?**
+JAM emphasizes parallel cores and sideband verification; speeding state I/O and offering DA plumbing is aligned with that direction. Watch for official timelines.
+
+**7) Production readiness today?**
+NOMT is currently a **v1.0-preview** with extensive torture testing; Ikura is open-source with demos. Treat both as fast-moving projects: pin versions and validate in your stack.
+
+**8) Any public integrations on Polkadot-SDK?**
+There are public notes about active service contracts to integrate NOMT; follow SDK repositories and Thrum channels for PRs/merges.
+
+## Conclusion
+Thrum’s **NOMT** and **Ikura** are pragmatic upgrades for Polkadot builders: **faster state**, cleaner **DA**. If you maintain a parachain, rollup, or high-I/O pallet/VM, now is the time to **prototype with NOMT** and **dry-run Ikura** so you’re ready as the ecosystem leans into higher parallelism and JAM-era workloads.
