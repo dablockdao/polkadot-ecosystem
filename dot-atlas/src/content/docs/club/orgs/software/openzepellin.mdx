@@ -1,0 +1,157 @@
+---
+title: OpenZepellin
+description: The up-to-date builder’s guide to OpenZeppelin—Contracts v5.x, Upgrades, Wizard/UI Builder, and the move to self-hosted ops.
+hero:
+  tagline:  Secure Smart Contracts with OpenZepellin
+  image: 
+    file: ../../../../../assets/hub/orgs/openzepellin.png
+  actions:
+    - text: Site
+      link: https://www.openzeppelin.com/
+      icon: external
+    - text: X
+      link: https://x.com/OpenZeppelin
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+
+## OpenZeppelin in 2025: The Practical, End-to-End Guide for Secure Smart Contracts
+A builder-first deep dive into OpenZeppelin’s toolchain—Contracts v5.x, Upgrades (Hardhat/Foundry), Wizard & the Contracts UI Builder, plus the Defender sunset and open-source ops path. Learn how the pieces fit so you ship faster with fewer footguns.
+
+## Why OpenZeppelin matters (and what changed in 2025)
+OpenZeppelin remains the de-facto standard for secure EVM smart contracts—audited, widely used, and consistently maintained. In **2025**, two practical shifts affect day-to-day builder workflows:
+
+1. **Contracts v5.x** grows with standards, cryptography, and governance utilities, including helpers around account abstraction and signature verification.
+2. **Defender is being phased out** (new sign-ups closed in mid-2025; full shutdown planned for 2026). Teams should migrate operational workflows to **self-hosted** relayers, monitors, and alerting.
+
+**What it means:** keep building on Contracts, use **Hardhat/Foundry Upgrades**, generate code with **Wizard**, scaffold demos with the **Contracts UI Builder**, and plan a **self-hosted ops** stack.
+
+## ELI5: What is OpenZeppelin?
+Think of OpenZeppelin as **LEGO for smart contracts**:
+
+* **Contracts**: battle-tested modules for tokens (ERC-20/721/1155), access control, pausability, vesting, snapshots, and governance.
+* **Upgrades**: safe proxy patterns (UUPS/Transparent) with plugins and checks so you don’t brick your protocol.
+* **Wizard & UI Builder**: click-to-generate secure code and quickly scaffold a React UI to interact with your deployed contracts.
+* **Operations**: with Defender sunsetting, you’ll use open-source relayers/monitors you control.
+
+## The OpenZeppelin stack in 2025
+### Contracts v5.x highlights
+* Modern token implementations and utilities, improved cryptography, governance modules, and helpers for contemporary EIPs.
+* Why it matters: ecosystem-standard behaviors reduce audit scope and integration risk.
+
+### Upgrades plugins (Hardhat & Foundry)
+* **Safely deploy and manage proxies** (UUPS or Transparent), with storage-layout checks and initializer protections.
+* **Recommended**: Hardhat or Foundry. (Truffle Upgrades is deprecated.)
+
+### Wizard & Contracts UI Builder
+* **Contracts Wizard**: a visual generator for ERC-20/721/1155 with toggles for access control, pausing, snapshots, fees, and governance presets.
+* **Contracts UI Builder**: one-click React scaffolding for interacting with live contracts—useful for demos, QA, and stakeholder reviews.
+
+### Defender → open-source transition
+* **Timeline**: new sign-ups closed in 2025; shutdown planned for 2026.
+* **Path forward**: adopt **self-hosted** Relayer/Monitor equivalents using CLI/SDK workflows; expect more DevOps overhead but full control.
+
+## Comparison table: which OZ tool to use when
+| Use case                                       | Primary OZ tool                 | You get                                       | When not to use                                                        |
+| ---------------------------------------------- | ------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------- |
+| Standards-compliant tokens, roles, pausability | **Contracts v5.x**              | Battle-tested modules, ABI-stable patterns    | When inventing an unusual protocol from scratch (expect bigger audits) |
+| Upgradeable deployments                        | **Upgrades (Hardhat/Foundry)**  | Proxy safety checks, admin mgmt, test helpers | If you don’t need upgradeability (prefer simpler non-upgradeable)      |
+| Rapid code generation                          | **Contracts Wizard**            | Click-to-generate secure boilerplate          | If your design deviates heavily from standards                         |
+| Quick demo UI for stakeholders                 | **Contracts UI Builder**        | Instant React scaffolding for live ABIs       | If you’re building a polished product UI                               |
+| Ops/automation/alerts                          | **Self-hosted Relayer/Monitor** | Full control; no vendor lock-in               | If you require a managed SaaS (Defender is sunsetting)                 |
+
+## How it works (architecture mental model)
+1. **Author**: start from **Contracts** or **Wizard**.
+2. **Compile/Test**: Hardhat or Foundry with thorough unit and storage-layout tests.
+3. **Deploy**: use **Upgrades** for UUPS/Transparent proxies where needed.
+4. **Operate**: run **self-hosted** relayers/monitors for tx automation, alerting, and incident response.
+
+## Step-by-step mini-guide (ERC-20 UUPS upgradeable)
+1. **Init project**
+   ```bash
+   mkdir oz-token && cd oz-token
+   npm init -y
+   npm i -D hardhat @nomicfoundation/hardhat-toolbox
+   npx hardhat init
+   ```
+
+2. **Add OZ & Upgrades**
+   ```bash
+   npm i @openzeppelin/contracts @openzeppelin/contracts-upgradeable
+   npm i -D @openzeppelin/hardhat-upgrades
+   ```
+
+3. **Generate base contract**
+   * Use **Wizard** to produce ERC-20 with `Ownable`, `Pausable`, and **UUPS** upgradeability.
+   * Paste into `contracts/MyToken.sol`. Ensure `initializer` is used instead of constructors.
+
+4. **Deploy script (UUPS)**
+   ```js
+   // scripts/deploy.js
+   const { ethers, upgrades } = require("hardhat");
+
+   async function main() {
+     const MyToken = await ethers.getContractFactory("MyToken");
+     const proxy = await upgrades.deployProxy(MyToken, ["MyToken", "MTK"], { kind: "uups", initializer: "initialize" });
+     await proxy.waitForDeployment();
+     console.log("Proxy:", await proxy.getAddress());
+   }
+
+   main().catch((e) => { console.error(e); process.exit(1); });
+   ```
+
+5. **Test storage layout & initializer**
+   * Add tests ensuring initialization only happens once and that upgrades do not reorder state variables.
+
+6. **Upgrade flow**
+   * Add a new variable at the **end** of storage, e.g. `uint256 public mintCap;`
+   * Run storage-layout checks; then:
+
+     ```js
+     const impl = await upgrades.prepareUpgrade(proxy, NewMyTokenImpl);
+     await upgrades.upgradeProxy(proxy, NewMyTokenImpl);
+     ```
+
+7. **Scaffold a demo UI**
+   * Use **Contracts UI Builder** to quickly generate a React interface for transfers, approvals, and pause/unpause actions.
+
+## Practical example: adding governance
+* Start with your token & core app logic.
+* Integrate **Governor** modules to enable proposals, quorum, voting delay/period, and timelock control.
+* Keep the same **Upgrades** workflow; test voting flows on a fork; document parameters (quorum %, voting windows, proposal thresholds).
+
+## Common pitfalls & pro tips
+* **Initializer gotchas**: constructors aren’t called in proxies; use `initializer`/`reinitializer` and protect against re-init.
+* **Storage layout breaks**: never reorder/remove state vars; only append; add layout checks to CI.
+* **Truffle Upgrades**: deprecated—migrate to **Hardhat** (or Foundry).
+* **Role sprawl**: use `AccessControl` with clear role names; define who can upgrade/pause/mint; add timelocks where appropriate.
+* **Governance params**: simulate quorum and voting windows on a fork; small DAOs often set windows too short.
+* **Defender sunset**: budget time for **self-hosted** relayers/monitors; codify runbooks for alerts, key rotations, and incident response.
+
+## FAQs
+**1) What’s the latest OpenZeppelin Contracts major line?**
+Contracts **v5.x** with ongoing point releases in 2025.
+
+**2) Can I still sign up for Defender?**
+No—new sign-ups closed in 2025; the hosted service is planned to shut down in 2026. Migrate to self-hosted relayers/monitors.
+
+**3) Should I pick UUPS or Transparent proxies?**
+Prefer **UUPS** for new deployments (leaner, explicit control). Transparent is fine if your stack/team relies on it.
+
+**4) Is Truffle still supported for upgrades?**
+No; use **Hardhat** or **Foundry**.
+
+**5) How do I quickly prototype a UI for my contract?**
+Use the **Contracts UI Builder** to scaffold a React interface against your deployed ABI.
+
+**6) Does OZ support governance out-of-the-box?**
+Yes—modular **Governor** contracts with configurable quorum, delays, voting periods, and timelocks.
+
+**7) Where do I find token templates?**
+Use **Contracts** or **Wizard** to generate ERC-20/721/1155 presets and customize as needed.
+
+## Conclusion
+OpenZeppelin in 2025 gives you **secure standards, curated upgradeability, and faster iteration**—with a pivot to **self-hosted ops**. Start with **Contracts v5.x**, wire upgrades with **Hardhat/Foundry**, bootstrap code with **Wizard**, and demo flows with the **Contracts UI Builder**. If you’re still on Defender, **plan your migration** now.
