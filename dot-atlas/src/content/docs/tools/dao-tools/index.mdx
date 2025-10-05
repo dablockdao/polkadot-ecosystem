@@ -1,0 +1,173 @@
+---
+title: Polkadot DAO Tools
+description: Explore Polkadot DAO Tools.
+sidebar: 
+    order: 0
+    label: DAO Tools
+    badge: Feed
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Polkadot DAO tools empower decentralized autonomous organizations to operate efficiently and transparently. These tools provide frameworks for governance, voting, and treasury management, all built on Polkadot’s interoperable and secure network. By enabling seamless collaboration and decision-making, they help DAOs scale and thrive in the decentralized ecosystem.
+
+## Polkadot Tools for DAOs Governance
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/tools/dao-tools/subsquare.png'),
+      href: '/tools/dao-tools/subsquare/',
+      title: 'Subsquare',
+      description: 'Polkadot DAO and Substrate chains governance forum',
+    },
+                     {
+      thumbnail: import('/src/assets/tools/dao-tools/dotreasury.png'),
+      href: '/tools/dao-tools/dotreasury/',
+      title: 'Dotreasury',
+      description: 'Polkadot DAO treasury explorer',
+      },  
+    {
+      thumbnail: import('/src/assets/tools/dao-tools/polkassembly.png'),
+      href: '/tools/dao-tools/polkassembly/',
+      title: 'Polkassembly',
+      description: 'Polkadot DAO and Substrate chains governance forum'
+      },
+              {
+      thumbnail: import('/src/assets/tools/dao-tools/ogtracker.png'),
+      href: '/tools/dao-tools/ogtracker/',
+      title: 'OG Tracker',
+      description: 'Governance proposals deliverables tracker',
+    },
+  ]}
+/>
+
+
+OpenGov on Polkadot is powerful yet scattered across many apps. This page compresses the landscape into five buckets so you always know where to read and discuss, how to vote, where to find treasury signals, how to run funding workflows, and how to keep participation high.
+
+## The Polkadot DAO tools categories
+
+### 1. Proposal hubs
+Start here to discover proposals, read context, and understand how discussion maps to the chain. A good hub lets you see tracks, deposits, timelines, and the conversation that shapes a vote. Pick one as your daily home so you do not miss comments or edits, then keep the other in a pinned tab for cross-checking.
+
+**Purpose**
+Start where conversation meets the chain. These are your daily drivers for discovery, context, and posting views.
+
+**Tools**
+
+* Subsquare
+  End to end OpenGov portal with discussions, proposal creation, track views, and voting UI.
+* Polkassembly
+  Long running governance forum with proposal pages and a voting interface used across Polkadot and Kusama.
+
+**Notes**
+Both surface the same on chain reality with different UX.
+
+### 2. Analytics and transparency
+Decisions improve when numbers are close at hand. This category answers what the treasury holds, where funds move, how delivery progresses, and how specific programs behave. Use a quick snapshot to set the scene before you vote, then a historical view to test your priors and detect patterns. Add delivery tracking so you can follow through after approval.
+
+**Purpose**
+Understand where funds go, how programs perform, and who is accountable.
+
+**Tools**
+
+* OpenShore
+  Near real time treasury snapshots and category trends that provide fast decision context.
+* doTreasury
+  Balances, inflows and outflows, plus project pages for historical breakdowns.
+* OG Tracker
+  Delivery tracking for funded proposals with team updates.
+* DV dot report
+  Decentralized Voices cohorts, votes, and participation patterns.
+
+**Mental model**
+OpenShore equals snapshot
+doTreasury equals history
+OG Tracker equals delivery
+DV dot report equals DV cohorts
+
+### 3. Voting, delegation, and wallets
+This is the action layer. Cast a vote with the conviction that matches your view, or delegate voting power to a trusted voice so your DOT still works while you are busy. Mobile flows reduce friction and keep you active during live voting periods. Before you delegate, read a voting record and a short rationale so alignment is clear.
+
+**Purpose**
+Cast votes or delegate with a mobile first experience.
+
+**Tools**
+* Nova Wallet
+  Clean mobile voting and delegation with WalletConnect.
+* Delegit dot xyz
+  Lightweight utilities that simplify quick delegation and voting flows.
+
+### 4. Bounties and funding workflows
+Use bounties when the community needs repeatable work with clear scope and regular payouts. Curators set acceptance criteria, collect deliverables, and award child bounties so many small tasks move without opening a new proposal each time. This keeps operations predictable for both contributors and reviewers.
+
+**Purpose**
+Operationalize public goods work with curator workflows and repeatable payouts.
+
+**Tool**
+
+* Bounty Manager
+  Create, curate, and manage bounties and child bounties with a consistent lifecycle from scope to award.
+
+### 5. Participation and rewards
+Recognition encourages return visits and helps new voters build a track record. Reward layers turn a simple vote into a small moment of progress that can be shown on profiles, shared on social, and used in future applications. Use them to complement learning and impact, not to replace them.
+
+**Purpose**
+Make participation sticky and fun while signaling engagement.
+
+**Tool**
+
+* Proof of Chaos
+  NFT rewards tied to participation in OpenGov referenda with a simple vote then claim flow.
+
+## Quick starter stacks
+1. **New to OpenGov:** Read on Subsquare or Polkassembly, check a live snapshot on OpenShore, then vote in Nova Wallet.
+2. **Analyst or researcher:** OpenShore for what is happening now, doTreasury for historical flows, OG Tracker for delivery status, DV dot report for DV patterns.
+3. **Curator or program manager:** Bounty Manager for workflows, OG Tracker for accountability, a forum hub for community feedback.
+4. **Delegate or community lead:** Delegit dot xyz for quick flows, Nova Wallet for daily actions, OpenShore and DV dot report for persuasion assets.
+
+## Comparison snapshot
+- **Subsquare:** Forum plus on chain UI with track context. Good for an all in one workflow.
+- **Polkassembly:** Forum plus voting interface with broad community adoption. Good for continuity and discovery.
+- **OpenShore:** Fast treasury snapshot and category trends. Good for decision context.
+- **doTreasury:** Balances, inflows and outflows, and project pages. Good for historical analysis.
+- **OG Tracker:** Funded proposal delivery tracking. Good for accountability and progress checks.
+- **DV dot report:** Cohorts, votes, and participation for the DV program. Good for meta governance insights.
+- **Nova Wallet:** Mobile voting and delegation. Good for on the go actions.
+- **Delegit dot xyz:** Quick delegation and voting utilities. Good for power users and delegates.
+- **Bounty Manager:** Structured workflows for bounties and child bounties. Good for curators and workstream leads.
+- **Proof of Chaos:** NFT rewards for referendum engagement. Good for recognition and retention.
+
+## How to choose
+1. Pick a forum home. Start with Subsquare or Polkassembly.
+2. Choose snap or study. OpenShore gives you the now. doTreasury gives you history.
+3. Track delivery. Add OG Tracker so you can move from approval to outcomes.
+4. Program level signals. Use DV dot report when assessing delegates and cohorts.
+5. Action layer. Vote and delegate in Nova Wallet and keep Delegit dot xyz handy for quick flows.
+6. Operational funding. Run Bounty Manager if you lead public goods work.
+7. Retention. Add Proof of Chaos to recognize participation and encourage repeat engagement.
+
+
+## FAQs
+1. **What is the fastest way to start participating**
+Read active proposals on a forum hub such as Subsquare or Polkassembly. Check quick context on OpenShore. Cast a vote in Nova Wallet.
+
+2. **Do I need to learn tracks and origins before voting**
+Not on the first day. Forum hubs surface the basics and dashboards reveal budget patterns. Learning tracks and origins will sharpen judgment over time.
+
+3. **Are bounties replacing small grants**
+Many requests under fifty thousand dollars now flow through bounties and child bounties managed by curators. This bundles many small deliverables under a single funded program.
+
+4. **How do I choose a delegate**
+Look for voting history, clear rationales, and alignment with your priorities. DV dot report and forum posts help you assess consistency.
+
+5. **How do I track whether a funded proposal delivered**
+Use OG Tracker for delivery status and cross check with forum updates or team reports.
+
+6. **What if I am mobile only**
+Nova Wallet covers voting and delegation. Keep a forum hub bookmarked in your mobile browser for context.
+ 
+
+ <DirectoryLinks directory="tools/dao-tools" />

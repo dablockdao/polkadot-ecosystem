@@ -1,0 +1,90 @@
+---
+title: Polkadot Gaming Dapps
+description: Explorez toutes les dApps de jeux de l'écosystème Polkadot.
+tableOfContents: false
+sidebar: 
+    label: DApps de jeux
+    order: 0
+    badge: Flux
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Les dApps de jeux Polkadot changent le monde du jeu avec des expériences alimentées par la blockchain. Elles offrent un gameplay sécurisé et décentralisé, une véritable propriété des actifs en jeu grâce aux NFT, ainsi que des récompenses pour l'engagement des joueurs. Construits sur le réseau évolutif de Polkadot, ces dApps permettent une interaction fluide entre les blockchains, créant ainsi un écosystème de jeu plus connecté et innovant.
+
+## Projets de jeux de l'écosystème Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+                     {
+      thumbnail: import('/src/assets/dapps/gaming/exiledracers.png'),
+      href: '/dapps/gaming/exiled-racers/',
+      title: 'Exiled Racers',
+      description: 'Un projet NFT 3D pionnier dans l’écosystème Polkadot.',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/gaming/heal3.png'),
+      href: '/dapps/gaming/heal3/',
+      title: 'Heal3',
+      description: 'Game-fi pour promouvoir des habitudes saines.',
+      },
+              {
+      thumbnail: import('/src/assets/dapps/gaming/mythoschain.png'),
+      href: '/dapps/gaming/mythos-chain/',
+      title: 'Mythos Chain',
+      description: 'Un écosystème de jeux Web3 gouverné par le Mythos DAO.',
+    },
+  ]}
+/>
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/gaming/ajuna.png'),
+      href: '/dapps/gaming/ajuna-network/',
+      title: 'Ajuna Network',
+      description: 'Une plateforme de jeu décentralisée',
+    },
+                     {
+      thumbnail: import('/src/assets/dapps/gaming/moonfit.png'),
+      href: '/dapps/gaming/moonfit/',
+      title: 'Moonfit',
+      description: 'Gagnez des récompenses pour brûler des calories.',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/gaming/glmrdao.png'),
+      href: '/dapps/gaming/glmr-apes-the-great-escape/',
+      title: 'The Great Escape',
+      description: 'Le premier jeu Web3 NFT déployé sur Moonbeam.',
+      },
+  ]}
+/>
+
+## Vidéos de jeux Polkadot
+----------------
+<ShowcaseYouTube
+  entries={[
+        {
+      href: 'https://www.youtube.com/watch?v=Kc6HrdrrD9Y',
+      title: 'WORLD PREMIER Blockchain Gaming: A Documentary - Indie Games On-Chain! 👾',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=KUy5aEKD6YU',
+      title: 'FIFA On Chain par Mythical Games - Kusamarian',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=Kfqn7FdfK3w',
+      title: 'HUGE Polkadot Project: MYTHOS - Alpha Airdrop',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=tmXgEySd8BI',
+      title: 'Tout sur Mythos Chain: Airdrops, Jeux & Marketplaces - LV',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=EPMDYRvBCZ4',
+      title: 'Mythos migre vers Polkadot - Dotcast',
+    },
+  ]}
+/>

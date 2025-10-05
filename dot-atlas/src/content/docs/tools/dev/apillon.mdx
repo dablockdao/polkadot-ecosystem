@@ -1,0 +1,192 @@
+---
+title: Apillon
+description: Apillon is Simplifying Web3 development on Polkadot with easy APIs and prebuilt solutions for fast dApp creation.
+hero:
+  tagline: Easy APIs and prebuilt solutions for fast dApp creation on Polkadot.
+  image: 
+    file: ../../../../assets/tools/dev/apillon.png
+  actions:
+    - text: Site
+      link: https://apillon.io/
+      icon: external
+    - text: Docs
+      link: https://wiki.apillon.io/build/1-apillon-api.html
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+ 
+## Apillon: Easy APIs & Prebuilt Solutions for Fast dApp Creation on Polkadot
+**Short summary:**
+Apillon is a developer platform that abstracts Polkadot’s complexity into simple APIs, SDKs, and prebuilt templates (“Simplets”). It bundles decentralized storage, hosting, NFTs, authentication/DID, embedded wallets (EVM + Substrate), cloud functions, and more—so product teams can ship Polkadot apps in days, not months.
+
+
+## Why Apillon (and when to use it)
+Polkadot gives you shared security, XCM interoperability, and Asset Hub primitives—but turning that into a user-ready product requires glue code: wallets, storage, deployment pipelines, NFT infra, auth, and compute. **Apillon** ships those as **modular services + SDKs** with a consistent developer experience, tightly integrated with Polkadot parachains (Moonbeam, Astar, Unique, Asset Hub, KILT, Phala, etc.). Use it when you want:
+* **Speed:** One SDK for storage, hosting, NFTs, identity, embedded wallets, and cloud functions.
+* **Polkadot-native UX:** **Embedded wallets** are **Substrate-ready**, so users can onboard with email/passkeys and get non-custodial wallets for EVM *and* Substrate chains.
+* **No-code campaign kits:** **Simplets** for brand/event NFT drops (email/QR/open links), auto-deployed on decentralized infra.
+* **LLM/agent automation:** A hosted MCP server exposes Apillon functions (hosting/storage/NFTs) to tools like GPT—great for ops and CI assistants.
+
+## ELI5
+Think of Apillon as **Firebase for Polkadot**, but decentralized:
+
+* **Files & sites** → IPFS/Crust + decentralized hosting.
+* **NFTs** → Wizards + SDK for Moonbeam/Astar/Unique (ERC-721/6059, PSP-34, Unique).
+* **Login** → KILT-based decentralized identity (DID + credentials via OAuth).
+* **Wallets** → Invisible, audited, **non-custodial embedded wallets** for EVM & Substrate.
+* **Compute** → Decentralized **Cloud Functions** for bots, webhooks, and scheduled tasks.
+
+## How Apillon Works
+Apillon groups Web3 capabilities into services, each with a **dashboard, REST API, and SDK** modules. You provision a project, mint API keys, then call services from your app/CI or via the console/CLI.
+
+* **Unified SDK** (`@apillon/sdk`): Hosting, Storage (with IPNS), NFTs (EVM + Substrate), Identity (KILT), Cloud Functions, Social, RPC helpers.
+* **Developer surfaces**: Dashboard, CLI, JavaScript SDK, Flutter SDK, Go Storage SDK.
+* **Agent surface (MCP)**: Hosted MCP server exposes Apillon functions to LLM tools for scripted ops (e.g., “upload and deploy site”).
+
+## Key Services (with Polkadot specifics)
+
+### 1) Storage (IPFS/Crust + IPNS)
+* Create buckets, upload folders/files, pin to IPFS; generate IPFS links; manage **IPNS** names for mutable content pointers.
+
+### 2) Decentralized Hosting
+* CI-style flow: upload → stage → promote to prod, backed by decentralized web hosting (CDN + IPFS pinning).
+
+### 3) NFTs (Moonbeam, Astar, Unique)
+* Wizard + SDK for EVM (**ERC-721/6059**) and Substrate (**PSP-34**, **Unique native**). Drag-and-drop metadata/media; drops; royalties; soulbound/revokable options; React/Vue templates.
+
+### 4) Web3 Authentication / DID (KILT)
+* Email-verified **KILT DIDs** + verifiable credentials (attested issuers). OAuth pop-up returns a token your app can verify. Revocation & restore flows included.
+
+### 5) **Embedded Wallets** (EVM + Substrate)
+* **Invisible, non-custodial**, audited; created at sign-in (email/passkey). Uses confidential compute/MPC patterns; **Substrate-compatible** for Polkadot accounts. Demo flows available.
+
+### 6) Cloud Functions (decentralized serverless)
+* Deploy JS/Node scripts as on-demand/cron jobs to a decentralized compute network, with encrypted secrets, health checks, and auto-redeploy. Great for bots, webhooks, indexers, or off-chain workers.
+
+### 7) Asset Hub guidance
+* Docs cover **sufficient vs non-sufficient assets**, reserve-backed transfers, and multisig/proxy patterns—useful when modeling tokens on Polkadot **Asset Hub**.
+
+## Simplets: Plug-and-play NFT campaigns
+**Simplets** are prebuilt, customizable campaign templates—**Brand Booster**, **Event Experience**, and **NFT Wild West**—that ship with admin panels, email/QR/open-link distribution, and **embedded wallet** onboarding. Frontends deploy on Apillon Hosting; backends can run on decentralized compute. Open-source **NFT Studio** monorepo patterns are available.
+
+
+## Apillon vs Alternatives (feature comparison)
+> Scope: Polkadot-focused dApp delivery. We contrast Apillon with popular wallet/infra stacks and a DIY baseline.
+
+| Tool / Feature                  | Polkadot **Substrate** support                      |                       Embedded wallets |             Decentralized hosting & IPFS/IPNS |           NFTs (Moonbeam/Astar/Unique) |              DID/KILT auth |     Cloud functions (decentralized) |         LLM/MCP integration |
+| ------------------------------- | --------------------------------------------------- | -------------------------------------: | --------------------------------------------: | -------------------------------------: | -------------------------: | ----------------------------------: | --------------------------: |
+| **Apillon**                     | **Yes** (SDK, NFTs, wallets, Asset Hub docs)        | **Yes** (audited; EVM + **Substrate**) |            **Yes** (storage + hosting + IPNS) | **Yes** (ERC-721/6059, PSP-34, Unique) | **Yes** (KILT DID + OAuth) |  **Yes** (decentralized serverless) | **Yes** (Hosted MCP server) |
+| Thirdweb (+ Moonbeam)           | Partial (EVM on Moonbeam; not native Substrate)     |                            EVM-centric | Storage tools; not Polkadot-native IPNS focus |            EVM flows on Astar/Moonbeam |                    No KILT | No (centralized serverless typical) |                          No |
+| Dynamic                         | No explicit Substrate support (EVM/SVM/Sui/Bitcoin) |                              Yes (MPC) |                                            No |                                     No |                         No |                                  No |                          No |
+| Coinbase CDP Embedded Wallets   | No Substrate (EVM + Solana)                         |                                    Yes |                                            No |                                     No |                         No |                                  No |                          No |
+| DIY Polkadot SDK + custom infra | Yes (full control)                                  |                                 Custom |                                        Custom |                                 Custom |                     Custom |                              Custom |                      Custom |
+
+*Interpretation:* If your goal is **Polkadot-native apps with friendly onboarding**, Apillon reduces integrations from 5–8 vendors to **one** (and is the only option here with **Substrate-ready embedded wallets** plus decentralized storage/hosting and KILT-based auth).
+
+## Step-by-Step: Launch a Polkadot dApp with Apillon
+### 0) Project setup
+1. Create an Apillon project; generate API keys with least-privilege scopes.
+2. `npm i @apillon/sdk` (Node 20+, npm 10+).
+
+### 1) Ship your static app (decentralized hosting)
+```js
+import { Hosting, LogLevel, DeployToEnvironment } from '@apillon/sdk';
+
+const hosting = new Hosting({ key: process.env.APILLON_API_KEY, secret: process.env.APILLON_API_SECRET, logLevel: LogLevel.INFO });
+const webpage = hosting.website('YOUR_WEBSITE_UUID');
+
+await webpage.uploadFromFolder('./dist');
+await webpage.deploy(DeployToEnvironment.TO_STAGING);
+await webpage.deploy(DeployToEnvironment.TO_PRODUCTION);
+```
+
+### 2) Store assets on IPFS with IPNS pointer
+```js
+import { Storage, LogLevel } from '@apillon/sdk';
+const storage = new Storage({ key: process.env.APILLON_API_KEY, secret: process.env.APILLON_API_SECRET, logLevel: LogLevel.INFO });
+
+const bucket = await storage.createBucket({ name: 'public-assets' });
+await bucket.uploadFromFolder('./assets');
+// optional: create/update an IPNS record to a new CID
+const ipns = await bucket.createIpns({ name: 'site-assets', description: 'mutable pointer', cid: 'Qm...' });
+await ipns.publish('QmNEWCID...');
+```
+
+### 3) Add **Substrate-ready embedded wallets** to onboard users
+* Trigger wallet creation at email/passkey sign-in; Apillon handles the crypto under the hood; you get a **non-custodial** wallet that works across **EVM + Substrate** targets.
+
+### 4) Launch an NFT collection (Moonbeam/Astar/Unique)
+* Use the dashboard wizard or SDK to deploy ERC-721/6059 or PSP-34/Unique native NFTs; store metadata on IPFS/Unique schema.
+
+### 5) Add off-chain workers with **Cloud Functions**
+* Deploy JS jobs on a decentralized network; configure secrets; schedule with cron (e.g., nightly sync, webhook relays, Discord bots).
+
+### 6) Optional: automate with **MCP**
+* Point your LLM tool to the **Apillon MCP server** to script deploys (“upload and redeploy my site” / “pin this CID and update IPNS”).
+
+## Common Pitfalls & Pro Tips
+* **Mis-modeling assets on Asset Hub:** Understand **sufficient vs non-sufficient**, reserve-backed transfers, and cross-chain accounting before minting.
+* **Mutable metadata needs IPNS:** Pin IPFS CIDs for permanence, but use **IPNS** if you must safely update pointers later.
+* **Wallet custody misconceptions:** Embedded ≠ custodial. Document key-recovery UX clearly.
+* **Over-centralizing compute:** Prefer **Cloud Functions** for bots/jobs to maintain decentralization guarantees.
+* **Skipping DIDs:** For regulated or multi-tenant apps, pair KILT **DID + OAuth** with role-based access in your backend.
+* **Ignoring agents:** If your team uses AI copilots, wire up **MCP** early—great leverage for CI and content ops.
+
+## FAQs
+**1) Is Apillon only for EVM parachains?**
+No. It supports EVM and Substrate, including Substrate-ready embedded wallets and NFT flows on Astar/Unique.
+
+**2) Can I use KILT for login with my own app?**
+Yes. Use Apillon’s OAuth pop-up to verify a KILT DID + verifiable credential and receive an auth token in your app.
+
+**3) Where are my files hosted?**
+On decentralized storage (IPFS/Crust) with optional IPNS for mutability; sites deploy via Apillon’s hosting workflow.
+
+**4) How are embedded wallets secured?**
+Through modern MPC/confidential-compute patterns; Apillon never sees private keys.
+
+**5) Can I run scheduled jobs without AWS?**
+Yes—use **Cloud Functions** to deploy cron/on-demand jobs on a decentralized compute network.
+
+**6) Do I get React/Vue templates for NFT frontends?**
+Yes—starter templates are available (JS/Vue/React).
+
+**7) Can agents (LLMs) deploy for me?**
+Yes—connect to **Apillon’s hosted MCP server** and expose deploy/pin/mint flows to your agent.
+
+**8) Does Apillon help with Asset Hub specifics?**
+Docs cover sufficient assets, transfers, and multisig/proxy patterns which you can combine with Apillon services.
+
+## Conclusion
+If you’re building on **Polkadot** and want **fast, production-grade UX**—from decentralized hosting and IPFS/IPNS to **Substrate-ready embedded wallets**, **KILT DIDs**, **NFTs**, and **decentralized cloud functions**—**Apillon** is a compelling “batteries-included” path. Start with the SDK, ship a Simplet for growth, and wire agents via MCP to automate your stack.
+ 
+
+## Apillon Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=hsInRHbtyLE',
+      title: 'What Is Apillon? The Brains Ep.24',
+    },
+         {
+      href: 'https://www.youtube.com/watch?v=9y-9nz0tpVs',
+      title: 'Apillon Embedded Wallets (Demo)',
+         },
+         {
+      href: 'https://www.youtube.com/watch?v=oSO8_AAQLwk',
+      title: 'Apillon NCTR Claim - a step-by-step tutorial to get your $NCTRs.',
+         },
+         {
+      href: 'https://www.youtube.com/watch?v=H1QMGrhjhl0',
+      title: 'Apillon Tutorial #1: How to Create a POAP',
+         },
+  ]} />
+
+
+
+<iframe allowfullscreen="true" frameborder="0" height="569" mozallowfullscreen="true" src="https://docs.google.com/presentation/d/e/2PACX-1vQggfm103ys1jD2l0bnHwXiBxUXIF6nVm4Li93Xv1R0HNkChllS24HEuN7bJWbL_BdYO4-HFYIVBOVY/embed?start=false&loop=false&delayms=60000" webkitallowfullscreen="true" width="960"></iframe>
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/ZmoACIkvDUI?si=7bpSdu-3K6kGr8mN" title="YouTube video player" width="560"></iframe>

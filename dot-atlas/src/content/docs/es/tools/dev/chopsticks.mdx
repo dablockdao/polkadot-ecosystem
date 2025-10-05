@@ -1,0 +1,101 @@
+---
+title: 'Chopsticks'
+description: 'Chopsticks simplifica el desarrollo de blockchains Substrate con fork local, reproducción de bloques y pruebas XCM para una innovación eficiente.'
+hero:
+  tagline: 'Crea una realidad paralela de tu red Substrate.'
+  image: 
+    file: ../../../../../assets/tools/dev/chopsticks.png
+  actions:
+    - text: 'Github'
+      link: https://github.com/AcalaNetwork/chopsticks/
+      icon: external
+    - text: 'Wiki'
+      link: https://github.com/AcalaNetwork/chopsticks/wiki
+      icon: external
+      variant: secondary
+---
+    
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+**Chopsticks**, una herramienta desarrollada y mantenida por la **Acala Foundation**, se ha convertido en un recurso esencial para desarrolladores que **construyen sobre Polkadot**. Al permitir el fork local de cadenas y un análisis exhaustivo de bloques, Chopsticks simplifica flujos de trabajo de desarrollo complejos, proporcionando una solución eficiente y flexible para la **experimentación y pruebas** blockchain.
+
+## ¿Qué es Chopsticks?
+Chopsticks está diseñado para abordar desafíos críticos en el desarrollo blockchain ofreciendo:
+1. **Forking Local de Cadenas**: Crea versiones localizadas de cadenas existentes para probar configuraciones sin afectar las redes en vivo.
+2. **Reproducción y Análisis de Bloques**: Investiga el impacto de las extrinsics en el estado de la cadena reproduciendo bloques específicos.
+3. **Forking de Múltiples Bloques para Pruebas XCM**: Simula interacciones de Cross-Consensus Messaging (XCM) entre cadenas para una validación exhaustiva.
+
+Esta herramienta permite a los desarrolladores explorar nuevas ideas, depurar problemas y construir soluciones innovadoras con menor riesgo y costo.
+
+## Características Clave de Chopsticks
+1. **Ligero y Eficiente**: Chopsticks aprovecha el **cliente ligero Smoldot**, lo que lo hace eficiente para interacciones locales de cadenas. Sin embargo, solo soporta la API nativa de **Polkadot SDK**, limitando su uso para interacciones basadas en Ethereum JSON-RPC.
+2. **Opciones de Configuración Exhaustivas**: Los usuarios pueden personalizar su fork local con parámetros como:
+    - **Archivo Genesis**: Define los datos genesis crudos.
+    - **Número o Hash de Bloque**: Especifica el bloque para forquear.
+    - **Runtime Personalizado**: Usa un runtime Wasm específico para escenarios avanzados.
+    - **Sobrescritura de Almacenamiento**: Modifica valores de almacenamiento de la cadena para pruebas.
+3. **Herramientas Orientadas al Desarrollador**: Chopsticks se integra perfectamente con herramientas populares como **Polkadot.js**, permitiendo una interacción intuitiva con cadenas forkeadas. Los desarrolladores pueden:
+    - Usar Polkadot.js Apps para explorar e interactuar con forks locales.
+    - Aprovechar la biblioteca Polkadot.js para interacciones programáticas.
+4. **Pruebas XCM Simplificadas**: Chopsticks soporta la simulación local de mensajes XCM entre múltiples parachains y relay chains, facilitando entornos de pruebas robustos multi-cadena.
+
+<ShowcaseCTA title="Configuración de Chopsticks">
+Aquí tienes un resumen rápido de cómo empezar con Chopsticks. Para instrucciones detalladas e información adicional, consulta el **[archivo README oficial](https://github.com/AcalaNetwork/chopsticks) en el repositorio de GitHub** proporcionado por los autores.
+</ShowcaseCTA>
+
+## Instalación y Configuración
+### Prerrequisitos:
+Para usar Chopsticks, asegúrate de tener lo siguiente instalado:
+- **Node.js**: El entorno de ejecución de JavaScript.
+- **npm** o **Yarn**: Gestores de paquetes para Node.js.
+
+### Instalación:
+Puedes instalar Chopsticks globalmente o localmente en tu proyecto.
+
+- **Instalación Global**:
+```bash
+npm i -g @acala-network/chopsticks@latest
+```
+- **Instalación Local**:
+```bash
+mkdir mi-proyecto-chopsticks
+cd mi-proyecto-chopsticks
+npm init -y
+npm i @acala-network/chopsticks@latest
+```
+- **Ejecutar Chopsticks Localmente**:
+```bash
+npx @acala-network/chopsticks
+```
+
+## Ejemplos de Uso de Chopsticks
+1. **Forking de una Red:** Forkea la red Polkadot en el bloque 100:
+    ```bash
+    npx @acala-network/chopsticks --endpoint wss://rpc.polkadot.io --block 100
+    ```
+2. **Reproducir Bloques:** Reproduce el bloque 1000 de Moonbeam y guarda la salida en un archivo JSON:
+    ```bash
+    npx @acala-network/chopsticks run-block \
+      --endpoint wss://wss.api.moonbeam.network \
+      --block 1000 \
+      --output-path=./moonbeam-output.json
+    ```
+3. **Simulación XCM:** Simula interacciones entre Polkadot, Moonbeam y Astar:
+    ```bash
+    npx @acala-network/chopsticks xcm \
+      --r polkadot \
+      --p moonbeam \
+      --p astar
+    ```
+
+## Utilidades para Desarrolladores
+Chopsticks proporciona una robusta API WebSocket para gestionar cadenas locales programáticamente:
+- **`dev_newBlock`**: Crea nuevos bloques.
+- **`dev_setStorage`**: Modifica valores de almacenamiento on-chain.
+- **`dev_timeTravel`**: Establece timestamps para bloques futuros.
+
+Estas utilidades son particularmente útiles para probar mecanismos de gobernanza, despacho de extrinsics y transiciones de estado.
+
+## Conclusión
+Chopsticks ha emergido como una herramienta indispensable para desarrolladores que trabajan en blockchains basadas en Substrate. Al facilitar pruebas locales, depuración y simulaciones de interacciones multi-cadena, empodera a los desarrolladores para innovar con confianza en el ecosistema Polkadot.

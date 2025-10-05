@@ -1,0 +1,201 @@
+---
+title: 'Talisman Wallet'
+description: A user-friendly wallet built for Polkadot & Ethereum. Talisman makes web3 simple for beginners and unlocks superpowers for pros.
+sidebar:
+  label: ✪ Talisman Wallet
+  order: 2
+hero:
+  tagline: A user-friendly wallet built for Ethereum and Polkadot.
+  image: 
+    file: ../../../../assets/tools/wallets/talisman-wallet.png
+  actions:
+    - text: Tool
+      link: https://talisman.xyz/
+      icon: external
+    - text: Docs
+      link: https://docs.talisman.xyz/talisman
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+
+## Talisman Wallet Guide (2025): Polkadot-First, Multi-Chain Wallet for Builders & Power Users
+
+Talisman Wallet is a non-custodial browser extension and companion web app that puts Polkadot and EVM assets side-by-side with a clean, builder-friendly UX. This expert guide covers features, staking via nomination pools, cross-ecosystem transfers, setup steps, comparisons to common alternatives, pitfalls, FAQs, and ready-to-ship metadata/schema for SEO.
+
+## What is Talisman Wallet?
+**Talisman Wallet** is a self-custodial crypto wallet focused on **Polkadot** and **Ethereum** (EVM), delivered as a **browser extension** with a connected **web portal**. It’s designed to be both secure and approachable: create Substrate and EVM accounts, manage tokens and NFTs, connect to dApps, stake DOT via nomination pools, and move value across ecosystems—without juggling multiple wallets.
+
+> In plain terms: one extension, one interface, many chains—optimized for Polkadot users who also live in EVM.
+
+The extension integrates common flows (send/receive, account derivation, fiat on-ramps) while the portal adds portfolio, staking, and cross-ecosystem transfer UX. A user-centric design provides clear views, full-screen modes, and intuitive settings so builders and everyday users can focus on tasks rather than tooling.
+
+## Quick ELI5
+* **Polkadot** is a network of specialized blockchains (parachains) coordinated by a relay chain.
+* **Talisman** lets you hold and use assets from Polkadot (Substrate accounts) and Ethereum/L2s (EVM accounts) in a single wallet.
+* You can **stake DOT** using **nomination pools** and move value between ecosystems with guided routes, instead of stitching together multiple apps.
+
+## Key Features at a Glance
+* **Multi-chain account model:** Create/import **Substrate** (for DOT, KSM, parachain tokens) and **EVM** accounts (for ETH, L2s). Clear labels minimize “wrong-network” mistakes.
+* **Companion Portal:** Portfolio overview, staking flows, token/NFT views, and streamlined cross-ecosystem transfers from a unified dashboard.
+* **Staking via nomination pools:** Join pools to earn DOT staking rewards with lower minimums than solo nominating and fewer steps.
+* **Hardware wallet support:** Connect a hardware signer (e.g., Ledger) for high-value accounts and signing.
+* **Fiat on-ramp integration:** Buy supported assets with card/bank methods through third-party providers inside the wallet experience.
+* **Open source codebase & third-party audits:** Transparent development with published security reviews and ongoing improvements.
+* **Polkadot-first UX:** Works with parachain dApps and tooling without requiring a separate legacy extension for most tasks.
+
+## Security & Trust Model
+* **Self-custody:** Your seed phrase and private keys remain under your control; the wallet does not have access to your funds.
+* **Deterministic accounts:** Derivation paths let you recreate accounts from seed on another device—keep offline backups.
+* **Hardware support:** Use a hardware wallet for meaningful balances; Talisman connects to sign Substrate and EVM transactions.
+* **Open source + audits:** Public repositories and audit reports help the community review code quality.
+* **Permission hygiene:** Install only from official browser stores, verify the publisher, and lock down OS-level security (screen lock, malware protection, limited extensions).
+
+> **Note:** No wallet can protect users from poor operational security. Treat seed phrases like house keys: back them up offline, never share, and beware of fake support reps.
+
+
+## How Talisman Fits Polkadot Workflows
+1. **Daily dApp use (DeFi, NFTs, governance):** Connect the extension to Polkadot parachain dApps (Substrate) and to EVM dApps (EIP-1193).
+2. **Staking with nomination pools:** Use the portal’s guided flow to pick a pool and bond DOT. Unbonding follows network rules (e.g., \~28 days on Polkadot).
+3. **Cross-ecosystem value movement:** Convert assets from EVM chains/L2s into Polkadot tokens (and vice-versa) through curated routes surfaced in the portal.
+4. **Account strategy:** Keep separate accounts for dApps, trading, and long-term holdings; secure the latter with a hardware device.
+5. **Team workflows:** Export watch-only addresses for treasury visibility; use naming and tags to minimize operator errors across multiple accounts.
+
+## How It Works: Cross-Ecosystem Value Flow
+**Goal:** Move value from an EVM chain (e.g., an L2) to **DOT** on Polkadot without mastering multiple bridges and DEXs.
+
+**What Talisman provides**
+* A **route finder** UX that assembles a series of underlying steps (bridge → swap → transfer) behind a single confirmation flow.
+* **Network awareness** to prevent sending assets to incompatible address types (EVM vs Substrate).
+* **Fee & slippage checks** so users can gauge final received amount before they click confirm.
+
+**Why it matters**
+* Reduces multi-tab, multi-signature friction.
+* Minimizes mistakes when moving across incompatible signing schemes.
+* Encourages practical cross-ecosystem usage of DOT and parachain assets.
+
+## Step-by-Step: Install, Fund, and Stake DOT
+### A) Install & Secure
+1. **Install the browser extension** (Chrome- or Firefox-based).
+2. **Create or import a wallet:** Write your seed phrase on paper/steel and store it offline.
+3. **Set a strong password** and enable browser OS protections (auto-lock, biometric unlock where available).
+4. **Connect a hardware wallet** (optional but recommended) for long-term holdings.
+
+### B) Fund Your Substrate Account
+1. From the wallet, copy your **Substrate (DOT)** address.
+2. **Deposit DOT** from an exchange or use the wallet’s **Buy** option where supported.
+3. Send a small **test amount** first; verify receipt before moving larger sums.
+
+### C) Stake DOT via Nomination Pools
+1. Open the **Portal → Staking** section.
+2. Choose **Polkadot → Nomination Pool**.
+3. **Select a pool** (consider reputation, size, and your goals).
+4. **Enter amount** to bond and confirm.
+5. Track rewards in the portal; note the **unbonding period** when planning liquidity.
+
+## Practical Example: Small ETH → DOT On-Ramp Flow
+1. **Hold ETH** on an EVM chain/L2 in your EVM account.
+2. In the portal, open **Swap/Transfer** and select a route to **DOT on Polkadot**.
+3. Review **fees, slippage, and estimated arrival**.
+4. **Confirm** and wait for the route to complete.
+5. Once DOT arrives in your **Substrate account**, proceed to **Stake → Nomination Pool** with a small amount.
+6. After validating everything end-to-end, scale up as needed.
+
+## Comparison: Talisman vs Alternatives
+| Wallet / Feature          |                       **Talisman** |                    **SubWallet** |                **Nova Wallet** | **Polkadot.js Extension** |       **MetaMask + Polkadot Snap** |
+| ------------------------- | ---------------------------------: | -------------------------------: | -----------------------------: | ------------------------: | ---------------------------------: |
+| Platforms                 | **Browser extension + web portal** | Extension + Mobile (iOS/Android) | **Mobile-first** (iOS/Android) |                 Extension |                   Extension + Snap |
+| Polkadot (Substrate)      |                         **Native** |                           Native |                         Native |                    Native |                           Via Snap |
+| EVM chains                |                         **Native** |                           Native |                 Via connectors |                   Limited |                         **Native** |
+| Staking UI (DOT pools)    |               **Guided in portal** |                           Guided |                Guided (mobile) |           Manual via apps |                     Varies by Snap |
+| Cross-ecosystem transfers |       **Curated routes in portal** |       Available; approach varies |        Transfers; mobile focus |              Not built-in |                  Bridges via dApps |
+| Hardware wallet support   |               **Ledger supported** |                           Ledger |                         Ledger |                    Ledger | Ledger (EVM), Snap coverage varies |
+| Open source & audits      |  **Open source; audits published** |                      Open source |                          Mixed |               Open source |     Snap maintained by third party |
+
+*Use case heuristic:*
+
+* **Desktop + Polkadot/EVM daily use:** Talisman.
+* **Mobile-first users:** Nova; SubWallet mobile.
+* **Legacy power users:** Polkadot.js extension.
+* **EVM-native users dabbling in Polkadot:** MetaMask + Snap.
+
+## Common Pitfalls & Tips
+* **Seed phrase hygiene:** Never paste your seed phrase into websites or chat apps. Store offline; consider metal backups.
+* **Account type mismatch:** Don’t send EVM tokens to Substrate addresses (and vice-versa). Double-check the address format.
+* **Existential Deposit (ED):** Polkadot-family chains require a small minimum balance to keep an account alive—avoid dropping below ED.
+* **Unbonding delays:** DOT unbonding from pools takes time per protocol rules; plan runway for upcoming payments.
+* **Phishing extensions:** Install from official stores, verify the publisher, and audit permissions during updates.
+* **Hardware separation:** Keep a dedicated hardware-secured account for savings; use a hot account for day-to-day dApp usage.
+
+## FAQs
+**1) Is Talisman non-custodial?**
+Yes. You control the keys and are responsible for backups and device security.
+
+**2) Can I use Talisman with a hardware wallet?**
+Yes. You can connect a hardware device (e.g., Ledger) to sign Substrate and EVM transactions.
+
+**3) Does Talisman support staking DOT?**
+Yes. The portal provides a guided flow for joining **nomination pools**.
+
+**4) Can I move value from EVM chains into DOT?**
+Yes. The portal surfaces curated cross-ecosystem routes; always review fees and slippage.
+
+**5) Is there a fiat on-ramp?**
+In many regions, yes. You can purchase supported assets through integrated providers.
+
+**6) What’s the difference between Substrate and EVM accounts?**
+Substrate accounts are for Polkadot/parachains (DOT, KSM, etc.); EVM accounts are for Ethereum/L2 assets. They use different address formats and signing schemes.
+
+**7) How does Talisman compare to SubWallet and Nova?**
+Talisman is extension-first with a strong desktop portal; SubWallet adds robust mobile; Nova is mobile-first with polished Polkadot UX.
+
+**8) Does Talisman support NFTs?**
+Yes. You can view and manage supported NFT standards within the wallet/portal interface.
+
+## Conclusion
+If you operate across **Polkadot and EVM**, Talisman offers a tight, audited, open-source experience with a portal that simplifies staking and cross-ecosystem flows.
+
+
+
+## Talisman Wallet Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=JevNbPem3gQ',
+      title: 'Set Up a new Polkadot Wallet with Talisman',
+      description: 'how easy it is to set up a new Polkadot wallet using Talisman. All it takes is a few clicks.'
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=hkvGylrEqG8',
+      title: 'The Ultimate Guide To Mastering The Talisman Wallet - Polkadot Insider',
+      description: 'Fast guide on how to use Talisman Wallet'
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=KJELR_cQei0',
+      title: 'Talisman Signet Multisigt',
+      description: 'Talisman Signet solution to create and manage Mulsigis on Polkadot.'
+    },   
+     {
+      href: 'https://www.youtube.com/embed/MIJfshY60rk?si=Lv0H6JgnGAG_obZp',
+      title: 'The Application Layer with Talisman',
+      description: 'The Application Layer: Conquering Browser Based Substrate Development with Talisman.'
+    },
+         {
+      href: 'https://www.youtube.com/embed/amCegXTK_xA?si=10itTZWyM1cM6sOd',
+      title: 'Signet Multisigs',
+      description: 'Data Privacy and Account Abstraction for Multisigs.'
+    }
+  ]} />
+
+
+
+
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vTjdvrR1taDK07R1Pz0xMU5pH62htiZsYac1zyZlnyjNohS-4ITWwSGHlzDfSYuUmGLO7LA-JZ-dzbY/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vR_H6J9VqYHrXZpb3-JE7U41SktEVPOxYWcpD0pR0cky5qIMRO5bdw0J2c-m7JXmpjvK3dCWyoqusYp/embed?start=false&loop=false&delayms=60000" width="960"></iframe>

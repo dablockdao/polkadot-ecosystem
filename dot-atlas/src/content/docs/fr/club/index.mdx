@@ -1,0 +1,41 @@
+---
+title: Communauté Polkadot
+description: Commencez et rejoignez la plus grande DAO du monde.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Le Polkadot Ecosystem Club propose une collection unifiée des éléments clés façonnant le réseau.  
+Il comprend un annuaire complet des **DAOs et collectifs**, mettant en avant les groupes qui dirigent les efforts de gouvernance, gèrent les trésoreries et stimulent l'innovation au sein de l'écosystème à travers ses différentes initiatives.  
+
+Ces collectifs incarnent l'esprit collaboratif de Polkadot, illustrant comment la prise de décision décentralisée permet une gestion de projet transparente et efficace. De plus, ce hub présente des informations sur les **organisations contribuant activement à l'écosystème**, y compris les équipes de développement et les institutions qui collaborent pour bâtir l'avenir de la technologie blockchain.  
+
+*Une liste sélectionnée des acteurs pertinents de l'écosystème Polkadot (DAOs, personnes, validateurs…) à suivre.*  
+
+## Tout l'écosystème Polkadot en un seul endroit
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/daos.png'),
+      href: '/club/daos',
+      title: 'DAOs',
+      description: 'Découvrez les DAOs et collectifs les plus influents de l’écosystème Polkadot.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/orgs.png'),
+      href: '/club/orgs/',
+      title: 'Organisations',
+      description: 'Toutes les organisations qui construisent l’avenir d’internet.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/initiatives.png'),
+      href: '/club/initiatives/',
+      title: 'Initiatives',
+      description: 'Commencez votre parcours en tant que développeur Polkadot.'
+      },
+  ]}
+/>

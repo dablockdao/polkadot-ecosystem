@@ -1,0 +1,212 @@
+---
+title: Neuroweb
+description: NeuroWeb Network evolved from the OriginTrail Parachain through a community governance vote in December 2023.
+sidebar:
+    label: ✪ Neuroweb
+    order: 1
+hero:
+  tagline: Knowledge is the new asset class. Mine it.
+  image: 
+    file: ../../../../assets/dapps/ai/neuroweb.png
+  actions:
+    - text: Portal
+      link: https://neuroweb.ai/
+      icon: external
+    - text: Docs
+      link: https://docs.neuroweb.ai/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+## NeuroWeb on Polkadot: A Practical Guide to Knowledge Mining, DKG & NEURO Utility
+
+NeuroWeb is a decentralized AI blockchain in the Polkadot ecosystem that turns high-quality, provenance-rich data into an on-chain asset class via **Knowledge Mining**. This guide explains how NeuroWeb works with the OriginTrail Decentralized Knowledge Graph (DKG), why Polkadot matters, and how teams can publish Knowledge Assets and participate in the NEURO-powered knowledge economy.
+
+## Why NeuroWeb exists (and who it’s for)
+Modern AI needs **trustworthy, connected knowledge**: sources with provenance, verifiability, and cross-chain discoverability. NeuroWeb solves this by aligning incentives around **Knowledge Assets** (machine-readable, ownable containers of knowledge) and rewarding their creation, curation, and connectivity with the **NEURO** token. Teams that benefit most include AI agents/infra projects, data publishers, archivists, research groups, and application builders who need traceable inputs for models and agentic systems.
+
+## Quick ELI5
+Think of NeuroWeb as a **library for AI** where every book (a *Knowledge Asset*) has a tamper-evident card that proves where it came from, what it contains, and how it links to other books. Librarians (*knowledge miners*) earn NEURO for adding trustworthy books and cross-references to the shelves. The library is plugged into **Polkadot**, so it’s secure and can interoperate with many other chains and apps.
+
+## How NeuroWeb fits into Polkadot
+NeuroWeb (formerly the **OriginTrail Parachain**) operates as a **parachain** secured by Polkadot’s relay chain. Through Polkadot’s shared security and **XCM** messaging, NeuroWeb can move assets/instructions to other parachains and EVM environments—useful for cross-chain AI/agent workflows and settlement.
+
+**Why this matters**
+
+* **Security & scale:** benefits from Polkadot validator security and block production.
+* **Interoperability:** **XCM** for native, trust-minimized transfers to other parachains; **EVM** compatibility for developer reach.
+
+## Core concepts & components
+### 1) Decentralized Knowledge Graph (DKG)
+A cross-chain knowledge layer where **Knowledge Assets** live. Assets carry **provenance**, **connectivity** (links), and **discoverability**—all critical for AI agents and RAG systems to trust inputs.
+
+### 2) Knowledge Assets
+Ownable containers for facts, documents, models, proofs, or metadata, addressable and linkable across chains. They are the unit that miners create, enrich, and connect.
+
+### 3) Knowledge Mining
+The incentive mechanism: publish and connect valuable Knowledge Assets; earn **NEURO** for relevant contributions to the DKG over time.
+
+### 4) NEURO token
+Utility token that fuels the knowledge economy—used to reward knowledge creation/curation and to align positive behavior (veracity, relevance, connectivity).
+
+### 5) EVM & Bridging
+NeuroWeb is **EVM-enabled**, expanding dev tooling and composability; **XCM** connects to other Polkadot parachains (e.g., moving NEURO to Moonbeam for EVM dapps).
+
+### 6) Networks & ops
+* **Mainnet:** secured by the Polkadot relay chain.
+* **Testnet:** secured by Rococo, recommended for development.
+
+
+<ShowcaseText
+  entries={[
+    {
+      href: 'https://chatdkg.ai/',
+      title: 'ChatDKG',
+      description: 'Learn more about the future of artificial intelligence through the ChatDKG smart AI solutions.',
+    },
+        {
+      href: 'https://origintrail.io/',
+      title: 'OriginTrail',
+      description: 'OriginTrail enhances research accessibility, collaboration, and efficiency in DeSci.',
+    },
+  ]}
+/>
+
+## How Knowledge Mining works
+At a high level, mining follows a **produce → prove → connect → claim** loop:
+
+1. **Produce** — gather/structure data into a Knowledge Asset with metadata, schema, and links.
+2. **Prove** — attach verifiability (hashes, signatures, provenance) so consumers can trust it.
+3. **Connect** — link to related assets to improve discoverability and graph value.
+4. **Claim** — submit on-chain claims/rewards for contributions, paid in NEURO as the graph derives measurable utility.
+
+**Tooling:** A **Knowledge Mining Kit** streamlines asset creation, JSON-LD structuring, and publication to the DKG/NeuroWeb chain.
+
+**Why it’s powerful:** By combining symbolic (knowledge graphs) and neural AI, organizations can build **verifiable AI**—not just outputs, but their **inputs** are auditable and traceable (key for IP protection, deepfake defense, safety, and compliance).
+
+
+## Feature comparison
+| Component            | Purpose                                 | Users                              | On-chain interaction                | Security/provenance                    | Dev integration                        |
+| -------------------- | --------------------------------------- | ---------------------------------- | ----------------------------------- | -------------------------------------- | -------------------------------------- |
+| **DKG**              | Shared knowledge layer for assets/links | App teams, data publishers, agents | Asset registration, linking, proofs | Provenance & discoverability baked in  | JSON-LD, cross-chain access            |
+| **Knowledge Assets** | Ownable containers for knowledge        | Publishers, curators, infra        | Mint/update assets; attach claims   | Content hashing, signatures, linkage   | Semantic web standards                 |
+| **Knowledge Mining** | Incentive loop for valuable knowledge   | Miners, research orgs              | Claims & rewards in NEURO           | Rewards tied to relevance/connectivity | Mining kit & docs                      |
+| **NEURO token**      | Utility/reward mechanism                | Miners, apps, DAOs                 | Transfer, stake, pay fees           | Secured on Polkadot                    | EVM & XCM compatible                   |
+| **EVM + XCM**        | Composability & cross-chain UX          | dApp devs, agents                  | XCM transfers; EVM calls            | Relay-chain security; native XCM       | Works with Moonbeam & other parachains |
+
+
+## Step-by-step: publish your first Knowledge Asset
+1. **Model your data**
+   Define your subject, predicates, and relationships; choose a schema (JSON-LD recommended) and list the external references you’ll cite.
+
+2. **Create the asset**
+   Use the **Knowledge Mining Kit** to package content + metadata into a Knowledge Asset. Include provenance (source identifiers, timestamps, signatures).
+
+3. **Publish to DKG/NeuroWeb**
+   Submit the asset to DKG and register on NeuroWeb. Ensure your node/wallet is funded for fees in the target environment (testnet vs mainnet).
+
+4. **Connect it**
+   Link to related Knowledge Assets to maximize relevance and graph value (think citations/cross-refs).
+
+5. **Claim mining rewards**
+   File claims for **Knowledge Mining**; track eligibility windows and contribution proofs. Reward parameters and program phases may evolve.
+
+6. **Bridge for composability (optional)**
+   If your app lives on an EVM chain like Moonbeam, bridge **NEURO** or interact via XCM to compose with EVM dapps/agents.
+
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Decentralized Knowledge Graph (DKG)',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/dapps/ai/neuroweb.png',
+      href: 'https://origintrail.io/products/chat-dkg',
+      description: 'A launchpad for trusted artificial intelligence (AI) solutions that allows you to create predictable AI agents to execute tasks using your data.',
+    },
+  ]}
+/>
+
+## Common pitfalls & pro tips
+### Pitfalls
+* **Weak provenance** → missing hashes, unclear source attributions.
+* **Poor linkage** → isolated assets don’t earn relevance; connect them.
+* **Ignoring schema** → unstructured blobs reduce discoverability for agents.
+* **Publishing private data** → treat sensitive content carefully; follow legal/ethical norms.
+* **Skipping testnet** → deploy to a **Rococo-secured testnet** first to catch issues.
+
+### Pro tips
+* **Use JSON-LD + consistent vocabularies** to maximize machine readability.
+* **Plan cross-chain UX** early—if your consumers live on EVM, design flows with XCM and parachain endpoints from day one.
+* **Measure graph impact**—track how your assets are referenced/queried; iterate to increase connectivity.
+* **Stay aligned with roadmap**—reward parameters and program phases may update over time.
+
+## FAQs
+**1) Is NeuroWeb a standalone L1 or a Polkadot parachain?**
+It’s a **parachain** secured by Polkadot’s relay chain, with EVM support.
+
+**2) What exactly is “Knowledge Mining”?**
+A process/incentive mechanism to publish, verify, and connect **Knowledge Assets**, rewarding contributors with **NEURO**.
+
+**3) What did NeuroWeb used to be?**
+It was previously the **OriginTrail Parachain**; the transformation into NeuroWeb followed a community governance vote.
+
+**4) How does bridging work?**
+NeuroWeb uses **XCM** for native transfers across the Polkadot ecosystem (e.g., to Moonbeam for EVM).
+
+**5) What’s the NEURO token used for?**
+To incentivize knowledge creation, connectivity, and sharing within the DKG/NeuroWeb economy.
+
+**6) Where do I test integrations?**
+Use the **NeuroWeb Testnet** (Rococo-secured) for development; deploy to mainnet after validation.
+
+**7) Can AI agents read from/write to the DKG?**
+Yes—tooling and EVM support make it practical to integrate agents that consume and publish Knowledge Assets.
+
+**8) What are typical use cases?**
+Verifiable data pipelines for RAG/agents, IP provenance and authenticity, safety/deepfake defense, and cross-industry data sharing.
+
+## Conclusion
+NeuroWeb gives builders and AI teams a **verifiable knowledge substrate** that’s natively incentivized and **interoperable** across Polkadot and EVM. If your agents or models depend on trustworthy, traceable inputs, start mining and linking **Knowledge Assets**—and plug your app into the NEURO-powered knowledge economy today.
+
+
+## Neuroweb Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+              {
+      href: 'https://www.youtube.com/watch?v=ODmpSt887Go',
+      title: 'OriginTrail: A verifiable Internet for AI',
+      description: 'Discover how OriginTrail integrates neuro-symbolic AI with the Polkadot ecosystem to achieve internet-scale data intelligence.',
+          },
+              {
+      href: 'https://www.youtube.com/watch?v=vys8X60iT-A',
+      title: 'What Is OriginTrail? Exploring An AI Blockchain On Polkadot',
+      description: ' OriginTrail, a blockchain powering Verifiable Internet for AI with a Decentralized Knowledge Graph (DKG) for a sustainable future.',
+          },
+                        {
+      href: 'https://www.youtube.com/watch?v=VtXqFDenPLE',
+      title: 'Revolutionizing The Education On Polkadot With AI',
+      description: ' in-depth learning about how to learn all things about Polkadot and its ecosystem with PolkaBot.AI, a trusted AI-powered education tool for the Polkadot ecosystem built on Origin Trail and NeuroWeb.AI.',
+          },
+                                  {
+      href: 'https://www.youtube.com/watch?v=ZMuLyLCtE3s',
+      title: 'Brana Rakic & Nikola Todorovic: Decentralizing AI with OriginTrail ',
+      description: 'Brana & Nikola discuss the future AI-generated Internet & the necessity for verifiable knowledge assets, the NeuroWeb project & why Polkadot was best suited for deployment, Mass Adoption & Web3.'
+          },
+  ]} />
+
+
+  <iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vTIhpzechralNI4WpPIo5SNAiRTw48ZvaK5d_ue_KXakSzJlQTCyJA5VSa82-M1z7pMPqupt6KmYDSh/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
+
+
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSBJzR6SoMumEUoZrwotxKpzVNC6R5xltIBXc_mDj9mw6TmGhMehhhKjJ9j07l_DnCwmVFTVP5WBHmM/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ODmpSt887Go?si=urJlvi6oJBNVjkca" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<iframe allowfullscreen="true" frameborder="0" height="569" mozallowfullscreen="true" src="https://docs.google.com/presentation/d/e/2PACX-1vS5nGxzQdDhOZ_bXKGSNwLvIZyk4RqomWdhA2Gj8LZyQy6wCKkhd2mrlJ5FaDCXFVJVuqQuhFRmz7UY/embed?start=false&loop=false&delayms=60000" webkitallowfullscreen="true" width="960"></iframe>
+
+<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/kgCnQx2PKfA?si=84u9nz_5rsrIFz_z" title="YouTube video player" width="560"></iframe>

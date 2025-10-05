@@ -1,0 +1,135 @@
+---
+title: 'Tanssi Network'
+description: 'Tanssi es un protocolo de infraestructura para appchains diseñado para agilizar el desarrollo e implementación de blockchains personalizadas para diversas aplicaciones.'
+hero:
+  tagline: 'Un protocolo de infraestructura para appchains.'
+  image: 
+    file: ../../../../../assets/tools/dev/tanssi.png
+  actions:
+    - text: 'Sitio'
+      link: https://www.tanssi.network/
+      icon: external
+    - text: 'Documentación'
+      link: https://docs.tanssi.network/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+**Tanssi** es un protocolo de infraestructura para appchains, diseñado para agilizar el desarrollo e implementación de blockchains personalizadas en múltiples aplicaciones. Ofrece a los desarrolladores una solución a la complejidad inherente de las implementaciones tradicionales de appchains.
+
+## El Desafío de las Appchains
+La construcción de appchains suele implicar la gestión de numerosos componentes de infraestructura, tales como:
+- Productores de bloques  
+- Validadores  
+- Carteras (wallets)  
+- Exploradores de bloques  
+- Oráculos  
+- Indexadores  
+- Endpoints RPC  
+
+Este proceso no solo es **lento** sino también **costoso** en términos de recursos. Además, las appchains en etapas tempranas enfrentan desafíos como:  
+- **Seguridad Débil**: Conjuntos limitados de validadores pueden derivar en vulnerabilidades.  
+- **Uso Ineficiente de Recursos**: Pago por validación completa incluso cuando no se necesita.  
+- **Interoperabilidad Restringida**: Dificultad para conectarse con otros ecosistemas blockchain.  
+- **Lanzamiento Lento**: Infraestructura compleja que distrae a los equipos del foco en desarrollo.
+
+## Cómo Tanssi Simplifica el Desarrollo de Appchains
+Tanssi resuelve estos obstáculos con un conjunto de funcionalidades clave:
+- **Block Production as a Service**: Tanssi proporciona un conjunto de trabajadores incentivados (productores de bloques) para manejar la producción de bloques de las appchains desplegadas, garantizando liveness y un grupo de validadores descentralizado.  
+- **Consenso Bajo Demanda**: Las appchains heredan la finalización (consenso) de Polkadot, evitando la necesidad de mecanismos de validación independientes. Este enfoque brinda la seguridad de una Layer 1 desde el bloque génesis.  
+- **Framework de Blockchain Modular**: Tanssi aprovecha Substrate, un framework que permite a los desarrolladores crear blockchains personalizadas y optimizadas para diferentes casos de uso. Tanssi se hace cargo de la mayoría de las complejidades de infraestructura, liberando a los equipos para centrarse en la lógica de la appchain.  
+- **Integraciones Clave**: Las appchains creadas con Tanssi se benefician de acceso automático a infraestructura esencial (wallets, exploradores, indexadores, endpoints RPC) y pueden usar mensajería Cross-Consensus (XCM) para comunicarse con otras cadenas en el ecosistema Polkadot, impulsando la interoperabilidad.
+
+**En resumen, Tanssi facilita a los desarrolladores la creación de appchains de Layer 1 altamente modulares e interconectadas. Simplifica el despliegue y permite personalización, acelerando el tiempo de llegada al mercado y fomentando la integración en el panorama blockchain.**
+
+## Entendiendo la Arquitectura de Tanssi
+- **Appchains como Soluciones de Layer 1**: A diferencia de las soluciones de Layer 2 basadas en blockchains existentes, las appchains de Tanssi operan como blockchains independientes de Layer 1 que heredan la seguridad de Polkadot.  
+- **Producción de Bloques y Consenso**: Los productores de bloques de las appchains Tanssi forman parte del conjunto general de Tanssi. Esto es posible gracias al mecanismo de consenso compartido de Polkadot, el cual permite una comunicación confiable y descentralizada entre cadenas.  
+- **Data Preservers**: Cada cadena (Tanssi y las appchains) cuenta con sus propios Data Preservers que ejecutan nodos completos (full archive) y proveen infraestructura RPC para la interacción con apps y usuarios.
+
+# Recapitulación de 2024: Fundamentos para el Lanzamiento Mainnet de Tanssi
+2024 fue un año transformador para Tanssi, preparando el terreno para el lanzamiento mainnet en 2025. Entre los hitos destacados se incluyen:
+
+## Logros Clave
+- **Colaboraciones & Campañas**:  
+  - Asociación con Symbiotic para habilitar lanzamientos instantáneos de redes con re-staking.  
+  - “Let’s Forkin Dance”, un testnet incentivado con más de 100,000 participantes y 4 millones+ de transacciones.  
+- **Crecimiento del Ecosistema**:  
+  - Registro de 3,000+ cadenas en testnet y más de 7.5 millones de transacciones en Dancebox.  
+  - Incorporación de 100+ proyectos en áreas DeFi, gaming, NFTs, RWAs y AI.  
+- **Financiamiento**:  
+  - Recaudados $6M, sumando un total de $9M para impulsar la innovación y el crecimiento.  
+- **Expansión de la Comunidad**:  
+  - 100k miembros en múltiples idiomas, apoyados por embajadores dedicados.
+
+## Momentos Destacados en 2024
+- **Programa de Subvenciones**: Lanzado para apoyar a los creadores con financiación, mentoría y visibilidad.  
+- **Rondas Estratégicas de Financiación**: $6M obtenidos con respaldo de inversores destacados como Gavin Wood y Rob Habermeier.  
+- **Eventos Globales**: Presencia en Devcon, Token2049, Blockchain Rio, Polkadot Decoded y otros eventos relevantes en Web3.  
+- **Podcast Tanssi Cast**: Lanzado con episodios que presentan a líderes de Web3 y análisis de tendencias de mercado.
+
+<ShowcaseText
+  entries={[
+    {
+      href: 'https://www.tanssi.network/post/newsletter-2024-recap',
+      title: 'Tanssi 2024 Full Recap',
+      description: 'Accede al resumen original de 2024 para Tanssi Network.',
+    },
+  ]}
+/>
+
+## Mirando hacia 2025
+- **Nuevo Lanzamiento de Testnet**: Integrado con Symbiotic para despliegues de red sin fricción.  
+- **Lanzamiento Mainnet**: Previsto para principios de 2025, marcando un hito fundamental.  
+- **Descentralización Liderada por la Comunidad**: Empoderando a la comunidad Tanssi para guiar la evolución de la red.
+
+El 2024 fue un año de gran relevancia, y 2025 promete ser aún más importante a medida que Tanssi haga realidad su visión. ¡Mantente atento a más novedades!
+
+## Videos de la Comunidad Tanssi Network
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=UlsJaUHf8Nk&list=PLEgIGlavjXIh7LE3uRAddM0BtVuQUH6g2',
+      title: 'Introducing Tanssi: A Protocol to Radically Accelerate Adoption on Polkadot - Decoded 2023',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=J32tIeMaueM',
+      title: 'Fast-Tracking Polkadot Developer Adoption with Tanssi - Sub0 2023',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=4LBKYvl5N44',
+      title: 'Tanssi for Rapid Polkadot Deployments - SM 116',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=qMilgkbyTHw',
+      title: 'Aberto Viera & Thiago Rüdiger: Moonbeam to Tanssi - Web3 Builders',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=ORbjflgnQ3Q',
+      title: 'Tanssi Explained #1',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=pyQuQPIfB8I',
+      title: 'How to start your own blockchain with a few clicks with Tanssi - Polkadot Hungary',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=eKbVjKA9v8E',
+      title: 'Tanssi Network - The Revolution For Appchain Deployment On Polkadot - Polkadot Insider',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=VNwWFWfrQB0',
+      title: 'What Is Tanssi Network? - Polkadot Insider',
+    },
+    {
+      href: 'https://www.youtube.com/shorts/v1IZGQ6PyH0',
+      title: 'How does Tanssi Network fit w/ Moonbeam Network?',
+    },
+    {
+      href: 'https://www.youtube.com/shorts/YeDnNDMuG04',
+      title: 'This is how Moonbeam Network Helps Tanssi Network appchains! 🤝',
+    },
+  ]}
+/>

@@ -1,0 +1,266 @@
+---
+title: Polkadot Dapps
+description: Discover all the Dapps built on the Polkadot Ecosystem and explore the new frontier of decentralized applications.
+---
+
+import { Card, CardGrid, LinkCard, LinkButton, linklist } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Discover a new frontier of decentralized applications built on the Polkadot network. 
+Our platform offers a curated selection of innovative DApps that leverage Polkadot’s scalable and interoperable blockchain technology. 
+
+Whether you’re exploring decentralized finance (DeFi), engaging with non-fungible tokens (NFTs), or diving into blockchain-based gaming, our DApps page connects you with cutting-edge solutions reshaping the digital landscape. 
+Join us in pioneering a more open, secure, and connected decentralized ecosystem.
+
+## All the Polkadot Dapps in One Place
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/Trading.png'),
+      href: '/dapps/defi',
+      title: 'DeFi',
+      description: 'Discover the most popular DefI Dapps in the Polkadot Ecosystem.'
+    },
+        {
+      thumbnail: import('/src/assets/thumbnails/DePIN2.png'),
+      href: '/dapps/depin/',
+      title: 'DePin',
+      description: 'Polkadot Ecosystem DePin Projects.'
+      },
+                     {
+      thumbnail: import('/src/assets/thumbnails/inter.png'),
+      href: '/dapps/bridges/',
+      title: 'Bridges',
+      description: 'Discover the Polkadot Ecosystem bridges.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/Gaming2.png'),
+      href: '/dapps/gaming/',
+      title: 'Gaming',
+      description: 'Explore the most popular games.'
+      },
+                             {
+      thumbnail: import('/src/assets/thumbnails/NFTs.png'),
+      href: '/dapps/nft-marketplaces/',
+      title: 'NFTs',
+      description: 'Discover the most popular NFT Marketplaces in the Polkadot Ecosystem.'
+      }, 
+ {
+      thumbnail: import('/src/assets/thumbnails/social-media.png'),
+      href: '/dapps/social/',
+      title: 'Social',
+      description: 'Discover the most popular Social Dapps in the Polkadot Ecosystem.'
+      }, 
+    {
+      thumbnail: import('/src/assets/thumbnails/smart-contracts2.png'),
+      href: '/dapps/smart-contracts/',
+      title: 'Smart Contracts',
+      description: 'Discover the most popular Smart Contracts Ecosystems built on Polkadot and Substrate.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/dApps.png'),
+      href: '/dapps/ai/',
+      title: 'AI',
+      description: 'Discover the most popular AI Dapps in the Polkadot Ecosystem.'
+      },
+          {
+      thumbnail: import('/src/assets/thumbnails/Metaverse.png'),
+      href: '/dapps/rwa/',
+      title: 'RWA',
+      description: 'Discover the most popular RWA projects in the Polkadot Ecosystem.'
+      },
+  ]}
+/>
+&nbsp;
+
+
+## Hand Selected Dapps & Projects
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/defi/hydration.png'),
+      href: '/dapps/defi/hydration',
+      title: 'Hydration',
+      description: 'DeFi / DEX'
+    },
+        {
+      thumbnail: import('/src/assets/dapps/depin/peaq.png'),
+      href: '/dapps/depin/peaq-network/',
+      title: 'Peaq Network',
+      description: 'DePin'
+      },
+                     {
+      thumbnail: import('/src/assets/dapps/gaming/mythoschain.png'),
+      href: '/dapps/gaming/mythos-chain',
+      title: 'Mythos',
+      description: 'Gaming'
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/bridges/hyperbridge.png'),
+      href: '/dapps/bridges/hyperbridge/',
+      title: 'Hyperbridge',
+      description: 'Bridge'
+      },
+  ]}
+/>
+
+
+## Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=D4zk4GJNRpo',
+      title: 'New Polkadot App!',
+    },
+  ]}
+/>
+
+
+## Polkadot dApps for Power Users (2025)
+
+A fast, practical guide to the Polkadot dApps you’ll actually *use*—how to pick the right app, move assets safely with minimal fees, and avoid common mistakes. Built for power users who want outcomes (swaps, staking, NFTs, gaming, DePIN) without diving into builder docs.
+
+## ELI5: What makes Polkadot dApps different?
+* Polkadot is a **network of chains** (parachains) that can talk to each other with **XCM** (native cross-chain messaging).
+* **Asset Hub** is a system chain where many assets are issued/managed.
+* You’ll often use **more than one app/chain** in a single workflow (e.g., swap here, use there).
+* The trick: pick the **right route** (shortest, cheapest, safest) and keep a little gas on each chain you touch.
+
+## Your quick-start loadout (wallets, explorers, safety)
+**Wallet basics**
+* Use a **Polkadot-compatible wallet** (browser extension or mobile).
+* Create a **main** wallet and a smaller **hot** wallet for experiments.
+* Write down your **seed** offline; consider a **hardware wallet** for larger balances.
+
+**Explorers & portfolio**
+* Bookmark a **multi-chain explorer** (to verify transactions) and a **portfolio tracker** that supports Polkadot parachains.
+* Label wallets (e.g., “Hot-DEX,” “NFT-Play,” “Treasury-Ops”) to track activity.
+
+**Safety essentials**
+* Always **test with dust** (a tiny amount) on new routes.
+* Learn to **revoke approvals** after you stop using a dApp.
+* Prefer **native** assets and **XCM routes** (fewer wrappers/bridges = fewer surprises).
+
+
+## Category cheat-sheets
+
+### DeFi
+**What you do here:** Swap tokens, provide liquidity (LP), earn yield, manage stables.
+**When to use:** You need the best route/price to get from token A → B, or you want to LP or stake.
+
+**Quick wins**
+* Start with a **trusted DEX**; do a **small test swap** first.
+* Confirm which chain the token is **native** to (often Asset Hub).
+* Keep a **gas buffer** of the chain’s native token before moving funds.
+
+**Typical flow:**
+Deposit → Swap (check slippage) → (Optional) XCM to target chain → LP/stake → Track position.
+
+### DePIN
+**What you do here:** Join device/data networks, storage, compute, or energy apps that reward participation.
+**When to use:** You want to earn by contributing storage/bandwidth/compute, or you rely on on-chain proofs for data.
+
+**Quick wins**
+* Confirm **hardware requirements** and **reward math** before buying gear.
+* Check whether rewards are **native** or **bridged** tokens and where you’ll claim them.
+* Track **real costs** (electricity/data/time) vs rewards.
+
+### Gaming
+**What you do here:** Play titles with on-chain inventories and markets.
+**When to use:** You want verifiable ownership and trading of game assets.
+
+**Quick wins**
+* Verify which **chain** a game’s NFTs live on (and any required **bridge**).
+* Try a **free-to-play** or **testnet** mode before buying assets.
+* Bookmark the game’s **marketplace** and **approval manager**.
+
+### Social
+**What you do here:** Own your social identity, posts, and communities; tip creators, gate content.
+**When to use:** You want portable identity and perks across apps.
+
+**Quick wins**
+* Set up a **profile/handle** once; reuse it across apps that support the same graph.
+* Test **tipping** or **token-gated** content with tiny amounts first.
+* Keep a dedicated **social wallet** (separate from DeFi).
+
+### NFT Markets
+**What you do here:** Mint, buy/sell, and manage collections.
+**When to use:** You collect, trade, or use NFTs in games/social.
+
+**Quick wins**
+* Confirm the **mint chain** and **royalty logic**.
+* Check **floor/liquidity** before large buys; place **maker orders** when possible.
+* Use a **viewer** that aggregates multiple parachains.
+
+### Smart Contracts
+**What you do here:** Use EVM or Wasm/ink! apps—everything from DEXes to tools.
+**When to use:** You’re comfortable with approvals and contract interactions.
+
+**Quick wins**
+
+* Double-check **spender addresses** before confirming approvals.
+* Prefer **limited** approvals over unlimited when plausible.
+* Periodically **revoke** stale approvals in bulk.
+
+### AI
+**What you do here:** Pay-per-call inference, data markets, or agent workflows.
+**When to use:** You need provable payments/provenance for ML tasks or datasets.
+
+**Quick wins**
+* Test with **small inference jobs** to learn fees/latency.
+* Track which chain **settles payments** and keep the right **gas** there.
+* For agents, set clear **limits** (max spend per day).
+
+
+## Feature comparison table
+| Category        | What you get fast                     | Time-to-first result | Cost feel\* | Risk feel\* | Great for                         |
+| --------------- | ------------------------------------- | -------------------: | ----------: | ----------: | --------------------------------- |
+| DeFi            | Reliable swaps, stables, simple yield |             5–10 min |     Low–Med |         Med | Traders, LPs, treasuries          |
+| DePIN           | Earn via devices/storage/compute      |     1–3 days (setup) |         Med |    Med–High | Tinkerers, passive income seekers |
+| Gaming          | Play + own items, trade markets       |            10–20 min |     Low–Med |         Med | Players, collectors               |
+| Social          | Own your handle, tip/gate content     |             5–10 min |         Low |     Low–Med | Creators, communities             |
+| NFT Markets     | Mint/buy/sell with low fees           |             5–15 min |         Low |         Med | Artists, gamers                   |
+| Smart Contracts | Broadest app coverage                 |             5–15 min |     Low–Med |    Med–High | Power users, tool stackers        |
+| AI              | Pay-per-call inference/data           |            10–20 min |     Low–Med |         Med | Data/ML users                     |
+
+\*“Cost feel” and “Risk feel” are relative heuristics. Always test with tiny amounts first.
+
+## One-hour setup: from zero to cross-chain
+
+**0–10 min: Wallet & hygiene**
+1. Install a Polkadot-compatible wallet (extension or mobile).
+2. Create **Main** and **Hot** accounts; record seed (offline).
+3. Add a small amount of **DOT** for fees.
+
+**10–25 min: Tools & bookmarks**
+1. Bookmark: a **multi-chain explorer**, a **portfolio tracker**, and your **approval manager**.
+2. Add the chains you plan to use; pin them in wallet.
+
+**25–40 min: First swap (dust test)**
+1. Do a **tiny swap** on a trusted DEX to a stablecoin.
+2. Verify tx on the explorer; note **slippage** and **fees**.
+
+**40–60 min: First cross-chain move**
+1. Use in-app **XCM transfer** to the destination chain you need.
+2. Confirm receipt on explorer.
+3. Save the **route** to your notes (chain → app → action) for next time.
+
+
+## FAQs
+**1) What’s the fastest, safest way to try a new Polkadot dApp?**
+Use a **hot** wallet, swap **dust** first, confirm on an **explorer**, then scale up.
+
+**2) Do I need a different wallet for every chain?**
+No. A Polkadot-compatible wallet can handle multiple parachains. Keep **gas** on each.
+
+**3) Is every Substrate chain a Polkadot parachain?**
+No. Some are adjacent/bridged. Prefer **native** routes (XCM) when available.
+
+
+## Conclusion
+Polkadot shines when you **chain apps together**: swap on one, use assets on another, show them off in a third—without leaving the ecosystem. Start small, save your routes, and build a repeatable setup that trades fast and stays safe.
+ 

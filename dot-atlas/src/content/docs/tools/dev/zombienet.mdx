@@ -1,0 +1,61 @@
+---
+title: Zombienet
+description: Zombienet simplifies testing for Substrate-based blockchains, enabling ephemeral network creation, assertions, and multi-provider support seamlessly.
+hero:
+  tagline: A Testing Framework for Substrate and Polkadot Networks.
+  image: 
+    file: ../../../../assets/tools/dev/zombienet.png
+  actions:
+    - text: Github
+      link: https://github.com/paritytech/zombienet
+      icon: external
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+Zombienet is a command-line interface (CLI) tool designed to streamline the **creation and testing of ephemeral blockchain networks**, offering a robust framework for developers to conduct a wide range of tests. By enabling seamless interactions with local or cloud-based environments, Zombienet simplifies the complexities of blockchain testing, making it a valuable asset for developers aiming to ensure the reliability and performance of their networks.
+
+## What is Zombienet?
+Zombienet is a CLI-driven framework tailored for the Substrate-based blockchain ecosystem. It facilitates the rapid creation of ephemeral networks, allowing developers to perform detailed tests and assertions on various network components. These tests can cover on-chain storage, metrics, logs, and even custom scripts written in JavaScript.
+
+Built as a JavaScript library, Zombienet is designed to run on Node.js and supports multiple backend providers, including Kubernetes, Podman, and native setups. This flexibility ensures that developers can choose the most suitable environment for their testing needs.
+
+## Key Features of Zombienet
+1. **Ephemeral Network Creation**: Zombienet allows developers to define network configurations in JSON or TOML formats, enabling quick and efficient deployment of complex networks with just a few commands.
+2. **Multi-Provider Support**:
+    - **Kubernetes**: Zombienet integrates with Kubernetes clusters, utilizing the Prometheus operator for enhanced monitoring and visibility.
+    - **Podman**: The tool supports Podman for Linux users, deploying auxiliary pods for monitoring using Grafana and Tempo.
+    - **Native**: For developers preferring local setups, Zombienet supports running nodes as local processes.
+3. **Testing and Assertions**: Zombienet’s domain-specific language (DSL) allows developers to write natural-language-based assertions. This feature simplifies the process of validating network behavior, such as ensuring nodes are operational, parachains are registered, and blocks are being produced.
+4. **Environment Variable Support**: Developers can use environment variables in configuration files, adding flexibility to network definitions and simplifying integration with CI/CD pipelines.
+
+## Zombienet Community Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=2FF0RS60wJc',
+      title: 'How to spin up the Polkadot Relay Chain - Learn with Bruno',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=vuNX4WRJiy8',
+      title: 'Dive deep into Polkadot Testing Suite - Awesome Polkadot',
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=Iicj4Lfa-nU',
+      title: 'Deploying Polkadot And Parachains Testnets on Kubernetes - Sub0 2022',
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=W0lA3U3hIWE',
+      title: 'Introduction to LARCH -The Zombienet Automation Tool ',
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=QKTZZCpdGH4',
+      title: 'Parity Technologies: Zombienet Walkthrough | Sub0 2022',
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=7DZwVXzi9x0',
+      title: 'Launching a Parachain | Polkadot Deep Dives',
+    },
+  ]}
+/>

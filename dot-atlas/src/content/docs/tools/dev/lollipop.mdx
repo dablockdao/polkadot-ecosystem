@@ -1,0 +1,46 @@
+---
+title: Lollipop
+description: Lollipop Builders enables Solana sBPF execution on PolkaVM with JAM, preserving Solana settlement and liquidity without bridges.
+hero:
+  tagline: Bridgeless Solana execution on PolkaVM.
+  image: 
+    file: ../../../../assets/tools/dev/lollipop.png
+  actions:
+    - text: Site
+      link: https://www.lollipop.builders/
+      icon: external
+    - text: X
+      link: https://x.com/LollipopHQ
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+# Lollipop Builders overview
+
+Lollipop Builders proposes an execution approach that runs Solana sBPF programs inside PolkaVM within the JAM framework while maintaining settlement and validator verification on Solana. The design seeks to avoid liquidity and user fragmentation, preserve the Solana developer workflow, and expose programs to JAM services for additional composition.
+
+## Concept
+Lollipop defines a Network Extension for Solana. Program logic executes off chain in PolkaVM. Resulting state differences are validated by Solana validators before commitment. Assets and user wallets remain on Solana.
+
+## Architecture in brief
+1. **sBPF on PolkaVM** - An sBPF runtime is adapted to a no\_std RISC V environment so Solana programs can execute without modification. A recompilation route from sBPF to RISC V bytecode is also described.
+2. **Memory mapping** - Shared objects are loaded on the host and mapped into the guest address space at PolkaVM initialization. This reduces guest memory pressure for larger programs.
+3. **Persistence model** - A RocksDB adapter mirrors Solana account access semantics. Copy on write ensures atomic updates and consistent reads during execution.
+4. **JAM service adapter** - An adapter exposes workloads as JAM Services that follow Refine and Accumulate. This prepares programs for interaction with other JAM based services.
+5. **Diff based validation** - Only modified state is sent back for verification. Invalid diffs roll back without affecting base state.
+
+## Developer experience
+1. Programs written with Anchor or native Solana tooling run as is.
+2. The account model and Sealevel style parallel scheduling are preserved because transactions declare read and write sets in advance.
+3. Submission and verification APIs are presented as an operations layer rather than a change to program logic.
+
+## Relation to other scaling models
+The Network Extension sends results for direct validator verification on Solana and does not introduce a bridge or a separate sequencer. This contrasts with common rollup patterns that batch transactions on a distinct chain and bridge proofs to a base layer.
+
+## Potential applications
+1. Compute intensive DeFi engines that benefit from deterministic parallel execution
+2. High action games that favor sponsor paid interaction flows
+3. Data heavy services such as oracles or verifiable compute that require consistent settlement on Solana
+4. Configurable environments for institutional or compliance driven deployments

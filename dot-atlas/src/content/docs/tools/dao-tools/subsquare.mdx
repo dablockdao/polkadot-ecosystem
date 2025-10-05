@@ -1,0 +1,147 @@
+---
+title: Subsquare
+description: SubSquare enables community members to propose, discuss and vote on gov. proposals.
+sidebar:
+    label: ✪ SubSquare
+    order: 1
+hero:
+  tagline: Propose, discuss and vote on Polkadot governance proposals.
+  image: 
+    file: ../../../../assets/tools/dao-tools/subsquare.png
+  actions:
+    - text: Tool
+      link: https://www.subsquare.io/
+      icon: external
+    - text: Github
+      link: https://github.com/opensquare-network/subsquare
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+## Subsquare: Propose, Discuss & Vote on Polkadot OpenGov
+
+This expert guide explains how to use **Subsquare** to participate in **Polkadot OpenGov**—from finding the right track and reading context, to **voting, delegating, and clearing expired locks**. It also covers what’s new in 2025 (e.g., OpenGov track adjustments and DV dashboards), plus step-by-step workflows, pitfalls, and an at-a-glance comparison versus Polkassembly, Polkadot-JS, and Nova Wallet.
+
+## Why Subsquare matters
+OpenGov is where **DOT holders** steer protocol direction, treasury spending, and parameters. **Subsquare** is one of the two primary, user-friendly front-ends (alongside Polkassembly) that **monitors on-chain events** and gives you clean interfaces to **vote, delegate, discuss, and review track stats** across Polkadot and Kusama.
+
+## ELI5: OpenGov + Subsquare
+* **OpenGov** = on-chain democracy. You vote on **referenda** in different **tracks** (e.g., small/medium/big spender, treasurer, wish-for-change).
+* **Subsquare** = the dashboard for that democracy. It displays **active & historical referenda**, comments, tallies, and lets you **vote or delegate** from your wallet with a few clicks.
+
+## How OpenGov works (quick refresher)
+* **Tracks & queues.** Proposals go to specific **tracks** (each with rules for deposit, consideration time, etc.). In **2025**, Polkadot approved an **adjustment to reduce the max number of “deciding” items** across several tracks, creating healthier queues and less fatigue. Expect more proposals to **wait in queue** until they have enough support to enter voting.
+* **Conviction voting.** Lock DOT longer to **multiply your vote weight** (up to 6×). Locks unlock automatically after the conviction period or can be cleared when expired.
+* **Direct vote or delegation.** You can **vote directly** or **delegate** to trusted community members. The **Decentralized Voices (DV)** program channels voting power toward public delegates and DAOs to broaden participation.
+
+## What Subsquare does (2025 view)
+* A **governance platform** for Substrate chains that **scans & normalizes on-chain governance data**, covering Polkadot, Kusama, and many parachains.
+* Dedicated **OpenGov home** for Polkadot/Kusama: **active & historical referenda, tracks, stats**, whale views, and **DV dashboards** (e.g., cohort summaries, delegates, guardians).
+* Wallet-based actions—**vote, delegate, and clear expired votes**—with guidance aligned to Polkadot’s support docs.
+* Ongoing enhancements from the Subsquare team: **profile redesigns, identity tools, Asset Hub support, proxy support, Coretime UI, better search, bounties UX**.
+
+## Key features in Subsquare
+* **Tracks, Stats & Whales:** Explore **all tracks**; see **statistics** and **whale voters** to understand participation and influence.
+* **DV dashboard:** View **Decentralized Voices** cohorts, delegates/DAOs/guardians, voting patterns and track coverage.
+* **Subscribe to on-chain events:** Stay updated as referenda move across **Preparing → Deciding → Confirming**.
+* **Vote & delegate from your wallet:** Connect SubWallet, Talisman, Polkadot.js, Nova, etc., to **cast votes, delegate, undelegate**, and **clear expired votes**.
+* **Cross-ecosystem coverage:** Polkadot, Kusama, and numerous parachains (e.g., Acala, Centrifuge, HydraDX, Interlay, Phala).
+* **Roadmap (2025):** **Identity & proxies**, improved **Coretime views**, **Asset Hub** support, and **search** improvements.
+
+## Subsquare vs other governance tools
+| Tool               | Vote | Delegate | Comment/Discuss  | Track & Whale Stats           | DV Views                  | Clear Expired Votes | Mobile-friendly            | Best for                                                   |
+| ------------------ | ---- | -------- | ---------------- | ----------------------------- | ------------------------- | ------------------- | -------------------------- | ---------------------------------------------------------- |
+| **Subsquare**      | ✅    | ✅        | ✅                | ✅                             | ✅                         | ✅                   | Good (browser/mobile)      | Power users who want **stats + DV + actions** in one place |
+| **Polkassembly**   | ✅    | ✅        | ✅ (rich threads) | Partial (analytics improving) | Partial (community posts) | ✅                   | Good                       | **Discussion-heavy** workflows with identity/profiles      |
+| **Polkadot-JS UI** | ✅    | ✅        | ❌                | ❌                             | ❌                         | Manual              | Desktop-first              | **Advanced**/power tasks & low-level extrinsics            |
+| **Nova Wallet**    | ✅    | ✅        | ❌                | ❌                             | ❌                         | ✅                   | **Excellent (mobile app)** | **On-the-go voting/delegating**                            |
+
+**Notes:** Polkadot support docs present Subsquare and Polkassembly as primary governance portals; Polkadot-JS remains a **power-user** option; Nova focuses on **mobile governance**.
+
+## Mini-guide: Propose → Discuss → Vote in Subsquare
+> **Goal:** Safely navigate a full OpenGov cycle using Subsquare and adjacent tools.
+
+### 1) Discover the right place to act
+1. Open **Subsquare** → **Referenda**. Filter by **Track** (e.g., Small/Medium/Big Spender, Treasurer, Wish-for-Change) and status (**Preparing**, **Deciding**, **Confirming**). Use **Tracks → Statistics** for context.
+2. If you’re new to a topic, scan **comments** and any linked forum discussions for background.
+
+### 2) Connect wallet
+1. Click **Connect** and choose **SubWallet**, **Talisman**, **Polkadot.js**, **Nova** (etc.).
+2. Ensure the account has **enough DOT** to cover deposits (when proposing) and a small fee for transactions.
+
+### 3) Discuss (off-chain) before proposing
+* Post or join a **discussion** to gather feedback and surface risks/alternatives. This improves pass rates and reduces churn.
+
+### 4) Propose (on-chain)
+* **On Polkadot**, many proposers still prepare **preimages** and submit proposals via **Polkadot-JS** (power-user UI). Some parachains expose **“New Proposal / New Preimage”** flows directly in Subsquare; check your chain’s docs.
+* After submission, your item will appear in **the chosen track** and follow that track’s timetable and thresholds.
+
+### 5) Vote (or delegate) in Subsquare
+1. Open the referendum page → **Vote**.
+2. Choose **Aye / Nay / Abstain**, set **balance**, and pick **conviction** (0.1× to 6× weight with longer locks). Sign the transaction.
+3. Prefer not to micromanage? Use **Delegate** per-track to trusted accounts/DAOs (you can later **undelegate**).
+
+### 6) Track outcomes, clear expired votes
+* Watch the **tally** and **timeline**; when locks expire, use **Account → Clear expired votes** to remove locks in one batch.
+
+## Practical checklist
+* [ ] Read **track rules** and expected timelines.
+* [ ] Check **queue pressure** (fewer “deciding” slots since 2025).
+* [ ] Confirm **deposit** & **preimage** steps (Polkadot-JS if needed).
+* [ ] Share a **clear problem statement** and **KPIs** in your discussion post.
+* [ ] Before voting, scan **DV & Whales views** for extra context.
+* [ ] After referenda finalize, **clear expired votes** to unlock DOT.
+
+## Common pitfalls & tips
+* **Mistaking tracks:** A small Treasury ask on the wrong track can stall in queue. Double-check **track fit** before submitting.
+* **Ignoring queues:** With fewer “deciding” slots, under-supported items may **stay queued**. Warm up support **before** submission.
+* **Forgetting conviction math:** A **6× conviction** vote locks longer—great for weight, bad for liquidity planning. Know your lock horizon.
+* **Not clearing expired votes:** Locks won’t disappear until you **clear** them; batch this from Subsquare’s **Account** tab.
+* **One-track delegation confusion:** You **can’t delegate** a track where you hold **non-expired votes**. Clear those first, then delegate.
+
+## FAQs
+**1) Is Subsquare an official Polkadot product?**
+No—Subsquare is a widely used **ecosystem governance platform** maintained by an independent team; it supports Polkadot, Kusama, and many parachains.
+
+**2) Can I both vote and delegate?**
+Yes, but **not simultaneously on the same track** with non-expired votes. Clear expired votes first, then delegate (or vice-versa).
+
+**3) Where do I submit new proposals—Subsquare or Polkadot-JS?**
+**Voting/delegation** work great in Subsquare. For **submitting** on Polkadot, most proposers still use **Polkadot-JS** (preimage + submit). Some parachains offer “New Proposal” directly inside Subsquare—check your chain docs.
+
+**4) What are “DV” and “Whales” tabs?**
+DV = **Decentralized Voices** dashboards (cohorts, delegates, guardians). “Whales” surfaces large voters to understand influence patterns.
+
+**5) Why is my proposal queued for long?**
+Polkadot reduced “max deciding” slots in several tracks in 2025—expect **more queuing** and prioritize **pre-discussion & endorsements**.
+
+**6) Does Subsquare cover Asset Hub / Coretime?**
+The 2025 roadmap includes **Asset Hub** support and **Coretime** UI improvements in Subsquare.
+
+**7) Is there investment or financial risk in voting?**
+Voting uses **locks**; with conviction, DOT is locked longer. There’s no yield implied—this is **governance**, not an investment product.
+
+## Conclusion
+**Subsquare** is a fast, analytics-forward path to **act in OpenGov**: filter by **track**, assess **DV & whale context**, **vote or delegate**, and **clean up locks** post-vote. If you’re proposing work, use Subsquare for visibility and discussion, and Polkadot-JS for low-level submissions when needed.
+
+## Subsquare Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=mj864GubPt0',
+      title: 'How Subsquare Supports The Polkadot Decentralized Governance',
+      description: 'Interview with the founder of Subsquare.'
+    },
+          {
+      href: 'https://www.youtube.com/watch?v=csOtaShmP-4',
+      title: 'How to delegate your votes on Polkadot OpenGov with SubSquare using SubWallet Mobile App',
+      description: 'This tutorial walks you through how to delegate using SubWallet mobile app.'  },
+  ]} />
+
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="569" src="https://docs.google.com/presentation/d/e/2PACX-1vQkJQFu_zMykdHTHcJjY08qRCrMy7E7-IT_zVNB4Oz9n7jtd9JhHjwnk_GFf1y3b6M_Inl2IKJMUGDn/embed?start=false&loop=false&delayms=60000" width="960"></iframe>
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/stu9PIwLkX0?si=PLynGaBk5nybfrdb" title="YouTube video player" width="560"></iframe>

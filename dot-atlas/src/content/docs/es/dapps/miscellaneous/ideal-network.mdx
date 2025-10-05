@@ -1,0 +1,75 @@
+---
+title: Ideal Network
+description: Ideal Network revoluciona la blockchain con un sistema seguro e interoperable de aleatoriedad, habilitando aplicaciones descentralizadas, funcionalidad entre cadenas y encriptación innovadora.
+hero:
+  tagline: Revolucionando la aleatoriedad descentralizada.
+  image: 
+    file: ../../../../../assets/dapps/miscellaneous/ideal-network.png
+  actions:
+    - text: Sitio
+      link: https://idealabs.network/
+      icon: external
+    - text: Docs
+      link: https://docs.idealabs.network/
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+La aleatoriedad es un componente crítico para diversas aplicaciones blockchain, desde la seguridad criptográfica hasta contratos inteligentes y aplicaciones descentralizadas. **Ideal Network (IDN)** aborda esta necesidad con un innovador beacon de aleatoriedad descentralizada e interoperable. Construido sobre Substrate, combina protocolos criptográficos avanzados con la flexibilidad del ecosistema Polkadot, ofreciendo aleatoriedad verificable públicamente que es segura y eficiente. Este artículo explora su arquitectura, funcionalidad y aplicaciones potenciales, destacando sus implicaciones para el panorama blockchain.
+
+## Comprendiendo Ideal Network
+**Ideal Network (IDN)** actúa como un beacon de aleatoriedad descentralizada diseñado para generar aleatoriedad verificable públicamente en cadena. Su enfoque innovador reside en integrar la generación de aleatoriedad en cada bloque finalizado, asegurando una integración fluida y verificación confiable para casos de uso en y fuera de la cadena. IDN opera como una solución interoperable, siendo particularmente valiosa como parachain dentro del ecosistema Polkadot, habilitando el acceso a aleatoriedad entre cadenas.
+
+## Funcionamiento: Una Mirada Profunda a la Arquitectura
+1. **Protocolo de Computación Multipartita (MPC):** El beacon de aleatoriedad utiliza un protocolo MPC donde los collators ejecutan una ronda adicional de votación en cada bloque finalizado, similar al gadget de finalización BEEFY de Polkadot. Mediante firmas BLS de umbral, cada participante firma el hash del bloque finalizado, produciendo un resultado verificable si un número suficiente de collators colabora de manera honesta.
+    - **Firmas BLS de Umbral:** Estas aseguran que un número predeterminado de participantes genere el resultado del beacon.
+    - **Pruebas DLEQ:** Utiliza pruebas de Igualdad de Logaritmos Discretos (DLEQ) para verificar la corrección de la firma combinada.
+2. **Beacon de Aleatoriedad Interoperable (IRB):** Genera una cadena de pulsos de aleatoriedad, vinculados criptográficamente. Estos pulsos están ordenados causalmente, permitiendo una verificación eficiente y sin confianza. Cada pulso tiene una identidad única, garantizando resistencia a colisiones y fácil suscripción.
+    - **Cadenas Hash:** Forman una versión simplificada de una blockchain, manteniendo la secuencia e integridad de la aleatoriedad.
+    - **Función de Identidad:** Una función segura asigna una identidad única a cada pulso, soportando encriptación de tiempo bloqueado y usos futuros.
+3. **Pulsos y Verificación:** Cada pulso incluye una carga útil y una prueba de conocimiento cero, serializados para facilitar su verificación. La carga contiene firmas BLS de umbral, mientras que la prueba asegura la autenticidad de la salida de aleatoriedad.
+
+### Estructura del Pulso:
+
+```json
+{
+    "header": {
+        "identity": "<identidad única>",
+        "next_identity": "<pre-compromiso>",
+        "parent_hash": "<hash del pulso anterior>"
+    },
+    "body": {
+        "pulse": "<datos de aleatoriedad>"
+    }
+}
+```
+
+## Aplicaciones de Ideal Network
+El beacon de aleatoriedad verificable públicamente de IDN tiene amplias implicaciones para aplicaciones blockchain:
+1. **Contratos Inteligentes y Dapps:** Proporciona aleatoriedad confiable para loterías, juegos y distribución justa de activos.
+2. **Aleatoriedad entre Cadenas:** Como parachain de Polkadot, facilita funcionalidades seguras e interoperables en múltiples blockchains.
+3. **Encriptación de Tiempo Bloqueado:** Soporta sistemas híbridos combinando AES-GCM y encriptación basada en identidad (IBE), habilitando subastas, votaciones y compartición segura de datos.
+4. **Transacciones Blindadas:** Permite programar transacciones privadas, asegurando confidencialidad en DeFi y operaciones sensibles.
+
+## Ventajas de Ideal Network
+1. **Descentralización y Seguridad:** Integra la generación de aleatoriedad directamente en la blockchain, eliminando la dependencia de oráculos centralizados.
+2. **Interoperabilidad:** Compatibilidad fluida con el marco multi-cadena de Polkadot.
+3. **Eficiencia:** Mecanismos optimizados de verificación y cadenas hash reducen la sobrecarga computacional.
+4. **Escalabilidad:** El diseño como parachain permite escalar en múltiples ecosistemas blockchain.
+
+## Conclusión
+**Ideal Network** representa un cambio de paradigma en cómo se genera y utiliza la aleatoriedad en los ecosistemas blockchain. Al combinar interoperabilidad, seguridad y eficiencia, ofrece una base sólida para aplicaciones descentralizadas, interacciones entre cadenas e innovaciones criptográficas. A medida que la tecnología blockchain madura, las contribuciones de Ideal Network en aleatoriedad y encriptación están destinadas a desempeñar un papel crucial en el futuro descentralizado.
+
+## Videos de la Comunidad de Ideal Network
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=HLDa5fX0SVU',
+      title: 'THE IDEAL NETWORK: INTEROPERABLE AND DECENTRALIZED RANDOMNESS - Decoded 2024',
+    },
+  ]} />

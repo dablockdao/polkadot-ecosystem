@@ -1,0 +1,136 @@
+---
+title: Polkadot NFT Marketplaces
+description: Explore all the Polkadot ecosystem NFT Marketplaces.
+sidebar: 
+    label: NFT Marketplaces
+    badge: Feed
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Polkadot NFT marketplaces offer a decentralized platform for creating, trading, and showcasing digital assets. Leveraging Polkadot’s scalable and interoperable network, they provide secure and efficient transactions while supporting cross-chain functionality. These marketplaces empower creators and collectors with true ownership, low fees, and access to a thriving global ecosystem of digital art and collectibles.
+
+## Polkadot NFT Marketplaces
+----------------
+<ShowcaseImage
+  entries={[
+                {
+      thumbnail: import('/src/assets/dapps/nft-marketplaces/chaotic.png'),
+      href: '/dapps/nft-marketplaces/chaotic/',
+      title: 'Chaotic',
+      description: 'Chaotic on Polkadot. New NFT Marketplace.',
+    },
+                     {
+      thumbnail: import('/src/assets/dapps/nft-marketplaces/uniquenft.png'),
+      href: '/dapps/nft-marketplaces/unique-network/',
+      title: 'Unique Network',
+      description: 'A Polkadot blockchain platform for NFTs.',
+      },  
+              {
+      thumbnail: import('/src/assets/dapps/nft-marketplaces/koda.png'),
+      href: '/dapps/nft-marketplaces/kodadot/',
+      title: 'Kodadot',
+      description: 'An open-source, multi-chain NFT marketplace.',
+    },
+            {
+      thumbnail: import('/src/assets/dapps/nft-marketplaces/artzero.png'),
+      href: '/dapps/nft-marketplaces/artzero/',
+      title: 'ArtZero',
+      description: 'NFT marketplace built with Ink!',
+    },
+  ]}
+/>
+
+## Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=YYWwsws_nsc',
+      title: 'Polkadot NFTs One Stop Shop with KodaDot - Kusamarian',
+    },
+  ]}
+/>
+
+## Polkadot NFT Marketplaces (2025): The Practical Guide for Artists, Builders, and Power Users
+An up-to-date guide to **Polkadot NFT marketplaces**—what’s live, what’s new (e.g., **Chaotic**), and how to choose the right venue across Asset Hub, Unique, Moonbeam/Moonriver, Astar... Includes comparisons, workflows, pitfalls, and FAQs.
+
+## ELI5: How Polkadot NFT marketplaces differ
+* **Many chains, one ecosystem.** On Polkadot, NFTs can live on **Asset Hub** (system parachain) or on **application parachains** (e.g., Unique, Moonbeam, Astar).
+* **Different standards.**
+
+  * **RMRK** via **Singular**: modular “NFT 2.0” features like **nesting** and **equippables**.
+  * **Unique Network**: chain-level features such as **nesting/bundling**, SDKs, and a native wallet.
+  * **EVM chains** (Moonbeam/Moonriver, Astar EVM): familiar ERC-721/1155 UX with MetaMask-style wallets.
+  * **Ink!/PSP** (Astar WASM): marketplaces like **ArtZero** using PSP34/PSP37 standards.
+
+## What’s new in 2025 (quick hits)
+* **Chaotic** launched **public beta (late August 2025)** as a fresh Polkadot-native marketplace from the Koda-aligned team. Early drops, including “Octopus,” sold out quickly.
+* **Unique Network** emphasized marketplace and wallet polish, plus NFT-centric cross-chain messaging concepts; creator tutorials have been refreshed.
+
+## The marketplaces that matter
+
+### Chaotic (Asset Hub)
+**What it is:** A new, fast Polkadot-native marketplace with an **Asset Hub–first** approach and an artist-centric release cadence.
+**Why choose it:** Ideal if you want **Asset Hub NFTs** with modern UX and momentum from the broader KodaDot community.
+**Signals:** Public beta launched in late August 2025; first featured drops sold out.
+
+### Unique Network Marketplace
+**What it is:** The marketplace on **Unique Network** (Polkadot parachain), paired with **Unique Wallet** and SDKs. Supports **nesting/bundling**, dynamic assets, and game-focused flows.
+**Why choose it:** If you want a **full-stack chain + marketplace** tailored to gaming and dynamic NFT experiences.
+
+### ArtZero (Astar, Ink! PSP standards)
+**What it is:** An **Ink!/PSP** marketplace on **Astar** (and Aleph Zero) supporting **PSP34/PSP37** standards and WASM-native workflows.
+**Why choose it:** If you’re building **WASM/Ink!** smart contracts on **Astar L1 (WASM)** and want a marketplace aligned to PSP standards.
+
+## Feature comparison
+| Marketplace            | Primary chain(s)                | Standards / tech                             | Curation                             | Minting | Wallets (typical)                       | Notable 2025 notes                                      |
+| ---------------------- | ------------------------------- | -------------------------------------------- | ------------------------------------ | ------- | --------------------------------------- | ------------------------------------------------------- |
+| **Chaotic**            | Polkadot **Asset Hub**          | Substrate NFTs                               | Curated drops & open listings (beta) | Yes     | Polkadot extension wallets              | **Public beta** launched Aug 2025; early drops sold out |
+| **Unique Marketplace** | **Unique Network** (parachain)  | Chain-level nesting/bundling, SDKs           | Open                                 | Yes     | **Unique Wallet**, extensions           | Campaigns and game-centric features active              |
+| **ArtZero**            | **Astar (WASM)** + Aleph Zero   | **Ink!/PSP34/37**                            | Open                                 | Yes     | Polkadot extension                      | WASM-native marketplace aligned to PSP                  |
+
+
+## How to pick: decision checklist
+* **Where do your users already hold assets?**
+  * **EVM wallets (MetaMask):** Moonbeam/Moonriver → **MoonBeans**, **Raresama**.
+  * **Polkadot extension wallets & Asset Hub:** **Chaotic**, **Singular**, **Unique**.
+* **What features do you need?**
+  * **Game-ready composability (nested, equippables):** **Singular (RMRK)** or **Unique**.
+  * **WASM/Ink! stack:** **ArtZero** on Astar.
+* **Curation vs open listing?** If you want **curation & social proof**, consider **Raresama** or featured drops on **Chaotic**.
+* **Keep docs fresh.** Remove **tofuNFT** references; it sunsetted in 2025.
+
+## Mini-guide: list your first NFT on Polkadot (step-by-step)
+### A) Asset Hub route (Chaotic / Koda)
+1. **Prepare media & metadata** (IPFS pinning, license, attributes).
+2. **Connect Polkadot wallet** on **Chaotic** beta.
+3. **Mint or import** your NFT/collection; confirm fees on **Asset Hub (DOT)**.
+4. **List** with clear supply/price; add collection description and traits.
+5. **Promote** the asset via social channels and on-chain references.
+
+### B) Unique route (Unique Marketplace)
+1. **Fund Unique Wallet** with the native token.
+2. **Create collection** → set attributes, image, royalties.
+3. **Mint tokens**, then **Sell Tokens** from the marketplace tab.
+4. **Enhance trust signals** with complete metadata and links.
+
+## Common pitfalls & pro tips
+* **Wallet mismatch:** Polkadot extension vs MetaMask is the #1 source of failed listings; verify wallet expectations first.
+* **Outdated links:** Many docs still point to **tofuNFT**; it’s closed. Update to **MoonBeans**, **Raresama**, or chain-native options.
+* **Royalties across chains:** Cross-listing across standards can break royalties; start with a single primary venue, then expand.
+* **Metadata durability:** Pin to IPFS with a reliable pinning/back-up plan to avoid broken art later.
+* **Curation lead times:** If targeting **Raresama** or featured drops on **Chaotic**, plan for approvals and community coordination.
+
+## FAQs
+**Which Polkadot NFT marketplaces have the most activity right now?**
+Activity is fragmented by chain and niche. For **EVM** flows, check **MoonBeans** and **Raresama** and their stats pages. For **Polkadot-native** and advanced features, check **Singular (RMRK)** and **Unique**. **Chaotic** is new but growing on Asset Hub.
+
+1. **Is KodaDot gone? What’s Chaotic?**
+**Chaotic** is a fresh marketplace from the Koda-aligned team, positioned as an evolution rather than a 1:1 replacement. It launched **public beta** in late August 2025 with early sell-outs.
+
+2. **Can I move NFTs cross-chain on Polkadot?**
+Yes. Projects have showcased **NFT-focused cross-chain messaging** patterns (often called NFT-XCM). Confirm current docs before planning production flows.

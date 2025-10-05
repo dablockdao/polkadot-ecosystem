@@ -1,0 +1,67 @@
+---
+title: Dapps de Puentes de Polkadot
+description: Explora todas las Dapps de Puentes del ecosistema Polkadot.
+tableOfContents: false
+sidebar: 
+    label: Dapps de Puentes
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Las dApps de puentes o "bridges" de Polkadot permiten una conectividad fluida entre blockchains, permitiendo que los activos y datos se transfieran entre diferentes redes de manera segura y eficiente. Construidas sobre la arquitectura interoperable de Polkadot, estas dApps mejoran la colaboración intercadena, desbloquean liquidez y empoderan a los usuarios con mayor flexibilidad para navegar en el ecosistema descentralizado.
+
+## Dapps de Puentes de Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+    {
+      thumbnail: import('/src/assets/dapps/bridges/hyperbridge.png'),
+      href: '/dapps/bridges/hyperbridge/',
+      title: 'Hyperbridge',
+    },
+    {
+      thumbnail: import('/src/assets/dapps/bridges/snowbridge.png'),
+      href: '/dapps/bridges/snowbridge/',
+      title: 'Snowbridge',
+    },
+      {
+      thumbnail: import('/src/assets/dapps/bridges/chainflip.png'),
+      href: '/dapps/bridges/chainflip/',
+      title: 'Chainflip',
+      },  
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/dapps/bridges/',
+      title: 'Substrate Bridge',
+      },
+  ]}
+/>
+
+## Videos de Dapps de Puentes de Polkadot
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=lrcNyAb_rm8',
+      title: 'Seun Lanlege: Introducción a Hyperbridge - Comunicación Segura Intercadena',
+      description: 'Seun habla sobre transformar Polkadot en un coprocesador para interacción segura intercadena sin compromisos. Explora el estado de la adopción blockchain, la tecnología de Polkadot y una visión para Web3.',
+
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=wuuHpjRqmQM',
+      title: 'Escalado Masivo de Cómputo Intercadena',
+      description: 'Discusión sobre las promesas de Hyperbridge, el lanzamiento inminente de Mainnet, el puente de tokens disponible desde el día uno y casos de uso adicionales más allá del bridging. Hablamos sobre los límites de las pruebas verificables con algunos stacks tecnológicos, ISMP y el poder de los agentes individuales en redes descentralizadas.',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=jXv-PIx5Thg',
+      title: 'Cómo Conectar de Ethereum a Polkadot a través de Snowbridge',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=wq8SAg2TjKY',
+      title: 'Snowbridge, un Puente Ethereum en BridgeHub',
+    },
+  ]} />

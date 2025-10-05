@@ -1,0 +1,47 @@
+---
+title: Outils Polkadot
+description: Explorez l'écosystème Polkadot avec des outils essentiels pour les portefeuilles, les explorateurs de blocs, le développement, la gouvernance, les portefeuilles multisig et l'analyse.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Les outils de l'écosystème Polkadot sont conçus pour améliorer les interactions des utilisateurs et rationaliser diverses opérations au sein du réseau. 
+Des portefeuilles et explorateurs de blocs aux outils de développement et plateformes de gouvernance, 
+ces outils répondent à une large gamme de besoins, tant pour les utilisateurs novices que pour les développeurs chevronnés. 
+
+Cette diversité d'utilitaires assure non seulement une sécurité robuste et une gestion efficace des actifs numériques, 
+mais permet également aux utilisateurs de s'engager pleinement avec le réseau Polkadot, stimulant l'innovation et la croissance au sein de l'écosystème.
+
+## Outils de l'écosystème Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/wallets.png'),
+      href: '/tools/wallets',
+      title: 'Portefeuilles',
+      description: 'Découvrez les portefeuilles les plus avancés pour stocker vos actifs.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/block-explorers.png'),
+      href: '/tools/block-explorers/',
+      title: 'Explorateurs de blocs',
+      description: 'Comprenez chaque mouvement dans le réseau.'
+      },  
+          {
+      thumbnail: import('/src/assets/thumbnails/dao-tools.png'),
+      href: '/tools/dao-tools/',
+      title: 'Outils DAO',
+      description: 'Les outils les plus populaires pour gérer les DAOs.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/dev-tools.png'),
+      href: '/tools/dev/',
+      title: 'Développement',
+      description: 'Commencez votre parcours en tant que développeur Polkadot.'
+      },
+  ]}
+/>  

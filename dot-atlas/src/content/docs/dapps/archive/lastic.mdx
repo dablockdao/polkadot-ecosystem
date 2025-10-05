@@ -1,0 +1,68 @@
+---
+title: Lastic
+description: Lastic is a marketplace for Polkadot Blockspace and Coretime allocation, enabling flexible and accessible blockchain resource management.
+hero:
+  tagline: A marketplace for Polkadot Blockspace
+  image: 
+    file: ../../../../assets/dapps/miscellaneous/lastic.png
+  actions:
+    - text: Site
+      link: https://www.lastic.xyz/
+      icon: external
+    - text: Docs
+      link: https://docs.lastic.xyz/
+      icon: external
+      variant: secondary
+---
+ 
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Lastic is an innovative project within the Polkadot ecosystem designed to **optimize the allocation and trading of blockspace**. It leverages Polkadot’s Coretime feature to create a more dynamic and flexible system for developers and projects to access and utilize the network’s resources.
+
+### Coretime on Polkadot
+Coretime refers to the allocation of computational resources within the Polkadot Network, analogous to “blockspace” in traditional blockchain systems. When a user or project purchases Coretime, they are buying the right to use a portion of the blockspace within a given block or series of blocks on the Polkadot blockchain.
+
+### The Polkadot Blockspace Marketplace
+Lastic’s marketplace includes:
+- **Primary Marketplace**: Purchasing Coretime directly from the network.
+- **Secondary Marketplace**: Blockspace can be divided and re-sold to participants, offering flexibility and fostering a vibrant trading environment.
+
+### Who Can Buy and Sell Blockspace on Lastic?
+Lastic is designed to be user-friendly, catering to builders, tinkerers, and traders. With the help of the Polkadot community, Lastic aims to make blockspace buying, selling, and splitting as easy as trading tokens on a decentralized exchange.
+
+## Coretime Details
+- **Coretime Chain:** The Coretime Chain is a proposed system parachain within the Polkadot Network responsible for the sale and management of Coretime. It handles the allocation of Bulk Coretime and tracks ownership of Coretime as non-fungible assets (NFTs).
+- **Bulk Coretime:** Bulk Coretime is sold periodically on the Coretime Chain, providing 28 days of a full core to its owner. It can be traded, partitioned, or used in various ways, such as being allocated to a particular parachain or task, or pooled into the Instantaneous Coretime Pool.
+- **Instantaneous Coretime:** Sold on the Relay Chain immediately prior to its usage on a block-by-block basis, Instantaneous Coretime allows for immediate allocation of core resources for tasks without the need to pre-schedule.
+- **The Instantaneous Coretime Pool:** This pool allows owners of Bulk Coretime to contribute a portion of their Coretime to a shared pool, enabling tasks to be scheduled on Polkadot immediately before they are processed.
+
+## Lastic’s Role in the Polkadot Ecosystem
+- **Shiden Collaboration:** Lastic recently performed **the first-ever coretime broker trade with Shiden Network on the Kusama network**, demonstrating the flexibility and potential of the Coretime model.
+- **Pricing and Accessibility:** The transition from Parachain Auctions to Coretime Sales marks a significant evolution in Polkadot’s ecosystem. **Coretime Sales introduce flexibility, affordability, and accessibility**, catering to a broader range of projects with varying needs.
+
+**Conclusion**
+Lastic is set to revolutionize the way blockspace is allocated and traded within the Polkadot ecosystem. By leveraging the Coretime model, Lastic offers unprecedented flexibility, affordability, and accessibility for developers and projects. Stay tuned for more updates and developments as Lastic continues to push the boundaries of blockchain technology.
+- <small>Related Token/s:</small> **DOT, KSM**
+
+## Lastic Marketplace Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+        href: 'https://www.youtube.com/watch?v=Zd6tEWUONH0',
+      title: 'Lastic Coretime Markets - The Demand?',
+      description: 'Session by Phil Lucsok of Lastic. Introduction to Lastic Blockspace Marketplace at the Polkadot Decoded 2024.',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=eACwMGZCXeE',
+      title: 'What Is Lastic? Explore The First Blockspace Marketplace On Polkadot ',
+      description: 'Lastic is a Blockspace marketplace built on Polkadot’s Coretime Model. Designed with a simplified and friendly user experience, Lastic allows builders, tinkerers, and traders to get and utilize the product of blockchains: blockspace.'
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=fA2ckKxgEg8',
+      title: 'Encode x Polkadot Summer Educate 2024 - What is Coretime? with Lastic',
+      description: 'Learn about how coretime is allocated and used. This session covers blockchain concepts before exploring how the coretime auction system works, focussing on splitting regions and interlacing as well as concepts like elastic scaling. Aurora Poppyseed is the Founder of Lastic, which is a coretime marketplace.'
+    },
+  ]} />

@@ -1,0 +1,103 @@
+---
+title: Acurast
+description: Acurast ist eine dezentrale serverlose Cloud-Plattform, die sichere, vertrauliche und überprüfbare Berechnungen für verschiedene Anwendungen bereitstellt.
+sidebar:
+    label: ✪ Acurast
+    order: 2
+hero:
+  tagline: Eine dezentrale serverlose Cloud.
+  image: 
+    file: ../../../../../assets/dapps/depin/acurast.png
+  actions:
+    - text: Dapp
+      link: acurast.com 
+      icon: external
+    - text: Docs
+      link: docs.acurast.com 
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+In der heutigen vernetzten Welt ist zentralisierte Vertrauen allgegenwärtig, insbesondere bei Rechenressourcen und Datenspeicherung. Die zunehmenden großflächigen Datenlecks und Sicherheitsverletzungen haben jedoch die Notwendigkeit für eine erlaubnisfreie und dezentrale Cloud-Zukunft unterstrichen. Acurast Network, eine Layer-1-Blockchain, geht diese Herausforderungen an, indem es eine dezentrale, serverlose Cloud-Lösung bietet. Dieser Artikel untersucht die Funktionen, Architektur und Vorteile von Acurast für Entwickler und Organisationen im Polkadot-Ökosystem.
+
+## Was ist Acurast?
+Acurast ist eine dezentrale serverlose Cloud-Plattform, die sichere, vertrauliche und überprüfbare Berechnungen für verschiedene Anwendungen bereitstellt. Durch die Nutzung einer modularen Architektur, die die Konsens-, Ausführungs- und Anwendungsschichten trennt, stellt Acurast Skalierbarkeit, Interoperabilität und Sicherheit für dezentrale Anwendungen (dApps) sicher.
+
+### Wichtige Funktionen von Acurast
+1. **Vertraulicher Berechnungsansatz**: Acurast verwendet fortschrittliche kryptografische Techniken, um die Datensicherheit und Integrität zu gewährleisten.
+2. **Modulare Architektur**: Die Architektur trennt Konsens-, Ausführungs- und Anwendungsschichten, um Skalierbarkeit und Flexibilität zu verbessern.
+3. **Dezentraler Orchestrator**: Der Orchestrator ordnet Rechenressourcen den Anforderungen der Verbraucher auf eine vertrauenslose und effiziente Weise zu.
+4. **Interoperabilität**: Unterstützt mehrere Ökosysteme und ermöglicht eine nahtlose Interaktion zwischen Web3- und Web2-Anwendungen.
+
+## Die Architektur von Acurast
+Die Architektur von Acurast wurde entwickelt, um die Art und Weise zu transformieren, wie Anwendungen entworfen und bereitgestellt werden, mit einem Fokus auf Privatsphäre, Überprüfbarkeit und Dezentralisierung.
+
+### Konsensschicht
+Die Konsensschicht bildet das Fundament von Acurast und ist verantwortlich dafür, Verbraucherjobs mit Prozessorressourcen abzugleichen. Sie umfasst:
+
+- **Orchestrator**: Plant Jobs und ordnet sie den passenden Prozessoren zu, was eine flüssige Zuordnung und den Werttransfer zwischen Prozessoren und Verbrauchern ermöglicht.
+- **Reputations-Engine**: Sichert die Zuverlässigkeit, indem sie die Reputationswerte der Prozessoren aktualisiert und ehrliches Verhalten anreizt.
+
+### Ausführungsschicht
+Die Ausführungsschicht übernimmt die tatsächliche Verarbeitung von Jobs und besteht aus:
+- **Acurast Secure Hardware Runtime (ASHR)**: Nutzt dedizierte Android-Smartphones für die Off-Chain-Infrastruktur.
+- **Acurast Zero-Knowledge Runtime (AZKR)**: Implementiert Zero-Knowledge-Proofs, um sichere und vertrauliche Berechnungen zu gewährleisten.
+- **Universal Interoperability Layer**: Enthält Module, die eine Interaktion mit verschiedenen Ökosystemen ermöglichen und eine nahtlose Integration sicherstellen.
+
+### Anwendungsschicht
+Die Anwendungsschicht unterstützt sowohl Web2- als auch Web3-Anwendungen und ermöglicht eine Vielzahl von Anwendungsfällen, einschließlich DeFi-Protokollen und mehr. Die Architektur von Acurast stellt Privatsphäre und Überprüfbarkeit sicher, ohne neue vertrauenswürdige Entitäten einzuführen.
+
+## Stakeholder im Acurast-Netzwerk
+- **Verbraucher:** Verbraucher sind Einzelpersonen oder Organisationen, die Rechenaufgaben sicher und effizient auslagern müssen. Sie können Jobs in zugänglichem JavaScript-Code definieren, diese registrieren und Parameter wie Zeitplan und Kosten festlegen. Der Acurast Orchestrator ordnet diese Jobs dann den passenden Prozessoren zu.
+- **Prozessoren:** Prozessoren bieten ihre Rechenressourcen an, um die von den Verbrauchern definierten Jobs auszuführen. Diese Prozessoren nutzen dedizierte Android-Smartphones als Off-Chain-Infrastruktur hinter der Acurast Secure Hardware Runtime (ASHR). Im Gegenzug für ihre Dienste werden Prozessoren von den Verbrauchern belohnt.
+- **Orchestrator:** Der Orchestrator ist das Kernstück der Konsensschicht und dafür verantwortlich, Jobs zu planen und Prozessorressourcen mit den Anforderungen der Verbraucher abzugleichen. Er unterstützt verschiedene Preisfindungsmechanismen wie Auktionen und Werbung, was die Entwicklererfahrung äußerst zugänglich und nahtlos macht.
+
+## Unterstützte Ökosysteme und Integrationen
+Acurast wurde mit Interoperabilität im Kern entwickelt und unterstützt zahlreiche Ökosysteme und ermöglicht die Integration mit Umgebungen wie EVM, WASM und Parachains. Diese Flexibilität ermöglicht es Projekten und Unternehmen, sicher miteinander zu interagieren, unabhängig von der zugrunde liegenden Technologie.
+
+### Acurast Jobs
+Acurast Jobs sind Aufgaben, die von Prozessoren in ihrer Trusted Execution Environment ausgeführt werden. Diese Jobs produzieren ein Ergebnis und einen Ausführungsbeweis, die dann an die angegebene Ziel-Chain, wie Astar auf Polkadot, geliefert werden.
+
+## Implementierung und Bereitstellung
+Acurast nutzt ein Substrate Runtime, das aus mehreren Substrate Pallets für das Acurast-Protokoll besteht. Das Netzwerk hat einen Kusama-Parachain-Slot für sein incentiviertes Testnetz gesichert und plant, an den Polkadot Parachain-Auktionen teilzunehmen. Diese Integration bietet Zugang zur Sicherheit von Polkadot und Kusama und ermöglicht die Kommunikation mit anderen Parachains über das Cross-Consensus Message Format (XCM).
+
+### Fazit
+Acurast Network stellt einen bedeutenden Fortschritt in der Entwicklung der dezentralen Cloud-Computing-Technologie innerhalb des Polkadot-Ökosystems dar. Durch die Bereitstellung einer sicheren, skalierbaren und interoperablen Plattform für vertrauliche Berechnungen befähigt Acurast Entwickler und Organisationen, innovative Anwendungen zu erstellen, während gleichzeitig Datenschutz und regulatorische Compliance gewahrt bleiben. Egal, ob Sie ein Entwickler sind, der sichere Berechnungen in Ihre dApps integrieren möchte, oder eine Organisation, die Rechenaufgaben sicher auslagern möchte, Acurast bietet die notwendigen Werkzeuge und die Infrastruktur, um in einer dezentralen Zukunft erfolgreich zu sein.
+
+## Acurast Community-Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=9uqN_f5839g',
+      title: 'Acurast at DePIN Day Web Sumit Lisbon 2024',
+      description: 'Begleiten Sie Pascal Brun, während er darüber spricht, wie Acurast die KI mit vertraulichen Berechnungen revolutioniert.' 
+      },
+          {
+      href: 'https://www.youtube.com/watch?v=KSq-A-CJDyc',
+      title: 'Erstellen Sie Ihre erste Acurast-Bereitstellung',
+      },
+      {
+      href: 'https://www.youtube.com/watch?v=RZttiIIiP20',
+      title: 'Acurast Cloud in 3 Minuten erklärt',
+      description: 'Veränderung der Cloud-Landschaft: Mobile-Powered Disruption für dezentrale, erlaubnisfreie und vertrauenslose Berechnungen.'  
+      } ,
+          {
+      href: 'https://www.youtube.com/watch?v=ZJyCV64m3jM',
+      title: 'Wie man ein Prozessor wird',
+      description: 'Möchten Sie ein Acurast-Prozessor werden und bis zu 250cACU pro Monat verdienen? Befolgen Sie einfach die Schritte und innerhalb von 2 Minuten sind Sie bereit!'  
+      } ,
+                {
+      href: 'https://www.youtube.com/watch?v=2Pxw2u0pZ_E',
+      title: 'Acurast Processor Lite - Einstieg',
+      description: 'Möchten Sie mit Ihrem Handy Berechnungen durchführen und bis zu 250cACU pro Monat verdienen und Teil der Cloud-Rebellion werden, um MIST☁️-Punkte zu sammeln? Befolgen Sie einfach die Schritte und innerhalb von 2 Minuten sind Sie bereit!'  
+      } ,
+                {
+      href: 'https://www.youtube.com/watch?v=Qir_eIx4DQo',
+      title: 'AWeb3 Computer Cloud Powered by Mobile Devices - SM 90',
+      description: 'Starten Sie mit Acurast Pascal Brun über die Multi-Chip-TEE-Plattform, die universelle Berechnungen für Web3 bereitstellt.',
+      }
+       ]
+}/>

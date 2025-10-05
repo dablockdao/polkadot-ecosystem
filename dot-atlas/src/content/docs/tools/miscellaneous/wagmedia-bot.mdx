@@ -1,0 +1,82 @@
+---
+title: 'WagMedia Bot'
+description: Streamline Discord communication with WagMedia Bot, advanced monitoring, Prisma database integration, and efficient content management for Polkadot.
+hero:
+  tagline: Wagmedia Communications Bot.
+  image: 
+    file: ../../../../assets/hub/daos/wagmedia.png
+  actions:
+    - text: Github
+      link: https://github.com/Wag-Media/wagmedia-com-bot
+      icon: external
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+WagMedia Communications Bot is Discord bot specifically designed to streamline content management initiatives within the Polkadot ecosystem. Developed for the WagMedia community, this bot efficiently monitors configured Discord channels, recording valid posts and reactions to populate a database. This database forms the foundation for WagMedia Com Web, the central platform for content dissemination.
+
+## Features of WagMedia Bot
+1. **Advanced Discord Monitoring:** Built using **discord.js**, WagMedia Bot tracks messages and reactions in specified channels. This ensures seamless monitoring of community interactions, enabling efficient content curation.
+2. **Database Integration with Prisma:** At the core of WagMedia Bot’s functionality lies its robust database, powered by **Prisma**. This integration ensures reliable storage and retrieval of data, supporting the bot’s high-performance operations.
+3. **Application Commands with Discord-FP:** The bot leverages **Discord-FP** for intuitive and efficient application commands, ensuring a user-friendly experience for server administrators and users.
+4. **Typescript Foundation:** WagMedia Bot is built with **TypeScript**, ensuring a strong, scalable, and maintainable codebase. Using tools like **esbuild** and **tsx**, the development process is both streamlined and efficient.
+
+
+<ShowcaseCTA title="Setup the WagMedia Bot">
+Here’s a quick summary of how to get started with the Wagmedia Bot. For detailed instructions and additional information, refer to the **[official README file](https://github.com/Wag-Media/wagmedia-com-bot) in the GitHub repository** provided by the authors.
+</ShowcaseCTA>
+
+## General Setup Instructions
+### Enable Developer Mode in Discord
+To begin, users must enable Developer Mode in Discord under **User Settings » Advanced**. This provides access to crucial server IDs required for bot configuration.
+
+### Server Creation and Configuration
+If a server is not already in place, create one and save its **guildId** as the `DISCORD_GUILD_ID`. Proper role permissions should also be configured, ensuring the bot can log messages and interact within monitored channels.
+
+### Bot Creation
+Navigate to the [Discord Developer Portal](https://discord.com/developers/) and set up a new application. From there:
+- Add a bot to the application and copy the token for the `DISCORD_BOT_TOKEN` environment variable.
+- Configure the bot’s permissions to match **414464683072** for optimal functionality.
+
+## Local Development
+### Cloning the Repository
+To start local development, clone the WagMedia Bot GitHub repository:
+```bash
+git clone git@github.com:Wag-Media/wagmedia-com-bot.git
+```
+
+### Initial Setup
+After cloning the repository:
+1. Install dependencies with `npm install`.
+2. Copy `.env.sample` to `.env` and populate it with necessary variables such as database connection strings and Discord settings.
+3. Configure additional settings in `config.ts`, including logging and database seeding options.
+
+### Database Configuration
+WagMedia Bot uses a **PostgreSQL** database managed with Prisma. To update the database schema after modifications, use:
+
+```bash
+npx prisma migrate dev
+```
+
+## Running the Bot
+To run the bot in development mode:
+
+```bash
+npm run dev
+```
+
+For production-like environments, use:
+
+```
+npm run start
+```
+
+## Seeding the Database
+Database seeding is crucial for adding or updating monitored elements, such as emojis representing payments. Use:
+
+```
+npx prisma db seed
+```
+
+## Production Deployment
+The bot’s first production instance is deployed on Heroku, though it can run on any server. Heroku handles automatic builds and deployments from the repository’s master branch. Ensure all environment variables are configured correctly in Heroku for seamless operation. Developers should conduct testing on a staging branch before deploying updates to production.

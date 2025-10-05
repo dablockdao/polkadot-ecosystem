@@ -1,0 +1,114 @@
+---
+title: xcscan
+description: Learn how to use XCSCAN to trace Polkadot cross-chain (XCM) transfers, channels, and asset flows with filters and analytics.
+hero:
+  tagline: Polkadot’s Native Cross-Chain Explorer
+  image: 
+    file: ../../../../assets/tools/dev/ocelloids.png
+  actions:
+    - text: Tool
+      link: https://xcscan.io/
+      icon: external
+    - text: X
+      link: https://x.com/SO_DA_zone
+      icon: external
+      variant: secondary
+---
+
+## XCSCAN: Polkadot’s Native Cross-Chain Block Explorer (Expert Guide)
+
+ XCSCAN is a purpose-built explorer for Polkadot and Kusama that visualizes native cross-chain (XCM) activity with clean traces, filters, and analytics. This guide explains what it does, how it differs from general explorers, and how to use it to trace assets, channels, and flows end-to-end.
+ 
+## What is XCSCAN (and why it matters)?
+
+**XCSCAN** is a **native cross-chain (XCM) explorer** for Polkadot & Kusama. Unlike general block explorers that focus on single-chain blocks and extrinsics, XCSCAN focuses on **XCM messages, multi-hop routes, assets, and channels**, making multi-chain flows observable and explainable at a glance. 
+
+Why it matters:
+
+* Cross-chain is the default in Polkadot. Understanding **what moved, where, and why** is essential for wallets, dapps, analysts, and governance reviewers.
+* XCSCAN adds **analytics** (volumes, transfers, accounts, avg. times) and **filters** (by chain, asset, action, USD threshold) tailored to multi-chain reality. 
+
+## ELI5: Cross-chain on Polkadot
+
+Polkadot uses **XCM (Cross-Consensus Messaging)** to let chains talk to each other. Think of sending a parcel that might pass through several hubs before reaching the destination. XCSCAN shows the entire parcel route—**origin → hops → destination**—plus which **asset** moved and through which **channel**. 
+
+## Key features of XCSCAN
+
+* **Live Cross-Chain Transactions:** Stream of XCM transfers with **chain/asset/action** filters and USD size presets (e.g., ≥\$10k, ≥\$100k, ≥\$1M). 
+* **Route Visualization & Status:** Clear view of **origin/destination** and status across hops, making multi-step XCM legible. 
+* **Analytics Dashboards:** Time-windowed **volume, transfers, accounts, avg. time**; breakdowns by **networks, assets, channels** (24H/7D/30D/90D). 
+* **Open-Source, Polkadot-Native Focus:** Purpose-built for **Polkadot/Kusama** XCM, maintained by SO/DA zone (ocelloids). 
+* **Ecosystem Coverage:** Tracks cross-chain flows across many parachains and system chains; community updates highlight multi-network coverage. 
+
+### Related context
+
+* **Subscan XCM Dashboard:** General explorer with an XCM section.
+* **Statescan:** Open-source explorer covering substrate chains; useful for chain-level detail alongside XCSCAN’s cross-chain view.  
+
+## Mini-guide: Trace a cross-chain transfer
+
+1. **Open XCSCAN “Transactions.”** Paste a **tx hash** or **address** to narrow scope.  
+2. **Set filters:**
+
+   * **Chains:** pick **origin** and/or **destination** chain(s).
+   * **Assets:** select DOT/USDC/xc-assets, etc.
+   * **Actions/Status:** e.g., `Transfer`, `Swap`, `Success`.
+   * **Thresholds:** choose USD presets (≥\$10k/≥\$100k/≥\$1M) to spot whales. 
+3. **Open the transfer:** Inspect **route, hops, channel IDs**, and **final status**.
+4. **Cross-verify:**
+
+   * If you need underlying **extrinsics/events**, cross-check the same hash/address on **Subscan** or chain-specific explorers.  
+5. **Measure context:** Use **Analytics** to compare the transfer against **24H/7D/30D** trends for the same **asset/chain/channel**.  
+
+## Practical example: Follow DOT from Relay → Asset Hub → Parachain
+
+* **Scenario:** You sent DOT that was **re-anchored on Asset Hub** and then **forwarded** to a DeFi parachain.
+* **In XCSCAN:**
+
+  * Filter **Origin:** Relay / **Destination:** your parachain.
+  * Filter **Asset:** DOT (or wrapped/xc representation).
+  * Open the item to see **multi-hop** steps and **channel path**.
+  * Check **status** and any **timeouts** or **retries** shown. 
+* **Analytics follow-up:**
+
+  * Under **Networks/Assets**, view DOT flows for the last **30D/90D** and spot **net inflow/outflow** trends. Community analyses periodically reference these dashboards for ecosystem flow insights.
+
+## Common pitfalls & tips
+
+* **Confusing token representations:** The same economic asset (e.g., DOT) can appear as **xcDOT** or different **asset IDs** across chains. Always filter by **both symbol and origin** if available 
+* **Missing context on failures:** XCSCAN flags status, but for **execution reasons** drill into **extrinsics/events** on general explorers or chain logs.  
+* **USD thresholds hide small transfers:** When presets are active (e.g., ≥\$100k), you won’t see retail-sized flows—**reset filters**.  
+* **Latency vs. finality:** Analytics show averages; **individual transfers** may be faster/slower depending on queue and channel state.  
+* **Know your channel:** HRMP/XCM channels can be temporarily paused or upgraded—if a path looks odd, verify channel health in network dashboards or release notes. 
+
+ 
+## FAQs
+
+**1) What is XCSCAN used for that general explorers aren’t?**
+Clear **multi-hop XCM traces** and **flow analytics** (by chain, asset, channel) purpose-built for cross-chain activity.  
+
+**2) Does XCSCAN show on-chain blocks and extrinsics like Subscan?**
+It focuses on **cross-chain messages and flows**. For full block/extrinsic details, **pair it with Subscan**.  
+
+**3) Can I track large transfers only?**
+Yes—set **USD presets** (≥\$10k/≥\$100k/≥\$1M) in the Transactions view.  
+
+**4) Is XCSCAN open-source?**
+Yes; it’s described as open-source and **Polkadot/Kusama native** in official announcements and the site. 
+
+**5) Where do I verify XCM execution details?**
+Cross-check the **same tx hash** on Subscan (XCM dashboard + extrinsics) or chain-specific explorers.  
+
+**6) Does XCSCAN cover all parachains?**
+It aims for wide coverage across **Polkadot & Kusama networks**; exact coverage evolves—check the **live app** and community updates. 
+
+**7) How do I measure ecosystem flows (inflow/outflow) over time?**
+Use **Analytics** to view **volumes/transfers/accounts/latency** by **asset/chain/channel** over **24H/7D/30D/90D**.  
+
+**8) Is there an official list of Polkadot explorers?**
+Yes—Polkadot Support maintains a reference list (updated periodically). 
+  
+## Conclusion 
+
+XCSCAN makes **Polkadot’s multi-chain reality** transparent—ideal for wallets, DeFi teams, and governance analysts needing **end-to-end XCM visibility**. Pair it with a general explorer for extrinsics/events and you’ll have a **complete forensic and analytics toolkit** for cross-chain operations.
+ 

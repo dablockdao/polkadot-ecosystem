@@ -1,0 +1,144 @@
+---
+title: 'Aventus Network'
+description: The Aventus Network (AvN) represents a new generation of scalable and interoperable blockchain technology.
+hero:
+  tagline:  A Scalable Network Powering a Global Web3 Vision for All.
+  image: 
+    file: ../../../../assets/dapps/miscellaneous/aventus-network.png
+  actions:
+    - text: Products
+      link: https://www.aventus.io/
+      icon: external
+    - text: Github
+      link: https://github.com/AventusProtocolFoundation
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+## Aventus Network: A Scalable Network Powering a Global Web3 Vision for All
+Aventus Network is an enterprise-grade Polkadot parachain that helps businesses launch high-throughput, interoperable blockchain applications—and even their own **appchains**—with predictable fees, governance tooling, and cross-ecosystem connectivity (Polkadot ↔ Ethereum). Recent deployments like **Energy Web X** and **Truth Network** showcase the model in production.
+
+## Aventus in one minute (ELI5)
+Aventus is a **Polkadot parachain** designed for businesses. Think of it like **managed infrastructure** that lets you:
+
+* Run fast, low-fee transactions with deterministic finality.
+* Connect to Polkadot and Ethereum ecosystems.
+* Launch your **own appchain** (your project’s dedicated blockchain) while inheriting security and interoperability from Aventus/Polkadot.
+
+In short: **Build on shared rails now; scale to your own chain later**—without starting from zero.
+
+## Why Aventus matters in the Polkadot stack
+Polkadot provides **shared security** and **interoperability** for many chains (parachains). Aventus is one of those chains, purpose-built for **enterprise adoption**—tooling, governance, and a “factory” approach that cuts time-to-value.
+
+Aventus highlights:
+* Positioned as a Polkadot parachain partner in the enterprise lane.
+* **Blockchain Factory**: deploy bespoke networks fast (weeks), with operational support and governance tooling.
+* Documented claims of significant early throughput for business clients. *(Verify per integration.)*
+
+## Key capabilities
+* **Enterprise-grade throughput & predictable costs** — designed for high-volume use cases.
+* **Interoperability** with Polkadot and Ethereum: governance and APIs that meet teams where they are; mint on Ethereum, settle or operate on your own chain.
+* **Appchains on Aventus** (“Layer-3” style): projects can launch sovereign chains that still benefit from Aventus/Polkadot connectivity.
+* **Out-of-the-box tooling**: Gateway API, explorer, governance dApp, and managed deployment flows.
+* **Ecosystem integrations**: real deployments like **Energy Web X** (energy) and **Truth Network** (verification/prediction markets).
+
+## Architecture & how it works
+### 1) Polkadot parachain foundation
+Aventus runs as a **parachain**—a specialized blockchain leveraging Polkadot’s shared security and cross-chain messaging. This gives enterprise apps access to system chains like **Asset Hub** for asset issuance and management across the network.
+
+### 2) Enterprise middleware & governance
+Aventus provides governance and API layers that integrate with familiar tools (e.g., polkadot.js extension) and can mirror Ethereum-style workflows where needed—useful for teams migrating from EVM stacks.
+
+### 3) Appchain model (Aventus 2.0)
+With Aventus 2.0, projects can spin up **application-specific chains** (appchains) on top of Aventus, gaining sovereignty over fees, tokens, and upgrade schedules while tapping into Aventus/Polkadot interoperability. **Truth Network** is a live example.
+
+### 4) Cross-ecosystem connectivity
+Enterprises can build flows that **bridge** or **settle** value across Ethereum and Polkadot, aligning with trust-minimized bridging roadmaps in the Polkadot ecosystem (e.g., Snowbridge for ETH). *(Context for builders planning liquidity routes.)*
+
+## Ecosystem proof points
+* **Energy Web X (EWX)** — launched on Polkadot to coordinate energy “worker node” networks; Aventus supported via parachain-as-a-service and infra components.
+* **Truth Network** — a decentralized verification & prediction market chain launched as an Aventus **appchain**, inheriting Aventus/Polkadot connectivity.
+* **Parity × Aventus collaboration** — initiative to bring blockchain to businesses and expand Polkadot adoption.
+
+## Aventus vs alternatives (quick comparison)
+| Platform                     | What it is                                                        | Best for                                                                   | Interop focus       | Governance/tooling                                | Notes                                                  |
+| ---------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------- | ------------------------------------------------- | ------------------------------------------------------ |
+| **Aventus Network**          | Enterprise-oriented **Polkadot parachain** + **appchain factory** | Enterprises needing fast path to production and option to launch appchains | Polkadot ↔ Ethereum | Governance dApp, Gateway API, managed deployments | Deployed cases: Energy Web X, Truth Network            |
+| **Moonbeam**                 | EVM-compatible smart-contract parachain on Polkadot               | Teams wanting native EVM + Polkadot interop                                | EVM + Polkadot      | Standard EVM tooling                              | Major DeFi deployments (e.g., Uniswap v3 via Moonbeam) |
+| **Asset Hub (system chain)** | Polkadot system chain for asset issuance & management             | Minting/handling assets & NFTs across Polkadot                             | Native Polkadot     | System-level features                             | Fee-efficient asset ops; not a general dApp chain      |
+
+> This table helps route decisions: if you need enterprise onboarding + potential **appchain** later, Aventus fits; if you want **EVM smart contracts** now with broad tooling, Moonbeam fits; if you mainly **issue/manage assets**, Asset Hub fits.
+
+## Mini-guide: From idea → pilot → appchain
+### Step 1 — Frame the use case
+Define throughput, privacy, and interop requirements (e.g., “mint on Ethereum, operate on my chain”).
+
+### Step 2 — Validate on Aventus Network
+Use Aventus’s Gateway API + explorer to prototype flows and measure fees/finality.
+
+### Step 3 — Decide on deployment model
+* **Stay on Aventus** (shared chain) for simpler ops and time-to-value.
+* **Launch an appchain** with Aventus 2.0 if you need custom fees, tokenomics, or isolation.
+
+### Step 4 — Governance & compliance
+Configure voting and permissions with the Aventus governance dApp (works with polkadot.js extension).
+
+### Step 5 — Interop routes
+Plan asset routing via **Asset Hub** and ETH connectivity as needed (e.g., Snowbridge context).
+
+## Common pitfalls & pro tips
+**Pitfall:** Assuming EVM ≡ Polkadot.
+**Tip:** If you need strict EVM bytecode execution, evaluate **Moonbeam**; Aventus focuses on enterprise flows, APIs, governance, and appchains with Polkadot/Ethereum interoperability.
+
+**Pitfall:** Treating governance as an afterthought.
+**Tip:** Bake governance in early using the Aventus governance platform (supports polkadot.js extension) and align with enterprise change-management.
+
+**Pitfall:** Underestimating integration effort.
+**Tip:** Use Aventus’s “Blockchain Factory” to accelerate deployment (weeks, not months) and tap managed infra.
+
+**Pitfall:** Ignoring asset life cycle across Polkadot.
+**Tip:** Use **Asset Hub** for mint/burn/transfer patterns; design fee policies and reserve balances for predictable UX.
+
+## FAQs
+**1) Is Aventus a Polkadot parachain?**
+Yes—Aventus operates its own parachain focused on enterprise adoption within Polkadot.
+
+**2) What’s the AVT token used for?**
+AVT powers the Aventus Network; supply figures and exchange listings are maintained by Aventus (check the latest community resources).
+
+**3) Can I launch my own chain on Aventus?**
+Yes—Aventus 2.0 supports **appchains** so projects can run sovereign chains while inheriting Aventus/Polkadot connectivity. **Truth Network** is a live example.
+
+**4) How does Aventus connect to Ethereum?**
+Aventus emphasizes interoperability (governance + APIs + cross-ecosystem flows). Polkadot’s trustless bridge work (e.g., Snowbridge) provides context for ETH routes where needed.
+
+**5) What real-world deployments exist?**
+**Energy Web X** (energy markets) and **Truth Network** (verification/prediction markets) publicly reference Aventus in their architectures.
+
+**6) Does Aventus support EVM smart contracts directly?**
+Aventus is Substrate-based with Ethereum-compatible components. Teams requiring native EVM execution typically evaluate **Moonbeam** alongside Aventus.
+
+**7) What about transaction scale?**
+Aventus positions for high throughput and predictable fees; validate with a pilot to benchmark your specific workload.
+
+**8) How does Asset Hub fit?**
+Asset Hub is Polkadot’s system chain for issuing/managing assets; Aventus apps can route assets via Asset Hub to reach other parachains efficiently.
+
+## Conclusion
+Aventus gives enterprise teams a **production-ready on-ramp** to Polkadot—with **interoperability**, **governance tooling**, and an **appchain path** when you outgrow shared capacity. If you’re planning a high-volume Web3 system (supply chain, loyalty, energy, verification), Aventus offers a credible way to ship quickly—**without** locking yourself into a single ecosystem.
+
+## Aventus Network Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=5hGrRRffQMk',
+      title: 'Aventus Network Enterprise Use Cases',
+      description: 'A chat with the team of Aventus and guests about the project use cases.',
+          },
+  ]} />
+

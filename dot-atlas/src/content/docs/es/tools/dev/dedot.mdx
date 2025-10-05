@@ -1,0 +1,85 @@
+---
+title: 'Dedot'
+description: 'Descubre Dedot, un cliente JavaScript ligero que mejora el desarrollo de dapps para Polkadot y blockchains basadas en Substrate.'
+hero:
+  tagline: 'El Futuro del Desarrollo de Dapps en el Ecosistema Polkadot.'
+  image: 
+    file: ../../../../../assets/tools/dev/dedot.png
+  actions:
+    - text: 'Sitio'
+      link: https://docs.dedot.dev/
+      icon: external
+    - text: 'Github'
+      link: https://github.com/dedotdev/dedot
+      icon: external
+      variant: secondary
+---
+    
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+**Dedot** es un cliente JavaScript de próxima generación diseñado específicamente para blockchains Polkadot y Substrate. Con su arquitectura ligera y tree-shakable y un conjunto de características avanzadas, Dedot promete redefinir la experiencia del desarrollador (DX) para la creación de aplicaciones descentralizadas (dapps) en un ecosistema multi-chain.
+
+## Abordando los Desafíos de la API Polkadot.js
+La API Polkadot.js (@polkadot/api) ha sido la solución preferida para desarrolladores en el ecosistema Polkadot. Si bien ha simplificado significativamente el desarrollo de dapps, han surgido varias limitaciones con el tiempo:
+
+- **Tamaño de Bundle Grande**: Dependencias como `wasm-blob` y `bn.js`, junto con numerosas definiciones de tipos no utilizadas, inflan el tamaño del bundle incluso en aplicaciones básicas.
+- **Alto Consumo de Memoria**: Conectarse a múltiples endpoints RPC puede resultar en un uso excesivo de memoria, particularmente problemático para billeteras y aplicaciones que interactúan con numerosas redes.
+- **Soporte Limitado de Tipos y Sugerencias de API**: El soporte predeterminado para Polkadot y Kusama deja a los desarrolladores que trabajan con cadenas personalizadas basadas en Substrate luchando para definir tipos e identificar APIs apropiadas.
+
+## Cómo Innovar Dedot
+Dedot fue construido para abordar estos puntos dolorosos mientras adopta los últimos avances en tecnología blockchain. Aquí está cómo Dedot se destaca:
+
+1. **Compacto y Eficiente**:
+    - **Reducción del Tamaño del Bundle**: Al eliminar dependencias de `wasm-blob` y `bn.js` y aprovechar Metadata v14 y v15, Dedot reduce el tamaño del bundle en 7-8 veces comparado con @polkadot/api.
+    - **Uso Optimizado de Memoria**: La dependencia de Dedot en tipos nativos de TypeScript/JavaScript y el manejo eficiente de grandes blobs de metadata resultan en un consumo de memoria 4-5 veces menor.
+2. **Soporte Mejorado de Tipos y APIs**:
+    - Dedot genera dinámicamente tipos y APIs de TypeScript a partir de metadata de runtime, proporcionando sugerencias precisas para blockchains basadas en Substrate y contratos inteligentes ink!.
+    - El paquete dedicado `@dedot/chaintypes` asegura que los desarrolladores puedan adaptarse rápidamente a actualizaciones de runtime y mantener la compatibilidad a través de múltiples redes.
+3. **Soporte para Casos de Uso Avanzados**:
+    - **APIs de Contratos Tipados**: Los desarrolladores pueden disfrutar de una integración sin fisuras y sugerencias de tipos para contratos inteligentes ink!.
+    - **Cliente JSON-RPC de Bajo Nivel**: Para aquellos que requieren interacción directa con nodos blockchain, Dedot proporciona un cliente de bajo nivel totalmente tipado.
+4. **Características Visionarias**:
+    - **Integración de Light Client**: Con soporte para Smoldot, Dedot permite a los desarrolladores construir dapps ligeras sin depender de la sincronización de nodos completos.
+    - **Caching de Metadata**: Un mecanismo de caching integrado acelera la recuperación de metadata, mejorando el rendimiento de la aplicación.
+
+## Una Transición Sin Fisuras desde la API Polkadot.js
+Reconociendo la amplia adopción de @polkadot/api, el diseño de Dedot incorpora un estilo de API familiar para simplificar la migración. Aunque no es un reemplazo directo, sus similitudes intencionales hacen que la transición sea más fluida e intuitiva para los desarrolladores.
+
+## Características en el Horizonte
+La hoja de ruta de Dedot está repleta de innovaciones destinadas a mejorar aún más la experiencia de desarrollo de dapps:
+
+- **Metadata Compacta**: Optimizar la metadata para incluir solo información esencial, reduciendo la carga de la red y mejorando la eficiencia de la aplicación.
+- **Utilidades XCM**: Simplificar la creación de mensajes cross-chain mediante herramientas intuitivas.
+- **Soporte para React Native**: Empoderar a los desarrolladores para construir aplicaciones móviles para el ecosistema Polkadot.
+
+#### La Comunidad Dedot
+El desarrollo de Dedot es un esfuerzo colaborativo impulsado por un equipo apasionado y la comunidad blockchain en general. Apoyado por subvenciones de la Web3 Foundation, el equipo detrás de Dedot ha demostrado un compromiso con la innovación a través de proyectos como Coong Wallet e InSpace.
+
+El feedback y soporte de la comunidad son cruciales para la continua evolución de Dedot. Se anima a los desarrolladores a explorar Dedot, compartir ideas y contribuir a su crecimiento.
+
+#### Conclusión
+Dedot representa un salto significativo en el desarrollo de dapps para el ecosistema Polkadot. Al abordar las limitaciones de las soluciones existentes e introducir características innovadoras, Dedot equipa a los desarrolladores con las herramientas necesarias para construir aplicaciones eficientes, escalables y amigables para el usuario en un futuro multi-chain. Ya seas un desarrollador experimentado o nuevo en el ecosistema, Dedot está preparado para ser tu socio confiable en la navegación de las complejidades de la tecnología blockchain.
+
+Para más información, visita [Dedot en GitHub](https://github.com/dedotdev/dedot) o únete a la conversación en [Twitter](https://twitter.com/realsinzii) y [Telegram](https://t.me/realsinzii).
+
+- [Publicación en el Foro](https://forum.polkadot.network/t/introducing-dedot-a-delightful-javascript-client-for-polkadot-substrate-based-blockchains/8956)
+
+## Videos de la Comunidad de Dedot
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=TslaRS9m6uM',
+      title: 'Construyendo un Mejor Cliente Polkadot: La Historia de Dedot con Thang - Podcast AwesomeDOT #5',
+      description: 'Entrevista con Thang sobre cómo Dedot está mejorando el desarrollo de dapps en el ecosistema Polkadot.'
+    },
+  ]} />
+
+<ShowcaseTwitter
+  entries={[
+    'https://x.com/dedotdev/status/1234567890123456789',
+  ]}
+/>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

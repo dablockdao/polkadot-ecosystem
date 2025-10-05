@@ -1,0 +1,66 @@
+---
+title: 'Zombienet'
+description: 'Zombienet simplifica las pruebas para blockchains basadas en Substrate, habilitando la creación de redes efímeras, aserciones y compatibilidad multi-proveedor sin complicaciones.'
+hero:
+  tagline: 'Un framework de pruebas para redes de Substrate y Polkadot.'
+  image: 
+    file: ../../../../../assets/tools/dev/zombienet.png
+  actions:
+    - text: 'Github'
+      link: https://github.com/paritytech/zombienet
+      icon: external
+    - text: 'Documentación'
+      link: https://github.com/paritytech/zombienet
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+**Zombienet** es una herramienta de línea de comandos (CLI) diseñada para agilizar la **creación y prueba de redes blockchain efímeras**, ofreciendo un framework robusto para que los desarrolladores lleven a cabo una amplia gama de pruebas. Al permitir interacciones sencillas con entornos locales o en la nube, Zombienet reduce la complejidad de las pruebas en blockchain y se convierte en un recurso valioso para los desarrolladores que buscan garantizar la confiabilidad y el rendimiento de sus redes.
+
+## ¿Qué es Zombienet?
+Zombienet es un framework impulsado por CLI, enfocado en el ecosistema de blockchains basadas en Substrate. Facilita la creación rápida de redes efímeras, permitiendo a los desarrolladores realizar pruebas y validaciones detalladas en distintos componentes de la red. Estas pruebas pueden abarcar desde el almacenamiento on-chain y métricas hasta registros (logs) e incluso scripts personalizados escritos en JavaScript.
+
+Creado como una librería en JavaScript, Zombienet está diseñado para funcionar en Node.js y admite múltiples proveedores de infraestructura, como Kubernetes, Podman y configuraciones nativas. Esta flexibilidad garantiza que los desarrolladores puedan elegir el entorno más adecuado para sus necesidades de pruebas.
+
+## Características Clave de Zombienet
+1. **Creación de Redes Efímeras**: Zombienet permite a los desarrolladores definir configuraciones de red en formatos JSON o TOML, facilitando la implementación rápida y eficiente de redes complejas con unos pocos comandos.  
+2. **Soporte Multi-Proveedor**:  
+   - **Kubernetes**: Zombienet se integra con clústeres de Kubernetes, utilizando el operador de Prometheus para un monitoreo y visibilidad mejorados.  
+   - **Podman**: La herramienta soporta Podman para usuarios de Linux, desplegando pods auxiliares para monitoreo con Grafana y Tempo.  
+   - **Nativo**: Para los desarrolladores que prefieren configuraciones locales, Zombienet admite la ejecución de nodos como procesos locales.
+
+3. **Pruebas y Aserciones**: El DSL (domain-specific language) de Zombienet permite escribir aserciones en un lenguaje natural. Esta característica simplifica el proceso de validación del comportamiento de la red, como asegurar que los nodos estén operativos, que los parachains estén registrados y que se estén produciendo bloques.  
+4. **Soporte de Variables de Entorno**: Los desarrolladores pueden usar variables de entorno en los archivos de configuración, lo cual añade flexibilidad a la definición de redes y facilita la integración con pipelines de CI/CD.
+
+## Videos de la Comunidad Zombienet
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=2FF0RS60wJc',
+      title: 'How to spin up the Polkadot Relay Chain - Learn with Bruno',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=vuNX4WRJiy8',
+      title: 'Dive deep into Polkadot Testing Suite - Awesome Polkadot',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=Iicj4Lfa-nU',
+      title: 'Deploying Polkadot And Parachains Testnets on Kubernetes - Sub0 2022',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=W0lA3U3hIWE',
+      title: 'Introduction to LARCH -The Zombienet Automation Tool ',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=QKTZZCpdGH4',
+      title: 'Parity Technologies: Zombienet Walkthrough | Sub0 2022',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=7DZwVXzi9x0',
+      title: 'Launching a Parachain | Polkadot Deep Dives',
+    },
+  ]}
+/>

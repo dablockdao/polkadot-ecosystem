@@ -1,0 +1,164 @@
+---
+title: 'Moonbeam Network'
+description: Moonbeam is a smart contract platform for cross-chain connected applications that unites functionality from Ethereum, Polkadot, and beyond.
+sidebar:
+    label: ✪ Moonbeam Network
+    order: 1
+hero:
+  tagline: A smart contract platform for cross-chain connected applications.
+  image: 
+    file: ../../../../assets/dapps/ecos/moonbeam-network.png
+  actions:
+    - text: Dapps
+      link: https://apps.moonbeam.network/moonbeam
+      icon: external
+    - text: Docs
+      link: https://docs.moonbeam.network/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+## Moonbeam Network: The EVM Gateway to Polkadot (2025 Builder’s Guide)
+Moonbeam Network is Polkadot’s EVM-compatible smart-contract hub that lets you build with familiar Ethereum tooling while tapping Polkadot’s native cross-chain rails. This guide explains Moonbeam’s architecture (XC-20s, XCM, GMP), 2025 upgrades, cross-chain options (Wormhole, Axelar, LayerZero, Hyperlane), and hands-on steps to route liquidity and ship production dapps.
+
+## Quick ELI5: Moonbeam in one minute
+Moonbeam is like **an Ethereum city inside Polkadot**. You can deploy Solidity contracts and use MetaMask, but you also get **native cross-chain** highways to every other Polkadot parachain. Assets are **XC-20s**—ERC-20s that “speak XCM,” Polkadot’s message format, so tokens can move natively across chains. For non-Polkadot chains, Moonbeam plugs into **GMP** protocols (Wormhole, Axelar, LayerZero, Hyperlane) to route liquidity and messages.
+
+## How Moonbeam works on Polkadot
+### EVM compatibility + unified accounts
+Moonbeam is fully EVM-compatible and uses **unified accounts**: your standard Ethereum H160 address (0x…) controls both EVM and Substrate-based features (staking, governance, XCM) on Moonbeam. This removes the “two-accounts” friction found on many EVM-on-Substrate chains.
+
+**Why this matters**
+* You keep MetaMask + Solidity + Hardhat workflow.
+* You still get Polkadot features (OpenGov, XCM) from the same address.
+
+### XC-20s and XCM precompiles
+**XC-20** = ERC-20 that’s also XCM-aware. Any ERC-20 deployed on Moonbeam can be configured as an XC-20 and sent to/from parachains using XCM. Moonbeam exposes **X-Tokens/XCM precompiles** so Solidity contracts can call Substrate XCM methods directly (addresses are stable across networks).
+* X-Tokens precompile: `0x0000000000000000000000000000000000000804`
+* XCM precompile: `0x000000000000000000000000000000000000081A`
+
+### Cross-chain messaging (GMP) & Routed Liquidity
+For non-Polkadot chains, Moonbeam integrates **Wormhole, Axelar, LayerZero, and Hyperlane** so apps can pass messages/tokens across ecosystems. Moonbeam introduced **GMP precompile** and the **Moonbeam Routed Liquidity (MRL)** pattern: assets bridge into Moonbeam via a GMP protocol and are **immediately routed** to a destination parachain over XCM — typically invisible to the user.
+
+> Think of MRL as a **port parachain**: liquidity from Ethereum/Solana/etc. arrives via a GMP protocol, then Moonbeam forwards it natively to your Polkadot destination (e.g., HydraDX, Interlay) in one flow.
+
+### Consensus & performance
+Moonbeam runs a parachain consensus framework (Nimbus) and benefits from Polkadot upgrades like **Asynchronous Backing** (faster inclusion) and **Elastic Scaling**. In 2024/25, Moonbeam reduced block times to \~6s and increased throughput (\~4× gas per block; \~8× effective throughput) as part of its roadmap alignment with the Polkadot SDK and Agile Coretime.
+
+
+## What’s new in 2025
+Moonbeam’s **2025 product roadmap** highlights:
+* **Throughput & latency:** Asynchronous Backing integrated; further **Elastic Scaling** work through 2025 with a target toward lower block times.
+* **Asset Hub alignment:** As Polkadot consolidates user-facing assets on **Asset Hub**, Moonbeam treats Asset Hub reserves for xc assets and guides dapps through associated migration tasks.
+* **Moonbeam ↔ Moonriver pathing:** A trust-minimized path using Polkadot SDK bridging components is planned to simplify GLMR/MOVR flows.
+* **Permissionless foreign asset registration:** Deposit-based, self-serve listings reduce governance friction.
+* **Treasury spends in stables:** Process/runtime updates to enable payouts beyond the native token.
+* **Passkeys & UX:** Work toward **passkey (secp256r1)** support for smart wallets; faster RPC import; gas/PoV optimizations (PoV limit doubled to 10 MB).
+* **Tokenomics update (Runtime 3800):** After total GLMR supply reaches **1.2B**, inflation becomes **linear and capped at up to 60M GLMR/year (\~5%)**. Always verify latest on-chain parameters.
+
+## When to choose Moonbeam vs Moonriver
+* **Moonbeam (Polkadot):** Production-grade security, deeper liquidity, “home” for cross-chain dapps targeting Polkadot + external ecosystems.
+* **Moonriver (Kusama):** Faster iteration environment with similar stack; some teams pilot here before porting to Moonbeam. (Token models are distinct; check docs.)
+
+## Cross-chain options on Moonbeam (comparison)
+| Protocol      | What it is                      | Message type                       | Typical uses on Moonbeam                                                 | Notes                                                         |
+| ------------- | ------------------------------- | ---------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------- |
+| **Wormhole**  | Guardian-secured GMP network    | Arbitrary msgs + token bridge      | **MRL** routes: bridge in → route via XCM to parachain; asset migrations | Widely integrated across many chains; MRL reference path.     |
+| **Axelar**    | Validator-secured GMP + routing | Arbitrary msgs + token bridge      | Cross-chain calls (e.g., mint NFT, remote exec), Squid routing           | Used in connected-contracts demos and app flows.              |
+| **LayerZero** | DVN-based omnichain messaging   | Arbitrary msgs; Stargate liquidity | DAOs, omnichain NFTs, custom relayers                                    | Endpoint available for Moonbeam; popular for app-level logic. |
+| **Hyperlane** | Permissionless interop          | Arbitrary msgs                     | Additional destinations; sovereignty options                             | Alternate routing + security model.                           |
+
+> For **in-ecosystem** movement (parachain ↔ parachain), use **XCM/XC-20**. For **external ecosystems**, use **GMP**, and consider **MRL** to land assets directly on the destination parachain.
+
+## Mini-guide: Route USDC from Ethereum to a Polkadot parachain via Moonbeam
+**Goal:** End with USDC (or a target representation) on a destination parachain (e.g., **HydraDX**) without manual hops.
+
+1. **Choose origin & destination**
+   * Origin: Ethereum (USDC).
+   * Destination: Target parachain needing liquidity (e.g., HydraDX).
+
+2. **Pick the route**
+   * Use an **MRL-enabled** UI (e.g., a Carrier-powered flow in ecosystem apps). Under the hood, **Wormhole** brings USDC → Moonbeam, then **XCM** routes it to the destination parachain.
+
+3. **Connect wallet & quote**
+   * Connect your EVM wallet; select token and chain route; review estimated fees (origin gas + bridging relayer + XCM execution).
+
+4. **Bridge (GMP step)**
+   * Approve & send USDC from Ethereum. A VAA/message is generated and submitted to Moonbeam’s **GMP precompile**.
+
+5. **Route (XCM step)**
+   * On delivery, Moonbeam forwards the payload via XCM to the parachain (e.g., HydraDX), crediting your address there.
+
+6. **Verify & use**
+   * Open the destination parachain app/wallet; verify balance; proceed to LP, lend, or swap.
+
+**Notes**
+* The MRL flow is **atomic for users**: assets effectively “spend no time” on Moonbeam—they’re routed on arrival.
+* If a relayer fails, recover by manually invoking the **GMP precompile** with the message/attestation.
+
+## Common pitfalls & pro tips
+* **Wrong MultiLocation or underestimated weights:** Use audited examples; verify **XCM weights** and **fee** estimates to avoid stuck messages. Start on **Moonbase Alpha**.
+* **Wrapped vs native assets:** MRL typically uses **wrapped representations**; be explicit about asset provenance in UI/labels.
+* **Foreign asset registration:** With **deposit-based** registration, plan the deposit and metadata steps into your launch runbook.
+* **Throughput vs PoV limits:** Polkadot’s PoV limit increased to **10 MB**; Moonbeam runtimes reflect this, but gas/fee tuning is ongoing—budget headroom.
+* **Tokenomics references:** If you mention GLMR issuance/inflation, align to **Runtime 3800**; avoid APR or price claims.
+
+## FAQs
+**1) What is Moonbeam Network, in practical terms?**
+An EVM parachain on Polkadot with unified H160 accounts and contracts that can trigger **native cross-chain** actions via XCM and integrate **GMP** protocols for external chains.
+
+**2) What are XC-20 tokens?**
+ERC-20s that also “speak XCM,” enabling trust-minimized moves to/from other parachains. Configure an ERC-20 on Moonbeam as an XC-20 and use X-Tokens/XCM precompiles to transfer.
+
+**3) How does Moonbeam Routed Liquidity (MRL) differ from normal bridging?**
+MRL is **two-step under the hood**: bridge to Moonbeam via a GMP protocol (e.g., Wormhole), then **auto-route** to a parachain via XCM—appearing as one seamless action to users.
+
+**4) What cross-chain protocols are supported?**
+Moonbeam documents **Wormhole, Axelar, LayerZero, and Hyperlane** with guides, templates, and endpoint references.
+
+**5) How fast is Moonbeam in 2025?**
+Following Polkadot improvements like **Asynchronous Backing**, Moonbeam reduced block times to \~6s and increased throughput. Ongoing **Elastic Scaling** work targets further reductions.
+
+**6) Did GLMR tokenomics change?**
+Yes: after total supply hits **1.2B GLMR**, inflation becomes **linear and capped at up to 60M/yr (\~5%)** per Runtime 3800.
+
+**7) What’s the difference between Moonbeam and Moonriver?**
+Sister networks: Moonbeam (Polkadot) is the main production hub; **Moonriver (Kusama)** favors faster iteration. Token distributions and network roles differ.
+
+**8) Where should I start building?**
+Prototype on **Moonbase Alpha**, then deploy to Moonriver or Moonbeam. Use official precompile addresses and guides for XCM and GMP.
+
+## Conclusion
+Moonbeam gives Ethereum teams a **production EVM** on Polkadot plus **first-class interop**: XC-20s/XCM for parachains and GMP routes for external chains. If you’re building cross-chain DeFi, RWA, or gaming, Moonbeam is a practical way to consolidate UX while expanding reach.
+
+## Moonbeam Network Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+        {
+    href: 'https://www.youtube.com/watch?v=9MrMHkGnQjY',
+      title: 'What is Next w/ Moonbeam Network In 2024?',
+      description: 'Interview with Yuki Pan, Community Manager at Moonbeam Network, to explore the current updates of this leading parachain on Polkadot, the future narrative targets, and the upcoming plans.',
+    },
+        {
+    href: 'https://www.youtube.com/watch?v=RECQCEkIBrA',
+      title: 'Moonbeam at Token2049 Powered by Polkadot',
+      description: 'rypto Culturalist and X Spaces Host Shanice aka Profits gives a behind-the-scenes look at Token2049 in Singapore.',
+    },
+    {
+    href: 'https://www.youtube.com/shorts/v1IZGQ6PyH0',
+      title: 'How does Tanssi Network fit with Moonbeam Network?',
+    },
+         {
+    href: 'https://www.youtube.com/shorts/iaWQDBHYo3Q',
+      title: 'The Decentralization of Moonbeam Network 🌕',
+    },
+  ]} />
+
+
+
+<iframe allowfullscreen="true" frameborder="0" height="569" mozallowfullscreen="true" src="https://docs.google.com/presentation/d/e/2PACX-1vTFES1G5qxE-8Aq90NXMIFNf-x2tmrYi3uGsq20RVSQ_ABAZOLwm3Vy6yCbBFFGnM70Ud4GKNx7c2hX/embed?start=false&loop=false&delayms=60000" webkitallowfullscreen="true" width="960"></iframe>
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/nag3dArtITc?si=XvT0BoxRqxHZtl1E" title="YouTube video player" width="560"></iframe>

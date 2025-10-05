@@ -1,0 +1,40 @@
+---
+title: 'Herramientas Misceláneas'
+description: 'Explora todas las DApps de puentes en el ecosistema de Polkadot.'
+tableOfContents: false
+sidebar:
+  label: Miscellaneous
+  badge: Feed
+  order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+## Herramientas Misceláneas de Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/es/tools/miscellaneous/polkadot-staking-dashboard/',
+      title: 'Polkadot Staking Dashboard',
+    },
+    {
+      thumbnail: import('/src/assets/tools/miscellaneous/web3-alert.png'),
+      href: '/es/tools/miscellaneous/web3alert/',
+      title: 'Web3Alert',
+    },
+    {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/es/tools/miscellaneous/polkadot-telemetry/',
+      title: 'Polkadot Telemetry',
+    },
+    {
+      thumbnail: import('/src/assets/tools/miscellaneous/polkawatch.png'),
+      href: '/es/tools/miscellaneous/polkawatch/',
+      title: 'Polkawatch',
+    },
+  ]}
+/>

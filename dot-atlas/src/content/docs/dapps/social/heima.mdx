@@ -1,0 +1,163 @@
+---
+title: Heima
+description:  Heima is a decentralized, cross-chain identity aggregator protocol that empowers users to manage their digital identities across various web3 platforms.
+hero:
+  tagline: A decentralized, cross-chain identity aggregator protocol.
+  image: 
+    file: ../../../../assets/dapps/social/heima.png
+  actions:
+    - text: Dapps
+      link: https://www.heima.network/
+      icon: external
+    - text: X
+      link: https://x.com/heimaNetwork
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+## Heima (ex Litentry): Chain Abstraction + Decentralized Identity on Polkadot (2025 Guide)
+
+Heima—formerly Litentry—is evolving from a Polkadot DID aggregator into a chain-abstraction layer with a privacy-preserving identity oracle at its core. This guide explains the rebrand, HEI token migration, the IdentityHub product, architecture, integration patterns for builders, and where Heima sits relative to KILT and Dock in the Web3 identity stack.
+
+## What is Heima (ex Litentry)?
+Heima is the rebranded Litentry parachain on Polkadot. It provides a decentralized identity (DID) and reputation oracle and is expanding into chain abstraction—helping apps use identity signals and route user actions across chains behind a simpler UX.
+
+Heima continues to operate as a Polkadot parachain—benefiting from Polkadot’s shared security and native cross-chain messaging—so identity verification and intent-routed interactions can be consumed by other parachains through XCM.
+
+## ELI5: Why identity + chain abstraction matters
+Most crypto apps either:
+* ignore identity and treat every wallet the same, **or**
+* rely on centralized KYC.
+
+Heima offers a middle path: **privacy-preserving, verifiable signals** (e.g., age-verified, sybil-resistant, reputable on-chain behavior) that apps can check on-chain. With **chain abstraction**, users don’t need to juggle networks—identity and intent guide routing under the hood.
+
+## What changed in 2025: Rebrand & token swap
+* **Litentry → Heima Network.** The rebrand reflects a broadened scope from “identity aggregation” to **chain-abstraction services** atop a DID oracle.
+* **Token: LIT → HEI (1:1).** Major exchanges supported a **1:1** swap and re-listing under **HEI** during 2025.
+* **Supply/circulation guidance.** Public notices indicated an expected **circulating supply** increase over a multi-month schedule; always verify the latest figures with official sources.
+* **On-chain/governance context.** Heima’s rename and token change were formalized with governance, covering branding, exchange coordination, and token-economics continuity (1:1 mapping).
+
+> **Note:** Listings, bridges, and staking UX continue to be rolled out under the Heima brand (see IdentityHub and Swap/Bridge updates).
+
+## How Heima works (architecture overview)
+**Identity Oracle + Privacy Layer**
+* **DID aggregation/indexing.** Heima (ex Litentry) aggregates DIDs and signals from multiple chains and sources.
+* **Privacy with TEE.** Sensitive linking and computation runs in a Trusted Execution Environment (e.g., SGX), keeping raw data private while exposing verifiable scores/claims.
+* **On-chain verifiability.** Apps query identity proofs or scores on-chain without learning underlying personal data (“selective disclosure”).
+
+**Chain Abstraction**
+* Heima positions identity and intents as **routing signals** so that user flows (staking, rewards, allowlists) can be delivered across chains with less friction.
+
+**Polkadot Parachain**
+* Heima runs as a parachain, using the relay chain for security and XCM/XCMP for cross-ecosystem messaging—crucial for identity verification across parachains.
+
+## Key products & features (IdentityHub, Oracle, Bridge)
+**IdentityHub**
+* **Staking & rewards tied to identity.** Users can stake and earn based on identity-derived parameters; governance has aligned rewards toward IdentityHub usage.
+* **Simple wallet flow.** IdentityHub auto-adds the chain to supported wallets; staking has historically had no fixed lock-up (verify in-app).
+
+**Identity Oracle**
+* The **Identity Oracle Network** exposes verifiable DID signals (scores, attestations) that dapps can check during signup, airdrops, governance gating, or risk controls.
+
+**Swap + Bridge**
+* Heima provides a **Swap/Bridge** portal to move HEI and connect networks (EVM ↔ Heima), simplifying onboarding and gas provisioning.
+
+## Heima vs KILT vs Dock (quick compare)
+| Project                 | Core focus                                                       | Privacy model                                            | Primary products                                           | Chain / status                    | Typical use cases                                                                             |
+| ----------------------- | ---------------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------------- |
+| **Heima (ex Litentry)** | DID aggregation + **identity oracle** with **chain abstraction** | **TEE-backed** private computation; selective disclosure | **IdentityHub**, Identity Oracle, Swap/Bridge              | **Polkadot parachain**            | Sybil resistance, reputation-gated rewards, allowlists, on-chain scoring for DeFi/game/social |
+| **KILT**                | **Verifiable credentials (VCs)** & DIDs (W3C)                    | Credentials off-chain; on-chain anchors; user-controlled | **Sporran** wallet, **SocialKYC**, enterprise VC workflows | **Polkadot parachain**            | KYC-lite verifications, enterprise credentials, web3name identity profiles                    |
+| **Dock**                | Enterprise VC issuance/verification & DID tooling                | Off-chain VCs; on-chain registries; standards-aligned    | **Dock Wallet/SDK**, enterprise integrations               | Independent Substrate-based chain | Education/work credentials, regulated onboarding, compliance-oriented flows                   |
+
+> **Takeaway:** Heima emphasizes an *identity oracle + chain abstraction* approach; KILT and Dock are more *VC-centric*. They can be complementary in a full Web3 identity stack.
+
+## Mini-guide: Try IdentityHub in 10 minutes
+1. **Connect wallet & add chain**
+   Open IdentityHub; if prompted, approve **Switch/Add Network** to auto-configure RPC/Chain ID.
+2. **Create or link your DID**
+   Link existing addresses (EVM/Polkadot) to a DID; review permissions the app requests.
+3. **Stake (optional)**
+   Choose stake amount and a node; confirm the transaction. Check in-app for current lock-up and rewards terms.
+4. **Preview your score/signals**
+   Review the identity/reputation panel; select which signals to disclose to partner dapps.
+5. **Bridge HEI (if needed)**
+   Use the Swap/Bridge portal to move HEI between EVM and Heima mainnets for gas and usability.
+
+## Practical example: Reputation-gated airdrop
+**Goal:** Allow only “real” users (not sybils) with a minimum reputation to claim.
+
+**Pattern:**
+
+* Deploy an airdrop contract that queries Heima’s identity oracle for a **score ≥ X** plus a **unique DID** check.
+* If satisfied, the contract unlocks the claim path.
+  This keeps **raw PII private** (scoring occurs within TEE) while **proofs** remain verifiable on-chain.
+
+**Why it works:** You leverage privacy-preserving reputation instead of blunt heuristics (wallet age, gas spend) or centralized KYC.
+
+## Common pitfalls & tips
+* **Assuming token = identity.** HEI is a utility/coordination asset, **not** a credential. Design flows around **DIDs/VCs** and oracle responses, not balances.
+* **Over-collecting data.** Use **selective disclosure**—request only what your contract needs (e.g., “over-18” boolean), never raw attributes.
+* **Forgetting privacy boundaries.** Identity linking and computation should remain inside **TEE** or VC flows; avoid duplicating sensitive data on-chain.
+* **Ignoring governance updates.** Rewards and staking mechanics can change via on-chain governance—track motions and referenda.
+* **Mixing identity stacks without a trust model.** When combining Heima (oracle + abstraction) with KILT/Dock (VC-centric), define who issues credentials, who verifies, and what gets anchored on-chain.
+
+## FAQs
+**1) What exactly changed with the Litentry → Heima rebrand?**
+Name, brand, and **token ticker** changed (LIT → **HEI**, 1:1), alongside a strategic shift toward **chain abstraction** while retaining the DID/identity-oracle core.
+
+**2) Do I need to do anything if I held LIT on exchanges?**
+Most venues handled the **1:1** swap automatically and reopened HEI deposits/withdrawals; review your venue’s notice for specifics.
+
+**3) Is Heima still a Polkadot parachain?**
+Yes. Heima (ex Litentry) remains a Polkadot parachain with an active lease and XCM integrations across the ecosystem.
+
+**4) What’s IdentityHub’s role?**
+It’s the user front-door for staking, identity management, and exposing reputation signals to dapps; rewards are aligned toward usage.
+
+**5) How does Heima protect privacy?**
+Sensitive linking and scoring run inside **Trusted Execution Environments (TEE)**, so apps see proofs/scores—**not** raw data.
+
+**6) How is Heima different from KILT?**
+KILT centers on **verifiable credentials** and DIDs (W3C), with tools like **Sporran** and **SocialKYC**. Heima focuses on an **identity oracle** + **chain abstraction**; they can be complementary.
+
+**7) Where can I bridge or move HEI?**
+Use Heima’s **Swap/Bridge** portal to move HEI between EVM and Heima networks.
+
+**8) Will HEI supply increase?**
+Public notices suggested a staged increase in circulating supply over time; always verify current tokenomics with official sources. **Not financial advice.**
+
+## Suggested images/diagrams (with ALT ideas)
+1. **Heima identity oracle flow** — *ALT:* “TEE-backed identity aggregation and scoring with selective disclosure to dapps.”
+2. **Rebrand & token swap timeline** — *ALT:* “2025 milestones: LIT→HEI exchange migrations and IdentityHub updates.”
+3. **Heima in the Polkadot stack** — *ALT:* “Heima parachain connected to relay chain; oracle queries from parachains via XCM.”
+4. **Chain abstraction UX** — *ALT:* “User intent routed to the right chain with identity-based policy checks.”
+5. **Heima vs KILT vs Dock** — *ALT:* “Identity-oracle vs VC-centric architectures.”
+
+## Conclusion
+Heima (ex Litentry) extends beyond Web3 identity into **chain abstraction**, letting builders ship **privacy-preserving, reputation-aware** UX without centralizing user data. If you’re designing airdrops, sybil-resistance, or intent-routed flows across Polkadot and EVM, Heima is now a credible building block—often complementary to VC-centric stacks like KILT.
+
+## Heima Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+        {
+        href: 'https://www.youtube.com/watch?v=1l1PLFYNeAI',
+      title: 'The LIT Token - Tokenomic Crackdown',
+    },
+            {
+        href: 'https://www.youtube.com/watch?v=Xtl33tuGK5M',
+      title: 'Litentry launches it’s first product - IdentityHub V0.8 NOW LIVE',
+    },
+                {
+        href: 'https://www.youtube.com/watch?v=OirN9DpA0p8',
+      title: 'IdentityHub Version 0.8: Unified Score and Reward System!',
+      description: 'Understand how unified scores recognize your contributions and earn rewards like tokens, premium features, and unique NFTs',
+    },
+                {
+        href: 'https://www.youtube.com/watch?v=yGTlgmgvA4o',
+      title: 'Aggregated Identities for Airdrops on the Blockchain w/ Kai from Litentry - SM66',
+      description: 'Discussion aggrigated Identity with Kai from Litentry and how their products us TEEs to give life to NFTs on PhalaWorld.',
+    },
+  ]} />

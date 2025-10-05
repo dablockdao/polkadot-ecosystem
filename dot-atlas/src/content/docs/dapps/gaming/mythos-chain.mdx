@@ -1,0 +1,166 @@
+---
+title: 'Mythos Chain'
+description: The Mythos Chain operates within the Mythos Ecosystem, a Web3 gaming ecosystem governed by the Mythos DAO.
+sidebar:
+  label: Mythos Chain
+  order: 1
+hero:
+  tagline: A Web3 gaming ecosystem governed by the Mythos DAO.
+  image: 
+    file: ../../../../assets/dapps/gaming/mythoschain.png
+  actions:
+    - text: Site
+      link: https://mythos.foundation/
+      icon: external
+    - text: Games
+      link: https://mythicalgames.com/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+## Mythos Chain on Polkadot: The Web3 Gaming Stack, Explained
+Mythical Games’ **Mythos Chain**—home to mainstream titles like **NFL Rivals** and **Pudgy Party**—runs as a **Polkadot parachain** to gain stronger security, scalable throughput, and cross-chain UX via XCM. This expert guide explains the Mythos DAO (MYTH), why the migration to Polkadot matters, and how power users and studios can get started with best practices.
+
+Studios and power users search “**Mythos Chain**,” “**Mythos DAO**,” and “**Polkadot gaming**” to understand **how** the stack works and **why** it fits mobile-first Web3 titles. This article clarifies the architecture, governance, and user journey—plus a quick-start and pitfalls to avoid.
+
+## ELI5: Mythos Chain + Polkadot
+* **Mythos Chain** is a gaming-focused blockchain that records ownership of in-game assets and powers a marketplace.
+* **Polkadot** is a network of many blockchains (parachains) that share security and can **talk to each other** using **XCM** (cross-consensus messaging).
+* Running Mythos as a **Polkadot parachain** lets games plug into shared security, low fees, and cross-chain features without complex bridging.
+
+## Mythos Chain: scope & components
+* **Runtime & infrastructure:** Optimized for high-volume, consumer-grade transactions (minting, trading, transfers).
+* **Marketplace rails:** Commerce flows for buying/selling in-game items with fraud checks and entitlement syncing.
+* **Wallet/custody choices:** Custodial and non-custodial paths to match player risk/UX preferences.
+* **Compliance controls:** Regional gating and payment options appropriate for a mainstream player base.
+* **DAO overlay:** The **Mythos DAO** uses the **MYTH** token for proposals, votes, and partner programs.
+
+## Why Mythos migrated to Polkadot
+1. **Shared security:** Parachains inherit security from Polkadot’s **relay chain**, avoiding the overhead of maintaining a large independent validator set.
+2. **Interoperability (XCM):** Native cross-chain messaging enables safer asset movement and coordination with other Polkadot chains and system services (e.g., **Asset Hub**).
+3. **Scalable UX:** Low, predictable fees and on-chain **fee abstraction** patterns help mainstream mobile users transact without juggling gas tokens.
+4. **Operational focus:** Offloading base-layer security lets Mythos and partners concentrate on game UX, marketplaces, and live-ops.
+
+## Governance: Mythos DAO (MYTH)
+
+* **Scope:** Grants, partner incentives, ecosystem standards, and governance processes for Mythos-aligned initiatives.
+* **Token utility:** **MYTH** enables participation in proposals and votes; its role is governance-oriented—not investment advice.
+* **Process:** The DAO communicates frameworks for proposals, reviews, and disbursements. Over time, program specifics adapt to community and market needs.
+
+## Key features on Polkadot
+* **XCM-enabled asset routing:** Move assets or instructions across parachains without third-party bridges.
+* **Asset Hub integrations:** Issue assets and leverage **fee-payment abstraction** via conversion pools for a Web2-like checkout.
+* **Consumer-grade performance:** High-volume trading and minting with low overhead and fast confirmations.
+* **Compliance-aware commerce:** Region-based rules and payment flows suitable for app-store ecosystems.
+* **DAO-driven growth:** Governance steers incentives and standards to align games, marketplaces, and creators.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'NFL Rivals',
+      picture: 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/88/2a/03/882a035b-5e66-5b9f-df16-32d42ce9da22/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/460x0w.webp',
+      href: 'https://nfl.rivals.game/',
+      description:
+        "Manage & Own NFL Player Cards",
+    },
+  ]}
+/>
+
+## Ecosystem & games
+* **NFL Rivals (mobile):** A flagship title with on-chain item ownership and trading.
+* **Pudgy Party (mobile):** A 2025 launch extending the Pudgy Penguins IP to casual gameplay with tradable cosmetics.
+* **Partner pipeline:** Additional studios explore Mythos rails for IP-driven economies and interoperable assets.
+
+## Comparison table
+| Dimension             | Mythos on **Polkadot**                                     | Legacy EVM-adjacent environment                    |
+| --------------------- | ---------------------------------------------------------- | -------------------------------------------------- |
+| **Security**          | Shared security via Polkadot relay chain                   | App-specific validator set or external L1/L2       |
+| **Interoperability**  | Native **XCM** across parachains & system chains           | Bridges or bespoke integrations                    |
+| **Fees & UX**         | Low fees; **Asset Hub** enables **fee abstraction**        | Variable fees; gas abstraction via middleware      |
+| **Governance**        | **MYTH** DAO within a robust on-chain governance ecosystem | **MYTH** DAO with fewer native L1 governance hooks |
+| **Scale**             | Horizontal scaling via parachains and queues               | Throughput depends on chosen L1/L2 configuration   |
+| **Operational focus** | Teams focus on games/marketplaces                          | More base-layer overhead for security/infra        |
+
+## Step-by-step: First steps on Mythos
+1. **Create or verify your game account.** Use official channels inside the game to ensure entitlements sync to your marketplace profile.
+2. **Choose custody:** Start **custodial** for convenience; graduate to **self-custody** when you’re comfortable handling keys.
+3. **Understand MYTH (optional):** If you plan to vote, learn the DAO basics—how proposals and voting windows work.
+4. **Pick a title:** Install a supported mobile game (e.g., NFL Rivals or Pudgy Party) from your usual app store.
+5. **Marketplace basics:** Verify item authenticity (collection, rarity, game compatibility) before checkout.
+6. **Fees & settlement:** Expect low fees; some flows support fee abstraction so you don’t need a separate gas token.
+7. **Track ownership:** Confirm items in both the in-game inventory and your marketplace profile.
+
+### Practical example: Buying a starter item
+1. Open the game and navigate to the **Marketplace**.
+2. Filter by **price** and **rarity**; select an entry-level item.
+3. Review **collection** (official set), **supply**, and **game compatibility**.
+4. Proceed to checkout; confirm **fees** and **payment method**.
+5. After purchase, verify the item in your **in-game locker** and the **marketplace profile**.
+6. If you later switch custody, follow the platform’s transfer instructions to keep entitlements intact.
+
+## Common pitfalls & pro tips
+* **Phishing & fake sites:** Bookmark official portals. Never share seed phrases or sign unknown approvals.
+* **Custody confusion:** Custodial is simpler (recovery, support). Non-custodial is sovereign (you manage keys). Pick based on risk tolerance.
+* **Regional rules:** Marketplace access and payment rails may vary by jurisdiction; follow in-app guidance.
+* **Fee surprises:** Even with low fees, always read the confirmation screen. **Fee abstraction** may let you pay with supported assets; confirm before signing.
+* **Governance ≠ trading:** Voting with **MYTH** is civic participation. Treat it separately from any investment considerations.
+
+## FAQs
+**1) What moved in the migration to Polkadot?**
+The Mythos gaming chain and marketplace infrastructure now operate as a **Polkadot parachain**, benefiting from shared security and XCM.
+
+**2) When did Mythos launch on Polkadot?**
+The production rollout began in 2024, with broader ecosystem activity continuing through 2025.
+
+**3) Which games run on Mythos Chain today?**
+Mainstream mobile titles include **NFL Rivals** and **Pudgy Party**, with additional IPs exploring integrations.
+
+**4) How does Polkadot improve gamer UX?**
+Native **XCM** and **Asset Hub** features support reliable cross-chain actions and **fee abstraction**, reducing token-juggling.
+
+**5) What is MYTH used for?**
+**MYTH** powers **Mythos DAO** governance—proposals and votes that guide ecosystem development.
+
+**6) Can fees be paid in non-native assets?**
+Yes—where fee-conversion pools are integrated, you can effectively pay in supported assets.
+
+**7) Is Mythos DAO the same as Polkadot’s OpenGov?**
+No. **OpenGov** governs the Polkadot network, while **Mythos DAO** governs the Mythos ecosystem. They are separate.
+
+**8) I’m a studio—what should I prototype first?**
+Test minting, trading, and **custody switching** (custodial ↔ self-custody). Validate fee abstraction and entitlement sync in a small closed beta.
+
+## Conclusion
+**Mythos Chain on Polkadot** delivers consumer-scale ownership without burying players in crypto overhead. For studios, it’s a production-hardened path to interoperable economies and compliance-aware commerce. For power users, it’s a smoother on-ramp to real digital ownership in mobile games.
+
+## Mythos Chain Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=epKU1JAdyb8',
+      title: 'What Is Mythos Chain? - Polkadot Insider',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=Rq6N6a4kdRI',
+      title: 'How Will AI and Blockchain Shape the Future of Gaming?',
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=KVh-URCs9dM',
+      title: 'Largest Gaming Chain This Week? Mythos on Polkadot',
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=tmXgEySd8BI',
+      title: 'All about Mythos Chain: Airdrops, Games & Marketplaces',
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=HS5SOdWCga0',
+      title: 'Airdrop de MYTHOS Chain para miembros de Polkadot DAO',
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=KUy5aEKD6YU',
+      title: 'FIFA Rivals ⚽️ Global Game On-Chain w/ DOT - SM169',
+    },
+  ]} />

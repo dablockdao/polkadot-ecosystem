@@ -1,0 +1,98 @@
+---
+title: Frequency
+description: Frequency ist eine spezialisierte Layer-1-Blockchain, die entwickelt wurde, um das Decentralized Social Networking Protocol (DSNP) zu realisieren.
+hero:
+  tagline: Eine DSNP L1 Blockchain
+  image: 
+    file: ../../../../../assets/dapps/social/frequency.png
+  actions:
+    - text: Dapps
+      link: https://www.frequency.xyz/
+      icon: external
+    - text: Docs
+      link: https://docs.frequency.xyz/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+**Frequency** ist eine spezialisierte **Layer-1-Blockchain, die entwickelt wurde, um das Decentralized Social Networking Protocol DSNP** zu realisieren. Sie bietet die notwendige Infrastruktur für soziale Netzwerkanwendungen der nächsten Generation, indem sie Individuen mehr Kontrolle über ihre Daten gibt und die Teilnahme an der sich entwickelnden digitalen Wirtschaft ermöglicht. Frequency bietet skalierbare Nachrichtenerkennung, flexible Zustandspeicherung für **Social Graph- und Identitätsdaten** sowie Mechanismen für Kostenverlagerung und Delegation von Autorität. Diese einzigartige Kombination ermöglicht es Anwendungen, intuitive Benutzererfahrungen zu bieten und gleichzeitig die Kontrolle der Nutzer über persönliche Daten und Online-Beziehungen sicherzustellen. Frequency führt ein alternatives **Wirtschaftsmodell basierend auf Message Batching** und Token-Staking für wiederkehrende Netzwerkkapazität ein, wodurch es an zukünftige Protokolle mit ähnlichen Anforderungen anpassbar ist. Die native Kryptowährung von Frequency heißt **FRQCY**.
+
+## Frequency Architektur
+Frequency wurde als Layer-1-Blockchain entwickelt, um datengesteuerte Anwendungen mit hohem Volumen in einer dezentralen Umgebung zu unterstützen. Ihre Architektur umfasst wesentliche Komponenten für den Betrieb im **Polkadot-Ökosystem**, was eine robuste Leistung und Interoperabilität gewährleistet.
+1. **Betriebsmodell**: Frequency-Nodes sind entscheidend für die Aufrechterhaltung des Chain-Zustands und die Datenverarbeitung. Nodes können für verschiedene Rollen konfiguriert werden:  
+    - **Full Nodes:** Speichern den vollständigen Zustand der Blockchain.
+    - **Light Client Nodes:** Ermöglichen Anwendungen das Beobachten von Chain-Ereignissen.
+    - **Archive Nodes:** Speichern den gesamten historischen Zustand der Blockchain.
+  Nodes führen das Frequency Runtime aus, das in plattformunabhängigem WebAssembly (Wasm)-Code gekapselt ist und eine konsistente Verarbeitung der Zustandsübergänge im Netzwerk gewährleistet. Upgrades des Frequency Runtime werden durch Frequency Governance verwaltet.
+2. **Bereitstellung**
+    - **Mainnet:** Nutzt Validatoren der Polkadot Relay Chain für den Produktivbetrieb.
+    - **Testnet:** Verwendet Validatoren der Polkadot Rococo Testnet Relay Chain für Tests und Entwicklung.
+Änderungen werden zuerst auf dem Testnet implementiert, bevor sie auf das Mainnet übertragen werden, um umfassende Tests und reibungslose Upgrades zu gewährleisten.
+
+## Frequency Interaktionsmodell
+Nutzer und Anwendungen interagieren mit Frequency Nodes durch Extrinsics, State Queries, Runtime APIs und Custom RPCs.
+1. **Extrinsics:** Transaktionen auf der Blockchain, die kryptografische Signaturen zur Validierung erfordern.
+2. **State Queries:** Direkter Zugriff auf den Key-Value-Store des Chain-Zustands.
+3. **Runtime APIs:** Bieten Zugriff auf Chain- und Node-Informationen ohne direkten Zugriff auf den Key-Value-Store.
+4. **Custom RPCs:** Ermöglichen komplexe Verarbeitung und externe Aufrufe, die nicht im Wasm-Runtime ausgeführt werden können.
+
+### Collators und Relay Chain
+Frequency verwendet Collator-Nodes, um Transaktionen zu sammeln und Zustandsübergangsbeweise zu erzeugen. Diese Blöcke werden der **Polkadot Relay Chain** zur Validierung und Sicherheit übergeben. Dieses Setup ermöglicht es Frequency, sich auf Benutzerfunktionen zu konzentrieren und gleichzeitig die robuste Sicherheit der Relay Chain zu nutzen.
+
+## Frequency Identitätsmanagement
+Frequency führt ein auffindbares und adressierbares Benutzer-Identitätssystem ein, das für soziale Netzwerkanwendungen unerlässlich ist. Zu den Schlüsselelementen gehören:
+1. **Message Source Accounts (MSAs):** Einzigartig bei Frequency und ermöglichen Daten mit verifizierbarer Urheberschaft.
+2. **Control Keys:** Kryptografische Schlüssel zur Identitätskontrolle.
+3. **User Handles:** Menschlich lesbare Identifikatoren für MSAs.
+
+## Frequency Datenmanagement
+Frequency bietet ein sicheres und effizientes Datenmanagement für große Mengen an nutzergenerierten Inhalten.
+1. **Schemas:** Definieren Datenstruktur, Speicherung und Semantik für protokollbezogene Daten.
+2. **Schema Registry:** On-Chain-Repository für Frequency Schemas, das Datenkorrektheit und Interoperabilität sicherstellt.
+3. **Messages:** Veröffentliche Daten, die den Frequency Schemas entsprechen und hohe Skalierbarkeit durch Off-Chain-Aggregation ermöglichen.
+4. **Stateful Storage:** Ermöglicht Benutzern das Speichern von Daten als Teil des Chain-Zustands mit itemisierter und paginierter Speicheroption für effizientes Datenmanagement.
+
+## Frequency Delegationsmodell
+Das Delegationsmodell von Frequency gleicht Zugänglichkeit und Benutzerkontrolle aus, indem es Komplexität und Gebühren an Provider auslagert. Benutzer können mit der Chain interagieren, ohne Token zu benötigen, indem sie Aufgaben an Provider delegieren, die in ihrem Namen handeln.
+**Frequency (FRQCY) Tokenomics**
+Das wirtschaftliche Modell von Frequency unterstützt skalierbare soziale Netzwerke und konzentriert sich auf nicht-finanzielle Datentransaktionen.
+1. **Collator-Anreize:** Belohnungen für die Blockerstellung.
+2. **Provider-Anreize:** Kapazitätsmodell für kostengünstiges Veröffentlichen von Nachrichten.
+3. **Benutzeranreize:** Provider Boosting Mechanismus zur Unterstützung und Belohnung der Benutzer.
+
+<ShowcaseText
+  entries={[
+    {
+      href: 'https://mewe.com/',
+      title: 'Mewe',
+      description: 'MeWe ist eine Social-Media-Plattform auf Frequency, die sich als datenschutzorientierte Alternative zu Mainstream-Plattformen wie Facebook positioniert.',
+    },
+  ]}
+/>
+
+### FRQCY Initiale Tokenverteilung
+Eine Milliarde FRQCY wurden bei Genesis erstellt und wie folgt zugewiesen:
+- **Frequency Network Foundation**
+  - Foundation: 2,0%
+  - On-Chain Treasury: 53,0%
+  - Strategische Partner: 5,0%
+- **Amplica Labs**
+  - Investoren: 22,0%
+  - Team: 14,5%
+  - Treasury: 3,5%
+
+#### Fazit
+Frequency, entwickelt von[ **Project Liberty**](/club/orgs/software/project-liberty/), stellt eine robuste Infrastruktur für dezentrales Social Networking im Polkadot-Ökosystem dar. Seine innovative Architektur, umfassendes Datenmanagement und benutzerzentriertes Wirtschaftsmodell positionieren es als Eckpfeiler zukünftiger sozialer Netzwerkanwendungen mit Schwerpunkt auf Benutzerkontrolle, Skalierbarkeit und Interoperabilität.
+
+## Frequency Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=zO9LvxUZUGk',
+      title: 'Was ist Frequency?',
+      description: 'Frequency ist eine Parachain auf Polkadot, die sich auf dezentrale Kommunikationslösungen konzentriert.',
+    },
+  ]} />

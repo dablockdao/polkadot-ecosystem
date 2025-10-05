@@ -1,0 +1,97 @@
+---
+title: T3rn
+description: T3rn surge como un protocolo pionero diseñado para abordar los problemas de interoperabilidad mediante la introducción de una solución única y descentralizada para la composición y ejecución de contratos inteligentes en múltiples blockchains.
+hero:
+  tagline: Ejecuta contratos inteligentes en múltiples blockchains
+  image: 
+    file: ../../../../../assets/dapps/miscellaneous/t3rn.png
+  actions:
+    - text: Dapp
+      link: https://www.t3rn.io/
+      icon: external
+    - text: Documentación
+      link: https://docs.t3rn.io/intro
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+En el mundo en constante evolución de la tecnología blockchain, la interoperabilidad sigue siendo un desafío crítico. La capacidad de ejecutar y sincronizar operaciones sin problemas en múltiples redes blockchain es crucial para el avance de las aplicaciones descentralizadas (dApps) y servicios. T3rn (pronunciado "tern") surge como un protocolo pionero diseñado para abordar estos problemas de interoperabilidad mediante la introducción de una solución única y descentralizada para la composición y ejecución de contratos inteligentes en múltiples blockchains. Este artículo analiza los detalles de la red T3rn, explorando su arquitectura, funcionalidad e importancia dentro del ecosistema Polkadot.
+
+## La necesidad de T3rn
+La interoperabilidad blockchain es esencial para el crecimiento y la funcionalidad de los sistemas descentralizados. La ejecución de contratos inteligentes en una sola cadena es relativamente simple, pero expandir estas ejecuciones a través de múltiples blockchains independientes introduce grandes complejidades, como:
+1. **Falta de seguridad estandarizada**: Garantizar la ejecución segura y confiable en diferentes blockchains carece de un estándar uniforme.
+2. **Desafíos de sincronización**: Mantener cambios de estado consistentes en múltiples cadenas puede ser difícil.
+3. **Problemas de inmutabilidad**: Una vez que se realizan cambios en una cadena, revertirlos si los pasos posteriores fallan en otra cadena es problemático.
+
+T3rn busca resolver estos problemas mediante un protocolo descentralizado que garantiza ejecuciones de contratos inteligentes entre cadenas de forma fluida, segura y reversible.
+
+## Componentes principales de la red T3rn
+La arquitectura de T3rn incluye varios componentes clave que trabajan juntos para facilitar la interoperabilidad entre cadenas:
+
+#### 1. Circuito
+El Circuito es el núcleo del protocolo de T3rn, actuando como un orquestador para las ejecuciones de contratos inteligentes entre cadenas. Gestiona el proceso de ejecución dividiendo transacciones complejas en pasos manejables, cada uno de los cuales puede ejecutarse en diferentes blockchains. El Circuito asegura que todos los pasos se completen por completo o se reviertan por completo, manteniendo la atomicidad y consistencia.
+
+#### 2. Puertas de enlace (Gateways)
+Las puertas de enlace son adaptadores especializados que facilitan la ejecución de transacciones en diferentes blockchains. Hay dos tipos de puertas de enlace:
+- **Puertas de enlace programables**: Manejan lógica compleja y contratos inteligentes. Se dividen en puertas de enlace extrínsecas e intrínsecas.
+- **Puertas de enlace solo para transacciones**: Facilitan transferencias simples de activos y garantizan la ejecución segura y verificable de estas transacciones entre cadenas.
+
+#### 3. Repositorio de contratos inteligentes interoperables
+Este repositorio alberga los binarios de contratos inteligentes que se pueden usar en múltiples blockchains. Los desarrolladores pueden contribuir a este repositorio y ser remunerados por el uso de sus contratos inteligentes.
+
+## Cómo funciona T3rn
+**Fases de composibilidad y ejecución**
+T3rn introduce un proceso de ejecución en varias fases para garantizar la ejecución segura y reversible de contratos inteligentes en diferentes blockchains. Las fases de ejecución son:
+1. **Ejecutar**: Esta fase implica la ejecución inicial de transacciones. Si una transacción falla en esta etapa, se puede revertir.
+2. **Revertir**: Si ocurre un error durante la fase de ejecución, el sistema activa la fase de reversión para deshacer cualquier cambio realizado.
+3. **Comprometer**: Tras la ejecución y validación exitosa de todos los pasos, la fase de compromiso finaliza la transacción, haciendo permanentes todos los cambios y liberando cualquier recurso bloqueado.
+
+### Caso de uso de T3rn
+Consideremos un escenario donde se necesita determinar y proporcionar liquidez en Ethereum (ETH) a un proveedor de liquidez descentralizado como Acala, que opera como una parachain de Polkadot. Usando T3rn, el proceso implicaría:
+1. Obtener datos de un proveedor de datos basado en Ethereum.
+2. Ejecutar un algoritmo en Edgeware (otra parachain de Polkadot) para calcular la liquidez necesaria.
+3. Transferir el ETH calculado a Acala para staking.
+
+Sin T3rn, este proceso requeriría contratos inteligentes complejos y múltiples cuentas blockchain. T3rn simplifica este proceso manejando la orquestación y ejecución mediante sus contratos inteligentes componibles y Circuito.
+
+### Seguridad y consenso de T3rn
+T3rn utiliza un modelo de consenso híbrido que combina elementos de Proof of Stake (PoS) y Proof of Work útil (uPoW), asegurando:
+1. **Seguridad**: La Relay Chain de Polkadot proporciona seguridad fundamental, mientras que los validadores dentro de la red T3rn aseguran las transacciones entre cadenas.
+2. **Incentivos**: Validadores y retransmisores son incentivados para mantener la integridad de la red mediante staking y mecanismos de recompensas.
+3. **Operación sin confianza**: La naturaleza descentralizada de T3rn elimina la necesidad de intermediarios confiables, garantizando un entorno sin confianza para la ejecución y validación de transacciones.
+
+### Integración de T3rn con Polkadot
+T3rn está diseñado para ser altamente compatible con el ecosistema Polkadot. La arquitectura de Polkadot, que incluye relay chains y parachains, se alinea bien con la visión de T3rn de servicios blockchain interoperables. Puntos clave de integración incluyen:
+- **XCMP (Cross-Chain Message Passing)**: Facilita la comunicación entre parachains de Polkadot, mejorando la capacidad de T3rn para ejecutar transacciones entre cadenas.
+- **SPREE (Shared Protected Runtime Execution Enclaves)**: Proporciona entornos de ejecución seguros en Polkadot, que T3rn puede aprovechar para mayor seguridad.
+
+### Ventajas de T3rn
+1. **Interoperabilidad**: Ejecución fluida de contratos inteligentes en múltiples blockchains.
+2. **Seguridad**: Seguridad robusta mediante un modelo de consenso híbrido e integración con la infraestructura segura de Polkadot.
+3. **Flexibilidad**: Soporta varios tipos de ejecuciones, incluyendo transferencias de activos, operaciones de solo lectura y ejecuciones complejas de contratos inteligentes.
+4. **Incentivos para desarrolladores**: Los desarrolladores pueden ganar recompensas contribuyendo al repositorio de contratos inteligentes.
+5. **Mecanismo a prueba de fallos**: Garantiza que los cambios se ejecuten por completo o se reviertan, manteniendo la integridad del sistema.
+
+#### Conclusión
+T3rn representa un avance significativo en la interoperabilidad blockchain, abordando desafíos críticos en la ejecución y sincronización entre cadenas. Al aprovechar un protocolo descentralizado y sin confianza, T3rn permite la ejecución segura y fluida de contratos inteligentes en diferentes blockchains, convirtiéndolo en una valiosa adición al ecosistema Polkadot. Con su enfoque innovador y alineación con la visión de múltiples cadenas de Polkadot, T3rn está preparado para desempeñar un papel crucial en el futuro de las aplicaciones descentralizadas y la interoperabilidad blockchain.
+- <small>Token relacionado:</small> **TRN**
+
+## Videos de la comunidad T3rn
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+        href: 'https://www.youtube.com/watch?v=944tEFEKYuA',
+      title: '¿Qué es t3rn? Explorando la capa de interoperabilidad modular en Polkadot',
+      description: 'T3rn ha sido creado para ofrecer un enfoque fresco al problema de la interoperabilidad blockchain: la capacidad de las blockchains para comunicarse e interactuar entre sí.',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=KNkq1px-YNc',
+      title: 'Usando Polkadot para habilitar contratos inteligentes entre cadenas en cualquier lenguaje con T3rn',
+      description: 'Csaint desentraña T3rn, ganador de dos becas Web3, que ofrece llamadas de contratos inteligentes entre cadenas, multi-idioma y en una sola transacción en Polkadot.',
+    },
+  ]} />

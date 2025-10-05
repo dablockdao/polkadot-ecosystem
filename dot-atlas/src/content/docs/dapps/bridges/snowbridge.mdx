@@ -1,0 +1,174 @@
+---
+title: Snowbridge
+description: Snowbridge is a trustless, decentralized bridge between Polkadot and Ethereum, enabling seamless cross-chain communication and diverse asset transfers with secure governance.
+sidebar:
+    label: ✪ Snowbridge
+    order: 2
+hero:
+  tagline: Fully trustless bridge between Polkadot and Ethereum.
+  image: 
+    file: ../../../../assets/dapps/bridges/snowbridge.png
+  actions:
+    - text: Dapp
+      link: https://app.snowbridge.network/
+      icon: external
+    - text: Docs
+      link: https://docs.snowbridge.network/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+## Snowbridge: The Trustless Polkadot ↔ Ethereum Bridge (2025 Guide)
+Snowbridge is a fully trustless, light-client bridge connecting Polkadot and Ethereum. Running as a common-good bridge on Polkadot’s Bridge Hub, it verifies consensus on both sides on-chain (no multisigs) and routes assets/messages to any parachain via Asset Hub and XCM. This guide explains how Snowbridge works, what changed in 2025, when to use it, and how to bridge step-by-step.
+
+## What problem Snowbridge solves
+Cross-chain liquidity is often fragmented or secured by trusted committees and wrappers. Snowbridge provides **state-proof-verified, on-chain** message passing between Ethereum and Polkadot. Bridged assets are first-class citizens on **Asset Hub** and can be forwarded to any parachain via **XCM**, eliminating multisig risk and reducing UX friction across the ecosystem.
+
+## Quick ELI5
+Imagine two impartial “truth checkers”—one living on Ethereum, one on Polkadot.
+
+* On **Ethereum**, a smart-contract **BEEFY light client** verifies that messages really finalized on Polkadot.
+* On **Polkadot’s Bridge Hub**, a **Beacon (Ethereum) light client** verifies that Ethereum messages are finalized.
+  Only these finality proofs can authorize transfers. No human key-holders, no multisig committees.
+
+## How Snowbridge works (under the hood)
+
+### Polkadot → Ethereum: BEEFY light client on Ethereum
+* **BEEFY** (a finality gadget) summarizes Polkadot finality in a way that Ethereum can verify efficiently.
+* The Ethereum light client verifies validator signatures on BEEFY commitments and then proves inclusion of specific messages.
+* Once verified, Ethereum contracts can safely execute the intended action (e.g., minting a token representation).
+
+### Ethereum → Polkadot: Beacon light client on Bridge Hub
+* Bridge Hub runs a palletized **Ethereum Beacon light client**.
+* It tracks finalized Beacon headers and verifies sync-committee signatures (BLS), proving inclusion of transactions and receipts tied to the message.
+* When verified, Bridge Hub passes the message onward—often to **Asset Hub** for token minting or accounting.
+
+### Relayers, fees, and XCM integration
+* **Relayers** are permissionless couriers: they submit proofs to the light clients, but cannot forge them.
+* **Fees** are paid in the **source chain’s native token** (ETH when sending from Ethereum; DOT when sending from Polkadot).
+* On arrival to **Asset Hub**, the system accounts for the asset (e.g., via `ForeignAssets`), then **XCM** forwards it to the destination **parachain** and account.
+
+## What’s new in 2025
+* **Native ETH support:** Bridge ETH directly from Ethereum to Polkadot (no wrapping/unwrapping steps).
+* **Polkadot-native → Ethereum:** Transfers of native assets (e.g., DOT) from Polkadot to Ethereum are supported in production pathways.
+* **Lower fees & faster transfers:** Indicatively, Polkadot→Ethereum transfers improved from multiple hours to well under an hour in common conditions, with fee reductions aligned to runtime upgrades.
+* **Broader parachain integrations:** One-click flows from parachain UIs (e.g., Hydration, Moonbeam, Bifrost) that abstract XCM and destination fees.
+* **V2 focus:** Ongoing work to further reduce costs, broaden asset coverage, and streamline UX for generalized messaging.
+
+> **Note:** Timings and fees vary with network conditions. Treat numbers as indicative snapshots for **September 2025**.
+
+## Key features
+* **Trustless by design:** On-chain light clients on both sides (BEEFY ↔ Beacon) remove multisig/committee risk.
+* **Common-good, OpenGov-controlled:** Runs on **Bridge Hub** and integrates natively with **Asset Hub** and **XCM**.
+* **Parachain-wide reach:** Bridge once to Asset Hub, then reserve-transfer via XCM to any parachain.
+* **Developer-friendly:** Gateway contracts and SDKs enable token transfers today; generalized messaging is expanding.
+* **Operational maturity:** Live since 2024 with progressive upgrades and ecosystem-led integrations.
+
+## When to use Snowbridge vs alternatives
+* **Choose Snowbridge** when you need **maximal security** (no multisigs), **native Polkadot integration**, and long-term asset composability across parachains.
+* **Liquidity networks** can be faster but introduce extra trust assumptions and wrapper fragmentation.
+* **CEX transfers** are custodial; they may be simple, but you inherit centralized counterparty risk.
+* **Other trustless stacks** (e.g., proof-based multi-chain frameworks) target broader messaging; for DOT↔ETH token flows, Snowbridge is the direct, production choice.
+
+## Comparison table
+| Bridge/Route                          | Security Model                                        |                          Directionality | Assets                                                |                                  Typical Latency\* | Governance/Placement          |
+| ------------------------------------- | ----------------------------------------------------- | --------------------------------------: | ----------------------------------------------------- | -------------------------------------------------: | ----------------------------- |
+| **Snowbridge**                        | On-chain light clients (BEEFY ↔ Beacon), no multisigs | ETH↔Polkadot (parachains via Asset Hub) | ETH, ERC-20s; Polkadot-native (e.g., DOT) to Ethereum | ETH→Polkadot \~30–35 min; Polkadot→ETH \~35–60 min | Common-good on **Bridge Hub** |
+| **Trustless, proof-based frameworks** | On-chain proof verification (various)                 |                             Multi-chain | Tokens & messages (adapters)                          |                                    Varies by route | Polkadot-aligned but separate |
+| **Liquidity networks**                | External validators/guardians                         |                             Multi-chain | Wrapped assets                                        |                                       Often faster | Third-party governance        |
+| **CEX transfer**                      | Custodial                                             |                    Any supported chains | Native on withdraw                                    |                               Fast within exchange | Centralized operator          |
+
+\*Indicative values for September 2025; conditions vary.
+
+## Step-by-step: Bridge an ERC-20 from Ethereum to a Polkadot parachain
+> Core path: **Ethereum → Bridge Hub/Asset Hub → destination parachain (XCM)**. Many UIs abstract these details for you.
+
+1. **Connect wallets**
+   * Use a wallet for Ethereum (e.g., MetaMask) and a Polkadot wallet/extension for parachains.
+   * Open a Snowbridge-enabled UI (parachain portals and ecosystem dashboards increasingly embed this).
+
+2. **Choose token & destination**
+   * Select the ERC-20 (e.g., USDC).
+   * Pick the **destination parachain** and your account/address there.
+
+3. **(First-time only) Token registration**
+   * If the ERC-20 hasn’t been bridged before, the UI prompts registration on Asset Hub (calling the Gateway contract).
+   * Fee is paid in **ETH**.
+
+4. **Quote fees & destination fee**
+   * Source-side bridging fee shown in ETH.
+   * A `destinationFee` may be required to cover **XCM** routing on the target parachain (often surfaced in DOT terms but abstracted by the UI).
+
+5. **Send transaction on Ethereum**
+   * The UI calls the **Gateway** contract (e.g., `sendToken()`) with token, amount, destination **ParaID**, target address, and the destination fee.
+
+6. **Wait for finality & delivery**
+   * The Beacon light client on Bridge Hub verifies Ethereum finality.
+   * Asset Hub mints the **foreign asset** and XCM forwards it to your parachain account.
+   * In typical conditions, ETH→Polkadot completes in roughly **\~30 minutes**.
+
+## Practical example: Send USDC from Ethereum to Hydration
+* Choose **USDC** (Ethereum) → destination **Hydration** account.
+* If needed, the UI performs **token registration** and quotes ETH-side fee plus the **destinationFee**.
+* After finality, USDC is minted on **Asset Hub** and routed via **XCM** to Hydration—ready for Omnipool trading or money-market use.
+
+## Common pitfalls & tips
+* **Bridges aren’t interchangeable:** “USDC” via different bridges may be **non-fungible** with each other. Stick to one canonical route per treasury/workflow.
+* **Fund the destination account:** Ensure your destination account meets **existential deposit** (ED) and has fee assets if needed.
+* **Expect variability:** Fees and timings fluctuate with Ethereum gas and Polkadot conditions. Treat UI quotes as **estimates**.
+* **Prefer integrated UIs:** Parachain UIs that embed Snowbridge reduce mistakes and handle destination fees gracefully.
+* **Developer tip:** Today, fees are paid in the **source chain’s native token**; keep UX copies explicit about this.
+
+## FAQs
+**Is Snowbridge “trustless”?**
+Yes. It uses on-chain light clients on Ethereum and Polkadot (BEEFY ↔ Beacon) to verify finality proofs—no multisigs.
+
+**Which assets can I bridge?**
+ETH and many ERC-20s to Polkadot; Polkadot-native assets (e.g., DOT) to Ethereum are available through the production pathway.
+
+**How long do transfers take?**
+Indicatively: ETH→Polkadot \~30 minutes; Polkadot→ETH \~35–60 minutes, subject to network conditions and ongoing optimizations.
+
+**Where do assets arrive on Polkadot?**
+On **Asset Hub** (e.g., `ForeignAssets`), then forwarded via **XCM** to your destination parachain account.
+
+**Do I need to run a relayer?**
+No. Relayers are permissionless and typically provided by the UI/back-end; anyone can operate one.
+
+**What’s the governance model?**
+Snowbridge is a **common-good** bridge on **Bridge Hub** under **OpenGov**. Upgrades and parameter changes pass via on-chain governance.
+
+**Can Snowbridge call smart contracts?**
+Token transfers are production-ready today; generalized message passing is expanding—check current parachain/runtime capabilities.
+
+**Is there a bug bounty or audits?**
+Yes—Snowbridge maintains public audits and a bug bounty program for its contracts and components.
+
+## Conclusion
+Snowbridge is the **default, trustless route** between Ethereum and Polkadot: light-client security, native Asset Hub accounting, and seamless XCM routing to parachains. With native ETH support, lower fees, and growing integrations, it unlocks safer cross-ecosystem flows for teams and power users.
+
+
+
+## Snowbridge Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+        {
+      href: 'https://www.youtube.com/watch?v=jXv-PIx5Thg',
+      title: 'How To Bridge From Ethereum To Polkadot Through Snowbridge',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=wq8SAg2TjKY',
+      title: 'Snowbridge, an Ethereum bridge on BridgeHub',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=dk2PAIvwPrs',
+      title: 'Introductionn to Snowbridge (ES) - LV',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=tO6aQCjY5Zg',
+      title: 'Ethereum a Polkadot con Turtle & Snowbridge',
+    },
+  ]} />

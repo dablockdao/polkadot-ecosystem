@@ -1,0 +1,97 @@
+---
+title: Sidecar
+description: Interact with Substrate blockchain nodes effortlessly using the Substrate API Sidecar, a powerful RESTful service for developers.
+hero:
+  tagline: Bridging Blockchain Data with REST APIs.
+  image: 
+    file: ../../../../assets/hub/orgs/parity.png
+  actions:
+    - text: Github
+      link: https://github.com/paritytech/substrate-api-sidecar
+      icon: external
+    - text: Docs
+      link: https://paritytech.github.io/substrate-api-sidecar/dist/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+The **Substrate API Sidecar** is a powerful RESTful service designed to facilitate seamless interaction with blockchain nodes built using the Substrate FRAME framework. Offering an extensive suite of endpoints, the Sidecar API empowers developers to query and manage data from Substrate-based blockchains with precision and efficiency. Whether interacting with accounts, blocks, transactions, parachains, or other blockchain components, the Sidecar API is a crucial tool for developers working within the Polkadot ecosystem and beyond.
+
+## What is Substrate API Sidecar?
+The Substrate API Sidecar serves as a REST interface for interacting with Substrate nodes. It simplifies complex blockchain interactions, enabling developers to:
+- Query real-time blockchain data such as account balances, block details, and transactions.
+- Access specific components like parachains, pallet storage, and assets.
+- Build blockchain-integrated applications without deep knowledge of the underlying blockchain architecture.
+
+Its ease of use makes it an indispensable resource for developers creating tools and applications in the **Polkadot** and **Substrate** ecosystems.
+
+## Key Features of Substrate API Sidecar
+1. **Comprehensive API Endpoints.** The Sidecar API exposes a range of endpoints, enabling diverse functionalities:
+    - **Account Management**: Retrieve account balances, transaction histories, and more.
+    - **Block Data**: Access detailed block information, including extrinsics and events.
+    - **Parachains**: Interact with parachain-specific data, such as unique identifiers and storage items.
+    - **Extrinsics and Transactions**: Query details about submitted extrinsics and transaction statuses.
+
+2. **Developer-Friendly Integration.** Designed with developers in mind, the API provides:
+    - Predefined collections for tools like **Postman**, which streamline testing and exploration.
+    - Inline documentation and reusable variables to simplify debugging and development workflows.
+3. **Customizable Deployment.** By default, the Sidecar service connects to a local Substrate node, but it can be configured to interact with remote nodes or different environments using adjustable parameters like the `SUBSTRATE_URL`.
+
+## Using Substrate API Sidecar
+1. **Setting Up the Service**
+To use the Sidecar service, follow these steps:
+- Install the package globally using npm or yarn:
+```bash
+npm install -g @substrate/api-sidecar
+```
+
+## Start the Service and Connect to a Substrate Node
+Start the service and connect it to a running Substrate node. By default, the service operates on `http://127.0.0.1:8080`.
+
+## Exploring API Endpoints
+Using tools like Postman, developers can:
+- **Import predefined collections.**
+- **Define environment variables** for dynamic interactions.
+- **Send API requests** and inspect responses in JSON, XML, or other formats.
+
+For example, querying a list of available endpoints requires only the `url` variable. A typical response might include paths such as:
+
+- `/accounts/:address/asset-balances`
+- `/blocks/:blockNumber`
+
+## Practical Use Cases
+1. **Querying Account Balances.** Retrieve the balance of a specific blockchain account by setting the `account` variable and sending a GET request to the `/accounts/:address/balance-info` endpoint. The response includes critical details such as:
+    - Free and reserved balances.
+    - Nonce values.
+    - Lock statuses.
+2. **Accessing Block Details.** Developers can query comprehensive block data by specifying the block number or hash, aiding in tasks such as debugging or blockchain analysis.
+
+## Why Use Substrate API Sidecar?
+The Substrate API Sidecar bridges the gap between blockchain nodes and application development by offering:
+- **Efficiency**: Direct access to critical blockchain data without the need for complex RPC calls.
+- **Flexibility**: Customizable setups for diverse environments, from local development to production-scale applications.
+- **Scalability**: Seamless integration into Polkadot's growing ecosystem, supporting advanced use cases like decentralized applications (dApps) and analytics platforms.
+
+#### Conclusion
+The Substrate API Sidecar is a cornerstone tool for developers working with Substrate-based blockchains. Its robust RESTful interface simplifies complex blockchain interactions, unlocking new possibilities for innovation within the Polkadot ecosystem. By leveraging its extensive features, developers can create applications that are efficient, reliable, and ready to scale alongside the evolving blockchain landscape.
+For more information, refer to the [Substrate API Sidecar documentation](https://paritytech.github.io/substrate-api-sidecar/).
+
+## Substrate API Sidecar Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=8oqZhdl7C1o',
+      title: 'API Sidecar and TX Wrapper | Polkadot Deep Dive',
+        },
+          {
+      href: 'https://www.youtube.com/watch?v=IK4sVrPbBCM',
+      title: 'Polkadot Deep Dives: API Sidecar & TxWrapper',
+          },
+                    {
+      href: 'https://www.youtube.com/watch?v=_lQU_7IDjAc',
+      title: 'Integrations Tools Being Built and Maintained | Substrate Seminar',
+          },
+  ]} />

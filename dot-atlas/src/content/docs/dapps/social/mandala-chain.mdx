@@ -1,0 +1,157 @@
+---
+title: 'Mandala Chain'
+description: The gateway between Global and Emerging Blockchain Markets. Bridging Retail, Enterprise and Government.
+hero:
+  tagline: Onboarding the Next 100M Web3 Users
+  image: 
+    file: ../../../../assets/dapps/social/mandala.png
+  actions:
+    - text: Dapps
+      link: https://www.mandalachain.io/
+      icon: external
+    - text: Docs
+      link: https://docs.mandalachain.io/mandalachain
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+## Mandala Chain: Onboarding the Next 100M Web3 Users
+
+Mandala Chain is a Polkadot parachain focused on real-world adoption—starting in Indonesia—by combining EVM + Wasm smart contracts, XCM interoperability, and a policy-grade digital identity stack. This guide explains what Mandala Chain is, how it works, and how builders can launch on testnet today—with practical tips, FAQs...
+
+## What is Mandala Chain? (ELI5 + context)
+Mandala Chain is a Polkadot parachain designed to connect government, enterprise, and retail users—beginning with Indonesia—through a sovereign, compliance-ready blockchain stack. It won **Polkadot Auction #64** and leases a slot through **February 2026**, underscoring its intent to operate as a long-lived network in the ecosystem.
+
+**ELI5:** Think of Mandala as a city’s digital infrastructure: secure roads (consensus), traffic rules (governance), and bridges (XCM) that let people and businesses move assets and data between neighborhoods (chains) safely—using both Ethereum-style and Wasm-based apps.
+
+## Why it matters: Indonesia-first, global ambition
+Indonesia is the world’s fourth-largest country and is actively rolling out digital identity initiatives—creating a fertile environment for blockchain at national scale. Mandala’s first big use case, **IDCHAIN**, has been presented alongside partners linked to the official **.ID** domain registry (PANDI) to onboard millions of users into Web3-powered digital services. The project has framed its long-term mission as “connecting retail, government & enterprise” and “onboarding the next 100M users.”
+
+## How Mandala Chain works
+### Smart contracts: EVM + Wasm
+Mandala is **dual-VM**: developers can deploy **Solidity** contracts (EVM) or **ink!/Wasm** smart contracts. Official materials provide step-by-step guides for both paths, including Remix/Hardhat flows for EVM and Polkadot.js tooling for Wasm. This reduces switching costs for Ethereum teams while giving access to Polkadot-native capabilities.
+
+**Why dual-VM matters:**
+* EVM = fastest route for ETH-native teams and tooling.
+* Wasm/ink! = fine-grained control, future-proofing in the Polkadot stack.
+* You can pick the right VM per workload (consumer apps on EVM; regulated/public sector logic on Wasm), or mix both.
+
+### Interoperability via XCM
+Mandala uses **XCM (Cross-Consensus Messaging)** to move assets and instructions between parachains and system chains. That unlocks seamless integrations (e.g., Asset Hub, DeFi hubs) and the ability to compose services across the Polkadot ecosystem—critical for government and enterprise workflows that touch multiple ledgers.
+
+Mandala’s own materials emphasize XCM as the backbone for cross-chain connectivity in its “digital nations” vision—letting sovereign chains and apps interoperate with Polkadot and beyond.
+
+### Network token: Kepeng (KPG)
+The native token is **Kepeng (KPG)**, used for **transactions** and **on-chain governance** (18 decimals). Public resources list supply/distribution references and the crowdloan parameters (including Auction #64 and vesting details), which historically allocated a portion of the supply to crowdloan contributors. Always verify current tokenomics in official sources before building incentives.
+
+> **Note:** Nothing here is investment advice. Token information is provided for developer orientation only.
+
+## Mandala Chain vs alternative Polkadot smart-contract hubs
+| Chain             | VM Support     | Interop (XCM)  | Positioning / Notes                                                                             | Key Docs                                  |
+| ----------------- | -------------- | -------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| **Mandala Chain** | **EVM + Wasm** | Yes (Polkadot) | Indonesia-first adoption, gov/enterprise + retail, identity focus (IDCHAIN); Auction #64 winner | Docs (EVM & Wasm), Parachain slot details |
+| **Moonbeam**      | EVM-first      | Yes            | Ethereum-compatible parachain with extensive ETH tooling & XCM asset flows                      | Moonbeam docs (ETH compatibility & XCM)   |
+| **Astar**         | **EVM + Wasm** | Yes            | Dual-VM hub; strong Wasm/ink! support                                                           | Astar docs (supports both VMs)            |
+
+## Step-by-step: Deploy your first app on Mandala testnet
+**Goal:** Ship a minimal EVM contract on the *Mandala Paseo* testnet and verify on Polkadot.js.
+1. **Create an account**
+   * Install **Polkadot.js extension**, generate an account, and back up your seed phrase safely.
+
+2. **Connect to Mandala testnet**
+
+   * Use the current “Paseo testnet” setup (RPC, chain ID, faucets if available).
+
+3. **Hello, World (EVM path)**
+   * Use **Remix** or **Hardhat** to compile a trivial Solidity contract.
+   * Configure MetaMask to the Mandala EVM endpoint and deploy.
+
+4. **Inspect on Polkadot.js**
+   * Open **Polkadot.js Apps** against Mandala testnet, confirm your account nonce/transactions, and check the contract’s storage/events.
+
+5. **(Optional) Wasm path**
+   * Scaffold an **ink!** contract, build (`cargo contract build`), upload, and instantiate via Polkadot.js.
+
+6. **Plan interop**
+   * Map out which assets or calls you’ll exchange via **XCM** (fees, HRMP channels, routing). Start from Polkadot XCM developer docs.
+
+## Practical example: Digital identity (IDCHAIN) flow
+Below is an illustrative sequence aligning with public statements about Mandala’s identity push with the **.ID** registry partner ecosystem. Adapt for your compliance model:
+
+1. **Enrollment:** User proves identity with government-backed credentials (e.g., e-KTP / IKD stack).
+2. **Issuance:** A government/affiliated issuer writes a **DID** and issues **verifiable credentials (VCs)** anchored on Mandala.
+3. **Selective disclosure:** User presents ZK-friendly proofs to banks, healthcare, or public portals; verifiers check on-chain references.
+4. **Cross-chain use:** Through **XCM**, permissions/tokens are usable on other parachains (e.g., DeFi, KYC-gated services).
+
+> Sources highlight goals of onboarding **millions** of users via IDCHAIN; verify specific rollout timelines and coverage with Mandala’s official channels and partners.
+
+## Common pitfalls & pro tips
+* **Environment names:** Docs historically reference *Mandala Paseo*; older pages may mention alternative labels. Follow the **current** testnet page and RPC settings.
+* **Tooling parity:** EVM flows (Remix/Hardhat/MetaMask) “just work,” but Wasm requires **ink!** tooling and a Polkadot.js workflow—plan sprints accordingly.
+* **XCM fees & routing:** Budget for execution fees and asset registration. Start with official XCM docs to avoid mis-routing.
+* **Token assumptions:** Treat **KPG** primarily as a utility token for fees/governance when designing economics; do not assume financial returns. Check latest tokenomics before incentive design.
+* **Governance integration:** If you need on-chain governance hooks (treasury, voting), map to Polkadot-native patterns early.
+
+## FAQs
+**1) Is Mandala Chain EVM compatible?**
+Yes. The testnet supports deploying Solidity contracts with standard Ethereum tooling (Remix/Hardhat/MetaMask).
+
+**2) Does Mandala also support Wasm/ink!?**
+Yes. You can build and deploy Wasm contracts with ink! and manage them via Polkadot.js.
+
+**3) What is KPG (Kepeng)?**
+KPG is Mandala’s network token used for transactions and on-chain governance (18 decimals).
+
+**4) How is Mandala connected to Indonesia?**
+Public materials and media reports describe IDCHAIN collaborations tied to the **.ID** registry ecosystem, targeting large-scale onboarding for public services.
+
+**5) Where can I verify that Mandala is a Polkadot parachain?**
+Parachain listings show Mandala as **Auction #64 winner** with slot leasing through **Feb 2026**, including crowdloan details.
+
+**6) How does Mandala compare to Moonbeam or Astar?**
+Moonbeam is EVM-first; Astar provides dual VM (EVM + Wasm). Mandala is also dual-VM but is uniquely focused on public-sector/enterprise adoption in emerging markets.
+
+**7) Can Mandala apps interoperate with other parachains?**
+Yes—via **XCM**, apps can send assets/calls across Polkadot parachains.
+
+**8) Is there a public explorer and wallet?**
+Community listings reference an explorer and wallet; check Mandala’s official channels for the latest endpoints.
+
+## Conclusion & CTA
+Mandala Chain gives builders a pragmatic route to **production-grade, interoperable apps**—with dual-VM flexibility and a roadmap aimed at national-scale identity and public-service adoption. If you’re targeting **real users** in emerging markets (payments, ID, GovTech, RWA), Mandala’s Polkadot foundation and XCM-first design make it a compelling launchpad.
+
+## Mandala Chain Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+          {
+        href: 'https://www.youtube.com/watch?v=V3M7xwGfIug',
+      title: 'Uniting Indonesia with the Mandala Blockchain ',
+      description: 'Key Pictures presents: Behind the Code Web3 Builders with I Gede Putu Rahman Desyanta, CEO of Baliola & Founder of Mandala Chain.',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=LcMg-R9E68M',
+      title: 'World 4th Largest Country on Blockchain? ',
+      description: 'Blast off with Anta, founder of the Mandala chain - an on-chain network built to purpose for the official agencies of Indonesia.',
+    },
+            {
+        href: 'https://www.youtube.com/watch?v=dzHVV35yRFo',
+      title: 'Mandala Chain Interview!',
+      description: 'Allincrypto interview with Mandala chain founder Mike',
+    },
+                {
+        href: 'https://www.youtube.com/watch?v=qmvkaNgLvrY',
+      title: 'indonesia Onchain 😮 Mandala: Nation, Retail, Enterprise - SM159',
+      description: 'Blast Off with Michael Bennallack, Founder of Mandala Chain & CEO of Republik.',
+    },
+            {
+        href: 'https://www.youtube.com/watch?v=40ja_NYDOe0',
+      title: 'Mandala Chain & Polkadot at Coinfest Asia',
+    },
+            {
+        href: 'https://www.youtube.com/watch?v=y3KLLrPE7T4',
+      title: 'Explore the Paraverse with Mandala Chain',
+    },
+  ]} />

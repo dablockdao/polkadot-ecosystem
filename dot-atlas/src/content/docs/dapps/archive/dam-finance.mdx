@@ -1,0 +1,67 @@
+---
+title: 'DAM Finance'
+description: DAM Finance’s primary offering is its decentralized stablecoin, d2o, which aims to scale native liquidity for emerging networks.
+hero:
+  tagline: d2o is a native, omnichain stablecoin with utility in Polkadot
+  image: 
+    file: ../../../../assets/dapps/defi/dam-finance.png
+  actions:
+    - text: Dapp
+      link: https://app.dam.finance/
+      icon: external
+    - text: Docs
+      link: https://docs.dam.finance/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+DAM Finance, or Decentralized Asset Management Finance, is a groundbreaking platform in the decentralized finance (DeFi) space that offers a global liquidity infrastructure. This platform is designed to facilitate the movement of liquidity across various sovereign blockchain networks, making it a versatile and robust solution for the modern DeFi landscape. DAM Finance’s primary offering is its decentralized stablecoin, d2o, which aims to scale native liquidity for emerging networks without the typical tradeoffs associated with traditional bridging solutions.
+
+## Core Components of DAM Finance**
+1. **d2o Stablecoin**
+    - **Overview**: d2o is an omnichain stablecoin designed to maintain a value close to $1 per token. It serves as a liquidity conduit, channeling liquidity from regions where it is abundant to areas where it is needed most. Initially, d2o is backed 1:1 with USDC on Ethereum.
+    - **Peg Stability**: The value of d2o is stabilized through a Curve stableswap pool on Moonbeam, allowing for arbitrage opportunities to maintain the $1 peg. If the price deviates, arbitrageurs can either buy d2o when it’s below $1 or sell it when it’s above $1 to stabilize its value.
+    - **Fees**: A 0.25% fee is charged upon the redemption of d2o, ensuring the platform’s sustainability.
+
+2. **dReservoir Protocol**
+    - **Functionality**: The dReservoir is a decentralized protocol that enables the secure transfer of value between blockchains. It operates by burning assets on one blockchain and re-minting them on another, starting with d2o. This process facilitates liquidity movement without the need for large liquidity pools within bridge contracts.
+    - **Security**: The dReservoir leverages the dGuardian, a security application that monitors cross-chain transactions to prevent exploits and ensure the integrity of the teleported assets.
+
+3. **dGuardian Security Application**
+    - **Role**: The dGuardian is an additional security layer that monitors the legitimacy of teleportation activities. It ensures that every mint operation follows a burn operation, flagging and pausing any suspicious transactions to prevent unauthorized minting of tokens.
+    - **Functionality**: In the event of a potential exploit, the dGuardian can freeze accounts to allow for community-based investigations. This temporary measure ensures the safety of the ecosystem until the issue is resolved.
+
+## DAM Finance Technical Infrastructure and Deployment
+1. **Minting and Teleportation of d2o:** Users can mint d2o on Ethereum by depositing USDC at a 1:1 ratio. Once minted, d2o can be teleported to other networks, such as Moonbeam, through the dReservoir protocol. The teleportation process involves burning d2o on the source network and re-minting it on the destination network, facilitated by cross-chain messaging protocols.
+2. **Deployment Networks:** d2o is currently deployed on Ethereum and Moonbeam, with ongoing efforts to extend its availability to other networks. The contract addresses are publicly accessible for transparency and verification.
+3. **Inter-Blockchain Messaging:** DAM Finance utilizes asynchronous messaging protocols, specifically LayerZero and Hyperlane, to manage cross-chain communications. These protocols ensure messages are reliably sent and received, enabling seamless and secure teleportation of d2o.
+
+## DAM Finance User Interaction and Ecosystem Integration
+1. **Obtaining and Using d2o:** Users can acquire d2o through the DAM Finance web app by connecting their Ethereum wallets and converting USDC into d2o. Once obtained, d2o can be used within the Moonbeam ecosystem for various DeFi activities, including trading and hedging against market volatility.
+2. **Redeeming d2o:** d2o holders can redeem their tokens back into USDC on Ethereum. The redemption process involves burning d2o, with a small fee deducted to support the platform’s operations.
+3. **Future Utilities:** The utility of d2o is expanding, with plans to integrate it further into the Moonbeam ecosystem and beyond. This includes using d2o as a native stablecoin pair, a reserve asset, and a medium of exchange for payments.
+
+## DAM Finance Security and Governance
+1. **dGuardian Operations:** The dGuardian plays a critical role in maintaining the security of the DAM ecosystem. By monitoring transactions and enforcing protocol invariants, it ensures that all cross-chain activities are legitimate and secure.
+2. **Protocol Enhancements:** DAM Finance is continuously improving its protocols and exploring new security measures. Future developments may include extending the dGuardian’s capabilities to other tokens and services within the ecosystem, enhancing overall security and trust.
+
+### **Conclusion**
+DAM Finance represents a significant advancement in the DeFi space, offering a robust, decentralized solution for cross-chain liquidity movement. With its innovative stablecoin d2o, secure dReservoir protocol, and vigilant dGuardian security system, DAM Finance is poised to become a cornerstone of the Polkadot ecosystem. Its commitment to transparency, security, and seamless user experience positions it as a leader in facilitating the scalable flow of liquidity across blockchain networks. As DAM Finance continues to expand and evolve, it promises to deliver greater efficiency and reliability in the decentralized financial landscape.
+
+- <small>Related Token/s:</small> **d2o**
+
+## DAM Finance Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=3cAiWM4236Q',
+      title: 'DAM Finance Bridgeless Innovations - Space Monkeys 104',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=xXo1l4fPTpY',
+      title: 'DAM Finance Teleportation vs. Bridging of Assets',
+    },
+  ]} />

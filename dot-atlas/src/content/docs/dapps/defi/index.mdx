@@ -1,0 +1,251 @@
+---
+title: Polkadot DeFi Dapps 
+description: Explore top Polkadot DeFi projects revolutionizing finance with innovative solutions for liquidity, staking, and cross-chain interoperability.
+sidebar: 
+    label: DeFi Dapps
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Explore top Polkadot DeFi projects revolutionizing finance with innovative solutions for liquidity, staking, and cross-chain interoperability.
+By fostering cross-chain interoperability, Polkadot enables innovative solutions for liquidity, staking, and decentralized exchanges (DEXs). On this portal you will find all DeFi projects within the Polkadot ecosystem, showcasing their unique contributions and technological advancements.
+
+## Polkadot DeFi Dapps & Projects
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/defi/hydration.png'),
+      href: '/dapps/defi/hydration/',
+      title: 'Hydration',
+      description: 'DEX, Lending & Borrowing, and much more!',
+    },
+    {
+      thumbnail: import('/src/assets/dapps/defi/bifrost.png'),
+      href: '/dapps/defi/bifrost/',
+      title: 'Bifrost',
+      description: 'Liquid staking',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/defi/stellaswap.png'),
+      href: '/dapps/defi/stellaswap/',
+      title: 'Stellaswap',
+      description: 'Polkadot EVM DEX most popular, on Moonbeam',
+      },
+  ]}
+/>
+
+
+## Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=v0EL2E0f-hU',
+      title: 'Polkadot Best DEX, Bridge and Memecoins!! - Alpha Airdrop',
+      description: 'The Hydration Network has rebranded from HydraDX and is currently the best option for bridging your ETH into the Polkadot ecosystem. There you can trade and swap into any polkadot native tokens and even memecoins. This video is purely for educational purposes.',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=XL6f4dPk6Rw',
+      title: '30M Transactions in 1 Month Polkadot DeFi BOOM - The Kusamarian',
+      description: ' Hydration new money market, offering lending and borrowing, and discuss the upcoming feature to earn from liquid staked tokens thanks to Bifrost',
+    },
+  ]}
+/>
+
+## Polkadot DeFi Dapps: The 2025 Guide for Builders and Power Users
+A practical, up-to-date guide to the core Polkadot DeFi dapps you will actually use in 2025, what they do, when to choose them, and how they fit together across Asset Hub, XCM, and EVM parachains. Includes comparisons, workflows, pitfalls, and FAQs. (Updated Sep 14, 2025)
+
+## Why Polkadot DeFi and what is different
+On Polkadot, DeFi is multi-chain by design. Assets live on Asset Hub and on parachains that specialize in different functions. Applications coordinate through XCM, and both EVM and non-EVM runtimes coexist. This creates routes that are hard to replicate on single-chain L1s or siloed L2s—especially for cross-chain liquidity and staking derivatives.
+
+## ELI5: Polkadot DeFi in 30 seconds
+* Relay chain equals security. Parachains plug into shared security.
+* Parachains are specialized appchains. Hydration focuses on liquidity and lending, Bifrost on liquid staking, and Moonbeam on EVM apps.
+* XCM is a message bus. Assets and calls move between parachains without trusted third parties. For Ethereum routes, Snowbridge provides a native, light-client bridge.
+
+## How Polkadot DeFi works: rails, runtimes, and routes
+**Rails**
+* Asset Hub is a neutral venue for issuing and holding assets that can be used across the ecosystem.
+* Snowbridge connects Polkadot and Ethereum for native ETH and ERC-20 routes in or out.
+
+**Runtimes**
+* EVM parachains such as Moonbeam let you use MetaMask and familiar EVM tooling.
+* Non-EVM parachains such as Hydration and Bifrost provide custom pallets and features like an Omnipool AMM, borrowing/lending, and liquid staking.
+
+**Routes**
+* Intra-Polkadot uses XCM to move assets and trigger calls between parachains.
+* Inter-chain uses Snowbridge for Ethereum routes. Aggregator routers can help with UX/price discovery but may add extra trust; prefer native routes when possible.
+
+## Core Polkadot DeFi dapps in 2025
+
+### Hydration: DEX, Money Market, HOLLAR
+Hydration (rebranded from HydraDX) centers on an Omnipool AMM that concentrates liquidity for efficient routing. It also offers a full money market for borrowing and lending and a decentralized, over-collateralized stablecoin called HOLLAR.
+
+**Best for**
+* Deep, single-pool routing for long-tail tokens
+* Single-sided LPing and treasury diversification
+* Supplying collateral and borrowing; minting HOLLAR for stable liquidity
+
+**Notable capabilities**
+* Omnipool with single-sided LPing and dynamic fees
+* Listings: the Omnipool is DAO-governed; Isolated Pairs are permissionless and ideal for early assets
+* Money Market: supply and borrow with risk controls; major assets like DOT, ETH, vDOT and blue-chip stables are supported as collateral
+* HOLLAR: mint a stable asset against supported collateral and manage positions with partial, block-by-block liquidations
+
+### Bifrost: Liquid Staking with vDOT
+Bifrost issues vDOT, a liquid staking derivative of DOT that accrues staking rewards and moves cross-chain via XCM. vDOT is widely integrated across Polkadot DeFi and is supported as collateral on Hydration’s Money Market.
+
+**Best for**
+* Keeping staking yield while using DOT in DeFi
+* Cross-chain deployment of staking derivatives (for example, vDOT on Moonbeam for EVM strategies)
+
+**Notable capabilities**
+* Clear mint/redeem flows and cross-chain logistics
+* vDOT as collateral unlocks strategies like vDOT↔DOT looping on Hydration
+
+### StellaSwap: EVM DEX on Moonbeam
+StellaSwap is a leading DEX on Moonbeam with a hybrid AMM, vote-escrow governance, and concentrated-liquidity style positions. It’s a common first stop for EVM-style DeFi on Polkadot.
+
+**Best for**
+* MetaMask/SubWallet-EVM users
+* Liquidity mining and fine-tuned CL positions
+* Swapping vDOT and other assets routed via XCM or Snowbridge
+
+### Beamswap: EVM DEX on Moonbeam
+Beamswap offers AMM liquidity, CLMM pools, and straightforward LP flows—useful for EVM users landing on Polkadot.
+
+**Best for**
+* Simple AMM UX on Moonbeam
+* Quick access to ecosystem pairs and yield features
+
+## Hydration Strategies: GIGADOT (GDOT) and GIGAETH (GETH)
+
+Hydration’s “GIGA” strategies package multiple yield sources into a single token you can hold, LP, or even use as collateral.
+
+### GIGADOT (GDOT)
+**What it is**  
+A composite DOT strategy token that bundles yield from:
+* vDOT staking rewards
+* aDOT lending interest from the Hydration money market
+* Trading fees from the vDOT–aDOT stablepool
+* Additional DeFi incentives when available
+
+**How it works**  
+Under the hood, GDOT uses Hydration’s stablepool tech with a drifting-peg mechanism to account for value drift between vDOT (appreciates vs DOT) and aDOT (rebasing). The 2-pool token is supplied to lending, so holders capture staking yield, lending yield, LP fees, and incentives via a single position.
+
+**Use cases**  
+* Hold for composite yield without juggling multiple positions
+* Use as collateral to borrow against your DOT exposure
+* Advanced: leverage loops by borrowing DOT against GDOT, converting to more GDOT, and repeating within safe health-factor bounds
+
+**Risks**  
+Exposure to DOT, vDOT, and aDOT price dynamics; liquidation risk when used as collateral; stablepool peg drift; general DeFi risks.
+
+### GIGAETH (GETH)
+**What it is**  
+An automated ETH strategy token that bundles yield from:
+* wstETH staking rewards
+* aETH lending interest from the Hydration money market
+* Trading fees from the wstETH–aETH stablepool
+* Additional DeFi incentives when available
+
+**How it works**  
+GETH also uses the stablepool with a drifting-peg between wstETH and aETH and is supplied to lending. Holders simultaneously capture staking yield, lending yield, LP fees, and incentives—without manually managing allocations.
+
+**Use cases**  
+* Hold for composite ETH yield
+* Provide GETH liquidity in the Omnipool to farm incentives
+* Use as collateral to borrow ETH or stables; advanced users can loop within safe limits
+
+**Risks**  
+Exposure to wstETH/aETH dynamics, impermanent loss when LPing in the Omnipool, liquidation risk when borrowing, and standard DeFi risks.
+
+## Comparison table
+| Dapp / Token | Parachain | Core role | Standout features | LST support | Typical user | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| Hydration | Hydration | DEX and Money Market | Omnipool routing; DAO-governed Omnipool listings; permissionless Isolated Pairs; lending/borrowing; HOLLAR | Uses ecosystem LSTs (for example, vDOT) as collateral where enabled | Traders, LPs, treasuries | Former HydraDX; strong treasury tooling and DCA/OTC flows |
+| Bifrost | Bifrost | Liquid staking | vDOT issuance; cross-chain vToken flows | vDOT for DOT | DOT holders seeking yield with composability | Well-documented mint/move flows |
+| StellaSwap | Moonbeam | EVM DEX | Hybrid AMM; concentrated liquidity; ve-governance | Trades vDOT and ecosystem assets | EVM-first DeFi users | Leading DEX on Moonbeam |
+| Beamswap | Moonbeam | EVM DEX | AMM + CLMM; farms; launch features | Trades vDOT and ecosystem assets | EVM users who want simple LP | Straightforward AMM UX |
+| GDOT (strategy) | Hydration | DOT strategy token | Composite yield from vDOT + aDOT + fees + incentives; drifting-peg stablepool; usable as collateral | Built on vDOT | Yield seekers and power users | One-click DOT stack; can be looped with care |
+| GETH (strategy) | Hydration | ETH strategy token | Composite yield from wstETH + aETH + fees + incentives; drifting-peg stablepool; usable as collateral | Built on wstETH | ETH yield maximizers | Can LP in Omnipool and collateralize |
+
+## Step-by-step starter workflow
+**Goal:** Move value from Ethereum to Polkadot, earn staking yield, and keep EVM-style flexibility.
+
+1. Bridge in  
+   Use Snowbridge to move ETH or ERC-20s from Ethereum to Asset Hub or to Moonbeam. Choose destination based on your next steps.
+
+2. Get DOT exposure  
+   If you bridged to Moonbeam, swap for DOT-routed assets via StellaSwap or Beamswap.
+
+3. Mint vDOT on Bifrost  
+   Send DOT to Bifrost and mint vDOT to keep staking rewards while staying liquid.
+
+4. Choose your path  
+   * Native: Supply vDOT or DOT on Hydration Money Market and borrow/mint HOLLAR for stable liquidity.  
+   * Strategy: Acquire GDOT on Hydration for composite DOT yield, or GETH for composite ETH yield.
+
+5. Deploy capital  
+   Provide concentrated liquidity on StellaSwap/Beamswap, or supply/borrow on Hydration. Advanced users can loop GDOT or vDOT positions with strict risk controls.
+
+**Tip:** If you start on Asset Hub, route to Hydration or Bifrost directly with XCM, then later pivot to Moonbeam if you need an EVM wallet experience.
+
+## Practical examples
+**Loop vDOT into EVM DeFi**  
+Mint vDOT on Bifrost → transfer vDOT to Moonbeam with XCM → pair vDOT with a stable or DOT-routed asset on StellaSwap and provide CL liquidity → hedge or rotate via Hydration MM if supported assets align.
+
+**Use GDOT as an all-in-one DOT stack**  
+Acquire GDOT on Hydration → hold for composite yield or supply as collateral → borrow HOLLAR or DOT for working capital → if looping, keep health factor comfortably above thresholds.
+
+**Earn composite ETH yield with GETH**  
+Bridge ETH → acquire GETH on Hydration → LP GETH in the Omnipool to farm incentives or use GETH as collateral to borrow stable liquidity.
+
+## Common pitfalls and pro tips
+**Pitfalls**
+* Wrong network in wallet (Moonbeam vs Bifrost vs Hydration vs Asset Hub).
+* Under-estimating XCM fees/weight; keep a buffer of the native token for each hop.
+* Assuming ERC-20 contracts on non-EVM chains; Hydration and Bifrost assets are Substrate-native. Verify the correct asset ID before depositing.
+* Confusing Omnipool listings with permissionless markets; Omnipool listings are DAO-approved, while Isolated Pairs are permissionless.
+
+**Pro tips**
+* Start on Asset Hub for neutral issuance, then route outward.  
+* Use vDOT to keep staking yield while you LP or borrow.  
+* Use GDOT or GETH to consolidate multi-source yield into a single token and simplify strategy management.  
+* Prefer native Snowbridge routes for trustless ETH⇄DOT transfers.
+
+## FAQs
+1) Is Polkadot DeFi safe?  
+No DeFi is fully safe. Shared security and XCM reduce some cross-chain risks inside the ecosystem, but you must still review audits, admin keys, and treasury controls.
+
+2) What is Asset Hub and why do I need it?  
+Asset Hub is Polkadot’s system venue for issuing and moving assets across parachains. Many assets pass through it for neutral issuance and routing.
+
+3) How do I bridge from Ethereum to Polkadot?  
+Use Snowbridge for native transfers between Ethereum and Polkadot destinations such as Asset Hub or Moonbeam.
+
+4) What is vDOT?  
+Bifrost’s liquid staking derivative of DOT. It accrues staking rewards and can be used across DeFi; it is supported as collateral on Hydration Money Market.
+
+5) Is Hydration the same as HydraDX?  
+HydraDX rebranded to Hydration and expanded scope with lending/borrowing and HOLLAR.
+
+6) Which DEX should EVM users start with?  
+Most EVM users begin on StellaSwap or Beamswap on Moonbeam due to MetaMask-compatible UX and deep pair coverage.
+
+7) Do I need MetaMask for everything?  
+No. MetaMask helps on Moonbeam, but Substrate-native dapps like Hydration and Bifrost work best with wallets that support both environments.
+
+8) Can XCM move more than tokens?  
+Yes. XCM can pass messages to trigger cross-chain actions. Most users start with transfers and simple calls.
+
+## Conclusion
+Polkadot’s 2025 DeFi stack is practical and composable. Hydration provides deep liquidity, borrowing, and HOLLAR; Bifrost provides liquid staking; Moonbeam DEXs provide EVM-native flows. Add GDOT and GETH to consolidate multi-source yield into single tokens, and combine Asset Hub, XCM, and Snowbridge to route value where it performs best.
+
+
+<DirectoryLinks directory="dapps/defi" />

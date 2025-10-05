@@ -1,0 +1,86 @@
+---
+title: 'Subcoin'
+description: 'Subcoin revoluciona la sincronización de Bitcoin con sincronización rápida descentralizada, instantáneas UTXO sin confianza y su integración con Polkadot-SDK.'
+hero:
+  tagline: 'Sincronización de Bitcoin con Rust y Polkadot-SDK.'
+  image: 
+    file: ../../../../../assets/tools/dev/subcoin.png
+  actions:
+    - text: 'Subcoin'
+      link: https://github.com/subcoin-project
+      icon: external
+    - text: 'Documentación'
+      link: https://subcoin-project.github.io/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+**Subcoin** representa un paso innovador en la evolución de la infraestructura de Bitcoin.  
+Desarrollado en **Rust**, un lenguaje de alto rendimiento reconocido por su seguridad y concurrencia, y aprovechando las capacidades del **Polkadot-SDK** (antes conocido como Substrate), Subcoin busca modernizar el proceso de sincronización de Bitcoin. Su innovación central, la **sincronización rápida descentralizada**, ofrece una solución transformadora para reducir el tiempo y los recursos computacionales necesarios para unirse a la red de Bitcoin.
+
+### Características Clave de Subcoin
+1. **Sincronización Rápida Descentralizada:**  
+   Esta característica permite a los nuevos participantes de Bitcoin sincronizarse con el estado más reciente de la blockchain sin necesidad de descargar y verificar todos los bloques desde el génesis. A diferencia de los métodos tradicionales, el enfoque de Subcoin elimina la dependencia de proveedores de instantáneas confiables, reduciendo drásticamente los tiempos de sincronización y la utilización de recursos.
+
+2. **Instantáneas UTXO sin Confianza con Snapcake:**  
+   Subcoin introduce **Snapcake**, una herramienta diseñada para generar instantáneas UTXO sin confianza que son compatibles con Bitcoin Core. Con Snapcake, los usuarios pueden descargar el estado de Bitcoin directamente desde la red P2P de Subcoin sin ejecutar un nodo de Subcoin, ofreciendo una alternativa fluida y segura para la sincronización rápida de Bitcoin Core.
+
+3. **Desarrollado en Rust:**  
+   Rust destaca en el desarrollo de blockchain gracias a sus sólidas garantías de seguridad y a su optimización del rendimiento. Al estar escrito en Rust, Subcoin ofrece escalabilidad, confiabilidad y el potencial de atraer a más colaboradores del ecosistema de Bitcoin.
+
+4. **Integración con Polkadot-SDK:**  
+   Al basarse en Polkadot-SDK, Subcoin aprovecha un framework modular y escalable para proveer una infraestructura avanzada para Bitcoin. Esta integración brinda flexibilidad para añadir futuras mejoras, como indexadores personalizados, integraciones con monederos e incluso posibles soluciones de Capa 2 para Bitcoin.
+
+### Tipos de Nodos de Subcoin
+Subcoin ofrece tres tipos de nodos para satisfacer distintas necesidades:
+- **Nodo Archivo (Archive Node):**  
+  Conserva todos los datos históricos de la blockchain, permitiendo consultar estados pasados. Ideal para exploradores de bloques y utilidades que requieren un acceso completo a todos los datos on-chain. Requiere un amplio almacenamiento (hasta varios terabytes).
+- **Nodo Completo (Full Node):**  
+  Elimina los estados históricos por encima de un número configurable de bloques finalizados, equilibrando eficiencia de almacenamiento y funcionalidad. Recomendado para la mayoría de usuarios.
+- **Nodo Ligero (Light Node):** (En Desarrollo)  
+  Diseñado para usuarios que necesitan requisitos mínimos de almacenamiento.
+
+### Estrategias de Sincronización: Full Sync vs. Fast Sync
+- **Full Sync:**  
+  Descarga y reproduce la totalidad de la blockchain desde el génesis, un proceso útil para redes nuevas pero intensivo en recursos.  
+- **Fast Sync:**  
+  Obtiene el estado más reciente de Bitcoin desde la red P2P de Subcoin antes de continuar con la sincronización completa en segundo plano, acelerando enormemente el proceso de incorporación.
+
+### Doble Pila de Networking
+Subcoin opera con dos pilas de red en paralelo:
+- La red P2P de Subcoin, basada en protocolos de Substrate.  
+- La red P2P de Bitcoin, siguiendo el protocolo de Bitcoin.  
+
+Aunque ambas redes admiten la sincronización completa, la sincronización rápida está disponible exclusivamente en la red P2P de Subcoin, gracias a su arquitectura optimizada y enfocada en la eficiencia.
+
+### Requisitos de Hardware
+Para operar un nodo de Subcoin, se recomienda cumplir las siguientes especificaciones de hardware:
+- **Nodo Completo (Full Node):** SSD con al menos 500 GiB de espacio.  
+- **Nodo Archivo (Archive Node):** SSD de mínimo 4 TiB para almacenar grandes volúmenes de datos de la blockchain.
+
+### Primeros Pasos con Subcoin
+#### Ejecución de una Sincronización Completa
+Para iniciar una sincronización completa desde la red P2P de Bitcoin, ejecuta el siguiente comando:
+```bash
+subcoin run -d data --log subcoin_network=debug
+```
+
+### Opciones para Verificación de Bloques
+Opciones como `--block-verification=none` permiten omitir la verificación de bloques con fines de prueba.
+
+### Explorando la Sincronización Rápida
+La sincronización rápida se encuentra actualmente en desarrollo. Los interesados pueden consultar la [documentación en GitHub de Subcoin](https://github.com/subcoin-project/subcoin/blob/subcoin-milestone-3/docs/src/test_fast_sync.md) para configuraciones experimentales.
+
+### Uso de Snapcake para Instantáneas UTXO
+Snapcake facilita la descarga de instantáneas UTXO compatibles con Bitcoin Core, posibilitando una sincronización rápida sin confianza y sin necesidad de un nodo de Subcoin. Esta herramienta aumenta la confianza de los usuarios al eliminar dependencias de proveedores centralizados de instantáneas.
+
+### Potencial Futuro
+Subcoin visualiza un futuro donde la infraestructura de Bitcoin se beneficie de las arquitecturas blockchain más avanzadas. Además de solucionar ineficiencias en la sincronización tradicional, abre la puerta a casos de uso avanzados, incluyendo:
+- Integraciones sencillas con monederos.  
+- Indexadores personalizados de blockchain.  
+- Soluciones de Capa 2 para la escalabilidad de Bitcoin.
+
+### Conclusión
+Subcoin conecta la infraestructura histórica de Bitcoin con las posibilidades de las tecnologías blockchain modernas. Gracias a su enfoque en la **sincronización rápida descentralizada**, instantáneas UTXO sin confianza e integración con Polkadot-SDK, Subcoin se perfila como una herramienta clave para mejorar la accesibilidad, eficiencia y escalabilidad de Bitcoin. Conforme el proyecto evolucione, atraerá a más desarrolladores y usuarios que busquen soluciones innovadoras en el ecosistema de Bitcoin.

@@ -1,0 +1,63 @@
+---
+title: Polkadot DeFi Dapps 
+description: Explorez les meilleurs projets DeFi de Polkadot qui révolutionnent la finance avec des solutions innovantes pour la liquidité, le staking et l'interopérabilité entre chaînes.
+tableOfContents: false
+sidebar: 
+    label: DeFi Dapps
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Explorez les meilleurs projets DeFi de Polkadot qui révolutionnent la finance avec des solutions innovantes pour la liquidité, le staking et l'interopérabilité entre chaînes. En favorisant l'interopérabilité entre chaînes, Polkadot permet des solutions innovantes pour la liquidité, le staking et les échanges décentralisés (DEX). Sur ce portail, vous trouverez tous les projets DeFi de l'écosystème Polkadot, mettant en valeur leurs contributions uniques et leurs avancées technologiques.
+
+## Polkadot DeFi Dapps & Projets
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/defi/hydration.png'),
+      href: '/dapps/defi/hydration/',
+      title: 'Hydration',
+      description: 'DEX, Prêt & Emprunt, et bien plus encore!',
+    },
+                     {
+      thumbnail: import('/src/assets/dapps/defi/bifrost.png'),
+      href: '/dapps/defi/bifrost/',
+      title: 'Bifrost',
+      description: 'Staking liquide',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/defi/stellaswap.png'),
+      href: '/dapps/defi/stellaswap/',
+      title: 'Stellaswap',
+      description: 'DEX EVM Polkadot le plus populaire, sur Moonbeam',
+      },
+              {
+      thumbnail: import('/src/assets/dapps/defi/beamswap.png'),
+      href: '/dapps/defi/beamswap/',
+      title: 'Beamswap',
+      description: 'DEX EVM',
+    },
+  ]}
+/>
+
+## Vidéos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=v0EL2E0f-hU',
+      title: 'Polkadot Meilleur DEX, Pont et Memecoins!! - Alpha Airdrop',
+      description: 'Le réseau Hydration a changé de nom depuis HydraDX et est actuellement la meilleure option pour transférer vos ETH dans l écosystème Polkadot. Vous pouvez y échanger et échanger des tokens natifs de Polkadot et même des memecoins. Cette vidéo est purement à des fins éducatives.',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=XL6f4dPk6Rw',
+      title: '30M de transactions en 1 mois 🚀 Polkadot DeFi BOOM - The Kusamarian',
+      description: 'Le nouveau marché monétaire de Hydration, offrant des prêts et des emprunts, et discussion sur la fonctionnalité à venir pour gagner des tokens stakés liquides grâce à Bifrost',
+    },
+  ]}
+/>

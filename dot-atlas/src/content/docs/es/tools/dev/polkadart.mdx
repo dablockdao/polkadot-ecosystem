@@ -1,0 +1,110 @@
+---
+title: Polkadart
+description: 'Polkadart simplifica el desarrollo de aplicaciones en Polkadot con APIs en Dart, seguridad tipada, gestión de llaves y herramientas de interacción blockchain.'
+hero:
+  tagline: 'Simplificando el desarrollo de aplicaciones híbridas en Polkadot.'
+  image: 
+    file: ../../../../../assets/tools/dev/polkadart.png
+  actions:
+    - text: 'Documentación'
+      link: https://polkadart.dev/
+      icon: external
+    - text: 'Github'
+      link: https://github.com/leonardocustodio/polkadart
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+Polkadart es una librería diseñada para empoderar a los desarrolladores en la creación de aplicaciones híbridas dentro del ecosistema de Polkadot.  
+Al ofrecer APIs simples y fáciles de usar, Polkadart facilita la interacción con cualquier blockchain basada en Polkadot.  
+Creada en lenguaje Dart, esta librería provee un conjunto sólido de herramientas para consultar nodos, interactuar con cadenas y gestionar funcionalidades específicas de blockchain.
+
+## ¿Qué es Polkadart?
+Polkadart es una librería integral que actúa como un envoltorio limpio de los métodos expuestos por los clientes de red de Polkadot/Substrate.  
+Define todos los tipos de nodo y APIs, permitiendo a los desarrolladores interactuar de manera sencilla con cadenas de Polkadot.  
+Su ecosistema incluye una serie de paquetes especializados, cada uno diseñado para manejar operaciones específicas de blockchain, lo que convierte a Polkadart en una herramienta versátil y potente para el desarrollo de aplicaciones blockchain.
+
+## Características Clave de Polkadart
+1. **Soporte de API Completo**: Polkadart abstrae protocolos de red complejos, proporcionando APIs sencillas para interactuar con cadenas basadas en Polkadot. Estas APIs permiten:  
+   - Consultar datos de nodo  
+   - Ejecutar transacciones  
+   - Escuchar eventos en tiempo real, como creación de bloques y actualizaciones de balance  
+
+2. **Desarrollo con Seguridad de Tipos**: La CLI de Polkadart facilita la generación de tipos interpretando la metadata de una blockchain específica. Esto garantiza seguridad tipada y autocompletado, permitiendo a los desarrolladores trabajar de forma segura y eficiente con las APIs específicas de la red.
+
+3. **Gestión de Claves y Soporte Criptográfico**: Polkadart incluye herramientas para gestionar pares de llaves, firmar transacciones y manejar operaciones criptográficas a través de los paquetes **Keyring**, **SECP256k1 ECDSA** y **SR25519**.
+
+4. **Implementación de SCALE Codec**: La librería proporciona una implementación de SCALE en Dart, un método eficiente de codificación/decodificación de datos utilizado en cadenas basadas en Substrate.
+
+5. **Gestión de Direcciones SS58**: Polkadart admite la codificación y decodificación de direcciones SS58, un formato común en los ecosistemas de Polkadot y Substrate.
+
+6. **Soporte para BIP39 Mnemonic**: Con el paquete **substrate_bip39**, los desarrolladores pueden generar frases mnemotécnicas legibles para asegurar llaves criptográficas.
+
+7. **Decodificación de Metadata de Substrate**: Polkadart simplifica la decodificación de la metadata de cadenas Substrate, facilitando el acceso a constantes, extrinsics, eventos y otros datos on-chain.
+
+8. **Interacciones con Smart Contracts Ink!**: El paquete **ink_abi** proporciona herramientas para codificar y decodificar ABIs de smart contracts en ink!, permitiendo la interacción con contratos inteligentes del ecosistema Polkadot.
+
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Introducción a Polkadart en el Foro de Polkadot',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-news/src/assets/polkadot.webp',
+      href: 'https://forum.polkadot.network/t/introducing-polkadart-a-dart-and-flutter-library-for-polkadot-based-blockchains/10697',
+      description:
+        'Presentando Polkadart: Una librería de Dart y Flutter para blockchains basadas en Polkadot.',
+    },
+  ]}
+/>
+
+## Ecosistema Polkadart: Paquetes Modulares
+Polkadart funciona como un monorepo, con paquetes que pueden usarse de forma independiente o combinada para lograr una funcionalidad más amplia. A continuación, un resumen de sus paquetes principales:
+
+| **Paquete**              | **Descripción**                                                                 |
+|--------------------------|---------------------------------------------------------------------------------|
+| `polkadart`              | APIs principales en Dart para interactuar con Polkadot                          |
+| `polkadart_cli`          | Generador de tipos para Dart basado en la metadata de la blockchain            |
+| `polkadart_keyring`      | Gestión de llaves y firma de transacciones                                      |
+| `polkadart_scale_codec`  | Codificador/decodificador SCALE                                                |
+| `secp256k1_ecdsa`        | Firma criptográfica SECP256k1                                                  |
+| `sr25519`                | Firma criptográfica SR25519                                                     |
+| `ss58`                   | Codificación/decodificación de direcciones SS58                                 |
+| `substrate_bip39`        | Generación de frases mnemotécnicas para llaves criptográficas                   |
+| `substrate_metadata`     | Decodificador de metadata de Substrate                                         |
+| `ink_abi`                | Herramientas para codificación/decodificación de ABIs de smart contracts ink!   |
+
+## Cómo Empezar con Polkadart
+### Instalación
+Para comenzar a usar Polkadart, agrega el paquete principal a tu archivo `pubspec.yaml`:
+
+```yaml
+dependencies:
+  polkadart: ^<ultima_version>
+```
+
+## Generación de Tipos
+Para la generación de tipos, instala y configura la **CLI de Polkadart**, que crea APIs con seguridad tipada adaptadas a redes específicas.
+
+## Funcionalidades Clave
+- **Escuchar Nuevos Bloques**: Las aplicaciones pueden suscribirse a eventos de creación de bloques en tiempo real.  
+- **Monitoreo de Saldos de Carteras**: Los desarrolladores pueden escuchar cambios de saldo en cuentas on-chain.  
+- **Ejecución de Transferencias**: Las APIs simplifican el proceso de transferir activos entre carteras.  
+- **Lectura de Almacenamiento en la Blockchain**: Herramientas para decodificar y consultar datos on-chain.
+
+## Comunidad y Contribuciones
+Polkadart se nutre de la colaboración de la comunidad. Las contribuciones son bienvenidas de diversas formas, entre ellas:  
+- Proponer nuevas funcionalidades  
+- Reportar o corregir errores  
+- Redactar y traducir documentación  
+- Desarrollar ejemplos y guías  
+- Enviar pull requests  
+
+El proyecto se rige por el **código de conducta de Contributor Covenant** para garantizar un entorno acogedor e inclusivo.
+
+## Respaldado por Web3 Foundation
+Polkadart cuenta con el apoyo del **Web3 Foundation’s Open Grants Program**, que respalda proyectos que impulsan el ecosistema Polkadot. Este apoyo ha sido fundamental para ampliar las capacidades de Polkadart y fomentar la innovación en el espacio Web3.
+
+## Construido con Polkadart
+**Encointer Wallet** es un ejemplo destacado de aplicación que aprovecha Polkadart. La plataforma facilita la creación de monedas basadas en comunidades, demostrando la versatilidad de la librería y su potencial en escenarios de uso reales.

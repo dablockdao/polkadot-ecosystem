@@ -1,0 +1,47 @@
+---
+title: Strumenti Polkadot
+description: Esplora l'ecosistema di Polkadot con gli strumenti essenziali per wallet, esploratori di blocchi, sviluppo, governance, wallet multisig e analisi.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Gli strumenti dell'ecosistema Polkadot sono progettati per migliorare le interazioni degli utenti e semplificare le varie operazioni all'interno della rete.
+Dai wallet e esploratori di blocchi agli strumenti di sviluppo e piattaforme di governance,
+questi strumenti rispondono a un'ampia gamma di esigenze sia per gli utenti principianti che per gli sviluppatori esperti.
+
+Questa varietà di utilità non solo garantisce una sicurezza robusta e una gestione efficiente degli asset digitali,
+ma consente anche agli utenti di interagire pienamente con la rete Polkadot, promuovendo innovazione e crescita all'interno dell'ecosistema.
+
+## Strumenti dell'ecosistema Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/wallets.png'),
+      href: '/tools/wallets',
+      title: 'Wallet',
+      description: 'Scopri i wallet più avanzati per conservare i tuoi asset.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/block-explorers.png'),
+      href: '/tools/block-explorers/',
+      title: 'Esploratori di blocchi',
+      description: 'Comprendi ogni movimento nella rete.'
+      },  
+          {
+      thumbnail: import('/src/assets/thumbnails/dao-tools.png'),
+      href: '/tools/dao-tools/',
+      title: 'Strumenti DAO',
+      description: 'Gli strumenti più popolari per gestire i DAO.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/dev-tools.png'),
+      href: '/tools/dev/',
+      title: 'Sviluppo',
+      description: 'Inizia il tuo viaggio come sviluppatore Polkadot.'
+      },
+  ]}
+/>  

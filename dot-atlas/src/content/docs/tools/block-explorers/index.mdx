@@ -1,0 +1,163 @@
+---
+title: Polkadot Block Explorers
+description: Learn what Polkadot block explorers do and when to use Subscan, Statescan, Chainspect, or 3xpl. Features, use-cases, tips, and FAQs for 2025.
+sidebar: 
+    label: Block Explorers
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Polkadot block explorer tools provide users with detailed insights into blockchain activity, including transactions, accounts, and network statistics. These tools enhance transparency and usability, allowing developers and users to monitor activity across Polkadot and its parachains. With user-friendly interfaces and robust analytics, they are essential for exploring and understanding the Polkadot ecosystem.
+
+## Polkadot Block Explorers
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/tools/block-explorers/subscan.png'),
+      href: '/tools/block-explorers/subscan',
+      title: 'Subscan',
+    },
+                     {
+      thumbnail: import('/src/assets/tools/block-explorers/statescan.png'),
+      href: '/tools/block-explorers/statescan',
+      title: 'Statescan',
+      },  
+    {
+      thumbnail: import('/src/assets/tools/block-explorers/chainspect.png'),
+      href: '/tools/block-explorers/chainspect',
+      title: 'Chainspect',
+      },
+              {
+      thumbnail: import('/src/assets/tools/block-explorers/3xpl.png'),
+      href: '/tools/block-explorers/3xpl',
+      title: '3xpl',
+    },
+  ]}
+/>
+ 
+ ## Polkadot Block Explorers: The 2025 Playbook for XCM, OpenGov, and Analytics
+
+Need the right Polkadot block explorer for day-to-day ops, audits, or XCM tracing? This guide compares **Subscan**, **Statescan**, **XCScan**, **3xpl**, and **Chainspect** (analytics). It also includes step-by-step workflows for CSV exports, cross-chain traces, and identity checks—without mixing in tools that aren’t explorers.
+
+Notably:
+* **polkadot.js Apps** is a **developer portal / power-user UI**, not a block explorer. It connects directly to RPC for extrinsics, storage, and governance actions; keep it in your toolbox but don’t confuse roles.
+
+## ELI5: What a block explorer does
+A block explorer is a **search engine for a blockchain**. Paste an address or a transaction hash and you’ll see:
+
+* The **transaction/extrinsic**, fees paid, and what happened (**events**).
+* The **account**: balances, transfers, possibly identity.
+* The **block**: time, producer, contents.
+  Good explorers add **multi-chain context (XCM)**, **governance timelines**, and **CSV/API access** for reporting and automation.
+
+## How Polkadot changes the explorer game
+Polkadot is **multi-chain by design** (relay chain + parachains). That adds needs beyond single-chain scanners:
+
+* **XCM tracing:** Follow assets/messages across chains. Prefer explorers with dedicated XCM views.
+* **OpenGov context:** Cross-reference referenda and treasury activity as part of due diligence.
+* **Asset Hub specifics:** Asset creation, conversions, and fee-in-asset behavior can require extra decoding. Choose explorers that track system chains well.
+
+
+## Top Polkadot block explorers (profiles)
+### Subscan
+Your **daily driver** for most Polkadot jobs: rich account pages, extrinsics/events decoding, **XCM dashboards**, governance timelines, CSV exports, and **public APIs**. Subscan actively ships improvements and has broad parachain coverage.
+
+**When to use it**
+
+* Confirm transfers/extrinsics; export **CSV** for accounting; check OpenGov timelines.
+
+### Statescan
+A **fully open-source** explorer purpose-built for Substrate chains. Clean interface with **pallet-specific views** (Identity, Multisig, Vesting, Proxy) and coverage across Polkadot/Kusama. Great for transparency and when you need pallet-level clarity.
+
+**When to use it**
+
+* Identity checks, multisig approvals, or quick, minimal state lookups.
+
+### XCScan (Cross-chain Explorer)
+A **native cross-chain explorer** for Polkadot & Kusama—**built for XCM**. Filter by **chains, origin/destination, assets, actions, status, value thresholds** (≥\$10k, ≥\$100k, ≥\$1M), and switch to **Analytics** for volumes, routes, and channels. Ideal for **end-to-end XCM investigations**.
+
+**When to use it**
+
+* Deep-dive **XCM** workflows and cross-chain asset flows that span multiple hops.
+
+### 3xpl (Universal Explorer)
+A **fast, universal explorer**. Paste anything and 3xpl usually recognizes the chain and returns high-level details—handy for **quick triage** or mixed-ecosystem teams, with a Polkadot page for chain-specific browsing. Use it as a first pass, then jump to a Polkadot-native explorer for details.
+
+### Chainspect (Analytics Dashboard)
+Not a traditional explorer; it’s an **analytics fundamentals tracker** for real-time TPS, block time, finality, and ecosystem comparisons—plus dev activity and governance model call-outs. Useful for ecosystem monitoring and **comparing Polkadot with other chains**, not for per-tx decoding.
+
+## Feature comparison
+
+| Tool           | Role                           | Networks covered               | XCM views                     | Governance / OpenGov        | Identity & multisig                           | CSV / Export               | Public API          | Open source                     |
+| -------------- | ------------------------------ | ------------------------------ | ----------------------------- | --------------------------- | --------------------------------------------- | -------------------------- | ------------------- | ------------------------------- |
+| **Subscan**    | Full-featured **explorer**     | Relay + many parachains        | **Yes** (XCM & flows)         | **Yes** (timelines & links) | Basic identity on accounts                    | **CSV** from address views | **Yes**             | Core proprietary; scaffold open |
+| **Statescan**  | **Explorer** (pallet-centric)  | Polkadot/Kusama + chains       | Basic refs                    | Links to governance UIs     | **Dedicated** Identity/Multisig/Vesting/Proxy | Limited                    | Self-host/Endpoints | **Yes**                         |
+| **XCScan**     | **Cross-chain explorer**       | Polkadot + Kusama XCM routes   | **Deep** (filters, analytics) | N/A (links out)             | N/A (XCM focus)                               | Manual exports             | N/A                 | Open-source ethos               |
+| **3xpl**       | **Universal explorer**         | Multi-ecosystem incl. Polkadot | Minimal                       | Minimal                     | Minimal                                       | Limited                    | N/A                 | Proprietary                     |
+| **Chainspect** | **Analytics**, not an explorer | Multi-chain                    | N/A                           | Ecosystem-level context     | N/A                                           | Some charts                | N/A                 | Proprietary                     |
+
+## Step-by-step: common jobs
+### A) Export your DOT transfers to CSV (Subscan)
+1. Open Subscan and search your **address**.
+2. Go to **Transfers → View all**.
+3. Scroll to the bottom and click **Download all data** (CSV).
+
+### B) Trace a multi-hop XCM transfer (XCScan → Subscan)
+1. In **XCScan → Transactions**, filter by **origin/destination**, **asset**, and **status**.
+2. Open the item to see **hops** and timing; note channel/asset details.
+3. Click through to chain-specific explorers (e.g., **Subscan**) to inspect the **source extrinsic** and **destination credit** events.
+
+### C) Verify a validator’s on-chain identity (Statescan)
+1. In **Statescan**, search the **stash** or **controller** address.
+2. Open the **Identity** pallet page to confirm display name, judgements, and sub-identities.
+
+### D) Quick triage when you don’t know the chain (3xpl)
+1. Paste the **hash or address** into **3xpl**.
+2. Confirm chain/type, then pivot to Subscan/Statescan for deep decoding.
+
+### E) Ecosystem-level health check (Chainspect)
+1. Open **Chainspect → Polkadot Ecosystem**.
+2. Review **TPS, finality, block time**, and **dev activity** to contextualize spikes you’re seeing in explorers.
+
+## Pitfalls & pro tips
+
+* **“My tx isn’t on the relay chain.”** Many actions occur on **parachains**. Switch to the correct chain before concluding it’s missing.
+* **Extrinsic vs events.** The **extrinsic** is the call; the **events** show the effects. Check both to understand outcomes.
+* **XCM needs multiple lenses.** Start with **XCScan** for route visibility, then open **Subscan** on each hop for granular details/fees.
+* **Governance context moves.** Explorers often link out to governance portals; use those for discussions and delegations.
+* **APIs & rate limits.** For programmatic access, rely on **Subscan API** and cache responses for dashboards.
+
+## FAQs
+**1) What’s the best all-around Polkadot block explorer?**
+**Subscan**—broad network coverage, strong decoding, **XCM views**, exports, and **public API**. Pair with **XCScan** for deep cross-chain traces and **Statescan** for pallet-level identity/multisig.
+
+**2) How do I follow a failed XCM transfer?**
+Use **XCScan** filters to find the transaction, check status and hops; open **Subscan** for each hop’s events and error codes.
+
+**3) Which tool is open-source?**
+**Statescan** is fully open-source; **XCScan** leans open-source; **Subscan** operates a proprietary platform with an open scaffold.
+
+**4) Can I export a full history for taxes?**
+Yes—**Subscan** supports CSV export from address views (**Transfers → View all → Download all data**).
+
+**5) Where do I check governance activity?**
+Explorers like **Subscan** show timelines and link to governance portals for discussion and delegations.
+
+**6) Is polkadot.js Apps an explorer?**
+No. It’s a **power-user UI** that connects directly to RPC for extrinsics and storage; use it as a companion, not as an explorer.
+
+**7) What about generalist explorers like 3xpl?**
+They’re great for **quick multi-ecosystem lookups**; for Polkadot-specific details (XCM, pallets), pivot to Subscan/Statescan/XCScan.
+
+## Conclusion
+There’s **no single “best”** for every job. Use:
+
+* **Subscan** as your **daily driver** (decode, CSV/API, governance).
+* **XCScan** for **serious XCM tracing** and analytics.
+* **Statescan** for **open-source, pallet-level** clarity (Identity, Multisig, Vesting, Proxy).
+* **3xpl** for **quick triage**; **Chainspect** for **ecosystem analytics**.

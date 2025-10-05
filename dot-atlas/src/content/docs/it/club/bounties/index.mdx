@@ -1,0 +1,164 @@
+---
+title: Polkadot Bounties
+description: Esplora le Bounty di Polkadot e le opportunità per contribuire alla crescita del suo ecosistema.
+tableOfContents: false
+sidebar: 
+    label: Bounty
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Il sistema di bounty di Polkadot favorisce l'innovazione e la collaborazione in diversi ambiti, incentivando i contributori a promuovere la crescita, migliorare la funzionalità e rafforzare l'ecosistema. Queste iniziative coprono marketing, sviluppo, business development, infrastrutture, operazioni e sicurezza, affrontando ciascuna aree chiave critiche per il successo della rete.
+
+1. **Bounty di Outreach:** Le bounty per Marketing ed Eventi amplificano la visibilità di Polkadot attraverso iniziative strategiche, contenuti coinvolgenti ed eventi guidati dalla community che rafforzano la presenza e l'attrattiva dell'ecosistema.
+2. **Bounty di Sviluppo:** Consentono la creazione di strumenti all'avanguardia, esperienze user-friendly e progetti innovativi che arricchiscono l'ecosistema di Polkadot.
+3. **Bounty di Sicurezza:** Rafforzano l'ecosistema di Polkadot con pratiche solide, audit e misure di protezione degli utenti per garantire fiducia e affidabilità.
+4. **Bounty per le Infrastrutture:** Focalizzate sulla costruzione di soluzioni resilienti, scalabili e sicure che potenziano l'ecosistema di Polkadot.
+5. **Bounty per la Community:** Incentivano l'engagement della community, l'educazione e il supporto per promuovere un ecosistema vivace, inclusivo e sostenibile.
+
+- [Standard di Conformità delle Bounty 1.0](https://polkadot.subsquare.io/referenda/1254)
+- [Dati sulle Bounty di DotLake](https://data.parity.io/opengov-report?tab=bounties&info-tab=bounties&chart-tab=chart_opengov_report_bounty_monthly_claimed_amounts_by_parent_bounty)
+- [Invia una Proposta di Bounty](https://wiki.polkadot.network/docs/learn-guides-bounties#submit-a-bounty-proposal)
+
+## Bounty Principali di Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/hub/bounties/marketing.png'),
+      href: '/club/bounties/marketing/',
+      title: 'Marketing Bounty',
+      description: 'Finanzia iniziative per far crescere l ecosistema di Polkadot attraverso progetti di marketing d impatto.',
+    }, 
+    {
+      thumbnail: import('/src/assets/hub/bounties/events.png'),
+      href: '/club/bounties/events/',
+      title: 'Events Bounty',
+      description: 'Allinea la strategia globale degli eventi di Polkadot con gli stakeholder per offrire eventi di grande impatto guidati dalla community.',
+      },
+              {
+      thumbnail: import('/src/assets/hub/bounties/meetupsbounty.png'),
+      href: '/club/bounties/meetups/',
+      title: 'Meetups Bounty',
+      description: 'Finanzia rapidamente meetup su piccola scala per favorire il coinvolgimento delle community locali.',
+    },
+                  {
+      thumbnail: import('/src/assets/hub/bounties/ibp.png'),
+      href: '/club/bounties/ibp/',
+      title: 'Programma per i Costruttori di Infrastrutture',
+      description: 'Supporta i fornitori di servizi nella creazione di infrastrutture decentralizzate e resilienti.',
+    },
+  ]}
+/>
+
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/club/bounties/pioneers-prize/',
+      title: 'Pioneers Prize',
+      description: 'Premia soluzioni che affrontano sfide importanti del Web3 e di Polkadot con significativi premi in DOT.',
+    }, 
+    {
+      thumbnail: import('/src/assets/hub/bounties/uxbounty.png'),
+      href: '/club/bounties/ux-bounty/',
+      title: 'UX Bounty',
+      description: 'Migliora l accessibilità e il design dell interfaccia utente all interno di Polkadot.',
+      },
+              {
+      thumbnail: import('/src/assets/hub/bounties/dotplay.png'),
+      href: '/club/bounties/dotplay/',
+      title: 'DOT Play',
+      description: 'Supporta progetti di gaming con uno sviluppo sostenibile del business all interno di Polkadot.',
+    },
+        {
+      thumbnail: import('/src/assets/hub/bounties/defibounty.png'),
+      href: '/club/bounties/defi-bounty/',
+      title: 'Bounty per Infrastrutture e Strumenti DeFi',
+      description: 'Supporta strumenti per ridurre le barriere all ingresso di liquidità e integrare nuovi utenti in modo sicuro.',
+      },
+  ]}
+/>
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/club/bounties/technical-support/',
+      title: 'Supporto Tecnico',
+      description: 'Fornisce supporto tecnico ai team che sviluppano su Polkadot.',
+    }, 
+    {
+      thumbnail: import('/src/assets/hub/bounties/inkubator.png'),
+      href: '/club/bounties/inkubator/',
+      title: 'Inkubator',
+      description: 'Offre grant e mentorship per progetti ad alto potenziale nell ecosistema ink!',
+      },
+          {
+      thumbnail: import('/src/assets/hub/bounties/pal.png'),
+      href: '/club/bounties/assurance-legion/',
+      title: 'Assurance Legion',
+      description: 'Un gruppo di esperti di sicurezza dedicato a garantire la sicurezza della rete Polkadot.',
+      },
+
+              {
+      thumbnail: import('/src/assets/hub/bounties/antiscam.png'),
+      href: '/club/bounties/antiscam/',
+      title: 'Anti-Scam Team',
+      description: 'Protegge gli utenti combattendo truffe e attività dannose.',
+    },
+  ]}
+/>
+   
+
+## Video della Community sulle Bounty di Polkadot
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=8Cft1-8RWmk',
+      title: 'Come Inviare una Proposta di Bounty | Spiegazioni Tecniche',
+      description: 'Il video spiega come creare una bounty e avviare un referendum OpenGov per la bounty creata.',
+      },
+          {
+      href: 'https://www.youtube.com/watch?v=0nq77X2UXJU',
+      title: 'Gestione delle Child Bounty – Bounty di Polkadot',
+      description: 'Tutto ciò che devi sapere sulla gestione delle child bounty come curatore.',
+      },
+          {
+      href: 'https://www.youtube.com/watch?v=Qv_nJVcvQr8',
+      title: 'Bounty, Multisig e Proxy su Polkadot',
+      description: 'Ricorda che il tuo account DOT NON può scendere sotto il deposito esistenziale di 1 DOT! Assicurati sempre di avere DOT sufficienti per coprire le interazioni on-chain.',
+      },
+          {
+      href: 'https://www.youtube.com/watch?v=K5C8DnVsbh4',
+      title: 'Bounty, Child Bounty e Tips | Approfondimenti su Polkadot',
+      description: 'Un analisi approfondita sulle bounty, le child bounty e il funzionamento dei tips su Polkadot OpenGov.',
+      },
+          {
+      href: 'https://www.youtube.com/watch?v=db82aHgy23c',
+      title: 'Come Richiedere una Ricompensa per una Child Bounty | Spiegazioni Tecniche',
+      },
+          {
+      href: 'https://www.youtube.com/shorts/cmLja92etCw',
+      title: 'Bounty da 4M di Velocity Labs per i Costruttori DeFi di Polkadot!',
+      },
+  ]}
+/>
+
+Risorse della community correlate: 
+- [Scopri di più sulle Bounty di Polkadot nel Wiki](https://wiki.polkadot.network/docs/learn-polkadot-opengov-treasury#bounties)
+- [Feed delle Bounty su Subsquare](https://polkadot.subsquare.io/treasury/bounties)
+- [Landing Page delle Bounty](https://dotbountieshub.online/)
+
+altre bounty:
+- [Bounty per il finanziamento della testnet di sviluppo Paseo](https://polkadot.subsquare.io/treasury/bounties/37)
+- [Sviluppatori open source](https://polkadot.subsquare.io/treasury/bounties/59)
+- [Bounty per RPC pubblici](https://polkadot.subsquare.io/treasury/bounties/31)
+- [Bounty per i collator delle parachain di sistema](https://polkadot.subsquare.io/treasury/bounties/32)
+- [Bounty per il Team di Moderazione](/club/bounties/moderation/)
+- [[Bounty per il Bug delle Bridges](/club/bounties/bridges-bug-bounty/)]
+...

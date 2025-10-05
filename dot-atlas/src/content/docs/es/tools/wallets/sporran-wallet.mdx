@@ -1,0 +1,66 @@
+---
+title: 'Sporran Wallet'
+description: 'Con Sporran Wallet puedes gestionar KILT Coins, crear identidades digitales y firmar documentos de forma segura con esta extensión de navegador.'
+hero:
+  tagline: 'Mantén tus KILT Coins y almacena tus credenciales digitales.'
+  image: 
+    file: ../../../../../assets/tools/wallets/sporran-wallet.png
+  actions:
+    - text: 'Herramienta'
+      link: https://www.sporran.org/
+      icon: external
+    - text: 'Documentación'
+      link: https://github.com/BTE-Trusted-Entity/sporran-extension
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+La billetera Sporran, una extensión de navegador de escritorio, está diseñada para ser la puerta de entrada a la blockchain KILT y a una amplia variedad de servicios Web3. Disponible para Google Chrome y Firefox, Sporran ofrece a los usuarios la capacidad de gestionar sus saldos de KILT Coins, firmar y enviar transacciones, y crear identidades digitales, todo mientras mantienen el control total sobre sus datos personales.
+
+## Características Clave de Sporran Wallet
+1. **Gestión de KILT Coins**: Sporran muestra los saldos de KILT Coins y permite a los usuarios firmar y enviar transacciones en la blockchain KILT. Esta característica la posiciona como una herramienta crítica para gestionar activos KILT de manera eficiente.
+2. **Identificador Descentralizado (DID)**: En el corazón de la funcionalidad de Sporran está la capacidad de generar un identificador descentralizado (DID). Esta cadena única de letras y números forma el núcleo de la identidad digital del usuario.
+3. **Representación de Web3name**: Los usuarios pueden representar su DID con un web3name único y fácilmente legible de su elección. Esto añade un toque personalizado a su presencia digital, mejorando la experiencia del usuario y la gestión de identidades.
+4. **Almacenamiento y Compartición de Credenciales**: Sporran actúa como una billetera física para credenciales digitales. Los usuarios pueden almacenar credenciales personales emitidas por SocialKYC u otros servicios compatibles. Tienen control total sobre estas credenciales, decidiendo cuánta información compartir y con quién.
+5. **Firma de Documentos Digitales con DIDsign**: Sporran permite a los usuarios firmar cualquier tipo de archivo digital de manera privada y descentralizada utilizando DIDsign. Esto mejora la seguridad y autenticidad de las transacciones digitales.
+6. **Integración con el Ecosistema**: Sporran vincula el web3name del usuario y las direcciones de cuenta a través de los ecosistemas KILT, Polkadot y Ethereum. Esta integración sin fisuras permite una gestión más cohesiva de identidades y activos digitales.
+7. **Compartición Pública de Credenciales**: Para los usuarios que deseen hacer ciertas credenciales públicas, Sporran proporciona una manera fácil de compartir estas credenciales, asegurando transparencia y verificabilidad.
+
+## Construyendo Identidades Digitales con Sporran
+Sporran no es solo una billetera, sino un punto de partida para construir identidades digitales robustas. A través de los mecanismos de la blockchain KILT, los usuarios pueden crear su huella digital, representada por un **DID y web3name**, sin la necesidad de comprar o poseer criptomonedas. El Servicio de Checkout permite pagos a través de PayPal, haciéndolo accesible a una audiencia más amplia.
+
+Al vincular credenciales con su DID, los usuarios pueden construir una identidad digital completa. Estas credenciales pueden ser obtenidas de diversas fuentes, incluyendo **SocialKYC**, y se almacenan de manera segura en la billetera Sporran. Los usuarios tienen control total sobre su información, mejorando la privacidad y seguridad en sus interacciones digitales.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'SocialKYC',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/dapps/social/kilt.png',
+      href: 'https://socialkyc.io/',
+      description:
+        "Atestación de identidad descentralizada. Crea tus credenciales sociales descentralizadas.",
+    },
+  ]}
+/>
+
+## Integración con DApps
+Sporran está diseñado para comunicarse sin problemas con aplicaciones descentralizadas (DApps) construidas sobre la blockchain KILT. Los desarrolladores y usuarios pueden utilizar Sporran en conjunto con DApps de ejemplo como CertifiedProof y ProofCheck. Esta integración es particularmente útil para aquellos que desarrollan o prueban DApps, ya que Sporran proporciona una billetera de prueba con play coins para facilitar el desarrollo.
+
+**Conclusión**
+La billetera Sporran es una herramienta poderosa en el ecosistema KILT y Web3. Sus extensas características, desde la gestión de KILT Coins hasta la creación de identidades digitales y el almacenamiento de credenciales, la convierten en una extensión de navegador esencial para cualquiera que busque interactuar con servicios descentralizados. Al proporcionar control total sobre los datos personales y asegurar interacciones digitales seguras, Sporran empodera a los usuarios para construir y gestionar sus identidades digitales con confianza.
+- <small>Token/s Relacionado/s:</small> **KILT**
+
+## Videos de la Comunidad de Sporran Wallet
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=ghjoGa9VBls',
+      title: 'Cómo configurar Sporran Wallet para KILT - Staking4All',
+      description: 'Una guía breve y fácil de seguir que muestra cómo instalar Sporran Wallet para KILT.'
+    },
+  ]} />

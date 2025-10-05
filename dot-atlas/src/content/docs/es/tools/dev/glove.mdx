@@ -1,0 +1,41 @@
+---
+title: 'Glove'
+description: 'Glove asegura votaciones seguras, anónimas y verificables para Polkadot OpenGov utilizando AWS Nitro Enclaves, mejorando la privacidad y la confianza.'
+hero:
+  tagline: 'Votación Segura y Anónima para Polkadot OpenGov.'
+  image: 
+    file: ../../../../../assets/tools/dev/glove.png
+  actions:
+    - text: 'Github'
+      link: https://github.com/GloveProtocol/glove/
+      icon: external
+---
+    
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+**Glove** es un servicio diseñado para Polkadot OpenGov, permitiendo a los votantes participar en referéndums de manera segura y anónima. Al aprovechar AWS Nitro Enclaves, Glove garantiza privacidad y confianza en la gobernanza descentralizada.
+
+### Características Clave
+1. **Mezcla de Votos Segura**: Utiliza AWS Nitro Enclaves para un procesamiento de votos aislado e inviolable.
+2. **Anonimato**: Asegura que las preferencias de los votantes permanezcan confidenciales.
+3. **Verificabilidad**: Permite a los usuarios confirmar que sus votos fueron mezclados por enclaves autenticados.
+
+### Construcción y Despliegue
+Glove puede construirse utilizando Docker en una máquina x86-64. El despliegue requiere una instancia AWS EC2 con Nitro Enclaves, DynamoDB para almacenamiento y roles IAM apropiados.
+
+### Verificación de Votos
+Los participantes pueden verificar que sus votos fueron mezclados de manera segura y reflejan sus preferencias en la cadena. La herramienta cliente de Glove asegura la autenticidad del enclave mediante verificaciones de medición.
+
+### Herramientas de Despliegue
+- **Terraform/OpenTofu**: Automatiza la configuración de la infraestructura.
+- **Ansible**: Configura el servicio y los enclaves.
+- **GitHub Actions**: Maneja CI/CD para actualizaciones.
+
+### Notas Importantes
+- Evita el modo de depuración en producción para mantener la seguridad.
+- Asegura la consistencia de versiones para la verificación de enclaves.
+- Utiliza `--regular-mix` solo para pruebas para evitar fugas de información.
+
+### Conclusión
+Glove avanza la gobernanza blockchain al combinar seguridad, privacidad y transparencia. Empodera a los participantes de Polkadot OpenGov con una solución de votación confiable y verificable, fomentando la confianza y la inclusividad en la toma de decisiones.
