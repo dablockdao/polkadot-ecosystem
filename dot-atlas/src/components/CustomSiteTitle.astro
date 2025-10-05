@@ -1,0 +1,157 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/SiteTitle.astro';
+---
+
+<Default {...Astro.props}><slot /></Default>
+
+<!-- 
+<nav class="topMenu1">
+  <a class="topLink siteActive" href="https://polkadotecosystem.com/">Atlas</a>
+  <a class="topLink" href="https://news.polkadotecosystem.com/">News</a>
+  <a class="topLink" href="https://media.polkadotecosystem.com/">Media</a>
+</nav>
+  -->
+
+  <!-- 
+<nav class="topMenu2">
+    <a class="topLink" href="/tools/">Tools</a>
+    <a class="topLink" href="/dapps/">Dapps</a>
+    <a class="topLink" href="/club/">Community</a>
+    <a class="topLink" href="/club/">Media</a>
+    <a class="topLink" href="/club/">Learn</a>
+</nav>
+  -->
+
+<style>
+
+.topMenu1 {
+  border: 1px solid #6E7391;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 0;
+  border-radius: 10px;
+  margin: 0 15px 0 35px;
+  transition: all 0.2s ease-in-out;
+}
+
+.topMenu1 a {
+  color: #DCE2E9 !important;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  margin: 0 3px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  transition: all 0.2s ease; 
+}
+
+.topMenu1 a:hover {
+  color: #ff2670 !important;
+  background-color: transparent !important;
+  transform: scale(1.05);
+}
+
+:root[data-theme='light'] .topMenu1 a {
+  color: black !important;
+}
+
+.siteActive {
+  font-weight: bold;
+  position: relative;
+}
+
+.siteActive::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  background: url('https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/polkadot.webp') no-repeat;
+  background-size: contain;
+}
+
+.siteActive a {
+  color: #FF2670 !important;
+}
+
+a {
+  font-family: 'Unbounded Bold', sans-serif !important;
+  padding: 1px 3px;
+  margin: 0 3px;
+  text-decoration: none;
+  display: inline-block !important;
+  font-size: 0.55rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.topMenu2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  border-radius: 10px;
+  margin: 0 15px 0 35px;
+}
+
+.topMenu2 a {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+  color: #DCE2E9;
+  padding: 5px 10px;
+  margin: 0 3px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+:root[data-theme='light'] .topLink {
+  color: black;
+}
+
+.topLink:hover {
+  color: #ff2670;
+  background-color: rgba(255, 38, 112, 0.1);
+}
+
+:root[data-theme='light'] .topLink:hover {
+  color: rgb(30, 30, 32);
+  background-color: rgba(83, 79, 80, 0.1);
+}
+
+
+@media (max-width: 768px) {
+
+  .topMenu2 {
+    display: none !important;
+  }
+
+.topMenu1 {
+  
+}
+
+.topMenu1 a {
+  color: #DCE2E9 !important;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.7rem;
+  padding: 3px 3px;
+  margin: 0 1x;
+}
+
+.siteActive::after {
+  position: absolute;
+  bottom: 2px;
+  width: 10px;
+  height: 10px;
+}
+
+}
+
+</style>

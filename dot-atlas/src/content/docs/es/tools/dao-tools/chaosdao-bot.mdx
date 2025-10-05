@@ -1,0 +1,66 @@
+---
+title: 'Governance Bot'
+description: 'ChaosDAO Governance Bot automatiza la votación en Polkadot/Kusama, fomentando una toma de decisiones transparente y colaborativa dentro de comunidades descentralizadas.'
+hero:
+  tagline: 'Revolucionando la Toma de Decisiones Descentralizadas en Polkadot y Kusama.'
+  image: 
+    file: ../../../../../assets/hub/daos/chaosdao.png
+  actions:
+    - text: 'Github'
+      link: https://github.com/ChaosDAO-org/InternalGov-2.0
+      icon: external
+---
+    
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+    
+**Governance Bot de ChaosDAO** automatiza la votación en Polkadot y Kusama, fomentando una toma de decisiones transparente y colaborativa dentro de comunidades descentralizadas.
+    
+## Visión General del Governance Bot
+El **Governance Bot de ChaosDAO** es una solución robusta diseñada para monitorear referendos de gobernanza en las redes Polkadot y Kusama. Su función principal es crear hilos de discusión dedicados para cada referéndum, permitiendo que los miembros de la comunidad deliberan antes de que la cuenta proxy emita un voto en nombre del colectivo. Al integrarse perfectamente con Discord, el bot facilita una plataforma organizada e interactiva para que los interesados compartan ideas y lleguen a un consenso.
+    
+## Características Clave del Governance Bot
+1. **Monitoreo Automatizado de Referendos**: El bot rastrea continuamente las propuestas de gobernanza, asegurando actualizaciones oportunas para las discusiones de la comunidad.
+2. **Creación de Hilos**: Para cada referéndum, el bot genera un hilo específico dentro de un foro designado de Discord, fomentando conversaciones enfocadas y estructuradas.
+3. **Votación Proxy**: Después de las deliberaciones internas, el bot ejecuta votos utilizando una cuenta proxy, alineándose con la decisión mayoritaria y los periodos de votación predefinidos.
+4. **Periodos de Votación Personalizables**: Configuraciones adaptadas para propuestas de Polkadot y Kusama permiten flexibilidad basada en el origen de cada referéndum.
+5. **Fiabilidad 24/7**: Con la gestión de procesos PM2, el bot opera continuamente, asegurando un servicio ininterrumpido.
+    
+## Mejorando la Colaboración de la Comunidad
+El **Governance Bot de ChaosDAO** transforma la gobernanza al permitir discusiones completas dentro de un foro dedicado de Discord. Los miembros de la comunidad pueden intercambiar abiertamente perspectivas sobre las propuestas, asegurando decisiones informadas que reflejen las ideas colectivas. Esta configuración fomenta una participación activa, transparencia y confianza entre los interesados.
+    
+## Caso de Uso Ejemplo
+Considera una propuesta originada desde el rol de "Treasurer" en la red Kusama. Tras su introducción on-chain, el bot inicia un periodo de votación interna de cinco días. Basado en la decisión de la comunidad, la cuenta proxy emite un voto "AYE" o "NAY". Si la postura cambia durante el periodo de revoto subsiguiente, el bot se ajusta en consecuencia, reflejando el consenso colectivo.
+    
+## Implementación Técnica
+El despliegue del bot involucra los siguientes pasos:
+1. **Configuración Inicial**: Configurar el bot con una clave API de Discord, ID del servidor y ID del foro.
+2. **Configuración del Entorno**: Renombrar el archivo `.env.sample` proporcionado a `.env` y completarlo con las credenciales necesarias.
+3. **Instalación de Dependencias**: Usar Python y Node.js para instalar las bibliotecas y herramientas prerequisitas.
+4. **Gestión de Procesos**: Emplear PM2 para mantener el tiempo de actividad del bot 24/7, permitiendo actualizaciones y monitoreo sin interrupciones.
+    
+## Periodos de Votación y Configuraciones
+El **Governance Bot de ChaosDAO** sigue periodos de votación distintos para Polkadot y Kusama, dependiendo del origen de la propuesta. Por ejemplo:
+- **Kusama**:
+    - Root: Periodo de Decisión (14 días), Periodo de Votación Interna (5 días), Periodo de Revoto (10 días)
+    - SmallTipper: Periodo de Decisión (7 días), Periodo de Votación Interna (1 día), Periodo de Revoto (4 días)
+- **Polkadot**:
+    - Root: Periodo de Decisión (28 días), Periodo de Votación Interna (7 días), Periodo de Revoto (20 días)
+    - BigSpender: Periodo de Decisión (28 días), Periodo de Votación Interna (7 días), Periodo de Revoto (20 días)
+    
+Esta estructura asegura adaptabilidad y precisión en la ejecución de votos on-chain, reflejando las preferencias evolutivas de la comunidad.
+    
+## Beneficios del Governance Bot
+1. **Gobernanza Eficiente**: La automatización reduce la supervisión manual, permitiendo una toma de decisiones más rápida y precisa.
+2. **Participación Inclusiva**: La plataforma de discusión asegura que todas las voces sean escuchadas, fomentando un sentido de pertenencia y colaboración.
+3. **Transparencia Mejorada**: Los hilos públicos y los procesos de votación claros construyen confianza dentro de la comunidad.
+4. **Personalización**: Las configuraciones de votación específicas para roles se adaptan a los diversos orígenes de las propuestas y necesidades de toma de decisiones.
+    
+## Soporte y Recursos
+Para asistencia o consultas, ChaosDAO proporciona múltiples canales:
+- **Telegram**: [n4droj](https://t.me/n4droj)
+- **Twitter**: [n4dro](https://twitter.com/n4dro)
+    
+Recursos adicionales, incluyendo el código fuente del bot y las guías de despliegue, están disponibles en GitHub bajo la licencia Apache-2.0. Esta transparencia permite contribuciones comunitarias y la mejora continua de la funcionalidad del bot.
+    
+### Conclusión
+El **Governance Bot de ChaosDAO** se erige como una innovación pivotal en la gobernanza descentralizada. Al combinar automatización, compromiso comunitario y toma de decisiones transparente, empodera a los ecosistemas de Polkadot y Kusama para navegar eficazmente los desafíos de gobernanza. A medida que la tecnología blockchain continúa evolucionando, herramientas como esta subrayan la importancia de una toma de decisiones colaborativa e informada en la configuración del futuro de las redes descentralizadas.

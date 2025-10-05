@@ -1,0 +1,299 @@
+---
+// Footer.astro
+
+import { Icon } from '@astrojs/starlight/components';
+
+
+---
+
+<footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-nav">
+        <div class="footer-col">
+          <span><a href="https://polkadotecosystem.com/tools/">Tools</a></span>
+          <ul>
+            <li><a href="https://polkadotecosystem.com/tools/wallets">Wallets</a></li>
+            <li><a href="https://polkadotecosystem.com/tools/block-explorers">Explorers</a></li>
+            <li><a href="https://polkadotecosystem.com/tools/dao-tools">Governance</a></li>
+            <li><a href="https://polkadotecosystem.com/tools/dev">Development</a></li>
+            <li><a href="https://polkadotecosystem.com/tools/miscellaneous">Miscellaneous</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <span><a href="https://polkadotecosystem.com/dapps/">Dapps</a></span>
+          <ul>
+            <li><a href="https://polkadotecosystem.com/dapps/defi">DeFi</a></li>
+            <li><a href="https://polkadotecosystem.com/dapps/gaming">Gaming</a></li>
+            <li><a href="https://polkadotecosystem.com/dapps/bridges">Bridges</a></li>
+            <li><a href="https://polkadotecosystem.com/dapps/depin">DePin</a></li>
+            <li><a href="https://polkadotecosystem.com/dapps/social">Social</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <span><a href="https://polkadotecosystem.com/club/">Community</a></span>
+          <ul>
+            <li><a href="https://polkadotecosystem.com/club/bounties">Bounties</a></li>
+            <li><a href="https://polkadotecosystem.com/club/initiatives">Initiatives</a></li>
+            <li><a href="https://polkadotecosystem.com/club/collectives">Collectives</a></li>
+            <li><a href="https://polkadotecosystem.com/club/daos">DAOs</a></li>
+            <li><a href="https://polkadotecosystem.com/club/orgs">Orgs</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <span><a href="https://polkadotecosystem.com/resources/">Resources</a></span>
+          <ul>
+            <li><a href="https://polkadotecosystem.com/resources/media/">Media</a></li>
+            <li><a href="https://polkadotecosystem.com/resources/guides/">Guides</a></li>
+            <li><a href="https://polkadotecosystem.com/resources/templates">Templates</a></li>
+            <li><a href="https://polkadotecosystem.com/resources/glossary">Glossary</a></li>
+            <li><a href="https://polkadotecosystem.com/resources/faucets">Faucets</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col">
+          <span>DOT Portals</span>
+          <ul>
+            <li><a href="https://polkadot.com/" target="_blank" rel="noopener noreferrer">DOT <strong>Site⬈</strong></a></li>
+            <li><a href="https://wiki.polkadot.com/" target="_blank" rel="noopener noreferrer">DOT <strong>Wiki⬈</strong></a></li>
+            <li><a href="https://docs.polkadot.com/" target="_blank" rel="noopener noreferrer">DOT <strong>Docs⬈</strong></a></li>
+            <li><a href="https://forum.polkadot.network/" target="_blank" rel="noopener noreferrer">DOT <strong>Forum⬈</strong></a></li>
+            <li><a href="https://support.polkadot.network/" target="_blank" rel="noopener noreferrer">DOT <strong>Support⬈</strong></a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <img class="logo" src="https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/polkadot11.png" alt="Polkadot Ecosystem" width="125" height="32" />
+          <span class="copyright">©2025</span>
+        </div>
+  
+        <div class="social-links">
+          <a href="https://polkadot-discord.w3f.tools/" aria-label="Discord"><Icon name="discord" />          </a>
+          <a href="https://www.reddit.com/r/Polkadot/" aria-label="Reddit"><Icon name="reddit" />          </a>
+          <a href="https://github.com/paritytech/polkadot-sdk" aria-label="GitHub"><Icon name="github" />          </a>
+          <a href="https://www.youtube.com/channel/UCB7PbjuZLEba_znc7mEGNgw" aria-label="YouTube"><Icon name="youtube" />          </a>
+          <a href="https://x.com/Polkadot" aria-label="Twitter"><Icon name="x.com" />          </a>
+          <a href="https://www.instagram.com/polkadotnetwork/" aria-label="Instagram"><Icon name="instagram" />          </a>
+        </div>
+  
+        <a href="mailto:lv@dablock.com" class="get-in-touch">GET IN TOUCH</a>
+      </div>
+    </div>
+  </footer>
+  
+<style>
+/* Fonts */
+@font-face {
+  font-family: 'Unbounded-Light';
+  src: url('./src/fonts/Unbounded-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('./src/fonts/Unbounded-Regular.woff2') format('woff2');
+}
+
+/* Root Variables for Light and Dark Themes */
+:root[data-theme="light"] {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #000000;
+  --text-color: #ffffff;
+}
+
+:root[data-theme="light"] a {
+  color: #000000;
+}
+
+:root[data-theme="light"] .logo {
+  content: url('https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/polkadot11.png');
+}
+
+/* General Footer Styling */
+.site-footer {
+  color: var(--text-color);
+  padding: 3rem 0;
+  border: solid 1px #2d2d2d;
+  border-radius: 25px;
+  background-color: var(--background-color);
+}
+
+.footer-content {
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
+.footer-col span {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+  display: block;
+  font-family: 'Unbounded';
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 0.75rem;
+}
+
+/* Links Styling */
+.footer-col a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  position: relative;
+  font-family: 'Unbounded-Light';
+  transition: color 0.2s;
+}
+
+.footer-col a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ff007a;
+  transition: width 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #ff007a;
+}
+
+.footer-col a:hover::after {
+  width: 100%;
+}
+
+.footer-col span a {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-col span a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #6e7391;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: background-color 0.3s ease;
+}
+
+.footer-col span a:hover {
+  color: #ff0080;
+  transform: scale(1.05);
+}
+
+.footer-col span a:hover::after {
+  background: #ff0080;
+}
+
+/* Logo and Social Links */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  content: url('https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/polkadot22.png');
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: auto 35px auto auto;
+}
+
+.social-links a {
+  margin-right: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.social-links a svg {
+  font-size: 33px;
+}
+
+.social-links a:hover {
+  color: #ff007a;
+}
+
+/* Button Styling */
+.get-in-touch {
+  background-color: #ff007a;
+  color: #ffffff !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.get-in-touch:hover {
+  background-color: #e6006b;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  font-family: 'Unbounded';
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .footer-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social-links {
+    margin: 25px auto 25px auto;
+  }
+
+  .social-links a svg {
+    font-size: 27px;
+  }
+}
+
+</style>
+

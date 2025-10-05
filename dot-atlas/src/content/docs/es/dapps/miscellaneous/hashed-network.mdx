@@ -1,0 +1,107 @@
+---
+title: 'Hashed Network'
+description: Hashed Network es una plataforma basada en blockchain construida sobre Substrate, diseñada para proporcionar funcionalidades útiles para negocios a través de diferentes pallets diseñados específicamente.
+hero:
+  tagline: Blockchain para negocios.
+  image: 
+    file: ../../../../../assets/dapps/miscellaneous/hashednetwork.png
+  actions:
+    - text: Sitio
+      link: https://hashed.network/
+      icon: external
+    - text: Documentación
+      link: https://docs.hashed.network/
+      icon: external
+      variant: secondary
+---
+  
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Hashed Network es una plataforma basada en blockchain construida sobre Substrate, diseñada para proporcionar funcionalidades útiles para negocios a través de diferentes pallets diseñados específicamente. Soporta aplicaciones y productos que operan utilizando estos pallets de red, creando un ecosistema versátil y seguro para las operaciones comerciales. Mientras que los usuarios avanzados pueden interactuar directamente con la red usando herramientas como polkadot-js, la mayoría accede a la red a través de aplicaciones independientes construidas sobre ella.
+Este artículo analiza la arquitectura, componentes y funcionalidades de Hashed Network, destacando su importancia dentro del ecosistema Polkadot.
+
+## Arquitectura General y Componentes de Hashed Network
+La arquitectura de Hashed Network está dividida en tres capas principales:
+1. **Núcleo de Hashed Network**
+2. **Capa de Aplicaciones**
+3. **Relay Chain de Polkadot**
+
+### Núcleo de Hashed Network
+El núcleo está dividido en dos secciones principales: Protocolos y Core.
+
+#### Protocolos
+- **Actualizaciones Frecuentes**: Centradas en mejoras de desarrolladores principales y funcionalidades dirigidas por el mercado.
+- **Enfoque en Desarrolladores Principales**: Prioriza innovaciones y funcionalidades avanzadas para negocios.
+
+Componentes clave incluyen:
+- **Fruniques**: Permite la creación y gestión de activos fraccionarios, basándose en el pallet Uniques.
+- **Documentos Confidenciales**: Ofrece servicios para gestionar documentos confidenciales de manera segura.
+- **Marketplace**: Permite a los usuarios crear y gestionar sus propios mercados.
+- **Bitcoin Vaults**: Soporta la orquestación de firmas múltiples para Bitcoin y otros activos.
+- **Administración de Fondos**: Ofrece herramientas para la gestión de fondos.
+- **RBAC**: Control de Acceso Basado en Roles para gestionar permisos de usuarios.
+
+#### Core
+- **Cambios Infrecuentes**: Utiliza principalmente pallets desarrollados por Parity, con un enfoque en mantenimiento y reutilización.
+- **Funcionalidad Dirigida por el Mercado**: Implementa componentes estables y reutilizables.
+
+Componentes clave incluyen:
+- **Tesorería**: Gestiona fondos de la red.
+- **Colectivos**: Soporta procesos de toma de decisiones colectivas.
+- **Balances**: Maneja transacciones relacionadas con saldos.
+- **Identidad**: Administra identidades de usuarios.
+- **Gobernanza**: Funcionalidades relacionadas con la gobernanza.
+- **Recuperación**: Soporta mecanismos de recuperación de cuentas.
+- **XCM**: Mensajería entre cadenas para la comunicación entre parachains.
+
+### Capa de Aplicaciones
+Esta capa alberga diversas aplicaciones que interactúan con el Núcleo de Hashed Network para proporcionar funcionalidades comerciales a los usuarios finales.
+Aplicaciones clave incluyen:
+- **Afloat**: Un mercado de créditos fiscales con funcionalidades para usuarios verificados, activos fraccionarios y valoraciones.
+- **Treasury Vaults**: Ofrece orquestación de firmas múltiples para Bitcoin, USD/T y activos nativos de DOT.
+- **EB5 Proxy**: Una plataforma de administración de fondos para la industria de inversión EB5.
+- **Directorio Empresarial**: Lista entidades comerciales verificadas y direcciones receptoras en múltiples redes.
+
+Hashed Network se comunica con otras parachains a través del Relay Chain de Polkadot, asegurando seguridad e interoperabilidad entre diferentes redes.
+
+#### Características Clave
+- **Políticas de Gasto Sin Código**: Herramientas como Elephant permiten construir políticas de gasto complejas.
+- **Control de Monedas**: Organiza y etiqueta UTXOs para una contabilidad adecuada.
+- **Prueba de Reservas**: Asegura que los tesoreros puedan demostrar acceso a los UTXOs listados.
+
+## Protocolo del Mercado de Hashed Network
+**Roles y Permisos**
+- **Propietario**: Gestiona el mercado y especifica cuentas para pagos de comisiones.
+- **Administrador**: Aprueba nuevos participantes y evaluadores de activos.
+- **Evaluador de Activos**: Asigna calificaciones y puntuaciones a los activos.
+- **Especialista en Redención**: Transforma activos en cadena en activos del mundo real.
+- **Participante del Mercado**: Origina y compra activos.
+- **Árbitro**: Resuelve disputas y libera fondos en custodia.
+
+### Activos Fraccionables
+Cada activo puede ser fraccionado infinitamente, permitiendo la propiedad parcial y el seguimiento detallado de transacciones de activos.
+
+## Privacidad y Seguridad de Hashed Network
+**Almacenamiento Preservador de Privacidad**
+Los usuarios pueden encriptar y compartir selectivamente datos vinculados a activos y transacciones del mercado, garantizando privacidad y seguridad.
+
+## SDK para Desarrolladores de Hashed Network
+**Características**
+- Métodos flexibles de autenticación.
+- Integraciones configurables para la gestión de activos y pagos.
+- Pallets comerciales que soportan control de acceso basado en roles y contabilidad en cadena.
+- Almacenamiento de archivos de extremo a extremo con intercambio entre pares y grupos.
+- Runtime basado en WASM para operaciones de red de nivel industrial.
+
+## Videos de la Comunidad Hashed Network
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=Y34yi-kdxJM',
+      title: 'Hashed Network conectando Solochain con Polkadot:',
+      description: 'Hashed Network y los $1B asegurados en su solochain listos para conectarse con Polkadot.',
+    },
+  ]} />

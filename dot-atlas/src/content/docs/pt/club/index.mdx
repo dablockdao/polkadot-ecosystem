@@ -1,0 +1,44 @@
+---
+title: Comunidade Polkadot
+description: Comece agora e junte-se à maior DAO do mundo.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+O Clube do Ecossistema Polkadot oferece uma coleção unificada dos principais elementos que moldam a rede.
+Inclui um diretório abrangente de **DAOs e coletivos**, destacando grupos que lideram esforços de governança, gerenciam tesourarias
+e impulsionam a inovação dentro do ecossistema por meio de suas diferentes iniciativas.
+
+Esses coletivos representam o espírito colaborativo da Polkadot,
+mostrando como a tomada de decisão descentralizada permite uma gestão de projetos transparente e eficiente. Além disso, o hub apresenta detalhes sobre **organizações que contribuem ativamente para o ecossistema**,
+incluindo equipes de desenvolvimento e instituições que trabalham juntas para construir o futuro da tecnologia blockchain.
+
+*Uma lista curada com todos os agentes relevantes do ecossistema Polkadot (DAOs, Pessoas, Validadores...) para acompanhar.*
+
+## Todo o Ecossistema Polkadot em Um Só Lugar
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/daos.png'),
+      href: '/club/daos',
+      title: 'DAOs',
+      description: 'Descubra as DAOs e Coletivos mais populares que moldam o Ecossistema Polkadot.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/orgs.png'),
+      href: '/club/orgs/',
+      title: 'Organizações',
+      description: 'Todas as organizações que estão construindo o futuro da internet.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/initiatives.png'),
+      href: '/club/initiatives/',
+      title: 'Iniciativas',
+      description: 'Comece sua jornada como desenvolvedor Polkadot.'
+      },
+  ]}
+/>

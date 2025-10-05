@@ -1,0 +1,160 @@
+---
+title: NOMT
+description: How NOMT speeds state reads, updates, and proofs with SSD-aligned merklization—benchmarks, comparisons, and a pilot plan.
+hero:
+  tagline: Nearly-Optimal Merkle Trie.
+  image: 
+    file: ../../../../assets/tools/dev/thrum.png
+  actions:
+    - text: Github
+      link: https://github.com/thrumdev/nomt
+      icon: external
+    - text: Blog
+      link: https://www.rob.tech/blog/introducing-nomt/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+## NOMT: Nearly-Optimal Merkle Trie for SSD-era blockchain state
+NOMT (“Nearly-Optimal Merkle Trie”) is a merklized, SSD-optimized key-value database designed to make state reads, updates, and proofs dramatically faster for blockchain nodes. This guide explains how NOMT works, why it matters, how it compares to sp-trie/JMT, and how to pilot it—plus pitfalls, FAQs, and SEO-ready metadata.
+
+## What problem does NOMT solve?
+Modern L1/L2 nodes are increasingly **I/O-bound**, not CPU-bound. The slow part isn’t instruction execution; it’s fetching scattered state from disk and then **merklizing** it for proofs, light clients, bridges, or ZK circuits. NOMT targets this bottleneck by:
+
+* **Reading from a flat key–value store during block execution** (avoids trie walks on the hot path).
+* **Batch-updating a page-aligned Merkle layout** so proofs and new roots are cheap to compute and serve.
+
+**Why now?** SSDs deliver high random IOPS in 4 KB pages. Classic tries force many tiny, random reads per access. NOMT **packs multiple trie nodes into a single page** so each disk hit yields more useful data, drastically cutting IOPS per operation.
+
+## ELI5: NOMT in one minute
+Think of your blockchain’s state like a **huge spreadsheet** on an SSD. Every transaction needs to read scattered cells and prove the final sheet’s checksum (the Merkle root).
+
+* **Old way:** Walk a deep tree on disk—lots of page jumps just to read a few cells and compute a proof.
+* **NOMT way:**
+
+  * Keep an **easy, flat index** to read the cells during execution.
+  * Meanwhile, **pre-fetch** the tree pages you’ll need.
+  * **Pack the tree** so each SSD page contains a small subtree.
+  * While the SSD fetches, **use the CPU** to build proofs and stage updates.
+
+Result: fewer disk trips, more work done between trips, faster roots & witnesses.
+
+## How NOMT works (design goals & mechanics)
+**Design goals:**
+* **Flat KV reads during execution.** Avoid “walking the trie” on the hot path.
+* **Aggressive prefetch.** Saturate the SSD with parallel reads; hide I/O latency.
+* **Do work while waiting.** Generate witnesses and stage updates between page fetches.
+* **SSD-page-aligned storage.** Pack nodes so most reads are **predictable and page-optimal**.
+* **Merklized, single-state database** with **multiproofs** for large read/update batches.
+
+**On-disk layout insight:** A 4 KB SSD page can hold a compact **sub-trie** (e.g., a small fixed-depth binary region plus metadata). NOMT implements this idea, decoupling logical structure from physical layout to minimize page reads per access.
+
+**Implementation status (POC → evolving):**
+* **Language:** Rust.
+* **Packaging:** crates for the core and storage backends.
+* **Intended use:** Embeddable state DB for blockchain nodes; initial target included Sovereign-SDK.
+
+## Performance highlights & benchmarks
+Public POC benchmarks (May 2024) on a Ryzen 7950X / 64 GB RAM / consumer 4 TB SSD (1 M IOPS), running **1,000,000 “transfer” ops** over a **2^27 (\~134 M)-account** database, reported:
+* **Mean workload (25k ops per batch):** \~**1,151 ms** for NOMT vs \~**12,530 ms** (sp-trie) and \~**17,075 ms** (sov-db).
+* **Mean commit+prove:** \~**431 ms** (NOMT) vs \~**874 ms** (sp-trie) and \~**16,144 ms** (sov-db).
+* Peak SSD throughput ≈ **2.4 GiB/s (\~618k IOPS)** observed; the main bottleneck was **state reads**, not merklization.
+
+**Interpretation:**
+* **sp-trie** incurs random-read penalties by traversing the trie on reads (Patricia-style).
+* **sov-db/JMT** separates KV & trie but faced higher I/O in that setup due to archival layout/column choices.
+* **NOMT** keeps execution on **flat KV** and performs trie updates/proofs off the hot path, leveraging **prefetch and page packing**.
+
+> Treat these as **vendor-published POC numbers**; reproduce on your hardware and workload before committing.
+
+## NOMT vs sp-trie vs JMT/sov-db (comparison)
+| Feature / DB         |                      **NOMT** |    **sp-trie (Substrate)** |   **JMT / sov-db (Sovereign)** |
+| -------------------- | ----------------------------: | -------------------------: | -----------------------------: |
+| Execution-path reads |   **Flat KV** (no trie walks) |    Trie traversal on reads |        Flat KV + separate trie |
+| Disk layout          | **SSD-page-packed sub-tries** |         Patricia/MPT-style | JMT optimized for LSM/LSM-like |
+| Prefetch strategy    |    **Aggressive parallelism** |       Limited by traversal |                 Impl-dependent |
+| Proofs               |  **Multi-proofs for batches** |            Patricia proofs |                     JMT proofs |
+| Reported POC perf.   |  **Fast**; I/O-bound on reads |        Slower random reads |      Slower commit+prove (POC) |
+| Maturity             |          POC; evolving crates | Battle-tested in Substrate |        Active in Sovereign SDK |
+
+## When to use NOMT
+Choose NOMT if you need:
+* **High-throughput block building/validation** on **SSD-backed nodes**, where random state reads dominate cost.
+* **Frequent multi-proof generation** (light clients, bridges, ZK pipelines) without sacrificing execution speed.
+* A **KV-first execution path** with **merklized state commitments** updated off the hot path.
+
+Prefer sp-trie/JMT if:
+* You rely on **ecosystem-standard tooling** tightly coupled to those tries.
+* Your workload is **small state / heavy compute** (I/O isn’t your bottleneck).
+* Operational risk of a new backend outweighs expected gains today.
+
+## Step-by-step: trial integration plan
+1. **Scope a canary node.** Pick a non-critical validator/archive or a devnet sequencer.
+2. **Model your state access.** Gather **hot-path key distributions**; estimate working set and page locality.
+3. **Bring in the crates.** Add the NOMT core and a backend via a feature-flagged build; keep your canonical DB behind a clean interface.
+4. **KV adapter layer.** Map runtime/storage keys to NOMT’s KV API; maintain parity with your current trie for cross-checks.
+5. **Prefetch hints.** From your execution engine, emit read/write sets early so NOMT can pre-fetch pages while the block is still executing.
+6. **Witness integration.** Wire **multi-proofs** into light-client/bridge flows; validate against golden vectors.
+7. **A/B benchmarks.** Reproduce **random-access stress** and **power-law** distributions; vary batch sizes and I/O depth.
+8. **Operational hardening.** Add backpressure, WALs/snapshots, page-cache tuning, and “panic to safe DB” toggles.
+9. **Rollout gates.** Enable per-node; monitor: mean/95p **state read latency**, **commit+prove time**, **IOPS utilization**, **CPU stalls**.
+
+## Practical checklist
+* [ ] Confirm **SSD health/specs** (IOPS, queue depth, firmware).
+* [ ] Decide on **KV key normalization** (hashing, namespaces) for predictability.
+* [ ] Turn on **I/O tracing** (e.g., `iostat`, `perf`, `blktrace`) before/after.
+* [ ] Validate **proof correctness** (unit vectors + cross-implementation verifier).
+* [ ] Size **page cache vs. RAM**; test cold-start vs. warm cache runs.
+* [ ] Test **pathological randomness** and **real power-law** access.
+* [ ] Simulate **reorgs** and **snapshot/restore** flows.
+* [ ] Establish **fallback** to canonical state DB.
+
+## Common pitfalls & tips
+* **“It’s still slow.”** Ensure execution hits **flat KV**, not trie pages (no hidden trie walks on the hot path).
+* **IOPS under-utilization.** Increase **parallelism** (I/O depth, threads) until latency flattens; aim to saturate SSD queues.
+* **Tiny batches.** Multi-proofs shine with **larger batches**; very small blocks minimize advantage.
+* **Misaligned pages.** If backend/page size differs, you lose packing benefits; verify **4 KB (or device-native) alignment**.
+* **Unrealistic benchmarks.** Avoid only-warm-cache runs. Clear OS page cache between rounds to mirror cold/warm scenarios.
+
+## FAQs
+**What exactly is “nearly-optimal” here?**
+Minimizing **page reads** per access by packing trie nodes into SSD-sized pages; e.g., a small fixed-depth sub-trie fits in 4 KB, reducing random I/O.
+
+**Does NOMT replace my KV store?**
+No. It **embeds as a merklized KV backend**; POCs use RocksDB-style storage underneath, with customized backends planned.
+
+**How does NOMT differ from Substrate’s sp-trie?**
+sp-trie **walks the trie** for reads (Patricia-style), incurring more random I/O. NOMT **reads flat KV** during execution and updates the trie off the hot path.
+
+**How does NOMT differ from JMT (Diem/Aptos) and sov-db?**
+JMT is optimized for LSM-based storage. In POC comparisons, sov-db showed slower commit+prove times than NOMT on the reported setup. **Your mileage may vary—benchmark.**
+
+**Is NOMT production-ready?**
+Treat it as **emerging**—ideal for pilots and research. Check repo activity, issues, and tags; validate on your workload and hardware.
+
+**Can NOMT reach “Solana-level” throughput?**
+It’s a **directional claim**: by removing merklization from the hot path and saturating SSD IOPS, nodes can approach similar throughput **without dropping proofs**—but real results depend on your execution engine and concurrency model.
+
+**Any related research after 2024?**
+Yes—subsequent papers and surveys discuss SSD-aligned tries and fast state commitments, often referencing page-packing approaches.
+
+**Licensing?**
+Permissive, open-source.
+
+## Conclusion
+NOMT reframes state merklization for the **SSD era**: **flat KV on the hot path**, **page-aligned sub-tries** for low-IOPS proofs, and **prefetch/parallelism** to keep CPUs busy while disks work. If your node is I/O-bound, NOMT deserves a **canary deployment** and a fair A/B test against your current state DB.
+
+## NOMT Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=N3BX2eTqpro&source_ve_path=MjM4NTE',
+      title: 'NOMT: Scaling Blockchains with a High throughput State Database',
+      description: 'NOMT is a permissively-licensed, single-state, merklized key-value database targeted at modern SSDs, optimized for fast read access, fast witnessing, and fast updating. NOMT supports efficient merkle multi-proofs of reads and updates. It is intended to be embedded into blockchain node software and is unopinionated on data format.',
+    },
+  ]} />
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS5WsfuRCN4o3-J1PBM-xPwAP1Ws04RiYRJHaD3JYX2kMu1e4XmvoxFGOQJcOPGAnhmmgIjccY15bwL/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

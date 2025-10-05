@@ -1,0 +1,90 @@
+---
+title: Txwrapper
+description: Txwrapper-core are essential tools for FRAME chain builders to create secure, offline transaction libraries in the Polkadot ecosystem.
+hero:
+  tagline: A Toolset for Offline Transaction Libraries in FRAME Chains.
+  image: 
+    file: ../../../../assets/polkadot.webp
+  actions:
+    - text: Github
+      link: https://github.com/paritytech/txwrapper-core
+      icon: external
+    - text: Docs
+      link: https://paritytech.github.io/txwrapper-core/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+The development of blockchain ecosystems has brought about the need for robust tools that streamline transactions while maintaining security and efficiency. For builders in the Polkadot and Substrate ecosystems, the **txwrapper-core** library emerges as a pivotal solution. Tailored for FRAME chain developers, this suite provides tools to create, maintain, and test chain-specific offline transaction generation libraries. By offering a seamless integration process, **txwrapper-core** enhances the offline transaction workflow for both developers and end users.
+
+## What Is txwrapper-core?
+**txwrapper-core** is the cornerstone of the txwrapper suite, a set of packages designed to enable offline transaction generation for specific blockchain environments. These libraries cater to distinct blockchain use cases by offering utilities to construct, sign, and decode transactions without requiring a live network connection. Built on the foundation of the **polkadot.js** library, the txwrapper suite provides a scalable and customizable framework for blockchain developers.
+
+## Txwrapper Core Features
+1. **Chain-Specific Libraries.** **txwrapper-core** serves as the base package for creating chain-specific libraries, commonly referred to as txwrappers. Examples include:
+    - **@substrate/txwrapper-polkadot:** Focused on Polkadot, Kusama, and their associated system chains.
+    - **@substrate/txwrapper-orml:** Supports chains using ORML pallets, such as Acala.
+2. **Modular Design.** The suite consists of several interdependent packages, each fulfilling a specific role:
+    - **@substrate/txwrapper-core:** The essential utilities for developing chain-specific txwrappers.
+    - **@substrate/txwrapper-registry:** Facilitates registry creation for chains using types from **@polkadot/apps-config**.
+    - **@substrate/txwrapper-substrate:** Provides dispatchables for Substrate pallets.
+    - **[@substrate/txwrapper-dev](https://github.com/paritytech/txwrapper-core/tree/main/packages/txwrapper-dev):** Offers development helpers, including registries and metadata.
+3. **Offline Transaction Workflow.** The txwrapper suite empowers developers to:
+    1. Construct transactions offline.
+    2. Sign transactions securely without exposing private keys.
+    3. Decode transactions for verification before submission.
+
+## Txwrapper Examples and Templates
+For newcomers and seasoned developers alike, **txwrapper-core** includes examples and templates:
+- **[@substrate/txwrapper-example](https://github.com/paritytech/txwrapper-core/tree/main/packages/txwrapper-examples):** Demonstrates how to construct, sign, and decode transactions using libraries such as **@substrate/txwrapper-polkadot**.
+- **[@substrate/txwrapper-template](https://github.com/paritytech/txwrapper-core/tree/main/packages/txwrapper-template):** A boilerplate for creating new chain-specific libraries.
+
+## Txwrapper Key Benefits
+1. **Security and Efficiency:** Offline transaction generation minimizes exposure to potential network vulnerabilities, enhancing the security of private keys and sensitive data.
+2. **Scalability:** Developers can rapidly adapt the tools to support new chains or update existing ones, ensuring long-term utility and flexibility.
+3. **Open-Source Collaboration:** The txwrapper suite is open-source under the GPL-3.0-or-later license, inviting contributions from the global developer community. Its repository includes tools for building, testing, and publishing updates efficiently.
+
+## Txwrapper Usage and Maintenance
+Developers can integrate txwrapper-core into their projects by following these steps:
+1. Install dependencies with **yarn**:
+```bash
+yarn install
+```
+
+## Build the Packages
+To build the packages, run the following command:
+
+```bash
+yarn run build
+```
+
+## Test and Lint the Codebase
+To ensure compatibility, test and lint the codebase with the following commands:
+
+```bash
+yarn run test
+yarn run lint
+```
+
+ ### Conclusion
+By providing tools for secure, offline transaction generation, txwrapper-core simplifies complex workflows and empowers developers to build efficient, chain-specific solutions. With its open-source foundation and active community, txwrapper-core is poised to remain an indispensable resource for the growing Web3 landscape.
+
+## Txwrapper Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=8oqZhdl7C1o',
+      title: 'API Sidecar and TX Wrapper | Polkadot Deep Dive',
+        },
+          {
+      href: 'https://www.youtube.com/watch?v=IK4sVrPbBCM',
+      title: 'Polkadot Deep Dives: API Sidecar & TxWrapper',
+          },
+                              {
+      href: 'https://www.youtube.com/watch?v=_lQU_7IDjAc',
+      title: 'Integrations Tools Being Built and Maintained | Substrate Seminar',
+          },
+  ]} />

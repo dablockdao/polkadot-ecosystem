@@ -1,0 +1,87 @@
+---
+title: 'Chainviz'
+description: 'ChainViz es una herramienta de visualización de blockchain en tiempo real en 3D para Polkadot y Kusama, revolucionando la accesibilidad y comprensión.'
+hero:
+  tagline: 'Visualización de Blockchain en Tiempo Real.'
+  image: 
+    file: ../../../../../assets/tools/miscellaneous/chainviz.png
+  actions:
+    - text: 'Sitio'
+      link: https://chainviz.app/
+      icon: external
+    - text: 'Github'
+      link: https://github.com/helikon-labs/chainviz
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+**ChainViz**, una aplicación de visualización 3D en tiempo real, está transformando el funcionamiento abstracto de los ecosistemas de Polkadot y Kusama en una experiencia interactiva e intuitiva.  
+Desarrollado por Helikon, con el respaldo del Tesoro de Kusama y la Web3 Foundation (W3F), ChainViz representa un avance significativo en las herramientas de exploración de blockchain.
+
+## ¿Qué es ChainViz?
+En esencia, ChainViz ofrece una visualización inmersiva y en tiempo real de la actividad blockchain dentro de las relay chains de Polkadot y Kusama.  
+Esta aplicación brinda a los usuarios una vista detallada del funcionamiento del sistema, que incluye:
+- **Validadores Activos:** Representación en 3D y en formato de lista detallada de validadores activos.  
+- **Producción de Bloques:** Visualización en tiempo real del proceso de producción de bloques, así como el contenido de cada bloque al hacer clic.  
+- **Parachains:** Muestra las parachains y sus validadores asignados, incluyendo los mensajes de cadena cruzada (cross-chain) gracias a la API de Polkaholic.  
+- **Transferencias XCM:** Mensajes recientes de transferencias XCM y detalles completos de cada mensaje.  
+- **Datos de Staking y de la Red:** Un resumen de información esencial de la red y de staking.  
+- **Detalles de Validadores:** Información detallada de cada validador, incluyendo seguimiento de rendimiento en tiempo real.
+
+ChainViz aprovecha las potentes capacidades de **SubVT**, un conjunto de herramientas diseñado para mejorar el ecosistema de Substrate, asegurando datos precisos en tiempo real y una experiencia de usuario fluida.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Presentación Oficial de Chainviz',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/hub/orgs/helikonlabs.png',
+      href: 'https://medium.com/helikon/introducing-chainviz-v1-a-new-kind-of-block-explorer-6b9f4ed83e8d',
+      description:
+        "Presentando Chainviz v1: Un Nuevo Tipo de Explorador de Bloques",
+    },
+  ]}
+/>
+
+## La Visión detrás de ChainViz
+El concepto de ChainViz fue concebido a principios de 2022 por **Kutsal Kaan Bilgin**, un desarrollador de blockchain con amplia experiencia y apasionado por mejorar la accesibilidad en este ámbito. Al reconocer las limitaciones de los exploradores de bloques tradicionales como Subscan y Etherscan, Bilgin se propuso crear un nuevo tipo de explorador capaz de visualizar procesos complejos de blockchain en un formato más accesible.
+
+A diferencia de los exploradores convencionales, que suelen basarse en datos de texto y gráficos estáticos, ChainViz ofrece:
+1. **Mayor Accesibilidad:** Visualizaciones 3D interactivas que facilitan la comprensión de procesos de blockchain tanto para expertos como para principiantes.  
+2. **Información en Tiempo Real:** Los usuarios pueden observar el funcionamiento interno de la blockchain conforme sucede.  
+3. **Analítica Avanzada:** El diseño dinámico de la aplicación ayuda a identificar tendencias y anomalías.
+
+## Características Clave de ChainViz
+1. **Visualizaciones Mejoradas para Componentes de Blockchain:**  
+   ChainViz da vida a la blockchain mediante la representación en 3D de validadores activos y parachains. La proyección esférica de los validadores y el mapeo dinámico de las parachains ofrecen una visión completa de sus interrelaciones y de cómo interactúan.  
+
+2. **Datos de Bloques y Validadores en Tiempo Real:**  
+   Los usuarios pueden explorar estadísticas detalladas de validadores y la producción de bloques en tiempo real. Al hacer clic en un bloque específico, se despliega su contenido, incluyendo hash, número, extrinsics y eventos.  
+
+3. **Visualización de Mensajería Entre Cadenas (Cross-Chain):**  
+   La integración con la **API de Polkaholic** permite que ChainViz muestre transferencias XCM recientes y detalles de sus mensajes asociados, resaltando la interoperabilidad dentro del ecosistema de Polkadot.  
+
+4. **Diseño Responsivo:**  
+   Optimizadas para distintos tamaños de pantalla, las visualizaciones de ChainViz garantizan una experiencia de usuario consistente y atractiva en cualquier dispositivo, preparando el camino para futuras expansiones a plataformas móviles y de realidad virtual/aumentada.
+
+## Desarrollo y Arquitectura
+ChainViz se construye con **Three.js**, un potente framework WebGL que permite un renderizado 3D de alto rendimiento directamente en el navegador. Su arquitectura se basa en componentes modulares:
+- **Data Store:** Gestiona las conexiones a los servicios y el acceso a datos en toda la aplicación.  
+- **Componentes de UI:** Incluye la escena 3D y los elementos de la interfaz, brindando una experiencia de usuario fluida.  
+- **Clase Scene:** Se encarga de las operaciones de WebGL y el renderizado en tiempo real.
+
+El carácter de **código abierto** de la aplicación promueve la transparencia y la colaboración, con su repositorio disponible en GitHub.
+
+## Hoja de Ruta Futura
+El desarrollo de ChainViz está lejos de completarse. El equipo visualiza varias mejoras, como:
+1. **Visualización Completa de Parachains:** Integración de collators y mayor detalle en la producción de bloques.  
+2. **Analítica de Nominadores:** Seguimiento del rendimiento y datos de telemetría para nominadores.  
+3. **Compatibilidad con Móviles y VR/AR:** Ampliar la accesibilidad a smartphones, tablets y dispositivos de realidad virtual/aumentada.  
+4. **Mejoras Educativas:** Guías y tutoriales interactivos para usuarios que se inician en el mundo de las cadenas de bloques.
+
+## Impacto en el Ecosistema Blockchain
+Al proporcionar una visualización inmersiva e intuitiva del funcionamiento interno de Polkadot, ChainViz puede redefinir la forma en que los usuarios interactúan y comprenden la tecnología blockchain. Su interfaz 3D en tiempo real elimina la complejidad de conceptos abstractos, fomentando una adopción más amplia y un mayor compromiso dentro del ecosistema.
+
+## Conclusión
+ChainViz trasciende la idea de un simple explorador de bloques; es una herramienta revolucionaria que redefine la visualización de blockchain. Al combinar tecnología de vanguardia con una interfaz de usuario intuitiva, ChainViz permite que los usuarios exploren las redes de Polkadot y Kusama de maneras nunca antes vistas. Conforme evolucione, ChainViz promete convertirse en un recurso esencial tanto para profesionales de blockchain como para entusiastas.

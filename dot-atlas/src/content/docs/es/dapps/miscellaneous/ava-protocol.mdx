@@ -1,0 +1,85 @@
+---
+title: 'Ava Protocol'
+description: Ava Protocol (anteriormente OAK Network), o Núcleo Autónomo en la Cadena, es una arquitectura descentralizada y confiable diseñada para ejecutar acciones automatizadas en la blockchain basadas en desencadenantes específicos.
+hero:
+  tagline: Mejora las funciones cross-chain con transacciones autónomas privadas.
+  image: 
+    file: ../../../../../assets/dapps/miscellaneous/ava-protocol.png
+  actions:
+    - text: Sitio
+      link: https://avaprotocol.org/
+      icon: external
+    - text: Documentación
+      link: https://avaprotocol.org/docs/ethereum/getting-started/introduction
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Ava Protocol (anteriormente Oak Network) es una solución innovadora de blockchain diseñada para habilitar una automatización cross-chain sin interrupciones. Construida como un EigenLayer Active Validator Set (AVS) orientado a eventos, proporciona herramientas para que los desarrolladores programen y automaticen cualquier transacción en la blockchain. Con un enfoque en los ecosistemas de Ethereum y Polkadot, Ava Protocol ofrece automatización inteligente, privacidad mejorada, composabilidad sin esfuerzo y ahorros significativos de costos, posicionándose como una infraestructura transformadora para el ecosistema Web3.
+
+## Características clave de Ava Protocol
+1. **Automatización confiable:** Ava Protocol facilita una automatización descentralizada y confiable, permitiendo a los usuarios definir condiciones específicas ("si esto") y acciones correspondientes ("entonces aquello") para ejecutar transacciones. Esto garantiza precisión y confiabilidad sin intervención manual.
+2. **Súper-Transacciones:** Automatizaciones avanzadas que consolidan múltiples interacciones de contratos inteligentes en una única transacción autónoma. Simplifican flujos de trabajo y permiten procesos eficientes activados por condiciones predefinidas como tiempo, umbrales de precios u otros eventos on-chain.
+3. **Privacidad y seguridad mejoradas:** Gracias a mecanismos avanzados de protección contra Maximal Extractable Value (MEV), Ava Protocol garantiza que las transacciones sean confidenciales y resistentes a actividades maliciosas como front-running. Esto es crucial para proteger los activos e información de los usuarios.
+4. **Eficiencia de costos:** Ava Protocol reduce significativamente los costos de transacción mediante técnicas de optimización como cálculos off-chain. Los usuarios pueden ahorrar hasta un 90% en tarifas de gas, haciendo las interacciones blockchain más accesibles y asequibles.
+
+### **Blockchains compatibles con Ava Protocol**
+Ava Protocol es compatible con Ethereum y Polkadot, dos de los ecosistemas blockchain más prominentes. Soporta:
+- **Cadenas compatibles con EVM:** Garantiza integración sin interrupciones con aplicaciones basadas en Ethereum.
+- **Cadenas basadas en Substrate:** Habilita funcionalidades avanzadas para proyectos en Polkadot, incluyendo compatibilidad con las redes de prueba Kusama y Rococo.
+
+Esta doble compatibilidad permite a los desarrolladores aprovechar las capacidades de Ava Protocol en múltiples entornos blockchain, mejorando la interoperabilidad y eficiencia de sus aplicaciones.
+
+## Componentes principales de Ava Protocol
+1. **Desencadenantes:** Los desencadenantes definen las condiciones bajo las cuales se ejecutan las tareas. Incluyen:
+   - **Basados en tiempo:** Acciones programadas para ocurrir en momentos o intervalos específicos.
+   - **Eventos XCMP:** Activación basada en eventos de paso de mensajes cross-chain.
+   - **Eventos on-chain:** Activados por sucesos específicos en la blockchain.
+   - **Precio de tokens:** Ejecución cuando un token alcanza un umbral de precio predefinido (actualmente en beta).
+   - **Datos numéricos:** Activación basada en condiciones numéricas específicas (actualmente en beta).
+2. **Acciones:** Las acciones son operaciones realizadas al cumplirse las condiciones de un desencadenante. Incluyen:
+   - **Eventos nativos:** Eventos personalizados ejecutados en la cadena.
+   - **Transferencias de tokens:** Transferencias de tokens nativos, KSM/DOT o tokens parachain.
+   - **Extrínsecos cross-chain:** Ejecución de transacciones entre múltiples blockchains.
+   - **Reinversión de recompensas de staking:** Automatización de la reinversión de recompensas.
+
+## Casos de uso de Ava Protocol
+El marco versátil de Ava Protocol soporta una amplia variedad de casos de uso:
+- **Aplicaciones DeFi:** Órdenes automáticas stop-loss, pagos recurrentes y promedio de costos estables.
+- **Gaming y NFTs:** Simplificación de transacciones para activos en juegos y acuñación de NFTs.
+- **Recompensas de staking:** Compounding automático de recompensas en pools de liquidez y mercados monetarios.
+- **Activos del mundo real:** Simplificación de la gestión de activos tokenizados.
+
+## Integración y accesibilidad de Ava Protocol
+Diseñado para facilidad de uso, la infraestructura de Ava Protocol admite una integración sin interrupciones con ecosistemas blockchain existentes. Su compatibilidad con cadenas EVM y basadas en Substrate asegura una mínima disrupción en los sistemas actuales, permitiendo a los desarrolladores mejorar funcionalidades sin esfuerzo.
+
+### Perspectivas técnicas de Ava Protocol
+El protocolo se basa en estructuras de datos robustas y pallets de automatización avanzados para gestionar tareas. Cada tarea incluye:
+- **ID de cuenta:** Identifica al usuario que inicia la tarea.
+- **Datos del desencadenante:** Especifica las condiciones para la ejecución.
+- **Datos de la acción:** Define la operación a realizar al activarse el desencadenante.
+
+Las tareas se almacenan en la cadena y se monitorean continuamente hasta que se cumplen las condiciones, garantizando confiabilidad y transparencia.
+
+### Conclusión
+Ava Protocol representa un avance significativo en la automatización blockchain, proporcionando herramientas para construir soluciones eficientes, seguras y rentables. Su énfasis en la privacidad, interoperabilidad y facilidad de integración lo convierte en un recurso valioso para el ecosistema Web3. Al abordar los desafíos de los procesos manuales y los altos costos, Ava Protocol desbloquea nuevas posibilidades para aplicaciones descentralizadas en múltiples industrias.
+
+## Videos de la comunidad de Ava Protocol
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=rj2pZ3wQsYs',
+      title: 'Desbloqueando la automatización de contratos inteligentes con Ava Protocol',
+      description: 'Únete a Chris Li, fundador de Ava Protocol y ex ingeniero de software senior en Microsoft, mientras revela cómo Ava Protocol está transformando el futuro de la automatización de contratos inteligentes.'  
+       },
+           {
+      href: 'https://www.youtube.com/watch?v=0CMPpGXa2V4',
+      title: 'Bienvenido a Ava Protocol | Impulsando Web3',
+      description: 'Ava Protocol es un AVS basado en intenciones de EigenLayer que permite transacciones autónomas privadas para numerosos casos de uso como DeFi, NFTs y juegos.'  
+       },
+  ]} />

@@ -1,0 +1,78 @@
+---
+title: 'Aventus Network'
+description: La Aventus Network (AvN) representa una nueva generación de tecnología blockchain escalable e interoperable.
+hero:
+  tagline: Una red escalable impulsando una visión global Web3 para todos.
+  image: 
+    file: ../../../../../assets/dapps/miscellaneous/aventus-network.png
+  actions:
+    - text: Productos
+      link: https://www.aventus.io/
+      icon: external
+    - text: Github
+      link: https://github.com/AventusProtocolFoundation
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+La Aventus Network (AvN) representa una nueva generación de tecnología blockchain escalable e interoperable. Construida sobre Substrate y operando como una parachain de Polkadot, Aventus ofrece un alto rendimiento en transacciones, finalización determinista y bajos costos. Actúa como un puente entre los ecosistemas Ethereum y Polkadot, habilitando una interoperabilidad perfecta. Desde su lanzamiento en mainnet en 2021, Aventus ha procesado más de 36 millones de transacciones, demostrando su capacidad y fiabilidad.
+
+## Aventus: Evolución y Capacidades
+Aventus comenzó en 2018 como una solución blockchain para la industria de boletos, con el objetivo de combatir el fraude y la reventa. Inicialmente basada en Ethereum, las limitaciones de escalabilidad de esta red llevaron a Aventus a desarrollar su propia solución de Capa 2. Esto evolucionó hacia Aventus Network, que luego se convirtió en una parachain de Polkadot para mejorar su escalabilidad e interoperabilidad.
+
+## Arquitectura Técnica de Aventus
+- **Framework Substrate:** Substrate, la tecnología subyacente de Aventus, es un framework de desarrollo blockchain de código abierto diseñado para alta personalización e interoperabilidad. Permite actualizaciones sin interrupciones y compatibilidad con la cadena de retransmisión de Polkadot, asegurando que Aventus aproveche la seguridad y los mecanismos de consenso compartidos de Polkadot.
+- **Integración con Polkadot:** Polkadot, a menudo referido como una blockchain de Capa 0, conecta múltiples blockchains de Capa 1 (parachains) en una única red. Esto permite interoperabilidad e intercambio de datos entre blockchains. Aventus, como parachain, se beneficia de esta arquitectura, mejorando su seguridad y escalabilidad.
+- **Cuentas y Nodos:** Aventus utiliza una dirección de 32 bytes derivada de una clave pública criptográfica para la gestión de cuentas. Soporta saldos en su token nativo (AVT) y cualquier token ERC-20 en su red de Capa 2. Aventus emplea varios tipos de nodos:
+
+1. **Nodos RPC:** Facilitan la interacción con la blockchain enviando transacciones y consultando datos.
+2. **Nodos Archivo:** Almacenan el historial completo de la blockchain, utilizados principalmente para respaldo.
+3. **Nodos Collator:** Crean bloques en la cadena y mantienen la blockchain autorizando y verificando transacciones.
+
+### **Extrínsecos y Runtime**
+Los extrínsecos son transacciones que se originan fuera de la red blockchain. Aventus valida estas transacciones a través de sus nodos collator antes de procesarlas e incluirlas en bloques. El runtime, que opera como una máquina virtual, maneja las transiciones de estado y la incorporación de bloques a la cadena.
+
+### **Mecanismos de Consenso**
+Aventus inicialmente usaba un consenso Proof of Stake (PoS), pero **ahora deriva su seguridad de la cadena de retransmisión de Polkadot**. La autoría de bloques es manejada por los collators de Aventus utilizando el algoritmo AURA, mientras que la finalización está a cargo de los validadores de la cadena de retransmisión de Polkadot.
+
+## Comunicación Capa 1-Capa 2
+Aventus facilita una comunicación perfecta entre la Capa 1 (Ethereum) y la Capa 2 (Aventus) a través de un conjunto de reglas implementadas por contratos inteligentes y pallets de Substrate. Esto asegura transferencias de activos y procesamiento de transacciones seguras y eficientes entre ambas capas.
+
+## Ecosistema y Casos de Uso de Aventus
+Aventus soporta diversas aplicaciones en múltiples sectores. Algunos proyectos destacados incluyen:
+
+1. **Parity:** Una plataforma para atletas femeninas que utiliza NFTs para abordar la brecha salarial de género.
+2. **Wolf of Wall Street Film Studio:** Utiliza NFTs para la interacción con los fans y memorabilia.
+3. **Beatport:** Plataforma de música electrónica que aprovecha blockchain para la gestión de contenido digital.
+4. **Energy Web:** Acelerando la transición hacia energía limpia mediante soluciones blockchain.
+5. **VOW:** Innovando esquemas de lealtad y sistemas de reembolso con un modelo de dos tokens.
+6. **Fruitlab:** Red social para gamers que genera ingresos a través de blockchain.
+7. **ASX Sports:** Plataforma de deportes y entretenimiento que utiliza blockchain para la interacción con los fans.
+
+## El Token Aventus (AVT)
+**AVT es el token de utilidad nativo de la Aventus Network**, utilizado para tarifas de transacción, staking y gobernanza. Inicialmente lanzado en Ethereum, AVT tiene un suministro total de 10 millones de tokens. Propuestas recientes de gobernanza han introducido mecanismos para precios dinámicos de gas y emisión adicional de tokens para apoyar el crecimiento de la red y las subastas de slots de parachains.
+
+## Hoja de Ruta Futura
+Aventus planea descentralizar aún más su red, mejorar el rendimiento y la finalización de transacciones, y desarrollar incentivos económicos avanzados. Las iniciativas clave incluyen:
+1. **Descentralización:** Distribuir los nodos collator geográficamente para lograr una red completamente descentralizada.
+2. **Infraestructura Empresarial:** Desarrollar herramientas empresariales como wallets, indexadores y oráculos para soportar casos de uso diversos.
+3. **Interoperabilidad:** Ampliar el soporte para estándares de tokens y la integración cross-platform para evitar silos de activos.
+4. **Privacidad:** Implementar tecnologías que preserven la privacidad para transacciones seguras y privadas.
+
+### **Conclusión**
+Aventus Network se posiciona como una solución blockchain robusta, escalable e interoperable dentro del ecosistema Polkadot. Su arquitectura técnica, junto con su hoja de ruta estratégica, posicionan a Aventus como una plataforma líder para aplicaciones blockchain de nivel empresarial. A medida que continúa evolucionando, Aventus está preparada para impulsar la innovación y la adopción en múltiples industrias, reforzando su papel como un actor clave en el espacio blockchain.
+
+## Videos de la Comunidad Aventus Network
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=5hGrRRffQMk',
+      title: 'Casos de Uso Empresariales de Aventus Network',
+      description: 'Una charla con el equipo de Aventus y sus invitados sobre los casos de uso del proyecto.',
+          },
+  ]} />

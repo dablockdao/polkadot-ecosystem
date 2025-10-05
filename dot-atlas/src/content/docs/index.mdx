@@ -1,0 +1,422 @@
+---
+title: Polkadot Ecosystem
+description: Get started and join the biggest DAO in the world.
+template: splash
+---
+
+import { ImageCard, LinkButton2 } from '../../components/ImageCard.astro';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+import { Card, CardGrid, LinkCard, LinkButton, FileTree, Tabs, TabItem } from '@astrojs/starlight/components';
+import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import { Image } from 'astro:assets';
+import Hero2 from '/src/components/landing/Hero2.astro';
+import Stats from '/src/components/landing/Stats.astro';
+import CallCTA from '/src/components/landing/CallCTA.astro';
+
+<Hero2 />
+<Stats />
+
+<CardGrid>
+  <LinkCard
+    title="Tools Directory"
+    href="/tools"
+    description="Wallets, explorers, DAO ops, and developer infrastructure."
+  />
+  <LinkCard
+    title="Dapps Directory"
+    href="/dapps"
+    description="Discover live DeFi, social, gaming, and AI experiences."
+  />
+  <LinkCard
+    title="Community Hub"
+    href="/club"
+    description="Meet DAOs, initiatives, and orgs building with Polkadot."
+  />
+  <LinkCard
+    title="Resource Library"
+    href="/resources"
+    description="Guides, templates, media, and support for faster onboarding."
+  />
+</CardGrid>
+
+## What is the Polkadot ecosystem?
+Polkadot is a **network of blockchains**. A central **relay chain** provides shared security; specialized **parachains** plug in to add capabilities (DeFi, identity, gaming, etc.). **XCM** is the native messaging standard for moving assets and instructions across chains. **Asset Hub** is a system chain for issuing and managing tokens/NFTs that other chains can use; some networks support **paying fees in non-native assets** via asset-conversion pools.
+
+## How the ecosystem is organized
+* **Relay Chain:** Security & coordination; not for dapps.
+* **System Chains:**
+  * **Asset Hub** for assets/NFTs and fee-payment features via conversion pools.
+  * **Bridge Hub** for connecting Polkadot to external ecosystems via light-client or verified bridges.
+* **Parachains:** App-specific chains for DeFi, identity, gaming, compute, storage, social, RWA/DePIN, etc.
+* **Routing:** **XCM** for intra-Polkadot transfers/instructions; **bridges** for external chains.
+* **Portals & Tools:** Wallets, explorers, OpenGov dashboards, SDKs, APIs, indexers, oracles.
+
+&nbsp;
+
+<a id="explore"></a>
+<Tabs>
+  <TabItem label="Tools">
+  
+  ## Polkadot Tools
+Essential infrastructure for interacting with Polkadot—wallets, explorers, DAO tooling, and developer frameworks.  
+
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/Wallets2.png'),
+      href: '/tools/wallets',
+      title: 'Wallets',
+      description: 'Discover the most advanced wallets to store your assets.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/Permissionless.png'),
+      href: '/tools/block-explorers/',
+      title: 'Explorers',
+      description: 'Understand every movement in the network.'
+      },  
+          {
+      thumbnail: import('/src/assets/thumbnails/Referenda.png'),
+      href: '/tools/dao-tools/',
+      title: 'DAO Tools',
+      description: 'The most popular tools to manage DAOs.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/Oracle.png'),
+      href: '/tools/dev/',
+      title: 'Development',
+      description: 'Start your journey as a Polkadot developer.'
+      },
+  ]}
+/>  
+  </TabItem>
+
+  <TabItem label="Dapps">
+  ## Polkadot Dapps
+Explore live DeFi, bridge, gaming, NFT, social, AI, and infrastructure experiences secured by Polkadot parachains.
+
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/Trading.png'),
+      href: '/dapps/defi',
+      title: 'DeFi',
+      description: 'Discover the most popular DeFi dapps in the Polkadot ecosystem.'
+    },
+        {
+      thumbnail: import('/src/assets/thumbnails/DePIN2.png'),
+      href: '/dapps/depin/',
+      title: 'DePin',
+      description: 'Polkadot Ecosystem DePin Projects.'
+      },
+                     {
+      thumbnail: import('/src/assets/thumbnails/inter.png'),
+      href: '/dapps/bridges/',
+      title: 'Bridges',
+      description: 'Discover the Polkadot Ecosystem bridges.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/Gaming2.png'),
+      href: '/dapps/gaming/',
+      title: 'Gaming',
+      description: 'Explore the most popular games.'
+      },
+  ]}
+/>
+&nbsp;
+
+<ShowcaseImage
+entries={[
+                       {
+      thumbnail: import('/src/assets/thumbnails/NFTs.png'),
+      href: '/dapps/nft-marketplaces/',
+      title: 'NFTs',
+      description: 'Explore active NFT marketplaces across the Polkadot ecosystem.'
+      }, 
+ {
+      thumbnail: import('/src/assets/thumbnails/social-media.png'),
+      href: '/dapps/social/',
+      title: 'Social',
+      description: 'Connect with social and creator dapps powered by parachains.'
+      }, 
+    {
+      thumbnail: import('/src/assets/thumbnails/smart-contracts2.png'),
+      href: '/dapps/smart-contracts/',
+      title: 'Smart Contracts',
+      description: 'Find smart-contract ecosystems built on Polkadot and Substrate.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/dApps.png'),
+      href: '/dapps/ai/',
+      title: 'AI',
+      description: 'Browse emerging AI dapps leveraging Polkadot interoperability.'
+      },
+]}
+/>
+  </TabItem>
+
+  <TabItem label="Resources">
+  ## Polkadot Resources
+Access guides, references, templates, and media to onboard faster and keep your teams aligned with Polkadot best practices.
+
+----------------
+<ShowcaseImage
+  entries={[
+    {
+      thumbnail: import('/src/assets/thumbnails/open-source.png'),
+      href: '/resources/guides/',
+      title: 'Guides',
+      description: 'Step-by-step walkthroughs for staking, governance, building, and more.'
+    },
+    {
+      thumbnail: import('/src/assets/thumbnails/Quests.png'),
+      href: '/resources/templates/',
+      title: 'Templates',
+      description: 'Ready-to-use proposal, reporting, and campaign templates.'
+    },
+        {
+      thumbnail: import('/src/assets/thumbnails/Debate.png'),
+      href: '/resources/glossary/',
+      title: 'Glossary',
+      description: 'Quick definitions for core Polkadot terminology and concepts.'
+    },
+    {
+      thumbnail: import('/src/assets/thumbnails/TokensAssets.png'),
+      href: '/resources/faucets/',
+      title: 'Faucets',
+      description: 'Testnet tokens and onboarding flows for builders and testers.'
+    },
+  ]}
+/>
+&nbsp;
+
+  </TabItem>
+
+  <TabItem label="Community">
+  ## Polkadot Community
+The Polkadot Ecosystem Hub highlights the collective strength and innovation driving the network's growth. 
+Explore impactful DAOs and collectives, discover organizations shaping the future of Web3, 
+and connect with key initiatives advancing the ecosystem. 
+For newcomers, the hub offers a comprehensive library of resources to learn, grow, and actively contribute to 
+Polkadot’s vision of a decentralized internet.
+
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/Vote.png'),
+      href: '/club/daos',
+      title: 'DAOs',
+      description: 'Discover the most popular DAOs and Collectives shaping the Polkadot Ecosystem.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/Economics.png'),
+      href: '/club/orgs/',
+      title: 'Organizations',
+      description: 'All the organizations building the future of internet.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/Community.png'),
+      href: '/club/initiatives/',
+      title: 'Initiatives',
+      description: 'Community-led programs, events, and grassroots campaigns.'
+      },
+          {
+      thumbnail: import('/src/assets/thumbnails/Treasury.png'),
+      href: '/club/bounties/',
+      title: 'Bounties',
+      description: 'Complete list of live and archived Polkadot bounties.'
+      },
+  ]}
+/>
+  </TabItem>
+</Tabs>
+
+&nbsp;
+## Core user tools
+### Wallets
+**Purpose:** Account creation, key management, transfers, staking, governance, dapp connections.
+* **Talisman:** Extension/mobile; multi-chain UX; portfolio & DeFi views; NFT support; strong Polkadot + EVM coverage.
+* **SubWallet:** Extension/mobile; Polkadot-first UX; broad parachain coverage; staking & governance flows; open-source ethos.
+* **Nova Wallet:** Mobile-first; non-custodial; staking and governance built-in; crisp mobile UX for Polkadot/Kusama users.
+
+**Selection notes:**
+* Want a **dashboard feel** inside the wallet? Try Talisman.
+* Want **Polkadot-centric UX** with wide parachain support? Try SubWallet.
+* Prefer **mobile-first** with strong staking/governance? Try Nova.
+
+
+### Block explorers
+**Purpose:** Verify transactions (extrinsics), events, accounts, balances, asset origins.
+
+* **Subscan:** Broad multi-network coverage (relay chain, Asset Hub, many parachains); familiar UI for quick lookups.
+* **Statescan:** Open-source explorer; self-hostable; developer-friendly for custom deployments and integrations.
+
+
+### Governance & OpenGov portals
+**Purpose:** Discover proposals (referenda), discuss, delegate, and vote.
+
+* **Polkassembly:** Proposal pages with on-chain data + discussion; delegation & notification features.
+* **Subsquare:** Alternative portal with stats dashboards, track views, alerts.
+* **Polkadot Wiki (concepts):** Clear explanations for tracks, convictions, time-locks, and delegation approaches.
+* **Polkadot.js apps (advanced):** Power-user interface for direct extrinsics and governance calls.
+
+**Getting started:** Use a portal to **delegate per track** (e.g., Treasury vs. Root) to different trusted voters before you vote directly.
+
+### Developer stack & infra
+**Runtime & chains**
+* **Polkadot SDK (formerly Substrate):** Rust framework to build parachains/appchains. Flexible pallets, FRAME, off-chain workers.
+* **Runtime pallets:** Assets, balances, staking, democracy/gov, XCM, custom domain logic.
+
+**Smart contracts**
+* **ink! (Wasm):** Rust-native smart contracts on Substrate-based chains.
+* **EVM / PolkaVM paths:** Deploy Solidity using Foundry-Polkadot or Hardhat integrations; or target EVM-compatible parachains.
+
+**APIs & clients**
+* **polkadot.js API (TS):** Query chain state and submit extrinsics programmatically.
+* **RPC & indexing:**
+  * **Subsquid** and **SubQuery** for indexing/graph layers.
+  * Full nodes via multiple providers; GeoDNS and multi-provider endpoints are common for production.
+
+**Bridges & interop**
+* **Snowbridge (Ethereum↔Polkadot):** Light-client, trust-minimized bridge approach.
+* **Message bridges via parachains:** Additional routes to external ecosystems depending on chain integrations.
+
+**Oracles & data**
+* **DIA**, **Band**, **API3** (availability varies by parachain).
+* On-chain randomness via **VRF** on chains that expose it.
+
+<a id="listproject"></a>
+<CallCTA />
+
+## Dapps: what you’ll actually use
+
+### DeFi
+* **Hydration (ex-HydraDX):** Cross-chain AMM/DEX focus; deep liquidity pools; routing for Asset Hub assets; portfolio of pools/omnipools.
+* **Bifrost:** Liquid staking derivatives and cross-chain DeFi utilities; supports staking flows and yield strategies.
+* **Moonbeam:** EVM smart-contract hub with DeFi protocols, routing and bridges to Ethereum ecosystem.
+
+**What to know:** Asset origin matters. Assets issued on **Asset Hub** vs a parachain can behave differently for fees, transfers, and routing.
+
+### Liquid staking & yield
+* **Bifrost:** vDOT and other LSDs; cross-chain yield strategies.
+* **Lido-style providers on parachains (varies):** Some chains expose staking derivatives with parachain-specific mechanics.
+* **Native staking:** Solo nominating or pooled staking options through wallets or portals.
+
+### NFTs & marketplaces
+* **Unique Network:** NFT-specialized parachain with features like nested NFTs, collections, and flexible ownership models.
+* **RMRK-style standards (varies by chain):** Multi-resource NFT compositions where supported.
+* **Moonbeam / Astar marketplaces:** EVM-style NFT markets and tooling in their ecosystems.
+
+### Gaming
+* **Mythos / Ajuna / Astar / Moonbeam gaming ecosystems:** Mix of EVM and Substrate tooling for in-game assets, marketplaces, and auth.
+* **Randomness & oracles:** Some games leverage on-chain VRF or oracles to prove fairness.
+
+### Identity & credentials
+* **KILT Protocol:** Self-sovereign identity with verifiable credentials; common for KYC-light access and reputation models.
+* **Web3 identity primitives:** On-chain identities, off-chain attestations tied to addresses, decentralized identifiers.
+
+### Social & content
+* **Frequency / decentralized social protocols:** Data portability and user-owned social graphs; messaging & content layers.
+* **Creator tools & media DAOs:** Community-run media, grants, and curation initiatives forming around the ecosystem.
+
+### RWA & DePIN
+* **Centrifuge:** On-chain financing rails for real-world assets (credit, invoices, etc.).
+* **Phala Network:** Decentralized compute with privacy-preserving execution and off-chain workers.
+* **Storage/Data (varies):** Crust (IPFS persistence), CESS-style networks (storage + delivery), DA layers used by rollups (where applicable).
+* **Energy/IoT:** Emerging projects connecting devices and energy assets; models vary by parachain and compliance needs.
+
+## Feature comparison tables
+### Wallets
+| Wallet         | Platforms                  | OpenGov voting / delegation | Security model                                        | Multi-chain scope                      | Highlights                                  |
+| -------------- | -------------------------- | --------------------------- | ----------------------------------------------------- | -------------------------------------- | ------------------------------------------- |
+| Nova           | iOS, Android               | Yes (in-app)                | Device secure enclave; **Ledger** support; watch-only | Substrate-first; EVM via WalletConnect | Mobile-first UX; staking tools; portfolio   |
+| Talisman       | Browser extension + web    | Yes (integrated portals)    | Extension sandbox; **Ledger** support                 | **Polkadot/Substrate + EVM + Solana**           | Clean UI; DeFi/staking; portfolio dashboard |
+| SubWallet      | Extension, iOS, Android    | Yes (in-app)                | Extension sandbox; **Ledger** (generic app)           | **Polkadot/Substrate + EVM**           | Broad chain/app coverage; desktop+mobile    |
+| Polkadot Vault | iOS/Android (offline only) | Via connected UI (QR signs) | **Air-gapped signer** (QR); cold storage              | Substrate family                       | High-security signing for teams/treasuries  |
+
+### Block Explorers
+| Explorer   | Scope                        | Open source | Strengths                                | Typical use                          |
+| ---------- | ---------------------------- | ----------- | ---------------------------------------- | ------------------------------------ |
+| Subscan    | Substrate ecosystem          | Partial     | Deep chain data, events/extrinsics, APIs | Daily driver for accounts/extrinsics |
+| Statescan  | Polkadot/Kusama + parachains | Yes         | Asset-centric views; system chains       | Asset tracking, uniques, Asset Hub   |
+| XCSCAN     | Cross-chain (XCM)            | Yes         | Visualizes full XCM paths                | Debugging cross-chain transfers.     |
+
+### Governance portals
+| Tool         | Role                         | What it adds                                         | When to use                               |
+| ------------ | ---------------------------- | ---------------------------------------------------- | ----------------------------------------- |
+| Polkassembly | Forum + voting/delegation UI | Proposal creation, threads, turnout/threshold UI     | Drafting, discussing, voting on referenda |
+| Subsquare    | OpenGov portal               | Visual vote bubbles, tally history, identity search  | Side-by-side analysis and voting          |
+
+
+## Mini-guide: 0→1 setup in 15 minutes
+1. **Install a wallet**
+   Choose **Talisman** (dashboard feel), **SubWallet** (Polkadot-centric), or **Nova** (mobile). Create a new account; store the seed offline.
+2. **Enable networks**
+   Toggle **Polkadot**, **Asset Hub**, and 1–2 parachains you’ll actually use (e.g., a DeFi chain and an identity chain).
+3. **Fund your account**
+   Obtain a small amount of **DOT** for fees. Some actions may allow **fee payment in a supported asset** when conversion pools exist—but don’t rely on it.
+4. **Bookmark an explorer**
+   Paste your address into **Subscan** or **Statescan**; learn to read **extrinsics** (transactions) and **events** (state changes).
+5. **Try OpenGov (read-only → delegate)**
+   Review referenda; **delegate by track** to a trusted voter before direct voting.
+6. **Do a safe first transfer**
+   Move a small amount between **Asset Hub** and a parachain. Note any fees and the reported **asset origin**.
+7. **For builders**
+   Decide runtime vs contracts: **Polkadot SDK** (Rust) or **ink!/Solidity**. For Solidity, test **Foundry-Polkadot** or **Hardhat** paths and set up **Subsquid/SubQuery** indexing if needed.
+
+## Common pitfalls & tips
+* **Asset origin confusion:** An asset minted on **Asset Hub** vs on a parachain may route and charge fees differently. Always check **origin** in your explorer.
+* **Fees in any asset ≠ universal:** Fee conversion depends on pools and chain support. Keep **DOT** handy.
+* **One explorer isn’t enough:** Cross-check significant transfers on two explorers.
+* **Governance overwhelm:** Start with **per-track delegation** to reputable voters; escalate to direct voting later.
+* **Runtime vs contracts:** Building a parachain offers maximal control but higher complexity; contracts are faster to ship but bound by chain limits.
+* **Bridges:** Treat as production infra; start with **test amounts**, monitor confirmations, and document your playbooks.
+
+
+## +Ecosystem Resources:
+-------------
+<CardGrid>
+  <Card title="Polkadot Wiki" icon="open-book">
+    Explore in-depth information on Polkadot’s technical principles and key components powering its ecosystem
+    <LinkButton href="https://wiki.polkadot.network" variant="secondary" icon="external" iconPlacement="start">Polkadot Wiki</LinkButton>
+  </Card>
+
+  <Card title="Polkadot Website" icon="information">
+    Discover Polkadot's vision, innovative ecosystem, and its role in the future of decentralized technologies.    
+    <LinkButton href="https://polkadot.com/" variant="secondary" icon="external" iconPlacement="start">Polkadot.com</LinkButton>
+  </Card>
+</ CardGrid>
+
+
+## FAQs
+**1) What is Asset Hub and why should I care?**
+A system chain for creating and managing tokens/NFTs used across Polkadot.
+
+**2) How does OpenGov differ from typical governance?**
+Proposals are grouped into **tracks** with different risk profiles. You can **delegate per track** to different experts instead of a single all-purpose delegate.
+
+**3) Which wallet should I start with?**
+Talisman for a **dashboard feel**, Nova for **mobile-first** usage, SubWallet for **Polkadot-centric workflows**.
+
+**4) What’s the canonical explorer?**
+There isn’t one “official” for all chains. **Subscan** covers many networks; **Statescan** is open-source and self-hostable.
+
+**5) How do I move assets to/from Ethereum?**
+Use trust-minimized routes where available (e.g., light-client bridges). Always test with small amounts and document your steps.
+
+**6) Can Solidity developers deploy on Polkadot?**
+Yes. Use **Solidity→PolkaVM/EVM** paths (Foundry/Hardhat integrations) or build with **ink!** on Wasm chains.
+
+**7) Is Hydration the same as HydraDX?**
+Yes—HydraDX rebranded to **Hydration**; you may still see both names referenced.
+
+
+## Conclusion
+Polkadot’s power comes from **specialization + composition**: app-specific chains working together through shared security and **XCM**. With the right **wallet**, **explorer**, and **governance portal**, power users can move assets across chains, pay fees efficiently, and help steer the ecosystem. Builders can ship faster by choosing the right path—**runtime** (Polkadot SDK) or **contracts** (ink!/Solidity)—and plugging in indexing, oracles, and bridges as needed.
+
+**Next steps:**
+* Explore the **Tools**, **Dapps**, and **Community** directories.
+* **List your project** to boost discoverability and collaboration.
+* **Delegate in OpenGov** to align outcomes with what you value.

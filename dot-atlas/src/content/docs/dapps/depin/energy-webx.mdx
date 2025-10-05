@@ -1,0 +1,207 @@
+---
+title: 'Energy Web X'
+description:  Energy Web Chain offers open-source digital technologies that help companies navigate the energy transition.
+hero:
+  tagline: Navigate the energy transition.
+  image: 
+    file: ../../../../assets/dapps/rwa/energy-web.png
+  actions:
+    - text: Dapps
+      link: https://www.energyweb.org/
+      icon: external
+    - text: Docs
+      link: https://docs.energyweb.org/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+## Energy Web X (EWX): The Practical Guide to SmartFlows, Worker Nodes & the EWT-Powered Energy OS
+
+This guide explains how **Energy Web X (EWX)**, **SmartFlows**, and **Worker Node Networks** fit into Energy Web’s open-source stack (EW-DOS) and how enterprises and power users can apply them today. You’ll learn what each component does, how they work together with **Energy Web Chain (EWC)** and **EWT**, and get a step-by-step mini-guide to deploy a flow, plus pitfalls, FAQs, and SEO-ready resources. *(Updated September 2025.)*
+
+## Why people search for “Energy Web X” right now
+Enterprises and power users in the energy sector want a **secure way to coordinate real-world data, automate decisions, and verify results**—without exposing sensitive information. Energy Web’s approach pairs a public chain (EWC) with a **substrate-based** execution network (EWX) for **decentralized computation via Worker Node Networks** and **no-code SmartFlows**, plus a Marketplace for discoverability and rewards. That combo is why EWX shows up in 2025 RFPs and pilots.
+
+## ELI5: Energy Web in one minute
+* **Energy Web** is a nonprofit that builds **open-source software** for the clean-energy transition.
+* **EWC (Energy Web Chain)** is the public blockchain anchoring identity, audit trails, and transactions.
+* **EW-DOS** is the software stack and standards around it (developer kits, protocols).
+* **EWX** is a **substrate-based** blockchain purpose-built to run **Worker Node Networks (WNNs)**—distributed compute for real-world energy use cases.
+* **SmartFlows** let you build **no-code/low-code workflows** (Node-RED) that run across many Worker Nodes and reach consensus on results.
+* **EWT** is the utility token used for **gas on EWC** and **staking** to secure **EWX & Worker Node Networks**.
+
+## Core concepts & how they work
+### EW-DOS & EWC (the foundation)
+Energy Web’s **Decentralized Operating System (EW-DOS)** combines open-source toolkits, identity/permissioning patterns, and reference apps (e.g., certificates, flexibility modules) to help enterprises build production-grade energy applications. **EWC** anchors these with a public, enterprise-friendly chain for **traceability and settlement**.
+
+**What this enables:**
+* **Auditable provenance** (e.g., renewable energy certificates)
+* **Interoperable identities** across participants and devices
+* **Smart-contract governed** market logic
+
+### EWX (execution layer for Worker Node Networks)
+**EWX** coordinates **Worker Node Networks (WNNs)**—distributed compute clusters that **ingest off-chain data, execute business logic, and vote** to produce a consensus result. Architecturally, EWX is **substrate-based**, optimized for these compute networks.
+
+### Worker Nodes & SmartFlows
+A **Worker Node** is a processing unit in a network that can **download flows**, **run computations**, and **cast votes**. Typical lifecycle: subscribe → install solutions → execute → vote → publish result. **SmartFlows** are authored as **Node-RED** flows (no-code) and deployed so that **many nodes independently run them** and converge on a result (consensus).
+
+> In plain English: SmartFlows are drag-and-drop logic graphs; Worker Nodes are the distributed machines that run them and prove they got the same answer.
+
+### EWX Marketplace (compute pools)
+The **EWX Marketplace** curates **compute pools** (e.g., *SmartFlow*, *Carbon-Aware*, *GP4BTC*) so enterprises can discover networks, subscribe, and deploy flows without bespoke vendor work. It also standardizes reward flows for operators.
+
+### EWT token utility
+**EWT** is the native utility token: it pays **gas on EWC** and is used for **staking** to secure **EWX and Worker Node Networks**. Many pools also support **“Bring Your Own Token”** rewards (e.g., stablecoins), allowing flows to pay out in tokens suited to a use case.
+
+## Feature comparison: EWC vs EWX vs Marketplace vs Worker Nodes
+| Layer / Tool               | Primary Role                                      | Who Uses It                    | Trust Model                                | Key Features                                           | Typical Actions                             |
+| -------------------------- | ------------------------------------------------- | ------------------------------ | ------------------------------------------ | ------------------------------------------------------ | ------------------------------------------- |
+| **EWC (Energy Web Chain)** | Public blockchain for identity, audit, settlement | Builders, compliance, ops      | Public chain + smart contracts             | On-chain registries, provenance, gas in **EWT**        | Register assets, write proofs, settle       |
+| **EWX**                    | Orchestrates **Worker Node Networks**             | DevOps, integrators            | Substrate-based chain for WNN consensus    | Staking, coordination of worker votes/results          | Create/secure WNNs, finalize results        |
+| **EWX Marketplace**        | Discovery & reward layer for compute pools        | Product owners, node operators | App-level subscriptions & payouts          | “Compute pools” (e.g., Carbon-Aware), operator rewards | Subscribe, deploy SmartFlows, claim rewards |
+| **Worker Node (WNN)**      | Decentralized compute execution                   | Node operators                 | Many independent nodes produce a consensus | Data ingestion, business-logic execution, voting       | Install flows, run jobs, vote on outputs    |
+| **SmartFlows (Node-RED)**  | No-code logic for WNNs                            | Analysts, integrators          | Flow logic replicated across nodes         | Drag-and-drop nodes, reusable components               | Build/Publish flows; map data → actions     |
+
+## Mini-guide: Deploy your first SmartFlow on EWX
+> **Goal:** Create a small SmartFlow that reads an external data source (e.g., grid CO₂ intensity), evaluates a rule, and emits a consensus “go/no-go” signal across a Worker Node Network.
+
+1. **Set up wallet & basics**
+   * Install a supported wallet and acquire a small amount of **EWT** for fees/staking.
+
+2. **Access the EWX Marketplace**
+   * Create an account and **subscribe** to a relevant compute pool (e.g., *SmartFlow*). This gives you the UI/permissions to create flows and to manage worker-node subscriptions/rewards.
+
+3. **Create a SmartFlow (no-code)**
+   * In the Marketplace UI, choose **SmartFlow → Create new**.
+   * Use the **Node-RED editor** to drag nodes for: *HTTP GET → JSON parse → rule node → output*.
+
+4. **Choose a Worker Node Network**
+   * Pick a WNN with operators in your region or with the right data access/trust requirements. **Publish** your SmartFlow to that network.
+
+5. **Run & observe consensus**
+   * As nodes execute, they **vote** and converge on a result; the Marketplace/WNN tooling surfaces aggregated outcomes and logs.
+
+6. **Automate rewards**
+   * Configure payouts for node operators (commonly in **EWT**, but many pools support BYOT such as stablecoins).
+
+7. **Operationalize**
+   * Wire the consensus output into your downstream system (e.g., EMS/SCADA adaptor, demand-response API).
+
+## Example & checklist: Carbon-aware automation
+**Example:**
+A retailer wants to shift refrigeration defrost cycles to **lower-carbon** periods without violating safety thresholds.
+
+* **SmartFlow** pulls **regional CO₂ intensity** + **store temperature**; applies rules: *if CO₂ < X g/kWh* **and** *temp stable*, then schedule defrost; else delay.
+* **Worker Nodes** across multiple operators run the same logic, **vote**, and produce a consensus “execute/delay” signal.
+* **EWC** stores a hash of the decision for **audit**; payments to node operators flow via Marketplace.
+
+**Checklist (copy/paste):**
+* [ ] Data sources mapped (auth, rate limits, fallback)
+* [ ] Flow logic peer-reviewed and unit-tested
+* [ ] WNN chosen for jurisdiction & uptime
+* [ ] Rewards budgeted; payout token decided
+* [ ] On-chain audit record wired to EWC
+* [ ] Monitoring & alerting set up for flow health
+
+## Common pitfalls & tips
+* **Assuming Node-RED logic = enterprise-ready.** Treat SmartFlows like code: version, review, test, and roll out progressively.
+* **Data quality & timestamp drift.** Worker nodes can’t fix bad inputs; add **sanity checks** and **time-sync** steps in every flow.
+* **Regulatory boundaries.** Don’t embed personally identifiable or regulated data into on-chain artifacts—**hash proofs**, not payloads.
+* **Over-centralizing operators.** For trustworthy consensus, ensure **operator diversity** (orgs, regions, infra).
+* **Ignoring rewards alignment.** If flows save OPEX, earmark sustainable **operator rewards** (EWT or BYOT) to keep networks healthy.
+* **Under-estimating observability.** Instrument flows; log inputs/outputs and votes; define SLOs (latency, availability, correctness).
+
+## FAQs
+**1) Is EWX a Polkadot parachain?**
+EWX is a public, substrate-based blockchain purpose-built for Worker Node Networks; it is not positioned as a Polkadot parachain in official messaging.
+
+**2) How is EWT used across EWC and EWX?**
+**EWT** pays **gas on EWC** and is used for **staking** to secure **EWX and Worker Node Networks**.
+
+**3) What are SmartFlows, in practice?**
+They’re **Node-RED-authored** flows replicated across many Worker Nodes; nodes **execute independently and vote** to reach a consensus result.
+
+**4) Do operators always get paid in EWT?**
+Not necessarily. Many compute pools support a **“Bring Your Own Token”** rewards model (e.g., stablecoins) when appropriate.
+
+**5) What’s the EWX Marketplace?**
+A curated home for **compute pools** where enterprises subscribe, deploy flows, and manage rewards (e.g., *SmartFlow*, *Carbon-Aware*, *GP4BTC*).
+
+**6) Can I self-host a Worker Node?**
+Yes. Energy Web publishes docs and tooling for running Worker Nodes and joining networks; requirements vary by pool.
+
+**7) Where do I find code or SDKs?**
+Start with Energy Web documentation and open-source repositories for the Marketplace and SmartFlow tooling.
+
+**8) How does this compare to “classic” blockchain oracles?**
+WNNs are **application-specific compute networks** that can ingest multiple feeds and **vote on business-logic outcomes**, not just relay a single price or value.
+
+## Conclusion
+**Energy Web X** operationalizes decentralized compute for the energy sector: **no-code SmartFlows**, **verifiable execution**, and **market-aligned rewards**, rooted in **open-source** and **public-chain** guarantees. If you’re experimenting with carbon-aware automation, grid flexibility, or proof-of-impact, **start with one pilot flow**, validate the business case, and scale into a compute pool with real operator diversity.
+
+<ShowcaseProfile
+  entries={[
+            {
+      name: 'EnergyWebX Marketplace',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/dapps/rwa/energy-web.png',
+      href: 'https://www.energywebx.com/',
+      description:
+        "EWX Marketplace is a secure and trusted home for hundreds of clean energy applications. Unleash Your Worker Node for Enterprise Solutions",
+    },
+    {
+      name: 'Smart Flow',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/dapps/rwa/energy-web.png',
+      href: 'https://www.smartflow.org/',
+      description:
+        "Build workflows, integrate with any existing data sources/APIs through a no-code infrastructure, and deploy them to thousands of decentralized worker nodes in minutes.",
+    },
+  ]}
+/>
+
+## Why Use Energy Web?
+- **Focus on the energy sector:** Energy Web’s solutions are built specifically for the energy industry, providing a tailored environment for your dApp.
+- **Open-source and interoperable:** Their open-source approach fosters collaboration and ensures compatibility with a wider ecosystem.
+- **Secure and transparent:** The EWC blockchain guarantees secure data exchange and transparent transactions.
+- **Experienced team:** Energy Web is backed by a team of industry experts dedicated to accelerating the clean energy transition.
+
+By leveraging Energy Web’s technology stack, developers can build innovative dApps that address the unique needs of the energy sector and contribute to a more sustainable future.
+
+- <small>Related Token/s:</small> **EWT**
+
+## Energy Web Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+        {
+    href: 'https://www.youtube.com/watch?v=XO6aiGdP8JY',
+      title: 'What is Energy Web X ?',
+    },
+        {
+    href: 'https://www.youtube.com/watch?v=0bCTjIKy5CQ',
+      title: 'Install the Energy Web X App',
+    },
+    {
+    href: 'https://www.youtube.com/watch?v=jwO2gbgHNNs',
+      title: 'Earn and Collect $EWT',
+    },
+        {
+    href: 'https://www.youtube.com/watch?v=P4Z1U8OkiLE',
+      title: 'Connect and Lower your $EWT',
+    },
+         {
+    href: 'https://www.youtube.com/watch?v=5KMMhvGH9rI',
+      title: 'Energy Web to Polkadot ⚡️',
+    },
+            {
+    href: 'https://www.youtube.com/shorts/zfizICAOp-o',
+      title: 'Electric Growth Analysis! ⚡️Energy Web X on Polkadot',
+    },
+                {
+    href: 'https://www.youtube.com/watch?v=LKGil5uxK0I',
+      title: 'Enterprise web3 adoption using Substrate by Energy Web',
+    },
+  ]} />
+
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS0IYuEXVBDuu0OLO70ZMIHXrp_lDBbLoSU5JmcQshqjkCVbCUVuLRgwyontYN2ILvvlMqvky6e3whL/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

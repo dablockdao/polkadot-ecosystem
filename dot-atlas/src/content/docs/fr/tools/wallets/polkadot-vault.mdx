@@ -1,0 +1,56 @@
+---
+title: 'Polkadot Vault'
+description: Portefeuille à stockage à froid basé sur smartphone. Transformez votre téléphone, tablette ou tout autre appareil iOS ou Android inutilisé en un portefeuille matériel.
+sidebar:
+  label: ✧ Polkadot Vault
+  order: 4
+hero:
+  tagline: Portefeuille à stockage à froid basé sur smartphone.
+  image: 
+    file: ../../../../../assets/tools/wallets/polkadot-vault.png
+  actions:
+    - text: Outil
+      link: https://vault.novasama.io/
+      icon: external
+    - text: Github
+      link: https://github.com/novasamatech/parity-signer
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+L'application **Polkadot Vault** est un portefeuille matériel avec une représentation logicielle. Cela signifie que **votre téléphone, qu'il soit iOS ou Android, se transforme en un portefeuille matériel** de manière sécurisée et facile. L'application facilite ensuite la gestion et le stockage des tokens de Katal Chain, Polkadot, Kusama et de la plupart des autres tokens basés sur Substrate en utilisant des appareils inutilisés pour le stockage à froid.
+
+## Principales fonctionnalités de Polkadot Vault :
+1. **Simple et durable** : Transformez un ancien smartphone ou une tablette que vous n’utilisez plus en un appareil de stockage à froid sécurisé sans avoir à acheter un nouveau matériel.
+2. **Facile à utiliser** : L'application est simple, avec un guide d'installation et d'application très facile à suivre.
+3. **Sécurité** : Grâce à l'utilisation du System-on-a-Chip (SoC) comme élément sécurisé, toutes les clés privées générées proviennent d'entropie physiquement générée, et elles resteront toujours confinées dans les limites de l'élément sécurisé.
+4. **Multicoin** : L'application permet à ses utilisateurs d'accéder à diverses cryptomonnaies, ce qui la rend très fiable.
+5. **Signature de transactions hors ligne** : Permet de commencer des transactions sur l'appareil connecté et de les signer hors ligne avec le Vault, sans jamais exposer les clés privées.
+6. **Interopérabilité** : Polkadot Vault est conçu pour fonctionner parfaitement avec d'autres portefeuilles et services. Avec Nova Wallet, SubWallet et Polkadot-JS, les utilisateurs peuvent effectuer des transactions sans problème entre ces plateformes.
+7. **Large prise en charge des tokens** : Plus de 175 types de tokens sont stockés de manière sécurisée pour garantir qu'une plus grande variété d'actifs puisse être gérée via l'application.
+8. **Open Source** : Les utilisateurs et développeurs expérimentés peuvent examiner le code pour comprendre son fonctionnement, réaffirmant sa transparence et son accent sur la sécurité.
+
+## Installation de Polkadot Vault
+Pour configurer un appareil avec Polkadot Vault, l'utilisateur doit d'abord réinitialiser l'appareil aux paramètres d'usine, télécharger l'application, puis mettre l'appareil en mode Avion, le gardant ainsi hors ligne en permanence pour maintenir une isolation sécurisée. Les mises à jour et l'ajout de nouveaux réseaux se font par la numérisation d'un code QR animé, sans compromettre la sécurité isolée.
+- Vous pouvez [en savoir plus sur Polkadot Vault sur sa page dans le **Polkadot Wiki**](https://wiki.polkadot.network/docs/polkadot-vault).
+- **Portails de métadonnées :** [Parity](https://metadata.parity.io/#/polkadot), [Novasama](https://metadata.novasama.io/#/polkadot)
+
+## Vidéos de la communauté Polkadot Vault
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=3V9-menM0B8',
+      title: 'Guide Polkadot Vault - Cryptozilla',
+      description: 'Introduction à Polkadot Vault, par rapport à Ledger et ses avantages'
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=IG_RGLsb2g0',
+      title: 'Comment utiliser Polkadot Vault - Fillippo',
+      description: 'Apprenez à configurer et à créer votre compte dans Polkadot Vault.'
+    },
+  ]} />

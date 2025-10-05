@@ -1,0 +1,55 @@
+---
+title: Polkadot AI Dapps 
+description: Entdecke alle KI-Dapps im Polkadot-Ökosystem.
+tableOfContents: false
+sidebar: 
+    label: KI-Dapps
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Polkadot-KI-Projekte kombinieren Blockchain-Technologie mit künstlicher Intelligenz, um innovative Lösungen in verschiedenen Branchen zu schaffen. Durch die Nutzung von Polkadots skalierbarem und interoperablem Netzwerk ermöglichen diese Projekte sicheres Teilen von Daten, dezentrale KI-Modelle und eine nahtlose Integration über Blockchains hinweg. Sie eröffnen neue Möglichkeiten in Automatisierung, Entscheidungsfindung und der Entwicklung intelligenter dezentraler Anwendungen.
+
+## Polkadot KI-Dapps
+----------------
+<ShowcaseImage
+  entries={[
+                  {
+      thumbnail: import('/src/assets/dapps/ai/phala-network.png'),
+      href: '/dapps/ai/phala-network/',
+      title: 'Phala Network',
+    },
+        {
+      thumbnail: import('/src/assets/dapps/ai/bittensor.png'),
+      href: '/dapps/ai/bittensor/',
+      title: 'Bittensor',
+    },
+                     {
+      thumbnail: import('/src/assets/dapps/ai/neurolanche.png'),
+      href: '/dapps/ai/neurolance/',
+      title: 'Neurolanche',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/ai/neuroweb.png'),
+      href: '/dapps/ai/neuroweb/',
+      title: 'Neuroweb',
+      },
+  ]}
+/>
+
+
+## Polkadot KI-Dapps Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=7_7ANm2DU6Q',
+      title: 'Origin Trail entwickelt - Alpha Airdrop',
+      description: 'Origin Trail baut ein "wahrheitsgetriebenes Internet" durch einen dezentralen Wissensgraphen (dKG) auf, der Mitwirkende mit Krypto-Token belohnt, wenn sie präzise Wissensressourcen als NFTs hinzufügen.',
+    },
+  ]}
+/>

@@ -1,0 +1,196 @@
+---
+title: 'Crust Network'
+description: Crust Network is a decentralized cloud storage network designed to provide a scalable and secure infrastructure for distributed data storage.
+hero:
+  tagline: A decentralized cloud storage network
+  image: 
+    file: ../../../../assets/dapps/storage/crust.png
+  actions:
+    - text: Site
+      link: https://www.crust.network/
+      icon: external
+    - text: Docs
+      link: https://wiki.crust.network/
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+Crust Network is a decentralized cloud storage network designed to provide a scalable and secure infrastructure for distributed data storage. 
+Built on the Substrate framework within the Polkadot ecosystem, Crust Network integrates the advantages of blockchain technology to offer a decentralized alternative to traditional cloud storage solutions like Amazon Web Services (AWS) and Google Cloud.
+
+## Overview of Crust Network
+Crust Network serves as a distributed network that is public and open to everyone, allowing any participant to join or leave freely while adhering to system agreements. This system is designed to ensure the security and economic stability of the network, incentivizing participants to contribute to its growth and maintenance. The key features of Crust Network include a unique economic model, a sophisticated consensus mechanism, and a comprehensive governance system.
+
+## Crust Network Economic Design Goals
+The primary goals of Crust Network’s economic design are:
+1. **Security of the Crust Protocol**: Ensuring that the network is secure against attacks and unauthorized access.
+2. **Sustainable Development**: Maintaining the long-term viability and growth of the network.
+3. **Protection of Participant Interests**: Safeguarding the rights and benefits of all network participants.
+4. **Alignment of Interests**: Ensuring that the interests of all participants align with the value growth of the Crust system.
+
+## Participants in the Crust Network
+Crust Network includes various roles, each contributing differently to the network:
+1. **Validators**: Nodes that generate blocks and maintain the blockchain. Validators need to stay online, possess sufficient storage resources, and stake CRU tokens. They earn rewards for their contributions and share the block rewards but also bear the risk of penalties for malicious behavior.
+2. **Candidates**: Nodes competing to become validators. They also need to stay online and stake CRU tokens but do not generate blocks or earn exclusive block rewards. Instead, they share in the cycle rewards and can provide storage services.
+3. **Guarantors**: Accounts that provide CRU tokens as a guarantee for validator nodes. They earn a share of the validator’s rewards but also bear the penalty risk.
+4. **Users**: Individuals or entities that utilize storage and computing resources in the Crust network. They use CRU tokens to pay for services.
+
+## CRU Token
+The native token of the Crust Network is CRU, a utility token that represents the value of the entire network. It serves multiple functions, including:
+- **Staking**: To maintain the GPoS (Guaranteed Proof of Stake) consensus.
+- **Guaranteeing Nodes**: To provide assurance for selected nodes.
+- **Transaction Fees**: To pay for network transactions.
+- **Purchasing Services**: To buy storage and computing resources.
+- **Governance**: To participate in on-chain governance and voting on proposals.
+
+### Generation and Burning of CRU Tokens
+CRU tokens are generated in two ways:
+1. **Initial Generation**: 20,000,000 CRU tokens are generated at the network’s inception, allocated for community development, ecosystem construction, investment, technical team rewards, and foundation reserves.
+2. **Block Rewards**: CRU tokens are rewarded for block production, with an initial annual distribution that reduces over time.
+The network also has mechanisms to burn tokens, thereby reducing the total supply and creating deflationary pressure to increase token value.
+
+## Crust Network Economic Model
+Crust’s economic model is designed to balance network security with participant incentives. The GPoS consensus mechanism combines PoS and PoW elements, requiring nodes to stake CRU tokens and possess storage resources. This dual requirement ensures network security and incentivizes meaningful contributions to storage capacity.
+
+## Storage Resource Market
+Crust Network’s storage market supports two main services:
+1. **File Storage**: Users pay fees to store files on the network, with merchants (validators and candidates) providing the storage space and earning rewards.
+2. **File Retrieval**: The network also supports file retrieval services, encouraging merchants to provide quick and efficient access to stored files.
+
+## Crust Network Governance
+Crust Network employs an on-chain governance system using Substrate technology. This allows CRU token holders to participate in decision-making processes, manage the Treasury, and propose system improvements. This democratic approach ensures that the network evolves according to the collective will of its participants.
+
+### Conclusion
+Crust Network is a robust and innovative solution for decentralized cloud storage, leveraging blockchain technology to create a secure, scalable, and economically sustainable infrastructure. By aligning the interests of all participants with the network’s growth and ensuring the security of its protocol, Crust Network stands out as a key player in the Polkadot ecosystem and the broader Web3 landscape.
+- <small>Related Token/s:</small> **GLMR**
+
+
+
+
+
+## Crust Network: the Polkadot-native decentralized cloud storage (2025 guide)
+Crust Network is a Substrate-based L1 that turns the IPFS storage layer into a programmable, incentivized market—secured by **GPoS** consensus, verified by **MPoW** (TEE-based storage proofs), and exposed to apps via gateways and on-chain storage orders. In 2024 Crust also won a Polkadot parachain slot (lease to May 2026), tightening its integration with the broader ecosystem.
+
+## Why this matters (search intent)
+Teams building on Polkadot (and beyond) need **durable, multi-replica storage** for app assets, game content, NFT media, and off-chain proofs—without running centralized pinning or wrestling with complex miner marketplaces. **Crust Network** provides a single place to **upload to IPFS, create on-chain storage orders (DSM),** and have **many nodes replicate** your content—**with Polkadot-native composability** via its parachain.
+
+## ELI5: What is Crust Network?
+Crust is a blockchain that **pays nodes to store your IPFS files** and proves that they’re actually storing them. It supports multiple storage protocols (like IPFS) and exposes simple interfaces so apps can order storage and retrieval—think **“IPFS + incentives + proofs + governance,”** wired into Polkadot.
+
+## How Crust works
+### MPoW: storage verification
+Crust’s **MPoW (Meaningful Proof of Work)** is a **TEE-backed** mechanism run by **sWorker** processes that attest to real storage. Nodes periodically report encrypted workload proofs; the chain uses these to meter storage and authorize rewards/quotas.
+
+### GPoS: consensus linked to storage
+Consensus is **GPoS (Guaranteed Proof of Stake)**—a PoS-derived design that **ties staking quota to storage proofs**: if you don’t store, your staking power shrinks. This aligns security, storage capacity, and economic incentives.
+
+### DSM: the decentralized storage market
+**DSM (Decentralized Storage Market)** is the on-chain marketplace where users place **storage orders** (list of CIDs). Crust nodes replicate and serve this data; DSM coordinates incentives for long-term storage and retrieval performance.
+
+## Architecture & components
+* **Crust mainnet (L1) + Crust Parachain (Polkadot):** In 2024 Crust won **Polkadot parachain auction #71** (lease **Jul 3, 2024 → May 8, 2026**). Orders can be initiated from the **Crust Parachain** and auto-converted into mainnet orders—a cleaner UX for Polkadot apps.
+* **IPFS W3Auth gateways & pinning:** Web3Auth-enabled gateways accept uploads, pin to IPFS, and create DSM orders on-chain. After nodes pull the data, gateways drop the cache.
+* **sWorker (TEE):** Each storage node runs an **SGX-based enclave** to attest storage, forming the foundation of MPoW. (Requires SGX-capable CPUs.)
+* **Tooling & docs:** “Crust Storage 101” provides the basic upload → pin → order flow; the overview and developer guides document the 3-layer stack (MPoW/GPoS/DSM) and IPFS focus.
+
+
+## CRU token utility & roles
+**CRU** is the network’s utility and governance token. Functions include **staking for GPoS**, **guarantees/collateral for nodes**, **fees**, **purchasing storage**, and **voting**. (Bridges exist to EVM for ERC-20 format, but mainnet CRU is canonical.)
+
+**Participant roles:**
+
+* **Validators:** produce blocks, stay online, stake CRU, and maintain resources. Rewards are shared; misbehavior is penalized.
+* **Candidates:** compete to join the validator set; can also provide storage.
+* **Guarantors:** delegate CRU to back specific nodes and share their rewards (with slash risk).
+* **Users:** pay for storage/retrieval via DSM, often through gateway integrations.
+
+> **Polkadot integration note:** In late 2024 Crust raised the **mainnet → Ethereum bridge fee** amid higher gas costs; if your ops rely on ERC-20 CRU, budget accordingly.
+
+## Crust vs Filecoin vs Arweave vs Storj
+Below is a pragmatic comparison of the dominant decentralized storage designs. Use it to decide fit by **data lifecycle** (permanent vs renewable), **chain composability**, **proof model**, and **ops complexity**.
+| Network           | Storage model                                                    | Proof/consensus                                                            | Retrieval & access                                                        | App-layer UX                                      | Polkadot alignment                                                 |
+| ----------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------ |
+| **Crust Network** | Renewable IPFS pinning with multi-replica incentives via **DSM** | **MPoW** (TEE/SGX storage attestations) + **GPoS** (stake tied to storage) | IPFS gateways (W3Auth), DSM incentivizes retrieval; multi-replica pinning | Simple: upload → on-chain order; good SDK/docs    | **Parachain**; orders from Crust Parachain → mainnet; XCM-friendly |
+| **Filecoin**      | Renewable contracts (“deals”) for data storage                   | **PoRep** + **PoSt** (zk-SNARK-compressed)                                 | IPFS/Filecoin gateways; retrieval markets                                 | Powerful but heavier ops (sealing, deal mgmt)     | Indirect (bridges exist); not Polkadot-native                      |
+| **Arweave**       | **Permanent storage** (one-time fee)                             | **Proof-of-Access / Blockweave**                                           | HTTP gateways; permaweb tooling                                           | Very simple for permanent data; cost upfront      | Not Polkadot-native; best for immutable assets                     |
+| **Storj**         | Renewable object storage (S3-like)                               | Client-side encryption + **erasure coding** over many nodes                | S3-compatible access; paid via STORJ                                      | Familiar cloud UX; strong multi-region durability | Not Polkadot-native; great for bulk objects                        |
+
+
+## Step-by-step: store a file with Crust
+1. **Prepare your asset** → image, JSON, video, or static build.
+2. **Upload to an IPFS W3Auth gateway** → sign in (Web3Auth), upload; get the **CID**. Gateway caches temporarily.
+3. **Place a DSM storage order** → your app (or the gateway) submits an **on-chain storage order** listing the CID(s).
+4. **Network replication** → Crust IPFS nodes pull your content and start serving it; sWorker/MPoW reports prove storage.
+5. **Retrieve from gateways / IPFS** → use any IPFS-compatible gateway (and pin to your own node if you run one).
+6. **Monitor** → track order status and replication; renew orders periodically if your use case requires ongoing pinning (unlike Arweave’s permanent model).
+
+## Practical example: pin an NFT collection
+* **Context:** You’re minting 10k NFTs on a Polkadot parachain and need resilient media + metadata.
+* **Workflow:**
+
+  1. Batch-upload `/images/*` and `/metadata/*.json` to a W3Auth gateway → record the **root CID**.
+  2. Submit a **DSM order** with the CID list (or root).
+  3. Store the CID in your NFT contract; fetch over a gateway at render time.
+  4. Rotate to multiple gateways / add your own IPFS node for extra resilience.
+
+
+## Common pitfalls & tips
+* **SGX hardware for node ops:** Running storage workers requires **Intel SGX**; ensure BIOS/CPU support before provisioning.
+* **Bridge fee awareness:** If you bridge CRU to Ethereum for treasury ops, note higher fees and volatile gas; keep operational CRU on mainnet if possible.
+* **Permanent vs renewable:** For **immutable/permanent** archives (e.g., governance records), compare Crust’s renewable orders vs **Arweave’s** one-time permanence.
+* **Deal hygiene:** For high-value assets, split large directories by thematic folders and pin both **leaf** and **root CIDs** to reduce single-CID blast radius on retrieval.
+* **Multichain app design:** If you build on Polkadot, initiating orders on the **Crust Parachain** simplifies UX and reduces cross-domain coordination.
+
+## FAQs
+**1) Is Crust a Polkadot parachain?**
+Yes. Crust won **Parachain Auction #71** with a lease running from **July 3, 2024 to May 8, 2026**.
+
+**2) Does Crust store files permanently?**
+Crust is optimized for **renewable, incentivized IPFS storage** via DSM. For **permanent** storage, evaluate Arweave’s one-time payment model.
+
+**3) What proofs does Crust use to verify storage?**
+**MPoW** leverages **Intel SGX** attestation via **sWorker** enclaves; reports feed into **GPoS**, which ties staking power to proven storage.
+
+**4) How does Crust compare to Filecoin?**
+Filecoin uses **Proof-of-Replication** and **Proof-of-Spacetime** (with zk-SNARK compression). Crust uses SGX-based MPoW with a lighter ops footprint for pinning-style workloads.
+
+**5) Can I start orders from within Polkadot?**
+Yes—**place-order** calls on the **Crust Parachain** are auto-converted into Crust mainnet orders.
+
+**6) What’s the role of CRU?**
+Staking for GPoS, guarantees/collateral, fees, purchasing storage, and governance participation.
+
+**7) Do I need to run my own IPFS node?**
+Not required. Gateways accept uploads and the network replicates. Running your own node can improve latency and sovereignty.
+
+**8) Is there a developer “hello world”?**
+Yes—intro guides show uploading to IPFS and creating DSM orders; gateways are HTTP-compatible.
+
+
+## Conclusion
+Crust Network is the **Polkadot-aligned** way to turn IPFS storage into a robust, verifiable, and economically sustainable service layer—**without** rolling your own pinning infrastructure. For builders and power users, the winning workflow is: **upload → DSM order → monitor**.
+
+## Crust Network Community Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=vvMLe3J6HEI',
+      title: 'CRUST Network Token - Kusamarian',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=yWmSNRl7uCQ',
+      title: 'Blob Transactions and Data Availability in Polkadot Ecosystems',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=FBkb6lCl71k',
+      title: 'DePIN Insights - From the Past to the Future',
+    },
+  ]}
+/>
+
+<iframe frameborder="0" height="400" marginheight="0" marginwidth="0" scrolling="no" src="https://www.slideshare.net/slideshow/embed_code/key/fSVqo7n4cfHZRy?hostedIn=slideshare&page=upload" width="476"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQUIdSu_XqMzCyYq7F0U2NbTWudDaN6OaEdeEqvHgyauHQgz3_c08I7nD3_hLOCcOXek2uBS_sx2m1x/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

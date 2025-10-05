@@ -1,0 +1,216 @@
+---
+title: Polkadot Wallets
+description: List with the best Polkadot wallets like Nova Wallet, Talisman, SubWallet and Polkadot Vault to secure and manage your crypto assets.
+sidebar: 
+    order: 0
+    label: Wallets
+    badge: Feed
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Here is a list with the best Polkadot wallets like Nova Wallet, Talisman, SubWallet and Polkadot Vault to secure and manage your crypto assets effectively across the entire Polkadot Dapps ecosystem.
+
+## Polkadot Ecosystem Wallets
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/tools/wallets/nova-wallet.png'),
+      href: '/tools/wallets/nova-wallet/',
+      title: 'Nova Wallet',
+      description: 'Mobile Wallet',
+    },
+        {
+      thumbnail: import('/src/assets/tools/wallets/talisman-wallet.png'),
+      href: '/tools/wallets/talisman-wallet/',
+      title: 'Talisman',
+      description: 'Browser Extension',
+      },  
+    {
+      thumbnail: import('/src/assets/tools/wallets/subwallet.png'),
+      href: '/tools/wallets/subwallet/',
+      title: 'SubWallet',
+      description: 'Browser Extension & Mobile Wallet'
+      },
+              {
+      thumbnail: import('/src/assets/tools/wallets/polkadot-vault.png'),
+      href: '/tools/wallets/polkadot-vault/',
+      title: 'Polkadot Vault',
+      description: 'Hardware Wallet',
+    }, 
+  ]}
+/>
+
+## Polkadot Multisig Wallets
+Polkadot multisig accounts are an advanced security feature within the Substrate-based blockchain ecosystem, designed to enhance the protection and management of assets and governance decisions.
+
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/tools/wallets/multix.png'),
+      href: '/tools/wallets/multix/',
+      title: 'Multix',
+    },
+                     {
+      thumbnail: import('/src/assets/tools/wallets/mimir.png'),
+      href: '/tools/wallets/mimir/',
+      title: 'Mimir',
+      },  
+    {
+      thumbnail: import('/src/assets/tools/wallets/talisman-signet.png'),
+      href: '/tools/wallets/talisman-wallet/',
+      title: 'Talisman Signet',
+      },
+              {
+      thumbnail: import('/src/assets/tools/wallets/polkasafe.png'),
+      href: '/tools/wallets/polkasafe/',
+      title: 'PolkaSafe',
+    }, 
+  ]}
+/>
+
+
+
+## Polkadot Wallets Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=f4MWPwv8jq0',
+      title: 'Nova Wallet Tutorial - Altcoin Daily',
+    },
+    
+    {
+      href: 'https://www.youtube.com/watch?v=bZubYsn6TjE',
+      title: 'Talisman Signet Guide - LV',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=amm_Vk0vzP4',
+      title: 'Mimir-Polkadot Multisig',
+      description: 'Mimir is an all-in-one asset management tool tailored for the Polkadot ecosystem.'
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=KJELR_cQei0',
+      title: 'TOP 9 Polkadot Multisig Wallets - LV',
+    },
+    
+  ]}
+/> 
+
+## Polkadot Wallets: The 2025 Buyer’s & Builder’s Guide
+A pragmatic, current (September 2025) guide to choosing and operating Polkadot wallets, from everyday mobile and extension wallets to air-gapped cold storage and enterprise-grade multisig. Learn the trade-offs, see feature comparisons, and follow a step-by-step setup to secure teams and treasury without friction.
+
+## ELI5: Wallet types on Polkadot
+* **Mobile wallets** for daily use and on-chain voting.
+* **Browser extensions** for dapp connections and developer flows.
+* **Air-gapped signer** (Polkadot Vault): an offline phone that never touches the internet. You approve transactions via QR. Treat it like a key-ring and not a hot wallet.
+* **Multisig managers**: web apps that coordinate N-of-M approvals for treasuries and teams.
+
+## Top Polkadot wallets (2025)
+
+### Nova Wallet (mobile)
+What it is: a polished mobile wallet focused on Polkadot UX. Staking, OpenGov voting and delegation, WalletConnect dapp flows, and hardware support are core.
+Good for: mobile-first users, voters and delegators, on-the-go staking and portfolio review.
+Notable: approachable governance UX with clear conviction and lock displays.
+
+### Talisman (extension + Portal)
+What it is: a browser extension wallet with a companion Portal web app for portfolio, staking, and swaps across Polkadot, EVM, and Solana. Ledger connectivity, including the Generic app, is supported.
+Good for: multi-ecosystem power users, teams standardizing on Ledger plus an extension, dapp-heavy workflows.
+Notable: Signet (see below) powers enterprise multisig ops. Portal centralizes day-to-day DeFi and wallet tasks.
+
+### SubWallet (extension + mobile + web)
+What it is: extension, iOS and Android apps, plus a web dashboard covering Substrate and EVM networks. Staking and asset conversion across ecosystems are first-class. Ledger Generic app migration is documented.
+Good for: teams wanting one vendor for desktop, mobile, and web; users bridging assets across ecosystems.
+Notable: strong tutorials around OpenGov flows and active governance UX.
+
+### Polkadot Vault (air-gapped signer)
+What it is: an offline signing app for a dedicated device in airplane mode, formerly Parity Signer. Create and hold keys and sign via QR. Use it as a cold signer for high-value keys or as one signer in a multisig.
+Good for: cold storage, high-assurance signers in a multisig, long-term treasury keys.
+
+## Multisig managers and treasury ops
+### Polkadot Multisig (Signet)
+What it is: Talisman’s enterprise multisig stack, with a public Polkadot Multisig app and a managed or self-hostable Signet offering. It brings workflows for treasury payments, staking, governance from a multisig, and policy controls.
+Why it matters: clean UX for ops teams, integrates with extension wallets and hardware, supports OpenGov voting from the multisig account.
+
+### Multix
+What it is: ChainSafe’s UI for complex multisigs across Polkadot, Kusama, and parachains. Designed to simplify batched and advanced flows.
+Why it matters: fine-grained control over approvals and batched operations with a simple UI.
+
+### Mimir
+What it is: a Polkadot-native multisig account management platform focused on DAOs and treasuries, expanding feature coverage such as staking and cross-chain operations while experimenting with guided task flows.
+Why it matters: fast-moving product that improves on-chain ops ergonomics for teams.
+
+### PolkaSafe
+
+What it is: a multisig experience purpose-built for Polkadot and Kusama with a Safe-like usability model and open-source UI.
+Why it matters: familiar mental model for teams migrating from EVM tooling.
+
+## Feature comparison tables
+
+### Everyday wallets
+| Wallet         | Platforms                           | Custody      | Governance (vote and delegate)      | Staking        | Dapp connect                    | Ledger or hardware                 | Notes                                      |
+| -------------- | ----------------------------------- | ------------ | ----------------------------------- | -------------- | ------------------------------- | ---------------------------------- | ------------------------------------------ |
+| Nova Wallet    | iOS, Android                        | Self-custody | Yes                                 | Yes            | WalletConnect                   | Yes                                | Mobile-first UX and clear governance flows |
+| Talisman       | Browser extension and Portal        | Self-custody | Via governance apps or Portal       | Yes            | Extension injection             | Ledger supported including Generic | Multi-ecosystem coverage                   |
+| SubWallet      | Extension, iOS, Android, Web        | Self-custody | Via SubSquare or Polkassembly flows | Yes            | Extension and mobile dapp flows | Ledger supported with Generic      | Cross-ecosystem conversion                 |
+| Polkadot Vault | iOS or Android on an offline device | Cold signer  | Not applicable                      | Not applicable | QR signing                      | Air-gapped device                  | Ideal as a multisig signer or cold storage |
+
+### Multisig managers
+| Tool                       | Key focus                          | Governance from multisig            | Hosting                    | Notes                                      |
+| -------------------------- | ---------------------------------- | ----------------------------------- | -------------------------- | ------------------------------------------ |
+| Polkadot Multisig (Signet) | Enterprise workflows and policy    | Supported                           | SaaS and self-host options | Risk workflows and approvals               |
+| Multix                     | Simple UI for complex multisigs    | Emerging via extrinsics             | Web                        | W3F-backed development                     |
+| Mimir                      | DAO and treasury ops with UX speed | Roadmap includes governance breadth | Web                        | Rapid 2025 roadmap                         |
+| PolkaSafe                  | Safe-style UX on Polkadot          | Integrations available              | Web                        | Open-source UI and business-oriented focus |
+
+## How to set up a safe, modern wallet stack (solo and team)
+
+### Solo (power user)
+1. Pick your daily driver: Nova for mobile or Talisman or SubWallet for extensions and dapps.
+2. Add a cold signer: connect a Ledger to Talisman or SubWallet, or set up Polkadot Vault on a dedicated offline phone.
+3. Segment risk: keep a small hot balance for dapps and voting. Keep the rest on Ledger or Vault.
+4. Back up properly: record seed phrases and derivation notes, store in two secure locations, and test recovery.
+
+### Team or DAO (treasury and operations)
+1. Create a multisig with a sensible N-of-M threshold using Signet, Multix, or PolkaSafe. Mix signers across Ledger and Vault.
+2. Enable governance from the multisig so the treasury can vote in OpenGov when needed.
+3. Add proxy roles where appropriate, for example a spend proxy for routine ops, while keeping cold signers for high-risk approvals.
+4. Document runbooks: who signs what, change-management, emergency procedures, and incident contacts.
+5. Test a full cycle with small amounts: receive funds, stake and unstake, submit one OpenGov vote from the multisig, pay a small invoice, and execute a small XCM transfer.
+
+## Common pitfalls and pro tips
+* **Ledger Generic app migration:** some chains require metadata hashes. Follow official migration steps and remove staking or governance locks before moving assets.
+* **Governance locks and conviction:** voting or delegating with conviction locks DOT. Unlocks occur after the lock period and require an explicit unlock call.
+* **Polkadot Vault is a signer, not a hot wallet:** keep the device in airplane mode and use QR signing only.
+* **Multisig timepoints and thresholds:** when resubmitting a call, ensure the same timepoint. Document thresholds and keep a spare signer for key loss.
+* **Dapp connectivity expectations:** extensions inject providers, while mobile often uses WalletConnect. Verify your target dapps support your connection mode.
+* **Address formats (SS58):** confirm network prefixes when copying addresses between chains. Use wallet views and warnings.
+
+## FAQs
+**1) What is the safest setup for a personal DOT holder?**
+Use a daily wallet such as Nova, Talisman, or SubWallet plus a cold signer like Ledger or Polkadot Vault. Keep most funds cold and a small hot balance for dapps.
+
+**2) Can a DAO vote in OpenGov from a multisig?**
+Yes. Tools like Polkadot Multisig (Signet) support casting OpenGov votes from a multisig account.
+
+**3) Does Talisman support the Ledger Generic Polkadot app?**
+Yes. Talisman supports Ledger Generic and provides guidance for migrating accounts.
+
+**4) Is Polkadot Vault a full wallet?**
+No. It is an air-gapped signer used with an online wallet to compose and broadcast transactions.
+
+**5) Which tool is closest to an EVM Safe on Polkadot?**
+Mimir is consolidating as one of the most complete multisigs on Polkadot currently. PolkaSafe offers a Safe-like UX. Signet focuses on enterprise policy and workflow. Multix simplifies complex multisig operations.
+
+**6) Which wallet is easiest for beginners who want to vote?**
+Nova Wallet offers an approachable mobile UI for voting and delegation with clear lock information.
+
+## Conclusion
+Choosing a primary wallet such as Nova, Talisman, or SubWallet, pairing it with Ledger or Polkadot Vault, and running treasury through a multisig manager such as Signet, Multix, or PolkaSafe gives you a secure, resilient stack that scales from solo use to DAO operations. 
+
+
+ <DirectoryLinks directory="tools/wallets" />

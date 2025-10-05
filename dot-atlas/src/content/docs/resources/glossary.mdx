@@ -1,0 +1,652 @@
+---
+title: Polkadot Glossary 2025
+description: Concise, accurate definitions for Polkadot, OpenGov, XCM, staking, coretime, and more.
+---
+
+A practical, no-fluff glossary for builders, analysts, and power users working with Polkadot and modern Web3 stacks. It focuses on concepts that matter in real workflows—governance, XCM messaging, staking, and coretime—and reflects the current state of the network as of **September 2025**.
+
+## Web3 & Polkadot Glossary (2025)
+
+## A
+
+### Account
+Keypair controlling an address and on-chain assets.
+
+An account’s keypair authorizes transactions and governance actions; wallets simply manage keys, while the chain’s state tracks balances and locks. Hardware/air-gapped or injected accounts change how keys are stored, not what an account is.
+
+Beyond balances, accounts can hold locks (staking, democracy, vesting), identity data, and proxy delegations (e.g., proxy for governance only). On Substrate chains, an account’s existential deposit (ED) prevents dust accounts; dropping below ED “reaps” the account.
+
+For teams, use multisig or proxy patterns so ops keys differ from treasury/governance keys. Avoid reusing the same account across chains with different SS58 prefixes; UI may show the same raw key with different encodings.
+
+### Address
+Public identifier used to send/receive assets and make calls.
+
+It’s derived from the public key and encodes network-format details; addresses may also appear as QR codes for signing or payments.
+
+Polkadot uses SS58 addresses with a network prefix to reduce cross-chain mis-sends. Internally, addresses map to public keys; the same key can render different addresses per network prefix.
+
+Address formatting matters for XCM and Asset Hub operations—ensure the UI (or SDK) is using the right prefix before signing transfers or teleports.
+
+
+### Air Gapping
+Air-gapped signing (QR or microSD) reduces attack surface by separating the key material from Internet-connected devices. This especially helps high-value governance or staking controllers.
+
+The trade-off is UX: fewer integrations and slower signing flows. Many teams pair an air-gapped “vault” with a hot “operator” key under proxy to balance safety and speed.
+
+### Airdrop
+In Polkadot ecosystems, airdrops often arrive as asset IDs on Asset Hub or parachains, not only as native tokens. Always verify the asset metadata and whether it’s a teleport (native) or reserve-based asset before interacting.
+
+Be mindful of dusting: unsolicited small transfers can be phishing. Never approve contract calls or XCM executions just because an airdropped token appeared.
+
+### AMM (Automated Market Maker)
+DEX model using liquidity pools to price assets algorithmically.
+
+AMMs replace order books with invariant-based pricing across pools; slippage and fees depend on pool depth and swap size.
+
+DEX design that prices swaps from liquidity pools using math (e.g., constant-product). Price impact depends on depth and route; LPs earn fees and take on impermanent loss risk. Many Polkadot parachains expose AMMs at the application layer.
+
+### API
+For Polkadot, primary access is via JSON-RPC and the polkadot-js APIs (or language SDKs). The metadata endpoint drives type-safe interactions; keep it in sync after runtime upgrades.
+
+Separate read (public endpoint) from write (rate-limited, auth, or private) to avoid mempool abuse, and consider archive nodes for historical queries.
+
+### Asset Hub
+System parachain for issuing and managing fungible/non-fungible assets.
+
+Provides mint/burn/transfer primitives and unified asset IDs under shared security, making it the canonical spot for DOT-native tokens and NFTs to live and interoperate across the ecosystem. 
+
+Polkadot’s canonical chain for issuing, holding, and moving fungible and non-fungible assets under shared security. It standardizes mint/burn/transfer, teleports of native DOT, and reserve-based XCM transfers, making assets first-class across the ecosystem.
+
+Asset Hub standardizes issuance and XCM movement. Assets can be native (teleportable) or remote (reserve-backed). Know which, because it changes how burns/mints occur across chains.
+
+For UX, persist the asset’s multi-location (XCM) and the asset ID. Displaying only a ticker risks collisions. Governance can also freeze, slash, or rename assets—design for metadata updates.
+
+### Availability Cores
+Relay-chain execution/availability slots assigned to parachains/threads under coretime.
+
+Parachains are scheduled onto availability cores; validators fetch candidates and related metadata via runtime APIs to check availability and proceed with approvals. 
+
+
+### AURA
+AURA is used for parachain block production (contrasted with BABE on the relay chain). It’s authority-based round-robin, simpler than BABE, suitable for domain logic within a parachain.
+
+On a parachain, authoring is decoupled from relay-chain validation—collators propose blocks; validators check proofs of validity.
+
+### BABE
+Slot-based block production on the relay chain.
+
+BABE assigns leaders per slot to propose blocks; later, GRANDPA finalizes chains of blocks, separating authorship from finality for liveness and safety. 
+
+### Block
+Bundle of state transitions plus header and metadata.
+
+Contains extrinsics and consensus metadata describing how the runtime transformed prior state into the new state. 
+
+Blocks carry extrinsics (calls) and produce events. Indexers should listen to events/receipts, not just parse raw storage, to track app-level outcomes accurately.
+
+In Substrate, the state root commits to all storage; light clients can verify inclusion proofs without downloading full state.
+
+### Blockspace
+Usable capacity (compute + storage + security) finalized by the network.
+
+In Polkadot’s blockspace-centric design, the “product” is finalized execution capacity across many chains, with quality and availability varying by design and scheduling. 
+
+Polkadot’s product is finalized blockspace across many chains. Quality includes latency to inclusion, finality lag, XCM throughput, and failure domains—far richer than a single TPS metric.
+
+Apps that span chains should model end-to-end cost: execution fee + XCM fee + existential deposits + potential teleport/bridge costs.
+
+### Block Explorer
+Explorers reflect indexer choices. For XCM, ensure the explorer shows message multi-locations, channel states, and fee payers; raw on-chain data can differ from UI rollups.
+
+For governance analytics, correlate tracks, origins, and conviction locks—not just binary pass/fail.
+
+### BLS 
+BLS enables efficient signature aggregation (great for committees/consensus) but relies on pairing-friendly curves and careful implementation to avoid malleability.
+
+Polkadot primarily uses Schnorrkel/Ed25519 for accounts; BLS may appear in specialized protocols or off-chain committees where aggregation is a win.
+
+### Bonding
+Locking tokens to take on network roles (e.g., staking).
+
+Bonded DOT can secure the network (staking) or be used in mechanisms like (legacy) auctions; unbonding introduces time-based exit delays. 
+
+### Bounty
+Under OpenGov, bounties are Treasury track flows with a curator who defines deliverables, milestones, and disbursement. They replace ad-hoc grantmaking with clearer on-chain accountability.
+
+Proposers should publish acceptance criteria and measurable outputs; curators escrow or stream payments on completion.
+
+### Bridge
+Trust-minimized connection to external networks.
+
+Bridge parachains make external chains appear parachain-like to the relay chain, enabling message or asset movement with explicit security assumptions. 
+
+Prefer bridges that use light clients or economic security with strong fraud proofs. Understand if the “wrapped” asset is issued on Asset Hub or a parachain and how redemption works.
+
+Bridges are outside Polkadot’s shared security; XCM is inside. Communicate that distinction to users to set risk expectations.
+
+### Byzantine Fault Tolerance 
+BFT isn’t a single algorithm but a tolerance model: the system remains safe/lively under a bound of malicious/failed nodes. GRANDPA targets safety; BABE targets liveness.
+
+Real systems also face network asynchrony; protocol parameters (timeouts, voter sets) should be tuned with real latency/partition assumptions.
+
+## C
+
+### Capacity (Validator)
+Nominator saturation level beyond which some nominators earn no rewards.
+
+When a validator is “at capacity,” additional nominators risk being outside the rewarded set if the validator becomes oversubscribed in the next election. 
+
+### Collator
+Parachain node building blocks and submitting proofs to validators.
+
+Collators collect parachain transactions, produce candidates, and attach proofs so relay-chain validators can verify the state transition. 
+
+### Collectives (Parachain)
+System parachain hosting on-chain groups (e.g., Technical Fellowship, Alliance).
+
+Dedicated to governance-adjacent organizations that operate on-chain and support protocol stewardship and ecosystem norms. 
+
+### Commission (Validator)
+Fee a validator takes before sharing rewards.
+
+Validator commission is subtracted first; remaining rewards distribute to backing nominators pro-rata to stake and activity. 
+
+### Consensus
+Block production plus agreement (BABE + GRANDPA).
+
+BABE authors blocks per slot; GRANDPA voters finalize a chain prefix, giving deterministic finality rather than probabilistic confirmation. 
+Consider consensus at two layers: parachain authoring/logic (often AURA) and relay-chain production/finality (BABE/GRANDPA). Many app performance issues are parachain-layer concerns, not relay-chain ones.
+
+Metrics to watch: inclusion latency, finality lag, approval checks, and XCM queue depth.
+
+### Coretime
+Model where parachains consume relay-chain time on demand (replaces auctions).
+
+Instead of long-lived slot leases, chains can operate as on-demand parathreads or buy time flexibly; scheduling maps to availability cores for execution.
+
+
+### Curator
+Curators are accountable for scope, milestones, and acceptance in bounties. They should publish transparent criteria, progress updates, and reasons for release/withholding of funds.
+
+Good practice: milestone-based payouts with on-chain remarks linking to artifacts (hashes, IPFS CIDs).
+
+### Cross-Chain
+Interoperable exchange of messages/assets across chains.
+
+Implemented via protocols like HRMP today with an XCMP target; delivers ordered, guaranteed message delivery under the relay chain’s security. 
+
+
+Inside Polkadot, prefer teleports for native assets and reserve-based transfers for others. Across ecosystems, understand bridge trust assumptions and settlement guarantees.
+
+Design UX to surface who pays the fee, what gets burned/minted where, and any existential deposit implications on the destination.
+
+## D
+
+### DApp
+Application with decentralized backends or state.
+
+The UI can be web or native; the key is on-chain state/logic and wallet-based authorization rather than centralized servers. 
+
+On Substrate, you can target multiple execution models: smart-contracts pallets, runtime pallets (native), or off-chain workers. Choose based on upgrade cadence and trust minimization.
+
+Always test flows on Paseo/Westend/Rococo with faucets before mainnet.
+
+### DMP (Downward Message Passing)
+Messages from relay chain to a parachain.
+
+Part of vertical message passing; downward messages may also originate from another parachain but route via the relay chain. 
+
+DMP is how system decisions flow down (e.g., runtime upgrades or governance signals). Ensure your parachain handles DMP gracefully with idempotent handlers to avoid double-effects.
+
+Log DMP handling as events for observability; it eases incident response.
+
+### DOT
+Polkadot’s native token for governance, staking, and bonding.
+
+DOT powers voting/treasury, secures the network via staking and slashing, and can be bonded for protocol operations. 
+
+DOT has lockable balances for governance conviction and staking locks; UI should show free, reserved/locked, and vested components distinctly.
+
+In OpenGov, DOT’s time-for-weight tradeoff can materially change outcomes; tooling should visualize conviction curves.
+
+## E
+
+### Epoch / Era / Session
+Epoch: BABE slots; Era: staking reward period; Session: validator set window.
+
+Epochs break into slots with eligible leaders; eras group sessions for payout and staking recalculation; sessions gate validator set changes and key usage. 
+
+### Equivocation
+Publishing conflicting data (e.g., two blocks for one slot).
+
+BABE equivocation is authoring multiple blocks in a slot; GRANDPA equivocation is signing conflicting chains—both slashable consensus faults. 
+
+### Extrinsic
+External input to the runtime (signed transactions or inherents).
+
+SCALE-encoded extrinsics carry versioning, signatures (if any), and call data; “transactions” are signed and fee-bearing, while “inherents” are unsigned, block-author-inserted items like timestamps with separate validation rules. 
+
+Treat extrinsics as user intent containers. For batched calls, consider atomicity and weight; failures can revert the batch or partially apply depending on call type.
+
+On fee markets, supply tips to prioritize inclusion during congestion; keep an eye on weight fees for cross-chain calls that do extra work.
+
+## F
+
+### Finality
+Irreversible block inclusion (via GRANDPA).
+
+Distinguish inclusion (appears in a block) from finality (irreversible). UIs should show both to prevent users acting on unfinalized state for critical actions.
+
+If you automate treasury or bridge operations, wait for a finality threshold appropriate to risk (e.g., several finalized blocks or explicit GRANDPA justification).
+
+### Fellowship (Technical)
+Expert body stewarding protocol quality and safety.
+
+The Fellowship can propose and whitelist sensitive upgrades, reducing coordination risk while keeping ultimate authority with OpenGov. Ranks reflect proven expertise, not token weight.
+
+For proposal authors: include threat models, benchmarking, and rollback plans to facilitate expert review.
+
+### FRAME
+Substrate’s pallet library for building runtimes.
+
+When composing pallets, be explicit about origin filtering, weight limits, and storage migrations. Runtime upgrades must include migration code for storage layout changes.
+
+Document your dispatchable calls and events; it makes SDK generation and explorer support smooth after upgrades.
+
+### Faucet
+Most faucets rate-limit by address or IP and may require social proofs. Don’t hardcode faucet endpoints; keep them configurable per environment.
+
+Never present faucet tokens as having value; isolate test chains in your app config to avoid mainnet confusion.
+
+### Fork
+Substrate chains upgrade by replacing the Wasm runtime on-chain, avoiding social-layer hard forks for most changes. Runtime versions signal compatibility to wallets and SDKs.
+
+When a hard fork is unavoidable (host/client changes), publish cutover instructions, client minimums, and reorg strategy well in advance.
+
+### Fungible Token
+On Asset Hub, each fungible asset has an ID and optional metadata (name, symbol, decimals). Treat ID as the source of truth; symbols can collide.
+
+Cross-chain, a “fungible token” might be a local representation of a remote reserve—show users the reserve location to clarify redemption semantics.
+
+## G
+
+### Governance (OpenGov)
+Track-based referenda with origins and conviction voting.
+
+OpenGov uses parallel tracks with different approval/support curves, deposits, and time windows (prepare, decision, confirmation, enactment). Proposals execute real calls under specific origins (e.g., Root, Fellowship). This avoids multisig bottlenecks and makes policy changes auditable end-to-end on-chain.
+For proposers, success = tight scope, clear cost/benefit, and measurable KPIs. For voters, conviction trades time-lock for weight; dashboards should visualize “required support/approval” over time so outcomes aren’t misread.
+
+
+### GRANDPA
+Finality gadget that finalizes chains of blocks.
+
+GRANDPA finalizes prefixes of the best chain using a voter set that can change across sessions. It prioritizes safety: finalized blocks won’t roll back even during partitions; liveness resumes once the network heals.
+Operationally, indexers and bridges should distinguish inclusion vs finality. For treasury or cross-chain accounting, wait for a conservative number of justified and finalized blocks, not merely “latest”.
+
+## H
+
+### Hard Fork / Soft Fork
+Non-backward-compatible vs backward-compatible protocol changes.
+
+Most Polkadot upgrades don’t need hard forks because the Wasm runtime can be replaced via governance. Hard forks happen when the host/client layer changes in a non-compatible way.
+For app teams: pin SDKs to runtime spec versions, and surface a maintenance banner when your node’s runtime is ahead of your client types to prevent malformed transactions.
+
+### HRMP
+Relay-routed parachain↔parachain messaging precursor to full XCMP (active).
+
+HRMP stores message metadata on the relay chain, guaranteeing delivery and ordering but consuming shared storage. It mirrors the XCMP interface so chains can migrate without breaking apps.
+Watch queue depth and fee payer semantics. If a destination can’t process messages, backpressure accumulates; your app should surface retry/backoff rather than dropping intents.
+
+## I
+
+### Inherents
+Unsigned extrinsics inserted by block authors (e.g., timestamp).
+
+Inherents (e.g., timestamps) are “true by construction.” They’re validated against rules (like acceptable drift) rather than signatures.
+If your parachain logic depends on them (auctions, expiries), make handlers idempotent and log events so you can replay or reconcile on incident recovery.
+
+### Injected Account
+Wallet-managed account surfaced in UIs.
+
+Browser extensions inject signer capabilities and expose chain metadata. Always check the SS58 prefix and runtime specVersion the wallet thinks it’s talking to—mismatches cause “valid but wrong-chain” signatures.
+Use origin filters and method whitelists in UIs; never request blanket permissions to avoid confused-deputy problems.
+
+### Interoperability
+General capability for chains and applications to work together.
+
+Inside Polkadot, prefer teleports for native assets and reserve-based transfers for everything else; across ecosystems, you’re in bridge territory with different risks.
+Design UX to show where value is canonical (reserve location), who pays execution/XCM fees, and whether existential deposits will strand user funds on the destination.
+
+### IPFS
+Great for immutable artifacts (reports, binaries) referenced on-chain via CIDs. Pin across multiple providers or run a pinning cluster for reliability.
+For governance artifacts, include the CID in on-chain remarks to create tamper-evident links between funding and deliverables.
+
+## J–L
+
+### JSON-RPC
+Interface used by nodes, wallets, and tooling.
+
+Use subscriptions (state_subscribeStorage, chain_subscribeFinalizedHeads) for reactive UIs; fall back to polling on restrictive hosts.
+Separate read (public) and write (rate-limited) endpoints and rotate API keys. Archive nodes are essential for precise historical analytics.
+
+### Keep-Alive Check
+Prevents transfers that would drop balance below existential deposit.
+
+Prevents a transfer that would drop an account below existential deposit (ED). Without keep-alive, the account can be reaped and storage cleared.
+UX should show ED and whether the post-transfer balance remains above it; for batch/XCM transfers, simulate final balances across hops.
+
+### Kusama (KSM)
+Independent canary network for Polkadot.
+
+Kusama moves faster and experiments earlier; it’s not a testnet—economic stakes are real. Many protocol changes prove out on KSM before Polkadot.
+If you support both, avoid sharing the same seed for high-privilege keys; run distinct controller/stash/proxy setups per network.
+
+### Keystore file 
+An encrypted JSON holding a private key. Protect the password and the file; compromise of either is enough to drain funds.
+Prefer hardware or air-gapped signing for treasuries and use proxies so the keystore never holds Root-level capabilities.
+
+### libp2p
+Peer-to-peer networking stack used by nodes.
+
+Handles peer discovery, gossip, and transport. Misconfigured nodes (NAT, ports) look “healthy” locally but don’t propagate blocks well—monitor peer count and gossip scores.
+Relay and hole-punching can help in constrained environments; validators should avoid reliance on fragile relays.
+
+### Light client
+Verifies headers and Merkle proofs without full state—ideal for wallets, bridges, and mobile.
+For XCM-aware wallets, pair a light client with a watcher service to prefetch proofs and reduce perceived latency.
+
+## M
+
+### Mainnet
+Live production network.
+
+Treat each parachain mainnet as its own risk domain even under shared security. Outages on one do not imply relay-chain failure, but XCM routes may still be impacted.
+Use environment flags and color-coded banners to avoid testnet/mainnet confusion in ops.
+
+### Message (XCMP/HRMP)
+Data packet sent between parachains or via relay chain.
+
+A message is a typed instruction (e.g., TransferAsset, BuyExecution). Delivery consumes fees and weight on the destination.
+Always check refund behavior if a destination can’t execute; unhandled refunds are a common source of “lost value” perceptions.
+
+### Metadata
+Machine-readable description of runtime types and calls.
+
+Runtime metadata changes with upgrades; outdated clients mis-encode calls or mis-render balances.
+Bundle a metadata fetch on app start and prompt users to reload if the runtime specVersion changed.
+
+### Merkle Patricia trie
+Substrate uses tries to commit to storage; proofs allow light clients to verify values.
+Storage migrations must preserve keys/paths or provide migration logic; otherwise proofs break.
+
+### Mnemonic phrase
+Prefer SR25519 key derivation with strong passphrases. Never paste mnemonics into web UIs; use hardware or QR signing for treasuries.
+For teams, shard operational control via multisig or proxy rather than sharing mnemonics.
+
+### Multi-signature wallet (multisig)
+On Substrate, multisig is an on-chain approval workflow; add/remove signers requires a new multisig.
+Prefer proxy + single-sig hardware for complex ops: cheaper, easier to rotate, and safer than giant multisigs for every role.
+
+## N
+
+### NFT
+Non-fungible token representing unique assets.
+
+Separate media from ownership; the token is the ledger entry, media often lives on IPFS or elsewhere.
+On Asset Hub, prefer standardized IDs and link the CID to on-chain data for permanence.
+
+### Node Explorer
+Tool to browse node/chain data.
+
+Good explorers expose events, XCM channels, origins, and tracks, not just balances.
+If an explorer disagrees with your indexer, trust the chain—reproduce from RPC + proofs.
+
+### Nominator
+Account bonding DOT to support validators. Backing validators with staked DOT in NPoS.
+
+Rotate nominations to avoid sticking with underperformers. Watch slash history, commission, identity, and uptime.
+
+### NPoS
+Nominated Proof-of-Stake; shared risk/reward among validators and nominators.
+
+Elections aim to maximize security by spreading stake; concentrate too much on one validator set and oversubscription kills your rewards.
+UX should recommend diversified validator sets and show projected inclusion.
+
+## O
+
+### On-ramp / Off-ramp
+Prefer providers that send assets natively to Asset Hub or your target parachain to avoid post-purchase bridges/XCM hops.
+Disclose KYC and fee structure early; blocked jurisdictions need alternative flows (P2P, DEX).
+
+### Origin
+Privilege context under which a call executes (e.g., Root, Fellowship, system).
+
+Origin is the authorization context: Root (superuser), Fellowship (expert), system, or user. Pallets must check origin explicitly.
+When composing pallets, avoid accidental privilege escalation—map only the minimal origin needed per call.
+
+### Oversubscribed (Validator)
+More nominators than capacity; only top stake earns rewards.
+
+## P
+
+### Pallet
+Substrate runtime module implementing domain logic.
+
+In audits, check weight, reentrancy, origin guards, and storage migration paths.
+Emit rich events for all critical state changes; they’re your user-visible audit log.
+
+### ParaID
+Numeric identifier for a parachain/thread.
+
+Used in registries, XCM routing, and explorers. Avoid hardcoding; query the Parachain Registry on startup to remain future-proof.
+When chains re-org identifiers (rare), publish mapping tables for indexers.
+
+### Parachain
+Chain secured by Polkadot’s shared security, executing in parallel.
+
+### Parathread (On-Demand)
+Pay-as-you-go execution aligned with coretime consumption.
+
+### Parity Technologies
+Core developer of Substrate and Polkadot implementations.
+
+### People Chain
+System parachain for identity-related primitives.
+
+Focuses on identity/credentials; pairs well with on-chain attestations for KYC-style proofs without leaking PII.
+If you verify contributors, store claims not documents; link claims to payouts via remarks.
+
+### Polkadot (Relay Network)
+Heterogeneous multi-chain network with shared security and XCM.
+
+Think of it as a security/finality and messaging system for many specialized chains. Value comes from composability across domains with predictable finality.
+Design apps “multi-home” from day one: avoid single-chain assumptions in balances, fees, and EDs.
+
+### PoS / PoW / PoA
+Consensus participation by stake / by computational work.
+
+PoS (NPoS) is Polkadot’s model; PoA appears in private/consortium chains or at the parachain level. PoW appears only in external networks.
+Explain to users that “staking” is security, not “yield farming”; rewards reflect slashable risk.
+
+### Preimage
+A hash-then-publish flow: submit hash with referendum, store full preimage later. Prevents spam while keeping votes on exact bytes.
+Keep preimages available (pin/hash); missing preimages stall dispatch.
+
+### Proof of Validity
+Evidence enabling validators to verify parachain state transitions.
+
+### Proposal / Referendum
+Governance item submitted for network-wide decision.
+
+Bundle only the calls you need; avoid “kitchen-sink” proposals. Add on-chain remarks linking to specs, audits, and artifacts so indexers can render context.
+Large programs: submit in tranches with milestone unlocks tied to artifacts/hashes.
+
+### Protocol
+Rules for communication and state transitions.
+
+In this glossary, “protocol” means either the network rules (runtime) or an app-level set of smart contracts/pallets. Always disambiguate which layer you mean.
+Stable protocols publish semver and migration paths; adopt the habit in your parachain/app too.
+
+## R
+
+### Random Seed
+On-chain randomness used in consensus and lotteries.
+
+Used for BABE elections, lotteries, and sampling. Don’t use on-chain randomness for user-facing secrets; complement with client entropy where needed.
+Document randomness consumption in audits; biased draws can have economic impact.
+
+### Relay Chain
+Base chain coordinating consensus, finality, and cross-chain messaging.
+
+Provides shared security, availability, finality, and XCM routing—not user apps. If a parachain is congested, the relay chain may still be healthy.
+Bridges and analytics should anchor to finalized relay heads when aggregating state.
+
+### Remarks
+No-op extrinsics to annotate blocks.
+
+Zero-effect extrinsics good for audit breadcrumbs (e.g., IPFS CIDs, commit hashes). Keep them short and non-sensitive—chain data is permanent.
+Indexers: render remarks inline with proposals and payouts to improve traceability.
+
+### Root Origin
+Highest-privilege origin in Substrate.
+
+Superuser authority; only governance or whitelisted origins should dispatch Root calls.
+Design pallets with fine-grained origins so Root isn’t required for routine ops.
+
+### Runtime
+Wasm state-transition function defining chain logic.
+
+Your chain’s state transition function compiled to Wasm. Upgrades are just new Wasm blobs plus optional storage migrations.
+Version everything (specVersion/implVersion) and publish migration notes; clients and SDKs depend on them.
+
+## S
+
+### SDK
+Tooling for building apps and chains (e.g., Substrate).
+
+### Sealing
+Producing a block (distinct from finality).
+
+### Session / Session Keys / Certificate
+Validator operating window; keys for duties; proof of key ownership.
+
+### Shared Security
+Parachains inherit the relay chain’s security.
+
+Parachains inherit validator security from the relay chain, so an attacker must compromise Polkadot as a whole to tamper with any one chain’s finalized state. This sharply reduces the cost and complexity of bootstrapping a new chain’s security budget.
+Design implication: you still model domain risk (your runtime, collators, liquidity), but you don’t need to recruit/finance your own validator set to get robust finality.
+
+### Slashing
+Penalty for malicious or negligent validator behavior.
+
+Slashes scale with fault severity (e.g., equivocation vs prolonged offline) and are shared with nominators backing that validator. Historic offenses decay over time but signal operator quality.
+Ops tip: run sentries, rotate session keys cleanly, and monitor finality lag; most accidental slashes are preventable with basic hygiene.
+
+### Spend Period 
+Treasury approvals accrue and settle on cadence (e.g., every 24 days). Plan cash-flow so deliverables and invoices align with the next spend period to avoid idle time between “Approved” and “Paid.”
+Good practice: include a buffer in proposals for FX/volatility and clearly list milestones that map to specific spend windows.
+
+### Staking
+Bonding DOT to secure the network as validator or nominator.
+
+In NPoS, rewards depend on validator performance, commission, and whether your nomination was active that era. Spreading stake across quality validators often beats “chasing APY.”
+Surface: active/inactive status, projected inclusion, and slash history. Educating users here prevents misattribution (“staking is broken”) when the issue is oversubscription.
+
+### State Transition Function
+Deterministic function transforming chain state.
+
+Treat STF like your chain’s “kernel.” Every upgrade must specify storage migrations, weights, and origin checks. Fuzz tests catch edge cases that unit tests miss.
+For app devs: never assume storage layout; always read via types generated from runtime metadata to survive upgrades.
+
+### Substrate 
+Build with FRAME pallets, wire origins/weights, and ship as a Wasm runtime. You can start centralized (few validators) and later plug into shared security by becoming a parachain.
+Dev loop: write pallet → add benchmarks → integrate in runtime → test on Paseo/Westend → ship via OpenGov.
+
+### System Parachains
+Governance-allocated chains providing protocol services (Asset Hub, People, Collectives).
+They’re funded/allocated by governance (no auctions) because they provide protocol services (assets, identity, collectives).
+
+App builders should default to these chains for shared primitives to maximize interoperability and reduce duplication.
+
+These are protocol utilities (Assets, Identity, Collectives) allocated by governance, not markets. Prefer them for canonical features so users enjoy uniform semantics across the ecosystem.
+Be ready for metadata updates (asset names, IDs, origins). Indexers should subscribe to system-chain events, not hardcode.
+
+## T–U
+
+### Teleport
+Burn/mint movement of an asset between chains per XCM rules.
+
+Teleports burn on source and mint on destination only for native assets with explicit allowlists. If a chain disables teleports for an asset, use reserve-based transfers instead.
+UX: show whether a transfer is teleport or reserve-based, who pays fees, and expected arrival time.
+
+### Tracks (OpenGov)
+Parallel governance lanes with tailored parameters and origins.
+
+Each OpenGov track tunes approval/support curves, deposits, and timings for its privilege level. Treasury tracks differ from Root/Fellowship tracks—don’t generalize one track’s thresholds to another.
+Visualize live progress against the track’s curves so voters see when additional support is still needed.
+
+### Transaction
+Signed extrinsic that pays fees and triggers runtime logic.
+
+A signed extrinsic that pays fees and executes a call. Include tips to prioritize during congestion and watch weight when batching.
+Post transaction hash and block for support/debugging; it reduces back-and-forth.
+
+### Transfer
+Same-chain asset movement.
+
+On Substrate, transfers check ED (existential deposit) and optional keep-alive. Batched or XCM transfers can fail partially; design idempotent retries and surface refunds.
+Always show post-transfer balance to the user before signing.
+
+### UMP (Upward Message Passing)
+Messages from parachains to the relay chain.
+
+## V–Z
+
+### Validator
+Relay-chain node participating in consensus, finality, and parachain checks.
+
+Hardware, network, and ops discipline matter more than headline APY. Look for no slash history, stable commission, responsive ops, and clear identity.
+Run sentry nodes, protect keys with HSM/hardware, and automate alerts for equivocation/offline risk.
+
+Relay validators also perform approval checks for parachain candidates and participate in GRANDPA. If approval assignments lag, parachain inclusion slows even if collators are fine.
+Monitor assignment load and availability metrics; they’re leading indicators of network health.
+
+### Vertical Message Passing
+Umbrella for UMP (up) and DMP (down) with the relay chain.
+
+Two paths: UMP (parachain → relay) and DMP (relay → parachain). Parachains must gracefully handle out-of-order arrivals and retries.
+Log message IDs and outcomes for reliable reconciliation across hops.
+
+### Voting (OpenGov)
+Stake- and conviction-weighted voting on tracks.
+
+Stake-weighted with conviction locks; abstain is different from no. Whales can’t easily dominate high-conviction outcomes without locking for long.
+Encourage delegation for users who won’t follow daily governance—idle stake is governance debt.
+
+### XCMP
+Efficient parachain↔parachain messaging protocol (HRMP remains compatible during transition).
+
+XCMP carries typed XCM instructions (e.g., TransferAsset, WithdrawAsset, BuyExecution, ReserveAssetDeposited) directly between parachains without storing full message payloads on the relay chain. It preserves ordering and delivery guarantees per channel (“lane”), uses fees/weight accounting on the destination chain, and supports refunds when execution cannot proceed. Compared with HRMP, XCMP reduces relay-chain storage/overhead while keeping the same developer-facing XCM interface, so most apps can migrate with minimal code change.
+
+Operationally, treat each route as a resource with back-pressure: if the destination chain is congested or a handler errors, messages queue and refunds may return to the sender. Always display to users who pays which fee, the expected existential deposit (ED) on the destination, and whether the transfer is a teleport (native) or reserve-based (remote). For robustness, make handlers idempotent, log message IDs/outcomes for reconciliation, and monitor queue depth, execution weight, and refund events so you can retry or surface actionable errors instead of “lost transfer” ambiguity.
+
+### zk-SNARKs 
+Great for privacy and succinct verification; expensive to prove, cheap to verify. If you integrate SNARK-based flows, show proof size, verification cost, and trusted setup (if any).
+Pair with remarked CIDs or commitments so auditors can link private proofs to public funding without revealing sensitive data.
+
+
+## FAQs
+**What’s the difference between HRMP and XCMP?**  
+HRMP routes messages via the relay chain; XCMP is the target efficient protocol for direct parachain↔parachain messaging.
+
+**Did coretime replace slot auctions?**  
+Yes. Parachains and threads now consume relay-chain time on demand instead of bidding in long auctions.
+
+**What does “origin” mean in OpenGov?**  
+It’s the privilege context a call executes with (e.g., Root, Fellowship, system); tracks constrain which origins can dispatch what.
+
+**Is a parathread the same as a parachain?**  
+No. Parathreads are on-demand; parachains reserve more continuous execution via coretime allocations.
+
+**How do finality and block production differ?**  
+BABE authors blocks; GRANDPA finalizes them, making history irreversible.

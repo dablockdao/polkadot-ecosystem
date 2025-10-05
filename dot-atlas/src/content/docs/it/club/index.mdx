@@ -1,0 +1,44 @@
+---
+title: Comunità Polkadot
+description: Inizia e unisciti al più grande DAO del mondo.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Il Polkadot Ecosystem Club fornisce una raccolta unificata degli elementi chiave che plasmano la rete. 
+Include un directory completa di **DAO e collettivi**, mettendo in evidenza i gruppi che guidano gli sforzi di governance, gestiscono i tesori, 
+e promuovono l'innovazione all'interno dell'ecosistema attraverso le sue diverse iniziative. 
+
+Questi collettivi rappresentano lo spirito collaborativo di Polkadot, 
+mostrando come la presa di decisioni decentralizzata consenta una gestione dei progetti trasparente ed efficiente. Inoltre, il centro presenta dettagli su **organizzazioni che contribuiscono attivamente all'ecosistema**, 
+comprese le squadre di sviluppo e le istituzioni che lavorano insieme per costruire il futuro della tecnologia blockchain.
+
+*Una lista curata con tutti gli agenti rilevanti dell'ecosistema Polkadot (DAO, Persone, Validatori…) da seguire.*
+
+## Tutto l'Ecosistema Polkadot in un Unico Luogo
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/daos.png'),
+      href: '/club/daos',
+      title: 'DAO',
+      description: 'Scopri i DAO e collettivi più popolari che stanno plasmando l\'ecosistema Polkadot.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/orgs.png'),
+      href: '/club/orgs/',
+      title: 'Organizzazioni',
+      description: 'Tutte le organizzazioni che stanno costruendo il futuro di internet.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/initiatives.png'),
+      href: '/club/initiatives/',
+      title: 'Iniziative',
+      description: 'Inizia il tuo viaggio come sviluppatore Polkadot.'
+      },
+  ]}
+/>

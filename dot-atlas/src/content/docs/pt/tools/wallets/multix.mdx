@@ -1,0 +1,96 @@
+---
+title: Multix  
+description: Uma interface para gerenciar facilmente multisigs complexos no Polkadot. Todas as suas contas de múltiplos assinantes, em várias chains e parachains.  
+sidebar:  
+  label: ✧ Multix  
+  order: 5  
+hero:  
+  tagline: Uma interface para gerenciar facilmente multisigs complexos no Polkadot.  
+  image:  
+    file: ../../../../../assets/tools/wallets/multix.png  
+  actions:  
+    - text: Ferramenta  
+      link: https://multix.chainsafe.io/  
+      icon: external  
+    - text: Github  
+      link: https://github.com/ChainSafe/Multix  
+      icon: external  
+      variant: secondary  
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';  
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';  
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+As contas de múltiplos assinantes (multisig) têm sido uma ferramenta essencial para o gerenciamento seguro de ativos desde os primeiros dias das criptomoedas. No entanto, gerenciar esses multisigs, especialmente em plataformas como Polkadot e Kusama, pode ser complexo. Surge o Multix, uma interface de código aberto e fácil de usar projetada para simplificar a criação e o gerenciamento de multisigs complexos. Este artigo explora as características, benefícios e intricidades técnicas do Multix, uma ferramenta inovadora da ChainSafe Systems.
+
+## O que é o Multix Multisig?  
+Multix é uma interface fácil de usar desenvolvida pela ChainSafe Systems para gerenciar contas multisig complexas no ecossistema Polkadot. Ela oferece uma maneira simplificada de criar, gerenciar e interagir com contas multisig, abordando os desafios que os usuários geralmente enfrentam. O Multix utiliza o poder dos proxies puros para aumentar a flexibilidade e a segurança das contas multisig.
+
+## Valores Centrais do Multix  
+1. **Código Aberto**: O Multix é completamente de código aberto, com tanto o código do back-end quanto o front-end disponíveis no GitHub. Essa transparência permite que os desenvolvedores contribuam e auditem o código.
+2. **Sem Permissões**: A plataforma é projetada para ser trust-minimized, armazenando apenas dados da blockchain sem coletar informações dos usuários. O banco de dados pode ser reconstruído por qualquer pessoa, garantindo descentralização e segurança.
+3. **Interoperável**: O Multix não cria um "jardim murado". Multisigs criadas on-chain são imediatamente visíveis no Multix, garantindo uma integração perfeita com outras plataformas.
+4. **Preservação de Privacidade**: Nenhuma informação privada é coletada. Detalhes adicionais, como nomes de contas, são armazenados localmente no seu navegador e são visíveis apenas para você.
+5. **Fácil de Usar**: A interface é projetada para simplificar o processo de gerenciamento de multisigs, tornando-o acessível tanto para novatos quanto para usuários experientes.
+
+## Principais Características do Multix Multisig  
+**1. Gerenciamento Simplificado de Multisig**  
+O Multix resolve vários pontos problemáticos associados às contas multisig:
+- **Visibilidade Automática**: Quando uma conta multisig é criada, todos os signatários podem vê-la imediatamente em sua interface, eliminando a necessidade de comunicação off-chain para compartilhar os detalhes do multisig.
+- **Gerenciamento de Dados de Chamadas**: O Multix recupera dados de chamadas diretamente da blockchain, exibindo-os para os usuários sem exigir compartilhamento manual de dados.
+- **Gerenciamento Flexível de Signatários**: Graças aos proxies puros, é possível adicionar ou remover signatários e ajustar o limite sem alterar o endereço externo.
+**2. Proxies Puros**  
+Os proxies puros permitem o gerenciamento de contas multisig sem alterar o endereço externo. Isso significa que, mesmo que os signatários mudem ou o limite seja ajustado, o endereço do multisig permanece o mesmo, mantendo a continuidade e a segurança.
+**3. Integração com WalletConnect v2**  
+O Multix suporta o WalletConnect v2, permitindo que os usuários conectem suas contas multisig com aplicações descentralizadas (Dapps). Essa integração permite uma interação tranquila com Dapps, facilitando transações, delegação de votos ou staking de tokens utilizando contas multisig.
+
+## Visão Técnica do Multix Multisig  
+**Arquitetura**  
+O Multix é construído sobre a infraestrutura robusta fornecida pelo Polkadot e Kusama, aproveitando seu pallet multisig. Ele usa o Subsquid, um indexador de código aberto, para recuperar e exibir dados da blockchain. Essa configuração garante que todas as informações exibidas no Multix sejam obtidas diretamente da blockchain, aumentando a transparência e a confiabilidade.  
+**Indexador e Front-End**  
+O repositório do Multix contém código para rodar um indexador (`./squid`) e a interface front-end (`./packages/ui`). Essa arquitetura suporta uma experiência de usuário suave ao indexar e exibir dados de multisig de maneira eficiente.  
+**Mecanismo de Proxy**  
+O mecanismo de proxy no Multix funciona como um cofre com uma fechadura específica que pode ser aberta combinando as chaves dos signatários. Se a chave de um signatário for comprometida, outros podem mudar a fechadura sem alterar o endereço externo. Isso garante que os fundos permaneçam seguros e o endereço permaneça consistente.
+
+## Casos de Uso e Benefícios do Multix Multisig  
+**1. Uso Empresarial e de DAOs**  
+O Multix é ideal para empresas e organizações autônomas descentralizadas (DAOs) que precisam gerenciar grandes quantidades de tokens com segurança. A capacidade de manter o mesmo endereço enquanto ajusta os signatários é crucial para manter a confiança e a continuidade com os parceiros.  
+**2. Segurança Aprimorada**  
+Ao eliminar a necessidade de comunicação off-chain e compartilhamento manual de dados, o Multix reduz o risco de erros e brechas de segurança. Todos os dados de multisig são recuperados diretamente da blockchain, garantindo precisão e confiabilidade.  
+**3. Melhor Experiência para o Usuário**  
+A interface intuitiva do Multix simplifica o processo de criação e gerenciamento de multisigs. Os usuários podem facilmente adicionar ou remover signatários, ajustar limites e interagir com Dapps, tornando o gerenciamento de ativos digitais mais acessível.
+
+## Começando com o Multix  
+1. **Criando um Multisig:** Criar um multisig com o Multix é simples. Um usuário inicia o multisig, e todos os signatários podem vê-lo e interagir com ele imediatamente. Não é necessário compartilhar manualmente dados de chamadas ou endereços.
+2. **Gerenciando Multisigs:** Com o mecanismo de proxy, os usuários podem gerenciar os signatários e limites sem alterar o endereço externo. Isso garante que a conta multisig permaneça consistente, mesmo com a mudança na composição dos signatários.
+3. **Conectando-se aos Dapps:** Usando o WalletConnect v2, os usuários podem conectar suas contas multisig a vários Dapps. Isso permite uma ampla gama de interações, desde swaps de ativos até votação e staking, tudo gerenciado pela interface do Multix.
+
+### Conclusão  
+O Multix, da ChainSafe Systems, é uma ferramenta poderosa que simplifica o gerenciamento de contas multisig no Polkadot e Kusama. Ao aproveitar a tecnologia de código aberto, arquitetura sem permissões e proxies puros, o Multix oferece uma solução segura, fácil de usar e flexível para gerenciar multisigs complexos. Seja você uma empresa, DAO ou usuário individual, o Multix oferece as ferramentas necessárias para navegar pelas complexidades do gerenciamento de ativos digitais com facilidade. Experimente o Multix hoje e descubra o futuro do gerenciamento de multisig no Polkadot.
+
+## Vídeos da Comunidade Multix  
+--------------
+<ShowcaseYouTube  
+  entries={[  
+    {  
+      href: 'https://www.youtube.com/watch?v=rmBhErBOVJM',  
+      title: 'Como Criar e Gerenciar Multisigs Complexos com o Multix',  
+      description: 'Exploraremos multisigs complexos, proxies puros, configurações para DAOs, empresas e usuários finais, além de uma demonstração ao vivo do Multix'  
+    },  
+    {  
+      href: 'https://www.youtube.com/watch?v=Qv_nJVcvQr8',  
+      title: 'Bounties do Polkadot, Multisigs e Proxies',  
+      description: 'Guia completo sobre a gestão de Bounties com Multisigs e Proxies'  
+    },  
+    {  
+      href: 'https://www.youtube.com/watch?v=fuiPJmbx_Us',  
+      title: 'Entrevista com Thibaut Sardan',  
+      description: 'Multisigs são essenciais para equipes Web3. Thibaut Sardan compartilha por que o Multix se destaca no Polkadot.'  
+    },  
+    {  
+      href: 'https://www.youtube.com/watch?v=izaaHyPXs-U',  
+      title: 'Criando Contas Multi-assinatura com o MultiX',  
+      description: 'Aprenda sobre proxies puros e como eles aumentam a flexibilidade dos multisigs, permitindo a alteração dos signatários e o limite sem alterar o endereço subjacente.'  
+    },  
+  ]} />

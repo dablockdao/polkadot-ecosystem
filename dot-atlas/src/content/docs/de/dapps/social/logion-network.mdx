@@ -1,0 +1,78 @@
+---
+title: 'Logion Network'
+description: Das Logion Network integriert rechtliche Rahmenbedingungen mit Blockchain-Technologie, um eine sichere, transparente und rechtlich konforme Tokenisierungslösung anzubieten.
+hero:
+  tagline: Rechtliche Rahmenbedingungen mit Blockchain-Technologie.
+  image: 
+    file: ../../../../../assets/dapps/social/logion.png
+  actions:
+    - text: Dapps
+      link: https://logion.network/
+      icon: external
+    - text: Docs
+      link: https://logion-network.github.io/logion-api/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+Logion Network ist eine wegweisende Initiative im Polkadot-Ökosystem, die rechtliche Rahmenbedingungen mit Blockchain-Technologie integriert, um eine sichere, transparente und rechtlich konforme Tokenisierungslösung anzubieten. Durch die Einbeziehung menschlicher gerichtlicher Aufsicht und fortschrittlicher kryptografischer Prinzipien bietet Logion ein einzigartiges **„Proof of Law“-Konzept**, das sicherstellt, dass digitale Token durch überprüfbare rechtliche Beweise gestützt werden. Dieser Artikel beleuchtet die wesentlichen Komponenten des Logion Network, seine technischen Grundlagen und seine bedeutende Rolle im Polkadot-Ökosystem.
+
+## Logion Network Schlüsselkomponenten
+- **Dezentrales Netzwerk von Justizbeamten:** Das dezentrale Netzwerk von internationalen und unabhängigen Justizbeamten von Logion ist ein Grundpfeiler seiner Lösung. Diese Beamten überwachen und validieren die Eingabe von Aufzeichnungen in das System und fungieren als verteilte Vertrauensinstanz. Diese Dezentralisierung stellt sicher, dass keine einzelne Entität eine einseitige Kontrolle hat, was die Sicherheit und Transparenz erhöht. Die Integration menschlicher Aufsicht mit Blockchain-Technologie ermöglicht eine differenzierte Validierung, die für komplexe rechtliche und regulatorische Anforderungen im Zusammenhang mit der Tokenisierung entscheidend ist.
+- **Private und verschlüsselte IPFS-Netzwerk:** Logion nutzt ein privates und verschlüsseltes InterPlanetary File System (IPFS)-Netzwerk, um eingereichte Aufzeichnungen sicher zu speichern. IPFS ist ein Protokoll, das eine dauerhafte und dezentrale Methode zum Speichern und Teilen von Dateien schafft. Durch die Nutzung der Inhaltsadressierung ermöglicht IPFS das Abrufen von Daten an mehreren Orten gleichzeitig, was die Geschwindigkeit und Effizienz des Netzwerks verbessert. **Das private IPFS-Netzwerk von Logion gewährleistet die Vertraulichkeit und Dezentralisierung von Daten**, verhindert Einzelpunkte des Versagens und ermöglicht sichere, nachvollziehbare Lieferungen von digitalen Vermögenswerten und Dokumenten.
+- **Netzwerk verifizierter Herausgeber:** Das Netzwerk verifizierter Herausgeber, einschließlich regulierter Fachleute, fügt dem Logion Network eine weitere Schicht der Verantwortung hinzu. Diese Herausgeber werden von Justizbeamten validiert und tragen die professionelle oder regulierte Verantwortung für die Inhalte, die sie einreichen. Diese Kette der Verantwortlichkeit schützt die Interessen der Token-Inhaber und stärkt die Glaubwürdigkeit der auf dem Netzwerk ausgegebenen Token.
+- **Zero-Knowledge Proof (ZKP) System der Beweisaufzeichnung:** Logion setzt **Zero-Knowledge Proofs (ZKP)** ein, um Beweise für Aufzeichnungen durch das Logion-Zertifikat und APIs bereitzustellen, ohne den Inhalt dieser Aufzeichnungen offenzulegen. ZKP ermöglicht es einer Partei, einer anderen Partei zu beweisen, dass sie einen Wert (x) kennt, ohne Informationen außer der Tatsache zu übermitteln, dass sie den Wert von (x) kennt. Dies gewährleistet die Privatsphäre der beteiligten Parteien, während die Integrität und Authentizität der Token gewahrt bleibt.
+
+## Logion Network Technische Architektur
+- **Blockchain und Substrate Framework:** Logion basiert auf dem von Parity Technologies entwickelten Substrate-Framework, das die Implementierung einer Blockchain mit nativer benutzerdefinierter Logik ermöglicht. Die modulare Architektur von Substrate erlaubt es Logion, seine einzigartigen Funktionen nahtlos im Polkadot-Ökosystem zu integrieren. Logion begann als „Sologchain“ und wurde Ende 2023 eine Polkadot-Parachain, wobei es Polkadots hybriden Konsens für verbesserte Sicherheit und Interoperabilität nutzt.
+- **Logion Knotenarchitektur:** Ein Logion-Knoten umfasst mehrere Dienste:
+  - **Substrate-basierte Blockchain:** Bietet die Kernfunktionen der Blockchain.
+  - **IPFS-Cluster:** Sorgt für widerstandsfähige und dezentrale Dateispeicherung.
+  - **PostgreSQL-Datenbank:** Speichert private und vertrauliche Daten.
+  - **Logion Backup-Manager:** Sichert die PostgreSQL-Datenbank nahezu in Echtzeit.
+  - **Off-Chain-Service:** Bietet Zugriff auf Off-Chain-Daten über eine REST-API.
+  - **Webserver:** Dient als Proxy zum Off-Chain-Service und stellt die Logion-Webanwendung bereit.
+  Diese Architektur gewährleistet Datenschutz und Zugriffsrestriktionen, wobei nur der Off-Chain-Service und der Substrate-Knoten öffentlich zugänglich sind.
+- **Authentifizierung:** Der Off-Chain-Service von Logion implementiert **JWT-basierte Authentifizierung**. Clients authentifizieren sich, indem sie einen öffentlichen Schlüssel einreichen, eine Herausforderung und eine Sitzungs-ID erhalten und die Herausforderung mit ihrem privaten Schlüssel signieren. Diese zustandslose Authentifizierung stellt sicheren Zugang zu privaten Daten im IPFS-Netzwerk und der PostgreSQL-Datenbank sicher.
+- **Datenintegrität:** Substrate und IPFS, als dezentrale Systeme, gewährleisten Fehlertoleranz, Skalierbarkeit und Datenintegrität. Der Logion Backup-Manager verstärkt dies, indem er verschlüsselte und komprimierte Backups von PostgreSQL-Daten im IPFS speichert, um die Wiederherstellbarkeit im Falle von Serverausfällen zu gewährleisten.
+
+## Legal Officer Case (LOC)
+**Der Legal Officer Case (LOC)** ist ein digitaler Ordner, der von einem Logion-Rechtsbeamten verwaltet wird und sowohl öffentliche als auch private Daten enthält. LOCs durchlaufen einen Lebenszyklus von Entwurf bis Abschluss und gewährleisten gründliche Validierung und Transparenz. LOCs können Datenelemente, Dateielemente und Linkelemente enthalten, die alle sicher und nachprüfbar gespeichert werden. Die Logion-Webanwendung bietet vereinheitlichte Ansichten von LOCs, die On-Chain- und Off-Chain-Daten sowohl für Anforderer als auch für Eigentümer zusammenführt.
+
+## Logion Tokenomics (LGNT Token)
+Der **Logion Token (LGNT)** ist zentral für die Operationen des Netzwerks und erleichtert Transaktionen und Dienstleistungen. Die Nutzung von LGNT geht über bloße Transaktionen hinaus und unterstützt die Teilnahme an der Governance und fördert das Wachstum des Netzwerks. Wichtige Einnahmequellen umfassen **Transaktionsgebühren, IPFS-Speichergebühren, Zertifikatsgebühren, Identitätsaufzeichnungen, LOC-Gebühren und Gebühren für verifizierte Herausgeber**. Diese transparente Gebührenstruktur gewährleistet die Nachhaltigkeit des Netzwerks und fördert eine aktive Teilnahme.
+
+## Logion Network Governance-Modell
+Das Governance-Modell von Logion balanciert Dezentralisierung, rechtliche Compliance und die Teilnahme der Gemeinschaft. Während die rechtliche Integrität oberste Priorität hat, hat die Gemeinschaft eine bedeutende Autonomie bei der Verwaltung der Staatskasse, die 10% der gesamten anfänglichen LGNT-Token-Versorgung ausmacht. Dieses Modell betont Transparenz, Inklusivität und Anpassungsfähigkeit, mit Plänen, die Beteiligung der Gemeinschaft durch einen dezentralisierten Inkubator zu stärken, der von der Staatskasse finanziert wird.
+
+### Fazit
+Die Integration von rechtlichen Rahmenbedingungen mit Blockchain-Technologie im Logion Network bietet eine sichere, transparente und rechtlich konforme Lösung für die Tokenisierung. Durch die Nutzung eines dezentralen Netzwerks von Justizbeamten, eines privaten IPFS-Netzwerks, verifizierter Herausgeber und Zero-Knowledge Proofs gewährleistet Logion die Integrität und Authentizität digitaler Token. Während es sich im Polkadot-Ökosystem weiterentwickelt, ist Logion darauf vorbereitet, eine Schlüsselrolle in der digitalen Wirtschaft zu spielen und die Kluft zwischen realen Vermögenswerten und ihren digitalen Darstellungen zu überbrücken.
+- <small>Verwandte Token/s:</small> **LGNT**
+
+## Logion Network Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+        {
+        href: 'https://www.youtube.com/watch?v=rumf9OYtMJE',
+      title: 'What Is Logion? Exploring The Proof-of-Law Concept',
+      description: 'Lernen Sie Logion im Detail kennen, eine durch Polkadot gesicherte Blockchain, die digitale Vermögenswerte in rechtlich bindende Beweise umwandelt, durch ihr einzigartiges „Proof of Law“-Konzept.',
+    },
+            {
+        href: 'https://www.youtube.com/watch?v=5Mtd81s0DH4',
+      title: 'Legal Security on the Blockchain w/ Logion Network',
+      description: 'Csaint taucht in das Logion Network ein und bringt rechtliche Sicherheit für das Eigentum auf der Blockchain. Dieser Empfänger eines Web3 Foundation Grants bringt seine Partnerschaft mit Xerox später in diesem Jahr auf eine Parachain.',
+    },
+                {
+        href: 'https://www.youtube.com/watch?v=FSoaqwhXznA',
+      title: 'Proof of Law - Logion IRL Legal Officers Put Legally Binding NFTs on the Blockchain',
+      description: 'Pninn erklärt die neuesten Fortschritte von Logion, um das Proof-of-Law-Konzept in die Welt zu bringen.'
+    },
+                {
+        href: 'https://www.youtube.com/watch?v=PrEgQId4i0A',
+      title: 'Recovery Secret - Polkadot decoded 2024',
+      description: 'Logion - Wiederherstellbares Geheimnis Präsentation von Gerard Dethier, CTO von Logion.',
+    },
+  ]} />

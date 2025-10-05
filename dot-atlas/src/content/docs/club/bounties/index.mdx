@@ -1,0 +1,306 @@
+---
+title: Polkadot Bounties
+description: Explore Polkadot Bounties and opportuinities to help grow its ecosystem.
+sidebar: 
+    label: Bounties
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Polkadot’s bounty system fosters innovation and collaboration across diverse domains, incentivizing contributors to drive growth, enhance functionality, and strengthen the ecosystem. These initiatives span marketing, development, business development, infrastructure, operations, and security, each addressing key areas critical to the network’s success.
+
+1. **Outreach Bounties:** Marketing & Events bounties amplify Polkadot's visibility through strategic initiatives, engaging content, and community-driven events that strengthen the ecosystem's presence and appeal.
+2. **Development bounties:** Enable the creation of cutting-edge tools, user-friendly experiences, and innovative projects that enhance Polkadot’s ecosystem.
+3. **Security bounties:** Fortify Polkadot’s ecosystem with robust practices, audits, and user protection measures to ensure trust and reliability.
+4. **Infrastructure bounties:** focus on building resilient, scalable, and secure solutions that empower the Polkadot ecosystem.
+5. **Community bounties:** Encourage community engagement, education, and support to foster a vibrant, inclusive, and sustainable ecosystem.
+
+- [Bounty Compliance Standards 1.0](https://polkadot.subsquare.io/referenda/1254)
+- [DotLake Bounties Data](https://data.parity.io/opengov-report?tab=bounties&info-tab=bounties&chart-tab=chart_opengov_report_bounty_monthly_claimed_amounts_by_parent_bounty)
+- [Submit a Bounty Proposal](https://wiki.polkadot.network/docs/learn-guides-bounties#submit-a-bounty-proposal)
+
+## Polkadot Main Bounties
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/hub/bounties/marketing.png'),
+      href: '/club/bounties/marketing/',
+      title: 'Marketing Bounty',
+      description: 'Funds initiatives to grow the Polkadot ecosystem through impactful marketing projects.',
+    }, 
+    {
+      thumbnail: import('/src/assets/hub/bounties/events.png'),
+      href: '/club/bounties/events/',
+      title: 'Events Bounty',
+      description: 'Aligns Polkadot’s global events strategy with stakeholders to deliver impactful community-driven events.',
+      },
+              {
+      thumbnail: import('/src/assets/hub/bounties/meetupsbounty.png'),
+      href: '/club/bounties/meetups/',
+      title: 'Meetups Bounty',
+      description: 'Quickly funds small-scale meetups to foster local community engagement.',
+    },
+                  {
+      thumbnail: import('/src/assets/hub/bounties/ibp.png'),
+      href: '/club/bounties/ibp/',
+      title: 'Infrastructure Builders Program',
+      description: 'Empowers service providers to create decentralized and resilient infrastructure.',
+    },
+            {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/club/bounties/pioneers-prize/',
+      title: 'Pioneers Prize',
+      description: 'Rewards solutions tackling major Web3 and Polkadot challenges with significant DOT prizes.',
+    }, 
+    {
+      thumbnail: import('/src/assets/hub/bounties/uxbounty.png'),
+      href: '/club/bounties/ux-bounty/',
+      title: 'UX Bounty',
+      description: 'Enhances user accessibility and interface design across Polkadot.',
+      },
+              {
+      thumbnail: import('/src/assets/hub/bounties/dotplay.png'),
+      href: '/club/bounties/dotplay/',
+      title: 'DOT Play',
+      description: 'Supports gaming projects with sustainable business development within Polkadot.',
+    },
+        {
+      thumbnail: import('/src/assets/hub/bounties/defibounty.png'),
+      href: '/club/bounties/defi-bounty/',
+      title: 'DeFi Infrastructure & Tooling Bounty',
+      description: 'Supports tools to lower barriers to liquidity entry and onboard users securely.',
+      },
+              {
+      thumbnail: import('/src/assets/polkadot.webp'),
+      href: '/club/bounties/technical-support/',
+      title: 'Technical Support',
+      description: 'Provides technical guidance for teams building on Polkadot.',
+    }, 
+    {
+      thumbnail: import('/src/assets/hub/bounties/inkubator.png'),
+      href: '/club/bounties/inkubator/',
+      title: 'Inkubator',
+      description: 'Provides grants and mentorship for high-potential ink! ecosystem projects',
+      },
+          {
+      thumbnail: import('/src/assets/hub/bounties/pal.png'),
+      href: '/club/bounties/assurance-legion/',
+      title: 'Assurance Legion',
+      description: 'The Assurance Legion is a group of security experts who are committed to ensuring the security of the Polkadot network.',
+      },
+
+              {
+      thumbnail: import('/src/assets/hub/bounties/antiscam.png'),
+      href: '/club/bounties/antiscam/',
+      title: 'Anti-Scam Team',
+      description: 'Protects users by combating scams and malicious activities.',
+    },
+  ]}
+/>
+
+
+## Polkadot Bounties Community Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=8Cft1-8RWmk',
+      title: 'How to Submit a Bounty Proposal | Technical Explainers',
+      description: ' The video explains how to create a bounty and create an OpenGov referendum for the created bounty.',
+      },
+          {
+      href: 'https://www.youtube.com/watch?v=0nq77X2UXJU',
+      title: 'Issuing Child Bounties – Polkadot Bounties',
+      description: 'All about issuing child bounties as a bounty curator.',
+      },
+          {
+      href: 'https://www.youtube.com/watch?v=Qv_nJVcvQr8',
+      title: 'Polkadot Bounties, Multisigs, & Proxies',
+      description: 'Remember that your DOT account CANNOT dip below the existential deposit of 1 DOT!!! So if an on-chain interaction requires a 20 DOT deposit, you need 21 DOT, plus some dust to cover the txn fee.',
+      },
+          {
+      href: 'https://www.youtube.com/watch?v=K5C8DnVsbh4',
+      title: 'Bounties, Child Bounties & Tips | Polkadot Deep Dives',
+      description: ' The video is a deep dive into bounties, child bounties, and tips mechanics on Polkadot OpenGov.',
+      },
+          {
+      href: 'https://www.youtube.com/watch?v=db82aHgy23c',
+      title: 'Claim Child Bounty Reward | Technical Explainers',
+      },
+          {
+      href: 'https://www.youtube.com/shorts/cmLja92etCw',
+      title: 'Velocity Labs 4M Bounty for Polkadot DeFi Builders!',
+      },
+  ]}
+/>
+
+Related community resources: 
+- [Learn about the Polkadot Bounties at the Wiki](https://wiki.polkadot.network/docs/learn-polkadot-opengov-treasury#bounties)
+- [Subsquare Bounties Feed](https://polkadot.subsquare.io/treasury/bounties)
+- [Bounties Landing Page](https://dotbountieshub.online/)
+
+more bounties:
+- [Paseo developer testnet funding bounty](https://polkadot.subsquare.io/treasury/bounties/37)
+- [Open source developers](https://polkadot.subsquare.io/treasury/bounties/59)
+- [public rpcs bounty](https://polkadot.subsquare.io/treasury/bounties/31)
+- [system parachain collator bounty](https://polkadot.subsquare.io/treasury/bounties/32)
+- [Moderation Team Bounty](/club/bounties/moderation/)
+- [[Bridges Bug Bounty](/club/bounties/bridges-bug-bounty/)]
+
+
+
+
+## Polkadot Bounties: 2025 Guide to Funding, Curating, and Delivering Impact
+Polkadot’s bounty system lets the community fund ongoing work—marketing, infrastructure, security, UX, and education—via OpenGov. This guide explains how bounties work, how they differ from tips and direct treasury spends, and the exact steps to propose, curate, and deliver a bounty aligned with 2025 compliance standards.
+
+## What is a Polkadot bounty?
+A **bounty** is an on-chain budget approved by OpenGov to fund a program of work run by **curators**. Curators coordinate applications, define milestones, award child bounties (if used), and release payments for completed deliverables—while reporting progress and spend to the community. Bounties are designed for recurring or multi-workstream needs that don’t fit a one-off grant.
+
+**ELI5:** A bounty is like a community-approved “department budget” with a clear mission (for example, “fund meetups” or “maintain public RPCs”). Curators act like project managers who accept proposals and pay contributors when milestones are delivered.
+
+## OpenGov in practice: tracks, limits, and timelines
+Bounty budgets are approved through **Treasury tracks** in OpenGov. Tracks have different spending limits and time parameters (lead-in, decision, confirm, enact). Commonly referenced categories include **tipper tracks** (for small, retroactive payments) and **spender tracks** (for budget approvals). Track parameters can evolve; always match your request size and urgency to the appropriate track and plan communications around the timeline windows.
+
+## Bounties vs child bounties vs tips vs direct spends
+| Mechanism                 | Best for                                             | Who applies                           | How decisions happen                                                 | Payment style                                             | Typical size & speed                        |
+| ------------------------- | ---------------------------------------------------- | ------------------------------------- | -------------------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------- |
+| **Bounty**                | Recurring programs, many contributors, ongoing scope | Curators solicit contributors         | Budget approved on a spender track; curators award work within scope | Milestones via curator awards (often with child bounties) | Medium–large; medium speed                  |
+| **Child bounty**          | Discrete tasks under a parent bounty                 | Contributors apply to the bounty team | Curators open/award child bounties under the parent                  | One-off award per task/milestone                          | Small–medium; faster under an active bounty |
+| **Tip**                   | Retroactive micro-funding for completed work         | Anyone can request a tip or be tipped | Tip tracks (small/big)                                               | Single payment                                            | Small; fastest                              |
+| **Direct treasury spend** | One-off, well-scoped projects                        | Project team                          | Spender track referendum                                             | Lump-sum or milestone if specified                        | Varies; depends on track and scrutiny       |
+
+## Key bounty categories in 2025
+* **Marketing & Outreach** — content, distribution, analytics, ambassador enablement
+* **Events & Meetups** — conferences, regional meetups, hackathons
+* **Infrastructure & Reliability** — public RPCs, indexers, dashboards, monitoring
+* **Developer Experience & UX** — docs, SDK tooling, UX audits, onboarding
+* **Security & Risk** — audits, incident response playbooks, security education
+* **Community & Education** — translation, workshops, moderation, anti-scam initiatives
+
+## How it works: roles & lifecycle
+**Roles**
+* **Proposer:** authors the bounty scope and budget, opens the referendum
+* **Voters/Delegates:** review, discuss, and vote on the proposal
+* **Curators:** operate the bounty, run intake, award tasks, verify delivery, release payments, and report
+* **Contributors:** deliver milestones or child bounty tasks
+* **Auditors/Community:** review reports, surface issues, and provide feedback
+
+**Lifecycle**
+1. **Scoping:** define mission, success metrics, budget tranches, timeline, and risks
+2. **Governance:** submit preimage, choose track, open referendum
+3. **Curation setup:** configure curator multisig, intake form, templates, and public tracking
+4. **Execution:** open tasks/child bounties, accept applications, monitor delivery
+5. **Payments & reporting:** milestone releases, monthly updates, and final retrospective
+6. **Renewal or sunset:** propose extension or close with final accounting
+
+## Step-by-step: proposing a bounty (with checklist)
+### 0) Pre-work: align with standards
+* Align with current bounty compliance expectations (budget cadence, transparency, conflict-of-interest handling)
+* Prepare an **off-chain spec** with mission, scope, roles, intake process, KPIs, budget envelope, timeline, reporting, and risk controls
+
+### 1) Choose the right track
+* Match the **initial ask** to a spender track and timeline; reserve tips for small retroactive items
+
+### 2) Draft the on-chain preimage
+* Prepare the preimage for the referendum (create/fund the bounty)
+* Bond the decision deposit and open the referendum on the chosen track
+
+### 3) Publish the full proposal off-chain
+* Post a comprehensive brief for reviewers: KPIs, budget tranches, reporting schedule, team bios, conflict disclosures
+
+### 4) Engage the vote
+* Share context threads, answer questions, and be responsive through the lead-in and decision windows
+
+### 5) Upon approval: set up curation & intake
+* Configure the **curator multisig**, intake forms, templates, and public tracker
+* Announce the **application process** with scope, value, timeline, and budget range
+
+### 6) Run operations (child bounties optional)
+* Open child bounties for well-scoped tasks; award and close on delivery
+* Release payments per milestones; publish monthly reports aligned with the agreed standard
+
+**Copy-paste checklist**
+* [ ] Standards-aligned scope, KPIs, budget tranches
+* [ ] Spender track selected; preimage & deposit ready
+* [ ] Full spec posted; Q\&A thread open
+* [ ] Curator multisig & intake ops set
+* [ ] Reporting cadence & dashboards agreed
+* [ ] Child bounty template and award flow documented
+
+## How curators should run a bounty (operating model)
+**Governance & roles**
+Publish curator names, responsibilities, decision rules, and conflict disclosures.
+
+**Intake & selection**
+Standardized application form; objective scoring aligned to KPIs; timely feedback.
+
+**Budgeting & cadence**
+Request funds by quarter or milestone; maintain a public ledger and reconcile each month.
+
+**Execution & QA**
+Define acceptance criteria; stage reviews; require verifiable artifacts (PRs, hashes, reports).
+
+**Transparency**
+Monthly public updates, per-award summaries, and a live tracker.
+
+**Risk controls**
+Limit prepayments; tie releases to delivery; rotate reviewers on sensitive items.
+
+## Practical example: a small marketing bounty
+**Scenario:** Fund a quarter of content, distribution, and analytics for ecosystem projects.
+
+* **Ask:** medium-sized spender track with quarterly tranches and explicit KPIs (reach, CTR, conversion proxies, builder intake)
+* **Structure:** one parent bounty; recurring child bounties for briefs, design, localization, and distribution
+* **Intake:** public form + weekly office hours; evaluation rubric published
+* **Reporting:** monthly KPI report and spend summary; quarterly retrospective
+* **Controls:** milestone-based releases; strict disclosure for any curator-related vendors
+
+## Common pitfalls & tips
+**Pitfalls**
+* Vague scope and unclear KPIs
+* Oversized initial ask for a new team
+* Weak intake process and documentation
+* Missing monthly reporting
+* Misaligned track selection and timing
+
+**Tips**
+* Start smaller and iterate; scale after proof of execution
+* Publish your rubric and ledger to reduce friction
+* Use child bounties for modular, parallelizable tasks
+* Mirror the latest compliance headings in your proposal
+* Include high-signal metrics and artifacts in every update
+
+## FAQs
+**1) How big can my bounty be?**
+Match your ask to a spender track appropriate for the scope and risk. Larger, multi-quarter programs often start smaller and scale after proof of execution.
+
+**2) Do I need to create child bounties?**
+No, but they help for discrete tasks under a parent bounty and often speed up delivery.
+
+**3) What deposit and steps are required to submit?**
+You’ll prepare a preimage and bond a decision deposit when opening a referendum on the chosen track. Follow the on-chain UI and confirm details before submission.
+
+**4) Where should I post the full proposal?**
+Use the governance portal associated with your community to share the long-form spec (scope, KPIs, budget, team, conflicts) so voters have full context.
+
+**5) Can curators be compensated?**
+Yes—define curator fees and responsibilities transparently in the scope and align with the current compliance expectations.
+
+**6) How long does voting take?**
+Timeframes depend on track parameters (lead-in, decision, confirm). Plan your communications accordingly.
+
+**7) What’s the difference between a tip and a bounty payment?**
+Tips are small, retroactive single payments; bounty payments are milestone-based awards under an approved bounty budget.
+
+**8) How do I show impact?**
+Publish monthly reports, maintain an open ledger, and attach artifacts; reference analytics dashboards where possible.
+
+## Conclusion
+Polkadot bounties are a powerful way to fund essential, ongoing work with community oversight. If you align with current standards, choose the right track, publish a clear intake and rubric, and report monthly, you’ll build trust—and renewal will follow.
+
+ <DirectoryLinks directory="club/bounties" />

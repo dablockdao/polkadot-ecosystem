@@ -1,0 +1,89 @@
+---
+title: 'WagMedia Bot'
+description: 'Optimiza la comunicación en Discord con WagMedia Bot, monitoreo avanzado, integración con base de datos Prisma y gestión eficiente de contenido para Polkadot.'
+hero:
+  tagline: 'Bot de Comunicaciones Wagmedia.'
+  image: 
+    file: ../../../../../assets/hub/daos/wagmedia.png
+  actions:
+    - text: 'Github'
+      link: https://github.com/Wag-Media/wagmedia-com-bot
+      icon: external
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+El **WagMedia Communications Bot** es un bot de Discord diseñado específicamente para optimizar las iniciativas de gestión de contenido en el ecosistema de Polkadot. Desarrollado para la comunidad WagMedia, este bot monitorea de manera eficiente los canales de Discord configurados, registrando publicaciones y reacciones válidas para poblar una base de datos. Dicha base de datos constituye la infraestructura principal para **WagMedia Com Web**, la plataforma centralizada para la difusión de contenido.
+
+## Características de WagMedia Bot
+1. **Monitoreo Avanzado de Discord**:  
+   Construido usando **discord.js**, WagMedia Bot rastrea mensajes y reacciones en canales específicos. Esto permite un monitoreo fluido de las interacciones de la comunidad y una efectiva curación de contenido.
+
+2. **Integración con Base de Datos Prisma**:  
+   En el núcleo de la funcionalidad de WagMedia Bot se encuentra su sólida base de datos, potenciada por **Prisma**. Esta integración garantiza un almacenamiento y recuperación confiables de datos, soportando operaciones de alto rendimiento del bot.
+
+3. **Comandos de Aplicación con Discord-FP**:  
+   El bot aprovecha **Discord-FP** para incorporar comandos de aplicación intuitivos y eficientes, brindando una experiencia amigable tanto para administradores del servidor como para los usuarios.
+
+4. **Base en TypeScript**:  
+   WagMedia Bot está construido con **TypeScript**, lo que proporciona una base de código sólida, escalable y fácil de mantener. Con herramientas como **esbuild** y **tsx**, el proceso de desarrollo es fluido y eficiente.
+
+<ShowcaseCTA title="Configurar WagMedia Bot">
+A continuación, se presenta un breve resumen de cómo comenzar a usar Wagmedia Bot. Para obtener instrucciones detalladas e información adicional, consulta el **[README oficial](https://github.com/Wag-Media/wagmedia-com-bot) en el repositorio de GitHub** proporcionado por los autores.
+</ShowcaseCTA>
+
+## Instrucciones Generales de Configuración
+### Habilitar Modo Desarrollador en Discord
+Para empezar, los usuarios deben habilitar el Modo Desarrollador en Discord desde **User Settings » Advanced**. Esto permite el acceso a los IDs de servidor necesarios para configurar el bot.
+
+### Creación y Configuración del Servidor
+Si aún no existe un servidor, créalo y guarda su **guildId** como `DISCORD_GUILD_ID`. Además, deben configurarse adecuadamente los permisos de rol para garantizar que el bot pueda registrar mensajes e interactuar con los canales monitoreados.
+
+### Creación del Bot
+Accede al [Portal de Desarrolladores de Discord](https://discord.com/developers/) y crea una nueva aplicación. A partir de ahí:
+- Agrega un bot a la aplicación y copia el token para la variable de entorno `DISCORD_BOT_TOKEN`.
+- Configura los permisos del bot a **414464683072** para un funcionamiento óptimo.
+
+## Desarrollo Local
+### Clonar el Repositorio
+Para iniciar el desarrollo local, clona el repositorio de WagMedia Bot en GitHub:
+
+```bash
+git clone git@github.com:Wag-Media/wagmedia-com-bot.git
+```
+
+### Configuración Inicial
+Tras clonar el repositorio:
+1. Instala las dependencias con `npm install`.  
+2. Copia el archivo `.env.sample` a `.env` y completa las variables necesarias, como las cadenas de conexión a la base de datos y la configuración de Discord.  
+3. Ajusta configuraciones adicionales en `config.ts`, incluyendo opciones de registro (logging) y seeding de la base de datos.
+
+### Configuración de la Base de Datos
+WagMedia Bot utiliza una base de datos **PostgreSQL** administrada con Prisma. Para actualizar el esquema de la base de datos tras realizar modificaciones, ejecuta:
+
+```bash
+npx prisma migrate dev
+```
+
+## Ejecución del Bot
+Para ejecutar el bot en modo desarrollo:
+
+```bash
+npm run dev
+```
+
+Para entornos similares a producción, utiliza:
+
+```bash
+npm run start
+```
+
+## Sembrado de la Base de Datos (Seeding)
+El seeding de la base de datos es esencial para agregar o actualizar elementos monitoreados, como emojis que representan pagos. Usa:
+
+```bash
+npx prisma db seed
+```
+
+## Despliegue en Producción
+La primera instancia de producción del bot está desplegada en Heroku, aunque puede ejecutarse en cualquier servidor. Heroku gestiona compilaciones y despliegues automáticos desde la rama principal del repositorio. Asegúrate de configurar correctamente las variables de entorno en Heroku para un funcionamiento continuo. Se recomienda a los desarrolladores probar en una rama de staging antes de fusionar y desplegar actualizaciones a producción.

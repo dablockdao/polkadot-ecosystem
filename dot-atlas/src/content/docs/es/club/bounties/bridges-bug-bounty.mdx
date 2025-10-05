@@ -1,0 +1,95 @@
+---
+title: 'Recompensa por Bugs en Puentes'
+description: 'Recompensa por Bugs en Puentes de Polkadot: Fortaleciendo la Seguridad entre Cadenas'
+hero:
+  tagline: Fortaleciendo la Seguridad entre Cadenas.
+  image: 
+    file: ../../../../../assets/polkadot.webp
+  actions:
+    - text: Sitio
+      link: https://polkadot.com/bridges-bug-bounty
+      icon: external
+    - text: Recompensa
+      link: https://polkadot.subsquare.io/treasury/bounties/44
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+Los puentes blockchain son esenciales para habilitar la interoperabilidad entre diferentes ecosistemas blockchain.
+A medida que la red Polkadot y sus parachains continúan creciendo, garantizar la seguridad y eficiencia de sus puentes se vuelve crítico.
+Para mantener una seguridad robusta, Polkadot ha lanzado un programa integral de recompensas por bugs centrado en su infraestructura de puentes, alentando a la comunidad a identificar y reportar vulnerabilidades.
+La Recompensa por Bugs en Puentes de Polkadot está diseñada para ayudar a proteger las conexiones vitales entre Polkadot y Kusama, ofreciendo recompensas sustanciales por hallazgos valiosos.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Recompensa por Bugs en Puentes - Última Actualización (13/01/2024)',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-news/src/assets/polkadot.webp',
+      href: 'https://forum.polkadot.network/t/bridges-security-bug-bounty-2024-update/11415',
+      description:
+        "La Recompensa por Seguridad de los Puentes Polkadot <> Kusama tiene un presupuesto de $250,000 en DOT y $250,000 en KSM, y tiene como objetivo mejorar la seguridad del Puente Polkadot <> Kusama mediante la identificación temprana de vulnerabilidades y su corrección...",
+    },
+  ]}
+/>
+
+## ¿Qué es la Recompensa por Bugs en Puentes de Polkadot?
+La infraestructura de puentes de Polkadot facilita la comunicación entre diferentes blockchains dentro del ecosistema, habilitando transacciones entre cadenas y el paso de mensajes. Esta funcionalidad es vital para el éxito de las redes Polkadot y Kusama, así como para sus respectivos parachains. Sin embargo, como ocurre con cualquier sistema de tal importancia, los puentes blockchain son objetivos frecuentes para actores malintencionados. El programa de recompensas por bugs en puentes de Polkadot está diseñado para identificar y mitigar posibles riesgos de seguridad, ofreciendo recompensas a los hackers éticos que descubran vulnerabilidades antes de que puedan ser explotadas.
+
+El programa de recompensas se centra en una serie de componentes dentro del ecosistema de Polkadot, incluidos Parity Bridges Common, que proporciona los bloques básicos para crear puentes blockchain. Esto incluye los pallets de Substrate que manejan la sincronización de encabezados y el paso de mensajes, así como las bibliotecas para construir relayers que habilitan la comunicación entre cadenas. Estos elementos son clave para asegurar el funcionamiento sin interrupciones de los puentes de Polkadot, y cualquier vulnerabilidad descubierta en estas áreas puede tener implicaciones significativas para la seguridad y estabilidad de la red.
+
+## Componentes Clave en Alcance
+El programa de recompensas por bugs en puentes de Polkadot cubre un amplio alcance, abarcando varias áreas críticas de la infraestructura de los puentes. Algunos de los componentes más importantes en alcance incluyen:
+1. **Parity Bridges Common**: Un conjunto de componentes utilizados para construir puentes. Esto incluye pallets de Substrate para la sincronización de encabezados y el paso de mensajes entre cadenas.
+2. **Polkadot SDK: Puentes**: El SDK utilizado para construir y gestionar puentes dentro de la red Polkadot, habilitando la funcionalidad entre cadenas.
+3. **XCM & Bridgeshub**: Esto se centra en el paso de mensajes entre cadenas (XCM) y los mecanismos subyacentes que permiten una comunicación segura de puentes.
+4. **Parachains del Hub de Puentes**: Los parachains que manejan la lógica de los puentes y la comunicación entre diferentes blockchains, asegurando una transferencia de datos segura a través de la red.
+5. **Runtimes: Hub de Puentes**: El entorno de ejecución subyacente que gestiona las operaciones de los hubs de puentes, crucial para mantener la integridad del mecanismo de puente.
+
+## ¿Qué Hace una Buena Presentación?
+Para asegurar la efectividad del programa de recompensas por bugs, el equipo de Polkadot busca presentaciones impactantes y originales que revelen vulnerabilidades reales con consecuencias accionables. Los siguientes criterios definen un buen reporte de bug:
+- **Prueba de Concepto**: Es necesario contar con una prueba de concepto (PoC) funcional o evidencia suficiente de la explotabilidad de la vulnerabilidad para su evaluación. Esto ayuda al equipo de seguridad a comprender el alcance y la gravedad del problema.
+- **Visión del Impacto**: Los remitentes deben detallar el impacto potencial de la vulnerabilidad, incluyendo un escenario de ataque detallado, y describir las condiciones necesarias para que ocurra la explotación.
+- **Originalidad**: El bug debe no haber sido reportado previamente. Las presentaciones basadas en hallazgos nuevos, que no se hayan cubierto en foros públicos o auditorías anteriores, serán priorizadas.
+
+Siguiendo estas pautas, los investigadores aseguran que sus presentaciones sean valiosas y accionables, aumentando la probabilidad de obtener una recompensa.
+
+## Cómo Participar y Recibir Pago
+Polkadot valora el arduo trabajo y la experiencia de los cazadores de bugs y asegura que los participantes elegibles sean recompensados por sus contribuciones. El proceso de pago involucra algunos pasos simples:
+1. **Completar KYC (Conozca a su Cliente)**: Los participantes deben verificar su identidad completando los procedimientos KYC para asegurar su elegibilidad para recompensas.
+2. **Firmar Carta de Recompensa**: Al descubrir una vulnerabilidad válida, los participantes deben firmar una carta de recompensa que detalle los términos del pago.
+3. **Proveer Dirección**: Los remitentes deben proporcionar una dirección DOT/KSM para recibir el pago de la recompensa.
+
+Las recompensas se determinan en función de la gravedad de los hallazgos, siendo las vulnerabilidades más críticas elegibles para pagos más altos. Los principales contribuyentes también ganarán reconocimiento en el Hall of Fame de la Recompensa por Bugs, con la oportunidad de consideración prioritaria en la Polkadot Blockchain Academy.
+
+## Reglas Importantes para los Participantes en la Recompensa por Bugs
+Mientras participan en la Recompensa por Bugs en Puentes de Polkadot, es esencial seguir varias reglas de conducta para asegurar un proceso justo y ético:
+- **Reportar Fallos Críticos Inmediatamente**: Si los participantes identifican una vulnerabilidad significativa, deben detener su investigación en ese punto, reunir evidencia mínima y reportar el problema.
+- **Evitar Explotar la Vulnerabilidad**: Los participantes no deben usar ni fomentar que otros exploten cualquier vulnerabilidad descubierta para obtener beneficio personal.
+- **Respetar la Infraestructura**: Se prohíben cualquier acción que pueda interrumpir las operaciones del sistema o afectar negativamente los recursos compartidos. El comportamiento ético asegura que la comunidad se beneficie en su conjunto.
+- **No Involucrarse en Código con Errores**: Aquellos que hayan contribuido o escrito el código defectuoso no pueden participar en la denuncia de vulnerabilidades en ese código.
+- **Cumplimiento de Sanciones**: Los participantes de países en listas de sanciones pueden no ser elegibles para recompensas, aunque Polkadot ofrecerá donaciones caritativas en tales casos.
+
+## Conclusión
+El programa de recompensas por bugs en puentes de Polkadot es una iniciativa importante dirigida a asegurar la infraestructura de puentes de la red y garantizar una interoperabilidad segura entre Polkadot y Kusama. Aprovechando la experiencia de la comunidad blockchain, el equipo de Polkadot busca identificar y resolver proactivamente vulnerabilidades antes de que puedan ser explotadas por actores maliciosos. Con atractivas recompensas por presentaciones valiosas, el programa ofrece una excelente oportunidad para que los hackers éticos contribuyan a la seguridad continua de uno de los ecosistemas blockchain más emocionantes del mundo.
+
+<ShowcaseProfile
+  entries={[
+    {
+      name: 'Recompensa 44',
+      picture: 'https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-news/src/assets/polkadot.webp',
+      href: 'https://polkadot.subsquare.io/treasury/bounties/44',
+    },
+  ]}
+/>
+
+## Videos Comunitarios de Recompensa por Bugs en Puentes
+------------
+<ShowcaseYouTube
+  entries={[
+       {
+      href: 'https://www.youtube.com/watch?v=2RuZ6svqcxE',
+      title: 'Desmitificando los Puentes Sin Confianza en el Ecosistema Polkadot',
+          },
+  ]} />

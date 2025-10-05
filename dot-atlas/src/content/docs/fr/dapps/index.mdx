@@ -1,0 +1,119 @@
+---
+title: Polkadot Dapps
+description: Découvrez toutes les Dapps construites sur l'écosystème Polkadot et explorez la nouvelle frontière des applications décentralisées.
+tableOfContents: false
+---
+
+import { Card, CardGrid, LinkCard, LinkButton, linklist } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Découvrez une nouvelle frontière des applications décentralisées construites sur le réseau Polkadot. 
+Notre plateforme propose une sélection curatée de DApps innovantes qui exploitent la technologie blockchain évolutive et interopérable de Polkadot.
+
+Que vous exploriez la finance décentralisée (DeFi), que vous vous engagiez avec des tokens non fongibles (NFT), ou que vous plongiez dans les jeux basés sur la blockchain, notre page DApps vous connecte aux solutions de pointe qui redéfinissent le paysage numérique. 
+Rejoignez-nous pour pionnier un écosystème décentralisé plus ouvert, sécurisé et connecté.
+
+## Toutes les Dapps Polkadot en un seul endroit
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/defi.png'),
+      href: '/dapps/defi',
+      title: 'DeFi',
+      description: 'Découvrez les Dapps DeFi les plus populaires de l\'écosystème Polkadot.'
+    },
+        {
+      thumbnail: import('/src/assets/thumbnails/depin.png'),
+      href: '/dapps/depin/',
+      title: 'DePin',
+      description: 'Projets DePin de l\'écosystème Polkadot.'
+      },
+                     {
+      thumbnail: import('/src/assets/thumbnails/nft-marketplaces.png'),
+      href: '/dapps/nft-marketplaces/',
+      title: 'Marchés NFT',
+      description: 'Découvrez les marketplaces NFT les plus populaires de l\'écosystème Polkadot.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/gaming.png'),
+      href: '/dapps/gaming/',
+      title: 'Jeux',
+      description: 'Explorez les jeux les plus populaires.'
+      },
+  ]}
+/>
+
+
+<ShowcaseImage
+entries={[
+ {
+      thumbnail: import('/src/assets/thumbnails/social.png'),
+      href: '/dapps/social/',
+      title: 'Social',
+      description: 'Découvrez les Dapps sociaux les plus populaires de l\'écosystème Polkadot.'
+      }, 
+    {
+      thumbnail: import('/src/assets/thumbnails/data.png'),
+      href: '/dapps/storage/',
+      title: 'Stockage',
+      description: 'Découvrez les Dapps de stockage et de données les plus populaires de l\'écosystème Polkadot.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/smart-contracts.png'),
+      href: '/dapps/smart-contracts/',
+      title: 'Contrats intelligents',
+      description: 'Découvrez les écosystèmes de contrats intelligents les plus populaires construits sur Polkadot et Substrate.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/ai.png'),
+      href: '/dapps/ai/',
+      title: 'IA',
+      description: 'Découvrez les Dapps d\'IA les plus populaires de l\'écosystème Polkadot.'
+      },
+]}
+/>
+
+## Dapps et projets sélectionnés à la main
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/defi/hydration.png'),
+      href: '/dapps/defi/hydration',
+      title: 'Hydration',
+      description: 'DeFi / DEX'
+    },
+        {
+      thumbnail: import('/src/assets/dapps/depin/peaq.png'),
+      href: '/dapps/depin/peaq-network/',
+      title: 'Peaq Network',
+      description: 'DePin'
+      },
+                     {
+      thumbnail: import('/src/assets/dapps/gaming/evrloot.png'),
+      href: '/dapps/gaming/evrloot',
+      title: 'Evrloot',
+      description: 'Jeux'
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/bridges/hyperbridge.png'),
+      href: '/dapps/bridges/hyperbridge/',
+      title: 'Hyperbridge',
+      description: 'Pont'
+      },
+  ]}
+/>
+
+
+## Vidéos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=D4zk4GJNRpo',
+      title: 'Nouvelle application Polkadot!',
+    },
+  ]}
+/>

@@ -1,0 +1,92 @@
+---
+title: Social Dapps 
+description: Decentralized social dApps on Polkadot prioritize privacy, ownership, and freedom, transforming online interaction with scalable, user-centric platforms..
+sidebar: 
+    label: Social Dapps
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Polkadot social dApps are revolutionizing online interaction by creating decentralized, user-centric platforms for communication and content sharing. Built on Polkadot’s scalable and interoperable network, these dApps ensure user data privacy, true ownership, and freedom from centralized control. They foster vibrant, connected communities while empowering users with more control over their digital identities and interactions.
+
+## Polkadot Social Dapps
+----------------
+<ShowcaseImage
+  entries={[
+    {
+      thumbnail: import('/src/assets/dapps/social/mandala.png'),
+      href: '/dapps/social/mandala-chain/',
+      title: 'Mandala Chain',
+      },
+              {
+      thumbnail: import('/src/assets/dapps/social/kilt.png'),
+      href: '/dapps/social/kilt-procol/',
+      title: 'Kilt Protocol',
+    },
+                  {
+      thumbnail: import('/src/assets/dapps/social/litentry.png'),
+      href: '/dapps/social/litentry/',
+      title: 'Heima (Litentry)',
+    },
+        {
+      thumbnail: import('/src/assets/dapps/social/virto.png'),
+      href: '/dapps/social/virto-network/',
+      title: 'Virto Network',
+      },
+  ]}
+/>
+
+## Polkadot Social dApps: The 2025 Builder’s Guide to Identity, Graphs & Social Commerce
+This expert guide maps the Polkadot social stack—identity (KILT, Heima), social graphs and messaging (Frequency with DSNP, Subsocial), and social commerce rails (Virto and Kreivo)—with practical patterns, comparison tables, step-by-steps, pitfalls, FAQs, and schemas. It is written for teams shipping production social features in September 2025 with clear, verifiable concepts and pragmatic guidance.
+
+If you are searching for Polkadot social dApps, you likely need a current map of viable building blocks—identity, graphs, walletless onboarding, and creator monetization—plus how they interoperate and what is proven in production. This guide curates the 2025 landscape with concrete adoption signals, so you can choose tools with confidence and ship faster.
+
+## ELI5: What “social” means on Polkadot
+* **You own your identity.** With KILT verifiable credentials or Heima chain abstraction and identity, users control DIDs and attach proofs without handing data to a platform.
+* **Your graph is portable.** With Frequency and DSNP or Subsocial, handles, follows, and content references can move between apps.
+* **Walletless actions are possible.** UX can feel Web2-simple using app-funded transactions for common interactions.
+
+## The Social Stack in 2025
+### Identity and credentials
+* **KILT Protocol**
+  W3C-aligned DIDs and verifiable credentials. Useful for attestations, gated access, and privacy-preserving signatures. Features include web3name and SocialKYC style attestations.
+
+* **Heima (formerly Litentry)**
+  Identity aggregation evolved into chain abstraction for unified accounts and cross-chain actions. Useful when your social app spans EVM, Solana, and Polkadot ecosystems.
+
+### Social graphs and messaging
+* **Frequency with DSNP**
+  A parachain designed for web-scale social. DSNP standardizes social data so multiple apps can collaborate on a single portable graph. Real-world signal includes a large Web2 social platform migrating users to DSNP rails while keeping UX token-optional.
+
+### Social commerce and onboarding
+* **Virto Network and Kreivo**
+  Community commerce rails with a simple web component to sponsor transactions. Enables “transact without wallets or tokens” for first-time users, ideal for retail, NGOs, and community use cases.
+
+* **Mandala Chain**
+  A Polkadot-secured digital nation stack combining public and sovereign chains. Positions for identity-centric public services and retail-grade UX at national scale.
+
+
+## Feature comparison table
+| Project             | Core role                                   | Built on              | Key primitives and APIs                                          | Notable proof                                 | Ideal for                                                              |
+| ------------------- | ------------------------------------------- | --------------------- | ---------------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------- |
+| KILT Protocol       | Verifiable credentials and DIDs             | Polkadot parachain    | DIDs, verifiable credentials, human-readable names, attestations | Enterprise and consumer credential flows      | Gated communities, compliance-aware onboarding, privacy-preserving SSO |
+| Heima (ex-Litentry) | Chain abstraction plus identity aggregation | Polkadot-connected L1 | Unified account, cross-chain execution, identity aggregation     | 2025 rebrand and token swap                   | Multichain social UX spanning multiple ecosystems                      |
+| Frequency with DSNP | Web-scale social graph and messaging        | Polkadot parachain    | DSNP handles, message submission, collaboration model            | Large Web2 migration to DSNP rails            | Consumer social at scale and multi-app graph sharing                   |
+| Virto and Kreivo    | Social commerce and walletless onboarding   | Substrate chains      | Web component for app-funded transactions                        | Public demos and ecosystem pilots             | Retail and community transactions with minimal friction                |
+| Mandala Chain       | Digital-nation stack                        | Polkadot-secured L1   | XCM connectivity and identity-centric services                   | Indonesia-focused rollout strategy            | Government and enterprise bridges to consumer UX                       |
+
+
+## FAQs
+**1) What is DSNP and why does it matter?**
+The Decentralized Social Networking Protocol standardizes how social data and relationships are published and shared across apps. It enables user-owned social graphs and app interoperability, with Frequency as a production implementation.
+
+**2) Did a major Web2 social app really migrate users to Polkadot rails?**
+Yes. A large platform began migrating users to DSNP on Polkadot infrastructure, with hundreds of thousands already moved and a plan to expand, while keeping UX token-optional.
+
+**3) Is Litentry still relevant after the rebrand to Heima?**
+Yes. The rebrand broadened the scope into chain abstraction for unified accounts and cross-chain execution, which is useful for multichain social apps.
