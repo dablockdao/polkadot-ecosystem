@@ -93,7 +93,6 @@ Range ingests events from the **Relay Chain**, **Asset Hub**, and covered **para
 | Need **end-to-end** visibility for cross-chain transfers (XCMP or bridge) across Relay/Asset Hub/parachains | **Polkadot Range Explorer** | Purpose-built **cross-chain stitching** with live focus   |
 | Deep diving **single-chain** blocks/extrinsics/events                                                       | **Subscan**                 | Rich per-chain Substrate insights                         |
 | Ecosystem-level overview of **inbound/outbound** activity into Polkadot                                     | **RASE live**               | High-level dashboards and quick macro trends              |
-| Researching historical multi-chain explorer approaches                                                      | **Polkascan**               | Useful for reference points and comparisons               |
 | Validating protocol concepts and terminology                                                                | **Polkadot Docs**           | Canonical references for XCMP/XCM, Asset Hub, Relay Chain |
 
 > Takeaway: use **Range** to answer “**Where did this asset actually go across chains and bridges, right now?**” Pair it with Subscan for chain-level forensics and RASE live for macro context.
