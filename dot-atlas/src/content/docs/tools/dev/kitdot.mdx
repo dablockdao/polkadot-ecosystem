@@ -1,0 +1,118 @@
+---
+title: "Kitdot CLI"
+description: "CLI that scaffolds PolkaVM projects with Web2-to-Web3 user experiences and pre-configured development setup."
+hero:
+  tagline: Build applications where users don’t even know it’s blockchain.
+  image:
+    file: ../../../../assets/tools/dev/kitdot.png
+  actions:
+    - text: GitHub
+      link: https://github.com/w3b3d3v/kitdot
+      icon: external
+    - text: npm
+      link: https://www.npmjs.com/package/kitdot
+      icon: external
+      variant: secondary
+---
+
+import {
+  ShowcaseProfile,
+  ShowcaseImage,
+  ShowcaseText,
+  ShowcaseYouTube,
+  ShowcaseCTA,
+  ShowcaseTwitter,
+} from "starlight-showcases";
+
+Kitdot scaffolds PolkaVM projects with everything pre-configured. One command generates complete applications with Web2-style user experiences. Users login with Google, Twitter, GitHub and many others! No wallet extensions required. Developers focus on building products, not configuring blockchain infrastructure.
+
+## The Problem Kitdot Solves
+
+PolkaVM development requires manual project setup, network configuration, and complex wallet integration. Users must install wallet extensions and manage private keys. AI agents lack context for PolkaVM development best practices and troubleshooting. This creates friction for developers and prevents mainstream adoption.
+
+Kitdot provides a CLI that scaffolds complete projects with polkadot-hardhat, Web3Auth integration, and ready-to-use templates. Each project includes an AGENTS.md file with best practices, network settings, and troubleshooting steps for AI-driven development. Users login with social accounts while wallets are created invisibly through MetaMask's Multi-Party Computation. Applications feel like Web2 but run on PolkaVM infrastructure.
+
+## Key Features
+
+**Pre-Configured Project Scaffolding**
+
+- Complete PolkaVM project setup with one command
+- polkadot-hardhat configured for Solidity deployment
+- TypeScript setup across contracts and frontend
+- Network configurations included
+
+**Web2-to-Web3 User Experience**
+
+- Passwordless login via Google, Twitter, GitHub
+- MetaMask Multi-Party Computation creates wallets invisibly
+- Zero wallet extension requirements
+- Embedded wallet template onchain interactions.
+
+**Ready-to-Use Templates**
+
+- Official Parity create-polkadot-dapp template
+- Web3Auth embedded wallet template
+- Smart contract setup included
+
+**Developer Resources**
+
+- Agents.md file for LLM agents building on PolkaVM
+- Troubleshooting documentation from real debugging experience
+- Curated Polkadot Development Tools list
+- [PassetHub Oracle for DeFi price feeds](https://polkavm-oracle.w3d.community/)
+- Best practices for PolkaVM development
+
+**Apillon Integration**
+
+- Host websites and dApps via Crust Network
+- Run Cloud Functions with Acurast
+- Create IPFS storage buckets
+- Decentralized infrastructure through Apillon MCP
+
+## Quick Start
+
+```bash
+# Install globally
+npm install -g kitdot
+
+# Initialize PolkaVM project
+kitdot init my-dapp
+```
+
+## Generated Project Structure
+
+```
+my-polkadot-dapp/
+├── contracts/            # Smart contracts with Hardhat
+│   ├── src/              # Solidity contracts
+│   ├── test/             # Contract tests
+│   └── hardhat.config.ts # PolkaVM network config
+├── frontend/                # React frontend
+│   ├── src/components/   # UI components
+│   └── generated.ts      # Contract types
+├── AGENTS.md             # AI agents context and troubleshooting
+```
+
+## Development Workflow
+
+**Deploy Smart Contracts**
+
+```bash
+cd contracts
+npx hardhat compile
+npx hardhat ignition deploy ./ignition/modules/Token.js --network passetHub
+```
+
+**Run Frontend with Social Login**
+
+```bash
+cd frontend
+npm run dev
+# Users login with Google, Twitter, or GitHub
+# Wallets created automatically via MetaMask MPC
+# No wallet extension needed
+```
+
+---
+
+For more information, visit [kitdot on GitHub](https://github.com/w3b3d3v/kitdot) or explore the [documentation](https://polkadot-survival-guide.w3d.community/).
