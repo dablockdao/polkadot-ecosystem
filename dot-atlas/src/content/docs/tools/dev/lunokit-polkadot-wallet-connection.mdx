@@ -1,0 +1,161 @@
+---
+title: LunoKit
+description: Ship Polkadot wallet connections in minutes with LunoKit unified connectors state and UI using React TanStack Query and TypeScript
+hero:
+  tagline: Ship wallet connections fast.
+  image: 
+    file: ../../../../assets/tools/dev/lunokit.png
+  actions:
+    - text: Site
+      link: https://www.lunolab.xyz/
+      icon: external
+    - text: Github
+      link: https://github.com/Luno-lab/LunoKit
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+ 
+## LunoKit for Polkadot The modern way to ship wallet connections fast
+This expert guide explains how Polkadot developers can integrate wallets quickly and correctly using LunoKit a three layer React and TypeScript stack that standardizes connectors state and UI across wallets and chains. You will learn how it works what to expect from each package when to use it and how to ship a working connect flow in minutes.
+
+## Why wallet connection still hurts on Polkadot
+Teams often rebuild the same pieces connector glue for SubWallet polkadot js and other wallets account state network switching and a connect UI. That approach works yet it is repetitive brittle and slows down delivery. LunoKit packages these concerns into a consistent typed developer experience with ready made components and modern React patterns so you can focus on product features instead of plumbing.
+
+## What is LunoKit
+LunoKit is an open source React library for Polkadot wallet connections. It provides a unified connector interface a consistent account model a signer abstraction and ready to use UI components such as ConnectButton. It integrates cleanly with existing projects that use Dedot PAPI and polkadot api.
+
+## Three layer architecture
+LunoKit organizes concerns into three packages for clarity scalability and maintainability.
+
+### luno kit core
+Core abstraction layer
+- Unified connector interface and type system
+- Chain configuration management
+- Account management abstraction
+- Signer abstraction layer
+
+### luno kit react
+React integration layer
+- React 18 plus with lightweight Zustand for state
+- TanStack Query for subscriptions and caching
+- Dedot API instance management
+- More than twenty essential hooks with smart reconnection
+
+### luno kit ui
+UI component layer
+- Modern accessible components with full customization
+- Tailwind CSS four series styling
+- Radix UI accessibility primitives
+- Plug and play components and theme control
+
+## Key features
+- Fast setup TypeScript first with complete type hints and IntelliSense
+- Unified account model across multiple wallets
+- Ready to use UI including ConnectButton and network selection
+- Built in performance via TanStack Query and granular state
+- Multi chain support for Polkadot Kusama parachains and custom chains
+- EVM compatible coming soon
+
+## LunoKit vs using lower level clients directly
+You can pair LunoKit with the client of your choice.
+- Use LunoKit when you want wallet connectors unified account state a polished connect UI and ergonomic React hooks out of the box
+- Use Dedot PAPI or polkadot api directly when you are building headless services custom data pipelines or you need full control over transports and descriptors and you are comfortable wiring wallet logic and UI yourself
+
+## Step by step integration in 10 minutes
+
+### Install packages
+
+```bash
+npm i @luno-kit/react @luno-kit/ui @tanstack/react-query
+```
+
+### Wire up the provider and Connect button
+
+```tsx
+import { LunoKitProvider, ConnectButton } from '@luno-kit/ui'
+import { createConfig } from '@luno-kit/react'
+import { kusama, polkadot } from '@luno-kit/react/chains'
+import { polkadotjsConnector, subwalletConnector } from '@luno-kit/react/connectors'
+import '@luno-kit/ui/styles.css'
+
+const config = createConfig({
+  appName: 'My Luno App',
+  chains: [polkadot, kusama],
+  connectors: [polkadotjsConnector(), subwalletConnector()],
+  autoConnect: true,
+})
+
+function App() {
+  return (
+    <LunoKitProvider config={config}>
+      <ConnectButton />
+    </LunoKitProvider>
+  )
+}
+```
+
+### Add a custom chain optional
+Define your chain with the required fields such as genesis hash RPC and SS fifty eight prefix and include it in the chains array.
+
+### Choose your chain client
+LunoKit manages a Dedot instance for chain IO. You can also use PAPI or polkadot api in other parts of your app as needed.
+
+## Practical example balances widget with hooks
+
+```tsx
+import { useAccount, useBalance } from '@luno-kit/react'
+
+export function BalancePanel() {
+  const { account } = useAccount()
+  const { data: balance, status } = useBalance({ address: account?.address })
+
+  if (!account) return <div>Please connect a wallet.</div>
+  if (status === 'pending') return <div>Loading balance…</div>
+
+  return (
+    <div className="rounded-2xl p-4 shadow">
+      <div className="text-sm opacity-80">{account.name}</div>
+      <div className="font-mono text-xl break-all">{account.address}</div>
+      <div className="mt-2">Transferable: {balance?.formattedTransferable}</div>
+      <div>Total: {balance?.formattedTotal}</div>
+    </div>
+  )
+}
+```
+
+## Common pitfalls and tips
+- Extension detection varies across wallets rely on the connector interface rather than manual window checks
+- Avoid over fetching chain data use the built in Query integration and hook options to control refresh and caching
+- When adding a custom network validate genesis hash SS fifty eight format RPC and optional explorer URL for a good user experience
+- Plan for EVM support it is listed as coming soon focus on Polkadot SDK based chains today and add EVM once available
+- Decide early on client needs Dedot offers a lean tree shakable client PAPI and polkadot api are also compatible and may suit specific constraints
+
+## FAQs
+**Which wallets work with LunoKit today**
+LunoKit ships connectors for major wallets in the Polkadot ecosystem including polkadot js and SubWallet through a unified interface.
+
+**Does LunoKit support multi chain apps**
+Yes chain selection and multi chain sessions are supported at the UI and config level.
+
+**Is EVM supported**
+EVM compatible is stated as coming soon. Build for Polkadot SDK based chains now and plan an upgrade path for EVM when released.
+
+**Do I still need a chain client**
+Yes LunoKit focuses on connection account state and UI. Use Dedot PAPI or polkadot api for chain queries transactions and subscriptions.
+
+**Can I add my own parachain or a local devnet**
+Yes define the chain with its parameters and include it in the chains array inside the config.
+
+**How does LunoKit manage performance**
+Zustand handles app state and TanStack Query manages data fetching caching and subscriptions for efficient rendering.
+
+**What about accessibility and theming**
+Components are built on Radix UI primitives and styled with Tailwind CSS which provides accessible behavior and flexible theming.
+
+**Is there a live demo**
+A live demo is referenced by the project materials. You can review it alongside the documentation and code samples.
+
+## Conclusion
+LunoKit removes wallet boilerplate on Polkadot with a clear three layer design typed React hooks and accessible UI. Start with the quick setup above ship a reliable connect flow and focus your time on product features like balances transfers and network aware screens.
