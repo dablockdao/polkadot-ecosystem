@@ -1,5 +1,5 @@
 ---
-title: 'Step-by-Step Guide to Portacipate in Polkadot OpenGov (2025)'
+title: 'Step-by-Step Guide to Participate in Polkadot OpenGov (2025)'
 description: 'Learn how to participate in Polkadot OpenGov with this step-by-step guide, covering proposals, voting, and delegations.'
 sidebar: 
     label: OpenGov 101
