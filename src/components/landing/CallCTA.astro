@@ -1,0 +1,213 @@
+---
+import { LinkButton } from '@astrojs/starlight/components';
+---
+
+<div class="cta-section">
+  <div class="cta-card">
+    <div class="cta-text">
+      <h2 class="cta-title">
+        Contributing to the Ecosystem?<br /><span>List your project</span>
+      </h2>
+      <p class="cta-copy">
+        Empower your vision and showcase your impact. List your project to gain visibility, connect
+        with collaborators, and contribute to the growth of the thriving blockchain ecosystem.
+      </p>
+      <LinkButton href="mailto:lv@dablock.com" variant="primary" class="cta-btn">
+        Submit Project
+      </LinkButton>
+    </div>
+
+<div class="calendar-embed">
+  <!-- Calendly inline widget begin -->
+  <div
+    class="calendly-inline-widget"
+    data-url="https://calendly.com/lv-dablock/30min?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=7A6F5F"
+    aria-label="Schedule a 30-minute call with LV at Dablock"
+  ></div>
+  <script
+    type="text/javascript"
+    src="https://assets.calendly.com/assets/external/widget.js"
+    async
+  ></script>
+  <!-- Calendly inline widget end -->
+</div>
+
+  </div>
+</div>
+
+<style>
+/* ——— Tokens ——— */
+:root {
+  --cta-radius: 18px;
+  --cta-pad-x: clamp(1rem, 2.5vw, 2rem);
+  --cta-pad-y: clamp(1.25rem, 3vw, 2.25rem);
+  --cta-gap: clamp(1rem, 2.5vw, 2rem);
+  --cta-border: color-mix(in oklab, var(--sl-color-text) 14%, transparent);
+  --cta-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  --cta-accent: var(--sl-color-accent, #7A6F5F);
+  --cal-h: clamp(420px, 70vh, 680px);
+}
+
+/* ——— Section ——— */
+.cta-section {
+  margin: var(--space-fluid-md, clamp(1rem, 3vw, 2rem)) auto;
+  padding: 0;
+}
+
+/* ——— Card layout ——— */
+.cta-card {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: var(--cta-gap);
+  align-items: stretch;
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--sl-color-bg) 92%, transparent),
+      color-mix(in oklab, var(--sl-color-bg-soft) 100%, transparent));
+  border: 1px solid var(--cta-border);
+  border-radius: var(--cta-radius);
+  padding: var(--cta-pad-y) var(--cta-pad-x);
+  box-shadow: var(--cta-shadow);
+  overflow: clip;
+}
+
+/* ——— Text side ——— */
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(.75rem, 2vw, 1.25rem);
+  min-width: 0;
+}
+.cta-title {
+  margin: 0;
+  line-height: 1.12;
+  font-size: clamp(1.4rem, 2.6vw, 2.2rem);
+  font-family: 'Unbounded Bold', system-ui, ui-sans-serif, Inter, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+.cta-title span {
+  background: linear-gradient(90deg, var(--cta-accent), color-mix(in oklab, var(--cta-accent) 55%, white));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.cta-copy {
+  margin: 0;
+  color: var(--sl-color-text);
+  opacity: .9;
+  font-size: clamp(.98rem, 1.4vw, 1.05rem);
+  line-height: 1.6;
+  font-family: 'Unbounded Regular', system-ui, ui-sans-serif, Inter, Segoe UI, Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ——— Button ——— */
+.cta-btn {
+  width: fit-content;
+  margin-top: .25rem;
+  border-radius: 999px !important;
+  padding-inline: clamp(1rem, 2.4vw, 1.25rem) !important;
+  padding-block: .6rem !important;
+  box-shadow: 0 6px 18px color-mix(in oklab, var(--cta-accent) 30%, transparent);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.cta-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 26px color-mix(in oklab, var(--cta-accent) 38%, transparent);
+}
+
+/* ——— Calendar embed ——— */
+.calendar-embed {
+  min-width: 280px;
+  border: 0;
+  background: transparent;
+  border-radius: calc(var(--cta-radius) - 6px);
+  overflow: hidden;
+  display: block;
+}
+
+.calendly-inline-widget {
+  width: 100%;
+  height: 620px;
+  border: 0;
+}
+
+/* Container query would be better, but media queries for now */
+@container (max-width: 1024px) {
+  .calendly-inline-widget { height: 600px; }
+}
+
+@media (max-width: 1024px) {
+  .calendly-inline-widget { height: 600px; }
+}
+
+@media (max-width: 720px) {
+  .calendly-inline-widget { height: 560px; }
+}
+
+@media (max-width: 440px) {
+  .calendly-inline-widget { height: 520px; }
+}
+
+
+/* ——— Light theme tweaks ——— */
+:root[data-theme='light'] .cta-card {
+  background:
+    linear-gradient(180deg, color-mix(in oklab, white 86%, transparent), color-mix(in oklab, #f6f7fb 100%, transparent)),
+    linear-gradient(180deg, color-mix(in oklab, var(--cta-accent) 8%, transparent), transparent 60%);
+  border-color: color-mix(in oklab, var(--sl-color-text) 12%, transparent);
+  box-shadow: 0 8px 28px rgba(20, 20, 40, .08);
+}
+:root[data-theme='light'] .calendar-embed {
+  background: linear-gradient(180deg, #fff, #fafbfe);
+}
+
+/* ——— Responsive ——— */
+@media (max-width: 1024px) {
+  .cta-card { grid-template-columns: 1fr; }
+  .cta-text { order: 1; }
+  .calendar-embed { order: 2; }
+  :root { --cal-h: clamp(460px, 62vh, 620px); }
+}
+@media (max-width: 720px) {
+  .cta-card { padding: calc(var(--cta-pad-y) * .9) calc(var(--cta-pad-x) * .9); }
+  .cta-title { font-size: clamp(1.25rem, 5vw, 1.8rem); }
+  :root { --cal-h: clamp(420px, 58vh, 560px); }
+}
+@media (max-width: 440px) {
+  :root { --cal-h: 420px; }
+  .cta-btn { width: 100%; text-align: center; }
+}
+
+/* ——— Accent bloom effect ——— */
+.cta-card::before {
+  content: "";
+  position: absolute;
+  inset: -18% -8% auto -8%;
+  height: 52%;
+  background:
+    radial-gradient(1000px 260px at 20% 0%,
+      color-mix(in oklab, var(--cta-accent) 22%, transparent), transparent 60%),
+    radial-gradient(900px 240px at 90% -15%,
+      color-mix(in oklab, var(--cta-accent) 12%, transparent), transparent 60%);
+  filter: blur(8px);
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure content is above bloom */
+.cta-text,
+.calendar-embed {
+  position: relative;
+  z-index: 1;
+}
+
+/* ——— Motion safety ——— */
+@media (prefers-reduced-motion: reduce) {
+  .cta-btn { transition: none; }
+}
+
+</style>
+

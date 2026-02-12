@@ -1,0 +1,264 @@
+---
+/* QuickStart Component - Interactive onboarding guide */
+import Button from './Button.astro';
+
+export interface Step {
+  number: number;
+  title: string;
+  description: string;
+  link?: string;
+  linkText?: string;
+}
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+  steps: Step[];
+}
+
+const {
+  title = "Get Started in Minutes",
+  subtitle = "Follow these simple steps to join the Polkadot ecosystem",
+  steps
+} = Astro.props;
+---
+
+<section class="quick-start">
+  <div class="container">
+    <div class="header">
+      <h2 class="title">{title}</h2>
+      {subtitle && <p class="subtitle">{subtitle}</p>}
+    </div>
+
+    <div class="steps">
+      {steps.map((step, index) => (
+        <div class="step">
+          <div class="step-number" aria-hidden="true">
+            <span>{step.number}</span>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">{step.title}</h3>
+            <p class="step-description">{step.description}</p>
+            {step.link && (
+              <Button href={step.link} variant="ghost" size="sm">
+                {step.linkText || "Learn More"} →
+              </Button>
+            )}
+          </div>
+          {index < steps.length - 1 && (
+            <div class="step-connector" aria-hidden="true"></div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+/* ===== QuickStart Section ===== */
+.quick-start {
+  margin: var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem));
+  padding: var(--space-fluid-xl, clamp(3rem, 6vw, 5rem)) var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem));
+  background: linear-gradient(180deg,
+    var(--color-bg, #0b0b0f),
+    color-mix(in oklab, var(--color-bg, #0b0b0f) 95%, var(--color-accent-primary, #7A6F5F)));
+  border: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-2xl, 24px);
+  position: relative;
+  overflow: hidden;
+}
+
+.quick-start::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(transparent 0 98%, color-mix(in oklab, var(--color-text-primary, #fff) 4%, transparent) 98% 100%),
+    linear-gradient(90deg, transparent 0 98%, color-mix(in oklab, var(--color-text-primary, #fff) 4%, transparent) 98% 100%);
+  background-size: 40px 40px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: var(--space-2xl, 4rem);
+}
+
+.title {
+  font-family: var(--font-heading, 'Optima Bold', sans-serif);
+  font-size: var(--text-3xl, clamp(2rem, 4vw, 3rem));
+  font-weight: var(--font-extrabold, 800);
+  line-height: var(--leading-tight, 1.1);
+  letter-spacing: -0.02em;
+  margin: 0 0 var(--space-sm, 1rem) 0;
+  color: var(--color-text-primary, #ffffff);
+}
+
+.subtitle {
+  font-size: var(--text-lg, clamp(1.15rem, 2vw, 1.35rem));
+  color: var(--color-text-muted, #aeb7cb);
+  margin: 0;
+}
+
+/* Steps */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg, 2rem);
+}
+
+.step {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-md, 1.5rem);
+  align-items: start;
+}
+
+/* Step number badge */
+.step-number {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg,
+    var(--color-accent-primary, #7A6F5F),
+    var(--color-accent-secondary, #8B8070));
+  border-radius: var(--radius-full, 9999px);
+  box-shadow: var(--shadow-accent-lg, 0 10px 28px rgba(122, 111, 95, 0.32)),
+              0 0 0 4px color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 20%, transparent);
+  transition: transform var(--transition-base, 0.18s ease),
+              box-shadow var(--transition-slow, 0.22s ease);
+  z-index: 2;
+}
+
+.step-number span {
+  font-family: var(--font-body-bold, 'Helvetica Bold', sans-serif);
+  font-size: var(--text-xl, 1.5rem);
+  font-weight: var(--font-extrabold, 800);
+  color: #FFFFFF;
+  line-height: 1;
+}
+
+.step:hover .step-number {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-accent-xl, 0 14px 36px rgba(122, 111, 95, 0.40)),
+              0 0 0 6px color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 25%, transparent);
+}
+
+/* Step connector line */
+.step-connector {
+  position: absolute;
+  left: 28px;
+  top: 56px;
+  bottom: -2rem;
+  width: 2px;
+  background: linear-gradient(180deg,
+    var(--color-accent-primary, #7A6F5F),
+    color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 30%, transparent));
+  z-index: 1;
+}
+
+/* Step content */
+.step-content {
+  background: color-mix(in oklab, var(--color-bg-soft, #121219) 60%, transparent);
+  border: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-lg, 16px);
+  padding: var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem));
+  backdrop-filter: blur(12px);
+  transition: transform var(--transition-base, 0.18s ease),
+              border-color var(--transition-base, 0.18s ease),
+              box-shadow var(--transition-slow, 0.22s ease);
+}
+
+.step:hover .step-content {
+  transform: translateX(4px);
+  border-color: var(--color-accent-primary, #7A6F5F);
+  box-shadow: var(--shadow-lg, 0 8px 24px rgba(0, 0, 0, 0.25));
+}
+
+.step-title {
+  font-family: var(--font-heading, 'Optima Bold', sans-serif);
+  font-size: var(--text-xl, clamp(1.25rem, 2.4vw, 1.5rem));
+  font-weight: var(--font-bold, 700);
+  line-height: var(--leading-snug, 1.2);
+  margin: 0 0 var(--space-xs, 0.75rem) 0;
+  color: var(--color-text-primary, #ffffff);
+}
+
+.step-description {
+  font-size: var(--text-base, clamp(1rem, 1.6vw, 1.05rem));
+  line-height: var(--leading-relaxed, 1.6);
+  color: var(--color-text-muted, #aeb7cb);
+  margin: 0 0 var(--space-sm, 1rem) 0;
+}
+
+.step-content :global(.btn) {
+  margin-top: var(--space-xs, 0.75rem);
+}
+
+/* ===== Light Theme ===== */
+:root[data-theme="light"] .quick-start {
+  background: linear-gradient(180deg, #FFFFFF, #F5F5F5);
+}
+
+:root[data-theme="light"] .step-content {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme="light"] .step:hover .step-content {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .step {
+    grid-template-columns: auto 1fr;
+    gap: var(--space-sm, 1rem);
+  }
+
+  .step-number {
+    width: 48px;
+    height: 48px;
+  }
+
+  .step-number span {
+    font-size: var(--text-lg, 1.25rem);
+  }
+
+  .step-connector {
+    left: 24px;
+  }
+
+  .step:hover .step-content {
+    transform: translateX(0);
+  }
+}
+
+/* ===== Motion Safety ===== */
+@media (prefers-reduced-motion: reduce) {
+  .step-number,
+  .step-content {
+    transition: none;
+  }
+
+  .step:hover .step-number,
+  .step:hover .step-content {
+    transform: none;
+  }
+}
+</style>

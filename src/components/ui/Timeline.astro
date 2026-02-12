@@ -1,0 +1,482 @@
+---
+export interface TimelineEntry {
+  title: string;
+  date?: string;
+  content: string;
+  images?: string[];
+}
+
+interface Props {
+  entries: TimelineEntry[];
+  variant?: 'default' | 'compact';
+}
+
+const { entries, variant = 'default' } = Astro.props;
+---
+
+<div class={`timeline-container timeline--${variant}`}>
+  <!-- Animated line that follows scroll -->
+  <div class="timeline-line">
+    <div class="timeline-progress"></div>
+  </div>
+
+  <div class="timeline-content">
+    {entries.map((entry, index) => (
+      <div class="timeline-item" data-index={index}>
+        <!-- Date marker -->
+        <div class="timeline-marker">
+          <div class="marker-dot"></div>
+          <div class="marker-pulse"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="timeline-card">
+          <div class="timeline-header">
+            <h3 class="timeline-title">{entry.title}</h3>
+            {entry.date && <span class="timeline-date">{entry.date}</span>}
+          </div>
+
+          <div class="timeline-description" set:html={entry.content} />
+
+          {entry.images && entry.images.length > 0 && (
+            <div class={`timeline-images grid-${entry.images.length > 1 ? 'multi' : 'single'}`}>
+              {entry.images.map((image) => (
+                <img src={image} alt="" loading="lazy" />
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+<script>
+  // Scroll progress animation
+  function initTimeline() {
+    const container = document.querySelector('.timeline-container');
+    const progress = document.querySelector('.timeline-progress');
+    const items = document.querySelectorAll('.timeline-item');
+
+    if (!container || !progress || !items.length) return;
+
+    // Update progress line on scroll
+    const updateProgress = () => {
+      const containerRect = container.getBoundingClientRect();
+      const containerTop = containerRect.top;
+      const containerHeight = containerRect.height;
+      const windowHeight = window.innerHeight;
+
+      // Calculate scroll progress (0 to 1)
+      let scrollProgress = 0;
+      if (containerTop < windowHeight && containerTop + containerHeight > 0) {
+        const visibleHeight = Math.min(windowHeight - containerTop, containerHeight);
+        scrollProgress = Math.max(0, Math.min(1, visibleHeight / containerHeight));
+      }
+
+      // Update progress line height
+      (progress as HTMLElement).style.transform = `scaleY(${scrollProgress})`;
+    };
+
+    // Observe timeline items for fade-in effect
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      {
+        threshold: 0.2,
+        rootMargin: '0px 0px -10% 0px'
+      }
+    );
+
+    items.forEach((item) => observer.observe(item));
+
+    // Update on scroll
+    window.addEventListener('scroll', updateProgress, { passive: true });
+    updateProgress(); // Initial call
+
+    // Cleanup
+    document.addEventListener('astro:before-swap', () => {
+      window.removeEventListener('scroll', updateProgress);
+      observer.disconnect();
+    });
+  }
+
+  // Initialize on page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTimeline);
+  } else {
+    initTimeline();
+  }
+
+  // Re-initialize on Astro page transitions
+  document.addEventListener('astro:page-load', initTimeline);
+</script>
+
+<style>
+/* ===== Timeline Container ===== */
+.timeline-container {
+  position: relative;
+  max-width: 1000px;
+  margin: var(--space-fluid-xl, clamp(2rem, 5vw, 4rem)) auto;
+  padding: 0 var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem));
+}
+
+/* ===== Vertical Line ===== */
+.timeline-line {
+  position: absolute;
+  left: var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem));
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--color-border-subtle, rgba(255, 255, 255, 0.1));
+  overflow: hidden;
+}
+
+.timeline-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+    var(--color-accent-primary, #7A6F5F),
+    var(--color-accent-secondary, #8B8070));
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.1s linear;
+  box-shadow: 0 0 12px var(--color-accent-primary, #7A6F5F);
+}
+
+/* ===== Timeline Content ===== */
+.timeline-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-fluid-xl, clamp(2rem, 5vw, 4rem));
+  padding-left: var(--space-fluid-lg, clamp(1.5rem, 4vw, 3rem));
+}
+
+/* ===== Timeline Item ===== */
+.timeline-item {
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger animation delay */
+.timeline-item:nth-child(1) { transition-delay: 0s; }
+.timeline-item:nth-child(2) { transition-delay: 0.1s; }
+.timeline-item:nth-child(3) { transition-delay: 0.2s; }
+.timeline-item:nth-child(4) { transition-delay: 0.3s; }
+.timeline-item:nth-child(5) { transition-delay: 0.4s; }
+.timeline-item:nth-child(n+6) { transition-delay: 0.5s; }
+
+/* ===== Marker Dot ===== */
+.timeline-marker {
+  position: absolute;
+  left: calc(-1 * var(--space-fluid-lg, clamp(1.5rem, 4vw, 3rem)) - 7px);
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+}
+
+.marker-dot {
+  position: absolute;
+  inset: 0;
+  background: var(--color-accent-primary, #7A6F5F);
+  border: 3px solid var(--color-bg, #0b0b0f);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--color-border-subtle, rgba(255, 255, 255, 0.1));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item.visible .marker-dot {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 6px var(--color-border-subtle, rgba(255, 255, 255, 0.15)),
+              0 0 20px rgba(122, 111, 95, 0.4);
+}
+
+.marker-pulse {
+  position: absolute;
+  inset: -8px;
+  border: 2px solid var(--color-accent-primary, #7A6F5F);
+  border-radius: 50%;
+  opacity: 0;
+  animation: pulse 2s ease-out infinite;
+}
+
+.timeline-item.visible .marker-pulse {
+  animation: pulse 2s ease-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* ===== Timeline Card ===== */
+.timeline-card {
+  position: relative;
+  background: linear-gradient(180deg,
+    color-mix(in oklab, var(--color-bg-soft, #121219) 98%, transparent),
+    color-mix(in oklab, var(--color-bg, #0b0b0f) 100%, transparent));
+  border: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-xl, 18px);
+  padding: var(--space-fluid-lg, clamp(1.5rem, 3vw, 2.5rem));
+  transition: transform var(--transition-base, 0.18s ease),
+              border-color var(--transition-base, 0.18s ease),
+              box-shadow var(--transition-slow, 0.22s ease);
+  overflow: hidden;
+}
+
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 0%,
+    color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 8%, transparent),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity var(--transition-slow, 0.22s ease);
+  pointer-events: none;
+}
+
+.timeline-card:hover {
+  transform: translateX(4px);
+  border-color: var(--color-accent-primary, #7A6F5F);
+  box-shadow: var(--shadow-xl, 0 12px 32px rgba(0, 0, 0, 0.30));
+}
+
+.timeline-card:hover::before {
+  opacity: 1;
+}
+
+/* ===== Timeline Header ===== */
+.timeline-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-md, 1.5rem);
+  margin-bottom: var(--space-md, 1.5rem);
+  flex-wrap: wrap;
+}
+
+.timeline-title {
+  font-family: var(--font-heading, 'Optima Bold', sans-serif);
+  font-size: var(--text-2xl, clamp(1.5rem, 3vw, 2rem));
+  font-weight: var(--font-bold, 700);
+  line-height: var(--leading-tight, 1.2);
+  margin: 0;
+  color: var(--color-text-primary, #ffffff);
+  background: linear-gradient(90deg,
+    var(--color-text-primary, #ffffff),
+    color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 70%, white));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.timeline-date {
+  font-family: var(--font-body, 'Helvetica', sans-serif);
+  font-size: var(--text-sm, 0.95rem);
+  font-weight: var(--font-medium, 500);
+  color: var(--color-accent-primary, #7A6F5F);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+/* ===== Timeline Description ===== */
+.timeline-description {
+  font-size: var(--text-base, 1rem);
+  line-height: var(--leading-relaxed, 1.6);
+  color: var(--color-text-muted, #aeb7cb);
+  margin-bottom: var(--space-lg, 2rem);
+}
+
+.timeline-description :global(p) {
+  margin: 0 0 var(--space-sm, 1rem) 0;
+}
+
+.timeline-description :global(p:last-child) {
+  margin-bottom: 0;
+}
+
+.timeline-description :global(ul),
+.timeline-description :global(ol) {
+  margin: var(--space-sm, 1rem) 0;
+  padding-left: var(--space-lg, 2rem);
+}
+
+.timeline-description :global(li) {
+  margin-bottom: var(--space-xs, 0.5rem);
+}
+
+.timeline-description :global(strong) {
+  color: var(--color-text-primary, #ffffff);
+  font-weight: var(--font-semibold, 600);
+}
+
+/* ===== Timeline Images ===== */
+.timeline-images {
+  display: grid;
+  gap: var(--space-sm, 1rem);
+  margin-top: var(--space-lg, 2rem);
+}
+
+.timeline-images.grid-single {
+  grid-template-columns: 1fr;
+}
+
+.timeline-images.grid-multi {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+}
+
+.timeline-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius-lg, 12px);
+  border: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.05));
+  transition: transform var(--transition-base, 0.18s ease),
+              box-shadow var(--transition-base, 0.18s ease);
+}
+
+.timeline-images img:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-lg, 0 8px 24px rgba(0, 0, 0, 0.25));
+}
+
+/* ===== Compact Variant ===== */
+.timeline--compact .timeline-card {
+  padding: var(--space-md, 1.5rem);
+}
+
+.timeline--compact .timeline-title {
+  font-size: var(--text-xl, clamp(1.25rem, 2.4vw, 1.5rem));
+}
+
+.timeline--compact .timeline-description {
+  font-size: var(--text-sm, 0.95rem);
+  margin-bottom: var(--space-md, 1.5rem);
+}
+
+.timeline--compact .timeline-images img {
+  height: 150px;
+}
+
+/* ===== Light Theme ===== */
+:root[data-theme="light"] .timeline-line {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+:root[data-theme="light"] .marker-dot {
+  border-color: var(--color-bg, #FFFFFF);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme="light"] .timeline-item.visible .marker-dot {
+  box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.12),
+              0 0 20px rgba(122, 111, 95, 0.3);
+}
+
+:root[data-theme="light"] .timeline-card {
+  background: linear-gradient(180deg,
+    color-mix(in oklab, white 95%, transparent),
+    color-mix(in oklab, #f6f7fb 100%, transparent));
+  border-color: rgba(0, 0, 0, 0.10);
+}
+
+:root[data-theme="light"] .timeline-title {
+  background: linear-gradient(90deg,
+    var(--color-text-primary, #000000),
+    var(--color-accent-primary, #7A6F5F));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+:root[data-theme="light"] .timeline-description {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+:root[data-theme="light"] .timeline-description :global(strong) {
+  color: var(--color-text-primary, #000000);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 0;
+  }
+
+  .timeline-content {
+    padding-left: var(--space-lg, 2rem);
+  }
+
+  .timeline-marker {
+    left: calc(-1 * var(--space-lg, 2rem) - 7px);
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs, 0.5rem);
+  }
+
+  .timeline-images.grid-multi {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-images img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline-title {
+    font-size: var(--text-xl, 1.25rem);
+  }
+
+  .timeline-images img {
+    height: 160px;
+  }
+}
+
+/* ===== Motion Safety ===== */
+@media (prefers-reduced-motion: reduce) {
+  .timeline-item,
+  .timeline-card,
+  .marker-dot,
+  .timeline-images img {
+    transition: none;
+  }
+
+  .marker-pulse {
+    animation: none;
+  }
+
+  .timeline-progress {
+    transition: none;
+  }
+}
+</style>

@@ -1,0 +1,24 @@
+---
+import Default from "@astrojs/starlight/components/Footer.astro";
+import type { Props } from "@astrojs/starlight/props";
+import FooterCards from "./FooterCards.astro";
+import FooterHome from './landing/FooterHome.astro';
+
+const { toc } = Astro.props;
+const hasToc = toc && toc.items && toc.items.length > 0;
+---
+
+{hasToc ? (
+  <Default {...Astro.props}>
+    <slot />
+  </Default>
+  <FooterCards showOnlyTwoCards />
+) : (
+  <>
+    <Default {...Astro.props}>
+      <slot />
+    </Default>
+    <FooterCards showOnlyTwoCards />
+    <FooterHome />
+  </>
+)}

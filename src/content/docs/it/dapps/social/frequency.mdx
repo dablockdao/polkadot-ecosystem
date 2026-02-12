@@ -1,0 +1,133 @@
+---
+title: Frequency
+description: Frequency è una blockchain pubblica Layer 1 specializzata, progettata per realizzare il Protocollo di Social Networking Decentralizzato (DSNP).
+hero:
+  tagline: Una Blockchain L1 DSNP
+  image: 
+    file: ../../../../../assets/dapps/social/frequency.png
+  actions:
+    - text: Dapps
+      link: https://www.frequency.xyz/
+      icon: external
+    - text: Docs
+      link: https://docs.frequency.xyz/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+**Frequency** è una **blockchain pubblica Layer 1 specializzata**, progettata per realizzare il Protocollo di Social Networking Decentralizzato (DSNP). Offre infrastrutture critiche per le applicazioni di social networking di nuova generazione, dando agli individui un maggiore controllo sui propri dati e consentendo la partecipazione nell'economia digitale in evoluzione. Frequency fornisce una scoperta scalabile dei messaggi, uno storage flessibile per **dati di grafico sociale e identità**, e primitive per il trasferimento dei costi e la delega dell'autorità. Questa combinazione unica consente alle applicazioni di offrire esperienze utente intuitive, garantendo al contempo il controllo dell'utente sui dati personali e sulle relazioni online. Frequency introduce un modello **economico basato sul batching dei messaggi** e sullo staking di token per una capacità di rete ricorrente, rendendolo adattabile per futuri protocolli con requisiti simili. La moneta nativa di Frequency si chiama **FRQCY**.
+
+## Architettura di Frequency
+Frequency è costruito come una blockchain Layer 1 progettata per supportare applicazioni ad alta capacità di dati all'interno di un ambiente decentralizzato. La sua architettura include componenti fondamentali per il funzionamento all'interno dell'**ecosistema Polkadot**, garantendo prestazioni robuste e interoperabilità.
+1. **Modello Operativo** I nodi di Frequency sono cruciali per mantenere lo stato della blockchain e elaborare i dati. I nodi possono essere configurati per vari ruoli:  
+    - **Nodi Completi:** Mantengono lo stato completo della blockchain.
+    - **Nodi Light Client:** Permettono alle applicazioni di osservare gli eventi della blockchain.
+    - **Nodi Archive:** Memorizzano lo stato storico completo della blockchain.
+  I nodi eseguono il Runtime di Frequency, incapsulato in codice WebAssembly (Wasm) indipendente dalla piattaforma, garantendo una transizione dello stato coerente su tutta la rete. Gli aggiornamenti del Runtime di Frequency sono gestiti tramite la Governance di Frequency.
+2. **Distribuzione**
+    - **Mainnet:** Utilizza i validatori della Polkadot Relay Chain per la produzione.
+    - **Testnet:** Utilizza i validatori sulla Polkadot Rococo Testnet Relay Chain per i test e lo sviluppo.
+I cambiamenti vengono prima distribuiti sulla Testnet e poi sulla Mainnet, garantendo test robusti e aggiornamenti senza problemi.
+
+## Modello di Interazione di Frequency
+Gli utenti e le applicazioni interagiscono con i nodi di Frequency tramite extrinsic, query di stato, API Runtime e RPC personalizzati.
+1. **Extrinsic:** Transazioni eseguite sulla blockchain, che richiedono firme crittografiche per la validazione.
+2. **Query di Stato:** Accesso diretto al negozio di coppie chiave-valore dello stato della blockchain.
+3. **API Runtime:** Forniscono accesso alle informazioni sulla blockchain e sui nodi senza accesso diretto al negozio di chiave-valore.
+4. **RPC Personalizzati:** Consentono l'elaborazione complessa e le chiamate esterne non adatte al runtime Wasm.
+
+### Collator e Relay Chain
+Frequency utilizza i nodi collator per raccogliere le transazioni e produrre prove di transizione dello stato. Questi blocchi vengono inviati alla **Polkadot Relay Chain** per la validazione e la sicurezza. Questo setup consente a Frequency di concentrarsi sulle funzionalità utente sfruttando la robusta sicurezza della Relay Chain.
+
+## Gestione dell'Identità di Frequency
+Frequency introduce un sistema di identità utente scoperto e indirizzabile, fondamentale per le applicazioni di social networking. I componenti chiave includono:
+1. **Account Sorgente Messaggio (MSA):** Unici per Frequency, consentono dati con paternità verificabile.
+2. **Chiavi di Controllo:** Chiavi crittografiche per il controllo dell'identità.
+3. **Handle Utente:** Identificatori leggibili dall'uomo per gli MSA.
+
+## Gestione dei Dati di Frequency
+La gestione dei dati di Frequency è progettata per una distribuzione sicura ed efficiente dei dati generati dagli utenti ad alto volume.
+1. **Schemi:** Definiscono la struttura dei dati, lo storage e la semantica per i dati relativi al protocollo.
+2. **Schema Registry:** Repository on-chain per gli schemi di Frequency, garantendo la correttezza dei dati e l'interoperabilità.
+3. **Messaggi:** Dati pubblicati conformi agli schemi di Frequency, facilitando l'alta scalabilità tramite aggregazione off-chain.
+4. **Storage Stateful:** Consente agli utenti di archiviare dati come parte dello stato della blockchain, con opzioni di storage itemizzato e paginato per una gestione efficiente dei dati.
+
+## Modello di Delegazione di Frequency
+Il modello di delegazione di Frequency bilancia l'accessibilità con il controllo dell'utente, spostando complessità e costi ai Provider. Gli utenti possono interagire con la blockchain senza necessitare di token, delegando compiti ai Provider che agiscono per loro conto.
+**Tokenomics di Frequency (FRQCY)**
+Il modello economico di Frequency supporta il social networking scalabile, concentrandosi sulle transazioni di dati non finanziari.
+1. **Incentivi per i Collator:** Ricompense per la formazione dei blocchi.
+2. **Incentivi per i Provider:** Modello di capacità per la pubblicazione economica dei messaggi.
+3. **Incentivi per gli Utenti:** Meccanismo di potenziamento dei Provider per il supporto e le ricompense agli utenti.
+
+<ShowcaseText
+  entries={[
+    {
+      href: 'https://mewe.com/',
+      title: 'Mewe',
+      description: 'MeWe è una piattaforma di social media su Frequency che si propone come un’alternativa focalizzata sulla privacy alle piattaforme mainstream come Facebook.',
+    },
+  ]}
+/>
+
+### Distribuzione Iniziale dei Token FRQCY
+Un miliardo di FRQCY sono stati creati al Genesis e distribuiti come segue:
+- **Frequency Network Foundation**
+  - Fondazione: 2.0%
+  - Tesoreria On-Chain: 53.0%
+  - Partner Strategici: 5.0%
+- **Amplica Labs**
+  - Investitori: 22.0%
+  - Team: 14.5%
+  - Tesoreria: 3.5%
+
+#### Conclusione
+Frequency, sviluppato da [**Project Liberty**](/club/orgs/software/project-liberty/), si presenta come una robusta infrastruttura per il social networking decentralizzato all'interno dell'ecosistema Polkadot. La sua architettura innovativa, la gestione completa dei dati e il modello economico incentrato sull'utente lo posizionano come una pietra miliare per le applicazioni future di social networking, enfatizzando il controllo dell'utente, la scalabilità e l'interoperabilità.
+
+## Video della Comunità di Frequency
+------------
+<ShowcaseYouTube
+  entries={[
+        {
+        href: 'https://www.youtube.com/watch?v=zO9LvxUZUGk',
+      title: 'Che cos\'è Frequency?',
+      description: 'Frequency è una parachain su Polkadot focalizzata su soluzioni di comunicazione decentralizzate. Permette la creazione e la gestione di reti decentralizzate.',
+    },
+            {
+        href: 'https://www.youtube.com/watch?v=Jxg4uzICke0',
+        title: 'Come Frequency su Polkadot mira a risolvere i social media - SM110',
+      description: 'Parti con Braxton Woodham, il Presidente di Amplica Labs dietro la Frequency L1 Parachain su Polkadot.',
+    },
+                           {
+        href: 'https://www.youtube.com/watch?v=a4uE2H_m85k',
+      title: 'Utenti senza moneta nell\'ecosistema Web3 - Decoded 2024',
+      description: 'Sessione Polkadot Decoded 2024 con Harry Evens di Project Liberty Labs',
+    },
+                {
+        href: 'https://www.youtube.com/watch?v=ncjJc9HfCMQ',
+      title: 'Libertà nella rete sociale per 1 miliardo di persone con Braxton Woodham - SM70',
+      description: 'Siediti con Braxton Woodham per discutere di Project Liberty, la sua prima implementazione del Protocollo di Social Networking Decentralizzato su Frequency e la migrazione di 20 milioni di utenti su Polkadot.',
+    },
+                {
+        href: 'https://www.youtube.com/watch?v=xgPZnOulBCE',
+      title: 'Cosa serve per costruire un Web migliore? | Gavin Wood, Frank McCourt, Andy Serwer',
+      description: 'Il fondatore di Polkadot Dr. Gavin Wood, Unfinished Frank McCourt, e Andy Serwer di Yahoo Finance discutono su come le piattaforme di proprietà degli utenti possono costruire un Web migliore.',
+    },
+                   {
+        href: 'https://www.youtube.com/watch?v=c_RhaYUoTb0',
+      title: 'TikTok su Polkadot?',
+      description: 'Il cambiamento epocale di Frank McCourt per acquisire TikTok e il suo innovativo Project Liberty.',
+    },
+                   {
+        href: 'https://www.youtube.com/watch?v=vfCnLcRlLIM',
+      title: 'Come Polkadot e Web3 possono salvare TikTok negli Stati Uniti',
+      description: 'La decentralizzazione potrebbe essere il futuro per TikTok?',
+    },
+                       {
+        href: 'https://www.youtube.com/watch?v=-RJ26bpCRqE',
+      title: 'Bando di TikTok e Polkadot',
+      description: 'Project Liberty sta costruendo un consorzio per acquistare TikTok e ristrutturare la piattaforma per mettere le persone al controllo delle proprie identità digitali e dei dati sulla blockchain Polkadot.',
+    },
+  ]} />

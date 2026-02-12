@@ -1,0 +1,372 @@
+---
+import { Icon } from '@astrojs/starlight/components';
+import { navigationData, dotPortals, socialLinks } from '../../data/navigation';
+
+const currentYear = new Date().getFullYear();
+const footerColumns = [...navigationData, dotPortals];
+---
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <nav class="footer-nav" aria-label="Footer">
+      {footerColumns.map((column) => (
+        <div class="footer-col">
+          <span>
+            <a href={column.href}>{column.label}</a>
+          </span>
+          {column.items && (
+            <ul>
+              {column.items.map((item) => (
+                <li>
+                  <a
+                    href={item.external ? item.href : `https://polkadotecosystem.com${item.href}`}
+                    {...(item.external && {
+                      target: '_blank',
+                      rel: 'noopener noreferrer'
+                    })}
+                  >
+                    {item.label}{item.external && ' ⬈'}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
+    </nav>
+
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <img
+          class="logo logo-dark"
+          src="https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/polkadot22.png"
+          alt="Polkadot Ecosystem"
+          width="125"
+          height="32"
+        />
+        <img
+          class="logo logo-light"
+          src="https://raw.githubusercontent.com/dablockdao/polkadot-ecosystem/refs/heads/main/dot-atlas/src/assets/polkadot11.png"
+          alt="Polkadot Ecosystem"
+          width="125"
+          height="32"
+        />
+        <span class="copyright">©{currentYear}</span>
+      </div>
+
+      <div class="social-links">
+        {socialLinks.map((social) => (
+          <a
+            href={social.href}
+            aria-label={social.label}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon name={social.icon as any} />
+          </a>
+        ))}
+      </div>
+
+      <a href="mailto:lv@dablock.com" class="get-in-touch">GET IN TOUCH</a>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* ===== Footer Styles ===== */
+.site-footer {
+  background: linear-gradient(180deg,
+    color-mix(in oklab, var(--color-bg-soft, #121219) 98%, transparent),
+    color-mix(in oklab, var(--color-bg, #0b0b0f) 100%, transparent));
+  color: var(--color-text-primary, #ffffff);
+  margin: var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem));
+  padding: var(--space-fluid-xl, clamp(2rem, 5vw, 4rem)) var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem));
+  border: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-2xl, 24px);
+  position: relative;
+}
+
+.site-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96%;
+  max-width: 1400px;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent,
+    var(--color-border-subtle, rgba(255, 255, 255, 0.08)) 20%,
+    var(--color-border-subtle, rgba(255, 255, 255, 0.08)) 80%,
+    transparent
+  );
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ===== Footer Navigation ===== */
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-fluid-lg, clamp(1.5rem, 4vw, 3rem));
+  margin-bottom: var(--space-fluid-xl, clamp(2rem, 5vw, 4rem));
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm, 1rem);
+}
+
+.footer-col > span {
+  font-family: var(--font-heading, 'Optima Bold', sans-serif);
+  font-size: var(--text-lg, clamp(1.15rem, 2vw, 1.35rem));
+  font-weight: var(--font-bold, 700);
+}
+
+.footer-col > span a {
+  color: var(--color-text-primary, #ffffff);
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  transition: color var(--transition-base, 0.18s ease);
+}
+
+.footer-col > span a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--color-accent-primary, #7A6F5F);
+  transform-origin: left;
+  transition: width var(--transition-base, 0.18s ease);
+}
+
+.footer-col > span a:hover {
+  color: var(--color-accent-primary, #7A6F5F);
+}
+
+.footer-col > span a:hover::after {
+  width: 100%;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs, 0.75rem);
+}
+
+.footer-col li a {
+  color: var(--color-text-muted, #aeb7cb);
+  text-decoration: none;
+  font-size: var(--text-sm, 0.95rem);
+  transition: color var(--transition-base, 0.18s ease),
+              transform var(--transition-base, 0.18s ease);
+  display: inline-block;
+}
+
+.footer-col li a:hover {
+  color: var(--color-accent-primary, #7A6F5F);
+  transform: translateX(2px);
+}
+
+/* ===== Footer Bottom ===== */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-md, 1.5rem);
+  padding-top: var(--space-fluid-lg, clamp(1.5rem, 3vw, 3rem));
+  border-top: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.05));
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm, 1rem);
+}
+
+.logo {
+  height: auto;
+  max-width: 125px;
+}
+
+.logo-light {
+  display: none;
+}
+
+.logo-dark {
+  display: block;
+}
+
+.copyright {
+  font-size: var(--text-sm, 0.95rem);
+  color: var(--color-text-muted, #aeb7cb);
+  font-family: var(--font-body, 'Helvetica', sans-serif);
+}
+
+/* ===== Social Links ===== */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm, 1rem);
+  margin: auto 35px auto auto;
+}
+
+.social-links a {
+  color: var(--color-text-muted, rgba(255, 255, 255, 0.8));
+  text-decoration: none;
+  font-size: var(--text-base, 1rem);
+  transition: color var(--transition-base, 0.18s ease),
+              transform var(--transition-base, 0.18s ease);
+  display: inline-flex;
+  align-items: center;
+}
+
+.social-links a svg {
+  font-size: 33px;
+  width: 33px;
+  height: 33px;
+}
+
+.social-links a:hover {
+  color: var(--color-accent-primary, #7A6F5F);
+  transform: translateY(-2px);
+}
+
+/* ===== Get in Touch Button ===== */
+.get-in-touch {
+  background-color: var(--color-accent-primary, #7A6F5F);
+  color: var(--color-text-primary, #ffffff) !important;
+  padding: var(--space-xs, 0.75rem) var(--space-lg, 2rem);
+  border-radius: var(--radius-full, 9999px);
+  text-decoration: none;
+  font-weight: var(--font-semibold, 600);
+  font-size: var(--text-sm, 0.95rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: transform var(--transition-base, 0.18s ease),
+              box-shadow var(--transition-base, 0.18s ease),
+              filter var(--transition-base, 0.18s ease);
+  box-shadow: var(--shadow-accent-md, 0 6px 18px rgba(122, 111, 95, 0.28));
+  white-space: nowrap;
+}
+
+.get-in-touch:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-accent-lg, 0 10px 28px rgba(122, 111, 95, 0.32));
+  filter: brightness(1.1);
+}
+
+.get-in-touch:active {
+  transform: translateY(0);
+}
+
+/* ===== Light Theme ===== */
+:root[data-theme="light"] .site-footer {
+  background: var(--color-bg, #FFFFFF);
+  color: var(--color-text-primary, #000000);
+  border-top-color: rgba(0, 0, 0, 0.10);
+}
+
+:root[data-theme="light"] .footer-col > span a {
+  color: var(--color-text-primary, #000000);
+}
+
+:root[data-theme="light"] .footer-col li a {
+  color: var(--color-text-muted, #666666);
+}
+
+:root[data-theme="light"] .social-links a {
+  color: var(--color-text-muted, rgba(0, 0, 0, 0.6));
+}
+
+:root[data-theme="light"] .copyright {
+  color: var(--color-text-muted, #666666);
+}
+
+:root[data-theme="light"] .logo-dark {
+  display: none;
+}
+
+:root[data-theme="light"] .logo-light {
+  display: block;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .footer-nav {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-nav {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-xl, 2.5rem) var(--space-lg, 2rem);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-lg, 2rem);
+  }
+
+  .social-links {
+    margin: 0;
+    order: 2;
+  }
+
+  .get-in-touch {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-logo {
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links a svg {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* ===== Motion Safety ===== */
+@media (prefers-reduced-motion: reduce) {
+  .footer-col > span a,
+  .footer-col li a,
+  .social-links a,
+  .get-in-touch {
+    transition: none;
+  }
+
+  .footer-col > span a:hover,
+  .footer-col li a:hover,
+  .social-links a:hover,
+  .get-in-touch:hover {
+    transform: none;
+  }
+}
+</style>

@@ -1,0 +1,85 @@
+---
+title: 'Kampela Signer'  
+description: Kampela Signer est une implémentation matérielle du Polkadot Vault. Il s'agit d'un petit appareil de la taille d'une carte conçu pour stocker en toute sécurité des clés cryptographiques et effectuer des opérations de signature.  
+hero:  
+  tagline: Signataire matériel Polkadot.  
+  image:  
+    file: ../../../../../assets/tools/wallets/kampela.png  
+  actions:  
+    - text: Outil  
+      link: https://www.kampe.la/  
+      icon: external  
+    - text: Github  
+      link: https://github.com/Kalapaja  
+      icon: external  
+      variant: secondary  
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';  
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';  
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';  
+
+Kampela Signer est **une implémentation matérielle du Polkadot Vault** (anciennement connu sous le nom de Parity Signer). Il s'agit d'un petit appareil de la taille d'une carte conçu pour stocker en toute sécurité des clés cryptographiques et effectuer des opérations de signature.  
+
+## Dispositif de stockage de clés pour l'écosystème Polkadot  
+Dans la blockchain, la gestion sécurisée des clés est un élément essentiel pour protéger les actifs numériques. Le Kampela Signer est une solution spécifiquement conçue pour l'écosystème Polkadot.  
+
+## Qu'est-ce que Kampela Signer ?  
+Kampela Signer est une implémentation matérielle du Polkadot Vault (anciennement connu sous le nom de Parity Signer). Il s'agit d'un petit appareil de la taille d'une carte conçu pour stocker en toute sécurité des clés cryptographiques et effectuer des opérations de signature. L'appareil accepte les données via un port NFC unidirectionnel et affiche la sortie sur un écran en papier électronique monochrome. Il utilise des puces cryptographiques modernes pour garantir une sécurité maximale.  
+
+## Fonctionnalités principales de Kampela Signer  
+1. **Stockage sécurisé des clés :** Le Kampela Signer est équipé d'un coffre-fort cryptographique qui prend en charge les courbes elliptiques utilisées par Substrate, le cadre qui alimente Polkadot. Il stocke les clés privées en toute sécurité et effectue toutes les opérations de signature sur le chip, garantissant que les clés ne sont jamais exposées à des menaces extérieures.  
+2. **Fonctionnement hors ligne :** L'appareil fonctionne dans un environnement isolé, ce qui signifie qu'il est complètement séparé des réseaux et d'Internet. Cette conception élimine le risque d'attaques à distance et garantit que les clés privées restent sécurisées.  
+3. **Communication NFC unidirectionnelle :** Le Kampela Signer communique via un port NFC unidirectionnel, qui accepte uniquement les entrées de données. Cette méthode de communication garantit que les données entrent dans l'appareil sans signaux sortants, renforçant ainsi la sécurité en empêchant les fuites de données potentielles.  
+4. **Affichage en papier électronique :** L'écran en papier électronique monochrome offre un affichage clair et peu gourmand en énergie pour l'interface utilisateur. Ce type d'écran est également moins susceptible de piratage visuel par rapport aux écrans traditionnels.  
+5. **Conception sans batterie :** Le Kampela Signer est conçu pour être sans batterie, tirant son alimentation uniquement par la connexion NFC lorsqu'il est utilisé. Cette fonctionnalité prolonge la durée de vie de l'appareil et réduit les besoins en entretien ou remplacement de la batterie.  
+
+## Spécifications techniques de Kampela Signer  
+**Matériel**  
+- **Format :** Taille de carte de crédit, portable pour un transport facile dans un portefeuille.  
+- **Technologie NFC :** Port NFC unidirectionnel pour une saisie de données sécurisée.  
+- **Affichage :** Écran en papier électronique monochrome pour une sortie claire et sécurisée.  
+- **Puces cryptographiques :** Élément sécurisé prenant en charge les courbes elliptiques utilisées par Substrate.  
+
+**Logiciel**  
+- **Firmware open-source :** Le firmware est entièrement open-source, permettant des audits et des améliorations par la communauté.  
+- **Application compagnon :** Siltti, une application compagnon Android, interagit avec l'appareil pour faciliter les transactions et la gestion des clés.  
+
+## Avantages de Kampela Signer  
+1. **Sécurité renforcée :** En étant hors ligne et sans batterie, le Kampela Signer offre un niveau de sécurité inégalé pour la gestion des clés cryptographiques. L'utilisation d'éléments sécurisés et d'opérations de signature sur puce garantit que les clés ne sont jamais exposées à des menaces potentielles.  
+2. **Transparence et confiance :** En tant que projet open-source, les composants matériels et logiciels de Kampela Signer sont entièrement transparents. Cette ouverture permet des audits communautaires et une amélioration continue, favorisant ainsi la confiance des utilisateurs.  
+3. **Durabilité et fiabilité :** La conception sans batterie garantit une durée de vie opérationnelle plus longue et une fiabilité accrue, faisant du Kampela Signer un choix idéal pour le stockage et la gestion des clés à long terme.  
+
+## Cas d'utilisation de Kampela Signer dans l'écosystème Polkadot  
+Kampela Signer est particulièrement adapté à diverses applications dans l'écosystème Polkadot :  
+1. **Signature de transactions sécurisée :** Kampela Signer peut être utilisé pour signer des transactions sur le réseau Polkadot de manière sécurisée, garantissant que les clés privées restent hors ligne et protégées des menaces en ligne.  
+2. **Staking et gouvernance :** Les utilisateurs participant au staking et à la gouvernance au sein de l'écosystème Polkadot peuvent gérer leurs clés de vote et de staking en toute sécurité en utilisant Kampela Signer, garantissant que leurs contributions restent sécurisées.  
+3. **Stockage à froid :** Pour le stockage à long terme des clés cryptographiques, Kampela Signer offre une solution hautement sécurisée. Son design hors ligne et sans batterie garantit que les clés restent protégées des menaces en ligne et hors ligne.  
+
+### Outils d'intégration et compagnons  
+1. **Application compagnon Siltti**  
+Siltti est une application compagnon Android conçue pour interagir avec Kampela Signer. Elle facilite les transactions et la gestion des clés, offrant une interface utilisateur facile à utiliser pour interagir avec l'appareil.  
+2. **Outil Pilkki Firmware**  
+Le projet Pilkki inclut des outils pour flasher le firmware sur les kits de développement Kampela. Cela permet aux développeurs de mettre à jour et personnaliser le firmware de l'appareil selon leurs besoins.  
+
+### Communauté et contribution open-source  
+Kampela Signer est un projet open-source, encourageant les contributions de la communauté. Le projet est organisé en plusieurs dépôts :  
+- **kampela-firmware** : Contient les sources du firmware et des projets logiciels associés.  
+- **kampela-hardware** : Inclut les schémas de conception du matériel et des fichiers supplémentaires.  
+- **kampela-common** : Une collection de bibliothèques partagées utilisées par les côtés "chaud" et "froid" du projet.  
+- **siltti** : L'application Android compagnon pour l'interaction avec l'appareil.  
+- **docs** : Documentation diversifiée couvrant divers aspects du projet.  
+
+#### Conclusion  
+Le Kampela Signer représente une avancée significative dans la gestion des clés cryptographiques, offrant une solution sécurisée, transparente et fiable, adaptée à l'écosystème Polkadot. Son design hors ligne, sans batterie, combiné à la transparence open-source, en fait un choix idéal pour les utilisateurs cherchant à renforcer la sécurité de leurs actifs numériques. Que ce soit pour la signature de transactions, le staking, la gouvernance ou le stockage à froid, Kampela Signer fournit les outils nécessaires pour naviguer de manière sécurisée et efficace sur le réseau Polkadot. Découvrez Kampela Signer aujourd'hui et faites un pas vers une expérience blockchain plus sécurisée et fiable.  
+
+## Vidéos communautaires de Kampela Signer  
+------------  
+<ShowcaseYouTube  
+  entries={[  
+    {  
+      href: 'https://www.youtube.com/watch?v=0epi-r4ndjA',  
+      title: 'Kampela en action : Signature de transactions et mises à jour du firmware - Sub0 2023',  
+      description: 'une démonstration en direct du flux Kampela (signature de transactions et mises à jour du firmware). Cette présentation est particulièrement utile pour ceux qui s`intéressent aux obstacles et défis rencontrés lors de la création d\'un projet logiciel et matériel FOSS en Rust.'  
+          },  
+  ]} />  

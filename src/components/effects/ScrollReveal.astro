@@ -1,0 +1,78 @@
+---
+/* Scroll Reveal Animation - Fade in elements as they enter viewport */
+export interface Props {
+  /** Delay in milliseconds before revealing the element (default: 0) */
+  delay?: number;
+  /** Additional CSS classes to apply */
+  class?: string;
+}
+
+const { delay = 0, class: className = '' } = Astro.props;
+---
+
+<div class={`scroll-reveal ${className}`} data-delay={delay}>
+  <slot />
+</div>
+
+<script>
+  function initScrollReveal() {
+    // Check if user prefers reduced motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const reveals = document.querySelectorAll('.scroll-reveal');
+
+    if (prefersReducedMotion) {
+      // Immediately show all elements if motion is reduced
+      reveals.forEach(el => el.classList.add('revealed'));
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const delay = parseInt(entry.target.getAttribute('data-delay') || '0');
+            setTimeout(() => {
+              entry.target.classList.add('revealed');
+            }, delay);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      }
+    );
+
+    reveals.forEach((reveal) => observer.observe(reveal));
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollReveal);
+  } else {
+    initScrollReveal();
+  }
+</script>
+
+<style>
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+</style>

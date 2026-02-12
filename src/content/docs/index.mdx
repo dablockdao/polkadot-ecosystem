@@ -1,0 +1,375 @@
+---
+title: Polkadot Ecosystem Hub - Tools, DApps & Resources
+description: Your complete guide to the Polkadot ecosystem. Discover wallets, explorers, DeFi protocols, NFT marketplaces, governance tools, and developer resources across 50+ parachains.
+template: splash
+---
+
+import { ImageCard, LinkButton2 } from '../../components/ImageCard.astro';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+import { Card, CardGrid, LinkCard, LinkButton, FileTree, Tabs, TabItem } from '@astrojs/starlight/components';
+import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import { Image } from 'astro:assets';
+import Hero2 from '/src/components/landing/Hero2.astro';
+import StatsBanner from '/src/components/ui/StatsBanner.astro';
+import FeatureHighlight from '/src/components/ui/FeatureHighlight.astro';
+import QuickStart from '/src/components/ui/QuickStart.astro';
+import Timeline from '/src/components/ui/Timeline.astro';
+import Marquee from '/src/components/ui/Marquee.astro';
+import ScrollReveal from '/src/components/effects/ScrollReveal.astro';
+import { ecosystemStats, ecosystemFeatures, quickStartSteps, keyBenefits, ecosystemTimeline, featuredParachains } from '/src/data/homepage.ts';
+
+<Hero2 />
+
+<StatsBanner stats={ecosystemStats} variant="hero" />
+
+## What is Polkadot?
+Polkadot is a **network of specialized blockchains** working together through shared security. A central **relay chain** coordinates everything while **parachains** add specific capabilities like DeFi, identity, gaming, and more. **XCM** enables seamless cross-chain communication for moving assets and data across the ecosystem.
+
+<ScrollReveal>
+  <FeatureHighlight
+    title="Why Build on Polkadot?"
+    subtitle="A modular, scalable blockchain platform designed for cross-chain composability"
+    features={ecosystemFeatures}
+    columns={3}
+  />
+</ScrollReveal>
+
+<ScrollReveal delay={100}>
+  <QuickStart
+    title="Get Started in 4 Simple Steps"
+    subtitle="New to Polkadot? Follow this guide to join the ecosystem"
+    steps={quickStartSteps}
+  />
+</ScrollReveal>
+
+## Powering 50+ Parachains
+The multi-chain ecosystem built on shared security.
+
+<ScrollReveal delay={150}>
+  <Marquee items={featuredParachains} speed="normal" pauseOnHover={true} />
+</ScrollReveal>
+
+<ScrollReveal delay={200}>
+<CardGrid>
+  <LinkCard
+    title="Tools Directory"
+    href="/tools"
+    description="Wallets, explorers, DAO ops, and developer infrastructure."
+  />
+  <LinkCard
+    title="Dapps Directory"
+    href="/dapps"
+    description="Discover live DeFi, social, gaming, and AI experiences."
+  />
+  <LinkCard
+    title="Community Hub"
+    href="/club"
+    description="Meet DAOs, initiatives, and orgs building with Polkadot."
+  />
+  <LinkCard
+    title="Resource Library"
+    href="/resources"
+    description="Guides, templates, media, and support for faster onboarding."
+  />
+</CardGrid>
+</ScrollReveal>
+
+## How the Ecosystem Works
+
+### Architecture Overview
+* **Relay Chain:** Provides shared security and coordination for the entire network
+* **System Chains:**
+  * **Asset Hub:** Token and NFT issuance with cross-chain compatibility
+  * **Bridge Hub:** Secure connections to Ethereum and other external ecosystems
+* **Parachains:** Specialized blockchains for DeFi, gaming, identity, social, AI, and more
+* **XCM Protocol:** Native messaging layer for cross-chain asset transfers and smart contract calls
+
+<FeatureHighlight
+  title="Additional Benefits"
+  features={keyBenefits}
+  columns={3}
+/>
+
+## Polkadot's Journey
+From vision to reality—explore the key milestones that shaped the ecosystem.
+
+<Timeline entries={ecosystemTimeline} />
+
+&nbsp;
+
+<a id="explore"></a>
+<Tabs>
+  <TabItem label="Tools">
+  
+  ## Polkadot Tools
+Essential infrastructure for interacting with Polkadot—wallets, explorers, DAO tooling, and developer frameworks.  
+
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/Wallets2.png'),
+      href: '/tools/wallets',
+      title: 'Wallets',
+      description: 'Discover the most advanced wallets to store your assets.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/Permissionless.png'),
+      href: '/tools/block-explorers/',
+      title: 'Explorers',
+      description: 'Understand every movement in the network.'
+      },  
+          {
+      thumbnail: import('/src/assets/thumbnails/Referenda.png'),
+      href: '/tools/dao-tools/',
+      title: 'DAO Tools',
+      description: 'The most popular tools to manage DAOs.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/Oracle.png'),
+      href: '/tools/dev/',
+      title: 'Development',
+      description: 'Start your journey as a Polkadot developer.'
+      },
+  ]}
+/>  
+  </TabItem>
+
+  <TabItem label="Dapps">
+  ## Polkadot Dapps
+Explore live DeFi, bridge, gaming, NFT, social, AI, and infrastructure experiences secured by Polkadot parachains.
+
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/Trading.png'),
+      href: '/dapps/defi',
+      title: 'DeFi',
+      description: 'Discover the most popular DeFi dapps in the Polkadot ecosystem.'
+    },
+        {
+      thumbnail: import('/src/assets/thumbnails/DePIN2.png'),
+      href: '/dapps/depin/',
+      title: 'DePin',
+      description: 'Polkadot Ecosystem DePin Projects.'
+      },
+                     {
+      thumbnail: import('/src/assets/thumbnails/inter.png'),
+      href: '/dapps/bridges/',
+      title: 'Bridges',
+      description: 'Discover the Polkadot Ecosystem bridges.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/Gaming2.png'),
+      href: '/dapps/gaming/',
+      title: 'Gaming',
+      description: 'Explore the most popular games.'
+      },
+  ]}
+/>
+&nbsp;
+
+<ShowcaseImage
+entries={[
+                       {
+      thumbnail: import('/src/assets/thumbnails/NFTs.png'),
+      href: '/dapps/nft-marketplaces/',
+      title: 'NFTs',
+      description: 'Explore active NFT marketplaces across the Polkadot ecosystem.'
+      }, 
+ {
+      thumbnail: import('/src/assets/thumbnails/social-media.png'),
+      href: '/dapps/social/',
+      title: 'Social',
+      description: 'Connect with social and creator dapps powered by parachains.'
+      }, 
+    {
+      thumbnail: import('/src/assets/thumbnails/smart-contracts2.png'),
+      href: '/dapps/smart-contracts/',
+      title: 'Smart Contracts',
+      description: 'Find smart-contract ecosystems built on Polkadot and Substrate.'
+      },
+    {
+      thumbnail: import('/src/assets/thumbnails/dApps.png'),
+      href: '/dapps/ai/',
+      title: 'AI',
+      description: 'Browse emerging AI dapps leveraging Polkadot interoperability.'
+      },
+]}
+/>
+  </TabItem>
+
+  <TabItem label="Resources">
+  ## Polkadot Resources
+Access guides, references, templates, and media to onboard faster and keep your teams aligned with Polkadot best practices.
+
+----------------
+<ShowcaseImage
+  entries={[
+    {
+      thumbnail: import('/src/assets/thumbnails/open-source.png'),
+      href: '/resources/guides/',
+      title: 'Guides',
+      description: 'Step-by-step walkthroughs for staking, governance, building, and more.'
+    },
+    {
+      thumbnail: import('/src/assets/thumbnails/Quests.png'),
+      href: '/resources/templates/',
+      title: 'Templates',
+      description: 'Ready-to-use proposal, reporting, and campaign templates.'
+    },
+        {
+      thumbnail: import('/src/assets/thumbnails/Debate.png'),
+      href: '/resources/glossary/',
+      title: 'Glossary',
+      description: 'Quick definitions for core Polkadot terminology and concepts.'
+    },
+    {
+      thumbnail: import('/src/assets/thumbnails/TokensAssets.png'),
+      href: '/resources/faucets/',
+      title: 'Faucets',
+      description: 'Testnet tokens and onboarding flows for builders and testers.'
+    },
+  ]}
+/>
+&nbsp;
+
+  </TabItem>
+
+  <TabItem label="Community">
+  ## Polkadot Community
+The Polkadot Ecosystem Hub highlights the collective strength and innovation driving the network's growth. 
+Explore impactful DAOs and collectives, discover organizations shaping the future of Web3, 
+and connect with key initiatives advancing the ecosystem. 
+For newcomers, the hub offers a comprehensive library of resources to learn, grow, and actively contribute to 
+Polkadot’s vision of a decentralized internet.
+
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/thumbnails/Vote.png'),
+      href: '/club/daos',
+      title: 'DAOs',
+      description: 'Discover the most popular DAOs and Collectives shaping the Polkadot Ecosystem.'
+    },
+                     {
+      thumbnail: import('/src/assets/thumbnails/Economics.png'),
+      href: '/club/orgs/',
+      title: 'Organizations',
+      description: 'All the organizations building the future of internet.'
+      },  
+    {
+      thumbnail: import('/src/assets/thumbnails/Community.png'),
+      href: '/club/initiatives/',
+      title: 'Initiatives',
+      description: 'Community-led programs, events, and grassroots campaigns.'
+      },
+          {
+      thumbnail: import('/src/assets/thumbnails/Treasury.png'),
+      href: '/club/bounties/',
+      title: 'Bounties',
+      description: 'Complete list of live and archived Polkadot bounties.'
+      },
+  ]}
+/>
+  </TabItem>
+</Tabs>
+
+<a id="listproject"></a>
+
+## Essential Tools & DApps
+
+### Popular Wallets
+* **Talisman:** Multi-chain wallet with portfolio dashboard and DeFi integration
+* **SubWallet:** Polkadot-native wallet with extensive parachain support
+* **Nova Wallet:** Mobile-first with built-in staking and governance
+
+### Block Explorers
+* **Subscan:** Multi-network coverage for transactions and account tracking
+* **Statescan:** Open-source explorer focused on Asset Hub and system chains
+
+### Key DApps
+* **Hydration:** Cross-chain DEX with deep liquidity pools
+* **Bifrost:** Liquid staking derivatives (vDOT) and yield strategies
+* **Unique Network:** Advanced NFT platform with nested NFT capabilities
+* **KILT Protocol:** Decentralized identity and verifiable credentials
+* **Moonbeam:** EVM-compatible smart contract platform
+
+### Developer Tools
+* **Polkadot SDK:** Build custom parachains with Rust
+* **ink!:** Rust-based smart contracts for Wasm chains
+* **Subsquid & SubQuery:** Indexing and data query layers
+
+## Quick Start Guide
+
+### 1. Set Up Your Wallet
+Choose a wallet that fits your needs:
+- **Talisman** for dashboard-style multi-chain management
+- **SubWallet** for Polkadot-focused experience
+- **Nova** for mobile-first access
+
+### 2. Get DOT Tokens
+Acquire DOT for transaction fees through exchanges or on-ramps. Keep some in your wallet for gas fees across parachains.
+
+### 3. Explore the Ecosystem
+- Use **Subscan** to track transactions and account activity
+- Visit **Polkassembly** to participate in governance
+- Try **Asset Hub** for cross-chain token management
+
+### 4. Start Building (Developers)
+- **Parachains:** Use Polkadot SDK for custom blockchain logic
+- **Smart Contracts:** Deploy with ink! (Wasm) or Solidity (EVM chains)
+- **Indexing:** Set up Subsquid or SubQuery for data queries
+
+## Key Tips
+* Keep DOT for transaction fees across all chains
+* Always test with small amounts first when bridging
+* Use block explorers to verify all transactions
+* Participate in OpenGov through delegation before direct voting
+
+
+## +Ecosystem Resources:
+-------------
+<CardGrid>
+  <Card title="Polkadot Wiki" icon="open-book">
+    Explore in-depth information on Polkadot's technical principles and key components powering its ecosystem
+    <LinkButton href="https://wiki.polkadot.network" variant="secondary" icon="external" iconPlacement="start" target="_blank" rel="noopener noreferrer">Polkadot Wiki</LinkButton>
+  </Card>
+
+  <Card title="Polkadot Website" icon="information">
+    Discover Polkadot's vision, innovative ecosystem, and its role in the future of decentralized technologies.
+    <LinkButton href="https://polkadot.com/" variant="secondary" icon="external" iconPlacement="start" target="_blank" rel="noopener noreferrer">Polkadot.com</LinkButton>
+  </Card>
+</ CardGrid>
+
+
+## Frequently Asked Questions
+
+**What is Asset Hub?**
+A system parachain for creating and managing tokens and NFTs that work across the entire Polkadot ecosystem.
+
+**How does OpenGov work?**
+Governance proposals are organized into specialized tracks. You can delegate voting power per track to different experts based on their expertise.
+
+**Which wallet is best for beginners?**
+**Talisman** for desktop, **Nova** for mobile, or **SubWallet** for comprehensive Polkadot coverage.
+
+**Can I use Solidity on Polkadot?**
+Yes. Deploy to EVM-compatible parachains like Moonbeam or Astar, or use Foundry-Polkadot for PolkaVM deployment.
+
+**How do I bridge assets to Ethereum?**
+Use Snowbridge for trust-minimized bridging between Polkadot and Ethereum. Always test with small amounts first.
+
+---
+
+## Ready to Build?
+
+Polkadot enables specialized blockchains to work together through shared security and cross-chain messaging. Whether you're a user exploring DeFi, a developer building dApps, or a team launching a parachain, the ecosystem provides the tools and infrastructure you need.
+
+**Get Started:**
+* Browse the [Tools Directory](/tools) for wallets and infrastructure
+* Explore [DApps](/dapps) across DeFi, NFTs, gaming, and more
+* Join the [Community](/club) and participate in governance
+* Access [Resources](/resources) for guides and documentation

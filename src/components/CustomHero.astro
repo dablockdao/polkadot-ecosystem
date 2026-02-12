@@ -1,0 +1,227 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import { Icon } from '@astrojs/starlight/components';
+
+const { data } = Astro.props.entry;
+const { title = data.title, tagline, image, actions = [] } = data.hero || {};
+
+const imageAttrs = {
+	loading: 'eager' as const,
+	decoding: 'async' as const,
+	width: 400,
+	height: 400,
+	alt: image?.alt || '',
+};
+
+let darkImage: ImageMetadata | undefined;
+let lightImage: ImageMetadata | undefined;
+let rawHtml: string | undefined;
+if (image) {
+	if ('file' in image) {
+		darkImage = image.file;
+	} else if ('dark' in image) {
+		darkImage = image.dark;
+		lightImage = image.light;
+	} else {
+		rawHtml = image.html;
+	}
+}
+---
+
+<div class="hero">
+	{
+		(darkImage || rawHtml) && (
+			<div class="hero-html sl-flex">
+				{darkImage && (
+					<>
+						<img src={darkImage.src} {...imageAttrs} class:list={{ 'light:sl-hidden': Boolean(lightImage) }} />
+						{lightImage && <img src={lightImage.src} {...imageAttrs} class="dark:sl-hidden" />}
+					</>
+				)}
+				{rawHtml && <div class="hero-html" set:html={rawHtml} />}
+			</div>
+		)
+	}
+	<div class="sl-flex stack">
+		<div class="sl-flex copy">
+			<h1 id="_top" data-page-title set:html={title} />
+			{tagline && <div class="tagline" set:html={tagline} />}
+		</div>
+		{
+			actions.length > 0 && (
+				<div class="sl-flex actions">
+					{actions.map(({ text, link, variant = 'primary', icon: iconName, ...attrs }) => {
+						// Check if link is external (starts with http:// or https://)
+						const isExternal = link && (link.startsWith('http://') || link.startsWith('https://'));
+
+						// Add target and rel attributes for external links
+						const externalAttrs = isExternal
+							? { target: '_blank', rel: 'noopener noreferrer' }
+							: {};
+
+						return (
+							<a href={link} class={`action ${variant}`} {...externalAttrs} {...attrs}>
+								{iconName && (
+									typeof iconName === 'object' && iconName.name ? (
+										<Icon name={iconName.name} class="icon start" />
+									) : typeof iconName === 'string' ? (
+										<Icon name={iconName} class="icon start" />
+									) : null
+								)}
+								<span>{text}</span>
+							</a>
+						);
+					})}
+				</div>
+			)
+		}
+	</div>
+</div>
+
+<style>
+	.hero {
+		display: grid;
+		align-items: center;
+		gap: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.hero > img,
+	.hero > .hero-html {
+		object-fit: contain;
+		width: min(50%, 12rem);
+		height: auto;
+		margin-inline: auto;
+	}
+
+	.hero > .hero-html img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.stack {
+		flex-direction: column;
+		gap: clamp(1.5rem, calc(1.5rem + 1vw), 2rem);
+		text-align: center;
+	}
+
+	.copy {
+		flex-direction: column;
+		gap: 1rem;
+		align-items: center;
+	}
+
+	.copy > * {
+		max-width: 50ch;
+	}
+
+	h1 {
+		font-size: clamp(var(--sl-text-3xl), calc(0.25rem + 5vw), var(--sl-text-6xl));
+		line-height: var(--sl-line-height-headings);
+		font-weight: 600;
+		color: var(--sl-color-white);
+	}
+
+	.tagline {
+		font-size: clamp(var(--sl-text-base), calc(0.0625rem + 2vw), var(--sl-text-xl));
+		color: var(--sl-color-gray-2);
+	}
+
+	.actions {
+		gap: 1rem 2rem;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.action {
+		gap: 0.5em;
+		align-items: center;
+		border-radius: 999rem;
+		padding: 0.5rem 1.125rem;
+		color: var(--color-text-primary, #FFFFFF);
+		line-height: 1.1875;
+		text-decoration: none;
+		font-size: var(--sl-text-sm);
+		font-weight: 600;
+		display: inline-flex;
+		transition: transform 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+	}
+
+	.action.primary {
+		background: var(--color-accent-primary, #7A6F5F);
+		color: #FFFFFF;
+		box-shadow: 0 4px 14px rgba(122, 111, 95, 0.25);
+	}
+
+	.action.primary:hover {
+		background: color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 85%, white);
+		transform: translateY(-1px);
+		box-shadow: 0 6px 20px rgba(122, 111, 95, 0.35);
+	}
+
+	.action.secondary {
+		border: 1px solid color-mix(in oklab, var(--color-text-primary, #FFFFFF) 20%, transparent);
+		background: transparent;
+		color: var(--color-text-primary, #FFFFFF);
+	}
+
+	.action.secondary:hover {
+		background: color-mix(in oklab, var(--color-text-primary, #FFFFFF) 8%, transparent);
+		border-color: var(--color-accent-primary, #7A6F5F);
+		color: var(--color-accent-primary, #7A6F5F);
+	}
+
+	.action.minimal {
+		padding-inline: 0;
+	}
+
+	.action.minimal:hover {
+		color: var(--color-accent-primary, #7A6F5F);
+	}
+
+	.action .icon {
+		font-size: 1.125em;
+	}
+
+	/* Light theme adjustments */
+	:root[data-theme="light"] .action.primary {
+		color: #FFFFFF;
+	}
+
+	:root[data-theme="light"] .action.secondary {
+		border-color: rgba(0, 0, 0, 0.20);
+		color: #000000;
+	}
+
+	:root[data-theme="light"] .action.secondary:hover {
+		background: rgba(122, 111, 95, 0.08);
+		border-color: var(--color-accent-primary, #7A6F5F);
+		color: var(--color-accent-primary, #7A6F5F);
+	}
+
+	@media (min-width: 50rem) {
+		.hero {
+			grid-template-columns: 7fr 4fr;
+			gap: 3%;
+			padding-block: clamp(2.5rem, calc(1rem + 10vmin), 10rem);
+		}
+
+		.hero > img,
+		.hero > .hero-html {
+			order: 2;
+			width: min(100%, 16rem);
+		}
+
+		.stack {
+			text-align: start;
+		}
+
+		.copy {
+			align-items: flex-start;
+		}
+
+		.actions {
+			justify-content: flex-start;
+		}
+	}
+</style>

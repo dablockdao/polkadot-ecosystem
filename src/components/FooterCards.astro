@@ -1,0 +1,241 @@
+---
+export interface Props {
+  showOnlyTwoCards?: boolean;
+  variant?: 'grey' | 'white';
+}
+
+const { showOnlyTwoCards, variant = 'grey' } = Astro.props;
+
+let data = [
+  {
+    icon: 'team-four',
+    title: 'Polkadot Communities',
+    description:
+      'Join one of the different communities in the Polkadot ecosystem and start your journey.',
+    ctaText:
+      `<a target='_blank' rel='noopener noreferrer' href='https://polkadotecosystem.com/club'>Polkadot Communities</a>`,
+  },
+  {
+    icon: 'help-circle',
+    title: 'Help build this Portal',
+    description:
+      'Help us build this portal by contributing to the codebase or by suggesting improvements.',
+    ctaText:
+      `<a href='https://github.com/dablockdao/polkadot-ecosystem' target='_blank' rel='noopener noreferrer'>Github Repository</a>`,
+  },
+];
+
+if (showOnlyTwoCards) data = data.slice(0, 2);
+
+const colorOptions = {
+  grey: 'card-grey',
+  white: 'card-white',
+};
+---
+
+<section class="c-footer-cards" aria-labelledby="useful-links">
+  <h2 id="useful-links" class="sr-only">Useful links</h2>
+  <ul class="card-list" role="list">
+    {data?.map((item) => (
+      <li class={`card ${colorOptions[variant]}`} role="listitem">
+        <div class="card-body">
+          <span class="card-title">{item.title}</span>
+          <p class="card-description">{item.description}</p>
+        </div>
+        <p class="card-cta" set:html={item.ctaText}></p>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+:root {
+  --accent: var(--sl-color-accent, #ff2670);
+  --fg: var(--sl-color-text, #0b0b0f);
+  --muted: var(--sl-color-text-muted, #6e7391);
+  --hairline: var(--sl-color-hairline, rgba(0,0,0,.12));
+}
+
+/* footer-cards */
+.c-footer-cards {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.c-footer-cards .card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(1rem, 2.5vw, 1.5rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.c-footer-cards .card {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  position: relative;
+  overflow: clip;
+  border-radius: 16px;
+  padding: clamp(1.1rem, 2.2vw, 1.5rem);
+  min-height: 180px;
+  border: 1px solid color-mix(in oklab, var(--fg) 12%, transparent);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  will-change: transform;
+  isolation: isolate;
+}
+
+/* subtle accent halo */
+.c-footer-cards .card::after {
+  content: '';
+  position: absolute;
+  inset: -20% -40% auto -40%;
+  height: 60%;
+  background: radial-gradient(60% 60% at 40% 50%, color-mix(in oklab, var(--accent) 22%, transparent) 0%, transparent 65%);
+  filter: blur(24px);
+  opacity: .35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* sheen */
+.c-footer-cards .card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,0) 40%),
+    linear-gradient(0deg, rgba(255,255,255,.03), rgba(255,255,255,0));
+  opacity: 0;
+  transition: opacity .18s ease;
+  z-index: 1;
+}
+
+.c-footer-cards .card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in oklab, var(--accent) 36%, transparent);
+  box-shadow:
+    0 6px 18px rgba(0,0,0,.14),
+    0 2px 0 0 color-mix(in oklab, var(--accent) 18%, transparent);
+}
+.c-footer-cards .card:hover::before { opacity: 1; }
+
+/* Focus ring when tabbing to the link inside */
+.c-footer-cards .card:focus-within {
+  outline: 0;
+  box-shadow:
+    0 0 0 2px color-mix(in oklab, var(--accent) 55%, transparent),
+    0 8px 24px rgba(0,0,0,.18);
+  border-color: color-mix(in oklab, var(--accent) 55%, transparent);
+}
+
+/* content layers */
+.c-footer-cards .card-body,
+.c-footer-cards .card-cta {
+  position: relative;
+  z-index: 2;
+}
+
+.c-footer-cards .card-title {
+  display: block;
+  font: 700 1.15rem/1.35 Optima, system-ui, sans-serif;
+  letter-spacing: .2px;
+  margin: 0 0 .35rem 0;
+}
+
+.c-footer-cards .card-description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* CTA as button */
+.c-footer-cards .card-cta {
+  margin: clamp(.9rem, 1.5vw, 1.1rem) 0 0 0;
+}
+
+.c-footer-cards .card-cta a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .6rem .9rem;
+  border-radius: 12px;
+  border: 1px solid color-mix(in oklab, var(--accent) 65%, transparent);
+  text-decoration: none;
+  font: 600 0.98rem/1 Optima, system-ui, sans-serif;
+  transition: transform .15s ease, background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+
+.c-footer-cards .card-cta a::after {
+  content: '↗';
+  font-size: 1em;
+  line-height: 1;
+  transform: translateY(1px);
+  transition: transform .15s ease;
+}
+
+.c-footer-cards .card-cta a:hover {
+  transform: translateY(-1px);
+  background: color-mix(in oklab, var(--accent) 10%, transparent);
+  border-color: color-mix(in oklab, var(--accent) 80%, transparent);
+  box-shadow: 0 4px 14px color-mix(in oklab, var(--accent) 20%, transparent);
+}
+
+.c-footer-cards .card-cta a:hover::after { transform: translate(2px, 1px); }
+
+.c-footer-cards .card-cta a:focus-visible {
+  outline: 0;
+  box-shadow:
+    0 0 0 2px color-mix(in oklab, var(--accent) 70%, transparent),
+    0 4px 14px color-mix(in oklab, var(--accent) 25%, transparent);
+}
+
+/* VARIANTS (light + dark aware) */
+.c-footer-cards .card-white {
+  background:
+    linear-gradient(180deg, #ffffff, #f6f8fb);
+  color: color-mix(in oklab, var(--fg) 82%, black);
+}
+
+.c-footer-cards .card-grey {
+  background:
+    linear-gradient(180deg, #f2f4f7, #e9eef5);
+  color: color-mix(in oklab, var(--fg) 82%, black);
+}
+
+/* Dark mode overrides */
+:root[data-theme='dark'] .c-footer-cards .card-white {
+  background: linear-gradient(180deg, #1a1f2a, #0f1420);
+  color: #d7d9df;
+  border-color: color-mix(in oklab, #d7d9df 14%, transparent);
+}
+:root[data-theme='dark'] .c-footer-cards .card-grey {
+  background: linear-gradient(180deg, #1a1d29, #0c0f16);
+  color: #d7d9df;
+  border-color: color-mix(in oklab, #d7d9df 12%, transparent);
+}
+:root[data-theme='dark'] .c-footer-cards .card-description {
+  color: color-mix(in oklab, #d7d9df 75%, #9aa3b2);
+}
+
+/* Titles stay high-contrast for both themes */
+.c-footer-cards .card-title { color: inherit; }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .c-footer-cards .card {
+    padding: 1.15rem;
+  }
+}
+
+/* Motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .c-footer-cards .card,
+  .c-footer-cards .card::before,
+  .c-footer-cards .card-cta a {
+    transition: none !important;
+  }
+}
+</style>

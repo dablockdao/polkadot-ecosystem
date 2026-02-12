@@ -1,0 +1,176 @@
+---
+title: Hyperbridge
+description: Hyperbridge is a cutting-edge cross-chain interoperability solution within the Polkadot ecosystem, enabling seamless and secure communication across different blockchain networks.
+sidebar:
+    label: ✪ Hyperbridge
+    order: 1
+hero:
+  tagline: Cross-chain interoperability solution within the Polkadot ecosystem.
+  image: 
+    file: ../../../../assets/dapps/bridges/hyperbridge.png
+  actions:
+    - text: Dapp
+      link: https://app.hyperbridge.network/
+      icon: external
+    - text: Docs
+      link: https://docs.hyperbridge.network/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+## Hyperbridge: Polkadot’s Verifiable Interoperability Coprocessor
+
+Hyperbridge is Polkadot’s next-gen, verifiable cross-chain interoperability layer. It pairs an **interoperability coprocessor** with the **Interoperable State Machine Protocol (ISMP)** to deliver HTTP-like requests (GET/POST) across heterogeneous chains with cryptographic proofs, complementing XCM and trustless light-client bridges such as Snowbridge. Updated **September 2025**.
+
+## Why Hyperbridge matters now
+Polkadot already offers secure interoperability for **parachains** via **XCM/XCMP**, but those are optimized for communications inside the shared-security domain. Teams still need **cryptographically verifiable** connectivity *beyond* Polkadot—across different chains, VMs, and consensus models—without trusting multisig bridges. **Hyperbridge** fills this gap with a proof-centric design and an HTTP-like developer experience, sitting alongside trustless light-client bridges (e.g., **Snowbridge**) within Polkadot’s **Bridge Hub** architecture.
+
+## ELI5: Hyperbridge in a minute
+* Think of Hyperbridge as a **universal translator with receipts**.
+* You send a **GET** (read state) or **POST** (deliver data/trigger logic) to another chain.
+* A **coprocessor** does the heavy cryptography off-chain, then posts **verifiable proofs on-chain**.
+* Result: cross-chain actions that are **auditable, permissionless, and general-purpose**—across EVMs, Substrate chains, and more.
+
+## How Hyperbridge works
+
+### 1) Interoperability coprocessor
+Verifying **consensus**, **state proofs**, and **state transitions** directly on-chain can be costly. Hyperbridge adopts a **coprocessor model**: perform the verification workload off-chain and submit succinct proofs and outcomes **on-chain** for verification. This aims to deliver **full-node-level assurances** while scaling to many chains.
+
+### 2) ISMP (Interoperable State Machine Protocol)
+**ISMP** provides a familiar, **HTTP-like** API:
+
+* **GET:** verified storage reads from a counterparty chain.
+* **POST:** dispatch arbitrary payloads to trigger logic on a destination chain.
+  ISMP standardizes cross-chain requests and responses, so multi-chain apps feel like modern web integrations—only with cryptographic guarantees.
+
+**Developer note:** Hyperbridge offers SDKs for Polkadot SDK chains (parachains/solochains) to plug into ISMP and connect with a network of supported chains and consensus clients.
+
+### 3) Bridge Hub’s role
+**Bridge Hub** is a system parachain dedicated to hosting trustless bridges (e.g., **Snowbridge** for Ethereum) and generalized interop frameworks like **Hyperbridge**. It concentrates verification logic, pallets, and routing so the wider ecosystem can rely on a dedicated, auditable venue for cross-ecosystem connectivity.
+
+## When to use Hyperbridge vs XCM vs Snowbridge
+| Scenario                                                          | Use                    | Why                                                                                                                        |
+| ----------------------------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Parachain ↔ parachain messaging inside Polkadot                   | **XCM/XCMP**           | Native, fast, designed for in-ecosystem messages under shared security.                                                    |
+| Polkadot ↔ Ethereum (assets & general messages)                   | **Snowbridge**         | **Light-client** bridge with no multisigs; built and governed in-ecosystem.                                                |
+| Polkadot ↔ multiple external chains (reads/writes; EVM & non-EVM) | **Hyperbridge (ISMP)** | Generalized **proof-driven** interop with HTTP-like semantics; aims for full-node-level guarantees via coprocessor proofs. |
+
+## Key features
+
+* **Generalized messaging:** ISMP **GET/POST** supports both **read-only** queries and **state-changing** calls across chains.
+* **Proof-centric security:** Off-chain coprocessor posts succinct proofs on-chain; verification targets **full-node-level** assurances.
+* **Permissionless relayers:** Anyone can run **consensus** and **messaging** relayers; no whitelists required.
+* **Polkadot-native integration:** Drop-in experience for **Polkadot SDK** chains, extendable to external networks with the right clients.
+* **Bridge Hub alignment:** Co-located with **Snowbridge** and other trustless primitives on Bridge Hub for a consistent, auditable surface.
+
+## Feature comparison table
+| Capability           | **Hyperbridge (ISMP)**                              | **Snowbridge**                                  | **XCM/XCMP**                           |
+| -------------------- | --------------------------------------------------- | ----------------------------------------------- | -------------------------------------- |
+| Primary scope        | Multichain messaging (EVM & non-EVM)                | Polkadot ↔ Ethereum                             | Intra-Polkadot (parachain ↔ parachain) |
+| Security model       | Coprocessor + on-chain proof verification           | Dual light clients (Ethereum/Polkadot)          | Shared security under the relay chain  |
+| API surface          | HTTP-like **GET/POST**                              | Token transfers & general messaging             | Rich intra-ecosystem instructions      |
+| Operator set         | **Permissionless** relayers (consensus & messaging) | Permissionless relayers + on-chain verification | Validators/collators under Polkadot    |
+| Hosted on Bridge Hub | **Yes**                                             | **Yes**                                         | N/A (protocol layer across parachains) |
+
+## Developer quickstart (step-by-step)
+> **Goal:** From a Polkadot SDK parachain, perform a **verified GET** (read) from another chain’s storage and a **POST** (write) to trigger logic on a target app.
+
+1. **Add ISMP dependencies**
+   Include Hyperbridge’s ISMP SDK/crate(s) for your runtime or off-chain worker. Ensure your chain exposes the required pallets/hooks for ISMP message handling.
+
+2. **Register the counterparty**
+   Configure the target chain’s identifier, client type, and verification parameters in your chain’s config. Choose the **consensus client** appropriate for the counterparty (e.g., Ethereum, Substrate-based, rollup).
+
+3. **Spin up relayers**
+   Run a **consensus relayer** (feeds finalized headers/proofs) and a **messaging relayer** (transports requests/responses). These are **permissionless**—no whitelisting required. Add health checks and metrics.
+
+4. **Compose a GET**
+   Build an ISMP **GET** specifying the storage key(s), block context, proof type, and timeout. Submit the request; your chain verifies the returned proof before acting on the data.
+
+5. **Compose a POST**
+   Build an ISMP **POST** with the destination handler and payload. On delivery, the destination chain executes and returns a receipt (plus proof of inclusion).
+
+6. **Handle receipts & errors**
+   Implement handlers for **success**, **timeout**, and **fraud** proofs. Emit events/metrics; consider app-level penalties for misbehavior where appropriate.
+
+7. **Harden & ship**
+   Add replay protection, idempotency, and gas/weight budgets. Load-test relayer throughput and proof sizes before enabling on mainnet.
+
+## Example: Trustless cross-chain storage read
+**Use case:** A DeFi parachain wants to **verify an oracle price** from an external L2 rollup *without trusting a third party*.
+**Flow:**
+1. Parachain composes an **ISMP GET** targeting the rollup’s price feed storage.
+2. Consensus relayer submits finalized headers; messaging relayer carries the GET.
+3. Rollup responds with the storage value **plus a state proof**.
+4. Parachain verifies the proof on-chain via Hyperbridge’s coprocessor model and only then updates its risk parameters.
+
+**Outcome:** A verifiable, auditable, **no-multisig** data fetch—ideal for risk-sensitive logic (liquidations, LTV, insurance).
+
+## Common pitfalls & tips
+* **Assuming “bridge = token transfer only.”** Hyperbridge is **general-purpose**: use GET for *reads* and POST for *writes*, not just asset moves.
+* **Forgetting proof lifecycle.** Implement robust handling for **timeouts**, **challenge/fraud proofs**, and **replay protection**.
+* **Under-budgeting weight/gas.** Proof verification and message execution can be heavy—budget conservatively and monitor **proof sizes**.
+* **Ignoring liveness.** Run **redundant relayers** (geo-distributed); set health checks and alerting for both consensus and messaging paths.
+* **Conflating XCM with external interop.** XCM is excellent inside Polkadot; for **external** reads/writes or non-parachain targets, prefer Hyperbridge or Snowbridge as appropriate.
+* **Not leveraging Bridge Hub.** Centralizing trustless verification on **Bridge Hub** simplifies audits and upgrades.
+
+## FAQs
+**1) How is Hyperbridge different from Snowbridge?**
+Snowbridge is a **Polkadot ↔ Ethereum** light-client bridge. Hyperbridge is a **generalized**, proof-driven interop layer using ISMP with **GET/POST** across many chains. They’re complementary and both align with **Bridge Hub**.
+
+**2) What exactly is ISMP?**
+The **Interoperable State Machine Protocol** exposes an **HTTP-like** interface (GET/POST) for verifiable cross-chain reads/writes.
+
+**3) Do I need permission to run a relayer?**
+No. Hyperbridge’s design supports **permissionless** messaging and consensus relayers; there is no whitelisting requirement.
+
+**4) Where does Hyperbridge “live” in Polkadot?**
+It integrates with **Polkadot SDK** chains and is intended to operate via **Bridge Hub**, the system parachain hosting trustless interop.
+
+**5) Is Hyperbridge live on Polkadot?**
+It is presented in the ecosystem as a fully on-chain, verifiable multichain bridge within the trustless interoperability stack. Check official ecosystem announcements for current deployment status.
+
+**6) How does this relate to XCM?**
+**XCM/XCMP** remains the best tool for **parachain ↔ parachain** messaging. Hyperbridge addresses generalized **external** interoperability with proof verification.
+
+**7) What chains can Hyperbridge talk to?**
+Any chain for which an appropriate **consensus client** and **state-proof** format are supported by ISMP and the coprocessor.
+
+**8) Is this financial advice?**
+No. Interop workflows can involve token movements; this is educational content only.
+
+## Conclusion
+**Hyperbridge** brings **verifiable, developer-friendly** interoperability to Polkadot and beyond. If you’re building multi-chain apps that rely on **trusted data or remote execution**, ISMP’s **GET/POST** pattern and the coprocessor’s **proof guarantees** can simplify your architecture while improving security.
+
+
+## Hyperbridge Community Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=lrcNyAb_rm8',
+      title: 'Seun Lanlege: Enter Hyperbridge - Secure Communication Cross-chain ',
+      description: 'Seun discusses transforming Polkadot into a coprocessor for secure, cross-chain interaction without compromise. He dives into the state of blockchain adoption, the technology of Polkadot & a vision for Web3.',
+
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=wuuHpjRqmQM',
+      title: 'Hyper-scaling Cross-chain Compute',
+      description: 'We discuss the promises of Hyperbridge, the impending launch of Mainnet, the token bridge available on day one & extra usecases beyond bridging! We talk about the limits of verifiable proofs with some tech stacks, ISMP & the power of individual agents in decentralized networks.',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=lcD54lC-Hm8',
+      title: 'What Is Hyperbridge? Unveiling The Future Of Cross-chain Interoperability',
+      description: 'Hyperbridge, a Polkadot-backed cross-chain protocol to allow users to transfer data and assets between standalone blockchains.',
+    },
+        {
+        href: 'https://www.youtube.com/watch?v=1sK67-JJIks',
+      title: 'How To Transfer Assets To Polkadot With Hyperbridge',
+      description: ' tutorial about using Hyperbridge, a Polkadot-backed cross-chain protocol to allow users to transfer data and assets between standalone blockchains.',
+    },
+  ]} />
+
+
+<iframe allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/hZHgBEL6_ZM?si=3400ScEhqKNAOLqf" title="YouTube video player" width="560"></iframe>

@@ -1,0 +1,69 @@
+---
+title: Smart Contract di Polkadot 
+description: Esplora tutti i progetti di Smart Contract dell'ecosistema Polkadot.
+tableOfContents: false
+sidebar: 
+    label: Smart Contracts
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Le piattaforme di smart contract come Moonbeam su Polkadot forniscono un potente ecosistema per costruire applicazioni decentralizzate. Progettate per essere compatibili con Ethereum, offrono un'implementazione senza interruzioni degli smart contract beneficiando della scalabilità, sicurezza e interoperabilità cross-chain di Polkadot. Queste piattaforme offrono agli sviluppatori strumenti flessibili e una rete in crescita di soluzioni decentralizzate interoperabili.
+
+## Ecosistemi di Smart Contract su Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/dapps/ecos/moonbeam-network.png'),
+      href: '/dapps/smart-contracts/moonbeam-network/',
+      title: 'Moonbeam Network',
+    },
+                     {
+      thumbnail: import('/src/assets/dapps/rwa/energy-web.png'),
+      href: '/dapps/smart-contracts/energy-webx/',
+      title: 'Energy Web X',
+      },  
+    {
+      thumbnail: import('/src/assets/dapps/ecos/aleph-zero.png'),
+      href: '/dapps/smart-contracts/aleph-zero/',
+      title: 'Aleph Zero',
+      },
+              {
+      thumbnail: import('/src/assets/dapps/ecos/astar-network.png'),
+      href: '/dapps/smart-contracts/astar-network/',
+      title: 'Astar Network',
+    },
+  ]}
+/>
+
+## Video
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=1nJMz4992uU',
+      title: 'Cosa c è di nuovo nella Moonbeam dApp?',
+      description: 'Negli ultimi anni sono state lanciate molte nuove funzionalità nella Moonbeam dApp. Scopriamone alcune in questo video!',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=CLKmiM6Lb2Y',
+      title: 'Come fare staking di GLMR e guadagnare ricompense',
+      description: 'In questo tutorial passo-passo, imparerai come fare staking di GLMR e guadagnare ricompense sulla Moonbeam DApp.',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=lUFjNrMP6Rk',
+      title: 'Cos è Aleph Zero?',
+      description: 'Alla base, Aleph Zero è privacy–come la desideri. Questo significa il livello di privacy che ti aspetti–gestendo i tuoi dati in modo privato. Ma è anche una delle blockchain ZK layer 1 più veloci nello spazio. In questo video sui fondamenti di Aleph Zero, esploriamo la visione unica di Aleph Zero come leader L1 nello spazio web3.',
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=8ij_lhFpJaI',
+      title: 'Guida XVM - come utilizzare ink! SDK per chiamare EVM dai contratti WASM',
+      description: 'In questo tech talk viene presentata una guida su XVM con l utilizzo di Ink! Smart Contracts SDK per chiamare EVM dai contratti WASM.',
+    }
+  ]}
+/>

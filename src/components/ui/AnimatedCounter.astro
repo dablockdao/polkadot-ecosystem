@@ -1,0 +1,146 @@
+---
+/* Animated Counter - Counts up when scrolled into view */
+export interface Props {
+  /** Target value to count to */
+  value: number;
+  /** Suffix to append (e.g., "+", "K", "M", "B") */
+  suffix?: string;
+  /** Prefix to prepend (e.g., "$", "€") */
+  prefix?: string;
+  /** Duration of animation in milliseconds (default: 2000) */
+  duration?: number;
+  /** Number of decimal places (default: 0) */
+  decimals?: number;
+  /** Additional CSS classes */
+  class?: string;
+}
+
+const {
+  value,
+  suffix = '',
+  prefix = '',
+  duration = 2000,
+  decimals = 0,
+  class: className = ''
+} = Astro.props;
+
+// Generate unique ID for this counter
+const counterId = `counter-${Math.random().toString(36).substring(2, 11)}`;
+---
+
+<span
+  class={`animated-counter ${className}`}
+  data-id={counterId}
+  data-value={value}
+  data-duration={duration}
+  data-decimals={decimals}
+  data-prefix={prefix}
+  data-suffix={suffix}
+>
+  {prefix}{value}{suffix}
+</span>
+
+<script>
+  interface CounterElement extends HTMLElement {
+    dataset: {
+      id: string;
+      value: string;
+      duration: string;
+      decimals: string;
+      prefix: string;
+      suffix: string;
+    };
+  }
+
+  function initCounters() {
+    const counters = document.querySelectorAll('.animated-counter') as NodeListOf<CounterElement>;
+
+    // Check if user prefers reduced motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const counter = entry.target as CounterElement;
+
+            // If reduced motion, just show the final value
+            if (prefersReducedMotion) {
+              const finalValue = parseFloat(counter.dataset.value);
+              const decimals = parseInt(counter.dataset.decimals);
+              const prefix = counter.dataset.prefix || '';
+              const suffix = counter.dataset.suffix || '';
+              counter.textContent = `${prefix}${finalValue.toFixed(decimals)}${suffix}`;
+              observer.unobserve(counter);
+              return;
+            }
+
+            animateCounter(counter);
+            observer.unobserve(counter);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+        rootMargin: '0px'
+      }
+    );
+
+    counters.forEach((counter) => observer.observe(counter));
+  }
+
+  function animateCounter(element: CounterElement) {
+    const target = parseFloat(element.dataset.value);
+    const duration = parseInt(element.dataset.duration);
+    const decimals = parseInt(element.dataset.decimals);
+    const prefix = element.dataset.prefix || '';
+    const suffix = element.dataset.suffix || '';
+
+    const start = 0;
+    const startTime = performance.now();
+
+    function update(currentTime: number) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // Easing function (easeOutExpo)
+      const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
+
+      const current = start + (target - start) * easeProgress;
+
+      element.textContent = `${prefix}${current.toFixed(decimals)}${suffix}`;
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      }
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  // Initialize on page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCounters);
+  } else {
+    initCounters();
+  }
+
+  // Re-initialize on view transitions (Astro specific)
+  document.addEventListener('astro:page-load', initCounters);
+</script>
+
+<style>
+.animated-counter {
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum';
+  transition: color 0.3s ease;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .animated-counter {
+    animation: none !important;
+  }
+}
+</style>

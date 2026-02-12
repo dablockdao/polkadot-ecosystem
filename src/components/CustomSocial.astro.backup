@@ -1,0 +1,470 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/SocialIcons.astro';
+const props = Astro.props as Props;
+---
+
+<nav class="topMenu2" role="navigation" aria-label="Main">
+  <button class="menuToggle" aria-controls="topMenu2-list" aria-expanded="false">
+    Menu
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <ul class="menu" id="topMenu2-list" data-open="false">
+    <li class="has-sub">
+      <a class="topLink" href="/tools/" aria-haspopup="true" aria-expanded="false">Tools</a>
+      <button class="submenuToggle" aria-label="Expand Tools">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="/tools/wallets">Wallets</a></li>
+        <li><a href="/tools/block-explorers">Explorers</a></li>
+        <li><a href="/tools/dao-tools">Governance</a></li>
+        <li><a href="/tools/dev">Development</a></li>
+        <li><a href="/tools/miscellaneous">Miscellaneous</a></li>
+      </ul>
+    </li>
+
+    <li class="has-sub">
+      <a class="topLink" href="/dapps/" aria-haspopup="true" aria-expanded="false">Dapps</a>
+      <button class="submenuToggle" aria-label="Expand Dapps">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="/dapps/defi">DeFi</a></li>
+        <li><a href="/dapps/gaming">Gaming</a></li>
+        <li><a href="/dapps/bridges">Bridges</a></li>
+        <li><a href="/dapps/depin">DePin</a></li>
+        <li><a href="/dapps/social">Social</a></li>
+      </ul>
+    </li>
+
+    <li class="has-sub">
+      <a class="topLink" href="/club/" aria-haspopup="true" aria-expanded="false">Community</a>
+      <button class="submenuToggle" aria-label="Expand Community">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="/club/bounties">Bounties</a></li>
+        <li><a href="/club/initiatives">Initiatives</a></li>
+        <li><a href="/club/collectives">Collectives</a></li>
+        <li><a href="/club/daos">DAOs</a></li>
+        <li><a href="/club/orgs">Orgs</a></li>
+      </ul>
+    </li>
+
+    <li class="has-sub">
+      <a class="topLink" href="/resources/" aria-haspopup="true" aria-expanded="false">Resources</a>
+      <button class="submenuToggle" aria-label="Expand Resources">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <ul class="submenu">
+        <li><a href="/resources/media/">Media</a></li>
+        <li><a href="/resources/guides/">Guides</a></li>
+        <li><a href="/resources/templates">Templates</a></li>
+        <li><a href="/resources/glossary">Glossary</a></li>
+        <li><a href="/resources/faucets">Faucets</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<Default {...props}><slot /></Default>
+
+<style>
+/* CSS Variables */
+:root {
+  --nav-bg: var(--sl-color-bg, #0b0b0f);
+  --nav-bg-soft: var(--sl-color-bg-soft, #121219);
+  --nav-text: var(--sl-color-text, #e8e8ef);
+  --nav-muted: var(--sl-color-text-muted, #aeb7cb);
+  --nav-hairline: rgba(122, 111, 95, 0.2);
+  --nav-accent: #7A6F5F;
+  --nav-radius: 12px;
+  --nav-pad-x: clamp(0.5rem, 1.2vw, 0.9rem);
+  --nav-pad-y: 0.6rem;
+  --nav-gap: clamp(0.25rem, 1.2vw, 0.75rem);
+  --nav-z: 50;
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.25), 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Navigation Container */
+.topMenu2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: var(--nav-radius);
+  margin: 0 15px 0 35px;
+  gap: var(--nav-gap);
+  position: relative;
+}
+
+/* Menu Toggle Button (Mobile) */
+.topMenu2 .menuToggle {
+  display: none;
+  appearance: none;
+  border: 1px solid var(--nav-hairline);
+  background: var(--nav-bg-soft);
+  color: var(--nav-text);
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.topMenu2 .menuToggle:hover {
+  background: rgba(122, 111, 95, 0.15);
+  border-color: rgba(122, 111, 95, 0.4);
+}
+
+.topMenu2 .menuToggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Main Menu List */
+.topMenu2 .menu {
+  list-style: none;
+  display: flex;
+  gap: var(--nav-gap);
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.topMenu2 .menu > li {
+  position: relative;
+}
+
+/* Top Level Links */
+.topMenu2 .topLink {
+  color: var(--nav-text) !important;
+  padding: var(--nav-pad-y) var(--nav-pad-x);
+  border-radius: var(--nav-radius);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+  font-family: 'Helvetica', sans-serif !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.topMenu2 .topLink:hover,
+.topMenu2 .topLink:focus-visible {
+  background: rgba(122, 111, 95, 0.15);
+  color: #7A6F5F !important;
+  outline: none;
+  transform: translateY(-1px);
+}
+
+/* Dropdown Arrow Indicator */
+.topMenu2 .has-sub > .topLink::after {
+  content: "▾";
+  font-size: 0.8em;
+  line-height: 1;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  opacity: 0.9;
+}
+
+/* Submenu Styling */
+.topMenu2 .submenu,
+.topMenu2 .submenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.topMenu2 .submenu li::marker {
+  content: "";
+}
+
+.topMenu2 .submenu li::before {
+  content: none !important;
+}
+
+.topMenu2 .submenu {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 6px);
+  min-width: 200px;
+  background: var(--nav-bg);
+  border: 1px solid var(--nav-hairline);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  padding: 0.4rem;
+  display: grid;
+  gap: 0.2rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s step-end;
+  z-index: var(--nav-z);
+  backdrop-filter: blur(12px);
+}
+
+/* Submenu Links */
+.topMenu2 .submenu a {
+  display: block;
+  margin: 0 !important;
+  box-sizing: border-box;
+  white-space: nowrap;
+  color: var(--nav-text) !important;
+  font-family: 'Helvetica', sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 0.88rem !important;
+  line-height: 1.45;
+  letter-spacing: 0;
+  padding: 0.5rem 0.8rem !important;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.topMenu2 .submenu a:hover,
+.topMenu2 .submenu a:focus-visible {
+  background: rgba(122, 111, 95, 0.2);
+  color: #7A6F5F !important;
+  transform: translateX(2px);
+}
+
+/* Show Submenu on Hover/Focus */
+.topMenu2 .has-sub:hover > .submenu,
+.topMenu2 .has-sub:focus-within > .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s step-start;
+}
+
+.topMenu2 .has-sub:hover > .topLink::after,
+.topMenu2 .has-sub:focus-within > .topLink::after {
+  transform: rotate(180deg);
+}
+
+/* Hide Mobile Submenu Toggle on Desktop */
+.topMenu2 .submenuToggle {
+  display: none !important;
+}
+
+/* Light Theme Adjustments */
+:root[data-theme='light'] .topMenu2 .menuToggle {
+  background: #FFFFFF;
+  color: #333333;
+  border-color: rgba(122, 111, 95, 0.25);
+}
+
+:root[data-theme='light'] .topMenu2 .menuToggle:hover {
+  background: rgba(122, 111, 95, 0.1);
+}
+
+:root[data-theme='light'] .topMenu2 .topLink {
+  color: #333333 !important;
+}
+
+:root[data-theme='light'] .topMenu2 .topLink:hover {
+  color: #5A4F3F !important;
+  background: rgba(122, 111, 95, 0.1);
+}
+
+:root[data-theme='light'] .topMenu2 .submenu {
+  background: #FFFFFF;
+  border-color: rgba(122, 111, 95, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme='light'] .topMenu2 .submenu a {
+  color: #333333 !important;
+}
+
+:root[data-theme='light'] .topMenu2 .submenu a:hover {
+  color: #5A4F3F !important;
+  background: rgba(122, 111, 95, 0.1);
+}
+
+/* Mobile/Tablet Responsive Design */
+@media (max-width: 900px) {
+  .topMenu2 {
+    border: 1px solid var(--nav-hairline);
+    background: var(--nav-bg);
+    border-radius: 16px;
+    padding: 0.4rem;
+    margin: 0 15px;
+    width: calc(100% - 30px);
+    flex-direction: column;
+    gap: 0.4rem;
+    backdrop-filter: blur(12px);
+  }
+
+  .topMenu2 .menuToggle {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .topMenu2 .menu {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    width: 100%;
+  }
+
+  .topMenu2 .menu[data-open="true"] {
+    display: flex;
+  }
+
+  .topMenu2 .has-sub {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .topMenu2 .has-sub > .topLink {
+    padding: 0.75rem 0.9rem;
+    border-radius: 10px;
+  }
+
+  .topMenu2 .has-sub > .topLink::after {
+    display: none;
+  }
+
+  .topMenu2 .submenuToggle {
+    display: inline-flex !important;
+    margin-right: 0.2rem;
+    appearance: none;
+    border: 1px solid var(--nav-hairline);
+    background: var(--nav-bg-soft);
+    color: var(--nav-text);
+    border-radius: 10px;
+    padding: 0.55rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .topMenu2 .submenuToggle:hover {
+    background: rgba(122, 111, 95, 0.15);
+  }
+
+  .topMenu2 .submenuToggle svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .topMenu2 .submenu {
+    position: static;
+    box-shadow: none;
+    border: 1px solid var(--nav-hairline);
+    margin: 0.25rem 0.1rem 0.4rem;
+    padding: 0.3rem;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+  }
+
+  .topMenu2 li[data-open="true"] > .submenu {
+    display: grid;
+  }
+
+  :root[data-theme='light'] .topMenu2 {
+    background: #FFFFFF;
+    border-color: rgba(122, 111, 95, 0.25);
+  }
+
+  :root[data-theme='light'] .topMenu2 .submenuToggle {
+    background: #F5F5F5;
+    color: #333333;
+  }
+}
+
+@media (max-width: 480px) {
+  .topMenu2 {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+    padding: 0.3rem;
+  }
+
+  .topMenu2 .menuToggle {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.6rem;
+  }
+
+  .topMenu2 .topLink {
+    font-size: 0.85rem;
+    padding: 0.65rem 0.8rem;
+  }
+
+  .topMenu2 .submenu a {
+    font-size: 0.82rem !important;
+    padding: 0.45rem 0.7rem !important;
+  }
+}
+</style>
+
+<script>
+(() => {
+  const nav = document.querySelector('.topMenu2');
+  if (!nav) return;
+
+  const menu = nav.querySelector('#topMenu2-list');
+  const menuBtn = nav.querySelector('.menuToggle');
+
+  // Toggle main menu
+  menuBtn && menuBtn.addEventListener('click', () => {
+    const isOpen = menu && menu.getAttribute('data-open') === 'true';
+    if (menu && menuBtn) {
+      menu.setAttribute('data-open', String(!isOpen));
+      menuBtn.setAttribute('aria-expanded', String(!isOpen));
+    }
+  });
+
+  // Handle submenus
+  nav.querySelectorAll('.has-sub').forEach((li) => {
+    const link = li.querySelector('.topLink');
+    const btn = li.querySelector('.submenuToggle');
+
+    // Desktop hover behavior
+    li.addEventListener('mouseenter', () => link && link.setAttribute('aria-expanded', 'true'));
+    li.addEventListener('mouseleave', () => link && link.setAttribute('aria-expanded', 'false'));
+
+    // Mobile click behavior
+    btn && btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const open = li.getAttribute('data-open') === 'true';
+      li.setAttribute('data-open', String(!open));
+      link && link.setAttribute('aria-expanded', String(!open));
+    });
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+    if (menu) menu.setAttribute('data-open', 'false');
+    nav.querySelectorAll('.has-sub').forEach((li) => {
+      li.setAttribute('data-open', 'false');
+      const link = li.querySelector('.topLink');
+      link && link.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+</script>

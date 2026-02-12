@@ -1,0 +1,66 @@
+---
+title: 'Governance Bot'
+description: Le ChaosDAO Governance Bot automatise les votes sur Polkadot/Kusama, favorisant une prise de décision transparente et collaborative au sein des communautés décentralisées.
+hero:
+  tagline:  Révolutionner la prise de décision décentralisée sur Polkadot et Kusama.
+  image: 
+    file: ../../../../../assets/hub/daos/chaosdao.png
+  actions:
+    - text: Github
+      link: https://github.com/ChaosDAO-org/InternalGov-2.0
+      icon: external
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+Une gouvernance efficace est primordiale. ChaosDAO introduit un bot de gouvernance conçu pour améliorer la prise de décision collaborative et rationaliser le processus de vote sur les écosystèmes Polkadot et Kusama. En exploitant l'automatisation et en favorisant l'engagement de la communauté, cet outil garantit une approche transparente, efficace et inclusive de la gouvernance décentralisée.
+
+## Aperçu du Governance Bot
+Le ChaosDAO Governance Bot est une solution robuste conçue pour surveiller les référendums de gouvernance sur les réseaux Polkadot et Kusama. Sa fonction principale est de créer des fils de discussion dédiés à chaque référendum, permettant aux membres de la communauté de délibérer avant que le compte proxy ne vote au nom du collectif. En s'intégrant parfaitement à Discord, le bot facilite une plateforme organisée et interactive pour que les parties prenantes partagent leurs idées et atteignent un consensus.
+
+## Fonctionnalités principales du Governance Bot :
+1. **Suivi automatisé des référendums** : Le bot suit en permanence les propositions de gouvernance, assurant des mises à jour régulières pour les discussions communautaires.
+2. **Création de fils de discussion** : Pour chaque référendum, le bot génère un fil spécifique dans un forum Discord désigné, favorisant des conversations ciblées et structurées.
+3. **Vote par procuration** : Après les délibérations internes, le bot exécute les votes via un compte proxy, aligné sur la décision majoritaire et les périodes de vote définies à l'avance.
+4. **Périodes de vote personnalisables** : Des paramètres adaptés pour les propositions Polkadot et Kusama permettent une flexibilité selon l'origine de chaque référendum.
+5. **Fiabilité 24/7** : Grâce à la gestion des processus PM2, le bot fonctionne en continu, garantissant un service ininterrompu.
+
+## Renforcement de la collaboration communautaire
+Le ChaosDAO Governance Bot transforme la gouvernance en permettant des discussions approfondies au sein d'un forum Discord dédié. Les membres de la communauté peuvent échanger librement leurs points de vue sur les propositions, garantissant ainsi des décisions éclairées qui reflètent les idées collectives. Cette configuration encourage une participation active, la transparence et la confiance entre les parties prenantes.
+
+## Exemple d'utilisation :
+Prenons une proposition venant du rôle de "Trésorier" sur le réseau Kusama. Après son introduction en chaîne, le bot initie une période de vote interne de cinq jours. En fonction de la décision de la communauté, le compte proxy émet un vote "AYE" ou "NAY". Si la position change pendant la période de revote suivante, le bot ajuste le vote en conséquence, reflétant ainsi le consensus collectif.
+
+## Mise en œuvre technique
+Le déploiement du bot comprend les étapes suivantes :
+1. **Configuration initiale** : Configurer le bot avec une clé API Discord, un ID de serveur et un ID de forum.
+2. **Configuration de l'environnement** : Renommer le fichier `.env.sample` fourni en `.env` et le remplir avec les informations d'identification nécessaires.
+3. **Installation des dépendances** : Utiliser Python et Node.js pour installer les bibliothèques et outils prérequis.
+4. **Gestion des processus** : Utiliser PM2 pour maintenir le bot opérationnel 24/7, permettant des mises à jour et une surveillance sans faille.
+
+## Périodes de vote et paramètres
+Le Governance Bot de ChaosDAO suit des périodes de vote distinctes pour Polkadot et Kusama, en fonction de l'origine de la proposition. Par exemple :
+- **Kusama** :
+    - Root : Période de décision (14 jours), Période de vote interne (5 jours), Période de revote (10 jours)
+    - SmallTipper : Période de décision (7 jours), Période de vote interne (1 jour), Période de revote (4 jours)
+- **Polkadot** :
+    - Root : Période de décision (28 jours), Période de vote interne (7 jours), Période de revote (20 jours)
+    - BigSpender : Période de décision (28 jours), Période de vote interne (7 jours), Période de revote (20 jours)
+
+Cette structure assure une adaptabilité et une précision dans l'exécution des votes en chaîne, reflétant les préférences évolutives de la communauté.
+
+## Avantages du Governance Bot
+1. **Gouvernance rationalisée** : L'automatisation réduit la surveillance manuelle, permettant une prise de décision plus rapide et plus précise.
+2. **Participation inclusive** : La plateforme de discussion garantit que toutes les voix sont entendues, favorisant un sentiment de propriété et de collaboration.
+3. **Transparence accrue** : Les fils publics et les processus de vote clairs renforcent la confiance au sein de la communauté.
+4. **Personnalisation** : Les paramètres de vote spécifiques aux rôles répondent aux divers besoins des propositions et des processus de décision.
+
+## Support et ressources
+Pour toute assistance ou demande, ChaosDAO propose plusieurs canaux :
+- **Telegram** : [n4droj](https://t.me/n4droj)
+- **Twitter** : [n4dro](https://twitter.com/n4dro)
+
+Des ressources supplémentaires, y compris le code source du bot et les directives de déploiement, sont disponibles sur GitHub sous la licence Apache-2.0. Cette transparence permet à la communauté de contribuer et d'améliorer continuellement les fonctionnalités du bot.
+
+### Conclusion
+Le ChaosDAO Governance Bot représente une innovation majeure dans la gouvernance décentralisée. En combinant automatisation, engagement communautaire et prise de décision transparente, il permet aux écosystèmes Polkadot et Kusama de relever efficacement les défis de la gouvernance. À mesure que la technologie blockchain continue d'évoluer, des outils comme celui-ci soulignent l'importance de la prise de décision collaborative et éclairée dans la définition de l'avenir des réseaux décentralisés. 

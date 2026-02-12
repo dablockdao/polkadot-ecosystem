@@ -1,0 +1,195 @@
+---
+/* Base Card Component - Reusable card with variants */
+interface Props {
+  variant?: 'default' | 'elevated' | 'glass' | 'minimal';
+  effect?: 'none' | 'halo' | 'grid' | 'both';
+  interactive?: boolean;
+  padding?: 'none' | 'sm' | 'md' | 'lg';
+  class?: string;
+}
+
+const {
+  variant = 'default',
+  effect = 'none',
+  interactive = false,
+  padding = 'md',
+  class: className = ''
+} = Astro.props;
+
+const cardClasses = [
+  'card',
+  `card--${variant}`,
+  `card--padding-${padding}`,
+  effect === 'halo' || effect === 'both' ? 'card--halo' : '',
+  effect === 'grid' || effect === 'both' ? 'card--grid' : '',
+  interactive ? 'card--interactive' : '',
+  className
+].filter(Boolean).join(' ');
+---
+
+<div class={cardClasses}>
+  <slot />
+</div>
+
+<style>
+/* ===== Base Card Styles ===== */
+.card {
+  position: relative;
+  isolation: isolate;
+  border-radius: var(--radius-xl, 18px);
+  background: var(--color-bg-soft, #121219);
+  border: 1px solid var(--color-border-default, rgba(255, 255, 255, 0.12));
+  transition: transform var(--transition-base, 0.18s ease),
+              box-shadow var(--transition-slow, 0.22s ease),
+              border-color var(--transition-slow, 0.22s ease);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Padding Variants ===== */
+.card--padding-none {
+  padding: 0;
+}
+
+.card--padding-sm {
+  padding: var(--space-sm, 1rem);
+}
+
+.card--padding-md {
+  padding: var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem));
+}
+
+.card--padding-lg {
+  padding: var(--space-fluid-lg, clamp(1.5rem, 3vw, 3rem));
+}
+
+/* ===== Style Variants ===== */
+
+/* Default - soft background with subtle border */
+.card--default {
+  background: linear-gradient(180deg,
+    color-mix(in oklab, var(--color-bg-soft, #121219) 96%, transparent),
+    color-mix(in oklab, var(--color-bg, #0b0b0f) 100%, transparent)
+  );
+  box-shadow: var(--shadow-lg, 0 8px 24px rgba(0, 0, 0, 0.25));
+}
+
+/* Elevated - stronger shadow and contrast */
+.card--elevated {
+  background: linear-gradient(180deg,
+    color-mix(in oklab, var(--color-bg-soft, #121219) 100%, transparent),
+    var(--color-bg, #0b0b0f)
+  );
+  box-shadow: var(--shadow-xl, 0 12px 32px rgba(0, 0, 0, 0.30));
+  border-color: var(--color-border-strong, rgba(255, 255, 255, 0.18));
+}
+
+/* Glass - translucent with backdrop blur */
+.card--glass {
+  background: color-mix(in oklab, var(--color-bg-soft, #121219) 60%, transparent);
+  backdrop-filter: blur(12px) saturate(1.05);
+  border-color: var(--color-border-subtle, rgba(255, 255, 255, 0.08));
+  box-shadow: var(--shadow-md, 0 4px 16px rgba(0, 0, 0, 0.18));
+}
+
+/* Minimal - flat with subtle border */
+.card--minimal {
+  background: transparent;
+  border-color: var(--color-border-subtle, rgba(255, 255, 255, 0.08));
+  box-shadow: none;
+}
+
+/* ===== Effects ===== */
+
+/* Halo effect - accent glow */
+.card--halo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    80% 60% at 50% 0%,
+    color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 8%, transparent),
+    transparent 60%
+  );
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Grid pattern overlay */
+.card--grid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.07;
+  background-image:
+    linear-gradient(transparent 0 98%, currentColor 98% 100%),
+    linear-gradient(90deg, transparent 0 98%, currentColor 98% 100%);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ===== Interactive State ===== */
+.card--interactive {
+  cursor: pointer;
+}
+
+.card--interactive:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent-primary, #7A6F5F);
+  box-shadow: var(--shadow-2xl, 0 16px 40px rgba(0, 0, 0, 0.35));
+}
+
+.card--interactive:active {
+  transform: translateY(0);
+}
+
+.card--interactive:focus-visible {
+  outline: 2px solid var(--color-accent-primary, #7A6F5F);
+  outline-offset: 2px;
+}
+
+/* ===== Light Theme Adjustments ===== */
+:root[data-theme="light"] .card {
+  background: #FFFFFF;
+  border-color: rgba(0, 0, 0, 0.10);
+}
+
+:root[data-theme="light"] .card--default {
+  background: linear-gradient(180deg, #FFFFFF, #F5F5F5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme="light"] .card--elevated {
+  background: linear-gradient(180deg, #FFFFFF, #FAFAFA);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+:root[data-theme="light"] .card--glass {
+  background: color-mix(in oklab, #FFFFFF 70%, transparent);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+:root[data-theme="light"] .card--grid::after {
+  opacity: 0.04;
+}
+
+:root[data-theme="light"] .card--interactive:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Motion Safety ===== */
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .card--interactive {
+    transition: none;
+  }
+
+  .card--interactive:hover {
+    transform: none;
+  }
+}
+</style>

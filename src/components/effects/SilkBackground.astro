@@ -1,0 +1,162 @@
+---
+interface Props {
+  variant?: 'default' | 'subtle' | 'vibrant';
+  speed?: 'slow' | 'normal' | 'fast';
+}
+
+const { variant = 'default', speed = 'normal' } = Astro.props;
+---
+
+<div class={`silk-background silk--${variant} silk--${speed}`}>
+  <div class="silk-gradient silk-gradient-1"></div>
+  <div class="silk-gradient silk-gradient-2"></div>
+  <div class="silk-gradient silk-gradient-3"></div>
+</div>
+
+<style>
+/* ===== Silk Background Container ===== */
+.silk-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ===== Silk Gradients ===== */
+.silk-gradient {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.15;
+  will-change: transform;
+}
+
+/* Gradient 1 - Top Right */
+.silk-gradient-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    var(--color-accent-primary, #7A6F5F) 0%,
+    transparent 70%
+  );
+  top: -20%;
+  right: -10%;
+  animation: silk-float-1 20s ease-in-out infinite;
+}
+
+/* Gradient 2 - Bottom Left */
+.silk-gradient-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(
+    circle,
+    var(--color-accent-secondary, #8B8070) 0%,
+    transparent 70%
+  );
+  bottom: -15%;
+  left: -10%;
+  animation: silk-float-2 25s ease-in-out infinite;
+}
+
+/* Gradient 3 - Center */
+.silk-gradient-3 {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 80%, transparent) 0%,
+    transparent 70%
+  );
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: silk-float-3 30s ease-in-out infinite;
+}
+
+/* ===== Variant Styles ===== */
+/* Subtle - More transparent */
+.silk--subtle .silk-gradient {
+  opacity: 0.08;
+  filter: blur(120px);
+}
+
+/* Vibrant - More visible */
+.silk--vibrant .silk-gradient {
+  opacity: 0.25;
+  filter: blur(80px);
+}
+
+/* ===== Speed Variants ===== */
+.silk--slow .silk-gradient-1 { animation-duration: 30s; }
+.silk--slow .silk-gradient-2 { animation-duration: 35s; }
+.silk--slow .silk-gradient-3 { animation-duration: 40s; }
+
+.silk--fast .silk-gradient-1 { animation-duration: 15s; }
+.silk--fast .silk-gradient-2 { animation-duration: 18s; }
+.silk--fast .silk-gradient-3 { animation-duration: 22s; }
+
+/* ===== Animations ===== */
+@keyframes silk-float-1 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-20px, 30px) scale(1.1);
+  }
+  66% {
+    transform: translate(30px, -20px) scale(0.95);
+  }
+}
+
+@keyframes silk-float-2 {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -25px) scale(1.05);
+  }
+  66% {
+    transform: translate(-25px, 35px) scale(0.9);
+  }
+}
+
+@keyframes silk-float-3 {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(-50%, -50%) scale(1.1) rotate(120deg);
+  }
+  66% {
+    transform: translate(-50%, -50%) scale(0.95) rotate(240deg);
+  }
+}
+
+/* ===== Light Theme ===== */
+:root[data-theme="light"] .silk-gradient {
+  opacity: 0.06;
+}
+
+:root[data-theme="light"] .silk--vibrant .silk-gradient {
+  opacity: 0.12;
+}
+
+/* ===== Motion Safety ===== */
+@media (prefers-reduced-motion: reduce) {
+  .silk-gradient {
+    animation: none;
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .silk-gradient-1,
+  .silk-gradient-2,
+  .silk-gradient-3 {
+    width: 400px;
+    height: 400px;
+  }
+}
+</style>

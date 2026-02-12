@@ -1,0 +1,88 @@
+---
+title: Acurast
+description: Acurast est une plateforme cloud décentralisée sans serveur conçue pour fournir un calcul sécurisé, confidentiel et vérifiable pour diverses applications.
+sidebar:
+    label: ✪ Acurast
+    order: 2
+hero:
+  tagline: Un cloud décentralisé sans serveur.
+  image: 
+    file: ../../../../../assets/dapps/depin/acurast.png
+  actions:
+    - text: Dapp
+      link: acurast.com 
+      icon: external
+    - text: Docs
+      link: docs.acurast.com 
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+Dans le monde interconnecté d’aujourd’hui, la confiance centralisée est omniprésente, en particulier dans les ressources de calcul et le stockage des données. Cependant, la montée des fuites de données à grande échelle a mis en évidence la nécessité d’un avenir cloud sans permission et décentralisé. Acurast Network, une blockchain Layer-1, répond à ces défis en proposant une solution cloud décentralisée et sans serveur. Cet article explore les fonctionnalités, l’architecture et les avantages d’Acurast pour les développeurs et les organisations au sein de l’écosystème Polkadot.
+
+## Qu'est-ce qu'Acurast ?
+Acurast est une plateforme cloud décentralisée sans serveur conçue pour fournir un calcul sécurisé, confidentiel et vérifiable pour diverses applications. En s’appuyant sur une architecture modulaire qui sépare les couches de consensus, d’exécution et d’application, Acurast assure évolutivité, interopérabilité et sécurité pour les applications décentralisées (dApps).
+
+### Principales caractéristiques d'Acurast
+1. **Approche de calcul confidentiel** : Acurast utilise des techniques cryptographiques avancées pour garantir la confidentialité et l’intégrité des données.
+2. **Architecture modulaire** : L’architecture sépare les couches de consensus, d’exécution et d’application pour améliorer l’évolutivité et la flexibilité.
+3. **Orchestrateur décentralisé** : L’orchestrateur associe les ressources de calcul aux besoins des consommateurs de manière fiable et sans confiance.
+4. **Interopérabilité** : Prise en charge de plusieurs écosystèmes, permettant une interaction fluide entre les applications Web3 et Web2.
+
+## L’architecture d’Acurast
+L’architecture d’Acurast est conçue pour transformer la manière dont les applications sont développées et déployées, en mettant l’accent sur la confidentialité, la vérifiabilité et la décentralisation.
+
+### Couche de consensus
+La couche de consensus est le fondement d’Acurast, responsable de l’association des tâches des consommateurs avec les ressources des processeurs. Elle comprend :
+
+- **Orchestrateur** : Planifie les tâches et les associe aux processeurs appropriés, facilitant l’association des ressources et l’échange de valeur entre processeurs et consommateurs.
+- **Moteur de réputation** : Garantit la fiabilité en mettant à jour les scores de réputation des processeurs et en incitant à un comportement honnête.
+
+### Couche d’exécution
+La couche d’exécution gère le traitement des tâches et comprend :
+- **Acurast Secure Hardware Runtime (ASHR)** : Utilise des smartphones Android dédiés pour l’infrastructure hors chaîne.
+- **Acurast Zero-Knowledge Runtime (AZKR)** : Implémente des preuves à connaissance nulle pour garantir un calcul sécurisé et confidentiel.
+- **Couche d’interopérabilité universelle** : Contient des modules permettant l’interaction avec différents écosystèmes, assurant une intégration fluide.
+
+### Couche d’application
+La couche d’application prend en charge les applications Web2 et Web3, permettant un large éventail de cas d’utilisation, y compris les protocoles DeFi et au-delà. L’architecture d’Acurast assure confidentialité et vérifiabilité sans introduire de nouvelles entités de confiance.
+
+## Acteurs du réseau Acurast
+- **Consommateurs** : Ce sont des individus ou des organisations cherchant à externaliser des tâches de calcul de manière sécurisée et efficace. Ils peuvent définir des tâches en JavaScript, les enregistrer et définir des paramètres tels que l’horaire et les coûts. L’orchestrateur Acurast associe ensuite ces tâches aux processeurs adéquats.
+- **Processeurs** : Ils offrent leurs ressources de calcul pour exécuter les tâches définies par les consommateurs. Ces processeurs utilisent des smartphones Android dédiés comme infrastructure hors chaîne pour l’ASHR. En retour, ils sont récompensés par les consommateurs.
+- **Orchestrateur** : Élément central de la couche de consensus, l’orchestrateur planifie les tâches et associe les ressources des processeurs aux besoins des consommateurs. Il prend en charge divers mécanismes de tarification, comme les enchères et les annonces, rendant l’expérience développeur accessible et fluide.
+
+## Écosystèmes pris en charge et intégrations
+Acurast est conçu pour l’interopérabilité, prenant en charge de nombreux écosystèmes et permettant l’intégration avec des environnements tels que EVM, WASM et Parachains. Cette flexibilité permet aux projets et aux entreprises d’interagir en toute sécurité, quelle que soit la technologie sous-jacente.
+
+### Tâches Acurast
+Les tâches Acurast sont exécutées par les processeurs dans leur environnement d’exécution sécurisé. Ces tâches produisent un résultat et une preuve d’exécution, qui sont ensuite livrés à la chaîne de destination spécifiée, comme Astar sur Polkadot.
+
+## Mise en œuvre et déploiement
+Acurast s’appuie sur un Runtime Substrate composé de plusieurs palettes Substrate pour le protocole Acurast. Le réseau a obtenu un slot de parachain Kusama pour son testnet incitatif et prévoit de participer aux enchères de parachains Polkadot. Cette intégration offre un accès à la sécurité de Polkadot et Kusama et permet la communication avec d’autres parachains via le Cross-Consensus Message Format (XCM).
+
+### Conclusion
+Acurast Network représente une avancée majeure dans l’évolution de l’informatique en nuage décentralisée au sein de l’écosystème Polkadot. En offrant une plateforme sécurisée, évolutive et interopérable pour le calcul confidentiel, Acurast permet aux développeurs et aux organisations de créer des applications innovantes tout en maintenant la confidentialité des données et la conformité réglementaire. Que vous soyez un développeur cherchant à intégrer un calcul sécurisé dans vos dApps ou une organisation souhaitant externaliser des tâches de calcul en toute sécurité, Acurast propose les outils et l’infrastructure nécessaires pour prospérer dans un avenir décentralisé.
+
+## Vidéos communautaires Acurast
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=9uqN_f5839g',
+      title: 'Acurast à DePIN Day Web Summit Lisbon 2024',
+      description: 'Rejoignez Pascal Brun pour découvrir comment Acurast révolutionne l’IA avec le calcul confidentiel.'
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=KSq-A-CJDyc',
+      title: 'Créez votre premier déploiement Acurast',
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=RZttiIIiP20',
+      title: 'Acurast Cloud expliqué en 3 minutes',
+      description: 'Transformer le paysage du cloud : une disruption mobile pour un calcul décentralisé et sans confiance.'
+    }
+  ]}
+/>

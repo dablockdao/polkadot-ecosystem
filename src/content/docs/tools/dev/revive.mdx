@@ -1,0 +1,50 @@
+---
+title: Revive
+description: Revive enhances Solidity compatibility on PolkaVM, leveraging YUL and RISC-V for high-performance smart contract execution.
+hero:
+  tagline: Enhancing Solidity Compatibility on PolkaVM.
+  image: 
+    file: ../../../../assets/tools/dev/revive.png
+  actions:
+    - text: Github
+      link: https://github.com/paritytech/revive/
+      icon: external
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+The rapidly evolving blockchain landscape demands innovative tools and frameworks to ensure scalability, efficiency, and compatibility. In this context, **Revive** emerges as a groundbreaking initiative, focusing on retooling Solidity for PolkaVM while leveraging RISC-V architecture. As the demand for robust smart contract solutions increases, Revive seeks to redefine the interplay between Solidity, YUL, and LLVM to empower developers in the Polkadot ecosystem.
+
+## Introduction to Revive and Its Objectives
+Revive represents a new Solidity compiler explicitly designed to bridge the gap between Ethereum's Solidity-based smart contracts and Polkadot's PolkaVM runtime. By reusing **YUL**, an intermediate representation (IR) from the Solidity compiler (*solc*), Revive simplifies the traditionally complex task of translating Solidity code to LLVM IR. This streamlined approach reduces development effort and ensures a higher degree of compatibility and performance.
+
+## Key Features of Revive
+1. YUL and EVM Assembly Translation - Revive harnesses the **YUL IR code**—a simpler and more stable intermediate representation—to translate Solidity code into LLVM IR. This approach minimizes the effort required to maintain compatibility with Solidity, which is constantly evolving.
+2. Targeting RISC-V Architecture - The **RISC-V architecture** is central to Revive's performance enhancements. By compiling smart contracts to RISC-V, Revive delivers significant improvements in execution speed and computational efficiency compared to Wasm and EVM-based runtimes. Early benchmarks suggest that RISC-V may outperform Wasm by an order of magnitude in computationally intensive tasks.
+3. Cross-Compilation to WASM - Revive includes a **cross-compilation feature** that enables developers to compile contracts to WebAssembly (WASM). This capability ensures compatibility with browser and Node.js environments, broadening the potential use cases and accessibility of the compiler.
+
+## Installation and Development
+Revive requires a compatible build of LLVM (version 18.1.4 or later) with RISC-V support. Developers can utilize the provided `build-llvm.sh` script to compile LLVM locally, ensuring proper configuration for RISC-V and WASM targets. Additionally, the installation of the `resolc` Solidity frontend enables smooth interaction with Solidity source code, further simplifying the development process.
+
+### Installation Steps
+1. Build LLVM using the `build-llvm.sh` script:
+```bash
+bash build-llvm.sh
+export PATH=${PWD}/llvm18.0/bin:$PATH
+```
+
+## Benchmarking Revive\u2019s Performance
+To ensure Revive delivers optimal performance, a comprehensive benchmarking suite has been established. The benchmarks evaluate:
+- **Computationally intensive smart contracts**.
+- **Traditional contract workloads**, such as ERC20 transfers and ERC721 minting.
+- **Innovative use cases enabled by RISC-V**, including cryptographic computations like STARK proof verification.
+Initial results underscore the potential of RISC-V to transform smart contract execution by combining rapid startup times and efficient computational capabilities. This positions Revive as a competitive alternative to existing Wasm and EVM runtimes.
+
+## Future Directions and Community Involvement
+Revive is a collaborative project under active development, with discussions hosted on the Polkadot Forum. The community is encouraged to contribute by:
+- Reporting issues or missing features.
+- Suggesting specific contracts or algorithms for inclusion in the benchmark suite.
+By leveraging the collective expertise of the Polkadot ecosystem, Revive aims to deliver a robust, high-performance Solidity compiler that meets the demands of modern blockchain applications.
+
+## Conclusion
+Revive represents a significant advancement in Solidity-compatible tools for Polkadot\u2019s PolkaVM. By leveraging YUL and RISC-V, it delivers superior performance and compatibility, unlocking new possibilities for smart contract developers. With its focus on innovation, Revive is poised to play a pivotal role in shaping the future of blockchain technology.

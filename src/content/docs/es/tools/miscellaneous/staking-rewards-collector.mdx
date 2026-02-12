@@ -1,0 +1,67 @@
+---
+title: 'Staking Rewards Collector'
+description: 'La herramienta Staking Rewards Collector facilita el seguimiento de recompensas de staking en múltiples redes y brinda análisis detallados para una mejor toma de decisiones.'
+hero:
+  tagline: 'Monitorea las recompensas de staking en múltiples redes.'
+  image: 
+    file: ../../../../../assets/hub/orgs/w3f.png
+  actions:
+    - text: 'Github'
+      link: https://github.com/w3f/staking-rewards-collector
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+El **staking** se ha convertido en un pilar de la tecnología blockchain, permitiendo a los participantes obtener recompensas mientras contribuyen a la seguridad de redes descentralizadas. Para agilizar el seguimiento y el análisis de estas recompensas, herramientas como **Staking Rewards Collector** se han vuelto indispensables. La versión 1.7.4 de Staking Rewards Collector ofrece a los usuarios una solución sólida para recopilar, analizar y exportar datos de staking. Este artículo explora sus características, funcionalidades y relevancia en el ecosistema blockchain.
+
+## ¿Qué es el Staking Rewards Collector?
+Staking Rewards Collector es una herramienta de código abierto diseñada para ayudar a entusiastas, inversores y desarrolladores de blockchain a **monitorear recompensas de staking** en múltiples redes.  
+Soporta diversos ecosistemas, incluyendo Polkadot, Kusama, Moonriver, Moonbeam, Shiden, Astar, Centrifuge y KILT.  
+Mediante la automatización de la recolección de datos de staking y precios, la herramienta **simplifica cálculos complejos** y ayuda a los usuarios a entender su rendimiento de staking a lo largo del tiempo.
+
+## Características Clave de la Versión 1.7.4
+1. **Mejora en la Recolección de Datos de Precios**  
+   - **Soporte para la API de CryptoCompare**: Permite a los usuarios elegir CryptoCompare como proveedor de datos de precios, haciendo posible consultar datos históricos de más de un año.  
+   - **Opciones Personalizables de Moneda**: La herramienta permite el cálculo del valor fiat en diversas monedas (USD, EUR, CHF, GBP, etc.), lo que la hace útil para usuarios de todo el mundo.
+
+2. **Seguimiento Mejorado de Recompensas de Staking**  
+   - **Soporte Multirred**: Compatible con una amplia gama de redes blockchain, garantizando compatibilidad con los principales ecosistemas de staking.  
+   - **Cálculos de Retorno Anualizado**: Con un balance inicial preciso, la herramienta estima el retorno anualizado, brindando información valiosa sobre la eficiencia del staking.
+
+3. **Experiencia de Usuario Optimizada**  
+   - **Configuración de la API**: Los usuarios pueden establecer retrasos (sleep delays) personalizados para evitar timeouts al consultar la API de Subscan, garantizando una **recolección de datos** fluida.  
+   - **Resultados Exportables**: Los resultados se pueden exportar en formatos CSV y JSON, facilitando la integración con otras herramientas y sistemas.
+
+4. **Actualizaciones de Compatibilidad**  
+   - **Requerimiento de Node.js**: La versión más reciente exige Node.js 18+ para admitir funcionalidades modernas de API como `fetch()`.  
+   - **Mejoras en la Consola**: Se agregaron marcas de tiempo al output de la consola para una mejor trazabilidad.
+
+## ¿Cómo Funciona?
+Staking Rewards Collector funciona mediante un proceso de configuración sencillo:
+
+1. **Clonar el Repositorio**: El usuario comienza clonando el repositorio de GitHub de la herramienta.  
+2. **Configurar Parámetros**: La personalización se realiza editando el archivo `config/userInput.json`, donde se especifican parámetros como direcciones de carteras, redes, fechas de inicio y fin, así como claves de API.  
+3. **Ejecutar la Herramienta**: Una vez configurada, el usuario ejecuta la herramienta utilizando Yarn para recopilar datos de staking y precios.  
+4. **Analizar Resultados**: La herramienta genera informes detallados, que incluyen:  
+   - **Archivos CSV**: Una representación en tabla de las recompensas de staking.  
+   - **Archivos JSON**: Conjuntos de datos integrales, que incluyen retornos anualizados y detalles de staking diarios.
+
+## Casos de Uso
+El Staking Rewards Collector resulta ideal para:
+- **Stakers Individuales**: Inversores que buscan rastrear su rendimiento de staking y optimizar sus recompensas.  
+- **Declaración de Impuestos**: Recopilación y organización de datos de staking para cumplir con regulaciones fiscales en distintas regiones.  
+- **Investigación y Análisis**: Generación de conjuntos de datos detallados para analistas de blockchain y desarrolladores.
+
+## Importancia de la Herramienta
+Las recompensas de staking son un componente fundamental de los ingresos en el ámbito blockchain. Sin embargo, llevar un registro manual puede ser **lento** y **susceptible a errores**. Staking Rewards Collector aborda estos retos al automatizar la recolección de datos y ofrecer información útil. Su capacidad para integrar datos de staking y precios la convierte en una herramienta valiosa tanto para individuos como para instituciones.
+
+## Desafíos y Limitaciones
+A pesar de su utilidad, los usuarios deben tener en cuenta ciertas limitaciones:
+- **Dependencias de Terceros**: Se basa en APIs de Subscan, CoinGecko y CryptoCompare. Cualquier interrupción en estos servicios puede afectar su funcionamiento.  
+- **Precisión de Datos**: Se recomienda a los usuarios verificar los resultados, especialmente para fines fiscales o cumplimiento normativo.  
+- **Requisitos Técnicos**: Se requiere familiaridad con herramientas como Git y Node.js para la configuración y el uso de la herramienta.
+
+## Conclusión
+La versión 1.7.4 de Staking Rewards Collector representa un avance significativo en la analítica de staking. Al proporcionar un monitoreo integral en múltiples redes y datos de precios detallados, empodera a los usuarios para **tomar decisiones informadas**. Ya seas un inversor que desea maximizar tus retornos o un investigador que analiza tendencias en blockchain, esta herramienta es un recurso esencial para navegar con éxito en el dinámico mundo del staking.

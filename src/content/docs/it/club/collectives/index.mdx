@@ -1,0 +1,35 @@
+---
+title: Collettivi Polkadot
+description: Esplora i Collettivi Polkadot e i Gruppi di Lavoro Aperti.
+tableOfContents: false
+sidebar: 
+    label: Collettivi
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+I Collettivi Polkadot rappresentano un'evoluzione fondamentale all'interno dell'ecosistema Polkadot, progettati per favorire la collaborazione e la decentralizzazione su larga scala. 
+Questi gruppi di governance specializzati permettono alle comunità di unirsi con obiettivi condivisi, sia attraverso la creazione di organizzazioni decentralizzate (DAO), il finanziamento di iniziative o il coordinamento di progetti su vasta scala.
+
+## Collettivi Principali di Polkadot
+----------------
+<ShowcaseImage
+  entries={[
+        {
+      thumbnail: import('/src/assets/hub/daos/fellowship.png'),
+      href: '/club/collectives/polkadot-fellowship/',
+      title: 'Technical Fellowship',
+      description: 'Organismo di Governance degli Sviluppatori dell’Ecosistema Polkadot.',
+    }, 
+    {
+      thumbnail: import('/src/assets/hub/daos/ambassadors.png'),
+      href: '/club/collectives/polkadot-ambassadors-collective/',
+      title: 'Ambassador Collective',
+      description: 'Un Percorso per la Crescita Decentralizzata della Comunità di Polkadot.',
+      },
+  ]}
+/>

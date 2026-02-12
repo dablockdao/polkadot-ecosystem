@@ -1,0 +1,10 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/SocialIcons.astro';
+import Navigation from './ui/Navigation.astro';
+
+const props = Astro.props as Props;
+---
+
+<Navigation />
+<Default {...props}><slot /></Default>

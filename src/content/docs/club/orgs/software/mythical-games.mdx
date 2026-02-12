@@ -1,0 +1,167 @@
+---
+title: Mythical Games
+description: Innovative blockchain solutions for FinTech, DeFi, and banking by 4IRE Labs, driving efficiency, sustainability, and global market success.
+hero:
+  tagline: A next-generation game technology studio 
+  image: 
+    file: ../../../../../assets/hub/orgs/mythical-games.png
+  actions:
+    - text: Site
+      link: https://mythicalgames.com/
+      icon: external
+    - text: X
+      link: https://x.com/playmythical
+      icon: external
+      variant: secondary
+---
+ 
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+## Mythical Games on Polkadot: A Builder’s Guide to the Mythos Gaming Stack
+Mythical Games has evolved from an early web3 studio into one of the largest blockchain-gaming ecosystems, migrating its infrastructure to Polkadot and operating the Mythos chain with live, mainstream IP titles. This guide explains what Mythical is, how its stack works on Polkadot, what games and tools matter, and how builders and players can plug in—without the hype.
+
+## What is Mythical Games (and Mythos)?
+Mythical Games is a web3 game technology company and studio behind mainstream-IP titles (e.g., **NFL Rivals**, **FIFA Rivals**) and the **Mythos** chain powering its marketplace and digital economies. In 2024–2025, Mythical migrated its chain strategy to **Polkadot**, positioning Mythos as a scalable gaming layer for titles and partner studios. Public materials indicate substantial platform transactions and a multi-million registered player base by mid-2025—useful context for builders evaluating market readiness.
+
+### Quick ELI5
+Think “**App Store + marketplace + in-game items you actually own**,” where multiple games share a common backbone (**Mythos on Polkadot**). Your card packs, skins, or players can be listed, traded, or moved with real ownership semantics rather than living only in a single game’s database.
+
+## Why Polkadot?
+Mythical’s move centers on **scalability, sovereignty, and interoperability**:
+
+* **Scalability & specialized chains:** Polkadot lets gaming ecosystems run **dedicated blockspace** (app-specific chains) tuned for game traffic and asset semantics.
+* **Interoperability:** With trust-minimized bridging and native **Asset Hub**, Mythos can connect to external liquidity while keeping fees predictable for players.
+* **Governance alignment:** Mythos can leverage **Polkadot’s OpenGov tooling** for community decision-making and ecosystem coordination.
+
+## Core Components of the Mythos Stack
+* **Mythos Chain (on Polkadot):** The base where game-driven asset minting, transfers, and marketplace settlement occur.
+* **MYTH token:** The ecosystem token used for marketplace activity and incentives; activity increasingly centers on Mythos and Polkadot venues.
+* **Marketplace:** Mythical’s in-house primary/secondary market used by live titles; this concentrates liquidity and reduces builder overhead.
+* **Bridging & Liquidity:**
+
+  * **Trust-minimized ETH↔Polkadot bridge** for moving assets or the MYTH token between ecosystems.
+  * **Asset Hub** as the canonical Polkadot asset registry/settlement layer.
+
+
+## Key Games & Ecosystem Snapshot
+* **NFL Rivals (mobile):** Long-running flagship with licensed NFL IP and sustained secondary-market activity.
+* **FIFA Rivals (mobile, 2025):** Newer title that quickly hit significant download milestones, expanding Mythical’s sports footprint.
+* **Pudgy Party (mobile, 2025):** A casual game tied to the Pudgy Penguins brand; strong community integrations.
+* **Blankos Block Party (legacy):** Early PC title; servers sunset in Dec 2023 as Mythical pivoted to mobile. Historic brand collabs (e.g., fashion houses) helped pioneer “playable NFTs.”
+
+**Why this matters:** Mythical’s portfolio mixes **major sports IP** and **community-led casual** titles—useful for builders deciding where to anchor new content or partnerships.
+
+## How It Works (End-to-End Flow)
+1. **Onboard (no wallet anxiety):** Users start with standard accounts; wallet flows are abstracted and can be “revealed” when trading/withdrawing.
+2. **Acquire assets:** Buy packs/items in-game or via the **Mythical Marketplace**; payments can be fiat, while ownership is settled on Mythos.
+3. **Own & trade:** Items list on the marketplace with provenance and scarcity enforced on-chain; tokenized flows can support promotions, rewards, and sinks.
+4. **Bridge (optional):** Advanced users move tokens between Ethereum and Polkadot or interact with Polkadot-native venues, depending on liquidity strategy.
+5. **Govern (evolving):** Mythos can align with OpenGov primitives for transparent upgrades and incentive programs.
+
+## For Builders: Integrating with Mythos & Polkadot
+* **Choose your lane:**
+  * **Integrate** with Mythos marketplace + auth for distribution and compliance-friendly flows.
+  * **Launch an app-chain** aligned to Mythos/Polkadot if you need dedicated throughput and custom runtime logic—retain sovereignty while inheriting interoperability.
+* **Assets & economy design:**
+
+  * Define **item classes**, **issuance schedules**, **upgrade paths**, and **sinks/burns** (crafting, fusions, seasonal resets).
+  * Bake in **scarcity policy** (hard caps / seasonal mints) and **off-ramps** (buy-back, recycling to currency/points) to stabilize markets.
+* **Compliance & payments:**
+
+  * Use fiat-first checkout and KYC/region-aware policies via marketplace primitives.
+  * Separate **game progression** from **financial speculation**; keep utility clear and user-centric.
+* **Bridging & liquidity:**
+
+  * Use the Polkadot bridge stack if you need ETH-side liquidity or distribution.
+  * Register assets on **Asset Hub** for ecosystem-wide clarity and indexability.
+* **Telemetry & ops:**
+
+  * Monitor **holder distribution**, **sell-through**, **retention**, **ARPPU**, and **on-chain sinks**.
+  * Instrument dashboards across both game backend events and on-chain events (mints, burns, trades).
+
+## Mini-Guide: Start Playing & Owning
+1. **Pick a title** (e.g., **NFL Rivals** or **FIFA Rivals**) from your app store.
+2. **Create an account** (email/social). In-game, open the **Marketplace** to view tradable items.
+3. **Buy a starter pack** (card packs/players). Fiat works; ownership settles on Mythos.
+4. **List or trade** unwanted items; learn the market by watching floor prices and recent sales.
+5. **Optional advanced:** Acquire the ecosystem token on supported venues and bridge to Mythos if you want on-chain settlement in the native token.
+
+## Comparison Table: Mythical Live/Flagship Titles
+| Game                         | Platform             | IP/Genre                        | Live Status (Sep 2025)  | Notable Notes                                                               |
+| ---------------------------- | -------------------- | ------------------------------- | ----------------------- | --------------------------------------------------------------------------- |
+| NFL Rivals                   | Mobile (iOS/Android) | NFL, team-building & collection | Live                    | Sustained marketplace activity; seasonal drops keep demand moving.          |
+| FIFA Rivals                  | Mobile               | FIFA-licensed football          | Launched 2025           | Fast early adoption; diversified sports footprint beyond American football. |
+| Pudgy Party                  | Mobile               | Casual, Pudgy Penguins IP       | Rolling launch 2025     | Community-friendly casual loops; brand-driven growth.                       |
+| Blankos Block Party (legacy) | PC (historical)      | UGC party game                  | Servers sunset Dec 2023 | Early pioneer; pivot to mobile clarified Mythical’s strategy.               |
+
+## Common Pitfalls & Pro Tips
+**Pitfall:** Treating web3 assets as pure monetization.
+**Pro tip:** Design **utility loops** (progression, crafting, upgrades, sinks). Use controlled emissions and **on-chain sinks/burns** to stabilize supply.
+
+**Pitfall:** Wallet UX friction.
+**Pro tip:** Start with **custodial or abstracted wallets** and reveal self-custody only when users trade/withdraw.
+
+**Pitfall:** Fragmented liquidity.
+**Pro tip:** Use **bridge rails** for ETH-side liquidity and **Asset Hub** registration to keep token semantics clean across Polkadot.
+
+**Pitfall:** Over-indexing on a single title.
+**Pro tip:** Diversify IP and feature sets (sports + casual + UGC); multi-title portfolios spread demand risk.
+
+**Pitfall:** Ignoring secondary-market health.
+**Pro tip:** Monitor **floor prices, sell-through, and holder distribution**; craft seasonal content and sinks that reinforce retention.
+
+## FAQs
+**1) Is Mythical really on Polkadot now?**
+Yes—Mythical announced and began executing a migration to Polkadot for scale and interoperability.
+
+**2) What is the relationship between Mythos and MYTH?**
+**Mythos** is the gaming blockchain/ecosystem; **MYTH** is the token used across marketplace and incentives. It can exist cross-ecosystem via bridging.
+
+**3) Do I need crypto to start?**
+No. Mythical supports **fiat-first** onboarding; on-chain ownership happens in the background until you trade/withdraw.
+
+**4) What happened to Blankos?**
+Blankos was a pioneering PC title. **Servers were sunset in December 2023** as Mythical pivoted to mobile; the PC era still informs current marketplace and IP learnings.
+
+**5) How big is Mythical’s economy?**
+By mid-2025, public materials highlight substantial transaction volume and a multi-million player base across Mythical’s platform.
+
+**6) Which new games should I watch?**
+**FIFA Rivals** (sports expansion) and **Pudgy Party** (casual + brand IP) are 2025 momentum titles.
+
+**7) Can builders launch their own chain?**
+Yes—Polkadot supports **app-specific chains** that can interoperate with Mythos and the wider ecosystem.
+
+**8) Where do I track market activity?**
+Use the **Mythical Marketplace** for listings, sales history, and collection views; supplement with your own dashboards and analytics.
+
+
+## Conclusion
+Mythical’s pivot to Polkadot via Mythos demonstrates a **production-grade model for web3 gaming**: mainstream IP, fiat-first UX, and real on-chain ownership with scalable rails. Whether you’re a **player** seeking real digital ownership or a **builder** shipping a new title, the Mythos stack offers a credible path from **fun → liquidity → governance**.
+
+## Mythical Games Community Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+                           {
+      href: 'https://www.youtube.com/watch?v=hdUWVWtRVS4',
+      title: 'Building bespoke Web3 gaming experiences',
+     },
+          {
+      href: 'https://www.youtube.com/watch?v=N_-AABYCE70',
+      title: 'CEO John Linden Interview - Paul Barron',
+     },
+               {
+      href: 'https://www.youtube.com/watch?v=cXLz_ArJ6n8',
+      title: 'How Crypto Is Changing Gaming Forever - Mythical Games CEO  - WSH',
+     },
+               {
+      href: 'https://www.youtube.com/watch?v=hn7NgH_83-M',
+      title: 'John Linden (Mythical Games) on Mythos Chain, Polkadot',
+     },
+                    {
+      href: 'https://www.youtube.com/watch?v=7j-WQKbdRlY',
+      title: 'Mythical Games Co-Founder, Cameron Thacker - SM',
+     },
+  ]}
+/>

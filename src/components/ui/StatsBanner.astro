@@ -1,0 +1,268 @@
+---
+/* StatsBanner Component - Animated statistics banner with counting animation */
+import AnimatedCounter from './AnimatedCounter.astro';
+
+export interface Stat {
+  value: string;
+  label: string;
+  suffix?: string;
+}
+
+interface Props {
+  stats: Stat[];
+  variant?: 'default' | 'compact' | 'hero';
+}
+
+const { stats, variant = 'default' } = Astro.props;
+
+// Parse stat values to extract numeric value, prefix, and suffix
+function parseStatValue(value: string, extraSuffix?: string) {
+  // Match patterns like "100", "1M", "$10B"
+  const match = value.match(/^(\D*)(\d+(?:\.\d+)?)([KMB]?)(\D*)$/);
+
+  if (!match) {
+    // Fallback if pattern doesn't match
+    return { numericValue: 0, prefix: '', suffix: value + (extraSuffix || ''), decimals: 0 };
+  }
+
+  const [, prefix, num, multiplier, suffix] = match;
+  let numericValue = parseFloat(num);
+  let displaySuffix = multiplier + suffix + (extraSuffix || '');
+
+  // Determine decimals based on whether we have a decimal point
+  const decimals = num.includes('.') ? num.split('.')[1].length : 0;
+
+  return { numericValue, prefix, suffix: displaySuffix, decimals };
+}
+---
+
+<div class={`stats-banner stats-banner--${variant}`}>
+  <div class="stats-container">
+    {stats.map((stat, index) => {
+      const { numericValue, prefix, suffix, decimals } = parseStatValue(stat.value, stat.suffix);
+
+      return (
+        <div class="stat-item">
+          <div class="stat-value">
+            <AnimatedCounter
+              value={numericValue}
+              prefix={prefix}
+              suffix={suffix}
+              decimals={decimals}
+              duration={2000}
+              class="stat-number"
+            />
+          </div>
+          <div class="stat-label">{stat.label}</div>
+          {index < stats.length - 1 && (
+            <div class="stat-divider" aria-hidden="true"></div>
+          )}
+        </div>
+      );
+    })}
+  </div>
+</div>
+
+<style>
+/* ===== Stats Banner ===== */
+.stats-banner {
+  max-width: 1400px;
+  margin: var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem)) auto;
+  padding: var(--space-fluid-lg, clamp(1.5rem, 3vw, 2.5rem)) var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem));
+  background: linear-gradient(135deg,
+    color-mix(in oklab, var(--color-bg-soft, #121219) 95%, var(--color-accent-primary, #7A6F5F)),
+    color-mix(in oklab, var(--color-bg, #0b0b0f) 98%, var(--color-accent-secondary, #8B8070)));
+  border: 1px solid var(--color-border-default, rgba(255, 255, 255, 0.12));
+  border-radius: var(--radius-2xl, 24px);
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 20% 50%,
+    color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 15%, transparent),
+    transparent 50%
+  );
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg, 2rem);
+  position: relative;
+  z-index: 1;
+}
+
+/* Stat item */
+.stat-item {
+  position: relative;
+  text-align: center;
+  padding: var(--space-sm, 1rem);
+}
+
+/* Stat value */
+.stat-value {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: var(--space-xs, 0.75rem);
+  animation: fadeInUp 0.6s ease-out backwards;
+}
+
+.stat-number {
+  font-family: var(--font-heading, 'Optima Bold', sans-serif);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: var(--font-black, 900);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg,
+    var(--color-text-primary, #ffffff),
+    var(--color-accent-primary, #7A6F5F));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Stat label */
+.stat-label {
+  font-size: var(--text-sm, clamp(0.875rem, 1.4vw, 1rem));
+  font-weight: var(--font-medium, 500);
+  color: var(--color-text-muted, #aeb7cb);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  animation: fadeInUp 0.6s ease-out backwards;
+  animation-delay: 0.2s;
+}
+
+/* Stat divider */
+.stat-divider {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 60%;
+  background: linear-gradient(180deg,
+    transparent,
+    var(--color-border-default, rgba(255, 255, 255, 0.12)),
+    transparent);
+}
+
+/* ===== Variants ===== */
+
+/* Compact variant */
+.stats-banner--compact {
+  padding: var(--space-md, 1.5rem) var(--space-sm, 1rem);
+}
+
+.stats-banner--compact .stat-number {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+
+.stats-banner--compact .stat-suffix {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.stats-banner--compact .stat-label {
+  font-size: var(--text-xs, 0.875rem);
+}
+
+/* Hero variant */
+.stats-banner--hero {
+  background: transparent;
+  border: none;
+  padding: var(--space-2xl, 4rem) 0;
+}
+
+.stats-banner--hero::before {
+  display: none;
+}
+
+.stats-banner--hero .stat-number {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+.stats-banner--hero .stat-suffix {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Stagger animation delays */
+.stat-item:nth-child(1) .stat-value { animation-delay: 0s; }
+.stat-item:nth-child(1) .stat-label { animation-delay: 0.15s; }
+
+.stat-item:nth-child(2) .stat-value { animation-delay: 0.15s; }
+.stat-item:nth-child(2) .stat-label { animation-delay: 0.3s; }
+
+.stat-item:nth-child(3) .stat-value { animation-delay: 0.3s; }
+.stat-item:nth-child(3) .stat-label { animation-delay: 0.45s; }
+
+.stat-item:nth-child(4) .stat-value { animation-delay: 0.45s; }
+.stat-item:nth-child(4) .stat-label { animation-delay: 0.6s; }
+
+/* ===== Light Theme ===== */
+:root[data-theme="light"] .stats-banner {
+  background: linear-gradient(135deg,
+    color-mix(in oklab, #FFFFFF 95%, var(--color-accent-primary, #7A6F5F)),
+    color-mix(in oklab, #F5F5F5 98%, var(--color-accent-secondary, #8B8070)));
+  border-color: rgba(0, 0, 0, 0.10);
+}
+
+:root[data-theme="light"] .stat-number {
+  background: linear-gradient(135deg, #000000, var(--color-accent-primary, #7A6F5F));
+}
+
+:root[data-theme="light"] .stat-label {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: var(--space-md, 1.5rem);
+  }
+
+  .stat-divider {
+    display: none;
+  }
+
+  .stat-item {
+    padding: var(--space-xs, 0.75rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===== Motion Safety ===== */
+@media (prefers-reduced-motion: reduce) {
+  .stat-value,
+  .stat-label {
+    animation: none;
+  }
+}
+</style>

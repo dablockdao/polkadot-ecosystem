@@ -1,0 +1,132 @@
+---
+/* Giscus Comments Component - GitHub Discussions powered comments */
+interface Props {
+  mapping?: 'pathname' | 'url' | 'title';
+  reactionsEnabled?: boolean;
+  inputPosition?: 'top' | 'bottom';
+}
+
+const {
+  mapping = 'pathname',
+  reactionsEnabled = true,
+  inputPosition = 'bottom'
+} = Astro.props;
+
+// Replace with your actual repository details
+const repo = "dablockdao/polkadot-ecosystem";
+const repoId = "R_kgDONazBhg"; // You'll need to get this from giscus.app
+const category = "General"; // Discussion category name
+const categoryId = "DIC_kwDONazBhs4ClYHT"; // You'll need to get this from giscus.app
+---
+
+<div class="giscus-wrapper">
+  <div class="giscus-container"></div>
+</div>
+
+<script define:vars={{ repo, repoId, category, categoryId, mapping, reactionsEnabled, inputPosition }}>
+  // Load Giscus script
+  function loadGiscus() {
+    const container = document.querySelector('.giscus-container');
+    if (!container) return;
+
+    // Check if already loaded
+    if (container.querySelector('.giscus')) return;
+
+    // Detect theme
+    const theme = document.documentElement.getAttribute('data-theme') === 'light'
+      ? 'light'
+      : 'dark';
+
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.setAttribute('data-repo', repo);
+    script.setAttribute('data-repo-id', repoId);
+    script.setAttribute('data-category', category);
+    script.setAttribute('data-category-id', categoryId);
+    script.setAttribute('data-mapping', mapping);
+    script.setAttribute('data-strict', '0');
+    script.setAttribute('data-reactions-enabled', reactionsEnabled ? '1' : '0');
+    script.setAttribute('data-emit-metadata', '0');
+    script.setAttribute('data-input-position', inputPosition);
+    script.setAttribute('data-theme', theme);
+    script.setAttribute('data-lang', 'en');
+    script.setAttribute('data-loading', 'lazy');
+    script.crossOrigin = 'anonymous';
+    script.async = true;
+
+    container.appendChild(script);
+  }
+
+  // Load on page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadGiscus);
+  } else {
+    loadGiscus();
+  }
+
+  // Update theme when it changes
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+        const iframe = document.querySelector('.giscus-container iframe');
+        if (iframe) {
+          const theme = document.documentElement.getAttribute('data-theme') === 'light'
+            ? 'light'
+            : 'dark';
+
+          iframe.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            'https://giscus.app'
+          );
+        }
+      }
+    });
+  });
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme']
+  });
+</script>
+
+<style>
+.giscus-wrapper {
+  margin: var(--space-fluid-xl, clamp(3rem, 6vw, 5rem)) var(--space-fluid-md, clamp(1rem, 2.5vw, 2rem));
+  padding: var(--space-fluid-lg, clamp(1.5rem, 3vw, 2.5rem));
+  background: linear-gradient(180deg,
+    color-mix(in oklab, var(--color-bg-soft, #121219) 98%, transparent),
+    color-mix(in oklab, var(--color-bg, #0b0b0f) 100%, transparent));
+  border: 1px solid var(--color-border-subtle, rgba(255, 255, 255, 0.08));
+  border-radius: var(--radius-2xl, 24px);
+  position: relative;
+  overflow: hidden;
+}
+
+.giscus-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 0%,
+    color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 6%, transparent),
+    transparent 60%
+  );
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.giscus-container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Light theme adjustments */
+:root[data-theme="light"] .giscus-wrapper {
+  background: linear-gradient(180deg, #FFFFFF, #F8F8F8);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme="light"] .giscus-wrapper::before {
+  opacity: 0.3;
+}
+</style>

@@ -1,0 +1,26 @@
+# Polkadot Ecosystem Hub - Robots.txt
+# https://polkadotecosystem.com
+
+User-agent: *
+Allow: /
+
+# Disallow archive pages from indexing
+Disallow: /tools/archive/
+Disallow: /dapps/archive/
+Disallow: /club/archive/
+
+# Sitemap
+Sitemap: https://polkadotecosystem.com/sitemap-index.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Common bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

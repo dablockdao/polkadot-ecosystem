@@ -1,0 +1,263 @@
+/* =========================== DESIGN TOKENS =========================== */
+/* Centralized design system tokens for consistent styling */
+
+:root {
+  /* ===== Color System ===== */
+  /* Primary accent - tan/beige */
+  --color-accent-primary: #7A6F5F;
+  --color-accent-secondary: #8B8070;
+
+  /* Background colors (dark theme) */
+  --color-bg-base: #0A0A0A;
+  --color-bg: #0b0b0f;
+  --color-bg-soft: #121219;
+  --color-bg-elevated: #1a1a1f;
+
+  /* Text colors (dark theme) */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #e8e8ef;
+  --color-text-muted: #aeb7cb;
+  --color-text-subtle: #6E7391;
+
+  /* Border colors */
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-default: rgba(255, 255, 255, 0.12);
+  --color-border-strong: rgba(255, 255, 255, 0.18);
+
+  /* ===== Spacing Scale ===== */
+  --space-3xs: 0.25rem;   /* 4px */
+  --space-2xs: 0.5rem;    /* 8px */
+  --space-xs: 0.75rem;    /* 12px */
+  --space-sm: 1rem;       /* 16px */
+  --space-md: 1.5rem;     /* 24px */
+  --space-lg: 2rem;       /* 32px */
+  --space-xl: 3rem;       /* 48px */
+  --space-2xl: 4rem;      /* 64px */
+  --space-3xl: 6rem;      /* 96px */
+
+  /* Fluid spacing (responsive) */
+  --space-fluid-xs: clamp(0.5rem, 1vw, 0.75rem);
+  --space-fluid-sm: clamp(0.75rem, 2vw, 1.25rem);
+  --space-fluid-md: clamp(1rem, 2.5vw, 2rem);
+  --space-fluid-lg: clamp(1.5rem, 3vw, 3rem);
+  --space-fluid-xl: clamp(2rem, 5vw, 4rem);
+
+  /* ===== Typography Scale ===== */
+  /* Font sizes */
+  --text-xs: clamp(0.75rem, 1.2vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 1.4vw, 0.95rem);
+  --text-base: clamp(1rem, 1.6vw, 1.05rem);
+  --text-md: clamp(1.05rem, 1.8vw, 1.2rem);
+  --text-lg: clamp(1.15rem, 2vw, 1.35rem);
+  --text-xl: clamp(1.25rem, 2.4vw, 1.5rem);
+  --text-2xl: clamp(1.5rem, 3vw, 2rem);
+  --text-3xl: clamp(2rem, 4vw, 3rem);
+  --text-4xl: clamp(2.5rem, 5vw, 4rem);
+
+  /* Line heights */
+  --leading-tight: 1.1;
+  --leading-snug: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.6;
+  --leading-loose: 1.8;
+
+  /* Font weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-black: 900;
+
+  /* Font families */
+  --font-heading: 'Optima Bold', sans-serif;
+  --font-heading-alt: 'Optima', sans-serif;
+  --font-body: 'Helvetica', sans-serif;
+  --font-body-bold: 'Helvetica Bold', sans-serif;
+  --font-special: 'Unbounded Bold', system-ui, sans-serif;
+
+  /* ===== Border Radius ===== */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 18px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  /* ===== Shadows ===== */
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.18);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.25);
+  --shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.30);
+  --shadow-2xl: 0 16px 40px rgba(0, 0, 0, 0.35);
+
+  /* Accent shadows */
+  --shadow-accent-sm: 0 4px 12px rgba(122, 111, 95, 0.20);
+  --shadow-accent-md: 0 6px 18px rgba(122, 111, 95, 0.28);
+  --shadow-accent-lg: 0 10px 28px rgba(122, 111, 95, 0.32);
+  --shadow-accent-xl: 0 14px 36px rgba(122, 111, 95, 0.40);
+
+  /* ===== Transitions ===== */
+  --transition-fast: 0.12s ease;
+  --transition-base: 0.18s ease;
+  --transition-slow: 0.22s ease;
+  --transition-slower: 0.3s ease;
+
+  /* ===== Z-Index Scale ===== */
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+
+  /* ===== Breakpoints (for reference in JS) ===== */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* ===== Light Theme Overrides ===== */
+:root[data-theme="light"] {
+  /* Colors */
+  --color-bg-base: #FFFFFF;
+  --color-bg: #FFFFFF;
+  --color-bg-soft: #F5F5F5;
+  --color-bg-elevated: #FAFAFA;
+
+  --color-text-primary: #000000;
+  --color-text-secondary: #0d1b2a;
+  --color-text-muted: #666666;
+  --color-text-subtle: #999999;
+
+  --color-border-subtle: rgba(0, 0, 0, 0.06);
+  --color-border-default: rgba(0, 0, 0, 0.10);
+  --color-border-strong: rgba(0, 0, 0, 0.15);
+
+  /* Shadows (lighter for light theme) */
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.10);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 12px 32px rgba(0, 0, 0, 0.15);
+  --shadow-2xl: 0 16px 40px rgba(0, 0, 0, 0.18);
+
+  --shadow-accent-sm: 0 4px 12px rgba(122, 111, 95, 0.15);
+  --shadow-accent-md: 0 6px 18px rgba(122, 111, 95, 0.20);
+  --shadow-accent-lg: 0 10px 28px rgba(122, 111, 95, 0.25);
+  --shadow-accent-xl: 0 14px 36px rgba(122, 111, 95, 0.30);
+}
+
+/* ===== Utility Classes ===== */
+
+/* Spacing utilities */
+.p-0 { padding: 0; }
+.p-xs { padding: var(--space-xs); }
+.p-sm { padding: var(--space-sm); }
+.p-md { padding: var(--space-md); }
+.p-lg { padding: var(--space-lg); }
+.p-xl { padding: var(--space-xl); }
+
+.m-0 { margin: 0; }
+.m-xs { margin: var(--space-xs); }
+.m-sm { margin: var(--space-sm); }
+.m-md { margin: var(--space-md); }
+.m-lg { margin: var(--space-lg); }
+.m-xl { margin: var(--space-xl); }
+
+/* Gap utilities */
+.gap-xs { gap: var(--space-xs); }
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+.gap-xl { gap: var(--space-xl); }
+
+/* Border radius utilities */
+.rounded-sm { border-radius: var(--radius-sm); }
+.rounded-md { border-radius: var(--radius-md); }
+.rounded-lg { border-radius: var(--radius-lg); }
+.rounded-xl { border-radius: var(--radius-xl); }
+.rounded-2xl { border-radius: var(--radius-2xl); }
+.rounded-full { border-radius: var(--radius-full); }
+
+/* Shadow utilities */
+.shadow-sm { box-shadow: var(--shadow-sm); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
+.shadow-xl { box-shadow: var(--shadow-xl); }
+.shadow-2xl { box-shadow: var(--shadow-2xl); }
+
+/* Decorative effects */
+.with-halo {
+  position: relative;
+  isolation: isolate;
+}
+
+.with-halo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    80% 60% at 50% 0%,
+    color-mix(in oklab, var(--color-accent-primary) 8%, transparent),
+    transparent 60%
+  );
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.with-grid-pattern {
+  position: relative;
+}
+
+.with-grid-pattern::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.07;
+  background-image:
+    linear-gradient(transparent 0 98%, currentColor 98% 100%),
+    linear-gradient(90deg, transparent 0 98%, currentColor 98% 100%);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+:root[data-theme="light"] .with-grid-pattern::after {
+  opacity: 0.04;
+}
+
+/* Interactive states */
+.interactive {
+  transition: transform var(--transition-base), box-shadow var(--transition-slow);
+  cursor: pointer;
+}
+
+.interactive:hover {
+  transform: translateY(-2px);
+}
+
+.interactive:active {
+  transform: translateY(0);
+}
+
+/* Motion safety */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .interactive:hover {
+    transform: none;
+  }
+}

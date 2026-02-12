@@ -1,0 +1,70 @@
+---
+title: 'Simnode'
+description: 'Simnode ofrece a los desarrolladores de Substrate un control total sobre la producción de bloques, la verificación de firmas y la creación de entornos de prueba en tiempo real.'
+hero:
+  tagline: 'Herramienta de Desarrollo y Pruebas para Blockchains basadas en Substrate.'
+  image: 
+    file: ../../../../../assets/hub/orgs/polytopelabs.png
+  actions:
+    - text: 'Github'
+      link: https://github.com/polytope-labs/sc-simnode/
+      icon: external
+    - text: 'Documentación'
+      link: https://simnode.polytope.technology/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
+
+**Simnode** es un cliente shell alternativo para runtimes de Substrate, que brinda a los desarrolladores una flexibilidad y control excepcionales a la hora de probar y desarrollar blockchains. Gracias a sus potentes características, Simnode se adapta a las necesidades únicas de quienes requieren un control preciso sobre la producción de bloques, la verificación de firmas y las pruebas de runtime.  
+- ***Simnode ofrece a los desarrolladores de Substrate un control total sobre la producción de bloques, la verificación de firmas y la creación de entornos de prueba en tiempo real.***
+
+#### Producción de Bloques Manual e Instantánea
+Una de las funciones más destacadas de Simnode es su novedoso enfoque para la producción de bloques. A diferencia del shell por defecto de `sc-service`, que cumple con reglas de consenso predefinidas, Simnode emplea `sc-consensus-manual-seal` para dar a los desarrolladores **control absoluto** en la autoria de bloques. Se ofrecen dos modos:
+
+- **Modo Instant-Seal:**  
+  Configura Simnode para autoría automática de bloques cada vez que ingresa una transacción al pool de transacciones, garantizando rapidez de validación y pruebas.
+- **Modo Manual-Seal:**  
+  Permite a los desarrolladores autorizar bloques a su gusto mediante solicitudes RPC, proporcionando un control granular sobre la producción de bloques en escenarios de prueba avanzados.
+
+#### Mejora en la Verificación de Firmas con WasmExecutor
+Simnode utiliza exclusivamente el **WasmExecutor**, permitiendo a los desarrolladores anular las funciones host de verificación de firmas. En producción, el executor por defecto `NativeElseWasm` prioriza la ejecución de código nativo para optimizar el rendimiento, lo cual limita la posibilidad de personalizar la verificación de firmas.  
+Al depender únicamente del WasmExecutor, Simnode ofrece a los desarrolladores la capacidad de:
+
+- Modificar y probar lógica personalizada de verificación de firmas.  
+- Simular escenarios con firmas inválidas o experimentales.  
+- Obtener mayor flexibilidad en la validación de comportamientos complejos de runtime.
+
+#### Forking de Estado de Cadena en Vivo para Simulaciones Realistas
+Simnode revoluciona el panorama de pruebas al funcionar como un nodo completo con la posibilidad de **forkear** el estado de una cadena en vivo. Esta capacidad permite a los desarrolladores:
+
+- Conectar Simnode a una base de datos existente de una cadena en vivo, replicando el estado de la cadena en el entorno de pruebas.  
+- Ejecutar transacciones desde cualquier cuenta de origen, simulando escenarios del mundo real.  
+- Validar actualizaciones de runtime y scripts de migración con confianza, minimizando riesgos de fallos en producción.
+
+Este atributo resulta invaluable para probar actualizaciones de runtime, asegurar despliegues sin contratiempos y realizar simulaciones con datos reales sin impactar la blockchain activa.
+
+#### Capacidades de Prueba Integrales
+Diseñado para quienes construyen sistemas complejos basados en Substrate, Simnode sobresale en:
+
+- **Pruebas Completas de Runtime:** Permite probar pallets y lógicas de runtime complejas en un entorno muy cercano a la realidad.  
+- **Pruebas de Componentes Onchain y Offchain:** Integra de forma transparente componentes onchain y offchain (como offchain workers), ofreciendo validaciones de extremo a extremo.  
+- **Simulaciones de Actualizaciones de Runtime:** Realiza simulaciones exhaustivas de upgrades y migraciones de runtime para identificar y solucionar posibles problemas antes del despliegue.
+
+#### Integración y Compatibilidad
+Simnode brinda ejemplos de integración para diferentes configuraciones de runtimes basados en Substrate, garantizando una amplia aplicabilidad en el ecosistema:
+
+- Cadenas independientes que usan AURA o BABE para elección de líderes, junto con GRANDPA como consenso.  
+- Parachains que usan AURA como elección de líderes y el consenso de Polkadot.
+
+Estos ejemplos facilitan la adopción de Simnode, ya que permiten a los desarrolladores incorporarlo rápidamente a su flujo de trabajo.
+
+#### Gestión de Lanzamientos Alineada con el SDK de Polkadot
+Para garantizar compatibilidad y estabilidad, Simnode sigue exclusivamente las versiones estables oficiales del **Polkadot SDK**. Cada nueva versión menor estable del Polkadot SDK corresponde a un salto de versión mayor en Simnode. Por ejemplo, `polkadot-stable2409` se alinea con la versión `v16.0.0` de Simnode. Esta sincronización asegura que los desarrolladores puedan integrar Simnode en sus proyectos sin preocuparse por incompatibilidades.
+
+#### Licencia y Código Abierto
+Simnode es de **código abierto** y se distribuye bajo la **Licencia Apache 2.0**, estando disponible gratuitamente para la comunidad de desarrolladores de blockchain. Este compromiso con la transparencia y la colaboración enfatiza su valor como herramienta de innovación dentro de los ecosistemas de Substrate y Polkadot.
+
+#### Conclusión
+Simnode es una herramienta versátil y potente para desarrolladores que trabajan con blockchains basadas en Substrate. Con funciones avanzadas como producción manual de bloques, verificación de firmas personalizable y forking del estado de la cadena en vivo, Simnode proporciona la base para realizar pruebas y simulaciones completas con confianza. Su alineación con el SDK de Polkadot y su condición de software libre refuerzan su atractivo como un recurso indispensable para la innovación blockchain. Ya sea para probar actualizaciones de runtime o simular transacciones complejas, Simnode provee las herramientas necesarias para garantizar confiabilidad y alto rendimiento en entornos de producción.

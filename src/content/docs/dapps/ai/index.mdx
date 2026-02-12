@@ -1,0 +1,113 @@
+---
+title: Polkadot AI Dapps 
+description: Explore all the Polkadot ecosystem AI Dapps.
+sidebar: 
+    label: AI Dapps
+    badge: Feed
+    order: 0
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+Polkadot AI projects combine blockchain technology with artificial intelligence to create innovative solutions across industries. Leveraging Polkadot’s scalable and interoperable network, these projects enable secure data sharing, decentralized AI models, and seamless integration across blockchains. They unlock new possibilities in automation, decision-making, and the development of smarter decentralized applications.
+
+## Polkadot AI Dapps
+----------------
+<ShowcaseImage
+  entries={[
+    {
+      thumbnail: import('/src/assets/dapps/ai/neuroweb.png'),
+      href: '/dapps/ai/neuroweb/',
+      title: 'Neuroweb',
+      },
+  ]}
+/>
+
+
+## Polkadot AI Dapps Videos
+----------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=7_7ANm2DU6Q',
+      title: 'Origin Trail built - Alpha Airdrop',
+	  description: 'Origin Trail is building a "truth-driven internet" through a Decentralized Knowledge Graph (dKG) that rewards contributors with crypto tokens for adding accurate knowledge assets as NFTs',
+    },
+  ]}
+/>
+
+
+## Polkadot AI Dapps: Guide to Confidential Compute, Verifiable AI, and On-chain Agents
+This guide explains how AI dapps on Polkadot work, what stacks teams use today, and where each tool fits. You will learn how to combine confidential compute, verifiable knowledge graphs, and real-time data to deploy AI agents that act on-chain with proofs.
+
+## Why build AI on Polkadot
+Teams choose Polkadot for AI when they need three things at once:
+
+1. privacy and integrity at the compute layer,
+2. data provenance with cryptographic verifiability,
+3. interoperability with multiple chains and apps.
+
+Polkadot provides shared security for parachains and a mature SDK, so builders can focus on features while inheriting robust consensus and cross-chain messaging. Substrate chains can be parachains or standalone, which gives flexibility when architecting AI systems.
+
+## Key building blocks
+
+### Phala Network
+**What it is:** a decentralized confidential compute network on Polkadot. Apps use TEEs to run code privately and produce remote attestations. Phala has introduced AI Agent Contracts that can call LLMs and act via on-chain control.
+
+**Why it matters for AI:**
+* Runs agents in TEEs and outputs proofs that the intended code ran.
+* Bridges agents to live data and EVM apps.
+* Integrations with streaming networks support real-time, decentralized AI agents.
+
+**Good for:** confidential inference, agentic workflows, DeFi automation with attestations, private data copilots.
+
+### NeuroWeb by OriginTrail
+**What it is:** the blockchain that powers OriginTrail’s Decentralized Knowledge Graph (DKG). Evolved via governance from OriginTrail Parachain, it focuses on verifiable AI and knowledge provenance while remaining secured by Polkadot.
+
+**Why it matters for AI:**
+* Verifiable knowledge base for AI systems.
+* Provenance and fact integrity for model inputs and outputs.
+
+**Good for:** retrieval-augmented generation with trusted sources, supply chain or enterprise data verification, AI result auditing.
+
+### Where Bittensor fits
+**What it is:** a Substrate-based network for decentralized machine learning with a market of subnets. It is not a Polkadot parachain. The project originally explored a parachain path, then launched its own chain to operate independently.
+
+**Takeaway:** Bittensor is relevant in the broader Substrate AI landscape. For a **Polkadot AI dapps** article, present it as a neighbor ecosystem rather than a core Polkadot component.
+
+## How the stack works together
+1. **NeuroWeb (OriginTrail DKG)** stores and links the verified facts so agents can retrieve trusted context.
+2. **Phala** runs the agent policy and inference inside TEEs, produces a remote attestation, then triggers on-chain transactions or messages to target apps.
+
+This pattern gives you privacy at execution, provenance for data and outputs, and composability with EVM or parachain apps.
+
+## Feature comparison
+| Project                    | Core focus                                      | Confidentiality mechanism        | Verifiable data or knowledge                     | Real-time data                     | EVM interop                    | Typical use cases                                   |
+| -------------------------- | ----------------------------------------------- | -------------------------------- | ------------------------------------------------ | ---------------------------------- | ------------------------------ | --------------------------------------------------- |
+| **Phala Network**          | Confidential compute and AI agents              | TEEs with remote attestation     | Proofs agents ran intended code                  | Via streaming/data networks        | Yes, via bridges and contracts | Private inference, DeFi agents, enterprise copilots |
+| **NeuroWeb (OriginTrail)** | Decentralized Knowledge Graph for verifiable AI | On-chain provenance across DKG   | Designed for verifiable AI and trusted knowledge | Pull or push via indexers          | Bridges across ecosystems      | RAG with provenance, supply chain AI, compliance    |
+
+
+## FAQs
+1. **Is Bittensor part of the Polkadot ecosystem?**
+Bittensor is built with Substrate but it is not a Polkadot parachain. It operates on its own chain.
+
+2. **What makes Phala suitable for AI agents?**
+TEE-based execution with remote attestation lets you prove that a specific agent ran a specific policy. Phala also provides patterns to call LLMs and integrate live data.
+
+3. **What is NeuroWeb and how is it related to OriginTrail?**
+NeuroWeb is the OriginTrail chain, transformed by governance from OriginTrail Parachain, focused on verifiable AI via the Decentralized Knowledge Graph and secured by Polkadot.
+
+4. **Do I run the model on-chain?**
+Generally no. Run models off-chain in TEEs and bring back proofs plus minimal results. This preserves privacy and keeps costs reasonable.
+
+5. **How do I prove my AI results are trustworthy?**
+Use three layers of evidence: data provenance in NeuroWeb DKG, TEE attestations from Phala or Acurast, and on-chain transaction logs that reflect the agent’s actions.
+
+6. **Is this compatible with EVM apps?**
+Yes. Phala and NeuroWeb interoperate with EVM environments and bridges, so agents can act in EVM-based DeFi or tooling.
+
+
+<DirectoryLinks directory="dapps/ai" />

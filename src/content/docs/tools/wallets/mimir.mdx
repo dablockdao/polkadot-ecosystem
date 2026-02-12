@@ -1,0 +1,193 @@
+---
+title: Mimir
+description: With Mimir you can import/create a multisig wallet, transfer assets, stake DOT natively...
+hero:
+  tagline: Enterprise-grade Multisig Wallet.
+  image: 
+    file: ../../../../assets/tools/wallets/mimir.png
+  actions:
+    - text: Tool
+      link: https://app.mimir.global/
+      icon: external
+    - text: Docs
+      link: https://docs.mimir.global/
+      icon: external
+      variant: secondary
+---
+
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+
+# Mimir Multisig Wallet: Enterprise-Grade Multisig for Polkadot
+Mimir is a purpose-built multisig wallet for Polkadot that enables flexible account architectures (static, proxy-based, and nested multisigs), robust safety checks, and direct integrations with governance and staking apps. This guide explains how Mimir works, when to use it, how it compares to other tools, and a fast path to set up an enterprise-grade treasury workflow.
+
+## Why multisig on Polkadot (right now)
+Polkadot organizations increasingly coordinate via **OpenGov**, **nomination pools**, and **Asset Hub**, so treasuries need controls that span governance, staking, and cross-parachain operations. Native multisig—implemented at the runtime level—remains the most reliable way to share custody, enforce approvals, and harden operational security across teams.
+
+## ELI5: Multisig on Polkadot vs. Ethereum
+* **Ethereum (EOA + contracts):** most treasuries use smart-contract wallets (e.g., Safe).
+* **Polkadot (Substrate accounts):** multisig is **built into the chain** (via pallets). A “static multisig” is a fixed set of members + threshold. A “flexible multisig” layers in **proxies** so you can update members/thresholds without re-creating the account.
+
+## What is Mimir?
+**Mimir** is an enterprise-grade **multisig wallet** focused on the Polkadot ecosystem. It supports **static, flexible, and nested** multisig structures, adds **safety tooling** (decoded call data, simulation), and routes users into key apps—like governance front-ends and the Polkadot **Staking Dashboard**—under the multisig’s identity. The goal: reduce the “raw extrinsic” overhead so teams can operate safely and quickly.
+
+## How Mimir works
+### Account types: static, flexible & nested
+* **Static multisig** (Substrate Multisig Pallet):
+  One-time creation; same address for the same member set and threshold; **membership/threshold can’t change** afterward. Pros: simple, portable. Con: inflexible.
+* **Flexible multisig** (Proxy + Multisig):
+  Create a **pure proxy** whose controller is a static multisig. With threshold agreement, you can later **change members and thresholds**. Trade-offs: multi-tx setup, **per-network** creation, requires a small reserve.
+* **Nested multisig:**
+  A multisig can be a **member of another multisig**, enabling layered org charts (e.g., “Ops” and “Finance” child multisigs under a “Treasury” parent).
+
+### Proxies & pure proxies
+Polkadot’s **Proxy Pallet** provides **pure proxies** (keyless accounts controlled by a proxy) and **proxy types** (e.g., non-transfer, governance, staking). Assigning purpose-scoped proxies to your multisig reduces blast radius and clarifies responsibilities.
+
+### Safety: call data verification & simulation
+* **Decoded call data:** Human-readable preview of the exact extrinsic (method, params, value).
+* **Transaction simulation:** Dry-run a call before final signature to catch failures or unintended behavior.
+
+### App integrations & network support
+Mimir provides guided flows for **OpenGov** voting via governance UIs and **staking** via the Polkadot Staking Dashboard—both under your multisig identity. Wallet extensions commonly used in the ecosystem (Polkadot.js, SubWallet, Talisman) are supported. Mimir’s UX also spans **multiple chains** across Polkadot and EVM ecosystems.
+
+## Key features at a glance
+* **Flexible & nested multisigs** for org-grade structures.
+* **Direct app access** for governance and staking under the multisig identity.
+* **Safety tooling**: decoded call data + simulate-before-execute.
+* **Multi-chain UX** (Polkadot + EVM ecosystems).
+* **Operational clarity** with proxy types and pure proxies.
+
+## Tooling comparison
+Below is a practical snapshot of leading Polkadot multisig options. (Features are summarized from official docs and community materials.)
+
+| Tool                            | Best For                                                                         | Notable Strengths                                                                                                        | You Should Know                                                                                              |
+| ------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
+| **Mimir**                       | Teams needing **flexible/nested** multisigs, governance & staking under multisig | Static & flexible multisigs, nested support; decoded calls & simulation; app routing (governance UIs, Staking Dashboard) | Flexible multisigs are **per-network** and require a reserve; verify roadmap features before relying on them |
+| **Multix (ChainSafe)**          | Power users who prefer **pure-proxy** patterns                                   | Clear pure-proxy management; collaborative approvals                                                                     | Focused on proxy flows; fewer app-level integrations                                                         |
+| **Nova Spektr**                 | **All-in-one wallet** with multisigs, proxies, hardware support                  | Multichain wallet UX; proxy discovery; mobile/desktop                                                                    | Wallet-centric UX; feature scope varies by network                                                           |
+| **Polkadot Multisig by Signet** | Non-technical business users                                                     | Guided enterprise workflow options                                                                                       | Commercial add-ons may apply; confirm hosting/compliance                                                     |
+| **PolkaSafe**                   | Simple, focused multisig operations                                              | Clean extrinsic management; collaborative approvals                                                                      | Fewer advanced proxy/nesting patterns                                                                        |
+| **Polkadot-JS UI**              | Developers & advanced operators                                                  | Lowest-level control; full pallet access                                                                                 | Steep learning curve; higher risk of mis-signing without strict process                                      |
+| **Subscan Multisig Tool**       | Explorer-adjacent flows & audits                                                 | Manage accounts & extrinsics with explorer context                                                                       | Feature evolution is ongoing; UX differs from wallet-style apps                                              |
+
+## Step-by-step: set up a flexible multisig and vote via OpenGov
+> **Goal:** Create a **flexible multisig** (pure proxy + static multisig), then cast an OpenGov vote using the multisig identity.
+
+1. **Create the flexible multisig in Mimir**
+   * Choose members & threshold.
+   * Mimir orchestrates creation across multiple transactions (ensure enough tokens for fees and the proxy reserve).
+   * Remember: a flexible multisig is **scoped to a specific network**; repeat per network you operate on.
+
+2. **Sync existing multisigs (optional)**
+   * If your member accounts already exist on-chain, import/sync them.
+   * Authorize your browser wallet extensions for each signer.
+
+3. **Switch to the multisig account**
+   * In Mimir, select the multisig entity as the **active account**.
+
+4. **Open the governance UI within Mimir**
+   * Navigate to the target referendum.
+   * Initiate the vote from the multisig account.
+   * Other signers will see the **pending approval** item.
+
+5. **Verify & simulate**
+   * Inspect the **decoded call data** (method, parameters, balance impacts).
+   * Run a **transaction simulation** to catch errors before the final signature.
+
+6. **Collect signatures & execute**
+   * Remaining signers approve.
+   * The last approval **executes** the extrinsic.
+   * Record the transaction hash for audit.
+
+> **Tip:** For staking operations, follow Mimir’s documented **Staking Dashboard** flow to nominate validators or manage pools from the multisig.
+
+## Practical checklist: enterprise treasury SOP
+**Structure**
+* [ ] Use **nested multisigs** to mirror your org chart (e.g., Treasury → Finance, Ops).
+* [ ] Assign **proxy types** (non-transfer for Ops; governance for OpenGov; staking for validators/pools).
+
+**Safety**
+* [ ] Enforce **decoded-call review** and **simulation** before final signature.
+* [ ] Require hardware wallets for signers; rotate keys and update membership via **flexible multisig** when staff changes.
+
+**Process**
+* [ ] Define SLA for approvals; set up signer notifications.
+* [ ] Add transaction hashes to payment memos and maintain an **audit log**.
+* [ ] Rehearse emergency procedures (threshold increase, pausing payouts, proxy removal).
+
+## Common pitfalls & tips
+* **“Our flexible multisig isn’t visible on another chain.”**
+  Flexible multisigs are **network-scoped**—create one per chain you use.
+* **“We can’t change members on our old multisig.”**
+  Static multisigs are fixed; migrate to a **flexible** setup for upgradability.
+* **“We executed the wrong call.”**
+  Always open **View Details** to inspect decoded call JSON and **simulate** before final approval.
+* **“Governance from a multisig feels clunky.”**
+  Route through Mimir’s governance flow so the multisig identity is used end-to-end.
+* **“How do we stake via multisig?”**
+  Use the **Staking Dashboard** under the multisig identity (nominations, pools, rewards).
+
+## FAQs
+**1) What’s the difference between static and flexible multisig?**
+Static = fixed members/threshold; **flexible** uses proxies so you can update membership and threshold later (with threshold approval).
+
+**2) Can we nest multisigs (e.g., a department multisig inside a main treasury)?**
+Yes. Mimir supports **multisig-as-member** to mirror organizational structure.
+
+**3) Does Mimir work with governance & staking apps?**
+Yes—documented flows exist for **OpenGov** front-ends and the **Polkadot Staking Dashboard**.
+
+**4) Is there call decoding to avoid signing hex gibberish?**
+Yes. Mimir shows **decoded call data** and supports **transaction simulation**.
+
+**5) Which wallets/extensions are supported?**
+Common Polkadot wallet extensions (Polkadot.js, SubWallet, Talisman) are supported.
+
+**6) Does Mimir support EVM networks too?**
+Mimir indicates support for **multiple chains** across EVM and Polkadot ecosystems.
+
+**7) What alternatives should we evaluate?**
+**Multix, Nova Spektr, Signet/Polkadot Multisig, PolkaSafe, Polkadot-JS UI, Subscan Multisig Tool**.
+
+**8) Is there an official “which app to use?” overview?**
+Yes, community documentation maintains a roundup of multisig apps and account guides.
+
+## Conclusion
+For teams operating on Polkadot in **September 2025**, Mimir offers a pragmatic path to **secure, auditable, and flexible** treasury workflows—without DIY call building or brittle scripts. If you’re running a DAO, DevRel team, or ecosystem program, adopt **flexible + nested** multisigs, wire up governance and staking via documented flows, and standardize verification/simulation before every approval.
+
+
+
+## Mimir Community Videos
+--------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=amm_Vk0vzP4',
+      title: 'Mimir-Polkadot Multisig',
+      description: 'Mimir is an all-in-one asset management tool tailored for the Polkadot ecosystem.'
+    },
+        {
+      href: 'https://www.youtube.com/watch?v=rY0RI_32j2w',
+      title: 'Staking as Multisig and Proxy Account in Polkadot with Mimir',
+      description: 'Staking as Multisig and Proxy Account in Polkadot with Mimir'
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=yPs6F-CaCQs',
+      title: 'Manage Your Proxies in Polkadot with Mimir',
+      description: 'Viewing, adding, and managing various proxy accounts has never been easier.'
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=T5bpxCQfmoU',
+      title: 'Use Cache to Manage Your Transaction in Polkadot with Mimir',
+      description: 'Store transactions temporarily in the cache for future batch processing, with support for nested batch operations.'
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=K_Lq5Q3Npk0',
+      title: 'Create 1/N Multisig in Polkadot with Mimir',
+      description: 'Mimir 2.0 now supports multisig accounts with a threshold of 1, enhancing flexibility.'
+    },
+            {
+      href: 'https://www.youtube.com/watch?v=YbyFwFJfbcY',
+      title: 'View Account Structure in Polkadot with Mimir',
+      description: 'By adding to the watchlist,  you can view the structure of other accounts.'
+    },
+  ]} />

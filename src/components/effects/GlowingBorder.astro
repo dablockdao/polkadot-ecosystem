@@ -1,0 +1,114 @@
+---
+interface Props {
+  class?: string;
+  glowColor?: string;
+  glowSize?: 'sm' | 'md' | 'lg';
+  animated?: boolean;
+}
+
+const {
+  class: className = '',
+  glowColor = 'var(--color-accent-primary, #7A6F5F)',
+  glowSize = 'md',
+  animated = true
+} = Astro.props;
+---
+
+<div class={`glowing-border-container glowing--${glowSize} ${animated ? 'glowing--animated' : ''} ${className}`}>
+  <div class="glowing-border" style={`--glow-color: ${glowColor};`}></div>
+  <div class="glowing-content">
+    <slot />
+  </div>
+</div>
+
+<style>
+/* ===== Glowing Border Container ===== */
+.glowing-border-container {
+  position: relative;
+  border-radius: var(--radius-xl, 18px);
+  padding: 1px; /* Border thickness */
+  background: transparent;
+  overflow: visible;
+}
+
+/* ===== Glowing Border Effect ===== */
+.glowing-border {
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    var(--glow-color) 25%,
+    transparent 50%,
+    var(--glow-color) 75%,
+    transparent 100%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  opacity: 0;
+  transition: opacity var(--transition-slow, 0.22s ease);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Show glow on hover */
+.glowing-border-container:hover .glowing-border {
+  opacity: 1;
+}
+
+/* ===== Animated Variant ===== */
+.glowing--animated .glowing-border {
+  animation: glow-rotate 3s linear infinite;
+}
+
+.glowing--animated:hover .glowing-border {
+  animation: glow-rotate 1.5s linear infinite;
+}
+
+@keyframes glow-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===== Size Variants ===== */
+.glowing--sm .glowing-border {
+  filter: blur(4px);
+}
+
+.glowing--md .glowing-border {
+  filter: blur(8px);
+}
+
+.glowing--lg .glowing-border {
+  filter: blur(12px);
+}
+
+/* ===== Content ===== */
+.glowing-content {
+  position: relative;
+  background: var(--color-bg-soft, #121219);
+  border-radius: inherit;
+  z-index: 2;
+  height: 100%;
+}
+
+/* ===== Light Theme ===== */
+:root[data-theme="light"] .glowing-content {
+  background: white;
+}
+
+/* ===== Motion Safety ===== */
+@media (prefers-reduced-motion: reduce) {
+  .glowing-border {
+    animation: none !important;
+  }
+}
+</style>

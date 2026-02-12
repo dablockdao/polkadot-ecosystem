@@ -1,0 +1,206 @@
+---
+import swirlImage from '../../assets/atlas.png';
+/* Stats.astro — compact, theme-aware */
+const swirlSrc = swirlImage.src;
+---
+
+<section class="stats" aria-labelledby="stats-title">
+  <div class="card">
+    <div class="copy">
+      <h2 id="stats-title">
+        Ecosystem Growth <span class="nowrap">at brightest glance</span>
+      </h2>
+      <p class="subtitle">
+        Dive into key growth metrics showcasing the Polkadot ecosystem's rapid evolution.
+      </p>
+
+      <div class="grid" role="list">
+        <div class="item" role="listitem">
+          <div class="pin" aria-hidden="true"></div>
+          <div class="number">100<sup>+</sup></div>
+          <div class="label">Projects Deployed</div>
+        </div>
+
+        <div class="item" role="listitem">
+          <div class="pin" aria-hidden="true"></div>
+          <div class="number">10<sup>+</sup></div>
+          <div class="label">DAOs Created</div>
+        </div>
+
+        <div class="item" role="listitem">
+          <div class="pin" aria-hidden="true"></div>
+          <div class="number">1000<sup>+</sup></div>
+          <div class="label">Developers Community</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="art" aria-hidden="true">
+      <div class="orb"></div>
+      <div class="swirl"></div>
+    </div>
+  </div>
+</section>
+
+<style define:vars={{ swirl: swirlSrc }}>
+
+  /* ===== Stats.astro — versión compacta desktop ===== */
+
+/* Tokens locales (hereda Starlight si existen) */
+.stats{
+  
+  
+
+  --text: var(--sl-color-text, #e8e8ef);
+  --muted: var(--sl-color-text-muted, #aeb7cb);
+  --bg: var(--sl-color-bg, #0b0b0f);
+  --bg-soft: var(--sl-color-bg-soft, #121219);
+  --hairline: var(--sl-color-hairline, rgba(255,255,255,.10));
+  --divider: color-mix(in oklab, var(--text) 18%, transparent);
+
+  --radius: 18px;
+  --gap: clamp(.75rem, 2vw, 1.25rem);
+  --pad-x: clamp(.9rem, 2.2vw, 1.5rem);
+  --pad-y: clamp(1rem, 2.2vw, 1.6rem);
+  color: var(--text);
+  padding: clamp(1.25rem, 3vw, 2.25rem) 0;     /* ⬅️ menos alto */
+}
+
+/* Card más delgada y sin segunda columna (arte absoluto) */
+.card{
+  position: relative;
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--bg-soft) 96%, transparent),
+      color-mix(in oklab, var(--bg) 100%, transparent));
+  border: 1px solid color-mix(in oklab, var(--text) 10%, transparent);
+  box-shadow: 0 10px 24px color-mix(in oklab, black 18%, transparent);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* “halo” muy sutil sin sumar altura */
+.card::before{
+  content: "";
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(80% 60% at 10% 0%,
+      color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 6%, transparent), transparent 60%),
+    radial-gradient(70% 60% at 110% 100%,
+      color-mix(in oklab, var(--color-accent-secondary, #8B8070) 5%, transparent), transparent 60%);
+  pointer-events: none;
+  opacity: .65;
+}
+
+/* Texto */
+.copy{ padding: var(--pad-y) var(--pad-x); z-index: 1; }
+h2{
+  margin: 0 0 .5rem 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.06;
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);     /* ⬅️ menor en desktop */
+}
+.nowrap{ white-space: nowrap; }
+.subtitle{
+  margin: 0 0 1.2rem 0;
+  max-width: 58ch;
+  color: var(--muted);
+  font-size: clamp(.95rem, 1.4vw, 1.05rem);
+}
+
+/* Grid de métricas */
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gap);
+  align-items: start;
+  position: relative;
+  overflow: hidden;
+}
+.item{
+  position: relative;
+  padding-top: clamp(.9rem, 2vw, 1.15rem);             /* ⬅️ menos aire arriba */
+}
+.item::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(var(--gap) * -0.5);
+  right: calc(var(--gap) * -0.5);
+  border-top: 1px dashed var(--divider);
+  pointer-events: none;
+}
+.pin{
+  position: absolute; top: 0; left: 0;
+  width: 8px; height: 8px; border-radius: 999px;
+  background: var(--color-accent-primary, #7A6F5F);
+  transform: translateY(-50%);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 24%, transparent);
+  z-index: 1;
+}
+
+/* Números compactos */
+.number{
+  --num: clamp(1.9rem, 3.8vw, 2.6rem);
+  display: inline-flex; align-items: baseline;
+  font-size: var(--num);
+  min-height: calc(var(--num) * 1.05);
+  line-height: 1;
+  font-weight: 900; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums lining-nums;
+  background: linear-gradient(92deg, var(--color-accent-primary, #7A6F5F), var(--color-accent-secondary, #8B8070));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+  text-shadow: 0 0 1px rgba(0,0,0,.12);
+}
+.number sup{ position: relative; top: -0.25em; margin-left: .05em; line-height: 0; font-size: .45em; }
+.label{ margin-top: .3rem; font-size: clamp(.93rem, 1.4vw, 1rem); color: color-mix(in oklab, var(--text) 82%, transparent); }
+
+/* Arte decorativo ABSOLUTO (no afecta la altura) */
+.art{
+  position: absolute;
+  bottom: clamp(.6rem, 1.2vw, .9rem);
+  left: clamp(.6rem, 1.2vw, .9rem);
+  width: clamp(120px, 18vw, 200px);
+  height: clamp(120px, 18vw, 200px);
+  min-height: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: .45;
+}
+.orb{
+  position: absolute; inset: -25% -35% -25% -15%;
+  filter: blur(26px);
+  background:
+    radial-gradient(40% 40% at 70% 30%, color-mix(in oklab, var(--color-accent-primary, #7A6F5F) 32%, transparent), transparent 60%),
+    radial-gradient(45% 45% at 20% 75%, color-mix(in oklab, var(--color-accent-secondary, #8B8070) 24%, transparent), transparent 60%);
+}
+.swirl{
+  position: absolute; inset: 0; margin: auto; width: 100%; height: 100%;
+  background-image: url(var(--swirl));
+  background-size: contain; background-repeat: no-repeat; background-position: center;
+  mix-blend-mode: screen; opacity: .42;
+}
+
+:root[data-theme="light"] .stats .swirl{
+  mix-blend-mode: multiply;
+  opacity: .28;
+}
+
+/* Responsivo */
+@media (max-width: 980px){
+  .stats{ padding: clamp(1rem, 3.5vw, 1.75rem) 0; }
+  .grid{ grid-template-columns: 1fr; gap: 1rem; }
+  .art{
+    left: 50%; transform: translateX(-50%);
+    width: clamp(120px, 42vw, 180px); height: clamp(120px, 42vw, 180px);
+    opacity: .32;
+  }
+}
+
+/* Motion */
+@media (prefers-reduced-motion: no-preference){
+  .swirl{ transition: transform .6s ease, opacity .3s ease; }
+  .card:hover .swirl{ transform: scale(1.03) rotate(-2deg); }
+}
