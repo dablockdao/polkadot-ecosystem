@@ -1568,3 +1568,9 @@ main table a:hover {
     padding: 4px 15px;
   }
 }
+
+/* Make first-level nested sidebar links match group label styling */
+.top-level > li > details > ul > li > a {
+  font-weight: 600;
+  color: var(--sl-color-white);
+}

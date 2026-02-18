@@ -111,7 +111,12 @@ export default defineConfig({
 								label: 'How-to Guides', collapsed: true, autogenerate: { directory: 'resources/guides' }
 						},
 											  	{
-								label: 'Media', collapsed: true, autogenerate: { directory: 'resources/media' }
+								label: 'Media', collapsed: true, items: [
+									{ label: 'Ecosystem Library', link: '/eco-library/index.html', attrs: { target: '_blank', rel: 'noopener' } },
+									{ label: 'Polkadot Media', link: '/resources/media/' },
+									{ label: 'Lectures', autogenerate: { directory: 'resources/media/lectures' }, collapsed: true },
+									{ label: 'Interviews', autogenerate: { directory: 'resources/media/interviews' }, collapsed: true },
+								]
 						},
 						{
 								label: 'Kits & Templates', collapsed: true, autogenerate: { directory: 'resources/templates' }
