@@ -1,0 +1,661 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import contentData from '../data/eco-library-content.json';
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Ecosystem Library',
+    description: 'Public videos and images from the Polkadot ecosystem, funded by Polkadot OpenGov.',
+    tableOfContents: false,
+    editUrl: 'https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-atlas/src/pages/eco-library.astro',
+    lastUpdated: new Date(),
+  }}
+>
+
+  <div class="eco-lib not-content">
+
+    <!-- Controls bar -->
+    <div class="eco-lib-controls">
+
+      <!-- Type filter pills -->
+      <div class="eco-lib-filters" role="group" aria-label="Filter by type">
+        <button class="filter-pill active" data-filter="all" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+            <rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
+          </svg>
+          All
+        </button>
+        <button class="filter-pill" data-filter="video" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+          </svg>
+          Videos
+        </button>
+        <button class="filter-pill" data-filter="image" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          Images
+        </button>
+      </div>
+
+      <!-- Sort + action controls -->
+      <div class="eco-lib-actions">
+        <select class="ctrl-select" id="ecoLanguage" aria-label="Filter by language">
+          <option value="all">All Languages</option>
+          <option value="English">English</option>
+        </select>
+        <select class="ctrl-select" id="ecoSort" aria-label="Sort order">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+          <option value="title">Title A–Z</option>
+        </select>
+        <button class="eco-btn eco-btn-ghost" id="ecoSelectBtn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polyline points="9 11 12 14 22 4"/>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+          Select
+        </button>
+        <button class="eco-btn eco-btn-accent" id="ecoContributeBtn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+          Contribute
+        </button>
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="eco-lib-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input
+        type="search"
+        id="ecoSearch"
+        placeholder="Search videos and images…"
+        aria-label="Search content"
+        autocomplete="off"
+      >
+    </div>
+
+    <!-- Stats chips -->
+    <div class="eco-lib-stats" id="ecoStats" aria-live="polite"></div>
+
+    <!-- Selection bar (hidden until items selected) -->
+    <div class="eco-lib-selection-bar" id="ecoSelectionBar" style="display:none;" role="status" aria-live="polite">
+      <span id="ecoSelectionCount">0 selected</span>
+      <button class="eco-btn eco-btn-dl" id="ecoDownloadBtn" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download Selected
+      </button>
+      <button class="eco-btn" id="ecoClearBtn" type="button">Clear</button>
+    </div>
+
+    <!-- Media grid -->
+    <div class="eco-lib-grid" id="ecoGrid" role="list"></div>
+
+    <!-- Empty state (rendered inside grid via JS) -->
+
+  <!-- ========= Video Modal ========= -->
+  <div class="eco-modal" id="ecoVideoModal" role="dialog" aria-modal="true" aria-labelledby="ecoModalTitle">
+    <div class="eco-modal-backdrop" id="ecoModalBackdrop"></div>
+    <div class="eco-modal-box">
+      <button class="eco-modal-close" id="ecoModalClose" aria-label="Close video">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="eco-modal-inner">
+        <div class="eco-video-wrap" id="ecoVideoWrap"></div>
+        <h3 class="eco-modal-title" id="ecoModalTitle"></h3>
+        <p class="eco-modal-desc" id="ecoModalDesc"></p>
+        <div class="eco-meta-grid" id="ecoMetaGrid" style="display:none;">
+          <div class="eco-meta-item">
+            <span class="eco-meta-label">File size</span>
+            <span class="eco-meta-value" id="metaSize">—</span>
+          </div>
+          <div class="eco-meta-item">
+            <span class="eco-meta-label">Duration</span>
+            <span class="eco-meta-value" id="metaDuration">—</span>
+          </div>
+          <div class="eco-meta-item">
+            <span class="eco-meta-label">Language</span>
+            <span class="eco-meta-value" id="metaLanguage">—</span>
+          </div>
+          <div class="eco-meta-item">
+            <span class="eco-meta-label">Upload date</span>
+            <span class="eco-meta-value" id="metaDate">—</span>
+          </div>
+        </div>
+        <div class="eco-meta-tags" id="ecoMetaTags" style="display:none;"></div>
+        <div class="eco-modal-actions">
+          <a href="#" class="eco-btn eco-btn-accent" id="ecoArchiveLink" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            View on Archive.org
+          </a>
+          <a href="#" class="eco-btn eco-btn-ghost" id="ecoVideoDownload" download target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Download
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========= Image Lightbox ========= -->
+  <div class="eco-lightbox" id="ecoLightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="eco-lightbox-backdrop" id="ecoLightboxBackdrop"></div>
+    <button class="eco-lightbox-close" id="ecoLightboxClose" aria-label="Close image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="eco-lightbox-content">
+      <img src="" alt="" id="ecoLightboxImg" loading="lazy">
+      <div class="eco-lightbox-bar">
+        <p class="eco-lightbox-title" id="ecoLightboxTitle"></p>
+        <a href="#" class="eco-btn eco-btn-accent" id="ecoLightboxDownload" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========= Contribute Modal ========= -->
+  <div class="eco-modal" id="ecoContributeModal" role="dialog" aria-modal="true" aria-labelledby="ecoContributeTitle">
+    <div class="eco-modal-backdrop" id="ecoContributeBackdrop"></div>
+    <div class="eco-contribute-box">
+      <button class="eco-modal-close" id="ecoContributeClose" aria-label="Close form">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="eco-modal-inner">
+        <h3 class="eco-contribute-title" id="ecoContributeTitle">Contribute Content</h3>
+        <p class="eco-contribute-desc">
+          Have videos or images from the Polkadot ecosystem to share?
+          Fill in the details below and we'll add them to the archive.
+        </p>
+        <form id="ecoContributeForm" class="eco-form" novalidate>
+          <div class="eco-field">
+            <label for="ctbName">Your Name</label>
+            <input type="text" id="ctbName" name="name" required autocomplete="name">
+          </div>
+          <div class="eco-field">
+            <label for="ctbEmail">Your Email</label>
+            <input type="email" id="ctbEmail" name="email" required autocomplete="email">
+          </div>
+          <div class="eco-field">
+            <label for="ctbType">Content Type</label>
+            <select id="ctbType" name="contentType" required>
+              <option value="">Select type…</option>
+              <option value="video">Video</option>
+              <option value="image">Image</option>
+              <option value="both">Both Videos &amp; Images</option>
+            </select>
+          </div>
+          <div class="eco-field">
+            <label for="ctbDesc">Description</label>
+            <textarea id="ctbDesc" name="description" rows="3"
+              placeholder="Describe the content you'd like to contribute…" required></textarea>
+          </div>
+          <div class="eco-field">
+            <label for="ctbLink">Link to Content <span style="font-weight:400;opacity:.6;">(optional)</span></label>
+            <input type="url" id="ctbLink" name="link" placeholder="https://…" autocomplete="url">
+          </div>
+          <div class="eco-form-actions">
+            <button type="submit" class="eco-btn eco-btn-accent">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              Send via Email
+            </button>
+            <button type="button" class="eco-btn eco-btn-ghost" id="ecoContributeCancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div><!-- /.eco-lib -->
+
+</StarlightPage>
+
+<style is:global>
+  @import '../styles/eco-library.css';
+</style>
+
+<script is:inline define:vars={{ contentData }}>
+(function () {
+  'use strict';
+
+  // ---- State ----
+  let allMedia   = contentData;
+  let filter     = 'all';
+  let language   = 'all';
+  let sort       = 'newest';
+  let query      = '';
+  let selectMode = false;
+  let selected   = new Set();
+
+  // ---- Element refs ----
+  const $ = id => document.getElementById(id);
+  const grid         = $('ecoGrid');
+  const statsEl      = $('ecoStats');
+  const searchInput  = $('ecoSearch');
+  const filterBtns   = document.querySelectorAll('.filter-pill');
+  const langSel      = $('ecoLanguage');
+  const sortSel      = $('ecoSort');
+  const selectBtn    = $('ecoSelectBtn');
+  const selBar       = $('ecoSelectionBar');
+  const selCount     = $('ecoSelectionCount');
+  const downloadBtn  = $('ecoDownloadBtn');
+  const clearBtn     = $('ecoClearBtn');
+  const contributeBtn = $('ecoContributeBtn');
+
+  // Video modal
+  const videoModal   = $('ecoVideoModal');
+  const modalClose   = $('ecoModalClose');
+  const modalBdrop   = $('ecoModalBackdrop');
+  const videoWrap    = $('ecoVideoWrap');
+  const modalTitle   = $('ecoModalTitle');
+  const modalDesc    = $('ecoModalDesc');
+  const metaGrid     = $('ecoMetaGrid');
+  const metaTags     = $('ecoMetaTags');
+  const archiveLink  = $('ecoArchiveLink');
+  const videoDown    = $('ecoVideoDownload');
+
+  // Lightbox
+  const lightbox     = $('ecoLightbox');
+  const lbClose      = $('ecoLightboxClose');
+  const lbBdrop      = $('ecoLightboxBackdrop');
+  const lbImg        = $('ecoLightboxImg');
+  const lbTitle      = $('ecoLightboxTitle');
+  const lbDownload   = $('ecoLightboxDownload');
+
+  // Contribute modal
+  const contributeModal  = $('ecoContributeModal');
+  const contributeClose  = $('ecoContributeClose');
+  const contributeBdrop  = $('ecoContributeBackdrop');
+  const contributeForm   = $('ecoContributeForm');
+  const contributeCancel = $('ecoContributeCancel');
+
+  // ---- Helpers ----
+  function mediaUrl(item) {
+    return item.source === 'local'
+      ? item.url
+      : `https://archive.org/download/${item.archiveId}/${encodeURIComponent(item.filename)}`;
+  }
+
+  function lockScroll()   { document.body.style.overflow = 'hidden'; }
+  function unlockScroll() { document.body.style.overflow = ''; }
+
+  // ---- Stats ----
+  function renderStats() {
+    const vCount = allMedia.filter(m => m.type === 'video').length;
+    const iCount = allMedia.filter(m => m.type === 'image').length;
+    statsEl.innerHTML = `
+      <div class="stat-chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+        </svg>
+        <strong>${vCount}</strong> Videos
+      </div>
+      <div class="stat-chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+          <circle cx="8.5" cy="8.5" r="1.5"/>
+          <polyline points="21 15 16 10 5 21"/>
+        </svg>
+        <strong>${iCount}</strong> Images
+      </div>
+    `;
+  }
+
+  // ---- Sort ----
+  function sortMedia(arr) {
+    const copy = [...arr];
+    if (sort === 'newest') {
+      copy.sort((a, b) => (b.uploadDate || '0').localeCompare(a.uploadDate || '0'));
+    } else if (sort === 'oldest') {
+      copy.sort((a, b) => (a.uploadDate || '9999').localeCompare(b.uploadDate || '9999'));
+    } else {
+      copy.sort((a, b) => a.title.localeCompare(b.title));
+    }
+    return copy;
+  }
+
+  // ---- Render grid ----
+  function render() {
+    const lq = query.toLowerCase();
+    let items = allMedia.filter(item => {
+      if (filter !== 'all' && item.type !== filter) return false;
+      if (language !== 'all' && item.type === 'video' && item.language !== language) return false;
+      if (lq && !item.title.toLowerCase().includes(lq) &&
+          !(item.description || '').toLowerCase().includes(lq)) return false;
+      return true;
+    });
+    items = sortMedia(items);
+
+    grid.innerHTML = '';
+
+    if (items.length === 0) {
+      grid.innerHTML = `
+        <div class="eco-lib-empty">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <h3>No content found</h3>
+          <p>Try adjusting your search or filters.</p>
+        </div>`;
+      return;
+    }
+
+    items.forEach(item => grid.appendChild(makeCard(item)));
+  }
+
+  // ---- Card factory ----
+  function makeCard(item) {
+    const url     = mediaUrl(item);
+    const isImg   = item.type === 'image';
+    const isSel   = selected.has(item.id);
+
+    const card = document.createElement('div');
+    card.className = `media-card${isImg ? ' image-card' : ''}${selectMode ? ' select-mode' : ''}${isSel ? ' selected' : ''}`;
+    card.setAttribute('role', 'listitem');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', item.title);
+
+    card.innerHTML = `
+      <div class="card-checkbox${isSel ? ' checked' : ''}" data-id="${item.id}" aria-label="Select ${item.title}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <div class="card-thumb">
+        ${isImg
+          ? `<img src="${url}" alt="${item.title}" loading="lazy">`
+          : `<video preload="metadata" muted><source src="${url}#t=0.1" type="video/mp4"></video>
+             <div class="thumb-overlay">
+               <div class="play-btn" aria-hidden="true">
+                 <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+               </div>
+             </div>`
+        }
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">${item.title}</h3>
+        <div class="card-meta">
+          <span class="card-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              ${isImg
+                ? '<rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>'
+                : '<polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>'
+              }
+            </svg>
+            ${isImg ? 'Image' : (item.duration || 'Video')}
+          </span>
+          <span>${item.source === 'local' ? 'Local' : 'Archive.org'}</span>
+        </div>
+      </div>
+    `;
+
+    // Checkbox click
+    card.querySelector('.card-checkbox').addEventListener('click', e => {
+      e.stopPropagation();
+      toggleSelect(item.id);
+    });
+
+    // Card click / Enter key
+    function activate() {
+      if (selectMode) {
+        toggleSelect(item.id);
+      } else if (isImg) {
+        openLightbox(item);
+      } else {
+        openVideo(item);
+      }
+    }
+
+    card.addEventListener('click', activate);
+    card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); } });
+
+    return card;
+  }
+
+  // ---- Selection ----
+  function toggleSelect(id) {
+    selected.has(id) ? selected.delete(id) : selected.add(id);
+    updateSelBar();
+    render();
+  }
+
+  function clearSel() {
+    selected.clear();
+    updateSelBar();
+    render();
+  }
+
+  function updateSelBar() {
+    selCount.textContent = `${selected.size} selected`;
+    selBar.style.display = selected.size > 0 ? 'flex' : 'none';
+  }
+
+  function toggleSelectMode() {
+    selectMode = !selectMode;
+    if (!selectMode) clearSel();
+    selectBtn.innerHTML = selectMode
+      ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+           <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+         </svg> Cancel`
+      : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+           <polyline points="9 11 12 14 22 4"/>
+           <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+         </svg> Select`;
+    render();
+  }
+
+  function downloadSelected() {
+    allMedia
+      .filter(m => selected.has(m.id))
+      .forEach((item, i) => {
+        setTimeout(() => {
+          const a = document.createElement('a');
+          a.href = mediaUrl(item);
+          a.download = item.filename || item.title;
+          a.target = '_blank';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+        }, i * 500);
+      });
+  }
+
+  // ---- Video modal ----
+  async function openVideo(item) {
+    const url = mediaUrl(item);
+    videoWrap.innerHTML = `<video controls autoplay><source src="${url}" type="video/mp4">Your browser does not support video.</video>`;
+    modalTitle.textContent = item.title;
+    modalDesc.textContent  = item.description || '';
+    videoDown.href = url;
+
+    if (item.source !== 'local') {
+      archiveLink.href  = `https://archive.org/details/${item.archiveId}`;
+      archiveLink.style.display = 'inline-flex';
+      metaGrid.style.display = 'grid';
+      metaTags.style.display = 'none';
+      ['metaSize','metaDuration','metaLanguage','metaDate'].forEach(id => { $(id).textContent = '…'; });
+
+      fetchArchiveMeta(item.archiveId).then(meta => {
+        if (!meta) return;
+        $('metaSize').textContent     = meta.size     || 'N/A';
+        $('metaDuration').textContent = meta.duration || item.duration || 'N/A';
+        $('metaLanguage').textContent = meta.language || 'N/A';
+        $('metaDate').textContent     = meta.date     || 'N/A';
+        if (meta.subjects && meta.subjects.length) {
+          metaTags.style.display = 'flex';
+          metaTags.innerHTML = meta.subjects
+            .map(s => `<span class="eco-meta-tag">${s}</span>`)
+            .join('');
+        }
+      });
+    } else {
+      archiveLink.style.display = 'none';
+      metaGrid.style.display = 'none';
+      metaTags.style.display = 'none';
+    }
+
+    videoModal.classList.add('open');
+    lockScroll();
+    modalClose.focus();
+  }
+
+  function closeVideo() {
+    videoModal.classList.remove('open');
+    videoWrap.innerHTML = '';
+    unlockScroll();
+  }
+
+  // ---- Lightbox ----
+  function openLightbox(item) {
+    const url = mediaUrl(item);
+    lbImg.src       = url;
+    lbImg.alt       = item.title;
+    lbTitle.textContent = item.title;
+    lbDownload.href = url;
+    lbDownload.download = item.filename || item.title;
+    lightbox.classList.add('open');
+    lockScroll();
+    lbClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lbImg.src = '';
+    unlockScroll();
+  }
+
+  // ---- Contribute modal ----
+  function openContribute() {
+    contributeModal.classList.add('open');
+    lockScroll();
+    contributeClose.focus();
+  }
+
+  function closeContribute() {
+    contributeModal.classList.remove('open');
+    contributeForm.reset();
+    unlockScroll();
+  }
+
+  function handleContributeSubmit(e) {
+    e.preventDefault();
+    const fd      = new FormData(contributeForm);
+    const name    = fd.get('name')        || '';
+    const email   = fd.get('email')       || '';
+    const ctype   = fd.get('contentType') || '';
+    const desc    = fd.get('description') || '';
+    const link    = fd.get('link')        || '';
+
+    const subject = encodeURIComponent(`Content Contribution from ${name}`);
+    const body    = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nContent Type: ${ctype}\nDescription: ${desc}${link ? `\nLink: ${link}` : ''}\n\n---\nSent from Polkadot Ecosystem Library`
+    );
+    window.location.href = `mailto:insights@palalabs.org?subject=${subject}&body=${body}`;
+    closeContribute();
+  }
+
+  // ---- Archive.org metadata ----
+  async function fetchArchiveMeta(archiveId) {
+    try {
+      const res  = await fetch(`https://archive.org/metadata/${archiveId}`);
+      const data = await res.json();
+      const meta = { size: null, duration: null, language: null, date: null, subjects: [] };
+
+      if (data.files) {
+        const vf = data.files.find(f => f.format === 'MPEG4' || (f.name || '').endsWith('.mp4'));
+        if (vf) {
+          if (vf.size)   meta.size     = `${(parseInt(vf.size) / 1048576).toFixed(1)} MB`;
+          if (vf.length) meta.duration = fmtDur(parseFloat(vf.length));
+        }
+      }
+      if (data.metadata) {
+        meta.language = data.metadata.language  || 'Not specified';
+        meta.date     = data.metadata.publicdate || data.metadata.addeddate || 'Not specified';
+        if (data.metadata.subject) {
+          meta.subjects = Array.isArray(data.metadata.subject)
+            ? data.metadata.subject : [data.metadata.subject];
+        }
+      }
+      return meta;
+    } catch (_) { return null; }
+  }
+
+  function fmtDur(s) {
+    const h = Math.floor(s / 3600);
+    const m = Math.floor((s % 3600) / 60);
+    const sec = Math.floor(s % 60);
+    return h > 0
+      ? `${h}:${String(m).padStart(2,'0')}:${String(sec).padStart(2,'0')}`
+      : `${m}:${String(sec).padStart(2,'0')}`;
+  }
+
+  // ---- Event wiring ----
+  filterBtns.forEach(btn => btn.addEventListener('click', () => {
+    filter = btn.dataset.filter;
+    filterBtns.forEach(b => b.classList.toggle('active', b === btn));
+    render();
+  }));
+
+  searchInput.addEventListener('input', () => { query = searchInput.value; render(); });
+  langSel.addEventListener('change', () => { language = langSel.value; render(); });
+  sortSel.addEventListener('change', () => { sort = sortSel.value; render(); });
+
+  selectBtn.addEventListener('click', toggleSelectMode);
+  downloadBtn.addEventListener('click', downloadSelected);
+  clearBtn.addEventListener('click', clearSel);
+  contributeBtn.addEventListener('click', openContribute);
+
+  modalClose.addEventListener('click', closeVideo);
+  modalBdrop.addEventListener('click', closeVideo);
+  lbClose.addEventListener('click', closeLightbox);
+  lbBdrop.addEventListener('click', closeLightbox);
+  contributeClose.addEventListener('click', closeContribute);
+  contributeBdrop.addEventListener('click', closeContribute);
+  contributeCancel.addEventListener('click', closeContribute);
+  contributeForm.addEventListener('submit', handleContributeSubmit);
+
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    if (videoModal.classList.contains('open'))      { closeVideo(); return; }
+    if (lightbox.classList.contains('open'))        { closeLightbox(); return; }
+    if (contributeModal.classList.contains('open')) { closeContribute(); return; }
+    if (selectMode)                                 { toggleSelectMode(); }
+  });
+
+  // ---- Init ----
+  renderStats();
+  render();
+})();
+</script>
