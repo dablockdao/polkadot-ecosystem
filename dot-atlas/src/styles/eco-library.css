@@ -1,0 +1,899 @@
+/* ============================================================
+   ECO-LIBRARY PAGE — native Atlas/Starlight styles
+   Uses project patterns: color-mix, Optima, --sl-color-* vars
+   ============================================================ */
+
+/* ---- Scoped custom properties ---- */
+.eco-lib {
+  --accent: #E6007A;
+  --accent-dim: color-mix(in oklab, #E6007A 70%, transparent);
+  --accent-glow: color-mix(in oklab, #E6007A 18%, transparent);
+  --fg: var(--sl-color-text, #e8e8ef);
+  --fg-muted: var(--sl-color-text-muted, #aeb7cb);
+  --bg: var(--sl-color-bg, #0b0b0f);
+  --bg-soft: var(--sl-color-bg-soft, #121219);
+  --hairline: color-mix(in oklab, var(--fg) 12%, transparent);
+  --hairline-strong: color-mix(in oklab, var(--fg) 20%, transparent);
+  --radius-card: 14px;
+  --radius-pill: 999px;
+  --radius-btn: 10px;
+  --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.25);
+  --shadow-card-hover: 0 8px 28px rgba(0, 0, 0, 0.35);
+  --transition: 0.18s ease;
+
+  font-family: 'Helvetica', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--fg);
+}
+
+/* Hide the global Starlight footer on this specific page */
+footer.site-footer {
+  display: none !important;
+}
+
+/* Light theme overrides */
+:root[data-theme='light'] .eco-lib {
+  --bg-soft: #f2f4f7;
+  --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 6px 22px rgba(0, 0, 0, 0.14);
+}
+
+/* ---- Controls bar ---- */
+.eco-lib-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Filter pills */
+.eco-lib-filters {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--hairline-strong);
+  background: color-mix(in oklab, var(--fg) 5%, transparent);
+  color: var(--fg-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+  white-space: nowrap;
+}
+
+.filter-pill svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.filter-pill:hover {
+  background: color-mix(in oklab, var(--fg) 10%, transparent);
+  color: var(--fg);
+  border-color: var(--hairline-strong);
+}
+
+.filter-pill.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.filter-pill:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--accent) 60%, transparent);
+  outline-offset: 2px;
+}
+
+/* Right-side controls */
+.eco-lib-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.ctrl-select {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-btn);
+  background: color-mix(in oklab, var(--fg) 5%, transparent);
+  color: var(--fg);
+  font-size: 0.875rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+  appearance: auto;
+}
+
+.ctrl-select:hover {
+  background: color-mix(in oklab, var(--fg) 10%, transparent);
+}
+
+.ctrl-select:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--accent) 60%, transparent);
+  outline-offset: 2px;
+}
+
+/* Buttons — two variants */
+.eco-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-btn);
+  border: 1px solid transparent;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform var(--transition), background var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.eco-btn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.eco-btn:hover {
+  transform: translateY(-1px);
+}
+
+.eco-btn:focus-visible {
+  outline: 2px solid color-mix(in oklab, var(--accent) 60%, transparent);
+  outline-offset: 2px;
+}
+
+.eco-btn-ghost {
+  background: color-mix(in oklab, var(--fg) 6%, transparent);
+  border-color: var(--hairline-strong);
+  color: var(--fg);
+}
+
+.eco-btn-ghost:hover {
+  background: color-mix(in oklab, var(--fg) 12%, transparent);
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.eco-btn-accent {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 14px var(--accent-glow);
+}
+
+.eco-btn-accent:hover {
+  background: color-mix(in oklab, var(--accent) 88%, #000);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 6px 20px color-mix(in oklab, var(--accent) 30%, transparent);
+}
+
+/* ---- Search ---- */
+.eco-lib-search {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.eco-lib-search svg {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: var(--fg-muted);
+  pointer-events: none;
+}
+
+.eco-lib-search input {
+  width: 100%;
+  padding: 0.6rem 1rem 0.6rem 2.4rem;
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-pill);
+  background: color-mix(in oklab, var(--fg) 4%, transparent);
+  color: var(--fg);
+  font-size: 0.9rem;
+  font-family: inherit;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.eco-lib-search input::placeholder {
+  color: var(--fg-muted);
+}
+
+.eco-lib-search input:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--fg) 6%, transparent);
+}
+
+/* ---- Stats row ---- */
+.eco-lib-stats {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--hairline);
+  background: color-mix(in oklab, var(--fg) 4%, transparent);
+  font-size: 0.8rem;
+  color: var(--fg-muted);
+}
+
+.stat-chip svg {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+}
+
+.stat-chip strong {
+  font-weight: 700;
+  color: var(--fg) !important;
+  font-size: 0.875rem;
+}
+
+/* ---- Selection banner ---- */
+.eco-lib-selection-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+  background: var(--accent);
+  border-radius: var(--radius-btn);
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.eco-lib-selection-bar .eco-btn {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.eco-lib-selection-bar .eco-btn:hover {
+  background: rgba(255, 255, 255, 0.28);
+  color: #fff;
+}
+
+.eco-lib-selection-bar .eco-btn-dl {
+  background: #fff;
+  color: var(--accent);
+  border-color: transparent;
+}
+
+.eco-lib-selection-bar .eco-btn-dl:hover {
+  background: #f0f0f0;
+  color: var(--accent);
+}
+
+/* ---- Media grid ---- */
+.eco-lib-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ---- Media card ---- */
+.media-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--hairline);
+  background: var(--bg-soft);
+  overflow: clip;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  will-change: transform;
+  isolation: isolate;
+}
+
+/* Subtle accent halo */
+.media-card::after {
+  content: '';
+  position: absolute;
+  inset: -30% -40% auto;
+  height: 55%;
+  background: radial-gradient(50% 50% at 50% 0%, var(--accent-glow) 0%, transparent 100%);
+  filter: blur(20px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity var(--transition);
+}
+
+.media-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+  border-color: color-mix(in oklab, var(--accent) 35%, transparent);
+}
+
+.media-card:hover::after {
+  opacity: 1;
+}
+
+.media-card.select-mode {
+  cursor: default;
+}
+
+.media-card.selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-glow), var(--shadow-card);
+}
+
+/* Checkbox overlay */
+.card-checkbox {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  z-index: 10;
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+  backdrop-filter: blur(4px);
+}
+
+.select-mode .card-checkbox {
+  display: flex;
+}
+
+.card-checkbox.checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.card-checkbox svg {
+  width: 14px;
+  height: 14px;
+  stroke: #fff;
+  stroke-width: 3;
+  display: none;
+}
+
+.card-checkbox.checked svg {
+  display: block;
+}
+
+/* Thumbnail */
+.card-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: color-mix(in oklab, var(--fg) 6%, transparent);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card-thumb img,
+.card-thumb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.media-card.image-card .card-thumb img {
+  object-fit: contain;
+  background: #000;
+}
+
+/* Play overlay */
+.thumb-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.media-card:hover .thumb-overlay {
+  opacity: 1;
+}
+
+.play-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px color-mix(in oklab, var(--accent) 40%, transparent);
+}
+
+.play-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  margin-left: 3px;
+}
+
+/* Card body */
+.card-body {
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.card-title {
+  font-family: 'Optima Bold', Optima, system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--fg);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--fg-muted);
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  background: color-mix(in oklab, var(--fg) 8%, transparent);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--fg-muted);
+}
+
+.card-badge svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* ---- Empty state ---- */
+.eco-lib-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 5rem 1rem;
+  color: var(--fg-muted);
+}
+
+.eco-lib-empty svg {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 48px;
+  height: 48px;
+  opacity: 0.4;
+}
+
+.eco-lib-empty h3 {
+  font-family: 'Optima Bold', Optima, system-ui, sans-serif;
+  font-size: 1.15rem;
+  color: var(--fg);
+  margin: 0 0 0.4rem;
+}
+
+.eco-lib-empty p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ============================================================
+   MODALS
+   ============================================================ */
+
+.eco-modal,
+.eco-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.eco-modal.open,
+.eco-lightbox.open {
+  display: flex;
+}
+
+.eco-modal-backdrop,
+.eco-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(4px);
+}
+
+/* Video modal content */
+.eco-modal-box {
+  position: relative;
+  background: var(--bg-soft);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--hairline);
+  max-width: 760px;
+  width: 100%;
+  max-height: 90svh;
+  overflow-y: auto;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.eco-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.45);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background var(--transition);
+  backdrop-filter: blur(6px);
+}
+
+.eco-modal-close:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.eco-modal-close svg {
+  width: 18px;
+  height: 18px;
+}
+
+.eco-modal-inner {
+  padding: 1.25rem;
+}
+
+.eco-video-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 48vh;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+
+.eco-video-wrap video,
+.eco-video-wrap iframe {
+  width: 100%;
+  height: 100% !important;
+  display: block;
+  border: none;
+}
+
+.eco-modal-title {
+  font-family: 'Optima Bold', Optima, system-ui, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--fg);
+  margin: 0 0 0.4rem;
+  line-height: 1.35;
+}
+
+.eco-modal-desc {
+  font-size: 0.9rem;
+  color: var(--fg-muted);
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+/* Metadata grid */
+.eco-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: color-mix(in oklab, var(--fg) 5%, transparent);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--hairline);
+}
+
+.eco-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.eco-meta-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--fg-muted);
+  font-weight: 600;
+}
+
+.eco-meta-value {
+  font-size: 0.875rem;
+  color: var(--fg);
+  font-weight: 500;
+}
+
+.eco-meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.eco-meta-tag {
+  display: inline-flex;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.eco-modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+/* Lightbox */
+.eco-lightbox-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: min(90vw, 800px);
+  max-height: 90svh;
+}
+
+.eco-lightbox-close {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background var(--transition);
+  backdrop-filter: blur(6px);
+}
+
+.eco-lightbox-close:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.eco-lightbox-close svg {
+  width: 18px;
+  height: 18px;
+}
+
+#ecoLightboxImg {
+  max-width: 100%;
+  max-height: calc(90svh - 80px);
+  border-radius: 10px;
+  object-fit: contain;
+  display: block;
+}
+
+.eco-lightbox-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.1rem;
+  border-radius: 12px;
+  background: color-mix(in oklab, var(--bg-soft) 95%, white);
+  border: 1px solid var(--hairline);
+  width: 100%;
+}
+
+.eco-lightbox-title {
+  flex: 1;
+  font-family: 'Optima Bold', Optima, system-ui, sans-serif;
+  font-size: 0.9rem;
+  color: var(--fg);
+  font-weight: 700;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Contribute modal */
+.eco-contribute-box {
+  position: relative;
+  background: var(--bg-soft);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--hairline);
+  max-width: 560px;
+  width: 100%;
+  max-height: 90svh;
+  overflow-y: auto;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.eco-contribute-box .eco-modal-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.eco-contribute-title {
+  font-family: 'Optima Bold', Optima, system-ui, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--fg);
+  margin: 0;
+}
+
+.eco-contribute-desc {
+  font-size: 0.875rem;
+  color: var(--fg-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Form */
+.eco-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.eco-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.eco-field label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--fg);
+  letter-spacing: 0.02em;
+}
+
+.eco-field input,
+.eco-field select,
+.eco-field textarea {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--radius-btn);
+  background: color-mix(in oklab, var(--fg) 4%, transparent);
+  color: var(--fg);
+  font-size: 0.875rem;
+  font-family: inherit;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.eco-field input:focus,
+.eco-field select:focus,
+.eco-field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--fg) 7%, transparent);
+}
+
+.eco-field textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.eco-form-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 640px) {
+  .eco-lib-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .eco-lib-actions {
+    justify-content: flex-start;
+  }
+
+  .eco-lib-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .eco-modal-box,
+  .eco-contribute-box {
+    max-height: 100svh;
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .eco-modal,
+  .eco-lightbox {
+    padding: 0;
+  }
+
+  .eco-form-actions {
+    flex-direction: column;
+  }
+
+  .eco-form-actions .eco-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .eco-lib-selection-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .eco-lib-selection-bar .eco-btn {
+    justify-content: center;
+  }
+}
+
+/* ---- Motion preference ---- */
+@media (prefers-reduced-motion: reduce) {
+
+  .media-card,
+  .eco-btn,
+  .filter-pill,
+  .ctrl-select {
+    transition: none !important;
+  }
+}

@@ -1574,3 +1574,18 @@ main table a:hover {
   font-weight: 600;
   color: var(--sl-color-white);
 }
+
+/* =========================== SECTION: Eco-Library Page Scope Fix =========================== */
+/* Override the global p,ul,li,span color rule for the eco-library page,
+   allowing the page's own color management via --text-primary etc. */
+.eco-library-page p,
+.eco-library-page ul,
+.eco-library-page li,
+.eco-library-page span {
+  color: inherit !important;
+  font-family: inherit;
+}
+
+.eco-library-page strong {
+  color: inherit !important;
+}
