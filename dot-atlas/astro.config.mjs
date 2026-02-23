@@ -112,7 +112,7 @@ export default defineConfig({
 						},
 											  	{
 								label: 'Media', collapsed: true, items: [
-									{ label: 'Ecosystem Library', link: '/eco-library/index.html', attrs: { target: '_blank', rel: 'noopener' } },
+									{ label: 'Ecosystem Library', link: '/eco-library/' },
 									{ label: 'Polkadot Media', link: '/resources/media/' },
 									{ label: 'Lectures', autogenerate: { directory: 'resources/media/lectures' }, collapsed: true },
 									{ label: 'Interviews', autogenerate: { directory: 'resources/media/interviews' }, collapsed: true },
