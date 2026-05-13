@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CryptPad embed test</title>
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; background: #0a0a0a; color: #fff; }
+    h1 { padding: 16px 24px; margin: 0; border-bottom: 1px solid #333; font-size: 16px; }
+    section { padding: 16px 24px; border-bottom: 1px solid #333; }
+    section h2 { margin: 0 0 8px; font-size: 14px; color: #ccc; }
+    section .url { font-family: ui-monospace, monospace; font-size: 11px; color: #888; word-break: break-all; margin-bottom: 8px; }
+    iframe { display: block; width: 100%; height: 600px; border: 1px solid #333; border-radius: 10px; background: #111; }
+    .open-link { display: inline-block; margin-bottom: 8px; padding: 6px 10px; background: #1f1f1f; border: 1px solid #444; color: #fff; text-decoration: none; border-radius: 6px; font-size: 12px; }
+    .open-link:hover { background: #2a2a2a; }
+  </style>
+</head>
+<body>
+  <h1>CryptPad embed isolation test</h1>
+
+  <section>
+    <h2>URL A — original paste (schema /2/, hash contains <code>+</code>, /embed/ suffix)</h2>
+    <div class="url">https://cryptpad.fr/form/#/2/form/view/He6J1TOYTxEfEFvElmckEW9N1BxcTRR7Sje68B4y+Ow/embed/</div>
+    <a class="open-link" href="https://cryptpad.fr/form/#/2/form/view/He6J1TOYTxEfEFvElmckEW9N1BxcTRR7Sje68B4y+Ow/embed/" target="_blank" rel="noopener">Open URL A in new tab</a>
+    <iframe src="https://cryptpad.fr/form/#/2/form/view/He6J1TOYTxEfEFvElmckEW9N1BxcTRR7Sje68B4y+Ow/embed/"></iframe>
+  </section>
+
+  <section>
+    <h2>URL B — your &quot;working public link&quot; (schema /3/, hex hash, no /embed/)</h2>
+    <div class="url">https://cryptpad.fr/form/#/3/form/view/efa10aa7535ff1c4247df49e0d3b1f79/</div>
+    <a class="open-link" href="https://cryptpad.fr/form/#/3/form/view/efa10aa7535ff1c4247df49e0d3b1f79/" target="_blank" rel="noopener">Open URL B in new tab</a>
+    <iframe src="https://cryptpad.fr/form/#/3/form/view/efa10aa7535ff1c4247df49e0d3b1f79/"></iframe>
+  </section>
+
+  <section>
+    <h2>URL B + /embed/ suffix (same form, embed mode)</h2>
+    <div class="url">https://cryptpad.fr/form/#/3/form/view/efa10aa7535ff1c4247df49e0d3b1f79/embed/</div>
+    <a class="open-link" href="https://cryptpad.fr/form/#/3/form/view/efa10aa7535ff1c4247df49e0d3b1f79/embed/" target="_blank" rel="noopener">Open URL B + /embed/ in new tab</a>
+    <iframe src="https://cryptpad.fr/form/#/3/form/view/efa10aa7535ff1c4247df49e0d3b1f79/embed/"></iframe>
+  </section>
+</body>
+</html>

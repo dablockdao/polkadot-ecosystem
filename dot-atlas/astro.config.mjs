@@ -6,6 +6,7 @@ import starlightViewModes from 'starlight-view-modes'
 import vercel from '@astrojs/vercel/static';
 import sitemap from '@astrojs/sitemap';
 import starlightLinksValidator from 'starlight-links-validator'
+import basicSsl from '@vitejs/plugin-basic-ssl'
 
 
 // https://astro.build/config
@@ -134,6 +135,11 @@ export default defineConfig({
 						icon: 'heart',
 						items: [
 					{
+						label: '🗳️ OpenGov', collapsed: true, items: [
+							{ label: '📝 Proposal Intake', link: '/governance/proposal-intake/' },
+						]
+					},
+					{
 						label: '💰 Bounties', collapsed: true, autogenerate: { directory: 'club/bounties' }
 					},
 					  {
@@ -192,5 +198,31 @@ export default defineConfig({
 	i18n: {
 		locales: ['en', 'es', 'fr', 'pt', 'it', 'de'],
 		defaultLocale: 'en',
+	},
+	vite: {
+		plugins: [
+			// Self-signed HTTPS for `astro dev`. Required because CryptPad's
+			// `frame-ancestors 'self' https: vector:` CSP refuses to load inside
+			// an http://localhost parent. Browser will show a one-time cert warning.
+			// Cast to `any` to avoid a benign dual-Vite-version type mismatch
+			// between the plugin's Vite and Astro's bundled Vite — runtime is fine.
+			/** @type {any} */ (basicSsl()),
+			{
+				// Scoped COOP/COEP for the OpenGov Proposal Intake page so the
+				// CryptPad iframe (which requires cross-origin isolation for its
+				// SharedArrayBuffer crypto) can load. Production headers are set
+				// via vercel.json; this plugin mirrors them in `astro dev`.
+				name: 'coep-proposal-intake',
+				configureServer(server) {
+					server.middlewares.use((req, res, next) => {
+						if (req.url && req.url.startsWith('/governance/proposal-intake')) {
+							res.setHeader('Cross-Origin-Opener-Policy', 'same-origin');
+							res.setHeader('Cross-Origin-Embedder-Policy', 'require-corp');
+						}
+						next();
+					});
+				},
+			},
+		],
 	},
 });
