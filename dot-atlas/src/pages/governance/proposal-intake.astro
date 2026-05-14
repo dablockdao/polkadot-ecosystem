@@ -4,8 +4,8 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 
 <StarlightPage
   frontmatter={{
-    title: 'OpenGov Proposal Intake',
-    description: 'Submit a Polkadot OpenGov proposal for review.',
+    title: 'OpenGov Treasury',
+    description: 'Submit a Polkadot OpenGov treasury proposal for review.',
     tableOfContents: false,
     editUrl: 'https://github.com/dablockdao/polkadot-ecosystem/tree/main/dot-atlas/src/pages/governance/proposal-intake.astro',
     lastUpdated: new Date(),
@@ -19,7 +19,7 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
         target="_blank"
         rel="noopener noreferrer"
         class="proposal-intake-fallback-link"
-        aria-label="Open the proposal intake form in a new tab"
+        aria-label="Open the OpenGov Treasury proposal form in a new tab"
       >
         <span>Click here if the form is unable to load.</span>
         <span class="proposal-intake-fallback-arrow" aria-hidden="true">
@@ -32,6 +32,13 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
     </p>
   </div>
 </StarlightPage>
+
+<!-- Hide the Starlight page heading on this page only; the CryptPad form
+     supplies its own title inside the iframe. Title still lives in the
+     <head>/SEO for the browser tab. -->
+<style is:global>
+  main h1 { display: none; }
+</style>
 
 <style>
   .proposal-intake {

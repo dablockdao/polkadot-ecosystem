@@ -136,7 +136,7 @@ export default defineConfig({
 						items: [
 					{
 						label: '🗳️ OpenGov', collapsed: true, items: [
-							{ label: '📝 Proposal Intake', link: '/governance/proposal-intake/' },
+							{ label: '📝 OpenGov Treasury', link: '/governance/proposal-intake/' },
 						]
 					},
 					{
