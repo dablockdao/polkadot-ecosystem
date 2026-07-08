@@ -108,8 +108,11 @@ export default defineConfig({
 						link: '/resources/',
 						icon: 'open-book',
 						items: [
-					  	{
+					  {
 								label: 'How-to Guides', collapsed: true, autogenerate: { directory: 'resources/guides' }
+						},
+						{
+								label: 'Concepts', collapsed: true, autogenerate: { directory: 'resources/concepts' }
 						},
 											  	{
 								label: 'Media', collapsed: true, items: [
@@ -139,17 +142,17 @@ export default defineConfig({
 							{ label: '📝 OpenGov Treasury', link: '/governance/proposal-intake/' },
 						]
 					},
-					{
-						label: '💰 Bounties', collapsed: true, autogenerate: { directory: 'club/bounties' }
-					},
 					  {
 						  label: '🌱 Initiatives', collapsed: true, autogenerate: { directory: 'club/initiatives' }
 					  },
 					  	{
 								label: '🏛️ Collectives', collapsed: true, autogenerate: { directory: 'club/collectives' }
 						},
-						{
+					  {
 						  label: '👥 DAOs', collapsed: true, autogenerate: { directory: 'club/daos' }
+					  },
+					  {
+						label: '💰 Bounties', collapsed: true, autogenerate: { directory: 'club/bounties' }
 					  },
 					  {
 						  label: '💼 Orgs', collapsed: true, autogenerate: { directory: 'club/orgs' }

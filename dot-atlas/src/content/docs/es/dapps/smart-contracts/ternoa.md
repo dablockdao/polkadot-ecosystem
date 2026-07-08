@@ -19,7 +19,7 @@ Ternoa es un protocolo multinivel y multicapa que utiliza tecnologías de comput
 
 ## Descripción general de Ternoa. **¿Qué es Ternoa?**
 Ternoa es un protocolo avanzado de blockchain diseñado para abordar desafíos clave en el espacio Web3, especialmente los relacionados con la seguridad y la privacidad. Combina tecnologías de libro mayor distribuido con computación confidencial para crear un entorno robusto para aplicaciones descentralizadas (dApps). Ternoa consta de tres redes interconectadas:
-1. **Ternoa Chain**: Una blockchain de capa 1 construida sobre Substrate, que admite contratos inteligentes en lenguajes como Rust, C, C++ y TypeScript. Ofrece un SDK de JavaScript para que los desarrolladores utilicen primitivas preconfiguradas.
+1. **Ternoa Chain**: Una blockchain de capa 1 construida sobre Polkadot SDK, que admite contratos inteligentes en lenguajes como Rust, C, C++ y TypeScript. Ofrece un SDK de JavaScript para que los desarrolladores utilicen primitivas preconfiguradas.
 2. **Ternoa Fortress**: Una red de coprocesadores descentralizada impulsada por Entornos de Ejecución Confiables (TEEs), que funciona como un sistema de gestión de claves para cifrar datos fuera de la cadena con claves en la cadena.
 3. **Ternoa zkEVM**: Una solución de capa 2 validium que utiliza pruebas múltiples TEE para mayor seguridad, proporcionando un entorno equivalente a la Máquina Virtual Ethereum (EVM) para implementar contratos inteligentes en Solidity.
 
@@ -31,14 +31,14 @@ Ternoa es un protocolo avanzado de blockchain diseñado para abordar desafíos c
     - **Seguridad impulsada por TEEs**: Ternoa Fortress utiliza TEEs para proteger datos fuera de la cadena con claves de cifrado en la cadena, permitiendo la creación de aplicaciones privadas y confiables. Esta funcionalidad se extenderá a Ternoa zkEVM con su lanzamiento.
     - **Características de privacidad**: Los desarrolladores pueden construir aplicaciones que controlen el acceso a datos confidenciales sin depender de terceros.
 3. **Seguridad robusta**
-    - **Framework Substrate**: Construida sobre Substrate, Ternoa Chain se beneficia de sus características de seguridad, incluido un código auditado y un mecanismo de consenso Proof of Stake (PoS).
+    - **Framework Polkadot SDK**: Construida sobre Polkadot SDK, Ternoa Chain se beneficia de sus características de seguridad, incluido un código auditado y un mecanismo de consenso Proof of Stake (PoS).
     - **Descentralización**: La red está respaldada por cientos de nodos y validadores, asegurando descentralización y seguridad. Su arquitectura también es compatible con la seguridad de la red Polkadot.
     - **Seguridad mejorada con zkEVM**: Ternoa zkEVM combina pruebas de conocimiento cero con pruebas TEE para una seguridad superior de la red.
 
 ## Redes de Ternoa y sus propósitos
 1. **Ternoa Chain**
     - **Propósito**: Facilitar la adopción de Web3 por desarrolladores de Web2.
-    - **Características**: Entorno de implementación WASM, primitivas preconfiguradas accesibles vía JavaScript e integración con Substrate.
+    - **Características**: Entorno de implementación WASM, primitivas preconfiguradas accesibles vía JavaScript e integración con Polkadot SDK.
 2. **Ternoa Fortress**
     - **Propósito**: Proporcionar privacidad de datos y seguridad descentralizada.
     - **Características**: Una red de coprocesadores TEE con capacidades nativas de gestión de claves.
@@ -57,7 +57,7 @@ Ternoa es un protocolo avanzado de blockchain diseñado para abordar desafíos c
     - **Virtual Regatta**: Un juego de navegación virtual que utiliza la infraestructura de Ternoa para mejorar la experiencia del jugador.
 
 ## Análisis técnico: Ternoa Chain
-1. **Integración Substrate:** Ternoa está construido sobre el framework Substrate, proporcionando interoperabilidad natural con el ecosistema Polkadot. Aspira a convertirse en una parachain de Polkadot, aprovechando su seguridad y capacidades de comunicación entre cadenas.
+1. **Integración Substrate:** Ternoa está construido sobre el framework Polkadot SDK, proporcionando interoperabilidad natural con el ecosistema Polkadot. Aspira a convertirse en una parachain de Polkadot, aprovechando su seguridad y capacidades de comunicación entre cadenas.
 2. **Prueba de Participación Nominada (NPoS):** Ternoa utiliza NPoS para garantizar la producción y validación de bloques de manera segura y descentralizada. Los validadores y nominadores colaboran para mantener la seguridad e integridad de la red.
 3. **Mecanismo de consenso híbrido:** Combina BABE para la producción de bloques y GRANDPA para la finalidad, asegurando una rápida producción de bloques y una robusta confirmación.
 

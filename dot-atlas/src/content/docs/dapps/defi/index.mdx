@@ -210,7 +210,7 @@ Bridge ETH → acquire GETH on Hydration → LP GETH in the Omnipool to farm inc
 **Pitfalls**
 * Wrong network in wallet (Moonbeam vs Bifrost vs Hydration vs Asset Hub).
 * Under-estimating XCM fees/weight; keep a buffer of the native token for each hop.
-* Assuming ERC-20 contracts on non-EVM chains; Hydration and Bifrost assets are Substrate-native. Verify the correct asset ID before depositing.
+* Assuming ERC-20 contracts on non-EVM chains; Hydration and Bifrost assets are Polkadot SDK-native. Verify the correct asset ID before depositing.
 * Confusing Omnipool listings with permissionless markets; Omnipool listings are DAO-approved, while Isolated Pairs are permissionless.
 
 **Pro tips**
@@ -239,7 +239,7 @@ HydraDX rebranded to Hydration and expanded scope with lending/borrowing and HOL
 Most EVM users begin on StellaSwap or Beamswap on Moonbeam due to MetaMask-compatible UX and deep pair coverage.
 
 7) Do I need MetaMask for everything?  
-No. MetaMask helps on Moonbeam, but Substrate-native dapps like Hydration and Bifrost work best with wallets that support both environments.
+No. MetaMask helps on Moonbeam, but Polkadot SDK-native dapps like Hydration and Bifrost work best with wallets that support both environments.
 
 8) Can XCM move more than tokens?  
 Yes. XCM can pass messages to trigger cross-chain actions. Most users start with transfers and simple calls.

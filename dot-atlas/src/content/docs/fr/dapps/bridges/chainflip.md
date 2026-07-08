@@ -37,7 +37,7 @@ Le protocole est conçu pour s’intégrer facilement aux portefeuilles, agréga
 Chainflip est conçu pour être auto-suffisant, en s'appuyant sur la demande des utilisateurs plutôt que sur des incitations artificielles. Le protocole canalise la valeur générée par les frais vers le token FLIP, la distribuant aux détenteurs de tokens et compensant les incitations offertes.
 
 ## Protocole central de Chainflip
-**Le cœur de Chainflip repose sur un** “***Réseau de Liquidité Inter-Chaînes***” utilisant **le Calcul Multi-Parties (MPC)** et **les Schémas de Signature à Seuil (TSS)** pour gérer des clés agrégées au sein d'un réseau décentralisé de validateurs. Cette configuration permet une couche de règlement entièrement décentralisée, associée à une couche comptable basée sur le framework blockchain Substrate.
+**Le cœur de Chainflip repose sur un** “***Réseau de Liquidité Inter-Chaînes***” utilisant **le Calcul Multi-Parties (MPC)** et **les Schémas de Signature à Seuil (TSS)** pour gérer des clés agrégées au sein d'un réseau décentralisé de validateurs. Cette configuration permet une couche de règlement entièrement décentralisée, associée à une couche comptable basée sur le framework blockchain Polkadot SDK.
 
 ## Réseau de validateurs de Chainflip
 Chainflip utilise un réseau pouvant aller jusqu'à 150 validateurs qui gèrent simultanément les fonctions du protocole. Les validateurs participent au consensus, surveillent les dépôts et diffusent les transactions, garantissant ainsi la sécurité et l’efficacité des échanges inter-chaînes.

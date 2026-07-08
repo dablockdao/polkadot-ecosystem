@@ -37,7 +37,7 @@ Das Protokoll ist so konzipiert, dass es sich problemlos in Wallets, Aggregatore
 Chainflip ist darauf ausgelegt, sich selbst zu erhalten, indem es sich auf die Nachfrage der Nutzer stützt, anstatt künstliche Anreize zu bieten. Die generierten Gebühren fließen in den FLIP-Token, der an Token-Inhaber verteilt wird und eventuelle Anreize ausgleicht.
 
 ## Chainflip Kernprotokoll
-**Das Herzstück von Chainflip ist ein** ***Cross-Chain Liquidity Network***, das **Multi-Party Computation (MPC)** und **Threshold Signature Schemes (TSS)** verwendet, um aggregierte Schlüssel über ein dezentrales Netzwerk von Validatoren zu verwalten. Diese Architektur ermöglicht eine vollständig dezentrale Abwicklungsschicht in Kombination mit einer Abrechnungsschicht, die auf dem Substrate-Blockchain-Framework basiert.
+**Das Herzstück von Chainflip ist ein** ***Cross-Chain Liquidity Network***, das **Multi-Party Computation (MPC)** und **Threshold Signature Schemes (TSS)** verwendet, um aggregierte Schlüssel über ein dezentrales Netzwerk von Validatoren zu verwalten. Diese Architektur ermöglicht eine vollständig dezentrale Abwicklungsschicht in Kombination mit einer Abrechnungsschicht, die auf dem Polkadot SDK-Blockchain-Framework basiert.
 
 ## Chainflip Validator-Netzwerk
 Chainflip nutzt ein Netzwerk von bis zu 150 Validatoren, die gemeinsam die Funktionen des Protokolls verwalten. Die Validatoren nehmen an der Konsensbildung teil, überwachen Einzahlungen und senden Transaktionen, um die Sicherheit und Effizienz von Cross-Chain-Swaps zu gewährleisten.

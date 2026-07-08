@@ -29,7 +29,7 @@ Illusionist Group tiene un impresionante portafolio que muestra su compromiso co
 - **SubQuery**: Una herramienta transformadora para consultar datos globales para un futuro Web3.
 - **DotMarketCap**: Un agregador de datos para la red Polkadot, proporcionando precios, gráficos e información de capitalización de mercado.
 - **SubSocial**: Una plataforma abierta para redes sociales descentralizadas y mercados.
-- **Manta Network**: El primer protocolo de privacidad de capa 1 para DeFi construido sobre Substrate.
+- **Manta Network**: El primer protocolo de privacidad de capa 1 para DeFi construido sobre Polkadot SDK.
 - **SubDAO**: Una plataforma de cadena cruzada que conecta DAOs y DApps en Polkadot.
 - **Equilibrium**: El primer mercado de dinero interoperable descentralizado en Polkadot.
 

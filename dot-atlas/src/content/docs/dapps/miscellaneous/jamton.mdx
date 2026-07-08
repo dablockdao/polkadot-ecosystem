@@ -17,13 +17,13 @@ hero:
 
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 
-Jamton is an emerging Layer-2 network that aggregates liquidity and staking across **The Open Network (TON)** and **Polkadot**, giving users a single venue for high-yield staking, cross-chain transfers, and DeFi execution. Built with **Substrate** and secured by the Polkadot relay chain, Jamton operates as a parachain while simultaneously acting as a scaling layer for TON-based assets and applications.
+Jamton is an emerging Layer-2 network that aggregates liquidity and staking across **The Open Network (TON)** and **Polkadot**, giving users a single venue for high-yield staking, cross-chain transfers, and DeFi execution. Built with the **Polkadot SDK (formerly Substrate)** and secured by the Polkadot relay chain, Jamton operates as a parachain while simultaneously acting as a scaling layer for TON-based assets and applications.
 
 ## Jamton Technical Foundations
 
 | Component               | Purpose                                               | Key Detail                                                                       |
 | ----------------------- | ----------------------------------------------------- | -------------------------------------------------------------------------------- |
-| **Substrate Parachain** | Execution environment with shared security            | Won Polkadot parachain slot and connects to the relay chain                      |
+| **Polkadot SDK Parachain** | Execution environment with shared security            | Won Polkadot parachain slot and connects to the relay chain                      |
 | **Layer-2 for TON**     | Off-loads throughput and expands TON’s feature set    | Accelerates transaction finality for stTON and other TON assets                  |
 | **XCM Bridges**         | Native cross-chain messaging                          | Active channel to Polkadot Asset Hub; roadmap includes Ethereum & Bitcoin        |
 | **EVM Compatibility**   | Solidity smart-contract support                       | Lets Ethereum dApps deploy on Jamton while tapping Polkadot security             |
@@ -52,7 +52,7 @@ Jamton adopts **Polkadot OpenGov** pallets for on-chain upgrades, treasury spend
 
 ## Developer & User Experience
 
-* **Unified API surface** – Substrate RPC plus Ethereum-style JSON-RPC.  
+* **Unified API surface** – Polkadot SDK RPC plus Ethereum-style JSON-RPC.
 * **SDKs & Tooling** – TypeScript SDK, Solidity templates, and ink! examples streamline dApp migration.  
 * **Abstract Accounts** – Planned ERC-4337-style account abstraction to simplify UX across wallets.  
 

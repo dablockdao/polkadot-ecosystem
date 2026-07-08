@@ -61,7 +61,7 @@ Acurast is designed with interoperability at its core, supporting numerous ecosy
 Acurast Jobs are tasks executed by processors in their Trusted Execution Environment. These jobs produce an output and a proof of execution, which are then delivered to the specified destination chain, such as Astar on Polkadot.
 
 ## Implementation and Deployment
-Acurast leverages a Substrate Runtime consisting of multiple Substrate Pallets for the Acurast Protocol. The network has secured a Kusama Parachain slot for its incentivized testnet and plans to participate in Polkadot Parachain auctions. This integration provides access to Polkadot’s and Kusama’s security and enables communication with other Parachains through the Cross-Consensus Message Format (XCM).
+Acurast leverages a Polkadot SDK (formerly Substrate) Runtime consisting of multiple Polkadot SDK Pallets for the Acurast Protocol. The network has secured a Kusama Parachain slot for its incentivized testnet and plans to participate in Polkadot Parachain auctions. Parachain slot auctions have been superseded by [Agile Coretime](/resources/concepts/agile-coretime/). This integration provides access to Polkadot’s and Kusama’s security and enables communication with other Parachains through the Cross-Consensus Message Format (XCM).
 
 ### Conclusion
 Acurast Network represents a significant advancement in the evolution of decentralized cloud computing within the Polkadot ecosystem. By providing a secure, scalable, and interoperable platform for confidential computation, Acurast empowers developers and organizations to create innovative applications while maintaining data privacy and regulatory compliance. Whether you are a developer looking to integrate secure computation into your dApps or an organization seeking to offload computational tasks securely, Acurast offers the tools and infrastructure necessary to thrive in a decentralized future.
@@ -79,7 +79,7 @@ Acurast Network represents a significant advancement in the evolution of decentr
 Acurast is a decentralized, serverless compute network that turns smartphones into confidential, verifiable workers for Web3 and Web2 tasks. This expert guide explains how Acurast works, when to use it within the Polkadot stack, how it compares to alternatives, and how to deploy your first job—updated for **September 2025**.
 
 ## Why this matters
-Modern dapps need **verifiable off-chain compute** (price feeds, AI inference, indexing, secure automation) without trusting a central provider. Acurast addresses this by using **smartphone Trusted Execution Environments (TEEs)** and a zero-trust design to deliver confidential, attestable results to **Substrate/Wasm** and **EVM** chains across the Polkadot ecosystem.
+Modern dapps need **verifiable off-chain compute** (price feeds, AI inference, indexing, secure automation) without trusting a central provider. Acurast addresses this by using **smartphone Trusted Execution Environments (TEEs)** and a zero-trust design to deliver confidential, attestable results to **Polkadot SDK/Wasm** and **EVM** chains across the Polkadot ecosystem.
 
 > **ELI5:** Think of Acurast like “ride-hailing for compute.” Developers post jobs; a marketplace matches them with secure phones that run the code inside hardware “vaults.” Results plus proofs are returned on-chain.
 
@@ -89,7 +89,7 @@ Acurast is a **decentralized, serverless cloud** that transforms consumer device
 
 * **Confidentiality:** keep inputs and logic private during execution.
 * **Verifiability:** produce proofs/attestations that execution happened correctly.
-* **Interoperability:** deliver results to Substrate and EVM destinations.
+* **Interoperability:** deliver results to Polkadot SDK and EVM destinations.
 
 For Polkadot builders, Acurast offers pallets, SDKs, and workflows that fit neatly into parachain/appchain development.
 
@@ -106,7 +106,7 @@ The **Orchestrator** matches **deployments** (jobs) to **processors** (phones). 
 ### Universal Interoperability Layer
 This layer routes outputs to destination environments:
 
-* **Substrate/Wasm:** call a pallet method (e.g., an oracle/receiver pallet).
+* **Polkadot SDK/Wasm:** call a pallet method (e.g., an oracle/receiver pallet).
 * **EVM:** call a contract function (e.g., a Chainlink Aggregator-compatible interface).
 * **Other ecosystems:** via standardized modules as available.
 
@@ -123,7 +123,7 @@ Acurast typically operates with **Devnet**, **Canary**, and **Mainnet** tracks, 
 
 ## When to use Acurast (use cases)
 
-* **On-chain data feeds & oracles:** Aggregate multiple API sources off-chain with verifiable delivery to Substrate or EVM.
+* **On-chain data feeds & oracles:** Aggregate multiple API sources off-chain with verifiable delivery to Polkadot SDK or EVM.
 * **Confidential automation:** Process private inputs (e.g., bids, risk scores) inside TEEs; post only verified outcomes.
 * **Edge AI/ML:** Run lightweight inference (e.g., classification, feature extraction) near users for **privacy** and **low latency**.
 * **Cross-chain task routing:** Compute in Acurast; settle to any Polkadot appchain or EVM target using the Interoperability Layer.
@@ -132,17 +132,17 @@ Acurast typically operates with **Devnet**, **Canary**, and **Mainnet** tracks, 
 | Feature / Tool     | **Acurast**                                     | **Phala Network**                               | **Akash Network**                                      |
 | ------------------ | ----------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------ |
 | Primary model      | Serverless compute on **smartphones**           | TEE-backed **confidential contracts**           | Decentralized compute **marketplace** (containers/GPU) |
-| Trust base         | Phone **TEEs** + attestations; optional **ZK**  | **Intel SGX** TEEs on a Substrate chain         | Provider bids/leases; market reputation                |
+| Trust base         | Phone **TEEs** + attestations; optional **ZK**  | **Intel SGX** TEEs on a Polkadot SDK chain         | Provider bids/leases; market reputation                |
 | Target workloads   | Oracles, edge compute, confidential automation  | Long-running confidential workers, coprocessors | General compute, especially **GPU/AI**                 |
-| Settlement         | Substrate pallet or EVM contract delivery       | Native Polkadot parachain integrations          | Cosmos-centric; generic                                |
+| Settlement         | Polkadot SDK pallet or EVM contract delivery       | Native Polkadot parachain integrations          | Cosmos-centric; generic                                |
 | Matching & pricing | Orchestrator with **auctions/ads**              | Network schedulers & staking                    | Provider bids vs tenant asks                           |
-| Notes              | “Phones-as-a-Cloud”; Hub/CLI; flexible runtimes | Strong enclave model; Substrate-native          | Cost-efficient GPUs; broad infra focus                 |
+| Notes              | “Phones-as-a-Cloud”; Hub/CLI; flexible runtimes | Strong enclave model; Polkadot SDK-native          | Cost-efficient GPUs; broad infra focus                 |
 
 *This comparative table is informational and non-exhaustive; choose based on workload, privacy, and uptime requirements.*
 
 ## Step-by-step: your first Acurast deployment
 1. **Create a project**
-   Use the web console (Hub) to create a deployment, or scaffold via CLI. Define destination (Substrate pallet or EVM contract), cadence, and retries.
+   Use the web console (Hub) to create a deployment, or scaffold via CLI. Define destination (Polkadot SDK pallet or EVM contract), cadence, and retries.
 
 2. **Write the deployment code**
    Package a JS/TS worker that fetches inputs (e.g., multiple price APIs), aggregates results deterministically, and prepares an on-chain update function call. Keep code idempotent.
@@ -176,10 +176,10 @@ Acurast typically operates with **Devnet**, **Canary**, and **Mainnet** tracks, 
 ASHR runs workloads inside smartphone TEEs for hardware-backed confidentiality and attestation. AZKR adds zero-knowledge proofs where cryptographic verification is desired in addition to hardware attestation.
 
 **2) How do results reach my chain?**
-Specify a Substrate pallet call or EVM contract function in the deployment. The Interoperability Layer routes outputs and proofs to your destination.
+Specify a Polkadot SDK pallet call or EVM contract function in the deployment. The Interoperability Layer routes outputs and proofs to your destination.
 
 **3) Does Acurast integrate natively with Polkadot?**
-Yes. Acurast provides patterns for Substrate pallets and EVM contracts so appchains can consume verified results with minimal glue code.
+Yes. Acurast provides patterns for Polkadot SDK pallets and EVM contracts so appchains can consume verified results with minimal glue code.
 
 **4) How are processors rewarded?**
 Deployments set pricing and terms. When a processor completes work and submits attestations/proofs, settlement pays out per the agreement.
@@ -197,7 +197,7 @@ Yes. Use an Aggregator-compatible interface on EVM and schedule Acurast jobs to 
 For **lightweight** edge inference where privacy matters, yes. For heavy GPU training/inference, consider GPU-oriented marketplaces and compare costs vs latency needs.
 
 ## Conclusion
-Acurast offers Polkadot builders a **confidential, verifiable** compute fabric that’s simple to integrate with **Substrate** and **EVM**. For oracles, private automation, and edge AI, it reduces operational overhead while preserving privacy.
+Acurast offers Polkadot builders a **confidential, verifiable** compute fabric that’s simple to integrate with the **Polkadot SDK** and **EVM**. For oracles, private automation, and edge AI, it reduces operational overhead while preserving privacy.
 
 ## Acurast Community Videos
 ------------

@@ -18,16 +18,16 @@ hero:
 Unit Network, una tecnologia decentralizzata progettata per integrare le imprese del mondo reale con la blockchain, sta inaugurando un'era di sovranità e prosperità economica.
 
 ## Cos'è Unit Network?
-Unit Network è una piattaforma decentralizzata basata su Substrate, che mira a plasmare l'economia emergente dei token. Fornisce una soluzione completa per integrare le imprese con la tecnologia blockchain, offrendo strumenti per la tokenizzazione, la finanza decentralizzata e la gestione delle comunità.
+Unit Network è una piattaforma decentralizzata basata su Polkadot SDK, che mira a plasmare l'economia emergente dei token. Fornisce una soluzione completa per integrare le imprese con la tecnologia blockchain, offrendo strumenti per la tokenizzazione, la finanza decentralizzata e la gestione delle comunità.
 
 ## Componenti chiave di Unit Network
-1. **Blockchain di Unit Network:** La spina dorsale di Unit Network è la sua blockchain, costruita utilizzando il framework Substrate di Parity Technologies. Questa moderna piattaforma decentralizzata sfrutta tecnologie all'avanguardia per offrire una soluzione blockchain flessibile e robusta.
-2. **Framework Substrate:** Substrate è un toolkit versatile per la creazione di reti blockchain personalizzate. Fornisce agli sviluppatori gli strumenti e le librerie necessarie per creare soluzioni blockchain su misura, offrendo un alto grado di personalizzazione e modularità.
-    - **Personalizzazione e Modularità:** Con Substrate, gli sviluppatori possono personalizzare ed estendere le funzionalità della blockchain scegliendo tra moduli predefiniti o creandone di nuovi. Questa flessibilità consente soluzioni su misura, come la gestione dei token o l'implementazione di funzionalità di finanza decentralizzata (DeFi).
-    - **Meccanismi di Consenso:** Substrate supporta vari meccanismi di consenso, tra cui Proof of Stake (PoS) e Proof of Authority (PoA). Questo consente alla blockchain di Unit Network di selezionare il metodo ottimale per sicurezza, velocità e decentralizzazione.
-    - **Interoperabilità:** Substrate facilita l'interoperabilità tra diverse blockchain, consentendo la condivisione fluida di dati e asset. Questa caratteristica permette alla blockchain di Unit Network di interagire con altre chain, ampliando le sue funzionalità e la sua portata.
-    - **Scalabilità e Prestazioni:** Per gestire un elevato volume di transazioni, Substrate offre soluzioni come la suddivisione delle attività sulla rete e il calcolo off-chain. Queste funzionalità garantiscono che la blockchain di Unit Network possa scalare in modo efficiente per soddisfare la crescente domanda degli utenti.
-    - **Governance e Aggiornabilità:** Substrate supporta la governance decentralizzata, permettendo ai detentori di token di votare su modifiche o aggiornamenti alla blockchain. Questo garantisce che la comunità abbia voce in capitolo nel futuro della rete, promuovendo un ecosistema democratico e adattabile.
+1. **Blockchain di Unit Network:** La spina dorsale di Unit Network è la sua blockchain, costruita utilizzando il framework Polkadot SDK di Parity Technologies. Questa moderna piattaforma decentralizzata sfrutta tecnologie all'avanguardia per offrire una soluzione blockchain flessibile e robusta.
+2. **Framework Polkadot SDK:** Polkadot SDK è un toolkit versatile per la creazione di reti blockchain personalizzate. Fornisce agli sviluppatori gli strumenti e le librerie necessarie per creare soluzioni blockchain su misura, offrendo un alto grado di personalizzazione e modularità.
+    - **Personalizzazione e Modularità:** Con Polkadot SDK, gli sviluppatori possono personalizzare ed estendere le funzionalità della blockchain scegliendo tra moduli predefiniti o creandone di nuovi. Questa flessibilità consente soluzioni su misura, come la gestione dei token o l'implementazione di funzionalità di finanza decentralizzata (DeFi).
+    - **Meccanismi di Consenso:** Polkadot SDK supporta vari meccanismi di consenso, tra cui Proof of Stake (PoS) e Proof of Authority (PoA). Questo consente alla blockchain di Unit Network di selezionare il metodo ottimale per sicurezza, velocità e decentralizzazione.
+    - **Interoperabilità:** Polkadot SDK facilita l'interoperabilità tra diverse blockchain, consentendo la condivisione fluida di dati e asset. Questa caratteristica permette alla blockchain di Unit Network di interagire con altre chain, ampliando le sue funzionalità e la sua portata.
+    - **Scalabilità e Prestazioni:** Per gestire un elevato volume di transazioni, Polkadot SDK offre soluzioni come la suddivisione delle attività sulla rete e il calcolo off-chain. Queste funzionalità garantiscono che la blockchain di Unit Network possa scalare in modo efficiente per soddisfare la crescente domanda degli utenti.
+    - **Governance e Aggiornabilità:** Polkadot SDK supporta la governance decentralizzata, permettendo ai detentori di token di votare su modifiche o aggiornamenti alla blockchain. Questo garantisce che la comunità abbia voce in capitolo nel futuro della rete, promuovendo un ecosistema democratico e adattabile.
 
 ## Protocollo Unit Network
 Il Protocollo Unit Network è al centro della visione della piattaforma per rivoluzionare il settore finanziario. Mira a creare una comunità globale e un sistema finanziario decentralizzato, rendendo accessibili a tutti potenti strumenti finanziari.
@@ -37,7 +37,7 @@ Il Protocollo Unit Network immagina un futuro in cui gli strumenti finanziari si
 
 ## Come funziona Unit Network
 Il protocollo fornisce metodi trasparenti e sicuri per gli imprenditori che vogliono raccogliere fondi e connettersi con i clienti. Inoltre, permette agli individui di partecipare all'economia digitale offrendo risorse educative e strumenti per l'alfabetizzazione finanziaria.
-- **Tecnologia:** Unit Network utilizza la propria blockchain, UnitChain, progettata per la tokenizzazione degli asset, lo scambio di denaro e la gestione delle comunità. Costruita con il Substrate SDK e ispirata al modello Polkadot, UnitChain è innovativa e collaborativa.
+- **Tecnologia:** Unit Network utilizza la propria blockchain, UnitChain, progettata per la tokenizzazione degli asset, lo scambio di denaro e la gestione delle comunità. Costruita con il Polkadot SDK SDK e ispirata al modello Polkadot, UnitChain è innovativa e collaborativa.
 - **Obiettivi:** L'obiettivo principale del Protocollo Unit Network è sbloccare il potenziale dell'economia dei token. Favorendo l'innovazione e la collaborazione all'interno della comunità, mira a far progredire il settore finanziario rendendolo più inclusivo ed equo.
 
 ## Economia dei Token di Unit Network

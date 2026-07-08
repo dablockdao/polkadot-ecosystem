@@ -3,6 +3,7 @@ import Default from "@astrojs/starlight/components/Footer.astro";
 import type { Props } from "@astrojs/starlight/props";
 import FooterCards from "./FooterCards.astro";
 import FooterHome from './landing/FooterHome.astro';
+import OpenshoreModal from "./OpenshoreModal.astro";
 
 const { toc } = Astro.props;
 const hasToc = toc && toc.items && toc.items.length > 0;
@@ -22,3 +23,5 @@ const hasToc = toc && toc.items && toc.items.length > 0;
     <FooterHome />
   </>
 )}
+
+<OpenshoreModal />

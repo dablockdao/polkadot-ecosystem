@@ -15,7 +15,7 @@ GM Chain Key Features and Innovations
 
 #### 1. Light Clients
 
-GM Parachain has been a pioneer, alongside [InvArch’s Tinkernet Network](https://dablock.com/dapps/invarch-network/), in [implementing light clients](https://wiki.polkadot.network/docs/build-light-clients), which are crucial for enabling efficient blockchain interactions on resource-constrained devices. These clients allow users to interact with the blockchain without needing to download and validate the entire chain.
+GM Parachain has been a pioneer, alongside [InvArch’s Tinkernet Network](https://dablock.com/dapps/invarch-network/), in [implementing light clients](https://docs.polkadot.com/docs/build-light-clients), which are crucial for enabling efficient blockchain interactions on resource-constrained devices. These clients allow users to interact with the blockchain without needing to download and validate the entire chain.
 
 - **Implementation Success**: GM Parachain, in collaboration with InvArch, was the first to implement light clients on their parachain, marking a significant technical achievement.
 - **Community Collaboration**: The team was working with other parachain teams to help them implement light client support, fostering a collaborative and innovative ecosystem.

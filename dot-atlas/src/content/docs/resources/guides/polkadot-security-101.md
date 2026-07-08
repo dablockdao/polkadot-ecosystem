@@ -5,7 +5,7 @@ sidebar:
     label: Security 101
 ---
 
-Polkadot gives builders and investors powerful tools—but with self-custody comes self-responsibility. This guide lays out practical, beginner-friendly steps to protect keys, harden wallets, spot scams, and adopt a professional security posture for Substrate/Polkadot-based networks.
+Polkadot gives builders and investors powerful tools—but with self-custody comes self-responsibility. This guide lays out practical, beginner-friendly steps to protect keys, harden wallets, spot scams, and adopt a professional security posture for Polkadot SDK (formerly Substrate)-based networks.
 
 ## Why Key Security Matters
 Your **seed phrase** (a series of 12–24 words) and **private keys** are the only way to control on-chain assets. There’s no password reset, no support hotline, no chargebacks. If an attacker obtains your seed or a compromised device signs a malicious transaction, funds can be moved irreversibly. Treat key custody like production secrets: minimize exposure, separate duties, and audit regularly.
@@ -41,11 +41,11 @@ Your **seed phrase** (a series of 12–24 words) and **private keys** are the on
 ## Polkadot Anti-Scam & Security Hub Resources
 * **Anti-Scam initiatives:** Community-driven reporting, takedowns, and user education to identify phishing and impersonation attempts.
 * **Reactive support:** While fund recovery is rare, early reporting can help prevent further loss and warn others.
-* **Polkadot Security Hub:** Curated vulnerabilities, secure-coding guidance for Substrate/Polkadot SDK, dependency hygiene tools, and hands-on “Parathreat” wargames to level up defensive skills.
+* **Polkadot Security Hub:** Curated vulnerabilities, secure-coding guidance for Polkadot SDK, dependency hygiene tools, and hands-on “Parathreat” wargames to level up defensive skills.
 
 **Developer highlights:**
 * “Top 10” Polkadot SDK pitfalls (e.g., poor benchmarking → overweight blocks; unsafe math; insecure randomness/VRF misuse).
-* **Dependency management:** Keep Substrate/Polkadot SDK crates current; minimize external crates.
+* **Dependency management:** Keep Polkadot SDK crates current; minimize external crates.
 * **Runtime & XCM config hygiene:** Principle of least privilege; compare configs with proven chains.
 
 ## Wallets & Storage: Options and Trade-Offs
@@ -86,7 +86,7 @@ If you hold meaningful value or sign frequently, yes. It reduces attack surface 
 Only with its password—and it’s still weaker than the seed. Keep both (securely), but treat the seed as the ultimate recovery.
 
 **4) How do I know a crowdloan is legitimate?**
-Use official ecosystem portals or reputable UIs and verify the parachain ID, campaign details, and the origin domain. Avoid direct transfers.
+Parachain slot auctions have been superseded by [Agile Coretime](/resources/concepts/agile-coretime/). If you encounter a crowdloan campaign, verify it through official ecosystem portals, check the parachain ID and campaign details, and avoid direct transfers to unknown addresses.
 
 **5) What if I clicked a phishing link?**
 Disconnect the device from the internet, move funds from a *new* wallet (with a *new* seed) using a clean device, rotate passwords, and consider a full OS reinstall.

@@ -2,7 +2,7 @@
 title: 'Gear Protocol'
 description: 'El Gear Protocol es una plataforma versátil diseñada para agilizar el desarrollo de dApps.'
 hero:
-  tagline: 'Agiliza el desarrollo de dApps con Substrate.'
+  tagline: 'Agiliza el desarrollo de dApps con Polkadot SDK.'
   image: 
     file: ../../../../../assets/tools/dev/gear.png
   actions:
@@ -18,10 +18,10 @@ hero:
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA, ShowcaseTwitter } from 'starlight-showcases';
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
-**Gear Protocol** es una plataforma de programación basada en Substrate que simplifica el desarrollo y la ejecución de aplicaciones descentralizadas (dApps) y contratos inteligentes. Las características únicas de Gear Protocol lo convierten en una herramienta esencial para desarrolladores que buscan aprovechar el poder de las tecnologías Web3 de manera eficiente.
+**Gear Protocol** es una plataforma de programación basada en Polkadot SDK que simplifica el desarrollo y la ejecución de aplicaciones descentralizadas (dApps) y contratos inteligentes. Las características únicas de Gear Protocol lo convierten en una herramienta esencial para desarrolladores que buscan aprovechar el poder de las tecnologías Web3 de manera eficiente.
 
 ## ¿Qué es Gear Protocol?
-El Gear Protocol es una plataforma versátil diseñada para agilizar el desarrollo de dApps. Opera sobre el marco Substrate, asegurando una alta compatibilidad dentro del ecosistema Polkadot. Al aprovechar WebAssembly (Wasm) para la ejecución, Gear Protocol soporta múltiples lenguajes de programación populares, incluyendo Rust, C y C++, permitiendo a los desarrolladores crear aplicaciones sofisticadas sin necesidad de aprender nuevos lenguajes.
+El Gear Protocol es una plataforma versátil diseñada para agilizar el desarrollo de dApps. Opera sobre el marco Polkadot SDK, asegurando una alta compatibilidad dentro del ecosistema Polkadot. Al aprovechar WebAssembly (Wasm) para la ejecución, Gear Protocol soporta múltiples lenguajes de programación populares, incluyendo Rust, C y C++, permitiendo a los desarrolladores crear aplicaciones sofisticadas sin necesidad de aprender nuevos lenguajes.
 
 ## Características y Beneficios Clave de Gear Protocol
 1. **Entorno Amigable para Desarrolladores**
@@ -43,7 +43,7 @@ Gear Network aprovecha el Gear Protocol para crear una variedad de soluciones de
 ### Abordando los Desafíos de Web3
 1. **Escalabilidad:** El procesamiento paralelo y la asignación eficiente de recursos de Gear Protocol abordan las limitaciones de escalabilidad de las plataformas blockchain tradicionales.
 2. **Barreras para Desarrolladores:** Al soportar lenguajes de programación ampliamente adoptados y ofrecer entornos de desarrollo familiares, Gear reduce las barreras para el desarrollo Web3.
-3. **Interoperabilidad:** La integración con Substrate y el ecosistema Polkadot asegura una comunicación y interoperabilidad sin fisuras entre diferentes redes y aplicaciones.
+3. **Interoperabilidad:** La integración con Polkadot SDK y el ecosistema Polkadot asegura una comunicación y interoperabilidad sin fisuras entre diferentes redes y aplicaciones.
 
 ### Funcionalidades Avanzadas para el Desarrollo de dApps
 1. **Mensajería Retrasada y Automatización:** Soporta la programación de acciones futuras de manera autónoma, permitiendo aplicaciones auto-sostenibles que reaccionan a cambios de estado o condiciones externas sin intervención manual.
@@ -67,7 +67,7 @@ Para más información, visita [Gear Protocol en GitHub](https://github.com/polk
   entries={[
     {
       href: 'https://www.youtube.com/watch?v=U18uEgWVZy4',
-      title: 'Sub0 Online: Usando Frontier para Construir una Cadena Basada en Substrate Compatible con Ethereum',
+      title: 'Sub0 Online: Usando Frontier para Construir una Cadena Basada en Polkadot SDK Compatible con Ethereum',
       description: 'Descripción de cómo Frontier facilita la construcción de cadenas compatibles con Ethereum en el ecosistema Polkadot.'
     },
   ]} />

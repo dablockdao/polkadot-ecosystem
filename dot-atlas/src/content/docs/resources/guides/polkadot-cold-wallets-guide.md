@@ -139,7 +139,7 @@ Both integrate with Polkadot tooling (Polkadot-JS, wallet UIs) and support the *
 
 **Pro tips**
 * **Labels matter:** Prefix accounts (`Ledger-Treasury`, `Vault-Gov`) to avoid mistakes.
-* **Test mode:** Practice with a tiny amount on **Paseo** or **Westend** if your workflow supports it.
+* **Test mode:** Practice with a tiny amount on **Paseo** if your workflow supports it.
 * **Multisig for ops:** Combine Ledger and Vault in **multisig** for team-level security.
 * **Backups:** Use **metal backup** for seeds; consider a **BIP39 passphrase** only if you fully understand the risks.
 * **Operational separation:** Keep a small **hot wallet** for day-to-day spending; keep the **cold wallet** untouched except for periodic moves.

@@ -4,7 +4,7 @@ description: Get started and join the biggest DAO in the world.
 template: splash
 ---
 
-import { ImageCard, LinkButton2 } from '../../components/ImageCard.astro';
+import { ImageCard } from '../../components/ImageCard.astro';
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 import { Card, CardGrid, LinkCard, LinkButton, FileTree, Tabs, TabItem } from '@astrojs/starlight/components';
 import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
@@ -37,12 +37,14 @@ import Hero2 from '/src/components/landing/Hero2.astro';
 </CardGrid>
 
 ## What is the Polkadot ecosystem?
-Polkadot is a **network of blockchains**. A central **relay chain** provides shared security; specialized **parachains** plug in to add capabilities (DeFi, identity, gaming, etc.). **XCM** is the native messaging standard for moving assets and instructions across chains. **Asset Hub** is a system chain for issuing and managing tokens/NFTs that other chains can use; some networks support **paying fees in non-native assets** via asset-conversion pools.
+Polkadot is a **network of blockchains**. A central **relay chain** provides shared security; specialized **parachains** plug in to add capabilities (DeFi, identity, gaming, etc.). The **Polkadot Hub** system chain serves as the primary user entry point, providing account abstraction, balance management, and cross-chain orchestration. **XCM** is the native messaging standard for moving assets and instructions across chains. **Asset Hub** is a system chain for issuing and managing tokens/NFTs that other chains can use; some networks support **paying fees in non-native assets** via asset-conversion pools. **Dual-VM smart contracts** (ink! Wasm + EVM/Solidity) allow developers to deploy on Polkadot SDK chains using their preferred language.
 
 ## How the ecosystem is organized
 * **Relay Chain:** Security & coordination; not for dapps.
 * **System Chains:**
+  * **Polkadot Hub** for account abstraction, balance management, and cross-chain orchestration.
   * **Asset Hub** for assets/NFTs and fee-payment features via conversion pools.
+  * **People Chain** for on-chain identity, proof-of-personhood, and social recovery.
   * **Bridge Hub** for connecting Polkadot to external ecosystems via light-client or verified bridges.
 * **Parachains:** App-specific chains for DeFi, identity, gaming, compute, storage, social, RWA/DePIN, etc.
 * **Routing:** **XCM** for intra-Polkadot transfers/instructions; **bridges** for external chains.
@@ -141,7 +143,7 @@ entries={[
       thumbnail: import('/src/assets/thumbnails/smart-contracts2.png'),
       href: '/dapps/smart-contracts/',
       title: 'Smart Contracts',
-      description: 'Find smart-contract ecosystems built on Polkadot and Substrate.'
+      description: 'Find smart-contract ecosystems built on Polkadot and Polkadot SDK.'
       },
     {
       thumbnail: import('/src/assets/thumbnails/dApps.png'),
@@ -256,7 +258,7 @@ Polkadot’s vision of a decentralized internet.
 
 * **Polkassembly:** Proposal pages with on-chain data + discussion; delegation & notification features.
 * **Subsquare:** Alternative portal with stats dashboards, track views, alerts.
-* **Polkadot Wiki (concepts):** Clear explanations for tracks, convictions, time-locks, and delegation approaches.
+* **Polkadot Docs (concepts):** Clear explanations for tracks, convictions, time-locks, and delegation approaches.
 * **Polkadot.js apps (advanced):** Power-user interface for direct extrinsics and governance calls.
 
 **Getting started:** Use a portal to **delegate per track** (e.g., Treasury vs. Root) to different trusted voters before you vote directly.
@@ -267,11 +269,14 @@ Polkadot’s vision of a decentralized internet.
 * **Runtime pallets:** Assets, balances, staking, democracy/gov, XCM, custom domain logic.
 
 **Smart contracts**
-* **ink! (Wasm):** Rust-native smart contracts on Substrate-based chains.
+* **ink! (Wasm):** Rust-native smart contracts on Polkadot SDK-based chains.
 * **EVM / PolkaVM paths:** Deploy Solidity using Foundry-Polkadot or Hardhat integrations; or target EVM-compatible parachains.
 
 **APIs & clients**
-* **polkadot.js API (TS):** Query chain state and submit extrinsics programmatically.
+* **PAPI (Polkadot-API):** Modern TypeScript client with light-client-first architecture, code-generated types, and tree-shakeable bundles. Recommended for new projects.
+* **polkadot-js API (TS):** Mature, stable option for querying chain state and submitting extrinsics; suitable for legacy projects.
+* **Dedot:** Lightweight, tree-shakable TypeScript client with first-class PAPI support.
+* **Subxt:** Rust client with compile-time type safety from metadata.
 * **RPC & indexing:**
   * **Subsquid** and **SubQuery** for indexing/graph layers.
   * Full nodes via multiple providers; GeoDNS and multi-provider endpoints are common for production.
@@ -306,7 +311,7 @@ Polkadot’s vision of a decentralized internet.
 * **Moonbeam / Astar marketplaces:** EVM-style NFT markets and tooling in their ecosystems.
 
 ### Gaming
-* **Mythos / Ajuna / Astar / Moonbeam gaming ecosystems:** Mix of EVM and Substrate tooling for in-game assets, marketplaces, and auth.
+* **Mythos / Ajuna / Astar / Moonbeam gaming ecosystems:** Mix of EVM and Polkadot SDK tooling for in-game assets, marketplaces, and auth.
 * **Randomness & oracles:** Some games leverage on-chain VRF or oracles to prove fairness.
 
 ### Identity & credentials
@@ -335,7 +340,7 @@ Polkadot’s vision of a decentralized internet.
 ### Block Explorers
 | Explorer   | Scope                        | Open source | Strengths                                | Typical use                          |
 | ---------- | ---------------------------- | ----------- | ---------------------------------------- | ------------------------------------ |
-| Subscan    | Substrate ecosystem          | Partial     | Deep chain data, events/extrinsics, APIs | Daily driver for accounts/extrinsics |
+| Subscan    | Polkadot ecosystem          | Partial     | Deep chain data, events/extrinsics, APIs | Daily driver for accounts/extrinsics |
 | Statescan  | Polkadot/Kusama + parachains | Yes         | Asset-centric views; system chains       | Asset tracking, uniques, Asset Hub   |
 | XCSCAN     | Cross-chain (XCM)            | Yes         | Visualizes full XCM paths                | Debugging cross-chain transfers.     |
 
@@ -374,9 +379,9 @@ Polkadot’s vision of a decentralized internet.
 ## +Ecosystem Resources:
 -------------
 <CardGrid>
-  <Card title="Polkadot Wiki" icon="open-book">
-    Explore in-depth information on Polkadot’s technical principles and key components powering its ecosystem
-    <LinkButton href="https://wiki.polkadot.network" variant="secondary" icon="external" iconPlacement="start">Polkadot Wiki</LinkButton>
+  <Card title="Polkadot Docs" icon="open-book">
+    Explore the official Polkadot technical documentation—guides, references, and deep dives across the entire protocol.
+    <LinkButton href="https://docs.polkadot.com" variant="secondary" icon="external" iconPlacement="start">Polkadot Docs</LinkButton>
   </Card>
 
   <Card title="Polkadot Website" icon="information">

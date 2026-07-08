@@ -41,7 +41,7 @@ The leadership team at 4IRE Labs brings a wealth of experience and expertise to 
 With offices in Canada, Sweden, Ukraine, the UK, Poland, Portugal, and the UAE, 4IRE Labs ensures global communication and support for their clients. Their extensive client base includes both enterprise clients and startups, with notable collaborations with corporate banks like Danske Bank, FAB, and Basis Bank.
 
 ### Industry Recognition and Partnerships
-4IRE Labs has garnered recognition as a top blockchain company and maintains strategic partnerships with entities like Substrate, DAO Maker, and the Nordic RegTech Association. Their commitment to innovation and excellence has earned them a reputation as a reliable technology partner in the blockchain industry.
+4IRE Labs has garnered recognition as a top blockchain company and maintains strategic partnerships with entities like the Polkadot SDK (formerly Substrate), DAO Maker, and the Nordic RegTech Association. Their commitment to innovation and excellence has earned them a reputation as a reliable technology partner in the blockchain industry.
 
 ### Conclusion
 4IRE Labs stands out as a transformative force in the FinTech, DeFi, and banking sectors, driven by a commitment to innovation and sustainability. Their comprehensive service offerings, expert leadership, and global presence position them as a leading blockchain development company, well-equipped to meet the diverse needs of their clients. Whether it’s financial software development, blockchain solutions, or green finance initiatives, 4IRE Labs continues to deliver outstanding results, helping businesses navigate the complexities of the digital financial landscape.

@@ -29,6 +29,19 @@ Polkadot isn’t a single app-chain. It’s a **multi-chain** network with a **R
 
 \*Actual times/fees depend on network conditions.
 
+[1]: https://polkadot.com
+[2]: https://wormhole.com
+[3]: https://thedefiant.io
+[4]: https://forum.polkadot.network
+[5]: https://support.polkadot.network
+[6]: https://docs.snowbridge.network
+[7]: https://parachains.info
+[8]: https://coindesk.com
+[9]: https://docs.hydration.net
+[10]: https://hydration.net
+[11]: https://x.com/polkadot
+[12]: https://axelar.network
+
 ## How each route works
 ### A) Ethereum ⇄ Polkadot via Snowbridge (trustless)
 * **What it is:** The **official** Polkadot↔Ethereum bridge using **on-chain light clients** (no multisigs). ([Polkadot][1])
@@ -83,7 +96,7 @@ Polkadot isn’t a single app-chain. It’s a **multi-chain** network with a **R
   * Prioritize **Snowbridge** for **ETH→Polkadot** when you want **light-client trustlessness**. ([Polkadot][1])
   * Prefer **Wormhole/Axelar→Moonbeam** for **SOL (and many chains)**. ([Wormhole][2])
   * Use **Chainflip** when you want **fewest clicks** to **Asset Hub** (BTC/ETH/USDC). ([The Defiant][3])
-* **After bridging, use Hydration for execution:** Deep **Omnipool** liquidity and **remote swaps** can reduce hops and slippage across parachains. ([HydraDX][10])
+* **After bridging, use Hydration for execution:** Deep **Omnipool** liquidity and **remote swaps** can reduce hops and slippage across parachains. ([Hydration][10])
 * **Fee assets:** Make sure you hold the **right fee token** on destination chains; remote swaps can acquire it mid-flow. ([docs.hydration.net][9])
 
 ## FAQs
@@ -109,7 +122,7 @@ Yes—**SubWallet** (browser/mobile) or **Nova Wallet** (mobile) are popular cho
 No. It’s the **typical** ingress for **Solana/other L1s** via **Wormhole/Axelar**; **Snowbridge** goes **directly** between Ethereum and Polkadot. ([Axelar][12])
 
 **8) What if I just want to trade once I’m in Polkadot?**
-Route to **Hydration** (DEX). Its **Omnipool** and **remote swaps** give efficient execution across parachains. ([HydraDX][10])
+Route to **Hydration** (DEX). Its **Omnipool** and **remote swaps** give efficient execution across parachains. ([Hydration][10])
 
 ## Conclusion & CTA
 Polkadot gives you **multiple, composable on-ramps**:

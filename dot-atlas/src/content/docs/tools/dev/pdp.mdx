@@ -50,7 +50,7 @@ The portal pre-calculates *reserved* (refundable) vs. *non-recoverable* fees, so
 PDP spins up a keyless **pure proxy**, briefly holds “Any” privileges to automate deployment, then hands full control to the project’s multisig. A fellowship proposal for a dedicated *ParaRegistration* proxy type will further tighten permissions.
 
 ## Deployment Workflow at a Glance
-1. **Configure Rollup** – fill token name, supply, decimals, SUDO address, runtime, and chain (Polkadot, Kusama, Westend, Paseo).  
+1. **Configure Rollup** – fill token name, supply, decimals, SUDO address, runtime, and chain (Polkadot, Kusama, Paseo).  
 2. **Reserve ParaID** – PDP signs the on-chain transaction via the pure proxy.  
 3. **Generate Genesis (WASM & Head)** – off-chain build by the PDP backend.  
 4. **Register Genesis** – on-chain upload; PDP’s “Any” proxy is revoked.  

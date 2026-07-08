@@ -10,7 +10,7 @@ The **Xode Networ**k, created by **Hgminerva**, is a sophisticated **blockchain 
 
 **1. Parachain:** At the heart of Xode Network lies the parachain, an independent blockchain that connects to the Polkadot/Kusama Relay Chain through a designated parachain slot. Each parachain operates with its unique set of rules, consensus mechanisms, and governance structures, tailored to specific use cases.
 
-**2. Parachain Slot:** A parachain slot is a crucial and limited resource within the Polkadot/Kusama Relay Chain. Securing a parachain slot allows the parachain to integrate into the Polkadot network, participating in its broader ecosystem. Slots are obtained via decentralized auctions where projects bid using DOT/KSM tokens.
+**2. Parachain Slot:** A parachain slot is a crucial and limited resource within the Polkadot/Kusama Relay Chain. Securing a parachain slot allows the parachain to integrate into the Polkadot network, participating in its broader ecosystem. Slots are obtained via decentralized auctions where projects bid using DOT/KSM tokens. (Note: Polkadot has since transitioned to Agile Coretime, replacing the slot auction model with flexible bulk and on-demand core purchases.)
 
 **3. Polkadot/Kusama Relay Chain:** The Relay Chain is the core of the Polkadot network, ensuring communication and interoperability between parachains. It manages network security, consensus, and the transfer of messages and assets between different parachains.
 

@@ -42,7 +42,7 @@ La DOT Validator Alliance apoya una amplia gama de proyectos dentro de los ecosi
 - **Asset-Hub:** Un parachain genérico de activos para desplegar y transferir activos, incluidos NFTs.  
 - [**Astar Network**](/dapps/smart-contracts/astar-network): Una plataforma de contratos inteligentes multi-cadena que soporta varias blockchains y máquinas virtuales.  
 - [**Moonbeam**](/dapps/smart-contracts/moonbeam-network/): Facilita la construcción de aplicaciones descentralizadas que se integran con otras blockchains.  
-- **Hydration (anteriormente HydraDX):** Un parachain que se beneficia de la seguridad compartida y la flexibilidad de Substrate.  
+- **Hydration (anteriormente HydraDX):** Un parachain que se beneficia de la seguridad compartida y la flexibilidad de Polkadot SDK.  
 - [**KILT Protocol**](/dapps/social/kilt-protocol/): Un protocolo blockchain de código abierto para emitir credenciales verificables, revocables y anónimas.
 
 ### Comunidad Diversa e Inclusiva  

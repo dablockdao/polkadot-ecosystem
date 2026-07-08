@@ -29,7 +29,7 @@ Polkadot combines **low fees**, **shared security**, and **interoperability**. Y
 * Strong focus on discovery and community momentum during the beta phase.
 
 ### 3) Unique Network (NFT-centric parachain)
-* Advanced NFT features and dev tooling (Substrate & EVM-style APIs).
+* Advanced NFT features and dev tooling (Polkadot SDK & EVM-style APIs).
 * Ideal for custom logic, on-chain utilities, and complex metadata workflows.
 * Multiple routes: no-code minting UIs and full developer SDKs.
 
@@ -95,7 +95,7 @@ Polkadot combines **low fees**, **shared security**, and **interoperability**. Y
 3. Upload media; mint items; optionally list on supported markets.
 
 **Developer route**
-1. Choose **Substrate SDK** or **EVM-style API**.
+1. Choose **Polkadot SDK** or **EVM-style API**.
 2. Define schemas, attributes, and logic (e.g., upgradeable traits, tickets, in-app utility).
 3. Script collection creation, minting, and marketplace integration in CI.
 
@@ -106,7 +106,7 @@ Polkadot combines **low fees**, **shared security**, and **interoperability**. Y
 | Capability | **Koda/Kodadot (Asset Hub)**             | **Chaotic (Beta)**                       | **Unique Network**                           |
 | ---------- | ---------------------------------------- | ---------------------------------------- | -------------------------------------------- |
 | Focus      | Mature, creator-friendly UI on Asset Hub | New marketplace experience (beta active) | NFT-centric parachain with advanced features |
-| Minting    | Full UI for collections & items          | Beta minting/listing (features evolving) | No-code UI + SDKs (Substrate/EVM)            |
+| Minting    | Full UI for collections & items          | Beta minting/listing (features evolving) | No-code UI + SDKs (Polkadot SDK/EVM)            |
 | Costs      | Asset Hub deposits + low tx fees         | Similar, if using Asset Hub              | Chain-specific fees; no Asset Hub deposits   |
 | Royalties  | Configurable in flow                     | Supported in marketplace listing (beta)  | Highly flexible via chain features           |
 | Best for   | Quick start, broad reach on Polkadot     | Early discovery in a fresh market        | Complex logic & utility-heavy collections    |

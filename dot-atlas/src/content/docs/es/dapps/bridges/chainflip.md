@@ -35,7 +35,7 @@ El protocolo está diseñado para integrarse fácilmente con billeteras, agregad
 Chainflip está diseñado para ser autosostenible, dependiendo de la demanda de los usuarios en lugar de incentivos artificiales. El protocolo canaliza el valor generado por las tarifas hacia el token FLIP, distribuyéndolo entre los titulares de tokens y compensando cualquier incentivo ofrecido.
 
 ## Protocolo Central de Chainflip
-**El núcleo de** **Chainflip es una** “***Red de Liquidez Intercadena***” que utiliza **Cómputo Multipartito (MPC)** y **Esquemas de Firma de Umbral (TSS)** para gestionar claves agregadas a través de una red descentralizada de validadores. Esta configuración permite una capa de liquidación completamente descentralizada junto con una capa contable basada en el marco blockchain Substrate.
+**El núcleo de** **Chainflip es una** “***Red de Liquidez Intercadena***” que utiliza **Cómputo Multipartito (MPC)** y **Esquemas de Firma de Umbral (TSS)** para gestionar claves agregadas a través de una red descentralizada de validadores. Esta configuración permite una capa de liquidación completamente descentralizada junto con una capa contable basada en el marco blockchain Polkadot SDK.
 
 ## Red de Validadores de Chainflip
 Chainflip emplea una red de hasta 150 validadores que gestionan las funciones del protocolo de manera concurrente. Los validadores participan en el consenso, supervisan depósitos y transmiten transacciones, asegurando la seguridad y eficiencia de los intercambios intercadena.

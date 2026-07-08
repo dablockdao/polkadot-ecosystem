@@ -39,7 +39,7 @@ As a parachain, peaq shares Polkadot Relay Chain security and benefits from Nomi
 
 ### Multiruntime: EVM + ink!
 * **EVM**: compatibility for tooling and Solidity contracts.
-* **ink!**: Rust-based smart contracts (Substrate native), useful when you need fine-grained control and Wasm-first features.
+* **ink!**: Rust-based smart contracts (Polkadot SDK (formerly Substrate) native), useful when you need fine-grained control and Wasm-first features.
 
 ## Modular DePIN Functions (how they work)
 peaq ships **plug-and-play primitives** so you don’t reinvent infra:
@@ -48,11 +48,11 @@ peaq ships **plug-and-play primitives** so you don’t reinvent infra:
 3. **peaq verify (tiered data verification)** – patterns for validating physical data in a DePIN (crypto proofs, redundancy, economic checks).
 4. **UMT (Universal Machine Time)** – an on-chain, Precision Time Protocol-style approach targeting **nanosecond-level** synchronization so robots/drones/vehicles can coordinate safely.
 
-These functions are exposed via SDKs so web2/web3 teams can integrate quickly without deep Substrate expertise.
+These functions are exposed via SDKs so web2/web3 teams can integrate quickly without deep Polkadot SDK expertise.
 
 ## Developer experience: SDKs, tooling, runtimes
 * **SDKs:** Official **JavaScript** SDK, with **Python** also available.
-* **Explorers & infra:** EVM/Substrate explorers and managed node services are available for development and production.
+* **Explorers & infra:** EVM/Polkadot SDK explorers and managed node services are available for development and production.
 * **Runtimes:** Choose **EVM** for speed of porting; choose **ink!/pallets** for custom logic and tight runtime integration.
 
 ## Interoperability & Polkadot advantages

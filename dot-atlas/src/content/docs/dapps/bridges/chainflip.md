@@ -17,7 +17,7 @@ hero:
 
 ## Chainflip on Polkadot: Native Cross-Chain Swaps with JIT AMM & FROST Security
 
-Chainflip is a decentralized cross-chain swap network built around a Substrate “State Chain,” a 150-validator MPC/TSS custody model, and a Just-In-Time (JIT) AMM. In July 2025, Chainflip shipped an integration with Polkadot Asset Hub, enabling one-click native swaps between Polkadot-native assets and BTC/ETH/USDC/SOL via wallets like SubWallet—without wrapped tokens.
+Chainflip is a decentralized cross-chain swap network built around a Polkadot SDK (formerly Substrate) “State Chain,” a 150-validator MPC/TSS custody model, and a Just-In-Time (JIT) AMM. In July 2025, Chainflip shipped an integration with Polkadot Asset Hub, enabling one-click native swaps between Polkadot-native assets and BTC/ETH/USDC/SOL via wallets like SubWallet—without wrapped tokens.
 
 ## ELI5: Chainflip in one minute
 * Imagine a **robotic cashier** that speaks Bitcoin, Ethereum, Solana, and Polkadot natively.
@@ -26,15 +26,15 @@ Chainflip is a decentralized cross-chain swap network built around a Substrate �
 * In **July 2025**, Chainflip integrated **Polkadot Asset Hub**, so you can do one-click swaps between Polkadot-native assets and BTC/ETH/USDC via supported wallets like **SubWallet**—**no wraps, no bridges**.
 
 ## How Chainflip works
-### State Chain (Substrate appchain)
-The **State Chain** is Chainflip’s application-specific blockchain, built with Substrate. It records protocol events (deposits, swaps, vault rotations, governance) and runs the AMM logic. Think of it as the **accounting & coordination** layer for cross-chain settlement.
+### State Chain (Polkadot SDK appchain)
+The **State Chain** is Chainflip’s application-specific blockchain, built with the Polkadot SDK. It records protocol events (deposits, swaps, vault rotations, governance) and runs the AMM logic. Think of it as the **accounting & coordination** layer for cross-chain settlement.
 
 ### Validators, MPC/TSS & FROST
 * Chainflip runs a permissionless network of **up to 150 validators**. They collectively manage vault keys via **MPC/TSS**—no central custodian.
 * Chainflip employs **FROST** (Flexible Round-Optimized Schnorr Threshold) for fast, scalable threshold signatures (e.g., “100-of-150” signing), enabling quick egress transactions and simpler vault management.
 
 ### JIT AMM & pricing
-* The **Just-In-Time AMM** is implemented on the State Chain (Rust/Substrate), drawing inspiration from concentrated-liquidity designs while adapting them for cross-chain operations. LPs can place range liquidity; execution is optimized for **accurate pricing and minimal slippage** across L1 assets.
+* The **Just-In-Time AMM** is implemented on the State Chain (Rust/Polkadot SDK), drawing inspiration from concentrated-liquidity designs while adapting them for cross-chain operations. LPs can place range liquidity; execution is optimized for **accurate pricing and minimal slippage** across L1 assets.
 
 ## Why this matters for Polkadot
 Polkadot’s **Asset Hub** concentrates native assets and fee-payment features for the ecosystem. Chainflip’s **Asset Hub integration** lets users swap **directly between Polkadot-native assets (e.g., hubUSDC) and external L1 assets (BTC/ETH/USDC/SOL)**—removing wrapper risk and fragmentation, and easing capital in/out flows for users and DAOs. One-click routes in popular wallets simplify UX for non-experts while preserving native settlement.
@@ -49,7 +49,7 @@ Polkadot’s **Asset Hub** concentrates native assets and fee-payment features f
 ## Chainflip vs alternatives
 | Protocol      | Settlement model                                              | BTC L1 support                     | Polkadot integration                  | Execution model                             | Who runs it            | Notes                                                        |
 | ------------- | ------------------------------------------------------------- | ---------------------------------- | ------------------------------------- | ------------------------------------------- | ---------------------- | ------------------------------------------------------------ |
-| **Chainflip** | Native L1↔L1 swaps via MPC/TSS vaults + Substrate State Chain | **Yes**                            | **Yes** (Asset Hub; wallet one-click) | JIT AMM on State Chain                      | \~150 validators (PoS) | FROST TSS; SDKs & wallet/aggregator integrations.            |
+| **Chainflip** | Native L1↔L1 swaps via MPC/TSS vaults + Polkadot SDK State Chain | **Yes**                            | **Yes** (Asset Hub; wallet one-click) | JIT AMM on State Chain                      | \~150 validators (PoS) | FROST TSS; SDKs & wallet/aggregator integrations.            |
 | **THORChain** | Native L1↔L1 swaps via TSS vaults on a dedicated chain        | **Yes**                            | Not native to Polkadot                | Continuous liquidity pools (CLP)            | Node operators (PoS)   | Pioneer of native cross-chain swaps; widely used BTC routes. |
 | **UniswapX**  | Intents + third-party fillers; often routes via bridges/DEXs  | Limited/varies (not native BTC L1) | Not specific                          | Dutch-auction intents; gasless for swappers | Open filler network    | Useful for EVM-centric intents and aggregation.              |
 | **LI.FI**     | Aggregator of bridges/DEXs; smart routing                     | Via connected bridges (not native) | Not specific                          | Aggregation & solver routing                | Aggregator + partners  | SDK/API across many chains; strong bridge coverage.          |
@@ -85,7 +85,7 @@ Yes. The **Asset Hub integration (July 30, 2025)** enabled one-click swaps betwe
 A **permissionless validator set (up to \~150)** collectively controls vaults using **FROST** threshold signatures; no single operator can move funds.
 
 **4) What is the State Chain used for?**
-It’s the **coordination & accounting chain** (Substrate appchain) that tracks deposits, executes the **JIT AMM**, manages vault rotations, and handles governance for Chainflip.
+It’s the **coordination & accounting chain** (Polkadot SDK appchain) that tracks deposits, executes the **JIT AMM**, manages vault rotations, and handles governance for Chainflip.
 
 **5) How good is pricing? Where does it come from?**
 Pricing emerges from liquidity provided to the **JIT AMM** (range liquidity) plus arbitrage with external markets via integrators, aiming for low slippage and tight quotes.
@@ -100,7 +100,7 @@ Swapping is **on-chain and permissionless**; some purchase flows market **no KYC
 No—this guide is educational. Chain parameters, liquidity, and pricing can change; do your own research.
 
 ## Conclusion
-Chainflip brings **bridge-free, native L1 swapping** to Polkadot with production-grade security (MPC/TSS + FROST), a **Substrate State Chain**, and a **JIT AMM** optimized for execution quality. For users, that means **simpler in/out flows** (BTC/ETH/USDC ↔ Asset Hub). For integrators, it’s a **turnkey backend** to add native cross-chain routes to wallets and apps.
+Chainflip brings **bridge-free, native L1 swapping** to Polkadot with production-grade security (MPC/TSS + FROST), a **Polkadot SDK State Chain**, and a **JIT AMM** optimized for execution quality. For users, that means **simpler in/out flows** (BTC/ETH/USDC ↔ Asset Hub). For integrators, it’s a **turnkey backend** to add native cross-chain routes to wallets and apps.
 
 1. **[Chainflip backend repo](https://github.com/chainflip-io/chainflip-backend)**
 2. **[Chainflip SDK monorepo](https://github.com/chainflip-io/chainflip-sdk-monorepo)**

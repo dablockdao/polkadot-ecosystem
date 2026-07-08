@@ -14,7 +14,7 @@ Keypair controlling an address and on-chain assets.
 
 An account’s keypair authorizes transactions and governance actions; wallets simply manage keys, while the chain’s state tracks balances and locks. Hardware/air-gapped or injected accounts change how keys are stored, not what an account is.
 
-Beyond balances, accounts can hold locks (staking, democracy, vesting), identity data, and proxy delegations (e.g., proxy for governance only). On Substrate chains, an account’s existential deposit (ED) prevents dust accounts; dropping below ED “reaps” the account.
+Beyond balances, accounts can hold locks (staking, democracy, vesting), identity data, and proxy delegations (e.g., proxy for governance only). On Polkadot SDK-based chains, an account’s existential deposit (ED) prevents dust accounts; dropping below ED “reaps” the account.
 
 For teams, use multisig or proxy patterns so ops keys differ from treasury/governance keys. Avoid reusing the same account across chains with different SS58 prefixes; UI may show the same raw key with different encodings.
 
@@ -46,9 +46,12 @@ AMMs replace order books with invariant-based pricing across pools; slippage and
 DEX design that prices swaps from liquidity pools using math (e.g., constant-product). Price impact depends on depth and route; LPs earn fees and take on impermanent loss risk. Many Polkadot parachains expose AMMs at the application layer.
 
 ### API
-For Polkadot, primary access is via JSON-RPC and the polkadot-js APIs (or language SDKs). The metadata endpoint drives type-safe interactions; keep it in sync after runtime upgrades.
+For Polkadot, primary access is via JSON-RPC. **PAPI (Polkadot-API)** is the recommended modern TypeScript client with light-client-first architecture and code-generated types. **Dedot** offers a lightweight, tree-shakable alternative. **Subxt** provides a Rust-based client. The mature **polkadot-js API** remains a stable option for legacy projects. The metadata endpoint drives type-safe interactions across all clients; keep it in sync after runtime upgrades.
 
 Separate read (public endpoint) from write (rate-limited, auth, or private) to avoid mempool abuse, and consider archive nodes for historical queries.
+
+### Asynchronous Backing
+Pipelined parachain block production where collators can produce the next block candidate without waiting for the current one to be included on the relay chain. This decouples collation from relay-chain block times, reducing latency and increasing throughput. [Learn more →](/resources/concepts/asynchronous-backing)
 
 ### Asset Hub
 System parachain for issuing and managing fungible/non-fungible assets.
@@ -62,7 +65,7 @@ Asset Hub standardizes issuance and XCM movement. Assets can be native (teleport
 For UX, persist the asset’s multi-location (XCM) and the asset ID. Displaying only a ticker risks collisions. Governance can also freeze, slash, or rename assets—design for metadata updates.
 
 ### Availability Cores
-Relay-chain execution/availability slots assigned to parachains/threads under coretime.
+Relay-chain execution/availability slots assigned to parachains/threads under Agile Coretime.
 
 Parachains are scheduled onto availability cores; validators fetch candidates and related metadata via runtime APIs to check availability and proceed with approvals. 
 
@@ -84,7 +87,7 @@ Contains extrinsics and consensus metadata describing how the runtime transforme
 
 Blocks carry extrinsics (calls) and produce events. Indexers should listen to events/receipts, not just parse raw storage, to track app-level outcomes accurately.
 
-In Substrate, the state root commits to all storage; light clients can verify inclusion proofs without downloading full state.
+In the Polkadot SDK, the state root commits to all storage; light clients can verify inclusion proofs without downloading full state.
 
 ### Blockspace
 Usable capacity (compute + storage + security) finalized by the network.
@@ -124,6 +127,12 @@ Prefer bridges that use light clients or economic security with strong fraud pro
 
 Bridges are outside Polkadot’s shared security; XCM is inside. Communicate that distinction to users to set risk expectations.
 
+### Bridge Hub
+System parachain providing trust-minimized connections to external networks via light-client bridges. Used by Snowbridge (Ethereum bridge) and other cross-ecosystem routes. [Learn more →](/resources/concepts/bridge-hub)
+
+### Bulletin Chain
+Polkadot’s decentralized, content-addressed storage layer for Product data. Supports authorization-based writes, chunked uploads, and automatic renewal. IPFS-compatible content addressing. [Learn more →](/resources/concepts/bulletin-chain)
+
 ### Byzantine Fault Tolerance 
 BFT isn’t a single algorithm but a tolerance model: the system remains safe/lively under a bound of malicious/failed nodes. GRANDPA targets safety; BABE targets liveness.
 
@@ -159,7 +168,7 @@ Consider consensus at two layers: parachain authoring/logic (often AURA) and rel
 
 Metrics to watch: inclusion latency, finality lag, approval checks, and XCM queue depth.
 
-### Coretime
+### Agile Coretime
 Model where parachains consume relay-chain time on demand (replaces auctions).
 
 Instead of long-lived slot leases, chains can operate as on-demand parathreads or buy time flexibly; scheduling maps to availability cores for execution.
@@ -187,9 +196,9 @@ Application with decentralized backends or state.
 
 The UI can be web or native; the key is on-chain state/logic and wallet-based authorization rather than centralized servers. 
 
-On Substrate, you can target multiple execution models: smart-contracts pallets, runtime pallets (native), or off-chain workers. Choose based on upgrade cadence and trust minimization.
+On Polkadot SDK-based chains, you can target multiple execution models: smart-contracts pallets, runtime pallets (native), or off-chain workers. Choose based on upgrade cadence and trust minimization.
 
-Always test flows on Paseo/Westend/Rococo with faucets before mainnet.
+Always test flows on Paseo/Rococo with faucets before mainnet.
 
 ### DMP (Downward Message Passing)
 Messages from relay chain to a parachain.
@@ -199,6 +208,12 @@ Part of vertical message passing; downward messages may also originate from anot
 DMP is how system decisions flow down (e.g., runtime upgrades or governance signals). Ensure your parachain handles DMP gracefully with idempotent handlers to avoid double-effects.
 
 Log DMP handling as events for observability; it eases incident response.
+
+### Dedot
+Lightweight, tree-shakable TypeScript client for Polkadot with first-class support for Polkadot-API (PAPI) typed interactions. Generates minimal bundle sizes through tree-shaking.
+
+### dNS (dotNS)
+Decentralized naming system on Polkadot, analogous to ENS on Ethereum. Maps human-readable names to addresses, with a .dot namespace and marketplace for name trading. [Learn more →](/resources/concepts/dotns)
 
 ### DOT
 Polkadot’s native token for governance, staking, and bonding.
@@ -210,6 +225,9 @@ DOT has lockable balances for governance conviction and staking locks; UI should
 In OpenGov, DOT’s time-for-weight tradeoff can materially change outcomes; tooling should visualize conviction curves.
 
 ## E
+
+### Elastic Scaling
+Ability for a single parachain to use multiple availability cores simultaneously, dynamically scaling its blockspace based on demand. Reduces latency and increases throughput during high-traffic periods. [Learn more →](/resources/concepts/elastic-scaling)
 
 ### Epoch / Era / Session
 Epoch: BABE slots; Era: staking reward period; Session: validator set window.
@@ -247,7 +265,7 @@ The Fellowship can propose and whitelist sensitive upgrades, reducing coordinati
 For proposal authors: include threat models, benchmarking, and rollback plans to facilitate expert review.
 
 ### FRAME
-Substrate’s pallet library for building runtimes.
+Polkadot SDK’s pallet library for building runtimes.
 
 When composing pallets, be explicit about origin filtering, weight limits, and storage migrations. Runtime upgrades must include migration code for storage layout changes.
 
@@ -259,7 +277,7 @@ Most faucets rate-limit by address or IP and may require social proofs. Don’t 
 Never present faucet tokens as having value; isolate test chains in your app config to avoid mainnet confusion.
 
 ### Fork
-Substrate chains upgrade by replacing the Wasm runtime on-chain, avoiding social-layer hard forks for most changes. Runtime versions signal compatibility to wallets and SDKs.
+Polkadot SDK-based chains upgrade by replacing the Wasm runtime on-chain, avoiding social-layer hard forks for most changes. Runtime versions signal compatibility to wallets and SDKs.
 
 When a hard fork is unavoidable (host/client changes), publish cutover instructions, client minimums, and reorg strategy well in advance.
 
@@ -291,6 +309,9 @@ Non-backward-compatible vs backward-compatible protocol changes.
 Most Polkadot upgrades don’t need hard forks because the Wasm runtime can be replaced via governance. Hard forks happen when the host/client layer changes in a non-compatible way.
 For app teams: pin SDKs to runtime spec versions, and surface a maintenance banner when your node’s runtime is ahead of your client types to prevent malformed transactions.
 
+### HOP
+Highway Overlay Protocol: a network relay framework that enables permissionless, verifiable message routing across Polkadot system chains. Provides efficient message delivery with cryptographic proofs. [Learn more →](/resources/concepts/hop)
+
 ### HRMP
 Relay-routed parachain↔parachain messaging precursor to full XCMP (active).
 
@@ -299,11 +320,17 @@ Watch queue depth and fee payer semantics. If a destination can’t process mess
 
 ## I
 
+### Inclusion Pipeline
+The multi-stage process by which a parachain candidate progresses from collation to finalization on Polkadot. Covers backing, availability, and approval stages with defined timeouts and fallback mechanisms. [Learn more →](/resources/concepts/inclusion-pipeline)
+
 ### Inherents
 Unsigned extrinsics inserted by block authors (e.g., timestamp).
 
 Inherents (e.g., timestamps) are “true by construction.” They’re validated against rules (like acceptable drift) rather than signatures.
 If your parachain logic depends on them (auctions, expiries), make handlers idempotent and log events so you can replay or reconcile on incident recovery.
+
+### ink!
+Rust-based smart contract language for Polkadot SDK chains, compiling to Wasm. Offers type-safe contract development with a built-in test framework and a standard library (openbrush) for common patterns.
 
 ### Injected Account
 Wallet-managed account surfaced in UIs.
@@ -322,6 +349,9 @@ Great for immutable artifacts (reports, binaries) referenced on-chain via CIDs. 
 For governance artifacts, include the CID in on-chain remarks to create tamper-evident links between funding and deliverables.
 
 ## J–L
+
+### JAM
+Join-Accumulate Machine: A next-generation protocol design that evolves Polkadot into a global, permissionless supercomputer. Combines elements of the relay chain with smart-contract execution in a unified, code-first model. [Learn more →](/resources/concepts/jam)
 
 ### JSON-RPC
 Interface used by nodes, wallets, and tooling.
@@ -376,15 +406,18 @@ Runtime metadata changes with upgrades; outdated clients mis-encode calls or mis
 Bundle a metadata fetch on app start and prompt users to reload if the runtime specVersion changed.
 
 ### Merkle Patricia trie
-Substrate uses tries to commit to storage; proofs allow light clients to verify values.
+Polkadot SDK-based chains use tries to commit to storage; proofs allow light clients to verify values.
 Storage migrations must preserve keys/paths or provide migration logic; otherwise proofs break.
+
+### Moonwall
+Developer testing framework for Polkadot SDK chains, providing local devnet orchestration, automated test scenarios, and integration testing against running nodes.
 
 ### Mnemonic phrase
 Prefer SR25519 key derivation with strong passphrases. Never paste mnemonics into web UIs; use hardware or QR signing for treasuries.
 For teams, shard operational control via multisig or proxy rather than sharing mnemonics.
 
 ### Multi-signature wallet (multisig)
-On Substrate, multisig is an on-chain approval workflow; add/remove signers requires a new multisig.
+On Polkadot SDK-based chains, multisig is an on-chain approval workflow; add/remove signers requires a new multisig.
 Prefer proxy + single-sig hardware for complex ops: cheaper, easier to rotate, and safer than giant multisigs for every role.
 
 ## N
@@ -424,13 +457,40 @@ Privilege context under which a call executes (e.g., Root, Fellowship, system).
 Origin is the authorization context: Root (superuser), Fellowship (expert), system, or user. Pallets must check origin explicitly.
 When composing pallets, avoid accidental privilege escalation—map only the minimal origin needed per call.
 
+### Omni Node
+Full-node RPC aggregator that provides a unified endpoint for querying Polkadot relay chain and parachains. Eliminates the need to run separate nodes for each chain. [Learn more →](/tools/dev/omninode)
+
 ### Oversubscribed (Validator)
 More nominators than capacity; only top stake earns rewards.
 
 ## P
 
+### PAPI (Polkadot-API)
+Modern TypeScript client library for Polkadot with a light-client-first architecture. Generates type-safe, tree-shakeable API bindings from metadata. Recommended as the primary client for new TypeScript projects, replacing the older polkadot-js API approach.
+
+### Paseo
+Community-managed test network for parachain development. Serves as the primary testing ground after the deprecation of Westend and Rococo. Features regular runtime upgrades and a dedicated faucet.
+
+### People Chain
+System parachain managing on-chain identity, proof-of-personhood verification, and social-recovery mechanics. Provides a unified identity layer across all Polkadot system chains. [Learn more →](/resources/concepts/people-chain)
+
+### PolkaVM
+RISC-V-based virtual machine for smart contract execution on Polkadot SDK chains. Supports multiple source languages (Rust, C, C++) via LLVM compilation and offers deterministic execution with formal verification paths.
+
+### Polkadot Hub
+Central system parachain bridging the relay chain to end users. Provides account abstraction, balance management, and cross-chain orchestration. The primary entry point for user interactions on Polkadot. [Learn more →](/resources/concepts/polkadot-hub)
+
+### Polkadot Products
+The suite of Polkadot-native applications and services including the Polkadot Hub, Asset Hub, Bridge Hub, People Chain, and Bulletin Chain. Provides a complete ecosystem for identity, assets, storage, and bridging. [Learn more →](/resources/concepts/polkadot-products)
+
+### Pop CLI
+Command-line tool for scaffolding, building, and deploying Polkadot SDK chains and ink! smart contracts. Streamlines the development workflow with templates, testing utilities, and deployment scripts.
+
+### Proof of Personhood
+Sybil-resistance mechanism using identity vouching and web-of-trust to establish unique human identity on-chain. Implemented via the People Chain with Ring-VRF zero-knowledge proofs for privacy. [Learn more →](/resources/concepts/proof-of-personhood)
+
 ### Pallet
-Substrate runtime module implementing domain logic.
+Polkadot SDK runtime module implementing domain logic.
 
 In audits, check weight, reentrancy, origin guards, and storage migration paths.
 Emit rich events for all critical state changes; they’re your user-visible audit log.
@@ -448,10 +508,7 @@ Chain secured by Polkadot’s shared security, executing in parallel.
 Pay-as-you-go execution aligned with coretime consumption.
 
 ### Parity Technologies
-Core developer of Substrate and Polkadot implementations.
-
-### People Chain
-System parachain for identity-related primitives.
+Core developer of the Polkadot SDK and Polkadot implementations.
 
 Focuses on identity/credentials; pairs well with on-chain attestations for KYC-style proofs without leaking PII.
 If you verify contributors, store claims not documents; link claims to payouts via remarks.
@@ -507,8 +564,14 @@ No-op extrinsics to annotate blocks.
 Zero-effect extrinsics good for audit breadcrumbs (e.g., IPFS CIDs, commit hashes). Keep them short and non-sensitive—chain data is permanent.
 Indexers: render remarks inline with proposals and payouts to improve traceability.
 
+### REVM
+Rust Ethereum Virtual Machine implementation optimized for Polkadot SDK chains. Enables EVM-compatible smart contract execution with full Solidity support and high performance.
+
+### Revive
+EVM-to-Polkadot SDK transpiler that converts Solidity smart contracts to ink! contracts. Enables Ethereum developers to deploy existing Solidity code on Polkadot SDK chains without manual rewrites.
+
 ### Root Origin
-Highest-privilege origin in Substrate.
+Highest-privilege origin in the Polkadot SDK.
 
 Superuser authority; only governance or whitelisted origins should dispatch Root calls.
 Design pallets with fine-grained origins so Root isn’t required for routine ops.
@@ -522,7 +585,16 @@ Version everything (specVersion/implVersion) and publish migration notes; client
 ## S
 
 ### SDK
-Tooling for building apps and chains (e.g., Substrate).
+Tooling for building apps and chains (e.g., Polkadot SDK).
+
+### Snowbridge
+Trust-minimized bridge between Polkadot and Ethereum, using light-client verification for both chains. Enables permissionless token and message transfer without intermediary validators. [Learn more →](https://docs.snowbridge.network)
+
+### Statement Store
+Decentralized, content-addressed data availability layer built on the Bulletin Chain. Stores arbitrary data blobs with author-based access control and automatic content-addressed retrieval. [Learn more →](/resources/concepts/statement-store)
+
+### Subxt
+Rust client library for submitting transactions and querying storage on Polkadot SDK chains. Generates type-safe interfaces from runtime metadata, offering compile-time checks for on-chain interactions.
 
 ### Sealing
 Producing a block (distinct from finality).
@@ -558,9 +630,9 @@ Deterministic function transforming chain state.
 Treat STF like your chain’s “kernel.” Every upgrade must specify storage migrations, weights, and origin checks. Fuzz tests catch edge cases that unit tests miss.
 For app devs: never assume storage layout; always read via types generated from runtime metadata to survive upgrades.
 
-### Substrate 
+### Polkadot SDK
 Build with FRAME pallets, wire origins/weights, and ship as a Wasm runtime. You can start centralized (few validators) and later plug into shared security by becoming a parachain.
-Dev loop: write pallet → add benchmarks → integrate in runtime → test on Paseo/Westend → ship via OpenGov.
+Dev loop: write pallet → add benchmarks → integrate in runtime → test on Paseo → ship via OpenGov.
 
 ### System Parachains
 Governance-allocated chains providing protocol services (Asset Hub, People, Collectives).
@@ -594,7 +666,7 @@ Post transaction hash and block for support/debugging; it reduces back-and-forth
 ### Transfer
 Same-chain asset movement.
 
-On Substrate, transfers check ED (existential deposit) and optional keep-alive. Batched or XCM transfers can fail partially; design idempotent retries and surface refunds.
+On Polkadot SDK-based chains, transfers check ED (existential deposit) and optional keep-alive. Batched or XCM transfers can fail partially; design idempotent retries and surface refunds.
 Always show post-transfer balance to the user before signing.
 
 ### UMP (Upward Message Passing)

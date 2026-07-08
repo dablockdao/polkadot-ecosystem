@@ -28,7 +28,7 @@ Most social platforms lock your identity, graph, and distribution behind proprie
 * **DSNP on Frequency:** your **DSNP identity** + **social graph** live on shared infrastructure. Switch apps, keep your people and history.
 
 ## What Frequency is (and why Polkadot)
-**Frequency** is a **Layer-1 Polkadot parachain**, built with Substrate, designed to execute DSNP operations (identity, graph, announcements). Polkadot supplies shared security and XCM interoperability; Frequency focuses on social performance and an economic model tailored for high-volume social transactions.
+**Frequency** is a **Layer-1 Polkadot parachain**, built with the Polkadot SDK (formerly Substrate), designed to execute DSNP operations (identity, graph, announcements). Polkadot supplies shared security and XCM interoperability; Frequency focuses on social performance and an economic model tailored for high-volume social transactions.
 
 ## Core concepts & how it works
 ### Identities (MSA)
@@ -43,7 +43,7 @@ Most social platforms lock your identity, graph, and distribution behind proprie
 * Frequency’s **Messages** pallet stores announcements or **Batch Publications** to scale throughput efficiently.
 
 ### Operations (extrinsics)
-* DSNP operations are executed via **Substrate extrinsics** exposed by pallets: MSA (identity), Messages (announcements), Schema (data types), and stateful storage primitives.
+* DSNP operations are executed via **Polkadot SDK extrinsics** exposed by pallets: MSA (identity), Messages (announcements), Schema (data types), and stateful storage primitives.
 
 ### Identity enrichment (optional)
 * Projects can enrich identities with **KILT DIDs** to bind verifiable credentials to DSNP identities where needed (KYC, age attestations, etc.).
@@ -116,7 +116,7 @@ These milestones demonstrate DSNP/Frequency at consumer scale—not just a lab d
 ## How Frequency compares (quick table)
 | Stack                     | Base / Consensus               | Identity Primitive                                                                      | Data Availability                                                                  | Fee/Economics                                          | Notes                                                                |
 | ------------------------- | ------------------------------ | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------------------- |
-| **Frequency + DSNP**      | Polkadot parachain (Substrate) | **MSA** (DSNP user) with **delegations** to Providers; optional **KILT DID** enrichment | On-chain announcements/records + batched publications; pointers to off-chain media | **FRQCY** fees + **Capacity** (stake-based throughput) | Production DSNP implementation; supports app-sponsored “coinless” UX |
+| **Frequency + DSNP**      | Polkadot parachain (Polkadot SDK) | **MSA** (DSNP user) with **delegations** to Providers; optional **KILT DID** enrichment | On-chain announcements/records + batched publications; pointers to off-chain media | **FRQCY** fees + **Capacity** (stake-based throughput) | Production DSNP implementation; supports app-sponsored “coinless” UX |
 | **AT Protocol (Bluesky)** | Federated (no L1 requirement)  | **DID (did\:plc)** per **PDS**                                                          | Repo model on PDS; federation sync                                                 | No chain fees; ops are server-level                    | Focus on portability between servers; not blockchain-based           |
 | **Farcaster**             | Ethereum L2 (Optimism/Base)    | **FID** (ID Registry), keys, storage rental                                             | “Hubs” gossip network + on-chain registries                                        | On-chain registration + off-chain hubs                 | Frames & strong dev momentum                                         |
 | **Lens**                  | Lens Chain (ZK-stack)          | Lens profiles                                                                           | Momoka/DA + L2                                                                     | L2 fees; DA via specialized layers                     | Migrated from Polygon to a dedicated L2 in 2025                      |

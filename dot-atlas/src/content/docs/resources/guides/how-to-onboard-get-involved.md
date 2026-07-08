@@ -5,7 +5,7 @@ sidebar:
     label: Onboard 101
 ---
 
-New to Polkadot or looking to level up? This expert playbook walks you through five high-impact ways to participate—OpenGov, building with Substrate/Polkadot SDK, staking (including pools and liquid staking), community contribution, and responsible investing—complete with step-by-steps, pitfalls, and FAQs.
+New to Polkadot or looking to level up? This expert playbook walks you through five high-impact ways to participate—OpenGov, building with the Polkadot SDK (formerly Substrate), staking (including pools and liquid staking), community contribution, and responsible investing—complete with step-by-steps, pitfalls, and FAQs.
 
 ## Why Polkadot? (Quick primer)
 Polkadot is a **multi-chain network** where specialized blockchains (parachains/appchains) interoperate under the security of a shared relay chain. This design unlocks **modularity (build what you need), interoperability (talk to others natively),** and **scalability (parallel execution)**—so builders ship faster and users get better UX.
@@ -29,9 +29,9 @@ Polkadot’s **OpenGov** framework lets DOT holders and recognized collectives s
 
 **Outcome:** You help steer upgrades and treasury allocation, building context and credibility over time.
 
-## 2) Develop on Polkadot (Substrate & Appchains)
-### Getting started with Substrate/Polkadot SDK
-Substrate (Polkadot SDK) is a **modular blockchain framework** in Rust. Pick pallets like lego bricks (balances, assets, governance, smart contracts) or write your own runtime logic.
+## 2) Develop on Polkadot (Polkadot SDK & Appchains)
+### Getting started with the Polkadot SDK
+The Polkadot SDK is a **modular blockchain framework** in Rust. Pick pallets like lego bricks (balances, assets, governance, smart contracts) or write your own runtime logic.
 
 **First steps**
 * **Learn Rust fundamentals:** Ownership/borrowing, Result/Option, traits, async.
@@ -65,7 +65,7 @@ Polkadot uses **Nominated Proof-of-Stake (NPoS)**. **Validators** run infrastruc
 ## 4) Join—and Contribute to—the Polkadot Community
 ### Where to plug in
 * **Polkadot Forum:** Long-form governance and technical discussion; great for proposal context.
-* **Developer hubs:** GitHub orgs, issue trackers, and dev chats for Substrate and tooling.
+* **Developer hubs:** GitHub orgs, issue trackers, and dev chats for Polkadot SDK and tooling.
 * **Social channels:** X/Twitter, Reddit, Telegram/Discord for updates, AMAs, and meetups.
 * **Events:** Polkadot Decoded (flagship), Sub0 (dev-oriented), hackathons, and local meetups.
 
@@ -100,7 +100,7 @@ If you choose to invest, treat it as **ecosystem support** first:
 | Path                      | Time to Start | Ongoing Effort | Capital Needed | Skill Emphasis              | Primary Benefits                          |
 | ------------------------- | ------------- | -------------- | -------------- | --------------------------- | ----------------------------------------- |
 | OpenGov voting/delegation | Minutes       | Low→Medium     | Low            | Policy & due diligence      | Influence upgrades & treasury allocations |
-| Dev (Substrate/contracts) | Days→Weeks    | Medium→High    | Low→Medium     | Rust, tooling, architecture | Custom logic, performance, composability  |
+| Dev (Polkadot SDK/contracts) | Days→Weeks    | Medium→High    | Low→Medium     | Rust, tooling, architecture | Custom logic, performance, composability  |
 | Staking (pools/direct)    | Minutes       | Low            | Low→Medium     | Validator research          | Rewards, network security                 |
 | Community contribution    | Minutes       | Low→Medium     | None           | Writing, moderation, org    | Reputation, impact, network               |
 | Education & docs          | Hours         | Medium         | None           | Technical writing, pedagogy | Scales knowledge, reduces support load    |
@@ -115,7 +115,7 @@ If you choose to invest, treat it as **ecosystem support** first:
 * [ ] Cast a low-conviction test vote to learn flows
 
 ### Developer track (weekend sprint)
-* [ ] Install Rust toolchain & Substrate template
+* [ ] Install Rust toolchain & Polkadot SDK template
 * [ ] Run a local node; add a pallet; write 1 test
 * [ ] Deploy a small contract on a contracts parachain
 * [ ] Document your steps; share feedback upstream
@@ -174,4 +174,4 @@ Use the **official Polkadot testnet** or contracts testnets to iterate safely be
 Yes—but **prepare thoroughly**: clear problem, measurable milestones, budget, deliverables, and community feedback.
 
 ## Conclusion
-Polkadot rewards **doers**: vote or delegate in OpenGov, ship with Substrate/ink!, stake to secure the network, and share what you learn. Pick one track, start small, and iterate.
+Polkadot rewards **doers**: vote or delegate in OpenGov, ship with the Polkadot SDK/ink!, stake to secure the network, and share what you learn. Pick one track, start small, and iterate.

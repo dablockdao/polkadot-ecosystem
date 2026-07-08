@@ -22,7 +22,7 @@ When creating a proxy you must choose a **type**. The runtime filters calls so a
 * **Staking** — **Staking-only** operations (e.g., set session keys, nominate). Designed so a stash can stay cold.  
 * **Identity Judgement** — For **registrars** to issue identity judgments (`provide_judgement` and utility helpers).  
 * **Cancel** — Can **reject/remove** time-delay announcements (`reject_announcement`). Often paired with delayed proxies as a “panic button.” 
-* **Auction** (historical context) — Used for **parachain auction/crowdloan** calls where applicable. *(If your UI doesn’t offer it, it may be deprecated or chain-specific.)*  [1])
+* **Auction** (historical context) — Used for **parachain auction/crowdloan** calls where applicable. *(If your UI doesn’t offer it, it may be deprecated or chain-specific.)* ([docs.polkadot.com][1])
 
 *Note:* Kusama also exposes **Spokesperson** and **Society** proxy types for chain-specific pallets.  
 
@@ -104,10 +104,13 @@ Yes—use the **Nomination Pool** proxy for pool operations.
 You tried to execute directly on a **time-delayed** proxy. Announce first, then execute within the allowed window. 
 
 **7) Where do the deposit numbers come from?**
-They’re **runtime constants** (ProxyDepositBase/Factor). Recent docs show **\~20.008 DOT** base and **\~0.033 DOT** per proxy on Polkadot; confirm in-app because upgrades can change values. ([Figment][5])
+They’re **runtime constants** (ProxyDepositBase/Factor). Recent docs show **\~20.008 DOT** base and **\~0.033 DOT** per proxy on Polkadot; confirm in-app because upgrades can change values. ([docs.polkadot.com][5])
 
 **8) Can I nest proxies?**
 Yes. Proxies can be used inside proxy calls and combined with multisigs/pure proxies for advanced org setups.  
 
 ## Conclusion
 **Proxy accounts are a must-have for secure operations on Polkadot.** Start with a **Non-transfer** proxy for daily tasks, add **Staking** or **Governance** proxies as needed, and consider **time-delays** and **pure proxies** for org-grade setups.
+
+[1]: https://docs.polkadot.com
+[5]: https://docs.polkadot.com

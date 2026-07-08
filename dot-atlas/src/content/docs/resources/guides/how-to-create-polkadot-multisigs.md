@@ -7,9 +7,9 @@ sidebar:
 
 A practical, expert guide to creating and operating **Polkadot multisig** accounts—when to use them, how they work with **pure proxies**, and how today’s leading tools compare (**Talisman Signet / Polkadot Multisig by Signet, ChainSafe MultiX, Mimir, Nova Spektr, PolkaSafe**). Includes step-by-step flows, pitfalls, FAQs, and JSON-LD.
 
-## Why Polkadot multisigs matters
+## Why Polkadot multisigs matter
 **Problem:** Teams need shared control over funds (treasury ops, grants, bounties, DAO treasuries) without a single point of failure.
-**Benefit:** A **multisig** requires a preset number of signers to approve a transaction. On Polkadot, multisigs are **native** (Substrate pallets), composable with **proxies**, and can safely interact with governance, staking, and dApps.
+**Benefit:** A **multisig** requires a preset number of signers to approve a transaction. On Polkadot, multisigs are **native** (Polkadot SDK pallets), composable with **proxies**, and can safely interact with governance, staking, and dApps.
 
 ## ELI5: Multisig & pure proxies
 * **Multisig** = a shared wallet: *“2 of 3 people must say yes for money to move.”*
@@ -31,7 +31,7 @@ The **Proxy pallet** lets an account (your multisig) act on behalf of a **proxy 
 * **Nova Spektr** (desktop) — all-in-one Polkadot wallet with **multisig operations**, light clients, and Vault integration; docs cover supported networks and flows. ([novaspektr.io][6])
 * **PolkaSafe** — multisig-focused app aiming to integrate multisigs into dApp workflows (Subsocial, Polkassembly, Astar staking dashboard, etc.). ([polkadot.subsquare.io][7])
 
-> Governance UX often relies on **SubSquare**, which supports OpenGov flows and can be used via multisigs through these apps. ([wiki.polkadot.com][8])
+> Governance UX often relies on **SubSquare**, which supports OpenGov flows and can be used via multisigs through these apps. ([docs.polkadot.com][8])
 
 ## Feature comparison: Signet vs MultiX vs Mimir vs Spektr vs PolkaSafe
 | Capability                | **Signet / Polkadot Multisig by Signet**                         | **MultiX (ChainSafe)**                    | **Mimir**                                            | **Nova Spektr**                                  | **PolkaSafe**                            |
@@ -76,11 +76,11 @@ Below is a generic **2-of-3** pattern you can execute in **Signet, MultiX, Mimir
 1. **Curator multisig** controls a **pure proxy**.
 2. Grantee invoices → curators prepare a **Balances.transferKeepAlive** call from the proxy.
 3. Two curators sign (`asMulti` approvals), transaction executes, on-chain records show the proxy as origin with multisig approvals attached.
-4. For **OpenGov**–linked operations (e.g., track participation), curators can interact with **SubSquare** using their multisig where supported. ([wiki.polkadot.com][8])
+4. For **OpenGov**–linked operations (e.g., track participation), curators can interact with **SubSquare** using their multisig where supported. ([docs.polkadot.com][8])
 
 ## Common pitfalls & pro tips
 * **Forgetting Asset Hub replication:** If funds sit on **Asset Hub**, replicate your **pure proxy** pattern there; a proxy created on the relay chain isn’t automatically mirrored on Asset Hub. This has bitten projects in the past; follow community guidance. ([polkadot.subsquare.io][10])
-* **Using overly-permissive proxies:** Avoid “**Any**” when unnecessary; prefer **Non-transfer** or **Governance** proxies to constrain blast radius. ([wiki.polkadot.com][11])
+* **Using overly-permissive proxies:** Avoid “**Any**” when unnecessary; prefer **Non-transfer** or **Governance** proxies to constrain blast radius. ([docs.polkadot.com][11])
 * **Timepoints & cancellations:** The **initiator** can typically cancel pending calls; track **timepoints** to avoid race conditions in UI flows. ([docs.moonbeam.network][2])
 * **Signer rotation:** Put the **pure proxy** as your public address; when rotating members, edit the **multisig** (controller), not the proxy.
 * **Index & batching:** When creating multiple proxies in one batch, remember the **index** parameter (often `0` otherwise). ([Parity Tech][12])
@@ -109,9 +109,24 @@ Yes—**MultiX** remains a respected open-source interface and helped standardiz
 Yes—initiatives have focused on integrating multisigs into dApp workflows (e.g., Polkassembly, Astar staking dashboard). ([polkadot.subsquare.io][7])
 
 **8) Where can I see the exact extrinsics?**
-Refer to Substrate/Polkadot API docs for `api.tx.multisig.asMulti`, `approveAsMulti`, `cancelAsMulti`, and **Proxy** pallet calls. ([polkadot.js.org][14])
+Refer to Polkadot SDK/Polkadot API docs for `api.tx.multisig.asMulti`, `approveAsMulti`, `cancelAsMulti`, and **Proxy** pallet calls. ([polkadot.js.org][14])
 
 ## Conclusion
 Polkadot’s native **Multisig** and **Proxy** pallets give you secure, composable account architectures. In 2025, teams can choose between **Signet (and Polkadot Multisig by Signet)**, **MultiX**, **Mimir**, **Nova Spektr**, and **PolkaSafe**—all capable of robust, proxy-first operations.
 
 **CTA:** Ready to set up your organization’s multisig with a pure proxy? Start with a pilot on testnet, then deploy on mainnet using one of the tools above.
+
+[1]: https://paritytech.github.io/polkadot-sdk/
+[2]: https://docs.moonbeam.network
+[3]: https://talisman.xyz
+[4]: https://chainsafe.io
+[5]: https://forum.polkadot.network
+[6]: https://novaspektr.io
+[7]: https://polkadot.subsquare.io
+[8]: https://docs.polkadot.com
+[9]: https://polkadotmultisig.com
+[10]: https://polkadot.subsquare.io
+[11]: https://docs.polkadot.com
+[12]: https://paritytech.github.io/polkadot-sdk/
+[13]: https://medium.com
+[14]: https://polkadot.js.org

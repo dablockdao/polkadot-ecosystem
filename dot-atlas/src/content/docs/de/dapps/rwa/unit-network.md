@@ -18,16 +18,16 @@ hero:
 Unit Network, a decentralized technology designed to integrate real-world businesses with blockchain, is ushering in an era of sovereignty and economic prosperity.
 
 ## What is Unit Network?
-Unit Network is a decentralized platform powered by Substrate, aimed at shaping the emerging token economy. It provides a comprehensive solution for integrating businesses with blockchain technology, offering tools for tokenization, decentralized finance, and community management.
+Unit Network is a decentralized platform powered by Polkadot SDK, aimed at shaping the emerging token economy. It provides a comprehensive solution for integrating businesses with blockchain technology, offering tools for tokenization, decentralized finance, and community management.
 
 ## Key Components of Unit Network
-1. **Unit Network Blockchain:** The backbone of Unit Network is its blockchain, built using the Substrate framework from Parity Technologies. This modern decentralized platform leverages cutting-edge technology to deliver a flexible and robust blockchain solution.
-2. **Substrate Framework:** Substrate is a versatile toolkit for building customized blockchain networks. It provides developers with the tools and libraries necessary to create blockchain solutions tailored to specific needs, offering a high degree of customization and modularity.
-    - **Customization and Modularity:** With Substrate, developers can customize and extend blockchain functionalities by choosing from pre-built modules or creating new ones. This flexibility allows for tailored solutions, such as managing tokens or implementing decentralized finance (DeFi) features.
-    - **Consensus Mechanisms.** Substrate supports various consensus mechanisms, including Proof of Stake (PoS) and Proof of Authority (PoA). This allows the Unit Network Blockchain to select the optimal method for security, speed, and decentralization.
-    - **Interoperability:** Substrate facilitates interoperability between different blockchains, enabling seamless data and asset sharing. This feature allows the Unit Network Blockchain to interact with other chains, enhancing its functionality and reach.
-    - **Scalability and Performance:** To handle a high volume of transactions, Substrate offers solutions like task splitting across the network and off-chain computation. These features ensure that the Unit Network Blockchain can scale efficiently to accommodate growing user demand.
-    - **Governance and Upgradability:** Substrate supports decentralized governance, enabling token holders to vote on changes or upgrades to the blockchain. This ensures that the community has a say in the network’s future direction, promoting a democratic and adaptable ecosystem.
+1. **Unit Network Blockchain:** The backbone of Unit Network is its blockchain, built using the Polkadot SDK framework from Parity Technologies. This modern decentralized platform leverages cutting-edge technology to deliver a flexible and robust blockchain solution.
+2. **Polkadot SDK Framework:** Polkadot SDK is a versatile toolkit for building customized blockchain networks. It provides developers with the tools and libraries necessary to create blockchain solutions tailored to specific needs, offering a high degree of customization and modularity.
+    - **Customization and Modularity:** With Polkadot SDK, developers can customize and extend blockchain functionalities by choosing from pre-built modules or creating new ones. This flexibility allows for tailored solutions, such as managing tokens or implementing decentralized finance (DeFi) features.
+    - **Consensus Mechanisms.** Polkadot SDK supports various consensus mechanisms, including Proof of Stake (PoS) and Proof of Authority (PoA). This allows the Unit Network Blockchain to select the optimal method for security, speed, and decentralization.
+    - **Interoperability:** Polkadot SDK facilitates interoperability between different blockchains, enabling seamless data and asset sharing. This feature allows the Unit Network Blockchain to interact with other chains, enhancing its functionality and reach.
+    - **Scalability and Performance:** To handle a high volume of transactions, Polkadot SDK offers solutions like task splitting across the network and off-chain computation. These features ensure that the Unit Network Blockchain can scale efficiently to accommodate growing user demand.
+    - **Governance and Upgradability:** Polkadot SDK supports decentralized governance, enabling token holders to vote on changes or upgrades to the blockchain. This ensures that the community has a say in the network’s future direction, promoting a democratic and adaptable ecosystem.
 
 ## Unit Network Protocol
 The Unit Network Protocol is at the heart of the platform’s vision to revolutionize the finance industry. It aims to create a global community and a decentralized financial system, making powerful financial tools accessible to everyone.
@@ -37,7 +37,7 @@ The Unit Network Protocol envisions a future where financial tools are democrati
 
 ## How Unit Network Works
 The protocol provides transparent and secure methods for entrepreneurs to raise funds and connect with customers. It also empowers individuals to participate in the digital economy by offering educational resources and tools for financial literacy.
-- **Technology:** Unit Network uses its blockchain, UnitChain, which is designed for asset tokenization, money exchange, and community management. Built using Substrate SDK and inspired by the Polkadot model, UnitChain is both innovative and collaborative.
+- **Technology:** Unit Network uses its blockchain, UnitChain, which is designed for asset tokenization, money exchange, and community management. Built using Polkadot SDK SDK and inspired by the Polkadot model, UnitChain is both innovative and collaborative.
 - **Goals:** The ultimate goal of the Unit Network Protocol is to unlock the potential of the token economy. By fostering innovation and collaboration within the community, it aims to advance the finance industry and make it more inclusive and fair.
 
 ## Unit Network Token Economy

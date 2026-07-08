@@ -23,7 +23,7 @@ hero:
       variant: minimal
 ---
 
-import { ImageCard, LinkButton2 } from '../../../components/ImageCard.astro';
+import { ImageCard } from '../../../components/ImageCard.astro';
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 import { Card, CardGrid, LinkCard, LinkButton, FileTree, Tabs, TabItem } from '@astrojs/starlight/components';
 import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
@@ -134,7 +134,7 @@ entries={[
       thumbnail: import('/src/assets/thumbnails/smart-contracts.png'),
       href: '/fr/dapps/smart-contracts/',
       title: 'Contrats intelligents',
-      description: 'Découvrez les écosystèmes de contrats intelligents les plus populaires construits sur Polkadot et Substrate.'
+      description: 'Découvrez les écosystèmes de contrats intelligents les plus populaires construits sur Polkadot et Polkadot SDK.'
       },
     {
       thumbnail: import('/src/assets/thumbnails/ai.png'),
@@ -242,7 +242,7 @@ entries={[
       thumbnail: import('/src/assets/thumbnails/smart-contracts.png'),
       href: '/dapps/smart-contracts/',
       title: 'Smart Contracts',
-      description: 'Discover the most popular Smart Contracts Ecosystems built on Polkadot and Substrate.'
+      description: 'Discover the most popular Smart Contracts Ecosystems built on Polkadot and Polkadot SDK.'
       },
     {
       thumbnail: import('/src/assets/thumbnails/ai.png'),
@@ -303,7 +303,7 @@ la vision de Polkadot d un internet décentralisé.
 <CardGrid>
   <Card title="Polkadot Wiki" icon="open-book">
     Explore in-depth information on Polkadot’s technical principles and key components powering its ecosystem
-    <LinkButton href="https://wiki.polkadot.network" variant="secondary" icon="external" iconPlacement="start">Polkadot Wiki</LinkButton>
+    <LinkButton href="https://docs.polkadot.com" variant="secondary" icon="external" iconPlacement="start">Polkadot Wiki</LinkButton>
   </Card>
 
   <Card title="Polkadot Website" icon="information">

@@ -19,13 +19,13 @@ import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/compone
 import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 
-La Aventus Network (AvN) representa una nueva generación de tecnología blockchain escalable e interoperable. Construida sobre Substrate y operando como una parachain de Polkadot, Aventus ofrece un alto rendimiento en transacciones, finalización determinista y bajos costos. Actúa como un puente entre los ecosistemas Ethereum y Polkadot, habilitando una interoperabilidad perfecta. Desde su lanzamiento en mainnet en 2021, Aventus ha procesado más de 36 millones de transacciones, demostrando su capacidad y fiabilidad.
+La Aventus Network (AvN) representa una nueva generación de tecnología blockchain escalable e interoperable. Construida sobre Polkadot SDK y operando como una parachain de Polkadot, Aventus ofrece un alto rendimiento en transacciones, finalización determinista y bajos costos. Actúa como un puente entre los ecosistemas Ethereum y Polkadot, habilitando una interoperabilidad perfecta. Desde su lanzamiento en mainnet en 2021, Aventus ha procesado más de 36 millones de transacciones, demostrando su capacidad y fiabilidad.
 
 ## Aventus: Evolución y Capacidades
 Aventus comenzó en 2018 como una solución blockchain para la industria de boletos, con el objetivo de combatir el fraude y la reventa. Inicialmente basada en Ethereum, las limitaciones de escalabilidad de esta red llevaron a Aventus a desarrollar su propia solución de Capa 2. Esto evolucionó hacia Aventus Network, que luego se convirtió en una parachain de Polkadot para mejorar su escalabilidad e interoperabilidad.
 
 ## Arquitectura Técnica de Aventus
-- **Framework Substrate:** Substrate, la tecnología subyacente de Aventus, es un framework de desarrollo blockchain de código abierto diseñado para alta personalización e interoperabilidad. Permite actualizaciones sin interrupciones y compatibilidad con la cadena de retransmisión de Polkadot, asegurando que Aventus aproveche la seguridad y los mecanismos de consenso compartidos de Polkadot.
+- **Framework Polkadot SDK:** Polkadot SDK, la tecnología subyacente de Aventus, es un framework de desarrollo blockchain de código abierto diseñado para alta personalización e interoperabilidad. Permite actualizaciones sin interrupciones y compatibilidad con la cadena de retransmisión de Polkadot, asegurando que Aventus aproveche la seguridad y los mecanismos de consenso compartidos de Polkadot.
 - **Integración con Polkadot:** Polkadot, a menudo referido como una blockchain de Capa 0, conecta múltiples blockchains de Capa 1 (parachains) en una única red. Esto permite interoperabilidad e intercambio de datos entre blockchains. Aventus, como parachain, se beneficia de esta arquitectura, mejorando su seguridad y escalabilidad.
 - **Cuentas y Nodos:** Aventus utiliza una dirección de 32 bytes derivada de una clave pública criptográfica para la gestión de cuentas. Soporta saldos en su token nativo (AVT) y cualquier token ERC-20 en su red de Capa 2. Aventus emplea varios tipos de nodos:
 
@@ -40,7 +40,7 @@ Los extrínsecos son transacciones que se originan fuera de la red blockchain. A
 Aventus inicialmente usaba un consenso Proof of Stake (PoS), pero **ahora deriva su seguridad de la cadena de retransmisión de Polkadot**. La autoría de bloques es manejada por los collators de Aventus utilizando el algoritmo AURA, mientras que la finalización está a cargo de los validadores de la cadena de retransmisión de Polkadot.
 
 ## Comunicación Capa 1-Capa 2
-Aventus facilita una comunicación perfecta entre la Capa 1 (Ethereum) y la Capa 2 (Aventus) a través de un conjunto de reglas implementadas por contratos inteligentes y pallets de Substrate. Esto asegura transferencias de activos y procesamiento de transacciones seguras y eficientes entre ambas capas.
+Aventus facilita una comunicación perfecta entre la Capa 1 (Ethereum) y la Capa 2 (Aventus) a través de un conjunto de reglas implementadas por contratos inteligentes y pallets de Polkadot SDK. Esto asegura transferencias de activos y procesamiento de transacciones seguras y eficientes entre ambas capas.
 
 ## Ecosistema y Casos de Uso de Aventus
 Aventus soporta diversas aplicaciones en múltiples sectores. Algunos proyectos destacados incluyen:

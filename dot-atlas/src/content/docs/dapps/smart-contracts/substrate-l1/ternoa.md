@@ -19,7 +19,7 @@ Ternoa, a multi-network and cross-layer protocol that leverages confidential com
 
 ## Overview of Ternoa. **What is Ternoa?**
 Ternoa is an advanced blockchain protocol designed to address key challenges in the Web3 space, particularly those related to security and privacy. It combines distributed ledger technologies with confidential computing to create a robust environment for decentralized applications (dApps). Ternoa consists of three interconnected networks:
-1. **Ternoa Chain**: A Layer-1 blockchain built on Substrate, supporting smart contracts written in languages such as Rust, C, C++, and TypeScript. It allows developers to use pre-coded primitives via a JavaScript SDK.
+1. **Ternoa Chain**: A Layer-1 blockchain built on the Polkadot SDK (formerly Substrate), supporting smart contracts written in languages such as Rust, C, C++, and TypeScript. It allows developers to use pre-coded primitives via a JavaScript SDK.
 2. **Ternoa Fortress**: A decentralized coprocessor network powered by Trusted Execution Environments (TEEs), which functions as a key management system for encrypting off-chain data with on-chain keys.
 3. **Ternoa zkEVM**: A Layer-2 validium that uses TEE multi-proofs for enhanced security, providing an Ethereum Virtual Machine (EVM) equivalent environment for deploying Solidity smart contracts.
 
@@ -31,14 +31,14 @@ Ternoa is an advanced blockchain protocol designed to address key challenges in 
     - **TEE-Powered Security**: Ternoa Fortress uses TEEs to secure off-chain data with on-chain encryption keys, allowing for the creation of private, trustless applications. This feature will also extend to Ternoa zkEVM upon its launch.
     - **Privacy Features**: Developers can build applications that control access to confidential data without relying on third parties.
 3. **Robust Security**
-    - **Substrate Framework**: Built on Substrate, Ternoa Chain benefits from the framework’s security features, including a thoroughly audited codebase and a Proof of Stake (PoS) consensus mechanism.
+    - **Polkadot SDK Framework**: Built on the Polkadot SDK, Ternoa Chain benefits from the framework’s security features, including a thoroughly audited codebase and a Proof of Stake (PoS) consensus mechanism.
     - **Decentralization**: The network is supported by hundreds of nodes and validators, ensuring decentralization and security. Ternoa’s architecture is also compatible with Polkadot’s network security.
     - **Enhanced Security with zkEVM**: Ternoa zkEVM combines zero-knowledge proofs with TEE proofs for superior network security.
 
 ## Ternoa Networks and Their Purposes
 1. **Ternoa Chain**
     - **Purpose**: Facilitates the onboarding of Web2 developers into Web3.
-    - **Features**: WASM deployment environment for smart contracts, pre-coded primitives accessible via JavaScript, and integration with Substrate.
+    - **Features**: WASM deployment environment for smart contracts, pre-coded primitives accessible via JavaScript, and integration with the Polkadot SDK.
 2. **Ternoa Fortress**
     - **Purpose**: Provides data privacy and decentralized security.
     - **Features**: A TEE coprocessor network with native key management capabilities.
@@ -57,7 +57,7 @@ Ternoa is an advanced blockchain protocol designed to address key challenges in 
     - **Virtual Regatta**: A virtual sailing game that uses Ternoa’s infrastructure to enhance player experience.
 
 ## Technical Deep Dive: Ternoa Chain
-1. **Substrate Integration:** Ternoa is built on the Substrate framework, providing natural interoperability with the Polkadot ecosystem. It aims to become a Polkadot parachain, leveraging Polkadot’s security and cross-chain communication capabilities.
+1. **Polkadot SDK Integration:** Ternoa is built on the Polkadot SDK framework, providing natural interoperability with the Polkadot ecosystem. It aims to become a Polkadot parachain, leveraging Polkadot’s security and cross-chain communication capabilities.
 2. **Delegated Proof of Stake (NPoS):** Ternoa uses Nominated Proof of Stake (NPoS) to ensure secure and decentralized block production and validation. Validators and nominators collaborate to maintain network security and integrity.
 3. **Hybrid Consensus Mechanism:** Ternoa employs a hybrid consensus mechanism combining BABE (Blind Assignment for Blockchain Extension) for block production and GRANDPA (GHOST-based Recursive ANcestor Deriving Prefix Agreement) for finality. This approach ensures rapid block production and robust finality.
 

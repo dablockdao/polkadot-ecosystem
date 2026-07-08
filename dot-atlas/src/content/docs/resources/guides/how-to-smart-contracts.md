@@ -14,17 +14,17 @@ Polkadot is a **Layer-0 network** (the Relay Chain) that provides security, cons
 Polkadot supports multiple smart-contract styles—most notably **ink! (Wasm)** and **EVM (Solidity)** today, plus the **PolkaVM** (RISC-V-based) path that’s rolling out across the stack.
 
 ### ink! (Wasm)
-**ink!** is a Rust-based domain-specific language that compiles to **WebAssembly (Wasm)**. It runs via a **Contracts pallet** on parachains that enable it, offering memory safety from Rust and predictable performance from Wasm. The ink! toolchain integrates tightly with Substrate, and the docs explain how ink!, Substrate and the Contracts pallet fit together.
+**ink!** is a Rust-based domain-specific language that compiles to **WebAssembly (Wasm)**. It runs via a **Contracts pallet** on parachains that enable it, offering memory safety from Rust and predictable performance from Wasm. The ink! toolchain integrates tightly with the Polkadot SDK (formerly Substrate), and the docs explain how ink!, Polkadot SDK and the Contracts pallet fit together.
 
 **Where you’ll use it:** ink! contracts are live on multiple parachains that enable the Contracts pallet (e.g., Astar’s Wasm/ink! environment).
 
 **Why choose ink!:**
 * **Safety & performance** via Rust/Wasm.
-* **First-class Substrate integration** and palette-level control for chain builders.
+* **First-class Polkadot SDK integration** and palette-level control for chain builders.
 * **Future-friendly** with Polkadot’s multi-VM direction.
 
 ### EVM (Solidity via Frontier)
-For Solidity developers, Polkadot offers broad **EVM compatibility** through **Frontier**—a Substrate suite providing EVM execution and Ethereum-style JSON-RPC. Parachains like **Moonbeam** and **Astar** expose familiar Ethereum tooling (Remix, Hardhat, Foundry) with full JSON-RPC, so existing dApps can port with minimal change.
+For Solidity developers, Polkadot offers broad **EVM compatibility** through **Frontier**—a Polkadot SDK suite providing EVM execution and Ethereum-style JSON-RPC. Parachains like **Moonbeam** and **Astar** expose familiar Ethereum tooling (Remix, Hardhat, Foundry) with full JSON-RPC, so existing dApps can port with minimal change.
 
 **Why choose EVM:**
 * **Familiar tooling** and large developer pool.
@@ -52,7 +52,7 @@ Polkadot and most parachains use a **weight-based fee model** (not gas metering 
 * a **base/length fee** component, and
 * a **weight fee** proportional to execution complexity.
 
-This protects network resources and incentivizes efficient code. Parachains may tweak parameters, but the core approach—**“convert weight to fee”**—is standard across Substrate-based chains.
+This protects network resources and incentivizes efficient code. Parachains may tweak parameters, but the core approach—**“convert weight to fee”**—is standard across Polkadot SDK-based chains.
 
 ## Mini-Guides: Hello World in Each Environment
 > High-level steps to orient you. Always follow the latest chain-specific docs for precise commands and versions.
@@ -64,7 +64,7 @@ This protects network resources and incentivizes efficient code. Parachains may 
 4. **Choose a network:** Select a Contracts-enabled parachain (e.g., Astar’s ink! environment).
 5. **Fund & connect:** Get an account funded on your target network; connect via Polkadot.js Apps or the chain’s portal.
 6. **Deploy:** Upload Wasm, instantiate with constructor args, record the contract address.
-7. **Interact:** Use the chain portal or SDK (e.g., Polkadot.js) to call messages; monitor storage/weight usage.
+7. **Interact:** Use the chain portal or SDK (e.g., Polkadot.js, or PAPI for new TypeScript builds) to call messages; monitor storage/weight usage.
 
 ### Solidity on an EVM parachain (Moonbeam/Astar)
 1. **Tooling:** Hardhat or Foundry; set the network RPC to your target.
@@ -93,7 +93,7 @@ Polkadot contributors proposed **Plaza**—a “batteries-included,” high-thro
 No—by design, the Relay Chain focuses on consensus/security and leaves execution to parachains.
 
 **Which should I pick—ink! or EVM?**
-If you want Rust safety/Wasm performance and tight Substrate integration, choose **ink!**. If you’re porting an Ethereum dApp with minimal changes and want maximum tooling continuity, pick **EVM** (Moonbeam/Astar). Many teams use both.
+If you want Rust safety/Wasm performance and tight Polkadot SDK integration, choose **ink!**. If you’re porting an Ethereum dApp with minimal changes and want maximum tooling continuity, pick **EVM** (Moonbeam/Astar). Many teams use both.
 
 **Do Polkadot chains use gas?**
 They use a **weight-based fee model**. Some EVM parachains expose gas-like UX for compatibility, but under the hood fees map to execution weight and network conditions.

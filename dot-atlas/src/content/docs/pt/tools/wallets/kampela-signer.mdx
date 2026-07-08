@@ -28,7 +28,7 @@ No blockchain, o gerenciamento seguro de chaves é um componente crítico para p
 Kampela Signer é uma implementação de hardware do Polkadot Vault (anteriormente conhecido como Parity Signer). É um dispositivo pequeno, em formato de cartão, projetado para armazenar de forma segura chaves criptográficas e realizar operações de assinatura. O dispositivo aceita dados através de uma porta NFC unidirecional e exibe a saída em uma tela de papel eletrônico monocromática. Ele utiliza chips de criptografia baseados em hardware para garantir a máxima segurança.  
 
 ## Principais Características do Kampela Signer  
-1. **Armazenamento Seguro de Chaves:** Kampela Signer é construído com um cofre criptográfico que suporta curvas elípticas usadas pelo Substrate, o framework que alimenta o Polkadot. Ele armazena chaves privadas de forma segura e realiza todas as operações de assinatura no chip, garantindo que as chaves nunca sejam expostas a ameaças externas.  
+1. **Armazenamento Seguro de Chaves:** Kampela Signer é construído com um cofre criptográfico que suporta curvas elípticas usadas pelo Polkadot SDK, o framework que alimenta o Polkadot. Ele armazena chaves privadas de forma segura e realiza todas as operações de assinatura no chip, garantindo que as chaves nunca sejam expostas a ameaças externas.  
 2. **Operação Air-Gapped:** O dispositivo opera em um ambiente isolado (air-gapped), ou seja, ele está completamente isolado de redes e da internet. Esse design elimina o risco de ataques remotos e garante que as chaves privadas permaneçam seguras.  
 3. **Comunicação NFC Unidirecional:** Kampela Signer se comunica via uma porta NFC unidirecional, que aceita apenas entradas de dados. Esse método de comunicação garante que os dados entrem no dispositivo sem qualquer sinal de saída, aumentando a segurança ao evitar possíveis vazamentos de dados.  
 4. **Tela E-Paper:** A tela de papel eletrônico monocromática oferece uma exibição clara e eficiente em termos de energia para a interface do usuário. Esse tipo de tela também é menos suscetível a ataques visuais em comparação com telas tradicionais.  
@@ -39,7 +39,7 @@ Kampela Signer é uma implementação de hardware do Polkadot Vault (anteriormen
 - **Formato**: Tamanho de cartão de crédito, portátil para fácil transporte na carteira.  
 - **Tecnologia NFC**: Porta NFC unidirecional para entrada segura de dados.  
 - **Display**: Tela de papel eletrônico monocromática para saída clara e segura.  
-- **Chip Cripto**: Elemento seguro que suporta as curvas elípticas usadas pelo Substrate.  
+- **Chip Cripto**: Elemento seguro que suporta as curvas elípticas usadas pelo Polkadot SDK.  
 
 **Software**  
 - **Firmware Open-Source**: O firmware é totalmente open-source, permitindo auditorias e melhorias pela comunidade.  

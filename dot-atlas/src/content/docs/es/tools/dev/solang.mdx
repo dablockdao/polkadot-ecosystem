@@ -27,7 +27,7 @@ Solang pone énfasis en el rendimiento, la seguridad y la experiencia del desarr
 Los desarrolladores de Solidity que apunten a Polkadot encontrarán varias diferencias importantes respecto a la versión de Solidity para Ethereum. Estas son las principales distinciones y funciones:
 
 1. **Ajustes en el Tipo Address:**  
-   En Polkadot, el tipo `address` ocupa 32 bytes, a diferencia de los 20 bytes de Ethereum. Esto se alinea con la definición de “account” en Substrate. Los desarrolladores deben utilizar la sintaxis `address"5GBWmgdFAMqm8ZgAHGobqDqX6tjLxJhv53ygjNtaaAn3sjeZ"` para especificar literales de direcciones.
+   En Polkadot, el tipo `address` ocupa 32 bytes, a diferencia de los 20 bytes de Ethereum. Esto se alinea con la definición de “account” en Polkadot SDK. Los desarrolladores deben utilizar la sintaxis `address"5GBWmgdFAMqm8ZgAHGobqDqX6tjLxJhv53ygjNtaaAn3sjeZ"` para especificar literales de direcciones.
 
 2. **Codificación SCALE:**  
    Toda la codificación y decodificación de la ABI se realiza usando SCALE (**Simple Concatenated Aggregate Little-Endian**). Esta diferencia es esencial para la compatibilidad con Polkadot y requiere que los desarrolladores comprendan su funcionamiento.
@@ -55,4 +55,4 @@ solang compile --target polkadot flipper.sol
 La variedad de funciones actuales de Solang demuestra su versatilidad y su compromiso con la interoperabilidad blockchain. Con un alto nivel de compatibilidad entre diversas cadenas, Solang asegura que Solidity siga siendo un lenguaje clave para los desarrolladores que expanden sus proyectos hacia los ecosistemas de Polkadot y Solana.
 
 #### Conclusión
-Solang representa un avance significativo para desarrolladores de Solidity que deseen crear contratos inteligentes en parachains de Polkadot. Al abordar los requisitos específicos de Substrate y proporcionar un soporte sólido para la sintaxis moderna de Solidity, Solang ayuda a construir contratos eficientes, escalables y seguros dentro del ecosistema de Polkadot. Con un desarrollo continuo y una hoja de ruta clara, Solang está destinado a convertirse en una herramienta clave para la innovación cross-chain.
+Solang representa un avance significativo para desarrolladores de Solidity que deseen crear contratos inteligentes en parachains de Polkadot. Al abordar los requisitos específicos de Polkadot SDK y proporcionar un soporte sólido para la sintaxis moderna de Solidity, Solang ayuda a construir contratos eficientes, escalables y seguros dentro del ecosistema de Polkadot. Con un desarrollo continuo y una hoja de ruta clara, Solang está destinado a convertirse en una herramienta clave para la innovación cross-chain.

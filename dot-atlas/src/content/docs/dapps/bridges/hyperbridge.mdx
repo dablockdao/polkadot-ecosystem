@@ -31,7 +31,7 @@ Polkadot already offers secure interoperability for **parachains** via **XCM/XCM
 * Think of Hyperbridge as a **universal translator with receipts**.
 * You send a **GET** (read state) or **POST** (deliver data/trigger logic) to another chain.
 * A **coprocessor** does the heavy cryptography off-chain, then posts **verifiable proofs on-chain**.
-* Result: cross-chain actions that are **auditable, permissionless, and general-purpose**—across EVMs, Substrate chains, and more.
+* Result: cross-chain actions that are **auditable, permissionless, and general-purpose**—across EVMs, Polkadot SDK (formerly Substrate) chains, and more.
 
 ## How Hyperbridge works
 
@@ -81,7 +81,7 @@ Verifying **consensus**, **state proofs**, and **state transitions** directly on
    Include Hyperbridge’s ISMP SDK/crate(s) for your runtime or off-chain worker. Ensure your chain exposes the required pallets/hooks for ISMP message handling.
 
 2. **Register the counterparty**
-   Configure the target chain’s identifier, client type, and verification parameters in your chain’s config. Choose the **consensus client** appropriate for the counterparty (e.g., Ethereum, Substrate-based, rollup).
+   Configure the target chain’s identifier, client type, and verification parameters in your chain’s config. Choose the **consensus client** appropriate for the counterparty (e.g., Ethereum, Polkadot SDK-based, rollup).
 
 3. **Spin up relayers**
    Run a **consensus relayer** (feeds finalized headers/proofs) and a **messaging relayer** (transports requests/responses). These are **permissionless**—no whitelisting required. Add health checks and metrics.

@@ -2,7 +2,7 @@
 title: 'Gear Protocol'
 description: The Gear Protocol is a versatile platform designed to streamline the development of dApps.
 hero:
-  tagline: Streamline the development of Dapps with Substrate.
+  tagline: Streamline the development of Dapps with Polkadot SDK (formerly Substrate).
   image: 
     file: ../../../../assets/tools/dev/gear.png
   actions:
@@ -15,10 +15,10 @@ hero:
       variant: secondary
 ---
 
-Gear Protocol is a Substrate-based programming platform that simplifies the development and execution of decentralized applications (dApps) and smart contracts. Gear Protocol’s unique features make it an essential tool for developers aiming to harness the power of Web3 technologies efficiently.
+Gear Protocol is a Polkadot SDK-based programming platform that simplifies the development and execution of decentralized applications (dApps) and smart contracts. Gear Protocol’s unique features make it an essential tool for developers aiming to harness the power of Web3 technologies efficiently.
 
 ## What is Gear Protocol?
-The Gear Protocol is a versatile platform designed to streamline the development of dApps. It operates on the Substrate framework, ensuring high compatibility within the Polkadot ecosystem. By leveraging WebAssembly (Wasm) for execution, Gear Protocol supports multiple popular programming languages, including Rust, C, and C++, allowing developers to create sophisticated applications without learning new languages.
+The Gear Protocol is a versatile platform designed to streamline the development of dApps. It operates on the Polkadot SDK framework, ensuring high compatibility within the Polkadot ecosystem. By leveraging WebAssembly (Wasm) for execution, Gear Protocol supports multiple popular programming languages, including Rust, C, and C++, allowing developers to create sophisticated applications without learning new languages.
 
 ## Gear Protocol Key Features and Benefits
 1. **Developer-Friendly Environment**
@@ -40,7 +40,7 @@ The Gear Network leverages the Gear Protocol to create a range of network soluti
 ### Addressing Web3 Challenges
 1. **Scalability:** Gear Protocol’s parallel processing and efficient resource allocation address the scalability limitations of traditional blockchain platforms.
 2. **Developer Barriers:** By supporting widely adopted programming languages and offering familiar development environments, Gear lowers the barriers for Web3 development.
-3. **Interoperability:** The integration with Substrate and the Polkadot ecosystem ensures seamless communication and interoperability between different networks and applications.
+3. **Interoperability:** The integration with the Polkadot SDK and the Polkadot ecosystem ensures seamless communication and interoperability between different networks and applications.
 
 ### Advanced Functionalities for dApp Development
 1. **Delayed Messaging and Automation:** Supports scheduling future actions autonomously, enabling self-sustaining applications that react to state changes or external conditions without manual intervention.

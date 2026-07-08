@@ -70,14 +70,14 @@ Public POC benchmarks (May 2024) on a Ryzen 7950X / 64 GB RAM / consumer 4 TB SS
 > Treat these as **vendor-published POC numbers**; reproduce on your hardware and workload before committing.
 
 ## NOMT vs sp-trie vs JMT/sov-db (comparison)
-| Feature / DB         |                      **NOMT** |    **sp-trie (Substrate)** |   **JMT / sov-db (Sovereign)** |
+| Feature / DB         |                      **NOMT** |    **sp-trie (Polkadot SDK)** |   **JMT / sov-db (Sovereign)** |
 | -------------------- | ----------------------------: | -------------------------: | -----------------------------: |
 | Execution-path reads |   **Flat KV** (no trie walks) |    Trie traversal on reads |        Flat KV + separate trie |
 | Disk layout          | **SSD-page-packed sub-tries** |         Patricia/MPT-style | JMT optimized for LSM/LSM-like |
 | Prefetch strategy    |    **Aggressive parallelism** |       Limited by traversal |                 Impl-dependent |
 | Proofs               |  **Multi-proofs for batches** |            Patricia proofs |                     JMT proofs |
 | Reported POC perf.   |  **Fast**; I/O-bound on reads |        Slower random reads |      Slower commit+prove (POC) |
-| Maturity             |          POC; evolving crates | Battle-tested in Substrate |        Active in Sovereign SDK |
+| Maturity             |          POC; evolving crates | Battle-tested in the Polkadot SDK |        Active in Sovereign SDK |
 
 ## When to use NOMT
 Choose NOMT if you need:
@@ -125,7 +125,7 @@ Minimizing **page reads** per access by packing trie nodes into SSD-sized pages;
 **Does NOMT replace my KV store?**
 No. It **embeds as a merklized KV backend**; POCs use RocksDB-style storage underneath, with customized backends planned.
 
-**How does NOMT differ from Substrate’s sp-trie?**
+**How does NOMT differ from the Polkadot SDK’s sp-trie?**
 sp-trie **walks the trie** for reads (Patricia-style), incurring more random I/O. NOMT **reads flat KV** during execution and updates the trie off the hot path.
 
 **How does NOMT differ from JMT (Diem/Aptos) and sov-db?**

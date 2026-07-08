@@ -23,7 +23,7 @@ hero:
       variant: minimal
 ---
 
-import { ImageCard, LinkButton2 } from '../../../components/ImageCard.astro';
+import { ImageCard } from '../../../components/ImageCard.astro';
 import DirectoryLinks from '/src/components/DirectoryLinks.astro';
 import { Card, CardGrid, LinkCard, LinkButton, FileTree, Tabs, TabItem } from '@astrojs/starlight/components';
 import { ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
@@ -130,7 +130,7 @@ entries={[
       thumbnail: import('/src/assets/thumbnails/smart-contracts.png'),
       href: '/it/dapps/smart-contracts/',
       title: 'Smart Contracts',
-      description: 'Scopri gli ecosistemi di Smart Contract più popolari basati su Polkadot e Substrate.'
+      description: 'Scopri gli ecosistemi di Smart Contract più popolari basati su Polkadot e Polkadot SDK.'
       },
     {
       thumbnail: import('/src/assets/thumbnails/ai.png'),
@@ -187,7 +187,7 @@ Per i nuovi arrivati, l'hub offre una biblioteca completa di risorse per imparar
 <CardGrid>
   <Card title="Wiki di Polkadot" icon="open-book">
     Esplora informazioni approfondite sui principi tecnici di Polkadot e sui componenti chiave che alimentano il suo ecosistema.
-    <LinkButton href="https://wiki.polkadot.network" variant="secondary" icon="external" iconPlacement="start">Wiki di Polkadot</LinkButton>
+    <LinkButton href="https://docs.polkadot.com" variant="secondary" icon="external" iconPlacement="start">Wiki di Polkadot</LinkButton>
   </Card>
 
   <Card title="Sito Web di Polkadot" icon="information">

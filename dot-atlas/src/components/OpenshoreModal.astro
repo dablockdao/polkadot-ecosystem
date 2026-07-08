@@ -1,0 +1,126 @@
+---
+// Persistent bottom announcement strip linking to openshore.io.
+// Always visible on every page (mounted via CustomFooter).
+---
+
+<div class="osh-strip" role="banner">
+  <p class="osh-strip__text">
+    <strong class="osh-strip__label">New</strong>
+    Discover <strong>OpenShore</strong> — a new home for the Polkadot ecosystem.
+    <a href="https://openshore.io" target="_blank" rel="noopener noreferrer" class="osh-strip__link">
+      Visit openshore.io →
+    </a>
+  </p>
+</div>
+
+<script>
+  function syncStripHeight() {
+    const strip = document.querySelector('.osh-strip');
+    if (strip) {
+      document.documentElement.style.setProperty('--osh-strip-h', strip.getBoundingClientRect().height + 'px');
+    }
+  }
+  document.addEventListener('astro:page-load', () => requestAnimationFrame(syncStripHeight));
+  window.addEventListener('resize', syncStripHeight);
+</script>
+
+<style>
+  .osh-strip {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    background: var(--sl-color-bg, #0b0b0f);
+    color: var(--sl-color-text, #fff);
+    font: 400 0.8125rem/1.5 Arial, sans-serif;
+    border-top: 1px solid color-mix(in oklab, var(--sl-color-accent, #7A6F5F) 25%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .osh-strip__text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .osh-strip__label {
+    display: inline-block;
+    margin-inline-end: 0.45em;
+    padding: 0.08em 0.55em;
+    border-radius: 999px;
+    background: color-mix(in oklab, var(--sl-color-accent, #7A6F5F) 20%, transparent);
+    color: var(--sl-color-accent, #7A6F5F);
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    vertical-align: middle;
+  }
+
+  .osh-strip__link {
+    display: inline-block;
+    margin-inline-start: 0.6em;
+    padding: 0.25em 0.8em;
+    border-radius: 999px;
+    border: 1px solid var(--sl-color-accent, #7A6F5F);
+    background: transparent;
+    color: var(--sl-color-accent, #7A6F5F);
+    font-weight: 600;
+    font-size: 0.85em;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .osh-strip__link:hover {
+    background: var(--sl-color-accent, #7A6F5F);
+    color: var(--sl-color-bg, #0b0b0f);
+  }
+
+  .osh-strip__link:focus-visible {
+    outline: 2px solid var(--sl-color-accent, #7A6F5F);
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 640px) {
+    .osh-strip {
+      padding: 0.6rem 0.75rem;
+      font-size: 0.75rem;
+    }
+    .osh-strip__text {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+    }
+    .osh-strip__link {
+      font-size: 0.8em;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .osh-strip {
+      font-size: 0.7rem;
+      padding: 0.5rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .osh-strip__link {
+      transition: none;
+    }
+  }
+</style>
+
+<style is:global>
+  .main-frame {
+    padding-bottom: calc(var(--osh-strip-h, 3rem)) !important;
+  }
+</style>

@@ -1,11 +1,11 @@
 ---
 title: Statescan
-description: StateScan is a block explorer and analytics platform specifically designed for Substrate-based blockchains.
+description: StateScan is a block explorer and analytics platform specifically designed for Polkadot SDK (formerly Substrate)-based blockchains.
 sidebar:
     label: ✪ Statescan
     order: 2
 hero:
-  tagline: Block explorer and analytics platform for Substrate-based blockchains,
+  tagline: Block explorer and analytics platform for Polkadot SDK-based blockchains,
   image: 
     file: ../../../../assets/tools/block-explorers/statescan.png
   actions:
@@ -18,12 +18,12 @@ hero:
       variant: secondary
 ---
 
-## Statescan: Open-Source Block Explorer for Substrate (Polkadot, Kusama & Parachains)
-Statescan is a 100% open-source, multi-chain block explorer purpose-built for Substrate-based networks. It covers core on-chain data plus pallet-specific views (Identity, Multisig, Vesting, Proxy, Assets/NFTs) and can be self-hosted by parachain teams. This guide explains what Statescan is, how it works, how it compares to alternatives, and how builders and analysts can get practical value from it.
+## Statescan: Open-Source Block Explorer for Polkadot SDK (Polkadot, Kusama & Parachains)
+Statescan is a 100% open-source, multi-chain block explorer purpose-built for Polkadot SDK-based networks. It covers core on-chain data plus pallet-specific views (Identity, Multisig, Vesting, Proxy, Assets/NFTs) and can be self-hosted by parachain teams. This guide explains what Statescan is, how it works, how it compares to alternatives, and how builders and analysts can get practical value from it.
 
 
 ## What is Statescan? (and why it matters)
-**Statescan** is an open-source, cost-efficient explorer dedicated to **Substrate** networks—**Polkadot, Kusama, and parachains**. It provides standard explorer views (blocks, extrinsics, events, accounts) **plus pallet-aware analytics** across Identity, Multisig, Vesting, Proxy, and Assets/NFTs. The project is built and maintained by **OpenSquare** (also behind SubSquare and doTreasury) and has served the ecosystem since 2020.
+**Statescan** is an open-source, cost-efficient explorer dedicated to **Polkadot SDK** networks—**Polkadot, Kusama, and parachains**. It provides standard explorer views (blocks, extrinsics, events, accounts) **plus pallet-aware analytics** across Identity, Multisig, Vesting, Proxy, and Assets/NFTs. The project is built and maintained by **OpenSquare** (also behind SubSquare and doTreasury) and has served the ecosystem since 2020.
 
 Critically, **Statescan is self-hostable** (statescan-v2), enabling parachain teams to run a chain-specific explorer with their own branding, RPC endpoints, and module coverage—without vendor lock-in.
 
@@ -51,7 +51,7 @@ Think of Polkadot as a city of many neighborhoods (parachains). An explorer is y
 * **OpenGov delegates & community members** tracing asset teleports, NFT lifecycles, and multisig flows.
 
 ## Real-world adoption
-Statescan is used across multiple Substrate projects and ecosystems, with public instances and self-hosted deployments by parachain teams and testnets. Common use cases include:
+Statescan is used across multiple Polkadot SDK projects and ecosystems, with public instances and self-hosted deployments by parachain teams and testnets. Common use cases include:
 * **Parachain-specific explorers** branded to match a project’s identity.
 * **Testnet explorers** for dev workflows and QA.
 * **Community mirrors** to improve availability and load distribution.

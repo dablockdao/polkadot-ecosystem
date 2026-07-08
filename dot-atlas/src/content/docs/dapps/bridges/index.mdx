@@ -113,7 +113,7 @@ An interoperability coprocessor designed to scale cryptographically secure, proo
 
 ## Other ways to move value without wrapped IOUs
 ### Chainflip
-A cross-chain DEX that swaps native assets between chains like BTC, ETH, and SOL without issuing wrapped tokens. It uses a Substrate app-chain and a permissionless validator set with threshold signatures to manage protocol vaults and settle swaps.
+A cross-chain DEX that swaps native assets between chains like BTC, ETH, and SOL without issuing wrapped tokens. It uses a Polkadot SDK (formerly Substrate) app-chain and a permissionless validator set with threshold signatures to manage protocol vaults and settle swaps.
 
 **When to pick it**
 
@@ -143,7 +143,7 @@ Moonbeam exposes external routes so assets can enter the Polkadot ecosystem thro
 ## How it works under the hood
 * **Bridge Hub** is a system parachain that hosts bridge pallets and light clients. It underpins Snowbridge, the DOT-KSM route, and future native bridges.
 * **BEEFY** posts compact finality proofs that let external chains verify Polkadot state efficiently. This reduces verification cost while maintaining strong security.
-* **GRANDPA bridge pallets** provide light clients for Substrate chains, enabling trust-minimized Substrate-to-Substrate links.
+* **GRANDPA bridge pallets** provide light clients for Polkadot SDK chains, enabling trust-minimized Polkadot SDK-to-Polkadot SDK links.
 * **ISMP and Hyperbridge** generalize proof-based messaging for scalable cross-chain requests and state reads.
 * **Liquidity networks** like Chainflip use validator-run threshold signatures to atomically settle swaps of native assets, which avoids wrapped tokens but introduces a different validator security model.
 

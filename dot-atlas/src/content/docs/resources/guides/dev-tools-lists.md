@@ -55,10 +55,10 @@ A practical, up-to-date map of the open-source Polkadot Stack—wallets, SDKs, c
 ### Chains, Pallets & Protocols
 * **DeFi/general-purpose parachains:** Astar, Moonbeam, Acala, Hydration (Omnipool).
 * **Bridges & interoperability:** Interlay (interBTC), Darwinia.
-* **Privacy/ZK:** Phala (TEE-backed privacy services), PLONK/zk tooling for Substrate ecosystems.
+* **Privacy/ZK:** Phala (TEE-backed privacy services), PLONK/zk tooling for Polkadot SDK ecosystems.
 
 ### Hosts, Light Clients & Node Ops
-* **Hosts:** Polkadot SDK/Substrate (Rust), Kagome (C++).
+* **Hosts:** Polkadot SDK (Rust), Kagome (C++).
 * **Light clients:** smoldot (embed in browsers/apps), Substrate Connect.
 * **Validator automation & monitoring:** Ansible playbooks, ONE-T, SubVT; common stacks: Prometheus + Grafana; sentry nodes; snapshot tooling.
 
@@ -108,7 +108,7 @@ A practical, up-to-date map of the open-source Polkadot Stack—wallets, SDKs, c
 * **Front-end:** handle chain metadata changes; schema/type generation in CI.
 
 ### 5) Testnet → Mainnet
-* **Testnets:** Paseo/Westend or chain-specific testnets; acquire faucet tokens.
+* **Testnets:** Paseo or chain-specific testnets; acquire faucet tokens.
 * **Observability:** dashboards (Telemetry, Prometheus/Grafana), log hygiene.
 * **Dry-run governance flows:** if your app depends on OpenGov or treasury.
 

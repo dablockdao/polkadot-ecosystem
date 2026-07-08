@@ -28,21 +28,21 @@ Moonbeam is like **an Ethereum city inside Polkadot**. You can deploy Solidity c
 
 ## How Moonbeam works on Polkadot
 ### EVM compatibility + unified accounts
-Moonbeam is fully EVM-compatible and uses **unified accounts**: your standard Ethereum H160 address (0x…) controls both EVM and Substrate-based features (staking, governance, XCM) on Moonbeam. This removes the “two-accounts” friction found on many EVM-on-Substrate chains.
+Moonbeam is fully EVM-compatible and uses **unified accounts**: your standard Ethereum H160 address (0x…) controls both EVM and Polkadot SDK (formerly Substrate)-based features (staking, governance, XCM) on Moonbeam. This removes the “two-accounts” friction found on many EVM-on-Polkadot SDK chains.
 
 **Why this matters**
 * You keep MetaMask + Solidity + Hardhat workflow.
 * You still get Polkadot features (OpenGov, XCM) from the same address.
 
 ### XC-20s and XCM precompiles
-**XC-20** = ERC-20 that’s also XCM-aware. Any ERC-20 deployed on Moonbeam can be configured as an XC-20 and sent to/from parachains using XCM. Moonbeam exposes **X-Tokens/XCM precompiles** so Solidity contracts can call Substrate XCM methods directly (addresses are stable across networks).
+**XC-20** = ERC-20 that’s also XCM-aware. Any ERC-20 deployed on Moonbeam can be configured as an XC-20 and sent to/from parachains using XCM. Moonbeam exposes **X-Tokens/XCM precompiles** so Solidity contracts can call Polkadot SDK XCM methods directly (addresses are stable across networks).
 * X-Tokens precompile: `0x0000000000000000000000000000000000000804`
 * XCM precompile: `0x000000000000000000000000000000000000081A`
 
 ### Cross-chain messaging (GMP) & Routed Liquidity
 For non-Polkadot chains, Moonbeam integrates **Wormhole, Axelar, LayerZero, and Hyperlane** so apps can pass messages/tokens across ecosystems. Moonbeam introduced **GMP precompile** and the **Moonbeam Routed Liquidity (MRL)** pattern: assets bridge into Moonbeam via a GMP protocol and are **immediately routed** to a destination parachain over XCM — typically invisible to the user.
 
-> Think of MRL as a **port parachain**: liquidity from Ethereum/Solana/etc. arrives via a GMP protocol, then Moonbeam forwards it natively to your Polkadot destination (e.g., HydraDX, Interlay) in one flow.
+> Think of MRL as a **port parachain**: liquidity from Ethereum/Solana/etc. arrives via a GMP protocol, then Moonbeam forwards it natively to your Polkadot destination (e.g., Hydration (formerly HydraDX), Interlay) in one flow.
 
 ### Consensus & performance
 Moonbeam runs a parachain consensus framework (Nimbus) and benefits from Polkadot upgrades like **Asynchronous Backing** (faster inclusion) and **Elastic Scaling**. In 2024/25, Moonbeam reduced block times to \~6s and increased throughput (\~4× gas per block; \~8× effective throughput) as part of its roadmap alignment with the Polkadot SDK and Agile Coretime.
@@ -73,11 +73,11 @@ Moonbeam’s **2025 product roadmap** highlights:
 > For **in-ecosystem** movement (parachain ↔ parachain), use **XCM/XC-20**. For **external ecosystems**, use **GMP**, and consider **MRL** to land assets directly on the destination parachain.
 
 ## Mini-guide: Route USDC from Ethereum to a Polkadot parachain via Moonbeam
-**Goal:** End with USDC (or a target representation) on a destination parachain (e.g., **HydraDX**) without manual hops.
+**Goal:** End with USDC (or a target representation) on a destination parachain (e.g., **Hydration**) without manual hops.
 
 1. **Choose origin & destination**
    * Origin: Ethereum (USDC).
-   * Destination: Target parachain needing liquidity (e.g., HydraDX).
+   * Destination: Target parachain needing liquidity (e.g., Hydration).
 
 2. **Pick the route**
    * Use an **MRL-enabled** UI (e.g., a Carrier-powered flow in ecosystem apps). Under the hood, **Wormhole** brings USDC → Moonbeam, then **XCM** routes it to the destination parachain.
@@ -89,7 +89,7 @@ Moonbeam’s **2025 product roadmap** highlights:
    * Approve & send USDC from Ethereum. A VAA/message is generated and submitted to Moonbeam’s **GMP precompile**.
 
 5. **Route (XCM step)**
-   * On delivery, Moonbeam forwards the payload via XCM to the parachain (e.g., HydraDX), crediting your address there.
+   * On delivery, Moonbeam forwards the payload via XCM to the parachain (e.g., Hydration), crediting your address there.
 
 6. **Verify & use**
    * Open the destination parachain app/wallet; verify balance; proceed to LP, lend, or swap.

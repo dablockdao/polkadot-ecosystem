@@ -30,8 +30,8 @@ Crifferent runs validators on several prominent blockchain networks, including:
 - **Centrifuge**: 4e7Zq4GiS71uKaNeqhfHKwxEQ9MBCQSPQv9knapyh9JhsY54
 - **Robonomics**: 4GSikYa6478CV5M34JNsRJtRQBnZHMRumoYs6W9XmCwY7H59
 - **Kilt**: 4o4you8yaa76ztWB1yMekSNUTUujWLBQcfaxszJebuDhbAYj
-- **HydraDX – HydraSik**: 7NzHitwWA5UidhXiNJSTipSwbXgDfikKefdY9kB69sBJxPS7
-- **HydraDX – HydraCJ**: 7JErgFE8wJazMqSdCja9LQqHx8npBMGZUNxPtZeFQUWhhsnE
+- **Hydration – HydraSik**: 7NzHitwWA5UidhXiNJSTipSwbXgDfikKefdY9kB69sBJxPS7
+- **Hydration – HydraCJ**: 7JErgFE8wJazMqSdCja9LQqHx8npBMGZUNxPtZeFQUWhhsnE
 - **Polkadex**: esmYmhtQkYcZ2JyEa4AWfkKWN4sUBKzBC8YELS1515nqCia7K
 
 ### Crifferent Team:

@@ -34,14 +34,14 @@ Wormhole **supports Polkadot, Moonbeam, Acala, and Karura** as integrated endpoi
 
 If you bridge from **Ethereum → Polkadot**:
 
-* **Via Wormhole:** the asset is typically **minted on Moonbeam** (or Acala) and then **XCM-routed** to your parachain (e.g., HydraDX).
+* **Via Wormhole:** the asset is typically **minted on Moonbeam** (or Acala) and then **XCM-routed** to your parachain (e.g., Hydration (formerly HydraDX)).
 * **Via Snowbridge:** the asset is **minted on Asset Hub** (Polkadot’s canonical asset system chain) before any XCM hop.
 
-Hydration’s docs and UX reflect both options, showing **within-Polkadot** XCM flows where DAI/ETH bridged via Wormhole originate from **Acala** into **HydraDX**.
+Hydration’s docs and UX reflect both options, showing **within-Polkadot** XCM flows where DAI/ETH bridged via Wormhole originate from **Acala** into **Hydration**.
 
 ### XCM “hop” to reach non-EVM parachains
 
-To reach a non-EVM parachain (e.g., HydraDX), external bridge routes often look like:
+To reach a non-EVM parachain (e.g., Hydration), external bridge routes often look like:
 `Ethereum —(Wormhole)→ Acala/Moonbeam —(XCM)→ Destination parachain`.
 Routers like **MRL** aim to hide this hop for a cleaner UX.
 
@@ -60,8 +60,8 @@ Other GMPs (Axelar, LayerZero, Hyperlane) also exist on Moonbeam, but “**Wormh
 | **Wormhole via Acala (Asset Router)** | 19-Guardian committee (VAA supermajority) | **Acala** (then XCM out)      | Wormhole GMP + **XCM** | Non-canonical (wrapped) on parachains | EVM+ routing with VAAs fetched by router; Acala DeFi integrations       |
 | **Snowbridge (ETH↔Polkadot)**         | Trust-minimized light-client verification | **Asset Hub** (canonical)     | Light-client + **XCM** | **Canonical on Asset Hub**            | When you need trust-minimized ETH/USDC-style assets at the system level |
 
-## Step-by-step: Bridge ETH (Wormhole route) → HydraDX
-**Scenario:** You hold ETH on Ethereum and want to use it on **HydraDX** (a non-EVM parachain). You choose the **Wormhole route**.
+## Step-by-step: Bridge ETH (Wormhole route) → Hydration
+**Scenario:** You hold ETH on Ethereum and want to use it on **Hydration** (a non-EVM parachain). You choose the **Wormhole route**.
 
 1. **Decide your on-ramp**
    * **Moonbeam (MRL):** Wormhole mints on **Moonbeam**, then MRL auto-routes via **XCM**.
@@ -74,13 +74,13 @@ Other GMPs (Axelar, LayerZero, Hyperlane) also exist on Moonbeam, but “**Wormh
 3. **Confirm fees, signer & network**
    * You’ll pay gas on Ethereum; the route abstracts Moonbeam/Acala hops. **MRL** makes this largely one-click.
 
-4. **Auto-route to HydraDX**
-   * Once minted on Moonbeam/Acala, your wrapped ETH is **XCM-routed** to **HydraDX** in the same flow or with a guided prompt. Within-Polkadot docs show DAI/ETH (bridged via Wormhole) flowing **from Acala** to **HydraDX**.
+4. **Auto-route to Hydration**
+   * Once minted on Moonbeam/Acala, your wrapped ETH is **XCM-routed** to **Hydration** in the same flow or with a guided prompt. Within-Polkadot docs show DAI/ETH (bridged via Wormhole) flowing **from Acala** to **Hydration**.
 
 5. **Verify receipt**
-   * Check your balance on HydraDX. If prompted for a **fee token** on an intermediate chain, follow the prompt (see pitfalls).
+   * Check your balance on Hydration. If prompted for a **fee token** on an intermediate chain, follow the prompt (see pitfalls).
 
-> **Alternative (Snowbridge):** Prefer **trust-minimized ETH** minted on **Asset Hub**? Use **Snowbridge**. Then XCM to HydraDX.
+> **Alternative (Snowbridge):** Prefer **trust-minimized ETH** minted on **Asset Hub**? Use **Snowbridge**. Then XCM to Hydration.
 
 ## Common pitfalls & tips
 * **Canonical vs wrapped:** Snowbridge mints on **Asset Hub** (canonical); Wormhole mints on **Moonbeam/Acala** (wrapped then XCM). Choose based on your governance/security requirements.

@@ -26,17 +26,17 @@ Logion Network si presenta come un'iniziativa pionieristica nell'ecosistema Polk
 - **Sistema di Zero-Knowledge Proof (ZKP) per il Registro delle Prove:** Logion impiega **Zero-Knowledge Proofs (ZKP)** per fornire la prova dei registri tramite il certificato Logion e le API senza rivelare il contenuto di tali registri. ZKP consente a una parte di provare a un'altra di conoscere un valore (x) senza trasmettere alcuna informazione, a parte il fatto che conosce il valore di (x). Ciò garantisce la privacy delle parti coinvolte mantenendo l'integrità e l'autenticità dei token.
 
 ## Architettura Tecnica di Logion Network
-- **Blockchain e Framework Substrate:** Logion è costruito sul framework Substrate sviluppato da Parity Technologies, che consente l'implementazione di una blockchain con logica personalizzata nativa. L'architettura modulare di Substrate permette a Logion di integrare le proprie funzionalità uniche senza soluzione di continuità nell'ecosistema Polkadot. Logion ha iniziato a operare come una "solochain" ed è diventata una parachain di Polkadot alla fine del 2023, sfruttando il consenso ibrido di Polkadot per una maggiore sicurezza e interoperabilità.
+- **Blockchain e Framework Substrate:** Logion è costruito sul framework Polkadot SDK sviluppato da Parity Technologies, che consente l'implementazione di una blockchain con logica personalizzata nativa. L'architettura modulare di Substrate permette a Logion di integrare le proprie funzionalità uniche senza soluzione di continuità nell'ecosistema Polkadot. Logion ha iniziato a operare come una "solochain" ed è diventata una parachain di Polkadot alla fine del 2023, sfruttando il consenso ibrido di Polkadot per una maggiore sicurezza e interoperabilità.
 - **Architettura del Nodo Logion:** Un nodo Logion include più servizi:
-  - **Blockchain basata su Substrate:** Fornisce le funzionalità core della blockchain.
+  - **Blockchain basata su Polkadot SDK:** Fornisce le funzionalità core della blockchain.
   - **Cluster IPFS:** Assicura un'archiviazione decentralizzata e resiliente dei file.
   - **Database PostgreSQL:** Archivia dati privati e riservati.
   - **Gestore di backup Logion:** Effettua backup del database PostgreSQL quasi in tempo reale.
   - **Servizio off-chain:** Fornisce accesso ai dati off-chain tramite una REST API.
   - **Server web:** Funziona come proxy per il servizio off-chain e serve l'app web Logion.
-Questa architettura garantisce la privacy dei dati e le restrizioni di accesso, con il servizio off-chain e il nodo Substrate esposti pubblicamente.
+Questa architettura garantisce la privacy dei dati e le restrizioni di accesso, con il servizio off-chain e il nodo Polkadot SDK esposti pubblicamente.
 - **Autenticazione:** Il servizio off-chain di Logion implementa l'autenticazione **basata su JWT**. I client si autenticano inviando una chiave pubblica, ricevendo una sfida e un ID di sessione, e firmando la sfida con la propria chiave privata. Questa autenticazione senza stato garantisce un accesso sicuro ai dati privati memorizzati nella rete IPFS e nel database PostgreSQL.
-- **Integrità dei Dati:** Substrate e IPFS, essendo sistemi decentralizzati, assicurano tolleranza ai guasti, scalabilità e integrità dei dati. Il gestore di backup Logion migliora questo aspetto archiviando backup criptati e compressi dei dati PostgreSQL su IPFS, garantendo il recupero in caso di guasti ai server.
+- **Integrità dei Dati:** Polkadot SDK e IPFS, essendo sistemi decentralizzati, assicurano tolleranza ai guasti, scalabilità e integrità dei dati. Il gestore di backup Logion migliora questo aspetto archiviando backup criptati e compressi dei dati PostgreSQL su IPFS, garantendo il recupero in caso di guasti ai server.
 
 ## Caso Legal Officer (LOC)
 **Il Caso Legal Officer (LOC)** è una cartella digitale gestita da un ufficiale legale di Logion, contenente sia dati pubblici che privati. I LOC seguono un ciclo di vita che va dalla bozza alla chiusura, garantendo una convalida accurata e trasparente. I LOC possono contenere elementi di dati, file e link, ciascuno memorizzato in modo sicuro e verificabile. L'app web Logion fornisce viste unificate dei LOC, unendo i dati on-chain e off-chain per i richiedenti e i proprietari.

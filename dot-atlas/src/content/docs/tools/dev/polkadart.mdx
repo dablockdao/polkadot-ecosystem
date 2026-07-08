@@ -22,7 +22,7 @@ By providing simple, easy-to-use APIs, Polkadart enables seamless interaction wi
 Built on the Dart programming language, this library offers a robust set of tools to query nodes, interact with chains, and manage blockchain-specific functionalities.
 
 ## What is Polkadart?
-Polkadart is a comprehensive library that acts as a clean wrapper around methods exposed by Polkadot/Substrate network clients. It defines all node types and APIs, allowing developers to interact with Polkadot chains effortlessly. Its ecosystem includes a suite of specialized packages, each designed to handle specific blockchain operations, making Polkadart a versatile and powerful tool for blockchain application development.
+Polkadart is a comprehensive library that acts as a clean wrapper around methods exposed by Polkadot SDK (formerly Substrate) network clients. It defines all node types and APIs, allowing developers to interact with Polkadot chains effortlessly. Its ecosystem includes a suite of specialized packages, each designed to handle specific blockchain operations, making Polkadart a versatile and powerful tool for blockchain application development.
 
 ## Key Features of Polkadart
 1. **Comprehensive API Support:** Polkadart abstracts complex network protocols, providing straightforward APIs for interacting with Polkadot-based chains. These APIs support:
@@ -31,10 +31,10 @@ Polkadart is a comprehensive library that acts as a clean wrapper around methods
     - Real-time event listening, such as block creation and balance updates
 2. **Type-Safe Development:** The Polkadart CLI facilitates type generation by interpreting the metadata of a specific blockchain. This ensures type safety and auto-completion, enabling developers to work with network-specific APIs securely and efficiently.
 3. **Key Management and Cryptographic Support:** Polkadart includes tools for managing key pairs, signing transactions, and addressing cryptographic operations through its **Keyring**, **SECP256k1 ECDSA**, and **SR25519** packages.
-4. **SCALE Codec Implementation:** The library provides a Dart implementation of the SCALE codec, an efficient data encoding/decoding method used in Substrate-based chains.
-5. **SS58 Address Management:** Polkadart supports encoding and decoding of SS58 addresses, a format commonly used in Polkadot and Substrate ecosystems.
+4. **SCALE Codec Implementation:** The library provides a Dart implementation of the SCALE codec, an efficient data encoding/decoding method used in Polkadot SDK-based chains.
+5. **SS58 Address Management:** Polkadart supports encoding and decoding of SS58 addresses, a format commonly used in Polkadot and Polkadot SDK ecosystems.
 6. **BIP39 Mnemonic Support:** With the **substrate_bip39** package, developers can generate human-readable mnemonic phrases to secure cryptographic keys.
-7. **Substrate Metadata Decoding:** Polkadart simplifies the decoding of Substrate blockchain metadata, making it easier to access constants, extrinsics, events, and other on-chain data.
+7. **Polkadot SDK Metadata Decoding:** Polkadart simplifies the decoding of Polkadot SDK blockchain metadata, making it easier to access constants, extrinsics, events, and other on-chain data.
 8. **Ink! Smart Contract Interactions:** The **ink_abi** package provides tools to encode and decode ink! smart contract ABIs, enabling interaction with Polkadot ecosystem smart contracts.
 
 

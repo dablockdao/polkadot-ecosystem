@@ -18,7 +18,7 @@ hero:
 As blockchain ecosystems grow more complex and interconnected, developers face increasing challenges in accessing, processing, and analyzing on-chain data. The SQD Network emerges as a groundbreaking solution, offering unparalleled capabilities for blockchain indexing and data querying. Designed to streamline the development process for decentralized applications (dApps) and other blockchain-based solutions, the SQD Network is a key player for developers within the Polkadot ecosystem and beyond.
 
 ## What is SQD Network?
-SQD Network is a decentralized query engine and data lake optimized for high-volume batch data extraction. Its innovative architecture allows developers to access raw and processed blockchain data with unprecedented speed, efficiency, and cost-effectiveness. Currently, the network serves over 200 blockchain protocols, including major EVM-based chains, Substrate networks like Polkadot, and even emerging blockchains such as Solana, Tron, and Fuel.
+SQD Network is a decentralized query engine and data lake optimized for high-volume batch data extraction. Its innovative architecture allows developers to access raw and processed blockchain data with unprecedented speed, efficiency, and cost-effectiveness. Currently, the network serves over 200 blockchain protocols, including major EVM-based chains, Polkadot SDK networks like Polkadot, and even emerging blockchains such as Solana, Tron, and Fuel.
 
 The core functionalities of the SQD Network revolve around providing a robust infrastructure for indexing historical blockchain data, enabling use cases such as:
 - Transaction and event analysis
@@ -38,7 +38,7 @@ The Squid SDK is a Typescript toolkit that serves as the backbone for building h
 - An expressive GraphQL server for tailored API development
 - Real-time data synchronization with support for chain reorganizations
 
-The Squid SDK is particularly beneficial for Polkadot developers, given its seamless compatibility with Substrate-based chains and its ability to handle complex indexing tasks with ease.
+The Squid SDK is particularly beneficial for Polkadot developers, given its seamless compatibility with Polkadot SDK-based chains and its ability to handle complex indexing tasks with ease.
 
 ### 2. SQD Cloud
 SQD Cloud offers a Platform-as-a-Service (PaaS) solution for deploying and managing blockchain indexers built using the Squid SDK. It provides a fully hosted environment, eliminating the operational complexities of maintaining custom indexers. Features include:
@@ -56,7 +56,7 @@ The SQD Firehose acts as a lightweight adapter, enabling existing subgraph frame
 For developers leveraging the ApeWorx framework, the SQD plugin integrates the SQD Network as a fast and reliable data source. This plugin simplifies data access for testing and deployment workflows.
 
 ## Why is SQD Network Essential for Polkadot Development?
-Polkadot’s innovative architecture, built on the Substrate framework, facilitates seamless interoperability and scalability. However, this also introduces complexities in data indexing and querying, particularly across multiple parachains. The SQD Network’s capabilities align perfectly with these needs:
+Polkadot’s innovative architecture, built on the Polkadot SDK framework, facilitates seamless interoperability and scalability. However, this also introduces complexities in data indexing and querying, particularly across multiple parachains. The SQD Network’s capabilities align perfectly with these needs:
 
 ### 1. Comprehensive Data Access
 SQD Network ingests petabytes of data from over 200 blockchain networks, including Polkadot and its parachains. Developers can retrieve historical transaction data, event logs, state diffs, and execution traces, enabling in-depth analysis and decision-making.
@@ -71,7 +71,7 @@ By eliminating egress fees and offering RPC-free access to blockchain data, SQD 
 For Polkadot developers building real-time applications, such as DeFi protocols or gaming platforms, the SQD Network’s ability to handle unfinalized blocks and chain reorganizations ensures accurate and timely data delivery.
 
 ### 5. Interoperability Across Ecosystems
-Given Polkadot’s focus on interoperability, the SQD Network’s support for multiple blockchain protocols—from Substrate to EVM and beyond—enables developers to build multichain applications effortlessly.
+Given Polkadot’s focus on interoperability, the SQD Network’s support for multiple blockchain protocols—from the Polkadot SDK to EVM and beyond—enables developers to build multichain applications effortlessly.
 
 ## Success Stories and Real-World Applications
 

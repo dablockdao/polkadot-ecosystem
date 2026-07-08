@@ -51,7 +51,7 @@ Thrum is shipping two important pieces for the Polkadot stack: **NOMT**, a nearl
 * Benchmarked on **Ryzen-class CPUs + NVMe**; headline results include **tens of thousands of TPS** under worst-case random access with witnesses enabled, scaling to very large key counts.
 * Targets Linux with **io\_uring** to exploit modern NVMe parallelism; still developer-friendly on macOS for day-to-day.
 
-### Why it matters to Substrate/Polkadot/JAM
+### Why it matters to the Polkadot SDK (formerly Substrate)/Polkadot/JAM
 Polkadot and its parachains rely on **Wasm runtime + Merkle proofs**; PoV verification touches parts of the trie each block. A faster authenticated DB boosts:
 
 * **Block production & validation headroom**
@@ -133,7 +133,7 @@ Rollups send sequenced **data blobs** for later verification. A blobchain with *
 * **Ikura adapters evolve**: pin adapter versions (Sovereign/Rollkit); regenerate keys when resetting localnets.
 
 ## FAQs
-**1) Is NOMT a replacement for RocksDB/ParityDB inside Substrate?**
+**1) Is NOMT a replacement for RocksDB/ParityDB inside the Polkadot SDK?**
 Yes—NOMT is designed as an **embedded authenticated state DB** and can serve as a drop-in replacement, with integration specifics depending on your node SDK.
 
 **2) How fast is NOMT, practically?**
