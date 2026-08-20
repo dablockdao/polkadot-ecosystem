@@ -1,0 +1,130 @@
+---
+title: 'Vultisig'
+description: Vultisig is a seedless, fully self-custodial multi-chain wallet secured by MPC threshold signatures. Hold, send and receive DOT across your own devices.
+hero:
+  tagline: A seedless multi-device wallet with a polkadot-js compatible extension.
+  image: 
+    file: ../../../../assets/tools/wallets/vultisig.png
+  actions:
+    - text: Tool
+      link: https://vultisig.com
+      icon: external
+    - text: Docs
+      link: https://docs.vultisig.com
+      icon: external
+      variant: secondary
+---
+
+import { Card, CardGrid, LinkCard, LinkButton } from '@astrojs/starlight/components';
+import { ShowcaseProfile, ShowcaseImage, ShowcaseText, ShowcaseYouTube, ShowcaseCTA } from 'starlight-showcases';
+import DirectoryLinks from '/src/components/DirectoryLinks.astro';
+
+**Vultisig is a seedless, fully self-custodial multi-chain wallet secured by MPC threshold signatures.** There is no seed phrase to write down, no private key held on any single device, and no company holding anything on your behalf. Vultisig covers 30+ chains including Polkadot, and runs on iOS, Android, Windows, macOS, Linux and as a Chrome extension. It is free and open source.
+
+## What is Vultisig?
+
+Most wallets reduce your security to one secret: twelve words, written once, and catastrophic if leaked. Vultisig removes that secret entirely.
+
+Instead of a seed phrase, a Vultisig **vault** is split into key shares distributed across devices you own — your phone, your laptop, your desktop. Signing a transaction requires a threshold of those shares to cooperate through an **MPC (multi-party computation) protocol**, so the full private key is never assembled on any machine, at any point, including during signing. There is no single artefact for an attacker to steal and no single device whose compromise loses your funds.
+
+Vaults are **m-of-n**. A Fast Vault gets you running on one device in under a minute; adding devices raises the threshold when you want stronger guarantees for larger balances.
+
+## How Vultisig secures keys
+
+* **Threshold signatures (DKLS23).** Vultisig uses the DKLS23 threshold-ECDSA protocol from Silence Laboratories, [audited by Trail of Bits](https://github.com/silence-laboratories/dkls23/blob/main/docs/ToB-SilenceLaboratories_2024.04.10.pdf). Polkadot accounts are Ed25519, derived from the vault's EdDSA key.
+* **Fully self-custodial.** In a Fast Vault, Vultisig holds one share to co-sign on request — that share is **below the signing threshold and cannot move funds on its own**. Your devices are always required. No configuration hands custody to anyone else.
+* **No seed phrase, no password to steal.** There is no mnemonic, so there is nothing to phish, photograph, or find in a backup.
+* **Open source.** Every client and the SDK are public at [github.com/vultisig](https://github.com/vultisig).
+
+## Vultisig on Polkadot
+
+Vultisig is a broad multi-chain wallet, not a Polkadot-specialist wallet. It is worth being precise about what it does and does not do on DOT:
+
+| Capability | Vultisig |
+|---|---|
+| Hold and receive native DOT | Yes |
+| Send native DOT | Yes |
+| Address format | SS58 prefix 0, checksum-validated |
+| Connect to Substrate dApps | Yes — the Vultisig Extension injects a polkadot-js compatible provider |
+| Sign payloads and raw messages | Yes — `signPayload` and `signRaw` |
+| Signature scheme | **Ed25519** (not Sr25519) |
+| Staking — nomination pools or solo | **No** |
+| OpenGov voting and delegation | **No** |
+| Swapping DOT inside the wallet | **No** |
+| XCM transfers and parachain tokens | **No** |
+| Asset Hub USDT and USDC | SDK and CLI only — not in the mobile or desktop apps |
+| Ledger or external hardware | Not applicable — your own devices are the signers |
+
+If you need to stake DOT, vote in OpenGov, or move assets over XCM, pair Vultisig with a Polkadot-native wallet. Vultisig's role on Polkadot is threshold-secured custody of DOT alongside 30+ other chains in one vault.
+
+## Connecting Vultisig to Polkadot dApps
+
+The **Vultisig Extension** registers itself under the standard `window.injectedWeb3` namespace as `polkadot-js`, so Substrate dApps discover it the same way they discover any polkadot-js compatible wallet. The provider implements `enable()`, account listing, `signPayload` and `signRaw`.
+
+One compatibility limit to be aware of: **Vultisig accounts are Ed25519, not Sr25519.** dApps that assume Sr25519 keys will not work with a Vultisig account. Private keys never enter the browser — a signing request is passed to your vault devices, which approve it under the threshold protocol.
+
+## Supported platforms
+
+| Platform | Availability |
+|---|---|
+| iOS | [App Store](https://apps.apple.com/app/apple-store/id6503023896) |
+| Android | [Google Play](https://play.google.com/store/apps/details?id=com.vultisig.wallet) |
+| Windows, macOS, Linux | Desktop app |
+| Chrome | [Vultisig Extension](https://chromewebstore.google.com/detail/vultisig-extension/ggafhcdaplkhmmnlbfjpnnkepdfjaelb) |
+| Developers | Vultisig SDK and CLI |
+
+A single vault derives addresses for every supported chain automatically — there is no per-chain setup.
+
+## Supported blockchains
+
+Vultisig supports 30+ chains from one vault:
+
+* **Polkadot** — native DOT
+* **UTXO** — Bitcoin, Litecoin, Dogecoin, Bitcoin Cash, Dash, Zcash
+* **EVM** — Ethereum, Arbitrum, Optimism, Base, Polygon, BSC, Avalanche
+* **Cosmos** — Cosmos Hub, Osmosis, Kujira, dYdX, THORChain, Maya
+* **Other** — Solana, Sui, TON, XRP, Tron, Cardano
+
+## Security and privacy
+
+* **No single point of failure.** The full key is never reconstructed, on any device, at any time.
+* **Trail of Bits audited protocol.** DKLS23, the threshold protocol underneath Vultisig, has been [publicly audited](https://github.com/silence-laboratories/dkls23/blob/main/docs/ToB-SilenceLaboratories_2024.04.10.pdf).
+* **No account, no sign-up, no KYC.** Nothing to register and no identity attached to a vault.
+* **Open source.** All clients are auditable at [github.com/vultisig](https://github.com/vultisig).
+* **Free.** No subscription and no fee to hold or transfer your own assets.
+
+## FAQs
+
+**1) Can I stake DOT with Vultisig?**
+No. Vultisig holds, sends and receives native DOT. There is no nomination-pool staking, no solo staking, and no reward claiming. Use a Polkadot-native wallet for staking.
+
+**2) Can I vote in OpenGov from Vultisig?**
+No. Vultisig has no governance features on Polkadot.
+
+**3) Is Vultisig custodial?**
+No — it is fully self-custodial. A Fast Vault gives Vultisig one key share so it can co-sign on request, but that share sits below the signing threshold and cannot move funds without your devices.
+
+**4) Do I need to back up a seed phrase?**
+There is no seed phrase. You back up vault shares instead, and you can add devices to raise the threshold at any time.
+
+**5) Which Polkadot dApps work with Vultisig?**
+The Vultisig Extension appears to dApps as a polkadot-js compatible wallet via `window.injectedWeb3`. Accounts are Ed25519, so dApps that require Sr25519 will not work.
+
+**6) Can I swap DOT inside Vultisig?**
+No. Vultisig has in-app swaps on other chains, but DOT is not routable through any of its integrated aggregators.
+
+## Vultisig Videos
+------------
+<ShowcaseYouTube
+  entries={[
+    {
+      href: 'https://www.youtube.com/watch?v=JWsx5R7c_38',
+      title: 'Multi-Factor, Seedless, Stress-Free: Meet Vultisig',
+      description: 'An introduction to Vultisig, the seedless multi-device wallet secured by MPC threshold signatures.'
+    },
+    {
+      href: 'https://www.youtube.com/watch?v=kgX1MgOj938',
+      title: 'Vultisig Swaps — One Wallet, All Chains',
+      description: 'How cross-chain swaps work inside Vultisig. Note that DOT is not among the swappable assets.'
+    },
+  ]} />
